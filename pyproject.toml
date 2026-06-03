@@ -1,0 +1,53 @@
+[project]
+name = "todayintech"
+version = "0.1.0"
+description = "AI-curated technology news briefing generator"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "feedparser>=6.0.11",
+    "httpx>=0.28.1",
+    "jinja2>=3.1.6",
+    "openai>=1.99.0",
+    "pydantic>=2.11.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.14.0",
+]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+src = ["src"]
+exclude = [
+    ".docusaurus",
+    ".git",
+    ".venv",
+    "build",
+    "node_modules",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "I",    # isort
+    "B",    # flake8-bugbear
+    "UP",   # pyupgrade
+    "SIM",  # flake8-simplify
+]
+ignore = [
+    "E501", # handled by formatter where practical
+]
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
