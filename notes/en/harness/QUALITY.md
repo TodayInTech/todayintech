@@ -15,6 +15,7 @@ make test
 make test-unit
 make test-collection
 make trace-collect
+make fetch-trace-history
 make quality
 ```
 
@@ -39,6 +40,33 @@ GitHub Actions artifacts are separated from local artifacts under `.artifacts/`.
 ├── reports/
 └── traces/
 ```
+
+## Trace History
+
+Operational traces are not committed to the `main` branch. After the collector trace run, GitHub Actions publishes only trace results to the dedicated `tracing-history` branch, accumulated by date.
+
+```text
+tracing-history
+└── traces/
+    └── YYYY-MM-DD/
+        ├── collection.json
+        └── summary.md
+```
+
+Rules:
+
+- `main` contains only code, configuration, and human-maintained documents.
+- `tracing-history` is the long-term branch for operational trace records.
+- Raw collection data and test reports remain GitHub Actions artifacts only.
+- Re-running the workflow for the same date refreshes that date's trace files and commits only when there are changes.
+
+Use this command to fetch accumulated trace data locally.
+
+```bash
+make fetch-trace-history
+```
+
+The default checkout path is `.var/remote/tracing-history`.
 
 ## Current Metrics
 

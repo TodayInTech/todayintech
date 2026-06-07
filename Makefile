@@ -2,6 +2,8 @@ PYTHON ?= .venv/bin/python
 NPM ?= npm
 GH ?= gh
 BRANCH ?= main
+TRACE_HISTORY_BRANCH ?= tracing-history
+TRACE_HISTORY_DIR ?= .var/remote/tracing-history
 
 SERVICE ?=
 DATE ?=
@@ -32,7 +34,7 @@ ifneq ($(strip $(DATE)),)
 WORKFLOW_ARGS += -f target_date=$(DATE)
 endif
 
-.PHONY: help collect trace-collect generate test test-unit test-collection lint lint-fix format format-check check build verify quality ci-quality ci deploy deploy-status
+.PHONY: help collect trace-collect fetch-trace-history generate test test-unit test-collection lint lint-fix format format-check check build verify quality ci-quality ci deploy deploy-status
 
 help:
 	@echo "Today in Tech project commands"
@@ -43,6 +45,7 @@ help:
 	@echo "  make collect SERVICE=hacker-news DATE=2026-06-07 COUNT=5"
 	@echo "  make collect OUTPUT_DIR=.var/local/raw-custom"
 	@echo "  make trace-collect"
+	@echo "  make fetch-trace-history"
 	@echo ""
 	@echo "Quality:"
 	@echo "  make test"
@@ -68,6 +71,8 @@ help:
 	@echo "  NPM         npm executable path. Default: npm"
 	@echo "  GH          GitHub CLI executable path. Default: gh"
 	@echo "  BRANCH      GitHub workflow ref. Default: main"
+	@echo "  TRACE_HISTORY_BRANCH Remote trace history branch. Default: tracing-history"
+	@echo "  TRACE_HISTORY_DIR    Local trace history checkout. Default: .var/remote/tracing-history"
 	@echo "  SERVICE     Optional service key. Default: all services"
 	@echo "  DATE        Optional target date. Default: TODAYINTECH_TARGET_DATE or today"
 	@echo "  COUNT       Optional preview article count. Default: collector CLI default"
@@ -83,6 +88,17 @@ collect:
 
 trace-collect:
 	$(PYTHON) -m src.collection $(COLLECT_ARGS) --trace-dir $(TRACE_DIR)
+
+fetch-trace-history:
+	mkdir -p $(dir $(TRACE_HISTORY_DIR))
+	@if [ -d "$(TRACE_HISTORY_DIR)/.git" ]; then \
+		git -C "$(TRACE_HISTORY_DIR)" fetch origin "$(TRACE_HISTORY_BRANCH)"; \
+		git -C "$(TRACE_HISTORY_DIR)" checkout "$(TRACE_HISTORY_BRANCH)"; \
+		git -C "$(TRACE_HISTORY_DIR)" pull --ff-only origin "$(TRACE_HISTORY_BRANCH)"; \
+	else \
+		git clone --branch "$(TRACE_HISTORY_BRANCH)" --single-branch \
+			"$$(git remote get-url origin)" "$(TRACE_HISTORY_DIR)"; \
+	fi
 
 generate:
 	$(PYTHON) -m src.main

@@ -60,6 +60,48 @@ jobs:
             .artifacts/traces/
           if-no-files-found: ignore
 
+      - name: Publish trace history
+        if: always()
+        env:
+          TRACE_HISTORY_BRANCH: tracing-history
+          TRACE_HISTORY_SOURCE_DIR: .artifacts/traces
+        run: |
+          set -euo pipefail
+
+          if [ ! -d "$TRACE_HISTORY_SOURCE_DIR" ]; then
+            echo "No trace artifacts found. Skipping trace history publish."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          TRACE_HISTORY_DIR="$RUNNER_TEMP/tracing-history"
+          git fetch origin "$TRACE_HISTORY_BRANCH" || true
+
+          if git show-ref --verify --quiet "refs/remotes/origin/$TRACE_HISTORY_BRANCH"; then
+            git worktree add "$TRACE_HISTORY_DIR" "origin/$TRACE_HISTORY_BRANCH"
+            git -C "$TRACE_HISTORY_DIR" checkout -B "$TRACE_HISTORY_BRANCH"
+          else
+            git worktree add --detach "$TRACE_HISTORY_DIR"
+            git -C "$TRACE_HISTORY_DIR" checkout --orphan "$TRACE_HISTORY_BRANCH"
+            git -C "$TRACE_HISTORY_DIR" rm -rf . || true
+          fi
+
+          mkdir -p "$TRACE_HISTORY_DIR/traces"
+          cp -R "$TRACE_HISTORY_SOURCE_DIR/." "$TRACE_HISTORY_DIR/traces/"
+
+          git -C "$TRACE_HISTORY_DIR" add traces
+
+          if git -C "$TRACE_HISTORY_DIR" diff --cached --quiet; then
+            echo "No trace history changes to publish."
+            exit 0
+          fi
+
+          git -C "$TRACE_HISTORY_DIR" commit \
+            -m "chore(trace): update operational trace history"
+          git -C "$TRACE_HISTORY_DIR" push origin "$TRACE_HISTORY_BRANCH"
+
       - name: Generate briefing
         run: make generate
         env:

@@ -36,6 +36,7 @@ The project has completed `Project Init` and is currently working on the `Collec
   - [x] Makefile-based lint, format, build, and verify commands
   - [x] Makefile-based manual GitHub Actions deployment trigger
   - [x] Minimal test flow and operational trace artifacts
+  - [x] `tracing-history` branch flow for accumulated operational traces
   - [x] Service-level collection condition documentation
   - [ ] Persistent deduplication through `seen.json`
   - [ ] Collector tests
