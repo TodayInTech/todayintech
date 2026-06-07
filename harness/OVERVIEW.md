@@ -41,6 +41,7 @@ LLM 기반 고품질 요약과 중요도 평가는 이후 단계에서 강화한
 - `harness/service/SERVICES.md`: 현재 지원 중인 서비스, 수집 방식, 수집 조건 범위를 추적한다.
 - `harness/ARCHITECTURE.md`: 전체 아키텍처와 단계별 플로우를 설명한다.
 - `harness/TECH_STACK.md`: 확정 기술 스택과 운영 기준을 설명한다.
+- `harness/ENV.md`: 환경 변수와 `SETTINGS` 싱글톤 사용 기준을 추적한다.
 - `harness/COMMIT_MESSAGE.md`: 커밋 메시지 작성 규칙을 정의한다.
 
 서비스 구현이나 collector strategy를 변경하면 `harness/service/SERVICES.md`를 먼저 확인하고 함께 수정한다.

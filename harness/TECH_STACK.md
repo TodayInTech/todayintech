@@ -39,7 +39,7 @@ MVP에서는 별도 DB 서버, 검색엔진, Vector DB를 사용하지 않는다
 
 ## Environment Variables
 
-환경 변수 예시는 `.env.example`에 둔다.
+환경 변수 예시는 `.env.example`에 둔다. 변수별 의미, 기본값, 코드 사용 지점은 `harness/ENV.md`에서 관리한다.
 
 주요 변수:
 

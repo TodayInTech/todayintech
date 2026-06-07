@@ -39,7 +39,7 @@ The MVP does not use a database server, search engine, or vector database.
 
 ## Environment Variables
 
-Environment variable examples live in `.env.example`.
+Environment variable examples live in `.env.example`. Variable meanings, defaults, and code usage are managed in `notes/en/harness/ENV.md`.
 
 Main variables:
 

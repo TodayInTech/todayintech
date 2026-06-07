@@ -1,15 +1,10 @@
 import argparse
-import os
-from datetime import UTC, datetime
 from pathlib import Path
 
 from src.collection import NewsCollector, write_raw_collection_results
 from src.models import Article, ServiceCollectionResult
+from src.settings import SETTINGS
 from src.sources import NewsSourceFactory
-
-
-def get_target_date(value: str | None = None) -> str:
-    return value or os.getenv("TODAYINTECH_TARGET_DATE") or datetime.now(UTC).date().isoformat()
 
 
 def build_parser(service_keys: tuple[str, ...]) -> argparse.ArgumentParser:
@@ -28,7 +23,7 @@ def build_parser(service_keys: tuple[str, ...]) -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--output-dir",
-        default=os.getenv("TODAYINTECH_RAW_OUTPUT_DIR", "data/raw"),
+        default=str(SETTINGS.raw_output_dir),
         help="Raw collection output root. Defaults to TODAYINTECH_RAW_OUTPUT_DIR or data/raw.",
     )
     parser.add_argument(
@@ -89,7 +84,7 @@ def main() -> None:
     parser = build_parser(source_factory.service_keys())
     args = parser.parse_args()
 
-    target_date = get_target_date(args.date)
+    target_date = SETTINGS.resolve_target_date(args.date)
     output_dir = Path(args.output_dir) / target_date
     collector = NewsCollector(source_factory)
     results = collect_results(collector, args.service)

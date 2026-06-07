@@ -1,40 +1,21 @@
-import os
-from datetime import UTC, datetime
-from pathlib import Path
-
 from src.collection import NewsCollector, write_raw_collection_results
 from src.generator.service_markdown_writer import write_service_markdown
 from src.generator.summary_markdown_writer import write_summary_markdown
 from src.models import BriefingBundle, ServiceBriefing
 from src.processing.deduplicator import deduplicate_articles
 from src.processing.summarizer import summarize_article
+from src.settings import SETTINGS
 from src.sources import NewsSourceFactory
 
 
-def get_target_date(target_date: str | None = None) -> str:
-    return (
-        target_date or os.getenv("TODAYINTECH_TARGET_DATE") or datetime.now(UTC).date().isoformat()
-    )
-
-
-def get_max_articles_per_service() -> int:
-    value = os.getenv("TODAYINTECH_MAX_ARTICLES_PER_SERVICE", "5")
-    try:
-        return max(1, int(value))
-    except ValueError:
-        return 5
-
-
 def run_pipeline(target_date: str | None = None) -> BriefingBundle:
-    generated_for = get_target_date(target_date)
-    max_articles = get_max_articles_per_service()
-    docs_output_dir = Path(os.getenv("TODAYINTECH_OUTPUT_DIR", "docs"))
-    raw_output_dir = Path(os.getenv("TODAYINTECH_RAW_OUTPUT_DIR", "data/raw"))
+    generated_for = SETTINGS.resolve_target_date(target_date)
+    max_articles = SETTINGS.max_articles_per_service
 
     source_factory = NewsSourceFactory()
     collector = NewsCollector(source_factory)
     collection_results = collector.collect_all()
-    write_raw_collection_results(raw_output_dir / generated_for, collection_results)
+    write_raw_collection_results(SETTINGS.raw_output_dir / generated_for, collection_results)
 
     service_briefings: list[ServiceBriefing] = []
 
@@ -56,7 +37,7 @@ def run_pipeline(target_date: str | None = None) -> BriefingBundle:
         insight_ko="서비스별 주요 기술 뉴스를 수집하고 도메인별로 묶은 자동 브리핑입니다.",
     )
 
-    output_dir = docs_output_dir / generated_for
+    output_dir = SETTINGS.output_dir / generated_for
     for briefing in service_briefings:
         write_service_markdown(output_dir, briefing)
     write_summary_markdown(output_dir, bundle)

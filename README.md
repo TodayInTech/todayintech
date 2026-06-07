@@ -44,6 +44,7 @@ docs/
 ## 환경 변수
 
 환경 변수 예시는 [.env.example](/Users/choi-hyk/todayintech/.env.example)에 있습니다.
+변수별 의미와 코드 매핑은 [harness/ENV.md](/Users/choi-hyk/todayintech/harness/ENV.md)에서 관리합니다.
 
 로컬에서 사용할 경우:
 

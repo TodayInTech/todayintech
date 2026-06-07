@@ -254,5 +254,6 @@ News Editor Agent는 뉴스레터 편집자 역할을 수행한다.
 - 한국어 하네스 문서를 수정하면 대응하는 `notes/en/harness/*.md`도 함께 수정한다.
 - 작업 상태가 바뀌면 `harness/TASKS.md`와 `notes/en/harness/TASKS.md`를 함께 업데이트한다.
 - 서비스 수집 방식이나 수집 조건이 바뀌면 `harness/service/SERVICES.md`와 `notes/en/harness/service/SERVICES.md`를 함께 업데이트한다.
+- 환경 변수나 설정 로딩 방식이 바뀌면 `harness/ENV.md`와 `notes/en/harness/ENV.md`를 함께 업데이트한다.
 - 자동 생성 문서와 사람이 작성한 설계 문서를 명확히 구분한다.
 - 브리핑 품질은 수집량보다 선별 품질을 우선한다.
