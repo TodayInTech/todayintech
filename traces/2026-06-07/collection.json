@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-07T09:34:44.434794+00:00",
+  "generated_for": "2026-06-07",
+  "stage": "collection",
+  "status": "failed",
+  "git_sha": "a46784f4989258368e63fc39c0acdec618e54080",
+  "github_run_id": "27088725005",
+  "service_count": 5,
+  "failed_service_count": 1,
+  "warning_count": 0,
+  "total_article_count": 1042,
+  "duration_ms": 85098,
+  "services": [
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 20,
+      "duration_ms": 456,
+      "avg_article_duration_ms": 22.8,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 10,
+      "duration_ms": 139,
+      "avg_article_duration_ms": 13.9,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 20,
+      "duration_ms": 388,
+      "avg_article_duration_ms": 19.4,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 992,
+      "duration_ms": 591,
+      "avg_article_duration_ms": 0.6,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "strategy": "sitemap",
+      "status": "failed",
+      "article_count": 0,
+      "duration_ms": 83524,
+      "avg_article_duration_ms": null,
+      "warning_codes": [],
+      "error": "Server error '502 Bad Gateway' for url 'https://www.anthropic.com/news/claude-opus-4-7'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502"
+    }
+  ]
+}
