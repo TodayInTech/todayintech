@@ -46,8 +46,8 @@ class AppSettings:
             openai_model=os.getenv("OPENAI_MODEL", "gpt-5-mini"),
             timezone=os.getenv("TODAYINTECH_TIMEZONE", "Asia/Seoul"),
             output_dir=Path(os.getenv("TODAYINTECH_OUTPUT_DIR", "docs")),
-            raw_output_dir=Path(os.getenv("TODAYINTECH_RAW_OUTPUT_DIR", "data/raw")),
-            trace_output_dir=Path(os.getenv("TODAYINTECH_TRACE_OUTPUT_DIR", "data/traces")),
+            raw_output_dir=Path(os.getenv("TODAYINTECH_RAW_OUTPUT_DIR", ".var/local/raw")),
+            trace_output_dir=Path(os.getenv("TODAYINTECH_TRACE_OUTPUT_DIR", ".var/local/traces")),
             max_articles_per_service=_int_env(
                 "TODAYINTECH_MAX_ARTICLES_PER_SERVICE",
                 default=5,

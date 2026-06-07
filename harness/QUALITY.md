@@ -21,15 +21,24 @@ make quality
 ## 산출물
 
 ```text
-reports/
+.var/local/reports/
 └── junit.xml
 
-data/traces/YYYY-MM-DD/
+.var/local/traces/YYYY-MM-DD/
 ├── collection.json
 └── summary.md
 ```
 
-`reports/`와 `data/traces/`는 Git에 커밋하지 않는다. GitHub Actions에서는 artifact로 업로드한다.
+`.var/local/reports/`와 `.var/local/traces/`는 Git에 커밋하지 않는다. GitHub Actions에서는 artifact로 업로드한다.
+
+GitHub Actions 산출물은 로컬 산출물과 분리해서 `.artifacts/` 아래에 둔다.
+
+```text
+.artifacts/
+├── raw/
+├── reports/
+└── traces/
+```
 
 ## 현재 추적 지표
 

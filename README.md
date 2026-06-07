@@ -103,7 +103,7 @@ make collect SERVICE=hacker-news DATE=2026-06-07 COUNT=5
 실행 시 콘솔에는 서비스별 상태, 수집 개수, 기사 미리보기가 출력되고 각 서비스별 수집 결과가 JSON으로 저장됩니다.
 
 ```text
-data/raw/YYYY-MM-DD/
+.var/local/raw/YYYY-MM-DD/
 ├── summary.json
 └── services/
     ├── hacker-news.json
@@ -147,10 +147,10 @@ make quality
 산출물:
 
 ```text
-reports/
+.var/local/reports/
 └── junit.xml
 
-data/traces/YYYY-MM-DD/
+.var/local/traces/YYYY-MM-DD/
 ├── collection.json
 └── summary.md
 ```

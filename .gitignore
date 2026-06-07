@@ -34,6 +34,10 @@ pnpm-debug.log*
 build/
 
 # Generated collection artifacts
+.var/
+.artifacts/
+
+# Legacy generated artifacts
 data/raw/
 data/traces/
 reports/

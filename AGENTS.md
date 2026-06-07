@@ -216,14 +216,14 @@ News Editor Agent는 뉴스레터 편집자 역할을 수행한다.
 
 - Collector 단계는 `make collect`로 실행한다.
 - 특정 서비스 수집은 `make collect SERVICE={service_key}`로 확인한다.
-- Collector 단계는 `data/raw/{YYYY-MM-DD}/summary.json`과 `data/raw/{YYYY-MM-DD}/services/{service}.json`만 생성하고 Markdown 생성이나 Docusaurus 빌드를 수행하지 않는다.
+- Collector 단계는 `.var/local/raw/{YYYY-MM-DD}/summary.json`과 `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`만 생성하고 Markdown 생성이나 Docusaurus 빌드를 수행하지 않는다.
 - 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행한다.
 - 이후 Processing, Generator 단계도 독립 실행 엔트리포인트를 제공하는 방향으로 확장한다.
 
 1. Factory가 MVP 서비스 구현체를 생성한다.
 2. `NewsCollector`가 각 서비스 구현체의 collector strategy로 정보를 수집한다.
 3. 수집 데이터를 공통 `Article` 모델로 정규화한다.
-4. 서비스별 수집 결과를 `data/raw/{YYYY-MM-DD}/services/{service}.json`에 저장한다.
+4. 서비스별 수집 결과를 `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`에 저장한다.
 5. `seen.json`과 URL canonicalization으로 중복을 제거한다.
 6. Agent가 중요도 점수와 카테고리를 산출한다.
 7. 서비스별 Top News를 요약한다.

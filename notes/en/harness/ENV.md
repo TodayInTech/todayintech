@@ -24,8 +24,8 @@ When an environment variable is added, removed, or renamed, update `.env.example
 | --- | --- | --- | --- | --- |
 | `TODAYINTECH_TIMEZONE` | `Asia/Seoul` | Optional | `timezone` | Briefing reference timezone |
 | `TODAYINTECH_OUTPUT_DIR` | `docs` | Optional | `output_dir` | Root directory for generated Markdown briefings |
-| `TODAYINTECH_RAW_OUTPUT_DIR` | `data/raw` | Optional | `raw_output_dir` | Root directory for collector raw JSON output |
-| `TODAYINTECH_TRACE_OUTPUT_DIR` | `data/traces` | Optional | `trace_output_dir` | Root directory for operational trace JSON/Markdown output |
+| `TODAYINTECH_RAW_OUTPUT_DIR` | `.var/local/raw` | Optional | `raw_output_dir` | Root directory for collector raw JSON output |
+| `TODAYINTECH_TRACE_OUTPUT_DIR` | `.var/local/traces` | Optional | `trace_output_dir` | Root directory for operational trace JSON/Markdown output |
 | `TODAYINTECH_MAX_ARTICLES_PER_SERVICE` | `5` | Optional | `max_articles_per_service` | Maximum number of articles summarized per service during Markdown generation. Minimum is 1 |
 
 ## Local Reproducibility Settings

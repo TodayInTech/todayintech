@@ -86,14 +86,14 @@ Each stage must remain independently executable for development and debugging.
 
 - Run the Collector stage with `make collect`.
 - Inspect one service with `make collect SERVICE={service_key}`.
-- The Collector stage only writes `data/raw/{YYYY-MM-DD}/summary.json` and `data/raw/{YYYY-MM-DD}/services/{service}.json`; it does not generate Markdown or build Docusaurus.
+- The Collector stage only writes `.var/local/raw/{YYYY-MM-DD}/summary.json` and `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`; it does not generate Markdown or build Docusaurus.
 - Run the full pipeline with `.venv/bin/python -m src.main`.
 - Future Processing and Generator stages should also expose independent entrypoints.
 
 1. Create services through the factory.
 2. Collect information through each service collector strategy via `NewsCollector`.
 3. Normalize articles.
-4. Store raw service-level results under `data/raw/{YYYY-MM-DD}/services/{service}.json`.
+4. Store raw service-level results under `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`.
 5. Deduplicate through canonical URLs and `seen.json`.
 6. Score and classify stories.
 7. Generate `docs/{YYYY-MM-DD}/services/{service}.md` files.

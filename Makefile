@@ -7,8 +7,11 @@ SERVICE ?=
 DATE ?=
 COUNT ?=
 OUTPUT_DIR ?=
-TRACE_DIR ?= data/traces
-REPORT_DIR ?= reports
+TRACE_DIR ?= .var/local/traces
+REPORT_DIR ?= .var/local/reports
+CI_RAW_DIR ?= .artifacts/raw
+CI_TRACE_DIR ?= .artifacts/traces
+CI_REPORT_DIR ?= .artifacts/reports
 
 COLLECT_ARGS :=
 ifneq ($(strip $(SERVICE)),)
@@ -29,7 +32,7 @@ ifneq ($(strip $(DATE)),)
 WORKFLOW_ARGS += -f target_date=$(DATE)
 endif
 
-.PHONY: help collect trace-collect generate test test-unit test-collection lint lint-fix format format-check check build verify quality ci deploy deploy-status
+.PHONY: help collect trace-collect generate test test-unit test-collection lint lint-fix format format-check check build verify quality ci-quality ci deploy deploy-status
 
 help:
 	@echo "Today in Tech project commands"
@@ -38,7 +41,7 @@ help:
 	@echo "  make collect"
 	@echo "  make collect SERVICE=hacker-news"
 	@echo "  make collect SERVICE=hacker-news DATE=2026-06-07 COUNT=5"
-	@echo "  make collect OUTPUT_DIR=data/raw-local"
+	@echo "  make collect OUTPUT_DIR=.var/local/raw-custom"
 	@echo "  make trace-collect"
 	@echo ""
 	@echo "Quality:"
@@ -52,6 +55,8 @@ help:
 	@echo "  make check"
 	@echo "  make build"
 	@echo "  make verify"
+	@echo "  make quality"
+	@echo "  make ci-quality"
 	@echo ""
 	@echo "GitHub deployment:"
 	@echo "  make deploy"
@@ -66,9 +71,12 @@ help:
 	@echo "  SERVICE     Optional service key. Default: all services"
 	@echo "  DATE        Optional target date. Default: TODAYINTECH_TARGET_DATE or today"
 	@echo "  COUNT       Optional preview article count. Default: collector CLI default"
-	@echo "  OUTPUT_DIR  Optional raw output root. Default: TODAYINTECH_RAW_OUTPUT_DIR or data/raw"
-	@echo "  TRACE_DIR   Trace output root. Default: data/traces"
-	@echo "  REPORT_DIR  Test report output root. Default: reports"
+	@echo "  OUTPUT_DIR    Optional raw output root. Default: TODAYINTECH_RAW_OUTPUT_DIR or .var/local/raw"
+	@echo "  TRACE_DIR     Trace output root. Default: .var/local/traces"
+	@echo "  REPORT_DIR    Test report output root. Default: .var/local/reports"
+	@echo "  CI_RAW_DIR    GitHub Actions raw output root. Default: .artifacts/raw"
+	@echo "  CI_TRACE_DIR  GitHub Actions trace output root. Default: .artifacts/traces"
+	@echo "  CI_REPORT_DIR GitHub Actions report output root. Default: .artifacts/reports"
 
 collect:
 	$(PYTHON) -m src.collection $(COLLECT_ARGS)
@@ -111,6 +119,10 @@ build:
 verify: check build
 
 quality: test trace-collect
+
+ci-quality:
+	TODAYINTECH_RAW_OUTPUT_DIR=$(CI_RAW_DIR) $(MAKE) test REPORT_DIR=$(CI_REPORT_DIR)
+	TODAYINTECH_RAW_OUTPUT_DIR=$(CI_RAW_DIR) $(MAKE) trace-collect OUTPUT_DIR=$(CI_RAW_DIR) TRACE_DIR=$(CI_TRACE_DIR)
 
 ci: verify
 

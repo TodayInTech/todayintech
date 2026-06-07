@@ -25,7 +25,7 @@ def build_parser(service_keys: tuple[str, ...]) -> argparse.ArgumentParser:
     parser.add_argument(
         "--output-dir",
         default=str(SETTINGS.raw_output_dir),
-        help="Raw collection output root. Defaults to TODAYINTECH_RAW_OUTPUT_DIR or data/raw.",
+        help="Raw collection output root. Defaults to TODAYINTECH_RAW_OUTPUT_DIR or .var/local/raw.",
     )
     parser.add_argument(
         "--preview-limit",

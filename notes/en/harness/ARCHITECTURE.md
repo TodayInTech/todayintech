@@ -125,7 +125,7 @@ The Collector stage must be independently executable and make service-level coll
 3. Feed entries are normalized into the shared `Article` model.
 4. Service-level collection results are wrapped as `ServiceCollectionResult`.
 5. URL, title, publication date, source, summary, and tags are preserved where possible.
-6. Collection results are stored as JSON under `data/raw/{YYYY-MM-DD}/`.
+6. Collection results are stored as JSON under `.var/local/raw/{YYYY-MM-DD}/`.
 
 Collect every service:
 
@@ -145,7 +145,7 @@ Collect for a specific date:
 make collect SERVICE=hacker-news DATE=2026-06-07 COUNT=5
 ```
 
-Available service keys are exposed through `NewsSourceFactory.service_keys()`. The collector CLI prints a console summary and writes the same results to `data/raw/{YYYY-MM-DD}/summary.json` and `data/raw/{YYYY-MM-DD}/services/{service}.json`. This stage does not generate Markdown or build Docusaurus.
+Available service keys are exposed through `NewsSourceFactory.service_keys()`. The collector CLI prints a console summary and writes the same results to `.var/local/raw/{YYYY-MM-DD}/summary.json` and `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`. This stage does not generate Markdown or build Docusaurus.
 
 MVP services:
 
@@ -158,7 +158,7 @@ MVP services:
 Raw collection output:
 
 ```text
-data/raw/YYYY-MM-DD/
+.var/local/raw/YYYY-MM-DD/
 ├── summary.json
 └── services/
     ├── hacker-news.json

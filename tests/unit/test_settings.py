@@ -12,7 +12,7 @@ def test_settings_from_env_uses_defaults(monkeypatch) -> None:
 
     assert settings.openai_api_key is None
     assert settings.max_articles_per_service == 5
-    assert settings.trace_output_dir == Path("data/traces")
+    assert settings.trace_output_dir == Path(".var/local/traces")
 
 
 def test_settings_resolve_target_date_prefers_override(monkeypatch) -> None:

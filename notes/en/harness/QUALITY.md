@@ -21,15 +21,24 @@ make quality
 ## Artifacts
 
 ```text
-reports/
+.var/local/reports/
 └── junit.xml
 
-data/traces/YYYY-MM-DD/
+.var/local/traces/YYYY-MM-DD/
 ├── collection.json
 └── summary.md
 ```
 
-`reports/` and `data/traces/` are not committed to Git. GitHub Actions uploads them as artifacts.
+`.var/local/reports/` and `.var/local/traces/` are not committed to Git. GitHub Actions uploads them as artifacts.
+
+GitHub Actions artifacts are separated from local artifacts under `.artifacts/`.
+
+```text
+.artifacts/
+├── raw/
+├── reports/
+└── traces/
+```
 
 ## Current Metrics
 
