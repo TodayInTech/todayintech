@@ -5,6 +5,7 @@ from src.collection import NewsCollector, write_raw_collection_results
 from src.models import Article, ServiceCollectionResult
 from src.settings import SETTINGS
 from src.sources import NewsSourceFactory
+from src.tracing import write_collection_trace
 
 
 def build_parser(service_keys: tuple[str, ...]) -> argparse.ArgumentParser:
@@ -31,6 +32,10 @@ def build_parser(service_keys: tuple[str, ...]) -> argparse.ArgumentParser:
         type=int,
         default=3,
         help="Number of collected articles to print per service. Use 0 to hide previews.",
+    )
+    parser.add_argument(
+        "--trace-dir",
+        help="Optional trace output root. When set, writes collection trace JSON and Markdown.",
     )
     return parser
 
@@ -89,6 +94,8 @@ def main() -> None:
     collector = NewsCollector(source_factory)
     results = collect_results(collector, args.service)
     written_paths = write_raw_collection_results(output_dir, results)
+    if args.trace_dir:
+        written_paths.extend(write_collection_trace(Path(args.trace_dir), target_date, results))
 
     print_collection_report(results, written_paths, args.preview_limit)
 

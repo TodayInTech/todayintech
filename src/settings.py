@@ -33,6 +33,7 @@ class AppSettings:
     timezone: str
     output_dir: Path
     raw_output_dir: Path
+    trace_output_dir: Path
     max_articles_per_service: int
     target_date: str | None
     docusaurus_url: str
@@ -46,6 +47,7 @@ class AppSettings:
             timezone=os.getenv("TODAYINTECH_TIMEZONE", "Asia/Seoul"),
             output_dir=Path(os.getenv("TODAYINTECH_OUTPUT_DIR", "docs")),
             raw_output_dir=Path(os.getenv("TODAYINTECH_RAW_OUTPUT_DIR", "data/raw")),
+            trace_output_dir=Path(os.getenv("TODAYINTECH_TRACE_OUTPUT_DIR", "data/traces")),
             max_articles_per_service=_int_env(
                 "TODAYINTECH_MAX_ARTICLES_PER_SERVICE",
                 default=5,

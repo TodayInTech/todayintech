@@ -1,4 +1,5 @@
 from datetime import UTC, datetime
+from time import perf_counter
 
 from src.collection.factories.collector_strategy_factory import CollectorStrategyFactory
 from src.models import ServiceCollectionResult
@@ -26,10 +27,12 @@ class NewsCollector:
 
     def collect_source(self, source: BaseNewsSource) -> ServiceCollectionResult:
         collected_at = datetime.now(UTC)
+        started_at = perf_counter()
         try:
             strategy = self.strategy_factory.create(source.collector_type)
             articles = strategy.collect(source)
         except Exception as exc:
+            duration_ms = int((perf_counter() - started_at) * 1000)
             return ServiceCollectionResult(
                 service_key=source.service_key,
                 service_name=source.service_name,
@@ -37,8 +40,14 @@ class NewsCollector:
                 collection_method=source.collector_type,
                 collected_at=collected_at,
                 status="failed",
+                duration_ms=duration_ms,
                 error=str(exc),
             )
+
+        duration_ms = int((perf_counter() - started_at) * 1000)
+        warning_codes = []
+        if not articles:
+            warning_codes.append("empty_collection")
 
         return ServiceCollectionResult(
             service_key=source.service_key,
@@ -47,5 +56,7 @@ class NewsCollector:
             collection_method=source.collector_type,
             collected_at=collected_at,
             status="success",
+            duration_ms=duration_ms,
             articles=articles,
+            warning_codes=warning_codes,
         )

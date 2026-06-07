@@ -55,5 +55,7 @@ class ServiceCollectionResult(BaseModel):
     collection_method: str
     collected_at: datetime
     status: str
+    duration_ms: int = Field(ge=0)
     articles: list[Article] = Field(default_factory=list)
+    warning_codes: list[str] = Field(default_factory=list)
     error: str | None = None

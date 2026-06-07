@@ -35,6 +35,8 @@ build/
 
 # Generated collection artifacts
 data/raw/
+data/traces/
+reports/
 
 # Generated briefing artifacts
 docs/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/

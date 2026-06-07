@@ -59,6 +59,7 @@ cp .env.example .env
 - `TODAYINTECH_TIMEZONE`: 브리핑 기준 시간대
 - `TODAYINTECH_OUTPUT_DIR`: Markdown 생성 위치
 - `TODAYINTECH_RAW_OUTPUT_DIR`: 서비스별 수집 원본 JSON 저장 위치
+- `TODAYINTECH_TRACE_OUTPUT_DIR`: 운영 트레이싱 JSON/Markdown 저장 위치
 - `TODAYINTECH_MAX_ARTICLES_PER_SERVICE`: 서비스별 최대 기사 수
 - `TODAYINTECH_TARGET_DATE`: 재현 가능한 날짜 지정용 값
 - `DOCUSAURUS_URL`: 배포 사이트 URL
@@ -135,6 +136,23 @@ make build
 ```bash
 make check
 make verify
+```
+
+테스트와 운영 트레이스를 함께 실행합니다.
+
+```bash
+make quality
+```
+
+산출물:
+
+```text
+reports/
+└── junit.xml
+
+data/traces/YYYY-MM-DD/
+├── collection.json
+└── summary.md
 ```
 
 배포 워크플로를 GitHub Actions에서 수동 실행합니다.

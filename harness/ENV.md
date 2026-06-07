@@ -25,6 +25,7 @@
 | `TODAYINTECH_TIMEZONE` | `Asia/Seoul` | 선택 | `timezone` | 브리핑 기준 시간대 |
 | `TODAYINTECH_OUTPUT_DIR` | `docs` | 선택 | `output_dir` | 생성된 Markdown 브리핑 저장 루트 |
 | `TODAYINTECH_RAW_OUTPUT_DIR` | `data/raw` | 선택 | `raw_output_dir` | collector raw JSON 저장 루트 |
+| `TODAYINTECH_TRACE_OUTPUT_DIR` | `data/traces` | 선택 | `trace_output_dir` | 운영 트레이싱 JSON/Markdown 저장 루트 |
 | `TODAYINTECH_MAX_ARTICLES_PER_SERVICE` | `5` | 선택 | `max_articles_per_service` | Markdown 생성 시 서비스별 요약 대상 최대 기사 수. 최소값은 1 |
 
 ## Local 재현성 설정

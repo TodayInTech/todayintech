@@ -43,6 +43,22 @@ jobs:
       - name: Install Node dependencies
         run: npm install
 
+      - name: Run quality checks and operational trace
+        run: make quality
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TODAYINTECH_TARGET_DATE: ${{ inputs.target_date }}
+
+      - name: Upload quality artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quality-reports
+          path: |
+            reports/
+            data/traces/
+          if-no-files-found: ignore
+
       - name: Generate briefing
         run: make generate
         env:

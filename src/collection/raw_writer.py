@@ -31,6 +31,8 @@ def write_raw_collection_results(
                 "collection_method": result.collection_method,
                 "status": result.status,
                 "article_count": len(result.articles),
+                "duration_ms": result.duration_ms,
+                "warning_codes": result.warning_codes,
                 "error": result.error,
             }
         )
