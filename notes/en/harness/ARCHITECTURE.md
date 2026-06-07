@@ -130,13 +130,19 @@ The Collector stage must be independently executable and make service-level coll
 Collect every service:
 
 ```bash
-.venv/bin/python -m src.collection
+make collect
 ```
 
 Collect a single service:
 
 ```bash
-.venv/bin/python -m src.collection --service hacker-news --preview-limit 5
+make collect SERVICE=hacker-news COUNT=5
+```
+
+Collect for a specific date:
+
+```bash
+make collect SERVICE=hacker-news DATE=2026-06-07 COUNT=5
 ```
 
 Available service keys are exposed through `NewsSourceFactory.service_keys()`. The collector CLI prints a console summary and writes the same results to `data/raw/{YYYY-MM-DD}/summary.json` and `data/raw/{YYYY-MM-DD}/services/{service}.json`. This stage does not generate Markdown or build Docusaurus.
@@ -195,7 +201,7 @@ Docusaurus builds Markdown under `docs/` into a static site.
 Local build:
 
 ```bash
-npm run build
+make build
 ```
 
 Development server:
@@ -215,7 +221,15 @@ Workflow:
 3. Node 20 setup
 4. Python dependency install
 5. Node dependency install
-6. Briefing generation
-7. Docusaurus build
+6. Briefing generation through `make generate`
+7. Docusaurus build through `make build`
 8. GitHub Pages artifact upload
 9. GitHub Pages deploy
+
+Manual deployment:
+
+```bash
+make deploy
+make deploy DATE=2026-06-07
+make deploy-status
+```

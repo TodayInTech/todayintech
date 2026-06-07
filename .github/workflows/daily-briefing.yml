@@ -2,6 +2,11 @@ name: Daily Briefing
 
 on:
   workflow_dispatch:
+    inputs:
+      target_date:
+        description: "Optional briefing target date in YYYY-MM-DD format"
+        required: false
+        type: string
   schedule:
     # 22:00 UTC = 07:00 KST
     - cron: "0 22 * * *"
@@ -39,12 +44,13 @@ jobs:
         run: npm install
 
       - name: Generate briefing
-        run: python -m src.main
+        run: make generate
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TODAYINTECH_TARGET_DATE: ${{ inputs.target_date }}
 
       - name: Build Docusaurus
-        run: npm run build
+        run: make build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

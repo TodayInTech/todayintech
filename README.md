@@ -84,13 +84,19 @@ npm install
 Collector 단계만 실행하여 서비스별 수집 결과를 확인합니다.
 
 ```bash
-.venv/bin/python -m src.collection
+make collect
 ```
 
 특정 서비스만 확인할 수도 있습니다.
 
 ```bash
-.venv/bin/python -m src.collection --service hacker-news --preview-limit 5
+make collect SERVICE=hacker-news COUNT=5
+```
+
+날짜를 지정하려면 `DATE` 값을 함께 넘깁니다.
+
+```bash
+make collect SERVICE=hacker-news DATE=2026-06-07 COUNT=5
 ```
 
 실행 시 콘솔에는 서비스별 상태, 수집 개수, 기사 미리보기가 출력되고 각 서비스별 수집 결과가 JSON으로 저장됩니다.
@@ -121,7 +127,21 @@ npm run start -- --host 127.0.0.1 --port 3000
 정적 사이트 빌드를 검증합니다.
 
 ```bash
-npm run build
+make build
+```
+
+프로젝트 규칙을 검증합니다.
+
+```bash
+make check
+make verify
+```
+
+배포 워크플로를 GitHub Actions에서 수동 실행합니다.
+
+```bash
+make deploy
+make deploy DATE=2026-06-07
 ```
 
 ## 주요 디렉터리
@@ -146,11 +166,12 @@ src/
 2. Node 20 설정
 3. Python 의존성 설치
 4. Node 의존성 설치
-5. 브리핑 Markdown 생성
-6. Docusaurus 빌드
+5. `make generate`로 브리핑 Markdown 생성
+6. `make build`로 Docusaurus 빌드
 7. GitHub Pages 배포
 
 GitHub Actions에서 `OPENAI_API_KEY`는 repository secret으로 설정해야 합니다.
+수동 배포는 `workflow_dispatch`의 `target_date` 입력 또는 `make deploy DATE=YYYY-MM-DD`로 날짜를 지정할 수 있습니다.
 
 ## 현재 한계
 

@@ -9,7 +9,7 @@
 - 서비스 생성 등록 기준은 `src/sources/factory.py`에 둔다.
 - 수집 알고리즘 기준은 `src/collection/strategies/`에 둔다.
 - RSS를 지원하지 않는 서비스는 제3자 RSS를 사용하지 않고 공식 sitemap, 공식 API, HTML metadata 등 공식 출처 기반 strategy를 사용한다.
-- 수집 결과 확인은 `.venv/bin/python -m src.collection --service {service_key}`로 수행한다.
+- 수집 결과 확인은 `make collect SERVICE={service_key}`로 수행한다.
 
 ## 현재 지원 서비스
 

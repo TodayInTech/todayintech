@@ -9,7 +9,7 @@ When service implementations, collection conditions, or collector strategies cha
 - Service registration lives in `src/sources/factory.py`.
 - Collection algorithms live under `src/collection/strategies/`.
 - Services without RSS must not use third-party RSS feeds. Use official-source strategies such as official sitemap, official API, or HTML metadata collection.
-- Inspect collection results with `.venv/bin/python -m src.collection --service {service_key}`.
+- Inspect collection results with `make collect SERVICE={service_key}`.
 
 ## Currently Supported Services
 

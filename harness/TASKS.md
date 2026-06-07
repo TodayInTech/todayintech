@@ -32,6 +32,9 @@
   - [x] Sitemap collector 구현
   - [x] 서비스별 raw JSON 저장 구조 구성
   - [x] collector 단독 실행 CLI 구성
+  - [x] Makefile 기반 collector 실행 명령 구성
+  - [x] Makefile 기반 lint, format, build, verify 명령 구성
+  - [x] Makefile 기반 GitHub Actions 수동 배포 트리거 구성
   - [x] 서비스별 수집 조건 문서화
   - [ ] `seen.json` 기반 영속 deduplication 구현
   - [ ] collector 테스트 구현

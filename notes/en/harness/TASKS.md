@@ -32,6 +32,9 @@ The project has completed `Project Init` and is currently working on the `Collec
   - [x] Sitemap collector implementation
   - [x] Service-level raw JSON output structure
   - [x] Standalone collector CLI
+  - [x] Makefile-based collector command
+  - [x] Makefile-based lint, format, build, and verify commands
+  - [x] Makefile-based manual GitHub Actions deployment trigger
   - [x] Service-level collection condition documentation
   - [ ] Persistent deduplication through `seen.json`
   - [ ] Collector tests

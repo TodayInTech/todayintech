@@ -84,8 +84,8 @@ The agent must not rewrite full articles, invent unsupported facts, include ever
 
 Each stage must remain independently executable for development and debugging.
 
-- Run the Collector stage with `.venv/bin/python -m src.collection`.
-- Inspect one service with `.venv/bin/python -m src.collection --service {service_key}`.
+- Run the Collector stage with `make collect`.
+- Inspect one service with `make collect SERVICE={service_key}`.
 - The Collector stage only writes `data/raw/{YYYY-MM-DD}/summary.json` and `data/raw/{YYYY-MM-DD}/services/{service}.json`; it does not generate Markdown or build Docusaurus.
 - Run the full pipeline with `.venv/bin/python -m src.main`.
 - Future Processing and Generator stages should also expose independent entrypoints.

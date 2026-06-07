@@ -27,8 +27,10 @@ Docusaurus uses the `docs/` directory as the documentation root. The Python pipe
 ## Automation
 
 - GitHub Actions
+- Makefile
 
 The workflow lives in `.github/workflows/daily-briefing.yml`.
+Local execution, rule checks, builds, and manual GitHub Actions deployment triggers are managed by the root `Makefile`.
 
 ## Storage
 

@@ -214,8 +214,8 @@ News Editor Agent는 뉴스레터 편집자 역할을 수행한다.
 
 각 단계는 지속적인 개발과 디버깅을 위해 독립 실행 가능해야 한다.
 
-- Collector 단계는 `.venv/bin/python -m src.collection`로 실행한다.
-- 특정 서비스 수집은 `.venv/bin/python -m src.collection --service {service_key}`로 확인한다.
+- Collector 단계는 `make collect`로 실행한다.
+- 특정 서비스 수집은 `make collect SERVICE={service_key}`로 확인한다.
 - Collector 단계는 `data/raw/{YYYY-MM-DD}/summary.json`과 `data/raw/{YYYY-MM-DD}/services/{service}.json`만 생성하고 Markdown 생성이나 Docusaurus 빌드를 수행하지 않는다.
 - 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행한다.
 - 이후 Processing, Generator 단계도 독립 실행 엔트리포인트를 제공하는 방향으로 확장한다.

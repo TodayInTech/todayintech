@@ -27,8 +27,10 @@ Docusaurus는 `docs/` 디렉터리를 문서 루트로 사용한다. 브리핑 M
 ## Automation
 
 - GitHub Actions
+- Makefile
 
 워크플로는 `.github/workflows/daily-briefing.yml`에 둔다.
+로컬 실행, 규칙 검증, 빌드, GitHub Actions 수동 배포 트리거는 루트 `Makefile`에서 관리한다.
 
 ## Storage
 
