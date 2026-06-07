@@ -86,3 +86,4 @@ The default checkout path is `.var/remote/tracing-history`.
 - `make trace-collect` calls real external sources and is for operational tracing.
 - Trace duration is not used as a strict pass/fail condition because external network conditions can affect it.
 - A service with zero articles records an `empty_collection` warning.
+- GitHub Actions installs dev dependencies and sets `PYTHON=python` so CI does not depend on the local `.venv` path.
