@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-07T09:34:44.434794+00:00",
+  "generated_at": "2026-06-07T09:38:07.384034+00:00",
   "generated_for": "2026-06-07",
   "stage": "collection",
-  "status": "failed",
-  "git_sha": "a46784f4989258368e63fc39c0acdec618e54080",
-  "github_run_id": "27088725005",
+  "status": "success",
+  "git_sha": "1e75720f915a8aa646058e681b8e6e0b69309efa",
+  "github_run_id": "27088804187",
   "service_count": 5,
-  "failed_service_count": 1,
+  "failed_service_count": 0,
   "warning_count": 0,
-  "total_article_count": 1042,
-  "duration_ms": 85098,
+  "total_article_count": 1062,
+  "duration_ms": 62830,
   "services": [
     {
       "service_key": "hacker-news",
@@ -17,8 +17,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 456,
-      "avg_article_duration_ms": 22.8,
+      "duration_ms": 1257,
+      "avg_article_duration_ms": 62.85,
       "warning_codes": [],
       "error": null
     },
@@ -28,8 +28,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 10,
-      "duration_ms": 139,
-      "avg_article_duration_ms": 13.9,
+      "duration_ms": 114,
+      "avg_article_duration_ms": 11.4,
       "warning_codes": [],
       "error": null
     },
@@ -39,8 +39,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 388,
-      "avg_article_duration_ms": 19.4,
+      "duration_ms": 269,
+      "avg_article_duration_ms": 13.45,
       "warning_codes": [],
       "error": null
     },
@@ -50,8 +50,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 992,
-      "duration_ms": 591,
-      "avg_article_duration_ms": 0.6,
+      "duration_ms": 727,
+      "avg_article_duration_ms": 0.73,
       "warning_codes": [],
       "error": null
     },
@@ -59,12 +59,12 @@
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
       "strategy": "sitemap",
-      "status": "failed",
-      "article_count": 0,
-      "duration_ms": 83524,
-      "avg_article_duration_ms": null,
+      "status": "success",
+      "article_count": 20,
+      "duration_ms": 60463,
+      "avg_article_duration_ms": 3023.15,
       "warning_codes": [],
-      "error": "Server error '502 Bad Gateway' for url 'https://www.anthropic.com/news/claude-opus-4-7'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502"
+      "error": null
     }
   ]
 }
