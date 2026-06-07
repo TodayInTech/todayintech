@@ -84,6 +84,10 @@ def print_collection_report(
         print(f"- {path}")
 
 
+def should_fail_collection(results: list[ServiceCollectionResult]) -> bool:
+    return bool(results) and all(result.status == "failed" for result in results)
+
+
 def main() -> None:
     source_factory = NewsSourceFactory()
     parser = build_parser(source_factory.service_keys())
@@ -99,7 +103,7 @@ def main() -> None:
 
     print_collection_report(results, written_paths, args.preview_limit)
 
-    if any(result.status == "failed" for result in results):
+    if should_fail_collection(results):
         raise SystemExit(1)
 
 

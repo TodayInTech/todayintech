@@ -86,4 +86,6 @@ make fetch-trace-history
 - `make trace-collect`는 실제 외부 source를 호출하므로 운영 트레이싱 용도이다.
 - 외부 네트워크 영향이 있으므로 trace duration은 강한 pass/fail 조건으로 사용하지 않는다.
 - 서비스별 article count가 0이면 `empty_collection` warning을 기록한다.
+- 일부 서비스 수집 실패는 trace에 기록하되, 성공한 서비스가 하나라도 있으면 collector CLI는 성공으로 종료한다.
+- 모든 서비스 수집이 실패하면 collector CLI는 실패로 종료한다.
 - GitHub Actions에서는 dev 의존성을 설치하고 `PYTHON=python`을 명시해서 로컬 `.venv` 경로에 의존하지 않는다.
