@@ -5,11 +5,11 @@
 Today in Tech separates collection, processing, generation, build, and deployment. Each stage should be independently testable, and adding a service must not require changing the whole pipeline.
 
 ```text
-RSS/Atom Sources
+Official Sources
     ↓
 Service Factory
     ↓
-Service-specific Collector
+Service-specific Collector Strategy
     ↓
 Normalize Articles
     ↓
@@ -34,15 +34,26 @@ GitHub Pages Deployment
 
 ```text
 src/
-├── services/
-│   ├── base.py
+├── sources/
+│   ├── contracts/
+│   │   └── base.py
 │   ├── factory.py
-│   ├── rss_service.py
-│   ├── hacker_news.py
-│   ├── github_blog.py
-│   ├── google_blog.py
-│   ├── openai_blog.py
-│   └── anthropic_blog.py
+│   └── implementations/
+│       ├── hacker_news.py
+│       ├── github_blog.py
+│       ├── google_blog.py
+│       ├── openai_blog.py
+│       └── anthropic_blog.py
+├── collection/
+│   ├── __main__.py
+│   ├── news_collector.py
+│   ├── raw_writer.py
+│   ├── factories/
+│   │   └── collector_strategy_factory.py
+│   └── strategies/
+│       ├── base.py
+│       ├── rss.py
+│       └── sitemap.py
 ├── processing/
 │   ├── deduplicator.py
 │   ├── classifier.py
@@ -58,14 +69,20 @@ src/
 
 ## Service Extension Structure
 
-Service implementations follow Factory Method and Abstract Factory patterns.
+Service creation follows Factory Method and Abstract Factory patterns. Collection algorithms are separated through the Strategy pattern.
 
-- `BaseNewsService`: common interface for every news service implementation
-- `RssNewsService`: default implementation for RSS/Atom services
-- `NewsServiceFactory`: creates concrete services by service key
-- `AbstractNewsServiceFactory`: abstract factory for future service family expansion
+- Product and documentation language uses `service` for the briefing unit exposed to users.
+- Code uses `source` for external collection targets and `collection` for the execution layer.
+- `BaseNewsSource`: service metadata and collector configuration interface
+- `BaseCollectorStrategy`: collection algorithm interface
+- `RssCollector`: RSS/Atom collection strategy
+- `SitemapCollector`: sitemap + page metadata collection strategy
+- `CollectorStrategyFactory`: creates collector strategies by `collector_type`
+- `NewsSourceFactory`: creates concrete services by service key
+- `AbstractNewsSourceFactory`: abstract factory for future service family expansion
 
-When adding a new service, do not modify the existing pipeline. Add an implementation under `src/services/` and register it in the factory registry.
+When adding a new service, do not modify the existing pipeline. Add service metadata under `src/sources/implementations/` and register it in the factory registry.
+Services without RSS must not rely on third-party RSS feeds. Choose or add an appropriate collector strategy such as official sitemap, official API, or HTML metadata collection.
 
 ## Generated Document Structure
 
@@ -101,12 +118,28 @@ Deploy
 
 ## Collector
 
-The Collector stage is handled by service implementations.
+The Collector stage must be independently executable and make service-level collection results easy to inspect.
 
-1. `NewsServiceFactory` creates MVP service implementations.
-2. Each service implementation collects RSS/Atom feeds.
+1. `NewsCollector` creates MVP service implementations through `NewsSourceFactory`.
+2. Each service implementation collects information through its own collector strategy, such as RSS/Atom, sitemap, or official API.
 3. Feed entries are normalized into the shared `Article` model.
-4. URL, title, publication date, source, summary, and tags are preserved where possible.
+4. Service-level collection results are wrapped as `ServiceCollectionResult`.
+5. URL, title, publication date, source, summary, and tags are preserved where possible.
+6. Collection results are stored as JSON under `data/raw/{YYYY-MM-DD}/`.
+
+Collect every service:
+
+```bash
+.venv/bin/python -m src.collection
+```
+
+Collect a single service:
+
+```bash
+.venv/bin/python -m src.collection --service hacker-news --preview-limit 5
+```
+
+Available service keys are exposed through `NewsSourceFactory.service_keys()`. The collector CLI prints a console summary and writes the same results to `data/raw/{YYYY-MM-DD}/summary.json` and `data/raw/{YYYY-MM-DD}/services/{service}.json`. This stage does not generate Markdown or build Docusaurus.
 
 MVP services:
 
@@ -115,6 +148,19 @@ MVP services:
 - Google Blog
 - OpenAI Blog
 - Anthropic Blog
+
+Raw collection output:
+
+```text
+data/raw/YYYY-MM-DD/
+├── summary.json
+└── services/
+    ├── hacker-news.json
+    ├── github-blog.json
+    ├── google-blog.json
+    ├── openai-blog.json
+    └── anthropic-blog.json
+```
 
 ## Processing
 

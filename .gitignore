@@ -5,6 +5,12 @@ build/
 dist/
 wheels/
 *.egg-info
+.pytest_cache/
+.mypy_cache/
+.pyright/
+htmlcov/
+.coverage
+coverage.xml
 
 # Virtual environments
 .venv
@@ -19,6 +25,19 @@ node_modules/
 .docusaurus/
 .cache/
 .playwright-mcp/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # Static build output
 build/
+
+# Generated collection artifacts
+data/raw/
+
+# Generated briefing artifacts
+docs/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/
+
+# OS/editor local files
+.DS_Store

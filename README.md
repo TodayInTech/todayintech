@@ -2,7 +2,7 @@
 
 Today in Tech는 기술 뉴스 RSS/Atom 피드를 수집하고, AI 기반 News Editor Agent가 중요한 뉴스를 선별해 Docusaurus 문서 사이트로 배포하는 기술 뉴스 브리핑 플랫폼입니다.
 
-현재 저장소는 MVP 기본 구조 단계입니다. RSS 수집, 서비스별 Markdown 생성, 전체 요약 Markdown 생성, Docusaurus 빌드 흐름이 잡혀 있으며, LLM 기반 중요도 평가와 요약은 이후 구현 예정입니다.
+현재 저장소는 MVP 기본 구조 단계입니다. 서비스별 정보 수집, 서비스별 Markdown 생성, 전체 요약 Markdown 생성, Docusaurus 빌드 흐름이 잡혀 있으며, LLM 기반 중요도 평가와 요약은 이후 구현 예정입니다.
 
 ## 확정 스택
 
@@ -21,7 +21,7 @@ Today in Tech는 기술 뉴스 RSS/Atom 피드를 수집하고, AI 기반 News E
 - OpenAI Blog
 - Anthropic Blog
 
-서비스 구현은 `Factory Method + Abstract Factory` 구조를 따릅니다. 신규 서비스는 `src/services/`에 구현체를 추가하고 factory registry에 등록하는 방식으로 확장합니다.
+서비스 생성은 `Factory Method + Abstract Factory` 구조를 따르고, 수집 알고리즘은 `Strategy` 패턴으로 분리합니다. 신규 서비스는 `src/sources/implementations/`에 메타데이터 구현체를 추가하고 factory registry에 등록하는 방식으로 확장합니다. RSS를 지원하지 않는 서비스는 공식 sitemap, 공식 API, HTML metadata 등 적절한 collector strategy를 선택하거나 추가합니다.
 
 ## 문서 생성 구조
 
@@ -57,6 +57,7 @@ cp .env.example .env
 - `OPENAI_MODEL`: 사용할 OpenAI 모델명
 - `TODAYINTECH_TIMEZONE`: 브리핑 기준 시간대
 - `TODAYINTECH_OUTPUT_DIR`: Markdown 생성 위치
+- `TODAYINTECH_RAW_OUTPUT_DIR`: 서비스별 수집 원본 JSON 저장 위치
 - `TODAYINTECH_MAX_ARTICLES_PER_SERVICE`: 서비스별 최대 기사 수
 - `TODAYINTECH_TARGET_DATE`: 재현 가능한 날짜 지정용 값
 - `DOCUSAURUS_URL`: 배포 사이트 URL
@@ -79,7 +80,32 @@ Docusaurus 의존성을 설치합니다.
 npm install
 ```
 
-RSS를 수집하고 날짜별 브리핑 Markdown을 생성합니다.
+Collector 단계만 실행하여 서비스별 수집 결과를 확인합니다.
+
+```bash
+.venv/bin/python -m src.collection
+```
+
+특정 서비스만 확인할 수도 있습니다.
+
+```bash
+.venv/bin/python -m src.collection --service hacker-news --preview-limit 5
+```
+
+실행 시 콘솔에는 서비스별 상태, 수집 개수, 기사 미리보기가 출력되고 각 서비스별 수집 결과가 JSON으로 저장됩니다.
+
+```text
+data/raw/YYYY-MM-DD/
+├── summary.json
+└── services/
+    ├── hacker-news.json
+    ├── github-blog.json
+    ├── google-blog.json
+    ├── openai-blog.json
+    └── anthropic-blog.json
+```
+
+전체 파이프라인을 실행하여 수집 결과와 날짜별 브리핑 Markdown을 함께 생성합니다.
 
 ```bash
 .venv/bin/python -m src.main
@@ -101,7 +127,8 @@ npm run build
 
 ```text
 src/
-├── services/      # RSS 서비스 구현체와 factory
+├── sources/       # 외부 수집 대상 계약, 구현체와 source factory
+├── collection/    # 수집 오케스트레이션, collector strategy와 raw writer
 ├── processing/    # 중복 제거, 분류, 점수화, 요약
 ├── generator/     # Markdown 생성기
 ├── models/        # Pydantic 데이터 모델

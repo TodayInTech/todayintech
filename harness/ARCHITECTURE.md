@@ -5,11 +5,11 @@
 Today in Tech는 수집, 처리, 생성, 빌드, 배포 단계를 분리한다. 각 단계는 독립적으로 테스트 가능해야 하며, 서비스 추가가 전체 파이프라인 수정으로 이어지지 않도록 설계한다.
 
 ```text
-RSS/Atom Sources
+Official Sources
     ↓
 Service Factory
     ↓
-Service-specific Collector
+Service-specific Collector Strategy
     ↓
 Normalize Articles
     ↓
@@ -34,15 +34,26 @@ GitHub Pages Deployment
 
 ```text
 src/
-├── services/
-│   ├── base.py
+├── sources/
+│   ├── contracts/
+│   │   └── base.py
 │   ├── factory.py
-│   ├── rss_service.py
-│   ├── hacker_news.py
-│   ├── github_blog.py
-│   ├── google_blog.py
-│   ├── openai_blog.py
-│   └── anthropic_blog.py
+│   └── implementations/
+│       ├── hacker_news.py
+│       ├── github_blog.py
+│       ├── google_blog.py
+│       ├── openai_blog.py
+│       └── anthropic_blog.py
+├── collection/
+│   ├── __main__.py
+│   ├── news_collector.py
+│   ├── raw_writer.py
+│   ├── factories/
+│   │   └── collector_strategy_factory.py
+│   └── strategies/
+│       ├── base.py
+│       ├── rss.py
+│       └── sitemap.py
 ├── processing/
 │   ├── deduplicator.py
 │   ├── classifier.py
@@ -58,14 +69,20 @@ src/
 
 ## 서비스 확장 구조
 
-서비스 구현은 Factory Method와 Abstract Factory를 따른다.
+서비스 생성은 Factory Method와 Abstract Factory를 따르고, 수집 알고리즘은 Strategy 패턴으로 분리한다.
 
-- `BaseNewsService`: 모든 뉴스 서비스 구현체가 따라야 하는 공통 인터페이스
-- `RssNewsService`: 일반 RSS/Atom 기반 서비스의 기본 구현
-- `NewsServiceFactory`: 서비스 키를 기준으로 구체 서비스 구현체 생성
-- `AbstractNewsServiceFactory`: 서비스 제품군 확장을 위한 추상 팩토리
+- 제품과 문서에서는 사용자에게 노출되는 브리핑 단위를 `service`라고 부른다.
+- 코드에서는 외부 수집 대상을 `source`, 수집 실행 계층을 `collection`으로 구분한다.
+- `BaseNewsSource`: 서비스 메타데이터와 collector 설정 인터페이스
+- `BaseCollectorStrategy`: 수집 알고리즘 인터페이스
+- `RssCollector`: RSS/Atom 수집 strategy
+- `SitemapCollector`: sitemap + page metadata 수집 strategy
+- `CollectorStrategyFactory`: `collector_type`에 맞는 collector strategy 생성
+- `NewsSourceFactory`: 서비스 키를 기준으로 구체 서비스 구현체 생성
+- `AbstractNewsSourceFactory`: 서비스 제품군 확장을 위한 추상 팩토리
 
-신규 서비스를 추가할 때는 기존 파이프라인을 수정하지 않는다. `src/services/`에 구현체를 추가하고 factory registry에 등록한다.
+신규 서비스를 추가할 때는 기존 파이프라인을 수정하지 않는다. `src/sources/implementations/`에 서비스 메타데이터 구현체를 추가하고 factory registry에 등록한다.
+RSS를 지원하지 않는 서비스는 제3자 RSS에 의존하지 않고 공식 sitemap, 공식 API, HTML metadata 등 적절한 collector strategy를 선택하거나 추가한다.
 
 ## 문서 생성 구조
 
@@ -101,12 +118,28 @@ Deploy
 
 ## Collector
 
-Collector 단계는 서비스 구현체가 담당한다.
+Collector 단계는 독립 실행 가능해야 하며, 각 서비스별 수집 상태와 원본 JSON을 확인할 수 있어야 한다.
 
-1. `NewsServiceFactory`가 MVP 서비스 구현체를 생성한다.
-2. 각 서비스 구현체가 RSS/Atom 피드를 수집한다.
+1. `NewsCollector`가 `NewsSourceFactory`를 통해 MVP 서비스 구현체를 생성한다.
+2. 각 서비스 구현체가 RSS/Atom, sitemap, 공식 API 등 자기 collector strategy로 정보를 수집한다.
 3. 피드 항목을 공통 `Article` 모델로 정규화한다.
-4. URL, 제목, 발행일, 출처, 요약, 태그를 최대한 보존한다.
+4. 서비스별 수집 결과를 `ServiceCollectionResult`로 묶는다.
+5. URL, 제목, 발행일, 출처, 요약, 태그를 최대한 보존한다.
+6. 수집 결과를 `data/raw/{YYYY-MM-DD}/` 아래에 JSON으로 저장한다.
+
+전체 서비스 수집:
+
+```bash
+.venv/bin/python -m src.collection
+```
+
+단일 서비스 수집:
+
+```bash
+.venv/bin/python -m src.collection --service hacker-news --preview-limit 5
+```
+
+사용 가능한 서비스 키는 `NewsSourceFactory.service_keys()`가 제공한다. collector CLI는 실행 결과를 콘솔에 요약하고, 같은 결과를 `data/raw/{YYYY-MM-DD}/summary.json`과 `data/raw/{YYYY-MM-DD}/services/{service}.json`에 저장한다. 이 단계는 Markdown 생성이나 Docusaurus 빌드를 수행하지 않는다.
 
 MVP 대상 서비스:
 
@@ -115,6 +148,19 @@ MVP 대상 서비스:
 - Google Blog
 - OpenAI Blog
 - Anthropic Blog
+
+Raw 수집 산출물:
+
+```text
+data/raw/YYYY-MM-DD/
+├── summary.json
+└── services/
+    ├── hacker-news.json
+    ├── github-blog.json
+    ├── google-blog.json
+    ├── openai-blog.json
+    └── anthropic-blog.json
+```
 
 ## Processing
 

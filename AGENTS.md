@@ -83,26 +83,40 @@ notes/
 
 ## 서비스 확장 설계
 
-서비스 구현은 Factory Method와 Abstract Factory를 사용한다.
+서비스 생성은 Factory Method와 Abstract Factory를 사용하고, 수집 알고리즘은 Strategy 패턴으로 분리한다.
 
 목표:
 
-- RSS URL, 파싱 방식, 정규화 규칙을 서비스 구현체에 캡슐화한다.
+- 서비스 구현체에는 서비스 메타데이터와 collector 설정만 둔다.
+- RSS, sitemap, API 등 수집 알고리즘은 collector strategy에 둔다.
 - 파이프라인은 구체 서비스명을 직접 알지 않도록 한다.
 - 신규 서비스 추가 시 기존 파이프라인 코드를 수정하지 않고 factory 등록만으로 확장 가능해야 한다.
+- RSS를 지원하지 않는 서비스는 공식 sitemap, 공식 API, HTML metadata 등 서비스별 collector strategy를 구현한다.
 
 권장 구조:
 
 ```text
 src/
-├── services/
-│   ├── base.py
+├── sources/
+│   ├── contracts/
+│   │   └── base.py
 │   ├── factory.py
-│   ├── hacker_news.py
-│   ├── github_blog.py
-│   ├── google_blog.py
-│   ├── openai_blog.py
-│   └── anthropic_blog.py
+│   └── implementations/
+│       ├── hacker_news.py
+│       ├── github_blog.py
+│       ├── google_blog.py
+│       ├── openai_blog.py
+│       └── anthropic_blog.py
+├── collection/
+│   ├── __main__.py
+│   ├── news_collector.py
+│   ├── raw_writer.py
+│   ├── factories/
+│   │   └── collector_strategy_factory.py
+│   └── strategies/
+│       ├── base.py
+│       ├── rss.py
+│       └── sitemap.py
 ├── processing/
 │   ├── deduplicator.py
 │   ├── classifier.py
@@ -118,11 +132,17 @@ src/
 
 설계 규칙:
 
-- `BaseNewsService`는 수집, 정규화, 서비스 메타데이터 인터페이스를 정의한다.
-- `NewsServiceFactory`는 서비스 키를 받아 구체 서비스 구현체를 생성한다.
-- `AbstractNewsServiceFactory`는 서비스 제품군 확장을 위한 추상 팩토리 역할을 한다.
-- 파이프라인은 `BaseNewsService` 인터페이스에만 의존한다.
-- 서비스별 예외 처리는 각 서비스 클래스 내부에 둔다.
+- 제품과 문서에서는 사용자에게 노출되는 브리핑 단위를 `service`라고 부른다.
+- 코드에서는 외부 수집 대상을 `source`, 수집 실행 계층을 `collection`으로 구분한다.
+- `BaseNewsSource`는 서비스 메타데이터와 collector 설정 인터페이스를 정의한다.
+- `BaseCollectorStrategy`는 수집 알고리즘 인터페이스를 정의한다.
+- `RssCollector`는 RSS/Atom 수집 strategy를 제공한다.
+- `SitemapCollector`는 sitemap + page metadata 수집 strategy를 제공한다.
+- `CollectorStrategyFactory`는 서비스의 `collector_type`에 맞는 collector strategy를 생성한다.
+- `NewsSourceFactory`는 서비스 키를 받아 구체 서비스 구현체를 생성한다.
+- `AbstractNewsSourceFactory`는 서비스 제품군 확장을 위한 추상 팩토리 역할을 한다.
+- 파이프라인은 `BaseNewsSource` 인터페이스에만 의존한다.
+- source별 예외 처리는 가능한 경우 source 또는 collector strategy 경계에서 처리한다.
 
 ## 문서 생성 규칙
 
@@ -192,16 +212,25 @@ News Editor Agent는 뉴스레터 편집자 역할을 수행한다.
 
 ## 처리 워크플로
 
+각 단계는 지속적인 개발과 디버깅을 위해 독립 실행 가능해야 한다.
+
+- Collector 단계는 `.venv/bin/python -m src.collection`로 실행한다.
+- 특정 서비스 수집은 `.venv/bin/python -m src.collection --service {service_key}`로 확인한다.
+- Collector 단계는 `data/raw/{YYYY-MM-DD}/summary.json`과 `data/raw/{YYYY-MM-DD}/services/{service}.json`만 생성하고 Markdown 생성이나 Docusaurus 빌드를 수행하지 않는다.
+- 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행한다.
+- 이후 Processing, Generator 단계도 독립 실행 엔트리포인트를 제공하는 방향으로 확장한다.
+
 1. Factory가 MVP 서비스 구현체를 생성한다.
-2. 각 서비스 구현체가 RSS/Atom 피드를 수집한다.
+2. `NewsCollector`가 각 서비스 구현체의 collector strategy로 정보를 수집한다.
 3. 수집 데이터를 공통 `Article` 모델로 정규화한다.
-4. `seen.json`과 URL canonicalization으로 중복을 제거한다.
-5. Agent가 중요도 점수와 카테고리를 산출한다.
-6. 서비스별 Top News를 요약한다.
-7. `docs/{YYYY-MM-DD}/services/{service}.md`를 생성한다.
-8. 모든 서비스 결과를 모아 `docs/{YYYY-MM-DD}/summary.md`를 생성한다.
-9. Docusaurus를 빌드한다.
-10. GitHub Actions가 GitHub Pages에 배포한다.
+4. 서비스별 수집 결과를 `data/raw/{YYYY-MM-DD}/services/{service}.json`에 저장한다.
+5. `seen.json`과 URL canonicalization으로 중복을 제거한다.
+6. Agent가 중요도 점수와 카테고리를 산출한다.
+7. 서비스별 Top News를 요약한다.
+8. `docs/{YYYY-MM-DD}/services/{service}.md`를 생성한다.
+9. 모든 서비스 결과를 모아 `docs/{YYYY-MM-DD}/summary.md`를 생성한다.
+10. Docusaurus를 빌드한다.
+11. GitHub Actions가 GitHub Pages에 배포한다.
 
 ## 오류 처리 원칙
 
@@ -223,5 +252,7 @@ News Editor Agent는 뉴스레터 편집자 역할을 수행한다.
 - 영어 AGENTS 문서 경로는 `notes/en/AGENTS.md`이다.
 - 영어 하네스 문서 경로는 `notes/en/harness/`이다.
 - 한국어 하네스 문서를 수정하면 대응하는 `notes/en/harness/*.md`도 함께 수정한다.
+- 작업 상태가 바뀌면 `harness/TASKS.md`와 `notes/en/harness/TASKS.md`를 함께 업데이트한다.
+- 서비스 수집 방식이나 수집 조건이 바뀌면 `harness/service/SERVICES.md`와 `notes/en/harness/service/SERVICES.md`를 함께 업데이트한다.
 - 자동 생성 문서와 사람이 작성한 설계 문서를 명확히 구분한다.
 - 브리핑 품질은 수집량보다 선별 품질을 우선한다.

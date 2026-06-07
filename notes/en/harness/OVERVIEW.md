@@ -34,3 +34,14 @@ High-quality LLM-based summarization and importance scoring will be strengthened
 - Root documents and harness documents are written in Korean by default.
 - English documents are maintained under `notes/en/`.
 - Automatically generated briefings use Korean as the default output language.
+
+## Harness Tracking Documents
+
+- `notes/en/harness/TASKS.md`: tracks project stages and complete/in-progress checklists.
+- `notes/en/harness/service/SERVICES.md`: tracks currently supported services, collection methods, and collection scopes.
+- `notes/en/harness/ARCHITECTURE.md`: explains the overall architecture and stage flow.
+- `notes/en/harness/TECH_STACK.md`: explains the confirmed technology stack and operating standards.
+- `notes/en/harness/COMMIT_MESSAGE.md`: defines commit message rules.
+
+When service implementations or collector strategies change, check and update `notes/en/harness/service/SERVICES.md` at the same time.
+When implementation status changes, update the checklist status in `notes/en/harness/TASKS.md`.

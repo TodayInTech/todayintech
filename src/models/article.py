@@ -46,3 +46,14 @@ class BriefingBundle(BaseModel):
     generated_for: str
     service_briefings: list[ServiceBriefing] = Field(default_factory=list)
     insight_ko: str = ""
+
+
+class ServiceCollectionResult(BaseModel):
+    service_key: str
+    service_name: str
+    source_url: str
+    collection_method: str
+    collected_at: datetime
+    status: str
+    articles: list[Article] = Field(default_factory=list)
+    error: str | None = None

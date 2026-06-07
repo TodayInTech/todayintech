@@ -1,4 +1,11 @@
-from .article import Article, ArticleSummary, BriefingBundle, NewsCategory, ServiceBriefing
+from .article import (
+    Article,
+    ArticleSummary,
+    BriefingBundle,
+    NewsCategory,
+    ServiceBriefing,
+    ServiceCollectionResult,
+)
 
 __all__ = [
     "Article",
@@ -6,4 +13,5 @@ __all__ = [
     "BriefingBundle",
     "NewsCategory",
     "ServiceBriefing",
+    "ServiceCollectionResult",
 ]

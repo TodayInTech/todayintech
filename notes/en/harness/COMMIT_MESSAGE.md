@@ -35,8 +35,8 @@ feat(service): Google Blog RSS 서비스 추가
 - 서비스별 브리핑 생성 경로와 연결되는 service_key를 정의한다.
 
 ## 영향 받은 파일
-- src/services/google_blog.py
-- src/services/factory.py
+- src/sources/implementations/google_blog.py
+- src/sources/factory.py
 - harness/ARCHITECTURE.md
 ```
 
