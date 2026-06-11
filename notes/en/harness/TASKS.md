@@ -12,7 +12,7 @@ Update it continuously when feature implementation, documentation structure, col
 
 ## Current Stage
 
-The project has completed `Project Init` and `Collector`, and is now updating the specification from dated daily briefings to an article-level cumulative curation archive.
+The project has completed the `Project Init`, `Collector`, and `Preprocessor` stages. The product direction has changed from dated daily briefings to an article-level cumulative curation archive.
 
 ## Work Checklist
 
@@ -40,16 +40,20 @@ The project has completed `Project Init` and `Collector`, and is now updating th
   - [x] Service-level collection condition documentation
   - [x] Basic collector contract tests
   - [x] Daily snapshot collection policy documented
-  - [ ] RSS collector support for `collection_limit` / `lookback_days` source settings
-  - [ ] Hacker News points/comments/rank metadata extraction
+  - [x] RSS collector support for `collection_limit` / `lookback_days` source settings
+  - [x] Hacker News points/comments/rank metadata extraction
 
-- [ ] Preprocessor - next
-  - URL canonicalization
-  - Required field validation
-  - Run-level URL/title fingerprint deduplication
-  - Exclude already published articles through `briefed_articles`
-  - Candidate ranking and agent input limiting
-  - Preprocessing trace output
+- [x] Preprocessor - complete
+  - [x] URL canonicalization
+  - [x] Required field validation
+  - [x] Run-level URL/title fingerprint deduplication
+  - [x] Exclude already published articles through `briefed_articles`
+  - [x] Candidate ranking and agent input limiting
+  - [x] Preprocessing trace output
+  - [x] Standalone Preprocessor CLI
+  - [x] Makefile-based preprocessor command
+  - [x] Connect the Preprocessor stage after the Collector stage in `src.main`
+  - [ ] Connect Generator publication completion to `briefed_articles` state updates
 
 - [ ] News Editor Agent - pending
   - Select new candidate articles
@@ -70,7 +74,5 @@ The project has completed `Project Init` and `Collector`, and is now updating th
 
 ## Next Work Candidates
 
-- Implement RSS collector source scope limits
-- Design the `briefed_articles` state model
-- Add Preprocessor entrypoint and trace artifacts
+- Connect Generator publication completion to `briefed_articles` state updates
 - Convert dated generator output into article archive output

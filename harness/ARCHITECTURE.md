@@ -198,6 +198,24 @@ Preprocessor 단계는 수집된 snapshot을 Agent 입력 후보로 정리한다
 7. 전처리 trace를 생성한다.
 
 현재 스캐폴딩은 휴리스틱 기반이다. LLM 기반 News Editor Agent는 전처리된 신규 후보만 받는다.
+`src.main`의 전체 파이프라인은 Collector 실행 직후 Preprocessor를 실행하고, 전처리 결과를 `.var/local/processed/{YYYY-MM-DD}/preprocessing.json`에 저장한다.
+
+전처리 실행:
+
+```bash
+make preprocess
+make preprocess DATE=2026-06-07
+make preprocess RAW_DIR=.var/local/raw PROCESSED_DIR=.var/local/processed
+```
+
+전처리 산출물:
+
+```text
+.var/local/processed/YYYY-MM-DD/
+└── preprocessing.json
+```
+
+전처리는 `Pipeline + Strategy + Repository` 조합으로 구성한다. `NewsPreprocessor`는 단계별 `PreprocessingStep`을 순서대로 실행하고, 후보 점수화는 교체 가능한 scorer strategy로 둔다. `BriefedArticleStore`는 이미 브리핑된 원문 글 상태를 조회하는 저장소 역할을 한다.
 
 ## News Editor Agent
 
@@ -247,7 +265,7 @@ GitHub Actions가 매일 source snapshot 수집, 신규 후보 처리, 아카이
 3. Node 20 setup
 4. Python dependency install
 5. Node dependency install
-6. `make generate`를 통한 archive Markdown generation
+6. `make generate`를 통한 collection, preprocessing, Markdown scaffold generation
 7. `make build`를 통한 Docusaurus build
 8. GitHub Pages artifact upload
 9. GitHub Pages deploy

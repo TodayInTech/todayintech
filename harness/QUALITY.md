@@ -5,7 +5,7 @@
 ## 개념 구분
 
 - `test`: 코드가 의도대로 동작하는지 fixture와 contract로 검증한다.
-- `trace`: 실제 운영 collector 실행 결과와 실행 시간을 기록한다.
+- `trace`: 실제 운영 collector/preprocessor 실행 결과와 실행 시간을 기록한다.
 - `quality`: `test`와 `trace`를 함께 실행해 배포 전 판단 근거를 만든다.
 
 ## Make 명령
@@ -15,6 +15,7 @@ make test
 make test-unit
 make test-collection
 make trace-collect
+make trace-preprocess
 make fetch-trace-history
 make quality
 ```
@@ -27,6 +28,8 @@ make quality
 
 .var/local/traces/YYYY-MM-DD/
 ├── collection.json
+├── preprocessing.json
+├── preprocessing-summary.md
 └── summary.md
 ```
 
@@ -50,6 +53,8 @@ tracing-history
 └── traces/
     └── YYYY-MM-DD/
         ├── collection.json
+        ├── preprocessing.json
+        ├── preprocessing-summary.md
         └── summary.md
 ```
 
@@ -79,11 +84,16 @@ make fetch-trace-history
 - article 1개당 평균 duration
 - warning code
 - error message
+- preprocessing duration
+- preprocessing candidate count
+- preprocessing excluded count
+- preprocessing excluded reason count
 
 ## 운영 기준
 
 - fixture 기반 `make test`는 안정적인 개발 검증 용도이다.
 - `make trace-collect`는 실제 외부 source를 호출하므로 운영 트레이싱 용도이다.
+- `make trace-preprocess`는 collector raw snapshot을 기준으로 전처리 후보와 제외 사유를 기록한다.
 - 외부 네트워크 영향이 있으므로 trace duration은 강한 pass/fail 조건으로 사용하지 않는다.
 - 서비스별 article count가 0이면 `empty_collection` warning을 기록한다.
 - 일부 서비스 수집 실패는 trace에 기록하되, 성공한 서비스가 하나라도 있으면 collector CLI는 성공으로 종료한다.

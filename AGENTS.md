@@ -216,8 +216,9 @@ News Editor Agent는 뉴스레터 편집자가 아니라 기술 글 큐레이터
 - 특정 서비스 수집은 `make collect SERVICE={service_key}`로 확인한다.
 - Collector 단계는 `.var/local/raw/{YYYY-MM-DD}/summary.json`과 `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`만 생성하고 Markdown 생성이나 Docusaurus 빌드를 수행하지 않는다.
 - Collector는 daily snapshot을 저장한다. 같은 글이 여러 날짜에 반복 수집될 수 있으며, 이는 정상 동작이다.
+- Preprocessor 단계는 `make preprocess`로 실행한다.
 - Preprocessor는 URL 정규화, 현재 실행 중복 제거, 이미 브리핑된 글 제외, 후보 랭킹을 수행한다.
-- 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행한다.
+- 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행하며, 현재는 Collector 이후 Preprocessor까지 연결되어 있다.
 - 이후 Processing, Generator 단계도 독립 실행 엔트리포인트를 제공하는 방향으로 확장한다.
 
 1. Factory가 MVP 서비스 구현체를 생성한다.

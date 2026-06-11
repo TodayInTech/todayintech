@@ -12,7 +12,7 @@
 
 ## 현재 단계
 
-현재 프로젝트는 `Project Init`과 `Collector` 단계를 완료했고, 제품 방향을 날짜별 일간 브리핑에서 글 단위 누적 큐레이션 아카이브로 전환하는 스펙 정리 단계에 있다.
+현재 프로젝트는 `Project Init`, `Collector`, `Preprocessor` 단계를 완료했다. 제품 방향은 날짜별 일간 브리핑에서 글 단위 누적 큐레이션 아카이브로 전환했다.
 
 ## 작업 체크리스트
 
@@ -40,16 +40,20 @@
   - [x] 서비스별 수집 조건 문서화
   - [x] collector 기본 contract 테스트 구현
   - [x] daily snapshot 수집 정책 문서화
-  - [ ] RSS collector의 `collection_limit` / `lookback_days` source 설정 지원
-  - [ ] Hacker News points/comments/rank metadata 추출
+  - [x] RSS collector의 `collection_limit` / `lookback_days` source 설정 지원
+  - [x] Hacker News points/comments/rank metadata 추출
 
-- [ ] Preprocessor - 진행 예정
-  - URL canonicalization
-  - 필수 필드 validation
-  - 현재 실행 내 URL/title fingerprint deduplication
-  - `briefed_articles` 기반 이미 발행된 글 제외
-  - 후보 랭킹과 Agent 입력 개수 제한
-  - preprocessing trace 생성
+- [x] Preprocessor - 완료
+  - [x] URL canonicalization
+  - [x] 필수 필드 validation
+  - [x] 현재 실행 내 URL/title fingerprint deduplication
+  - [x] `briefed_articles` 기반 이미 발행된 글 제외
+  - [x] 후보 랭킹과 Agent 입력 개수 제한
+  - [x] preprocessing trace 생성
+  - [x] Preprocessor 단독 실행 CLI 구성
+  - [x] Makefile 기반 preprocessor 실행 명령 구성
+  - [x] `src.main` 파이프라인에 Collector 이후 Preprocessor 단계 연결
+  - [ ] Generator 발행 완료 시 `briefed_articles` 상태 갱신 연동
 
 - [ ] News Editor Agent - 대기
   - 신규 후보 글 선별
@@ -70,7 +74,5 @@
 
 ## 다음 작업 후보
 
-- RSS collector source scope 제한 구현
-- `briefed_articles` 상태 모델 설계
-- Preprocessor 엔트리포인트와 trace 산출물 구성
+- Generator 발행 완료 시 `briefed_articles` 상태 갱신 연동
 - 날짜 기반 generator를 article archive generator로 전환

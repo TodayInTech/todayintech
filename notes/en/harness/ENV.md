@@ -25,8 +25,12 @@ When an environment variable is added, removed, or renamed, update `.env.example
 | `TODAYINTECH_TIMEZONE` | `Asia/Seoul` | Optional | `timezone` | Briefing reference timezone |
 | `TODAYINTECH_OUTPUT_DIR` | `docs` | Optional | `output_dir` | Root directory for generated Markdown briefings |
 | `TODAYINTECH_RAW_OUTPUT_DIR` | `.var/local/raw` | Optional | `raw_output_dir` | Root directory for collector raw JSON output |
+| `TODAYINTECH_PROCESSED_OUTPUT_DIR` | `.var/local/processed` | Optional | `processed_output_dir` | Root directory for preprocessor candidate JSON output |
 | `TODAYINTECH_TRACE_OUTPUT_DIR` | `.var/local/traces` | Optional | `trace_output_dir` | Root directory for operational trace JSON/Markdown output |
+| `TODAYINTECH_BRIEFED_ARTICLES_PATH` | `data/briefed_articles.json` | Optional | `briefed_articles_path` | State file path for source articles already briefed or published |
 | `TODAYINTECH_MAX_ARTICLES_PER_SERVICE` | `5` | Optional | `max_articles_per_service` | Maximum number of articles summarized per service during Markdown generation. Minimum is 1 |
+| `TODAYINTECH_MAX_CANDIDATES_PER_SERVICE` | `10` | Optional | `max_candidates_per_service` | Maximum preprocessor candidates kept per service for Agent input. Minimum is 1 |
+| `TODAYINTECH_MAX_CANDIDATES_TOTAL` | `50` | Optional | `max_candidates_total` | Maximum preprocessor candidates kept across all services for Agent input. Minimum is 1 |
 
 ## Local Reproducibility Settings
 
@@ -43,8 +47,9 @@ When an environment variable is added, removed, or renamed, update `.env.example
 
 ## Current Code Usage
 
-- `src/main.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.max_articles_per_service`, `SETTINGS.output_dir`, `SETTINGS.raw_output_dir`
+- `src/main.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.max_articles_per_service`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`, `SETTINGS.output_dir`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`
 - `src/collection/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`
+- `src/processing/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`
 
 ## Addition Checklist
 

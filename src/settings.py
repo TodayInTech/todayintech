@@ -33,8 +33,12 @@ class AppSettings:
     timezone: str
     output_dir: Path
     raw_output_dir: Path
+    processed_output_dir: Path
     trace_output_dir: Path
+    briefed_articles_path: Path
     max_articles_per_service: int
+    max_candidates_per_service: int
+    max_candidates_total: int
     target_date: str | None
     docusaurus_url: str
     docusaurus_base_url: str
@@ -47,10 +51,26 @@ class AppSettings:
             timezone=os.getenv("TODAYINTECH_TIMEZONE", "Asia/Seoul"),
             output_dir=Path(os.getenv("TODAYINTECH_OUTPUT_DIR", "docs")),
             raw_output_dir=Path(os.getenv("TODAYINTECH_RAW_OUTPUT_DIR", ".var/local/raw")),
+            processed_output_dir=Path(
+                os.getenv("TODAYINTECH_PROCESSED_OUTPUT_DIR", ".var/local/processed")
+            ),
             trace_output_dir=Path(os.getenv("TODAYINTECH_TRACE_OUTPUT_DIR", ".var/local/traces")),
+            briefed_articles_path=Path(
+                os.getenv("TODAYINTECH_BRIEFED_ARTICLES_PATH", "data/briefed_articles.json")
+            ),
             max_articles_per_service=_int_env(
                 "TODAYINTECH_MAX_ARTICLES_PER_SERVICE",
                 default=5,
+                minimum=1,
+            ),
+            max_candidates_per_service=_int_env(
+                "TODAYINTECH_MAX_CANDIDATES_PER_SERVICE",
+                default=10,
+                minimum=1,
+            ),
+            max_candidates_total=_int_env(
+                "TODAYINTECH_MAX_CANDIDATES_TOTAL",
+                default=50,
                 minimum=1,
             ),
             target_date=_optional_env("TODAYINTECH_TARGET_DATE"),

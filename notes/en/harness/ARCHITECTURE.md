@@ -198,6 +198,24 @@ The Preprocessor stage turns collected snapshots into agent-ready candidates.
 7. Generate preprocessing trace output.
 
 The current scaffold is heuristic-based. The LLM-based News Editor Agent must receive only new preprocessed candidates.
+The full `src.main` pipeline runs the Preprocessor immediately after the Collector and writes the preprocessing result to `.var/local/processed/{YYYY-MM-DD}/preprocessing.json`.
+
+Preprocessing execution:
+
+```bash
+make preprocess
+make preprocess DATE=2026-06-07
+make preprocess RAW_DIR=.var/local/raw PROCESSED_DIR=.var/local/processed
+```
+
+Preprocessing output:
+
+```text
+.var/local/processed/YYYY-MM-DD/
+└── preprocessing.json
+```
+
+Preprocessing uses a `Pipeline + Strategy + Repository` combination. `NewsPreprocessor` runs ordered `PreprocessingStep` objects, candidate scoring is kept as a replaceable scorer strategy, and `BriefedArticleStore` acts as the state repository for source articles that have already been briefed.
 
 ## News Editor Agent
 
@@ -247,7 +265,7 @@ Workflow:
 3. Node 20 setup
 4. Python dependency install
 5. Node dependency install
-6. Archive Markdown generation through `make generate`
+6. Collection, preprocessing, and Markdown scaffold generation through `make generate`
 7. Docusaurus build through `make build`
 8. GitHub Pages artifact upload
 9. GitHub Pages deploy

@@ -15,6 +15,7 @@ dependencies = [
 [project.scripts]
 todayintech = "src.main:main"
 todayintech-collector = "src.collection.__main__:main"
+todayintech-preprocessor = "src.processing.__main__:main"
 
 [project.optional-dependencies]
 dev = [

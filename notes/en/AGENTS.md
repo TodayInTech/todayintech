@@ -93,7 +93,9 @@ Each stage must remain independently executable for development and debugging.
 - Inspect one service with `make collect SERVICE={service_key}`.
 - The Collector stage only writes `.var/local/raw/{YYYY-MM-DD}/summary.json` and `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`; it does not generate Markdown or build Docusaurus.
 - The Collector stores daily snapshots. Repeated articles across dates are expected and must be filtered by preprocessing, not by collection.
-- Run the full pipeline with `.venv/bin/python -m src.main`.
+- Run the Preprocessor stage with `make preprocess`.
+- The Preprocessor normalizes URLs, removes run-level duplicates, excludes already briefed articles, and ranks candidates.
+- Run the full pipeline with `.venv/bin/python -m src.main`; it currently connects the Preprocessor after the Collector.
 - Future Processing and Generator stages should also expose independent entrypoints.
 
 1. Create services through the factory.

@@ -9,9 +9,13 @@ SERVICE ?=
 DATE ?=
 COUNT ?=
 OUTPUT_DIR ?=
+RAW_DIR ?=
+PROCESSED_DIR ?=
+BRIEFED_STATE ?=
 TRACE_DIR ?= .var/local/traces
 REPORT_DIR ?= .var/local/reports
 CI_RAW_DIR ?= .artifacts/raw
+CI_PROCESSED_DIR ?= .artifacts/processed
 CI_TRACE_DIR ?= .artifacts/traces
 CI_REPORT_DIR ?= .artifacts/reports
 
@@ -29,12 +33,26 @@ ifneq ($(strip $(OUTPUT_DIR)),)
 COLLECT_ARGS += --output-dir $(OUTPUT_DIR)
 endif
 
+PREPROCESS_ARGS :=
+ifneq ($(strip $(DATE)),)
+PREPROCESS_ARGS += --date $(DATE)
+endif
+ifneq ($(strip $(RAW_DIR)),)
+PREPROCESS_ARGS += --raw-dir $(RAW_DIR)
+endif
+ifneq ($(strip $(PROCESSED_DIR)),)
+PREPROCESS_ARGS += --output-dir $(PROCESSED_DIR)
+endif
+ifneq ($(strip $(BRIEFED_STATE)),)
+PREPROCESS_ARGS += --briefed-state $(BRIEFED_STATE)
+endif
+
 WORKFLOW_ARGS := --ref $(BRANCH)
 ifneq ($(strip $(DATE)),)
 WORKFLOW_ARGS += -f target_date=$(DATE)
 endif
 
-.PHONY: help collect trace-collect fetch-trace-history generate test test-unit test-collection lint lint-fix format format-check check build verify quality ci-quality ci deploy deploy-status
+.PHONY: help collect preprocess trace-collect trace-preprocess fetch-trace-history generate test test-unit test-collection lint lint-fix format format-check check build verify quality ci-quality ci deploy deploy-status
 
 help:
 	@echo "Today in Tech project commands"
@@ -44,7 +62,13 @@ help:
 	@echo "  make collect SERVICE=hacker-news"
 	@echo "  make collect SERVICE=hacker-news DATE=2026-06-07 COUNT=5"
 	@echo "  make collect OUTPUT_DIR=.var/local/raw-custom"
+	@echo ""
+	@echo "Preprocessing:"
+	@echo "  make preprocess"
+	@echo "  make preprocess DATE=2026-06-07"
+	@echo "  make preprocess RAW_DIR=.var/local/raw PROCESSED_DIR=.var/local/processed"
 	@echo "  make trace-collect"
+	@echo "  make trace-preprocess"
 	@echo "  make fetch-trace-history"
 	@echo ""
 	@echo "Quality:"
@@ -77,17 +101,27 @@ help:
 	@echo "  DATE        Optional target date. Default: TODAYINTECH_TARGET_DATE or today"
 	@echo "  COUNT       Optional preview article count. Default: collector CLI default"
 	@echo "  OUTPUT_DIR    Optional raw output root. Default: TODAYINTECH_RAW_OUTPUT_DIR or .var/local/raw"
+	@echo "  RAW_DIR       Optional preprocessing raw input root"
+	@echo "  PROCESSED_DIR Optional preprocessing output root"
+	@echo "  BRIEFED_STATE Optional briefed article state JSON path"
 	@echo "  TRACE_DIR     Trace output root. Default: .var/local/traces"
 	@echo "  REPORT_DIR    Test report output root. Default: .var/local/reports"
 	@echo "  CI_RAW_DIR    GitHub Actions raw output root. Default: .artifacts/raw"
+	@echo "  CI_PROCESSED_DIR GitHub Actions processed output root. Default: .artifacts/processed"
 	@echo "  CI_TRACE_DIR  GitHub Actions trace output root. Default: .artifacts/traces"
 	@echo "  CI_REPORT_DIR GitHub Actions report output root. Default: .artifacts/reports"
 
 collect:
 	$(PYTHON) -m src.collection $(COLLECT_ARGS)
 
+preprocess:
+	$(PYTHON) -m src.processing $(PREPROCESS_ARGS)
+
 trace-collect:
 	$(PYTHON) -m src.collection $(COLLECT_ARGS) --trace-dir $(TRACE_DIR)
+
+trace-preprocess:
+	$(PYTHON) -m src.processing $(PREPROCESS_ARGS) --trace-dir $(TRACE_DIR)
 
 fetch-trace-history:
 	mkdir -p $(dir $(TRACE_HISTORY_DIR))
@@ -134,11 +168,12 @@ build:
 
 verify: check build
 
-quality: test trace-collect
+quality: test trace-collect trace-preprocess
 
 ci-quality:
 	TODAYINTECH_RAW_OUTPUT_DIR=$(CI_RAW_DIR) $(MAKE) test REPORT_DIR=$(CI_REPORT_DIR)
 	TODAYINTECH_RAW_OUTPUT_DIR=$(CI_RAW_DIR) $(MAKE) trace-collect OUTPUT_DIR=$(CI_RAW_DIR) TRACE_DIR=$(CI_TRACE_DIR)
+	TODAYINTECH_RAW_OUTPUT_DIR=$(CI_RAW_DIR) $(MAKE) trace-preprocess RAW_DIR=$(CI_RAW_DIR) PROCESSED_DIR=$(CI_PROCESSED_DIR) TRACE_DIR=$(CI_TRACE_DIR)
 
 ci: verify
 

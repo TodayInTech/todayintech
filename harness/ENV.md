@@ -25,8 +25,12 @@
 | `TODAYINTECH_TIMEZONE` | `Asia/Seoul` | 선택 | `timezone` | 브리핑 기준 시간대 |
 | `TODAYINTECH_OUTPUT_DIR` | `docs` | 선택 | `output_dir` | 생성된 Markdown 브리핑 저장 루트 |
 | `TODAYINTECH_RAW_OUTPUT_DIR` | `.var/local/raw` | 선택 | `raw_output_dir` | collector raw JSON 저장 루트 |
+| `TODAYINTECH_PROCESSED_OUTPUT_DIR` | `.var/local/processed` | 선택 | `processed_output_dir` | preprocessor 후보 JSON 저장 루트 |
 | `TODAYINTECH_TRACE_OUTPUT_DIR` | `.var/local/traces` | 선택 | `trace_output_dir` | 운영 트레이싱 JSON/Markdown 저장 루트 |
+| `TODAYINTECH_BRIEFED_ARTICLES_PATH` | `data/briefed_articles.json` | 선택 | `briefed_articles_path` | 이미 브리핑/발행된 원문 글 상태 파일 경로 |
 | `TODAYINTECH_MAX_ARTICLES_PER_SERVICE` | `5` | 선택 | `max_articles_per_service` | Markdown 생성 시 서비스별 요약 대상 최대 기사 수. 최소값은 1 |
+| `TODAYINTECH_MAX_CANDIDATES_PER_SERVICE` | `10` | 선택 | `max_candidates_per_service` | preprocessor가 Agent 입력 후보로 남길 서비스별 최대 글 수. 최소값은 1 |
+| `TODAYINTECH_MAX_CANDIDATES_TOTAL` | `50` | 선택 | `max_candidates_total` | preprocessor가 Agent 입력 후보로 남길 전체 최대 글 수. 최소값은 1 |
 
 ## Local 재현성 설정
 
@@ -43,8 +47,9 @@
 
 ## 현재 코드 사용 지점
 
-- `src/main.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.max_articles_per_service`, `SETTINGS.output_dir`, `SETTINGS.raw_output_dir`
+- `src/main.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.max_articles_per_service`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`, `SETTINGS.output_dir`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`
 - `src/collection/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`
+- `src/processing/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`
 
 ## 추가 시 체크리스트
 

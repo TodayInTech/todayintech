@@ -5,7 +5,7 @@ This document defines the development verification and operational tracing flow 
 ## Concept Boundaries
 
 - `test`: verifies code behavior with fixtures and contracts.
-- `trace`: records real operational collector execution results and durations.
+- `trace`: records real operational collector/preprocessor execution results and durations.
 - `quality`: runs `test` and `trace` together to produce deployment decision evidence.
 
 ## Make Commands
@@ -15,6 +15,7 @@ make test
 make test-unit
 make test-collection
 make trace-collect
+make trace-preprocess
 make fetch-trace-history
 make quality
 ```
@@ -27,6 +28,8 @@ make quality
 
 .var/local/traces/YYYY-MM-DD/
 ├── collection.json
+├── preprocessing.json
+├── preprocessing-summary.md
 └── summary.md
 ```
 
@@ -50,6 +53,8 @@ tracing-history
 └── traces/
     └── YYYY-MM-DD/
         ├── collection.json
+        ├── preprocessing.json
+        ├── preprocessing-summary.md
         └── summary.md
 ```
 
@@ -79,11 +84,16 @@ The default checkout path is `.var/remote/tracing-history`.
 - Average duration per article
 - Warning codes
 - Error message
+- Preprocessing duration
+- Preprocessing candidate count
+- Preprocessing excluded count
+- Preprocessing excluded reason count
 
 ## Operating Rules
 
 - Fixture-based `make test` is for stable development verification.
 - `make trace-collect` calls real external sources and is for operational tracing.
+- `make trace-preprocess` records preprocessing candidates and exclusion reasons from the collector raw snapshot.
 - Trace duration is not used as a strict pass/fail condition because external network conditions can affect it.
 - A service with zero articles records an `empty_collection` warning.
 - Partial service failures are recorded in the trace, but the collector CLI exits successfully when at least one service succeeds.
