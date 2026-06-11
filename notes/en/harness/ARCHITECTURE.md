@@ -2,7 +2,7 @@
 
 ## Project Architecture
 
-Today in Tech separates collection, processing, generation, build, and deployment. Each stage should be independently testable, and adding a service must not require changing the whole pipeline.
+Today in Tech separates collection, preprocessing, agent editing, generation, build, and deployment. Each stage should be independently testable, and adding a service must not require changing the whole pipeline.
 
 ```text
 Official Sources
@@ -13,17 +13,21 @@ Service-specific Collector Strategy
     ↓
 Normalize Articles
     ↓
-Deduplicate
+Raw Snapshot Storage
     ↓
-Importance Scoring
+Preprocess Candidates
     ↓
-Category Classification
+Briefed Article Filtering
     ↓
-Summarization
+Candidate Ranking
     ↓
-Service Markdown Generation
+News Editor Agent
     ↓
-Global Summary Markdown Generation
+Article Markdown Generation
+    ↓
+Service Index Generation
+    ↓
+Main Index Generation
     ↓
 Docusaurus Build
     ↓
@@ -55,11 +59,16 @@ src/
 │       ├── rss.py
 │       └── sitemap.py
 ├── processing/
+│   ├── news_preprocessor.py
+│   ├── briefed_article_store.py
+│   ├── article_candidate.py
+│   ├── url_normalizer.py
 │   ├── deduplicator.py
 │   ├── classifier.py
 │   ├── scorer.py
 │   └── summarizer.py
 ├── generator/
+│   ├── article_markdown_writer.py
 │   ├── service_markdown_writer.py
 │   └── summary_markdown_writer.py
 ├── models/
@@ -86,28 +95,35 @@ Services without RSS must not rely on third-party RSS feeds. Choose or add an ap
 
 ## Generated Document Structure
 
-Each date produces one briefing bundle.
+The site is a cumulative archive, not a dated daily briefing bundle.
 
 ```text
 docs/
-└── YYYY-MM-DD/
-    ├── summary.md
-    └── services/
-        ├── hacker-news.md
-        ├── github-blog.md
-        ├── google-blog.md
-        ├── openai-blog.md
-        └── anthropic-blog.md
+├── index.md
+├── services/
+│   ├── hacker-news.md
+│   ├── github-blog.md
+│   ├── google-blog.md
+│   ├── openai-blog.md
+│   └── anthropic-blog.md
+└── articles/
+    ├── hacker-news/
+    ├── github-blog/
+    ├── google-blog/
+    ├── openai-blog/
+    └── anthropic-blog/
 ```
 
-`summary.md` is the entry point for the global briefing. `services/*.md` files are service-level detail pages.
+`index.md` is the entry point for cross-service highlights. `services/*.md` files are service-level indexes. `articles/{service_key}/*.md` files are detailed briefings for individual source articles.
 
 ## Step-by-Step Flow
 
 ```text
 Collector
     ↓
-Processing
+Preprocessor
+    ↓
+News Editor Agent
     ↓
 Generator
     ↓
@@ -118,7 +134,7 @@ Deploy
 
 ## Collector
 
-The Collector stage must be independently executable and make service-level collection results easy to inspect.
+The Collector stage must be independently executable and make service-level collection results easy to inspect. The Collector is a daily snapshot discovery layer. Repeated articles across dates are expected; preprocessing is responsible for preventing reprocessing.
 
 1. `NewsCollector` creates MVP service implementations through `NewsSourceFactory`.
 2. Each service implementation collects information through its own collector strategy, such as RSS/Atom, sitemap, or official API.
@@ -126,6 +142,7 @@ The Collector stage must be independently executable and make service-level coll
 4. Service-level collection results are wrapped as `ServiceCollectionResult`.
 5. URL, title, publication date, source, summary, and tags are preserved where possible.
 6. Collection results are stored as JSON under `.var/local/raw/{YYYY-MM-DD}/`.
+7. Per-source collection scope may be limited through source configuration. Large feeds such as OpenAI should add `collection_limit` or `lookback_days`.
 
 Collect every service:
 
@@ -168,30 +185,39 @@ Raw collection output:
     └── anthropic-blog.json
 ```
 
-## Processing
+## Preprocessor
 
-The Processing stage prepares collected articles as briefing candidates.
+The Preprocessor stage turns collected snapshots into agent-ready candidates.
 
-1. Remove duplicates by URL.
-2. Classify article categories.
-3. Calculate importance scores.
-4. Create summary data.
+1. Normalize URLs into canonical form.
+2. Remove entries missing required fields.
+3. Remove run-level duplicates by URL and title fingerprint.
+4. Exclude already briefed articles through the `briefed_articles` state and existing article documents.
+5. Rank candidates by publication date, source priority, popularity signals, and editorial keywords.
+6. Limit the number of candidates passed to the agent.
+7. Generate preprocessing trace output.
 
-The current scaffold is heuristic-based. The LLM-based News Editor Agent will be connected to this layer later.
+The current scaffold is heuristic-based. The LLM-based News Editor Agent must receive only new preprocessed candidates.
+
+## News Editor Agent
+
+The Agent selects meaningful new candidates and generates one detailed briefing per selected source article. An already briefed source URL must not be processed again.
 
 ## Generator
 
 The Generator stage writes processed results as Markdown.
 
-1. Generate service-level documents.
-2. Generate the global summary document.
-3. Record internal service document links and original source links together.
+1. Generate article-level briefing documents.
+2. Regenerate service index documents.
+3. Regenerate the main index page.
+4. Record internal article/service links and original source links together.
 
 Generated paths:
 
 ```text
-docs/{YYYY-MM-DD}/summary.md
-docs/{YYYY-MM-DD}/services/{service}.md
+docs/index.md
+docs/services/{service_key}.md
+docs/articles/{service_key}/{slug}.md
 ```
 
 ## Build
@@ -212,7 +238,7 @@ npm run start -- --host 127.0.0.1 --port 3000
 
 ## Deploy
 
-GitHub Actions generates and deploys the briefing every day.
+GitHub Actions collects daily source snapshots, processes new candidates, updates archive documents, and deploys the site.
 
 Workflow:
 
@@ -221,7 +247,7 @@ Workflow:
 3. Node 20 setup
 4. Python dependency install
 5. Node dependency install
-6. Briefing generation through `make generate`
+6. Archive Markdown generation through `make generate`
 7. Docusaurus build through `make build`
 8. GitHub Pages artifact upload
 9. GitHub Pages deploy

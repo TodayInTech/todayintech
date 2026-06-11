@@ -24,6 +24,7 @@ class Article(BaseModel):
     summary: str | None = None
     authors: list[str] = Field(default_factory=list)
     tags: list[str] = Field(default_factory=list)
+    metadata: dict[str, str | int | float | bool] = Field(default_factory=dict)
 
 
 class ArticleSummary(BaseModel):

@@ -35,7 +35,9 @@ Docusaurus는 `docs/` 디렉터리를 문서 루트로 사용한다. 브리핑 M
 ## Storage
 
 - JSON 파일 기반 저장소
-- `data/seen.json`으로 중복 처리 상태를 관리한다.
+- `briefed_articles` 상태 파일로 이미 브리핑/발행된 원문 글을 추적한다.
+- raw 수집 데이터는 로컬 `.var/` 또는 GitHub Actions artifact로만 보관한다.
+- 운영 trace는 `tracing-history` 브랜치에 누적한다.
 
 MVP에서는 별도 DB 서버, 검색엔진, Vector DB를 사용하지 않는다.
 

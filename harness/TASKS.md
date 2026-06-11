@@ -12,7 +12,7 @@
 
 ## 현재 단계
 
-현재 프로젝트는 `Project Init`을 완료했고, `Collector` 단계를 진행 중이다.
+현재 프로젝트는 `Project Init`과 `Collector` 단계를 완료했고, 제품 방향을 날짜별 일간 브리핑에서 글 단위 누적 큐레이션 아카이브로 전환하는 스펙 정리 단계에 있다.
 
 ## 작업 체크리스트
 
@@ -23,7 +23,7 @@
   - README, AGENTS, 하네스 문서 기본 구조 작성
   - 한국어 루트 문서와 영어 `notes/en/` 문서 구조 구성
 
-- [ ] Collector - 진행 중
+- [x] Collector - 완료
   - [x] source 메타데이터 구현체 분리
   - [x] `sources`와 `collection` 상위 패키지 경계 분리
   - [x] `NewsSourceFactory` 기반 source 생성 구조 구성
@@ -38,28 +38,39 @@
   - [x] 최소 테스트 플로우와 운영 트레이싱 산출물 구성
   - [x] `tracing-history` 브랜치 기반 운영 trace 누적 흐름 구성
   - [x] 서비스별 수집 조건 문서화
-  - [ ] `seen.json` 기반 영속 deduplication 구현
-  - [ ] collector 테스트 구현
+  - [x] collector 기본 contract 테스트 구현
+  - [x] daily snapshot 수집 정책 문서화
+  - [ ] RSS collector의 `collection_limit` / `lookback_days` source 설정 지원
+  - [ ] Hacker News points/comments/rank metadata 추출
 
-- [ ] Processing - 대기
-  - deduplication 고도화
-  - 중요도 점수화
-  - 카테고리 분류
-  - LLM 기반 요약 연결
+- [ ] Preprocessor - 진행 예정
+  - URL canonicalization
+  - 필수 필드 validation
+  - 현재 실행 내 URL/title fingerprint deduplication
+  - `briefed_articles` 기반 이미 발행된 글 제외
+  - 후보 랭킹과 Agent 입력 개수 제한
+  - preprocessing trace 생성
+
+- [ ] News Editor Agent - 대기
+  - 신규 후보 글 선별
+  - 글 단위 상세 브리핑 생성
+  - 서비스별 요약과 메인 페이지 인사이트 생성
+  - LLM 응답 schema 검증과 fallback 정책
 
 - [ ] Generator - 대기
-  - 서비스별 Markdown 생성 고도화
-  - 전체 요약 Markdown 생성 고도화
+  - `docs/articles/{service_key}/{slug}.md` 생성
+  - `docs/services/{service_key}.md` 서비스별 색인 생성
+  - `docs/index.md` 메인 페이지 생성
   - 내부 링크와 출처 링크 검증
 
-- [ ] Build / Deploy - 대기
+- [x] Build / Deploy - 완료
   - Docusaurus 빌드 검증
   - GitHub Actions 실제 배포 검증
   - GitHub Pages 운영 설정 검증
 
 ## 다음 작업 후보
 
-- `seen.json` 저장소와 collector deduplication 연결
-- collector 단위 테스트 추가
-- Anthropic sitemap collector timeout, limit, metadata fallback 정책 정리
-- raw JSON schema 안정화
+- RSS collector source scope 제한 구현
+- `briefed_articles` 상태 모델 설계
+- Preprocessor 엔트리포인트와 trace 산출물 구성
+- 날짜 기반 generator를 article archive generator로 전환

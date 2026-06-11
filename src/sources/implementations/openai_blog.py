@@ -9,4 +9,7 @@ class OpenAIBlogSource(BaseNewsSource):
     source_url = "https://openai.com/news/rss.xml"
 
     def source_config(self) -> SourceConfig:
-        return {}
+        return {
+            "collection_limit": 50,
+            "lookback_days": 90,
+        }

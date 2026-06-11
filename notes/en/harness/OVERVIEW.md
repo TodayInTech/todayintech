@@ -2,16 +2,17 @@
 
 ## Project Purpose
 
-Today in Tech is a technology news briefing platform that collects RSS/Atom feeds and uses an AI-based News Editor Agent to select important stories for publication as a static documentation site.
+Today in Tech is a technology article curation archive that collects RSS/Atom feeds and official sitemaps every day, then uses an AI-based News Editor Agent to select meaningful articles over a period and publish them as a static documentation site.
 
-This project is not a simple RSS reader. It does not store or list every article. Instead, it generates service-level briefings and a global summary so developers and technology leaders can quickly understand the day's core technology trends.
+This project is not a simple RSS reader and no longer treats every day as a separate newsletter. The Collector stores daily source snapshots, but the Agent must not regenerate articles that have already been briefed. Users start from the main page, then move into service pages and article-level briefings.
 
 ## Core Goals
 
-- Collect the latest technology news every day.
-- Select important stories per service.
-- Provide domain-level implications in the global summary.
-- Preserve both original source links and internal service document links.
+- Collect latest source snapshots every day.
+- Select only meaningful new article candidates.
+- Generate one detailed briefing document per selected source article.
+- Maintain service-level article archives and the main index page.
+- Preserve original source links and internal article/service links.
 - Publish through a Docusaurus-based static site.
 
 ## MVP Scope
@@ -20,7 +21,9 @@ The MVP focuses on:
 
 - RSS/Atom Feed Collection
 - News Normalization
-- Deduplication
+- Preprocessing / Deduplication
+- Briefed Article Filtering
+- Candidate Ranking
 - Importance Scoring
 - Category Classification
 - Markdown Generation

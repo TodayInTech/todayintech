@@ -12,7 +12,7 @@ Update it continuously when feature implementation, documentation structure, col
 
 ## Current Stage
 
-The project has completed `Project Init` and is currently working on the `Collector` stage.
+The project has completed `Project Init` and `Collector`, and is now updating the specification from dated daily briefings to an article-level cumulative curation archive.
 
 ## Work Checklist
 
@@ -23,7 +23,7 @@ The project has completed `Project Init` and is currently working on the `Collec
   - Initial README, AGENTS, and harness documents
   - Korean root documents and English `notes/en/` document structure
 
-- [ ] Collector - in progress
+- [x] Collector - complete
   - [x] Source metadata implementations separated
   - [x] `sources` and `collection` top-level package boundary separated
   - [x] `NewsSourceFactory` source creation structure
@@ -38,28 +38,39 @@ The project has completed `Project Init` and is currently working on the `Collec
   - [x] Minimal test flow and operational trace artifacts
   - [x] `tracing-history` branch flow for accumulated operational traces
   - [x] Service-level collection condition documentation
-  - [ ] Persistent deduplication through `seen.json`
-  - [ ] Collector tests
+  - [x] Basic collector contract tests
+  - [x] Daily snapshot collection policy documented
+  - [ ] RSS collector support for `collection_limit` / `lookback_days` source settings
+  - [ ] Hacker News points/comments/rank metadata extraction
 
-- [ ] Processing - pending
-  - Deduplication improvements
-  - Importance scoring
-  - Category classification
-  - LLM summarization integration
+- [ ] Preprocessor - next
+  - URL canonicalization
+  - Required field validation
+  - Run-level URL/title fingerprint deduplication
+  - Exclude already published articles through `briefed_articles`
+  - Candidate ranking and agent input limiting
+  - Preprocessing trace output
+
+- [ ] News Editor Agent - pending
+  - Select new candidate articles
+  - Generate article-level detailed briefings
+  - Generate service summaries and main page insights
+  - Validate LLM response schema and fallback policy
 
 - [ ] Generator - pending
-  - Improve service-level Markdown generation
-  - Improve global summary Markdown generation
+  - Generate `docs/articles/{service_key}/{slug}.md`
+  - Generate `docs/services/{service_key}.md` service indexes
+  - Generate `docs/index.md` main page
   - Verify internal links and source links
 
-- [ ] Build / Deploy - pending
+- [x] Build / Deploy - complete
   - Validate Docusaurus build
   - Validate actual GitHub Actions deployment
   - Validate GitHub Pages production settings
 
 ## Next Work Candidates
 
-- Connect `seen.json` storage with collector deduplication
-- Add collector unit tests
-- Define Anthropic sitemap collector timeout, limit, and metadata fallback policy
-- Stabilize raw JSON schema
+- Implement RSS collector source scope limits
+- Design the `briefed_articles` state model
+- Add Preprocessor entrypoint and trace artifacts
+- Convert dated generator output into article archive output

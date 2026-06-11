@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Today in Tech is an AI-curated technology news briefing platform. It collects RSS/Atom feeds, selects important stories through a News Editor Agent, generates service-level Markdown briefings, and publishes them through a static documentation site.
+Today in Tech is an AI-curated technology article archive. It collects RSS/Atom feeds and official sitemaps every day, but the News Editor Agent only briefs meaningful articles that have not already been published.
 
 This English document mirrors the Korean root `AGENTS.md`. The Korean root document is the source of truth.
 
@@ -24,7 +24,7 @@ This English document mirrors the Korean root `AGENTS.md`. The Korean root docum
 
 ## Architecture Rules
 
-The project must generate one briefing bundle per date. Each dated bundle contains one Markdown briefing per service and one global summary Markdown file that links to service pages and original sources.
+The project no longer treats a dated daily briefing as the primary product. Collection still runs daily as a source snapshot, but the site is organized as a cumulative archive of article briefings and service indexes.
 
 Service creation uses Factory Method and Abstract Factory, while collection algorithms are separated through the Strategy pattern. Services that do not provide RSS must use an official collector strategy such as sitemap, official API, or HTML metadata collection.
 
@@ -64,21 +64,26 @@ Generated document structure:
 
 ```text
 docs/
-└── YYYY-MM-DD/
-    ├── summary.md
-    └── services/
-        ├── hacker-news.md
-        ├── github-blog.md
-        ├── google-blog.md
-        ├── openai-blog.md
-        └── anthropic-blog.md
+├── index.md
+├── services/
+│   ├── hacker-news.md
+│   ├── github-blog.md
+│   ├── google-blog.md
+│   ├── openai-blog.md
+│   └── anthropic-blog.md
+└── articles/
+    ├── hacker-news/
+    ├── github-blog/
+    ├── google-blog/
+    ├── openai-blog/
+    └── anthropic-blog/
 ```
 
 ## Agent Rules
 
-The News Editor Agent evaluates importance, classifies categories, assists deduplication, summarizes service-level news, and generates domain-level insights for the global summary.
+The News Editor Agent acts as a curator and research editor. It selects meaningful new candidate articles, creates one article briefing per selected source article, updates service-level indexes, and contributes domain-level insights for the main page.
 
-The agent must not rewrite full articles, invent unsupported facts, include every collected article, or omit source links.
+The agent must not rewrite full articles, invent unsupported facts, include every collected article, omit source links, or regenerate an article that already exists in the briefed article state.
 
 ## Publishing Flow
 
@@ -87,6 +92,7 @@ Each stage must remain independently executable for development and debugging.
 - Run the Collector stage with `make collect`.
 - Inspect one service with `make collect SERVICE={service_key}`.
 - The Collector stage only writes `.var/local/raw/{YYYY-MM-DD}/summary.json` and `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`; it does not generate Markdown or build Docusaurus.
+- The Collector stores daily snapshots. Repeated articles across dates are expected and must be filtered by preprocessing, not by collection.
 - Run the full pipeline with `.venv/bin/python -m src.main`.
 - Future Processing and Generator stages should also expose independent entrypoints.
 
@@ -94,12 +100,14 @@ Each stage must remain independently executable for development and debugging.
 2. Collect information through each service collector strategy via `NewsCollector`.
 3. Normalize articles.
 4. Store raw service-level results under `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`.
-5. Deduplicate through canonical URLs and `seen.json`.
-6. Score and classify stories.
-7. Generate `docs/{YYYY-MM-DD}/services/{service}.md` files.
-8. Generate `docs/{YYYY-MM-DD}/summary.md`.
-9. Build Docusaurus.
-10. Deploy to GitHub Pages through GitHub Actions.
+5. Normalize URLs and remove run-level duplicates in preprocessing.
+6. Exclude articles already published in the briefed article state.
+7. Rank and pass only meaningful new candidates to the agent.
+8. Generate `docs/articles/{service_key}/{slug}.md` files.
+9. Regenerate `docs/services/{service_key}.md` service indexes.
+10. Regenerate `docs/index.md` as the main entry page.
+11. Build Docusaurus.
+12. Deploy to GitHub Pages through GitHub Actions.
 
 ## Maintenance Rules
 

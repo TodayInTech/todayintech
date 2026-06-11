@@ -2,16 +2,17 @@
 
 ## 프로젝트 목적
 
-Today in Tech는 기술 뉴스 RSS/Atom 피드를 수집하고, AI 기반 News Editor Agent가 중요한 뉴스를 선별하여 정적 문서 사이트로 배포하는 기술 뉴스 브리핑 플랫폼이다.
+Today in Tech는 기술 뉴스 RSS/Atom 피드와 공식 sitemap을 매일 수집하고, AI 기반 News Editor Agent가 특정 기간 동안 의미 있는 글만 선별하여 정적 문서 사이트로 누적 배포하는 기술 글 큐레이션 아카이브이다.
 
-이 프로젝트는 단순 RSS 리더가 아니다. 모든 기사를 저장하거나 나열하지 않고, 개발자와 기술 리더가 하루의 핵심 기술 흐름을 빠르게 파악할 수 있도록 서비스별 브리핑과 전체 요약을 생성한다.
+이 프로젝트는 단순 RSS 리더도, 매일 모든 소식을 요약하는 뉴스레터도 아니다. Collector는 매일 source snapshot을 저장하지만, Agent는 이미 브리핑된 글을 다시 처리하지 않는다. 사용자는 메인 페이지에서 전체 핵심 흐름을 보고, 서비스 페이지와 글별 상세 브리핑으로 이동한다.
 
 ## 핵심 목표
 
-- 매일 최신 기술 뉴스를 자동 수집한다.
-- 서비스별 주요 뉴스를 선별한다.
-- 전체 요약 문서에서 도메인별 시사점을 제공한다.
-- 원문 출처와 내부 서비스 문서 링크를 함께 제공한다.
+- 매일 최신 source snapshot을 자동 수집한다.
+- 신규 후보 중 의미 있는 글만 선별한다.
+- 원문 글 하나당 하나의 상세 브리핑 문서를 생성한다.
+- 서비스별 핵심 글 아카이브와 전체 메인 페이지를 갱신한다.
+- 원문 출처와 내부 article/service 문서 링크를 함께 제공한다.
 - Docusaurus 기반 정적 사이트로 배포한다.
 
 ## MVP 범위
@@ -20,7 +21,9 @@ MVP는 다음 기능에 집중한다.
 
 - RSS/Atom Feed Collection
 - News Normalization
-- Deduplication
+- Preprocessing / Deduplication
+- Briefed Article Filtering
+- Candidate Ranking
 - Importance Scoring
 - Category Classification
 - Markdown Generation

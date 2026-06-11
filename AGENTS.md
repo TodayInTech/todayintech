@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Today in Tech는 기술 뉴스 RSS/Atom 피드를 수집하고, AI 기반 News Editor Agent가 중요한 뉴스를 선별, 요약, 분석하여 정적 문서 사이트로 배포하는 기술 뉴스 브리핑 플랫폼이다.
+Today in Tech는 기술 뉴스 RSS/Atom 피드와 공식 sitemap을 매일 수집하고, AI 기반 News Editor Agent가 특정 기간 동안 의미 있는 글을 선별, 요약, 분석하여 정적 문서 사이트로 누적 배포하는 기술 글 큐레이션 아카이브이다.
 
 이 문서는 프로젝트의 설계 기준과 에이전트 작업 규칙을 정의한다. 루트의 문서는 한국어를 기준으로 작성한다. 영어 문서는 다국어 지원 문서로 `notes/en/` 아래에 둔다.
 
@@ -28,7 +28,7 @@ MVP에서 지원하는 뉴스 서비스는 다음으로 제한한다.
 
 추후 다른 서비스가 쉽게 추가될 수 있어야 하므로 서비스별 구현은 하드코딩하지 않는다.
 
-## 핵심 아키텍처
+## 제품 방향
 
 ```text
 RSS/Atom Sources
@@ -39,37 +39,44 @@ Service-specific Collector
     ↓
 Normalize Articles
     ↓
-Deduplicate
+Preprocess Candidates
     ↓
-Importance Scoring
+Briefed Article Filtering
     ↓
-Category Classification
+Candidate Ranking
     ↓
-AI Summarization
+News Editor Agent
     ↓
-Service Markdown Generation
+Article Markdown Generation
     ↓
-Global Summary Markdown Generation
+Service Index Generation
+    ↓
+Main Index Generation
     ↓
 Docusaurus Build
     ↓
 GitHub Pages Deployment
 ```
 
-Today in Tech는 날짜마다 브리핑 묶음을 만든다. 단, 날짜별로 하나의 거대한 Markdown 파일을 만들지 않는다. 각 날짜 디렉터리 안에 서비스별 Markdown 문서와 전체 요약 Markdown 문서를 함께 생성한다.
+Today in Tech는 날짜마다 브리핑 묶음을 새로 만드는 서비스가 아니다. Collector는 매일 실행되어 외부 source의 최신 snapshot을 저장하지만, Agent는 이미 브리핑된 글을 다시 처리하지 않는다. 사이트는 날짜별 일간 뉴스레터가 아니라 서비스별 핵심 글과 전체 핵심 흐름을 누적하는 아카이브로 동작한다.
 
 예시:
 
 ```text
 docs/
-└── YYYY-MM-DD/
-    ├── summary.md
-    └── services/
-        ├── hacker-news.md
-        ├── github-blog.md
-        ├── google-blog.md
-        ├── openai-blog.md
-        └── anthropic-blog.md
+├── index.md
+├── services/
+│   ├── hacker-news.md
+│   ├── github-blog.md
+│   ├── google-blog.md
+│   ├── openai-blog.md
+│   └── anthropic-blog.md
+└── articles/
+    ├── hacker-news/
+    ├── github-blog/
+    ├── google-blog/
+    ├── openai-blog/
+    └── anthropic-blog/
 
 notes/
 └── en/
@@ -118,11 +125,16 @@ src/
 │       ├── rss.py
 │       └── sitemap.py
 ├── processing/
+│   ├── news_preprocessor.py
+│   ├── briefed_article_store.py
+│   ├── article_candidate.py
+│   ├── url_normalizer.py
 │   ├── deduplicator.py
 │   ├── classifier.py
 │   ├── scorer.py
 │   └── summarizer.py
 ├── generator/
+│   ├── article_markdown_writer.py
 │   ├── service_markdown_writer.py
 │   └── summary_markdown_writer.py
 ├── models/
@@ -146,61 +158,46 @@ src/
 
 ## 문서 생성 규칙
 
+메인 페이지:
+
+- `docs/index.md`는 전체 서비스의 핵심 글과 핵심 흐름을 보여주는 첫 진입점이다.
+- 특정 기간 동안 새로 선별된 핵심 글, 도메인별 흐름, 서비스별 최근 업데이트를 연결한다.
+- 모든 항목은 내부 article 문서와 원문 출처로 이동 가능해야 한다.
+
 서비스별 Markdown:
 
 - 각 서비스마다 하나의 문서를 생성한다.
-- 문서는 해당 서비스에서 선별된 주요 뉴스, 요약, 중요도, 출처 링크를 포함한다.
+- 문서는 해당 서비스에서 누적 선별된 핵심 글 목록, 서비스 관점 요약, 최근 브리핑 링크를 포함한다.
 - 모든 요약은 한국어를 기본으로 작성한다.
 - 영어 문서가 필요할 경우 `notes/en/` 아래에 대응 문서를 둔다.
 
-전체 요약 Markdown:
+글별 Markdown:
 
-- 전체 브리핑의 시작점이다.
-- 도메인별 시사점을 구분해서 설명한다.
-- 각 도메인 또는 주요 뉴스에서 원문 출처와 내부 서비스 문서로 이동할 수 있어야 한다.
-- 단순 기사 목록이 아니라 편집된 브리핑이어야 한다.
+- 의미 있는 원문 글 하나당 하나의 문서를 생성한다.
+- 문서 경로는 `docs/articles/{service_key}/{slug}.md`를 사용한다.
+- 한 번 생성된 article 문서는 같은 원문 URL로 다시 Agent 재생성하지 않는다.
+- 문서는 원문 요약, 핵심 포인트, 왜 중요한가, 개발자/제품 관점 시사점, 원문 링크를 포함한다.
 
 권장 구성:
 
-```markdown
-# Today in Tech
-
-## 개요
-
-오늘의 핵심 기술 흐름 요약
-
-## 도메인별 시사점
-
-### AI
-
-- 주요 변화
-- 관련 서비스 문서: [OpenAI Blog](./services/openai-blog.md)
-- 원문 출처: ...
-
-### Developer Tools
-
-...
-
-## 서비스별 브리핑
-
-- [Hacker News](./services/hacker-news.md)
-- [GitHub Blog](./services/github-blog.md)
-- [Google Blog](./services/google-blog.md)
-- [OpenAI Blog](./services/openai-blog.md)
-- [Anthropic Blog](./services/anthropic-blog.md)
+```text
+docs/index.md
+docs/services/{service_key}.md
+docs/articles/{service_key}/{article_slug}.md
 ```
 
 ## News Editor Agent 책임
 
-News Editor Agent는 뉴스레터 편집자 역할을 수행한다.
+News Editor Agent는 뉴스레터 편집자가 아니라 기술 글 큐레이터와 리서치 에디터 역할을 수행한다.
 
 해야 할 일:
 
-- 뉴스 중요도 평가
+- 신규 후보 글의 브리핑 가치 평가
 - 카테고리 분류
 - 중복 제거 보조
-- 서비스별 주요 뉴스 요약
-- 전체 요약 문서의 도메인별 시사점 생성
+- 글 단위 상세 브리핑 생성
+- 서비스별 누적 요약 갱신
+- 메인 페이지의 도메인별 핵심 흐름 생성
 - 원문 출처와 내부 문서 링크 보존
 
 하지 말아야 할 일:
@@ -209,6 +206,7 @@ News Editor Agent는 뉴스레터 편집자 역할을 수행한다.
 - 원문에 없는 사실을 단정하지 않는다.
 - 모든 수집 기사를 문서에 포함하지 않는다.
 - 출처 링크 없이 요약만 제공하지 않는다.
+- 이미 `briefed_articles` 상태에 등록된 글을 다시 브리핑하지 않는다.
 
 ## 처리 워크플로
 
@@ -217,6 +215,8 @@ News Editor Agent는 뉴스레터 편집자 역할을 수행한다.
 - Collector 단계는 `make collect`로 실행한다.
 - 특정 서비스 수집은 `make collect SERVICE={service_key}`로 확인한다.
 - Collector 단계는 `.var/local/raw/{YYYY-MM-DD}/summary.json`과 `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`만 생성하고 Markdown 생성이나 Docusaurus 빌드를 수행하지 않는다.
+- Collector는 daily snapshot을 저장한다. 같은 글이 여러 날짜에 반복 수집될 수 있으며, 이는 정상 동작이다.
+- Preprocessor는 URL 정규화, 현재 실행 중복 제거, 이미 브리핑된 글 제외, 후보 랭킹을 수행한다.
 - 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행한다.
 - 이후 Processing, Generator 단계도 독립 실행 엔트리포인트를 제공하는 방향으로 확장한다.
 
@@ -224,13 +224,15 @@ News Editor Agent는 뉴스레터 편집자 역할을 수행한다.
 2. `NewsCollector`가 각 서비스 구현체의 collector strategy로 정보를 수집한다.
 3. 수집 데이터를 공통 `Article` 모델로 정규화한다.
 4. 서비스별 수집 결과를 `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`에 저장한다.
-5. `seen.json`과 URL canonicalization으로 중복을 제거한다.
-6. Agent가 중요도 점수와 카테고리를 산출한다.
-7. 서비스별 Top News를 요약한다.
-8. `docs/{YYYY-MM-DD}/services/{service}.md`를 생성한다.
-9. 모든 서비스 결과를 모아 `docs/{YYYY-MM-DD}/summary.md`를 생성한다.
-10. Docusaurus를 빌드한다.
-11. GitHub Actions가 GitHub Pages에 배포한다.
+5. Preprocessor가 URL canonicalization과 현재 실행 중복 제거를 수행한다.
+6. `briefed_articles` 상태와 기존 article 문서로 이미 발행된 글을 제외한다.
+7. Agent가 신규 후보 중 의미 있는 글만 선별하고 글 단위 브리핑을 생성한다.
+8. `docs/articles/{service_key}/{slug}.md`를 생성한다.
+9. `docs/services/{service_key}.md`를 서비스별 색인으로 갱신한다.
+10. `docs/index.md`를 전체 진입 페이지로 갱신한다.
+11. 생성 성공 후 `briefed_articles` 상태를 업데이트한다.
+12. Docusaurus를 빌드한다.
+13. GitHub Actions가 GitHub Pages에 배포한다.
 
 ## 오류 처리 원칙
 
@@ -258,3 +260,5 @@ News Editor Agent는 뉴스레터 편집자 역할을 수행한다.
 - 테스트, 운영 트레이싱, 품질 산출물이 바뀌면 `harness/QUALITY.md`와 `notes/en/harness/QUALITY.md`를 함께 업데이트한다.
 - 자동 생성 문서와 사람이 작성한 설계 문서를 명확히 구분한다.
 - 브리핑 품질은 수집량보다 선별 품질을 우선한다.
+- 날짜별 일간 문서 구조를 새로 추가하지 않는다. 사이트의 기본 단위는 서비스와 article이다.
+- 원문 URL 하나는 article 문서 하나에만 대응해야 한다.

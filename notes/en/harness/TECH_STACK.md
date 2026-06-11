@@ -35,7 +35,9 @@ Local execution, rule checks, builds, and manual GitHub Actions deployment trigg
 ## Storage
 
 - JSON file-based storage
-- `data/seen.json` manages deduplication state
+- A `briefed_articles` state file tracks source articles that have already been briefed/published
+- Raw collection data remains local under `.var/` or GitHub Actions artifacts only
+- Operational traces accumulate on the `tracing-history` branch
 
 The MVP does not use a database server, search engine, or vector database.
 
