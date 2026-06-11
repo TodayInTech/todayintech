@@ -1,6 +1,7 @@
 from collections import defaultdict
 from pathlib import Path
 
+from src.generator.markdown_safety import mdx_safe_link_label, mdx_safe_plain_text
 from src.models import BriefingBundle
 
 
@@ -13,8 +14,9 @@ def write_summary_markdown(base_dir: Path, bundle: BriefingBundle) -> Path:
         for item in service.summaries:
             service_link = f"./services/{service.service_key}.md"
             source_link = str(item.article.url)
+            title = mdx_safe_link_label(item.article.title)
             by_category[item.category.value].append(
-                f"- {item.article.title} ([서비스 문서]({service_link}) / [원문]({source_link}))"
+                f"- {title} ([서비스 문서]({service_link}) / [원문]({source_link}))"
             )
 
     lines = [
@@ -24,7 +26,7 @@ def write_summary_markdown(base_dir: Path, bundle: BriefingBundle) -> Path:
         "",
         "## 개요",
         "",
-        bundle.insight_ko or "MVP 단계의 자동 생성 브리핑입니다.",
+        mdx_safe_plain_text(bundle.insight_ko) or "MVP 단계의 자동 생성 브리핑입니다.",
         "",
         "## 도메인별 시사점",
         "",
@@ -40,7 +42,8 @@ def write_summary_markdown(base_dir: Path, bundle: BriefingBundle) -> Path:
 
     lines.extend(["## 서비스별 브리핑", ""])
     for service in bundle.service_briefings:
-        lines.append(f"- [{service.service_name}](./services/{service.service_key}.md)")
+        service_name = mdx_safe_link_label(service.service_name)
+        lines.append(f"- [{service_name}](./services/{service.service_key}.md)")
     lines.append("")
 
     output_path.write_text("\n".join(lines), encoding="utf-8")

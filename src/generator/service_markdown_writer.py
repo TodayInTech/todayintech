@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from src.generator.markdown_safety import mdx_safe_link_label, mdx_safe_plain_text, mdx_safe_text
 from src.models import ServiceBriefing
 
 
@@ -21,19 +22,23 @@ def write_service_markdown(base_dir: Path, briefing: ServiceBriefing) -> Path:
         lines.extend(["선별된 뉴스가 없습니다.", ""])
 
     for item in briefing.summaries:
+        title = mdx_safe_plain_text(item.article.title)
+        source = mdx_safe_link_label(item.article.source)
+        summary = mdx_safe_text(item.summary_ko)
+        why_it_matters = mdx_safe_plain_text(item.why_it_matters_ko)
         lines.extend(
             [
-                f"### {item.article.title}",
+                f"### {title}",
                 "",
                 f"- 카테고리: {item.category.value}",
                 f"- 중요도: {item.importance_score}/5",
-                f"- 출처: [{item.article.source}]({item.article.url})",
+                f"- 출처: [{source}]({item.article.url})",
                 "",
-                item.summary_ko,
+                summary,
                 "",
                 "**왜 중요한가?**",
                 "",
-                item.why_it_matters_ko,
+                why_it_matters,
                 "",
                 "---",
                 "",

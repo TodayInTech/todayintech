@@ -89,3 +89,4 @@ make fetch-trace-history
 - 일부 서비스 수집 실패는 trace에 기록하되, 성공한 서비스가 하나라도 있으면 collector CLI는 성공으로 종료한다.
 - 모든 서비스 수집이 실패하면 collector CLI는 실패로 종료한다.
 - GitHub Actions에서는 dev 의존성을 설치하고 `PYTHON=python`을 명시해서 로컬 `.venv` 경로에 의존하지 않는다.
+- Markdown generator는 RSS, Atom, sitemap 등 외부 source에서 들어온 HTML과 MDX 토큰을 안전한 텍스트로 정규화해야 한다.
