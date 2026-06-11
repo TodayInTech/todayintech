@@ -1,0 +1,198 @@
+{
+  "generated_at": "2026-06-11T23:19:41.373683+00:00",
+  "generated_for": "2026-06-11",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "41f53d69ea8b14f1f1c38e9bbc9020fc87ca2d19",
+  "github_run_id": "27383554639",
+  "service_count": 5,
+  "duration_ms": 5,
+  "raw_count": 120,
+  "candidate_count": 50,
+  "excluded_count": 70,
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "title": "Claude Fable 5 and Claude Mythos 5",
+          "normalized_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+          "candidate_score": 38.0
+        },
+        {
+          "title": "Introducing Claude Corps",
+          "normalized_url": "https://www.anthropic.com/news/claude-corps",
+          "candidate_score": 35.0
+        },
+        {
+          "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+          "normalized_url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+          "candidate_score": 30.0
+        },
+        {
+          "title": "Introducing Claude Opus 4.8",
+          "normalized_url": "https://www.anthropic.com/news/claude-opus-4-8",
+          "candidate_score": 30.0
+        },
+        {
+          "title": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+          "normalized_url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+          "candidate_score": 27.0
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 10,
+      "excluded_count": 0,
+      "top_candidates": [
+        {
+          "title": "Making secret scanning more trustworthy: Reducing false positives at scale",
+          "normalized_url": "https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale",
+          "candidate_score": 41.0
+        },
+        {
+          "title": "GitHub availability report: May 2026",
+          "normalized_url": "https://github.blog/news-insights/company-news/github-availability-report-may-2026",
+          "candidate_score": 37.0
+        },
+        {
+          "title": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
+          "candidate_score": 37.0
+        },
+        {
+          "title": "Give GitHub Copilot CLI real code intelligence with language servers",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers",
+          "candidate_score": 34.0
+        },
+        {
+          "title": "GitHub for Beginners: Answers to some common questions",
+          "normalized_url": "https://github.blog/developer-skills/github/github-for-beginners-answers-to-some-common-questions",
+          "candidate_score": 30.0
+        }
+      ],
+      "excluded_reasons": {}
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
+          "normalized_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments",
+          "candidate_score": 41.0
+        },
+        {
+          "title": "Bringing the latest Gemini models to Apple developers",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/bringing-gemini-models-to-apple-developers",
+          "candidate_score": 35.0
+        },
+        {
+          "title": "DiffusionGemma: 4x faster text generation",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation",
+          "candidate_score": 34.0
+        },
+        {
+          "title": "4 ways researchers are collaborating with Co-Scientist to solve big problems",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/research/co-scientist-research-problems",
+          "candidate_score": 32.0
+        },
+        {
+          "title": "See what 3 builders are making with Gemma 4",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4-builders",
+          "candidate_score": 31.0
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "title": "Show HN: Homebrew 6.0.0",
+          "normalized_url": "https://brew.sh/2026/06/11/homebrew-6.0.0",
+          "candidate_score": 70.0
+        },
+        {
+          "title": "MiMo Code is now released and open-source",
+          "normalized_url": "https://mimo.xiaomi.com/mimocode",
+          "candidate_score": 65.0
+        },
+        {
+          "title": "Solar generates more energy in US than coal for first time",
+          "normalized_url": "https://www.theguardian.com/us-news/2026/jun/11/solar-energy-us-coal",
+          "candidate_score": 60.0
+        },
+        {
+          "title": "Petition to Withdraw Canada's Bill C-22",
+          "normalized_url": "https://www.ourcommons.ca/petitions/en/Petition/Sign/e-7416",
+          "candidate_score": 60.0
+        },
+        {
+          "title": "The RCE that AMD wouldn't fix",
+          "normalized_url": "https://mrbruh.com/amd2",
+          "candidate_score": 59.7
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "title": "OpenAI to acquire Ona",
+          "normalized_url": "https://openai.com/index/openai-to-acquire-ona",
+          "candidate_score": 44.0
+        },
+        {
+          "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
+          "normalized_url": "https://openai.com/index/openai-on-oracle-cloud",
+          "candidate_score": 44.0
+        },
+        {
+          "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
+          "normalized_url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+          "candidate_score": 38.0
+        },
+        {
+          "title": "How an astrophysicist uses Codex to help simulate black holes",
+          "normalized_url": "https://openai.com/index/using-codex-to-simulate-black-holes",
+          "candidate_score": 37.0
+        },
+        {
+          "title": "From data to decisions: how LSEG is scaling trusted AI",
+          "normalized_url": "https://openai.com/index/lseg",
+          "candidate_score": 37.0
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 40
+      }
+    }
+  ]
+}
