@@ -12,7 +12,7 @@ Update it continuously when feature implementation, documentation structure, col
 
 ## Current Stage
 
-The project has completed the `Project Init`, `Collector`, and `Preprocessor` stages. The product direction has changed from dated daily briefings to an article-level cumulative curation archive.
+The project has completed the `Project Init`, `Collector`, and `Preprocessor` stages and is currently building the basic `Writer` structure. The product direction has changed from dated daily briefings to an article-level cumulative curation archive.
 
 ## Work Checklist
 
@@ -54,19 +54,18 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Standalone Preprocessor CLI
   - [x] Makefile-based preprocessor command
   - [x] Connect the Preprocessor stage after the Collector stage in `src.main`
-  - [ ] Connect Generator publication completion to `briefed_articles` state updates
+  - [x] Connect Writer draft generation to `briefed_articles` state updates
 
-- [ ] News Editor Agent - pending
-  - Select new candidate articles
-  - Generate article-level detailed briefings
-  - Generate service summaries and main page insights
-  - Validate LLM response schema and fallback policy
-
-- [ ] Generator - pending
-  - Generate `docs/articles/{service_key}/{slug}.md`
-  - Generate `docs/services/{service_key}.md` service indexes
-  - Generate `docs/index.md` main page
-  - Verify internal links and source links
+- [ ] Writer - in progress
+  - [x] Add Writer package structure
+  - [x] Implement Draft Agent contract/schema
+  - [x] Generate `docs/articles/{service_key}/{slug}.md` draft documents
+  - [x] Generate `docs/services/{service_key}.md` service indexes
+  - [x] Generate `docs/index.md` main page
+  - [x] Update `briefed_articles` draft state after successful generation
+  - [x] Add standalone Writer CLI and Makefile command
+  - [ ] Implement LLM-based News Editor Agent
+  - [ ] Implement publication status transition policy
 
 - [x] Build / Deploy - complete
   - Validate Docusaurus build
@@ -75,5 +74,5 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 
 ## Next Work Candidates
 
-- Connect Writer publication completion to `briefed_articles` state updates
-- Convert dated generator output into article archive output
+- Implement LLM-based News Editor Agent
+- Implement draft-to-published transition policy

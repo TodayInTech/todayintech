@@ -6,7 +6,6 @@ from src.models import Article, ServiceCollectionResult
 
 
 class FakeSettings:
-    max_articles_per_service = 5
     max_candidates_per_service = 10
     max_candidates_total = 50
 
@@ -57,9 +56,13 @@ def test_run_pipeline_writes_raw_and_preprocessed_outputs(tmp_path, monkeypatch)
     monkeypatch.setattr(pipeline_main, "NewsCollector", FakeCollector)
     monkeypatch.setattr(pipeline_main, "NewsSourceFactory", FakeSourceFactory)
 
-    bundle = pipeline_main.run_pipeline("2026-06-11")
+    result = pipeline_main.run_pipeline("2026-06-11")
 
-    assert bundle.generated_for == "2026-06-11"
+    assert result.generated_for == "2026-06-11"
     assert tmp_path.joinpath("raw", "2026-06-11", "summary.json").exists()
     assert tmp_path.joinpath("processed", "2026-06-11", "preprocessing.json").exists()
-    assert bundle.service_briefings[0].summaries[0].article.title == "New Agent Release"
+    assert tmp_path.joinpath("docs", "index.md").exists()
+    assert tmp_path.joinpath("docs", "services", "hacker-news.md").exists()
+    assert list(tmp_path.joinpath("docs", "articles", "hacker-news").glob("*.md"))
+    assert tmp_path.joinpath("data", "briefed_articles.json").exists()
+    assert result.editorial_result.services[0].briefings[0].title == "New Agent Release"

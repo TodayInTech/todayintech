@@ -12,7 +12,7 @@
 
 ## 현재 단계
 
-현재 프로젝트는 `Project Init`, `Collector`, `Preprocessor` 단계를 완료했다. 제품 방향은 날짜별 일간 브리핑에서 글 단위 누적 큐레이션 아카이브로 전환했다.
+현재 프로젝트는 `Project Init`, `Collector`, `Preprocessor` 단계를 완료했고, `Writer` 기본 구조를 구성 중이다. 제품 방향은 날짜별 일간 브리핑에서 글 단위 누적 큐레이션 아카이브로 전환했다.
 
 ## 작업 체크리스트
 
@@ -54,19 +54,18 @@
   - [x] Preprocessor 단독 실행 CLI 구성
   - [x] Makefile 기반 preprocessor 실행 명령 구성
   - [x] `src.main` 파이프라인에 Collector 이후 Preprocessor 단계 연결
-  - [ ] Generator 발행 완료 시 `briefed_articles` 상태 갱신 연동
+  - [x] Writer draft 생성 상태 기준으로 `briefed_articles` 상태 갱신 연동
 
-- [ ] News Editor Agent - 대기
-  - 신규 후보 글 선별
-  - 글 단위 상세 브리핑 생성
-  - 서비스별 요약과 메인 페이지 인사이트 생성
-  - LLM 응답 schema 검증과 fallback 정책
-
-- [ ] Generator - 대기
-  - `docs/articles/{service_key}/{slug}.md` 생성
-  - `docs/services/{service_key}.md` 서비스별 색인 생성
-  - `docs/index.md` 메인 페이지 생성
-  - 내부 링크와 출처 링크 검증
+- [ ] Writer - 진행 중
+  - [x] Writer 패키지 구조 추가
+  - [x] Draft Agent contract/schema 구현
+  - [x] `docs/articles/{service_key}/{slug}.md` draft 문서 생성
+  - [x] `docs/services/{service_key}.md` 서비스별 색인 생성
+  - [x] `docs/index.md` 메인 페이지 생성
+  - [x] 생성 성공 후 `briefed_articles` draft 상태 갱신
+  - [x] Writer 단독 실행 CLI와 Makefile 명령 구성
+  - [ ] LLM 기반 News Editor Agent 구현
+  - [ ] 게시 상태 전환 정책 구현
 
 - [x] Build / Deploy - 완료
   - Docusaurus 빌드 검증
@@ -75,5 +74,5 @@
 
 ## 다음 작업 후보
 
-- Writer 발행 완료 시 `briefed_articles` 상태 갱신 연동
-- 날짜 기반 generator를 article archive generator로 전환
+- LLM 기반 News Editor Agent 구현
+- draft article을 published article로 전환하는 정책 구현

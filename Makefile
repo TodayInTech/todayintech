@@ -47,12 +47,26 @@ ifneq ($(strip $(BRIEFED_STATE)),)
 PREPROCESS_ARGS += --briefed-state $(BRIEFED_STATE)
 endif
 
+WRITE_ARGS :=
+ifneq ($(strip $(DATE)),)
+WRITE_ARGS += --date $(DATE)
+endif
+ifneq ($(strip $(PROCESSED_DIR)),)
+WRITE_ARGS += --processed-dir $(PROCESSED_DIR)
+endif
+ifneq ($(strip $(OUTPUT_DIR)),)
+WRITE_ARGS += --output-dir $(OUTPUT_DIR)
+endif
+ifneq ($(strip $(BRIEFED_STATE)),)
+WRITE_ARGS += --briefed-state $(BRIEFED_STATE)
+endif
+
 WORKFLOW_ARGS := --ref $(BRANCH)
 ifneq ($(strip $(DATE)),)
 WORKFLOW_ARGS += -f target_date=$(DATE)
 endif
 
-.PHONY: help collect preprocess trace-collect trace-preprocess fetch-trace-history generate test test-unit test-collection lint lint-fix format format-check check build verify quality ci-quality ci deploy deploy-status
+.PHONY: help collect preprocess write trace-collect trace-preprocess fetch-trace-history generate test test-unit test-collection lint lint-fix format format-check check build verify quality ci-quality ci deploy deploy-status
 
 help:
 	@echo "Today in Tech project commands"
@@ -67,6 +81,10 @@ help:
 	@echo "  make preprocess"
 	@echo "  make preprocess DATE=2026-06-07"
 	@echo "  make preprocess RAW_DIR=.var/local/raw PROCESSED_DIR=.var/local/processed"
+	@echo ""
+	@echo "Writer:"
+	@echo "  make write"
+	@echo "  make write DATE=2026-06-07 PROCESSED_DIR=.var/local/processed OUTPUT_DIR=docs"
 	@echo "  make trace-collect"
 	@echo "  make trace-preprocess"
 	@echo "  make fetch-trace-history"
@@ -116,6 +134,9 @@ collect:
 
 preprocess:
 	$(PYTHON) -m src.processing $(PREPROCESS_ARGS)
+
+write:
+	$(PYTHON) -m src.writer $(WRITE_ARGS)
 
 trace-collect:
 	$(PYTHON) -m src.collection $(COLLECT_ARGS) --trace-dir $(TRACE_DIR)

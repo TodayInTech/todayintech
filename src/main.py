@@ -1,17 +1,13 @@
 from src.collection import NewsCollector, write_raw_collection_results
-from src.generator.service_markdown_writer import write_service_markdown
-from src.generator.summary_markdown_writer import write_summary_markdown
-from src.models import BriefingBundle, ServiceBriefing
 from src.processing import BriefedArticleStore, NewsPreprocessor
 from src.processing.processed_writer import write_preprocessing_result
-from src.processing.summarizer import summarize_article
 from src.settings import SETTINGS
 from src.sources import NewsSourceFactory
+from src.writer import DraftNewsEditorAgent, NewsWriter, WriterResult
 
 
-def run_pipeline(target_date: str | None = None) -> BriefingBundle:
+def run_pipeline(target_date: str | None = None) -> WriterResult:
     generated_for = SETTINGS.resolve_target_date(target_date)
-    max_articles = SETTINGS.max_articles_per_service
 
     source_factory = NewsSourceFactory()
     collector = NewsCollector(source_factory)
@@ -33,38 +29,20 @@ def run_pipeline(target_date: str | None = None) -> BriefingBundle:
         preprocessing_result,
     )
 
-    # 3. Generator 단계: 현재는 legacy Markdown scaffold를 전처리 후보 기준으로 생성한다.
-    #    article archive generator가 구현되면 이 구간을 글 단위 문서 생성으로 교체한다.
-    service_briefings: list[ServiceBriefing] = []
-    for result in preprocessing_result.services:
-        candidates = result.candidates[:max_articles]
-        summaries = [summarize_article(candidate.article) for candidate in candidates]
-        service_briefings.append(
-            ServiceBriefing(
-                service_key=result.service_key,
-                service_name=result.service_name,
-                generated_for=generated_for,
-                summaries=summaries,
-            )
-        )
-
-    bundle = BriefingBundle(
-        generated_for=generated_for,
-        service_briefings=service_briefings,
-        insight_ko="서비스별 주요 기술 뉴스를 수집하고 도메인별로 묶은 자동 브리핑입니다.",
+    # 3. Writer 단계: Agent가 후보를 편집 결과로 바꾸고 Generator가 Markdown을 생성한다.
+    #    현재 Agent는 요약을 만들지 않는 Draft Agent이며, LLM Agent는 이후 같은 계약으로 교체한다.
+    writer = NewsWriter(
+        agent=DraftNewsEditorAgent(),
+        output_dir=SETTINGS.output_dir,
+        briefed_article_store=briefed_article_store,
     )
-
-    output_dir = SETTINGS.output_dir / generated_for
-    for briefing in service_briefings:
-        write_service_markdown(output_dir, briefing)
-    write_summary_markdown(output_dir, bundle)
-
-    return bundle
+    return writer.write(preprocessing_result)
 
 
 def main() -> None:
-    bundle = run_pipeline()
-    print(f"Generated briefing bundle for {bundle.generated_for}")
+    result = run_pipeline()
+    print(f"Generated writer output for {result.generated_for}")
+    print(f"Written files: {len(result.written_paths)}")
 
 
 if __name__ == "__main__":

@@ -39,3 +39,20 @@ def test_briefed_article_store_matches_title_within_same_service(tmp_path) -> No
         "same title",
         "github-blog",
     )
+
+
+def test_briefed_article_store_treats_draft_as_active_written_article(tmp_path) -> None:
+    store = BriefedArticleStore(tmp_path / "briefed_articles.json")
+    store.mark_draft(
+        normalized_url="https://example.com/draft",
+        title_fingerprint="draft article",
+        service_key="hacker-news",
+        title="Draft Article",
+        article_doc_path="docs/articles/hacker-news/draft.md",
+    )
+
+    assert store.contains(
+        "https://example.com/draft",
+        "draft article",
+        "hacker-news",
+    )

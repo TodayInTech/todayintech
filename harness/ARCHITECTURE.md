@@ -2,7 +2,7 @@
 
 ## 프로젝트 아키텍처
 
-Today in Tech는 수집, 전처리, Agent 편집, 문서 생성, 빌드, 배포 단계를 분리한다. 각 단계는 독립적으로 테스트 가능해야 하며, 서비스 추가가 전체 파이프라인 수정으로 이어지지 않도록 설계한다.
+Today in Tech는 수집, 전처리, Writer, 빌드, 배포 단계를 분리한다. 각 단계는 독립적으로 테스트 가능해야 하며, 서비스 추가가 전체 파이프라인 수정으로 이어지지 않도록 설계한다.
 
 ```text
 Official Sources
@@ -67,10 +67,17 @@ src/
 │   ├── classifier.py
 │   ├── scorer.py
 │   └── summarizer.py
-├── generator/
-│   ├── article_markdown_writer.py
-│   ├── service_markdown_writer.py
-│   └── summary_markdown_writer.py
+├── writer/
+│   ├── __main__.py
+│   ├── news_writer.py
+│   ├── agent/
+│   │   ├── contracts.py
+│   │   ├── draft_agent.py
+│   │   └── schemas.py
+│   └── generator/
+│       ├── article_markdown_writer.py
+│       ├── main_index_writer.py
+│       └── service_index_writer.py
 ├── models/
 │   └── article.py
 └── main.py
@@ -123,9 +130,9 @@ Collector
     ↓
 Preprocessor
     ↓
-News Editor Agent
-    ↓
-Generator
+Writer
+    ├── Agent
+    └── Generator
     ↓
 Build
     ↓
@@ -219,6 +226,22 @@ make preprocess RAW_DIR=.var/local/raw PROCESSED_DIR=.var/local/processed
 전처리는 `Pipeline + Strategy + Repository` 조합으로 구성한다. `NewsPreprocessor`는 단계별 `PreprocessingStep`을 순서대로 실행하고, 후보 점수화는 교체 가능한 scorer strategy로 둔다. `BriefedArticleStore`는 Writer가 문서 생성 성공 후 기록한 원문 글 상태를 조회하는 저장소 역할을 한다.
 
 전처리 산출물의 `ArticleCandidate`는 Writer 입력 패킷이다. 이 패킷은 요약이나 인사이트를 만들지 않고, Writer Agent가 발행 여부와 편집 내용을 판단하는 데 필요한 식별자와 근거만 제공한다.
+
+## Writer
+
+Writer 단계는 Preprocessor가 만든 `ArticleCandidate`를 받아 문서화 결과를 만든다. Writer 내부는 Agent와 Generator로 나뉜다.
+
+- Writer Agent: 후보 중 문서화할 글을 선택하고 편집 결과를 만든다.
+- Writer Generator: Agent 결과만 받아 Markdown 파일을 쓴다.
+- Writer는 모든 Markdown 생성이 성공한 뒤 `briefed_articles` 상태를 갱신한다.
+- 현재 구현은 `DraftNewsEditorAgent`를 사용한다. Draft Agent는 요약, 왜 중요한가, 개발자 인사이트를 생성하지 않고 `editorial_status=draft` 문서만 만든다.
+
+Writer 실행:
+
+```bash
+make write
+make write DATE=2026-06-07 PROCESSED_DIR=.var/local/processed OUTPUT_DIR=docs
+```
 
 ## News Editor Agent
 

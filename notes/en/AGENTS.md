@@ -55,7 +55,10 @@ src/
 │       ├── rss.py
 │       └── sitemap.py
 ├── processing/
-├── generator/
+├── writer/
+│   ├── news_writer.py
+│   ├── agent/
+│   └── generator/
 ├── models/
 └── main.py
 ```
@@ -95,8 +98,10 @@ Each stage must remain independently executable for development and debugging.
 - The Collector stores daily snapshots. Repeated articles across dates are expected and must be filtered by preprocessing, not by collection.
 - Run the Preprocessor stage with `make preprocess`.
 - The Preprocessor normalizes URLs, removes run-level duplicates, excludes already briefed articles, ranks candidates, and generates Writer-facing candidate identifiers.
-- Run the full pipeline with `.venv/bin/python -m src.main`; it currently connects the Preprocessor after the Collector.
-- Future Processing and Generator stages should also expose independent entrypoints.
+- Run the Writer stage with `make write`.
+- Writer contains the Agent and Generator. The Agent creates editorial results and the Generator only writes Markdown.
+- The current Writer uses `DraftNewsEditorAgent`, which does not generate summaries or insights.
+- Run the full pipeline with `.venv/bin/python -m src.main`; it currently connects Collector, Preprocessor, and Writer draft generation.
 
 1. Create services through the factory.
 2. Collect information through each service collector strategy via `NewsCollector`.
@@ -105,11 +110,11 @@ Each stage must remain independently executable for development and debugging.
 5. Normalize URLs and remove run-level duplicates in preprocessing.
 6. Exclude articles already published in the briefed article state.
 7. Generate Writer-facing candidates with `candidate_id`, `url_hash`, `suggested_doc_key`, and `suggested_article_path`.
-8. Let the Writer Agent select meaningful new candidates and create article-level briefings.
+8. Let the Writer Agent convert new candidates into editorial results. The current Draft Agent does not generate summaries or insights.
 9. Let the Writer Generator create `docs/articles/{service_key}/{slug}.md` files.
 10. Regenerate `docs/services/{service_key}.md` service indexes.
 11. Regenerate `docs/index.md` as the main entry page.
-12. Update the briefed article state after successful generation.
+12. Update the briefed article state as draft or published after successful generation.
 13. Build Docusaurus.
 14. Deploy to GitHub Pages through GitHub Actions.
 

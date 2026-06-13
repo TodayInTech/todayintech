@@ -6,6 +6,8 @@ from pydantic import BaseModel, Field
 
 from src.processing.candidate_identity import url_hash
 
+ACTIVE_BRIEFING_STATUSES = {"draft", "briefed", "published"}
+
 
 class BriefedArticleRecord(BaseModel):
     normalized_url: str
@@ -29,13 +31,16 @@ class BriefedArticleStore:
 
     def contains(self, normalized_url: str, title_fingerprint: str, service_key: str) -> bool:
         url_key = self.key_for_url(normalized_url)
-        if url_key in self.state.articles:
+        if (
+            url_key in self.state.articles
+            and self.state.articles[url_key].status in ACTIVE_BRIEFING_STATUSES
+        ):
             return True
 
         return any(
             record.service_key == service_key
             and record.title_fingerprint == title_fingerprint
-            and record.status in {"briefed", "published"}
+            and record.status in ACTIVE_BRIEFING_STATUSES
             for record in self.state.articles.values()
         )
 
@@ -48,12 +53,50 @@ class BriefedArticleStore:
         title: str,
         article_doc_path: str | None = None,
     ) -> None:
+        self.mark(
+            normalized_url=normalized_url,
+            title_fingerprint=title_fingerprint,
+            service_key=service_key,
+            title=title,
+            article_doc_path=article_doc_path,
+            status="published",
+        )
+
+    def mark_draft(
+        self,
+        *,
+        normalized_url: str,
+        title_fingerprint: str,
+        service_key: str,
+        title: str,
+        article_doc_path: str | None = None,
+    ) -> None:
+        self.mark(
+            normalized_url=normalized_url,
+            title_fingerprint=title_fingerprint,
+            service_key=service_key,
+            title=title,
+            article_doc_path=article_doc_path,
+            status="draft",
+        )
+
+    def mark(
+        self,
+        *,
+        normalized_url: str,
+        title_fingerprint: str,
+        service_key: str,
+        title: str,
+        article_doc_path: str | None = None,
+        status: str,
+    ) -> None:
         self.state.articles[self.key_for_url(normalized_url)] = BriefedArticleRecord(
             normalized_url=normalized_url,
             title_fingerprint=title_fingerprint,
             service_key=service_key,
             title=title,
             article_doc_path=article_doc_path,
+            status=status,
             briefed_at=datetime.now(UTC),
         )
 

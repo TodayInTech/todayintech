@@ -2,7 +2,7 @@
 
 ## Project Architecture
 
-Today in Tech separates collection, preprocessing, agent editing, generation, build, and deployment. Each stage should be independently testable, and adding a service must not require changing the whole pipeline.
+Today in Tech separates collection, preprocessing, Writer, build, and deployment. Each stage should be independently testable, and adding a service must not require changing the whole pipeline.
 
 ```text
 Official Sources
@@ -21,13 +21,9 @@ Briefed Article Filtering
     ↓
 Candidate Ranking
     ↓
-News Editor Agent
-    ↓
-Article Markdown Generation
-    ↓
-Service Index Generation
-    ↓
-Main Index Generation
+Writer
+    ├── News Editor Agent
+    └── Markdown Generator
     ↓
 Docusaurus Build
     ↓
@@ -67,10 +63,17 @@ src/
 │   ├── classifier.py
 │   ├── scorer.py
 │   └── summarizer.py
-├── generator/
-│   ├── article_markdown_writer.py
-│   ├── service_markdown_writer.py
-│   └── summary_markdown_writer.py
+├── writer/
+│   ├── __main__.py
+│   ├── news_writer.py
+│   ├── agent/
+│   │   ├── contracts.py
+│   │   ├── draft_agent.py
+│   │   └── schemas.py
+│   └── generator/
+│       ├── article_markdown_writer.py
+│       ├── main_index_writer.py
+│       └── service_index_writer.py
 ├── models/
 │   └── article.py
 └── main.py
@@ -123,9 +126,9 @@ Collector
     ↓
 Preprocessor
     ↓
-News Editor Agent
-    ↓
-Generator
+Writer
+    ├── Agent
+    └── Generator
     ↓
 Build
     ↓
@@ -219,6 +222,22 @@ Preprocessing output:
 Preprocessing uses a `Pipeline + Strategy + Repository` combination. `NewsPreprocessor` runs ordered `PreprocessingStep` objects, candidate scoring is kept as a replaceable scorer strategy, and `BriefedArticleStore` acts as the state repository for source articles recorded by Writer after successful document generation.
 
 The preprocessing `ArticleCandidate` is the Writer input packet. It does not generate summaries or insights; it only provides identifiers and evidence that the Writer Agent can use to decide publication and editorial content.
+
+## Writer
+
+The Writer stage receives `ArticleCandidate` objects from the Preprocessor and turns them into documentation output. Writer contains Agent and Generator responsibilities.
+
+- Writer Agent selects candidates and creates editorial results.
+- Writer Generator only writes Markdown from Agent results.
+- Writer updates the `briefed_articles` state after all Markdown generation succeeds.
+- The current implementation uses `DraftNewsEditorAgent`. The Draft Agent does not generate summaries, why-it-matters text, or developer insights; it only creates `editorial_status=draft` documents.
+
+Writer execution:
+
+```bash
+make write
+make write DATE=2026-06-07 PROCESSED_DIR=.var/local/processed OUTPUT_DIR=docs
+```
 
 ## News Editor Agent
 
