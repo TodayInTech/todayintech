@@ -317,10 +317,14 @@ Workflow:
 3. Node 20 setup
 4. Python dependency install
 5. Node dependency install
-6. Collection, preprocessing, and Markdown scaffold generation through `make generate`
-7. Docusaurus build through `make build`
-8. GitHub Pages artifact upload
-9. GitHub Pages deploy
+6. Tests and operational trace through `make ci-quality`
+7. Publish trace results to the `tracing-history` branch
+8. Collection, preprocessing, and OpenAI Writer document generation through `make generate-openai`
+9. Docusaurus build through `make build`
+10. GitHub Pages artifact upload
+11. GitHub Pages deploy
+
+GitHub Actions automatic deployment requires the `OPENAI_API_KEY` repository secret.
 
 Manual deployment:
 

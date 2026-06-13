@@ -104,11 +104,14 @@ jobs:
           git -C "$TRACE_HISTORY_DIR" push origin "$TRACE_HISTORY_BRANCH"
 
       - name: Generate briefing
-        run: make generate PYTHON=python
+        run: make generate-openai PYTHON=python
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TODAYINTECH_TARGET_DATE: ${{ inputs.target_date }}
           TODAYINTECH_RAW_OUTPUT_DIR: .artifacts/raw
+          TODAYINTECH_PROCESSED_OUTPUT_DIR: .artifacts/processed
+          TODAYINTECH_MAX_CANDIDATES_PER_SERVICE: "4"
+          TODAYINTECH_MAX_CANDIDATES_TOTAL: "50"
 
       - name: Build Docusaurus
         run: make build

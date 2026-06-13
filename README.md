@@ -250,17 +250,20 @@ src/
 2. Node 20 설정
 3. Python 의존성 설치
 4. Node 의존성 설치
-5. `make generate`로 수집, 전처리, Writer draft 문서 생성
-6. `make build`로 Docusaurus 빌드
-7. GitHub Pages 배포
+5. `make ci-quality`로 테스트와 운영 trace 실행
+6. trace 결과를 `tracing-history` 브랜치에 누적
+7. `make generate-openai`로 수집, 전처리, OpenAI Writer 문서 생성
+8. `make build`로 Docusaurus 빌드
+9. GitHub Pages 배포
 
 GitHub Actions에서 `OPENAI_API_KEY`는 repository secret으로 설정해야 합니다.
 수동 배포는 `workflow_dispatch`의 `target_date` 입력 또는 `make deploy DATE=YYYY-MM-DD`로 날짜를 지정할 수 있습니다.
 
 ## 현재 한계
 
-- `make generate`는 article archive 기반 Writer draft 문서를 생성합니다.
-- OpenAI 기반 Writer Agent는 선택적으로 사용할 수 있습니다. 기본값은 API 호출이 없는 `draft`입니다.
+- 로컬 `make generate`는 article archive 기반 Writer draft 문서를 생성합니다.
+- GitHub Actions 자동 배포는 `make generate-openai`를 사용하므로 `OPENAI_API_KEY` secret이 없으면 실패합니다.
+- OpenAI 기반 Writer Agent는 로컬에서는 선택적으로 사용할 수 있습니다. 기본값은 API 호출이 없는 `draft`입니다.
 - OpenAI Agent는 원문 전체가 아니라 피드 메타데이터 기준으로 브리핑을 작성합니다.
 - `briefed_articles` 상태는 Writer draft 생성 성공 후 갱신되며, 이후 전처리 필터로 사용됩니다.
 - Docusaurus 보안 감사에서 Node 의존성 경고가 있을 수 있습니다. 필요 시 `npm audit` 기준으로 별도 처리합니다.

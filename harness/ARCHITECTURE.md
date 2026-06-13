@@ -321,10 +321,14 @@ GitHub Actions가 매일 source snapshot 수집, 신규 후보 처리, 아카이
 3. Node 20 setup
 4. Python dependency install
 5. Node dependency install
-6. `make generate`를 통한 collection, preprocessing, Markdown scaffold generation
-7. `make build`를 통한 Docusaurus build
-8. GitHub Pages artifact upload
-9. GitHub Pages deploy
+6. `make ci-quality`를 통한 테스트와 운영 trace 실행
+7. trace 결과를 `tracing-history` 브랜치에 누적
+8. `make generate-openai`를 통한 collection, preprocessing, OpenAI Writer 문서 생성
+9. `make build`를 통한 Docusaurus build
+10. GitHub Pages artifact upload
+11. GitHub Pages deploy
+
+GitHub Actions 자동 배포는 `OPENAI_API_KEY` repository secret이 필요하다.
 
 수동 배포:
 
