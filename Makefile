@@ -12,12 +12,15 @@ OUTPUT_DIR ?=
 RAW_DIR ?=
 PROCESSED_DIR ?=
 BRIEFED_STATE ?=
+WRITER_AGENT ?=
 TRACE_DIR ?= .var/local/traces
 REPORT_DIR ?= .var/local/reports
 CI_RAW_DIR ?= .artifacts/raw
 CI_PROCESSED_DIR ?= .artifacts/processed
 CI_TRACE_DIR ?= .artifacts/traces
 CI_REPORT_DIR ?= .artifacts/reports
+HOST ?= 127.0.0.1
+PORT ?= 3000
 
 COLLECT_ARGS :=
 ifneq ($(strip $(SERVICE)),)
@@ -60,13 +63,16 @@ endif
 ifneq ($(strip $(BRIEFED_STATE)),)
 WRITE_ARGS += --briefed-state $(BRIEFED_STATE)
 endif
+ifneq ($(strip $(WRITER_AGENT)),)
+WRITE_ARGS += --agent $(WRITER_AGENT)
+endif
 
 WORKFLOW_ARGS := --ref $(BRANCH)
 ifneq ($(strip $(DATE)),)
 WORKFLOW_ARGS += -f target_date=$(DATE)
 endif
 
-.PHONY: help collect preprocess write trace-collect trace-preprocess fetch-trace-history generate test test-unit test-collection lint lint-fix format format-check check build verify quality ci-quality ci deploy deploy-status
+.PHONY: help collect preprocess write trace-collect trace-preprocess fetch-trace-history generate generate-openai test test-unit test-collection lint lint-fix format format-check check build serve serve-build verify quality ci-quality ci deploy deploy-status
 
 help:
 	@echo "Today in Tech project commands"
@@ -85,6 +91,8 @@ help:
 	@echo "Writer:"
 	@echo "  make write"
 	@echo "  make write DATE=2026-06-07 PROCESSED_DIR=.var/local/processed OUTPUT_DIR=docs"
+	@echo "  make write WRITER_AGENT=openai"
+	@echo "  make generate-openai"
 	@echo "  make trace-collect"
 	@echo "  make trace-preprocess"
 	@echo "  make fetch-trace-history"
@@ -99,6 +107,9 @@ help:
 	@echo "  make format-check"
 	@echo "  make check"
 	@echo "  make build"
+	@echo "  make serve"
+	@echo "  make serve HOST=127.0.0.1 PORT=3000"
+	@echo "  make serve-build"
 	@echo "  make verify"
 	@echo "  make quality"
 	@echo "  make ci-quality"
@@ -122,12 +133,15 @@ help:
 	@echo "  RAW_DIR       Optional preprocessing raw input root"
 	@echo "  PROCESSED_DIR Optional preprocessing output root"
 	@echo "  BRIEFED_STATE Optional briefed article state JSON path"
+	@echo "  WRITER_AGENT   Writer agent implementation: draft or openai"
 	@echo "  TRACE_DIR     Trace output root. Default: .var/local/traces"
 	@echo "  REPORT_DIR    Test report output root. Default: .var/local/reports"
 	@echo "  CI_RAW_DIR    GitHub Actions raw output root. Default: .artifacts/raw"
 	@echo "  CI_PROCESSED_DIR GitHub Actions processed output root. Default: .artifacts/processed"
 	@echo "  CI_TRACE_DIR  GitHub Actions trace output root. Default: .artifacts/traces"
 	@echo "  CI_REPORT_DIR GitHub Actions report output root. Default: .artifacts/reports"
+	@echo "  HOST        Docusaurus local server host. Default: 127.0.0.1"
+	@echo "  PORT        Docusaurus local server port. Default: 3000"
 
 collect:
 	$(PYTHON) -m src.collection $(COLLECT_ARGS)
@@ -158,6 +172,9 @@ fetch-trace-history:
 generate:
 	$(PYTHON) -m src.main
 
+generate-openai:
+	TODAYINTECH_WRITER_AGENT=openai $(PYTHON) -m src.main
+
 test:
 	mkdir -p $(REPORT_DIR)
 	$(PYTHON) -m pytest tests --junitxml=$(REPORT_DIR)/junit.xml
@@ -186,6 +203,12 @@ check: lint format-check test
 
 build:
 	$(NPM) run build
+
+serve:
+	$(NPM) run start -- --host $(HOST) --port $(PORT)
+
+serve-build:
+	$(NPM) run serve -- --host $(HOST) --port $(PORT)
 
 verify: check build
 

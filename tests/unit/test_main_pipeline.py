@@ -6,6 +6,9 @@ from src.models import Article, ServiceCollectionResult
 
 
 class FakeSettings:
+    openai_api_key = None
+    openai_model = "gpt-5-mini"
+    writer_agent = "draft"
     max_candidates_per_service = 10
     max_candidates_total = 50
 

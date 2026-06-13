@@ -3,6 +3,7 @@ from time import perf_counter
 
 from src.collection.factories.collector_strategy_factory import CollectorStrategyFactory
 from src.models import ServiceCollectionResult
+from src.progress import log_info
 from src.sources import NewsSourceFactory
 from src.sources.contracts.base import BaseNewsSource
 
@@ -19,7 +20,23 @@ class NewsCollector:
         self.strategy_factory = strategy_factory or CollectorStrategyFactory()
 
     def collect_all(self) -> list[ServiceCollectionResult]:
-        return [self.collect_source(source) for source in self.source_factory.create_all()]
+        sources = self.source_factory.create_all()
+        results: list[ServiceCollectionResult] = []
+        for index, source in enumerate(sources, start=1):
+            log_info(
+                "Collector",
+                f"({index}/{len(sources)}) {source.service_key} 수집 시작: {source.collector_type}",
+            )
+            result = self.collect_source(source)
+            log_info(
+                "Collector",
+                (
+                    f"({index}/{len(sources)}) {source.service_key} {result.status}: "
+                    f"articles={len(result.articles)}, duration_ms={result.duration_ms}"
+                ),
+            )
+            results.append(result)
+        return results
 
     def collect_by_service_key(self, service_key: str) -> ServiceCollectionResult:
         source = self.source_factory.create(service_key)

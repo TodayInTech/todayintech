@@ -1,4 +1,5 @@
 from src.processing.article_candidate import ArticleCandidate, PreprocessingResult
+from src.progress import log_info
 from src.writer.agent.schemas import (
     ArticleBriefing,
     EditorialResult,
@@ -10,6 +11,8 @@ from src.writer.agent.schemas import (
 
 class DraftNewsEditorAgent:
     def edit(self, preprocessing_result: PreprocessingResult) -> EditorialResult:
+        total_candidates = sum(len(service.candidates) for service in preprocessing_result.services)
+        log_info("Draft Agent", f"draft briefing 생성: candidates={total_candidates}")
         return EditorialResult(
             generated_for=preprocessing_result.generated_for,
             services=[

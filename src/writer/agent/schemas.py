@@ -31,9 +31,12 @@ class ArticleBriefing(BaseModel):
     article_doc_path: str
     editorial_status: EditorialStatus
     generation_method: GenerationMethod
-    summary_ko: str | None = None
+    category: str | None = None
+    importance_level: str | None = None
+    briefing_body_ko: str | None = None
+    key_points_ko: list[str] = Field(default_factory=list)
     why_it_matters_ko: str | None = None
-    developer_insight_ko: str | None = None
+    caveats_ko: list[str] = Field(default_factory=list)
 
 
 class ServiceWritingResult(BaseModel):

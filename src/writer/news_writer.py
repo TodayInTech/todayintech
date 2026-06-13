@@ -4,8 +4,9 @@ from pydantic import BaseModel, Field
 
 from src.processing.article_candidate import PreprocessingResult
 from src.processing.briefed_article_store import BriefedArticleStore
+from src.progress import log_info
 from src.writer.agent.contracts import NewsEditorAgent
-from src.writer.agent.schemas import EditorialResult
+from src.writer.agent.schemas import EditorialResult, EditorialStatus
 from src.writer.generator.article_markdown_writer import write_article_markdown
 from src.writer.generator.main_index_writer import write_main_index_markdown
 from src.writer.generator.service_index_writer import write_service_index_markdown
@@ -30,26 +31,49 @@ class NewsWriter:
         self.briefed_article_store = briefed_article_store
 
     def write(self, preprocessing_result: PreprocessingResult) -> WriterResult:
+        log_info("Writer", "1. Agent 편집 결과 생성 시작")
         editorial_result = self.agent.edit(preprocessing_result)
+        total_briefings = sum(len(service.briefings) for service in editorial_result.services)
+        log_info(
+            "Writer",
+            f"1. Agent 편집 결과 생성 완료: services={len(editorial_result.services)}, briefings={total_briefings}",
+        )
         written_paths: list[Path] = []
 
+        log_info("Writer", "2. Markdown 파일 작성 시작")
         for service in editorial_result.services:
+            log_info(
+                "Writer",
+                f"2. {service.service_key} article 작성: count={len(service.briefings)}",
+            )
             for briefing in service.briefings:
                 written_paths.append(write_article_markdown(self.output_dir, briefing))
             written_paths.append(write_service_index_markdown(self.output_dir, service))
 
         written_paths.append(write_main_index_markdown(self.output_dir, editorial_result))
+        log_info("Writer", f"2. Markdown 파일 작성 완료: files={len(written_paths)}")
 
+        log_info("Writer", "3. briefed_articles 상태 갱신 시작")
         for service in editorial_result.services:
             for briefing in service.briefings:
-                self.briefed_article_store.mark_draft(
-                    normalized_url=briefing.normalized_url,
-                    title_fingerprint=briefing.title_fingerprint,
-                    service_key=briefing.service_key,
-                    title=briefing.title,
-                    article_doc_path=briefing.article_doc_path,
-                )
+                if briefing.editorial_status == EditorialStatus.PUBLISHED:
+                    self.briefed_article_store.mark_published(
+                        normalized_url=briefing.normalized_url,
+                        title_fingerprint=briefing.title_fingerprint,
+                        service_key=briefing.service_key,
+                        title=briefing.title,
+                        article_doc_path=briefing.article_doc_path,
+                    )
+                else:
+                    self.briefed_article_store.mark_draft(
+                        normalized_url=briefing.normalized_url,
+                        title_fingerprint=briefing.title_fingerprint,
+                        service_key=briefing.service_key,
+                        title=briefing.title,
+                        article_doc_path=briefing.article_doc_path,
+                    )
         self.briefed_article_store.save()
+        log_info("Writer", "3. briefed_articles 상태 갱신 완료")
 
         return WriterResult(
             generated_for=preprocessing_result.generated_for,

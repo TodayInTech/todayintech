@@ -20,9 +20,9 @@ def write_main_index_markdown(output_root: Path, editorial_result: EditorialResu
         "",
         "## 개요",
         "",
-        "Today in Tech는 수집된 기술 글 후보를 Writer 단계에서 문서화하는 큐레이션 아카이브입니다.",
+        "Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기 쉬운 브리핑으로 정리하는 큐레이션 아카이브입니다.",
         "",
-        "## 최근 Writer 초안",
+        "## 최근 브리핑",
         "",
     ]
 
@@ -33,9 +33,11 @@ def write_main_index_markdown(output_root: Path, editorial_result: EditorialResu
             article_path = f"./articles/{service.service_key}/{briefing.suggested_doc_key}.md"
             title = mdx_safe_link_label(briefing.title)
             service_name = mdx_safe_plain_text(service.service_name)
+            description = briefing.briefing_body_ko or "브리핑 본문 작성 대기"
             lines.append(
                 f"- [{title}]({article_path}) "
-                f"- {service_name} / `{briefing.editorial_status.value}`"
+                f"- {service_name} / {mdx_safe_plain_text(description.splitlines()[0])} "
+                f"`{briefing.editorial_status.value}`"
             )
 
     if not written_any:

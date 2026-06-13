@@ -17,7 +17,9 @@ def write_service_index_markdown(output_root: Path, service: ServiceWritingResul
         "",
         f"# {mdx_safe_plain_text(service.service_name)}",
         "",
-        "## 글 목록",
+        f"{mdx_safe_plain_text(service.service_name)}에서 선별된 글 브리핑을 모아둔 서비스 페이지입니다.",
+        "",
+        "## 브리핑 글",
         "",
     ]
 
@@ -29,9 +31,14 @@ def write_service_index_markdown(output_root: Path, service: ServiceWritingResul
                 f"../articles/{service.service_key}/{briefing.suggested_doc_key}.md"
             )
             title = mdx_safe_link_label(briefing.title)
+            description = (
+                briefing.briefing_body_ko
+                or "News Editor Agent가 브리핑 본문을 작성하기 전의 draft 문서입니다."
+            )
             lines.append(
-                f"- [{title}]({relative_article_path}) "
-                f"- `{briefing.editorial_status.value}` / score {briefing.candidate_score}"
+                f"- [{title}]({relative_article_path})"
+                f"  {mdx_safe_plain_text(description.splitlines()[0])} "
+                f"`{briefing.editorial_status.value}` / score {briefing.candidate_score}"
             )
         lines.append("")
 

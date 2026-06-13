@@ -89,6 +89,18 @@ The default checkout path is `.var/remote/tracing-history`.
 - Preprocessing excluded count
 - Preprocessing excluded reason count
 
+## Runtime Logs
+
+The full pipeline prints numbered progress logs so developers can see the current execution state immediately.
+
+```text
+[1/3] Collector
+[2/3] Preprocessor
+[3/3] Writer
+```
+
+Inside Writer, Agent editing, Markdown writing, and `briefed_articles` state updates are logged in order. The OpenAI Agent logs candidate review order, publish/skip decisions, structured output parse failures, and retry attempts.
+
 ## Operating Rules
 
 - Fixture-based `make test` is for stable development verification.
@@ -100,3 +112,4 @@ The default checkout path is `.var/remote/tracing-history`.
 - The collector CLI exits with failure when every service collection fails.
 - GitHub Actions installs dev dependencies and sets `PYTHON=python` so CI does not depend on the local `.venv` path.
 - The Markdown generator must normalize HTML and MDX tokens from external RSS, Atom, and sitemap sources into safe text.
+- If OpenAI structured output fails because of token limits or JSON parsing, the agent retries once with a larger output limit and skips only the candidate that still fails.

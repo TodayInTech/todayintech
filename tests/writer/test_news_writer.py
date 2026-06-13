@@ -8,6 +8,7 @@ from src.processing.article_candidate import (
 )
 from src.processing.briefed_article_store import BriefedArticleStore
 from src.writer import DraftNewsEditorAgent, NewsWriter
+from src.writer.agent.schemas import EditorialStatus, GenerationMethod
 
 
 def make_preprocessing_result() -> PreprocessingResult:
@@ -80,6 +81,10 @@ def test_news_writer_writes_articles_indexes_and_draft_state(tmp_path) -> None:
     assert article_path.exists()
     assert service_path.exists()
     assert index_path.exists()
+    article_content = article_path.read_text(encoding="utf-8")
+    assert "> Hacker News · 2026-06-10 · draft" in article_content
+    assert "아직 News Editor Agent가 브리핑 본문을 작성하지 않았습니다." in article_content
+    assert "## 후보 판단 근거" in article_content
 
     reloaded = BriefedArticleStore(tmp_path / "briefed_articles.json")
     record = reloaded.state.articles[BriefedArticleStore.key_for_url("https://example.com/agent")]
@@ -87,3 +92,30 @@ def test_news_writer_writes_articles_indexes_and_draft_state(tmp_path) -> None:
     assert record.article_doc_path == (
         "docs/articles/hacker-news/2026-06-new-agent-feature-abc123.md"
     )
+
+
+def test_news_writer_records_published_state_for_llm_briefing(tmp_path) -> None:
+    preprocessing_result = make_preprocessing_result()
+    briefing = DraftNewsEditorAgent().edit(preprocessing_result).services[0].briefings[0]
+    briefing.editorial_status = EditorialStatus.PUBLISHED
+    briefing.generation_method = GenerationMethod.LLM
+    briefing.category = "AI"
+    briefing.briefing_body_ko = "피드 기준으로 개발자 업데이트를 다룬 글입니다."
+
+    class PublishedAgent:
+        def edit(self, _preprocessing_result):
+            result = DraftNewsEditorAgent().edit(_preprocessing_result)
+            result.services[0].briefings = [briefing]
+            return result
+
+    writer = NewsWriter(
+        agent=PublishedAgent(),
+        output_dir=tmp_path / "docs",
+        briefed_article_store=BriefedArticleStore(tmp_path / "briefed_articles.json"),
+    )
+
+    writer.write(preprocessing_result)
+
+    reloaded = BriefedArticleStore(tmp_path / "briefed_articles.json")
+    record = reloaded.state.articles[BriefedArticleStore.key_for_url("https://example.com/agent")]
+    assert record.status == "published"

@@ -19,6 +19,7 @@ from src.processing.candidate_scorer import DefaultCandidateScorer
 from src.processing.preprocessing_context import PreprocessingContext
 from src.processing.preprocessing_step import PreprocessingStep
 from src.processing.url_normalizer import normalize_url, title_fingerprint
+from src.progress import log_info
 
 
 class ValidationStep:
@@ -228,8 +229,16 @@ class NewsPreprocessor:
             generated_for=generated_for,
             collection_results=collection_results,
         )
-        for step in self.steps:
+        for index, step in enumerate(self.steps, start=1):
+            log_info("Preprocessor", f"({index}/{len(self.steps)}) {step.name} 시작")
             context = step.process(context)
+            log_info(
+                "Preprocessor",
+                (
+                    f"({index}/{len(self.steps)}) {step.name} 완료: "
+                    f"candidates={len(context.candidates)}, excluded={len(context.excluded)}"
+                ),
+            )
 
         services = self.build_service_results(context)
         return PreprocessingResult(

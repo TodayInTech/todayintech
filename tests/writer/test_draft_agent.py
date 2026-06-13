@@ -55,12 +55,13 @@ def make_preprocessing_result() -> PreprocessingResult:
     )
 
 
-def test_draft_agent_creates_draft_briefing_without_summary() -> None:
+def test_draft_agent_creates_draft_briefing_without_editorial_body() -> None:
     result = DraftNewsEditorAgent().edit(make_preprocessing_result())
     briefing = result.services[0].briefings[0]
 
     assert briefing.editorial_status == EditorialStatus.DRAFT
     assert briefing.generation_method == GenerationMethod.DRAFT
-    assert briefing.summary_ko is None
+    assert briefing.briefing_body_ko is None
+    assert briefing.key_points_ko == []
     assert briefing.why_it_matters_ko is None
-    assert briefing.developer_insight_ko is None
+    assert briefing.caveats_ko == []

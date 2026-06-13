@@ -118,6 +118,7 @@ docs/
 ```
 
 `index.md` is the entry point for cross-service highlights. `services/*.md` files are service-level indexes. `articles/{service_key}/*.md` files are detailed briefings for individual source articles.
+Individual article pages should favor a natural editorial briefing format over a rigid report format.
 
 ## Step-by-Step Flow
 
@@ -230,13 +231,17 @@ The Writer stage receives `ArticleCandidate` objects from the Preprocessor and t
 - Writer Agent selects candidates and creates editorial results.
 - Writer Generator only writes Markdown from Agent results.
 - Writer updates the `briefed_articles` state after all Markdown generation succeeds.
-- The current implementation uses `DraftNewsEditorAgent`. The Draft Agent does not generate summaries, why-it-matters text, or developer insights; it only creates `editorial_status=draft` documents.
+- The default implementation uses `DraftNewsEditorAgent`. The Draft Agent does not generate summaries, why-it-matters text, or developer insights; it only creates `editorial_status=draft` documents.
+- Use `TODAYINTECH_WRITER_AGENT=openai` to enable `OpenAINewsEditorAgent` with structured output.
+- The OpenAI Agent does not perform full text crawling. It only uses candidate title, feed summary, tags, metadata, and ranking signals.
 
 Writer execution:
 
 ```bash
 make write
 make write DATE=2026-06-07 PROCESSED_DIR=.var/local/processed OUTPUT_DIR=docs
+make write WRITER_AGENT=openai
+make generate-openai
 ```
 
 ## News Editor Agent
@@ -247,10 +252,28 @@ The Agent selects meaningful new candidates and generates one detailed briefing 
 
 The Generator stage writes processed results as Markdown.
 
-1. Generate article-level briefing documents.
+1. Generate article-level briefing documents as natural editorial articles.
 2. Regenerate service index documents.
 3. Regenerate the main index page.
 4. Record internal article/service links and original source links together.
+
+Recommended individual article structure:
+
+```text
+# Source article title
+
+> Service name · Published date · Category
+
+Source link
+
+Natural briefing body
+
+## Key Points
+## Why Read This
+## Caveats
+```
+
+Draft documents must not generate summaries or importance claims. They only show pending status, feed summary, and candidate evidence.
 
 Generated paths:
 
@@ -273,7 +296,14 @@ make build
 Development server:
 
 ```bash
-npm run start -- --host 127.0.0.1 --port 3000
+make serve
+make serve HOST=127.0.0.1 PORT=3000
+```
+
+Preview built output:
+
+```bash
+make serve-build
 ```
 
 ## Deploy

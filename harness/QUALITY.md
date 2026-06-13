@@ -89,6 +89,18 @@ make fetch-trace-history
 - preprocessing excluded count
 - preprocessing excluded reason count
 
+## 실행 로그
+
+전체 파이프라인은 개발자가 현재 진행 상태를 바로 파악할 수 있도록 단계 번호를 포함한 로그를 출력한다.
+
+```text
+[1/3] Collector
+[2/3] Preprocessor
+[3/3] Writer
+```
+
+Writer 내부에서는 Agent 편집, Markdown 작성, `briefed_articles` 상태 갱신을 다시 순서대로 기록한다. OpenAI Agent는 후보별 검토 순서, 게시/제외 결정, structured output 파싱 실패와 재시도 여부를 로그로 남긴다.
+
 ## 운영 기준
 
 - fixture 기반 `make test`는 안정적인 개발 검증 용도이다.
@@ -100,3 +112,4 @@ make fetch-trace-history
 - 모든 서비스 수집이 실패하면 collector CLI는 실패로 종료한다.
 - GitHub Actions에서는 dev 의존성을 설치하고 `PYTHON=python`을 명시해서 로컬 `.venv` 경로에 의존하지 않는다.
 - Markdown generator는 RSS, Atom, sitemap 등 외부 source에서 들어온 HTML과 MDX 토큰을 안전한 텍스트로 정규화해야 한다.
+- OpenAI structured output이 토큰 제한이나 JSON 파싱 문제로 실패하면 더 큰 출력 제한으로 한 번 재시도하고, 계속 실패하는 후보만 제외한다.

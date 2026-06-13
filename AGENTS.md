@@ -179,7 +179,35 @@ src/
 - 의미 있는 원문 글 하나당 하나의 문서를 생성한다.
 - 문서 경로는 `docs/articles/{service_key}/{slug}.md`를 사용한다.
 - 한 번 생성된 article 문서는 같은 원문 URL로 다시 Agent 재생성하지 않는다.
-- 문서는 원문 요약, 핵심 포인트, 왜 중요한가, 개발자/제품 관점 시사점, 원문 링크를 포함한다.
+- 문서는 리포트가 아니라 자연스러운 에디토리얼 브리핑 글처럼 읽혀야 한다.
+- 문서는 짧은 브리핑 본문, 핵심 포인트, 읽어볼 만한 이유, 확인할 점, 원문 링크를 포함한다.
+- `DraftNewsEditorAgent`가 만든 draft 문서는 요약한 척하지 않고 작성 대기 상태, 피드 설명, 후보 판단 근거만 표시한다.
+
+권장 글별 구성:
+
+```markdown
+# 원문 글 제목
+
+> 서비스명 · 발행일 · 카테고리
+
+원문 링크: [원문 글 제목](https://...)
+
+---
+
+자연스럽게 읽히는 브리핑 본문 2~4문단
+
+## 핵심 포인트
+
+- ...
+
+## 읽어볼 만한 이유
+
+...
+
+## 확인할 점
+
+- ...
+```
 
 권장 구성:
 
@@ -223,7 +251,9 @@ News Editor Agent는 뉴스레터 편집자가 아니라 기술 글 큐레이터
 - Preprocessor는 URL 정규화, 현재 실행 중복 제거, 이미 브리핑된 글 제외, 후보 랭킹, Writer 입력용 후보 식별자 생성을 수행한다.
 - Writer 단계는 `make write`로 실행한다.
 - Writer는 Agent와 Generator를 포함한다. Agent는 편집 결과를 만들고 Generator는 Markdown 파일만 쓴다.
-- 현재 Writer는 요약을 생성하지 않는 `DraftNewsEditorAgent`를 사용한다.
+- 기본 Writer는 요약을 생성하지 않는 `DraftNewsEditorAgent`를 사용한다.
+- `TODAYINTECH_WRITER_AGENT=openai` 또는 `make write WRITER_AGENT=openai`를 사용하면 `OpenAINewsEditorAgent`를 사용한다.
+- OpenAI Agent는 원문 전체를 크롤링하지 않고, Collector와 Preprocessor가 제공한 제목, 피드 설명, 태그, 메타데이터, ranking signals만 사용한다.
 - 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행하며, 현재는 Collector, Preprocessor, Writer draft 생성까지 연결되어 있다.
 
 1. Factory가 MVP 서비스 구현체를 생성한다.

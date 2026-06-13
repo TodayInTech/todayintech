@@ -82,6 +82,8 @@ docs/
     └── anthropic-blog/
 ```
 
+Article pages should read like short editorial briefings, not rigid reports. A published article page should contain a natural briefing body, key points, why it is worth reading, caveats, and source links. Draft pages must not pretend to summarize the article; they should only show pending status, feed summary, and candidate evidence.
+
 ## Agent Rules
 
 The News Editor Agent acts as a curator and research editor. It selects meaningful new candidate articles, creates one article briefing per selected source article, updates service-level indexes, and contributes domain-level insights for the main page.
@@ -100,7 +102,9 @@ Each stage must remain independently executable for development and debugging.
 - The Preprocessor normalizes URLs, removes run-level duplicates, excludes already briefed articles, ranks candidates, and generates Writer-facing candidate identifiers.
 - Run the Writer stage with `make write`.
 - Writer contains the Agent and Generator. The Agent creates editorial results and the Generator only writes Markdown.
-- The current Writer uses `DraftNewsEditorAgent`, which does not generate summaries or insights.
+- The default Writer uses `DraftNewsEditorAgent`, which does not generate summaries or insights.
+- Use `TODAYINTECH_WRITER_AGENT=openai` or `make write WRITER_AGENT=openai` to use `OpenAINewsEditorAgent`.
+- The OpenAI Agent does not crawl full article text. It only uses the title, feed summary, tags, metadata, and ranking signals provided by Collector and Preprocessor.
 - Run the full pipeline with `.venv/bin/python -m src.main`; it currently connects Collector, Preprocessor, and Writer draft generation.
 
 1. Create services through the factory.

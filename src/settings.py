@@ -1,7 +1,35 @@
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import UTC, datetime
 from pathlib import Path
+
+ENV_FILE_PATH = Path(".env")
+
+
+def load_dotenv(path: Path = ENV_FILE_PATH) -> None:
+    if not path.exists():
+        return
+
+    for line in path.read_text(encoding="utf-8").splitlines():
+        key, value = parse_dotenv_line(line)
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+def parse_dotenv_line(line: str) -> tuple[str | None, str]:
+    stripped = line.strip()
+    if not stripped or stripped.startswith("#") or "=" not in stripped:
+        return None, ""
+
+    key, value = stripped.split("=", 1)
+    key = key.strip()
+    value = value.strip()
+    if not key:
+        return None, ""
+
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
+        value = value[1:-1]
+    return key, value
 
 
 def _optional_env(name: str) -> str | None:
@@ -30,6 +58,7 @@ def _int_env(name: str, default: int, minimum: int | None = None) -> int:
 class AppSettings:
     openai_api_key: str | None
     openai_model: str
+    writer_agent: str
     timezone: str
     output_dir: Path
     raw_output_dir: Path
@@ -45,9 +74,11 @@ class AppSettings:
 
     @classmethod
     def from_env(cls) -> AppSettings:
+        load_dotenv()
         return cls(
             openai_api_key=_optional_env("OPENAI_API_KEY"),
             openai_model=os.getenv("OPENAI_MODEL", "gpt-5-mini"),
+            writer_agent=os.getenv("TODAYINTECH_WRITER_AGENT", "draft").strip().lower() or "draft",
             timezone=os.getenv("TODAYINTECH_TIMEZONE", "Asia/Seoul"),
             output_dir=Path(os.getenv("TODAYINTECH_OUTPUT_DIR", "docs")),
             raw_output_dir=Path(os.getenv("TODAYINTECH_RAW_OUTPUT_DIR", ".var/local/raw")),
@@ -80,6 +111,9 @@ class AppSettings:
 
     def resolve_target_date(self, override: str | None = None) -> str:
         return override or self.target_date or datetime.now(UTC).date().isoformat()
+
+    def with_writer_agent(self, writer_agent: str) -> AppSettings:
+        return replace(self, writer_agent=writer_agent.strip().lower())
 
 
 SETTINGS = AppSettings.from_env()

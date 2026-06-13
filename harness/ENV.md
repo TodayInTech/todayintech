@@ -7,7 +7,8 @@
 
 - 환경 변수 예시는 `.env.example`에 둔다.
 - 런타임 코드는 `os.getenv()`를 직접 호출하지 않고 `src/settings.py`의 `SETTINGS` 싱글톤 객체를 사용한다.
-- `SETTINGS = AppSettings.from_env()`는 import 시점에 환경 변수를 읽는다.
+- `SETTINGS = AppSettings.from_env()`는 import 시점에 루트 `.env`를 먼저 로드한 뒤 환경 변수를 읽는다.
+- shell에 이미 설정된 환경 변수는 `.env` 값으로 덮어쓰지 않는다.
 - 비어 있는 문자열은 선택 값에서 `None`으로 취급한다.
 - 숫자 환경 변수는 `SETTINGS`에서 파싱하고 fallback 기본값을 제공한다.
 
@@ -28,6 +29,7 @@
 | `TODAYINTECH_PROCESSED_OUTPUT_DIR` | `.var/local/processed` | 선택 | `processed_output_dir` | preprocessor 후보 JSON 저장 루트 |
 | `TODAYINTECH_TRACE_OUTPUT_DIR` | `.var/local/traces` | 선택 | `trace_output_dir` | 운영 트레이싱 JSON/Markdown 저장 루트 |
 | `TODAYINTECH_BRIEFED_ARTICLES_PATH` | `data/briefed_articles.json` | 선택 | `briefed_articles_path` | 이미 브리핑/발행된 원문 글 상태 파일 경로 |
+| `TODAYINTECH_WRITER_AGENT` | `draft` | 선택 | `writer_agent` | Writer Agent 구현 선택. `draft` 또는 `openai`. `openai` 사용 시 `OPENAI_API_KEY` 필요 |
 | `TODAYINTECH_MAX_ARTICLES_PER_SERVICE` | `5` | 선택 | `max_articles_per_service` | legacy Markdown scaffold용 서비스별 최대 기사 수. 현재 Writer 경로에서는 사용하지 않는다 |
 | `TODAYINTECH_MAX_CANDIDATES_PER_SERVICE` | `10` | 선택 | `max_candidates_per_service` | preprocessor가 Agent 입력 후보로 남길 서비스별 최대 글 수. 최소값은 1 |
 | `TODAYINTECH_MAX_CANDIDATES_TOTAL` | `50` | 선택 | `max_candidates_total` | preprocessor가 Agent 입력 후보로 남길 전체 최대 글 수. 최소값은 1 |
@@ -47,10 +49,10 @@
 
 ## 현재 코드 사용 지점
 
-- `src/main.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`, `SETTINGS.output_dir`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`
+- `src/main.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.writer_agent`, `SETTINGS.openai_api_key`, `SETTINGS.openai_model`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`, `SETTINGS.output_dir`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`
 - `src/collection/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`
 - `src/processing/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`
-- `src/writer/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.processed_output_dir`, `SETTINGS.output_dir`, `SETTINGS.briefed_articles_path`
+- `src/writer/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.writer_agent`, `SETTINGS.openai_api_key`, `SETTINGS.openai_model`, `SETTINGS.processed_output_dir`, `SETTINGS.output_dir`, `SETTINGS.briefed_articles_path`
 
 ## 추가 시 체크리스트
 

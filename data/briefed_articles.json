@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "articles": {
+    "e11fcea9cd94bb207930afa4c02f669e72aafc98e134fd9a5562c910df7d5799": {
+      "normalized_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "title_fingerprint": "claude fable 5 and claude mythos 5",
+      "service_key": "anthropic-blog",
+      "title": "Claude Fable 5 and Claude Mythos 5",
+      "article_doc_path": "docs/articles/anthropic-blog/2026-06-claude-fable-5-and-claude-mythos-5-e11fcea9.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953788Z"
+    },
+    "72c805579f21b6e81058f27d7bfb2dbad710b0d58bccc5b9f3a1f5c72a38efb9": {
+      "normalized_url": "https://www.anthropic.com/news/claude-corps",
+      "title_fingerprint": "introducing claude corps",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Claude Corps",
+      "article_doc_path": "docs/articles/anthropic-blog/2026-06-introducing-claude-corps-72c80557.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953893Z"
+    },
+    "7f42ae0d5b44a6eff498ea81a98ccc7e1083952f200931431606d45ebfea3bb9": {
+      "normalized_url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+      "title_fingerprint": "tcs and anthropic partner to bring claude to regulated industries",
+      "service_key": "anthropic-blog",
+      "title": "TCS and Anthropic partner to bring Claude to regulated industries",
+      "article_doc_path": "docs/articles/anthropic-blog/2026-06-tcs-and-anthropic-partner-to-bring-claude-to-regulated-industries-7f42ae0d.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953904Z"
+    },
+    "40b973fa5524d8411e737b46a460930d02bdcb954bf16963e8ecbe3f4c4c03fd": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-public-record",
+      "title_fingerprint": "results from first anthropic public record",
+      "service_key": "anthropic-blog",
+      "title": "Results from first Anthropic Public Record",
+      "article_doc_path": "docs/articles/anthropic-blog/2026-06-results-from-first-anthropic-public-record-40b973fa.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953910Z"
+    },
+    "9a46f2911191f8db7628c8e79398163235594daac28c857e71506b87880704f7": {
+      "normalized_url": "https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale",
+      "title_fingerprint": "making secret scanning more trustworthy reducing false positives at scale",
+      "service_key": "github-blog",
+      "title": "Making secret scanning more trustworthy: Reducing false positives at scale",
+      "article_doc_path": "docs/articles/github-blog/2026-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scal-9a46f291.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953917Z"
+    },
+    "a66a7c2b8ef281c7156c8ce7c7ecf3e02c3b26dc348f05fe4d12ad7b1f1aa59c": {
+      "normalized_url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation",
+      "title_fingerprint": "how we made github copilot cli more selective about delegation",
+      "service_key": "github-blog",
+      "title": "How we made GitHub Copilot CLI more selective about delegation",
+      "article_doc_path": "docs/articles/github-blog/2026-06-how-we-made-github-copilot-cli-more-selective-about-delegation-a66a7c2b.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953924Z"
+    },
+    "93dd8cc29a0d27feed339d761cb062664701d1f455032e45bf7869ea9a0f9276": {
+      "normalized_url": "https://github.blog/news-insights/company-news/github-availability-report-may-2026",
+      "title_fingerprint": "github availability report may 2026",
+      "service_key": "github-blog",
+      "title": "GitHub availability report: May 2026",
+      "article_doc_path": "docs/articles/github-blog/2026-06-github-availability-report-may-2026-93dd8cc2.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953930Z"
+    },
+    "96de2795ffdb52ad7debb2e1324cb22351a685813c3bbe30d1e036ad4177feec": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
+      "title_fingerprint": "from one off prompts to workflows how to use custom agents in github copilot cli",
+      "service_key": "github-blog",
+      "title": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
+      "article_doc_path": "docs/articles/github-blog/2026-06-from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-cop-96de2795.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953935Z"
+    },
+    "5c6bce39da4c66bea0468f52a2c24475a51d1ed528ed9fe557baf5dc623daa4a": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/combatting-ai-scams",
+      "title_fingerprint": "how we re combatting ai scams with security legislation and more",
+      "service_key": "google-blog",
+      "title": "How we're combatting AI scams with security, legislation and more",
+      "article_doc_path": "docs/articles/google-blog/2026-06-how-we-re-combatting-ai-scams-with-security-legislation-and-more-5c6bce39.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953945Z"
+    },
+    "a46eeb915ebf247333228a1fef923126cbdc6f7c037eaa942fc0b8debe698bf2": {
+      "normalized_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments",
+      "title_fingerprint": "our new community investments in virginia support local jobs and expand energy affordability",
+      "service_key": "google-blog",
+      "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
+      "article_doc_path": "docs/articles/google-blog/2026-06-our-new-community-investments-in-virginia-support-local-jobs-and-expand-a46eeb91.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953952Z"
+    },
+    "ab88a3c87c1e088bcf590d3e591df304f91090567e07d70d99d94839b38f4e85": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation",
+      "title_fingerprint": "diffusiongemma 4x faster text generation",
+      "service_key": "google-blog",
+      "title": "DiffusionGemma: 4x faster text generation",
+      "article_doc_path": "docs/articles/google-blog/2026-06-diffusiongemma-4x-faster-text-generation-ab88a3c8.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953958Z"
+    },
+    "16f9544453cd2bcae7c7b1b05e220054d1fccfaed57c5bfb3991e86bae5b8b3b": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/bringing-gemini-models-to-apple-developers",
+      "title_fingerprint": "bringing the latest gemini models to apple developers",
+      "service_key": "google-blog",
+      "title": "Bringing the latest Gemini models to Apple developers",
+      "article_doc_path": "docs/articles/google-blog/2026-06-bringing-the-latest-gemini-models-to-apple-developers-16f95444.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953964Z"
+    },
+    "81122a35696eee9895dfd374374bda4d4479f964ea33e8d473754f425290d410": {
+      "normalized_url": "https://opensourceaimustwin.com/?share=v2",
+      "title_fingerprint": "open source ai must win",
+      "service_key": "hacker-news",
+      "title": "Open source AI must win",
+      "article_doc_path": "docs/articles/hacker-news/2026-06-open-source-ai-must-win-81122a35.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953971Z"
+    },
+    "23529ac5654949bbd4a5e7b2d85b2596080f15d08853badb7e6802de08c12b5c": {
+      "normalized_url": "https://12gramsofcarbon.com/p/tech-things-there-is-a-massive-shadow",
+      "title_fingerprint": "there is a shadow hanging over this fable thing",
+      "service_key": "hacker-news",
+      "title": "There is a shadow hanging over this Fable thing",
+      "article_doc_path": "docs/articles/hacker-news/2026-06-there-is-a-shadow-hanging-over-this-fable-thing-23529ac5.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953977Z"
+    },
+    "649a877469a27054850f7c9239704aa7fe506992a14bb0c70f6f98a8c6333bb0": {
+      "normalized_url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+      "title_fingerprint": "how to setup a local coding agent on macos",
+      "service_key": "hacker-news",
+      "title": "How to setup a local coding agent on macOS",
+      "article_doc_path": "docs/articles/hacker-news/2026-06-how-to-setup-a-local-coding-agent-on-macos-649a8774.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953983Z"
+    },
+    "001317287cdd9d978025c8004521e4bd5f00e81bb7bf29366f18fcf891e9d1a0": {
+      "normalized_url": "https://www.anthropic.com/news/fable-mythos-access",
+      "title_fingerprint": "statement on us government directive to suspend access to fable 5 and mythos 5",
+      "service_key": "hacker-news",
+      "title": "Statement on US government directive to suspend access to Fable 5 and Mythos 5",
+      "article_doc_path": "docs/articles/hacker-news/2026-06-statement-on-us-government-directive-to-suspend-access-to-fable-5-and-my-00131728.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953989Z"
+    },
+    "dd73139d2e3dcd4c1e4b506e29f09bd5c1b6a55186dfb93e70e88f44c3b919f8": {
+      "normalized_url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "title_fingerprint": "new openai academy courses for the next era of work",
+      "service_key": "openai-blog",
+      "title": "New OpenAI Academy courses for the next era of work",
+      "article_doc_path": "docs/articles/openai-blog/2026-06-new-openai-academy-courses-for-the-next-era-of-work-dd73139d.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.953995Z"
+    },
+    "ddc7b24a91dcf271798bdbe6978e14dd8d01e9120890cb3b3370adf7289638e7": {
+      "normalized_url": "https://openai.com/index/preply",
+      "title_fingerprint": "how preply combines ai and human tutors to personalize learning",
+      "service_key": "openai-blog",
+      "title": "How Preply combines AI and human tutors to personalize learning",
+      "article_doc_path": "docs/articles/openai-blog/2026-06-how-preply-combines-ai-and-human-tutors-to-personalize-learning-ddc7b24a.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.954000Z"
+    },
+    "c17e7186c8901da25fd7fb4f82432c69d9fe8048e1dd59c35889e26c4a6be760": {
+      "normalized_url": "https://openai.com/index/openai-on-oracle-cloud",
+      "title_fingerprint": "access openai models and codex through your oracle cloud commitment",
+      "service_key": "openai-blog",
+      "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
+      "article_doc_path": "docs/articles/openai-blog/2026-06-access-openai-models-and-codex-through-your-oracle-cloud-commitment-c17e7186.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.954006Z"
+    },
+    "009f70280ebcc29e7c90367cc5d038491a50c88b819173ad7ca2bdc392c0ba44": {
+      "normalized_url": "https://openai.com/index/openai-to-acquire-ona",
+      "title_fingerprint": "openai to acquire ona",
+      "service_key": "openai-blog",
+      "title": "OpenAI to acquire Ona",
+      "article_doc_path": "docs/articles/openai-blog/2026-06-openai-to-acquire-ona-009f7028.md",
+      "status": "published",
+      "briefed_at": "2026-06-13T09:21:18.954012Z"
+    }
+  }
+}
