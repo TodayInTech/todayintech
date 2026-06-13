@@ -79,6 +79,11 @@ def test_news_preprocessor_deduplicates_and_filters_briefed_articles(tmp_path) -
     assert service.candidate_count == 1
     assert service.excluded_count == 2
     assert service.candidates[0].normalized_url == "https://example.com/new-agent"
+    assert service.candidates[0].candidate_id.startswith("hacker-news:")
+    assert len(service.candidates[0].url_hash) == 64
+    assert service.candidates[0].suggested_doc_key.startswith("2026-06-new-agent-release")
+    assert service.candidates[0].suggested_article_path.startswith("docs/articles/hacker-news/")
+    assert service.candidates[0].feed_summary == "Agent release"
     assert service.candidates[0].candidate_score > 0
     assert {item.excluded_reason for item in service.excluded} == {
         "already_briefed",

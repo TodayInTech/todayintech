@@ -28,8 +28,12 @@ def build_preprocessing_trace(result: PreprocessingResult) -> dict[str, object]:
                 "excluded_count": service.excluded_count,
                 "top_candidates": [
                     {
+                        "candidate_id": candidate.candidate_id,
                         "title": candidate.article.title,
                         "normalized_url": candidate.normalized_url,
+                        "url_hash": candidate.url_hash,
+                        "suggested_doc_key": candidate.suggested_doc_key,
+                        "suggested_article_path": candidate.suggested_article_path,
                         "candidate_score": candidate.candidate_score,
                     }
                     for candidate in service.candidates[:5]

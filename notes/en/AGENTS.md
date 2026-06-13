@@ -94,7 +94,7 @@ Each stage must remain independently executable for development and debugging.
 - The Collector stage only writes `.var/local/raw/{YYYY-MM-DD}/summary.json` and `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`; it does not generate Markdown or build Docusaurus.
 - The Collector stores daily snapshots. Repeated articles across dates are expected and must be filtered by preprocessing, not by collection.
 - Run the Preprocessor stage with `make preprocess`.
-- The Preprocessor normalizes URLs, removes run-level duplicates, excludes already briefed articles, and ranks candidates.
+- The Preprocessor normalizes URLs, removes run-level duplicates, excludes already briefed articles, ranks candidates, and generates Writer-facing candidate identifiers.
 - Run the full pipeline with `.venv/bin/python -m src.main`; it currently connects the Preprocessor after the Collector.
 - Future Processing and Generator stages should also expose independent entrypoints.
 
@@ -104,12 +104,14 @@ Each stage must remain independently executable for development and debugging.
 4. Store raw service-level results under `.var/local/raw/{YYYY-MM-DD}/services/{service}.json`.
 5. Normalize URLs and remove run-level duplicates in preprocessing.
 6. Exclude articles already published in the briefed article state.
-7. Rank and pass only meaningful new candidates to the agent.
-8. Generate `docs/articles/{service_key}/{slug}.md` files.
-9. Regenerate `docs/services/{service_key}.md` service indexes.
-10. Regenerate `docs/index.md` as the main entry page.
-11. Build Docusaurus.
-12. Deploy to GitHub Pages through GitHub Actions.
+7. Generate Writer-facing candidates with `candidate_id`, `url_hash`, `suggested_doc_key`, and `suggested_article_path`.
+8. Let the Writer Agent select meaningful new candidates and create article-level briefings.
+9. Let the Writer Generator create `docs/articles/{service_key}/{slug}.md` files.
+10. Regenerate `docs/services/{service_key}.md` service indexes.
+11. Regenerate `docs/index.md` as the main entry page.
+12. Update the briefed article state after successful generation.
+13. Build Docusaurus.
+14. Deploy to GitHub Pages through GitHub Actions.
 
 ## Maintenance Rules
 

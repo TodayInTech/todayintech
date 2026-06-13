@@ -49,6 +49,7 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Run-level URL/title fingerprint deduplication
   - [x] Exclude already published articles through `briefed_articles`
   - [x] Candidate ranking and agent input limiting
+  - [x] Generate Writer-facing `candidate_id`, `url_hash`, `suggested_doc_key`, and `suggested_article_path`
   - [x] Preprocessing trace output
   - [x] Standalone Preprocessor CLI
   - [x] Makefile-based preprocessor command
@@ -74,5 +75,5 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 
 ## Next Work Candidates
 
-- Connect Generator publication completion to `briefed_articles` state updates
+- Connect Writer publication completion to `briefed_articles` state updates
 - Convert dated generator output into article archive output

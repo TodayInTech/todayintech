@@ -6,11 +6,16 @@ from src.models import Article
 
 
 class ArticleCandidate(BaseModel):
+    candidate_id: str = ""
     service_key: str
     service_name: str
     article: Article
     normalized_url: str = ""
+    url_hash: str = ""
     title_fingerprint: str = ""
+    feed_summary: str = ""
+    suggested_doc_key: str = ""
+    suggested_article_path: str = ""
     candidate_score: float = 0
     ranking_signals: dict[str, str | int | float | bool] = Field(default_factory=dict)
     excluded_reason: str | None = None

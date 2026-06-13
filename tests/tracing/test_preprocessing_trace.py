@@ -11,6 +11,7 @@ from src.tracing.preprocessing_trace import build_preprocessing_trace, write_pre
 
 def make_candidate(excluded_reason: str | None = None) -> ArticleCandidate:
     return ArticleCandidate(
+        candidate_id="openai-blog:abc123",
         service_key="openai-blog",
         service_name="OpenAI Blog",
         article=Article(
@@ -21,7 +22,10 @@ def make_candidate(excluded_reason: str | None = None) -> ArticleCandidate:
             collected_at=datetime(2026, 6, 11, tzinfo=UTC),
         ),
         normalized_url="https://openai.com/news/agent",
+        url_hash="abc123",
         title_fingerprint="new agent feature",
+        suggested_doc_key="2026-06-new-agent-feature-abc123",
+        suggested_article_path="docs/articles/openai-blog/2026-06-new-agent-feature-abc123.md",
         candidate_score=42,
         excluded_reason=excluded_reason,
     )
@@ -57,6 +61,10 @@ def test_build_preprocessing_trace_counts_excluded_reasons() -> None:
     assert trace["candidate_count"] == 1
     assert trace["excluded_count"] == 1
     assert trace["services"][0]["excluded_reasons"] == {"already_briefed": 1}
+    assert trace["services"][0]["top_candidates"][0]["candidate_id"] == "openai-blog:abc123"
+    assert trace["services"][0]["top_candidates"][0]["suggested_doc_key"] == (
+        "2026-06-new-agent-feature-abc123"
+    )
 
 
 def test_write_preprocessing_trace_outputs_json_and_markdown(tmp_path) -> None:

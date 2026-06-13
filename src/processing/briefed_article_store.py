@@ -1,9 +1,10 @@
-import hashlib
 import json
 from datetime import UTC, datetime
 from pathlib import Path
 
 from pydantic import BaseModel, Field
+
+from src.processing.candidate_identity import url_hash
 
 
 class BriefedArticleRecord(BaseModel):
@@ -71,4 +72,4 @@ class BriefedArticleStore:
 
     @staticmethod
     def key_for_url(normalized_url: str) -> str:
-        return hashlib.sha256(normalized_url.encode("utf-8")).hexdigest()
+        return url_hash(normalized_url)

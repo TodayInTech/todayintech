@@ -195,7 +195,8 @@ The Preprocessor stage turns collected snapshots into agent-ready candidates.
 4. Exclude already briefed articles through the `briefed_articles` state and existing article documents.
 5. Rank candidates by publication date, source priority, popularity signals, and editorial keywords.
 6. Limit the number of candidates passed to the agent.
-7. Generate preprocessing trace output.
+7. Generate Writer-facing `candidate_id`, `url_hash`, `suggested_doc_key`, and `suggested_article_path`.
+8. Generate preprocessing trace output.
 
 The current scaffold is heuristic-based. The LLM-based News Editor Agent must receive only new preprocessed candidates.
 The full `src.main` pipeline runs the Preprocessor immediately after the Collector and writes the preprocessing result to `.var/local/processed/{YYYY-MM-DD}/preprocessing.json`.
@@ -215,7 +216,9 @@ Preprocessing output:
 └── preprocessing.json
 ```
 
-Preprocessing uses a `Pipeline + Strategy + Repository` combination. `NewsPreprocessor` runs ordered `PreprocessingStep` objects, candidate scoring is kept as a replaceable scorer strategy, and `BriefedArticleStore` acts as the state repository for source articles that have already been briefed.
+Preprocessing uses a `Pipeline + Strategy + Repository` combination. `NewsPreprocessor` runs ordered `PreprocessingStep` objects, candidate scoring is kept as a replaceable scorer strategy, and `BriefedArticleStore` acts as the state repository for source articles recorded by Writer after successful document generation.
+
+The preprocessing `ArticleCandidate` is the Writer input packet. It does not generate summaries or insights; it only provides identifiers and evidence that the Writer Agent can use to decide publication and editorial content.
 
 ## News Editor Agent
 

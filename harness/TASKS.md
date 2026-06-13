@@ -49,6 +49,7 @@
   - [x] 현재 실행 내 URL/title fingerprint deduplication
   - [x] `briefed_articles` 기반 이미 발행된 글 제외
   - [x] 후보 랭킹과 Agent 입력 개수 제한
+  - [x] Writer 입력용 `candidate_id`, `url_hash`, `suggested_doc_key`, `suggested_article_path` 생성
   - [x] preprocessing trace 생성
   - [x] Preprocessor 단독 실행 CLI 구성
   - [x] Makefile 기반 preprocessor 실행 명령 구성
@@ -74,5 +75,5 @@
 
 ## 다음 작업 후보
 
-- Generator 발행 완료 시 `briefed_articles` 상태 갱신 연동
+- Writer 발행 완료 시 `briefed_articles` 상태 갱신 연동
 - 날짜 기반 generator를 article archive generator로 전환

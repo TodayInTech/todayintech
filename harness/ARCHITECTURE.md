@@ -195,7 +195,8 @@ Preprocessor 단계는 수집된 snapshot을 Agent 입력 후보로 정리한다
 4. `briefed_articles` 상태와 기존 article 문서를 기준으로 이미 브리핑된 글을 제외한다.
 5. 발행일, source priority, popularity signal, editorial keyword를 기준으로 후보를 랭킹한다.
 6. Agent 입력 개수를 제한한다.
-7. 전처리 trace를 생성한다.
+7. Writer가 사용할 `candidate_id`, `url_hash`, `suggested_doc_key`, `suggested_article_path`를 생성한다.
+8. 전처리 trace를 생성한다.
 
 현재 스캐폴딩은 휴리스틱 기반이다. LLM 기반 News Editor Agent는 전처리된 신규 후보만 받는다.
 `src.main`의 전체 파이프라인은 Collector 실행 직후 Preprocessor를 실행하고, 전처리 결과를 `.var/local/processed/{YYYY-MM-DD}/preprocessing.json`에 저장한다.
@@ -215,7 +216,9 @@ make preprocess RAW_DIR=.var/local/raw PROCESSED_DIR=.var/local/processed
 └── preprocessing.json
 ```
 
-전처리는 `Pipeline + Strategy + Repository` 조합으로 구성한다. `NewsPreprocessor`는 단계별 `PreprocessingStep`을 순서대로 실행하고, 후보 점수화는 교체 가능한 scorer strategy로 둔다. `BriefedArticleStore`는 이미 브리핑된 원문 글 상태를 조회하는 저장소 역할을 한다.
+전처리는 `Pipeline + Strategy + Repository` 조합으로 구성한다. `NewsPreprocessor`는 단계별 `PreprocessingStep`을 순서대로 실행하고, 후보 점수화는 교체 가능한 scorer strategy로 둔다. `BriefedArticleStore`는 Writer가 문서 생성 성공 후 기록한 원문 글 상태를 조회하는 저장소 역할을 한다.
+
+전처리 산출물의 `ArticleCandidate`는 Writer 입력 패킷이다. 이 패킷은 요약이나 인사이트를 만들지 않고, Writer Agent가 발행 여부와 편집 내용을 판단하는 데 필요한 식별자와 근거만 제공한다.
 
 ## News Editor Agent
 
