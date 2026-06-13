@@ -1,0 +1,305 @@
+{
+  "generated_at": "2026-06-13T09:31:25.392749+00:00",
+  "generated_for": "2026-06-13",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "27968503142fc77d50c6ee892ceafad1ad7798df",
+  "github_run_id": "27462940722",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 46,
+  "excluded_count": 74,
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:bf5c018b2741ad1d",
+          "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+          "normalized_url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+          "url_hash": "bf5c018b2741ad1d664729bf90f148d717f0d419a7bfd5db077d29745478c2cf",
+          "suggested_doc_key": "2026-06-dxc-will-integrate-claude-into-the-systems-banks-airlines-and-other-regu-bf5c018b",
+          "suggested_article_path": "docs/articles/anthropic-blog/2026-06-dxc-will-integrate-claude-into-the-systems-banks-airlines-and-other-regu-bf5c018b.md",
+          "candidate_score": 29.0
+        },
+        {
+          "candidate_id": "anthropic-blog:5348a7d239028e9b",
+          "title": "Introducing Claude Opus 4.8",
+          "normalized_url": "https://www.anthropic.com/news/claude-opus-4-8",
+          "url_hash": "5348a7d239028e9b1bf7be7a3cd0b00cd33d7dd6ffac52cd0cf03c2dfa63c81d",
+          "suggested_doc_key": "2026-06-introducing-claude-opus-4-8-5348a7d2",
+          "suggested_article_path": "docs/articles/anthropic-blog/2026-06-introducing-claude-opus-4-8-5348a7d2.md",
+          "candidate_score": 29.0
+        },
+        {
+          "candidate_id": "anthropic-blog:b531a6249412cc4f",
+          "title": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+          "normalized_url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+          "url_hash": "b531a6249412cc4f4209ed3611bc98a6ff9fd4cb9cadc21dd30d5b5d71423e72",
+          "suggested_doc_key": "2026-06-what-we-learned-mapping-a-year-s-worth-of-ai-enabled-cyber-threats-b531a624",
+          "suggested_article_path": "docs/articles/anthropic-blog/2026-06-what-we-learned-mapping-a-year-s-worth-of-ai-enabled-cyber-threats-b531a624.md",
+          "candidate_score": 26.0
+        },
+        {
+          "candidate_id": "anthropic-blog:c265f4d09da60a84",
+          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "normalized_url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "url_hash": "c265f4d09da60a8497d8b1be54c4e74eaa36111b6eeed252f5cde990363cf838",
+          "suggested_doc_key": "2026-06-introducing-the-services-track-and-partner-hub-of-the-claude-partner-net-c265f4d0",
+          "suggested_article_path": "docs/articles/anthropic-blog/2026-06-introducing-the-services-track-and-partner-hub-of-the-claude-partner-net-c265f4d0.md",
+          "candidate_score": 26.0
+        },
+        {
+          "candidate_id": "anthropic-blog:b5e22ae086a6b353",
+          "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+          "normalized_url": "https://www.anthropic.com/news/series-h",
+          "url_hash": "b5e22ae086a6b3533d64401bc1ad139049f548f81120c9088220949ed093db8d",
+          "suggested_doc_key": "2026-06-anthropic-raises-65b-in-series-h-funding-at-965b-post-money-valuation-b5e22ae0",
+          "suggested_article_path": "docs/articles/anthropic-blog/2026-06-anthropic-raises-65b-in-series-h-funding-at-965b-post-money-valuation-b5e22ae0.md",
+          "candidate_score": 24.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 5,
+        "service_candidate_limit": 5
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 6,
+      "excluded_count": 4,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:9f1f8f8f0d07a60b",
+          "title": "Give GitHub Copilot CLI real code intelligence with language servers",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers",
+          "url_hash": "9f1f8f8f0d07a60b603d6dbc5a2a148bced1d1ba84061efda9d8ce114287d584",
+          "suggested_doc_key": "2026-06-give-github-copilot-cli-real-code-intelligence-with-language-servers-9f1f8f8f",
+          "suggested_article_path": "docs/articles/github-blog/2026-06-give-github-copilot-cli-real-code-intelligence-with-language-servers-9f1f8f8f.md",
+          "candidate_score": 32.0
+        },
+        {
+          "candidate_id": "github-blog:055d26472c9aa8b5",
+          "title": "GitHub for Beginners: Answers to some common questions",
+          "normalized_url": "https://github.blog/developer-skills/github/github-for-beginners-answers-to-some-common-questions",
+          "url_hash": "055d26472c9aa8b5f2756a7ba2704072729bb24cca1e62a32f05a46a9b630c44",
+          "suggested_doc_key": "2026-06-github-for-beginners-answers-to-some-common-questions-055d2647",
+          "suggested_article_path": "docs/articles/github-blog/2026-06-github-for-beginners-answers-to-some-common-questions-055d2647.md",
+          "candidate_score": 28.0
+        },
+        {
+          "candidate_id": "github-blog:40d88be1dfe837a1",
+          "title": "GitHub Universe is back: All together now, in the agentic era",
+          "normalized_url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
+          "url_hash": "40d88be1dfe837a1166603e571d734fadf5d409b1aecfde671ef163c7cf6a0a1",
+          "suggested_doc_key": "2026-06-github-universe-is-back-all-together-now-in-the-agentic-era-40d88be1",
+          "suggested_article_path": "docs/articles/github-blog/2026-06-github-universe-is-back-all-together-now-in-the-agentic-era-40d88be1.md",
+          "candidate_score": 28.0
+        },
+        {
+          "candidate_id": "github-blog:2c0fce60ab472910",
+          "title": "GitHub Copilot app: The agent-native desktop experience",
+          "normalized_url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience",
+          "url_hash": "2c0fce60ab472910593831286edb67079ad5b7dc9e6615d9f1a6a9059e4d66ef",
+          "suggested_doc_key": "2026-06-github-copilot-app-the-agent-native-desktop-experience-2c0fce60",
+          "suggested_article_path": "docs/articles/github-blog/2026-06-github-copilot-app-the-agent-native-desktop-experience-2c0fce60.md",
+          "candidate_score": 25.0
+        },
+        {
+          "candidate_id": "github-blog:66b84517d724df60",
+          "title": "Still a developer. Just outside. Our latest GitHub Shop collection is here.",
+          "normalized_url": "https://github.blog/news-insights/company-news/still-a-developer-just-outside-our-latest-github-shop-collection-is-here",
+          "url_hash": "66b84517d724df60a79e5c7e1f026482167659914bdc3f63a220634e5adfbfcf",
+          "suggested_doc_key": "2026-05-still-a-developer-just-outside-our-latest-github-shop-collection-is-here-66b84517",
+          "suggested_article_path": "docs/articles/github-blog/2026-05-still-a-developer-just-outside-our-latest-github-shop-collection-is-here-66b84517.md",
+          "candidate_score": 10.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 4
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:3417a0b1ef45a88e",
+          "title": "4 ways researchers are collaborating with Co-Scientist to solve big problems",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/research/co-scientist-research-problems",
+          "url_hash": "3417a0b1ef45a88e4b57581d9a29e3aea61d8712c4d34bc81dbba306336b792f",
+          "suggested_doc_key": "2026-06-4-ways-researchers-are-collaborating-with-co-scientist-to-solve-big-prob-3417a0b1",
+          "suggested_article_path": "docs/articles/google-blog/2026-06-4-ways-researchers-are-collaborating-with-co-scientist-to-solve-big-prob-3417a0b1.md",
+          "candidate_score": 30.0
+        },
+        {
+          "candidate_id": "google-blog:3c37532039cf5c1d",
+          "title": "See what 3 builders are making with Gemma 4",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4-builders",
+          "url_hash": "3c37532039cf5c1d42bdc1e0783121188361edb8fbaad8d794a3e135a184bcbf",
+          "suggested_doc_key": "2026-06-see-what-3-builders-are-making-with-gemma-4-3c375320",
+          "suggested_article_path": "docs/articles/google-blog/2026-06-see-what-3-builders-are-making-with-gemma-4-3c375320.md",
+          "candidate_score": 29.0
+        },
+        {
+          "candidate_id": "google-blog:1b3ed2fcc6056af2",
+          "title": "Gemma 4 QAT models: Optimizing model compression for mobile and laptop efficiency",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4",
+          "url_hash": "1b3ed2fcc6056af210afb32e1725239e597e36272af8a9c98989737bb4055f07",
+          "suggested_doc_key": "2026-06-gemma-4-qat-models-optimizing-model-compression-for-mobile-and-laptop-ef-1b3ed2fc",
+          "suggested_article_path": "docs/articles/google-blog/2026-06-gemma-4-qat-models-optimizing-model-compression-for-mobile-and-laptop-ef-1b3ed2fc.md",
+          "candidate_score": 27.0
+        },
+        {
+          "candidate_id": "google-blog:a1aa27eaf406c34a",
+          "title": "Our latest fraud and scams advisory",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/fraud-scams-advisory-june-2026",
+          "url_hash": "a1aa27eaf406c34a6b8d1a7e4c743e1f77cdff3cb42d2aba1eee8fbfd46f95a9",
+          "suggested_doc_key": "2026-06-our-latest-fraud-and-scams-advisory-a1aa27ea",
+          "suggested_article_path": "docs/articles/google-blog/2026-06-our-latest-fraud-and-scams-advisory-a1aa27ea.md",
+          "candidate_score": 26.0
+        },
+        {
+          "candidate_id": "google-blog:5f2adf422defdfb5",
+          "title": "Kaggle is making AI benchmark creation effortless",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-kaggle--benchmarks-locally",
+          "url_hash": "5f2adf422defdfb5171e2d8bd7b09fe0c19a392abcc58b874f34834fa163f70a",
+          "suggested_doc_key": "2026-06-kaggle-is-making-ai-benchmark-creation-effortless-5f2adf42",
+          "suggested_article_path": "docs/articles/google-blog/2026-06-kaggle-is-making-ai-benchmark-creation-effortless-5f2adf42.md",
+          "candidate_score": 24.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 4,
+        "service_candidate_limit": 6
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:0f1a21098ffcfff9",
+          "title": "Electric motors with no rare earths",
+          "normalized_url": "https://www.renaultgroup.com/en/magazine/energy-and-powertrains/all-about-electric-motors-with-no-rare-earths",
+          "url_hash": "0f1a21098ffcfff916eda0aa1ec5416c98dd1539ee7d88a0fb60f36c1bfbba84",
+          "suggested_doc_key": "2026-06-electric-motors-with-no-rare-earths-0f1a2109",
+          "suggested_article_path": "docs/articles/hacker-news/2026-06-electric-motors-with-no-rare-earths-0f1a2109.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:cde554b05f660c1c",
+          "title": "Pirates, a naval warfare game inspired by Sid Meier's Pirates",
+          "normalized_url": "https://piwodlaiwo.github.io/pirates",
+          "url_hash": "cde554b05f660c1c9732cb3d5ef423d0103726dff92d8e20bd753eb7d47f729b",
+          "suggested_doc_key": "2026-06-pirates-a-naval-warfare-game-inspired-by-sid-meier-s-pirates-cde554b0",
+          "suggested_article_path": "docs/articles/hacker-news/2026-06-pirates-a-naval-warfare-game-inspired-by-sid-meier-s-pirates-cde554b0.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:280f4b2a96acbf94",
+          "title": "CRISPR tech selectively shreds cancer cells, including \"undruggable\" cancers",
+          "normalized_url": "https://innovativegenomics.org/news/crispr-technique-selectively-shreds-cancer-cells",
+          "url_hash": "280f4b2a96acbf9448c94b024a3a418f7c30aa6959c5f48906e36a734ed2adb4",
+          "suggested_doc_key": "2026-06-crispr-tech-selectively-shreds-cancer-cells-including-undruggable-cancer-280f4b2a",
+          "suggested_article_path": "docs/articles/hacker-news/2026-06-crispr-tech-selectively-shreds-cancer-cells-including-undruggable-cancer-280f4b2a.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:e770c33bfb3bf932",
+          "title": "Twenty One Zero-Days in FFmpeg",
+          "normalized_url": "https://depthfirst.com/research/21-zero-days-in-ffmpeg",
+          "url_hash": "e770c33bfb3bf932fc88daad4dee6ea6c1edf6c3f6d094efa749c25a53c16210",
+          "suggested_doc_key": "2026-06-twenty-one-zero-days-in-ffmpeg-e770c33b",
+          "suggested_article_path": "docs/articles/hacker-news/2026-06-twenty-one-zero-days-in-ffmpeg-e770c33b.md",
+          "candidate_score": 59.9
+        },
+        {
+          "candidate_id": "hacker-news:f0365ede7fae2e99",
+          "title": "Swift at Apple: Migrating the TrueType hinting interpreter",
+          "normalized_url": "https://www.swift.org/blog/migrating-truetype-hinting-to-swift",
+          "url_hash": "f0365ede7fae2e9992632f598ba85c7cc9aa538675b54a2f67be7c770f1b17b4",
+          "suggested_doc_key": "2026-06-swift-at-apple-migrating-the-truetype-hinting-interpreter-f0365ede",
+          "suggested_article_path": "docs/articles/hacker-news/2026-06-swift-at-apple-migrating-the-truetype-hinting-interpreter-f0365ede.md",
+          "candidate_score": 59.8
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 3,
+        "service_candidate_limit": 6
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:d38f7a49e86de9da",
+          "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
+          "normalized_url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+          "url_hash": "d38f7a49e86de9da6ce8539def0da546f8bd3f4e9f0c14b17d2f3cbfb7801776",
+          "suggested_doc_key": "2026-06-supporting-europe-s-work-in-ensuring-a-trustworthy-ai-ecosystem-d38f7a49",
+          "suggested_article_path": "docs/articles/openai-blog/2026-06-supporting-europe-s-work-in-ensuring-a-trustworthy-ai-ecosystem-d38f7a49.md",
+          "candidate_score": 35.0
+        },
+        {
+          "candidate_id": "openai-blog:043e5abd40266556",
+          "title": "BBVA puts AI at the core of banking with OpenAI",
+          "normalized_url": "https://openai.com/index/bbva",
+          "url_hash": "043e5abd402665567d8a3ac36cb0f278db619ca628a60164323cc03322ed121e",
+          "suggested_doc_key": "2026-06-bbva-puts-ai-at-the-core-of-banking-with-openai-043e5abd",
+          "suggested_article_path": "docs/articles/openai-blog/2026-06-bbva-puts-ai-at-the-core-of-banking-with-openai-043e5abd.md",
+          "candidate_score": 34.0
+        },
+        {
+          "candidate_id": "openai-blog:c7866bf4d0809ad4",
+          "title": "From data to decisions: how LSEG is scaling trusted AI",
+          "normalized_url": "https://openai.com/index/lseg",
+          "url_hash": "c7866bf4d0809ad491d368e229e3f5bb5b8e9a2ef3345044ed9d36535de63c7e",
+          "suggested_doc_key": "2026-06-from-data-to-decisions-how-lseg-is-scaling-trusted-ai-c7866bf4",
+          "suggested_article_path": "docs/articles/openai-blog/2026-06-from-data-to-decisions-how-lseg-is-scaling-trusted-ai-c7866bf4.md",
+          "candidate_score": 33.0
+        },
+        {
+          "candidate_id": "openai-blog:0fda1a1b5a24b71c",
+          "title": "How an astrophysicist uses Codex to help simulate black holes",
+          "normalized_url": "https://openai.com/index/using-codex-to-simulate-black-holes",
+          "url_hash": "0fda1a1b5a24b71ccbe1c606278a414a90e6a6d06c559598303a2a3904d80550",
+          "suggested_doc_key": "2026-06-how-an-astrophysicist-uses-codex-to-help-simulate-black-holes-0fda1a1b",
+          "suggested_article_path": "docs/articles/openai-blog/2026-06-how-an-astrophysicist-uses-codex-to-help-simulate-black-holes-0fda1a1b.md",
+          "candidate_score": 32.0
+        },
+        {
+          "candidate_id": "openai-blog:2787087943490465",
+          "title": "PRC-linked influence operations are targeting AI debates in the US",
+          "normalized_url": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+          "url_hash": "27870879434904650fc8a5adfabfb321445d2850bfaa5575912184f09f288c8b",
+          "suggested_doc_key": "2026-06-prc-linked-influence-operations-are-targeting-ai-debates-in-the-us-27870879",
+          "suggested_article_path": "docs/articles/openai-blog/2026-06-prc-linked-influence-operations-are-targeting-ai-debates-in-the-us-27870879.md",
+          "candidate_score": 30.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 4,
+        "service_candidate_limit": 36
+      }
+    }
+  ]
+}
