@@ -70,16 +70,15 @@ docs/
 ├── index.md
 ├── services/
 │   ├── hacker-news.md
+│   ├── hacker-news/
 │   ├── github-blog.md
+│   ├── github-blog/
 │   ├── google-blog.md
+│   ├── google-blog/
 │   ├── openai-blog.md
-│   └── anthropic-blog.md
-└── articles/
-    ├── hacker-news/
-    ├── github-blog/
-    ├── google-blog/
-    ├── openai-blog/
-    └── anthropic-blog/
+│   ├── openai-blog/
+│   ├── anthropic-blog.md
+│   └── anthropic-blog/
 ```
 
 Article pages should read like short editorial briefings, not rigid reports. A published article page should contain a natural briefing body, key points, why it is worth reading, caveats, and source links. Draft pages must not pretend to summarize the article; they should only show pending status, feed summary, and candidate evidence.
@@ -115,7 +114,7 @@ Each stage must remain independently executable for development and debugging.
 6. Exclude articles already published in the briefed article state.
 7. Generate Writer-facing candidates with `candidate_id`, `url_hash`, `suggested_doc_key`, and `suggested_article_path`.
 8. Let the Writer Agent convert new candidates into editorial results. The current Draft Agent does not generate summaries or insights.
-9. Let the Writer Generator create `docs/articles/{service_key}/{slug}.md` files.
+9. Let the Writer Generator create `docs/services/{service_key}/{slug}.md` files.
 10. Regenerate `docs/services/{service_key}.md` service indexes.
 11. Regenerate `docs/index.md` as the main entry page.
 12. Update the briefed article state as draft or published after successful generation.

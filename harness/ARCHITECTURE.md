@@ -109,19 +109,18 @@ docs/
 ├── index.md
 ├── services/
 │   ├── hacker-news.md
+│   ├── hacker-news/
 │   ├── github-blog.md
+│   ├── github-blog/
 │   ├── google-blog.md
+│   ├── google-blog/
 │   ├── openai-blog.md
-│   └── anthropic-blog.md
-└── articles/
-    ├── hacker-news/
-    ├── github-blog/
-    ├── google-blog/
-    ├── openai-blog/
-    └── anthropic-blog/
+│   ├── openai-blog/
+│   ├── anthropic-blog.md
+│   └── anthropic-blog/
 ```
 
-`index.md`는 전체 서비스의 핵심 흐름과 최근 선별 글을 보여주는 진입점이다. `services/*.md`는 서비스별 핵심 글 색인이다. `articles/{service_key}/*.md`는 원문 글 하나에 대한 상세 브리핑이다.
+`index.md`는 전체 서비스의 핵심 흐름과 최근 선별 글을 보여주는 진입점이다. `services/*.md`는 서비스별 핵심 글 색인이다. `services/{service_key}/*.md`는 원문 글 하나에 대한 상세 브리핑이다.
 개별 article 문서는 리포트 형식보다 자연스러운 브리핑 글 형태를 우선한다.
 
 ## 단계별 플로우
@@ -284,7 +283,7 @@ Draft 문서는 요약이나 중요성 판단을 생성하지 않고, 작성 대
 ```text
 docs/index.md
 docs/services/{service_key}.md
-docs/articles/{service_key}/{slug}.md
+docs/services/{service_key}/{slug}.md
 ```
 
 ## Build

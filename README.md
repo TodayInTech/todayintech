@@ -32,19 +32,18 @@ docs/
 ├── index.md
 ├── services/
 │   ├── hacker-news.md
+│   ├── hacker-news/
 │   ├── github-blog.md
+│   ├── github-blog/
 │   ├── google-blog.md
+│   ├── google-blog/
 │   ├── openai-blog.md
-│   └── anthropic-blog.md
-└── articles/
-    ├── hacker-news/
-    ├── github-blog/
-    ├── google-blog/
-    ├── openai-blog/
-    └── anthropic-blog/
+│   ├── openai-blog/
+│   ├── anthropic-blog.md
+│   └── anthropic-blog/
 ```
 
-`docs/articles/{service_key}/{slug}.md`는 의미 있는 원문 글 하나에 대응합니다. 같은 원문 URL로 생성된 article 문서는 다시 생성하지 않습니다. 기존 날짜 디렉터리 산출물은 초기 구조 검증용 샘플로 취급합니다.
+`docs/services/{service_key}/{slug}.md`는 의미 있는 원문 글 하나에 대응합니다. 같은 원문 URL로 생성된 article 문서는 다시 생성하지 않습니다. 기존 날짜 디렉터리 산출물은 초기 구조 검증용 샘플로 취급합니다.
 
 ## 환경 변수
 
@@ -160,7 +159,7 @@ OpenAI Agent는 원문 전체를 크롤링하지 않고 Collector와 Preprocesso
 docs/
 ├── index.md
 ├── services/{service_key}.md
-└── articles/{service_key}/{suggested_doc_key}.md
+└── services/{service_key}/{suggested_doc_key}.md
 ```
 
 전체 파이프라인을 실행하여 수집, 전처리, Writer draft 문서 생성을 함께 수행합니다.

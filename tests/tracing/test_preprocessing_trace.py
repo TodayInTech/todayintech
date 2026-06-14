@@ -25,7 +25,7 @@ def make_candidate(excluded_reason: str | None = None) -> ArticleCandidate:
         url_hash="abc123",
         title_fingerprint="new agent feature",
         suggested_doc_key="2026-06-new-agent-feature-abc123",
-        suggested_article_path="docs/articles/openai-blog/2026-06-new-agent-feature-abc123.md",
+        suggested_article_path="docs/services/openai-blog/2026-06-new-agent-feature-abc123.md",
         candidate_score=42,
         excluded_reason=excluded_reason,
     )

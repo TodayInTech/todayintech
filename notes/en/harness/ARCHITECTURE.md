@@ -105,19 +105,18 @@ docs/
 ├── index.md
 ├── services/
 │   ├── hacker-news.md
+│   ├── hacker-news/
 │   ├── github-blog.md
+│   ├── github-blog/
 │   ├── google-blog.md
+│   ├── google-blog/
 │   ├── openai-blog.md
-│   └── anthropic-blog.md
-└── articles/
-    ├── hacker-news/
-    ├── github-blog/
-    ├── google-blog/
-    ├── openai-blog/
-    └── anthropic-blog/
+│   ├── openai-blog/
+│   ├── anthropic-blog.md
+│   └── anthropic-blog/
 ```
 
-`index.md` is the entry point for cross-service highlights. `services/*.md` files are service-level indexes. `articles/{service_key}/*.md` files are detailed briefings for individual source articles.
+`index.md` is the entry point for cross-service highlights. `services/*.md` files are service-level indexes. `services/{service_key}/*.md` files are detailed briefings for individual source articles.
 Individual article pages should favor a natural editorial briefing format over a rigid report format.
 
 ## Step-by-Step Flow
@@ -280,7 +279,7 @@ Generated paths:
 ```text
 docs/index.md
 docs/services/{service_key}.md
-docs/articles/{service_key}/{slug}.md
+docs/services/{service_key}/{slug}.md
 ```
 
 ## Build

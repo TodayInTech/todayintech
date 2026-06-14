@@ -67,7 +67,7 @@ def make_candidate() -> ArticleCandidate:
         title_fingerprint="openai developer update",
         feed_summary="<p>OpenAI developer feed summary</p>",
         suggested_doc_key="2026-06-openai-developer-update-abc123",
-        suggested_article_path="docs/articles/openai-blog/2026-06-openai-developer-update-abc123.md",
+        suggested_article_path="docs/services/openai-blog/2026-06-openai-developer-update-abc123.md",
         candidate_score=42,
         ranking_signals={"source_priority": 10},
     )

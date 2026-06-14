@@ -59,7 +59,7 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 - [ ] Writer - in progress
   - [x] Add Writer package structure
   - [x] Implement Draft Agent contract/schema
-  - [x] Generate `docs/articles/{service_key}/{slug}.md` draft documents
+  - [x] Generate `docs/services/{service_key}/{slug}.md` draft documents
   - [x] Add natural editorial briefing template for individual article documents
   - [x] Generate `docs/services/{service_key}.md` service indexes
   - [x] Generate `docs/index.md` main page

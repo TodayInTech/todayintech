@@ -34,7 +34,7 @@ def test_suggested_doc_key_includes_date_slug_and_short_hash() -> None:
     assert doc_key.startswith("2026-06-access-openai-models-and-codex")
     assert doc_key.endswith(url_hash(normalized_url)[:8])
     assert suggested_article_path("openai-blog", doc_key) == (
-        f"docs/articles/openai-blog/{doc_key}.md"
+        f"docs/services/openai-blog/{doc_key}.md"
     )
 
 

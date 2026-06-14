@@ -11,7 +11,7 @@ def write_main_index_markdown(output_root: Path, editorial_result: EditorialResu
     lines = [
         "---",
         "title: Today in Tech",
-        "sidebar_label: Overview",
+        "sidebar_label: Today in Tech",
         "---",
         "",
         "# Today in Tech",
@@ -30,7 +30,7 @@ def write_main_index_markdown(output_root: Path, editorial_result: EditorialResu
     for service in editorial_result.services:
         for briefing in service.briefings:
             written_any = True
-            article_path = f"./articles/{service.service_key}/{briefing.suggested_doc_key}.md"
+            article_path = f"./services/{service.service_key}/{briefing.suggested_doc_key}.md"
             title = mdx_safe_link_label(briefing.title)
             service_name = mdx_safe_plain_text(service.service_name)
             description = briefing.briefing_body_ko or "브리핑 본문 작성 대기"

@@ -66,6 +66,6 @@ def test_run_pipeline_writes_raw_and_preprocessed_outputs(tmp_path, monkeypatch)
     assert tmp_path.joinpath("processed", "2026-06-11", "preprocessing.json").exists()
     assert tmp_path.joinpath("docs", "index.md").exists()
     assert tmp_path.joinpath("docs", "services", "hacker-news.md").exists()
-    assert list(tmp_path.joinpath("docs", "articles", "hacker-news").glob("*.md"))
+    assert list(tmp_path.joinpath("docs", "services", "hacker-news").glob("*.md"))
     assert tmp_path.joinpath("data", "briefed_articles.json").exists()
     assert result.editorial_result.services[0].briefings[0].title == "New Agent Release"

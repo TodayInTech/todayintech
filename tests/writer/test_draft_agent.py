@@ -44,7 +44,7 @@ def make_preprocessing_result() -> PreprocessingResult:
                         feed_summary="Feed summary",
                         suggested_doc_key="2026-06-new-agent-feature-abc123",
                         suggested_article_path=(
-                            "docs/articles/openai-blog/2026-06-new-agent-feature-abc123.md"
+                            "docs/services/openai-blog/2026-06-new-agent-feature-abc123.md"
                         ),
                         candidate_score=42,
                         ranking_signals={"source_priority": 10},

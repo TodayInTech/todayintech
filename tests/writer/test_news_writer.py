@@ -45,7 +45,7 @@ def make_preprocessing_result() -> PreprocessingResult:
                         feed_summary="Feed summary",
                         suggested_doc_key="2026-06-new-agent-feature-abc123",
                         suggested_article_path=(
-                            "docs/articles/hacker-news/2026-06-new-agent-feature-abc123.md"
+                            "docs/services/hacker-news/2026-06-new-agent-feature-abc123.md"
                         ),
                         candidate_score=42,
                         ranking_signals={"source_priority": 5},
@@ -68,7 +68,7 @@ def test_news_writer_writes_articles_indexes_and_draft_state(tmp_path) -> None:
 
     article_path = tmp_path.joinpath(
         "docs",
-        "articles",
+        "services",
         "hacker-news",
         "2026-06-new-agent-feature-abc123.md",
     )
@@ -90,7 +90,7 @@ def test_news_writer_writes_articles_indexes_and_draft_state(tmp_path) -> None:
     record = reloaded.state.articles[BriefedArticleStore.key_for_url("https://example.com/agent")]
     assert record.status == "draft"
     assert record.article_doc_path == (
-        "docs/articles/hacker-news/2026-06-new-agent-feature-abc123.md"
+        "docs/services/hacker-news/2026-06-new-agent-feature-abc123.md"
     )
 
 

@@ -63,16 +63,15 @@ docs/
 ├── index.md
 ├── services/
 │   ├── hacker-news.md
+│   ├── hacker-news/
 │   ├── github-blog.md
+│   ├── github-blog/
 │   ├── google-blog.md
+│   ├── google-blog/
 │   ├── openai-blog.md
-│   └── anthropic-blog.md
-└── articles/
-    ├── hacker-news/
-    ├── github-blog/
-    ├── google-blog/
-    ├── openai-blog/
-    └── anthropic-blog/
+│   ├── openai-blog/
+│   ├── anthropic-blog.md
+│   └── anthropic-blog/
 
 notes/
 └── en/
@@ -177,7 +176,7 @@ src/
 글별 Markdown:
 
 - 의미 있는 원문 글 하나당 하나의 문서를 생성한다.
-- 문서 경로는 `docs/articles/{service_key}/{slug}.md`를 사용한다.
+- 문서 경로는 `docs/services/{service_key}/{slug}.md`를 사용한다.
 - 한 번 생성된 article 문서는 같은 원문 URL로 다시 Agent 재생성하지 않는다.
 - 문서는 리포트가 아니라 자연스러운 에디토리얼 브리핑 글처럼 읽혀야 한다.
 - 문서는 짧은 브리핑 본문, 핵심 포인트, 읽어볼 만한 이유, 확인할 점, 원문 링크를 포함한다.
@@ -214,7 +213,7 @@ src/
 ```text
 docs/index.md
 docs/services/{service_key}.md
-docs/articles/{service_key}/{article_slug}.md
+docs/services/{service_key}/{article_slug}.md
 ```
 
 ## News Editor Agent 책임
@@ -264,7 +263,7 @@ News Editor Agent는 뉴스레터 편집자가 아니라 기술 글 큐레이터
 6. `briefed_articles` 상태와 기존 article 문서로 이미 발행된 글을 제외한다.
 7. Preprocessor가 `candidate_id`, `url_hash`, `suggested_doc_key`, `suggested_article_path`를 포함한 Writer 입력 후보를 만든다.
 8. Writer Agent가 신규 후보를 편집 결과로 변환한다. 현재 Draft Agent는 요약/인사이트를 생성하지 않는다.
-9. Writer Generator가 `docs/articles/{service_key}/{slug}.md`를 생성한다.
+9. Writer Generator가 `docs/services/{service_key}/{slug}.md`를 생성한다.
 10. `docs/services/{service_key}.md`를 서비스별 색인으로 갱신한다.
 11. `docs/index.md`를 전체 진입 페이지로 갱신한다.
 12. 생성 성공 후 `briefed_articles` 상태를 draft 또는 published로 업데이트한다.

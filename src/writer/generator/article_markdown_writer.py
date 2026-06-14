@@ -7,7 +7,7 @@ from src.writer.agent.schemas import ArticleBriefing, EditorialStatus
 
 def write_article_markdown(output_root: Path, briefing: ArticleBriefing) -> Path:
     output_path = (
-        output_root / "articles" / briefing.service_key / f"{briefing.suggested_doc_key}.md"
+        output_root / "services" / briefing.service_key / f"{briefing.suggested_doc_key}.md"
     )
     output_path.parent.mkdir(parents=True, exist_ok=True)
 

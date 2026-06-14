@@ -25,7 +25,7 @@ def test_article_markdown_writer_renders_published_briefing_as_natural_article(
         candidate_score=42,
         ranking_signals={"source_priority": 10},
         suggested_doc_key="2026-06-openai-developer-update-abc123",
-        article_doc_path="docs/articles/openai-blog/2026-06-openai-developer-update-abc123.md",
+        article_doc_path="docs/services/openai-blog/2026-06-openai-developer-update-abc123.md",
         editorial_status=EditorialStatus.PUBLISHED,
         generation_method=GenerationMethod.LLM,
         category="AI",

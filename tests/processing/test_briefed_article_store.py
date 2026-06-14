@@ -48,7 +48,7 @@ def test_briefed_article_store_treats_draft_as_active_written_article(tmp_path) 
         title_fingerprint="draft article",
         service_key="hacker-news",
         title="Draft Article",
-        article_doc_path="docs/articles/hacker-news/draft.md",
+        article_doc_path="docs/services/hacker-news/draft.md",
     )
 
     assert store.contains(

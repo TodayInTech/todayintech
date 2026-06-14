@@ -59,7 +59,7 @@
 - [ ] Writer - 진행 중
   - [x] Writer 패키지 구조 추가
   - [x] Draft Agent contract/schema 구현
-  - [x] `docs/articles/{service_key}/{slug}.md` draft 문서 생성
+  - [x] `docs/services/{service_key}/{slug}.md` draft 문서 생성
   - [x] 개별 article 문서의 자연스러운 브리핑형 템플릿 구성
   - [x] `docs/services/{service_key}.md` 서비스별 색인 생성
   - [x] `docs/index.md` 메인 페이지 생성

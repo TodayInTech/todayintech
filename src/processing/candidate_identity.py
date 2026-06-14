@@ -25,7 +25,7 @@ def suggested_doc_key(article: Article, normalized_url: str) -> str:
 
 
 def suggested_article_path(service_key: str, doc_key: str) -> str:
-    return f"docs/articles/{service_key}/{doc_key}.md"
+    return f"docs/services/{service_key}/{doc_key}.md"
 
 
 def slugify_title(value: str, fallback: str = "article") -> str:

@@ -28,7 +28,7 @@ def write_service_index_markdown(output_root: Path, service: ServiceWritingResul
     else:
         for briefing in service.briefings:
             relative_article_path = (
-                f"../articles/{service.service_key}/{briefing.suggested_doc_key}.md"
+                f"./{service.service_key}/{briefing.suggested_doc_key}.md"
             )
             title = mdx_safe_link_label(briefing.title)
             description = (
