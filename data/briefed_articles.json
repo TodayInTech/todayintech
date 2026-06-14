@@ -400,6 +400,176 @@
       "status": "published",
       "briefed_at": "2026-06-14T03:58:20.197344Z",
       "candidate_score": 31.0
+    },
+    "b5e22ae086a6b3533d64401bc1ad139049f548f81120c9088220949ed093db8d": {
+      "normalized_url": "https://www.anthropic.com/news/series-h",
+      "title_fingerprint": "anthropic raises 65b in series h funding at 965b post money valuation",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-anthropic-raises-65b-in-series-h-funding-at-965b-post-money-valuation-b5e22ae0.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877049Z",
+      "candidate_score": 22.0
+    },
+    "cf2879a4f8bc2f9cb0e5832d24b458786dc9ed93b2f827fa2e6f9250434f1051": {
+      "normalized_url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+      "title_fingerprint": "anthropic co founder chris olah s remarks on pope leo xiv s encyclical magnifica humanitas",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-anthropic-co-founder-chris-olah-s-remarks-on-pope-leo-xiv-s-encyclical-m-cf2879a4.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877087Z",
+      "candidate_score": 21.0
+    },
+    "68c93a2e843db05ba880d46ff7e4af90cdab9128292859845d8d63dc4dadf218": {
+      "normalized_url": "https://www.anthropic.com/news/widening-conversation-ai",
+      "title_fingerprint": "widening the conversation on frontier ai",
+      "service_key": "anthropic-blog",
+      "title": "Widening the conversation on frontier AI",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-widening-the-conversation-on-frontier-ai-68c93a2e.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877101Z",
+      "candidate_score": 21.0
+    },
+    "fd9b87df1fe1b911c46c3add7cef05f95691d2206a057371114938d9714dca10": {
+      "normalized_url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "title_fingerprint": "expanding project glasswing",
+      "service_key": "anthropic-blog",
+      "title": "Expanding Project Glasswing",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-expanding-project-glasswing-fd9b87df.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877112Z",
+      "candidate_score": 18.0
+    },
+    "a659b3823fb6dc70abe8114d3086cbda10b1fd8056ae27c2ef3c937c6bf0e9bc": {
+      "normalized_url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-git-and-github-in-vs-code",
+      "title_fingerprint": "github for beginners getting started with git and github in vs code",
+      "service_key": "github-blog",
+      "title": "GitHub for Beginners: Getting started with Git and GitHub in VS Code",
+      "article_doc_path": "docs/services/github-blog/2026-05-github-for-beginners-getting-started-with-git-and-github-in-vs-code-a659b382.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877122Z",
+      "candidate_score": 8.0
+    },
+    "5f2adf422defdfb5171e2d8bd7b09fe0c19a392abcc58b874f34834fa163f70a": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-kaggle--benchmarks-locally",
+      "title_fingerprint": "kaggle is making ai benchmark creation effortless",
+      "service_key": "google-blog",
+      "title": "Kaggle is making AI benchmark creation effortless",
+      "article_doc_path": "docs/services/google-blog/2026-06-kaggle-is-making-ai-benchmark-creation-effortless-5f2adf42.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877132Z",
+      "candidate_score": 22.0
+    },
+    "c955ca390c28cb64f43c6273fcd226f32acc256fbc2893ed02902c5659f277d7": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b",
+      "title_fingerprint": "introducing gemma 4 12b a unified encoder free multimodal model",
+      "service_key": "google-blog",
+      "title": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
+      "article_doc_path": "docs/services/google-blog/2026-06-introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model-c955ca39.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877141Z",
+      "candidate_score": 21.0
+    },
+    "9b819b28485237e78a09b6b8e2afee5de7b30c4b5a4cc62564211bdb40ad5511": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026",
+      "title_fingerprint": "the latest ai news we announced in may 2026",
+      "service_key": "google-blog",
+      "title": "The latest AI news we announced in May 2026",
+      "article_doc_path": "docs/services/google-blog/2026-06-the-latest-ai-news-we-announced-in-may-2026-9b819b28.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877150Z",
+      "candidate_score": 19.0
+    },
+    "313d910e613ff549749fc7b01b6e6933f4037a852a8ae7e2e0b39a5c6800bc1d": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/dreambeans",
+      "title_fingerprint": "meet dreambeans an app that connects you with what matters",
+      "service_key": "google-blog",
+      "title": "Meet Dreambeans, an app that connects you with what matters",
+      "article_doc_path": "docs/services/google-blog/2026-06-meet-dreambeans-an-app-that-connects-you-with-what-matters-313d910e.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877159Z",
+      "candidate_score": 16.0
+    },
+    "62fad39ee95fb6b166bec19f24ff27714701dc99e39590f5e750c3f440be091e": {
+      "normalized_url": "https://github.com/nex-agi/Nex-N2/issues/4",
+      "title_fingerprint": "rio de janeiro s homegrown llm appears to be a merge of an existing model",
+      "service_key": "hacker-news",
+      "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+      "article_doc_path": "docs/services/hacker-news/2026-06-rio-de-janeiro-s-homegrown-llm-appears-to-be-a-merge-of-an-existing-mode-62fad39e.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877169Z",
+      "candidate_score": 65.0
+    },
+    "c06b50199a3c18f98a6aa81ecd5ac0f2c50b71807fa9ca908e00403dc4bc55df": {
+      "normalized_url": "https://news.ycombinator.com/item?id=48528029",
+      "title_fingerprint": "i indexed 669 gb of my gopro videos using my m1 max computer and local ml models",
+      "service_key": "hacker-news",
+      "title": "I indexed 669 GB of my GoPro videos using my M1 Max computer and local ML models",
+      "article_doc_path": "docs/services/hacker-news/2026-06-i-indexed-669-gb-of-my-gopro-videos-using-my-m1-max-computer-and-local-m-c06b5019.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877175Z",
+      "candidate_score": 60.0
+    },
+    "504097de918956648027ea5d987186da5a5a20acb0a61570c454313b726487ed": {
+      "normalized_url": "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they",
+      "title_fingerprint": "not everyone is using ai for everything",
+      "service_key": "hacker-news",
+      "title": "Not everyone is using AI for everything",
+      "article_doc_path": "docs/services/hacker-news/2026-06-not-everyone-is-using-ai-for-everything-504097de.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877180Z",
+      "candidate_score": 60.0
+    },
+    "fa5989a7a4e36f8dd13218002457b0eb0e84ef02af30a9d484e6cbea4b9efdbb": {
+      "normalized_url": "https://lore.kernel.org/lkml/CAHk-=wi4BF4bMhZNZ1tqs+FFV4OuZRe3ZqdWB+LxRLmRweUzQw@mail.gmail.com/T",
+      "title_fingerprint": "linux 7 1",
+      "service_key": "hacker-news",
+      "title": "Linux 7.1",
+      "article_doc_path": "docs/services/hacker-news/2026-06-linux-7-1-fa5989a7.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877186Z",
+      "candidate_score": 59.9
+    },
+    "1ce2aa9bb46fb039d5b2ca43e43bd6949f4120b3146029cb340bf3d374f8d710": {
+      "normalized_url": "https://openai.com/index/economic-research-exchange",
+      "title_fingerprint": "introducing the openai economic research exchange",
+      "service_key": "openai-blog",
+      "title": "Introducing the OpenAI Economic Research Exchange",
+      "article_doc_path": "docs/services/openai-blog/2026-06-introducing-the-openai-economic-research-exchange-1ce2aa9b.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877192Z",
+      "candidate_score": 29.0
+    },
+    "27870879434904650fc8a5adfabfb321445d2850bfaa5575912184f09f288c8b": {
+      "normalized_url": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+      "title_fingerprint": "prc linked influence operations are targeting ai debates in the us",
+      "service_key": "openai-blog",
+      "title": "PRC-linked influence operations are targeting AI debates in the US",
+      "article_doc_path": "docs/services/openai-blog/2026-06-prc-linked-influence-operations-are-targeting-ai-debates-in-the-us-27870879.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877197Z",
+      "candidate_score": 28.0
+    },
+    "ddd2460e2a3b9981672c875752e89a9f324aae498bab1a8e49704bb747899bbf": {
+      "normalized_url": "https://openai.com/index/warp",
+      "title_fingerprint": "warp s big bet on building open source with gpt 5 5",
+      "service_key": "openai-blog",
+      "title": "Warp’s big bet on building open source with GPT-5.5",
+      "article_doc_path": "docs/services/openai-blog/2026-05-warp-s-big-bet-on-building-open-source-with-gpt-5-5-ddd2460e.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877215Z",
+      "candidate_score": 27.0
+    },
+    "5b802ccebc3cd95495dac3dcd4408eb83585f7cea2f3d766591a3279cb5731a9": {
+      "normalized_url": "https://openai.com/index/nextdoor",
+      "title_fingerprint": "how engineers at nextdoor use codex to build without limits",
+      "service_key": "openai-blog",
+      "title": "How engineers at Nextdoor use Codex to build without limits",
+      "article_doc_path": "docs/services/openai-blog/2026-06-how-engineers-at-nextdoor-use-codex-to-build-without-limits-5b802cce.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T23:10:00.877221Z",
+      "candidate_score": 25.0
     }
   }
 }

@@ -24,3 +24,7 @@ OpenAI Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [BBVA puts AI at the core of banking with OpenAI](./openai-blog/2026-06-bbva-puts-ai-at-the-core-of-banking-with-openai-043e5abd.md) `published`
 - [From data to decisions: how LSEG is scaling trusted AI](./openai-blog/2026-06-from-data-to-decisions-how-lseg-is-scaling-trusted-ai-c7866bf4.md) `published`
 - [How an astrophysicist uses Codex to help simulate black holes](./openai-blog/2026-06-how-an-astrophysicist-uses-codex-to-help-simulate-black-holes-0fda1a1b.md) `published`
+- [Introducing the OpenAI Economic Research Exchange](./openai-blog/2026-06-introducing-the-openai-economic-research-exchange-1ce2aa9b.md) `published`
+- [PRC-linked influence operations are targeting AI debates in the US](./openai-blog/2026-06-prc-linked-influence-operations-are-targeting-ai-debates-in-the-us-27870879.md) `published`
+- [Warp’s big bet on building open source with GPT-5.5](./openai-blog/2026-05-warp-s-big-bet-on-building-open-source-with-gpt-5-5-ddd2460e.md) `published`
+- [How engineers at Nextdoor use Codex to build without limits](./openai-blog/2026-06-how-engineers-at-nextdoor-use-codex-to-build-without-limits-5b802cce.md) `published`

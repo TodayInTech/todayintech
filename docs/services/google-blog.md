@@ -24,3 +24,7 @@ Google Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [See what 3 builders are making with Gemma 4](./google-blog/2026-06-see-what-3-builders-are-making-with-gemma-4-3c375320.md) `published`
 - [Gemma 4 QAT models: Optimizing model compression for mobile and laptop efficiency](./google-blog/2026-06-gemma-4-qat-models-optimizing-model-compression-for-mobile-and-laptop-ef-1b3ed2fc.md) `published`
 - [Our latest fraud and scams advisory](./google-blog/2026-06-our-latest-fraud-and-scams-advisory-a1aa27ea.md) `published`
+- [Kaggle is making AI benchmark creation effortless](./google-blog/2026-06-kaggle-is-making-ai-benchmark-creation-effortless-5f2adf42.md) `published`
+- [Introducing Gemma 4 12B: a unified, encoder-free multimodal model](./google-blog/2026-06-introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model-c955ca39.md) `published`
+- [The latest AI news we announced in May 2026](./google-blog/2026-06-the-latest-ai-news-we-announced-in-may-2026-9b819b28.md) `published`
+- [Meet Dreambeans, an app that connects you with what matters](./google-blog/2026-06-meet-dreambeans-an-app-that-connects-you-with-what-matters-313d910e.md) `published`
