@@ -200,6 +200,206 @@
       "status": "published",
       "briefed_at": "2026-06-13T09:21:18.954012Z",
       "candidate_score": 38.0
+    },
+    "bf5c018b2741ad1d664729bf90f148d717f0d419a7bfd5db077d29745478c2cf": {
+      "normalized_url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "title_fingerprint": "dxc will integrate claude into the systems banks airlines and other regulated industries rely on",
+      "service_key": "anthropic-blog",
+      "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-dxc-will-integrate-claude-into-the-systems-banks-airlines-and-other-regu-bf5c018b.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197160Z",
+      "candidate_score": 28.0
+    },
+    "5348a7d239028e9b1bf7be7a3cd0b00cd33d7dd6ffac52cd0cf03c2dfa63c81d": {
+      "normalized_url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "title_fingerprint": "introducing claude opus 4 8",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Claude Opus 4.8",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-introducing-claude-opus-4-8-5348a7d2.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197209Z",
+      "candidate_score": 28.0
+    },
+    "b531a6249412cc4f4209ed3611bc98a6ff9fd4cb9cadc21dd30d5b5d71423e72": {
+      "normalized_url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "title_fingerprint": "what we learned mapping a year s worth of ai enabled cyber threats",
+      "service_key": "anthropic-blog",
+      "title": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-what-we-learned-mapping-a-year-s-worth-of-ai-enabled-cyber-threats-b531a624.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197222Z",
+      "candidate_score": 25.0
+    },
+    "c265f4d09da60a8497d8b1be54c4e74eaa36111b6eeed252f5cde990363cf838": {
+      "normalized_url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "title_fingerprint": "introducing the services track and partner hub of the claude partner network",
+      "service_key": "anthropic-blog",
+      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-introducing-the-services-track-and-partner-hub-of-the-claude-partner-net-c265f4d0.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197231Z",
+      "candidate_score": 25.0
+    },
+    "9f1f8f8f0d07a60b603d6dbc5a2a148bced1d1ba84061efda9d8ce114287d584": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers",
+      "title_fingerprint": "give github copilot cli real code intelligence with language servers",
+      "service_key": "github-blog",
+      "title": "Give GitHub Copilot CLI real code intelligence with language servers",
+      "article_doc_path": "docs/services/github-blog/2026-06-give-github-copilot-cli-real-code-intelligence-with-language-servers-9f1f8f8f.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197239Z",
+      "candidate_score": 31.0
+    },
+    "055d26472c9aa8b5f2756a7ba2704072729bb24cca1e62a32f05a46a9b630c44": {
+      "normalized_url": "https://github.blog/developer-skills/github/github-for-beginners-answers-to-some-common-questions",
+      "title_fingerprint": "github for beginners answers to some common questions",
+      "service_key": "github-blog",
+      "title": "GitHub for Beginners: Answers to some common questions",
+      "article_doc_path": "docs/services/github-blog/2026-06-github-for-beginners-answers-to-some-common-questions-055d2647.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197247Z",
+      "candidate_score": 27.0
+    },
+    "40d88be1dfe837a1166603e571d734fadf5d409b1aecfde671ef163c7cf6a0a1": {
+      "normalized_url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
+      "title_fingerprint": "github universe is back all together now in the agentic era",
+      "service_key": "github-blog",
+      "title": "GitHub Universe is back: All together now, in the agentic era",
+      "article_doc_path": "docs/services/github-blog/2026-06-github-universe-is-back-all-together-now-in-the-agentic-era-40d88be1.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197254Z",
+      "candidate_score": 27.0
+    },
+    "2c0fce60ab472910593831286edb67079ad5b7dc9e6615d9f1a6a9059e4d66ef": {
+      "normalized_url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience",
+      "title_fingerprint": "github copilot app the agent native desktop experience",
+      "service_key": "github-blog",
+      "title": "GitHub Copilot app: The agent-native desktop experience",
+      "article_doc_path": "docs/services/github-blog/2026-06-github-copilot-app-the-agent-native-desktop-experience-2c0fce60.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197261Z",
+      "candidate_score": 24.0
+    },
+    "3417a0b1ef45a88e4b57581d9a29e3aea61d8712c4d34bc81dbba306336b792f": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/research/co-scientist-research-problems",
+      "title_fingerprint": "4 ways researchers are collaborating with co scientist to solve big problems",
+      "service_key": "google-blog",
+      "title": "4 ways researchers are collaborating with Co-Scientist to solve big problems",
+      "article_doc_path": "docs/services/google-blog/2026-06-4-ways-researchers-are-collaborating-with-co-scientist-to-solve-big-prob-3417a0b1.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197268Z",
+      "candidate_score": 29.0
+    },
+    "3c37532039cf5c1d42bdc1e0783121188361edb8fbaad8d794a3e135a184bcbf": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4-builders",
+      "title_fingerprint": "see what 3 builders are making with gemma 4",
+      "service_key": "google-blog",
+      "title": "See what 3 builders are making with Gemma 4",
+      "article_doc_path": "docs/services/google-blog/2026-06-see-what-3-builders-are-making-with-gemma-4-3c375320.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197276Z",
+      "candidate_score": 28.0
+    },
+    "1b3ed2fcc6056af210afb32e1725239e597e36272af8a9c98989737bb4055f07": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4",
+      "title_fingerprint": "gemma 4 qat models optimizing model compression for mobile and laptop efficiency",
+      "service_key": "google-blog",
+      "title": "Gemma 4 QAT models: Optimizing model compression for mobile and laptop efficiency",
+      "article_doc_path": "docs/services/google-blog/2026-06-gemma-4-qat-models-optimizing-model-compression-for-mobile-and-laptop-ef-1b3ed2fc.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197282Z",
+      "candidate_score": 26.0
+    },
+    "a1aa27eaf406c34a6b8d1a7e4c743e1f77cdff3cb42d2aba1eee8fbfd46f95a9": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/fraud-scams-advisory-june-2026",
+      "title_fingerprint": "our latest fraud and scams advisory",
+      "service_key": "google-blog",
+      "title": "Our latest fraud and scams advisory",
+      "article_doc_path": "docs/services/google-blog/2026-06-our-latest-fraud-and-scams-advisory-a1aa27ea.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197289Z",
+      "candidate_score": 25.0
+    },
+    "3f5abbddd2950d1d73f2838a098c306e5ee7a0f9b81bf27dce46ed11efc3263f": {
+      "normalized_url": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?reflink=desktopwebshare_permalink&st=Yct6gx",
+      "title_fingerprint": "amazon ceo s talks with u s officials triggered crackdown on anthropic models",
+      "service_key": "hacker-news",
+      "title": "Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models",
+      "article_doc_path": "docs/services/hacker-news/2026-06-amazon-ceo-s-talks-with-u-s-officials-triggered-crackdown-on-anthropic-m-3f5abbdd.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197297Z",
+      "candidate_score": 65.0
+    },
+    "7cf4dd7c01e1b9a68a4639af8b18367a8de8cbdb65ddbadc99cf2e832c1bad3a": {
+      "normalized_url": "https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661",
+      "title_fingerprint": "police officer investigated for using ai to create evidence in multiple cases",
+      "service_key": "hacker-news",
+      "title": "Police officer investigated for using AI to 'create evidence' in multiple cases",
+      "article_doc_path": "docs/services/hacker-news/2026-06-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-7cf4dd7c.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197303Z",
+      "candidate_score": 61.0
+    },
+    "7cb801375cb2dc7cba465a9b2d5ad058f1acb6bf97330f4521ed277d46a048fa": {
+      "normalized_url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke",
+      "title_fingerprint": "ai coding at home without going broke",
+      "service_key": "hacker-news",
+      "title": "AI coding at home without going broke",
+      "article_doc_path": "docs/services/hacker-news/2026-06-ai-coding-at-home-without-going-broke-7cb80137.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197311Z",
+      "candidate_score": 60.0
+    },
+    "edd51c7262a457d935cb93803f88b681bcc805dcf2fa1617d86152b9a74a6ca9": {
+      "normalized_url": "https://twitter.com/jietang/status/2065784751345287314",
+      "title_fingerprint": "glm 5 2 is out",
+      "service_key": "hacker-news",
+      "title": "GLM 5.2 Is Out",
+      "article_doc_path": "docs/services/hacker-news/2026-06-glm-5-2-is-out-edd51c72.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197317Z",
+      "candidate_score": 60.0
+    },
+    "d38f7a49e86de9da6ce8539def0da546f8bd3f4e9f0c14b17d2f3cbfb7801776": {
+      "normalized_url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+      "title_fingerprint": "supporting europe s work in ensuring a trustworthy ai ecosystem",
+      "service_key": "openai-blog",
+      "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
+      "article_doc_path": "docs/services/openai-blog/2026-06-supporting-europe-s-work-in-ensuring-a-trustworthy-ai-ecosystem-d38f7a49.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197325Z",
+      "candidate_score": 34.0
+    },
+    "043e5abd402665567d8a3ac36cb0f278db619ca628a60164323cc03322ed121e": {
+      "normalized_url": "https://openai.com/index/bbva",
+      "title_fingerprint": "bbva puts ai at the core of banking with openai",
+      "service_key": "openai-blog",
+      "title": "BBVA puts AI at the core of banking with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-06-bbva-puts-ai-at-the-core-of-banking-with-openai-043e5abd.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197331Z",
+      "candidate_score": 33.0
+    },
+    "c7866bf4d0809ad491d368e229e3f5bb5b8e9a2ef3345044ed9d36535de63c7e": {
+      "normalized_url": "https://openai.com/index/lseg",
+      "title_fingerprint": "from data to decisions how lseg is scaling trusted ai",
+      "service_key": "openai-blog",
+      "title": "From data to decisions: how LSEG is scaling trusted AI",
+      "article_doc_path": "docs/services/openai-blog/2026-06-from-data-to-decisions-how-lseg-is-scaling-trusted-ai-c7866bf4.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197337Z",
+      "candidate_score": 32.0
+    },
+    "0fda1a1b5a24b71ccbe1c606278a414a90e6a6d06c559598303a2a3904d80550": {
+      "normalized_url": "https://openai.com/index/using-codex-to-simulate-black-holes",
+      "title_fingerprint": "how an astrophysicist uses codex to help simulate black holes",
+      "service_key": "openai-blog",
+      "title": "How an astrophysicist uses Codex to help simulate black holes",
+      "article_doc_path": "docs/services/openai-blog/2026-06-how-an-astrophysicist-uses-codex-to-help-simulate-black-holes-0fda1a1b.md",
+      "status": "published",
+      "briefed_at": "2026-06-14T03:58:20.197344Z",
+      "candidate_score": 31.0
     }
   }
 }

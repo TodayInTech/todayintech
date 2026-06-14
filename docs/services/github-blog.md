@@ -20,3 +20,7 @@ GitHub Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [How we made GitHub Copilot CLI more selective about delegation](./github-blog/2026-06-how-we-made-github-copilot-cli-more-selective-about-delegation-a66a7c2b.md) `published`
 - [From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI](./github-blog/2026-06-from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-cop-96de2795.md) `published`
 - [GitHub availability report: May 2026](./github-blog/2026-06-github-availability-report-may-2026-93dd8cc2.md) `published`
+- [Give GitHub Copilot CLI real code intelligence with language servers](./github-blog/2026-06-give-github-copilot-cli-real-code-intelligence-with-language-servers-9f1f8f8f.md) `published`
+- [GitHub for Beginners: Answers to some common questions](./github-blog/2026-06-github-for-beginners-answers-to-some-common-questions-055d2647.md) `published`
+- [GitHub Universe is back: All together now, in the agentic era](./github-blog/2026-06-github-universe-is-back-all-together-now-in-the-agentic-era-40d88be1.md) `published`
+- [GitHub Copilot app: The agent-native desktop experience](./github-blog/2026-06-github-copilot-app-the-agent-native-desktop-experience-2c0fce60.md) `published`
