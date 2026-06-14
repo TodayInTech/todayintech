@@ -31,6 +31,16 @@ class ServicePreprocessingResult(BaseModel):
     excluded: list[ArticleCandidate] = Field(default_factory=list)
 
 
+class ArchivedArticle(BaseModel):
+    service_key: str
+    service_name: str
+    title: str
+    article_doc_path: str
+    status: str
+    briefed_at: datetime | None = None
+    candidate_score: float = 0
+
+
 class PreprocessingResult(BaseModel):
     generated_for: str
     generated_at: datetime
@@ -39,3 +49,4 @@ class PreprocessingResult(BaseModel):
     candidate_count: int
     excluded_count: int
     services: list[ServicePreprocessingResult] = Field(default_factory=list)
+    archived_articles: list[ArchivedArticle] = Field(default_factory=list)

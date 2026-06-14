@@ -2,6 +2,7 @@ from datetime import UTC, datetime
 
 from src.models import Article
 from src.processing.article_candidate import (
+    ArchivedArticle,
     ArticleCandidate,
     PreprocessingResult,
     ServicePreprocessingResult,
@@ -119,3 +120,37 @@ def test_news_writer_records_published_state_for_llm_briefing(tmp_path) -> None:
     reloaded = BriefedArticleStore(tmp_path / "briefed_articles.json")
     record = reloaded.state.articles[BriefedArticleStore.key_for_url("https://example.com/agent")]
     assert record.status == "published"
+
+
+def test_news_writer_keeps_cumulative_articles_in_indexes(tmp_path) -> None:
+    preprocessing_result = make_preprocessing_result()
+    preprocessing_result.archived_articles = [
+        ArchivedArticle(
+            service_key="hacker-news",
+            service_name="Hacker News",
+            title="Old Agent Feature",
+            article_doc_path="docs/services/hacker-news/2026-05-old-agent-feature.md",
+            status="published",
+            briefed_at=datetime(2026, 5, 1, tzinfo=UTC),
+            candidate_score=10,
+        )
+    ]
+
+    writer = NewsWriter(
+        agent=DraftNewsEditorAgent(),
+        output_dir=tmp_path / "docs",
+        briefed_article_store=BriefedArticleStore(tmp_path / "briefed_articles.json"),
+    )
+
+    writer.write(preprocessing_result)
+
+    service_content = tmp_path.joinpath("docs", "services", "hacker-news.md").read_text(
+        encoding="utf-8"
+    )
+    index_content = tmp_path.joinpath("docs", "index.md").read_text(encoding="utf-8")
+
+    assert "## 우선순위 브리핑" in service_content
+    assert "## 누적 브리핑 목록" in service_content
+    assert "New Agent Feature" in service_content
+    assert "Old Agent Feature" in service_content
+    assert "Old Agent Feature" in index_content

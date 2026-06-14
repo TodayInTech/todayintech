@@ -229,7 +229,9 @@ The Writer stage receives `ArticleCandidate` objects from the Preprocessor and t
 
 - Writer Agent selects candidates and creates editorial results.
 - Writer Generator only writes Markdown from Agent results.
-- Writer updates the `briefed_articles` state after all Markdown generation succeeds.
+- Writer updates the `briefed_articles` state and cumulative indexes after all Markdown generation succeeds.
+- Main and service indexes use the accumulated `briefed_articles` state to show both priority briefings and the full cumulative list.
+- GitHub Actions commits generated `docs/` files and `data/briefed_articles.json` back to `main` so later runs can use them for duplicate filtering.
 - The default implementation uses `DraftNewsEditorAgent`. The Draft Agent does not generate summaries, why-it-matters text, or developer insights; it only creates `editorial_status=draft` documents.
 - Use `TODAYINTECH_WRITER_AGENT=openai` to enable `OpenAINewsEditorAgent` with structured output.
 - The OpenAI Agent does not perform full text crawling. It only uses candidate title, feed summary, tags, metadata, and ranking signals.

@@ -17,6 +17,7 @@ class BriefedArticleRecord(BaseModel):
     article_doc_path: str | None = None
     status: str = "published"
     briefed_at: datetime | None = None
+    candidate_score: float = 0
 
 
 class BriefedArticleState(BaseModel):
@@ -29,7 +30,13 @@ class BriefedArticleStore:
         self.path = path
         self.state = self._load()
 
-    def contains(self, normalized_url: str, title_fingerprint: str, service_key: str) -> bool:
+    def contains(
+        self,
+        normalized_url: str,
+        title_fingerprint: str,
+        service_key: str,
+        article_doc_path: str | None = None,
+    ) -> bool:
         url_key = self.key_for_url(normalized_url)
         if (
             url_key in self.state.articles
@@ -37,12 +44,22 @@ class BriefedArticleStore:
         ):
             return True
 
-        return any(
+        if any(
             record.service_key == service_key
             and record.title_fingerprint == title_fingerprint
             and record.status in ACTIVE_BRIEFING_STATUSES
             for record in self.state.articles.values()
-        )
+        ):
+            return True
+
+        return bool(article_doc_path and Path(article_doc_path).exists())
+
+    def active_records(self) -> list[BriefedArticleRecord]:
+        return [
+            record
+            for record in self.state.articles.values()
+            if record.status in ACTIVE_BRIEFING_STATUSES
+        ]
 
     def mark_published(
         self,
@@ -52,6 +69,7 @@ class BriefedArticleStore:
         service_key: str,
         title: str,
         article_doc_path: str | None = None,
+        candidate_score: float = 0,
     ) -> None:
         self.mark(
             normalized_url=normalized_url,
@@ -59,6 +77,7 @@ class BriefedArticleStore:
             service_key=service_key,
             title=title,
             article_doc_path=article_doc_path,
+            candidate_score=candidate_score,
             status="published",
         )
 
@@ -70,6 +89,7 @@ class BriefedArticleStore:
         service_key: str,
         title: str,
         article_doc_path: str | None = None,
+        candidate_score: float = 0,
     ) -> None:
         self.mark(
             normalized_url=normalized_url,
@@ -77,6 +97,7 @@ class BriefedArticleStore:
             service_key=service_key,
             title=title,
             article_doc_path=article_doc_path,
+            candidate_score=candidate_score,
             status="draft",
         )
 
@@ -88,6 +109,7 @@ class BriefedArticleStore:
         service_key: str,
         title: str,
         article_doc_path: str | None = None,
+        candidate_score: float = 0,
         status: str,
     ) -> None:
         self.state.articles[self.key_for_url(normalized_url)] = BriefedArticleRecord(
@@ -98,6 +120,7 @@ class BriefedArticleStore:
             article_doc_path=article_doc_path,
             status=status,
             briefed_at=datetime.now(UTC),
+            candidate_score=candidate_score,
         )
 
     def save(self) -> None:

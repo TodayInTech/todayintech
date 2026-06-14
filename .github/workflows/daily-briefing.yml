@@ -113,6 +113,42 @@ jobs:
           TODAYINTECH_MAX_CANDIDATES_PER_SERVICE: "4"
           TODAYINTECH_MAX_CANDIDATES_TOTAL: "50"
 
+      - name: Publish generated archive state
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add docs data/briefed_articles.json
+
+          if git diff --cached --quiet; then
+            echo "No generated archive changes to publish."
+            exit 0
+          fi
+
+          cat > "$RUNNER_TEMP/generated-archive-commit-message.txt" <<'EOF'
+          chore(docs): 생성 브리핑 아카이브 갱신
+
+          - GitHub Actions 실행 결과로 생성된 브리핑 문서와 중복 제거 상태를 main에 누적한다.
+
+          ## 작업 내용
+          - docs 아래 생성 브리핑 문서와 색인을 갱신한다.
+          - data/briefed_articles.json 상태를 갱신해 다음 실행의 중복 생성을 방지한다.
+
+          ## 영향 받은 파일
+          - docs/**
+          - data/briefed_articles.json
+          EOF
+
+          sed -i 's/^          //' "$RUNNER_TEMP/generated-archive-commit-message.txt"
+          git commit -F "$RUNNER_TEMP/generated-archive-commit-message.txt"
+
+          git pull --rebase --autostash origin "$TARGET_BRANCH"
+          git push origin "HEAD:$TARGET_BRANCH"
+
       - name: Build Docusaurus
         run: make build
 

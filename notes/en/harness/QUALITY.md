@@ -111,5 +111,6 @@ Inside Writer, Agent editing, Markdown writing, and `briefed_articles` state upd
 - Partial service failures are recorded in the trace, but the collector CLI exits successfully when at least one service succeeds.
 - The collector CLI exits with failure when every service collection fails.
 - GitHub Actions installs dev dependencies and sets `PYTHON=python` so CI does not depend on the local `.venv` path.
+- GitHub Actions must commit generated `docs/` files and `data/briefed_articles.json` back to `main`. That state file is the duplicate-filtering source for later runs.
 - The Markdown generator must normalize HTML and MDX tokens from external RSS, Atom, and sitemap sources into safe text.
 - If OpenAI structured output fails because of token limits or JSON parsing, the agent retries once with a larger output limit and skips only the candidate that still fails.

@@ -111,5 +111,6 @@ Writer 내부에서는 Agent 편집, Markdown 작성, `briefed_articles` 상태 
 - 일부 서비스 수집 실패는 trace에 기록하되, 성공한 서비스가 하나라도 있으면 collector CLI는 성공으로 종료한다.
 - 모든 서비스 수집이 실패하면 collector CLI는 실패로 종료한다.
 - GitHub Actions에서는 dev 의존성을 설치하고 `PYTHON=python`을 명시해서 로컬 `.venv` 경로에 의존하지 않는다.
+- GitHub Actions는 OpenAI Writer가 만든 `docs/`와 `data/briefed_articles.json`을 main에 다시 커밋해야 한다. 이 상태 파일이 다음 실행의 중복 제거 기준이다.
 - Markdown generator는 RSS, Atom, sitemap 등 외부 source에서 들어온 HTML과 MDX 토큰을 안전한 텍스트로 정규화해야 한다.
 - OpenAI structured output이 토큰 제한이나 JSON 파싱 문제로 실패하면 더 큰 출력 제한으로 한 번 재시도하고, 계속 실패하는 후보만 제외한다.

@@ -4,6 +4,7 @@ from time import perf_counter
 
 from src.models import ServiceCollectionResult
 from src.processing.article_candidate import (
+    ArchivedArticle,
     ArticleCandidate,
     PreprocessingResult,
     ServicePreprocessingResult,
@@ -129,6 +130,7 @@ class BriefedArticleFilterStep:
                 candidate.normalized_url,
                 candidate.title_fingerprint,
                 candidate.service_key,
+                candidate.suggested_article_path,
             ):
                 context.excluded.append(
                     candidate.model_copy(update={"excluded_reason": "already_briefed"})
@@ -196,8 +198,13 @@ class CandidateLimitStep:
 
 
 class NewsPreprocessor:
-    def __init__(self, steps: list[PreprocessingStep]) -> None:
+    def __init__(
+        self,
+        steps: list[PreprocessingStep],
+        briefed_article_store: BriefedArticleStore,
+    ) -> None:
         self.steps = steps
+        self.briefed_article_store = briefed_article_store
 
     @classmethod
     def create_default(
@@ -216,7 +223,8 @@ class NewsPreprocessor:
                 BriefedArticleFilterStep(briefed_article_store),
                 CandidateScoringStep(),
                 CandidateLimitStep(per_service_limit, total_limit),
-            ]
+            ],
+            briefed_article_store=briefed_article_store,
         )
 
     def process(
@@ -249,6 +257,7 @@ class NewsPreprocessor:
             candidate_count=sum(service.candidate_count for service in services),
             excluded_count=sum(service.excluded_count for service in services),
             services=services,
+            archived_articles=self.build_archived_articles(context),
         )
 
     def build_service_results(
@@ -283,4 +292,29 @@ class NewsPreprocessor:
                 excluded=excluded_by_service.get(service_key, []),
             )
             for service_key in service_keys
+        ]
+
+    def build_archived_articles(self, context: PreprocessingContext) -> list[ArchivedArticle]:
+        service_names = {
+            result.service_key: result.service_name for result in context.collection_results
+        }
+        return [
+            ArchivedArticle(
+                service_key=record.service_key,
+                service_name=service_names.get(record.service_key, record.service_key),
+                title=record.title,
+                article_doc_path=record.article_doc_path or "",
+                status=record.status,
+                briefed_at=record.briefed_at,
+                candidate_score=record.candidate_score,
+            )
+            for record in sorted(
+                self.briefed_article_store.active_records(),
+                key=lambda item: (
+                    item.candidate_score,
+                    item.briefed_at.isoformat() if item.briefed_at else "",
+                ),
+                reverse=True,
+            )
+            if record.article_doc_path
         ]

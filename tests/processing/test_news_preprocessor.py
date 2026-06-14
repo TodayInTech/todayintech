@@ -42,6 +42,8 @@ def test_news_preprocessor_deduplicates_and_filters_briefed_articles(tmp_path) -
         title_fingerprint="already briefed",
         service_key="hacker-news",
         title="Already Briefed",
+        article_doc_path="docs/services/hacker-news/already-briefed.md",
+        candidate_score=30,
     )
 
     preprocessor = NewsPreprocessor.create_default(
@@ -85,6 +87,8 @@ def test_news_preprocessor_deduplicates_and_filters_briefed_articles(tmp_path) -
     assert service.candidates[0].suggested_article_path.startswith("docs/services/hacker-news/")
     assert service.candidates[0].feed_summary == "Agent release"
     assert service.candidates[0].candidate_score > 0
+    assert result.archived_articles[0].title == "Already Briefed"
+    assert result.archived_articles[0].candidate_score == 30
     assert {item.excluded_reason for item in service.excluded} == {
         "already_briefed",
         "duplicate_in_run",

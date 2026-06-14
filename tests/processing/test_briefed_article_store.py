@@ -56,3 +56,18 @@ def test_briefed_article_store_treats_draft_as_active_written_article(tmp_path) 
         "draft article",
         "hacker-news",
     )
+
+
+def test_briefed_article_store_treats_existing_doc_path_as_processed(tmp_path) -> None:
+    article_path = tmp_path / "docs" / "services" / "hacker-news" / "draft.md"
+    article_path.parent.mkdir(parents=True)
+    article_path.write_text("# Draft Article\n", encoding="utf-8")
+
+    store = BriefedArticleStore(tmp_path / "briefed_articles.json")
+
+    assert store.contains(
+        "https://example.com/missing-state",
+        "missing state",
+        "hacker-news",
+        str(article_path),
+    )
