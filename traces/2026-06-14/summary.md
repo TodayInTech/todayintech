@@ -7,14 +7,14 @@
 - Failed services: 0
 - Warnings: 0
 - Total articles: 120
-- Total duration: 48147 ms
+- Total duration: 58096 ms
 
 ## Services
 
 | Service | Strategy | Status | Articles | Duration | Warnings |
 | --- | --- | --- | ---: | ---: | --- |
-| hacker-news | rss | success | 20 | 2404 ms | - |
-| github-blog | rss | success | 10 | 228 ms | - |
-| google-blog | rss | success | 20 | 396 ms | - |
-| openai-blog | rss | success | 50 | 875 ms | - |
-| anthropic-blog | sitemap | success | 20 | 44244 ms | - |
+| hacker-news | rss | success | 20 | 4462 ms | - |
+| github-blog | rss | success | 10 | 339 ms | - |
+| google-blog | rss | success | 20 | 406 ms | - |
+| openai-blog | rss | success | 50 | 750 ms | - |
+| anthropic-blog | sitemap | success | 20 | 52139 ms | - |
