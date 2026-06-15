@@ -9,15 +9,17 @@ GitHub Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 
 ## 우선순위 브리핑
 
+- [GitHub Copilot CLI for Beginners: Overview of common slash commands](./github-blog/2026-06-github-copilot-cli-for-beginners-overview-of-common-slash-commands-1b8723a7.md) `published` / score 42.0
 - [Making secret scanning more trustworthy: Reducing false positives at scale](./github-blog/2026-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scal-9a46f291.md) `published` / score 39.0
 - [How we made GitHub Copilot CLI more selective about delegation](./github-blog/2026-06-how-we-made-github-copilot-cli-more-selective-about-delegation-a66a7c2b.md) `published` / score 37.0
-- [From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI](./github-blog/2026-06-from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-cop-96de2795.md) `published` / score 35.0
-- [GitHub availability report: May 2026](./github-blog/2026-06-github-availability-report-may-2026-93dd8cc2.md) `published` / score 35.0
+- [Accelerating researchers and developers building multilingual AI with a new open dataset](./github-blog/2026-06-accelerating-researchers-and-developers-building-multilingual-ai-with-a-8ff72939.md) `published` / score 36.0
 
 ## 누적 브리핑 목록
 
+- [GitHub Copilot CLI for Beginners: Overview of common slash commands](./github-blog/2026-06-github-copilot-cli-for-beginners-overview-of-common-slash-commands-1b8723a7.md) `published`
 - [Making secret scanning more trustworthy: Reducing false positives at scale](./github-blog/2026-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scal-9a46f291.md) `published`
 - [How we made GitHub Copilot CLI more selective about delegation](./github-blog/2026-06-how-we-made-github-copilot-cli-more-selective-about-delegation-a66a7c2b.md) `published`
+- [Accelerating researchers and developers building multilingual AI with a new open dataset](./github-blog/2026-06-accelerating-researchers-and-developers-building-multilingual-ai-with-a-8ff72939.md) `published`
 - [From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI](./github-blog/2026-06-from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-cop-96de2795.md) `published`
 - [GitHub availability report: May 2026](./github-blog/2026-06-github-availability-report-may-2026-93dd8cc2.md) `published`
 - [Give GitHub Copilot CLI real code intelligence with language servers](./github-blog/2026-06-give-github-copilot-cli-real-code-intelligence-with-language-servers-9f1f8f8f.md) `published`

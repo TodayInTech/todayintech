@@ -570,6 +570,186 @@
       "status": "published",
       "briefed_at": "2026-06-14T23:10:00.877221Z",
       "candidate_score": 25.0
+    },
+    "0dba0c3d7be35ac47490d63bed91e1f7c6596a670a286ceaa089d20abe59d79f": {
+      "normalized_url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "title_fingerprint": "introducing claude design by anthropic labs",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Claude Design by Anthropic Labs",
+      "article_doc_path": "docs/services/anthropic-blog/2026-05-introducing-claude-design-by-anthropic-labs-0dba0c3d.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815737Z",
+      "candidate_score": 17.0
+    },
+    "bd891e1aa686b089a31548b7217cfc95ce3a2ea232be88e58cd7ac5559306529": {
+      "normalized_url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "title_fingerprint": "anthropic confidentially submits draft s 1 to the sec",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic confidentially submits draft S-1 to the SEC",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-anthropic-confidentially-submits-draft-s-1-to-the-sec-bd891e1a.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815774Z",
+      "candidate_score": 16.0
+    },
+    "48c97f53119b58865b3536d4cb103c7f0736ffb72fa98752a3e2f26292d5d518": {
+      "normalized_url": "https://www.anthropic.com/news/milan-office-opening",
+      "title_fingerprint": "anthropic opens milan office to support italian enterprise research and developers",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic opens Milan office to support Italian enterprise, research, and developers",
+      "article_doc_path": "docs/services/anthropic-blog/2026-05-anthropic-opens-milan-office-to-support-italian-enterprise-research-and-48c97f53.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815789Z",
+      "candidate_score": 12.0
+    },
+    "cd97e33f2d57807ac4d780b755da453e050a8d8bdad85d786d7e3b169d7e0517": {
+      "normalized_url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
+      "title_fingerprint": "anthropic appoints kiyoung choi as representative director of korea",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic appoints KiYoung Choi as Representative Director of Korea",
+      "article_doc_path": "docs/services/anthropic-blog/2026-05-anthropic-appoints-kiyoung-choi-as-representative-director-of-korea-cd97e33f.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815800Z",
+      "candidate_score": 10.0
+    },
+    "1b8723a7d8216058ea3dc48553d405f2f5661f874abfe5deda69b7c8d135f3ae": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+      "title_fingerprint": "github copilot cli for beginners overview of common slash commands",
+      "service_key": "github-blog",
+      "title": "GitHub Copilot CLI for Beginners: Overview of common slash commands",
+      "article_doc_path": "docs/services/github-blog/2026-06-github-copilot-cli-for-beginners-overview-of-common-slash-commands-1b8723a7.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815809Z",
+      "candidate_score": 42.0
+    },
+    "8ff72939b90ab1db14c48bccfe46c02f797db880f285c323967b125c407d44c3": {
+      "normalized_url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
+      "title_fingerprint": "accelerating researchers and developers building multilingual ai with a new open dataset",
+      "service_key": "github-blog",
+      "title": "Accelerating researchers and developers building multilingual AI with a new open dataset",
+      "article_doc_path": "docs/services/github-blog/2026-06-accelerating-researchers-and-developers-building-multilingual-ai-with-a-8ff72939.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815817Z",
+      "candidate_score": 36.0
+    },
+    "b5689f5df3fd2b9593eb0c0dd26b7a8542a0a8a0c9559e7b4778019ac804a3a4": {
+      "normalized_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/alabama-investment-june-2026",
+      "title_fingerprint": "we re strengthening our presence in alabama through new investments and community support",
+      "service_key": "google-blog",
+      "title": "We’re strengthening our presence in Alabama through new investments and community support.",
+      "article_doc_path": "docs/services/google-blog/2026-06-we-re-strengthening-our-presence-in-alabama-through-new-investments-and-b5689f5d.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815825Z",
+      "candidate_score": 36.0
+    },
+    "303bbaef93552d730b1bb1b0cc8d1933e66689d74ccf7911b5851ca8896afdae": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz",
+      "title_fingerprint": "take our i o 2026 quiz vibe coded in google ai studio",
+      "service_key": "google-blog",
+      "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+      "article_doc_path": "docs/services/google-blog/2026-05-take-our-i-o-2026-quiz-vibe-coded-in-google-ai-studio-303bbaef.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815832Z",
+      "candidate_score": 15.0
+    },
+    "aa745decade4a5cabd5ce2f0dd5740161c1fe9a4ac91f9f05571e7c0e2be564e": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
+      "title_fingerprint": "check out real life ai prototypes from the futures lab",
+      "service_key": "google-blog",
+      "title": "Check out real-life AI prototypes from the Futures Lab.",
+      "article_doc_path": "docs/services/google-blog/2026-05-check-out-real-life-ai-prototypes-from-the-futures-lab-aa745dec.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815839Z",
+      "candidate_score": 15.0
+    },
+    "9dc58065bcda16cbfa0fbea8e28025d6a6aaac184d98da4be0f4396e8587fdf5": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
+      "title_fingerprint": "how we used gemini to build google i o 2026",
+      "service_key": "google-blog",
+      "title": "How we used Gemini to build Google I/O 2026",
+      "article_doc_path": "docs/services/google-blog/2026-06-how-we-used-gemini-to-build-google-i-o-2026-9dc58065.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815846Z",
+      "candidate_score": 13.0
+    },
+    "27ca2b25645ce36bd643c4dd05ff335f501a26b24dc9a94d1aa39dddf20450a7": {
+      "normalized_url": "https://roman.pt/posts/linkedin-backdoor",
+      "title_fingerprint": "a backdoor in a linkedin job offer",
+      "service_key": "hacker-news",
+      "title": "A backdoor in a LinkedIn job offer",
+      "article_doc_path": "docs/services/hacker-news/2026-06-a-backdoor-in-a-linkedin-job-offer-27ca2b25.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815853Z",
+      "candidate_score": 61.0
+    },
+    "915a605862fee56ab5a4a961a01455a507a937d9ad5401fc170c7f908ebb13c0": {
+      "normalized_url": "https://tinywind.io/",
+      "title_fingerprint": "tinywind a pixel pirate sailing game with real wind physics 380k kms sailed",
+      "service_key": "hacker-news",
+      "title": "TinyWind: A pixel pirate sailing game with real wind physics (380k+ kms sailed)",
+      "article_doc_path": "docs/services/hacker-news/2026-06-tinywind-a-pixel-pirate-sailing-game-with-real-wind-physics-380k-kms-sai-915a6058.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815861Z",
+      "candidate_score": 60.0
+    },
+    "1274e97d0c78092fd5041d752245765e94a0ebca5b6e5081b9de87a2eaff310c": {
+      "normalized_url": "https://www.iroh.computer/blog/v1",
+      "title_fingerprint": "iroh 1 0",
+      "service_key": "hacker-news",
+      "title": "Iroh 1.0",
+      "article_doc_path": "docs/services/hacker-news/2026-06-iroh-1-0-1274e97d.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815868Z",
+      "candidate_score": 60.0
+    },
+    "e251d5c0aff0f624217d1691e2bccc153e96c3f7aa9e441cec9e6d58a5475470": {
+      "normalized_url": "https://www.monash.edu/news/articles/copper-drug-restores-memory-and-clears-toxic-alzheimers-proteins",
+      "title_fingerprint": "copper transport drug restores memory and clears toxic alzheimer s proteins",
+      "service_key": "hacker-news",
+      "title": "Copper transport drug restores memory and clears toxic Alzheimer's proteins",
+      "article_doc_path": "docs/services/hacker-news/2026-06-copper-transport-drug-restores-memory-and-clears-toxic-alzheimer-s-prote-e251d5c0.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815876Z",
+      "candidate_score": 60.0
+    },
+    "4a1a2edfc53fbcf838cd3e67aee3928da3bf9bd941569f25f53548ad55a383fa": {
+      "normalized_url": "https://openai.com/index/introducing-openai-partner-network",
+      "title_fingerprint": "introducing the openai partner network",
+      "service_key": "openai-blog",
+      "title": "Introducing the OpenAI Partner Network",
+      "article_doc_path": "docs/services/openai-blog/2026-06-introducing-the-openai-partner-network-4a1a2edf.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815885Z",
+      "candidate_score": 43.0
+    },
+    "58b581b20ce32e7be40ebc18a719b42b939046c6c640fa43fd6b6415c69f68f2": {
+      "normalized_url": "https://openai.com/index/notion",
+      "title_fingerprint": "what codex unlocks for notion",
+      "service_key": "openai-blog",
+      "title": "What Codex unlocks for Notion",
+      "article_doc_path": "docs/services/openai-blog/2026-06-what-codex-unlocks-for-notion-58b581b2.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815895Z",
+      "candidate_score": 24.0
+    },
+    "4dbb4daa381a06bf988e871d7723c4978c616f4bf716d1ff88f61afc5779474e": {
+      "normalized_url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+      "title_fingerprint": "industrial policy for the intelligence age",
+      "service_key": "openai-blog",
+      "title": "Industrial policy for the Intelligence Age",
+      "article_doc_path": "docs/services/openai-blog/2026-06-industrial-policy-for-the-intelligence-age-4dbb4daa.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815900Z",
+      "candidate_score": 24.0
+    },
+    "2e1f29b50d98a2b5df9308636c162a3c50d5eb0d1fbd3a76399333a5b101207e": {
+      "normalized_url": "https://openai.com/index/endava-frontiers",
+      "title_fingerprint": "how endava is redesigning software delivery around ai agents",
+      "service_key": "openai-blog",
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "article_doc_path": "docs/services/openai-blog/2026-06-how-endava-is-redesigning-software-delivery-around-ai-agents-2e1f29b5.md",
+      "status": "published",
+      "briefed_at": "2026-06-15T23:48:06.815912Z",
+      "candidate_score": 24.0
     }
   }
 }

@@ -25,6 +25,10 @@ Anthropic Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입
 - [Introducing the Services Track and Partner Hub of the Claude Partner Network](./anthropic-blog/2026-06-introducing-the-services-track-and-partner-hub-of-the-claude-partner-net-c265f4d0.md) `published`
 - [What we learned mapping a year’s worth of AI-enabled cyber threats](./anthropic-blog/2026-06-what-we-learned-mapping-a-year-s-worth-of-ai-enabled-cyber-threats-b531a624.md) `published`
 - [Anthropic raises $65B in Series H funding at $965B post-money valuation](./anthropic-blog/2026-06-anthropic-raises-65b-in-series-h-funding-at-965b-post-money-valuation-b5e22ae0.md) `published`
-- [Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical "Magnifica humanitas"](./anthropic-blog/2026-06-anthropic-co-founder-chris-olah-s-remarks-on-pope-leo-xiv-s-encyclical-m-cf2879a4.md) `published`
 - [Widening the conversation on frontier AI](./anthropic-blog/2026-06-widening-the-conversation-on-frontier-ai-68c93a2e.md) `published`
+- [Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical "Magnifica humanitas"](./anthropic-blog/2026-06-anthropic-co-founder-chris-olah-s-remarks-on-pope-leo-xiv-s-encyclical-m-cf2879a4.md) `published`
 - [Expanding Project Glasswing](./anthropic-blog/2026-06-expanding-project-glasswing-fd9b87df.md) `published`
+- [Introducing Claude Design by Anthropic Labs](./anthropic-blog/2026-05-introducing-claude-design-by-anthropic-labs-0dba0c3d.md) `published`
+- [Anthropic confidentially submits draft S-1 to the SEC](./anthropic-blog/2026-06-anthropic-confidentially-submits-draft-s-1-to-the-sec-bd891e1a.md) `published`
+- [Anthropic opens Milan office to support Italian enterprise, research, and developers](./anthropic-blog/2026-05-anthropic-opens-milan-office-to-support-italian-enterprise-research-and-48c97f53.md) `published`
+- [Anthropic appoints KiYoung Choi as Representative Director of Korea](./anthropic-blog/2026-05-anthropic-appoints-kiyoung-choi-as-representative-director-of-korea-cd97e33f.md) `published`
