@@ -750,6 +750,166 @@
       "status": "published",
       "briefed_at": "2026-06-15T23:48:06.815912Z",
       "candidate_score": 24.0
+    },
+    "5fa46de681ff990216524217e75beaa269d06401f70e0e0ca332985116f9a832": {
+      "normalized_url": "https://www.anthropic.com/news/core-views-on-ai-safety",
+      "title_fingerprint": "core views on ai safety when why what and how",
+      "service_key": "anthropic-blog",
+      "title": "Core views on AI safety: When, why, what, and how",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-core-views-on-ai-safety-when-why-what-and-how-5fa46de6.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516799Z",
+      "candidate_score": 30.0
+    },
+    "7708d4e1b8241c35bf3d4d794f7c2a98b7695fccc8dbeccfc31c982211b9ac31": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "title_fingerprint": "anthropic acquires stainless",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic acquires Stainless",
+      "article_doc_path": "docs/services/anthropic-blog/2026-05-anthropic-acquires-stainless-7708d4e1.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516838Z",
+      "candidate_score": 10.0
+    },
+    "5df700a9f389ee77e99ea31e3bba1110bc26b51e14002c6a05326d5ec619301a": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-kpmg",
+      "title_fingerprint": "kpmg integrates claude across its core business and workforce of more than 276 000 in strategic alliance",
+      "service_key": "anthropic-blog",
+      "title": "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance",
+      "article_doc_path": "docs/services/anthropic-blog/2026-05-kpmg-integrates-claude-across-its-core-business-and-workforce-of-more-th-5df700a9.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516847Z",
+      "candidate_score": 10.0
+    },
+    "eff5b35f2fa8a8c7830877b582b433715047cf981fa821952fbd0be2a9d3a2e6": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
+      "title_fingerprint": "what are git worktrees and why should i use them",
+      "service_key": "github-blog",
+      "title": "What are git worktrees, and why should I use them?",
+      "article_doc_path": "docs/services/github-blog/2026-06-what-are-git-worktrees-and-why-should-i-use-them-eff5b35f.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516854Z",
+      "candidate_score": 37.0
+    },
+    "916c2e9cc34065e1f1dcb18bc410b6fd1db6aa89b33766fd3b783388849c3af1": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/xr-ar/awe-2026",
+      "title_fingerprint": "reservations are open for xreal aura plus see more news from awe 2026",
+      "service_key": "google-blog",
+      "title": "Reservations are open for XREAL AURA — plus, see more news from AWE 2026.",
+      "article_doc_path": "docs/services/google-blog/2026-06-reservations-are-open-for-xreal-aura-plus-see-more-news-from-awe-2026-916c2e9c.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516861Z",
+      "candidate_score": 39.0
+    },
+    "a640870bd33f15508a9d1b49ab9a693707ff0e94d20a9b0f31f61a8dc8ea4764": {
+      "normalized_url": "https://blog.google/company-news/outreach-and-initiatives/google-org/digital-wellbeing-fund-mental-health",
+      "title_fingerprint": "expanding our u s digital wellbeing fund",
+      "service_key": "google-blog",
+      "title": "Expanding our U.S. digital wellbeing fund",
+      "article_doc_path": "docs/services/google-blog/2026-06-expanding-our-u-s-digital-wellbeing-fund-a640870b.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516866Z",
+      "candidate_score": 36.0
+    },
+    "625b8d05baa64f0b8e375d6a891efd9549d92a50cff3a729da5843578e3f34f2": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/families/summer-screen-time-family-fun",
+      "title_fingerprint": "3 ways to balance screen time and keep kids engaged this summer",
+      "service_key": "google-blog",
+      "title": "3 ways to balance screen time and keep kids engaged this summer",
+      "article_doc_path": "docs/services/google-blog/2026-06-3-ways-to-balance-screen-time-and-keep-kids-engaged-this-summer-625b8d05.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516872Z",
+      "candidate_score": 35.0
+    },
+    "5aec8e110c21507fedd65d7808c9ada22394b31eb0693cefe403095ccf9e85df": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/search/thrifting-tips",
+      "title_fingerprint": "5 ways google search can level up your thrift and vintage shopping",
+      "service_key": "google-blog",
+      "title": "5 ways Google Search can level up your thrift and vintage shopping",
+      "article_doc_path": "docs/services/google-blog/2026-06-5-ways-google-search-can-level-up-your-thrift-and-vintage-shopping-5aec8e11.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516878Z",
+      "candidate_score": 10.0
+    },
+    "15747e96e4a82b146cc3728a515acac9c41b826f201ba655645876ca8daca35c": {
+      "normalized_url": "https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon",
+      "title_fingerprint": "grapheneos has been ported to android 17 and official releases are coming soon",
+      "service_key": "hacker-news",
+      "title": "GrapheneOS has been ported to Android 17 and official releases are coming soon",
+      "article_doc_path": "docs/services/hacker-news/2026-06-grapheneos-has-been-ported-to-android-17-and-official-releases-are-comin-15747e96.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516884Z",
+      "candidate_score": 71.8
+    },
+    "09e303f2a2cdfff791d2f5ce311acbbab503e6b07c27704d1d7aeefaca585657": {
+      "normalized_url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now",
+      "title_fingerprint": "running local models is good now",
+      "service_key": "hacker-news",
+      "title": "Running local models is good now",
+      "article_doc_path": "docs/services/hacker-news/2026-06-running-local-models-is-good-now-09e303f2.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516890Z",
+      "candidate_score": 65.0
+    },
+    "ebd99fc2e92c2b5aff9a22358de9347daa5dea9ac65bacee04d80a95586533f9": {
+      "normalized_url": "https://arseniyshestakov.com/2026/06/16/apple-is-about-to-make-hide-my-email-useless",
+      "title_fingerprint": "apple is about to make hide my email useless",
+      "service_key": "hacker-news",
+      "title": "Apple is about to make Hide My Email useless",
+      "article_doc_path": "docs/services/hacker-news/2026-06-apple-is-about-to-make-hide-my-email-useless-ebd99fc2.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516895Z",
+      "candidate_score": 63.0
+    },
+    "0d15d7c1b878593a4f43105bb493cbac2bed5610e689f7609fa9736409cebaab": {
+      "normalized_url": "https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering",
+      "title_fingerprint": "is meta destroying its engineering organization",
+      "service_key": "hacker-news",
+      "title": "Is Meta destroying its engineering organization?",
+      "article_doc_path": "docs/services/hacker-news/2026-06-is-meta-destroying-its-engineering-organization-0d15d7c1.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516903Z",
+      "candidate_score": 60.0
+    },
+    "c000018ba1f035750668b9f29cf7ee84428428584605d3c1a848166880caf1d2": {
+      "normalized_url": "https://openai.com/index/deployment-simulation",
+      "title_fingerprint": "predicting model behavior before release by simulating deployment",
+      "service_key": "openai-blog",
+      "title": "Predicting model behavior before release by simulating deployment",
+      "article_doc_path": "docs/services/openai-blog/2026-06-predicting-model-behavior-before-release-by-simulating-deployment-c000018b.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516910Z",
+      "candidate_score": 49.0
+    },
+    "98916af90b99edbd7eeac9d4cb4069f00a556c1197763c8354117f901483ee90": {
+      "normalized_url": "https://openai.com/index/openai-submits-confidential-s-1",
+      "title_fingerprint": "confidential submission of draft s 1 to the sec",
+      "service_key": "openai-blog",
+      "title": "Confidential submission of draft S-1 to the SEC",
+      "article_doc_path": "docs/services/openai-blog/2026-06-confidential-submission-of-draft-s-1-to-the-sec-98916af9.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516916Z",
+      "candidate_score": 22.0
+    },
+    "da51b3ff6580d673c640b4c99bf2cb3e4feac762c43defe046c0522d6b925e4f": {
+      "normalized_url": "https://openai.com/index/built-to-benefit-everyone-our-plan",
+      "title_fingerprint": "built to benefit everyone our plan",
+      "service_key": "openai-blog",
+      "title": "Built to benefit everyone: our plan",
+      "article_doc_path": "docs/services/openai-blog/2026-06-built-to-benefit-everyone-our-plan-da51b3ff.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516921Z",
+      "candidate_score": 22.0
+    },
+    "df48d050ae2c7c16673997b7f72ff16d39e2650b68f1e5259c1d70aac2ed642c": {
+      "normalized_url": "https://openai.com/index/frontier-safety-blueprint",
+      "title_fingerprint": "a blueprint for democratic governance of frontier ai",
+      "service_key": "openai-blog",
+      "title": "A blueprint for democratic governance of frontier AI",
+      "article_doc_path": "docs/services/openai-blog/2026-06-a-blueprint-for-democratic-governance-of-frontier-ai-df48d050.md",
+      "status": "published",
+      "briefed_at": "2026-06-16T23:25:52.516926Z",
+      "candidate_score": 22.0
     }
   }
 }
