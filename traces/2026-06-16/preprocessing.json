@@ -1,0 +1,247 @@
+{
+  "generated_at": "2026-06-16T23:21:19.990565+00:00",
+  "generated_for": "2026-06-16",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "b6a49a75f0e55ea064831e415f4373496ea64ae5",
+  "github_run_id": "27654601512",
+  "service_count": 5,
+  "duration_ms": 7,
+  "raw_count": 120,
+  "candidate_count": 29,
+  "excluded_count": 91,
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:5fa46de681ff9902",
+          "title": "Core views on AI safety: When, why, what, and how",
+          "normalized_url": "https://www.anthropic.com/news/core-views-on-ai-safety",
+          "url_hash": "5fa46de681ff990216524217e75beaa269d06401f70e0e0ca332985116f9a832",
+          "suggested_doc_key": "2026-06-core-views-on-ai-safety-when-why-what-and-how-5fa46de6",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-06-core-views-on-ai-safety-when-why-what-and-how-5fa46de6.md",
+          "candidate_score": 30.0
+        },
+        {
+          "candidate_id": "anthropic-blog:7708d4e1b8241c35",
+          "title": "Anthropic acquires Stainless",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+          "url_hash": "7708d4e1b8241c35bf3d4d794f7c2a98b7695fccc8dbeccfc31c982211b9ac31",
+          "suggested_doc_key": "2026-05-anthropic-acquires-stainless-7708d4e1",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-05-anthropic-acquires-stainless-7708d4e1.md",
+          "candidate_score": 10.0
+        },
+        {
+          "candidate_id": "anthropic-blog:5df700a9f389ee77",
+          "title": "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-kpmg",
+          "url_hash": "5df700a9f389ee77e99ea31e3bba1110bc26b51e14002c6a05326d5ec619301a",
+          "suggested_doc_key": "2026-05-kpmg-integrates-claude-across-its-core-business-and-workforce-of-more-th-5df700a9",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-05-kpmg-integrates-claude-across-its-core-business-and-workforce-of-more-th-5df700a9.md",
+          "candidate_score": 10.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:eff5b35f2fa8a8c7",
+          "title": "What are git worktrees, and why should I use them?",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
+          "url_hash": "eff5b35f2fa8a8c7830877b582b433715047cf981fa821952fbd0be2a9d3a2e6",
+          "suggested_doc_key": "2026-06-what-are-git-worktrees-and-why-should-i-use-them-eff5b35f",
+          "suggested_article_path": "docs/services/github-blog/2026-06-what-are-git-worktrees-and-why-should-i-use-them-eff5b35f.md",
+          "candidate_score": 37.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 5,
+      "excluded_count": 15,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:916c2e9cc34065e1",
+          "title": "Reservations are open for XREAL AURA — plus, see more news from AWE 2026.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/xr-ar/awe-2026",
+          "url_hash": "916c2e9cc34065e1f1dcb18bc410b6fd1db6aa89b33766fd3b783388849c3af1",
+          "suggested_doc_key": "2026-06-reservations-are-open-for-xreal-aura-plus-see-more-news-from-awe-2026-916c2e9c",
+          "suggested_article_path": "docs/services/google-blog/2026-06-reservations-are-open-for-xreal-aura-plus-see-more-news-from-awe-2026-916c2e9c.md",
+          "candidate_score": 39.0
+        },
+        {
+          "candidate_id": "google-blog:a640870bd33f1550",
+          "title": "Expanding our U.S. digital wellbeing fund",
+          "normalized_url": "https://blog.google/company-news/outreach-and-initiatives/google-org/digital-wellbeing-fund-mental-health",
+          "url_hash": "a640870bd33f15508a9d1b49ab9a693707ff0e94d20a9b0f31f61a8dc8ea4764",
+          "suggested_doc_key": "2026-06-expanding-our-u-s-digital-wellbeing-fund-a640870b",
+          "suggested_article_path": "docs/services/google-blog/2026-06-expanding-our-u-s-digital-wellbeing-fund-a640870b.md",
+          "candidate_score": 36.0
+        },
+        {
+          "candidate_id": "google-blog:625b8d05baa64f0b",
+          "title": "3 ways to balance screen time and keep kids engaged this summer",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/families/summer-screen-time-family-fun",
+          "url_hash": "625b8d05baa64f0b8e375d6a891efd9549d92a50cff3a729da5843578e3f34f2",
+          "suggested_doc_key": "2026-06-3-ways-to-balance-screen-time-and-keep-kids-engaged-this-summer-625b8d05",
+          "suggested_article_path": "docs/services/google-blog/2026-06-3-ways-to-balance-screen-time-and-keep-kids-engaged-this-summer-625b8d05.md",
+          "candidate_score": 35.0
+        },
+        {
+          "candidate_id": "google-blog:5aec8e110c21507f",
+          "title": "5 ways Google Search can level up your thrift and vintage shopping",
+          "normalized_url": "https://blog.google/products-and-platforms/products/search/thrifting-tips",
+          "url_hash": "5aec8e110c21507fedd65d7808c9ada22394b31eb0693cefe403095ccf9e85df",
+          "suggested_doc_key": "2026-06-5-ways-google-search-can-level-up-your-thrift-and-vintage-shopping-5aec8e11",
+          "suggested_article_path": "docs/services/google-blog/2026-06-5-ways-google-search-can-level-up-your-thrift-and-vintage-shopping-5aec8e11.md",
+          "candidate_score": 10.0
+        },
+        {
+          "candidate_id": "google-blog:6874e6a9bd6256dd",
+          "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos",
+          "url_hash": "6874e6a9bd6256dd22f87811d028d53490498fa03bd4b07e864afb8c2abc46bc",
+          "suggested_doc_key": "2026-05-9-demos-of-gemini-omni-and-gemini-3-5-in-action-6874e6a9",
+          "suggested_article_path": "docs/services/google-blog/2026-05-9-demos-of-gemini-omni-and-gemini-3-5-in-action-6874e6a9.md",
+          "candidate_score": 9.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 15
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:15747e96e4a82b14",
+          "title": "GrapheneOS has been ported to Android 17 and official releases are coming soon",
+          "normalized_url": "https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon",
+          "url_hash": "15747e96e4a82b146cc3728a515acac9c41b826f201ba655645876ca8daca35c",
+          "suggested_doc_key": "2026-06-grapheneos-has-been-ported-to-android-17-and-official-releases-are-comin-15747e96",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-grapheneos-has-been-ported-to-android-17-and-official-releases-are-comin-15747e96.md",
+          "candidate_score": 71.8
+        },
+        {
+          "candidate_id": "hacker-news:09e303f2a2cdfff7",
+          "title": "Running local models is good now",
+          "normalized_url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now",
+          "url_hash": "09e303f2a2cdfff791d2f5ce311acbbab503e6b07c27704d1d7aeefaca585657",
+          "suggested_doc_key": "2026-06-running-local-models-is-good-now-09e303f2",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-running-local-models-is-good-now-09e303f2.md",
+          "candidate_score": 65.0
+        },
+        {
+          "candidate_id": "hacker-news:ebd99fc2e92c2b5a",
+          "title": "Apple is about to make Hide My Email useless",
+          "normalized_url": "https://arseniyshestakov.com/2026/06/16/apple-is-about-to-make-hide-my-email-useless",
+          "url_hash": "ebd99fc2e92c2b5aff9a22358de9347daa5dea9ac65bacee04d80a95586533f9",
+          "suggested_doc_key": "2026-06-apple-is-about-to-make-hide-my-email-useless-ebd99fc2",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-apple-is-about-to-make-hide-my-email-useless-ebd99fc2.md",
+          "candidate_score": 63.0
+        },
+        {
+          "candidate_id": "hacker-news:0d15d7c1b878593a",
+          "title": "Is Meta destroying its engineering organization?",
+          "normalized_url": "https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering",
+          "url_hash": "0d15d7c1b878593a4f43105bb493cbac2bed5610e689f7609fa9736409cebaab",
+          "suggested_doc_key": "2026-06-is-meta-destroying-its-engineering-organization-0d15d7c1",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-is-meta-destroying-its-engineering-organization-0d15d7c1.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:90e3ae0d5587561b",
+          "title": "TIL: You can make HTTP requests without curl using Bash /dev/TCP",
+          "normalized_url": "https://mareksuppa.com/til/bash-dev-tcp-http-without-curl",
+          "url_hash": "90e3ae0d5587561b12c71438a9235d1c2617521f3a977a4a4202ff86547ce7ed",
+          "suggested_doc_key": "2026-06-til-you-can-make-http-requests-without-curl-using-bash-dev-tcp-90e3ae0d",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-til-you-can-make-http-requests-without-curl-using-bash-dev-tcp-90e3ae0d.md",
+          "candidate_score": 60.0
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:c000018ba1f03575",
+          "title": "Predicting model behavior before release by simulating deployment",
+          "normalized_url": "https://openai.com/index/deployment-simulation",
+          "url_hash": "c000018ba1f035750668b9f29cf7ee84428428584605d3c1a848166880caf1d2",
+          "suggested_doc_key": "2026-06-predicting-model-behavior-before-release-by-simulating-deployment-c000018b",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-predicting-model-behavior-before-release-by-simulating-deployment-c000018b.md",
+          "candidate_score": 49.0
+        },
+        {
+          "candidate_id": "openai-blog:98916af90b99edbd",
+          "title": "Confidential submission of draft S-1 to the SEC",
+          "normalized_url": "https://openai.com/index/openai-submits-confidential-s-1",
+          "url_hash": "98916af90b99edbd7eeac9d4cb4069f00a556c1197763c8354117f901483ee90",
+          "suggested_doc_key": "2026-06-confidential-submission-of-draft-s-1-to-the-sec-98916af9",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-confidential-submission-of-draft-s-1-to-the-sec-98916af9.md",
+          "candidate_score": 22.0
+        },
+        {
+          "candidate_id": "openai-blog:da51b3ff6580d673",
+          "title": "Built to benefit everyone: our plan",
+          "normalized_url": "https://openai.com/index/built-to-benefit-everyone-our-plan",
+          "url_hash": "da51b3ff6580d673c640b4c99bf2cb3e4feac762c43defe046c0522d6b925e4f",
+          "suggested_doc_key": "2026-06-built-to-benefit-everyone-our-plan-da51b3ff",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-built-to-benefit-everyone-our-plan-da51b3ff.md",
+          "candidate_score": 22.0
+        },
+        {
+          "candidate_id": "openai-blog:df48d050ae2c7c16",
+          "title": "A blueprint for democratic governance of frontier AI",
+          "normalized_url": "https://openai.com/index/frontier-safety-blueprint",
+          "url_hash": "df48d050ae2c7c16673997b7f72ff16d39e2650b68f1e5259c1d70aac2ed642c",
+          "suggested_doc_key": "2026-06-a-blueprint-for-democratic-governance-of-frontier-ai-df48d050",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-a-blueprint-for-democratic-governance-of-frontier-ai-df48d050.md",
+          "candidate_score": 22.0
+        },
+        {
+          "candidate_id": "openai-blog:4df8e51cae93fe19",
+          "title": "OpenAI frontier models and Codex are now available on AWS",
+          "normalized_url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+          "url_hash": "4df8e51cae93fe19b42b14ee89199634238322a3be55ffd034661bc37e8e13dd",
+          "suggested_doc_key": "2026-06-openai-frontier-models-and-codex-are-now-available-on-aws-4df8e51c",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-openai-frontier-models-and-codex-are-now-available-on-aws-4df8e51c.md",
+          "candidate_score": 20.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 16,
+        "service_candidate_limit": 24
+      }
+    }
+  ]
+}
