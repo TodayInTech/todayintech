@@ -910,6 +910,126 @@
       "status": "published",
       "briefed_at": "2026-06-16T23:25:52.516926Z",
       "candidate_score": 22.0
+    },
+    "47e96fb85bcbcad48e728a4995079e7e1bb52f7803c6fe6512f889ddd93341aa": {
+      "normalized_url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+      "title_fingerprint": "anthropic opens seoul office and announces new partnerships across the korean ai ecosystem",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-anthropic-opens-seoul-office-and-announces-new-partnerships-across-the-k-47e96fb8.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.087940Z",
+      "candidate_score": 30.0
+    },
+    "9fb129ac67f946f8d9d031352bdc595f09ac92401b475f7ba8d90071546dcad0": {
+      "normalized_url": "https://www.anthropic.com/news/developing-nuclear-safeguards-for-ai-through-public-private-partnership",
+      "title_fingerprint": "developing nuclear safeguards for ai through public private partnership",
+      "service_key": "anthropic-blog",
+      "title": "Developing nuclear safeguards for AI through public-private partnership",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-developing-nuclear-safeguards-for-ai-through-public-private-partnership-9fb129ac.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.087981Z",
+      "candidate_score": 30.0
+    },
+    "afb6ad81ffd7191e69ed604a796713016aa08258c7a79493a75e6dd5fa446ce9": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing",
+      "title_fingerprint": "getting more from each token how copilot improves context handling and model routing",
+      "service_key": "github-blog",
+      "title": "Getting more from each token: How Copilot improves context handling and model routing",
+      "article_doc_path": "docs/services/github-blog/2026-06-getting-more-from-each-token-how-copilot-improves-context-handling-and-m-afb6ad81.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.087998Z",
+      "candidate_score": 42.0
+    },
+    "4ca5042e690d6cce0202af12ee3e44c1ac6113ea67aa4000f9da8f803e87f0fd": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature",
+      "title_fingerprint": "new research shows how amie our medical ai could help manage health conditions",
+      "service_key": "google-blog",
+      "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
+      "article_doc_path": "docs/services/google-blog/2026-06-new-research-shows-how-amie-our-medical-ai-could-help-manage-health-cond-4ca5042e.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.088008Z",
+      "candidate_score": 41.0
+    },
+    "00750e87d1af6fa5372dad7eb1b5b2c44cc53d5ebbac87c41f3d3846a348d9f4": {
+      "normalized_url": "https://github.com/Adam-CAD/CADAM",
+      "title_fingerprint": "launch hn adam yc w25 open source ai cad",
+      "service_key": "hacker-news",
+      "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+      "article_doc_path": "docs/services/hacker-news/2026-06-launch-hn-adam-yc-w25-open-source-ai-cad-00750e87.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.088017Z",
+      "candidate_score": 72.8
+    },
+    "097f813c5a2700323d9e786e140ec1c4aaccf0bbca6a188c9b4a152d3009d567": {
+      "normalized_url": "https://lore.org/",
+      "title_fingerprint": "lore open source version control system designed for scalability",
+      "service_key": "hacker-news",
+      "title": "Lore – Open source version control system designed for scalability",
+      "article_doc_path": "docs/services/hacker-news/2026-06-lore-open-source-version-control-system-designed-for-scalability-097f813c.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.088024Z",
+      "candidate_score": 65.0
+    },
+    "ef3ea3a03942aadd076b355ead22c089d295047928a79adda48aa3c55ca46490": {
+      "normalized_url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+      "title_fingerprint": "glm 5 2 is the new leading open weights model on artificial analysis",
+      "service_key": "hacker-news",
+      "title": "GLM-5.2 is the new leading open weights model on Artificial Analysis",
+      "article_doc_path": "docs/services/hacker-news/2026-06-glm-5-2-is-the-new-leading-open-weights-model-on-artificial-analysis-ef3ea3a0.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.088032Z",
+      "candidate_score": 65.0
+    },
+    "849ef9c2025c2f22c9844df4d571a967f9ad50efa228a278a95026ba7bc51aa0": {
+      "normalized_url": "https://openrouter.ai/blog/insights/royale-last-agent-standing",
+      "title_fingerprint": "a robot is sprinting towards you do you want it running on claude or grok",
+      "service_key": "hacker-news",
+      "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
+      "article_doc_path": "docs/services/hacker-news/2026-06-a-robot-is-sprinting-towards-you-do-you-want-it-running-on-claude-or-gro-849ef9c2.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.088039Z",
+      "candidate_score": 63.9
+    },
+    "381e7f583722c98d0f6921620c6a57514d268545e9a9291726e0da07c5943199": {
+      "normalized_url": "https://openai.com/index/introducing-life-sci-bench",
+      "title_fingerprint": "introducing lifescibench",
+      "service_key": "openai-blog",
+      "title": "Introducing LifeSciBench",
+      "article_doc_path": "docs/services/openai-blog/2026-06-introducing-lifescibench-381e7f58.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.088047Z",
+      "candidate_score": 43.0
+    },
+    "4df8e51cae93fe19b42b14ee89199634238322a3be55ffd034661bc37e8e13dd": {
+      "normalized_url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+      "title_fingerprint": "openai frontier models and codex are now available on aws",
+      "service_key": "openai-blog",
+      "title": "OpenAI frontier models and Codex are now available on AWS",
+      "article_doc_path": "docs/services/openai-blog/2026-06-openai-frontier-models-and-codex-are-now-available-on-aws-4df8e51c.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.088054Z",
+      "candidate_score": 19.0
+    },
+    "c3ab33c62226049804cd22dfa451a2903ecf02cb2dc79829f99c4e6cad08553d": {
+      "normalized_url": "https://openai.com/index/chatgpt-memory-dreaming",
+      "title_fingerprint": "dreaming better memory for a more helpful chatgpt",
+      "service_key": "openai-blog",
+      "title": "Dreaming: Better memory for a more helpful ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-06-dreaming-better-memory-for-a-more-helpful-chatgpt-c3ab33c6.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.088062Z",
+      "candidate_score": 17.0
+    },
+    "32a436ff121f8d99546b4d6e433fd588e96fb0a3d3d6e748a70352e1e3038817": {
+      "normalized_url": "https://openai.com/index/biodefense-in-the-intelligence-age",
+      "title_fingerprint": "biodefense in the intelligence age",
+      "service_key": "openai-blog",
+      "title": "Biodefense in the Intelligence Age",
+      "article_doc_path": "docs/services/openai-blog/2026-06-biodefense-in-the-intelligence-age-32a436ff.md",
+      "status": "published",
+      "briefed_at": "2026-06-17T23:24:33.088070Z",
+      "candidate_score": 17.0
     }
   }
 }

@@ -10,16 +10,17 @@ GitHub Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 ## 우선순위 브리핑
 
 - [GitHub Copilot CLI for Beginners: Overview of common slash commands](./github-blog/2026-06-github-copilot-cli-for-beginners-overview-of-common-slash-commands-1b8723a7.md) `published` / score 42.0
+- [Getting more from each token: How Copilot improves context handling and model routing](./github-blog/2026-06-getting-more-from-each-token-how-copilot-improves-context-handling-and-m-afb6ad81.md) `published` / score 42.0
 - [Making secret scanning more trustworthy: Reducing false positives at scale](./github-blog/2026-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scal-9a46f291.md) `published` / score 39.0
-- [How we made GitHub Copilot CLI more selective about delegation](./github-blog/2026-06-how-we-made-github-copilot-cli-more-selective-about-delegation-a66a7c2b.md) `published` / score 37.0
 - [What are git worktrees, and why should I use them?](./github-blog/2026-06-what-are-git-worktrees-and-why-should-i-use-them-eff5b35f.md) `published` / score 37.0
 
 ## 누적 브리핑 목록
 
 - [GitHub Copilot CLI for Beginners: Overview of common slash commands](./github-blog/2026-06-github-copilot-cli-for-beginners-overview-of-common-slash-commands-1b8723a7.md) `published`
+- [Getting more from each token: How Copilot improves context handling and model routing](./github-blog/2026-06-getting-more-from-each-token-how-copilot-improves-context-handling-and-m-afb6ad81.md) `published`
 - [Making secret scanning more trustworthy: Reducing false positives at scale](./github-blog/2026-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scal-9a46f291.md) `published`
-- [How we made GitHub Copilot CLI more selective about delegation](./github-blog/2026-06-how-we-made-github-copilot-cli-more-selective-about-delegation-a66a7c2b.md) `published`
 - [What are git worktrees, and why should I use them?](./github-blog/2026-06-what-are-git-worktrees-and-why-should-i-use-them-eff5b35f.md) `published`
+- [How we made GitHub Copilot CLI more selective about delegation](./github-blog/2026-06-how-we-made-github-copilot-cli-more-selective-about-delegation-a66a7c2b.md) `published`
 - [Accelerating researchers and developers building multilingual AI with a new open dataset](./github-blog/2026-06-accelerating-researchers-and-developers-building-multilingual-ai-with-a-8ff72939.md) `published`
 - [From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI](./github-blog/2026-06-from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-cop-96de2795.md) `published`
 - [GitHub availability report: May 2026](./github-blog/2026-06-github-availability-report-may-2026-93dd8cc2.md) `published`
