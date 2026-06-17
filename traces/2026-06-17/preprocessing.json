@@ -1,0 +1,203 @@
+{
+  "generated_at": "2026-06-17T23:20:44.900641+00:00",
+  "generated_for": "2026-06-17",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "0e861497a52b97b11010c4ace2d07a4dbbc12391",
+  "github_run_id": "27725957902",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 24,
+  "excluded_count": 96,
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:47e96fb85bcbcad4",
+          "title": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+          "normalized_url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+          "url_hash": "47e96fb85bcbcad48e728a4995079e7e1bb52f7803c6fe6512f889ddd93341aa",
+          "suggested_doc_key": "2026-06-anthropic-opens-seoul-office-and-announces-new-partnerships-across-the-k-47e96fb8",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-06-anthropic-opens-seoul-office-and-announces-new-partnerships-across-the-k-47e96fb8.md",
+          "candidate_score": 30.0
+        },
+        {
+          "candidate_id": "anthropic-blog:9fb129ac67f946f8",
+          "title": "Developing nuclear safeguards for AI through public-private partnership",
+          "normalized_url": "https://www.anthropic.com/news/developing-nuclear-safeguards-for-ai-through-public-private-partnership",
+          "url_hash": "9fb129ac67f946f8d9d031352bdc595f09ac92401b475f7ba8d90071546dcad0",
+          "suggested_doc_key": "2026-06-developing-nuclear-safeguards-for-ai-through-public-private-partnership-9fb129ac",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-06-developing-nuclear-safeguards-for-ai-through-public-private-partnership-9fb129ac.md",
+          "candidate_score": 30.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:afb6ad81ffd7191e",
+          "title": "Getting more from each token: How Copilot improves context handling and model routing",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing",
+          "url_hash": "afb6ad81ffd7191e69ed604a796713016aa08258c7a79493a75e6dd5fa446ce9",
+          "suggested_doc_key": "2026-06-getting-more-from-each-token-how-copilot-improves-context-handling-and-m-afb6ad81",
+          "suggested_article_path": "docs/services/github-blog/2026-06-getting-more-from-each-token-how-copilot-improves-context-handling-and-m-afb6ad81.md",
+          "candidate_score": 42.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:4ca5042e690d6cce",
+          "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature",
+          "url_hash": "4ca5042e690d6cce0202af12ee3e44c1ac6113ea67aa4000f9da8f803e87f0fd",
+          "suggested_doc_key": "2026-06-new-research-shows-how-amie-our-medical-ai-could-help-manage-health-cond-4ca5042e",
+          "suggested_article_path": "docs/services/google-blog/2026-06-new-research-shows-how-amie-our-medical-ai-could-help-manage-health-cond-4ca5042e.md",
+          "candidate_score": 41.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:00750e87d1af6fa5",
+          "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+          "normalized_url": "https://github.com/Adam-CAD/CADAM",
+          "url_hash": "00750e87d1af6fa5372dad7eb1b5b2c44cc53d5ebbac87c41f3d3846a348d9f4",
+          "suggested_doc_key": "2026-06-launch-hn-adam-yc-w25-open-source-ai-cad-00750e87",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-launch-hn-adam-yc-w25-open-source-ai-cad-00750e87.md",
+          "candidate_score": 72.8
+        },
+        {
+          "candidate_id": "hacker-news:097f813c5a270032",
+          "title": "Lore – Open source version control system designed for scalability",
+          "normalized_url": "https://lore.org/",
+          "url_hash": "097f813c5a2700323d9e786e140ec1c4aaccf0bbca6a188c9b4a152d3009d567",
+          "suggested_doc_key": "2026-06-lore-open-source-version-control-system-designed-for-scalability-097f813c",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-lore-open-source-version-control-system-designed-for-scalability-097f813c.md",
+          "candidate_score": 65.0
+        },
+        {
+          "candidate_id": "hacker-news:ef3ea3a03942aadd",
+          "title": "GLM-5.2 is the new leading open weights model on Artificial Analysis",
+          "normalized_url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+          "url_hash": "ef3ea3a03942aadd076b355ead22c089d295047928a79adda48aa3c55ca46490",
+          "suggested_doc_key": "2026-06-glm-5-2-is-the-new-leading-open-weights-model-on-artificial-analysis-ef3ea3a0",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-glm-5-2-is-the-new-leading-open-weights-model-on-artificial-analysis-ef3ea3a0.md",
+          "candidate_score": 65.0
+        },
+        {
+          "candidate_id": "hacker-news:849ef9c2025c2f22",
+          "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
+          "normalized_url": "https://openrouter.ai/blog/insights/royale-last-agent-standing",
+          "url_hash": "849ef9c2025c2f22c9844df4d571a967f9ad50efa228a278a95026ba7bc51aa0",
+          "suggested_doc_key": "2026-06-a-robot-is-sprinting-towards-you-do-you-want-it-running-on-claude-or-gro-849ef9c2",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-a-robot-is-sprinting-towards-you-do-you-want-it-running-on-claude-or-gro-849ef9c2.md",
+          "candidate_score": 63.9
+        },
+        {
+          "candidate_id": "hacker-news:9868db45791bc58d",
+          "title": "Leaked financial docs show OpenAI is losing billions of dollars a year",
+          "normalized_url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year",
+          "url_hash": "9868db45791bc58d6097c52b5a60da64d4a34bd05c1844e4ca07e528b652151c",
+          "suggested_doc_key": "2026-06-leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year-9868db45",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year-9868db45.md",
+          "candidate_score": 61.5
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:381e7f583722c98d",
+          "title": "Introducing LifeSciBench",
+          "normalized_url": "https://openai.com/index/introducing-life-sci-bench",
+          "url_hash": "381e7f583722c98d0f6921620c6a57514d268545e9a9291726e0da07c5943199",
+          "suggested_doc_key": "2026-06-introducing-lifescibench-381e7f58",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-introducing-lifescibench-381e7f58.md",
+          "candidate_score": 43.0
+        },
+        {
+          "candidate_id": "openai-blog:4df8e51cae93fe19",
+          "title": "OpenAI frontier models and Codex are now available on AWS",
+          "normalized_url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+          "url_hash": "4df8e51cae93fe19b42b14ee89199634238322a3be55ffd034661bc37e8e13dd",
+          "suggested_doc_key": "2026-06-openai-frontier-models-and-codex-are-now-available-on-aws-4df8e51c",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-openai-frontier-models-and-codex-are-now-available-on-aws-4df8e51c.md",
+          "candidate_score": 19.0
+        },
+        {
+          "candidate_id": "openai-blog:c3ab33c622260498",
+          "title": "Dreaming: Better memory for a more helpful ChatGPT",
+          "normalized_url": "https://openai.com/index/chatgpt-memory-dreaming",
+          "url_hash": "c3ab33c62226049804cd22dfa451a2903ecf02cb2dc79829f99c4e6cad08553d",
+          "suggested_doc_key": "2026-06-dreaming-better-memory-for-a-more-helpful-chatgpt-c3ab33c6",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-dreaming-better-memory-for-a-more-helpful-chatgpt-c3ab33c6.md",
+          "candidate_score": 17.0
+        },
+        {
+          "candidate_id": "openai-blog:32a436ff121f8d99",
+          "title": "Biodefense in the Intelligence Age",
+          "normalized_url": "https://openai.com/index/biodefense-in-the-intelligence-age",
+          "url_hash": "32a436ff121f8d99546b4d6e433fd588e96fb0a3d3d6e748a70352e1e3038817",
+          "suggested_doc_key": "2026-06-biodefense-in-the-intelligence-age-32a436ff",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-biodefense-in-the-intelligence-age-32a436ff.md",
+          "candidate_score": 17.0
+        },
+        {
+          "candidate_id": "openai-blog:ba562226725de1d8",
+          "title": "Introducing new capabilities to GPT-Rosalind",
+          "normalized_url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+          "url_hash": "ba562226725de1d8218dfe8343e78a80afb3ae2ef1fc7a504ae09b9e8bd11e50",
+          "suggested_doc_key": "2026-06-introducing-new-capabilities-to-gpt-rosalind-ba562226",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-introducing-new-capabilities-to-gpt-rosalind-ba562226.md",
+          "candidate_score": 16.0
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 20,
+        "service_candidate_limit": 19
+      }
+    }
+  ]
+}
