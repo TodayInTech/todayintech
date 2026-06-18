@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-06-18T23:42:34.238354+00:00",
+  "generated_for": "2026-06-18",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "336841f4e3c4fd7a76d1635712b0b8f9ab5407b0",
+  "github_run_id": "27796076942",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 21,
+  "excluded_count": 99,
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:706e559e9755749c",
+          "title": "How pull request limits are cutting down the noise",
+          "normalized_url": "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise",
+          "url_hash": "706e559e9755749c7a71f370f3c9a3f816cb0767b584147a37a10b699ad117a4",
+          "suggested_doc_key": "2026-06-how-pull-request-limits-are-cutting-down-the-noise-706e559e",
+          "suggested_article_path": "docs/services/github-blog/2026-06-how-pull-request-limits-are-cutting-down-the-noise-706e559e.md",
+          "candidate_score": 37.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:d5e87b22fc9db3a7",
+          "title": "Show HN: Are You in the Weights?",
+          "normalized_url": "https://www.intheweights.com/",
+          "url_hash": "d5e87b22fc9db3a70fc8c4caf4ea065c6afee3ca4c9b7f301ab8472f2e8325d2",
+          "suggested_doc_key": "2026-06-show-hn-are-you-in-the-weights-d5e87b22",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-show-hn-are-you-in-the-weights-d5e87b22.md",
+          "candidate_score": 63.5
+        },
+        {
+          "candidate_id": "hacker-news:1027fcbb81e9252a",
+          "title": "The founder of Craigslist has given away half a billion dollars",
+          "normalized_url": "https://www.independent.co.uk/us/money/craigslist-multimillionaire-craig-newmark-b2980681.html",
+          "url_hash": "1027fcbb81e9252af94c79820af176ec74f2f5224186b00b726a2ad0dfaac42c",
+          "suggested_doc_key": "2026-06-the-founder-of-craigslist-has-given-away-half-a-billion-dollars-1027fcbb",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-the-founder-of-craigslist-has-given-away-half-a-billion-dollars-1027fcbb.md",
+          "candidate_score": 61.0
+        },
+        {
+          "candidate_id": "hacker-news:47c4495106690b1f",
+          "title": "A website that lists websites to submit your website to",
+          "normalized_url": "https://www.submission.directory/",
+          "url_hash": "47c4495106690b1fd7d5727b6dd9ce0d7950bca72113e491aeaa771f20449eb3",
+          "suggested_doc_key": "2026-06-a-website-that-lists-websites-to-submit-your-website-to-47c44951",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-a-website-that-lists-websites-to-submit-your-website-to-47c44951.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:971b8f8a79a48c09",
+          "title": "Ubiquiti: Enterprise NAS, Built on ZFS",
+          "normalized_url": "https://blog.ui.com/article/introducing-enterprise-nas",
+          "url_hash": "971b8f8a79a48c093542ac9ee570ed08f62ac8e5ce8768df8b3ec302d8862d7b",
+          "suggested_doc_key": "2026-06-ubiquiti-enterprise-nas-built-on-zfs-971b8f8a",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-ubiquiti-enterprise-nas-built-on-zfs-971b8f8a.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:693372a64b24dde8",
+          "title": "Swiss parliament lifts ban on new nuclear power plants",
+          "normalized_url": "https://www.bluewin.ch/en/news/switzerland/parliament-lifts-ban-on-new-nuclear-power-plants-3257535.html",
+          "url_hash": "693372a64b24dde8385efdf95690434070890e2014f1f213c5ae128782f28e29",
+          "suggested_doc_key": "2026-06-swiss-parliament-lifts-ban-on-new-nuclear-power-plants-693372a6",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-swiss-parliament-lifts-ban-on-new-nuclear-power-plants-693372a6.md",
+          "candidate_score": 60.0
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:edcdc2401b35c370",
+          "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+          "normalized_url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+          "url_hash": "edcdc2401b35c3702c68739cae4a3775325029112944c2547396d076ceb1214d",
+          "suggested_doc_key": "2026-06-using-ai-to-help-physicians-diagnose-rare-genetic-diseases-affecting-chi-edcdc240",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-using-ai-to-help-physicians-diagnose-rare-genetic-diseases-affecting-chi-edcdc240.md",
+          "candidate_score": 42.0
+        },
+        {
+          "candidate_id": "openai-blog:450d5ccfb1602dc2",
+          "title": "New usage analytics and updated spend controls for enterprises",
+          "normalized_url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+          "url_hash": "450d5ccfb1602dc277cdfc7081592af9d5770b23e6395d73e1190a55a4b14872",
+          "suggested_doc_key": "2026-06-new-usage-analytics-and-updated-spend-controls-for-enterprises-450d5ccf",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-new-usage-analytics-and-updated-spend-controls-for-enterprises-450d5ccf.md",
+          "candidate_score": 39.0
+        },
+        {
+          "candidate_id": "openai-blog:9f4dbdd37bfa3bd3",
+          "title": "Improving health intelligence in ChatGPT",
+          "normalized_url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+          "url_hash": "9f4dbdd37bfa3bd34250cd86994e87f6901bdfdbc9560ab1a1dfbf5c85fec1b0",
+          "suggested_doc_key": "2026-06-improving-health-intelligence-in-chatgpt-9f4dbdd3",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-improving-health-intelligence-in-chatgpt-9f4dbdd3.md",
+          "candidate_score": 38.0
+        },
+        {
+          "candidate_id": "openai-blog:5ff2f715f1e62741",
+          "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
+          "normalized_url": "https://openai.com/index/ai-chemist-improves-reaction",
+          "url_hash": "5ff2f715f1e6274165f0a220fe59fab8964a1280e439982b3599f06c295492ef",
+          "suggested_doc_key": "2026-06-a-near-autonomous-ai-chemist-improves-a-challenging-reaction-in-medicina-5ff2f715",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-a-near-autonomous-ai-chemist-improves-a-challenging-reaction-in-medicina-5ff2f715.md",
+          "candidate_score": 35.0
+        },
+        {
+          "candidate_id": "openai-blog:ba562226725de1d8",
+          "title": "Introducing new capabilities to GPT-Rosalind",
+          "normalized_url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+          "url_hash": "ba562226725de1d8218dfe8343e78a80afb3ae2ef1fc7a504ae09b9e8bd11e50",
+          "suggested_doc_key": "2026-06-introducing-new-capabilities-to-gpt-rosalind-ba562226",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-introducing-new-capabilities-to-gpt-rosalind-ba562226.md",
+          "candidate_score": 15.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 24,
+        "service_candidate_limit": 16
+      }
+    }
+  ]
+}
