@@ -1120,6 +1120,96 @@
       "status": "published",
       "briefed_at": "2026-06-18T23:45:56.879480Z",
       "candidate_score": 35.0
+    },
+    "38e410c5f1c02f695a826a93c0c4ad750992b83e9fc75e5629a8c3a8da91b532": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent",
+      "title_fingerprint": "how we built an internal data analytics agent",
+      "service_key": "github-blog",
+      "title": "How we built an internal data analytics agent",
+      "article_doc_path": "docs/services/github-blog/2026-06-how-we-built-an-internal-data-analytics-agent-38e410c5.md",
+      "status": "published",
+      "briefed_at": "2026-06-19T22:54:44.532148Z",
+      "candidate_score": 42.0
+    },
+    "c233fb76b6577f6feab9a10c4bf12a14f2bc69eed307435d548cfac0d33a02d3": {
+      "normalized_url": "https://www.eff.org/deeplinks/2026/06/new-bill-takes-aim-government-pressure-silence-lawful-online-speech",
+      "title_fingerprint": "a new bill takes aim at government pressure to silence lawful online speech",
+      "service_key": "hacker-news",
+      "title": "A new bill takes aim at government pressure to silence lawful online speech",
+      "article_doc_path": "docs/services/hacker-news/2026-06-a-new-bill-takes-aim-at-government-pressure-to-silence-lawful-online-spe-c233fb76.md",
+      "status": "published",
+      "briefed_at": "2026-06-19T22:54:44.532197Z",
+      "candidate_score": 60.0
+    },
+    "bfa007495dfa5a6d59e0428a0a0a5cdb82343a0f41cf69c67fb5ce355f1e4400": {
+      "normalized_url": "https://tales.fromprod.com/2026/169/google-workspace-threatening-to-block-firefox.html",
+      "title_fingerprint": "google workspace threatening to block firefox access",
+      "service_key": "hacker-news",
+      "title": "Google workspace threatening to block Firefox access",
+      "article_doc_path": "docs/services/hacker-news/2026-06-google-workspace-threatening-to-block-firefox-access-bfa00749.md",
+      "status": "published",
+      "briefed_at": "2026-06-19T22:54:44.532206Z",
+      "candidate_score": 60.0
+    },
+    "fcb41e0abab48e7dce5f54e2d21f85b3d0c00f141df631594899b7a22fda56da": {
+      "normalized_url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million",
+      "title_fingerprint": "hyundai buys boston dynamics",
+      "service_key": "hacker-news",
+      "title": "Hyundai buys Boston Dynamics",
+      "article_doc_path": "docs/services/hacker-news/2026-06-hyundai-buys-boston-dynamics-fcb41e0a.md",
+      "status": "published",
+      "briefed_at": "2026-06-19T22:54:44.532213Z",
+      "candidate_score": 60.0
+    },
+    "7bf857ece5f08bdd89f97b374ba5ec9c3ad84206cafca876f96e0f6ac205730a": {
+      "normalized_url": "https://aiclambake.com/clamtakes/linear-a",
+      "title_fingerprint": "amateur may have cracked linear a",
+      "service_key": "hacker-news",
+      "title": "Amateur may have cracked Linear A",
+      "article_doc_path": "docs/services/hacker-news/2026-06-amateur-may-have-cracked-linear-a-7bf857ec.md",
+      "status": "published",
+      "briefed_at": "2026-06-19T22:54:44.532228Z",
+      "candidate_score": 60.0
+    },
+    "1c9b44953320e0b2e76c5e0d0761ab264a01a3a304c594e6bbb21b87c29ddd5f": {
+      "normalized_url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "title_fingerprint": "strengthening societal resilience with rosalind biodefense",
+      "service_key": "openai-blog",
+      "title": "Strengthening societal resilience with Rosalind Biodefense",
+      "article_doc_path": "docs/services/openai-blog/2026-05-strengthening-societal-resilience-with-rosalind-biodefense-1c9b4495.md",
+      "status": "published",
+      "briefed_at": "2026-06-19T22:54:44.532238Z",
+      "candidate_score": 15.0
+    },
+    "8c84b8422093501f70949bd22bf22e1095425b8169a234b3becdc19e77008965": {
+      "normalized_url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+      "title_fingerprint": "a shared playbook for trustworthy third party evaluations",
+      "service_key": "openai-blog",
+      "title": "A shared playbook for trustworthy third party evaluations",
+      "article_doc_path": "docs/services/openai-blog/2026-05-a-shared-playbook-for-trustworthy-third-party-evaluations-8c84b842.md",
+      "status": "published",
+      "briefed_at": "2026-06-19T22:54:44.532246Z",
+      "candidate_score": 15.0
+    },
+    "2aa7e747964e595a290697e080593670ac2f861144ad47e11e65bdf0a115a135": {
+      "normalized_url": "https://openai.com/index/endava",
+      "title_fingerprint": "how endava builds an agentic organization with codex",
+      "service_key": "openai-blog",
+      "title": "How Endava builds an agentic organization with Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-05-how-endava-builds-an-agentic-organization-with-codex-2aa7e747.md",
+      "status": "published",
+      "briefed_at": "2026-06-19T22:54:44.532253Z",
+      "candidate_score": 15.0
+    },
+    "ac3d09a478fb443d1a2c0e9d6c43b2970b791dc3237a7ec614223f13a3f22346": {
+      "normalized_url": "https://openai.com/index/openai-frontier-governance-framework",
+      "title_fingerprint": "openai s frontier governance framework",
+      "service_key": "openai-blog",
+      "title": "OpenAI’s Frontier Governance Framework",
+      "article_doc_path": "docs/services/openai-blog/2026-05-openai-s-frontier-governance-framework-ac3d09a4.md",
+      "status": "published",
+      "briefed_at": "2026-06-19T22:54:44.532260Z",
+      "candidate_score": 15.0
     }
   }
 }
