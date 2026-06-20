@@ -44,7 +44,11 @@ OpenAI Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [OpenAI frontier models and Codex are now available on AWS](./openai-blog/2026-06-openai-frontier-models-and-codex-are-now-available-on-aws-4df8e51c.md) `published`
 - [Biodefense in the Intelligence Age](./openai-blog/2026-06-biodefense-in-the-intelligence-age-32a436ff.md) `published`
 - [Dreaming: Better memory for a more helpful ChatGPT](./openai-blog/2026-06-dreaming-better-memory-for-a-more-helpful-chatgpt-c3ab33c6.md) `published`
-- [Strengthening societal resilience with Rosalind Biodefense](./openai-blog/2026-05-strengthening-societal-resilience-with-rosalind-biodefense-1c9b4495.md) `published`
-- [A shared playbook for trustworthy third party evaluations](./openai-blog/2026-05-a-shared-playbook-for-trustworthy-third-party-evaluations-8c84b842.md) `published`
-- [How Endava builds an agentic organization with Codex](./openai-blog/2026-05-how-endava-builds-an-agentic-organization-with-codex-2aa7e747.md) `published`
 - [OpenAI’s Frontier Governance Framework](./openai-blog/2026-05-openai-s-frontier-governance-framework-ac3d09a4.md) `published`
+- [How Endava builds an agentic organization with Codex](./openai-blog/2026-05-how-endava-builds-an-agentic-organization-with-codex-2aa7e747.md) `published`
+- [A shared playbook for trustworthy third party evaluations](./openai-blog/2026-05-a-shared-playbook-for-trustworthy-third-party-evaluations-8c84b842.md) `published`
+- [Strengthening societal resilience with Rosalind Biodefense](./openai-blog/2026-05-strengthening-societal-resilience-with-rosalind-biodefense-1c9b4495.md) `published`
+- [Building self-improving tax agents with Codex](./openai-blog/2026-05-building-self-improving-tax-agents-with-codex-c7affab7.md) `published`
+- [OpenAI named a Leader in enterprise coding agents by Gartner](./openai-blog/2026-05-openai-named-a-leader-in-enterprise-coding-agents-by-gartner-bc79b84a.md) `published`
+- [Introducing new capabilities to GPT-Rosalind](./openai-blog/2026-06-introducing-new-capabilities-to-gpt-rosalind-ba562226.md) `published`
+- [How Wasmer used Codex to build a Node.js runtime for the edge](./openai-blog/2026-06-how-wasmer-used-codex-to-build-a-node-js-runtime-for-the-edge-032a72a6.md) `published`

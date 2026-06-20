@@ -1210,6 +1210,86 @@
       "status": "published",
       "briefed_at": "2026-06-19T22:54:44.532260Z",
       "candidate_score": 15.0
+    },
+    "d08cf44e2bcc4055124adcca03b8075df4a7cf4ebbb908e5f07f52419a63dc0d": {
+      "normalized_url": "https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19",
+      "title_fingerprint": "norway imposes near ban on ai in elementary school",
+      "service_key": "hacker-news",
+      "title": "Norway imposes near ban on AI in elementary school",
+      "article_doc_path": "docs/services/hacker-news/2026-06-norway-imposes-near-ban-on-ai-in-elementary-school-d08cf44e.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T05:44:13.311228Z",
+      "candidate_score": 60.0
+    },
+    "66f868110d0def23a6d0f84317aabe8ba31fa4f4a934dd363526706bec95e6f1": {
+      "normalized_url": "https://overreacted.io/there-are-no-instances-in-atproto",
+      "title_fingerprint": "there are no instances in atproto",
+      "service_key": "hacker-news",
+      "title": "There are no instances in ATProto",
+      "article_doc_path": "docs/services/hacker-news/2026-06-there-are-no-instances-in-atproto-66f86811.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T05:44:13.311284Z",
+      "candidate_score": 60.0
+    },
+    "6a758af901b4e6b6540ac2eff46199b6aa17b788661377b352729227b603ebd3": {
+      "normalized_url": "https://vocabowl-870366514258.us-west1.run.app/",
+      "title_fingerprint": "how many of the 170k english words do you know",
+      "service_key": "hacker-news",
+      "title": "How many of the 170k English words do you know?",
+      "article_doc_path": "docs/services/hacker-news/2026-06-how-many-of-the-170k-english-words-do-you-know-6a758af9.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T05:44:13.311293Z",
+      "candidate_score": 60.0
+    },
+    "2533c9cdd04a8ea993e92e493438fdf338f383739c32961b77a7ee37fae26e04": {
+      "normalized_url": "https://www.jvm-weekly.com/p/project-valhalla-explained-how-a",
+      "title_fingerprint": "project valhalla explained how a decade of work arrives in jdk 28",
+      "service_key": "hacker-news",
+      "title": "Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28",
+      "article_doc_path": "docs/services/hacker-news/2026-06-project-valhalla-explained-how-a-decade-of-work-arrives-in-jdk-28-2533c9cd.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T05:44:13.311299Z",
+      "candidate_score": 60.0
+    },
+    "c7affab7451ec44b906790d3fef22c427ebac827c4234d0fbbd8fd66696bcdec": {
+      "normalized_url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+      "title_fingerprint": "building self improving tax agents with codex",
+      "service_key": "openai-blog",
+      "title": "Building self-improving tax agents with Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-05-building-self-improving-tax-agents-with-codex-c7affab7.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T05:44:13.311304Z",
+      "candidate_score": 15.0
+    },
+    "bc79b84ae366f6d42a6acec174b675c9958c00f355edb8460f2f6be04344c7a3": {
+      "normalized_url": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+      "title_fingerprint": "openai named a leader in enterprise coding agents by gartner",
+      "service_key": "openai-blog",
+      "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+      "article_doc_path": "docs/services/openai-blog/2026-05-openai-named-a-leader-in-enterprise-coding-agents-by-gartner-bc79b84a.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T05:44:13.311309Z",
+      "candidate_score": 15.0
+    },
+    "ba562226725de1d8218dfe8343e78a80afb3ae2ef1fc7a504ae09b9e8bd11e50": {
+      "normalized_url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+      "title_fingerprint": "introducing new capabilities to gpt rosalind",
+      "service_key": "openai-blog",
+      "title": "Introducing new capabilities to GPT-Rosalind",
+      "article_doc_path": "docs/services/openai-blog/2026-06-introducing-new-capabilities-to-gpt-rosalind-ba562226.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T05:44:13.311314Z",
+      "candidate_score": 14.0
+    },
+    "032a72a6e2127c3b4bf2ef9c754267fa79a52048bb23d86e92e01b45030ac5b7": {
+      "normalized_url": "https://openai.com/index/wasmer",
+      "title_fingerprint": "how wasmer used codex to build a node js runtime for the edge",
+      "service_key": "openai-blog",
+      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+      "article_doc_path": "docs/services/openai-blog/2026-06-how-wasmer-used-codex-to-build-a-node-js-runtime-for-the-edge-032a72a6.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T05:44:13.311318Z",
+      "candidate_score": 14.0
     }
   }
 }

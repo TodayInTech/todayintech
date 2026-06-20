@@ -5,7 +5,7 @@ sidebar_label: Today in Tech
 
 # Today in Tech
 
-생성일: 2026-06-19
+생성일: 2026-06-20
 
 ## 개요
 
@@ -29,22 +29,21 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [The founder of Craigslist has given away half a billion dollars](./services/hacker-news/2026-06-the-founder-of-craigslist-has-given-away-half-a-billion-dollars-1027fcbb.md) - Hacker News `published` / score 61.0
 - [A backdoor in a LinkedIn job offer](./services/hacker-news/2026-06-a-backdoor-in-a-linkedin-job-offer-27ca2b25.md) - Hacker News `published` / score 61.0
 - [Police officer investigated for using AI to 'create evidence' in multiple cases](./services/hacker-news/2026-06-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-7cf4dd7c.md) - Hacker News `published` / score 61.0
-- [Ubiquiti: Enterprise NAS, Built on ZFS](./services/hacker-news/2026-06-ubiquiti-enterprise-nas-built-on-zfs-971b8f8a.md) - Hacker News `published` / score 60.0
-- [A website that lists websites to submit your website to](./services/hacker-news/2026-06-a-website-that-lists-websites-to-submit-your-website-to-47c44951.md) - Hacker News `published` / score 60.0
-- [Is Meta destroying its engineering organization?](./services/hacker-news/2026-06-is-meta-destroying-its-engineering-organization-0d15d7c1.md) - Hacker News `published` / score 60.0
-- [Copper transport drug restores memory and clears toxic Alzheimer's proteins](./services/hacker-news/2026-06-copper-transport-drug-restores-memory-and-clears-toxic-alzheimer-s-prote-e251d5c0.md) - Hacker News `published` / score 60.0
+- [Amateur may have cracked Linear A](./services/hacker-news/2026-06-amateur-may-have-cracked-linear-a-7bf857ec.md) - Hacker News `published` / score 60.0
+- [Hyundai buys Boston Dynamics](./services/hacker-news/2026-06-hyundai-buys-boston-dynamics-fcb41e0a.md) - Hacker News `published` / score 60.0
+- [Google workspace threatening to block Firefox access](./services/hacker-news/2026-06-google-workspace-threatening-to-block-firefox-access-bfa00749.md) - Hacker News `published` / score 60.0
+- [A new bill takes aim at government pressure to silence lawful online speech](./services/hacker-news/2026-06-a-new-bill-takes-aim-at-government-pressure-to-silence-lawful-online-spe-c233fb76.md) - Hacker News `published` / score 60.0
 
 ## 이번 실행에서 추가된 글
 
-- [A new bill takes aim at government pressure to silence lawful online speech](./services/hacker-news/2026-06-a-new-bill-takes-aim-at-government-pressure-to-silence-lawful-online-spe-c233fb76.md) - Hacker News / 제공된 피드 기준으로는 EFF가 정부의 압력으로 합법적 온라인 발언이 침묵당하는 것을 막기 위한 새 법안을 다룬 보도를 냈습니다. 제목과 메타데이터만 보면 법안은 플랫폼에 대한 정부의 압력 행위를 제지하려는 목적을 가진 것으로 보입니다. `published` / score 60.0
-- [Google workspace threatening to block Firefox access](./services/hacker-news/2026-06-google-workspace-threatening-to-block-firefox-access-bfa00749.md) - Hacker News / 피드 기준으로는 ‘Google Workspace가 Firefox 접근을 차단하겠다’는 취지의 글입니다. 원문은 tales.fromprod.com에 게시되었고 Hacker News에서 반향이 커 포인트 372, 댓글 121건을 기록했습니다. `published` / score 60.0
-- [Hyundai buys Boston Dynamics](./services/hacker-news/2026-06-hyundai-buys-boston-dynamics-fcb41e0a.md) - Hacker News / 피드 기준으로는 현대가 보스턴다이내믹스를 완전 통제하게 됐다고 전해집니다. 보도에는 소프트뱅크가 '325 million'에 지분을 매각했다고 나와 있습니다(원문 표기). `published` / score 60.0
-- [Amateur may have cracked Linear A](./services/hacker-news/2026-06-amateur-may-have-cracked-linear-a-7bf857ec.md) - Hacker News / 피드 기준으로는 aiclambake의 글에서 한 아마추어가 고대 문자 'Linear A'를 해독했을지도 모른다고 주장한 것으로 보입니다. 작성자는 Kosturdistan이며, 해당 글은 Hacker News에서 381포인트와 149개의 댓글로 큰 관심을 모았습니다. `published` / score 60.0
-- [How we built an internal data analytics agent](./services/github-blog/2026-06-how-we-built-an-internal-data-analytics-agent-38e410c5.md) - GitHub Blog / GitHub 내부에서 개발한 데이터 분석 에이전트 'Qubot'을 소개하는 글입니다. Qubot은 Copilot 기반으로 동작하며, 모든 GitHub 직원이 자연어로 데이터에 대해 질문할 수 있게 설계되었다고 피드 요약에 나와 있습니다. `published` / score 42.0
-- [Strengthening societal resilience with Rosalind Biodefense](./services/openai-blog/2026-05-strengthening-societal-resilience-with-rosalind-biodefense-1c9b4495.md) - OpenAI Blog / 피드 기준으로는 OpenAI가 Rosalind Biodefense를 출시해 GPT-Rosalind에 대한 신뢰 기반 접근을 확대한다고 보도했습니다. 이 프로그램은 검증된 개발자와 미국 정부 파트너를 대상으로 하며 생물방어, 공중보건, 팬데믹 대비에 전방위 AI를 활용하는 것을 목표로 합니다. `published` / score 15.0
-- [A shared playbook for trustworthy third party evaluations](./services/openai-blog/2026-05-a-shared-playbook-for-trustworthy-third-party-evaluations-8c84b842.md) - OpenAI Blog / 피드 기준으로는 OpenAI가 제3자 평가를 위한 공통 플레이북을 공유했습니다. 이 가이드는 모델 역량 평가, 안전장치 검토, 프론티어 시스템의 유효성 검증 방법을 다룹니다. `published` / score 15.0
-- [How Endava builds an agentic organization with Codex](./services/openai-blog/2026-05-how-endava-builds-an-agentic-organization-with-codex-2aa7e747.md) - OpenAI Blog / 피드 기준으로는 Endava가 Codex를 활용해 ‘agentic organization’(에이전트화된 조직)을 구축했다고 합니다. 이 접근으로 소프트웨어 전달 속도를 높이고 요구사항 분석 시간을 몇 주에서 몇 시간으로 줄였다고 소개합니다. `published` / score 15.0
-- [OpenAI’s Frontier Governance Framework](./services/openai-blog/2026-05-openai-s-frontier-governance-framework-ac3d09a4.md) - OpenAI Blog / 피드 기준으로는 OpenAI가 'Frontier Governance Framework'를 공개한 것으로 요약됩니다. 이 프레임워크는 AI 안전, 보안, 리스크 관행을 다루며 EU와 캘리포니아의 신흥 규제와의 정렬 방식을 설명한다고 전해집니다. `published` / score 15.0
+- [Norway imposes near ban on AI in elementary school](./services/hacker-news/2026-06-norway-imposes-near-ban-on-ai-in-elementary-school-d08cf44e.md) - Hacker News / 피드 기준으로는 로이터가 노르웨이가 초등학교에서의 AI 사용을 사실상 금지했다고 보도했습니다. 제공된 메타데이터에 따르면 해당 소식은 2026-06-19에 게시되었습니다. `published` / score 60.0
+- [There are no instances in ATProto](./services/hacker-news/2026-06-there-are-no-instances-in-atproto-66f86811.md) - Hacker News / 제목은 'There are no instances in ATProto'입니다. 작성자는 danabramov이며 Overreacted 블로그에 게시된 글로 보입니다. 피드 기준으로는 Hacker News에서 높은 관심을 받았고(포인트 388, 댓글 207) 활발한 논의가 일어난 상태입니다. `published` / score 60.0
+- [How many of the 170k English words do you know?](./services/hacker-news/2026-06-how-many-of-the-170k-english-words-do-you-know-6a758af9.md) - Hacker News / 피드 기준으로는 'How many of the 170k English words do you know?'라는 제목의 웹 앱(https://vocabowl-870366514258.us-west1.run.app/)이 Hacker News에서 큰 반응을 얻고 있습니다. 게시 메타에 따르면 포인트 288, 댓글 402로 인기 토론거리가 되었음을 확인할 수 있습니다. `published` / score 60.0
+- [Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28](./services/hacker-news/2026-06-project-valhalla-explained-how-a-decade-of-work-arrives-in-jdk-28-2533c9cd.md) - Hacker News / 피드 기준으로는 "Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28"라는 JVM Weekly 기사(작성자 philonoist)가 Hacker News에서 큰 관심을 받고 있습니다. 원문 URL과 HN 토론 링크가 제공되며 포인트 562, 댓글 351로 활발한 반응을 기록했습니다. `published` / score 60.0
+- [Building self-improving tax agents with Codex](./services/openai-blog/2026-05-building-self-improving-tax-agents-with-codex-c7affab7.md) - OpenAI Blog / 피드 기준으로는 OpenAI가 Thrive, Crete와 함께 Codex 기반의 ‘자가 개선’ 세무 에이전트를 구축했다고 합니다. 이 에이전트는 서류 제출 자동화, 정확성 향상, 워크플로 가속화를 목표로 하고 있습니다. `published` / score 15.0
+- [OpenAI named a Leader in enterprise coding agents by Gartner](./services/openai-blog/2026-05-openai-named-a-leader-in-enterprise-coding-agents-by-gartner-bc79b84a.md) - OpenAI Blog / 피드 기준으로는 OpenAI가 Gartner의 2026 매직 쿼드런트에서 '엔터프라이즈 AI 코딩 에이전트' 부문 리더로 선정되었다고 알립니다. 요약에는 Codex가 혁신성과 엔터프라이즈 규모 배포 능력으로 인정받았다는 언급이 포함되어 있습니다. `published` / score 15.0
+- [Introducing new capabilities to GPT-Rosalind](./services/openai-blog/2026-06-introducing-new-capabilities-to-gpt-rosalind-ba562226.md) - OpenAI Blog / 피드 기준으로는 OpenAI가 GPT-Rosalind의 새로운 기능을 발표했습니다. 업데이트는 생물학적 추론 능력, 약물 화학(medicinal chemistry) 전문성, 유전체 분석 및 실험 워크플로 지원 능력 향상을 포함합니다. `published` / score 14.0
+- [How Wasmer used Codex to build a Node.js runtime for the edge](./services/openai-blog/2026-06-how-wasmer-used-codex-to-build-a-node-js-runtime-for-the-edge-032a72a6.md) - OpenAI Blog / 피드 기준으로는 Wasmer가 Codex와 GPT-5.5를 활용해 엣지용 Node.js 런타임을 개발했다고 보고합니다. 회사 설명에 따르면 개발 속도가 10배~20배 빨라졌고, 몇 달 걸리던 작업을 몇 주 만에 배포했다고 합니다. `published` / score 14.0
 
 ## 서비스
 
@@ -72,6 +71,10 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [The founder of Craigslist has given away half a billion dollars](./services/hacker-news/2026-06-the-founder-of-craigslist-has-given-away-half-a-billion-dollars-1027fcbb.md) - Hacker News `published`
 - [A backdoor in a LinkedIn job offer](./services/hacker-news/2026-06-a-backdoor-in-a-linkedin-job-offer-27ca2b25.md) - Hacker News `published`
 - [Police officer investigated for using AI to 'create evidence' in multiple cases](./services/hacker-news/2026-06-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-7cf4dd7c.md) - Hacker News `published`
+- [Amateur may have cracked Linear A](./services/hacker-news/2026-06-amateur-may-have-cracked-linear-a-7bf857ec.md) - Hacker News `published`
+- [Hyundai buys Boston Dynamics](./services/hacker-news/2026-06-hyundai-buys-boston-dynamics-fcb41e0a.md) - Hacker News `published`
+- [Google workspace threatening to block Firefox access](./services/hacker-news/2026-06-google-workspace-threatening-to-block-firefox-access-bfa00749.md) - Hacker News `published`
+- [A new bill takes aim at government pressure to silence lawful online speech](./services/hacker-news/2026-06-a-new-bill-takes-aim-at-government-pressure-to-silence-lawful-online-spe-c233fb76.md) - Hacker News `published`
 - [Ubiquiti: Enterprise NAS, Built on ZFS](./services/hacker-news/2026-06-ubiquiti-enterprise-nas-built-on-zfs-971b8f8a.md) - Hacker News `published`
 - [A website that lists websites to submit your website to](./services/hacker-news/2026-06-a-website-that-lists-websites-to-submit-your-website-to-47c44951.md) - Hacker News `published`
 - [Is Meta destroying its engineering organization?](./services/hacker-news/2026-06-is-meta-destroying-its-engineering-organization-0d15d7c1.md) - Hacker News `published`
@@ -83,20 +86,20 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [GLM 5.2 Is Out](./services/hacker-news/2026-06-glm-5-2-is-out-edd51c72.md) - Hacker News `published`
 - [AI coding at home without going broke](./services/hacker-news/2026-06-ai-coding-at-home-without-going-broke-7cb80137.md) - Hacker News `published`
 - [Statement on US government directive to suspend access to Fable 5 and Mythos 5](./services/hacker-news/2026-06-statement-on-us-government-directive-to-suspend-access-to-fable-5-and-my-00131728.md) - Hacker News `published`
-- [A new bill takes aim at government pressure to silence lawful online speech](./services/hacker-news/2026-06-a-new-bill-takes-aim-at-government-pressure-to-silence-lawful-online-spe-c233fb76.md) - Hacker News `published`
-- [Google workspace threatening to block Firefox access](./services/hacker-news/2026-06-google-workspace-threatening-to-block-firefox-access-bfa00749.md) - Hacker News `published`
-- [Hyundai buys Boston Dynamics](./services/hacker-news/2026-06-hyundai-buys-boston-dynamics-fcb41e0a.md) - Hacker News `published`
-- [Amateur may have cracked Linear A](./services/hacker-news/2026-06-amateur-may-have-cracked-linear-a-7bf857ec.md) - Hacker News `published`
+- [Norway imposes near ban on AI in elementary school](./services/hacker-news/2026-06-norway-imposes-near-ban-on-ai-in-elementary-school-d08cf44e.md) - Hacker News `published`
+- [There are no instances in ATProto](./services/hacker-news/2026-06-there-are-no-instances-in-atproto-66f86811.md) - Hacker News `published`
+- [How many of the 170k English words do you know?](./services/hacker-news/2026-06-how-many-of-the-170k-english-words-do-you-know-6a758af9.md) - Hacker News `published`
+- [Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28](./services/hacker-news/2026-06-project-valhalla-explained-how-a-decade-of-work-arrives-in-jdk-28-2533c9cd.md) - Hacker News `published`
 - [Linux 7.1](./services/hacker-news/2026-06-linux-7-1-fa5989a7.md) - Hacker News `published`
 - [Predicting model behavior before release by simulating deployment](./services/openai-blog/2026-06-predicting-model-behavior-before-release-by-simulating-deployment-c000018b.md) - OpenAI Blog `published`
 - [New OpenAI Academy courses for the next era of work](./services/openai-blog/2026-06-new-openai-academy-courses-for-the-next-era-of-work-dd73139d.md) - OpenAI Blog `published`
 - [Introducing LifeSciBench](./services/openai-blog/2026-06-introducing-lifescibench-381e7f58.md) - OpenAI Blog `published`
 - [Introducing the OpenAI Partner Network](./services/openai-blog/2026-06-introducing-the-openai-partner-network-4a1a2edf.md) - OpenAI Blog `published`
+- [How we built an internal data analytics agent](./services/github-blog/2026-06-how-we-built-an-internal-data-analytics-agent-38e410c5.md) - GitHub Blog `published`
 - [Using AI to help physicians diagnose rare genetic diseases affecting children](./services/openai-blog/2026-06-using-ai-to-help-physicians-diagnose-rare-genetic-diseases-affecting-chi-edcdc240.md) - OpenAI Blog `published`
 - [Getting more from each token: How Copilot improves context handling and model routing](./services/github-blog/2026-06-getting-more-from-each-token-how-copilot-improves-context-handling-and-m-afb6ad81.md) - GitHub Blog `published`
 - [GitHub Copilot CLI for Beginners: Overview of common slash commands](./services/github-blog/2026-06-github-copilot-cli-for-beginners-overview-of-common-slash-commands-1b8723a7.md) - GitHub Blog `published`
 - [How Preply combines AI and human tutors to personalize learning](./services/openai-blog/2026-06-how-preply-combines-ai-and-human-tutors-to-personalize-learning-ddc7b24a.md) - OpenAI Blog `published`
-- [How we built an internal data analytics agent](./services/github-blog/2026-06-how-we-built-an-internal-data-analytics-agent-38e410c5.md) - GitHub Blog `published`
 - [New research shows how AMIE, our medical AI, could help manage health conditions.](./services/google-blog/2026-06-new-research-shows-how-amie-our-medical-ai-could-help-manage-health-cond-4ca5042e.md) - Google Blog `published`
 - [Access OpenAI models and Codex through your Oracle cloud commitment](./services/openai-blog/2026-06-access-openai-models-and-codex-through-your-oracle-cloud-commitment-c17e7186.md) - OpenAI Blog `published`
 - [How we're combatting AI scams with security, legislation and more](./services/google-blog/2026-06-how-we-re-combatting-ai-scams-with-security-legislation-and-more-5c6bce39.md) - Google Blog `published`
@@ -164,12 +167,16 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [Introducing Claude Design by Anthropic Labs](./services/anthropic-blog/2026-05-introducing-claude-design-by-anthropic-labs-0dba0c3d.md) - Anthropic Blog `published`
 - [Anthropic confidentially submits draft S-1 to the SEC](./services/anthropic-blog/2026-06-anthropic-confidentially-submits-draft-s-1-to-the-sec-bd891e1a.md) - Anthropic Blog `published`
 - [Meet Dreambeans, an app that connects you with what matters](./services/google-blog/2026-06-meet-dreambeans-an-app-that-connects-you-with-what-matters-313d910e.md) - Google Blog `published`
+- [OpenAI’s Frontier Governance Framework](./services/openai-blog/2026-05-openai-s-frontier-governance-framework-ac3d09a4.md) - OpenAI Blog `published`
+- [How Endava builds an agentic organization with Codex](./services/openai-blog/2026-05-how-endava-builds-an-agentic-organization-with-codex-2aa7e747.md) - OpenAI Blog `published`
+- [A shared playbook for trustworthy third party evaluations](./services/openai-blog/2026-05-a-shared-playbook-for-trustworthy-third-party-evaluations-8c84b842.md) - OpenAI Blog `published`
+- [Strengthening societal resilience with Rosalind Biodefense](./services/openai-blog/2026-05-strengthening-societal-resilience-with-rosalind-biodefense-1c9b4495.md) - OpenAI Blog `published`
 - [Check out real-life AI prototypes from the Futures Lab.](./services/google-blog/2026-05-check-out-real-life-ai-prototypes-from-the-futures-lab-aa745dec.md) - Google Blog `published`
 - [Take our I/O 2026 quiz, vibe coded in Google AI Studio.](./services/google-blog/2026-05-take-our-i-o-2026-quiz-vibe-coded-in-google-ai-studio-303bbaef.md) - Google Blog `published`
-- [Strengthening societal resilience with Rosalind Biodefense](./services/openai-blog/2026-05-strengthening-societal-resilience-with-rosalind-biodefense-1c9b4495.md) - OpenAI Blog `published`
-- [A shared playbook for trustworthy third party evaluations](./services/openai-blog/2026-05-a-shared-playbook-for-trustworthy-third-party-evaluations-8c84b842.md) - OpenAI Blog `published`
-- [How Endava builds an agentic organization with Codex](./services/openai-blog/2026-05-how-endava-builds-an-agentic-organization-with-codex-2aa7e747.md) - OpenAI Blog `published`
-- [OpenAI’s Frontier Governance Framework](./services/openai-blog/2026-05-openai-s-frontier-governance-framework-ac3d09a4.md) - OpenAI Blog `published`
+- [Building self-improving tax agents with Codex](./services/openai-blog/2026-05-building-self-improving-tax-agents-with-codex-c7affab7.md) - OpenAI Blog `published`
+- [OpenAI named a Leader in enterprise coding agents by Gartner](./services/openai-blog/2026-05-openai-named-a-leader-in-enterprise-coding-agents-by-gartner-bc79b84a.md) - OpenAI Blog `published`
+- [Introducing new capabilities to GPT-Rosalind](./services/openai-blog/2026-06-introducing-new-capabilities-to-gpt-rosalind-ba562226.md) - OpenAI Blog `published`
+- [How Wasmer used Codex to build a Node.js runtime for the edge](./services/openai-blog/2026-06-how-wasmer-used-codex-to-build-a-node-js-runtime-for-the-edge-032a72a6.md) - OpenAI Blog `published`
 - [How we used Gemini to build Google I/O 2026](./services/google-blog/2026-06-how-we-used-gemini-to-build-google-i-o-2026-9dc58065.md) - Google Blog `published`
 - [Anthropic opens Milan office to support Italian enterprise, research, and developers](./services/anthropic-blog/2026-05-anthropic-opens-milan-office-to-support-italian-enterprise-research-and-48c97f53.md) - Anthropic Blog `published`
 - [5 ways Google Search can level up your thrift and vintage shopping](./services/google-blog/2026-06-5-ways-google-search-can-level-up-your-thrift-and-vintage-shopping-5aec8e11.md) - Google Blog `published`
