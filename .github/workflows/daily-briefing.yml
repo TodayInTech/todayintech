@@ -74,8 +74,8 @@ jobs:
             exit 0
           fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "choi-hyk"
+          git config user.email "blindlchoil@gmail.com"
 
           TRACE_HISTORY_DIR="$RUNNER_TEMP/tracing-history"
           git fetch origin "$TRACE_HISTORY_BRANCH" || true
@@ -116,11 +116,14 @@ jobs:
       - name: Publish generated archive state
         env:
           TARGET_BRANCH: ${{ github.ref_name }}
+          BRIEFING_TARGET_DATE: ${{ inputs.target_date }}
+          REPOSITORY_URL: ${{ github.server_url }}/${{ github.repository }}
+          WORKFLOW_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           set -euo pipefail
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "choi-hyk"
+          git config user.email "blindlchoil@gmail.com"
 
           git add docs data/briefed_articles.json
 
@@ -129,21 +132,30 @@ jobs:
             exit 0
           fi
 
-          cat > "$RUNNER_TEMP/generated-archive-commit-message.txt" <<'EOF'
-          chore(docs): 생성 브리핑 아카이브 갱신
+          BRIEFING_DATE="${BRIEFING_TARGET_DATE:-$(TZ=Asia/Seoul date +%F)}"
+          COMMIT_MESSAGE_FILE="$RUNNER_TEMP/generated-archive-commit-message.txt"
+          ADDED_SOURCE_COUNT="$(git diff --cached --name-only --diff-filter=A | wc -l | tr -d ' ')"
 
-          - GitHub Actions 실행 결과로 생성된 브리핑 문서와 중복 제거 상태를 main에 누적한다.
+          {
+            printf 'todayintech 갱신 %s\n' "$BRIEFING_DATE"
+            printf '\nDaily Briefing 워크플로가 생성한 아카이브 갱신 내역입니다.\n'
+            printf '\n## 실행 정보\n'
+            printf -- '- 기준일: %s\n' "$BRIEFING_DATE"
+            printf -- '- 추가된 소스: %s개\n' "$ADDED_SOURCE_COUNT"
+            printf -- '- 실행 기록: %s\n' "$WORKFLOW_RUN_URL"
+            printf '\n## 추가된 소스\n'
+          } > "$COMMIT_MESSAGE_FILE"
 
-          ## 작업 내용
-          - docs 아래 생성 브리핑 문서와 색인을 갱신한다.
-          - data/briefed_articles.json 상태를 갱신해 다음 실행의 중복 생성을 방지한다.
+          if [ "$ADDED_SOURCE_COUNT" -eq 0 ]; then
+            printf '%s\n' '- 없음' >> "$COMMIT_MESSAGE_FILE"
+          else
+            git diff --cached --name-only --diff-filter=A |
+              while IFS= read -r source_path; do
+                printf -- '- [%s](%s/blob/%s/%s)\n' \
+                  "$source_path" "$REPOSITORY_URL" "$TARGET_BRANCH" "$source_path"
+              done >> "$COMMIT_MESSAGE_FILE"
+          fi
 
-          ## 영향 받은 파일
-          - docs/**
-          - data/briefed_articles.json
-          EOF
-
-          sed -i 's/^          //' "$RUNNER_TEMP/generated-archive-commit-message.txt"
           git commit -F "$RUNNER_TEMP/generated-archive-commit-message.txt"
 
           git pull --rebase --autostash origin "$TARGET_BRANCH"
