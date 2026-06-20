@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-06-20T05:41:22.057148+00:00",
+  "generated_for": "2026-06-20",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "06cc37eb6e4cd13981e4984cb2f7b8689f655d1e",
+  "github_run_id": "27861778118",
+  "service_count": 5,
+  "duration_ms": 8,
+  "raw_count": 120,
+  "candidate_count": 20,
+  "excluded_count": 100,
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:d08cf44e2bcc4055",
+          "title": "Norway imposes near ban on AI in elementary school",
+          "normalized_url": "https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19",
+          "url_hash": "d08cf44e2bcc4055124adcca03b8075df4a7cf4ebbb908e5f07f52419a63dc0d",
+          "suggested_doc_key": "2026-06-norway-imposes-near-ban-on-ai-in-elementary-school-d08cf44e",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-norway-imposes-near-ban-on-ai-in-elementary-school-d08cf44e.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:66f868110d0def23",
+          "title": "There are no instances in ATProto",
+          "normalized_url": "https://overreacted.io/there-are-no-instances-in-atproto",
+          "url_hash": "66f868110d0def23a6d0f84317aabe8ba31fa4f4a934dd363526706bec95e6f1",
+          "suggested_doc_key": "2026-06-there-are-no-instances-in-atproto-66f86811",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-there-are-no-instances-in-atproto-66f86811.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:6a758af901b4e6b6",
+          "title": "How many of the 170k English words do you know?",
+          "normalized_url": "https://vocabowl-870366514258.us-west1.run.app/",
+          "url_hash": "6a758af901b4e6b6540ac2eff46199b6aa17b788661377b352729227b603ebd3",
+          "suggested_doc_key": "2026-06-how-many-of-the-170k-english-words-do-you-know-6a758af9",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-how-many-of-the-170k-english-words-do-you-know-6a758af9.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:2533c9cdd04a8ea9",
+          "title": "Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28",
+          "normalized_url": "https://www.jvm-weekly.com/p/project-valhalla-explained-how-a",
+          "url_hash": "2533c9cdd04a8ea993e92e493438fdf338f383739c32961b77a7ee37fae26e04",
+          "suggested_doc_key": "2026-06-project-valhalla-explained-how-a-decade-of-work-arrives-in-jdk-28-2533c9cd",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-project-valhalla-explained-how-a-decade-of-work-arrives-in-jdk-28-2533c9cd.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:e5af21d845c8cf72",
+          "title": "Think of the children: How to force real ID for all internet traffic (2023)",
+          "normalized_url": "https://nochan.net/b/Internet-Crap/20230829-Think-Of-The-Children",
+          "url_hash": "e5af21d845c8cf72b102ef769483a578aa40cca3795b4de05810e12f0dd05cf5",
+          "suggested_doc_key": "2026-06-think-of-the-children-how-to-force-real-id-for-all-internet-traffic-2023-e5af21d8",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-think-of-the-children-how-to-force-real-id-for-all-internet-traffic-2023-e5af21d8.md",
+          "candidate_score": 59.9
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:c7affab7451ec44b",
+          "title": "Building self-improving tax agents with Codex",
+          "normalized_url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+          "url_hash": "c7affab7451ec44b906790d3fef22c427ebac827c4234d0fbbd8fd66696bcdec",
+          "suggested_doc_key": "2026-05-building-self-improving-tax-agents-with-codex-c7affab7",
+          "suggested_article_path": "docs/services/openai-blog/2026-05-building-self-improving-tax-agents-with-codex-c7affab7.md",
+          "candidate_score": 15.0
+        },
+        {
+          "candidate_id": "openai-blog:bc79b84ae366f6d4",
+          "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+          "normalized_url": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+          "url_hash": "bc79b84ae366f6d42a6acec174b675c9958c00f355edb8460f2f6be04344c7a3",
+          "suggested_doc_key": "2026-05-openai-named-a-leader-in-enterprise-coding-agents-by-gartner-bc79b84a",
+          "suggested_article_path": "docs/services/openai-blog/2026-05-openai-named-a-leader-in-enterprise-coding-agents-by-gartner-bc79b84a.md",
+          "candidate_score": 15.0
+        },
+        {
+          "candidate_id": "openai-blog:ba562226725de1d8",
+          "title": "Introducing new capabilities to GPT-Rosalind",
+          "normalized_url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+          "url_hash": "ba562226725de1d8218dfe8343e78a80afb3ae2ef1fc7a504ae09b9e8bd11e50",
+          "suggested_doc_key": "2026-06-introducing-new-capabilities-to-gpt-rosalind-ba562226",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-introducing-new-capabilities-to-gpt-rosalind-ba562226.md",
+          "candidate_score": 14.0
+        },
+        {
+          "candidate_id": "openai-blog:032a72a6e2127c3b",
+          "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+          "normalized_url": "https://openai.com/index/wasmer",
+          "url_hash": "032a72a6e2127c3b4bf2ef9c754267fa79a52048bb23d86e92e01b45030ac5b7",
+          "suggested_doc_key": "2026-06-how-wasmer-used-codex-to-build-a-node-js-runtime-for-the-edge-032a72a6",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-how-wasmer-used-codex-to-build-a-node-js-runtime-for-the-edge-032a72a6.md",
+          "candidate_score": 14.0
+        },
+        {
+          "candidate_id": "openai-blog:b90e074e514a25d9",
+          "title": "OpenAI public policy agenda",
+          "normalized_url": "https://openai.com/index/public-policy-agenda",
+          "url_hash": "b90e074e514a25d9b3e84c1bb9a2b070821620d3c0f291b7c86a7db91d5950e2",
+          "suggested_doc_key": "2026-06-openai-public-policy-agenda-b90e074e",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-openai-public-policy-agenda-b90e074e.md",
+          "candidate_score": 14.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 32,
+        "service_candidate_limit": 8
+      }
+    }
+  ]
+}
