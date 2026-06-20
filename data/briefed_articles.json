@@ -1290,6 +1290,86 @@
       "status": "published",
       "briefed_at": "2026-06-20T05:44:13.311318Z",
       "candidate_score": 14.0
+    },
+    "50a7db054539ed971043793885c44add13ca8866d3861cf080bb7257d79d5475": {
+      "normalized_url": "https://waxy.org/2026/06/the-wholesale-plagiarism-of-obscure-sorrows",
+      "title_fingerprint": "the wholesale plagiarism of obscure sorrows",
+      "service_key": "hacker-news",
+      "title": "The Wholesale Plagiarism of Obscure Sorrows",
+      "article_doc_path": "docs/services/hacker-news/2026-06-the-wholesale-plagiarism-of-obscure-sorrows-50a7db05.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T23:06:02.014086Z",
+      "candidate_score": 60.0
+    },
+    "cbb04616396d7e8e79280b079dee62430f3d439e90d19b56ab7d4831ba2cc82d": {
+      "normalized_url": "https://www.smpte.org/blog/smpte-makes-its-standards-freely-accessible-openingstandards-library-to-the-global-media-technology-community",
+      "title_fingerprint": "smpte makes its standards freely accessible",
+      "service_key": "hacker-news",
+      "title": "SMPTE Makes Its Standards Freely Accessible",
+      "article_doc_path": "docs/services/hacker-news/2026-06-smpte-makes-its-standards-freely-accessible-cbb04616.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T23:06:02.014125Z",
+      "candidate_score": 55.7
+    },
+    "dcba0da9c3033321853fea59109aad2c4e6b4e805b5a2522eef714e263154059": {
+      "normalized_url": "https://www.sciencedaily.com/releases/2026/06/260617032207.htm",
+      "title_fingerprint": "the ability to regrow body parts is dormant in mammals not lost",
+      "service_key": "hacker-news",
+      "title": "The ability to regrow body parts is dormant in mammals, not lost",
+      "article_doc_path": "docs/services/hacker-news/2026-06-the-ability-to-regrow-body-parts-is-dormant-in-mammals-not-lost-dcba0da9.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T23:06:02.014133Z",
+      "candidate_score": 51.5
+    },
+    "93f2c8adb7c06f8b65cbc01fcbf5815796d974ff906d0a8b1df53ad196e8c219": {
+      "normalized_url": "https://startupwiki.tech/",
+      "title_fingerprint": "show hn startupwiki a free alternative to crunchbase",
+      "service_key": "hacker-news",
+      "title": "Show HN: StartupWiki – A Free Alternative to Crunchbase",
+      "article_doc_path": "docs/services/hacker-news/2026-06-show-hn-startupwiki-a-free-alternative-to-crunchbase-93f2c8ad.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T23:06:02.014138Z",
+      "candidate_score": 49.8
+    },
+    "b90e074e514a25d9b3e84c1bb9a2b070821620d3c0f291b7c86a7db91d5950e2": {
+      "normalized_url": "https://openai.com/index/public-policy-agenda",
+      "title_fingerprint": "openai public policy agenda",
+      "service_key": "openai-blog",
+      "title": "OpenAI public policy agenda",
+      "article_doc_path": "docs/services/openai-blog/2026-06-openai-public-policy-agenda-b90e074e.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T23:06:02.014143Z",
+      "candidate_score": 13.0
+    },
+    "079b6eb163b43b04b43155fd76da2f2f9677b0a32f93c35fb638d10b37ec1061": {
+      "normalized_url": "https://openai.com/index/travelers",
+      "title_fingerprint": "travelers deploys ai powered claims countrywide with openai",
+      "service_key": "openai-blog",
+      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-06-travelers-deploys-ai-powered-claims-countrywide-with-openai-079b6eb1.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T23:06:02.014147Z",
+      "candidate_score": 12.0
+    },
+    "b040c6a9760044cef0af7ff5adeba2353e63a755fca8ed4f4c6835246b9604c6": {
+      "normalized_url": "https://openai.com/index/codex-for-every-role-tool-workflow",
+      "title_fingerprint": "codex for every role tool and workflow",
+      "service_key": "openai-blog",
+      "title": "Codex for every role, tool, and workflow",
+      "article_doc_path": "docs/services/openai-blog/2026-06-codex-for-every-role-tool-and-workflow-b040c6a9.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T23:06:02.014151Z",
+      "candidate_score": 12.0
+    },
+    "f4e0423d66a14da4798db32575da0c8384e157136b42717da13606909d5eb0aa": {
+      "normalized_url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
+      "title_fingerprint": "advancing youth safety and opportunity through global leadership",
+      "service_key": "openai-blog",
+      "title": "Advancing youth safety and opportunity through global leadership",
+      "article_doc_path": "docs/services/openai-blog/2026-06-advancing-youth-safety-and-opportunity-through-global-leadership-f4e0423d.md",
+      "status": "published",
+      "briefed_at": "2026-06-20T23:06:02.014154Z",
+      "candidate_score": 12.0
     }
   }
 }

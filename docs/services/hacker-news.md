@@ -32,6 +32,10 @@ Hacker News에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [The founder of Craigslist has given away half a billion dollars](./hacker-news/2026-06-the-founder-of-craigslist-has-given-away-half-a-billion-dollars-1027fcbb.md) `published`
 - [A backdoor in a LinkedIn job offer](./hacker-news/2026-06-a-backdoor-in-a-linkedin-job-offer-27ca2b25.md) `published`
 - [Police officer investigated for using AI to 'create evidence' in multiple cases](./hacker-news/2026-06-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-7cf4dd7c.md) `published`
+- [Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28](./hacker-news/2026-06-project-valhalla-explained-how-a-decade-of-work-arrives-in-jdk-28-2533c9cd.md) `published`
+- [How many of the 170k English words do you know?](./hacker-news/2026-06-how-many-of-the-170k-english-words-do-you-know-6a758af9.md) `published`
+- [There are no instances in ATProto](./hacker-news/2026-06-there-are-no-instances-in-atproto-66f86811.md) `published`
+- [Norway imposes near ban on AI in elementary school](./hacker-news/2026-06-norway-imposes-near-ban-on-ai-in-elementary-school-d08cf44e.md) `published`
 - [Amateur may have cracked Linear A](./hacker-news/2026-06-amateur-may-have-cracked-linear-a-7bf857ec.md) `published`
 - [Hyundai buys Boston Dynamics](./hacker-news/2026-06-hyundai-buys-boston-dynamics-fcb41e0a.md) `published`
 - [Google workspace threatening to block Firefox access](./hacker-news/2026-06-google-workspace-threatening-to-block-firefox-access-bfa00749.md) `published`
@@ -47,8 +51,8 @@ Hacker News에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [GLM 5.2 Is Out](./hacker-news/2026-06-glm-5-2-is-out-edd51c72.md) `published`
 - [AI coding at home without going broke](./hacker-news/2026-06-ai-coding-at-home-without-going-broke-7cb80137.md) `published`
 - [Statement on US government directive to suspend access to Fable 5 and Mythos 5](./hacker-news/2026-06-statement-on-us-government-directive-to-suspend-access-to-fable-5-and-my-00131728.md) `published`
-- [Norway imposes near ban on AI in elementary school](./hacker-news/2026-06-norway-imposes-near-ban-on-ai-in-elementary-school-d08cf44e.md) `published`
-- [There are no instances in ATProto](./hacker-news/2026-06-there-are-no-instances-in-atproto-66f86811.md) `published`
-- [How many of the 170k English words do you know?](./hacker-news/2026-06-how-many-of-the-170k-english-words-do-you-know-6a758af9.md) `published`
-- [Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28](./hacker-news/2026-06-project-valhalla-explained-how-a-decade-of-work-arrives-in-jdk-28-2533c9cd.md) `published`
+- [The Wholesale Plagiarism of Obscure Sorrows](./hacker-news/2026-06-the-wholesale-plagiarism-of-obscure-sorrows-50a7db05.md) `published`
 - [Linux 7.1](./hacker-news/2026-06-linux-7-1-fa5989a7.md) `published`
+- [SMPTE Makes Its Standards Freely Accessible](./hacker-news/2026-06-smpte-makes-its-standards-freely-accessible-cbb04616.md) `published`
+- [The ability to regrow body parts is dormant in mammals, not lost](./hacker-news/2026-06-the-ability-to-regrow-body-parts-is-dormant-in-mammals-not-lost-dcba0da9.md) `published`
+- [Show HN: StartupWiki – A Free Alternative to Crunchbase](./hacker-news/2026-06-show-hn-startupwiki-a-free-alternative-to-crunchbase-93f2c8ad.md) `published`
