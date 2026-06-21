@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 from src.generator.markdown_safety import mdx_safe_link_label, mdx_safe_plain_text
@@ -91,8 +92,12 @@ def write_main_index_markdown(
 
     lines.extend(["", "## 서비스", ""])
     for service in editorial_result.services:
-        service_name = mdx_safe_link_label(service.service_name)
-        lines.append(f"- [{service_name}](./services/{service.service_key}.md)")
+        service_name = mdx_safe_plain_text(service.service_name)
+        lines.append(
+            f'- <ServiceIcon serviceKey="{service.service_key}" '
+            f'label={json.dumps(service_name, ensure_ascii=False)} '
+            f'href="./services/{service.service_key}.md" />'
+        )
     lines.append("")
 
     lines.extend(["## 누적 브리핑 목록", ""])

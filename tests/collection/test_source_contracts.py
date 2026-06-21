@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from src.collection.factories import CollectorStrategyFactory
 from src.sources import NewsSourceFactory
 
@@ -18,3 +20,12 @@ def test_registered_sources_have_required_metadata() -> None:
         assert source.source_url.startswith("https://")
         assert source.source_config() is not None
         assert strategy_factory.create(source.collector_type)
+
+
+def test_registered_sources_have_brand_icon_assets() -> None:
+    static_root = Path(__file__).parents[2] / "static"
+
+    for service_key in NewsSourceFactory().service_keys():
+        for theme in ("light", "dark"):
+            icon_path = static_root / "img" / "services" / f"{service_key}.{theme}.svg"
+            assert icon_path.is_file()

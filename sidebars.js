@@ -32,6 +32,10 @@ const serviceItems = fs
     return {
       type: 'category',
       label: frontMatterTitle(path.join(servicesDir, fileName)),
+      className: `service-sidebar-item service-sidebar-${serviceKey}`,
+      customProps: {
+        serviceKey,
+      },
       link: {
         type: 'doc',
         id: `services/${serviceKey}`,

@@ -1,9 +1,10 @@
 ---
 title: "OpenAI Blog"
 sidebar_label: "OpenAI Blog"
+hide_title: true
 ---
 
-# OpenAI Blog
+<ServiceHeader serviceKey="openai-blog" title="OpenAI Blog" />
 
 OpenAI Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니다.
 

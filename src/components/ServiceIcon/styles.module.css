@@ -1,0 +1,51 @@
+.iconFrame {
+  align-items: center;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 2.5rem;
+  justify-content: center;
+  padding: 0.45rem;
+  width: 2.5rem;
+}
+
+.icon {
+  display: block;
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.darkIcon {
+  display: none;
+}
+
+[data-theme='dark'] .lightIcon {
+  display: none;
+}
+
+[data-theme='dark'] .darkIcon {
+  display: block;
+}
+
+.iconOnly {
+  display: inline-flex;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.serviceLabel,
+.serviceLink {
+  align-items: center;
+  display: inline-flex;
+  font-weight: 600;
+  gap: 0.65rem;
+}
+
+.serviceLink {
+  text-decoration: none;
+}

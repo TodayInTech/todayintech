@@ -1,0 +1,20 @@
+.header {
+  align-items: center;
+  display: flex;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.header > span {
+  margin: 0;
+}
+
+.title {
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .header {
+    gap: 0.75rem;
+  }
+}

@@ -1,9 +1,10 @@
 ---
 title: "Google Blog"
 sidebar_label: "Google Blog"
+hide_title: true
 ---
 
-# Google Blog
+<ServiceHeader serviceKey="google-blog" title="Google Blog" />
 
 Google Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니다.
 

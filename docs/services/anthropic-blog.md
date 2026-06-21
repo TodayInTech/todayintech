@@ -1,9 +1,10 @@
 ---
 title: "Anthropic Blog"
 sidebar_label: "Anthropic Blog"
+hide_title: true
 ---
 
-# Anthropic Blog
+<ServiceHeader serviceKey="anthropic-blog" title="Anthropic Blog" />
 
 Anthropic Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니다.
 

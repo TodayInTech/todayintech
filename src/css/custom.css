@@ -7,3 +7,81 @@
   --ifm-color-primary-lighter: #60a5fa;
   --ifm-color-primary-lightest: #93c5fd;
 }
+
+.service-sidebar-item {
+  --service-sidebar-icon: none;
+}
+
+.service-sidebar-item > .menu__list-item-collapsible > .menu__link {
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.service-sidebar-item > .menu__list-item-collapsible > .menu__link::before {
+  background: var(--service-sidebar-icon) center / contain no-repeat;
+  content: '';
+  display: block;
+  flex: 0 0 1.25rem;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.service-sidebar-anthropic-blog {
+  --service-sidebar-icon:
+    /* webpackIgnore: true */
+    url('/todayintech/img/services/anthropic-blog.light.svg');
+}
+
+.service-sidebar-github-blog {
+  --service-sidebar-icon:
+    /* webpackIgnore: true */
+    url('/todayintech/img/services/github-blog.light.svg');
+}
+
+.service-sidebar-google-blog {
+  --service-sidebar-icon:
+    /* webpackIgnore: true */
+    url('/todayintech/img/services/google-blog.light.svg');
+}
+
+.service-sidebar-hacker-news {
+  --service-sidebar-icon:
+    /* webpackIgnore: true */
+    url('/todayintech/img/services/hacker-news.light.svg');
+}
+
+.service-sidebar-openai-blog {
+  --service-sidebar-icon:
+    /* webpackIgnore: true */
+    url('/todayintech/img/services/openai-blog.light.svg');
+}
+
+[data-theme='dark'] .service-sidebar-anthropic-blog {
+  --service-sidebar-icon:
+    /* webpackIgnore: true */
+    url('/todayintech/img/services/anthropic-blog.dark.svg');
+}
+
+[data-theme='dark'] .service-sidebar-github-blog {
+  --service-sidebar-icon:
+    /* webpackIgnore: true */
+    url('/todayintech/img/services/github-blog.dark.svg');
+}
+
+[data-theme='dark'] .service-sidebar-google-blog {
+  --service-sidebar-icon:
+    /* webpackIgnore: true */
+    url('/todayintech/img/services/google-blog.dark.svg');
+}
+
+[data-theme='dark'] .service-sidebar-hacker-news {
+  --service-sidebar-icon:
+    /* webpackIgnore: true */
+    url('/todayintech/img/services/hacker-news.dark.svg');
+}
+
+[data-theme='dark'] .service-sidebar-openai-blog {
+  --service-sidebar-icon:
+    /* webpackIgnore: true */
+    url('/todayintech/img/services/openai-blog.dark.svg');
+}
