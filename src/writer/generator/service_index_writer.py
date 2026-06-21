@@ -20,9 +20,13 @@ def write_service_index_markdown(
         "---",
         f"title: {json.dumps(mdx_safe_plain_text(service.service_name), ensure_ascii=False)}",
         f"sidebar_label: {json.dumps(mdx_safe_plain_text(service.service_name), ensure_ascii=False)}",
+        "hide_title: true",
         "---",
         "",
-        f"# {mdx_safe_plain_text(service.service_name)}",
+        (
+            f'<ServiceHeader serviceKey="{service.service_key}" '
+            f'title={json.dumps(mdx_safe_plain_text(service.service_name), ensure_ascii=False)} />'
+        ),
         "",
         f"{mdx_safe_plain_text(service.service_name)}에서 선별된 글 브리핑을 모아둔 서비스 페이지입니다.",
         "",

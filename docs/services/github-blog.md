@@ -1,9 +1,10 @@
 ---
 title: "GitHub Blog"
 sidebar_label: "GitHub Blog"
+hide_title: true
 ---
 
-# GitHub Blog
+<ServiceHeader serviceKey="github-blog" title="GitHub Blog" />
 
 GitHub Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니다.
 

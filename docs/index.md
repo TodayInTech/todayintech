@@ -47,11 +47,11 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 
 ## 서비스
 
-- [Anthropic Blog](./services/anthropic-blog.md)
-- [GitHub Blog](./services/github-blog.md)
-- [Google Blog](./services/google-blog.md)
-- [Hacker News](./services/hacker-news.md)
-- [OpenAI Blog](./services/openai-blog.md)
+- <ServiceIcon serviceKey="anthropic-blog" label="Anthropic Blog" href="./services/anthropic-blog.md" />
+- <ServiceIcon serviceKey="github-blog" label="GitHub Blog" href="./services/github-blog.md" />
+- <ServiceIcon serviceKey="google-blog" label="Google Blog" href="./services/google-blog.md" />
+- <ServiceIcon serviceKey="hacker-news" label="Hacker News" href="./services/hacker-news.md" />
+- <ServiceIcon serviceKey="openai-blog" label="OpenAI Blog" href="./services/openai-blog.md" />
 
 ## 누적 브리핑 목록
 

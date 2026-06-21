@@ -154,3 +154,6 @@ def test_news_writer_keeps_cumulative_articles_in_indexes(tmp_path) -> None:
     assert "New Agent Feature" in service_content
     assert "Old Agent Feature" in service_content
     assert "Old Agent Feature" in index_content
+    assert '<ServiceHeader serviceKey="hacker-news"' in service_content
+    assert "hide_title: true" in service_content
+    assert '<ServiceIcon serviceKey="hacker-news"' in index_content

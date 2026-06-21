@@ -1,9 +1,10 @@
 ---
 title: "Hacker News"
 sidebar_label: "Hacker News"
+hide_title: true
 ---
 
-# Hacker News
+<ServiceHeader serviceKey="hacker-news" title="Hacker News" />
 
 Hacker News에서 선별된 글 브리핑을 모아둔 서비스 페이지입니다.
 
