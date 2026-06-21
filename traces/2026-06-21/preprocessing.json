@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-06-21T23:08:00.378534+00:00",
+  "generated_for": "2026-06-21",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "ce99d0569dfc18c9ce83f73ed732ab137ec26f1d",
+  "github_run_id": "27920388051",
+  "service_count": 5,
+  "duration_ms": 6,
+  "raw_count": 120,
+  "candidate_count": 20,
+  "excluded_count": 100,
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:d2ed8622dde5741c",
+          "title": "Prefer duplication over the wrong abstraction (2016)",
+          "normalized_url": "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
+          "url_hash": "d2ed8622dde5741cbbfcbb816e003bfc917008f3651444997488a94920510c61",
+          "suggested_doc_key": "2026-06-prefer-duplication-over-the-wrong-abstraction-2016-d2ed8622",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-prefer-duplication-over-the-wrong-abstraction-2016-d2ed8622.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:f5e805c8a9b4848d",
+          "title": "Identity verification on Claude",
+          "normalized_url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+          "url_hash": "f5e805c8a9b4848d19cc9890c892404eaed652f7c31bbe63ed77bd9858e0e9e5",
+          "suggested_doc_key": "2026-06-identity-verification-on-claude-f5e805c8",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-identity-verification-on-claude-f5e805c8.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:f2f7a5c491fe320e",
+          "title": "Beyond All Reason (Free Total Annihilation Inspired RTS)",
+          "normalized_url": "https://www.beyondallreason.info/",
+          "url_hash": "f2f7a5c491fe320e12af3c88534d0f1e7952b0b4f1cc9aa006cd2b89e9acbe08",
+          "suggested_doc_key": "2026-06-beyond-all-reason-free-total-annihilation-inspired-rts-f2f7a5c4",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-beyond-all-reason-free-total-annihilation-inspired-rts-f2f7a5c4.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:7fdc72df421fcac2",
+          "title": "Developers don't understand CORS (2019)",
+          "normalized_url": "https://fosterelli.co/developers-dont-understand-cors",
+          "url_hash": "7fdc72df421fcac2cbde3351c9d9fa653f5cc53c2542fc034cb88077ace908ee",
+          "suggested_doc_key": "2026-06-developers-don-t-understand-cors-2019-7fdc72df",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-developers-don-t-understand-cors-2019-7fdc72df.md",
+          "candidate_score": 60.0
+        },
+        {
+          "candidate_id": "hacker-news:4f3ac210a5835aa5",
+          "title": "Tell HN: Happy Fathers Day",
+          "normalized_url": "https://news.ycombinator.com/item?id=48620502",
+          "url_hash": "4f3ac210a5835aa50f30a7c321dec4ca1a198d099eb73cf50fca45a700cd3047",
+          "suggested_doc_key": "2026-06-tell-hn-happy-fathers-day-4f3ac210",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-tell-hn-happy-fathers-day-4f3ac210.md",
+          "candidate_score": 50.6
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:4a975b89e4a0f0fb",
+          "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+          "normalized_url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+          "url_hash": "4a975b89e4a0f0fb6925e33843acc09e8920ee722f71ed742aa2e645fcefb67b",
+          "suggested_doc_key": "2026-06-samsung-electronics-brings-chatgpt-and-codex-to-employees-4a975b89",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-samsung-electronics-brings-chatgpt-and-codex-to-employees-4a975b89.md",
+          "candidate_score": 39.0
+        },
+        {
+          "candidate_id": "openai-blog:473eced4d0d7fe18",
+          "title": "Codex is becoming a productivity tool for everyone",
+          "normalized_url": "https://openai.com/index/codex-for-knowledge-work",
+          "url_hash": "473eced4d0d7fe183ce0eb9ded7f576202038baf3f24ed44ea33f7ee01e6da02",
+          "suggested_doc_key": "2026-06-codex-is-becoming-a-productivity-tool-for-everyone-473eced4",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-codex-is-becoming-a-productivity-tool-for-everyone-473eced4.md",
+          "candidate_score": 11.0
+        },
+        {
+          "candidate_id": "openai-blog:4ef2b036d4be1617",
+          "title": "Our views on AI policy and political advocacy",
+          "normalized_url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+          "url_hash": "4ef2b036d4be161754fd84a734e85999beb6497af403b732a2efd536775b2c3f",
+          "suggested_doc_key": "2026-06-our-views-on-ai-policy-and-political-advocacy-4ef2b036",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-our-views-on-ai-policy-and-political-advocacy-4ef2b036.md",
+          "candidate_score": 10.0
+        },
+        {
+          "candidate_id": "openai-blog:04c1d26ba61347ee",
+          "title": "Building the infrastructure for the Intelligence Age in Michigan",
+          "normalized_url": "https://openai.com/index/stargate-michigan-data-center",
+          "url_hash": "04c1d26ba61347eee091bca614912e14d03b90699b0b7c7e370befed36bd9fc5",
+          "suggested_doc_key": "2026-06-building-the-infrastructure-for-the-intelligence-age-in-michigan-04c1d26b",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-building-the-infrastructure-for-the-intelligence-age-in-michigan-04c1d26b.md",
+          "candidate_score": 10.0
+        },
+        {
+          "candidate_id": "openai-blog:e62972f402e43362",
+          "title": "Boston Children’s uses AI to unlock new diagnoses",
+          "normalized_url": "https://openai.com/index/boston-childrens-hospital",
+          "url_hash": "e62972f402e43362a6607a001700502bbed97845a982e0c2d5162c7e1514e4ed",
+          "suggested_doc_key": "2026-05-boston-children-s-uses-ai-to-unlock-new-diagnoses-e62972f4",
+          "suggested_article_path": "docs/services/openai-blog/2026-05-boston-children-s-uses-ai-to-unlock-new-diagnoses-e62972f4.md",
+          "candidate_score": 10.0
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 40
+      }
+    }
+  ]
+}
