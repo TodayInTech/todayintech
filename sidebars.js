@@ -52,6 +52,7 @@ const sidebars = {
       type: 'doc',
       id: 'index',
       label: 'Today in Tech',
+      className: 'todayintech-sidebar-home',
     },
     ...serviceItems,
   ],
