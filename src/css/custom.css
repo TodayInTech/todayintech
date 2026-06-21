@@ -6,6 +6,39 @@
   --ifm-color-primary-light: #3b82f6;
   --ifm-color-primary-lighter: #60a5fa;
   --ifm-color-primary-lightest: #93c5fd;
+  --todayintech-brand-icon: url('../../static/img/brand/todayintech.light.svg');
+}
+
+[data-theme='dark'] {
+  --todayintech-brand-icon: url('../../static/img/brand/todayintech.dark.svg');
+}
+
+.navbar__brand {
+  gap: 0.6rem;
+}
+
+.navbar__logo {
+  height: 2rem;
+  width: 2rem;
+}
+
+.navbar__title {
+  letter-spacing: -0.025em;
+}
+
+.todayintech-sidebar-home > .menu__link {
+  align-items: center;
+  display: flex;
+  gap: 0.55rem;
+}
+
+.todayintech-sidebar-home > .menu__link::before {
+  background: var(--todayintech-brand-icon) center / contain no-repeat;
+  content: '';
+  display: block;
+  flex: 0 0 1.25rem;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 .service-sidebar-item {

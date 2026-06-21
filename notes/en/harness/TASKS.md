@@ -68,6 +68,8 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Implement OpenAI-based News Editor Agent
   - [x] Add Writer Agent selection setting
   - [x] Add official service brand icons and service-index rendering
+  - [x] Add a Today in Tech SVG brand icon and theme-aware UI integration
+  - [x] Apply the brand asset to the README and organization icon usage
   - [ ] Implement publication status transition policy
 
 - [x] Build / Deploy - complete

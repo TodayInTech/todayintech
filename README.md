@@ -1,8 +1,24 @@
-# Today in Tech
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="static/img/brand/todayintech.dark.svg">
+    <img alt="Today in Tech" src="static/img/brand/todayintech.light.svg" width="96" height="96">
+  </picture>
+</p>
+
+<h1 align="center">Today in Tech</h1>
+
+<p align="center">
+  기술 뉴스와 공식 기술 블로그의 중요한 흐름만 선별해 누적하는 AI 기반 큐레이션 아카이브
+</p>
 
 Today in Tech는 기술 뉴스 RSS/Atom 피드와 공식 sitemap을 매일 수집하고, AI 기반 News Editor Agent가 의미 있는 글만 선별해 Docusaurus 문서 사이트로 누적 배포하는 기술 글 큐레이션 아카이브입니다.
 
 현재 저장소는 MVP 기본 구조 단계입니다. 서비스별 정보 수집, raw snapshot 저장, 전처리 후보 생성, Writer draft 문서 생성, 운영 trace, Docusaurus 빌드/배포 흐름이 잡혀 있으며, LLM 기반 선별/요약은 이후 구현 예정입니다.
+
+## 브랜드 아이콘
+
+Today in Tech 브랜드 아이콘은 `T` 모노그램과 오늘 새롭게 포착된 핵심 신호를 뜻하는 청록색 점으로 구성합니다.
+사이트 파비콘과 내비게이션 로고는 light/dark SVG를 자동 전환하며, GitHub 조직 아이콘처럼 단일 배경이 필요한 곳에는 [조직 아이콘 SVG](static/img/brand/todayintech.organization.svg)를 사용합니다.
 
 ## 확정 스택
 

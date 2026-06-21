@@ -68,6 +68,8 @@
   - [x] OpenAI 기반 News Editor Agent 구현
   - [x] Writer Agent 선택 설정 추가
   - [x] 서비스별 공식 브랜드 아이콘과 서비스 색인 표시 구성
+  - [x] Today in Tech 전용 SVG 브랜드 아이콘과 테마별 UI 적용
+  - [x] README와 조직 아이콘용 브랜드 자산 적용
   - [ ] 게시 상태 전환 정책 구현
 
 - [x] Build / Deploy - 완료

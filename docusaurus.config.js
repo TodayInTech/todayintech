@@ -3,7 +3,7 @@
 const config = {
   title: 'Today in Tech',
   tagline: 'AI-curated technology news briefings',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/brand/todayintech.light.svg',
 
   url: 'https://todayintech.github.io',
   baseUrl: '/todayintech/',
@@ -37,6 +37,13 @@ const config = {
   themeConfig: {
     navbar: {
       title: 'Today in Tech',
+      logo: {
+        alt: 'Today in Tech',
+        src: 'img/brand/todayintech.light.svg',
+        srcDark: 'img/brand/todayintech.dark.svg',
+        width: 32,
+        height: 32,
+      },
       items: [
         {
           type: 'docSidebar',
