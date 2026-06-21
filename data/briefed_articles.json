@@ -1370,6 +1370,86 @@
       "status": "published",
       "briefed_at": "2026-06-20T23:06:02.014154Z",
       "candidate_score": 12.0
+    },
+    "d2ed8622dde5741cbbfcbb816e003bfc917008f3651444997488a94920510c61": {
+      "normalized_url": "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
+      "title_fingerprint": "prefer duplication over the wrong abstraction 2016",
+      "service_key": "hacker-news",
+      "title": "Prefer duplication over the wrong abstraction (2016)",
+      "article_doc_path": "docs/services/hacker-news/2026-06-prefer-duplication-over-the-wrong-abstraction-2016-d2ed8622.md",
+      "status": "published",
+      "briefed_at": "2026-06-21T23:10:26.404020Z",
+      "candidate_score": 60.0
+    },
+    "f5e805c8a9b4848d19cc9890c892404eaed652f7c31bbe63ed77bd9858e0e9e5": {
+      "normalized_url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+      "title_fingerprint": "identity verification on claude",
+      "service_key": "hacker-news",
+      "title": "Identity verification on Claude",
+      "article_doc_path": "docs/services/hacker-news/2026-06-identity-verification-on-claude-f5e805c8.md",
+      "status": "published",
+      "briefed_at": "2026-06-21T23:10:26.404061Z",
+      "candidate_score": 60.0
+    },
+    "f2f7a5c491fe320e12af3c88534d0f1e7952b0b4f1cc9aa006cd2b89e9acbe08": {
+      "normalized_url": "https://www.beyondallreason.info/",
+      "title_fingerprint": "beyond all reason free total annihilation inspired rts",
+      "service_key": "hacker-news",
+      "title": "Beyond All Reason (Free Total Annihilation Inspired RTS)",
+      "article_doc_path": "docs/services/hacker-news/2026-06-beyond-all-reason-free-total-annihilation-inspired-rts-f2f7a5c4.md",
+      "status": "published",
+      "briefed_at": "2026-06-21T23:10:26.404071Z",
+      "candidate_score": 60.0
+    },
+    "7fdc72df421fcac2cbde3351c9d9fa653f5cc53c2542fc034cb88077ace908ee": {
+      "normalized_url": "https://fosterelli.co/developers-dont-understand-cors",
+      "title_fingerprint": "developers don t understand cors 2019",
+      "service_key": "hacker-news",
+      "title": "Developers don't understand CORS (2019)",
+      "article_doc_path": "docs/services/hacker-news/2026-06-developers-don-t-understand-cors-2019-7fdc72df.md",
+      "status": "published",
+      "briefed_at": "2026-06-21T23:10:26.404077Z",
+      "candidate_score": 60.0
+    },
+    "4a975b89e4a0f0fb6925e33843acc09e8920ee722f71ed742aa2e645fcefb67b": {
+      "normalized_url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+      "title_fingerprint": "samsung electronics brings chatgpt and codex to employees",
+      "service_key": "openai-blog",
+      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+      "article_doc_path": "docs/services/openai-blog/2026-06-samsung-electronics-brings-chatgpt-and-codex-to-employees-4a975b89.md",
+      "status": "published",
+      "briefed_at": "2026-06-21T23:10:26.404084Z",
+      "candidate_score": 39.0
+    },
+    "473eced4d0d7fe183ce0eb9ded7f576202038baf3f24ed44ea33f7ee01e6da02": {
+      "normalized_url": "https://openai.com/index/codex-for-knowledge-work",
+      "title_fingerprint": "codex is becoming a productivity tool for everyone",
+      "service_key": "openai-blog",
+      "title": "Codex is becoming a productivity tool for everyone",
+      "article_doc_path": "docs/services/openai-blog/2026-06-codex-is-becoming-a-productivity-tool-for-everyone-473eced4.md",
+      "status": "published",
+      "briefed_at": "2026-06-21T23:10:26.404090Z",
+      "candidate_score": 11.0
+    },
+    "4ef2b036d4be161754fd84a734e85999beb6497af403b732a2efd536775b2c3f": {
+      "normalized_url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+      "title_fingerprint": "our views on ai policy and political advocacy",
+      "service_key": "openai-blog",
+      "title": "Our views on AI policy and political advocacy",
+      "article_doc_path": "docs/services/openai-blog/2026-06-our-views-on-ai-policy-and-political-advocacy-4ef2b036.md",
+      "status": "published",
+      "briefed_at": "2026-06-21T23:10:26.404096Z",
+      "candidate_score": 10.0
+    },
+    "04c1d26ba61347eee091bca614912e14d03b90699b0b7c7e370befed36bd9fc5": {
+      "normalized_url": "https://openai.com/index/stargate-michigan-data-center",
+      "title_fingerprint": "building the infrastructure for the intelligence age in michigan",
+      "service_key": "openai-blog",
+      "title": "Building the infrastructure for the Intelligence Age in Michigan",
+      "article_doc_path": "docs/services/openai-blog/2026-06-building-the-infrastructure-for-the-intelligence-age-in-michigan-04c1d26b.md",
+      "status": "published",
+      "briefed_at": "2026-06-21T23:10:26.404102Z",
+      "candidate_score": 10.0
     }
   }
 }

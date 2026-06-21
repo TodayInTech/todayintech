@@ -25,6 +25,7 @@ OpenAI Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [How Preply combines AI and human tutors to personalize learning](./openai-blog/2026-06-how-preply-combines-ai-and-human-tutors-to-personalize-learning-ddc7b24a.md) `published`
 - [Access OpenAI models and Codex through your Oracle cloud commitment](./openai-blog/2026-06-access-openai-models-and-codex-through-your-oracle-cloud-commitment-c17e7186.md) `published`
 - [New usage analytics and updated spend controls for enterprises](./openai-blog/2026-06-new-usage-analytics-and-updated-spend-controls-for-enterprises-450d5ccf.md) `published`
+- [Samsung Electronics brings ChatGPT and Codex to employees](./openai-blog/2026-06-samsung-electronics-brings-chatgpt-and-codex-to-employees-4a975b89.md) `published`
 - [Improving health intelligence in ChatGPT](./openai-blog/2026-06-improving-health-intelligence-in-chatgpt-9f4dbdd3.md) `published`
 - [OpenAI to acquire Ona](./openai-blog/2026-06-openai-to-acquire-ona-009f7028.md) `published`
 - [A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry](./openai-blog/2026-06-a-near-autonomous-ai-chemist-improves-a-challenging-reaction-in-medicina-5ff2f715.md) `published`
@@ -54,6 +55,9 @@ OpenAI Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [How Wasmer used Codex to build a Node.js runtime for the edge](./openai-blog/2026-06-how-wasmer-used-codex-to-build-a-node-js-runtime-for-the-edge-032a72a6.md) `published`
 - [Introducing new capabilities to GPT-Rosalind](./openai-blog/2026-06-introducing-new-capabilities-to-gpt-rosalind-ba562226.md) `published`
 - [OpenAI public policy agenda](./openai-blog/2026-06-openai-public-policy-agenda-b90e074e.md) `published`
-- [Travelers deploys AI-powered claims countrywide with OpenAI](./openai-blog/2026-06-travelers-deploys-ai-powered-claims-countrywide-with-openai-079b6eb1.md) `published`
-- [Codex for every role, tool, and workflow](./openai-blog/2026-06-codex-for-every-role-tool-and-workflow-b040c6a9.md) `published`
 - [Advancing youth safety and opportunity through global leadership](./openai-blog/2026-06-advancing-youth-safety-and-opportunity-through-global-leadership-f4e0423d.md) `published`
+- [Codex for every role, tool, and workflow](./openai-blog/2026-06-codex-for-every-role-tool-and-workflow-b040c6a9.md) `published`
+- [Travelers deploys AI-powered claims countrywide with OpenAI](./openai-blog/2026-06-travelers-deploys-ai-powered-claims-countrywide-with-openai-079b6eb1.md) `published`
+- [Codex is becoming a productivity tool for everyone](./openai-blog/2026-06-codex-is-becoming-a-productivity-tool-for-everyone-473eced4.md) `published`
+- [Our views on AI policy and political advocacy](./openai-blog/2026-06-our-views-on-ai-policy-and-political-advocacy-4ef2b036.md) `published`
+- [Building the infrastructure for the Intelligence Age in Michigan](./openai-blog/2026-06-building-the-infrastructure-for-the-intelligence-age-in-michigan-04c1d26b.md) `published`

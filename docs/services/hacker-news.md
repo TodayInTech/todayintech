@@ -33,6 +33,7 @@ Hacker News에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [The founder of Craigslist has given away half a billion dollars](./hacker-news/2026-06-the-founder-of-craigslist-has-given-away-half-a-billion-dollars-1027fcbb.md) `published`
 - [A backdoor in a LinkedIn job offer](./hacker-news/2026-06-a-backdoor-in-a-linkedin-job-offer-27ca2b25.md) `published`
 - [Police officer investigated for using AI to 'create evidence' in multiple cases](./hacker-news/2026-06-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-7cf4dd7c.md) `published`
+- [The Wholesale Plagiarism of Obscure Sorrows](./hacker-news/2026-06-the-wholesale-plagiarism-of-obscure-sorrows-50a7db05.md) `published`
 - [Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28](./hacker-news/2026-06-project-valhalla-explained-how-a-decade-of-work-arrives-in-jdk-28-2533c9cd.md) `published`
 - [How many of the 170k English words do you know?](./hacker-news/2026-06-how-many-of-the-170k-english-words-do-you-know-6a758af9.md) `published`
 - [There are no instances in ATProto](./hacker-news/2026-06-there-are-no-instances-in-atproto-66f86811.md) `published`
@@ -52,7 +53,10 @@ Hacker News에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [GLM 5.2 Is Out](./hacker-news/2026-06-glm-5-2-is-out-edd51c72.md) `published`
 - [AI coding at home without going broke](./hacker-news/2026-06-ai-coding-at-home-without-going-broke-7cb80137.md) `published`
 - [Statement on US government directive to suspend access to Fable 5 and Mythos 5](./hacker-news/2026-06-statement-on-us-government-directive-to-suspend-access-to-fable-5-and-my-00131728.md) `published`
-- [The Wholesale Plagiarism of Obscure Sorrows](./hacker-news/2026-06-the-wholesale-plagiarism-of-obscure-sorrows-50a7db05.md) `published`
+- [Prefer duplication over the wrong abstraction (2016)](./hacker-news/2026-06-prefer-duplication-over-the-wrong-abstraction-2016-d2ed8622.md) `published`
+- [Identity verification on Claude](./hacker-news/2026-06-identity-verification-on-claude-f5e805c8.md) `published`
+- [Beyond All Reason (Free Total Annihilation Inspired RTS)](./hacker-news/2026-06-beyond-all-reason-free-total-annihilation-inspired-rts-f2f7a5c4.md) `published`
+- [Developers don't understand CORS (2019)](./hacker-news/2026-06-developers-don-t-understand-cors-2019-7fdc72df.md) `published`
 - [Linux 7.1](./hacker-news/2026-06-linux-7-1-fa5989a7.md) `published`
 - [SMPTE Makes Its Standards Freely Accessible](./hacker-news/2026-06-smpte-makes-its-standards-freely-accessible-cbb04616.md) `published`
 - [The ability to regrow body parts is dormant in mammals, not lost](./hacker-news/2026-06-the-ability-to-regrow-body-parts-is-dormant-in-mammals-not-lost-dcba0da9.md) `published`
