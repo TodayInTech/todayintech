@@ -11,5 +11,9 @@ The primary Today in Tech brand mark combines a `T` monogram with an upward sign
 - Light mode: `static/img/brand/todayintech.light.svg`
 - Dark mode: `static/img/brand/todayintech.dark.svg`
 - Organization icon: `static/img/brand/todayintech.organization.svg`
+- Upload PNGs:
+  - `static/img/brand/todayintech.light.png`
+  - `static/img/brand/todayintech.dark.png`
+  - `static/img/brand/todayintech.organization.png`
 
-The light/dark assets are used for the favicon, navbar logo, and main sidebar item. The organization icon asset is used for square, non-theme-aware surfaces such as a GitHub organization avatar. Do not alter their proportions or internal elements.
+The SVGs are used as the source vectors, site UI assets, and README rendering assets. The PNGs are used for square surfaces that require PNG uploads, such as a GitHub organization avatar. Do not alter their proportions or internal elements.
