@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-22T09:35:44.290611+00:00",
+  "generated_at": "2026-06-22T23:16:28.850434+00:00",
   "generated_for": "2026-06-22",
   "stage": "collection",
   "status": "success",
-  "git_sha": "4424ecfbbfdc6c3131172f79d131602780cf591b",
-  "github_run_id": "27943322741",
+  "git_sha": "600c01d50ae26a5883fc55af2c8672ac49927890",
+  "github_run_id": "27990489968",
   "service_count": 5,
   "failed_service_count": 0,
   "warning_count": 0,
   "total_article_count": 120,
-  "duration_ms": 50468,
+  "duration_ms": 48106,
   "services": [
     {
       "service_key": "hacker-news",
@@ -17,8 +17,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 324,
-      "avg_article_duration_ms": 16.2,
+      "duration_ms": 275,
+      "avg_article_duration_ms": 13.75,
       "warning_codes": [],
       "error": null
     },
@@ -28,8 +28,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 10,
-      "duration_ms": 215,
-      "avg_article_duration_ms": 21.5,
+      "duration_ms": 113,
+      "avg_article_duration_ms": 11.3,
       "warning_codes": [],
       "error": null
     },
@@ -39,8 +39,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 335,
-      "avg_article_duration_ms": 16.75,
+      "duration_ms": 196,
+      "avg_article_duration_ms": 9.8,
       "warning_codes": [],
       "error": null
     },
@@ -50,8 +50,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 50,
-      "duration_ms": 628,
-      "avg_article_duration_ms": 12.56,
+      "duration_ms": 700,
+      "avg_article_duration_ms": 14.0,
       "warning_codes": [],
       "error": null
     },
@@ -61,8 +61,8 @@
       "strategy": "sitemap",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 48966,
-      "avg_article_duration_ms": 2448.3,
+      "duration_ms": 46822,
+      "avg_article_duration_ms": 2341.1,
       "warning_codes": [],
       "error": null
     }

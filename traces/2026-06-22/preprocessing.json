@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-22T09:35:44.540425+00:00",
+  "generated_at": "2026-06-22T23:16:29.093839+00:00",
   "generated_for": "2026-06-22",
   "stage": "preprocessing",
   "status": "success",
-  "git_sha": "4424ecfbbfdc6c3131172f79d131602780cf591b",
-  "github_run_id": "27943322741",
+  "git_sha": "600c01d50ae26a5883fc55af2c8672ac49927890",
+  "github_run_id": "27990489968",
   "service_count": 5,
-  "duration_ms": 12,
+  "duration_ms": 13,
   "raw_count": 120,
-  "candidate_count": 10,
-  "excluded_count": 110,
+  "candidate_count": 17,
+  "excluded_count": 103,
   "step_metrics": [
     {
       "step_name": "validation",
@@ -46,39 +46,39 @@
     {
       "step_name": "briefed_article_filter",
       "input_count": 120,
-      "output_count": 26,
-      "excluded_count": 94,
+      "output_count": 32,
+      "excluded_count": 88,
       "duration_ms": 2,
       "reason_counts": {
-        "already_briefed": 94
+        "already_briefed": 88
       }
     },
     {
       "step_name": "candidate_scoring",
-      "input_count": 26,
-      "output_count": 26,
+      "input_count": 32,
+      "output_count": 32,
       "excluded_count": 0,
       "duration_ms": 1,
       "reason_counts": {}
     },
     {
       "step_name": "candidate_quality_gate",
-      "input_count": 26,
-      "output_count": 19,
-      "excluded_count": 7,
+      "input_count": 32,
+      "output_count": 27,
+      "excluded_count": 5,
       "duration_ms": 0,
       "reason_counts": {
-        "low_quality": 7
+        "low_quality": 5
       }
     },
     {
       "step_name": "candidate_limiting",
-      "input_count": 19,
-      "output_count": 10,
-      "excluded_count": 9,
+      "input_count": 27,
+      "output_count": 17,
+      "excluded_count": 10,
       "duration_ms": 0,
       "reason_counts": {
-        "service_candidate_limit": 9
+        "service_candidate_limit": 10
       }
     }
   ],
@@ -87,33 +87,94 @@
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
       "raw_count": 20,
-      "candidate_count": 0,
-      "excluded_count": 20,
-      "top_candidates": [],
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:d6f6970b30183c40",
+          "title": "Anthropic forms $200 million partnership with the Gates Foundation",
+          "normalized_url": "https://www.anthropic.com/news/gates-foundation-partnership",
+          "url_hash": "d6f6970b30183c40f63a05cc33166e7279f4eccc49301781be8938c5ad430260",
+          "suggested_doc_key": "2026-06-anthropic-forms-200-million-partnership-with-the-gates-foundation-d6f6970b",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-06-anthropic-forms-200-million-partnership-with-the-gates-foundation-d6f6970b.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
       "excluded_reasons": {
-        "already_briefed": 20
+        "already_briefed": 19
       }
     },
     {
       "service_key": "github-blog",
       "service_name": "GitHub Blog",
       "raw_count": 10,
-      "candidate_count": 0,
-      "excluded_count": 10,
-      "top_candidates": [],
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:fb20f47dc4a350bc",
+          "title": "From pledge to practice: Building a more inclusive open source ecosystem",
+          "normalized_url": "https://github.blog/open-source/from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem",
+          "url_hash": "fb20f47dc4a350bca065a3fdc0e29d2eebfa9e5c50c46f7b726ddb976359918d",
+          "suggested_doc_key": "2026-06-from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem-fb20f47d",
+          "suggested_article_path": "docs/services/github-blog/2026-06-from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem-fb20f47d.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
       "excluded_reasons": {
-        "already_briefed": 10
+        "already_briefed": 9
       }
     },
     {
       "service_key": "google-blog",
       "service_name": "Google Blog",
       "raw_count": 20,
-      "candidate_count": 0,
-      "excluded_count": 20,
-      "top_candidates": [],
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:d746063268ee6d49",
+          "title": "Interactions API: our primary interface for Gemini models and agents",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/interactions-api-general-availability",
+          "url_hash": "d746063268ee6d492b791c4f100ecc87acbb8b909b0bed9c00d3edb628739ade",
+          "suggested_doc_key": "2026-06-interactions-api-our-primary-interface-for-gemini-models-and-agents-d7460632",
+          "suggested_article_path": "docs/services/google-blog/2026-06-interactions-api-our-primary-interface-for-gemini-models-and-agents-d7460632.md",
+          "candidate_score": 51.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:6ac9977fb758218c",
+          "title": "Google DeepMind and A24 announce first-of-its-kind research partnership",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership",
+          "url_hash": "6ac9977fb758218ce96b63c31c62e9cc552cb6c964d0456d2bcbc7c846826f84",
+          "suggested_doc_key": "2026-06-google-deepmind-and-a24-announce-first-of-its-kind-research-partnership-6ac9977f",
+          "suggested_article_path": "docs/services/google-blog/2026-06-google-deepmind-and-a24-announce-first-of-its-kind-research-partnership-6ac9977f.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
       "excluded_reasons": {
-        "already_briefed": 20
+        "already_briefed": 18
       }
     },
     {
@@ -124,103 +185,147 @@
       "excluded_count": 10,
       "top_candidates": [
         {
-          "candidate_id": "hacker-news:933230b70971e8b7",
-          "title": "Deno Desktop",
-          "normalized_url": "https://docs.deno.com/runtime/desktop",
-          "url_hash": "933230b70971e8b75807d11fc3367944c6d076616a06bf29ccea7c8ca949b72c",
-          "suggested_doc_key": "2026-06-deno-desktop-933230b7",
-          "suggested_article_path": "docs/services/hacker-news/2026-06-deno-desktop-933230b7.md",
-          "candidate_score": 67.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 5점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 323점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 131개를 토론 신호로 반영했습니다.",
-            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "hacker-news:bd194355abb896fb",
-          "title": "Danish privacy activist Lars Andersen raided by police",
-          "normalized_url": "https://twitter.com/LarsAnders1620/status/2068208864747540516",
-          "url_hash": "bd194355abb896fb21e02d20f17889fad273b0b5d36bcd95963fec080a3b5d38",
-          "suggested_doc_key": "2026-06-danish-privacy-activist-lars-andersen-raided-by-police-bd194355",
-          "suggested_article_path": "docs/services/hacker-news/2026-06-danish-privacy-activist-lars-andersen-raided-by-police-bd194355.md",
-          "candidate_score": 66.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 5점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 240점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 176개를 토론 신호로 반영했습니다.",
-            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "hacker-news:3d1f3fa6ce3a0634",
-          "title": "Apertus – Open Foundation Model for Sovereign AI",
-          "normalized_url": "https://apertvs.ai/",
-          "url_hash": "3d1f3fa6ce3a06346846408e6893fdb02f0f8d25935f6f12c9ce30118957fa07",
-          "suggested_doc_key": "2026-06-apertus-open-foundation-model-for-sovereign-ai-3d1f3fa6",
-          "suggested_article_path": "docs/services/hacker-news/2026-06-apertus-open-foundation-model-for-sovereign-ai-3d1f3fa6.md",
+          "candidate_id": "hacker-news:44efbe225e6f06d8",
+          "title": "Steam Machine launches today",
+          "normalized_url": "https://store.steampowered.com/news/group/45479024/view/685257114654870245",
+          "url_hash": "44efbe225e6f06d853358214492f73442e8b93dd61c6f4dc2c78dd5e6d69722a",
+          "suggested_doc_key": "2026-06-steam-machine-launches-today-44efbe22",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-steam-machine-launches-today-44efbe22.md",
           "candidate_score": 65.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
             "중요 키워드 1개를 감지해 가산했습니다.",
-            "Hacker News 점수 368점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 125개를 토론 신호로 반영했습니다.",
-            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 1020점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 894개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:5f56c075c483a748",
-          "title": "There is minimal downside to switching to open models",
-          "normalized_url": "https://www.marble.onl/posts/cancel_claude.html",
-          "url_hash": "5f56c075c483a7488ed168a2420083a4c94b2f2dec5cd318b02cb5825fff822b",
-          "suggested_doc_key": "2026-06-there-is-minimal-downside-to-switching-to-open-models-5f56c075",
-          "suggested_article_path": "docs/services/hacker-news/2026-06-there-is-minimal-downside-to-switching-to-open-models-5f56c075.md",
-          "candidate_score": 65.0,
+          "candidate_id": "hacker-news:bd53d0ea3faf47ae",
+          "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+          "normalized_url": "https://hustvl.github.io/Moebius",
+          "url_hash": "bd53d0ea3faf47aee84d2cb9f71dc7d67a35e6b9611b3f7cbd99fee84833e8b7",
+          "suggested_doc_key": "2026-06-moebius-0-2b-image-inpainting-model-with-10b-level-performance-bd53d0ea",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-moebius-0-2b-image-inpainting-model-with-10b-level-performance-bd53d0ea.md",
+          "candidate_score": 62.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
             "중요 키워드 1개를 감지해 가산했습니다.",
-            "Hacker News 점수 221점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 170개를 토론 신호로 반영했습니다.",
-            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 201점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 60개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:37b028bcf09b6a7d",
-          "title": "Did my old job only exist because of fraud?",
-          "normalized_url": "https://david.newgas.net/did-my-old-job-only-exist-because-of-fraud",
-          "url_hash": "37b028bcf09b6a7d2eacb62de548ddaae255886896224bf2029131e8bc0eaebc",
-          "suggested_doc_key": "2026-06-did-my-old-job-only-exist-because-of-fraud-37b028bc",
-          "suggested_article_path": "docs/services/hacker-news/2026-06-did-my-old-job-only-exist-because-of-fraud-37b028bc.md",
+          "candidate_id": "hacker-news:94dcf38c7dde1b53",
+          "title": "The text in Claude Code’s “Extended Thinking” output",
+          "normalized_url": "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic",
+          "url_hash": "94dcf38c7dde1b5348529450e14a3c0bb28929d8c221dde09528a2420f2dc966",
+          "suggested_doc_key": "2026-06-the-text-in-claude-code-s-extended-thinking-output-94dcf38c",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-the-text-in-claude-code-s-extended-thinking-output-94dcf38c.md",
           "candidate_score": 60.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 533점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 230개를 토론 신호로 반영했습니다.",
+            "Hacker News 점수 253점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 179개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3128624810d9a883",
+          "title": "Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed",
+          "normalized_url": "https://ipvm.com/reports/police-chiefs-track",
+          "url_hash": "3128624810d9a883856b2eed4d5364a95c7b23dd10bb6a3f5f5b9ab13a8d34ff",
+          "suggested_doc_key": "2026-06-flock-powered-police-chiefs-stalking-women-shows-why-warrants-are-needed-31286248",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-flock-powered-police-chiefs-stalking-women-shows-why-warrants-are-needed-31286248.md",
+          "candidate_score": 59.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 203점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 66개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a49e7d5c200625c9",
+          "title": "Canada is looking to build up to 10 new nuclear reactors over the next 15 years",
+          "normalized_url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
+          "url_hash": "a49e7d5c200625c9c8140f23afb74b4b59ec9c6ba3bda457884cd3b73b8e5057",
+          "suggested_doc_key": "2026-06-canada-is-looking-to-build-up-to-10-new-nuclear-reactors-over-the-next-1-a49e7d5c",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-canada-is-looking-to-build-up-to-10-new-nuclear-reactors-over-the-next-1-a49e7d5c.md",
+          "candidate_score": 58.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 185점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 74개를 토론 신호로 반영했습니다.",
             "RSS 순위 10위를 우선순위 신호로 반영했습니다."
           ]
         }
       ],
       "excluded_reasons": {
-        "already_briefed": 1,
-        "service_candidate_limit": 9
+        "service_candidate_limit": 10
       }
     },
     {
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
       "raw_count": 50,
-      "candidate_count": 0,
-      "excluded_count": 50,
-      "top_candidates": [],
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:b63e5cb33bb0ec81",
+          "title": "Daybreak: Tools for securing every organization in the world",
+          "normalized_url": "https://openai.com/index/daybreak-securing-the-world",
+          "url_hash": "b63e5cb33bb0ec81fc69112856bd79cc3137bbdb6ac4f289eb0b32824e1d9589",
+          "suggested_doc_key": "2026-06-daybreak-tools-for-securing-every-organization-in-the-world-b63e5cb3",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-daybreak-tools-for-securing-every-organization-in-the-world-b63e5cb3.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3696e67c2c9e8aaa",
+          "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+          "normalized_url": "https://openai.com/index/patch-the-planet",
+          "url_hash": "3696e67c2c9e8aaad24a172105b38fea5bb1e78435b3e32a3e5c5c1176320aa6",
+          "suggested_doc_key": "2026-06-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainer-3696e67c",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainer-3696e67c.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:e2330fefe7e28987",
+          "title": "Codex-maxxing for long-running work",
+          "normalized_url": "https://openai.com/index/codex-maxxing-long-running-work",
+          "url_hash": "e2330fefe7e28987540075bb9c90a1d2f3b6e56ffdb1fa1a312ed40d8afaac13",
+          "suggested_doc_key": "2026-06-codex-maxxing-for-long-running-work-e2330fef",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-codex-maxxing-for-long-running-work-e2330fef.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
       "excluded_reasons": {
-        "already_briefed": 43,
-        "low_quality": 7
+        "already_briefed": 42,
+        "low_quality": 5
       }
     }
   ]
