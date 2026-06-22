@@ -90,6 +90,7 @@ def test_news_preprocessor_deduplicates_and_filters_briefed_articles(tmp_path) -
     assert service.candidates[0].candidate_score > 0
     assert service.candidates[0].ranking_signals.source_priority == 5
     assert service.candidates[0].ranking_signals.hn_points_score == 12
+    assert service.candidates[0].ranking_reasons_ko
     assert result.archived_articles[0].title == "Already Briefed"
     assert result.archived_articles[0].candidate_score == 30
     assert {item.excluded_reason for item in service.excluded} == {
@@ -103,6 +104,7 @@ def test_news_preprocessor_deduplicates_and_filters_briefed_articles(tmp_path) -
         "run_deduplication",
         "briefed_article_filter",
         "candidate_scoring",
+        "candidate_quality_gate",
         "candidate_limiting",
     ]
     assert result.step_metrics[3].reason_counts == {ExcludedReason.DUPLICATE_IN_RUN: 1}
@@ -132,3 +134,41 @@ def test_news_preprocessor_applies_candidate_limits(tmp_path) -> None:
     assert service.candidate_count == 1
     assert service.excluded_count == 1
     assert service.excluded[0].excluded_reason == ExcludedReason.SERVICE_CANDIDATE_LIMIT
+
+
+def test_news_preprocessor_filters_low_quality_candidates_before_limiting(tmp_path) -> None:
+    preprocessor = NewsPreprocessor.create_default(
+        briefed_article_store=BriefedArticleStore(tmp_path / "briefed_articles.json"),
+        per_service_limit=10,
+        total_limit=10,
+    )
+
+    result = preprocessor.process(
+        "2026-06-11",
+        [
+            make_result(
+                [
+                    make_article(
+                        "Weekly Webinar Event",
+                        "https://example.com/webinar",
+                        metadata={"rss_rank": 20},
+                    ),
+                    make_article(
+                        "Agent Security Release",
+                        "https://example.com/agent-security",
+                        metadata={"hn_points": 80, "hn_comments": 20, "rss_rank": 1},
+                    ),
+                ]
+            )
+        ],
+    )
+
+    service = result.services[0]
+
+    assert service.candidate_count == 1
+    assert service.candidates[0].article.title == "Agent Security Release"
+    assert service.excluded_count == 1
+    assert service.excluded[0].excluded_reason == ExcludedReason.LOW_QUALITY
+    assert service.excluded[0].ranking_reasons_ko[-1] == (
+        "후보 점수가 서비스별 최소 기준에 미치지 못합니다."
+    )

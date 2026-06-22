@@ -57,6 +57,7 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Connect Writer draft generation to `briefed_articles` state updates
   - [x] Restructure the preprocessing package around contracts/steps/scoring/state to match the Collector structure
   - [x] Add preprocessing pipeline factory, scorer ABC, exclusion reason enum, ranking signal model, step metrics, context helpers, and remove legacy helpers
+  - [x] Add service preprocessing policies, candidate quality gate, and scoring explanations
 
 - [ ] Writer - in progress
   - [x] Add Writer package structure

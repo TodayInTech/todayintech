@@ -42,6 +42,7 @@ class DraftNewsEditorAgent:
             feed_summary=candidate.feed_summary,
             candidate_score=candidate.candidate_score,
             ranking_signals=candidate.ranking_signals,
+            ranking_reasons_ko=candidate.ranking_reasons_ko,
             suggested_doc_key=candidate.suggested_doc_key,
             article_doc_path=candidate.suggested_article_path,
             editorial_status=EditorialStatus.DRAFT,

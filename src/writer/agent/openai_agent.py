@@ -129,6 +129,7 @@ class OpenAINewsEditorAgent:
             feed_summary=candidate.feed_summary,
             candidate_score=candidate.candidate_score,
             ranking_signals=candidate.ranking_signals,
+            ranking_reasons_ko=candidate.ranking_reasons_ko,
             suggested_doc_key=candidate.suggested_doc_key,
             article_doc_path=candidate.suggested_article_path,
             editorial_status=EditorialStatus.PUBLISHED,
@@ -191,6 +192,7 @@ class OpenAINewsEditorAgent:
             "metadata": article.metadata,
             "candidate_score": candidate.candidate_score,
             "ranking_signals": candidate.ranking_signals.compact_dict(),
+            "ranking_reasons_ko": candidate.ranking_reasons_ko,
         }
         return (
             "다음 JSON 후보를 검토해서 Today in Tech에 게시할 브리핑을 작성하세요.\n"

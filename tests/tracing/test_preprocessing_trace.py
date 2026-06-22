@@ -28,6 +28,7 @@ def make_candidate(excluded_reason: ExcludedReason | None = None) -> ArticleCand
         suggested_doc_key="2026-06-new-agent-feature-abc123",
         suggested_article_path="docs/services/openai-blog/2026-06-new-agent-feature-abc123.md",
         candidate_score=42,
+        ranking_reasons_ko=["서비스 기본 가중치 10점을 적용했습니다."],
         excluded_reason=excluded_reason,
     )
 
@@ -66,6 +67,9 @@ def test_build_preprocessing_trace_counts_excluded_reasons() -> None:
     assert trace["services"][0]["top_candidates"][0]["suggested_doc_key"] == (
         "2026-06-new-agent-feature-abc123"
     )
+    assert trace["services"][0]["top_candidates"][0]["ranking_reasons_ko"] == [
+        "서비스 기본 가중치 10점을 적용했습니다."
+    ]
 
 
 def test_write_preprocessing_trace_outputs_json_and_markdown(tmp_path) -> None:

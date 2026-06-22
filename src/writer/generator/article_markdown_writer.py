@@ -101,6 +101,13 @@ def _draft_lines(briefing: ArticleBriefing) -> list[str]:
     else:
         lines.append("- 기록된 ranking signal이 없습니다.")
 
+    if briefing.ranking_reasons_ko:
+        lines.append("")
+        lines.append("### 점수 산정 설명")
+        lines.append("")
+        for reason in briefing.ranking_reasons_ko:
+            lines.append(f"- {mdx_safe_plain_text(reason)}")
+
     lines.extend(["", *_metadata_lines(briefing)])
     return lines
 

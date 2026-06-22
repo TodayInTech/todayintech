@@ -72,6 +72,9 @@ src/
 │   ├── identity/
 │   │   ├── candidate_identity.py
 │   │   └── url_normalizer.py
+│   ├── policies/
+│   │   ├── base.py
+│   │   └── service_policy.py
 │   ├── scoring/
 │   │   ├── base.py
 │   │   └── default.py
@@ -84,6 +87,7 @@ src/
 │   │   ├── run_deduplication.py
 │   │   ├── briefed_article_filter.py
 │   │   ├── candidate_scoring.py
+│   │   ├── candidate_quality_gate.py
 │   │   └── candidate_limiting.py
 ├── writer/
 │   ├── __main__.py
@@ -241,7 +245,7 @@ make preprocess RAW_DIR=.var/local/raw PROCESSED_DIR=.var/local/processed
 └── preprocessing.json
 ```
 
-전처리는 `Pipeline + Strategy + Repository` 조합으로 구성한다. `PreprocessingPipelineFactory`가 기본 step 목록을 조립하고, `NewsPreprocessor`는 단계별 `BasePreprocessingStep`을 순서대로 실행한다. 각 단계 구현은 `processing/steps/`에서 명시적으로 이 ABC를 상속한다. 후보 점수화는 `processing/scoring/`의 `BaseCandidateScorer` 기반 strategy로 두며, URL/문서 identity 생성은 `processing/identity/`가 담당한다. `BriefedArticleStore`는 `processing/state/`에 위치하며 Writer가 문서 생성 성공 후 기록한 원문 글 상태를 조회하는 저장소 역할을 한다. 제외 사유는 `ExcludedReason`, 점수 근거는 `RankingSignals`, 단계별 실행 결과는 `PreprocessingStepMetrics`로 구조화한다.
+전처리는 `Pipeline + Strategy + Repository` 조합으로 구성한다. `PreprocessingPipelineFactory`가 기본 step 목록을 조립하고, `NewsPreprocessor`는 단계별 `BasePreprocessingStep`을 순서대로 실행한다. 각 단계 구현은 `processing/steps/`에서 명시적으로 이 ABC를 상속한다. 후보 점수화는 `processing/scoring/`의 `BaseCandidateScorer` 기반 strategy로 두며, URL/문서 identity 생성은 `processing/identity/`가 담당한다. 서비스별 최소 품질 기준은 `processing/policies/`의 `ServicePreprocessingPolicy`로 정의하고, `CandidateQualityGateStep`이 scoring 이후 limit 이전에 낮은 품질 후보를 제외한다. `BriefedArticleStore`는 `processing/state/`에 위치하며 Writer가 문서 생성 성공 후 기록한 원문 글 상태를 조회하는 저장소 역할을 한다. 제외 사유는 `ExcludedReason`, 점수 근거는 `RankingSignals`, 사람이 읽을 수 있는 점수 설명은 `ranking_reasons_ko`, 단계별 실행 결과는 `PreprocessingStepMetrics`로 구조화한다.
 
 전처리 산출물의 `ArticleCandidate`는 Writer 입력 패킷이다. 이 패킷은 요약이나 인사이트를 만들지 않고, Writer Agent가 발행 여부와 편집 내용을 판단하는 데 필요한 식별자와 근거만 제공한다.
 

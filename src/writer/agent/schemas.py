@@ -29,6 +29,7 @@ class ArticleBriefing(BaseModel):
     feed_summary: str = ""
     candidate_score: float
     ranking_signals: RankingSignals = Field(default_factory=RankingSignals)
+    ranking_reasons_ko: list[str] = Field(default_factory=list)
     suggested_doc_key: str
     article_doc_path: str
     editorial_status: EditorialStatus

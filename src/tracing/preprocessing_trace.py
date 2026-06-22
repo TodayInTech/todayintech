@@ -48,6 +48,7 @@ def build_preprocessing_trace(result: PreprocessingResult) -> dict[str, object]:
                         "suggested_doc_key": candidate.suggested_doc_key,
                         "suggested_article_path": candidate.suggested_article_path,
                         "candidate_score": candidate.candidate_score,
+                        "ranking_reasons_ko": candidate.ranking_reasons_ko,
                     }
                     for candidate in service.candidates[:5]
                 ],

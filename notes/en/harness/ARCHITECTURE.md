@@ -68,6 +68,9 @@ src/
 │   ├── identity/
 │   │   ├── candidate_identity.py
 │   │   └── url_normalizer.py
+│   ├── policies/
+│   │   ├── base.py
+│   │   └── service_policy.py
 │   ├── scoring/
 │   │   ├── base.py
 │   │   └── default.py
@@ -80,6 +83,7 @@ src/
 │   │   ├── run_deduplication.py
 │   │   ├── briefed_article_filter.py
 │   │   ├── candidate_scoring.py
+│   │   ├── candidate_quality_gate.py
 │   │   └── candidate_limiting.py
 ├── writer/
 │   ├── __main__.py
@@ -237,7 +241,7 @@ Preprocessing output:
 └── preprocessing.json
 ```
 
-Preprocessing uses a `Pipeline + Strategy + Repository` combination. `PreprocessingPipelineFactory` assembles the default step list, and `NewsPreprocessor` runs ordered `BasePreprocessingStep` objects. Step implementations under `processing/steps/` explicitly inherit from that ABC. Candidate scoring is kept as a `BaseCandidateScorer`-based strategy under `processing/scoring/`, while URL and document identity generation lives under `processing/identity/`. `BriefedArticleStore` lives under `processing/state/` and acts as the state repository for source articles recorded by Writer after successful document generation. Exclusion reasons are structured through `ExcludedReason`, scoring evidence through `RankingSignals`, and per-step execution results through `PreprocessingStepMetrics`.
+Preprocessing uses a `Pipeline + Strategy + Repository` combination. `PreprocessingPipelineFactory` assembles the default step list, and `NewsPreprocessor` runs ordered `BasePreprocessingStep` objects. Step implementations under `processing/steps/` explicitly inherit from that ABC. Candidate scoring is kept as a `BaseCandidateScorer`-based strategy under `processing/scoring/`, while URL and document identity generation lives under `processing/identity/`. Service-level quality thresholds are defined through `ServicePreprocessingPolicy` under `processing/policies/`, and `CandidateQualityGateStep` filters low-quality candidates after scoring and before limiting. `BriefedArticleStore` lives under `processing/state/` and acts as the state repository for source articles recorded by Writer after successful document generation. Exclusion reasons are structured through `ExcludedReason`, scoring evidence through `RankingSignals`, human-readable scoring explanations through `ranking_reasons_ko`, and per-step execution results through `PreprocessingStepMetrics`.
 
 The preprocessing `ArticleCandidate` is the Writer input packet. It does not generate summaries or insights; it only provides identifiers and evidence that the Writer Agent can use to decide publication and editorial content.
 

@@ -33,6 +33,7 @@ class ArticleCandidate(BaseModel):
     suggested_article_path: str = ""
     candidate_score: float = 0
     ranking_signals: RankingSignals = Field(default_factory=RankingSignals)
+    ranking_reasons_ko: list[str] = Field(default_factory=list)
     excluded_reason: ExcludedReason | None = None
 
 

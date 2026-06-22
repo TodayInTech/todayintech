@@ -4,6 +4,7 @@ from src.processing.steps import (
     BriefedArticleFilterStep,
     CandidateIdentityStep,
     CandidateLimitStep,
+    CandidateQualityGateStep,
     CandidateScoringStep,
     RunDeduplicationStep,
     UrlNormalizationStep,
@@ -28,5 +29,6 @@ class PreprocessingPipelineFactory:
             RunDeduplicationStep(),
             BriefedArticleFilterStep(briefed_article_store),
             CandidateScoringStep(),
+            CandidateQualityGateStep(),
             CandidateLimitStep(per_service_limit, total_limit),
         ]
