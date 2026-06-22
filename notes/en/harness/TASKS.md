@@ -74,6 +74,7 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Add a Today in Tech SVG brand icon and theme-aware UI integration
   - [x] Apply the brand asset to the README and organization icon usage
   - [x] Generate PNG brand assets for organization icon uploads
+  - [x] Add publish rationale, evidence scope, and confidence fields to the OpenAI Agent decision schema
   - [ ] Implement publication status transition policy
 
 - [x] Build / Deploy - complete

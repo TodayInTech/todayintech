@@ -33,6 +33,11 @@ class OpenAIArticleDecision(BaseModel):
     should_publish: bool
     category: str = Field(default="Other")
     importance_level: Literal["High", "Medium", "Low"] = "Medium"
+    confidence_score: float = Field(default=0.5, ge=0, le=1)
+    summary_scope: Literal["feed_metadata_only"] = "feed_metadata_only"
+    publish_reason_ko: str = ""
+    reject_reason_ko: str = ""
+    evidence_basis_ko: list[str] = Field(default_factory=list)
     briefing_body_ko: str = ""
     key_points_ko: list[str] = Field(default_factory=list)
     why_it_matters_ko: str = ""
@@ -136,6 +141,11 @@ class OpenAINewsEditorAgent:
             generation_method=GenerationMethod.LLM,
             category=decision.category,
             importance_level=decision.importance_level,
+            confidence_score=decision.confidence_score,
+            summary_scope=decision.summary_scope,
+            publish_reason_ko=decision.publish_reason_ko,
+            reject_reason_ko=decision.reject_reason_ko,
+            evidence_basis_ko=decision.evidence_basis_ko,
             briefing_body_ko=decision.briefing_body_ko,
             key_points_ko=decision.key_points_ko,
             why_it_matters_ko=decision.why_it_matters_ko,
@@ -197,6 +207,10 @@ class OpenAINewsEditorAgent:
         return (
             "다음 JSON 후보를 검토해서 Today in Tech에 게시할 브리핑을 작성하세요.\n"
             "게시 가치가 낮으면 should_publish=false를 반환하세요.\n"
+            "summary_scope는 현재 제공된 후보 메타데이터만 사용하므로 feed_metadata_only로 설정하세요.\n"
+            "confidence_score는 0.0~1.0 사이로 판단 확신도를 표시하세요.\n"
+            "publish_reason_ko 또는 reject_reason_ko 중 결정에 맞는 필드를 채우세요.\n"
+            "evidence_basis_ko에는 제목, 피드 설명, 메타데이터, ranking signal 중 실제 판단 근거만 적으세요.\n"
             "게시한다면 briefing_body_ko는 자연스러운 한국어 2문단 이내로 작성하세요.\n"
             "key_points_ko는 2~3개, caveats_ko는 정보 한계나 원문 확인 필요사항 1~2개로 작성하세요.\n"
             "각 문장은 짧고 명확하게 작성하세요.\n\n"

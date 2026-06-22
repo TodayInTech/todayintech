@@ -74,6 +74,7 @@
   - [x] Today in Tech 전용 SVG 브랜드 아이콘과 테마별 UI 적용
   - [x] README와 조직 아이콘용 브랜드 자산 적용
   - [x] 조직 아이콘 업로드용 PNG 브랜드 자산 생성
+  - [x] OpenAI Agent decision schema에 선정 이유, 근거 범위, 확신도 추가
   - [ ] 게시 상태 전환 정책 구현
 
 - [x] Build / Deploy - 완료

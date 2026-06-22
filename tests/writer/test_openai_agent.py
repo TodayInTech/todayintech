@@ -98,6 +98,10 @@ def test_openai_agent_creates_published_briefing_from_structured_output() -> Non
         should_publish=True,
         category="AI",
         importance_level="High",
+        confidence_score=0.82,
+        summary_scope="feed_metadata_only",
+        publish_reason_ko="개발자 워크플로에 영향을 줄 수 있는 업데이트입니다.",
+        evidence_basis_ko=["피드 설명이 개발자 업데이트를 언급합니다."],
         briefing_body_ko="피드 기준으로 OpenAI 개발자 업데이트를 다룬 글입니다.",
         key_points_ko=["개발자 업데이트", "AI 도구 흐름"],
         why_it_matters_ko="개발 워크플로 변화와 연결될 수 있습니다.",
@@ -113,12 +117,22 @@ def test_openai_agent_creates_published_briefing_from_structured_output() -> Non
     assert briefing.generation_method == GenerationMethod.LLM
     assert briefing.category == "AI"
     assert briefing.importance_level == "High"
+    assert briefing.confidence_score == 0.82
+    assert briefing.summary_scope == "feed_metadata_only"
+    assert briefing.publish_reason_ko == "개발자 워크플로에 영향을 줄 수 있는 업데이트입니다."
+    assert briefing.evidence_basis_ko == ["피드 설명이 개발자 업데이트를 언급합니다."]
     assert briefing.briefing_body_ko == decision.briefing_body_ko
     assert "OpenAI developer feed summary" in client.responses.last_input
+    assert "ranking_reasons_ko" in client.responses.last_input
 
 
 def test_openai_agent_skips_candidate_when_decision_says_not_to_publish() -> None:
-    client = FakeOpenAIClient(OpenAIArticleDecision(should_publish=False))
+    client = FakeOpenAIClient(
+        OpenAIArticleDecision(
+            should_publish=False,
+            reject_reason_ko="제공된 피드 정보만으로는 기술적 의미가 부족합니다.",
+        )
+    )
     agent = OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini", client=client)
 
     result = agent.edit(make_preprocessing_result())
@@ -131,6 +145,7 @@ def test_openai_agent_retries_when_structured_output_parse_fails() -> None:
         should_publish=True,
         category="AI",
         importance_level="Medium",
+        publish_reason_ko="개발자 업데이트로 볼 수 있습니다.",
         briefing_body_ko="피드 기준으로 개발자 업데이트를 짧게 정리합니다.",
     )
     client = RetryOpenAIClient(decision)

@@ -30,6 +30,10 @@ def test_article_markdown_writer_renders_published_briefing_as_natural_article(
         generation_method=GenerationMethod.LLM,
         category="AI",
         importance_level="High",
+        confidence_score=0.82,
+        summary_scope="feed_metadata_only",
+        publish_reason_ko="개발자 워크플로에 영향을 줄 수 있는 업데이트입니다.",
+        evidence_basis_ko=["피드 설명이 개발자 도구 업데이트를 언급합니다."],
         briefing_body_ko=(
             "OpenAI의 개발자 업데이트를 다룬 글입니다.\n\n"
             "개발 환경에서 AI 도구를 어떻게 접목할지 살펴볼 만합니다."
@@ -44,6 +48,12 @@ def test_article_markdown_writer_renders_published_briefing_as_natural_article(
 
     assert "> OpenAI Blog · 2026-06-10 · AI" in content
     assert "OpenAI의 개발자 업데이트를 다룬 글입니다." in content
+    assert "## 선정 이유" in content
+    assert "개발자 워크플로에 영향을 줄 수 있는 업데이트입니다." in content
+    assert "## 판단 근거 범위" in content
+    assert "- 요약 범위: `feed_metadata_only`" in content
+    assert "- 판단 확신도: 0.82" in content
+    assert "## 사용한 근거" in content
     assert "## 핵심 포인트" in content
     assert "- 개발자 도구 업데이트" in content
     assert "## 읽어볼 만한 이유" in content

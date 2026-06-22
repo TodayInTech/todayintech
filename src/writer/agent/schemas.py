@@ -36,6 +36,11 @@ class ArticleBriefing(BaseModel):
     generation_method: GenerationMethod
     category: str | None = None
     importance_level: str | None = None
+    confidence_score: float | None = None
+    summary_scope: str | None = None
+    publish_reason_ko: str | None = None
+    reject_reason_ko: str | None = None
+    evidence_basis_ko: list[str] = Field(default_factory=list)
     briefing_body_ko: str | None = None
     key_points_ko: list[str] = Field(default_factory=list)
     why_it_matters_ko: str | None = None
