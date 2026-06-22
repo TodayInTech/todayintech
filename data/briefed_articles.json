@@ -1490,6 +1490,116 @@
       "status": "published",
       "briefed_at": "2026-06-22T09:38:17.636864Z",
       "candidate_score": 65.0
+    },
+    "d6f6970b30183c40f63a05cc33166e7279f4eccc49301781be8938c5ad430260": {
+      "normalized_url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "title_fingerprint": "anthropic forms 200 million partnership with the gates foundation",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic forms $200 million partnership with the Gates Foundation",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-anthropic-forms-200-million-partnership-with-the-gates-foundation-d6f6970b.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T23:20:01.427597Z",
+      "candidate_score": 30.0
+    },
+    "fb20f47dc4a350bca065a3fdc0e29d2eebfa9e5c50c46f7b726ddb976359918d": {
+      "normalized_url": "https://github.blog/open-source/from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem",
+      "title_fingerprint": "from pledge to practice building a more inclusive open source ecosystem",
+      "service_key": "github-blog",
+      "title": "From pledge to practice: Building a more inclusive open source ecosystem",
+      "article_doc_path": "docs/services/github-blog/2026-06-from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem-fb20f47d.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T23:20:01.427653Z",
+      "candidate_score": 42.0
+    },
+    "d746063268ee6d492b791c4f100ecc87acbb8b909b0bed9c00d3edb628739ade": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/interactions-api-general-availability",
+      "title_fingerprint": "interactions api our primary interface for gemini models and agents",
+      "service_key": "google-blog",
+      "title": "Interactions API: our primary interface for Gemini models and agents",
+      "article_doc_path": "docs/services/google-blog/2026-06-interactions-api-our-primary-interface-for-gemini-models-and-agents-d7460632.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T23:20:01.427671Z",
+      "candidate_score": 51.0
+    },
+    "6ac9977fb758218ce96b63c31c62e9cc552cb6c964d0456d2bcbc7c846826f84": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership",
+      "title_fingerprint": "google deepmind and a24 announce first of its kind research partnership",
+      "service_key": "google-blog",
+      "title": "Google DeepMind and A24 announce first-of-its-kind research partnership",
+      "article_doc_path": "docs/services/google-blog/2026-06-google-deepmind-and-a24-announce-first-of-its-kind-research-partnership-6ac9977f.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T23:20:01.427682Z",
+      "candidate_score": 40.0
+    },
+    "44efbe225e6f06d853358214492f73442e8b93dd61c6f4dc2c78dd5e6d69722a": {
+      "normalized_url": "https://store.steampowered.com/news/group/45479024/view/685257114654870245",
+      "title_fingerprint": "steam machine launches today",
+      "service_key": "hacker-news",
+      "title": "Steam Machine launches today",
+      "article_doc_path": "docs/services/hacker-news/2026-06-steam-machine-launches-today-44efbe22.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T23:20:01.427687Z",
+      "candidate_score": 65.0
+    },
+    "bd53d0ea3faf47aee84d2cb9f71dc7d67a35e6b9611b3f7cbd99fee84833e8b7": {
+      "normalized_url": "https://hustvl.github.io/Moebius",
+      "title_fingerprint": "moebius 0 2b image inpainting model with 10b level performance",
+      "service_key": "hacker-news",
+      "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+      "article_doc_path": "docs/services/hacker-news/2026-06-moebius-0-2b-image-inpainting-model-with-10b-level-performance-bd53d0ea.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T23:20:01.427692Z",
+      "candidate_score": 62.0
+    },
+    "94dcf38c7dde1b5348529450e14a3c0bb28929d8c221dde09528a2420f2dc966": {
+      "normalized_url": "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic",
+      "title_fingerprint": "the text in claude code s extended thinking output",
+      "service_key": "hacker-news",
+      "title": "The text in Claude Code’s “Extended Thinking” output",
+      "article_doc_path": "docs/services/hacker-news/2026-06-the-text-in-claude-code-s-extended-thinking-output-94dcf38c.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T23:20:01.427702Z",
+      "candidate_score": 60.0
+    },
+    "3128624810d9a883856b2eed4d5364a95c7b23dd10bb6a3f5f5b9ab13a8d34ff": {
+      "normalized_url": "https://ipvm.com/reports/police-chiefs-track",
+      "title_fingerprint": "flock powered police chiefs stalking women shows why warrants are needed",
+      "service_key": "hacker-news",
+      "title": "Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed",
+      "article_doc_path": "docs/services/hacker-news/2026-06-flock-powered-police-chiefs-stalking-women-shows-why-warrants-are-needed-31286248.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T23:20:01.427706Z",
+      "candidate_score": 59.2
+    },
+    "b63e5cb33bb0ec81fc69112856bd79cc3137bbdb6ac4f289eb0b32824e1d9589": {
+      "normalized_url": "https://openai.com/index/daybreak-securing-the-world",
+      "title_fingerprint": "daybreak tools for securing every organization in the world",
+      "service_key": "openai-blog",
+      "title": "Daybreak: Tools for securing every organization in the world",
+      "article_doc_path": "docs/services/openai-blog/2026-06-daybreak-tools-for-securing-every-organization-in-the-world-b63e5cb3.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T23:20:01.427711Z",
+      "candidate_score": 44.0
+    },
+    "3696e67c2c9e8aaad24a172105b38fea5bb1e78435b3e32a3e5c5c1176320aa6": {
+      "normalized_url": "https://openai.com/index/patch-the-planet",
+      "title_fingerprint": "patch the planet a daybreak initiative to support open source maintainers",
+      "service_key": "openai-blog",
+      "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+      "article_doc_path": "docs/services/openai-blog/2026-06-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainer-3696e67c.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T23:20:01.427715Z",
+      "candidate_score": 43.0
+    },
+    "e2330fefe7e28987540075bb9c90a1d2f3b6e56ffdb1fa1a312ed40d8afaac13": {
+      "normalized_url": "https://openai.com/index/codex-maxxing-long-running-work",
+      "title_fingerprint": "codex maxxing for long running work",
+      "service_key": "openai-blog",
+      "title": "Codex-maxxing for long-running work",
+      "article_doc_path": "docs/services/openai-blog/2026-06-codex-maxxing-for-long-running-work-e2330fef.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T23:20:01.427719Z",
+      "candidate_score": 37.0
     }
   }
 }

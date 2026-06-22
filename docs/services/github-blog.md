@@ -13,13 +13,14 @@ GitHub Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [How we built an internal data analytics agent](./github-blog/2026-06-how-we-built-an-internal-data-analytics-agent-38e410c5.md) `published` / score 42.0
 - [Getting more from each token: How Copilot improves context handling and model routing](./github-blog/2026-06-getting-more-from-each-token-how-copilot-improves-context-handling-and-m-afb6ad81.md) `published` / score 42.0
 - [GitHub Copilot CLI for Beginners: Overview of common slash commands](./github-blog/2026-06-github-copilot-cli-for-beginners-overview-of-common-slash-commands-1b8723a7.md) `published` / score 42.0
-- [Making secret scanning more trustworthy: Reducing false positives at scale](./github-blog/2026-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scal-9a46f291.md) `published` / score 39.0
+- [From pledge to practice: Building a more inclusive open source ecosystem](./github-blog/2026-06-from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem-fb20f47d.md) `published` / score 42.0
 
 ## 누적 브리핑 목록
 
 - [How we built an internal data analytics agent](./github-blog/2026-06-how-we-built-an-internal-data-analytics-agent-38e410c5.md) `published`
 - [Getting more from each token: How Copilot improves context handling and model routing](./github-blog/2026-06-getting-more-from-each-token-how-copilot-improves-context-handling-and-m-afb6ad81.md) `published`
 - [GitHub Copilot CLI for Beginners: Overview of common slash commands](./github-blog/2026-06-github-copilot-cli-for-beginners-overview-of-common-slash-commands-1b8723a7.md) `published`
+- [From pledge to practice: Building a more inclusive open source ecosystem](./github-blog/2026-06-from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem-fb20f47d.md) `published`
 - [Making secret scanning more trustworthy: Reducing false positives at scale](./github-blog/2026-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scal-9a46f291.md) `published`
 - [How pull request limits are cutting down the noise](./github-blog/2026-06-how-pull-request-limits-are-cutting-down-the-noise-706e559e.md) `published`
 - [What are git worktrees, and why should I use them?](./github-blog/2026-06-what-are-git-worktrees-and-why-should-i-use-them-eff5b35f.md) `published`
