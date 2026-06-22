@@ -1450,6 +1450,46 @@
       "status": "published",
       "briefed_at": "2026-06-21T23:10:26.404102Z",
       "candidate_score": 10.0
+    },
+    "933230b70971e8b75807d11fc3367944c6d076616a06bf29ccea7c8ca949b72c": {
+      "normalized_url": "https://docs.deno.com/runtime/desktop",
+      "title_fingerprint": "deno desktop",
+      "service_key": "hacker-news",
+      "title": "Deno Desktop",
+      "article_doc_path": "docs/services/hacker-news/2026-06-deno-desktop-933230b7.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T09:38:17.636806Z",
+      "candidate_score": 67.0
+    },
+    "bd194355abb896fb21e02d20f17889fad273b0b5d36bcd95963fec080a3b5d38": {
+      "normalized_url": "https://twitter.com/LarsAnders1620/status/2068208864747540516",
+      "title_fingerprint": "danish privacy activist lars andersen raided by police",
+      "service_key": "hacker-news",
+      "title": "Danish privacy activist Lars Andersen raided by police",
+      "article_doc_path": "docs/services/hacker-news/2026-06-danish-privacy-activist-lars-andersen-raided-by-police-bd194355.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T09:38:17.636845Z",
+      "candidate_score": 66.0
+    },
+    "3d1f3fa6ce3a06346846408e6893fdb02f0f8d25935f6f12c9ce30118957fa07": {
+      "normalized_url": "https://apertvs.ai/",
+      "title_fingerprint": "apertus open foundation model for sovereign ai",
+      "service_key": "hacker-news",
+      "title": "Apertus – Open Foundation Model for Sovereign AI",
+      "article_doc_path": "docs/services/hacker-news/2026-06-apertus-open-foundation-model-for-sovereign-ai-3d1f3fa6.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T09:38:17.636856Z",
+      "candidate_score": 65.0
+    },
+    "5f56c075c483a7488ed168a2420083a4c94b2f2dec5cd318b02cb5825fff822b": {
+      "normalized_url": "https://www.marble.onl/posts/cancel_claude.html",
+      "title_fingerprint": "there is minimal downside to switching to open models",
+      "service_key": "hacker-news",
+      "title": "There is minimal downside to switching to open models",
+      "article_doc_path": "docs/services/hacker-news/2026-06-there-is-minimal-downside-to-switching-to-open-models-5f56c075.md",
+      "status": "published",
+      "briefed_at": "2026-06-22T09:38:17.636864Z",
+      "candidate_score": 65.0
     }
   }
 }
