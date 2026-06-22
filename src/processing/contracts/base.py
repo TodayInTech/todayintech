@@ -1,11 +1,11 @@
-from typing import Protocol
+from abc import ABC, abstractmethod
 
-from src.processing.preprocessing_context import PreprocessingContext
+from src.processing.context import PreprocessingContext
 
 
-class PreprocessingStep(Protocol):
+class BasePreprocessingStep(ABC):
     name: str
 
+    @abstractmethod
     def process(self, context: PreprocessingContext) -> PreprocessingContext:
         """Process and return preprocessing context."""
-        ...

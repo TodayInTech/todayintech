@@ -3,6 +3,21 @@ from datetime import datetime
 from pydantic import BaseModel, Field
 
 from src.models import Article
+from src.processing.enums import ExcludedReason
+
+
+class RankingSignals(BaseModel):
+    source_priority: int = 0
+    age_days: int | None = None
+    freshness_score: float = 0
+    high_signal_count: int = 0
+    low_signal_count: int = 0
+    hn_points_score: float | None = None
+    hn_comments_score: float | None = None
+    rss_rank_score: float | None = None
+
+    def compact_dict(self) -> dict[str, int | float]:
+        return self.model_dump(exclude_none=True)
 
 
 class ArticleCandidate(BaseModel):
@@ -17,8 +32,17 @@ class ArticleCandidate(BaseModel):
     suggested_doc_key: str = ""
     suggested_article_path: str = ""
     candidate_score: float = 0
-    ranking_signals: dict[str, str | int | float | bool] = Field(default_factory=dict)
-    excluded_reason: str | None = None
+    ranking_signals: RankingSignals = Field(default_factory=RankingSignals)
+    excluded_reason: ExcludedReason | None = None
+
+
+class PreprocessingStepMetrics(BaseModel):
+    step_name: str
+    input_count: int
+    output_count: int
+    excluded_count: int
+    duration_ms: int = Field(ge=0)
+    reason_counts: dict[ExcludedReason, int] = Field(default_factory=dict)
 
 
 class ServicePreprocessingResult(BaseModel):
@@ -48,5 +72,6 @@ class PreprocessingResult(BaseModel):
     raw_count: int
     candidate_count: int
     excluded_count: int
+    step_metrics: list[PreprocessingStepMetrics] = Field(default_factory=list)
     services: list[ServicePreprocessingResult] = Field(default_factory=list)
     archived_articles: list[ArchivedArticle] = Field(default_factory=list)

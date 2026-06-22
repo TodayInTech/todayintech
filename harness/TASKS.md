@@ -55,6 +55,8 @@
   - [x] Makefile 기반 preprocessor 실행 명령 구성
   - [x] `src.main` 파이프라인에 Collector 이후 Preprocessor 단계 연결
   - [x] Writer draft 생성 상태 기준으로 `briefed_articles` 상태 갱신 연동
+  - [x] Collector 구조와 맞춘 contracts/steps/scoring/state 기반 전처리 패키지 재구성
+  - [x] 전처리 pipeline factory, scorer ABC, 제외 사유 enum, ranking signal 모델, step metrics, context helper, legacy helper 제거 적용
 
 - [ ] Writer - 진행 중
   - [x] Writer 패키지 구조 추가

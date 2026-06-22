@@ -4,7 +4,7 @@ from pathlib import Path
 
 from pydantic import BaseModel, Field
 
-from src.processing.candidate_identity import url_hash
+from src.processing.identity.candidate_identity import url_hash
 
 ACTIVE_BRIEFING_STATUSES = {"draft", "briefed", "published"}
 

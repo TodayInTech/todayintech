@@ -3,6 +3,8 @@ from enum import StrEnum
 
 from pydantic import BaseModel, Field
 
+from src.processing.models import RankingSignals
+
 
 class EditorialStatus(StrEnum):
     DRAFT = "draft"
@@ -26,7 +28,7 @@ class ArticleBriefing(BaseModel):
     collected_at: datetime
     feed_summary: str = ""
     candidate_score: float
-    ranking_signals: dict[str, str | int | float | bool] = Field(default_factory=dict)
+    ranking_signals: RankingSignals = Field(default_factory=RankingSignals)
     suggested_doc_key: str
     article_doc_path: str
     editorial_status: EditorialStatus

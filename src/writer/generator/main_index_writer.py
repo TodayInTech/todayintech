@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 from src.generator.markdown_safety import mdx_safe_link_label, mdx_safe_plain_text
-from src.processing.article_candidate import ArchivedArticle
+from src.processing.models import ArchivedArticle
 from src.writer.agent.schemas import EditorialResult
 
 MAIN_PRIORITY_LIMIT = 20
@@ -95,7 +95,7 @@ def write_main_index_markdown(
         service_name = mdx_safe_plain_text(service.service_name)
         lines.append(
             f'- <ServiceIcon serviceKey="{service.service_key}" '
-            f'label={json.dumps(service_name, ensure_ascii=False)} '
+            f"label={json.dumps(service_name, ensure_ascii=False)} "
             f'href="./services/{service.service_key}.md" />'
         )
     lines.append("")

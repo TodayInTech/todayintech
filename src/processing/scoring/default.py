@@ -1,6 +1,7 @@
 from datetime import UTC, datetime
 
-from src.processing.article_candidate import ArticleCandidate
+from src.processing.models import ArticleCandidate, RankingSignals
+from src.processing.scoring.base import BaseCandidateScorer
 
 HIGH_SIGNAL_KEYWORDS = (
     "agent",
@@ -29,16 +30,16 @@ SOURCE_PRIORITY = {
 }
 
 
-class DefaultCandidateScorer:
+class DefaultCandidateScorer(BaseCandidateScorer):
     def score(self, candidate: ArticleCandidate, now: datetime | None = None) -> ArticleCandidate:
         reference_time = now or datetime.now(UTC)
         article = candidate.article
         text = f"{article.title} {article.summary or ''}".lower()
-        signals: dict[str, str | int | float | bool] = {}
+        signals = RankingSignals()
         score = 0.0
 
         source_score = SOURCE_PRIORITY.get(candidate.service_key, 3)
-        signals["source_priority"] = source_score
+        signals.source_priority = source_score
         score += source_score
 
         if article.published_at:
@@ -48,14 +49,14 @@ class DefaultCandidateScorer:
 
             age_days = max((reference_time - published_at).days, 0)
             freshness_score = max(0, 20 - min(age_days, 20))
-            signals["age_days"] = age_days
-            signals["freshness_score"] = freshness_score
+            signals.age_days = age_days
+            signals.freshness_score = freshness_score
             score += freshness_score
 
         high_signal_count = sum(1 for keyword in HIGH_SIGNAL_KEYWORDS if keyword in text)
         low_signal_count = sum(1 for keyword in LOW_SIGNAL_KEYWORDS if keyword in text)
-        signals["high_signal_count"] = high_signal_count
-        signals["low_signal_count"] = low_signal_count
+        signals.high_signal_count = high_signal_count
+        signals.low_signal_count = low_signal_count
         score += high_signal_count * 5
         score -= low_signal_count * 4
 
@@ -64,15 +65,15 @@ class DefaultCandidateScorer:
         rss_rank = int(article.metadata.get("rss_rank", 0))
         if hn_points:
             hn_points_score = min(hn_points / 10, 20)
-            signals["hn_points_score"] = round(hn_points_score, 2)
+            signals.hn_points_score = round(hn_points_score, 2)
             score += hn_points_score
         if hn_comments:
             hn_comments_score = min(hn_comments / 5, 15)
-            signals["hn_comments_score"] = round(hn_comments_score, 2)
+            signals.hn_comments_score = round(hn_comments_score, 2)
             score += hn_comments_score
         if rss_rank:
             rank_score = max(0, 10 - min(rss_rank, 10))
-            signals["rss_rank_score"] = rank_score
+            signals.rss_rank_score = rank_score
             score += rank_score
 
         return candidate.model_copy(

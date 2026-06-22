@@ -1,4 +1,4 @@
-from src.processing.article_candidate import ArticleCandidate, PreprocessingResult
+from src.processing.models import ArticleCandidate, PreprocessingResult
 from src.progress import log_info
 from src.writer.agent.schemas import (
     ArticleBriefing,

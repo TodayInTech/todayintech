@@ -2,9 +2,9 @@ import argparse
 from pathlib import Path
 
 from src.models import ServiceCollectionResult
-from src.processing.briefed_article_store import BriefedArticleStore
 from src.processing.news_preprocessor import NewsPreprocessor
 from src.processing.processed_writer import write_preprocessing_result
+from src.processing.state.briefed_article_store import BriefedArticleStore
 from src.settings import SETTINGS
 from src.tracing import write_preprocessing_trace
 

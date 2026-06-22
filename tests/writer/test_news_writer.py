@@ -1,13 +1,13 @@
 from datetime import UTC, datetime
 
 from src.models import Article
-from src.processing.article_candidate import (
+from src.processing.models import (
     ArchivedArticle,
     ArticleCandidate,
     PreprocessingResult,
     ServicePreprocessingResult,
 )
-from src.processing.briefed_article_store import BriefedArticleStore
+from src.processing.state.briefed_article_store import BriefedArticleStore
 from src.writer import DraftNewsEditorAgent, NewsWriter
 from src.writer.agent.schemas import EditorialStatus, GenerationMethod
 

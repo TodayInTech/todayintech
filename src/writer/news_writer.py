@@ -2,8 +2,8 @@ from pathlib import Path
 
 from pydantic import BaseModel, Field
 
-from src.processing.article_candidate import ArchivedArticle, PreprocessingResult
-from src.processing.briefed_article_store import BriefedArticleStore
+from src.processing.models import ArchivedArticle, PreprocessingResult
+from src.processing.state.briefed_article_store import BriefedArticleStore
 from src.progress import log_info
 from src.writer.agent.contracts import NewsEditorAgent
 from src.writer.agent.schemas import EditorialResult, EditorialStatus

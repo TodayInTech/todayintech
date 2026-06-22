@@ -1,7 +1,7 @@
 from datetime import UTC, datetime
 
 from src.models import Article
-from src.processing.candidate_identity import (
+from src.processing.identity.candidate_identity import (
     candidate_id,
     slugify_title,
     suggested_article_path,

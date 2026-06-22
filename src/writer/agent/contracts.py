@@ -1,6 +1,6 @@
 from typing import Protocol
 
-from src.processing.article_candidate import PreprocessingResult
+from src.processing.models import PreprocessingResult
 from src.writer.agent.schemas import EditorialResult
 
 

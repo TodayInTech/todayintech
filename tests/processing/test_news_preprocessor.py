@@ -1,8 +1,9 @@
 from datetime import UTC, datetime
 
 from src.models import Article, ServiceCollectionResult
-from src.processing.briefed_article_store import BriefedArticleStore
+from src.processing.enums import ExcludedReason
 from src.processing.news_preprocessor import NewsPreprocessor
+from src.processing.state.briefed_article_store import BriefedArticleStore
 
 
 def make_article(
@@ -87,12 +88,24 @@ def test_news_preprocessor_deduplicates_and_filters_briefed_articles(tmp_path) -
     assert service.candidates[0].suggested_article_path.startswith("docs/services/hacker-news/")
     assert service.candidates[0].feed_summary == "Agent release"
     assert service.candidates[0].candidate_score > 0
+    assert service.candidates[0].ranking_signals.source_priority == 5
+    assert service.candidates[0].ranking_signals.hn_points_score == 12
     assert result.archived_articles[0].title == "Already Briefed"
     assert result.archived_articles[0].candidate_score == 30
     assert {item.excluded_reason for item in service.excluded} == {
-        "already_briefed",
-        "duplicate_in_run",
+        ExcludedReason.ALREADY_BRIEFED,
+        ExcludedReason.DUPLICATE_IN_RUN,
     }
+    assert [metric.step_name for metric in result.step_metrics] == [
+        "validation",
+        "url_normalization",
+        "candidate_identity",
+        "run_deduplication",
+        "briefed_article_filter",
+        "candidate_scoring",
+        "candidate_limiting",
+    ]
+    assert result.step_metrics[3].reason_counts == {ExcludedReason.DUPLICATE_IN_RUN: 1}
 
 
 def test_news_preprocessor_applies_candidate_limits(tmp_path) -> None:
@@ -118,4 +131,4 @@ def test_news_preprocessor_applies_candidate_limits(tmp_path) -> None:
 
     assert service.candidate_count == 1
     assert service.excluded_count == 1
-    assert service.excluded[0].excluded_reason == "service_candidate_limit"
+    assert service.excluded[0].excluded_reason == ExcludedReason.SERVICE_CANDIDATE_LIMIT

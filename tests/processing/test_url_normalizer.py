@@ -1,4 +1,4 @@
-from src.processing.url_normalizer import normalize_url, title_fingerprint
+from src.processing.identity.url_normalizer import normalize_url, title_fingerprint
 
 
 def test_normalize_url_removes_tracking_params_and_fragment() -> None:

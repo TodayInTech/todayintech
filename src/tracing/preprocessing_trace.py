@@ -3,7 +3,7 @@ import os
 from datetime import UTC, datetime
 from pathlib import Path
 
-from src.processing.article_candidate import PreprocessingResult
+from src.processing.models import PreprocessingResult
 
 
 def build_preprocessing_trace(result: PreprocessingResult) -> dict[str, object]:
@@ -19,6 +19,19 @@ def build_preprocessing_trace(result: PreprocessingResult) -> dict[str, object]:
         "raw_count": result.raw_count,
         "candidate_count": result.candidate_count,
         "excluded_count": result.excluded_count,
+        "step_metrics": [
+            {
+                "step_name": metrics.step_name,
+                "input_count": metrics.input_count,
+                "output_count": metrics.output_count,
+                "excluded_count": metrics.excluded_count,
+                "duration_ms": metrics.duration_ms,
+                "reason_counts": {
+                    reason.value: count for reason, count in metrics.reason_counts.items()
+                },
+            }
+            for metrics in result.step_metrics
+        ],
         "services": [
             {
                 "service_key": service.service_key,
@@ -48,7 +61,7 @@ def build_preprocessing_trace(result: PreprocessingResult) -> dict[str, object]:
 def count_excluded_reasons(service) -> dict[str, int]:
     counts: dict[str, int] = {}
     for candidate in service.excluded:
-        reason = candidate.excluded_reason or "unknown"
+        reason = candidate.excluded_reason.value if candidate.excluded_reason else "unknown"
         counts[reason] = counts.get(reason, 0) + 1
     return counts
 

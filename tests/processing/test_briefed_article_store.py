@@ -1,4 +1,4 @@
-from src.processing.briefed_article_store import BriefedArticleStore
+from src.processing.state.briefed_article_store import BriefedArticleStore
 
 
 def test_briefed_article_store_matches_by_url(tmp_path) -> None:

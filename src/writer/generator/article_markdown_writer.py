@@ -94,8 +94,9 @@ def _draft_lines(briefing: ArticleBriefing) -> list[str]:
         ]
     )
 
-    if briefing.ranking_signals:
-        for key, value in sorted(briefing.ranking_signals.items()):
+    ranking_signals = briefing.ranking_signals.compact_dict()
+    if ranking_signals:
+        for key, value in sorted(ranking_signals.items()):
             lines.append(f"- `{key}`: {mdx_safe_plain_text(str(value))}")
     else:
         lines.append("- 기록된 ranking signal이 없습니다.")

@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from src.processing.article_candidate import PreprocessingResult
+from src.processing.models import PreprocessingResult
 
 
 def write_preprocessing_result(

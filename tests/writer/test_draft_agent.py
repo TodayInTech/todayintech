@@ -1,7 +1,7 @@
 from datetime import UTC, datetime
 
 from src.models import Article
-from src.processing.article_candidate import (
+from src.processing.models import (
     ArticleCandidate,
     PreprocessingResult,
     ServicePreprocessingResult,

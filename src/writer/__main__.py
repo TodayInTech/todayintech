@@ -1,8 +1,8 @@
 import argparse
 from pathlib import Path
 
-from src.processing.article_candidate import PreprocessingResult
-from src.processing.briefed_article_store import BriefedArticleStore
+from src.processing.models import PreprocessingResult
+from src.processing.state.briefed_article_store import BriefedArticleStore
 from src.progress import log_step
 from src.settings import SETTINGS
 from src.writer import NewsWriter

@@ -5,7 +5,7 @@ from openai import OpenAI
 from pydantic import BaseModel, Field, ValidationError
 
 from src.generator.markdown_safety import normalize_markdown_text
-from src.processing.article_candidate import ArticleCandidate, PreprocessingResult
+from src.processing.models import ArticleCandidate, PreprocessingResult
 from src.progress import log_info
 from src.writer.agent.schemas import (
     ArticleBriefing,
@@ -190,7 +190,7 @@ class OpenAINewsEditorAgent:
             "tags": article.tags,
             "metadata": article.metadata,
             "candidate_score": candidate.candidate_score,
-            "ranking_signals": candidate.ranking_signals,
+            "ranking_signals": candidate.ranking_signals.compact_dict(),
         }
         return (
             "다음 JSON 후보를 검토해서 Today in Tech에 게시할 브리핑을 작성하세요.\n"

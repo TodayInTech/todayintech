@@ -55,14 +55,32 @@ src/
 │       ├── rss.py
 │       └── sitemap.py
 ├── processing/
+│   ├── __main__.py
+│   ├── context.py
+│   ├── enums.py
+│   ├── models.py
 │   ├── news_preprocessor.py
-│   ├── briefed_article_store.py
-│   ├── article_candidate.py
-│   ├── url_normalizer.py
-│   ├── deduplicator.py
-│   ├── classifier.py
-│   ├── scorer.py
-│   └── summarizer.py
+│   ├── processed_writer.py
+│   ├── contracts/
+│   │   └── base.py
+│   ├── factories/
+│   │   └── preprocessing_pipeline_factory.py
+│   ├── identity/
+│   │   ├── candidate_identity.py
+│   │   └── url_normalizer.py
+│   ├── scoring/
+│   │   ├── base.py
+│   │   └── default.py
+│   ├── state/
+│   │   └── briefed_article_store.py
+│   ├── steps/
+│   │   ├── validation.py
+│   │   ├── url_normalization.py
+│   │   ├── candidate_identity.py
+│   │   ├── run_deduplication.py
+│   │   ├── briefed_article_filter.py
+│   │   ├── candidate_scoring.py
+│   │   └── candidate_limiting.py
 ├── writer/
 │   ├── __main__.py
 │   ├── news_writer.py
@@ -219,7 +237,7 @@ Preprocessing output:
 └── preprocessing.json
 ```
 
-Preprocessing uses a `Pipeline + Strategy + Repository` combination. `NewsPreprocessor` runs ordered `PreprocessingStep` objects, candidate scoring is kept as a replaceable scorer strategy, and `BriefedArticleStore` acts as the state repository for source articles recorded by Writer after successful document generation.
+Preprocessing uses a `Pipeline + Strategy + Repository` combination. `PreprocessingPipelineFactory` assembles the default step list, and `NewsPreprocessor` runs ordered `BasePreprocessingStep` objects. Step implementations under `processing/steps/` explicitly inherit from that ABC. Candidate scoring is kept as a `BaseCandidateScorer`-based strategy under `processing/scoring/`, while URL and document identity generation lives under `processing/identity/`. `BriefedArticleStore` lives under `processing/state/` and acts as the state repository for source articles recorded by Writer after successful document generation. Exclusion reasons are structured through `ExcludedReason`, scoring evidence through `RankingSignals`, and per-step execution results through `PreprocessingStepMetrics`.
 
 The preprocessing `ArticleCandidate` is the Writer input packet. It does not generate summaries or insights; it only provides identifiers and evidence that the Writer Agent can use to decide publication and editorial content.
 

@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 from src.generator.markdown_safety import mdx_safe_link_label, mdx_safe_plain_text
-from src.processing.article_candidate import ArchivedArticle
+from src.processing.models import ArchivedArticle
 from src.writer.agent.schemas import ServiceWritingResult
 
 SERVICE_PRIORITY_LIMIT = 4
@@ -25,7 +25,7 @@ def write_service_index_markdown(
         "",
         (
             f'<ServiceHeader serviceKey="{service.service_key}" '
-            f'title={json.dumps(mdx_safe_plain_text(service.service_name), ensure_ascii=False)} />'
+            f"title={json.dumps(mdx_safe_plain_text(service.service_name), ensure_ascii=False)} />"
         ),
         "",
         f"{mdx_safe_plain_text(service.service_name)}에서 선별된 글 브리핑을 모아둔 서비스 페이지입니다.",

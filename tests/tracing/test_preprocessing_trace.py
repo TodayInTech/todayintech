@@ -1,7 +1,8 @@
 from datetime import UTC, datetime
 
 from src.models import Article
-from src.processing.article_candidate import (
+from src.processing.enums import ExcludedReason
+from src.processing.models import (
     ArticleCandidate,
     PreprocessingResult,
     ServicePreprocessingResult,
@@ -9,7 +10,7 @@ from src.processing.article_candidate import (
 from src.tracing.preprocessing_trace import build_preprocessing_trace, write_preprocessing_trace
 
 
-def make_candidate(excluded_reason: str | None = None) -> ArticleCandidate:
+def make_candidate(excluded_reason: ExcludedReason | None = None) -> ArticleCandidate:
     return ArticleCandidate(
         candidate_id="openai-blog:abc123",
         service_key="openai-blog",
@@ -47,7 +48,7 @@ def make_result() -> PreprocessingResult:
                 candidate_count=1,
                 excluded_count=1,
                 candidates=[make_candidate()],
-                excluded=[make_candidate("already_briefed")],
+                excluded=[make_candidate(ExcludedReason.ALREADY_BRIEFED)],
             )
         ],
     )
