@@ -75,6 +75,7 @@
   - [x] README와 조직 아이콘용 브랜드 자산 적용
   - [x] 조직 아이콘 업로드용 PNG 브랜드 자산 생성
   - [x] OpenAI Agent decision schema에 선정 이유, 근거 범위, 확신도 추가
+  - [x] 공개 article 문서를 자연스러운 한국어 장문 요약 중심으로 단순화
   - [ ] 게시 상태 전환 정책 구현
 
 - [x] Build / Deploy - 완료

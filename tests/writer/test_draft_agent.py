@@ -61,7 +61,4 @@ def test_draft_agent_creates_draft_briefing_without_editorial_body() -> None:
 
     assert briefing.editorial_status == EditorialStatus.DRAFT
     assert briefing.generation_method == GenerationMethod.DRAFT
-    assert briefing.briefing_body_ko is None
-    assert briefing.key_points_ko == []
-    assert briefing.why_it_matters_ko is None
-    assert briefing.caveats_ko == []
+    assert briefing.summary_ko is None

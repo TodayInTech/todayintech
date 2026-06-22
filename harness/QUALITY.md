@@ -104,6 +104,8 @@ make fetch-trace-history
 
 Writer 내부에서는 Agent 편집, Markdown 작성, `briefed_articles` 상태 갱신을 다시 순서대로 기록한다. OpenAI Agent는 후보별 검토 순서, 게시/제외 결정, structured output 파싱 실패와 재시도 여부를 로그로 남긴다. Writer decision trace는 후보별 decision status, 선정/제외 이유, 판단 확신도, 요약 범위, 근거 목록을 JSON과 Markdown으로 저장한다.
 
+published article 문서는 내부 판단 정보를 노출하지 않는다. 사용자에게는 글의 주제, 핵심 내용, 기술적 의미를 연결한 자연스러운 한국어 요약 2~3문단과 원문 링크만 제공하고, 선정 이유와 판단 근거는 Writer decision trace에서 확인한다.
+
 ## 운영 기준
 
 - fixture 기반 `make test`는 안정적인 개발 검증 용도이다.

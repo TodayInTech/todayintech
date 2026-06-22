@@ -81,7 +81,7 @@ docs/
 │   └── anthropic-blog/
 ```
 
-Article pages should read like short editorial briefings, not rigid reports. A published article page should contain a natural briefing body, key points, why it is worth reading, caveats, and source links. Draft pages must not pretend to summarize the article; they should only show pending status, feed summary, and candidate evidence.
+Article pages should read like natural editorial briefings, not rigid reports. A published page contains a cohesive two-to-three-paragraph Korean summary covering the subject, central content, and technical significance, followed by the source link. It must not force fixed opening phrases, section headings, or bullet lists. Publish rationale, confidence, evidence scope, and evidence lists belong only in Writer traces. Draft pages must not pretend to summarize the article; they should only show pending status, feed summary, and candidate evidence.
 
 ## Agent Rules
 

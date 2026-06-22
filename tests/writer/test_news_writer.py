@@ -102,7 +102,7 @@ def test_news_writer_records_published_state_for_llm_briefing(tmp_path) -> None:
     briefing.editorial_status = EditorialStatus.PUBLISHED
     briefing.generation_method = GenerationMethod.LLM
     briefing.category = "AI"
-    briefing.briefing_body_ko = "피드 기준으로 개발자 업데이트를 다룬 글입니다."
+    briefing.summary_ko = "피드 기준으로 개발자 업데이트를 다룬 글입니다."
 
     class PublishedAgent:
         def edit(self, _preprocessing_result):

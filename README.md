@@ -169,7 +169,7 @@ make write DATE=2026-06-07 PROCESSED_DIR=.var/local/processed OUTPUT_DIR=docs
 
 기본 Writer는 `DraftNewsEditorAgent`를 사용합니다. 이 단계는 요약, 왜 중요한가, 개발자 인사이트를 생성하지 않고 Writer/Generator 구조 검증을 위한 draft 문서만 만듭니다. 실제 OpenAI Agent를 사용하려면 `OPENAI_API_KEY`를 설정하고 `TODAYINTECH_WRITER_AGENT=openai` 또는 `make write WRITER_AGENT=openai`로 실행합니다.
 
-OpenAI Agent는 원문 전체를 크롤링하지 않고 Collector와 Preprocessor가 제공한 제목, 피드 설명, 태그, 메타데이터, ranking signals만 사용합니다. 개별 글은 리포트가 아니라 자연스럽게 읽히는 브리핑 본문, 핵심 포인트, 읽어볼 만한 이유, 확인할 점으로 구성합니다.
+OpenAI Agent는 원문 전체를 크롤링하지 않고 Collector와 Preprocessor가 제공한 제목, 피드 설명, 태그, 메타데이터, ranking signals만 사용합니다. 개별 글은 고정 소제목이나 불릿 목록 없이 글의 주제, 핵심 내용, 기술적 의미를 연결한 자연스러운 한국어 요약 2~3문단으로 구성합니다. 선정 이유와 판단 근거는 공개 문서 대신 Writer trace에 기록합니다.
 
 ```text
 docs/

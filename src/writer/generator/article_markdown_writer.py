@@ -25,8 +25,6 @@ def write_article_markdown(output_root: Path, briefing: ArticleBriefing) -> Path
         "",
         f"> {mdx_safe_plain_text(briefing.service_name)} · {published_date} · {mdx_safe_plain_text(category)}",
         "",
-        f"원문 링크: [{mdx_safe_link_label(briefing.title)}]({briefing.source_url})",
-        "",
         "---",
         "",
     ]
@@ -42,66 +40,20 @@ def write_article_markdown(output_root: Path, briefing: ArticleBriefing) -> Path
 
 
 def _published_lines(briefing: ArticleBriefing) -> list[str]:
-    lines: list[str] = []
-
-    body = mdx_safe_text(briefing.briefing_body_ko or "")
-    lines.extend([body or "브리핑 본문이 아직 생성되지 않았습니다.", ""])
-
-    decision_lines = _decision_context_lines(briefing)
-    if decision_lines:
-        lines.extend(decision_lines)
-
-    if briefing.key_points_ko:
-        lines.extend(["## 핵심 포인트", ""])
-        for point in briefing.key_points_ko:
-            lines.append(f"- {mdx_safe_plain_text(point)}")
-        lines.append("")
-
-    if briefing.why_it_matters_ko:
-        lines.extend(
-            [
-                "## 읽어볼 만한 이유",
-                "",
-                mdx_safe_text(briefing.why_it_matters_ko),
-                "",
-            ]
-        )
-
-    if briefing.caveats_ko:
-        lines.extend(["## 확인할 점", ""])
-        for caveat in briefing.caveats_ko:
-            lines.append(f"- {mdx_safe_plain_text(caveat)}")
-        lines.append("")
-
-    lines.extend(_metadata_lines(briefing))
-    return lines
-
-
-def _decision_context_lines(briefing: ArticleBriefing) -> list[str]:
-    lines: list[str] = []
-    if briefing.publish_reason_ko:
-        lines.extend(["## 선정 이유", "", mdx_safe_text(briefing.publish_reason_ko), ""])
-
-    if briefing.summary_scope or briefing.confidence_score is not None:
-        lines.extend(["## 판단 근거 범위", ""])
-        if briefing.summary_scope:
-            lines.append(f"- 요약 범위: `{mdx_safe_plain_text(briefing.summary_scope)}`")
-        if briefing.confidence_score is not None:
-            lines.append(f"- 판단 확신도: {briefing.confidence_score:.2f}")
-        lines.append("")
-
-    if briefing.evidence_basis_ko:
-        lines.extend(["## 사용한 근거", ""])
-        for evidence in briefing.evidence_basis_ko:
-            lines.append(f"- {mdx_safe_plain_text(evidence)}")
-        lines.append("")
-
-    return lines
+    summary = mdx_safe_text(briefing.summary_ko or "")
+    return [
+        summary or "요약이 아직 생성되지 않았습니다.",
+        "",
+        (f"[{mdx_safe_link_label(briefing.service_name)}에서 원문 읽기 →]({briefing.source_url})"),
+        "",
+    ]
 
 
 def _draft_lines(briefing: ArticleBriefing) -> list[str]:
     lines = [
         "아직 News Editor Agent가 브리핑 본문을 작성하지 않았습니다.",
+        "",
+        f"원문 링크: [{mdx_safe_link_label(briefing.title)}]({briefing.source_url})",
         "",
         "## 피드에서 제공된 설명",
         "",

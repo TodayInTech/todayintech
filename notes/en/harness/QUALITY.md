@@ -104,6 +104,8 @@ The full pipeline prints numbered progress logs so developers can see the curren
 
 Inside Writer, Agent editing, Markdown writing, and `briefed_articles` state updates are logged in order. The OpenAI Agent logs candidate review order, publish/skip decisions, structured output parse failures, and retry attempts. Writer decision trace stores per-candidate decision status, publish/reject rationale, confidence score, summary scope, and evidence basis as JSON and Markdown.
 
+Published article pages do not expose internal decision details. Users see only a cohesive two-to-three-paragraph Korean summary covering the subject, central content, and technical significance, plus the source link. Publish rationale and evidence remain available through the Writer decision trace.
+
 ## Operating Rules
 
 - Fixture-based `make test` is for stable development verification.

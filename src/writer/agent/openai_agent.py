@@ -26,7 +26,10 @@ Do not invent details that are not present in the title, feed summary, tags, met
 If information is limited, say so in Korean using phrasing like "피드 기준으로는" or "제공된 정보만 보면".
 
 The article page should read like a short editorial briefing, not a rigid report.
-Use a natural Korean briefing body, then concise key points, why it is worth reading, and caveats.
+Write one cohesive Korean summary in two or three paragraphs.
+Explain the article's subject, central content, and technical significance in connected prose.
+Adapt the opening and sentence structure to the article instead of repeating a fixed template.
+Do not add headings, bullet lists, metadata blocks, or editorial decision details to the summary.
 Reject candidates that are too thin, purely promotional, or not useful for technical readers.
 """.strip()
 
@@ -150,10 +153,7 @@ class OpenAINewsEditorAgent:
             publish_reason_ko=decision.publish_reason_ko,
             reject_reason_ko=decision.reject_reason_ko,
             evidence_basis_ko=decision.evidence_basis_ko,
-            briefing_body_ko=decision.briefing_body_ko,
-            key_points_ko=decision.key_points_ko,
-            why_it_matters_ko=decision.why_it_matters_ko,
-            caveats_ko=decision.caveats_ko,
+            summary_ko=decision.summary_ko,
         )
         return briefing, self._agent_decision(
             candidate,
@@ -253,9 +253,15 @@ class OpenAINewsEditorAgent:
             "confidence_score는 0.0~1.0 사이로 판단 확신도를 표시하세요.\n"
             "publish_reason_ko 또는 reject_reason_ko 중 결정에 맞는 필드를 채우세요.\n"
             "evidence_basis_ko에는 제목, 피드 설명, 메타데이터, ranking signal 중 실제 판단 근거만 적으세요.\n"
-            "게시한다면 briefing_body_ko는 자연스러운 한국어 2문단 이내로 작성하세요.\n"
-            "key_points_ko는 2~3개, caveats_ko는 정보 한계나 원문 확인 필요사항 1~2개로 작성하세요.\n"
-            "각 문장은 짧고 명확하게 작성하세요.\n\n"
+            "게시한다면 summary_ko에 500~900자 분량의 자연스러운 한국어 요약을 작성하세요.\n"
+            "요약은 글의 성격과 제공된 정보량에 맞춰 2~3문단으로 구성하세요.\n"
+            "첫 문장과 문단 구성을 고정하지 말고 글의 주제에 가장 자연스러운 방식으로 시작하세요.\n"
+            "전체적으로 글이 다루는 대상과 배경, 핵심 내용, 기술 독자에게 갖는 의미가 이어지도록 설명하세요.\n"
+            "근거가 충분한 경우 구체적인 변화와 적용 맥락을 설명하되, 같은 내용을 표현만 바꿔 반복하지 마세요.\n"
+            "정보가 부족한 부분은 별도 경고 목록을 만들지 말고 문장 안에서 자연스럽게 한계를 밝히세요.\n"
+            "'해당 글은', '이 글은' 같은 표현이나 동일한 종결 어미를 매번 반복하지 마세요.\n"
+            "요약 안에 제목, 소제목, 불릿, 원문 링크, 선정 이유, 확신도, 판단 근거 목록을 넣지 마세요.\n"
+            "정중한 해설체를 사용하되 번역투, 홍보 문구, 과장된 평가를 피하세요.\n\n"
             f"{json.dumps(payload, ensure_ascii=False, indent=2)}"
         )
 

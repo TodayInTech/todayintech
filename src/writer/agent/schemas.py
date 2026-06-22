@@ -32,10 +32,7 @@ class OpenAIArticleDecision(BaseModel):
     publish_reason_ko: str = ""
     reject_reason_ko: str = ""
     evidence_basis_ko: list[str] = Field(default_factory=list)
-    briefing_body_ko: str = ""
-    key_points_ko: list[str] = Field(default_factory=list)
-    why_it_matters_ko: str = ""
-    caveats_ko: list[str] = Field(default_factory=list)
+    summary_ko: str = Field(default="", max_length=1600)
 
 
 class AgentDecision(BaseModel):
@@ -83,10 +80,7 @@ class ArticleBriefing(BaseModel):
     publish_reason_ko: str | None = None
     reject_reason_ko: str | None = None
     evidence_basis_ko: list[str] = Field(default_factory=list)
-    briefing_body_ko: str | None = None
-    key_points_ko: list[str] = Field(default_factory=list)
-    why_it_matters_ko: str | None = None
-    caveats_ko: list[str] = Field(default_factory=list)
+    summary_ko: str | None = None
 
 
 class ServiceWritingResult(BaseModel):

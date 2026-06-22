@@ -83,7 +83,7 @@ def write_main_index_markdown(
         for service_name, briefing in new_briefings:
             article_path = f"./services/{briefing.service_key}/{briefing.suggested_doc_key}.md"
             title = mdx_safe_link_label(briefing.title)
-            description = briefing.briefing_body_ko or "브리핑 본문 작성 대기"
+            description = briefing.summary_ko or "브리핑 본문 작성 대기"
             lines.append(
                 f"- [{title}]({article_path}) "
                 f"- {mdx_safe_plain_text(service_name)} / {mdx_safe_plain_text(description.splitlines()[0])} "

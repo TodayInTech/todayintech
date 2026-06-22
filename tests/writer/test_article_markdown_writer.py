@@ -34,28 +34,25 @@ def test_article_markdown_writer_renders_published_briefing_as_natural_article(
         summary_scope="feed_metadata_only",
         publish_reason_ko="개발자 워크플로에 영향을 줄 수 있는 업데이트입니다.",
         evidence_basis_ko=["피드 설명이 개발자 도구 업데이트를 언급합니다."],
-        briefing_body_ko=(
-            "OpenAI의 개발자 업데이트를 다룬 글입니다.\n\n"
-            "개발 환경에서 AI 도구를 어떻게 접목할지 살펴볼 만합니다."
+        summary_ko=(
+            "OpenAI가 개발자용 도구를 개선한 배경과 주요 변경 사항을 설명합니다. "
+            "이번 업데이트는 AI 기능을 제품에 연결하고 운영하는 과정을 효율화하는 데 초점을 맞춥니다.\n\n"
+            "개발자는 반복적인 통합 작업을 줄이고 제품의 핵심 기능에 더 집중할 수 있습니다. "
+            "세부 API 조건과 적용 범위는 원문에서 확인할 필요가 있습니다."
         ),
-        key_points_ko=["개발자 도구 업데이트", "AI 도입 흐름"],
-        why_it_matters_ko="개발 워크플로 변화와 직접 연결될 수 있기 때문입니다.",
-        caveats_ko=["세부 API 조건은 원문 확인이 필요합니다."],
     )
 
     output_path = write_article_markdown(tmp_path, briefing)
     content = output_path.read_text(encoding="utf-8")
 
     assert "> OpenAI Blog · 2026-06-10 · AI" in content
-    assert "OpenAI의 개발자 업데이트를 다룬 글입니다." in content
-    assert "## 선정 이유" in content
-    assert "개발자 워크플로에 영향을 줄 수 있는 업데이트입니다." in content
-    assert "## 판단 근거 범위" in content
-    assert "- 요약 범위: `feed_metadata_only`" in content
-    assert "- 판단 확신도: 0.82" in content
-    assert "## 사용한 근거" in content
-    assert "## 핵심 포인트" in content
-    assert "- 개발자 도구 업데이트" in content
-    assert "## 읽어볼 만한 이유" in content
-    assert "## 확인할 점" in content
+    assert "OpenAI가 개발자용 도구를 개선한 배경" in content
+    assert "OpenAI Blog에서 원문 읽기 →" in content
+    assert "## 선정 이유" not in content
+    assert "## 판단 근거 범위" not in content
+    assert "## 사용한 근거" not in content
+    assert "## 핵심 포인트" not in content
+    assert "## 읽어볼 만한 이유" not in content
+    assert "## 확인할 점" not in content
+    assert "## 문서 정보" not in content
     assert "## 후보 판단 근거" not in content

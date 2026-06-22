@@ -107,10 +107,12 @@ def test_openai_agent_creates_published_briefing_from_structured_output() -> Non
         summary_scope="feed_metadata_only",
         publish_reason_ko="개발자 워크플로에 영향을 줄 수 있는 업데이트입니다.",
         evidence_basis_ko=["피드 설명이 개발자 업데이트를 언급합니다."],
-        briefing_body_ko="피드 기준으로 OpenAI 개발자 업데이트를 다룬 글입니다.",
-        key_points_ko=["개발자 업데이트", "AI 도구 흐름"],
-        why_it_matters_ko="개발 워크플로 변화와 연결될 수 있습니다.",
-        caveats_ko=["세부 내용은 원문 확인이 필요합니다."],
+        summary_ko=(
+            "OpenAI가 개발자 도구를 업데이트한 배경과 주요 변화에 대해 설명합니다. "
+            "피드 정보 기준으로는 AI 기능을 제품에 통합하는 과정을 개선하는 데 초점을 맞춥니다.\n\n"
+            "개발자는 반복적인 설정과 연결 작업을 줄이고 핵심 기능 구현에 더 집중할 수 있습니다. "
+            "구체적인 지원 범위와 적용 방법은 원문에서 추가로 확인할 필요가 있습니다."
+        ),
     )
     client = FakeOpenAIClient(decision)
     agent = OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini", client=client)
@@ -126,12 +128,16 @@ def test_openai_agent_creates_published_briefing_from_structured_output() -> Non
     assert briefing.summary_scope == "feed_metadata_only"
     assert briefing.publish_reason_ko == "개발자 워크플로에 영향을 줄 수 있는 업데이트입니다."
     assert briefing.evidence_basis_ko == ["피드 설명이 개발자 업데이트를 언급합니다."]
-    assert briefing.briefing_body_ko == decision.briefing_body_ko
+    assert briefing.summary_ko == decision.summary_ko
     assert result.decisions[0].status == AgentDecisionStatus.PUBLISHED
     assert result.decisions[0].publish_reason_ko == decision.publish_reason_ko
     assert result.decisions[0].confidence_score == 0.82
     assert "OpenAI developer feed summary" in client.responses.last_input
     assert "ranking_reasons_ko" in client.responses.last_input
+    assert "500~900자" in client.responses.last_input
+    assert "2~3문단" in client.responses.last_input
+    assert "첫 문장과 문단 구성을 고정하지 말고" in client.responses.last_input
+    assert "'해당 글은', '이 글은' 같은 표현" in client.responses.last_input
 
 
 def test_openai_agent_skips_candidate_when_decision_says_not_to_publish() -> None:
@@ -158,7 +164,7 @@ def test_openai_agent_retries_when_structured_output_parse_fails() -> None:
         category="AI",
         importance_level="Medium",
         publish_reason_ko="개발자 업데이트로 볼 수 있습니다.",
-        briefing_body_ko="피드 기준으로 개발자 업데이트를 짧게 정리합니다.",
+        summary_ko="피드 기준으로 개발자 업데이트의 주요 내용을 정리합니다.",
     )
     client = RetryOpenAIClient(decision)
     agent = OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini", client=client)
