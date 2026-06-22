@@ -72,7 +72,7 @@ ifneq ($(strip $(DATE)),)
 WORKFLOW_ARGS += -f target_date=$(DATE)
 endif
 
-.PHONY: help collect preprocess write trace-collect trace-preprocess fetch-trace-history generate generate-openai test test-unit test-collection lint lint-fix format format-check check build serve serve-build verify quality ci-quality ci deploy deploy-status
+.PHONY: help collect preprocess write trace-collect trace-preprocess trace-write fetch-trace-history generate generate-openai test test-unit test-collection lint lint-fix format format-check check build serve serve-build verify quality ci-quality ci deploy deploy-status
 
 help:
 	@echo "Today in Tech project commands"
@@ -95,6 +95,7 @@ help:
 	@echo "  make generate-openai"
 	@echo "  make trace-collect"
 	@echo "  make trace-preprocess"
+	@echo "  make trace-write"
 	@echo "  make fetch-trace-history"
 	@echo ""
 	@echo "Quality:"
@@ -157,6 +158,9 @@ trace-collect:
 
 trace-preprocess:
 	$(PYTHON) -m src.processing $(PREPROCESS_ARGS) --trace-dir $(TRACE_DIR)
+
+trace-write:
+	$(PYTHON) -m src.writer $(WRITE_ARGS) --trace-dir $(TRACE_DIR)
 
 fetch-trace-history:
 	mkdir -p $(dir $(TRACE_HISTORY_DIR))

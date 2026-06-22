@@ -62,6 +62,8 @@ def run_pipeline(target_date: str | None = None) -> WriterResult:
         agent=create_news_editor_agent(SETTINGS),
         output_dir=SETTINGS.output_dir,
         briefed_article_store=briefed_article_store,
+        trace_output_dir=SETTINGS.trace_output_dir,
+        agent_name=SETTINGS.writer_agent,
     )
     writer_result = writer.write(preprocessing_result)
     written_articles = sum(

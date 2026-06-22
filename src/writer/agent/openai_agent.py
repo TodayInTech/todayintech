@@ -1,17 +1,19 @@
 import json
-from typing import Literal
 
 from openai import OpenAI
-from pydantic import BaseModel, Field, ValidationError
+from pydantic import ValidationError
 
 from src.generator.markdown_safety import normalize_markdown_text
 from src.processing.models import ArticleCandidate, PreprocessingResult
 from src.progress import log_info
 from src.writer.agent.schemas import (
+    AgentDecision,
+    AgentDecisionStatus,
     ArticleBriefing,
     EditorialResult,
     EditorialStatus,
     GenerationMethod,
+    OpenAIArticleDecision,
     ServiceWritingResult,
 )
 
@@ -27,21 +29,6 @@ The article page should read like a short editorial briefing, not a rigid report
 Use a natural Korean briefing body, then concise key points, why it is worth reading, and caveats.
 Reject candidates that are too thin, purely promotional, or not useful for technical readers.
 """.strip()
-
-
-class OpenAIArticleDecision(BaseModel):
-    should_publish: bool
-    category: str = Field(default="Other")
-    importance_level: Literal["High", "Medium", "Low"] = "Medium"
-    confidence_score: float = Field(default=0.5, ge=0, le=1)
-    summary_scope: Literal["feed_metadata_only"] = "feed_metadata_only"
-    publish_reason_ko: str = ""
-    reject_reason_ko: str = ""
-    evidence_basis_ko: list[str] = Field(default_factory=list)
-    briefing_body_ko: str = ""
-    key_points_ko: list[str] = Field(default_factory=list)
-    why_it_matters_ko: str = ""
-    caveats_ko: list[str] = Field(default_factory=list)
 
 
 class OpenAINewsEditorAgent:
@@ -64,6 +51,7 @@ class OpenAINewsEditorAgent:
 
     def edit(self, preprocessing_result: PreprocessingResult) -> EditorialResult:
         services: list[ServiceWritingResult] = []
+        decisions: list[AgentDecision] = []
         total_candidates = sum(len(service.candidates) for service in preprocessing_result.services)
         processed_count = 0
         published_count = 0
@@ -81,7 +69,8 @@ class OpenAINewsEditorAgent:
                         f"{candidate.service_key} / {candidate.article.title}"
                     ),
                 )
-                briefing = self._brief_candidate(candidate)
+                briefing, agent_decision = self._review_candidate(candidate)
+                decisions.append(agent_decision)
                 if briefing is not None:
                     published_count += 1
                     log_info(
@@ -113,15 +102,30 @@ class OpenAINewsEditorAgent:
         return EditorialResult(
             generated_for=preprocessing_result.generated_for,
             services=services,
+            decisions=decisions,
         )
 
-    def _brief_candidate(self, candidate: ArticleCandidate) -> ArticleBriefing | None:
-        decision = self._parse_decision(candidate)
-        if decision is None or not decision.should_publish:
-            return None
+    def _review_candidate(
+        self,
+        candidate: ArticleCandidate,
+    ) -> tuple[ArticleBriefing | None, AgentDecision]:
+        decision, error_message = self._parse_decision(candidate)
+        if decision is None:
+            return None, self._agent_decision(
+                candidate,
+                status=AgentDecisionStatus.FAILED,
+                error_message=error_message or "structured output 파싱 재시도 실패",
+            )
+
+        if not decision.should_publish:
+            return None, self._agent_decision(
+                candidate,
+                status=AgentDecisionStatus.SKIPPED,
+                decision=decision,
+            )
 
         article = candidate.article
-        return ArticleBriefing(
+        briefing = ArticleBriefing(
             candidate_id=candidate.candidate_id,
             service_key=candidate.service_key,
             service_name=candidate.service_name,
@@ -151,10 +155,19 @@ class OpenAINewsEditorAgent:
             why_it_matters_ko=decision.why_it_matters_ko,
             caveats_ko=decision.caveats_ko,
         )
+        return briefing, self._agent_decision(
+            candidate,
+            status=AgentDecisionStatus.PUBLISHED,
+            decision=decision,
+        )
 
-    def _parse_decision(self, candidate: ArticleCandidate) -> OpenAIArticleDecision | None:
+    def _parse_decision(
+        self,
+        candidate: ArticleCandidate,
+    ) -> tuple[OpenAIArticleDecision | None, str | None]:
         prompt = self._candidate_prompt(candidate)
         token_limits = [self.max_output_tokens, self.retry_max_output_tokens]
+        last_error: str | None = None
         for attempt, max_output_tokens in enumerate(token_limits, start=1):
             try:
                 response = self.client.responses.parse(
@@ -175,15 +188,44 @@ class OpenAINewsEditorAgent:
                         f"error={exc}"
                     ),
                 )
+                last_error = str(exc)
                 continue
 
-            return response.output_parsed
+            return response.output_parsed, None
 
         log_info(
             "OpenAI Agent",
             f"후보 제외: structured output 파싱 재시도 실패 candidate_id={candidate.candidate_id}",
         )
-        return None
+        return None, last_error
+
+    def _agent_decision(
+        self,
+        candidate: ArticleCandidate,
+        *,
+        status: AgentDecisionStatus,
+        decision: OpenAIArticleDecision | None = None,
+        error_message: str | None = None,
+    ) -> AgentDecision:
+        return AgentDecision(
+            candidate_id=candidate.candidate_id,
+            service_key=candidate.service_key,
+            service_name=candidate.service_name,
+            title=candidate.article.title,
+            normalized_url=candidate.normalized_url,
+            article_doc_path=candidate.suggested_article_path,
+            status=status,
+            generation_method=GenerationMethod.LLM,
+            category=decision.category if decision else None,
+            importance_level=decision.importance_level if decision else None,
+            confidence_score=decision.confidence_score if decision else None,
+            summary_scope=decision.summary_scope if decision else None,
+            publish_reason_ko=decision.publish_reason_ko if decision else None,
+            reject_reason_ko=decision.reject_reason_ko if decision else None,
+            evidence_basis_ko=decision.evidence_basis_ko if decision else [],
+            candidate_score=candidate.candidate_score,
+            error_message=error_message,
+        )
 
     def _candidate_prompt(self, candidate: ArticleCandidate) -> str:
         article = candidate.article

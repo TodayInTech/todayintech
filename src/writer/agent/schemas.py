@@ -16,6 +16,48 @@ class GenerationMethod(StrEnum):
     LLM = "llm"
 
 
+class AgentDecisionStatus(StrEnum):
+    DRAFT = "draft"
+    PUBLISHED = "published"
+    SKIPPED = "skipped"
+    FAILED = "failed"
+
+
+class OpenAIArticleDecision(BaseModel):
+    should_publish: bool
+    category: str = Field(default="Other")
+    importance_level: str = "Medium"
+    confidence_score: float = Field(default=0.5, ge=0, le=1)
+    summary_scope: str = "feed_metadata_only"
+    publish_reason_ko: str = ""
+    reject_reason_ko: str = ""
+    evidence_basis_ko: list[str] = Field(default_factory=list)
+    briefing_body_ko: str = ""
+    key_points_ko: list[str] = Field(default_factory=list)
+    why_it_matters_ko: str = ""
+    caveats_ko: list[str] = Field(default_factory=list)
+
+
+class AgentDecision(BaseModel):
+    candidate_id: str
+    service_key: str
+    service_name: str
+    title: str
+    normalized_url: str
+    article_doc_path: str
+    status: AgentDecisionStatus
+    generation_method: GenerationMethod
+    category: str | None = None
+    importance_level: str | None = None
+    confidence_score: float | None = None
+    summary_scope: str | None = None
+    publish_reason_ko: str | None = None
+    reject_reason_ko: str | None = None
+    evidence_basis_ko: list[str] = Field(default_factory=list)
+    candidate_score: float = 0
+    error_message: str | None = None
+
+
 class ArticleBriefing(BaseModel):
     candidate_id: str
     service_key: str
@@ -56,3 +98,4 @@ class ServiceWritingResult(BaseModel):
 class EditorialResult(BaseModel):
     generated_for: str
     services: list[ServiceWritingResult] = Field(default_factory=list)
+    decisions: list[AgentDecision] = Field(default_factory=list)

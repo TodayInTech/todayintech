@@ -5,8 +5,9 @@ from pydantic import BaseModel, Field
 from src.processing.models import ArchivedArticle, PreprocessingResult
 from src.processing.state.briefed_article_store import BriefedArticleStore
 from src.progress import log_info
+from src.tracing import write_writer_decision_trace
 from src.writer.agent.contracts import NewsEditorAgent
-from src.writer.agent.schemas import EditorialResult, EditorialStatus
+from src.writer.agent.schemas import AgentDecision, EditorialResult, EditorialStatus
 from src.writer.generator.article_markdown_writer import write_article_markdown
 from src.writer.generator.main_index_writer import write_main_index_markdown
 from src.writer.generator.service_index_writer import write_service_index_markdown
@@ -15,7 +16,9 @@ from src.writer.generator.service_index_writer import write_service_index_markdo
 class WriterResult(BaseModel):
     generated_for: str
     editorial_result: EditorialResult
+    agent_decisions: list[AgentDecision] = Field(default_factory=list)
     written_paths: list[Path] = Field(default_factory=list)
+    trace_paths: list[Path] = Field(default_factory=list)
 
 
 class NewsWriter:
@@ -25,10 +28,14 @@ class NewsWriter:
         agent: NewsEditorAgent,
         output_dir: Path,
         briefed_article_store: BriefedArticleStore,
+        trace_output_dir: Path | None = None,
+        agent_name: str = "unknown",
     ) -> None:
         self.agent = agent
         self.output_dir = output_dir
         self.briefed_article_store = briefed_article_store
+        self.trace_output_dir = trace_output_dir
+        self.agent_name = agent_name
 
     def write(self, preprocessing_result: PreprocessingResult) -> WriterResult:
         log_info("Writer", "1. Agent 편집 결과 생성 시작")
@@ -85,11 +92,22 @@ class NewsWriter:
             write_main_index_markdown(self.output_dir, editorial_result, archived_articles)
         )
         log_info("Writer", f"2. Markdown 파일 작성 완료: files={len(written_paths)}")
+        trace_paths: list[Path] = []
+        if self.trace_output_dir is not None:
+            trace_paths = write_writer_decision_trace(
+                self.trace_output_dir,
+                generated_for=preprocessing_result.generated_for,
+                agent_name=self.agent_name,
+                decisions=editorial_result.decisions,
+            )
+            log_info("Writer", f"4. Agent decision trace 작성 완료: files={len(trace_paths)}")
 
         return WriterResult(
             generated_for=preprocessing_result.generated_for,
             editorial_result=editorial_result,
+            agent_decisions=editorial_result.decisions,
             written_paths=written_paths,
+            trace_paths=trace_paths,
         )
 
     def _archive_articles_for_indexes(

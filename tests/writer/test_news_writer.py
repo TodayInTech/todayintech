@@ -82,6 +82,7 @@ def test_news_writer_writes_articles_indexes_and_draft_state(tmp_path) -> None:
     assert article_path.exists()
     assert service_path.exists()
     assert index_path.exists()
+    assert result.agent_decisions[0].status == "draft"
     article_content = article_path.read_text(encoding="utf-8")
     assert "> Hacker News · 2026-06-10 · draft" in article_content
     assert "아직 News Editor Agent가 브리핑 본문을 작성하지 않았습니다." in article_content
@@ -157,3 +158,23 @@ def test_news_writer_keeps_cumulative_articles_in_indexes(tmp_path) -> None:
     assert '<ServiceHeader serviceKey="hacker-news"' in service_content
     assert "hide_title: true" in service_content
     assert '<ServiceIcon serviceKey="hacker-news"' in index_content
+
+
+def test_news_writer_writes_agent_decision_trace_when_enabled(tmp_path) -> None:
+    writer = NewsWriter(
+        agent=DraftNewsEditorAgent(),
+        output_dir=tmp_path / "docs",
+        briefed_article_store=BriefedArticleStore(tmp_path / "briefed_articles.json"),
+        trace_output_dir=tmp_path / "traces",
+        agent_name="draft",
+    )
+
+    result = writer.write(make_preprocessing_result())
+
+    assert tmp_path.joinpath("traces", "2026-06-11", "writer-decisions.json") in (
+        result.trace_paths
+    )
+    assert tmp_path.joinpath("traces", "2026-06-11", "writer-decisions-summary.md") in (
+        result.trace_paths
+    )
+    assert result.trace_paths[0].exists()

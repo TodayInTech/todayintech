@@ -9,8 +9,13 @@ from src.processing.models import (
     PreprocessingResult,
     ServicePreprocessingResult,
 )
-from src.writer.agent.openai_agent import OpenAIArticleDecision, OpenAINewsEditorAgent
-from src.writer.agent.schemas import EditorialStatus, GenerationMethod
+from src.writer.agent.openai_agent import OpenAINewsEditorAgent
+from src.writer.agent.schemas import (
+    AgentDecisionStatus,
+    EditorialStatus,
+    GenerationMethod,
+    OpenAIArticleDecision,
+)
 
 
 class FakeResponses:
@@ -122,6 +127,9 @@ def test_openai_agent_creates_published_briefing_from_structured_output() -> Non
     assert briefing.publish_reason_ko == "개발자 워크플로에 영향을 줄 수 있는 업데이트입니다."
     assert briefing.evidence_basis_ko == ["피드 설명이 개발자 업데이트를 언급합니다."]
     assert briefing.briefing_body_ko == decision.briefing_body_ko
+    assert result.decisions[0].status == AgentDecisionStatus.PUBLISHED
+    assert result.decisions[0].publish_reason_ko == decision.publish_reason_ko
+    assert result.decisions[0].confidence_score == 0.82
     assert "OpenAI developer feed summary" in client.responses.last_input
     assert "ranking_reasons_ko" in client.responses.last_input
 
@@ -138,6 +146,10 @@ def test_openai_agent_skips_candidate_when_decision_says_not_to_publish() -> Non
     result = agent.edit(make_preprocessing_result())
 
     assert result.services[0].briefings == []
+    assert result.decisions[0].status == AgentDecisionStatus.SKIPPED
+    assert result.decisions[0].reject_reason_ko == (
+        "제공된 피드 정보만으로는 기술적 의미가 부족합니다."
+    )
 
 
 def test_openai_agent_retries_when_structured_output_parse_fails() -> None:
@@ -176,6 +188,8 @@ def test_openai_agent_skips_candidate_when_structured_output_parse_keeps_failing
 
     assert client.responses.calls == 2
     assert result.services[0].briefings == []
+    assert result.decisions[0].status == AgentDecisionStatus.FAILED
+    assert result.decisions[0].error_message
 
 
 def test_openai_agent_requires_api_key_without_injected_client() -> None:

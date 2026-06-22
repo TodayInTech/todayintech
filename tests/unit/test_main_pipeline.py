@@ -16,6 +16,7 @@ class FakeSettings:
         self.output_dir = root / "docs"
         self.raw_output_dir = root / "raw"
         self.processed_output_dir = root / "processed"
+        self.trace_output_dir = root / "traces"
         self.briefed_articles_path = root / "data" / "briefed_articles.json"
 
     def resolve_target_date(self, override: str | None = None) -> str:
@@ -64,6 +65,7 @@ def test_run_pipeline_writes_raw_and_preprocessed_outputs(tmp_path, monkeypatch)
     assert result.generated_for == "2026-06-11"
     assert tmp_path.joinpath("raw", "2026-06-11", "summary.json").exists()
     assert tmp_path.joinpath("processed", "2026-06-11", "preprocessing.json").exists()
+    assert tmp_path.joinpath("traces", "2026-06-11", "writer-decisions.json").exists()
     assert tmp_path.joinpath("docs", "index.md").exists()
     assert tmp_path.joinpath("docs", "services", "hacker-news.md").exists()
     assert list(tmp_path.joinpath("docs", "services", "hacker-news").glob("*.md"))

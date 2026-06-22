@@ -39,6 +39,10 @@ def build_parser() -> argparse.ArgumentParser:
         default=SETTINGS.writer_agent,
         help="Writer agent implementation. Defaults to TODAYINTECH_WRITER_AGENT or draft.",
     )
+    parser.add_argument(
+        "--trace-dir",
+        help="Optional trace output root. When set, writes writer decision trace JSON and Markdown.",
+    )
     return parser
 
 
@@ -70,6 +74,8 @@ def main() -> None:
         agent=create_news_editor_agent(settings),
         output_dir=Path(args.output_dir),
         briefed_article_store=BriefedArticleStore(Path(args.briefed_state)),
+        trace_output_dir=Path(args.trace_dir) if args.trace_dir else None,
+        agent_name=settings.writer_agent,
     )
     log_step(2, 2, "Writer CLI", f"문서 작성 시작: agent={settings.writer_agent}")
     result = writer.write(preprocessing_result)
@@ -81,6 +87,10 @@ def main() -> None:
     print(f"Written files: {len(result.written_paths)}")
     for path in result.written_paths:
         print(f"- {path}")
+    if result.trace_paths:
+        print(f"Trace files: {len(result.trace_paths)}")
+        for path in result.trace_paths:
+            print(f"- {path}")
 
 
 if __name__ == "__main__":

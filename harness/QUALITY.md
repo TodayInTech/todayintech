@@ -16,6 +16,7 @@ make test-unit
 make test-collection
 make trace-collect
 make trace-preprocess
+make trace-write
 make fetch-trace-history
 make quality
 ```
@@ -30,6 +31,8 @@ make quality
 ├── collection.json
 ├── preprocessing.json
 ├── preprocessing-summary.md
+├── writer-decisions.json
+├── writer-decisions-summary.md
 └── summary.md
 ```
 
@@ -99,13 +102,14 @@ make fetch-trace-history
 [3/3] Writer
 ```
 
-Writer 내부에서는 Agent 편집, Markdown 작성, `briefed_articles` 상태 갱신을 다시 순서대로 기록한다. OpenAI Agent는 후보별 검토 순서, 게시/제외 결정, structured output 파싱 실패와 재시도 여부를 로그로 남긴다.
+Writer 내부에서는 Agent 편집, Markdown 작성, `briefed_articles` 상태 갱신을 다시 순서대로 기록한다. OpenAI Agent는 후보별 검토 순서, 게시/제외 결정, structured output 파싱 실패와 재시도 여부를 로그로 남긴다. Writer decision trace는 후보별 decision status, 선정/제외 이유, 판단 확신도, 요약 범위, 근거 목록을 JSON과 Markdown으로 저장한다.
 
 ## 운영 기준
 
 - fixture 기반 `make test`는 안정적인 개발 검증 용도이다.
 - `make trace-collect`는 실제 외부 source를 호출하므로 운영 트레이싱 용도이다.
 - `make trace-preprocess`는 collector raw snapshot을 기준으로 전처리 후보와 제외 사유를 기록한다.
+- `make trace-write`는 Writer Agent가 후보별로 내린 게시, 제외, 실패 판단과 근거를 기록한다.
 - 외부 네트워크 영향이 있으므로 trace duration은 강한 pass/fail 조건으로 사용하지 않는다.
 - 서비스별 article count가 0이면 `empty_collection` warning을 기록한다.
 - 일부 서비스 수집 실패는 trace에 기록하되, 성공한 서비스가 하나라도 있으면 collector CLI는 성공으로 종료한다.

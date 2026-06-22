@@ -1,6 +1,8 @@
 from src.processing.models import ArticleCandidate, PreprocessingResult
 from src.progress import log_info
 from src.writer.agent.schemas import (
+    AgentDecision,
+    AgentDecisionStatus,
     ArticleBriefing,
     EditorialResult,
     EditorialStatus,
@@ -13,8 +15,14 @@ class DraftNewsEditorAgent:
     def edit(self, preprocessing_result: PreprocessingResult) -> EditorialResult:
         total_candidates = sum(len(service.candidates) for service in preprocessing_result.services)
         log_info("Draft Agent", f"draft briefing 생성: candidates={total_candidates}")
+        decisions = [
+            self._create_draft_decision(candidate)
+            for service in preprocessing_result.services
+            for candidate in service.candidates
+        ]
         return EditorialResult(
             generated_for=preprocessing_result.generated_for,
+            decisions=decisions,
             services=[
                 ServiceWritingResult(
                     service_key=service.service_key,
@@ -25,6 +33,19 @@ class DraftNewsEditorAgent:
                 )
                 for service in preprocessing_result.services
             ],
+        )
+
+    def _create_draft_decision(self, candidate: ArticleCandidate) -> AgentDecision:
+        return AgentDecision(
+            candidate_id=candidate.candidate_id,
+            service_key=candidate.service_key,
+            service_name=candidate.service_name,
+            title=candidate.article.title,
+            normalized_url=candidate.normalized_url,
+            article_doc_path=candidate.suggested_article_path,
+            status=AgentDecisionStatus.DRAFT,
+            generation_method=GenerationMethod.DRAFT,
+            candidate_score=candidate.candidate_score,
         )
 
     def _create_draft_briefing(self, candidate: ArticleCandidate) -> ArticleBriefing:

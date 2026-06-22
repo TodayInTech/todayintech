@@ -16,6 +16,7 @@ make test-unit
 make test-collection
 make trace-collect
 make trace-preprocess
+make trace-write
 make fetch-trace-history
 make quality
 ```
@@ -30,6 +31,8 @@ make quality
 ├── collection.json
 ├── preprocessing.json
 ├── preprocessing-summary.md
+├── writer-decisions.json
+├── writer-decisions-summary.md
 └── summary.md
 ```
 
@@ -99,13 +102,14 @@ The full pipeline prints numbered progress logs so developers can see the curren
 [3/3] Writer
 ```
 
-Inside Writer, Agent editing, Markdown writing, and `briefed_articles` state updates are logged in order. The OpenAI Agent logs candidate review order, publish/skip decisions, structured output parse failures, and retry attempts.
+Inside Writer, Agent editing, Markdown writing, and `briefed_articles` state updates are logged in order. The OpenAI Agent logs candidate review order, publish/skip decisions, structured output parse failures, and retry attempts. Writer decision trace stores per-candidate decision status, publish/reject rationale, confidence score, summary scope, and evidence basis as JSON and Markdown.
 
 ## Operating Rules
 
 - Fixture-based `make test` is for stable development verification.
 - `make trace-collect` calls real external sources and is for operational tracing.
 - `make trace-preprocess` records preprocessing candidates and exclusion reasons from the collector raw snapshot.
+- `make trace-write` records Writer Agent publish, skip, and failure decisions with evidence for each candidate.
 - Trace duration is not used as a strict pass/fail condition because external network conditions can affect it.
 - A service with zero articles records an `empty_collection` warning.
 - Partial service failures are recorded in the trace, but the collector CLI exits successfully when at least one service succeeds.
