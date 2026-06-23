@@ -19,6 +19,8 @@ TRACE_DIR ?= .var/local/traces
 REPORT_DIR ?= .var/local/reports
 CI_RAW_DIR ?= .artifacts/raw
 CI_PROCESSED_DIR ?= .artifacts/processed
+CI_ENRICHED_DIR ?= .artifacts/enriched
+CI_ENRICHMENT_CACHE_DIR ?= .artifacts/enrichment-cache
 CI_TRACE_DIR ?= .artifacts/traces
 CI_REPORT_DIR ?= .artifacts/reports
 HOST ?= 127.0.0.1
@@ -70,8 +72,8 @@ WRITE_ARGS :=
 ifneq ($(strip $(DATE)),)
 WRITE_ARGS += --date $(DATE)
 endif
-ifneq ($(strip $(PROCESSED_DIR)),)
-WRITE_ARGS += --processed-dir $(PROCESSED_DIR)
+ifneq ($(strip $(ENRICHED_DIR)),)
+WRITE_ARGS += --enriched-dir $(ENRICHED_DIR)
 endif
 ifneq ($(strip $(OUTPUT_DIR)),)
 WRITE_ARGS += --output-dir $(OUTPUT_DIR)
@@ -111,7 +113,7 @@ help:
 	@echo ""
 	@echo "Writer:"
 	@echo "  make write"
-	@echo "  make write DATE=2026-06-07 PROCESSED_DIR=.var/local/processed OUTPUT_DIR=docs"
+	@echo "  make write DATE=2026-06-07 ENRICHED_DIR=.var/local/enriched OUTPUT_DIR=docs"
 	@echo "  make write WRITER_AGENT=openai"
 	@echo "  make generate-openai"
 	@echo "  make trace-collect"
@@ -163,6 +165,8 @@ help:
 	@echo "  REPORT_DIR    Test report output root. Default: .var/local/reports"
 	@echo "  CI_RAW_DIR    GitHub Actions raw output root. Default: .artifacts/raw"
 	@echo "  CI_PROCESSED_DIR GitHub Actions processed output root. Default: .artifacts/processed"
+	@echo "  CI_ENRICHED_DIR GitHub Actions enriched output root. Default: .artifacts/enriched"
+	@echo "  CI_ENRICHMENT_CACHE_DIR GitHub Actions enrichment cache root"
 	@echo "  CI_TRACE_DIR  GitHub Actions trace output root. Default: .artifacts/traces"
 	@echo "  CI_REPORT_DIR GitHub Actions report output root. Default: .artifacts/reports"
 	@echo "  HOST        Docusaurus local server host. Default: 127.0.0.1"
@@ -256,6 +260,7 @@ ci-quality:
 	TODAYINTECH_RAW_OUTPUT_DIR=$(CI_RAW_DIR) $(MAKE) test REPORT_DIR=$(CI_REPORT_DIR)
 	TODAYINTECH_RAW_OUTPUT_DIR=$(CI_RAW_DIR) $(MAKE) trace-collect OUTPUT_DIR=$(CI_RAW_DIR) TRACE_DIR=$(CI_TRACE_DIR)
 	TODAYINTECH_RAW_OUTPUT_DIR=$(CI_RAW_DIR) $(MAKE) trace-preprocess RAW_DIR=$(CI_RAW_DIR) PROCESSED_DIR=$(CI_PROCESSED_DIR) TRACE_DIR=$(CI_TRACE_DIR)
+	TODAYINTECH_PROCESSED_OUTPUT_DIR=$(CI_PROCESSED_DIR) $(MAKE) trace-enrich PROCESSED_DIR=$(CI_PROCESSED_DIR) ENRICHED_DIR=$(CI_ENRICHED_DIR) ENRICHMENT_CACHE_DIR=$(CI_ENRICHMENT_CACHE_DIR) TRACE_DIR=$(CI_TRACE_DIR)
 
 ci: verify
 

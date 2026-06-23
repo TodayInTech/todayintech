@@ -157,6 +157,11 @@ class ContentEnricher:
             policy_version=self.policy.version,
             records=records,
             candidates=enriched_candidates,
+            archived_articles=preprocessing_result.archived_articles,
+            service_names={
+                service.service_key: service.service_name
+                for service in preprocessing_result.services
+            },
         )
 
 

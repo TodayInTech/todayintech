@@ -247,12 +247,13 @@ News Editor Agent는 뉴스레터 편집자가 아니라 기술 글 큐레이터
 - Enrichment 단계는 `make enrich`로 실행한다.
 - Enrichment는 제한된 후보의 원문을 HTTP로 가져와 HTML 본문 구조를 보존하고, token budget에 따라 `full_content`, `chunk_selection`, `evidence_selection` 입력 전략을 결정한다.
 - Enrichment 결과는 `.var/local/enriched/{YYYY-MM-DD}/enrichment.json`에 저장하고 URL·extractor·chunker·policy 설정 기반 JSON 캐시를 사용한다.
-- Writer 단계는 `make write`로 실행한다.
+- Writer 단계는 `make write`로 실행하고 `.var/local/enriched/{YYYY-MM-DD}/enrichment.json`을 입력으로 사용한다.
 - Writer는 Agent와 Generator를 포함한다. Agent는 편집 결과를 만들고 Generator는 Markdown 파일만 쓴다.
 - 기본 Writer는 요약을 생성하지 않는 `DraftNewsEditorAgent`를 사용한다.
 - `TODAYINTECH_WRITER_AGENT=openai` 또는 `make write WRITER_AGENT=openai`를 사용하면 `OpenAINewsEditorAgent`를 사용한다.
-- OpenAI Agent는 원문 전체를 크롤링하지 않고, Collector와 Preprocessor가 제공한 제목, 피드 설명, 태그, 메타데이터, ranking signals만 사용한다.
-- 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행하며, 현재 Enrichment는 독립 실행까지만 구현되어 있고 Writer 연결은 후속 단계로 남아 있다.
+- OpenAI Agent는 Enrichment가 선택한 원문 chunk를 근거로 사용하며, `feed_metadata_only` fallback 후보에서만 피드 설명과 메타데이터로 판단 범위를 제한한다.
+- `chunk_selection`과 `evidence_selection` 후보는 Agent selector가 근거 chunk를 선택하기 전까지 Writer가 게시하지 않는다.
+- 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행하며 Collector, Preprocessor, Enrichment, Writer가 순서대로 연결되어 있다.
 
 1. Factory가 MVP 서비스 구현체를 생성한다.
 2. `NewsCollector`가 각 서비스 구현체의 collector strategy로 정보를 수집한다.

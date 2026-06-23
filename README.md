@@ -168,18 +168,18 @@ make enrich DATE=2026-06-23
 make trace-enrich
 ```
 
-HTML 본문은 heading, paragraph, list, code, table 단위로 보존하고 `o200k_base` tokenizer로 길이를 측정합니다. 4,000토큰 이하는 전체 본문을 사용하고, 그보다 긴 글은 의미 기반 근거 선택이 필요한 대상으로 표시합니다. 추출 결과는 `.var/local/enriched/{YYYY-MM-DD}/enrichment.json`, 캐시는 `.var/local/enrichment-cache/`에 저장됩니다. 현재 Writer와 전체 파이프라인에는 아직 연결되지 않았습니다.
+HTML 본문은 heading, paragraph, list, code, table 단위로 보존하고 `o200k_base` tokenizer로 길이를 측정합니다. 4,000토큰 이하는 전체 본문을 Writer 근거로 사용하고, 그보다 긴 글은 의미 기반 근거 선택이 필요한 대상으로 표시합니다. 추출 결과는 `.var/local/enriched/{YYYY-MM-DD}/enrichment.json`, 캐시는 `.var/local/enrichment-cache/`에 저장됩니다.
 
-Writer 단계만 실행하여 전처리 후보를 article archive Markdown 초안으로 생성합니다.
+Writer 단계만 실행하여 enrichment 결과를 article archive Markdown으로 생성합니다.
 
 ```bash
 make write
-make write DATE=2026-06-07 PROCESSED_DIR=.var/local/processed OUTPUT_DIR=docs
+make write DATE=2026-06-07 ENRICHED_DIR=.var/local/enriched OUTPUT_DIR=docs
 ```
 
 기본 Writer는 `DraftNewsEditorAgent`를 사용합니다. 이 단계는 요약, 왜 중요한가, 개발자 인사이트를 생성하지 않고 Writer/Generator 구조 검증을 위한 draft 문서만 만듭니다. 실제 OpenAI Agent를 사용하려면 `OPENAI_API_KEY`를 설정하고 `TODAYINTECH_WRITER_AGENT=openai` 또는 `make write WRITER_AGENT=openai`로 실행합니다.
 
-OpenAI Agent는 원문 전체를 크롤링하지 않고 Collector와 Preprocessor가 제공한 제목, 피드 설명, 태그, 메타데이터, ranking signals만 사용합니다. 개별 글은 고정 소제목이나 불릿 목록 없이 글의 주제, 핵심 내용, 기술적 의미를 연결한 자연스러운 한국어 요약 2~3문단으로 구성합니다. 선정 이유와 판단 근거는 공개 문서 대신 Writer trace에 기록합니다.
+OpenAI Agent는 Enrichment가 제공한 원문 근거를 우선 사용하고, 원문 추출 실패 시 허용된 후보만 피드 메타데이터 fallback을 사용합니다. 개별 글은 고정 소제목이나 불릿 목록 없이 글의 주제, 핵심 내용, 기술적 의미를 연결한 자연스러운 한국어 요약 2~3문단으로 구성합니다. 선정 이유와 판단 근거는 공개 문서 대신 Writer trace에 기록합니다.
 
 ```text
 docs/
@@ -188,7 +188,7 @@ docs/
 └── services/{service_key}/{suggested_doc_key}.md
 ```
 
-전체 파이프라인을 실행하여 수집, 전처리, Writer draft 문서 생성을 함께 수행합니다.
+전체 파이프라인을 실행하여 수집, 전처리, 원문 enrichment, Writer 문서 생성을 함께 수행합니다.
 
 ```bash
 .venv/bin/python -m src.main

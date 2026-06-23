@@ -1,5 +1,11 @@
 from datetime import UTC, datetime
 
+from src.enrichment.models import (
+    EnrichedArticleCandidate,
+    EnrichmentInputStrategy,
+    EnrichmentResult,
+    EnrichmentStatus,
+)
 from src.models import Article
 from src.processing.models import (
     ArticleCandidate,
@@ -55,8 +61,24 @@ def make_preprocessing_result() -> PreprocessingResult:
     )
 
 
+def make_enrichment_result() -> EnrichmentResult:
+    preprocessing = make_preprocessing_result()
+    candidate = preprocessing.services[0].candidates[0]
+    return EnrichmentResult(
+        generated_for=preprocessing.generated_for,
+        generated_at=preprocessing.generated_at,
+        candidates=[
+            EnrichedArticleCandidate(
+                candidate=candidate,
+                status=EnrichmentStatus.FALLBACK,
+                input_strategy=EnrichmentInputStrategy.FEED_METADATA_ONLY,
+            )
+        ],
+    )
+
+
 def test_draft_agent_creates_draft_briefing_without_editorial_body() -> None:
-    result = DraftNewsEditorAgent().edit(make_preprocessing_result())
+    result = DraftNewsEditorAgent().edit(make_enrichment_result())
     briefing = result.services[0].briefings[0]
 
     assert briefing.editorial_status == EditorialStatus.DRAFT

@@ -49,6 +49,19 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TODAYINTECH_TARGET_DATE: ${{ inputs.target_date }}
 
+      - name: Generate briefing
+        run: make generate-openai PYTHON=python
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TODAYINTECH_TARGET_DATE: ${{ inputs.target_date }}
+          TODAYINTECH_RAW_OUTPUT_DIR: .artifacts/raw
+          TODAYINTECH_PROCESSED_OUTPUT_DIR: .artifacts/processed
+          TODAYINTECH_ENRICHED_OUTPUT_DIR: .artifacts/enriched
+          TODAYINTECH_ENRICHMENT_CACHE_DIR: .artifacts/enrichment-cache
+          TODAYINTECH_TRACE_OUTPUT_DIR: .artifacts/traces
+          TODAYINTECH_MAX_CANDIDATES_PER_SERVICE: "4"
+          TODAYINTECH_MAX_CANDIDATES_TOTAL: "50"
+
       - name: Upload quality artifacts
         uses: actions/upload-artifact@v4
         if: always()
@@ -57,6 +70,7 @@ jobs:
           path: |
             .artifacts/raw/
             .artifacts/processed/
+            .artifacts/enriched/
             .artifacts/reports/
             .artifacts/traces/
           if-no-files-found: ignore
@@ -102,16 +116,6 @@ jobs:
           git -C "$TRACE_HISTORY_DIR" commit \
             -m "chore(trace): update operational trace history"
           git -C "$TRACE_HISTORY_DIR" push origin "$TRACE_HISTORY_BRANCH"
-
-      - name: Generate briefing
-        run: make generate-openai PYTHON=python
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          TODAYINTECH_TARGET_DATE: ${{ inputs.target_date }}
-          TODAYINTECH_RAW_OUTPUT_DIR: .artifacts/raw
-          TODAYINTECH_PROCESSED_OUTPUT_DIR: .artifacts/processed
-          TODAYINTECH_MAX_CANDIDATES_PER_SERVICE: "4"
-          TODAYINTECH_MAX_CANDIDATES_TOTAL: "50"
 
       - name: Publish generated archive state
         env:

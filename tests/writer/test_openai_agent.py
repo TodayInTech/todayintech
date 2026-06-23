@@ -3,6 +3,14 @@ from types import SimpleNamespace
 
 import pytest
 
+from src.enrichment.models import (
+    EnrichedArticleCandidate,
+    EnrichmentInputStrategy,
+    EnrichmentResult,
+    EnrichmentStatus,
+    EvidenceChunk,
+    ExtractedDocument,
+)
 from src.models import Article
 from src.processing.models import (
     ArticleCandidate,
@@ -98,13 +106,49 @@ def make_preprocessing_result() -> PreprocessingResult:
     )
 
 
+def make_enrichment_result(
+    *,
+    strategy: EnrichmentInputStrategy = EnrichmentInputStrategy.FULL_CONTENT,
+) -> EnrichmentResult:
+    preprocessing = make_preprocessing_result()
+    candidate = preprocessing.services[0].candidates[0]
+    chunk = EvidenceChunk(
+        chunk_id="chunk-0001",
+        heading_path=["Developer update"],
+        text="OpenAI describes concrete developer tooling changes and their integration context.",
+        block_ids=["block-0001"],
+        token_count=14,
+        position=0,
+    )
+    selected_chunks = [chunk] if strategy == EnrichmentInputStrategy.FULL_CONTENT else []
+    return EnrichmentResult(
+        generated_for=preprocessing.generated_for,
+        generated_at=preprocessing.generated_at,
+        candidates=[
+            EnrichedArticleCandidate(
+                candidate=candidate,
+                status=EnrichmentStatus.ENRICHED,
+                input_strategy=strategy,
+                document=ExtractedDocument(
+                    plain_text=chunk.text,
+                    content_hash="abc",
+                    char_count=len(chunk.text),
+                    token_count=chunk.token_count,
+                ),
+                chunks=[chunk],
+                selected_chunks=selected_chunks,
+            )
+        ],
+    )
+
+
 def test_openai_agent_creates_published_briefing_from_structured_output() -> None:
     decision = OpenAIArticleDecision(
         should_publish=True,
         category="AI",
         importance_level="High",
         confidence_score=0.82,
-        summary_scope="feed_metadata_only",
+        summary_scope="full_content",
         publish_reason_ko="개발자 워크플로에 영향을 줄 수 있는 업데이트입니다.",
         evidence_basis_ko=["피드 설명이 개발자 업데이트를 언급합니다."],
         summary_ko=(
@@ -117,7 +161,7 @@ def test_openai_agent_creates_published_briefing_from_structured_output() -> Non
     client = FakeOpenAIClient(decision)
     agent = OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini", client=client)
 
-    result = agent.edit(make_preprocessing_result())
+    result = agent.edit(make_enrichment_result())
     briefing = result.services[0].briefings[0]
 
     assert briefing.editorial_status == EditorialStatus.PUBLISHED
@@ -125,7 +169,7 @@ def test_openai_agent_creates_published_briefing_from_structured_output() -> Non
     assert briefing.category == "AI"
     assert briefing.importance_level == "High"
     assert briefing.confidence_score == 0.82
-    assert briefing.summary_scope == "feed_metadata_only"
+    assert briefing.summary_scope == "full_content"
     assert briefing.publish_reason_ko == "개발자 워크플로에 영향을 줄 수 있는 업데이트입니다."
     assert briefing.evidence_basis_ko == ["피드 설명이 개발자 업데이트를 언급합니다."]
     assert briefing.summary_ko == decision.summary_ko
@@ -133,6 +177,8 @@ def test_openai_agent_creates_published_briefing_from_structured_output() -> Non
     assert result.decisions[0].publish_reason_ko == decision.publish_reason_ko
     assert result.decisions[0].confidence_score == 0.82
     assert "OpenAI developer feed summary" in client.responses.last_input
+    assert "chunk-0001" in client.responses.last_input
+    assert "concrete developer tooling changes" in client.responses.last_input
     assert "ranking_reasons_ko" in client.responses.last_input
     assert "500~900자" in client.responses.last_input
     assert "2~3문단" in client.responses.last_input
@@ -149,7 +195,7 @@ def test_openai_agent_skips_candidate_when_decision_says_not_to_publish() -> Non
     )
     agent = OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini", client=client)
 
-    result = agent.edit(make_preprocessing_result())
+    result = agent.edit(make_enrichment_result())
 
     assert result.services[0].briefings == []
     assert result.decisions[0].status == AgentDecisionStatus.SKIPPED
@@ -169,7 +215,7 @@ def test_openai_agent_retries_when_structured_output_parse_fails() -> None:
     client = RetryOpenAIClient(decision)
     agent = OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini", client=client)
 
-    result = agent.edit(make_preprocessing_result())
+    result = agent.edit(make_enrichment_result())
 
     assert client.responses.calls == 2
     assert result.services[0].briefings[0].category == "AI"
@@ -190,12 +236,24 @@ def test_openai_agent_skips_candidate_when_structured_output_parse_keeps_failing
     client = AlwaysFailingOpenAIClient()
     agent = OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini", client=client)
 
-    result = agent.edit(make_preprocessing_result())
+    result = agent.edit(make_enrichment_result())
 
     assert client.responses.calls == 2
     assert result.services[0].briefings == []
     assert result.decisions[0].status == AgentDecisionStatus.FAILED
     assert result.decisions[0].error_message
+
+
+def test_openai_agent_skips_unselected_long_content_without_api_call() -> None:
+    decision = OpenAIArticleDecision(should_publish=True)
+    client = FakeOpenAIClient(decision)
+    agent = OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini", client=client)
+
+    result = agent.edit(make_enrichment_result(strategy=EnrichmentInputStrategy.CHUNK_SELECTION))
+
+    assert result.services[0].briefings == []
+    assert result.decisions[0].status == AgentDecisionStatus.SKIPPED
+    assert client.responses.last_input == ""
 
 
 def test_openai_agent_requires_api_key_without_injected_client() -> None:

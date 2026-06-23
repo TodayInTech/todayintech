@@ -1,10 +1,17 @@
 import json
+from collections import defaultdict
 
 from openai import OpenAI
 from pydantic import ValidationError
 
+from src.enrichment.models import (
+    EnrichedArticleCandidate,
+    EnrichmentInputStrategy,
+    EnrichmentResult,
+    EnrichmentStatus,
+)
 from src.generator.markdown_safety import normalize_markdown_text
-from src.processing.models import ArticleCandidate, PreprocessingResult
+from src.processing.models import ArticleCandidate
 from src.progress import log_info
 from src.writer.agent.schemas import (
     AgentDecision,
@@ -20,10 +27,10 @@ from src.writer.agent.schemas import (
 SYSTEM_INSTRUCTIONS = """
 You are the News Editor Agent for Today in Tech.
 
-Write Korean editorial briefings from the provided candidate metadata only.
-Do not claim that you read the full source article.
-Do not invent details that are not present in the title, feed summary, tags, metadata, or ranking signals.
-If information is limited, say so in Korean using phrasing like "피드 기준으로는" or "제공된 정보만 보면".
+Write Korean editorial briefings only from the evidence included in the input packet.
+Do not invent details that are absent from the supplied source evidence or feed metadata.
+When the packet is feed_metadata_only, limit claims using phrasing like
+"피드 기준으로는" or "제공된 정보만 보면".
 
 The article page should read like a short editorial briefing, not a rigid report.
 Write one cohesive Korean summary in two or three paragraphs.
@@ -52,18 +59,30 @@ class OpenAINewsEditorAgent:
         self.max_output_tokens = max_output_tokens
         self.retry_max_output_tokens = retry_max_output_tokens
 
-    def edit(self, preprocessing_result: PreprocessingResult) -> EditorialResult:
+    def edit(self, enrichment_result: EnrichmentResult) -> EditorialResult:
         services: list[ServiceWritingResult] = []
         decisions: list[AgentDecision] = []
-        total_candidates = sum(len(service.candidates) for service in preprocessing_result.services)
+        total_candidates = len(enrichment_result.candidates)
         processed_count = 0
         published_count = 0
         log_info(
             "OpenAI Agent", f"후보 검토 시작: candidates={total_candidates}, model={self.model}"
         )
-        for service in preprocessing_result.services:
+        candidates_by_service: dict[str, list[EnrichedArticleCandidate]] = defaultdict(list)
+        for enriched in enrichment_result.candidates:
+            candidates_by_service[enriched.candidate.service_key].append(enriched)
+        service_names = dict(enrichment_result.service_names)
+        for enriched in enrichment_result.candidates:
+            service_names.setdefault(
+                enriched.candidate.service_key,
+                enriched.candidate.service_name,
+            )
+
+        for service_key in sorted(service_names):
+            enriched_candidates = candidates_by_service.get(service_key, [])
             briefings: list[ArticleBriefing] = []
-            for candidate in service.candidates:
+            for enriched in enriched_candidates:
+                candidate = enriched.candidate
                 processed_count += 1
                 log_info(
                     "OpenAI Agent",
@@ -72,7 +91,7 @@ class OpenAINewsEditorAgent:
                         f"{candidate.service_key} / {candidate.article.title}"
                     ),
                 )
-                briefing, agent_decision = self._review_candidate(candidate)
+                briefing, agent_decision = self._review_candidate(enriched)
                 decisions.append(agent_decision)
                 if briefing is not None:
                     published_count += 1
@@ -92,8 +111,8 @@ class OpenAINewsEditorAgent:
 
             services.append(
                 ServiceWritingResult(
-                    service_key=service.service_key,
-                    service_name=service.service_name,
+                    service_key=service_key,
+                    service_name=service_names[service_key],
                     briefings=briefings,
                 )
             )
@@ -103,16 +122,27 @@ class OpenAINewsEditorAgent:
             f"후보 검토 완료: reviewed={processed_count}, published={published_count}",
         )
         return EditorialResult(
-            generated_for=preprocessing_result.generated_for,
+            generated_for=enrichment_result.generated_for,
             services=services,
             decisions=decisions,
         )
 
     def _review_candidate(
         self,
-        candidate: ArticleCandidate,
+        enriched: EnrichedArticleCandidate,
     ) -> tuple[ArticleBriefing | None, AgentDecision]:
-        decision, error_message = self._parse_decision(candidate)
+        candidate = enriched.candidate
+        if not self._has_writer_evidence(enriched):
+            return None, self._agent_decision(
+                candidate,
+                status=AgentDecisionStatus.SKIPPED,
+                error_message=(
+                    enriched.failure_detail
+                    or f"Writer evidence unavailable for {enriched.input_strategy.value}"
+                ),
+            )
+
+        decision, error_message = self._parse_decision(enriched)
         if decision is None:
             return None, self._agent_decision(
                 candidate,
@@ -163,9 +193,10 @@ class OpenAINewsEditorAgent:
 
     def _parse_decision(
         self,
-        candidate: ArticleCandidate,
+        enriched: EnrichedArticleCandidate,
     ) -> tuple[OpenAIArticleDecision | None, str | None]:
-        prompt = self._candidate_prompt(candidate)
+        candidate = enriched.candidate
+        prompt = self._candidate_prompt(enriched)
         token_limits = [self.max_output_tokens, self.retry_max_output_tokens]
         last_error: str | None = None
         for attempt, max_output_tokens in enumerate(token_limits, start=1):
@@ -227,7 +258,8 @@ class OpenAINewsEditorAgent:
             error_message=error_message,
         )
 
-    def _candidate_prompt(self, candidate: ArticleCandidate) -> str:
+    def _candidate_prompt(self, enriched: EnrichedArticleCandidate) -> str:
+        candidate = enriched.candidate
         article = candidate.article
         payload = {
             "candidate_id": candidate.candidate_id,
@@ -245,14 +277,23 @@ class OpenAINewsEditorAgent:
             "candidate_score": candidate.candidate_score,
             "ranking_signals": candidate.ranking_signals.compact_dict(),
             "ranking_reasons_ko": candidate.ranking_reasons_ko,
+            "evidence_scope": enriched.input_strategy.value,
+            "source_evidence": [
+                {
+                    "chunk_id": chunk.chunk_id,
+                    "heading_path": chunk.heading_path,
+                    "text": chunk.text,
+                }
+                for chunk in enriched.selected_chunks
+            ],
         }
         return (
-            "다음 JSON 후보를 검토해서 Today in Tech에 게시할 브리핑을 작성하세요.\n"
+            "다음 JSON 후보와 근거를 검토해서 Today in Tech에 게시할 브리핑을 작성하세요.\n"
             "게시 가치가 낮으면 should_publish=false를 반환하세요.\n"
-            "summary_scope는 현재 제공된 후보 메타데이터만 사용하므로 feed_metadata_only로 설정하세요.\n"
+            f"summary_scope는 evidence_scope 값인 {enriched.input_strategy.value}로 설정하세요.\n"
             "confidence_score는 0.0~1.0 사이로 판단 확신도를 표시하세요.\n"
             "publish_reason_ko 또는 reject_reason_ko 중 결정에 맞는 필드를 채우세요.\n"
-            "evidence_basis_ko에는 제목, 피드 설명, 메타데이터, ranking signal 중 실제 판단 근거만 적으세요.\n"
+            "evidence_basis_ko에는 실제 사용한 source_evidence chunk_id 또는 피드 메타데이터 항목만 적으세요.\n"
             "게시한다면 summary_ko에 500~900자 분량의 자연스러운 한국어 요약을 작성하세요.\n"
             "요약은 글의 성격과 제공된 정보량에 맞춰 2~3문단으로 구성하세요.\n"
             "첫 문장과 문단 구성을 고정하지 말고 글의 주제에 가장 자연스러운 방식으로 시작하세요.\n"
@@ -263,6 +304,15 @@ class OpenAINewsEditorAgent:
             "요약 안에 제목, 소제목, 불릿, 원문 링크, 선정 이유, 확신도, 판단 근거 목록을 넣지 마세요.\n"
             "정중한 해설체를 사용하되 번역투, 홍보 문구, 과장된 평가를 피하세요.\n\n"
             f"{json.dumps(payload, ensure_ascii=False, indent=2)}"
+        )
+
+    def _has_writer_evidence(self, enriched: EnrichedArticleCandidate) -> bool:
+        if enriched.status == EnrichmentStatus.FALLBACK:
+            return enriched.input_strategy == EnrichmentInputStrategy.FEED_METADATA_ONLY
+        return (
+            enriched.status == EnrichmentStatus.ENRICHED
+            and enriched.input_strategy == EnrichmentInputStrategy.FULL_CONTENT
+            and bool(enriched.selected_chunks)
         )
 
 

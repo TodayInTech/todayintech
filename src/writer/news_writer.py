@@ -2,7 +2,8 @@ from pathlib import Path
 
 from pydantic import BaseModel, Field
 
-from src.processing.models import ArchivedArticle, PreprocessingResult
+from src.enrichment.models import EnrichmentResult
+from src.processing.models import ArchivedArticle
 from src.processing.state.briefed_article_store import BriefedArticleStore
 from src.progress import log_info
 from src.tracing import write_writer_decision_trace
@@ -37,9 +38,9 @@ class NewsWriter:
         self.trace_output_dir = trace_output_dir
         self.agent_name = agent_name
 
-    def write(self, preprocessing_result: PreprocessingResult) -> WriterResult:
+    def write(self, enrichment_result: EnrichmentResult) -> WriterResult:
         log_info("Writer", "1. Agent 편집 결과 생성 시작")
-        editorial_result = self.agent.edit(preprocessing_result)
+        editorial_result = self.agent.edit(enrichment_result)
         total_briefings = sum(len(service.briefings) for service in editorial_result.services)
         log_info(
             "Writer",
@@ -80,9 +81,7 @@ class NewsWriter:
         self.briefed_article_store.save()
         log_info("Writer", "3. briefed_articles 상태 갱신 완료")
 
-        archived_articles = self._archive_articles_for_indexes(
-            preprocessing_result, editorial_result
-        )
+        archived_articles = self._archive_articles_for_indexes(enrichment_result, editorial_result)
         for service in editorial_result.services:
             written_paths.append(
                 write_service_index_markdown(self.output_dir, service, archived_articles)
@@ -96,14 +95,14 @@ class NewsWriter:
         if self.trace_output_dir is not None:
             trace_paths = write_writer_decision_trace(
                 self.trace_output_dir,
-                generated_for=preprocessing_result.generated_for,
+                generated_for=enrichment_result.generated_for,
                 agent_name=self.agent_name,
                 decisions=editorial_result.decisions,
             )
             log_info("Writer", f"4. Agent decision trace 작성 완료: files={len(trace_paths)}")
 
         return WriterResult(
-            generated_for=preprocessing_result.generated_for,
+            generated_for=enrichment_result.generated_for,
             editorial_result=editorial_result,
             agent_decisions=editorial_result.decisions,
             written_paths=written_paths,
@@ -112,11 +111,11 @@ class NewsWriter:
 
     def _archive_articles_for_indexes(
         self,
-        preprocessing_result: PreprocessingResult,
+        enrichment_result: EnrichmentResult,
         editorial_result: EditorialResult,
     ) -> list[ArchivedArticle]:
         archived_by_path = {
-            article.article_doc_path: article for article in preprocessing_result.archived_articles
+            article.article_doc_path: article for article in enrichment_result.archived_articles
         }
         for service in editorial_result.services:
             for briefing in service.briefings:

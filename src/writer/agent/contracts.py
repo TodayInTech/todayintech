@@ -1,10 +1,10 @@
 from typing import Protocol
 
-from src.processing.models import PreprocessingResult
+from src.enrichment.models import EnrichmentResult
 from src.writer.agent.schemas import EditorialResult
 
 
 class NewsEditorAgent(Protocol):
-    def edit(self, preprocessing_result: PreprocessingResult) -> EditorialResult:
-        """Create an editorial result from preprocessed candidates."""
+    def edit(self, enrichment_result: EnrichmentResult) -> EditorialResult:
+        """Create an editorial result from enriched candidates."""
         ...

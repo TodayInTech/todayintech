@@ -3,7 +3,7 @@ from enum import StrEnum
 
 from pydantic import BaseModel, Field
 
-from src.processing.models import ArticleCandidate
+from src.processing.models import ArchivedArticle, ArticleCandidate
 
 
 class EnrichmentStatus(StrEnum):
@@ -146,3 +146,5 @@ class EnrichmentResult(BaseModel):
     policy_version: str = "1"
     records: list[EnrichmentRecord] = Field(default_factory=list)
     candidates: list[EnrichedArticleCandidate] = Field(default_factory=list)
+    archived_articles: list[ArchivedArticle] = Field(default_factory=list)
+    service_names: dict[str, str] = Field(default_factory=dict)

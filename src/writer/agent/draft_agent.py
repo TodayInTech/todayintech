@@ -1,4 +1,7 @@
-from src.processing.models import ArticleCandidate, PreprocessingResult
+from collections import defaultdict
+
+from src.enrichment.models import EnrichedArticleCandidate, EnrichmentResult
+from src.processing.models import ArticleCandidate
 from src.progress import log_info
 from src.writer.agent.schemas import (
     AgentDecision,
@@ -12,26 +15,36 @@ from src.writer.agent.schemas import (
 
 
 class DraftNewsEditorAgent:
-    def edit(self, preprocessing_result: PreprocessingResult) -> EditorialResult:
-        total_candidates = sum(len(service.candidates) for service in preprocessing_result.services)
+    def edit(self, enrichment_result: EnrichmentResult) -> EditorialResult:
+        total_candidates = len(enrichment_result.candidates)
         log_info("Draft Agent", f"draft briefing 생성: candidates={total_candidates}")
         decisions = [
-            self._create_draft_decision(candidate)
-            for service in preprocessing_result.services
-            for candidate in service.candidates
+            self._create_draft_decision(enriched.candidate)
+            for enriched in enrichment_result.candidates
         ]
+        candidates_by_service: dict[str, list[EnrichedArticleCandidate]] = defaultdict(list)
+        for enriched in enrichment_result.candidates:
+            candidates_by_service[enriched.candidate.service_key].append(enriched)
+        service_names = dict(enrichment_result.service_names)
+        for enriched in enrichment_result.candidates:
+            service_names.setdefault(
+                enriched.candidate.service_key,
+                enriched.candidate.service_name,
+            )
         return EditorialResult(
-            generated_for=preprocessing_result.generated_for,
+            generated_for=enrichment_result.generated_for,
             decisions=decisions,
             services=[
                 ServiceWritingResult(
-                    service_key=service.service_key,
-                    service_name=service.service_name,
+                    service_key=service_key,
+                    service_name=service_names[service_key],
                     briefings=[
-                        self._create_draft_briefing(candidate) for candidate in service.candidates
+                        self._create_draft_briefing(enriched.candidate)
+                        for enriched in enriched_candidates
                     ],
                 )
-                for service in preprocessing_result.services
+                for service_key in sorted(service_names)
+                for enriched_candidates in [candidates_by_service.get(service_key, [])]
             ],
         )
 

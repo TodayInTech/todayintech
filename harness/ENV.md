@@ -57,11 +57,11 @@
 
 ## 현재 코드 사용 지점
 
-- `src/main.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.writer_agent`, `SETTINGS.openai_api_key`, `SETTINGS.openai_model`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`, `SETTINGS.output_dir`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`
+- `src/main.py`: Collector, Preprocessor, Enrichment, Writer의 입출력 경로와 enrichment 정책 설정
 - `src/collection/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`
 - `src/processing/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`
 - `src/enrichment/__main__.py`: enrichment 출력·캐시 경로, HTTP 요청, token budget, chunk 크기 설정
-- `src/writer/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.writer_agent`, `SETTINGS.openai_api_key`, `SETTINGS.openai_model`, `SETTINGS.processed_output_dir`, `SETTINGS.output_dir`, `SETTINGS.briefed_articles_path`
+- `src/writer/__main__.py`: `SETTINGS.resolve_target_date()`, Writer Agent 설정, `SETTINGS.enriched_output_dir`, `SETTINGS.output_dir`, `SETTINGS.briefed_articles_path`
 
 ## 추가 시 체크리스트
 

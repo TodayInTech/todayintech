@@ -6,7 +6,12 @@ from collections.abc import Iterable
 from datetime import UTC, datetime
 from pathlib import Path
 
-from src.enrichment.models import EnrichmentRecord, EnrichmentResult, EnrichmentStatus
+from src.enrichment.models import (
+    EnrichmentInputStrategy,
+    EnrichmentRecord,
+    EnrichmentResult,
+    EnrichmentStatus,
+)
 
 
 def build_enrichment_trace(result: EnrichmentResult) -> dict[str, object]:
@@ -20,6 +25,7 @@ def build_enrichment_trace(result: EnrichmentResult) -> dict[str, object]:
         record.status in {EnrichmentStatus.ENRICHED, EnrichmentStatus.FALLBACK}
         for record in records
     )
+    writer_ready_count = sum(_is_writer_ready(record) for record in records)
     enriched_token_counts = [
         record.extracted_token_count
         for record in records
@@ -42,6 +48,8 @@ def build_enrichment_trace(result: EnrichmentResult) -> dict[str, object]:
         "candidate_count": len(records),
         "usable_count": usable_count,
         "usable_rate": _percentage(usable_count, len(records)),
+        "writer_ready_count": writer_ready_count,
+        "writer_ready_rate": _percentage(writer_ready_count, len(records)),
         "cache_hit_count": cache_hit_count,
         "cache_hit_rate": _percentage(cache_hit_count, len(records)),
         "status_counts": status_counts,
@@ -90,6 +98,10 @@ def build_enrichment_trace_markdown(trace: dict[str, object]) -> str:
         f"- Duration: {trace['duration_ms']} ms",
         f"- Candidates: {trace['candidate_count']}",
         f"- Usable candidates: {trace['usable_count']} ({trace['usable_rate']}%)",
+        (
+            f"- Writer-ready candidates: {trace['writer_ready_count']} "
+            f"({trace['writer_ready_rate']}%)"
+        ),
         f"- Status counts: {_format_counts(status_counts)}",
         f"- Input strategies: {_format_counts(strategy_counts)}",
         f"- Failure reasons: {_format_counts(failure_counts)}",
@@ -208,6 +220,16 @@ def _stage_status(records: list[EnrichmentRecord], usable_count: int) -> str:
     if usable_count == 0:
         return "failed"
     return "partial"
+
+
+def _is_writer_ready(record: EnrichmentRecord) -> bool:
+    if record.status == EnrichmentStatus.FALLBACK:
+        return record.input_strategy == EnrichmentInputStrategy.FEED_METADATA_ONLY
+    return (
+        record.status == EnrichmentStatus.ENRICHED
+        and record.input_strategy == EnrichmentInputStrategy.FULL_CONTENT
+        and record.selected_token_count > 0
+    )
 
 
 def _token_distribution(values: list[int]) -> dict[str, int]:

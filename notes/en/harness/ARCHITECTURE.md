@@ -294,7 +294,7 @@ Outputs:
 
 ## Writer
 
-The Writer currently receives `ArticleCandidate` objects from the Preprocessor and turns them into documentation output. Once Enrichment is connected, Writer will receive candidates augmented with source evidence. Writer contains Agent and Generator responsibilities.
+Writer receives `EnrichmentResult`. `full_content` candidates use structured source chunks, while `feed_metadata_only` candidates use limited fallback evidence. Unselected `chunk_selection` and `evidence_selection` candidates are not published.
 
 - Writer Agent selects candidates and creates editorial results.
 - Writer Generator only writes Markdown from Agent results.
@@ -304,13 +304,13 @@ The Writer currently receives `ArticleCandidate` objects from the Preprocessor a
 - The default implementation uses `DraftNewsEditorAgent`. The Draft Agent does not generate summaries, why-it-matters text, or developer insights; it only creates `editorial_status=draft` documents.
 - Use `TODAYINTECH_WRITER_AGENT=openai` to enable `OpenAINewsEditorAgent` with structured output for publish decisions, publish/reject rationale, confidence score, summary scope, evidence basis, and a natural long-form Korean summary.
 - Public article pages show only the cohesive two-to-three-paragraph summary and source link. Publish rationale, confidence, evidence scope, and evidence lists remain in Writer traces.
-- The OpenAI Agent does not perform full text crawling. It only uses candidate title, feed summary, tags, metadata, and ranking signals.
+- The OpenAI Agent uses only source evidence selected by Enrichment plus candidate metadata.
 
 Writer execution:
 
 ```bash
 make write
-make write DATE=2026-06-07 PROCESSED_DIR=.var/local/processed OUTPUT_DIR=docs
+make write DATE=2026-06-07 ENRICHED_DIR=.var/local/enriched OUTPUT_DIR=docs
 make write WRITER_AGENT=openai
 make generate-openai
 ```

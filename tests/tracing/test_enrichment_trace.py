@@ -98,6 +98,8 @@ def test_build_enrichment_trace_aggregates_quality_and_strategy_metrics() -> Non
     assert trace["candidate_count"] == 4
     assert trace["usable_count"] == 3
     assert trace["usable_rate"] == 75.0
+    assert trace["writer_ready_count"] == 2
+    assert trace["writer_ready_rate"] == 50.0
     assert trace["cache_hit_rate"] == 0
     assert trace["policy_name"] == "default"
     assert trace["policy_version"] == "1"

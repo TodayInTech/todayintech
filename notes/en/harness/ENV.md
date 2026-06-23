@@ -57,11 +57,11 @@ When an environment variable is added, removed, or renamed, update `.env.example
 
 ## Current Code Usage
 
-- `src/main.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.writer_agent`, `SETTINGS.openai_api_key`, `SETTINGS.openai_model`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`, `SETTINGS.output_dir`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`
+- `src/main.py`: Collector, Preprocessor, Enrichment, and Writer paths plus enrichment policy settings
 - `src/collection/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`
 - `src/processing/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`
 - `src/enrichment/__main__.py`: enrichment output/cache paths, HTTP request, token budget, and chunk size settings
-- `src/writer/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.writer_agent`, `SETTINGS.openai_api_key`, `SETTINGS.openai_model`, `SETTINGS.processed_output_dir`, `SETTINGS.output_dir`, `SETTINGS.briefed_articles_path`
+- `src/writer/__main__.py`: target date, Writer Agent settings, `enriched_output_dir`, output path, and briefed state
 
 ## Addition Checklist
 

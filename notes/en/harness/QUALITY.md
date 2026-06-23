@@ -97,6 +97,7 @@ The default checkout path is `.var/remote/tracing-history`.
 - Preprocessing excluded count
 - Preprocessing excluded reason count
 - Enrichment usable count and usable rate overall and by service
+- Writer-ready count and rate for immediately consumable evidence
 - Enrichment status and Agent input strategy distributions
 - Source HTTP status, MIME type, response size, and fetch/extraction/selection durations
 - Extractor and policy versions plus cache usage
@@ -119,15 +120,16 @@ Enrichment traces do not store source text or chunk text. They store only `conte
 
 ## Runtime Logs
 
-The current full pipeline prints the following three numbered stages.
+The full pipeline prints the following four numbered stages.
 
 ```text
-[1/3] Collector
-[2/3] Preprocessor
-[3/3] Writer
+[1/4] Collector
+[2/4] Preprocessor
+[3/4] Enrichment
+[4/4] Writer
 ```
 
-Enrichment currently runs independently through `make enrich` or `make trace-enrich`. After Writer integration, the full pipeline log will expand to Collector, Preprocessor, Enrichment, and Writer.
+Enrichment can also run independently through `make enrich` or `make trace-enrich`.
 
 Inside Writer, Agent editing, Markdown writing, and `briefed_articles` state updates are logged in order. The OpenAI Agent logs candidate review order, publish/skip decisions, structured output parse failures, and retry attempts. Writer decision trace stores per-candidate decision status, publish/reject rationale, confidence score, summary scope, and evidence basis as JSON and Markdown.
 

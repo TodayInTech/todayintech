@@ -67,7 +67,7 @@
   - [x] 구조 보존 chunker와 적응형 token budget policy 구현
   - [x] enrichment pipeline factory, JSON cache, storage, 독립 CLI 구성
   - [ ] Agent 기반 chunk/evidence selector 구현
-  - [ ] Writer 입력과 전체 파이프라인 연결
+  - [x] Writer 입력과 전체 파이프라인 연결
 
 - [ ] Writer - 진행 중
   - [x] Writer 패키지 구조 추가
@@ -96,5 +96,5 @@
 ## 다음 작업 후보
 
 - Agent 기반 chunk/evidence selector 구현
-- Writer 입력을 `EnrichedArticleCandidate`로 전환
-- 전체 파이프라인과 GitHub Actions trace 보존 순서 연결
+- enrichment cache 영속화와 GitHub Actions 비용 최적화
+- Agent claim-evidence 검증 추가

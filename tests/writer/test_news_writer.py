@@ -1,5 +1,11 @@
 from datetime import UTC, datetime
 
+from src.enrichment.models import (
+    EnrichedArticleCandidate,
+    EnrichmentInputStrategy,
+    EnrichmentResult,
+    EnrichmentStatus,
+)
 from src.models import Article
 from src.processing.models import (
     ArchivedArticle,
@@ -57,6 +63,22 @@ def make_preprocessing_result() -> PreprocessingResult:
     )
 
 
+def make_enrichment_result() -> EnrichmentResult:
+    preprocessing = make_preprocessing_result()
+    return EnrichmentResult(
+        generated_for=preprocessing.generated_for,
+        generated_at=preprocessing.generated_at,
+        candidates=[
+            EnrichedArticleCandidate(
+                candidate=preprocessing.services[0].candidates[0],
+                status=EnrichmentStatus.FALLBACK,
+                input_strategy=EnrichmentInputStrategy.FEED_METADATA_ONLY,
+            )
+        ],
+        archived_articles=preprocessing.archived_articles,
+    )
+
+
 def test_news_writer_writes_articles_indexes_and_draft_state(tmp_path) -> None:
     store = BriefedArticleStore(tmp_path / "briefed_articles.json")
     writer = NewsWriter(
@@ -65,7 +87,7 @@ def test_news_writer_writes_articles_indexes_and_draft_state(tmp_path) -> None:
         briefed_article_store=store,
     )
 
-    result = writer.write(make_preprocessing_result())
+    result = writer.write(make_enrichment_result())
 
     article_path = tmp_path.joinpath(
         "docs",
@@ -97,16 +119,16 @@ def test_news_writer_writes_articles_indexes_and_draft_state(tmp_path) -> None:
 
 
 def test_news_writer_records_published_state_for_llm_briefing(tmp_path) -> None:
-    preprocessing_result = make_preprocessing_result()
-    briefing = DraftNewsEditorAgent().edit(preprocessing_result).services[0].briefings[0]
+    enrichment_result = make_enrichment_result()
+    briefing = DraftNewsEditorAgent().edit(enrichment_result).services[0].briefings[0]
     briefing.editorial_status = EditorialStatus.PUBLISHED
     briefing.generation_method = GenerationMethod.LLM
     briefing.category = "AI"
     briefing.summary_ko = "피드 기준으로 개발자 업데이트를 다룬 글입니다."
 
     class PublishedAgent:
-        def edit(self, _preprocessing_result):
-            result = DraftNewsEditorAgent().edit(_preprocessing_result)
+        def edit(self, _enrichment_result):
+            result = DraftNewsEditorAgent().edit(_enrichment_result)
             result.services[0].briefings = [briefing]
             return result
 
@@ -116,7 +138,7 @@ def test_news_writer_records_published_state_for_llm_briefing(tmp_path) -> None:
         briefed_article_store=BriefedArticleStore(tmp_path / "briefed_articles.json"),
     )
 
-    writer.write(preprocessing_result)
+    writer.write(enrichment_result)
 
     reloaded = BriefedArticleStore(tmp_path / "briefed_articles.json")
     record = reloaded.state.articles[BriefedArticleStore.key_for_url("https://example.com/agent")]
@@ -136,6 +158,8 @@ def test_news_writer_keeps_cumulative_articles_in_indexes(tmp_path) -> None:
             candidate_score=10,
         )
     ]
+    enrichment_result = make_enrichment_result()
+    enrichment_result.archived_articles = preprocessing_result.archived_articles
 
     writer = NewsWriter(
         agent=DraftNewsEditorAgent(),
@@ -143,7 +167,7 @@ def test_news_writer_keeps_cumulative_articles_in_indexes(tmp_path) -> None:
         briefed_article_store=BriefedArticleStore(tmp_path / "briefed_articles.json"),
     )
 
-    writer.write(preprocessing_result)
+    writer.write(enrichment_result)
 
     service_content = tmp_path.joinpath("docs", "services", "hacker-news.md").read_text(
         encoding="utf-8"
@@ -169,7 +193,7 @@ def test_news_writer_writes_agent_decision_trace_when_enabled(tmp_path) -> None:
         agent_name="draft",
     )
 
-    result = writer.write(make_preprocessing_result())
+    result = writer.write(make_enrichment_result())
 
     assert tmp_path.joinpath("traces", "2026-06-11", "writer-decisions.json") in (
         result.trace_paths
