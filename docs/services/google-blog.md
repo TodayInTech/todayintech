@@ -12,19 +12,20 @@ Google Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 
 - [Interactions API: our primary interface for Gemini models and agents](./google-blog/2026-06-interactions-api-our-primary-interface-for-gemini-models-and-agents-d7460632.md) `published` / score 51.0
 - [New research shows how AMIE, our medical AI, could help manage health conditions.](./google-blog/2026-06-new-research-shows-how-amie-our-medical-ai-could-help-manage-health-cond-4ca5042e.md) `published` / score 41.0
-- [How we're combatting AI scams with security, legislation and more](./google-blog/2026-06-how-we-re-combatting-ai-scams-with-security-legislation-and-more-5c6bce39.md) `published` / score 40.0
 - [Google DeepMind and A24 announce first-of-its-kind research partnership](./google-blog/2026-06-google-deepmind-and-a24-announce-first-of-its-kind-research-partnership-6ac9977f.md) `published` / score 40.0
+- [How we're combatting AI scams with security, legislation and more](./google-blog/2026-06-how-we-re-combatting-ai-scams-with-security-legislation-and-more-5c6bce39.md) `published` / score 40.0
 
 ## 누적 브리핑 목록
 
 - [Interactions API: our primary interface for Gemini models and agents](./google-blog/2026-06-interactions-api-our-primary-interface-for-gemini-models-and-agents-d7460632.md) `published`
 - [New research shows how AMIE, our medical AI, could help manage health conditions.](./google-blog/2026-06-new-research-shows-how-amie-our-medical-ai-could-help-manage-health-cond-4ca5042e.md) `published`
-- [How we're combatting AI scams with security, legislation and more](./google-blog/2026-06-how-we-re-combatting-ai-scams-with-security-legislation-and-more-5c6bce39.md) `published`
 - [Google DeepMind and A24 announce first-of-its-kind research partnership](./google-blog/2026-06-google-deepmind-and-a24-announce-first-of-its-kind-research-partnership-6ac9977f.md) `published`
+- [How we're combatting AI scams with security, legislation and more](./google-blog/2026-06-how-we-re-combatting-ai-scams-with-security-legislation-and-more-5c6bce39.md) `published`
 - [Reservations are open for XREAL AURA — plus, see more news from AWE 2026.](./google-blog/2026-06-reservations-are-open-for-xreal-aura-plus-see-more-news-from-awe-2026-916c2e9c.md) `published`
 - [Our new community investments in Virginia support local jobs and expand energy affordability.](./google-blog/2026-06-our-new-community-investments-in-virginia-support-local-jobs-and-expand-a46eeb91.md) `published`
 - [Expanding our U.S. digital wellbeing fund](./google-blog/2026-06-expanding-our-u-s-digital-wellbeing-fund-a640870b.md) `published`
 - [We’re strengthening our presence in Alabama through new investments and community support.](./google-blog/2026-06-we-re-strengthening-our-presence-in-alabama-through-new-investments-and-b5689f5d.md) `published`
+- [Expanding financial advertiser verification across Europe](./google-blog/2026-06-expanding-financial-advertiser-verification-across-europe-74010fdb.md) `published`
 - [3 ways to balance screen time and keep kids engaged this summer](./google-blog/2026-06-3-ways-to-balance-screen-time-and-keep-kids-engaged-this-summer-625b8d05.md) `published`
 - [Bringing the latest Gemini models to Apple developers](./google-blog/2026-06-bringing-the-latest-gemini-models-to-apple-developers-16f95444.md) `published`
 - [DiffusionGemma: 4x faster text generation](./google-blog/2026-06-diffusiongemma-4x-faster-text-generation-ab88a3c8.md) `published`

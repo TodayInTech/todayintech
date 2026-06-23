@@ -1600,6 +1600,66 @@
       "status": "published",
       "briefed_at": "2026-06-22T23:20:01.427719Z",
       "candidate_score": 37.0
+    },
+    "74010fdb681d9e9ad731d28fe2187df2f4030c20f65f83be4389da7eb16a36b6": {
+      "normalized_url": "https://blog.google/products/ads-commerce/eu-financial-advertiser-verification",
+      "title_fingerprint": "expanding financial advertiser verification across europe",
+      "service_key": "google-blog",
+      "title": "Expanding financial advertiser verification across Europe",
+      "article_doc_path": "docs/services/google-blog/2026-06-expanding-financial-advertiser-verification-across-europe-74010fdb.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T09:23:05.467010Z",
+      "candidate_score": 36.0
+    },
+    "8846e792a5401bd1e50feb733c7a43f27ea24d60a449f2aad5d9699ea4c2469d": {
+      "normalized_url": "https://unsloth.ai/docs/models/glm-5.2",
+      "title_fingerprint": "glm 5 2 how to run locally",
+      "service_key": "hacker-news",
+      "title": "GLM-5.2 – How to Run Locally",
+      "article_doc_path": "docs/services/hacker-news/2026-06-glm-5-2-how-to-run-locally-8846e792.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T09:23:05.467048Z",
+      "candidate_score": 65.0
+    },
+    "0bb3c4e10063655272cb6c3221f5a2c616c5514f77b0f602dfa80c07592e7222": {
+      "normalized_url": "https://arxiv.org/abs/2606.16140",
+      "title_fingerprint": "vibethinker 3b param model that beats opus 4 5 on reasoning with novel sft grpo",
+      "service_key": "hacker-news",
+      "title": "VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO",
+      "article_doc_path": "docs/services/hacker-news/2026-06-vibethinker-3b-param-model-that-beats-opus-4-5-on-reasoning-with-novel-s-0bb3c4e1.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T09:23:05.467061Z",
+      "candidate_score": 64.1
+    },
+    "6c975cc61dd88dfdd08e462427be330a5ae7ca2694eb2e3c18b9235fdff501fc": {
+      "normalized_url": "https://oak.space/oak/oak",
+      "title_fingerprint": "show hn oak git alternative designed for agents",
+      "service_key": "hacker-news",
+      "title": "Show HN: Oak – Git alternative designed for agents",
+      "article_doc_path": "docs/services/hacker-news/2026-06-show-hn-oak-git-alternative-designed-for-agents-6c975cc6.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T09:23:05.467070Z",
+      "candidate_score": 63.4
+    },
+    "8165457aec64a92ba65c8df627e8f66a9bc571dfb82f88ca4b9ae40b58371aa9": {
+      "normalized_url": "https://swelljoe.com/post/will-it-mythos",
+      "title_fingerprint": "will it mythos",
+      "service_key": "hacker-news",
+      "title": "Will It Mythos?",
+      "article_doc_path": "docs/services/hacker-news/2026-06-will-it-mythos-8165457a.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T09:23:05.467078Z",
+      "candidate_score": 60.0
+    },
+    "480508a9ca16ad815100a8e84cf7acfa353c1ab146fa436ce0db7a8f237592c6": {
+      "normalized_url": "https://openai.com/index/omio",
+      "title_fingerprint": "how omio is building the future of conversational travel",
+      "service_key": "openai-blog",
+      "title": "How Omio is building the future of conversational travel",
+      "article_doc_path": "docs/services/openai-blog/2026-06-how-omio-is-building-the-future-of-conversational-travel-480508a9.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T09:23:05.467085Z",
+      "candidate_score": 39.0
     }
   }
 }

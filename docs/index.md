@@ -5,7 +5,7 @@ sidebar_label: Today in Tech
 
 # Today in Tech
 
-생성일: 2026-06-22
+생성일: 2026-06-23
 
 ## 개요
 
@@ -18,6 +18,7 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [Deno Desktop](./services/hacker-news/2026-06-deno-desktop-933230b7.md) - Hacker News `published` / score 67.0
 - [Open source AI must win](./services/hacker-news/2026-06-open-source-ai-must-win-81122a35.md) - Hacker News `published` / score 67.0
 - [Danish privacy activist Lars Andersen raided by police](./services/hacker-news/2026-06-danish-privacy-activist-lars-andersen-raided-by-police-bd194355.md) - Hacker News `published` / score 66.0
+- [Steam Machine launches today](./services/hacker-news/2026-06-steam-machine-launches-today-44efbe22.md) - Hacker News `published` / score 65.0
 - [There is minimal downside to switching to open models](./services/hacker-news/2026-06-there-is-minimal-downside-to-switching-to-open-models-5f56c075.md) - Hacker News `published` / score 65.0
 - [Apertus – Open Foundation Model for Sovereign AI](./services/hacker-news/2026-06-apertus-open-foundation-model-for-sovereign-ai-3d1f3fa6.md) - Hacker News `published` / score 65.0
 - [GLM-5.2 is the new leading open weights model on Artificial Analysis](./services/hacker-news/2026-06-glm-5-2-is-the-new-leading-open-weights-model-on-artificial-analysis-ef3ea3a0.md) - Hacker News `published` / score 65.0
@@ -27,26 +28,20 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models](./services/hacker-news/2026-06-amazon-ceo-s-talks-with-u-s-officials-triggered-crackdown-on-anthropic-m-3f5abbdd.md) - Hacker News `published` / score 65.0
 - [How to setup a local coding agent on macOS](./services/hacker-news/2026-06-how-to-setup-a-local-coding-agent-on-macos-649a8774.md) - Hacker News `published` / score 65.0
 - [There is a shadow hanging over this Fable thing](./services/hacker-news/2026-06-there-is-a-shadow-hanging-over-this-fable-thing-23529ac5.md) - Hacker News `published` / score 65.0
-- [Steam Machine launches today](./services/hacker-news/2026-06-steam-machine-launches-today-44efbe22.md) - Hacker News `published` / score 65.0
+- [GLM-5.2 – How to Run Locally](./services/hacker-news/2026-06-glm-5-2-how-to-run-locally-8846e792.md) - Hacker News `published` / score 65.0
+- [VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO](./services/hacker-news/2026-06-vibethinker-3b-param-model-that-beats-opus-4-5-on-reasoning-with-novel-s-0bb3c4e1.md) - Hacker News `published` / score 64.1
 - [A robot is sprinting towards you. Do you want it running on Claude or Grok?](./services/hacker-news/2026-06-a-robot-is-sprinting-towards-you-do-you-want-it-running-on-claude-or-gro-849ef9c2.md) - Hacker News `published` / score 63.9
 - [Show HN: Are You in the Weights?](./services/hacker-news/2026-06-show-hn-are-you-in-the-weights-d5e87b22.md) - Hacker News `published` / score 63.5
-- [Apple is about to make Hide My Email useless](./services/hacker-news/2026-06-apple-is-about-to-make-hide-my-email-useless-ebd99fc2.md) - Hacker News `published` / score 63.0
-- [Moebius: 0.2B image inpainting model with 10B-level performance](./services/hacker-news/2026-06-moebius-0-2b-image-inpainting-model-with-10b-level-performance-bd53d0ea.md) - Hacker News `published` / score 62.0
-- [The founder of Craigslist has given away half a billion dollars](./services/hacker-news/2026-06-the-founder-of-craigslist-has-given-away-half-a-billion-dollars-1027fcbb.md) - Hacker News `published` / score 61.0
+- [Show HN: Oak – Git alternative designed for agents](./services/hacker-news/2026-06-show-hn-oak-git-alternative-designed-for-agents-6c975cc6.md) - Hacker News `published` / score 63.4
 
 ## 이번 실행에서 추가된 글
 
-- [Steam Machine launches today](./services/hacker-news/2026-06-steam-machine-launches-today-44efbe22.md) - Hacker News / 제목에 따르면 Steam Machine이 오늘 출시됐다. 피드 메타데이터에는 스팀 스토어의 세일/제품 페이지와 LTT Labs의 기사, 유튜브 영상 링크가 포함되어 있으며(피드 기준으로는) 제품의 세부 사양·가격·출시 지역 같은 구체 정보는 제공되지 않는다. 대신 Hacker News에서 1020포인트와 894개의 댓글을 기록해 커뮤니티 반응이 매우 활발하게 나타나고 있다. `published` / score 65.0
-- [Moebius: 0.2B image inpainting model with 10B-level performance](./services/hacker-news/2026-06-moebius-0-2b-image-inpainting-model-with-10b-level-performance-bd53d0ea.md) - Hacker News / 제목이 제시하는 내용만 보면 Moebius는 파라미터 수가 약 0.2B인 이미지 인페인팅 모델이 10B급 모델과 유사한 성능을 보인다고 주장하는 프로젝트입니다. 피드 기준으로는 원문 링크와 Hacker News에서의 반응(포인트 201, 댓글 60)만 제공되어 프로젝트의 구체적인 기법(예: 아키텍처, 지식 증류, 학습 데이터, 평가 지표)은 확인할 수 없습니다. 따라서 중요한 주장인 '10B급 성능'의 근거와 재현성은 원문과 코드, 벤치마크를 직접 검토해야 판단할 수 있습니다. `published` / score 62.0
-- [The text in Claude Code’s “Extended Thinking” output](./services/hacker-news/2026-06-the-text-in-claude-code-s-extended-thinking-output-94dcf38c.md) - Hacker News / 제목에 따르면 Claude Code의 'Extended Thinking' 기능에서 생성된 텍스트가 진정성이 없다는 주장이 제기됩니다. 피드 기준으로는 원문에서 어떤 근거와 예시로 그런 결론을 내렸는지, 저자가 어떤 방법으로 분석했는지는 확인할 수 없습니다. 제공된 메타데이터에는 작성자(0o_MrPatrick_o0)와 원문 URL만 포함되어 있어 상세한 재현성·증거는 원문을 직접 확인해야 합니다. `published` / score 60.0
-- [Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed](./services/hacker-news/2026-06-flock-powered-police-chiefs-stalking-women-shows-why-warrants-are-needed-31286248.md) - Hacker News / 제목과 공개된 메타데이터에 따르면 이번 보고서는 'Flock' 기반 장비를 활용해 경찰 간부들이 여성들을 추적한 사례를 문제 삼으며 영장(warrant)의 필요성을 강조하는 관점을 제시하는 것으로 보입니다. 피드 기준으로는 구체적 사건 전개나 기술적 구현 방식, 증거 등 세부 내용은 제공되지 않지만, 감시 기술이 공권력에 의해 어떻게 활용될 수 있는지를 쟁점화하고 있다는 점이 핵심입니다. `published` / score 59.2
-- [Interactions API: our primary interface for Gemini models and agents](./services/google-blog/2026-06-interactions-api-our-primary-interface-for-gemini-models-and-agents-d7460632.md) - Google Blog / 제목과 URL을 기준으로는 구글 블로그의 새 게시물이 Interactions API를 Gemini 모델과 에이전트에 대한 '주요(primary) 인터페이스'로 제시하며, 일반 제공(general availability)과 관련된 안내를 담고 있는 것으로 보입니다. 게시 글의 저자는 Ali Çevik와 Philipp Schmid이며, 'Developer tools' 태그와 높은 RSS 순위가 붙어 있어 개발자 툴 관점에서 중요 공지일 가능성이 큽니다. 이를 통해 Gemini 플랫폼으로의 통합 방식이나 에이전트 운용 인터페이스가 일원화될 수 있음을 시사합니다. 피드 기준으로는 API의 구체적인 기능, 버전, 호환성, 가격 정책이나 마이그레이션 가이드는 제공되지 않아 세부 적용 방안은 원문 확인이 필요합니다. 게시 시점(2026-06-22)과 Google Blog라는 출처를 고려하면, 실제 개발 환경에 미치는 영향과 채택 우선순위를 검토할 가치가 있는 공지입니다. `published` / score 51.0
-- [Daybreak: Tools for securing every organization in the world](./services/openai-blog/2026-06-daybreak-tools-for-securing-every-organization-in-the-world-b63e5cb3.md) - OpenAI Blog / OpenAI가 'Daybreak'라는 새 보안 도구군을 공개하고, 그 가운데 Codex Security와 GPT-5.5-Cyber라는 명칭을 가진 구성요소들을 소개했습니다. 피드 요약에 따르면 이 도구들은 조직 단위로 취약점을 찾아내고 검증하며 규모에 맞게 패치를 지원하는 것을 목표로 합니다. 발표 주체가 OpenAI인 점과 보안 관련 태그는 기술 독자에게 즉시 주목할 만한 신호입니다. `published` / score 44.0
-- [Patch the Planet: a Daybreak initiative to support open source maintainers](./services/openai-blog/2026-06-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainer-3696e67c.md) - OpenAI Blog / OpenAI는 Daybreak 프로그램의 일환으로 'Patch the Planet'을 발표했으며(2026-06-22 공개), 피드 기준으로는 오픈소스 유지관리자가 취약점을 찾아서 검증하고 수정하는 과정을 AI와 전문가 검토를 결합해 돕는 이니셔티브로 소개됩니다. 이름과 요약만으로는 조직적 지원 방식이나 참여 대상·범위 등 세부 설계는 확인되지 않지만, AI 기반 탐지와 사람의 검증을 함께 운용한다는 점이 핵심으로 보입니다. `published` / score 43.0
-- [From pledge to practice: Building a more inclusive open source ecosystem](./services/github-blog/2026-06-from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem-fb20f47d.md) - GitHub Blog / GitHub Blog의 글(작성자: Natalie Guevara, 2026-06-22)은 오픈소스 생태계의 포용성을 실질적으로 개선하기 위한 접근성 목표의 진척과 커뮤니티 참여 방법을 소개하는 내용으로 보입니다. 제목과 피드 요약에 따르면 단순한 약속 선언에서 끝내지 않고 실제 사례나 정책·실천으로 옮기는 과정에 초점을 둔 것으로 해석되며, 접근성(accessibility) 관련 목표 달성의 진행 상황을 요약하고 기여자들이 어떻게 참여할 수 있을지 안내하는 성격입니다. 제공된 정보만 보면 구체적 조치나 변경 사항의 세부 항목은 명시되어 있지 않으나, 업데이트 성격의 글로 최신성을 갖습니다. `published` / score 42.0
-- [Google DeepMind and A24 announce first-of-its-kind research partnership](./services/google-blog/2026-06-google-deepmind-and-a24-announce-first-of-its-kind-research-partnership-6ac9977f.md) - Google Blog / Google DeepMind가 A24와 ‘first-of-its-kind’ 연구 파트너십을 발표했다는 소식이 전해졌습니다. 제공된 피드 요약에 따르면 이번 협력은 세계적 수준의 연구 조직과 업계 파트너를 연결하는 형태로 소개되며, 발표 자체가 이례적이라는 점이 강조되어 있습니다. 구체적 연구 주제나 방식, 기대 성과 등은 피드 기준으로는 공개되지 않았습니다. `published` / score 40.0
-- [Codex-maxxing for long-running work](./services/openai-blog/2026-06-codex-maxxing-for-long-running-work-e2330fef.md) - OpenAI Blog / 피드 기준으로는 이번 게시물은 Jason Liu가 Codex를 활용해 '장기 실행되는 작업'의 컨텍스트를 보존하고 복잡한 프로젝트를 관리하는 방법을 다루는 내용으로 보입니다. 핵심은 단일 프롬프트에 머무르지 않고 작업을 이어가도록 하는 전략—즉 컨텍스트 유지와 작업 연속성 확보—에 초점을 둔다는 점입니다. 기술적 관점에서 보면 코드 생성·보조 모델을 단회성 보조 도구가 아니라 상태와 이력을 유지하는 워크플로우의 일부로 삼는 접근을 소개하는 것으로 해석됩니다. `published` / score 37.0
-- [Anthropic forms $200 million partnership with the Gates Foundation](./services/anthropic-blog/2026-06-anthropic-forms-200-million-partnership-with-the-gates-foundation-d6f6970b.md) - Anthropic Blog / Anthropic이 Gates Foundation과 향후 4년 동안 2억 달러 규모의 파트너십을 맺고 보조금, Claude 사용 크레딧, 기술적 지원을 제공한다고 피드 요약에 명시되어 있다. 지원 대상 분야로는 글로벌 보건, 생명과학, 교육, 경제적 이동성이 거론되며, 기간과 제공 형태(보조금·크레딧·기술지원)가 핵심 약정 내용으로 제시되어 있다. 제공된 정보만 보면 이 협력은 자금 지원뿐 아니라 Anthropic의 모델 접근성을 현장 프로그램에 직접 연결하려는 시도로 읽힌다. `published` / score 30.0
+- [GLM-5.2 – How to Run Locally](./services/hacker-news/2026-06-glm-5-2-how-to-run-locally-8846e792.md) - Hacker News / Z.ai의 GLM-5.2을 Unsloth가 공개한 문서에 따르면, 이 모델은 744B 파라미터(활성 40B)와 1,048,576 토큰의 최대 컨텍스트를 지원하며 Unsloth Dynamic GGUF 포맷으로 로컬에서 실행할 수 있도록 배포됐다. 문서는 GLM-5.2가 일부 벤치마크에서 Claude 4.8 Opus, GPT-5.5, Gemini 3.1 Pro와 동등한 수준의 성능을 보인다고 주장하며, 2-bit(UD-IQ2_M) 양자화는 239GB 디스크를 사용해 256GB 통합메모리 Mac이나 1×24GB GPU + 256GB RAM 구성에서 동작한다고 구체적으로 안내한다. 또한 'thinking' 모드(High/Max/비활성화)와 reasoning 설정을 --chat-template-kwargs 또는 llama.cpp의 --reasoning on/off로 제어하는 방법, 추천 추론 파라미터와 GGUF 파일 경로 등 로컬 실행에 필요한 실무적 지침을 담고 있다. `published` / score 65.0
+- [VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO](./services/hacker-news/2026-06-vibethinker-3b-param-model-that-beats-opus-4-5-on-reasoning-with-novel-s-0bb3c4e1.md) - Hacker News / VibeThinker-3B는 3억이 아닌 30억(3B) 파라미터 규모의 조밀한(sparse가 아닌 dense) 소형 언어모델로, ‘검증 가능한 추론(verifiable reasoning)’을 소형 모델 계열에서 어디까지 끌어올릴 수 있는지를 실험적으로 탐구한 기술 보고서의 중심 주제입니다. 저자들은 Spectrum-to-Signal 후처리(post-training) 패러다임을 바탕으로, 커리큘럼 기반의 감독 미세조정(curriculum SFT), 멀티도메인 강화학습(multi-domain RL), 오프라인 자기증류(offline self-distillation)를 결합한 최적화 파이프라인을 제시하고, 이를 통해 소형 모델이 복잡한 검증형 과제를 처리할 수 있음을 보이고자 합니다. `published` / score 64.1
+- [Show HN: Oak – Git alternative designed for agents](./services/hacker-news/2026-06-show-hn-oak-git-alternative-designed-for-agents-6c975cc6.md) - Hacker News / 피드 기준으로는 Oak가 에이전트를 염두에 둔 새 버전 관리 시스템으로 소개됩니다. 핵심 설명은 에이전트가 심각한 프로젝트에서 작업할 때 필요한 속도와 컨텍스트를 개선하려는 목표이며, 'virtual mounts'를 통해 로컬이나 클라우드의 에이전트가 레포 전체를 복제하지 않고도 작업할 수 있게 설계되었다고 전합니다. 병렬 작업을 여러 작업자(또는 에이전트)가 효율적으로 수행하도록 하여 다운로드 비용과 worktree 충돌을 줄이는 것을 지향한다고 적혀 있습니다. `published` / score 63.4
+- [Will It Mythos?](./services/hacker-news/2026-06-will-it-mythos-8165457a.md) - Hacker News / 작성자는 Mythos가 실전에서 발견했다고 공개한 취약점 샘플 9건을 모아 Opus 4.7로 검증한 뒤, 동일한 간이 하니스에서 여러 공개·상용 모델에게 소스 전체를 제시하고 단서 없이 취약점을 찾게 하는 벤치마크를 만들었다. 실험은 .git 디렉터리를 제거한 채 네트워크 접근을 허용한 소스체크아웃을 제공하는 방식으로 진행되었고, 각 버그는 모델들의 지식 컷오프 이후에 발생한 것으로 처리해 메모리 답변 가능성을 배제했다. 저자는 에이전트(예: Claude Code)는 비용·토큰 문제에도 불구 성능 영향을 적게 줬지만, 구글의 antigravity(agy)는 보안 분석 요청 자체를 거부해 에이전트 가드레일이 연구에 영향을 미친 사례를 지적한다. `published` / score 60.0
+- [How Omio is building the future of conversational travel](./services/openai-blog/2026-06-how-omio-is-building-the-future-of-conversational-travel-480508a9.md) - OpenAI Blog / 피드 기준으로는 OpenAI 블로그에 실린 'How Omio is building the future of conversational travel'가 Omio가 OpenAI 기술을 활용해 대화형 여행 경험을 구현하고 제품 개발 속도를 높이며 AI 네이티브 조직으로 전환하려는 전략을 설명한다고 요약된다. 제공된 메타데이터는 이 같은 목표와 방향성을 분명히 제시하지만, 구체적 아키텍처나 사용한 모델·측정 지표·운영상 성과 등은 포함하지 않아 상세 근거는 원문 확인이 필요하다. `published` / score 39.0
+- [Expanding financial advertiser verification across Europe](./services/google-blog/2026-06-expanding-financial-advertiser-verification-across-europe-74010fdb.md) - Google Blog / 구글이 유럽연합(EU)과 유럽경제지역(EEA)의 모든 회원국을 대상으로 금융 서비스 광고주 검증 프로그램을 확대한다고 발표했다. 이번 확장은 기존에 전 세계 18개국에서 운영되던 프로그램과, 이미 6개 EU 회원국과 영국에서의 적용을 바탕으로 24개 추가 국가로 확대되는 것이다. 구글은 광고주 실명·신원 확인을 통해 광고 노출 전 사기성 광고를 차단하려는 목표를 제시했으며, 기존 광고주 신원 검증 프로그램은 EU 내에서 노출되는 광고의 98% 이상을 커버하고 있고, 작년 한 해 동안 EU에서 16억개 이상의 광고를 차단하거나 제거했다고 밝혔다. 금융 광고에 대해서는 특히 각국의 공식 규제 기관 등록정보와 대조해 권한 여부를 확인하는 추가 단계가 도입된다는 점이 핵심이다. `published` / score 36.0
 
 ## 서비스
 
@@ -63,6 +58,7 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [Deno Desktop](./services/hacker-news/2026-06-deno-desktop-933230b7.md) - Hacker News `published`
 - [Open source AI must win](./services/hacker-news/2026-06-open-source-ai-must-win-81122a35.md) - Hacker News `published`
 - [Danish privacy activist Lars Andersen raided by police](./services/hacker-news/2026-06-danish-privacy-activist-lars-andersen-raided-by-police-bd194355.md) - Hacker News `published`
+- [Steam Machine launches today](./services/hacker-news/2026-06-steam-machine-launches-today-44efbe22.md) - Hacker News `published`
 - [There is minimal downside to switching to open models](./services/hacker-news/2026-06-there-is-minimal-downside-to-switching-to-open-models-5f56c075.md) - Hacker News `published`
 - [Apertus – Open Foundation Model for Sovereign AI](./services/hacker-news/2026-06-apertus-open-foundation-model-for-sovereign-ai-3d1f3fa6.md) - Hacker News `published`
 - [GLM-5.2 is the new leading open weights model on Artificial Analysis](./services/hacker-news/2026-06-glm-5-2-is-the-new-leading-open-weights-model-on-artificial-analysis-ef3ea3a0.md) - Hacker News `published`
@@ -72,14 +68,17 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models](./services/hacker-news/2026-06-amazon-ceo-s-talks-with-u-s-officials-triggered-crackdown-on-anthropic-m-3f5abbdd.md) - Hacker News `published`
 - [How to setup a local coding agent on macOS](./services/hacker-news/2026-06-how-to-setup-a-local-coding-agent-on-macos-649a8774.md) - Hacker News `published`
 - [There is a shadow hanging over this Fable thing](./services/hacker-news/2026-06-there-is-a-shadow-hanging-over-this-fable-thing-23529ac5.md) - Hacker News `published`
-- [Steam Machine launches today](./services/hacker-news/2026-06-steam-machine-launches-today-44efbe22.md) - Hacker News `published`
+- [GLM-5.2 – How to Run Locally](./services/hacker-news/2026-06-glm-5-2-how-to-run-locally-8846e792.md) - Hacker News `published`
+- [VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO](./services/hacker-news/2026-06-vibethinker-3b-param-model-that-beats-opus-4-5-on-reasoning-with-novel-s-0bb3c4e1.md) - Hacker News `published`
 - [A robot is sprinting towards you. Do you want it running on Claude or Grok?](./services/hacker-news/2026-06-a-robot-is-sprinting-towards-you-do-you-want-it-running-on-claude-or-gro-849ef9c2.md) - Hacker News `published`
 - [Show HN: Are You in the Weights?](./services/hacker-news/2026-06-show-hn-are-you-in-the-weights-d5e87b22.md) - Hacker News `published`
+- [Show HN: Oak – Git alternative designed for agents](./services/hacker-news/2026-06-show-hn-oak-git-alternative-designed-for-agents-6c975cc6.md) - Hacker News `published`
 - [Apple is about to make Hide My Email useless](./services/hacker-news/2026-06-apple-is-about-to-make-hide-my-email-useless-ebd99fc2.md) - Hacker News `published`
 - [Moebius: 0.2B image inpainting model with 10B-level performance](./services/hacker-news/2026-06-moebius-0-2b-image-inpainting-model-with-10b-level-performance-bd53d0ea.md) - Hacker News `published`
 - [The founder of Craigslist has given away half a billion dollars](./services/hacker-news/2026-06-the-founder-of-craigslist-has-given-away-half-a-billion-dollars-1027fcbb.md) - Hacker News `published`
 - [A backdoor in a LinkedIn job offer](./services/hacker-news/2026-06-a-backdoor-in-a-linkedin-job-offer-27ca2b25.md) - Hacker News `published`
 - [Police officer investigated for using AI to 'create evidence' in multiple cases](./services/hacker-news/2026-06-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-7cf4dd7c.md) - Hacker News `published`
+- [The text in Claude Code’s “Extended Thinking” output](./services/hacker-news/2026-06-the-text-in-claude-code-s-extended-thinking-output-94dcf38c.md) - Hacker News `published`
 - [Developers don't understand CORS (2019)](./services/hacker-news/2026-06-developers-don-t-understand-cors-2019-7fdc72df.md) - Hacker News `published`
 - [Beyond All Reason (Free Total Annihilation Inspired RTS)](./services/hacker-news/2026-06-beyond-all-reason-free-total-annihilation-inspired-rts-f2f7a5c4.md) - Hacker News `published`
 - [Identity verification on Claude](./services/hacker-news/2026-06-identity-verification-on-claude-f5e805c8.md) - Hacker News `published`
@@ -104,7 +103,7 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [GLM 5.2 Is Out](./services/hacker-news/2026-06-glm-5-2-is-out-edd51c72.md) - Hacker News `published`
 - [AI coding at home without going broke](./services/hacker-news/2026-06-ai-coding-at-home-without-going-broke-7cb80137.md) - Hacker News `published`
 - [Statement on US government directive to suspend access to Fable 5 and Mythos 5](./services/hacker-news/2026-06-statement-on-us-government-directive-to-suspend-access-to-fable-5-and-my-00131728.md) - Hacker News `published`
-- [The text in Claude Code’s “Extended Thinking” output](./services/hacker-news/2026-06-the-text-in-claude-code-s-extended-thinking-output-94dcf38c.md) - Hacker News `published`
+- [Will It Mythos?](./services/hacker-news/2026-06-will-it-mythos-8165457a.md) - Hacker News `published`
 - [Linux 7.1](./services/hacker-news/2026-06-linux-7-1-fa5989a7.md) - Hacker News `published`
 - [Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed](./services/hacker-news/2026-06-flock-powered-police-chiefs-stalking-women-shows-why-warrants-are-needed-31286248.md) - Hacker News `published`
 - [SMPTE Makes Its Standards Freely Accessible](./services/hacker-news/2026-06-smpte-makes-its-standards-freely-accessible-cbb04616.md) - Hacker News `published`
@@ -112,36 +111,38 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [Interactions API: our primary interface for Gemini models and agents](./services/google-blog/2026-06-interactions-api-our-primary-interface-for-gemini-models-and-agents-d7460632.md) - Google Blog `published`
 - [Show HN: StartupWiki – A Free Alternative to Crunchbase](./services/hacker-news/2026-06-show-hn-startupwiki-a-free-alternative-to-crunchbase-93f2c8ad.md) - Hacker News `published`
 - [Predicting model behavior before release by simulating deployment](./services/openai-blog/2026-06-predicting-model-behavior-before-release-by-simulating-deployment-c000018b.md) - OpenAI Blog `published`
-- [New OpenAI Academy courses for the next era of work](./services/openai-blog/2026-06-new-openai-academy-courses-for-the-next-era-of-work-dd73139d.md) - OpenAI Blog `published`
 - [Daybreak: Tools for securing every organization in the world](./services/openai-blog/2026-06-daybreak-tools-for-securing-every-organization-in-the-world-b63e5cb3.md) - OpenAI Blog `published`
+- [New OpenAI Academy courses for the next era of work](./services/openai-blog/2026-06-new-openai-academy-courses-for-the-next-era-of-work-dd73139d.md) - OpenAI Blog `published`
+- [Patch the Planet: a Daybreak initiative to support open source maintainers](./services/openai-blog/2026-06-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainer-3696e67c.md) - OpenAI Blog `published`
 - [Introducing LifeSciBench](./services/openai-blog/2026-06-introducing-lifescibench-381e7f58.md) - OpenAI Blog `published`
 - [Introducing the OpenAI Partner Network](./services/openai-blog/2026-06-introducing-the-openai-partner-network-4a1a2edf.md) - OpenAI Blog `published`
-- [Patch the Planet: a Daybreak initiative to support open source maintainers](./services/openai-blog/2026-06-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainer-3696e67c.md) - OpenAI Blog `published`
+- [From pledge to practice: Building a more inclusive open source ecosystem](./services/github-blog/2026-06-from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem-fb20f47d.md) - GitHub Blog `published`
 - [How we built an internal data analytics agent](./services/github-blog/2026-06-how-we-built-an-internal-data-analytics-agent-38e410c5.md) - GitHub Blog `published`
 - [Using AI to help physicians diagnose rare genetic diseases affecting children](./services/openai-blog/2026-06-using-ai-to-help-physicians-diagnose-rare-genetic-diseases-affecting-chi-edcdc240.md) - OpenAI Blog `published`
 - [Getting more from each token: How Copilot improves context handling and model routing](./services/github-blog/2026-06-getting-more-from-each-token-how-copilot-improves-context-handling-and-m-afb6ad81.md) - GitHub Blog `published`
 - [GitHub Copilot CLI for Beginners: Overview of common slash commands](./services/github-blog/2026-06-github-copilot-cli-for-beginners-overview-of-common-slash-commands-1b8723a7.md) - GitHub Blog `published`
 - [How Preply combines AI and human tutors to personalize learning](./services/openai-blog/2026-06-how-preply-combines-ai-and-human-tutors-to-personalize-learning-ddc7b24a.md) - OpenAI Blog `published`
-- [From pledge to practice: Building a more inclusive open source ecosystem](./services/github-blog/2026-06-from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem-fb20f47d.md) - GitHub Blog `published`
 - [New research shows how AMIE, our medical AI, could help manage health conditions.](./services/google-blog/2026-06-new-research-shows-how-amie-our-medical-ai-could-help-manage-health-cond-4ca5042e.md) - Google Blog `published`
 - [Access OpenAI models and Codex through your Oracle cloud commitment](./services/openai-blog/2026-06-access-openai-models-and-codex-through-your-oracle-cloud-commitment-c17e7186.md) - OpenAI Blog `published`
+- [Google DeepMind and A24 announce first-of-its-kind research partnership](./services/google-blog/2026-06-google-deepmind-and-a24-announce-first-of-its-kind-research-partnership-6ac9977f.md) - Google Blog `published`
 - [How we're combatting AI scams with security, legislation and more](./services/google-blog/2026-06-how-we-re-combatting-ai-scams-with-security-legislation-and-more-5c6bce39.md) - Google Blog `published`
 - [Claude Fable 5 and Claude Mythos 5](./services/anthropic-blog/2026-06-claude-fable-5-and-claude-mythos-5-e11fcea9.md) - Anthropic Blog `published`
-- [Google DeepMind and A24 announce first-of-its-kind research partnership](./services/google-blog/2026-06-google-deepmind-and-a24-announce-first-of-its-kind-research-partnership-6ac9977f.md) - Google Blog `published`
 - [Samsung Electronics brings ChatGPT and Codex to employees](./services/openai-blog/2026-06-samsung-electronics-brings-chatgpt-and-codex-to-employees-4a975b89.md) - OpenAI Blog `published`
 - [New usage analytics and updated spend controls for enterprises](./services/openai-blog/2026-06-new-usage-analytics-and-updated-spend-controls-for-enterprises-450d5ccf.md) - OpenAI Blog `published`
 - [Reservations are open for XREAL AURA — plus, see more news from AWE 2026.](./services/google-blog/2026-06-reservations-are-open-for-xreal-aura-plus-see-more-news-from-awe-2026-916c2e9c.md) - Google Blog `published`
 - [Our new community investments in Virginia support local jobs and expand energy affordability.](./services/google-blog/2026-06-our-new-community-investments-in-virginia-support-local-jobs-and-expand-a46eeb91.md) - Google Blog `published`
 - [Making secret scanning more trustworthy: Reducing false positives at scale](./services/github-blog/2026-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scal-9a46f291.md) - GitHub Blog `published`
+- [How Omio is building the future of conversational travel](./services/openai-blog/2026-06-how-omio-is-building-the-future-of-conversational-travel-480508a9.md) - OpenAI Blog `published`
 - [Improving health intelligence in ChatGPT](./services/openai-blog/2026-06-improving-health-intelligence-in-chatgpt-9f4dbdd3.md) - OpenAI Blog `published`
 - [OpenAI to acquire Ona](./services/openai-blog/2026-06-openai-to-acquire-ona-009f7028.md) - OpenAI Blog `published`
+- [Codex-maxxing for long-running work](./services/openai-blog/2026-06-codex-maxxing-for-long-running-work-e2330fef.md) - OpenAI Blog `published`
 - [How pull request limits are cutting down the noise](./services/github-blog/2026-06-how-pull-request-limits-are-cutting-down-the-noise-706e559e.md) - GitHub Blog `published`
 - [What are git worktrees, and why should I use them?](./services/github-blog/2026-06-what-are-git-worktrees-and-why-should-i-use-them-eff5b35f.md) - GitHub Blog `published`
 - [How we made GitHub Copilot CLI more selective about delegation](./services/github-blog/2026-06-how-we-made-github-copilot-cli-more-selective-about-delegation-a66a7c2b.md) - GitHub Blog `published`
-- [Codex-maxxing for long-running work](./services/openai-blog/2026-06-codex-maxxing-for-long-running-work-e2330fef.md) - OpenAI Blog `published`
 - [Expanding our U.S. digital wellbeing fund](./services/google-blog/2026-06-expanding-our-u-s-digital-wellbeing-fund-a640870b.md) - Google Blog `published`
 - [We’re strengthening our presence in Alabama through new investments and community support.](./services/google-blog/2026-06-we-re-strengthening-our-presence-in-alabama-through-new-investments-and-b5689f5d.md) - Google Blog `published`
 - [Accelerating researchers and developers building multilingual AI with a new open dataset](./services/github-blog/2026-06-accelerating-researchers-and-developers-building-multilingual-ai-with-a-8ff72939.md) - GitHub Blog `published`
+- [Expanding financial advertiser verification across Europe](./services/google-blog/2026-06-expanding-financial-advertiser-verification-across-europe-74010fdb.md) - Google Blog `published`
 - [A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry](./services/openai-blog/2026-06-a-near-autonomous-ai-chemist-improves-a-challenging-reaction-in-medicina-5ff2f715.md) - OpenAI Blog `published`
 - [3 ways to balance screen time and keep kids engaged this summer](./services/google-blog/2026-06-3-ways-to-balance-screen-time-and-keep-kids-engaged-this-summer-625b8d05.md) - Google Blog `published`
 - [From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI](./services/github-blog/2026-06-from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-cop-96de2795.md) - GitHub Blog `published`
@@ -154,12 +155,12 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [DiffusionGemma: 4x faster text generation](./services/google-blog/2026-06-diffusiongemma-4x-faster-text-generation-ab88a3c8.md) - Google Blog `published`
 - [How an astrophysicist uses Codex to help simulate black holes](./services/openai-blog/2026-06-how-an-astrophysicist-uses-codex-to-help-simulate-black-holes-0fda1a1b.md) - OpenAI Blog `published`
 - [Give GitHub Copilot CLI real code intelligence with language servers](./services/github-blog/2026-06-give-github-copilot-cli-real-code-intelligence-with-language-servers-9f1f8f8f.md) - GitHub Blog `published`
+- [Anthropic forms $200 million partnership with the Gates Foundation](./services/anthropic-blog/2026-06-anthropic-forms-200-million-partnership-with-the-gates-foundation-d6f6970b.md) - Anthropic Blog `published`
 - [Developing nuclear safeguards for AI through public-private partnership](./services/anthropic-blog/2026-06-developing-nuclear-safeguards-for-ai-through-public-private-partnership-9fb129ac.md) - Anthropic Blog `published`
 - [Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem](./services/anthropic-blog/2026-06-anthropic-opens-seoul-office-and-announces-new-partnerships-across-the-k-47e96fb8.md) - Anthropic Blog `published`
 - [Core views on AI safety: When, why, what, and how](./services/anthropic-blog/2026-06-core-views-on-ai-safety-when-why-what-and-how-5fa46de6.md) - Anthropic Blog `published`
 - [Results from first Anthropic Public Record](./services/anthropic-blog/2026-06-results-from-first-anthropic-public-record-40b973fa.md) - Anthropic Blog `published`
 - [TCS and Anthropic partner to bring Claude to regulated industries](./services/anthropic-blog/2026-06-tcs-and-anthropic-partner-to-bring-claude-to-regulated-industries-7f42ae0d.md) - Anthropic Blog `published`
-- [Anthropic forms $200 million partnership with the Gates Foundation](./services/anthropic-blog/2026-06-anthropic-forms-200-million-partnership-with-the-gates-foundation-d6f6970b.md) - Anthropic Blog `published`
 - [Introducing the OpenAI Economic Research Exchange](./services/openai-blog/2026-06-introducing-the-openai-economic-research-exchange-1ce2aa9b.md) - OpenAI Blog `published`
 - [4 ways researchers are collaborating with Co-Scientist to solve big problems](./services/google-blog/2026-06-4-ways-researchers-are-collaborating-with-co-scientist-to-solve-big-prob-3417a0b1.md) - Google Blog `published`
 - [PRC-linked influence operations are targeting AI debates in the US](./services/openai-blog/2026-06-prc-linked-influence-operations-are-targeting-ai-debates-in-the-us-27870879.md) - OpenAI Blog `published`

@@ -11,23 +11,24 @@ OpenAI Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 ## 우선순위 브리핑
 
 - [Predicting model behavior before release by simulating deployment](./openai-blog/2026-06-predicting-model-behavior-before-release-by-simulating-deployment-c000018b.md) `published` / score 49.0
-- [New OpenAI Academy courses for the next era of work](./openai-blog/2026-06-new-openai-academy-courses-for-the-next-era-of-work-dd73139d.md) `published` / score 44.0
 - [Daybreak: Tools for securing every organization in the world](./openai-blog/2026-06-daybreak-tools-for-securing-every-organization-in-the-world-b63e5cb3.md) `published` / score 44.0
-- [Introducing LifeSciBench](./openai-blog/2026-06-introducing-lifescibench-381e7f58.md) `published` / score 43.0
+- [New OpenAI Academy courses for the next era of work](./openai-blog/2026-06-new-openai-academy-courses-for-the-next-era-of-work-dd73139d.md) `published` / score 44.0
+- [Patch the Planet: a Daybreak initiative to support open source maintainers](./openai-blog/2026-06-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainer-3696e67c.md) `published` / score 43.0
 
 ## 누적 브리핑 목록
 
 - [Predicting model behavior before release by simulating deployment](./openai-blog/2026-06-predicting-model-behavior-before-release-by-simulating-deployment-c000018b.md) `published`
-- [New OpenAI Academy courses for the next era of work](./openai-blog/2026-06-new-openai-academy-courses-for-the-next-era-of-work-dd73139d.md) `published`
 - [Daybreak: Tools for securing every organization in the world](./openai-blog/2026-06-daybreak-tools-for-securing-every-organization-in-the-world-b63e5cb3.md) `published`
+- [New OpenAI Academy courses for the next era of work](./openai-blog/2026-06-new-openai-academy-courses-for-the-next-era-of-work-dd73139d.md) `published`
+- [Patch the Planet: a Daybreak initiative to support open source maintainers](./openai-blog/2026-06-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainer-3696e67c.md) `published`
 - [Introducing LifeSciBench](./openai-blog/2026-06-introducing-lifescibench-381e7f58.md) `published`
 - [Introducing the OpenAI Partner Network](./openai-blog/2026-06-introducing-the-openai-partner-network-4a1a2edf.md) `published`
-- [Patch the Planet: a Daybreak initiative to support open source maintainers](./openai-blog/2026-06-patch-the-planet-a-daybreak-initiative-to-support-open-source-maintainer-3696e67c.md) `published`
 - [Using AI to help physicians diagnose rare genetic diseases affecting children](./openai-blog/2026-06-using-ai-to-help-physicians-diagnose-rare-genetic-diseases-affecting-chi-edcdc240.md) `published`
 - [How Preply combines AI and human tutors to personalize learning](./openai-blog/2026-06-how-preply-combines-ai-and-human-tutors-to-personalize-learning-ddc7b24a.md) `published`
 - [Access OpenAI models and Codex through your Oracle cloud commitment](./openai-blog/2026-06-access-openai-models-and-codex-through-your-oracle-cloud-commitment-c17e7186.md) `published`
 - [Samsung Electronics brings ChatGPT and Codex to employees](./openai-blog/2026-06-samsung-electronics-brings-chatgpt-and-codex-to-employees-4a975b89.md) `published`
 - [New usage analytics and updated spend controls for enterprises](./openai-blog/2026-06-new-usage-analytics-and-updated-spend-controls-for-enterprises-450d5ccf.md) `published`
+- [How Omio is building the future of conversational travel](./openai-blog/2026-06-how-omio-is-building-the-future-of-conversational-travel-480508a9.md) `published`
 - [Improving health intelligence in ChatGPT](./openai-blog/2026-06-improving-health-intelligence-in-chatgpt-9f4dbdd3.md) `published`
 - [OpenAI to acquire Ona](./openai-blog/2026-06-openai-to-acquire-ona-009f7028.md) `published`
 - [Codex-maxxing for long-running work](./openai-blog/2026-06-codex-maxxing-for-long-running-work-e2330fef.md) `published`

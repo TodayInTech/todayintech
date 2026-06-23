@@ -22,6 +22,7 @@ Hacker News에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [Deno Desktop](./hacker-news/2026-06-deno-desktop-933230b7.md) `published`
 - [Open source AI must win](./hacker-news/2026-06-open-source-ai-must-win-81122a35.md) `published`
 - [Danish privacy activist Lars Andersen raided by police](./hacker-news/2026-06-danish-privacy-activist-lars-andersen-raided-by-police-bd194355.md) `published`
+- [Steam Machine launches today](./hacker-news/2026-06-steam-machine-launches-today-44efbe22.md) `published`
 - [There is minimal downside to switching to open models](./hacker-news/2026-06-there-is-minimal-downside-to-switching-to-open-models-5f56c075.md) `published`
 - [Apertus – Open Foundation Model for Sovereign AI](./hacker-news/2026-06-apertus-open-foundation-model-for-sovereign-ai-3d1f3fa6.md) `published`
 - [GLM-5.2 is the new leading open weights model on Artificial Analysis](./hacker-news/2026-06-glm-5-2-is-the-new-leading-open-weights-model-on-artificial-analysis-ef3ea3a0.md) `published`
@@ -31,14 +32,17 @@ Hacker News에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models](./hacker-news/2026-06-amazon-ceo-s-talks-with-u-s-officials-triggered-crackdown-on-anthropic-m-3f5abbdd.md) `published`
 - [How to setup a local coding agent on macOS](./hacker-news/2026-06-how-to-setup-a-local-coding-agent-on-macos-649a8774.md) `published`
 - [There is a shadow hanging over this Fable thing](./hacker-news/2026-06-there-is-a-shadow-hanging-over-this-fable-thing-23529ac5.md) `published`
-- [Steam Machine launches today](./hacker-news/2026-06-steam-machine-launches-today-44efbe22.md) `published`
+- [GLM-5.2 – How to Run Locally](./hacker-news/2026-06-glm-5-2-how-to-run-locally-8846e792.md) `published`
+- [VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO](./hacker-news/2026-06-vibethinker-3b-param-model-that-beats-opus-4-5-on-reasoning-with-novel-s-0bb3c4e1.md) `published`
 - [A robot is sprinting towards you. Do you want it running on Claude or Grok?](./hacker-news/2026-06-a-robot-is-sprinting-towards-you-do-you-want-it-running-on-claude-or-gro-849ef9c2.md) `published`
 - [Show HN: Are You in the Weights?](./hacker-news/2026-06-show-hn-are-you-in-the-weights-d5e87b22.md) `published`
+- [Show HN: Oak – Git alternative designed for agents](./hacker-news/2026-06-show-hn-oak-git-alternative-designed-for-agents-6c975cc6.md) `published`
 - [Apple is about to make Hide My Email useless](./hacker-news/2026-06-apple-is-about-to-make-hide-my-email-useless-ebd99fc2.md) `published`
 - [Moebius: 0.2B image inpainting model with 10B-level performance](./hacker-news/2026-06-moebius-0-2b-image-inpainting-model-with-10b-level-performance-bd53d0ea.md) `published`
 - [The founder of Craigslist has given away half a billion dollars](./hacker-news/2026-06-the-founder-of-craigslist-has-given-away-half-a-billion-dollars-1027fcbb.md) `published`
 - [A backdoor in a LinkedIn job offer](./hacker-news/2026-06-a-backdoor-in-a-linkedin-job-offer-27ca2b25.md) `published`
 - [Police officer investigated for using AI to 'create evidence' in multiple cases](./hacker-news/2026-06-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-7cf4dd7c.md) `published`
+- [The text in Claude Code’s “Extended Thinking” output](./hacker-news/2026-06-the-text-in-claude-code-s-extended-thinking-output-94dcf38c.md) `published`
 - [Developers don't understand CORS (2019)](./hacker-news/2026-06-developers-don-t-understand-cors-2019-7fdc72df.md) `published`
 - [Beyond All Reason (Free Total Annihilation Inspired RTS)](./hacker-news/2026-06-beyond-all-reason-free-total-annihilation-inspired-rts-f2f7a5c4.md) `published`
 - [Identity verification on Claude](./hacker-news/2026-06-identity-verification-on-claude-f5e805c8.md) `published`
@@ -63,7 +67,7 @@ Hacker News에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [GLM 5.2 Is Out](./hacker-news/2026-06-glm-5-2-is-out-edd51c72.md) `published`
 - [AI coding at home without going broke](./hacker-news/2026-06-ai-coding-at-home-without-going-broke-7cb80137.md) `published`
 - [Statement on US government directive to suspend access to Fable 5 and Mythos 5](./hacker-news/2026-06-statement-on-us-government-directive-to-suspend-access-to-fable-5-and-my-00131728.md) `published`
-- [The text in Claude Code’s “Extended Thinking” output](./hacker-news/2026-06-the-text-in-claude-code-s-extended-thinking-output-94dcf38c.md) `published`
+- [Will It Mythos?](./hacker-news/2026-06-will-it-mythos-8165457a.md) `published`
 - [Linux 7.1](./hacker-news/2026-06-linux-7-1-fa5989a7.md) `published`
 - [Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed](./hacker-news/2026-06-flock-powered-police-chiefs-stalking-women-shows-why-warrants-are-needed-31286248.md) `published`
 - [SMPTE Makes Its Standards Freely Accessible](./hacker-news/2026-06-smpte-makes-its-standards-freely-accessible-cbb04616.md) `published`
