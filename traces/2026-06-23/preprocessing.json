@@ -1,0 +1,261 @@
+{
+  "generated_at": "2026-06-23T09:19:19.084407+00:00",
+  "generated_for": "2026-06-23",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "05c0490e161f82fce9748a33be0e59df80599914",
+  "github_run_id": "28015749810",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 12,
+  "excluded_count": 108,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 22,
+      "excluded_count": 97,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 97
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 18,
+      "excluded_count": 4,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 4
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 18,
+      "output_count": 12,
+      "excluded_count": 6,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 6
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:74010fdb681d9e9a",
+          "title": "Expanding financial advertiser verification across Europe",
+          "normalized_url": "https://blog.google/products/ads-commerce/eu-financial-advertiser-verification",
+          "url_hash": "74010fdb681d9e9ad731d28fe2187df2f4030c20f65f83be4389da7eb16a36b6",
+          "suggested_doc_key": "2026-06-expanding-financial-advertiser-verification-across-europe-74010fdb",
+          "suggested_article_path": "docs/services/google-blog/2026-06-expanding-financial-advertiser-verification-across-europe-74010fdb.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:8846e792a5401bd1",
+          "title": "GLM-5.2 – How to Run Locally",
+          "normalized_url": "https://unsloth.ai/docs/models/glm-5.2",
+          "url_hash": "8846e792a5401bd1e50feb733c7a43f27ea24d60a449f2aad5d9699ea4c2469d",
+          "suggested_doc_key": "2026-06-glm-5-2-how-to-run-locally-8846e792",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-glm-5-2-how-to-run-locally-8846e792.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 374점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 165개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0bb3c4e100636552",
+          "title": "VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO",
+          "normalized_url": "https://arxiv.org/abs/2606.16140",
+          "url_hash": "0bb3c4e10063655272cb6c3221f5a2c616c5514f77b0f602dfa80c07592e7222",
+          "suggested_doc_key": "2026-06-vibethinker-3b-param-model-that-beats-opus-4-5-on-reasoning-with-novel-s-0bb3c4e1",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-vibethinker-3b-param-model-that-beats-opus-4-5-on-reasoning-with-novel-s-0bb3c4e1.md",
+          "candidate_score": 64.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 175점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 68개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6c975cc61dd88dfd",
+          "title": "Show HN: Oak – Git alternative designed for agents",
+          "normalized_url": "https://oak.space/oak/oak",
+          "url_hash": "6c975cc61dd88dfdd08e462427be330a5ae7ca2694eb2e3c18b9235fdff501fc",
+          "suggested_doc_key": "2026-06-show-hn-oak-git-alternative-designed-for-agents-6c975cc6",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-show-hn-oak-git-alternative-designed-for-agents-6c975cc6.md",
+          "candidate_score": 63.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 184점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 162개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8165457aec64a92b",
+          "title": "Will It Mythos?",
+          "normalized_url": "https://swelljoe.com/post/will-it-mythos",
+          "url_hash": "8165457aec64a92ba65c8df627e8f66a9bc571dfb82f88ca4b9ae40b58371aa9",
+          "suggested_doc_key": "2026-06-will-it-mythos-8165457a",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-will-it-mythos-8165457a.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 150점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 90개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a49e7d5c200625c9",
+          "title": "Canada plans 'nuclear renaissance' with up to 10 reactors built by 2040",
+          "normalized_url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
+          "url_hash": "a49e7d5c200625c9c8140f23afb74b4b59ec9c6ba3bda457884cd3b73b8e5057",
+          "suggested_doc_key": "2026-06-canada-plans-nuclear-renaissance-with-up-to-10-reactors-built-by-2040-a49e7d5c",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-canada-plans-nuclear-renaissance-with-up-to-10-reactors-built-by-2040-a49e7d5c.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 468점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 317개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 4,
+        "service_candidate_limit": 6
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:480508a9ca16ad81",
+          "title": "How Omio is building the future of conversational travel",
+          "normalized_url": "https://openai.com/index/omio",
+          "url_hash": "480508a9ca16ad815100a8e84cf7acfa353c1ab146fa436ce0db7a8f237592c6",
+          "suggested_doc_key": "2026-06-how-omio-is-building-the-future-of-conversational-travel-480508a9",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-how-omio-is-building-the-future-of-conversational-travel-480508a9.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 44,
+        "low_quality": 4
+      }
+    }
+  ]
+}

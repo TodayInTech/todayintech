@@ -1,0 +1,19 @@
+# Writer Decision Trace - 2026-06-23
+
+## Summary
+
+- Status: `success`
+- Agent: `openai`
+- Decisions: 6
+- Decision counts: published: 6
+
+## Decisions
+
+| Service | Decision | Score | Confidence | Title | Reason |
+| --- | --- | ---: | ---: | --- | --- |
+| google-blog | `published` | 36.0 | 0.9 | Expanding financial advertiser verification across Europe | 유럽 전역으로 확대되는 광고주 검증 정책의 범위와 시행 방식, 차단·제거 통계 등 기술적·정책적 근거가 원문에 충분히 포함되어 있어 광고 신뢰성과 온라인 안전에 대한 독자 관심도가 높음. |
+| hacker-news | `published` | 65.0 | 0.85 | GLM-5.2 – How to Run Locally | 원문이 GLM-5.2의 로컬 실행, 동적 GGUF 양자화, 요구 하드웨어·설정과 성능 벤치마크를 구체적으로 제시해 기술 독자가 로컬 추론 환경 구축 시 실제로 활용할 수 있는 실무적 정보를 담고 있어 게시 가치가 높음. |
+| hacker-news | `published` | 64.1 | 0.75 | VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO | 제공된 초록은 3B급 소형 모델이 검증 가능 추론(verifiable reasoning)에서 최첨단 성능을 달성했다는 구체적 수치와 새 학습 파이프라인을 함께 제시해 기술적 관심도가 높습니다. 소형 모델의 설계·훈련 전략과 이로 인한 실험적 성과가 기술 독자에게 유의미한 논점을 제공하므로 게시 가치가 있다고 판단했습니다. |
+| hacker-news | `published` | 63.4 | 0.7 | Show HN: Oak – Git alternative designed for agents | 피드 메타데이터가 Oak의 목적과 핵심 설계(에이전트 대상 버전관리, virtual mounts 등) 및 현재 개발 상태(기능 부재, 플랫폼 제약)를 명확히 제시하며 Hacker News 상에서 관심 신호(포인트·댓글)가 있어 기술 독자에게 유용한 브리핑 거리를 제공합니다. 다만 세부 성능 데이터는 제공되지 않아 도입 영향에 대해서는 추가 근거가 필요합니다. |
+| hacker-news | `published` | 60.0 | 0.85 | Will It Mythos? | 원문은 Mythos가 주장하는 취약점 탐지 능력을 실험적으로 비교한 구체적 벤치마크(버그 9건 수집·검증, 테스트 하니스, 모델별 결과와 실패 모드)를 제시하여 기술 독자에게 유의미한 통찰을 준다. 방법론·제약·구체적 모델 결과가 충분히 서술되어 있어 보안 및 AI 성능 비교 관점에서 기사 가치가 있다. |
+| openai-blog | `published` | 39.0 | 0.45 | How Omio is building the future of conversational travel | 피드 메타데이터로 Omio가 OpenAI를 활용해 대화형 여행 경험 구축, 제품 개발 가속화, AI 네이티브 전환을 표방한다는 핵심 주제를 확인할 수 있어 기술 독자에게 의미 있는 시사점을 제공하므로 게시를 권합니다. 다만 세부 구현 근거는 메타데이터에 없으므로 한계를 명확히 밝혀 요약했습니다. |
