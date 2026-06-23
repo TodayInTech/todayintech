@@ -23,6 +23,7 @@ class FakeSettings:
     enrichment_full_content_max_tokens = 4000
     enrichment_chunk_selection_max_tokens = 8000
     enrichment_chunk_max_tokens = 1200
+    enrichment_selected_chunks_max_tokens = 4000
 
     def __init__(self, root: Path) -> None:
         self.output_dir = root / "docs"

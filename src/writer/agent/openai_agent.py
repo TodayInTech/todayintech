@@ -309,11 +309,7 @@ class OpenAINewsEditorAgent:
     def _has_writer_evidence(self, enriched: EnrichedArticleCandidate) -> bool:
         if enriched.status == EnrichmentStatus.FALLBACK:
             return enriched.input_strategy == EnrichmentInputStrategy.FEED_METADATA_ONLY
-        return (
-            enriched.status == EnrichmentStatus.ENRICHED
-            and enriched.input_strategy == EnrichmentInputStrategy.FULL_CONTENT
-            and bool(enriched.selected_chunks)
-        )
+        return enriched.status == EnrichmentStatus.ENRICHED and bool(enriched.selected_chunks)
 
 
 def truncate_text(value: str, max_length: int) -> str:

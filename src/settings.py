@@ -87,6 +87,7 @@ class AppSettings:
     enrichment_full_content_max_tokens: int
     enrichment_chunk_selection_max_tokens: int
     enrichment_chunk_max_tokens: int
+    enrichment_selected_chunks_max_tokens: int
     target_date: str | None
     docusaurus_url: str
     docusaurus_base_url: str
@@ -157,6 +158,11 @@ class AppSettings:
             enrichment_chunk_max_tokens=_int_env(
                 "TODAYINTECH_ENRICHMENT_CHUNK_MAX_TOKENS",
                 default=1200,
+                minimum=1,
+            ),
+            enrichment_selected_chunks_max_tokens=_int_env(
+                "TODAYINTECH_ENRICHMENT_SELECTED_CHUNKS_MAX_TOKENS",
+                default=4000,
                 minimum=1,
             ),
             target_date=_optional_env("TODAYINTECH_TARGET_DATE"),

@@ -20,6 +20,8 @@ class JsonEnrichmentCache(BaseEnrichmentCache):
         chunker_name: str,
         policy_name: str,
         policy_version: str,
+        selector_name: str,
+        selector_version: str,
     ) -> str:
         raw_key = "|".join(
             [
@@ -29,6 +31,8 @@ class JsonEnrichmentCache(BaseEnrichmentCache):
                 chunker_name,
                 policy_name,
                 policy_version,
+                selector_name,
+                selector_version,
             ]
         )
         return hashlib.sha256(raw_key.encode("utf-8")).hexdigest()

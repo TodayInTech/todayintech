@@ -4,6 +4,7 @@ from src.enrichment.contracts import (
     BaseContentFetcher,
     BaseEnrichmentPolicy,
     BaseEnrichmentStep,
+    BaseEvidenceSelector,
 )
 from src.enrichment.steps import (
     ContentChunkingStep,
@@ -11,6 +12,7 @@ from src.enrichment.steps import (
     ContentFetchingStep,
     ContentValidationStep,
     DocumentProfilingStep,
+    EvidenceSelectionStep,
     InputStrategySelectionStep,
 )
 
@@ -23,6 +25,7 @@ class EnrichmentPipelineFactory:
         extractor: BaseContentExtractor,
         chunker: BaseContentChunker,
         policy: BaseEnrichmentPolicy,
+        selector: BaseEvidenceSelector,
     ) -> list[BaseEnrichmentStep]:
         return [
             ContentFetchingStep(fetcher),
@@ -31,4 +34,5 @@ class EnrichmentPipelineFactory:
             ContentValidationStep(),
             ContentChunkingStep(chunker),
             InputStrategySelectionStep(policy),
+            EvidenceSelectionStep(selector),
         ]

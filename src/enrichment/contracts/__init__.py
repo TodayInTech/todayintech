@@ -5,6 +5,7 @@ from src.enrichment.contracts.base import (
     BaseEnrichmentCache,
     BaseEnrichmentPolicy,
     BaseEnrichmentStep,
+    BaseEvidenceSelector,
     BaseTokenCounter,
 )
 
@@ -15,5 +16,6 @@ __all__ = [
     "BaseEnrichmentCache",
     "BaseEnrichmentPolicy",
     "BaseEnrichmentStep",
+    "BaseEvidenceSelector",
     "BaseTokenCounter",
 ]

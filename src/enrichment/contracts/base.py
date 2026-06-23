@@ -43,6 +43,15 @@ class BaseContentChunker(ABC):
         """Split a structured document without summarizing it."""
 
 
+class BaseEvidenceSelector(ABC):
+    name: str
+    version: str
+
+    @abstractmethod
+    def select(self, context: EnrichmentContext) -> list[EvidenceChunk]:
+        """Select source chunks that fit the Writer evidence budget."""
+
+
 class BaseEnrichmentPolicy(ABC):
     name: str
     version: str
@@ -63,6 +72,8 @@ class BaseEnrichmentCache(ABC):
         chunker_name: str,
         policy_name: str,
         policy_version: str,
+        selector_name: str,
+        selector_version: str,
     ) -> str:
         """Build a stable cache key."""
 

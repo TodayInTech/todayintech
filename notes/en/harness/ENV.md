@@ -41,6 +41,7 @@ When an environment variable is added, removed, or renamed, update `.env.example
 | `TODAYINTECH_ENRICHMENT_FULL_CONTENT_MAX_TOKENS` | `4000` | Optional | `enrichment_full_content_max_tokens` | Maximum token count for direct full-content Agent input |
 | `TODAYINTECH_ENRICHMENT_CHUNK_SELECTION_MAX_TOKENS` | `8000` | Optional | `enrichment_chunk_selection_max_tokens` | Token boundary between chunk selection and evidence selection |
 | `TODAYINTECH_ENRICHMENT_CHUNK_MAX_TOKENS` | `1200` | Optional | `enrichment_chunk_max_tokens` | Target maximum token count per structural chunk |
+| `TODAYINTECH_ENRICHMENT_SELECTED_CHUNKS_MAX_TOKENS` | `4000` | Optional | `enrichment_selected_chunks_max_tokens` | Maximum selected chunk token count passed to Writer for long-form content |
 
 ## Local Reproducibility Settings
 

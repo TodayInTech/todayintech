@@ -264,7 +264,7 @@ The preprocessing `ArticleCandidate` is the Writer input packet. It does not gen
 
 ## Enrichment
 
-Enrichment is a separate stage that prepares source evidence only for candidates limited by the Preprocessor. `ContentEnricher` runs a `BaseEnrichmentStep` pipeline. Fetchers, extractors, chunkers, and token counters use Strategy; factories select implementations; token budgets use Policy; and cached results use Repository.
+Enrichment is a separate stage that prepares source evidence only for candidates limited by the Preprocessor. `ContentEnricher` runs a `BaseEnrichmentStep` pipeline. Fetchers, extractors, chunkers, selectors, and token counters use Strategy; factories select implementations; token budgets use Policy; and cached results use Repository.
 
 1. Record source fetch results and final URLs.
 2. Extract content while preserving headings, sections, code, tables, and list structure.
@@ -274,7 +274,7 @@ Enrichment is a separate stage that prepares source evidence only for candidates
 
 Enrichment statuses are `enriched`, `fallback`, `skipped`, and `failed`. Agent input strategies are `full_content`, `chunk_selection`, `evidence_selection`, `feed_metadata_only`, and `none`. The trace records HTTP status, MIME type, response size, durations, extractor and policy versions, cache usage, document type, extracted and selected token counts, structure counts, title similarity, quality score, and failure reason per candidate.
 
-The initial policy treats fewer than 100 tokens as insufficient, uses full content through 4,000 tokens, routes 4,001–8,000 tokens to `chunk_selection`, and routes larger documents to `evidence_selection`. The latter strategies do not make heuristic evidence selections before an Agent selector is connected.
+The initial policy treats fewer than 100 tokens as insufficient, uses full content through 4,000 tokens, routes 4,001–8,000 tokens to `chunk_selection`, and routes larger documents to `evidence_selection`. Long-form documents use `StructuralEvidenceSelector`, which selects up to 4,000 tokens of evidence using title, feed summary, tags, heading, and position signals.
 
 ```bash
 make enrich
@@ -294,7 +294,7 @@ Outputs:
 
 ## Writer
 
-Writer receives `EnrichmentResult`. `full_content` candidates use structured source chunks, while `feed_metadata_only` candidates use limited fallback evidence. Unselected `chunk_selection` and `evidence_selection` candidates are not published.
+Writer receives `EnrichmentResult`. `full_content`, `chunk_selection`, and `evidence_selection` candidates use selected source chunks, while `feed_metadata_only` candidates use limited fallback evidence. Candidates without selected chunks are not published.
 
 - Writer Agent selects candidates and creates editorial results.
 - Writer Generator only writes Markdown from Agent results.

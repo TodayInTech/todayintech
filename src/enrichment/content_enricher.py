@@ -10,6 +10,7 @@ from src.enrichment.contracts import (
     BaseEnrichmentCache,
     BaseEnrichmentPolicy,
     BaseEnrichmentStep,
+    BaseEvidenceSelector,
 )
 from src.enrichment.factories import (
     ContentExtractorFactory,
@@ -26,6 +27,7 @@ from src.enrichment.models import (
     EnrichmentStatus,
 )
 from src.enrichment.policies import AdaptiveEnrichmentPolicy
+from src.enrichment.selectors import StructuralEvidenceSelector
 from src.enrichment.state import JsonEnrichmentCache
 from src.enrichment.tokenization import TiktokenTokenCounter
 from src.processing.models import ArticleCandidate, PreprocessingResult
@@ -41,12 +43,14 @@ class ContentEnricher:
         extractor: BaseContentExtractor,
         chunker: BaseContentChunker,
         policy: BaseEnrichmentPolicy,
+        selector: BaseEvidenceSelector,
     ) -> None:
         self.steps = steps
         self.cache = cache
         self.extractor = extractor
         self.chunker = chunker
         self.policy = policy
+        self.selector = selector
 
     @classmethod
     def create_default(
@@ -59,6 +63,7 @@ class ContentEnricher:
         full_content_max_tokens: int,
         chunk_selection_max_tokens: int,
         chunk_max_tokens: int,
+        selected_chunks_max_tokens: int,
     ) -> ContentEnricher:
         token_counter = TiktokenTokenCounter()
         extractor = ContentExtractorFactory().create(
@@ -75,11 +80,13 @@ class ContentEnricher:
             chunk_selection_max_tokens=chunk_selection_max_tokens,
         )
         chunker = StructuralContentChunker(chunk_max_tokens)
+        selector = StructuralEvidenceSelector(max_selected_tokens=selected_chunks_max_tokens)
         steps = EnrichmentPipelineFactory().create_default(
             fetcher=fetcher,
             extractor=extractor,
             chunker=chunker,
             policy=policy,
+            selector=selector,
         )
         return cls(
             steps=steps,
@@ -87,6 +94,7 @@ class ContentEnricher:
             extractor=extractor,
             chunker=chunker,
             policy=policy,
+            selector=selector,
         )
 
     def enrich(self, preprocessing_result: PreprocessingResult) -> EnrichmentResult:
@@ -108,6 +116,8 @@ class ContentEnricher:
                 chunker_name=self.chunker.name,
                 policy_name=self.policy.name,
                 policy_version=self.policy.version,
+                selector_name=self.selector.name,
+                selector_version=self.selector.version,
             )
             cached = self.cache.get(cache_key)
             if cached is not None:

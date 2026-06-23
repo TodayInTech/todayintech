@@ -110,7 +110,7 @@ Each stage must remain independently executable for development and debugging.
 - Use `TODAYINTECH_WRITER_AGENT=openai` or `make write WRITER_AGENT=openai` to use `OpenAINewsEditorAgent`.
 - The OpenAI Agent does not crawl full article text. It only uses the title, feed summary, tags, metadata, and ranking signals provided by Collector and Preprocessor.
 - Writer consumes `.var/local/enriched/{YYYY-MM-DD}/enrichment.json`. The OpenAI Agent uses selected source chunks, falling back to feed metadata only when policy explicitly allows it.
-- `chunk_selection` and `evidence_selection` candidates remain unpublished until an Agent selector chooses evidence chunks.
+- `chunk_selection` and `evidence_selection` candidates become Writer review targets when the selector provides evidence chunks.
 - The full `.venv/bin/python -m src.main` pipeline now connects Collector, Preprocessor, Enrichment, and Writer.
 
 1. Create services through the factory.

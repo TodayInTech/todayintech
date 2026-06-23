@@ -7,6 +7,7 @@ from src.enrichment.factories import EnrichmentPipelineFactory
 from src.enrichment.fetchers import HttpContentFetcher
 from src.enrichment.models import EnrichmentInputStrategy, EnrichmentStatus
 from src.enrichment.policies import AdaptiveEnrichmentPolicy
+from src.enrichment.selectors import StructuralEvidenceSelector
 from src.enrichment.state import JsonEnrichmentCache
 from src.enrichment.tokenization import TiktokenTokenCounter
 from src.models import Article
@@ -84,11 +85,13 @@ def test_content_enricher_runs_pipeline_and_reuses_cache(tmp_path) -> None:
     extractor = HtmlContentExtractor(token_counter)
     policy = AdaptiveEnrichmentPolicy(minimum_tokens=10)
     chunker = StructuralContentChunker()
+    selector = StructuralEvidenceSelector()
     steps = EnrichmentPipelineFactory().create_default(
         fetcher=fetcher,
         extractor=extractor,
         chunker=chunker,
         policy=policy,
+        selector=selector,
     )
     enricher = ContentEnricher(
         steps=steps,
@@ -96,6 +99,7 @@ def test_content_enricher_runs_pipeline_and_reuses_cache(tmp_path) -> None:
         extractor=extractor,
         chunker=chunker,
         policy=policy,
+        selector=selector,
     )
 
     first = enricher.enrich(make_preprocessing_result())

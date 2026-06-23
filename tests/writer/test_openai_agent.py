@@ -109,6 +109,7 @@ def make_preprocessing_result() -> PreprocessingResult:
 def make_enrichment_result(
     *,
     strategy: EnrichmentInputStrategy = EnrichmentInputStrategy.FULL_CONTENT,
+    select_chunks: bool | None = None,
 ) -> EnrichmentResult:
     preprocessing = make_preprocessing_result()
     candidate = preprocessing.services[0].candidates[0]
@@ -120,7 +121,10 @@ def make_enrichment_result(
         token_count=14,
         position=0,
     )
-    selected_chunks = [chunk] if strategy == EnrichmentInputStrategy.FULL_CONTENT else []
+    should_select_chunks = (
+        strategy == EnrichmentInputStrategy.FULL_CONTENT if select_chunks is None else select_chunks
+    )
+    selected_chunks = [chunk] if should_select_chunks else []
     return EnrichmentResult(
         generated_for=preprocessing.generated_for,
         generated_at=preprocessing.generated_at,
@@ -254,6 +258,36 @@ def test_openai_agent_skips_unselected_long_content_without_api_call() -> None:
     assert result.services[0].briefings == []
     assert result.decisions[0].status == AgentDecisionStatus.SKIPPED
     assert client.responses.last_input == ""
+
+
+def test_openai_agent_publishes_selected_long_content() -> None:
+    decision = OpenAIArticleDecision(
+        should_publish=True,
+        category="AI",
+        importance_level="Medium",
+        confidence_score=0.74,
+        summary_scope="chunk_selection",
+        publish_reason_ko="선택된 원문 근거가 개발자에게 의미 있는 변화를 설명합니다.",
+        evidence_basis_ko=["chunk-0001"],
+        summary_ko=(
+            "선택된 원문 근거는 개발자 도구 변화와 적용 맥락을 중심으로 설명합니다. "
+            "전체 원문을 모두 다루기보다는 제공된 근거 범위 안에서 핵심 변화를 정리합니다.\n\n"
+            "이 업데이트는 도구 통합 흐름과 개발자 경험에 영향을 줄 수 있습니다. "
+            "세부 범위는 원문에서 추가 확인이 필요합니다."
+        ),
+    )
+    client = FakeOpenAIClient(decision)
+    agent = OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini", client=client)
+
+    result = agent.edit(
+        make_enrichment_result(
+            strategy=EnrichmentInputStrategy.CHUNK_SELECTION,
+            select_chunks=True,
+        )
+    )
+
+    assert result.services[0].briefings[0].summary_scope == "chunk_selection"
+    assert "source_evidence" in client.responses.last_input
 
 
 def test_openai_agent_requires_api_key_without_injected_client() -> None:

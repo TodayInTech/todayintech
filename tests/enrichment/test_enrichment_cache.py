@@ -35,6 +35,8 @@ def test_json_enrichment_cache_uses_versioned_key_and_round_trips(tmp_path) -> N
         chunker_name="structural:max=1200",
         policy_name="adaptive-token-budget",
         policy_version="1",
+        selector_name="structural-keyword-position",
+        selector_version="1",
     )
     result = EnrichedArticleCandidate(
         candidate=candidate,
@@ -53,6 +55,8 @@ def test_json_enrichment_cache_uses_versioned_key_and_round_trips(tmp_path) -> N
             chunker_name="structural:max=1200",
             policy_name="adaptive-token-budget",
             policy_version="1",
+            selector_name="structural-keyword-position",
+            selector_version="1",
         )
         != key
     )
@@ -64,6 +68,21 @@ def test_json_enrichment_cache_uses_versioned_key_and_round_trips(tmp_path) -> N
             chunker_name="structural:max=800",
             policy_name="adaptive-token-budget",
             policy_version="1",
+            selector_name="structural-keyword-position",
+            selector_version="1",
+        )
+        != key
+    )
+    assert (
+        cache.build_key(
+            candidate,
+            extractor_name="trafilatura",
+            extractor_version="2.1.0",
+            chunker_name="structural:max=1200",
+            policy_name="adaptive-token-budget",
+            policy_version="1",
+            selector_name="structural-keyword-position",
+            selector_version="2",
         )
         != key
     )

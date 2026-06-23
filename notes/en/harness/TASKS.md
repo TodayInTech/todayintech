@@ -66,7 +66,7 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Implement the HTTP fetcher and Trafilatura HTML extractor
   - [x] Implement structure-preserving chunking and adaptive token-budget policy
   - [x] Add the enrichment pipeline factory, JSON cache, storage, and standalone CLI
-  - [ ] Implement Agent-based chunk/evidence selection
+  - [x] Implement structure-based chunk/evidence selection
   - [x] Connect Writer input and the full pipeline
 
 - [ ] Writer - in progress
@@ -95,6 +95,6 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 
 ## Next Work Candidates
 
-- Implement Agent-based chunk/evidence selection
+- Refine Agent-based chunk/evidence selection
 - Persist enrichment cache and optimize GitHub Actions cost
 - Add Agent claim-evidence validation

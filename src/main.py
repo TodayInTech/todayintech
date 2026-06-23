@@ -68,6 +68,7 @@ def run_pipeline(target_date: str | None = None) -> WriterResult:
         full_content_max_tokens=SETTINGS.enrichment_full_content_max_tokens,
         chunk_selection_max_tokens=SETTINGS.enrichment_chunk_selection_max_tokens,
         chunk_max_tokens=SETTINGS.enrichment_chunk_max_tokens,
+        selected_chunks_max_tokens=SETTINGS.enrichment_selected_chunks_max_tokens,
     )
     enrichment_result = enricher.enrich(preprocessing_result)
     enriched_paths = write_enrichment_result(

@@ -66,7 +66,7 @@
   - [x] HTTP fetcher와 Trafilatura HTML extractor 구현
   - [x] 구조 보존 chunker와 적응형 token budget policy 구현
   - [x] enrichment pipeline factory, JSON cache, storage, 독립 CLI 구성
-  - [ ] Agent 기반 chunk/evidence selector 구현
+  - [x] 구조 기반 chunk/evidence selector 구현
   - [x] Writer 입력과 전체 파이프라인 연결
 
 - [ ] Writer - 진행 중
@@ -95,6 +95,6 @@
 
 ## 다음 작업 후보
 
-- Agent 기반 chunk/evidence selector 구현
+- Agent 기반 chunk/evidence selector 고도화
 - enrichment cache 영속화와 GitHub Actions 비용 최적화
 - Agent claim-evidence 검증 추가

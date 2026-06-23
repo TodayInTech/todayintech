@@ -41,6 +41,7 @@
 | `TODAYINTECH_ENRICHMENT_FULL_CONTENT_MAX_TOKENS` | `4000` | 선택 | `enrichment_full_content_max_tokens` | 전체 본문을 Agent 입력으로 사용할 최대 token 수 |
 | `TODAYINTECH_ENRICHMENT_CHUNK_SELECTION_MAX_TOKENS` | `8000` | 선택 | `enrichment_chunk_selection_max_tokens` | chunk selection과 evidence selection을 나누는 token 기준 |
 | `TODAYINTECH_ENRICHMENT_CHUNK_MAX_TOKENS` | `1200` | 선택 | `enrichment_chunk_max_tokens` | 구조 보존 chunk 하나의 목표 최대 token 수 |
+| `TODAYINTECH_ENRICHMENT_SELECTED_CHUNKS_MAX_TOKENS` | `4000` | 선택 | `enrichment_selected_chunks_max_tokens` | 긴 글에서 Writer에 전달할 선택 chunk의 최대 token 수 |
 
 ## Local 재현성 설정
 

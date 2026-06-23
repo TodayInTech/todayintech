@@ -252,7 +252,7 @@ News Editor Agent는 뉴스레터 편집자가 아니라 기술 글 큐레이터
 - 기본 Writer는 요약을 생성하지 않는 `DraftNewsEditorAgent`를 사용한다.
 - `TODAYINTECH_WRITER_AGENT=openai` 또는 `make write WRITER_AGENT=openai`를 사용하면 `OpenAINewsEditorAgent`를 사용한다.
 - OpenAI Agent는 Enrichment가 선택한 원문 chunk를 근거로 사용하며, `feed_metadata_only` fallback 후보에서만 피드 설명과 메타데이터로 판단 범위를 제한한다.
-- `chunk_selection`과 `evidence_selection` 후보는 Agent selector가 근거 chunk를 선택하기 전까지 Writer가 게시하지 않는다.
+- `chunk_selection`과 `evidence_selection` 후보도 selector가 선택한 근거 chunk가 있으면 Writer 게시 검토 대상이 된다.
 - 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행하며 Collector, Preprocessor, Enrichment, Writer가 순서대로 연결되어 있다.
 
 1. Factory가 MVP 서비스 구현체를 생성한다.

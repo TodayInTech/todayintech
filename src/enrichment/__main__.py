@@ -55,6 +55,7 @@ def main() -> None:
         full_content_max_tokens=SETTINGS.enrichment_full_content_max_tokens,
         chunk_selection_max_tokens=SETTINGS.enrichment_chunk_selection_max_tokens,
         chunk_max_tokens=SETTINGS.enrichment_chunk_max_tokens,
+        selected_chunks_max_tokens=SETTINGS.enrichment_selected_chunks_max_tokens,
     )
     result = enricher.enrich(preprocessing_result)
     written_paths = write_enrichment_result(

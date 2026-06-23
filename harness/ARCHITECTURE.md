@@ -268,7 +268,7 @@ make preprocess RAW_DIR=.var/local/raw PROCESSED_DIR=.var/local/processed
 
 ## Enrichment
 
-Enrichment는 Preprocessor가 제한한 후보를 대상으로 원문 근거를 준비하는 별도 stage이다. `ContentEnricher`는 `BaseEnrichmentStep` pipeline을 실행하고, fetcher·extractor·chunker·token counter는 Strategy, 구현 선택은 Factory, token budget 결정은 Policy, 결과 재사용은 Repository 패턴으로 분리한다.
+Enrichment는 Preprocessor가 제한한 후보를 대상으로 원문 근거를 준비하는 별도 stage이다. `ContentEnricher`는 `BaseEnrichmentStep` pipeline을 실행하고, fetcher·extractor·chunker·selector·token counter는 Strategy, 구현 선택은 Factory, token budget 결정은 Policy, 결과 재사용은 Repository 패턴으로 분리한다.
 
 1. 원문 요청 결과와 최종 URL을 기록한다.
 2. 본문을 추출하되 제목, 섹션, 코드, 표, 목록 구조를 보존한다.
@@ -278,7 +278,7 @@ Enrichment는 Preprocessor가 제한한 후보를 대상으로 원문 근거를 
 
 Enrichment 상태는 `enriched`, `fallback`, `skipped`, `failed`로 구분한다. Agent 입력 전략은 `full_content`, `chunk_selection`, `evidence_selection`, `feed_metadata_only`, `none`으로 구분한다. Trace는 후보별 HTTP 상태, MIME type, 응답 크기, 실행 시간, extractor와 policy 버전, 캐시 여부, 문서 유형, 추출·선택 토큰 수, 구조 개수, 제목 유사도, 품질 점수, 실패 원인을 기록한다.
 
-초기 policy는 100토큰 미만을 정보 부족으로 처리하고, 4,000토큰 이하는 전체 본문을 선택한다. 4,001~8,000토큰은 `chunk_selection`, 8,000토큰 초과는 `evidence_selection` 대상으로 표시한다. 후자의 두 전략은 의미 기반 Agent selector가 연결되기 전까지 임의로 chunk를 선택하지 않는다.
+초기 policy는 100토큰 미만을 정보 부족으로 처리하고, 4,000토큰 이하는 전체 본문을 선택한다. 4,001~8,000토큰은 `chunk_selection`, 8,000토큰 초과는 `evidence_selection` 대상으로 표시한다. 긴 글은 `StructuralEvidenceSelector`가 제목, 피드 요약, 태그, heading, 위치 신호를 기준으로 최대 4,000토큰의 근거 chunk를 선택한다.
 
 ```bash
 make enrich
@@ -298,7 +298,7 @@ make trace-enrich
 
 ## Writer
 
-Writer 단계는 Enrichment가 만든 `EnrichmentResult`를 받아 문서화 결과를 만든다. `full_content` 후보는 구조화된 원문 chunk를 사용하고, `feed_metadata_only` 후보는 제한된 fallback 근거를 사용한다. 선택되지 않은 `chunk_selection`과 `evidence_selection` 후보는 게시하지 않는다.
+Writer 단계는 Enrichment가 만든 `EnrichmentResult`를 받아 문서화 결과를 만든다. `full_content`, `chunk_selection`, `evidence_selection` 후보는 선택된 원문 chunk를 사용하고, `feed_metadata_only` 후보는 제한된 fallback 근거를 사용한다. 선택된 chunk가 없는 후보는 게시하지 않는다.
 
 - Writer Agent: 후보 중 문서화할 글을 선택하고 편집 결과를 만든다.
 - Writer Generator: Agent 결과만 받아 Markdown 파일을 쓴다.
