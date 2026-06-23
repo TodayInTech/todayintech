@@ -307,7 +307,7 @@ Writer 단계는 Enrichment가 만든 `EnrichmentResult`를 받아 문서화 결
 - GitHub Actions는 생성된 `docs/`와 `data/briefed_articles.json`을 main에 커밋해 다음 실행의 중복 제거 기준으로 사용한다.
 - 기본 구현은 `DraftNewsEditorAgent`를 사용한다. Draft Agent는 요약, 왜 중요한가, 개발자 인사이트를 생성하지 않고 `editorial_status=draft` 문서만 만든다.
 - `TODAYINTECH_WRITER_AGENT=openai`를 사용하면 `OpenAINewsEditorAgent`가 structured output으로 게시 여부, 선정/제외 이유, 판단 확신도, 요약 근거 범위, 근거 목록, 자연스러운 한국어 장문 요약을 생성한다.
-- 공개 article 문서는 요약 2~3문단과 원문 링크만 표시한다. 선정 이유, 판단 확신도, 근거 범위, 근거 목록은 Writer trace에만 남긴다.
+- 공개 article 문서는 요약 2~3문단과 원문 링크만 표시한다. 요약 분량은 `feed_metadata_only` 450~700자, `full_content` 700~1200자, `chunk_selection`/`evidence_selection` 700~1100자를 기준으로 한다. 선정 이유, 판단 확신도, 근거 범위, 근거 목록은 Writer trace에만 남긴다.
 - OpenAI Agent는 Enrichment가 선택한 source evidence와 후보 메타데이터만 사용한다.
 
 Writer 실행:

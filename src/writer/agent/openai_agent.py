@@ -261,6 +261,7 @@ class OpenAINewsEditorAgent:
     def _candidate_prompt(self, enriched: EnrichedArticleCandidate) -> str:
         candidate = enriched.candidate
         article = candidate.article
+        summary_guideline = summary_guideline_for(enriched.input_strategy)
         payload = {
             "candidate_id": candidate.candidate_id,
             "service_key": candidate.service_key,
@@ -278,6 +279,7 @@ class OpenAINewsEditorAgent:
             "ranking_signals": candidate.ranking_signals.compact_dict(),
             "ranking_reasons_ko": candidate.ranking_reasons_ko,
             "evidence_scope": enriched.input_strategy.value,
+            "summary_guideline": summary_guideline,
             "source_evidence": [
                 {
                     "chunk_id": chunk.chunk_id,
@@ -294,11 +296,14 @@ class OpenAINewsEditorAgent:
             "confidence_score는 0.0~1.0 사이로 판단 확신도를 표시하세요.\n"
             "publish_reason_ko 또는 reject_reason_ko 중 결정에 맞는 필드를 채우세요.\n"
             "evidence_basis_ko에는 실제 사용한 source_evidence chunk_id 또는 피드 메타데이터 항목만 적으세요.\n"
-            "게시한다면 summary_ko에 500~900자 분량의 자연스러운 한국어 요약을 작성하세요.\n"
-            "요약은 글의 성격과 제공된 정보량에 맞춰 2~3문단으로 구성하세요.\n"
+            f"게시한다면 summary_ko는 다음 분량/범위 기준을 따르세요: {summary_guideline}\n"
+            "요약은 글의 성격과 제공된 정보량에 맞춰 자연스러운 2~3문단으로 구성하세요.\n"
             "첫 문장과 문단 구성을 고정하지 말고 글의 주제에 가장 자연스러운 방식으로 시작하세요.\n"
             "전체적으로 글이 다루는 대상과 배경, 핵심 내용, 기술 독자에게 갖는 의미가 이어지도록 설명하세요.\n"
             "근거가 충분한 경우 구체적인 변화와 적용 맥락을 설명하되, 같은 내용을 표현만 바꿔 반복하지 마세요.\n"
+            "full_content는 원문 전체 근거를 바탕으로 주장, 근거, 기술적 의미를 충분히 설명하세요.\n"
+            "chunk_selection과 evidence_selection은 선택된 chunk 근거 범위 안에서만 설명하고, 원문 전체를 모두 검토한 것처럼 쓰지 마세요.\n"
+            "feed_metadata_only는 제목, 피드 설명, 메타데이터로 확인되는 내용만 다루고 부족한 근거를 자연스럽게 밝히세요.\n"
             "정보가 부족한 부분은 별도 경고 목록을 만들지 말고 문장 안에서 자연스럽게 한계를 밝히세요.\n"
             "'해당 글은', '이 글은' 같은 표현이나 동일한 종결 어미를 매번 반복하지 마세요.\n"
             "요약 안에 제목, 소제목, 불릿, 원문 링크, 선정 이유, 확신도, 판단 근거 목록을 넣지 마세요.\n"
@@ -310,6 +315,28 @@ class OpenAINewsEditorAgent:
         if enriched.status == EnrichmentStatus.FALLBACK:
             return enriched.input_strategy == EnrichmentInputStrategy.FEED_METADATA_ONLY
         return enriched.status == EnrichmentStatus.ENRICHED and bool(enriched.selected_chunks)
+
+
+def summary_guideline_for(strategy: EnrichmentInputStrategy) -> str:
+    if strategy == EnrichmentInputStrategy.FEED_METADATA_ONLY:
+        return (
+            "450~700자, 2문단. 피드 메타데이터로 확인되는 주제와 기술적 의미를 설명하되 "
+            "원문 근거가 부족한 부분은 단정하지 않는다."
+        )
+    if strategy == EnrichmentInputStrategy.FULL_CONTENT:
+        return (
+            "700~1200자, 2~3문단. 원문 전체 근거를 바탕으로 주제, 핵심 주장, 주요 근거, "
+            "기술적 의미를 충분히 연결한다."
+        )
+    if strategy in {
+        EnrichmentInputStrategy.CHUNK_SELECTION,
+        EnrichmentInputStrategy.EVIDENCE_SELECTION,
+    }:
+        return (
+            "700~1100자, 2~3문단. 선택된 원문 chunk 범위 안에서 핵심 내용과 적용 맥락을 "
+            "설명하고, 원문 전체를 모두 요약한 것처럼 표현하지 않는다."
+        )
+    return "근거가 부족하면 게시하지 않는다."
 
 
 def truncate_text(value: str, max_length: int) -> str:

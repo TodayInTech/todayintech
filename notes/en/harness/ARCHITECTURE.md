@@ -303,7 +303,7 @@ Writer receives `EnrichmentResult`. `full_content`, `chunk_selection`, and `evid
 - GitHub Actions commits generated `docs/` files and `data/briefed_articles.json` back to `main` so later runs can use them for duplicate filtering.
 - The default implementation uses `DraftNewsEditorAgent`. The Draft Agent does not generate summaries, why-it-matters text, or developer insights; it only creates `editorial_status=draft` documents.
 - Use `TODAYINTECH_WRITER_AGENT=openai` to enable `OpenAINewsEditorAgent` with structured output for publish decisions, publish/reject rationale, confidence score, summary scope, evidence basis, and a natural long-form Korean summary.
-- Public article pages show only the cohesive two-to-three-paragraph summary and source link. Publish rationale, confidence, evidence scope, and evidence lists remain in Writer traces.
+- Public article pages show only the cohesive two-to-three-paragraph summary and source link. Summary length is guided by evidence strategy: `feed_metadata_only` 450–700 Korean characters, `full_content` 700–1200, and `chunk_selection`/`evidence_selection` 700–1100. Publish rationale, confidence, evidence scope, and evidence lists remain in Writer traces.
 - The OpenAI Agent uses only source evidence selected by Enrichment plus candidate metadata.
 
 Writer execution:

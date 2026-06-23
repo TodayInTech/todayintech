@@ -133,7 +133,7 @@ Enrichment can also run independently through `make enrich` or `make trace-enric
 
 Inside Writer, Agent editing, Markdown writing, and `briefed_articles` state updates are logged in order. The OpenAI Agent logs candidate review order, publish/skip decisions, structured output parse failures, and retry attempts. Writer decision trace stores per-candidate decision status, publish/reject rationale, confidence score, summary scope, and evidence basis as JSON and Markdown.
 
-Published article pages do not expose internal decision details. Users see only a cohesive two-to-three-paragraph Korean summary covering the subject, central content, and technical significance, plus the source link. Publish rationale and evidence remain available through the Writer decision trace.
+Published article pages do not expose internal decision details. Users see only a cohesive two-to-three-paragraph Korean summary covering the subject, central content, and technical significance, plus the source link. OpenAI Agent summary length is validated by evidence strategy: `feed_metadata_only` 450–700 Korean characters, `full_content` 700–1200, and `chunk_selection`/`evidence_selection` 700–1100. Publish rationale and evidence remain available through the Writer decision trace.
 
 ## Operating Rules
 

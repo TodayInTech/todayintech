@@ -184,6 +184,7 @@ src/
 - 한 번 생성된 article 문서는 같은 원문 URL로 다시 Agent 재생성하지 않는다.
 - 문서는 리포트가 아니라 자연스러운 에디토리얼 브리핑 글처럼 읽혀야 한다.
 - published 문서는 글의 주제, 핵심 내용, 기술적 의미를 연결한 자연스러운 한국어 요약 2~3문단과 원문 링크를 포함한다.
+- OpenAI Agent 요약 분량은 근거 전략에 따라 조정한다. `feed_metadata_only`는 450~700자, `full_content`는 700~1200자, `chunk_selection`과 `evidence_selection`은 700~1100자를 기준으로 한다.
 - 요약은 고정된 시작 문구나 소제목, 불릿 목록을 강제하지 않고 글의 성격에 맞는 해설체로 작성한다.
 - 선정 이유, 판단 확신도, 근거 범위, 근거 목록은 공개 article 문서가 아니라 Writer trace에만 기록한다.
 - `DraftNewsEditorAgent`가 만든 draft 문서는 요약한 척하지 않고 작성 대기 상태, 피드 설명, 후보 판단 근거만 표시한다.

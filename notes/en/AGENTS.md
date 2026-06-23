@@ -83,7 +83,7 @@ docs/
 │   └── anthropic-blog/
 ```
 
-Article pages should read like natural editorial briefings, not rigid reports. A published page contains a cohesive two-to-three-paragraph Korean summary covering the subject, central content, and technical significance, followed by the source link. It must not force fixed opening phrases, section headings, or bullet lists. Publish rationale, confidence, evidence scope, and evidence lists belong only in Writer traces. Draft pages must not pretend to summarize the article; they should only show pending status, feed summary, and candidate evidence.
+Article pages should read like natural editorial briefings, not rigid reports. A published page contains a cohesive two-to-three-paragraph Korean summary covering the subject, central content, and technical significance, followed by the source link. OpenAI Agent summary length is guided by evidence strategy: `feed_metadata_only` 450–700 Korean characters, `full_content` 700–1200, and `chunk_selection`/`evidence_selection` 700–1100. It must not force fixed opening phrases, section headings, or bullet lists. Publish rationale, confidence, evidence scope, and evidence lists belong only in Writer traces. Draft pages must not pretend to summarize the article; they should only show pending status, feed summary, and candidate evidence.
 
 ## Agent Rules
 

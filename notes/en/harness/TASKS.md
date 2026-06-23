@@ -86,6 +86,7 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Generate PNG brand assets for organization icon uploads
   - [x] Add publish rationale, evidence scope, and confidence fields to the OpenAI Agent decision schema
   - [x] Simplify public article pages around a natural long-form Korean summary
+  - [x] Apply OpenAI Agent summary length guidance by Enrichment input strategy
   - [ ] Implement publication status transition policy
 
 - [x] Build / Deploy - complete

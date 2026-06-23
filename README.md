@@ -179,7 +179,7 @@ make write DATE=2026-06-07 ENRICHED_DIR=.var/local/enriched OUTPUT_DIR=docs
 
 기본 Writer는 `DraftNewsEditorAgent`를 사용합니다. 이 단계는 요약, 왜 중요한가, 개발자 인사이트를 생성하지 않고 Writer/Generator 구조 검증을 위한 draft 문서만 만듭니다. 실제 OpenAI Agent를 사용하려면 `OPENAI_API_KEY`를 설정하고 `TODAYINTECH_WRITER_AGENT=openai` 또는 `make write WRITER_AGENT=openai`로 실행합니다.
 
-OpenAI Agent는 Enrichment가 제공한 원문 근거를 우선 사용하고, 원문 추출 실패 시 허용된 후보만 피드 메타데이터 fallback을 사용합니다. 개별 글은 고정 소제목이나 불릿 목록 없이 글의 주제, 핵심 내용, 기술적 의미를 연결한 자연스러운 한국어 요약 2~3문단으로 구성합니다. 선정 이유와 판단 근거는 공개 문서 대신 Writer trace에 기록합니다.
+OpenAI Agent는 Enrichment가 제공한 원문 근거를 우선 사용하고, 원문 추출 실패 시 허용된 후보만 피드 메타데이터 fallback을 사용합니다. 개별 글은 고정 소제목이나 불릿 목록 없이 글의 주제, 핵심 내용, 기술적 의미를 연결한 자연스러운 한국어 요약 2~3문단으로 구성합니다. 요약 분량은 근거 전략에 따라 `feed_metadata_only` 450~700자, `full_content` 700~1200자, `chunk_selection`/`evidence_selection` 700~1100자를 기준으로 합니다. 선정 이유와 판단 근거는 공개 문서 대신 Writer trace에 기록합니다.
 
 ```text
 docs/

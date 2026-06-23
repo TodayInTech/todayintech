@@ -86,6 +86,7 @@
   - [x] 조직 아이콘 업로드용 PNG 브랜드 자산 생성
   - [x] OpenAI Agent decision schema에 선정 이유, 근거 범위, 확신도 추가
   - [x] 공개 article 문서를 자연스러운 한국어 장문 요약 중심으로 단순화
+  - [x] Enrichment 입력 전략별 OpenAI Agent 요약 분량 가이드 적용
   - [ ] 게시 상태 전환 정책 구현
 
 - [x] Build / Deploy - 완료

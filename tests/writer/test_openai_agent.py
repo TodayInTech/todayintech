@@ -146,6 +146,23 @@ def make_enrichment_result(
     )
 
 
+def make_fallback_result() -> EnrichmentResult:
+    preprocessing = make_preprocessing_result()
+    candidate = preprocessing.services[0].candidates[0]
+    return EnrichmentResult(
+        generated_for=preprocessing.generated_for,
+        generated_at=preprocessing.generated_at,
+        candidates=[
+            EnrichedArticleCandidate(
+                candidate=candidate,
+                status=EnrichmentStatus.FALLBACK,
+                input_strategy=EnrichmentInputStrategy.FEED_METADATA_ONLY,
+                input_strategy_reason="fetch_failed: feed metadata fallback",
+            )
+        ],
+    )
+
+
 def test_openai_agent_creates_published_briefing_from_structured_output() -> None:
     decision = OpenAIArticleDecision(
         should_publish=True,
@@ -184,8 +201,9 @@ def test_openai_agent_creates_published_briefing_from_structured_output() -> Non
     assert "chunk-0001" in client.responses.last_input
     assert "concrete developer tooling changes" in client.responses.last_input
     assert "ranking_reasons_ko" in client.responses.last_input
-    assert "500~900자" in client.responses.last_input
+    assert "700~1200자" in client.responses.last_input
     assert "2~3문단" in client.responses.last_input
+    assert "원문 전체 근거를 바탕으로" in client.responses.last_input
     assert "첫 문장과 문단 구성을 고정하지 말고" in client.responses.last_input
     assert "'해당 글은', '이 글은' 같은 표현" in client.responses.last_input
 
@@ -288,6 +306,20 @@ def test_openai_agent_publishes_selected_long_content() -> None:
 
     assert result.services[0].briefings[0].summary_scope == "chunk_selection"
     assert "source_evidence" in client.responses.last_input
+    assert "700~1100자" in client.responses.last_input
+    assert "선택된 원문 chunk 범위 안에서" in client.responses.last_input
+
+
+def test_openai_agent_uses_shorter_guideline_for_feed_metadata_only() -> None:
+    decision = OpenAIArticleDecision(should_publish=False)
+    client = FakeOpenAIClient(decision)
+    agent = OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini", client=client)
+
+    result = agent.edit(make_fallback_result())
+
+    assert result.decisions[0].status == AgentDecisionStatus.SKIPPED
+    assert "450~700자" in client.responses.last_input
+    assert "피드 메타데이터로 확인되는 주제" in client.responses.last_input
 
 
 def test_openai_agent_requires_api_key_without_injected_client() -> None:
