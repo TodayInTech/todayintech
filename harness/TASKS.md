@@ -63,9 +63,11 @@
   - [x] enrichment 상태와 Agent 입력 전략 모델 정의
   - [x] 원문 요청·추출·구조·토큰·실패 원인 trace contract 정의
   - [x] 전체·서비스별 enrichment 집계와 JSON/Markdown trace writer 구현
-  - [ ] 원문 fetcher와 extractor 구현
-  - [ ] 구조 보존 chunker와 입력 전략 policy 구현
-  - [ ] enrichment CLI, 캐시, 파이프라인 연결
+  - [x] HTTP fetcher와 Trafilatura HTML extractor 구현
+  - [x] 구조 보존 chunker와 적응형 token budget policy 구현
+  - [x] enrichment pipeline factory, JSON cache, storage, 독립 CLI 구성
+  - [ ] Agent 기반 chunk/evidence selector 구현
+  - [ ] Writer 입력과 전체 파이프라인 연결
 
 - [ ] Writer - 진행 중
   - [x] Writer 패키지 구조 추가
@@ -93,6 +95,6 @@
 
 ## 다음 작업 후보
 
-- 원문 fetcher와 extractor 구현
-- enrichment 결과 캐시와 재시도 정책 구현
-- 구조 보존 chunker와 입력 전략 policy 구현
+- Agent 기반 chunk/evidence selector 구현
+- Writer 입력을 `EnrichedArticleCandidate`로 전환
+- 전체 파이프라인과 GitHub Actions trace 보존 순서 연결

@@ -63,9 +63,11 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Define enrichment statuses and Agent input strategies
   - [x] Define the source fetch, extraction, structure, token, and failure trace contract
   - [x] Implement overall/service-level aggregation and JSON/Markdown trace writers
-  - [ ] Implement source fetchers and extractors
-  - [ ] Implement structure-preserving chunking and input strategy policy
-  - [ ] Connect enrichment CLI, cache, and pipeline
+  - [x] Implement the HTTP fetcher and Trafilatura HTML extractor
+  - [x] Implement structure-preserving chunking and adaptive token-budget policy
+  - [x] Add the enrichment pipeline factory, JSON cache, storage, and standalone CLI
+  - [ ] Implement Agent-based chunk/evidence selection
+  - [ ] Connect Writer input and the full pipeline
 
 - [ ] Writer - in progress
   - [x] Add Writer package structure
@@ -93,6 +95,6 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 
 ## Next Work Candidates
 
-- Implement source fetchers and extractors
-- Implement enrichment cache and retry policy
-- Implement structure-preserving chunking and input strategy policy
+- Implement Agent-based chunk/evidence selection
+- Migrate Writer input to `EnrichedArticleCandidate`
+- Connect the full pipeline and GitHub Actions trace publication order

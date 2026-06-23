@@ -16,6 +16,7 @@ make test-unit
 make test-collection
 make trace-collect
 make trace-preprocess
+make trace-enrich
 make trace-write
 make fetch-trace-history
 make quality
@@ -118,13 +119,15 @@ Enrichment traces do not store source text or chunk text. They store only `conte
 
 ## Runtime Logs
 
-The full pipeline prints numbered progress logs so developers can see the current execution state immediately.
+The current full pipeline prints the following three numbered stages.
 
 ```text
 [1/3] Collector
 [2/3] Preprocessor
 [3/3] Writer
 ```
+
+Enrichment currently runs independently through `make enrich` or `make trace-enrich`. After Writer integration, the full pipeline log will expand to Collector, Preprocessor, Enrichment, and Writer.
 
 Inside Writer, Agent editing, Markdown writing, and `briefed_articles` state updates are logged in order. The OpenAI Agent logs candidate review order, publish/skip decisions, structured output parse failures, and retry attempts. Writer decision trace stores per-candidate decision status, publish/reject rationale, confidence score, summary scope, and evidence basis as JSON and Markdown.
 
@@ -135,6 +138,7 @@ Published article pages do not expose internal decision details. Users see only 
 - Fixture-based `make test` is for stable development verification.
 - `make trace-collect` calls real external sources and is for operational tracing.
 - `make trace-preprocess` records preprocessing candidates and exclusion reasons from the collector raw snapshot.
+- `make trace-enrich` records source fetching, extraction, structure, and input strategy for limited candidates.
 - `make trace-write` records Writer Agent publish, skip, and failure decisions with evidence for each candidate.
 - Trace duration is not used as a strict pass/fail condition because external network conditions can affect it.
 - A service with zero articles records an `empty_collection` warning.

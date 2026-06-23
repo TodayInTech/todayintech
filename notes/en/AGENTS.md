@@ -101,12 +101,15 @@ Each stage must remain independently executable for development and debugging.
 - The Collector stores daily snapshots. Repeated articles across dates are expected and must be filtered by preprocessing, not by collection.
 - Run the Preprocessor stage with `make preprocess`.
 - The Preprocessor normalizes URLs, removes run-level duplicates, excludes already briefed articles, ranks candidates, and generates Writer-facing candidate identifiers.
+- Run Enrichment independently with `make enrich`.
+- Enrichment fetches source HTML for limited candidates, preserves document blocks, and routes input through `full_content`, `chunk_selection`, or `evidence_selection` according to token budget.
+- Enrichment output is stored under `.var/local/enriched/{YYYY-MM-DD}/enrichment.json` with a versioned JSON cache.
 - Run the Writer stage with `make write`.
 - Writer contains the Agent and Generator. The Agent creates editorial results and the Generator only writes Markdown.
 - The default Writer uses `DraftNewsEditorAgent`, which does not generate summaries or insights.
 - Use `TODAYINTECH_WRITER_AGENT=openai` or `make write WRITER_AGENT=openai` to use `OpenAINewsEditorAgent`.
 - The OpenAI Agent does not crawl full article text. It only uses the title, feed summary, tags, metadata, and ranking signals provided by Collector and Preprocessor.
-- Run the full pipeline with `.venv/bin/python -m src.main`; it currently connects Collector, Preprocessor, and Writer draft generation.
+- Run the full pipeline with `.venv/bin/python -m src.main`; Enrichment is currently available as an independent stage and will be connected to Writer in the next step.
 
 1. Create services through the factory.
 2. Collect information through each service collector strategy via `NewsCollector`.

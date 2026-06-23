@@ -27,12 +27,20 @@
 | `TODAYINTECH_OUTPUT_DIR` | `docs` | 선택 | `output_dir` | 생성된 Markdown 브리핑 저장 루트 |
 | `TODAYINTECH_RAW_OUTPUT_DIR` | `.var/local/raw` | 선택 | `raw_output_dir` | collector raw JSON 저장 루트 |
 | `TODAYINTECH_PROCESSED_OUTPUT_DIR` | `.var/local/processed` | 선택 | `processed_output_dir` | preprocessor 후보 JSON 저장 루트 |
+| `TODAYINTECH_ENRICHED_OUTPUT_DIR` | `.var/local/enriched` | 선택 | `enriched_output_dir` | enrichment 결과 JSON 저장 루트 |
+| `TODAYINTECH_ENRICHMENT_CACHE_DIR` | `.var/local/enrichment-cache` | 선택 | `enrichment_cache_dir` | URL·extractor·chunker·policy 설정 기반 enrichment JSON 캐시 루트 |
 | `TODAYINTECH_TRACE_OUTPUT_DIR` | `.var/local/traces` | 선택 | `trace_output_dir` | 운영 트레이싱 JSON/Markdown 저장 루트 |
 | `TODAYINTECH_BRIEFED_ARTICLES_PATH` | `data/briefed_articles.json` | 선택 | `briefed_articles_path` | 이미 브리핑/발행된 원문 글 상태 파일 경로 |
 | `TODAYINTECH_WRITER_AGENT` | `draft` | 선택 | `writer_agent` | Writer Agent 구현 선택. `draft` 또는 `openai`. `openai` 사용 시 `OPENAI_API_KEY` 필요 |
 | `TODAYINTECH_MAX_ARTICLES_PER_SERVICE` | `5` | 선택 | `max_articles_per_service` | legacy Markdown scaffold용 서비스별 최대 기사 수. 현재 Writer 경로에서는 사용하지 않는다 |
 | `TODAYINTECH_MAX_CANDIDATES_PER_SERVICE` | `10` | 선택 | `max_candidates_per_service` | preprocessor가 Agent 입력 후보로 남길 서비스별 최대 글 수. 최소값은 1 |
 | `TODAYINTECH_MAX_CANDIDATES_TOTAL` | `50` | 선택 | `max_candidates_total` | preprocessor가 Agent 입력 후보로 남길 전체 최대 글 수. 최소값은 1 |
+| `TODAYINTECH_ENRICHMENT_TIMEOUT_SECONDS` | `20` | 선택 | `enrichment_timeout_seconds` | 원문 HTTP 요청 timeout 초 |
+| `TODAYINTECH_ENRICHMENT_MAX_ATTEMPTS` | `2` | 선택 | `enrichment_max_attempts` | timeout·네트워크 오류 원문 요청 최대 시도 횟수 |
+| `TODAYINTECH_ENRICHMENT_MINIMUM_TOKENS` | `100` | 선택 | `enrichment_minimum_tokens` | 유효한 추출 본문으로 인정할 최소 token 수 |
+| `TODAYINTECH_ENRICHMENT_FULL_CONTENT_MAX_TOKENS` | `4000` | 선택 | `enrichment_full_content_max_tokens` | 전체 본문을 Agent 입력으로 사용할 최대 token 수 |
+| `TODAYINTECH_ENRICHMENT_CHUNK_SELECTION_MAX_TOKENS` | `8000` | 선택 | `enrichment_chunk_selection_max_tokens` | chunk selection과 evidence selection을 나누는 token 기준 |
+| `TODAYINTECH_ENRICHMENT_CHUNK_MAX_TOKENS` | `1200` | 선택 | `enrichment_chunk_max_tokens` | 구조 보존 chunk 하나의 목표 최대 token 수 |
 
 ## Local 재현성 설정
 
@@ -52,6 +60,7 @@
 - `src/main.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.writer_agent`, `SETTINGS.openai_api_key`, `SETTINGS.openai_model`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`, `SETTINGS.output_dir`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`
 - `src/collection/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`
 - `src/processing/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.raw_output_dir`, `SETTINGS.processed_output_dir`, `SETTINGS.briefed_articles_path`, `SETTINGS.max_candidates_per_service`, `SETTINGS.max_candidates_total`
+- `src/enrichment/__main__.py`: enrichment 출력·캐시 경로, HTTP 요청, token budget, chunk 크기 설정
 - `src/writer/__main__.py`: `SETTINGS.resolve_target_date()`, `SETTINGS.writer_agent`, `SETTINGS.openai_api_key`, `SETTINGS.openai_model`, `SETTINGS.processed_output_dir`, `SETTINGS.output_dir`, `SETTINGS.briefed_articles_path`
 
 ## 추가 시 체크리스트

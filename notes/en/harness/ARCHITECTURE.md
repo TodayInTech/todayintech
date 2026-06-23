@@ -88,8 +88,20 @@ src/
 │   │   ├── candidate_quality_gate.py
 │   │   └── candidate_limiting.py
 ├── enrichment/
-│   ├── __init__.py
-│   └── models.py
+│   ├── __main__.py
+│   ├── content_enricher.py
+│   ├── context.py
+│   ├── models.py
+│   ├── contracts/
+│   ├── factories/
+│   ├── fetchers/
+│   ├── extractors/
+│   ├── chunking/
+│   ├── policies/
+│   ├── steps/
+│   ├── state/
+│   ├── storage/
+│   └── tokenization/
 ├── writer/
 │   ├── __main__.py
 │   ├── news_writer.py
@@ -252,7 +264,7 @@ The preprocessing `ArticleCandidate` is the Writer input packet. It does not gen
 
 ## Enrichment
 
-Enrichment is a separate stage that prepares source evidence only for candidates limited by the Preprocessor. The trace contract is defined before the fetch/extract implementation. The implementation will:
+Enrichment is a separate stage that prepares source evidence only for candidates limited by the Preprocessor. `ContentEnricher` runs a `BaseEnrichmentStep` pipeline. Fetchers, extractors, chunkers, and token counters use Strategy; factories select implementations; token budgets use Policy; and cached results use Repository.
 
 1. Record source fetch results and final URLs.
 2. Extract content while preserving headings, sections, code, tables, and list structure.
@@ -261,6 +273,24 @@ Enrichment is a separate stage that prepares source evidence only for candidates
 5. Never store full source text or selected chunk text in trace history.
 
 Enrichment statuses are `enriched`, `fallback`, `skipped`, and `failed`. Agent input strategies are `full_content`, `chunk_selection`, `evidence_selection`, `feed_metadata_only`, and `none`. The trace records HTTP status, MIME type, response size, durations, extractor and policy versions, cache usage, document type, extracted and selected token counts, structure counts, title similarity, quality score, and failure reason per candidate.
+
+The initial policy treats fewer than 100 tokens as insufficient, uses full content through 4,000 tokens, routes 4,001–8,000 tokens to `chunk_selection`, and routes larger documents to `evidence_selection`. The latter strategies do not make heuristic evidence selections before an Agent selector is connected.
+
+```bash
+make enrich
+make enrich DATE=2026-06-23
+make trace-enrich
+```
+
+Outputs:
+
+```text
+.var/local/enriched/YYYY-MM-DD/
+└── enrichment.json
+
+.var/local/enrichment-cache/
+└── {cache_key}.json
+```
 
 ## Writer
 

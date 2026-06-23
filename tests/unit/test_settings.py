@@ -9,6 +9,8 @@ def test_settings_from_env_uses_defaults(tmp_path, monkeypatch) -> None:
     monkeypatch.delenv("TODAYINTECH_WRITER_AGENT", raising=False)
     monkeypatch.delenv("TODAYINTECH_MAX_ARTICLES_PER_SERVICE", raising=False)
     monkeypatch.delenv("TODAYINTECH_TRACE_OUTPUT_DIR", raising=False)
+    monkeypatch.delenv("TODAYINTECH_ENRICHED_OUTPUT_DIR", raising=False)
+    monkeypatch.delenv("TODAYINTECH_ENRICHMENT_CACHE_DIR", raising=False)
 
     settings = AppSettings.from_env()
 
@@ -16,6 +18,10 @@ def test_settings_from_env_uses_defaults(tmp_path, monkeypatch) -> None:
     assert settings.writer_agent == "draft"
     assert settings.max_articles_per_service == 5
     assert settings.trace_output_dir == Path(".var/local/traces")
+    assert settings.enriched_output_dir == Path(".var/local/enriched")
+    assert settings.enrichment_cache_dir == Path(".var/local/enrichment-cache")
+    assert settings.enrichment_full_content_max_tokens == 4000
+    assert settings.enrichment_chunk_selection_max_tokens == 8000
 
 
 def test_settings_resolve_target_date_prefers_override(monkeypatch) -> None:

@@ -10,12 +10,15 @@ dependencies = [
     "jinja2>=3.1.6",
     "openai>=1.99.0",
     "pydantic>=2.11.0",
+    "tiktoken>=0.13.0",
+    "trafilatura>=2.1.0",
 ]
 
 [project.scripts]
 todayintech = "src.main:main"
 todayintech-collector = "src.collection.__main__:main"
 todayintech-preprocessor = "src.processing.__main__:main"
+todayintech-enricher = "src.enrichment.__main__:main"
 todayintech-writer = "src.writer.__main__:main"
 
 [project.optional-dependencies]

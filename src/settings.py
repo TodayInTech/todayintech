@@ -54,6 +54,17 @@ def _int_env(name: str, default: int, minimum: int | None = None) -> int:
     return parsed
 
 
+def _float_env(name: str, default: float, minimum: float | None = None) -> float:
+    value = os.getenv(name)
+    if value is None or value.strip() == "":
+        return default
+    try:
+        parsed = float(value)
+    except ValueError:
+        return default
+    return max(minimum, parsed) if minimum is not None else parsed
+
+
 @dataclass(frozen=True)
 class AppSettings:
     openai_api_key: str | None
@@ -63,11 +74,19 @@ class AppSettings:
     output_dir: Path
     raw_output_dir: Path
     processed_output_dir: Path
+    enriched_output_dir: Path
+    enrichment_cache_dir: Path
     trace_output_dir: Path
     briefed_articles_path: Path
     max_articles_per_service: int
     max_candidates_per_service: int
     max_candidates_total: int
+    enrichment_timeout_seconds: float
+    enrichment_max_attempts: int
+    enrichment_minimum_tokens: int
+    enrichment_full_content_max_tokens: int
+    enrichment_chunk_selection_max_tokens: int
+    enrichment_chunk_max_tokens: int
     target_date: str | None
     docusaurus_url: str
     docusaurus_base_url: str
@@ -84,6 +103,12 @@ class AppSettings:
             raw_output_dir=Path(os.getenv("TODAYINTECH_RAW_OUTPUT_DIR", ".var/local/raw")),
             processed_output_dir=Path(
                 os.getenv("TODAYINTECH_PROCESSED_OUTPUT_DIR", ".var/local/processed")
+            ),
+            enriched_output_dir=Path(
+                os.getenv("TODAYINTECH_ENRICHED_OUTPUT_DIR", ".var/local/enriched")
+            ),
+            enrichment_cache_dir=Path(
+                os.getenv("TODAYINTECH_ENRICHMENT_CACHE_DIR", ".var/local/enrichment-cache")
             ),
             trace_output_dir=Path(os.getenv("TODAYINTECH_TRACE_OUTPUT_DIR", ".var/local/traces")),
             briefed_articles_path=Path(
@@ -102,6 +127,36 @@ class AppSettings:
             max_candidates_total=_int_env(
                 "TODAYINTECH_MAX_CANDIDATES_TOTAL",
                 default=50,
+                minimum=1,
+            ),
+            enrichment_timeout_seconds=_float_env(
+                "TODAYINTECH_ENRICHMENT_TIMEOUT_SECONDS",
+                default=20,
+                minimum=1,
+            ),
+            enrichment_max_attempts=_int_env(
+                "TODAYINTECH_ENRICHMENT_MAX_ATTEMPTS",
+                default=2,
+                minimum=1,
+            ),
+            enrichment_minimum_tokens=_int_env(
+                "TODAYINTECH_ENRICHMENT_MINIMUM_TOKENS",
+                default=100,
+                minimum=1,
+            ),
+            enrichment_full_content_max_tokens=_int_env(
+                "TODAYINTECH_ENRICHMENT_FULL_CONTENT_MAX_TOKENS",
+                default=4000,
+                minimum=1,
+            ),
+            enrichment_chunk_selection_max_tokens=_int_env(
+                "TODAYINTECH_ENRICHMENT_CHUNK_SELECTION_MAX_TOKENS",
+                default=8000,
+                minimum=1,
+            ),
+            enrichment_chunk_max_tokens=_int_env(
+                "TODAYINTECH_ENRICHMENT_CHUNK_MAX_TOKENS",
+                default=1200,
                 minimum=1,
             ),
             target_date=_optional_env("TODAYINTECH_TARGET_DATE"),

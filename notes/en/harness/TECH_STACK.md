@@ -11,6 +11,8 @@ The Python version must remain consistent across `.python-version` and GitHub Ac
 
 - `feedparser`: RSS/Atom parsing
 - `httpx`: HTTP requests
+- `trafilatura`: structured source HTML and metadata extraction
+- `tiktoken`: `o200k_base` token counting for Agent input policy
 - `pydantic`: data model validation
 - `openai`: LLM API integration
 - `jinja2`: future Markdown template rendering extension
@@ -52,6 +54,8 @@ Main variables:
 - `TODAYINTECH_TIMEZONE`
 - `TODAYINTECH_OUTPUT_DIR`
 - `TODAYINTECH_RAW_OUTPUT_DIR`
+- `TODAYINTECH_ENRICHED_OUTPUT_DIR`
+- `TODAYINTECH_ENRICHMENT_CACHE_DIR`
 - `TODAYINTECH_TRACE_OUTPUT_DIR`
 - `TODAYINTECH_MAX_ARTICLES_PER_SERVICE`
 - `TODAYINTECH_TARGET_DATE`

@@ -11,6 +11,8 @@ COUNT ?=
 OUTPUT_DIR ?=
 RAW_DIR ?=
 PROCESSED_DIR ?=
+ENRICHED_DIR ?=
+ENRICHMENT_CACHE_DIR ?=
 BRIEFED_STATE ?=
 WRITER_AGENT ?=
 TRACE_DIR ?= .var/local/traces
@@ -50,6 +52,20 @@ ifneq ($(strip $(BRIEFED_STATE)),)
 PREPROCESS_ARGS += --briefed-state $(BRIEFED_STATE)
 endif
 
+ENRICH_ARGS :=
+ifneq ($(strip $(DATE)),)
+ENRICH_ARGS += --date $(DATE)
+endif
+ifneq ($(strip $(PROCESSED_DIR)),)
+ENRICH_ARGS += --processed-dir $(PROCESSED_DIR)
+endif
+ifneq ($(strip $(ENRICHED_DIR)),)
+ENRICH_ARGS += --output-dir $(ENRICHED_DIR)
+endif
+ifneq ($(strip $(ENRICHMENT_CACHE_DIR)),)
+ENRICH_ARGS += --cache-dir $(ENRICHMENT_CACHE_DIR)
+endif
+
 WRITE_ARGS :=
 ifneq ($(strip $(DATE)),)
 WRITE_ARGS += --date $(DATE)
@@ -72,7 +88,7 @@ ifneq ($(strip $(DATE)),)
 WORKFLOW_ARGS += -f target_date=$(DATE)
 endif
 
-.PHONY: help collect preprocess write trace-collect trace-preprocess trace-write fetch-trace-history generate generate-openai test test-unit test-collection lint lint-fix format format-check check build serve serve-build verify quality ci-quality ci deploy deploy-status
+.PHONY: help collect preprocess enrich write trace-collect trace-preprocess trace-enrich trace-write fetch-trace-history generate generate-openai test test-unit test-collection test-enrichment lint lint-fix format format-check check build serve serve-build verify quality ci-quality ci deploy deploy-status
 
 help:
 	@echo "Today in Tech project commands"
@@ -88,6 +104,11 @@ help:
 	@echo "  make preprocess DATE=2026-06-07"
 	@echo "  make preprocess RAW_DIR=.var/local/raw PROCESSED_DIR=.var/local/processed"
 	@echo ""
+	@echo "Enrichment:"
+	@echo "  make enrich"
+	@echo "  make enrich DATE=2026-06-23"
+	@echo "  make trace-enrich"
+	@echo ""
 	@echo "Writer:"
 	@echo "  make write"
 	@echo "  make write DATE=2026-06-07 PROCESSED_DIR=.var/local/processed OUTPUT_DIR=docs"
@@ -102,6 +123,7 @@ help:
 	@echo "  make test"
 	@echo "  make test-unit"
 	@echo "  make test-collection"
+	@echo "  make test-enrichment"
 	@echo "  make lint"
 	@echo "  make lint-fix"
 	@echo "  make format"
@@ -133,6 +155,8 @@ help:
 	@echo "  OUTPUT_DIR    Optional raw output root. Default: TODAYINTECH_RAW_OUTPUT_DIR or .var/local/raw"
 	@echo "  RAW_DIR       Optional preprocessing raw input root"
 	@echo "  PROCESSED_DIR Optional preprocessing output root"
+	@echo "  ENRICHED_DIR  Optional enrichment output root"
+	@echo "  ENRICHMENT_CACHE_DIR Optional enrichment cache root"
 	@echo "  BRIEFED_STATE Optional briefed article state JSON path"
 	@echo "  WRITER_AGENT   Writer agent implementation: draft or openai"
 	@echo "  TRACE_DIR     Trace output root. Default: .var/local/traces"
@@ -150,6 +174,9 @@ collect:
 preprocess:
 	$(PYTHON) -m src.processing $(PREPROCESS_ARGS)
 
+enrich:
+	$(PYTHON) -m src.enrichment $(ENRICH_ARGS)
+
 write:
 	$(PYTHON) -m src.writer $(WRITE_ARGS)
 
@@ -158,6 +185,9 @@ trace-collect:
 
 trace-preprocess:
 	$(PYTHON) -m src.processing $(PREPROCESS_ARGS) --trace-dir $(TRACE_DIR)
+
+trace-enrich:
+	$(PYTHON) -m src.enrichment $(ENRICH_ARGS) --trace-dir $(TRACE_DIR)
 
 trace-write:
 	$(PYTHON) -m src.writer $(WRITE_ARGS) --trace-dir $(TRACE_DIR)
@@ -190,6 +220,10 @@ test-unit:
 test-collection:
 	mkdir -p $(REPORT_DIR)
 	$(PYTHON) -m pytest tests/collection --junitxml=$(REPORT_DIR)/collection.xml
+
+test-enrichment:
+	mkdir -p $(REPORT_DIR)
+	$(PYTHON) -m pytest tests/enrichment tests/tracing/test_enrichment_trace.py --junitxml=$(REPORT_DIR)/enrichment.xml
 
 lint:
 	$(PYTHON) -m ruff check .

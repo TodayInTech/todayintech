@@ -160,6 +160,16 @@ make preprocess RAW_DIR=.var/local/raw PROCESSED_DIR=.var/local/processed
 └── preprocessing.json
 ```
 
+Enrichment 단계는 전처리에서 제한된 후보의 원문을 가져와 본문 구조와 Agent 입력 전략을 준비합니다.
+
+```bash
+make enrich
+make enrich DATE=2026-06-23
+make trace-enrich
+```
+
+HTML 본문은 heading, paragraph, list, code, table 단위로 보존하고 `o200k_base` tokenizer로 길이를 측정합니다. 4,000토큰 이하는 전체 본문을 사용하고, 그보다 긴 글은 의미 기반 근거 선택이 필요한 대상으로 표시합니다. 추출 결과는 `.var/local/enriched/{YYYY-MM-DD}/enrichment.json`, 캐시는 `.var/local/enrichment-cache/`에 저장됩니다. 현재 Writer와 전체 파이프라인에는 아직 연결되지 않았습니다.
+
 Writer 단계만 실행하여 전처리 후보를 article archive Markdown 초안으로 생성합니다.
 
 ```bash

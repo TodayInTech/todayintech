@@ -244,12 +244,15 @@ News Editor Agent는 뉴스레터 편집자가 아니라 기술 글 큐레이터
 - Collector는 daily snapshot을 저장한다. 같은 글이 여러 날짜에 반복 수집될 수 있으며, 이는 정상 동작이다.
 - Preprocessor 단계는 `make preprocess`로 실행한다.
 - Preprocessor는 URL 정규화, 현재 실행 중복 제거, 이미 브리핑된 글 제외, 후보 랭킹, Writer 입력용 후보 식별자 생성을 수행한다.
+- Enrichment 단계는 `make enrich`로 실행한다.
+- Enrichment는 제한된 후보의 원문을 HTTP로 가져와 HTML 본문 구조를 보존하고, token budget에 따라 `full_content`, `chunk_selection`, `evidence_selection` 입력 전략을 결정한다.
+- Enrichment 결과는 `.var/local/enriched/{YYYY-MM-DD}/enrichment.json`에 저장하고 URL·extractor·chunker·policy 설정 기반 JSON 캐시를 사용한다.
 - Writer 단계는 `make write`로 실행한다.
 - Writer는 Agent와 Generator를 포함한다. Agent는 편집 결과를 만들고 Generator는 Markdown 파일만 쓴다.
 - 기본 Writer는 요약을 생성하지 않는 `DraftNewsEditorAgent`를 사용한다.
 - `TODAYINTECH_WRITER_AGENT=openai` 또는 `make write WRITER_AGENT=openai`를 사용하면 `OpenAINewsEditorAgent`를 사용한다.
 - OpenAI Agent는 원문 전체를 크롤링하지 않고, Collector와 Preprocessor가 제공한 제목, 피드 설명, 태그, 메타데이터, ranking signals만 사용한다.
-- 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행하며, 현재는 Collector, Preprocessor, Writer draft 생성까지 연결되어 있다.
+- 전체 파이프라인은 `.venv/bin/python -m src.main`으로 실행하며, 현재 Enrichment는 독립 실행까지만 구현되어 있고 Writer 연결은 후속 단계로 남아 있다.
 
 1. Factory가 MVP 서비스 구현체를 생성한다.
 2. `NewsCollector`가 각 서비스 구현체의 collector strategy로 정보를 수집한다.
@@ -258,13 +261,14 @@ News Editor Agent는 뉴스레터 편집자가 아니라 기술 글 큐레이터
 5. Preprocessor가 URL canonicalization과 현재 실행 중복 제거를 수행한다.
 6. `briefed_articles` 상태와 기존 article 문서로 이미 발행된 글을 제외한다.
 7. Preprocessor가 `candidate_id`, `url_hash`, `suggested_doc_key`, `suggested_article_path`를 포함한 Writer 입력 후보를 만든다.
-8. Writer Agent가 신규 후보를 편집 결과로 변환한다. 현재 Draft Agent는 요약/인사이트를 생성하지 않는다.
-9. Writer Generator가 `docs/services/{service_key}/{slug}.md`를 생성한다.
-10. `docs/services/{service_key}.md`를 서비스별 색인으로 갱신한다.
-11. `docs/index.md`를 전체 진입 페이지로 갱신한다.
-12. 생성 성공 후 `briefed_articles` 상태를 draft 또는 published로 업데이트한다.
-13. Docusaurus를 빌드한다.
-14. GitHub Actions가 GitHub Pages에 배포한다.
+8. Enrichment가 후보 원문을 추출하고 구조화된 block과 chunk, Agent 입력 전략을 생성한다.
+9. Writer Agent가 신규 후보를 편집 결과로 변환한다. 현재 Draft Agent는 요약/인사이트를 생성하지 않는다.
+10. Writer Generator가 `docs/services/{service_key}/{slug}.md`를 생성한다.
+11. `docs/services/{service_key}.md`를 서비스별 색인으로 갱신한다.
+12. `docs/index.md`를 전체 진입 페이지로 갱신한다.
+13. 생성 성공 후 `briefed_articles` 상태를 draft 또는 published로 업데이트한다.
+14. Docusaurus를 빌드한다.
+15. GitHub Actions가 GitHub Pages에 배포한다.
 
 ## 오류 처리 원칙
 
