@@ -1660,6 +1660,96 @@
       "status": "published",
       "briefed_at": "2026-06-23T09:23:05.467085Z",
       "candidate_score": 39.0
+    },
+    "63738d2cfd25746fc2b85a95e76df35c4cdaa889a08ec3f4ab8bcc4aef0a6ce4": {
+      "normalized_url": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source",
+      "title_fingerprint": "github joins coalition advocating for fixes to california ai transparency act to protect open source",
+      "service_key": "github-blog",
+      "title": "GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source",
+      "article_doc_path": "docs/services/github-blog/2026-06-github-joins-coalition-advocating-for-fixes-to-california-ai-transparenc-63738d2c.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T23:10:52.597695Z",
+      "candidate_score": 41.0
+    },
+    "5f18645ca75def9dff001a4e1c331ca010267f8ecfe3f554c03934692dba14e9": {
+      "normalized_url": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader",
+      "title_fingerprint": "i automated my job and it made me a better leader",
+      "service_key": "github-blog",
+      "title": "I automated my job (and it made me a better leader)",
+      "article_doc_path": "docs/services/github-blog/2026-06-i-automated-my-job-and-it-made-me-a-better-leader-5f18645c.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T23:10:52.597733Z",
+      "candidate_score": 37.0
+    },
+    "c2c1bc9e780af453af05e9b4986b484e3006fb22b0c0d4f00e920bf0ea39cb5c": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/research/helping-communities-prepare-for-natural-disasters",
+      "title_fingerprint": "towards a world where no one is surprised by a natural disaster",
+      "service_key": "google-blog",
+      "title": "Towards a world where no one is surprised by a natural disaster",
+      "article_doc_path": "docs/services/google-blog/2026-06-towards-a-world-where-no-one-is-surprised-by-a-natural-disaster-c2c1bc9e.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T23:10:52.597749Z",
+      "candidate_score": 36.0
+    },
+    "9cafc31689e6a3f71c2442d2a5ac8618566ead52de1a17b7a7fbda063a07e379": {
+      "normalized_url": "https://tikz.dev/editor",
+      "title_fingerprint": "show hn tikz editor wysiwyg editor for figures in latex",
+      "service_key": "hacker-news",
+      "title": "Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX",
+      "article_doc_path": "docs/services/hacker-news/2026-06-show-hn-tikz-editor-wysiwyg-editor-for-figures-in-latex-9cafc316.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T23:10:52.597758Z",
+      "candidate_score": 61.6
+    },
+    "64748ac3266300d1d5f0bff327d2c56e40302b237f3caf33b99ead3987648184": {
+      "normalized_url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "title_fingerprint": "claude tag",
+      "service_key": "hacker-news",
+      "title": "Claude Tag",
+      "article_doc_path": "docs/services/hacker-news/2026-06-claude-tag-64748ac3.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T23:10:52.597767Z",
+      "candidate_score": 60.0
+    },
+    "6a2c7b0368e0bf357ef55c353f2daa2eb212a7b715fb423210049a9543864596": {
+      "normalized_url": "https://github.com/future-file-format/f3",
+      "title_fingerprint": "f3",
+      "service_key": "hacker-news",
+      "title": "F3",
+      "article_doc_path": "docs/services/hacker-news/2026-06-f3-6a2c7b03.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T23:10:52.597780Z",
+      "candidate_score": 60.0
+    },
+    "af5dcc7138d115b2c3568fdeaa1ffc39664a22f92160d2732bb3dd1d8ea0d414": {
+      "normalized_url": "https://blog.dshr.org/2026/06/ais-affordability-crisis.html",
+      "title_fingerprint": "ai s affordability crisis",
+      "service_key": "hacker-news",
+      "title": "AI's Affordability Crisis",
+      "article_doc_path": "docs/services/hacker-news/2026-06-ai-s-affordability-crisis-af5dcc71.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T23:10:52.597788Z",
+      "candidate_score": 60.0
+    },
+    "aec47bf765565a42d15632893022dd8dad49d3735db96380d92af7e90fffa2df": {
+      "normalized_url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+      "title_fingerprint": "helping build shared standards for advanced ai",
+      "service_key": "openai-blog",
+      "title": "Helping build shared standards for advanced AI",
+      "article_doc_path": "docs/services/openai-blog/2026-06-helping-build-shared-standards-for-advanced-ai-aec47bf7.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T23:10:52.597801Z",
+      "candidate_score": 39.0
+    },
+    "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e": {
+      "normalized_url": "https://openai.com/index/gpt-5-immunology-mystery",
+      "title_fingerprint": "how gpt 5 helped immunologist derya unutmaz solve a 3 year old mystery",
+      "service_key": "openai-blog",
+      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+      "article_doc_path": "docs/services/openai-blog/2026-06-how-gpt-5-helped-immunologist-derya-unutmaz-solve-a-3-year-old-mystery-072c0c39.md",
+      "status": "published",
+      "briefed_at": "2026-06-23T23:10:52.597808Z",
+      "candidate_score": 38.0
     }
   }
 }

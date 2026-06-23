@@ -21,10 +21,12 @@ GitHub Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [How we built an internal data analytics agent](./github-blog/2026-06-how-we-built-an-internal-data-analytics-agent-38e410c5.md) `published`
 - [Getting more from each token: How Copilot improves context handling and model routing](./github-blog/2026-06-getting-more-from-each-token-how-copilot-improves-context-handling-and-m-afb6ad81.md) `published`
 - [GitHub Copilot CLI for Beginners: Overview of common slash commands](./github-blog/2026-06-github-copilot-cli-for-beginners-overview-of-common-slash-commands-1b8723a7.md) `published`
+- [GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source](./github-blog/2026-06-github-joins-coalition-advocating-for-fixes-to-california-ai-transparenc-63738d2c.md) `published`
 - [Making secret scanning more trustworthy: Reducing false positives at scale](./github-blog/2026-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scal-9a46f291.md) `published`
 - [How pull request limits are cutting down the noise](./github-blog/2026-06-how-pull-request-limits-are-cutting-down-the-noise-706e559e.md) `published`
 - [What are git worktrees, and why should I use them?](./github-blog/2026-06-what-are-git-worktrees-and-why-should-i-use-them-eff5b35f.md) `published`
 - [How we made GitHub Copilot CLI more selective about delegation](./github-blog/2026-06-how-we-made-github-copilot-cli-more-selective-about-delegation-a66a7c2b.md) `published`
+- [I automated my job (and it made me a better leader)](./github-blog/2026-06-i-automated-my-job-and-it-made-me-a-better-leader-5f18645c.md) `published`
 - [Accelerating researchers and developers building multilingual AI with a new open dataset](./github-blog/2026-06-accelerating-researchers-and-developers-building-multilingual-ai-with-a-8ff72939.md) `published`
 - [From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI](./github-blog/2026-06-from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-cop-96de2795.md) `published`
 - [GitHub availability report: May 2026](./github-blog/2026-06-github-availability-report-may-2026-93dd8cc2.md) `published`
