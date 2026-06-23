@@ -30,6 +30,8 @@ Service creation uses Factory Method and Abstract Factory, while collection algo
 
 Product and documentation language uses `service` for the briefing unit exposed to users. Code uses `source` for external collection targets and `collection` for the execution layer.
 
+Enrichment runs only for candidates limited by the Preprocessor. It fetches source pages, preserves extracted content structure, and prepares evidence for Writer. Operational traces must not store full source text; they record extraction status, token counts, input strategy, and failure reasons only.
+
 Recommended structure:
 
 ```text

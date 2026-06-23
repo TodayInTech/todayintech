@@ -21,6 +21,8 @@ Briefed Article Filtering
     ↓
 Candidate Ranking
     ↓
+Candidate Enrichment
+    ↓
 Writer
     ├── News Editor Agent
     └── Markdown Generator
@@ -85,6 +87,9 @@ src/
 │   │   ├── candidate_scoring.py
 │   │   ├── candidate_quality_gate.py
 │   │   └── candidate_limiting.py
+├── enrichment/
+│   ├── __init__.py
+│   └── models.py
 ├── writer/
 │   ├── __main__.py
 │   ├── news_writer.py
@@ -245,9 +250,21 @@ Preprocessing uses a `Pipeline + Strategy + Repository` combination. `Preprocess
 
 The preprocessing `ArticleCandidate` is the Writer input packet. It does not generate summaries or insights; it only provides identifiers and evidence that the Writer Agent can use to decide publication and editorial content.
 
+## Enrichment
+
+Enrichment is a separate stage that prepares source evidence only for candidates limited by the Preprocessor. The trace contract is defined before the fetch/extract implementation. The implementation will:
+
+1. Record source fetch results and final URLs.
+2. Extract content while preserving headings, sections, code, tables, and list structure.
+3. Select `full_content`, `chunk_selection`, or `evidence_selection` based on extracted token count and structure.
+4. Use `feed_metadata_only` fallback or fail according to policy when extraction is unavailable.
+5. Never store full source text or selected chunk text in trace history.
+
+Enrichment statuses are `enriched`, `fallback`, `skipped`, and `failed`. Agent input strategies are `full_content`, `chunk_selection`, `evidence_selection`, `feed_metadata_only`, and `none`. The trace records HTTP status, MIME type, response size, durations, extractor and policy versions, cache usage, document type, extracted and selected token counts, structure counts, title similarity, quality score, and failure reason per candidate.
+
 ## Writer
 
-The Writer stage receives `ArticleCandidate` objects from the Preprocessor and turns them into documentation output. Writer contains Agent and Generator responsibilities.
+The Writer currently receives `ArticleCandidate` objects from the Preprocessor and turns them into documentation output. Once Enrichment is connected, Writer will receive candidates augmented with source evidence. Writer contains Agent and Generator responsibilities.
 
 - Writer Agent selects candidates and creates editorial results.
 - Writer Generator only writes Markdown from Agent results.

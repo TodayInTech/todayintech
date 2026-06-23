@@ -45,6 +45,8 @@ Briefed Article Filtering
     ↓
 Candidate Ranking
     ↓
+Enrich Candidate Evidence
+    ↓
 Writer
     ├── News Editor Agent
     └── Markdown Generator
@@ -55,6 +57,8 @@ GitHub Pages Deployment
 ```
 
 Today in Tech는 날짜마다 브리핑 묶음을 새로 만드는 서비스가 아니다. Collector는 매일 실행되어 외부 source의 최신 snapshot을 저장하지만, Agent는 이미 브리핑된 글을 다시 처리하지 않는다. 사이트는 날짜별 일간 뉴스레터가 아니라 서비스별 핵심 글과 전체 핵심 흐름을 누적하는 아카이브로 동작한다.
+
+Enrichment는 Preprocessor가 제한한 후보만 대상으로 원문을 가져와 본문과 구조를 보존하고, Writer가 사용할 근거 범위를 준비한다. 원문 전체를 trace에 저장하지 않으며, 추출 상태와 토큰 수, 입력 전략, 실패 원인만 운영 지표로 기록한다.
 
 예시:
 

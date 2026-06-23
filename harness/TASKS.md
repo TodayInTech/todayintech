@@ -59,6 +59,14 @@
   - [x] 전처리 pipeline factory, scorer ABC, 제외 사유 enum, ranking signal 모델, step metrics, context helper, legacy helper 제거 적용
   - [x] 서비스별 전처리 정책, 후보 품질 게이트, 점수 산정 설명 추가
 
+- [ ] Enrichment - 진행 중
+  - [x] enrichment 상태와 Agent 입력 전략 모델 정의
+  - [x] 원문 요청·추출·구조·토큰·실패 원인 trace contract 정의
+  - [x] 전체·서비스별 enrichment 집계와 JSON/Markdown trace writer 구현
+  - [ ] 원문 fetcher와 extractor 구현
+  - [ ] 구조 보존 chunker와 입력 전략 policy 구현
+  - [ ] enrichment CLI, 캐시, 파이프라인 연결
+
 - [ ] Writer - 진행 중
   - [x] Writer 패키지 구조 추가
   - [x] Draft Agent contract/schema 구현
@@ -85,5 +93,6 @@
 
 ## 다음 작업 후보
 
-- LLM 기반 News Editor Agent 구현
-- draft article을 published article로 전환하는 정책 구현
+- 원문 fetcher와 extractor 구현
+- enrichment 결과 캐시와 재시도 정책 구현
+- 구조 보존 chunker와 입력 전략 policy 구현

@@ -21,6 +21,8 @@ Briefed Article Filtering
     ↓
 Candidate Ranking
     ↓
+Candidate Enrichment
+    ↓
 News Editor Agent
     ↓
 Article Markdown Generation
@@ -89,6 +91,9 @@ src/
 │   │   ├── candidate_scoring.py
 │   │   ├── candidate_quality_gate.py
 │   │   └── candidate_limiting.py
+├── enrichment/
+│   ├── __init__.py
+│   └── models.py
 ├── writer/
 │   ├── __main__.py
 │   ├── news_writer.py
@@ -249,9 +254,21 @@ make preprocess RAW_DIR=.var/local/raw PROCESSED_DIR=.var/local/processed
 
 전처리 산출물의 `ArticleCandidate`는 Writer 입력 패킷이다. 이 패킷은 요약이나 인사이트를 만들지 않고, Writer Agent가 발행 여부와 편집 내용을 판단하는 데 필요한 식별자와 근거만 제공한다.
 
+## Enrichment
+
+Enrichment는 Preprocessor가 제한한 후보를 대상으로 원문 근거를 준비하는 별도 stage이다. 현재는 실제 fetch/extract 실행보다 먼저 trace contract를 정의한 상태이며, 이후 구현은 다음 책임을 따른다.
+
+1. 원문 요청 결과와 최종 URL을 기록한다.
+2. 본문을 추출하되 제목, 섹션, 코드, 표, 목록 구조를 보존한다.
+3. 추출 토큰 수와 구조에 따라 `full_content`, `chunk_selection`, `evidence_selection` 중 Agent 입력 전략을 선택한다.
+4. 추출 실패 시 정책에 따라 `feed_metadata_only` fallback 또는 실패로 처리한다.
+5. 원문 전체나 선택된 chunk 본문은 trace-history에 저장하지 않는다.
+
+Enrichment 상태는 `enriched`, `fallback`, `skipped`, `failed`로 구분한다. Agent 입력 전략은 `full_content`, `chunk_selection`, `evidence_selection`, `feed_metadata_only`, `none`으로 구분한다. Trace는 후보별 HTTP 상태, MIME type, 응답 크기, 실행 시간, extractor와 policy 버전, 캐시 여부, 문서 유형, 추출·선택 토큰 수, 구조 개수, 제목 유사도, 품질 점수, 실패 원인을 기록한다.
+
 ## Writer
 
-Writer 단계는 Preprocessor가 만든 `ArticleCandidate`를 받아 문서화 결과를 만든다. Writer 내부는 Agent와 Generator로 나뉜다.
+Writer 단계는 현재 Preprocessor가 만든 `ArticleCandidate`를 받아 문서화 결과를 만든다. Enrichment stage가 연결되면 원문 근거가 추가된 후보를 입력으로 받는다. Writer 내부는 Agent와 Generator로 나뉜다.
 
 - Writer Agent: 후보 중 문서화할 글을 선택하고 편집 결과를 만든다.
 - Writer Generator: Agent 결과만 받아 Markdown 파일을 쓴다.

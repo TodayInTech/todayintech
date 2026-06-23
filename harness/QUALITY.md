@@ -5,7 +5,7 @@
 ## 개념 구분
 
 - `test`: 코드가 의도대로 동작하는지 fixture와 contract로 검증한다.
-- `trace`: 실제 운영 collector/preprocessor 실행 결과와 실행 시간을 기록한다.
+- `trace`: 실제 운영 collector/preprocessor/enrichment/writer 실행 결과와 실행 시간을 기록한다.
 - `quality`: `test`와 `trace`를 함께 실행해 배포 전 판단 근거를 만든다.
 
 ## Make 명령
@@ -29,6 +29,8 @@ make quality
 
 .var/local/traces/YYYY-MM-DD/
 ├── collection.json
+├── enrichment.json
+├── enrichment-summary.md
 ├── preprocessing.json
 ├── preprocessing-summary.md
 ├── writer-decisions.json
@@ -56,6 +58,8 @@ tracing-history
 └── traces/
     └── YYYY-MM-DD/
         ├── collection.json
+        ├── enrichment.json
+        ├── enrichment-summary.md
         ├── preprocessing.json
         ├── preprocessing-summary.md
         └── summary.md
@@ -91,6 +95,26 @@ make fetch-trace-history
 - preprocessing candidate count
 - preprocessing excluded count
 - preprocessing excluded reason count
+- enrichment 전체·서비스별 usable count와 usable rate
+- enrichment status와 Agent input strategy 분포
+- 원문 HTTP status, MIME type, 응답 크기, fetch/extraction/selection duration
+- extractor·policy 버전과 cache hit 여부
+- 문서 유형과 추출 언어
+- 추출 token 분포와 선택 token 비율
+- section, chunk, code block, table, list item count
+- title similarity와 extraction quality score
+- enrichment failure reason count
+
+Enrichment trace의 상태는 다음 의미를 갖는다.
+
+- `enriched`: 추출한 원문 근거를 Agent 입력으로 사용할 수 있다.
+- `fallback`: 원문 근거는 사용할 수 없지만 피드 메타데이터 fallback이 가능하다.
+- `skipped`: 정책에 따라 enrichment 대상에서 제외했다.
+- `failed`: Writer에 전달할 근거가 없다.
+
+실패 원인은 `fetch_failed`, `fetch_timeout`, `access_denied`, `rate_limited`, `unsupported_content_type`, `empty_content`, `thin_content`, `title_mismatch`, `extraction_failed`, `selection_failed`, `policy_rejected`, `unknown`으로 정규화한다. HTTP 상태와 구체 오류는 별도 필드로 기록한다.
+
+Enrichment trace에는 원문 본문과 chunk 텍스트를 저장하지 않는다. `content_hash`와 크기·구조·상태 지표만 저장해 원문 복제와 trace-history 비대화를 방지한다.
 
 ## 실행 로그
 

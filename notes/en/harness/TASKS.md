@@ -59,6 +59,14 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Add preprocessing pipeline factory, scorer ABC, exclusion reason enum, ranking signal model, step metrics, context helpers, and remove legacy helpers
   - [x] Add service preprocessing policies, candidate quality gate, and scoring explanations
 
+- [ ] Enrichment - in progress
+  - [x] Define enrichment statuses and Agent input strategies
+  - [x] Define the source fetch, extraction, structure, token, and failure trace contract
+  - [x] Implement overall/service-level aggregation and JSON/Markdown trace writers
+  - [ ] Implement source fetchers and extractors
+  - [ ] Implement structure-preserving chunking and input strategy policy
+  - [ ] Connect enrichment CLI, cache, and pipeline
+
 - [ ] Writer - in progress
   - [x] Add Writer package structure
   - [x] Implement Draft Agent contract/schema
@@ -85,5 +93,6 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 
 ## Next Work Candidates
 
-- Implement LLM-based News Editor Agent
-- Implement draft-to-published transition policy
+- Implement source fetchers and extractors
+- Implement enrichment cache and retry policy
+- Implement structure-preserving chunking and input strategy policy

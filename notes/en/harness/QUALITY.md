@@ -5,7 +5,7 @@ This document defines the development verification and operational tracing flow 
 ## Concept Boundaries
 
 - `test`: verifies code behavior with fixtures and contracts.
-- `trace`: records real operational collector/preprocessor execution results and durations.
+- `trace`: records real operational collector/preprocessor/enrichment/writer results and durations.
 - `quality`: runs `test` and `trace` together to produce deployment decision evidence.
 
 ## Make Commands
@@ -29,6 +29,8 @@ make quality
 
 .var/local/traces/YYYY-MM-DD/
 ├── collection.json
+├── enrichment.json
+├── enrichment-summary.md
 ├── preprocessing.json
 ├── preprocessing-summary.md
 ├── writer-decisions.json
@@ -56,6 +58,8 @@ tracing-history
 └── traces/
     └── YYYY-MM-DD/
         ├── collection.json
+        ├── enrichment.json
+        ├── enrichment-summary.md
         ├── preprocessing.json
         ├── preprocessing-summary.md
         └── summary.md
@@ -91,6 +95,26 @@ The default checkout path is `.var/remote/tracing-history`.
 - Preprocessing candidate count
 - Preprocessing excluded count
 - Preprocessing excluded reason count
+- Enrichment usable count and usable rate overall and by service
+- Enrichment status and Agent input strategy distributions
+- Source HTTP status, MIME type, response size, and fetch/extraction/selection durations
+- Extractor and policy versions plus cache usage
+- Document type and detected language
+- Extracted token distribution and selected token ratio
+- Section, chunk, code block, table, and list item counts
+- Title similarity and extraction quality score
+- Enrichment failure reason count
+
+Enrichment trace statuses have the following meanings:
+
+- `enriched`: extracted source evidence is usable as Agent input.
+- `fallback`: source evidence is unavailable, but feed metadata fallback is allowed.
+- `skipped`: policy excluded the candidate from enrichment.
+- `failed`: no evidence is available for Writer.
+
+Failure reasons are normalized to `fetch_failed`, `fetch_timeout`, `access_denied`, `rate_limited`, `unsupported_content_type`, `empty_content`, `thin_content`, `title_mismatch`, `extraction_failed`, `selection_failed`, `policy_rejected`, and `unknown`. HTTP status and concrete error details are stored separately.
+
+Enrichment traces do not store source text or chunk text. They store only `content_hash` plus size, structure, status, and strategy metrics to avoid source replication and unbounded trace-history growth.
 
 ## Runtime Logs
 
