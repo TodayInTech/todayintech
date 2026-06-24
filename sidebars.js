@@ -56,6 +56,19 @@ const sidebars = {
     },
     ...serviceItems,
   ],
+  operationsSidebar: [
+    {
+      type: 'doc',
+      id: 'operations/index',
+      label: 'Overview',
+      className: 'operations-sidebar-item',
+    },
+    'operations/services',
+    'operations/collection',
+    'operations/preprocessing',
+    'operations/enrichment',
+    'operations/writer',
+  ],
 };
 
 export default sidebars;

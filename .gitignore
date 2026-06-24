@@ -32,6 +32,7 @@ pnpm-debug.log*
 
 # Static build output
 build/
+static/data/operations/
 
 # Generated collection artifacts
 .var/

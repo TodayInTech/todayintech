@@ -168,7 +168,7 @@ make enrich DATE=2026-06-23
 make trace-enrich
 ```
 
-HTML 본문은 heading, paragraph, list, code, table 단위로 보존하고 `o200k_base` tokenizer로 길이를 측정합니다. 4,000토큰 이하는 전체 본문을 Writer 근거로 사용하고, 그보다 긴 글은 의미 기반 근거 선택이 필요한 대상으로 표시합니다. 추출 결과는 `.var/local/enriched/{YYYY-MM-DD}/enrichment.json`, 캐시는 `.var/local/enrichment-cache/`에 저장됩니다.
+HTML 본문은 heading, paragraph, list, code, table 단위로 보존하고 `o200k_base` tokenizer로 길이를 측정합니다. 4,000토큰 이하는 전체 본문을 Writer 근거로 사용하고, 그보다 긴 글은 selector가 선택한 근거 chunk를 Writer 입력으로 사용합니다. 추출 결과는 `.var/local/enriched/{YYYY-MM-DD}/enrichment.json`, 캐시는 `.var/local/enrichment-cache/`에 저장됩니다.
 
 Writer 단계만 실행하여 enrichment 결과를 article archive Markdown으로 생성합니다.
 
@@ -230,6 +230,8 @@ make verify
 
 ```bash
 make quality
+make fetch-trace-history
+make build-operations
 ```
 
 산출물:
@@ -244,6 +246,8 @@ make quality
 ├── preprocessing-summary.md
 └── summary.md
 ```
+
+Operations 대시보드는 로컬 trace가 아니라 원격 `tracing-history` 브랜치 checkout을 기반으로 생성한 `static/data/operations/trace-metrics.json`만 사용합니다. 이 파일은 원문 본문, 선택 chunk 텍스트, Agent 상세 판단 문장을 포함하지 않는 집계 metric입니다.
 
 배포 워크플로를 GitHub Actions에서 수동 실행합니다.
 

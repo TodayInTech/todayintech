@@ -37,6 +37,7 @@
   - [x] Makefile 기반 GitHub Actions 수동 배포 트리거 구성
   - [x] 최소 테스트 플로우와 운영 트레이싱 산출물 구성
   - [x] `tracing-history` 브랜치 기반 운영 trace 누적 흐름 구성
+  - [x] 원격 trace history 기반 Operations 대시보드 데이터/화면 구성
   - [x] 서비스별 수집 조건 문서화
   - [x] collector 기본 contract 테스트 구현
   - [x] daily snapshot 수집 정책 문서화

@@ -37,6 +37,7 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Makefile-based manual GitHub Actions deployment trigger
   - [x] Minimal test flow and operational trace artifacts
   - [x] `tracing-history` branch flow for accumulated operational traces
+  - [x] Operations dashboard data and UI from remote trace history
   - [x] Service-level collection condition documentation
   - [x] Basic collector contract tests
   - [x] Daily snapshot collection policy documented

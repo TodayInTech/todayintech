@@ -19,6 +19,7 @@ make trace-preprocess
 make trace-enrich
 make trace-write
 make fetch-trace-history
+make build-operations
 make quality
 ```
 
@@ -80,6 +81,8 @@ make fetch-trace-history
 ```
 
 The default checkout path is `.var/remote/tracing-history`.
+
+The Operations dashboard does not use local traces as input. `make build-operations` reads only the remote `tracing-history` checkout specified by `TRACE_HISTORY_DIR`, excludes source body text, selected chunk text, and detailed Agent rationale, then writes aggregate metrics to `static/data/operations/trace-metrics.json`. GitHub Actions pushes trace history, fetches the updated `tracing-history` branch again, builds Operations data, and then builds Docusaurus.
 
 ## Current Metrics
 

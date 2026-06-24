@@ -315,6 +315,22 @@ make write WRITER_AGENT=openai
 make generate-openai
 ```
 
+## Operations Dashboard
+
+The Operations section is an operational metrics area separate from briefing documents. Its input is fixed to the remote `tracing-history` branch checkout, not local trace files. `src.operations` reads `traces/YYYY-MM-DD/*.json` and generates aggregate JSON without source body text, selected chunk text, or detailed Agent rationale.
+
+```text
+tracing-history/traces/
+    ↓
+src.operations
+    ↓
+static/data/operations/trace-metrics.json
+    ↓
+docs/operations/*.mdx
+```
+
+The Docusaurus Operations UI reads this static JSON on the client and applies period and service filters. The initial pages are Overview, Services, Collection, Preprocessing, Enrichment, and Writer, kept separate from article/service briefing documents.
+
 ## News Editor Agent
 
 The Agent selects meaningful new candidates and generates one detailed briefing per selected source article. An already briefed source URL must not be processed again.

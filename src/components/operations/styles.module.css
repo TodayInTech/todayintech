@@ -1,0 +1,315 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.filterBar {
+  align-items: end;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.filterLabel,
+.selectLabel {
+  color: var(--ifm-color-emphasis-700);
+  display: flex;
+  flex-direction: column;
+  font-size: 0.82rem;
+  font-weight: 700;
+  gap: 0.4rem;
+  text-transform: uppercase;
+}
+
+.selectLabel select {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.55rem;
+  color: var(--ifm-font-color-base);
+  min-width: 13rem;
+  padding: 0.5rem 0.65rem;
+}
+
+.segmented {
+  display: inline-flex;
+  gap: 0.35rem;
+}
+
+.button,
+.activeButton {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.45rem 0.75rem;
+}
+
+.button {
+  background: transparent;
+  color: var(--ifm-font-color-base);
+}
+
+.activeButton {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+.sourceNote {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.cardGrid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+}
+
+.chartGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.card,
+.panel,
+.funnelStep {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem;
+}
+
+.card span,
+.funnelStep span {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.card strong,
+.funnelStep strong {
+  font-size: 1.6rem;
+  letter-spacing: -0.03em;
+}
+
+.panel {
+  padding: 1rem;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.definitionGrid {
+  display: grid;
+  gap: 0.55rem 1rem;
+  grid-template-columns: max-content 1fr;
+}
+
+.definitionGrid dt {
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 700;
+}
+
+.definitionGrid dd {
+  margin: 0;
+}
+
+.funnel {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+}
+
+.funnelStep {
+  padding: 0.9rem;
+  position: relative;
+}
+
+.barChart,
+.groupedChart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.barRow,
+.groupBarLine {
+  align-items: center;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: minmax(8rem, 0.8fr) minmax(8rem, 2fr) 4rem;
+}
+
+.barLabel,
+.groupLabel {
+  color: var(--ifm-color-emphasis-800);
+  font-weight: 700;
+}
+
+.barTrack {
+  background: var(--ifm-color-emphasis-200);
+  border-radius: 999px;
+  height: 0.75rem;
+  overflow: hidden;
+}
+
+.barFill {
+  background: linear-gradient(90deg, var(--ifm-color-primary), var(--ifm-color-primary-light));
+  border-radius: inherit;
+  height: 100%;
+  min-width: 0.2rem;
+}
+
+.groupRow {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: minmax(9rem, 0.8fr) minmax(14rem, 2fr);
+  padding-top: 0.8rem;
+}
+
+.groupRow:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.groupBars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.groupBarLine {
+  grid-template-columns: 5.5rem minmax(8rem, 2fr) 3.5rem;
+}
+
+.groupBarLine span {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.legend span {
+  align-items: center;
+  color: var(--ifm-color-emphasis-700);
+  display: inline-flex;
+  font-size: 0.85rem;
+  font-weight: 700;
+  gap: 0.35rem;
+}
+
+.legend i {
+  border-radius: 999px;
+  display: inline-block;
+  height: 0.65rem;
+  width: 0.65rem;
+}
+
+.series0 {
+  background: #2563eb;
+}
+
+.series1 {
+  background: #7c3aed;
+}
+
+.series2 {
+  background: #0891b2;
+}
+
+.series3 {
+  background: #ea580c;
+}
+
+.sparkline {
+  color: var(--ifm-color-primary);
+  display: block;
+  height: 7rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+.sparklineSummary,
+.emptyState {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.tableWrap table {
+  min-width: 46rem;
+}
+
+.badge {
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.2rem 0.55rem;
+}
+
+.status_success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status_partial {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status_failed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status_missing {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .status_success {
+  background: #064e3b;
+  color: #bbf7d0;
+}
+
+[data-theme='dark'] .status_partial {
+  background: #78350f;
+  color: #fde68a;
+}
+
+[data-theme='dark'] .status_failed {
+  background: #7f1d1d;
+  color: #fecaca;
+}
+
+@media (max-width: 640px) {
+  .barRow,
+  .groupRow,
+  .groupBarLine {
+    grid-template-columns: 1fr;
+  }
+}

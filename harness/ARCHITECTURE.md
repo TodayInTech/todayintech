@@ -319,6 +319,22 @@ make write WRITER_AGENT=openai
 make generate-openai
 ```
 
+## Operations Dashboard
+
+Operations 섹션은 브리핑 문서와 분리된 운영 지표 화면이다. 입력은 로컬 trace가 아니라 원격 `tracing-history` 브랜치 checkout으로 고정한다. `src.operations`는 `traces/YYYY-MM-DD/*.json`을 읽어 원문 본문, 선택 chunk 텍스트, Agent 상세 판단 문장을 제외한 집계 JSON을 생성한다.
+
+```text
+tracing-history/traces/
+    ↓
+src.operations
+    ↓
+static/data/operations/trace-metrics.json
+    ↓
+docs/operations/*.mdx
+```
+
+Docusaurus Operations 화면은 이 정적 JSON을 클라이언트에서 읽고 기간과 서비스 필터를 적용한다. 초기 화면은 Overview, Services, Collection, Preprocessing, Enrichment, Writer로 나누며, 브리핑 섹션의 article/service 문서와 섞지 않는다.
+
 ## News Editor Agent
 
 Agent는 신규 후보 중 의미 있는 글만 선택하고, 선택된 글마다 하나의 상세 브리핑을 생성한다. 이미 브리핑된 원문 URL은 다시 처리하지 않는다.

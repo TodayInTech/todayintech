@@ -117,6 +117,13 @@ jobs:
             -m "chore(trace): update operational trace history"
           git -C "$TRACE_HISTORY_DIR" push origin "$TRACE_HISTORY_BRANCH"
 
+      - name: Build Operations dashboard data
+        if: always()
+        run: |
+          set -euo pipefail
+          make fetch-trace-history TRACE_HISTORY_DIR=.artifacts/tracing-history
+          make build-operations PYTHON=python TRACE_HISTORY_DIR=.artifacts/tracing-history
+
       - name: Publish generated archive state
         env:
           TARGET_BRANCH: ${{ github.ref_name }}

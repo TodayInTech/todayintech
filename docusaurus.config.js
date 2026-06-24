@@ -51,6 +51,12 @@ const config = {
           position: 'left',
           label: 'Briefings',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'operationsSidebar',
+          position: 'left',
+          label: 'Operations',
+        },
       ],
     },
   },

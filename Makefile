@@ -90,7 +90,7 @@ ifneq ($(strip $(DATE)),)
 WORKFLOW_ARGS += -f target_date=$(DATE)
 endif
 
-.PHONY: help collect preprocess enrich write trace-collect trace-preprocess trace-enrich trace-write fetch-trace-history generate generate-openai test test-unit test-collection test-enrichment lint lint-fix format format-check check build serve serve-build verify quality ci-quality ci deploy deploy-status
+.PHONY: help collect preprocess enrich write trace-collect trace-preprocess trace-enrich trace-write fetch-trace-history build-operations generate generate-openai test test-unit test-collection test-enrichment lint lint-fix format format-check check build serve serve-build verify quality ci-quality ci deploy deploy-status
 
 help:
 	@echo "Today in Tech project commands"
@@ -120,6 +120,7 @@ help:
 	@echo "  make trace-preprocess"
 	@echo "  make trace-write"
 	@echo "  make fetch-trace-history"
+	@echo "  make build-operations"
 	@echo ""
 	@echo "Quality:"
 	@echo "  make test"
@@ -206,6 +207,11 @@ fetch-trace-history:
 		git clone --branch "$(TRACE_HISTORY_BRANCH)" --single-branch \
 			"$$(git remote get-url origin)" "$(TRACE_HISTORY_DIR)"; \
 	fi
+
+build-operations:
+	$(PYTHON) -m src.operations \
+		--trace-history-dir $(TRACE_HISTORY_DIR) \
+		--output-dir static/data/operations
 
 generate:
 	$(PYTHON) -m src.main

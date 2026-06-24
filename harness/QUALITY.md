@@ -19,6 +19,7 @@ make trace-preprocess
 make trace-enrich
 make trace-write
 make fetch-trace-history
+make build-operations
 make quality
 ```
 
@@ -80,6 +81,8 @@ make fetch-trace-history
 ```
 
 기본 checkout 위치는 `.var/remote/tracing-history`이다.
+
+Operations 대시보드는 로컬 trace를 입력으로 사용하지 않는다. `make build-operations`는 `TRACE_HISTORY_DIR`로 지정한 원격 `tracing-history` checkout만 읽고, 원문 본문·선택 chunk·Agent 상세 판단 문장을 제외한 집계 metric을 `static/data/operations/trace-metrics.json`으로 생성한다. GitHub Actions는 trace history를 push한 뒤 다시 `tracing-history`를 fetch하고 Operations 데이터를 만든 다음 Docusaurus를 빌드한다.
 
 ## 현재 추적 지표
 
