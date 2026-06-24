@@ -1,0 +1,240 @@
+{
+  "generated_at": "2026-06-24T23:02:15.510918+00:00",
+  "generated_for": "2026-06-24",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "f54f8aacce1bf2f0aeac1654400f54c6502fc089",
+  "github_run_id": "28135121046",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 23,
+      "excluded_count": 97,
+      "duration_ms": 1,
+      "reason_counts": {
+        "already_briefed": 97
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 23,
+      "output_count": 23,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 23,
+      "output_count": 21,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 21,
+      "output_count": 11,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:c634197546029c52",
+          "title": "OpenAI unveils its first custom chip, built by Broadcom",
+          "normalized_url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom",
+          "url_hash": "c634197546029c52378c411ab7b47ef418fa33661d6da8ab2465649af1153d34",
+          "suggested_doc_key": "2026-06-openai-unveils-its-first-custom-chip-built-by-broadcom-c6341975",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-openai-unveils-its-first-custom-chip-built-by-broadcom-c6341975.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 417점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 278개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:007f76a5fec1a2e5",
+          "title": "Thomann takes legal action against Fender",
+          "normalized_url": "https://www.thomann.de/blog/en/inside/thomann-takes-legal-action-against-fender",
+          "url_hash": "007f76a5fec1a2e5102a08e86e9d81e855f6e63e67e4ef2554eef69401d455e9",
+          "suggested_doc_key": "2026-06-thomann-takes-legal-action-against-fender-007f76a5",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-thomann-takes-legal-action-against-fender-007f76a5.md",
+          "candidate_score": 63.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 163점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 100개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:31a5a4839a43517e",
+          "title": "Computer use in Gemini 3.5 Flash",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash",
+          "url_hash": "31a5a4839a43517ef8e50961d11ac1f57a960c86367448e950280a14c77177ae",
+          "suggested_doc_key": "2026-06-computer-use-in-gemini-3-5-flash-31a5a483",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-computer-use-in-gemini-3-5-flash-31a5a483.md",
+          "candidate_score": 63.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 131점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 83개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7c502c448bbfd042",
+          "title": "There are a few things that I look back on as my mistakes in the early days",
+          "normalized_url": "https://twitter.com/ID_AA_Carmack/status/2069799283369345247",
+          "url_hash": "7c502c448bbfd042075f60e7a5f230e74d9ad201d77850d222f280c7f3602def",
+          "suggested_doc_key": "2026-06-there-are-a-few-things-that-i-look-back-on-as-my-mistakes-in-the-early-d-7c502c44",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-there-are-a-few-things-that-i-look-back-on-as-my-mistakes-in-the-early-d-7c502c44.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 460점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 231개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e434434054567b09",
+          "title": "We’re making Bunny DNS free",
+          "normalized_url": "https://bunny.net/blog/were-making-bunny-dns-free",
+          "url_hash": "e434434054567b09ff722e827deff5d269592ecd20b97984b0e6281b768ca621",
+          "suggested_doc_key": "2026-06-we-re-making-bunny-dns-free-e4344340",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-we-re-making-bunny-dns-free-e4344340.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 817점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 250개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:855db08b75f6ecde",
+          "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+          "normalized_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+          "url_hash": "855db08b75f6ecdec51e99c29ae69891f728d628f1aaf51e27e6f4497ca596cf",
+          "suggested_doc_key": "2026-06-openai-and-broadcom-unveil-llm-optimized-inference-chip-855db08b",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-openai-and-broadcom-unveil-llm-optimized-inference-chip-855db08b.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 47,
+        "low_quality": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-06-24T23:04:06.602539+00:00",
+  "generated_for": "2026-06-24",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "f54f8aacce1bf2f0aeac1654400f54c6502fc089",
+  "github_run_id": "28135121046",
+  "decision_count": 5,
+  "decision_counts": {
+    "published": 5
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:c634197546029c52",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "OpenAI unveils its first custom chip, built by Broadcom",
+      "normalized_url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom",
+      "article_doc_path": "docs/services/hacker-news/2026-06-openai-unveils-its-first-custom-chip-built-by-broadcom-c6341975.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 하드웨어",
+      "importance_level": "High",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "OpenAI가 Broadcom과 공동 설계한 자체 추론 칩 'Jalapeño' 발표는 추론 비용과 전력 효율성에 직접적인 영향을 줄 수 있는 기술적 전환으로, 기술 독자들에게 유의미한 인사이트를 제공한다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 66.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:007f76a5fec1a2e5",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Thomann takes legal action against Fender",
+      "normalized_url": "https://www.thomann.de/blog/en/inside/thomann-takes-legal-action-against-fender",
+      "article_doc_path": "docs/services/hacker-news/2026-06-thomann-takes-legal-action-against-fender-007f76a5.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "법·지식재산 / 산업",
+      "importance_level": "중간",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Thomann의 법적 대응은 Fender의 스트랫 모양에 대한 저작권 주장이라는 구체적 분쟁과 업계 전반의 다양성·혁신에 미칠 잠재적 영향을 동시에 담고 있어 기술·제조 생태계 관련 독자에게 유의미한 분석 거리를 제공합니다. 제공된 원문에는 사건 경위, 법적 쟁점(뒤셀도르프 지방법원 기본 판결의 절차적 성격), 업계 영향과 Thomann의 역할·이유가 상세히 서술되어 있어 브리핑 기준을 만족합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 63.3,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:31a5a4839a43517e",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Computer use in Gemini 3.5 Flash",
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash",
+      "article_doc_path": "docs/services/hacker-news/2026-06-computer-use-in-gemini-3-5-flash-31a5a483.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Generative AI / Agents",
+      "importance_level": "Medium-High",
+      "confidence_score": 0.92,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Gemini 3.5 Flash에 'computer use'가 메인 모델에 통합되어 에이전트형 태스크 성능과 엔터프라이즈 자동화 적용 가능성이 직접적으로 향상된 점, 기능 예시(앱 기능 분류, 문서 접근성 감사)와 구체적 안전 대책(대응적 적대적 훈련, 명시적 사용자 확인, 간접 프롬프트 인젝션 식별 시 자동 중단) 등 기술적·운영적 정보가 충분히 제공되어 기술 독자에게 유용한 브리핑 자료로 판단됩니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 63.1,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:7c502c448bbfd042",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "There are a few things that I look back on as my mistakes in the early days",
+      "normalized_url": "https://twitter.com/ID_AA_Carmack/status/2069799283369345247",
+      "article_doc_path": "docs/services/hacker-news/2026-06-there-are-a-few-things-that-i-look-back-on-as-my-mistakes-in-the-early-d-7c502c44.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "게임 개발/소프트웨어 엔지니어링",
+      "importance_level": "높음",
+      "confidence_score": 0.8,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "초기 Quake 개발을 직접 되돌아보며 기술적 선택, 팀 운영, 지분 구조 등 실무적 교훈을 구체적으로 제시해 기술 독자에게 유의미한 인사이트를 제공하므로 게시 가치가 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:855db08b75f6ecde",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+      "normalized_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "article_doc_path": "docs/services/openai-blog/2026-06-openai-and-broadcom-unveil-llm-optimized-inference-chip-855db08b.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI Hardware",
+      "importance_level": "Medium",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터로 확인되는 주제(OpenAI와 Broadcom의 LLM 최적화 추론 칩 공개)가 기술 독자에게 의미 있는 하드웨어·추론 인프라 변화를 시사하므로 간결한 브리핑 가치가 있다고 판단했습니다. 다만 세부 스펙과 벤치마크는 제공되지 않아 제한적으로 서술합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: OpenAI and Broadcom unveil LLM-optimized inference chip",
+        "feed_summary: OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems.",
+        "source_url: https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+        "published_at: 2026-06-24T06:00:00+00:00"
+      ],
+      "candidate_score": 39.0,
+      "error_message": null
+    }
+  ]
+}
