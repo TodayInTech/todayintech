@@ -22,6 +22,7 @@ Hacker News에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [Deno Desktop](./hacker-news/2026-06-deno-desktop-933230b7.md) `published`
 - [Open source AI must win](./hacker-news/2026-06-open-source-ai-must-win-81122a35.md) `published`
 - [Danish privacy activist Lars Andersen raided by police](./hacker-news/2026-06-danish-privacy-activist-lars-andersen-raided-by-police-bd194355.md) `published`
+- [OpenAI unveils its first custom chip, built by Broadcom](./hacker-news/2026-06-openai-unveils-its-first-custom-chip-built-by-broadcom-c6341975.md) `published`
 - [GLM-5.2 – How to Run Locally](./hacker-news/2026-06-glm-5-2-how-to-run-locally-8846e792.md) `published`
 - [Steam Machine launches today](./hacker-news/2026-06-steam-machine-launches-today-44efbe22.md) `published`
 - [There is minimal downside to switching to open models](./hacker-news/2026-06-there-is-minimal-downside-to-switching-to-open-models-5f56c075.md) `published`
@@ -37,12 +38,17 @@ Hacker News에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [A robot is sprinting towards you. Do you want it running on Claude or Grok?](./hacker-news/2026-06-a-robot-is-sprinting-towards-you-do-you-want-it-running-on-claude-or-gro-849ef9c2.md) `published`
 - [Show HN: Are You in the Weights?](./hacker-news/2026-06-show-hn-are-you-in-the-weights-d5e87b22.md) `published`
 - [Show HN: Oak – Git alternative designed for agents](./hacker-news/2026-06-show-hn-oak-git-alternative-designed-for-agents-6c975cc6.md) `published`
+- [Thomann takes legal action against Fender](./hacker-news/2026-06-thomann-takes-legal-action-against-fender-007f76a5.md) `published`
+- [Computer use in Gemini 3.5 Flash](./hacker-news/2026-06-computer-use-in-gemini-3-5-flash-31a5a483.md) `published`
 - [Apple is about to make Hide My Email useless](./hacker-news/2026-06-apple-is-about-to-make-hide-my-email-useless-ebd99fc2.md) `published`
 - [Moebius: 0.2B image inpainting model with 10B-level performance](./hacker-news/2026-06-moebius-0-2b-image-inpainting-model-with-10b-level-performance-bd53d0ea.md) `published`
 - [Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX](./hacker-news/2026-06-show-hn-tikz-editor-wysiwyg-editor-for-figures-in-latex-9cafc316.md) `published`
 - [The founder of Craigslist has given away half a billion dollars](./hacker-news/2026-06-the-founder-of-craigslist-has-given-away-half-a-billion-dollars-1027fcbb.md) `published`
 - [A backdoor in a LinkedIn job offer](./hacker-news/2026-06-a-backdoor-in-a-linkedin-job-offer-27ca2b25.md) `published`
 - [Police officer investigated for using AI to 'create evidence' in multiple cases](./hacker-news/2026-06-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-7cf4dd7c.md) `published`
+- [AI's Affordability Crisis](./hacker-news/2026-06-ai-s-affordability-crisis-af5dcc71.md) `published`
+- [F3](./hacker-news/2026-06-f3-6a2c7b03.md) `published`
+- [Claude Tag](./hacker-news/2026-06-claude-tag-64748ac3.md) `published`
 - [Will It Mythos?](./hacker-news/2026-06-will-it-mythos-8165457a.md) `published`
 - [The text in Claude Code’s “Extended Thinking” output](./hacker-news/2026-06-the-text-in-claude-code-s-extended-thinking-output-94dcf38c.md) `published`
 - [Developers don't understand CORS (2019)](./hacker-news/2026-06-developers-don-t-understand-cors-2019-7fdc72df.md) `published`
@@ -69,9 +75,7 @@ Hacker News에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [GLM 5.2 Is Out](./hacker-news/2026-06-glm-5-2-is-out-edd51c72.md) `published`
 - [AI coding at home without going broke](./hacker-news/2026-06-ai-coding-at-home-without-going-broke-7cb80137.md) `published`
 - [Statement on US government directive to suspend access to Fable 5 and Mythos 5](./hacker-news/2026-06-statement-on-us-government-directive-to-suspend-access-to-fable-5-and-my-00131728.md) `published`
-- [Claude Tag](./hacker-news/2026-06-claude-tag-64748ac3.md) `published`
-- [F3](./hacker-news/2026-06-f3-6a2c7b03.md) `published`
-- [AI's Affordability Crisis](./hacker-news/2026-06-ai-s-affordability-crisis-af5dcc71.md) `published`
+- [There are a few things that I look back on as my mistakes in the early days](./hacker-news/2026-06-there-are-a-few-things-that-i-look-back-on-as-my-mistakes-in-the-early-d-7c502c44.md) `published`
 - [Linux 7.1](./hacker-news/2026-06-linux-7-1-fa5989a7.md) `published`
 - [Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed](./hacker-news/2026-06-flock-powered-police-chiefs-stalking-women-shows-why-warrants-are-needed-31286248.md) `published`
 - [SMPTE Makes Its Standards Freely Accessible](./hacker-news/2026-06-smpte-makes-its-standards-freely-accessible-cbb04616.md) `published`

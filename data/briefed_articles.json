@@ -1750,6 +1750,56 @@
       "status": "published",
       "briefed_at": "2026-06-23T23:10:52.597808Z",
       "candidate_score": 38.0
+    },
+    "c634197546029c52378c411ab7b47ef418fa33661d6da8ab2465649af1153d34": {
+      "normalized_url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom",
+      "title_fingerprint": "openai unveils its first custom chip built by broadcom",
+      "service_key": "hacker-news",
+      "title": "OpenAI unveils its first custom chip, built by Broadcom",
+      "article_doc_path": "docs/services/hacker-news/2026-06-openai-unveils-its-first-custom-chip-built-by-broadcom-c6341975.md",
+      "status": "published",
+      "briefed_at": "2026-06-24T23:04:06.596051Z",
+      "candidate_score": 66.0
+    },
+    "007f76a5fec1a2e5102a08e86e9d81e855f6e63e67e4ef2554eef69401d455e9": {
+      "normalized_url": "https://www.thomann.de/blog/en/inside/thomann-takes-legal-action-against-fender",
+      "title_fingerprint": "thomann takes legal action against fender",
+      "service_key": "hacker-news",
+      "title": "Thomann takes legal action against Fender",
+      "article_doc_path": "docs/services/hacker-news/2026-06-thomann-takes-legal-action-against-fender-007f76a5.md",
+      "status": "published",
+      "briefed_at": "2026-06-24T23:04:06.596090Z",
+      "candidate_score": 63.3
+    },
+    "31a5a4839a43517ef8e50961d11ac1f57a960c86367448e950280a14c77177ae": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash",
+      "title_fingerprint": "computer use in gemini 3 5 flash",
+      "service_key": "hacker-news",
+      "title": "Computer use in Gemini 3.5 Flash",
+      "article_doc_path": "docs/services/hacker-news/2026-06-computer-use-in-gemini-3-5-flash-31a5a483.md",
+      "status": "published",
+      "briefed_at": "2026-06-24T23:04:06.596103Z",
+      "candidate_score": 63.1
+    },
+    "7c502c448bbfd042075f60e7a5f230e74d9ad201d77850d222f280c7f3602def": {
+      "normalized_url": "https://twitter.com/ID_AA_Carmack/status/2069799283369345247",
+      "title_fingerprint": "there are a few things that i look back on as my mistakes in the early days",
+      "service_key": "hacker-news",
+      "title": "There are a few things that I look back on as my mistakes in the early days",
+      "article_doc_path": "docs/services/hacker-news/2026-06-there-are-a-few-things-that-i-look-back-on-as-my-mistakes-in-the-early-d-7c502c44.md",
+      "status": "published",
+      "briefed_at": "2026-06-24T23:04:06.596111Z",
+      "candidate_score": 60.0
+    },
+    "855db08b75f6ecdec51e99c29ae69891f728d628f1aaf51e27e6f4497ca596cf": {
+      "normalized_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "title_fingerprint": "openai and broadcom unveil llm optimized inference chip",
+      "service_key": "openai-blog",
+      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+      "article_doc_path": "docs/services/openai-blog/2026-06-openai-and-broadcom-unveil-llm-optimized-inference-chip-855db08b.md",
+      "status": "published",
+      "briefed_at": "2026-06-24T23:04:06.596119Z",
+      "candidate_score": 39.0
     }
   }
 }

@@ -5,7 +5,7 @@ sidebar_label: Today in Tech
 
 # Today in Tech
 
-생성일: 2026-06-23
+생성일: 2026-06-24
 
 ## 개요
 
@@ -18,6 +18,7 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [Deno Desktop](./services/hacker-news/2026-06-deno-desktop-933230b7.md) - Hacker News `published` / score 67.0
 - [Open source AI must win](./services/hacker-news/2026-06-open-source-ai-must-win-81122a35.md) - Hacker News `published` / score 67.0
 - [Danish privacy activist Lars Andersen raided by police](./services/hacker-news/2026-06-danish-privacy-activist-lars-andersen-raided-by-police-bd194355.md) - Hacker News `published` / score 66.0
+- [OpenAI unveils its first custom chip, built by Broadcom](./services/hacker-news/2026-06-openai-unveils-its-first-custom-chip-built-by-broadcom-c6341975.md) - Hacker News `published` / score 66.0
 - [GLM-5.2 – How to Run Locally](./services/hacker-news/2026-06-glm-5-2-how-to-run-locally-8846e792.md) - Hacker News `published` / score 65.0
 - [Steam Machine launches today](./services/hacker-news/2026-06-steam-machine-launches-today-44efbe22.md) - Hacker News `published` / score 65.0
 - [There is minimal downside to switching to open models](./services/hacker-news/2026-06-there-is-minimal-downside-to-switching-to-open-models-5f56c075.md) - Hacker News `published` / score 65.0
@@ -32,19 +33,14 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO](./services/hacker-news/2026-06-vibethinker-3b-param-model-that-beats-opus-4-5-on-reasoning-with-novel-s-0bb3c4e1.md) - Hacker News `published` / score 64.1
 - [A robot is sprinting towards you. Do you want it running on Claude or Grok?](./services/hacker-news/2026-06-a-robot-is-sprinting-towards-you-do-you-want-it-running-on-claude-or-gro-849ef9c2.md) - Hacker News `published` / score 63.9
 - [Show HN: Are You in the Weights?](./services/hacker-news/2026-06-show-hn-are-you-in-the-weights-d5e87b22.md) - Hacker News `published` / score 63.5
-- [Show HN: Oak – Git alternative designed for agents](./services/hacker-news/2026-06-show-hn-oak-git-alternative-designed-for-agents-6c975cc6.md) - Hacker News `published` / score 63.4
 
 ## 이번 실행에서 추가된 글
 
-- [Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX](./services/hacker-news/2026-06-show-hn-tikz-editor-wysiwyg-editor-for-figures-in-latex-9cafc316.md) - Hacker News / TikZ는 논문 그림을 코드로 그리는 LaTeX 패키지로, 좌표를 손으로 조정하며 재컴파일하는 방식이 흔하다. 피드에 따르면 작성자는 웹·데스크톱용 오픈소스 WYSIWYG TikZ 편집기를 공개했으며, 소스 코드와 렌더링을 동시에 보여주고 양쪽을 동기화해 사용자가 드래그로 요소를 옮기면 코드 내 좌표 숫자만 정확한 원위치에 맞춰 바꾼다고 설명한다. 작성자는 동일한 편집 환경을 제공하는 다른 사례를 알지 못한다고 덧붙였다. `published` / score 61.6
-- [Claude Tag](./services/hacker-news/2026-06-claude-tag-64748ac3.md) - Hacker News / Anthropic은 팀 단위 협업을 위해 설계된 새로운 방식의 Claude, 'Claude Tag'를 공개했다. 클라우드 애플리케이션이 아닌 Slack 내 팀 구성원으로 참여해 선택된 채널과 연동 도구·데이터·코드베이스에 접근하도록 설정할 수 있으며, 사용자가 채널에서 @Claude를 태그하면 모델이 해당 요청을 단계로 분해해 순차적으로 수행하고 결과를 스레드로 보고한다. 한 채널에 하나의 Claude가 돌아가는 '멀티플레이어' 설계로서 누구나 진행 상태를 확인하고 이어받을 수 있으며, 채널을 따라 쌓인 문맥을 기억해 반복 설명을 줄여주고(사적 채널은 제외) 권한이 허용되면 다른 채널과 데이터 소스에서 자동으로 학습하기도 한다. Anthropic 내부에서는 제품팀 코드의 65%가 내부 Claude Tag로 생성되는 등 업무 효율 개선 사례를 언급한다. `published` / score 60.0
-- [F3](./services/hacker-news/2026-06-f3-6a2c7b03.md) - Hacker News / 피드 기준으로는 'F3'라는 제목의 GitHub 저장소(future-file-format/f3)가 Hacker News에서 주목을 받고 있습니다. 제공된 메타데이터에는 원문 GitHub 링크와 HN 토론 링크가 포함되어 있으며, 수집 시점(2026-06-23) 기준으로 포인트 578점, 댓글 126개, RSS 순위 14위를 기록해 커뮤니티의 관심이 컸다는 사실이 확인됩니다. `published` / score 60.0
-- [AI's Affordability Crisis](./services/hacker-news/2026-06-ai-s-affordability-crisis-af5dcc71.md) - Hacker News / 최근 글은 생성형 AI의 '비용 위기'를 사례와 숫자로 보여준다. 토큰 사용을 통한 실사용 실험 결과(한 달 $200 구독으로 Anthropic은 $8,000, OpenAI는 $14,000 상당 토큰 소모 가능)와 Ed Zitron이 공개한 OpenAI 2025 재무자료(매출 $130.7억, 비용·지출 $340억, 순손실 계정 반영 후 실질적 대규모 적자)를 연결해, 플랫폼들이 이용자에게 지나치게 관대하게 비용을 보조해 왔음을 지적한다. 그 결과 영업·마케팅 비용 비중이 높아지고(매출의 44% 수준으로 인용됨) 기업 고객의 토큰 기반 과금 전환이 사용자·조직 차원에서 큰 반발을 불러왔다고 설명한다. 기사에는 구독 기반에서 토큰 과금으로의 전환과 그에 따른 '토큰폭탄' 사례들(기업들의 지출 급증, Microsoft의 GitHub Copilot·Anthropic의 과금 조정 등)이 구체적으로 제시되어 있다. `published` / score 60.0
-- [GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source](./services/github-blog/2026-06-github-joins-coalition-advocating-for-fixes-to-california-ai-transparenc-63738d2c.md) - GitHub Blog / GitHub이 Black Forest Labs, Hugging Face, Mozilla와 함께 캘리포니아 AI 투명성 법안(SB 942, SB 1000 수정안)에 대해 오픈소스 생태계와 충돌하는 조항을 수정할 것을 요구하는 연대 서한에 참여했다. 핵심 쟁점은 법안 초안의 ‘라이선스 취소’ 규정으로, 오픈소스 라이선스는 본질적으로 영구적이고 취소할 수 없다는 원칙에 의해 작동한다. 그러나 초안은 하류 사용자가 특정 의무를 이행하지 않을 경우 라이선스를 취소하도록 요구하는데, 이런 방식은 널리 사용되는 오픈소스 관행과 맞지 않아 협업·커뮤니티 기반 프로젝트와 전체 소프트웨어 공급망에 불확실성을 초래할 수 있다고 연대가 지적한다. `published` / score 41.0
-- [Helping build shared standards for advanced AI](./services/openai-blog/2026-06-helping-build-shared-standards-for-advanced-ai-aec47bf7.md) - OpenAI Blog / OpenAI가 고급 인공지능을 위한 공통 표준 마련을 지원한다는 요약이 공개되어 있습니다. 피드 기준으로는 OpenAI가 Appia 재단을 통해 평가 프레임워크와 안전 관행 수립, 국제적 협력 촉진을 지원한다고만 설명되어 있으며, 제공된 정보는 이러한 지원 영역을 간단히 제시할 뿐 구체적 기술 제안이나 실행 계획은 메타데이터만으로 확인되지 않습니다. `published` / score 39.0
-- [How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery](./services/openai-blog/2026-06-how-gpt-5-helped-immunologist-derya-unutmaz-solve-a-3-year-old-mystery-072c0c39.md) - OpenAI Blog / 피드 기준으로는 OpenAI 블로그에 올라온 글에서 GPT-5 Pro가 3년째 해결되지 않았던 면역학적 미스터리 해결에 기여했고, 특히 T 세포 행동에 대해 유의미한 통찰을 제공했다고 요약된다. 피드 요약은 이런 발견이 암과 자가면역 질환 연구를 지원할 수 있는 잠재력을 갖는다고 전하며, 해당 내용은 'Applied AI' 범주로 분류되어 AI의 적용 사례라는 관점에서 주목받고 있다. `published` / score 38.0
-- [I automated my job (and it made me a better leader)](./services/github-blog/2026-06-i-automated-my-job-and-it-made-me-a-better-leader-5f18645c.md) - GitHub Blog / 리더십 업무의 난점은 단일 업무의 복잡성보다는 여러 도구와 맥락이 흩어져 있고 그 연결을 온전히 개인의 기억력에 의존한다는 점이라고 저자는 말합니다. GitHub Copilot 앱의 '자동화(automations)'는 캘린더·이메일·메시지·GitHub 레포지토리 등 실제 작업 맥락을 읽어 정해진 시간에 반복 실행되는 프롬프트로, 에이전트가 캔버스와 실시간 세션을 통해 진행 상황을 보여주고 조정할 수 있게 해 개인의 컨텍스트 스위칭 비용을 크게 줄여줍니다. 저자는 이를 이용해 약 40개의 자동화를 만들었고, 자동화가 무엇을 보고 판단해야 할지 '지시서'처럼 설정하면 매일 스케줄대로 동작해 중요한 관심사만 알려준다고 설명합니다. `published` / score 37.0
-- [Towards a world where no one is surprised by a natural disaster](./services/google-blog/2026-06-towards-a-world-where-no-one-is-surprised-by-a-natural-disaster-c2c1bc9e.md) - Google Blog / 지구 곳곳에서 극한 기상이행과 자연재해가 늘어나는 가운데, 구글 연구팀은 지난 10년간 AI를 활용해 위기 시점의 정보 제공에서 예측·탐지까지 범위를 확장해왔다고 보고합니다. 홍수 예측의 경우 2018년 인도 파트나 시범에서 출발해 전지구 강홍수 모델을 Nature에 발표했고, 20년치 공적 보고를 바탕으로 만든 Groundsource 데이터셋으로 도심 급류(플래시 플러드) 예측을 학습시켰습니다. 그 결과 Flood Hub는 150개국 이상, 약 20억 명을 아우르며 강홍수는 최대 7일, 도시 급류는 최대 24시간 전 예측을 제공하며 관련 데이터와 수문학 프레임워크를 오픈소스로 공개했습니다. `published` / score 36.0
+- [OpenAI unveils its first custom chip, built by Broadcom](./services/hacker-news/2026-06-openai-unveils-its-first-custom-chip-built-by-broadcom-c6341975.md) - Hacker News / OpenAI가 Broadcom과 공동으로 설계한 첫 번째 맞춤형 추론 프로세서 'Jalapeño'를 공개했다. 발표에 따르면 이 칩은 OpenAI의 추론(workload) 요구에 맞춰 특별히 설계됐고, 설계 과정에는 OpenAI의 자체 모델들도 도움을 줬다. 아직 시험 단계이지만 초기 결과는 기존 최첨단 대안들보다 와트당 성능이 크게 향상됐다고 회사는 전했다. 이번 파트너십은 Nvidia GPU에 대한 의존도를 낮추려는 전략의 일환으로, Google·Amazon이 만든 전용 AI 가속기와 유사한 목적을 가진다. `published` / score 66.0
+- [Thomann takes legal action against Fender](./services/hacker-news/2026-06-thomann-takes-legal-action-against-fender-007f76a5.md) - Hacker News / Fender가 스트랫(‘S-style’) 기타의 바디 형태에 대해 저작권을 주장하며 유럽과 미국의 제조사·유통사에 경고장을 보내는 가운데, 독일 악기 유통·제조사 Thomann이 이에 맞서 법적 대응을 시작했습니다. Thomann은 뒤셀도르프 지방법원에서 중국 업체에 대해 Fender가 얻은 이른바 기본 판결(default judgment)이 기한 누락 같은 절차적 이유에 따른 것이며, 실체적 쟁점에 대한 포괄적 심사로 보기 어렵다고 지적합니다. 또한 스트랫의 디자인은 균형·연주성 등 기능적 이유에서 비롯된 형태로 전세계 제작자들이 이를 발전시켜 왔고, 미국에서는 이 형태가 사실상 공공영역으로 간주돼 왔다는 점을 근거로 저작권 주장에 문제를 제기합니다. `published` / score 63.3
+- [Computer use in Gemini 3.5 Flash](./services/hacker-news/2026-06-computer-use-in-gemini-3-5-flash-31a5a483.md) - Hacker News / Gemini 3.5 Flash에 'computer use' 기능이 기본 내장되어, 이전의 독립형 모델(Gemini 2.5) 방식에서 메인 Flash 모델로 통합되었다. 이 통합으로 모델은 브라우저·모바일·데스크톱 환경을 넘나들며 관찰(see), 추론(reason), 행동(action)을 수행하는 커스텀 에이전트를 보다 신뢰성 있게 구현할 수 있게 되었고, 함수 호출과 Search·Maps 같은 내장 도구 활용에서 이미 강점을 보이던 점이 확장된다. 글은 특히 장기적·엔터프라이즈 자동화 시나리오—지속적 소프트웨어 테스트나 전문 애플리케이션 전반에 걸친 지식 작업—에서 성능 개선이 기대된다고 설명하며, 구체적 활용 예로 Gemini 앱을 분석해 기능을 분류하거나 자체 문서의 접근성 문제를 감사하는 사례를 제시한다. `published` / score 63.1
+- [There are a few things that I look back on as my mistakes in the early days](./services/hacker-news/2026-06-there-are-a-few-things-that-i-look-back-on-as-my-mistakes-in-the-early-d-7c502c44.md) - Hacker News / 작성자는 Quake 개발 초기의 몇 가지 실수를 솔직하게 되돌아보며 기술적 야심과 조직 운영 사이의 균형 문제를 지적한다. 그는 Quake가 기술적으로 지나치게 야심적이었다고 인정하며, 핵심 주장으로는 안정적인 기반(Doom++ 엔진 유사)을 먼저 유지하면서 멀티플레이·모딩과 같은 기능을 안정적으로 설계했어야 한다는 점을 든다. 이어 후속작에서 6자유도(6DOF) 환경과 캐릭터를 도입하는 접근이 더 적절했을 수 있다고 언급한다. 또한 창업 초기의 강도 높은 업무 강행이 구성원 소진으로 이어졌다고 자평하며, 개인의 한계를 받아들이는 과정과 기업이 성숙해갈수록 여유(slack)가 필요하다는 교훈을 강조한다. `published` / score 60.0
+- [OpenAI and Broadcom unveil LLM-optimized inference chip](./services/openai-blog/2026-06-openai-and-broadcom-unveil-llm-optimized-inference-chip-855db08b.md) - OpenAI Blog / 피드 기준으로는 OpenAI와 Broadcom이 협력해 'Jalapeño'라는 이름의 맞춤형 AI 추론 칩을 공개했다고 전합니다. 제공된 요약에 따르면 이 칩은 대형언어모델(LLM) 추론을 염두에 둔 설계로, 성능과 전력 효율, 그리고 대규모 시스템에서의 확장성을 개선하는 것을 목표로 삼고 있습니다. 제품 이름과 의도된 개선 영역만이 피드에 명시되어 있습니다. `published` / score 39.0
 
 ## 서비스
 
@@ -61,6 +57,7 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [Deno Desktop](./services/hacker-news/2026-06-deno-desktop-933230b7.md) - Hacker News `published`
 - [Open source AI must win](./services/hacker-news/2026-06-open-source-ai-must-win-81122a35.md) - Hacker News `published`
 - [Danish privacy activist Lars Andersen raided by police](./services/hacker-news/2026-06-danish-privacy-activist-lars-andersen-raided-by-police-bd194355.md) - Hacker News `published`
+- [OpenAI unveils its first custom chip, built by Broadcom](./services/hacker-news/2026-06-openai-unveils-its-first-custom-chip-built-by-broadcom-c6341975.md) - Hacker News `published`
 - [GLM-5.2 – How to Run Locally](./services/hacker-news/2026-06-glm-5-2-how-to-run-locally-8846e792.md) - Hacker News `published`
 - [Steam Machine launches today](./services/hacker-news/2026-06-steam-machine-launches-today-44efbe22.md) - Hacker News `published`
 - [There is minimal downside to switching to open models](./services/hacker-news/2026-06-there-is-minimal-downside-to-switching-to-open-models-5f56c075.md) - Hacker News `published`
@@ -76,12 +73,17 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [A robot is sprinting towards you. Do you want it running on Claude or Grok?](./services/hacker-news/2026-06-a-robot-is-sprinting-towards-you-do-you-want-it-running-on-claude-or-gro-849ef9c2.md) - Hacker News `published`
 - [Show HN: Are You in the Weights?](./services/hacker-news/2026-06-show-hn-are-you-in-the-weights-d5e87b22.md) - Hacker News `published`
 - [Show HN: Oak – Git alternative designed for agents](./services/hacker-news/2026-06-show-hn-oak-git-alternative-designed-for-agents-6c975cc6.md) - Hacker News `published`
+- [Thomann takes legal action against Fender](./services/hacker-news/2026-06-thomann-takes-legal-action-against-fender-007f76a5.md) - Hacker News `published`
+- [Computer use in Gemini 3.5 Flash](./services/hacker-news/2026-06-computer-use-in-gemini-3-5-flash-31a5a483.md) - Hacker News `published`
 - [Apple is about to make Hide My Email useless](./services/hacker-news/2026-06-apple-is-about-to-make-hide-my-email-useless-ebd99fc2.md) - Hacker News `published`
 - [Moebius: 0.2B image inpainting model with 10B-level performance](./services/hacker-news/2026-06-moebius-0-2b-image-inpainting-model-with-10b-level-performance-bd53d0ea.md) - Hacker News `published`
 - [Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX](./services/hacker-news/2026-06-show-hn-tikz-editor-wysiwyg-editor-for-figures-in-latex-9cafc316.md) - Hacker News `published`
 - [The founder of Craigslist has given away half a billion dollars](./services/hacker-news/2026-06-the-founder-of-craigslist-has-given-away-half-a-billion-dollars-1027fcbb.md) - Hacker News `published`
 - [A backdoor in a LinkedIn job offer](./services/hacker-news/2026-06-a-backdoor-in-a-linkedin-job-offer-27ca2b25.md) - Hacker News `published`
 - [Police officer investigated for using AI to 'create evidence' in multiple cases](./services/hacker-news/2026-06-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-7cf4dd7c.md) - Hacker News `published`
+- [AI's Affordability Crisis](./services/hacker-news/2026-06-ai-s-affordability-crisis-af5dcc71.md) - Hacker News `published`
+- [F3](./services/hacker-news/2026-06-f3-6a2c7b03.md) - Hacker News `published`
+- [Claude Tag](./services/hacker-news/2026-06-claude-tag-64748ac3.md) - Hacker News `published`
 - [Will It Mythos?](./services/hacker-news/2026-06-will-it-mythos-8165457a.md) - Hacker News `published`
 - [The text in Claude Code’s “Extended Thinking” output](./services/hacker-news/2026-06-the-text-in-claude-code-s-extended-thinking-output-94dcf38c.md) - Hacker News `published`
 - [Developers don't understand CORS (2019)](./services/hacker-news/2026-06-developers-don-t-understand-cors-2019-7fdc72df.md) - Hacker News `published`
@@ -108,9 +110,7 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [GLM 5.2 Is Out](./services/hacker-news/2026-06-glm-5-2-is-out-edd51c72.md) - Hacker News `published`
 - [AI coding at home without going broke](./services/hacker-news/2026-06-ai-coding-at-home-without-going-broke-7cb80137.md) - Hacker News `published`
 - [Statement on US government directive to suspend access to Fable 5 and Mythos 5](./services/hacker-news/2026-06-statement-on-us-government-directive-to-suspend-access-to-fable-5-and-my-00131728.md) - Hacker News `published`
-- [Claude Tag](./services/hacker-news/2026-06-claude-tag-64748ac3.md) - Hacker News `published`
-- [F3](./services/hacker-news/2026-06-f3-6a2c7b03.md) - Hacker News `published`
-- [AI's Affordability Crisis](./services/hacker-news/2026-06-ai-s-affordability-crisis-af5dcc71.md) - Hacker News `published`
+- [There are a few things that I look back on as my mistakes in the early days](./services/hacker-news/2026-06-there-are-a-few-things-that-i-look-back-on-as-my-mistakes-in-the-early-d-7c502c44.md) - Hacker News `published`
 - [Linux 7.1](./services/hacker-news/2026-06-linux-7-1-fa5989a7.md) - Hacker News `published`
 - [Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed](./services/hacker-news/2026-06-flock-powered-police-chiefs-stalking-women-shows-why-warrants-are-needed-31286248.md) - Hacker News `published`
 - [SMPTE Makes Its Standards Freely Accessible](./services/hacker-news/2026-06-smpte-makes-its-standards-freely-accessible-cbb04616.md) - Hacker News `published`
@@ -129,32 +129,33 @@ Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기
 - [Getting more from each token: How Copilot improves context handling and model routing](./services/github-blog/2026-06-getting-more-from-each-token-how-copilot-improves-context-handling-and-m-afb6ad81.md) - GitHub Blog `published`
 - [GitHub Copilot CLI for Beginners: Overview of common slash commands](./services/github-blog/2026-06-github-copilot-cli-for-beginners-overview-of-common-slash-commands-1b8723a7.md) - GitHub Blog `published`
 - [How Preply combines AI and human tutors to personalize learning](./services/openai-blog/2026-06-how-preply-combines-ai-and-human-tutors-to-personalize-learning-ddc7b24a.md) - OpenAI Blog `published`
+- [GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source](./services/github-blog/2026-06-github-joins-coalition-advocating-for-fixes-to-california-ai-transparenc-63738d2c.md) - GitHub Blog `published`
 - [New research shows how AMIE, our medical AI, could help manage health conditions.](./services/google-blog/2026-06-new-research-shows-how-amie-our-medical-ai-could-help-manage-health-cond-4ca5042e.md) - Google Blog `published`
 - [Access OpenAI models and Codex through your Oracle cloud commitment](./services/openai-blog/2026-06-access-openai-models-and-codex-through-your-oracle-cloud-commitment-c17e7186.md) - OpenAI Blog `published`
-- [GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source](./services/github-blog/2026-06-github-joins-coalition-advocating-for-fixes-to-california-ai-transparenc-63738d2c.md) - GitHub Blog `published`
 - [Google DeepMind and A24 announce first-of-its-kind research partnership](./services/google-blog/2026-06-google-deepmind-and-a24-announce-first-of-its-kind-research-partnership-6ac9977f.md) - Google Blog `published`
 - [How we're combatting AI scams with security, legislation and more](./services/google-blog/2026-06-how-we-re-combatting-ai-scams-with-security-legislation-and-more-5c6bce39.md) - Google Blog `published`
 - [Claude Fable 5 and Claude Mythos 5](./services/anthropic-blog/2026-06-claude-fable-5-and-claude-mythos-5-e11fcea9.md) - Anthropic Blog `published`
+- [Helping build shared standards for advanced AI](./services/openai-blog/2026-06-helping-build-shared-standards-for-advanced-ai-aec47bf7.md) - OpenAI Blog `published`
 - [How Omio is building the future of conversational travel](./services/openai-blog/2026-06-how-omio-is-building-the-future-of-conversational-travel-480508a9.md) - OpenAI Blog `published`
 - [Samsung Electronics brings ChatGPT and Codex to employees](./services/openai-blog/2026-06-samsung-electronics-brings-chatgpt-and-codex-to-employees-4a975b89.md) - OpenAI Blog `published`
 - [New usage analytics and updated spend controls for enterprises](./services/openai-blog/2026-06-new-usage-analytics-and-updated-spend-controls-for-enterprises-450d5ccf.md) - OpenAI Blog `published`
 - [Reservations are open for XREAL AURA — plus, see more news from AWE 2026.](./services/google-blog/2026-06-reservations-are-open-for-xreal-aura-plus-see-more-news-from-awe-2026-916c2e9c.md) - Google Blog `published`
 - [Our new community investments in Virginia support local jobs and expand energy affordability.](./services/google-blog/2026-06-our-new-community-investments-in-virginia-support-local-jobs-and-expand-a46eeb91.md) - Google Blog `published`
 - [Making secret scanning more trustworthy: Reducing false positives at scale](./services/github-blog/2026-06-making-secret-scanning-more-trustworthy-reducing-false-positives-at-scal-9a46f291.md) - GitHub Blog `published`
-- [Helping build shared standards for advanced AI](./services/openai-blog/2026-06-helping-build-shared-standards-for-advanced-ai-aec47bf7.md) - OpenAI Blog `published`
+- [OpenAI and Broadcom unveil LLM-optimized inference chip](./services/openai-blog/2026-06-openai-and-broadcom-unveil-llm-optimized-inference-chip-855db08b.md) - OpenAI Blog `published`
+- [How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery](./services/openai-blog/2026-06-how-gpt-5-helped-immunologist-derya-unutmaz-solve-a-3-year-old-mystery-072c0c39.md) - OpenAI Blog `published`
 - [Improving health intelligence in ChatGPT](./services/openai-blog/2026-06-improving-health-intelligence-in-chatgpt-9f4dbdd3.md) - OpenAI Blog `published`
 - [OpenAI to acquire Ona](./services/openai-blog/2026-06-openai-to-acquire-ona-009f7028.md) - OpenAI Blog `published`
-- [How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery](./services/openai-blog/2026-06-how-gpt-5-helped-immunologist-derya-unutmaz-solve-a-3-year-old-mystery-072c0c39.md) - OpenAI Blog `published`
+- [I automated my job (and it made me a better leader)](./services/github-blog/2026-06-i-automated-my-job-and-it-made-me-a-better-leader-5f18645c.md) - GitHub Blog `published`
 - [Codex-maxxing for long-running work](./services/openai-blog/2026-06-codex-maxxing-for-long-running-work-e2330fef.md) - OpenAI Blog `published`
 - [How pull request limits are cutting down the noise](./services/github-blog/2026-06-how-pull-request-limits-are-cutting-down-the-noise-706e559e.md) - GitHub Blog `published`
 - [What are git worktrees, and why should I use them?](./services/github-blog/2026-06-what-are-git-worktrees-and-why-should-i-use-them-eff5b35f.md) - GitHub Blog `published`
 - [How we made GitHub Copilot CLI more selective about delegation](./services/github-blog/2026-06-how-we-made-github-copilot-cli-more-selective-about-delegation-a66a7c2b.md) - GitHub Blog `published`
-- [I automated my job (and it made me a better leader)](./services/github-blog/2026-06-i-automated-my-job-and-it-made-me-a-better-leader-5f18645c.md) - GitHub Blog `published`
+- [Towards a world where no one is surprised by a natural disaster](./services/google-blog/2026-06-towards-a-world-where-no-one-is-surprised-by-a-natural-disaster-c2c1bc9e.md) - Google Blog `published`
 - [Expanding financial advertiser verification across Europe](./services/google-blog/2026-06-expanding-financial-advertiser-verification-across-europe-74010fdb.md) - Google Blog `published`
 - [Expanding our U.S. digital wellbeing fund](./services/google-blog/2026-06-expanding-our-u-s-digital-wellbeing-fund-a640870b.md) - Google Blog `published`
 - [We’re strengthening our presence in Alabama through new investments and community support.](./services/google-blog/2026-06-we-re-strengthening-our-presence-in-alabama-through-new-investments-and-b5689f5d.md) - Google Blog `published`
 - [Accelerating researchers and developers building multilingual AI with a new open dataset](./services/github-blog/2026-06-accelerating-researchers-and-developers-building-multilingual-ai-with-a-8ff72939.md) - GitHub Blog `published`
-- [Towards a world where no one is surprised by a natural disaster](./services/google-blog/2026-06-towards-a-world-where-no-one-is-surprised-by-a-natural-disaster-c2c1bc9e.md) - Google Blog `published`
 - [A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry](./services/openai-blog/2026-06-a-near-autonomous-ai-chemist-improves-a-challenging-reaction-in-medicina-5ff2f715.md) - OpenAI Blog `published`
 - [3 ways to balance screen time and keep kids engaged this summer](./services/google-blog/2026-06-3-ways-to-balance-screen-time-and-keep-kids-engaged-this-summer-625b8d05.md) - Google Blog `published`
 - [From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI](./services/github-blog/2026-06-from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-cop-96de2795.md) - GitHub Blog `published`

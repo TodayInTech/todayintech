@@ -26,13 +26,14 @@ OpenAI Blog에서 선별된 글 브리핑을 모아둔 서비스 페이지입니
 - [Using AI to help physicians diagnose rare genetic diseases affecting children](./openai-blog/2026-06-using-ai-to-help-physicians-diagnose-rare-genetic-diseases-affecting-chi-edcdc240.md) `published`
 - [How Preply combines AI and human tutors to personalize learning](./openai-blog/2026-06-how-preply-combines-ai-and-human-tutors-to-personalize-learning-ddc7b24a.md) `published`
 - [Access OpenAI models and Codex through your Oracle cloud commitment](./openai-blog/2026-06-access-openai-models-and-codex-through-your-oracle-cloud-commitment-c17e7186.md) `published`
+- [Helping build shared standards for advanced AI](./openai-blog/2026-06-helping-build-shared-standards-for-advanced-ai-aec47bf7.md) `published`
 - [How Omio is building the future of conversational travel](./openai-blog/2026-06-how-omio-is-building-the-future-of-conversational-travel-480508a9.md) `published`
 - [Samsung Electronics brings ChatGPT and Codex to employees](./openai-blog/2026-06-samsung-electronics-brings-chatgpt-and-codex-to-employees-4a975b89.md) `published`
 - [New usage analytics and updated spend controls for enterprises](./openai-blog/2026-06-new-usage-analytics-and-updated-spend-controls-for-enterprises-450d5ccf.md) `published`
-- [Helping build shared standards for advanced AI](./openai-blog/2026-06-helping-build-shared-standards-for-advanced-ai-aec47bf7.md) `published`
+- [OpenAI and Broadcom unveil LLM-optimized inference chip](./openai-blog/2026-06-openai-and-broadcom-unveil-llm-optimized-inference-chip-855db08b.md) `published`
+- [How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery](./openai-blog/2026-06-how-gpt-5-helped-immunologist-derya-unutmaz-solve-a-3-year-old-mystery-072c0c39.md) `published`
 - [Improving health intelligence in ChatGPT](./openai-blog/2026-06-improving-health-intelligence-in-chatgpt-9f4dbdd3.md) `published`
 - [OpenAI to acquire Ona](./openai-blog/2026-06-openai-to-acquire-ona-009f7028.md) `published`
-- [How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery](./openai-blog/2026-06-how-gpt-5-helped-immunologist-derya-unutmaz-solve-a-3-year-old-mystery-072c0c39.md) `published`
 - [Codex-maxxing for long-running work](./openai-blog/2026-06-codex-maxxing-for-long-running-work-e2330fef.md) `published`
 - [A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry](./openai-blog/2026-06-a-near-autonomous-ai-chemist-improves-a-challenging-reaction-in-medicina-5ff2f715.md) `published`
 - [Supporting Europe’s work in ensuring a trustworthy AI ecosystem](./openai-blog/2026-06-supporting-europe-s-work-in-ensuring-a-trustworthy-ai-ecosystem-d38f7a49.md) `published`
