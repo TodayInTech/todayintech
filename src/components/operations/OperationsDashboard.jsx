@@ -1,9 +1,10 @@
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useEffect, useMemo, useRef, useState} from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import styles from './styles.module.css';
 
 const PERIODS = [
+  {label: 'Latest', days: 'latest'},
   {label: '7D', days: 7},
   {label: '14D', days: 14},
   {label: '30D', days: 30},
@@ -21,7 +22,7 @@ export default function OperationsDashboard({view = 'overview'}) {
   const dataUrl = useBaseUrl('/data/operations/trace-metrics.json');
   const [data, setData] = useState(null);
   const [error, setError] = useState('');
-  const [periodDays, setPeriodDays] = useState(14);
+  const [periodDays, setPeriodDays] = useState('latest');
   const [serviceKey, setServiceKey] = useState('all');
 
   useEffect(() => {
@@ -117,17 +118,80 @@ function FilterBar({periodDays, setPeriodDays, serviceKey, setServiceKey, servic
           ))}
         </div>
       </div>
-      <label className={styles.selectLabel}>
-        Service
-        <select value={serviceKey} onChange={(event) => setServiceKey(event.target.value)}>
-          <option value="all">All services</option>
-          {serviceOptions.map(([key, label]) => (
-            <option key={key} value={key}>
-              {label}
-            </option>
+      <ServiceDropdown
+        serviceKey={serviceKey}
+        setServiceKey={setServiceKey}
+        serviceOptions={serviceOptions}
+      />
+    </div>
+  );
+}
+
+function ServiceDropdown({serviceKey, setServiceKey, serviceOptions}) {
+  const [open, setOpen] = useState(false);
+  const rootRef = useRef(null);
+  const selectedLabel =
+    serviceKey === 'all'
+      ? 'All services'
+      : serviceOptions.find(([key]) => key === serviceKey)?.[1] || serviceKey;
+  const options = [['all', 'All services'], ...serviceOptions];
+
+  useEffect(() => {
+    if (!open) {
+      return undefined;
+    }
+
+    function handlePointerDown(event) {
+      if (!rootRef.current?.contains(event.target)) {
+        setOpen(false);
+      }
+    }
+
+    function handleKeyDown(event) {
+      if (event.key === 'Escape') {
+        setOpen(false);
+      }
+    }
+
+    document.addEventListener('pointerdown', handlePointerDown);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [open]);
+
+  return (
+    <div className={styles.dropdownField} ref={rootRef}>
+      <span className={styles.filterLabel}>Service</span>
+      <button
+        aria-expanded={open}
+        aria-haspopup="listbox"
+        className={styles.dropdownToggle}
+        onClick={() => setOpen((value) => !value)}
+        type="button">
+        <span>{selectedLabel}</span>
+        <span className={open ? styles.dropdownChevronOpen : styles.dropdownChevron}>⌄</span>
+      </button>
+      {open && (
+        <div className={styles.dropdownMenu} role="listbox">
+          {options.map(([key, label]) => (
+            <button
+              aria-selected={serviceKey === key}
+              className={serviceKey === key ? styles.dropdownOptionActive : styles.dropdownOption}
+              key={key}
+              onClick={() => {
+                setServiceKey(key);
+                setOpen(false);
+              }}
+              role="option"
+              type="button">
+              <span className={styles.dropdownCheck}>{serviceKey === key ? '✓' : ''}</span>
+              <span>{label}</span>
+            </button>
           ))}
-        </select>
-      </label>
+        </div>
+      )}
     </div>
   );
 }
@@ -141,9 +205,14 @@ function OverviewView({runs, services}) {
         <MetricCard label="Runs" value={runs.length} />
         <MetricCard label="Raw articles" value={totals.rawArticles} />
         <MetricCard label="Candidates" value={totals.candidates} />
-        <MetricCard label="Writer-ready" value={totals.writerReady} />
-        <MetricCard label="Published" value={totals.published} />
+        <MetricCard label="Writer-ready (traced)" value={totals.writerReady} />
+        <MetricCard label="Published (traced)" value={totals.published} />
         <MetricCard label="Publish rate" value={`${rate(totals.published, totals.decisions)}%`} />
+        <MetricCard
+          label="Enrichment trace coverage"
+          value={`${totals.enrichmentTraceRuns}/${runs.length}`}
+        />
+        <MetricCard label="Writer trace coverage" value={`${totals.writerTraceRuns}/${runs.length}`} />
       </div>
       <section className={styles.panel}>
         <h2>Latest run</h2>
@@ -170,8 +239,8 @@ function OverviewView({runs, services}) {
           rows={[
             {label: 'Raw articles', value: totals.rawArticles},
             {label: 'Candidates', value: totals.candidates},
-            {label: 'Writer-ready', value: totals.writerReady},
-            {label: 'Published', value: totals.published},
+            {label: 'Writer-ready (traced)', value: totals.writerReady},
+            {label: 'Published (traced)', value: totals.published},
           ]}
         />
       </section>
@@ -438,6 +507,7 @@ function RecentRunsTable({runs, services}) {
               <th>Candidates</th>
               <th>Writer-ready</th>
               <th>Published</th>
+              <th>Traces</th>
               <th>Run</th>
             </tr>
           </thead>
@@ -452,6 +522,7 @@ function RecentRunsTable({runs, services}) {
                 <td>{run.preprocessing?.candidate_count || 0}</td>
                 <td>{run.enrichment?.writer_ready_count || 0}</td>
                 <td>{run.writer?.published_count || 0}</td>
+                <td>{stageCoverageLabel(run)}</td>
                 <td>{run.github_run_id || '-'}</td>
               </tr>
             ))}
@@ -586,8 +657,16 @@ function filterData(data, periodDays, serviceKey) {
     return {runs: [], services: []};
   }
   const latestDate = maxDate(data.runs || []);
-  const cutoff = periodDays && latestDate ? addDays(latestDate, -periodDays + 1) : null;
-  const withinPeriod = (date) => !cutoff || date >= cutoff;
+  const cutoff =
+    periodDays && periodDays !== 'latest' && latestDate
+      ? addDays(latestDate, -periodDays + 1)
+      : null;
+  const withinPeriod = (date) => {
+    if (periodDays === 'latest') {
+      return date === latestDate;
+    }
+    return !cutoff || date >= cutoff;
+  };
   return {
     runs: (data.runs || []).filter((run) => withinPeriod(run.date)),
     services: (data.services || []).filter(
@@ -614,6 +693,8 @@ function summarize(runs, services) {
         service.collection?.status === 'failed' ? 1 : 0,
       ),
       warnings: sum(services, (service) => service.collection?.warning_count),
+      enrichmentTraceRuns: uniqueDatesWithStage(services, 'enrichment'),
+      writerTraceRuns: uniqueDatesWithStage(services, 'writer'),
       serviceRows: services.length,
     };
   }
@@ -626,8 +707,27 @@ function summarize(runs, services) {
     published: sum(runs, (run) => run.writer?.published_count),
     collectionFailures: sum(runs, (run) => run.collection?.failed_service_count),
     warnings: sum(runs, (run) => run.collection?.warning_count),
+    enrichmentTraceRuns: runs.filter((run) => run.enrichment?.available).length,
+    writerTraceRuns: runs.filter((run) => run.writer?.available).length,
     serviceRows: services.length,
   };
+}
+
+function uniqueDatesWithStage(services, stage) {
+  return new Set(
+    services.filter((service) => service[stage]?.available).map((service) => service.date),
+  ).size;
+}
+
+function stageCoverageLabel(run) {
+  return [
+    run.collection?.available ? 'C' : null,
+    run.preprocessing?.available ? 'P' : null,
+    run.enrichment?.available ? 'E' : null,
+    run.writer?.available ? 'W' : null,
+  ]
+    .filter(Boolean)
+    .join('/');
 }
 
 function serviceMetricRows(services) {
