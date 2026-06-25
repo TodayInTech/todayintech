@@ -12,6 +12,13 @@
   width: 2.5rem;
 }
 
+.compactIconFrame {
+  border-radius: 0.55rem;
+  height: 1.65rem;
+  padding: 0.28rem;
+  width: 1.65rem;
+}
+
 .icon {
   display: block;
   height: 100%;
@@ -36,6 +43,10 @@
 .iconOnly {
   display: inline-flex;
   margin: 0.25rem 0 0.75rem;
+}
+
+.compactIconOnly {
+  margin: 0;
 }
 
 .serviceLabel,

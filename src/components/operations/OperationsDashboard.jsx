@@ -1,5 +1,6 @@
 import React, {useEffect, useMemo, useRef, useState} from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import ServiceIcon from '@site/src/components/ServiceIcon';
 
 import styles from './styles.module.css';
 
@@ -170,7 +171,7 @@ function ServiceDropdown({serviceKey, setServiceKey, serviceOptions}) {
         className={styles.dropdownToggle}
         onClick={() => setOpen((value) => !value)}
         type="button">
-        <span>{selectedLabel}</span>
+        <ServiceLabel serviceKey={serviceKey} serviceName={selectedLabel} />
         <span className={open ? styles.dropdownChevronOpen : styles.dropdownChevron}>⌄</span>
       </button>
       {open && (
@@ -187,12 +188,34 @@ function ServiceDropdown({serviceKey, setServiceKey, serviceOptions}) {
               role="option"
               type="button">
               <span className={styles.dropdownCheck}>{serviceKey === key ? '✓' : ''}</span>
-              <span>{label}</span>
+              <ServiceLabel serviceKey={key} serviceName={label} />
             </button>
           ))}
         </div>
       )}
     </div>
+  );
+}
+
+function ServiceLabel({serviceKey, serviceName}) {
+  if (serviceKey === 'all') {
+    return (
+      <span className={styles.serviceLabel}>
+        <span className={styles.allServicesIcon} aria-hidden="true">
+          <i />
+          <i />
+          <i />
+        </span>
+        <span>{serviceName}</span>
+      </span>
+    );
+  }
+
+  return (
+    <span className={styles.serviceLabel}>
+      <ServiceIcon serviceKey={serviceKey} label={serviceName} iconOnly size="compact" />
+      <span>{serviceName}</span>
+    </span>
   );
 }
 
@@ -270,6 +293,7 @@ function ServicesView({services}) {
         <h2>Service funnel</h2>
         <GroupedBarChart
           rows={rows.map((row) => ({
+            serviceKey: row.service_key,
             label: row.service_name,
             values: [
               {label: 'Raw', value: row.raw},
@@ -298,7 +322,9 @@ function ServicesView({services}) {
             <tbody>
               {rows.map((row) => (
                 <tr key={row.service_key}>
-                  <td>{row.service_name}</td>
+                  <td>
+                    <ServiceLabel serviceKey={row.service_key} serviceName={row.service_name} />
+                  </td>
                   <td>{row.raw}</td>
                   <td>{row.candidates}</td>
                   <td>{row.writerReady}</td>
@@ -370,7 +396,12 @@ function StageView({stage, services, runs}) {
               {services.map((service) => (
                 <tr key={`${service.date}:${service.service_key}`}>
                   <td>{service.date}</td>
-                  <td>{service.service_name}</td>
+                  <td>
+                    <ServiceLabel
+                      serviceKey={service.service_key}
+                      serviceName={service.service_name}
+                    />
+                  </td>
                   <td>
                     <StatusBadge status={service[stage]?.status || service.collection?.status} />
                   </td>
@@ -392,6 +423,7 @@ function StageView({stage, services, runs}) {
 function StageCharts({stage, services}) {
   if (stage === 'collection') {
     const rows = serviceMetricRows(services).map((row) => ({
+      serviceKey: row.service_key,
       label: row.service_name,
       value: row.raw,
     }));
@@ -409,6 +441,7 @@ function StageCharts({stage, services}) {
         <h2>Candidate conversion by service</h2>
         <GroupedBarChart
           rows={serviceMetricRows(services).map((row) => ({
+            serviceKey: row.service_key,
             label: row.service_name,
             values: [
               {label: 'Raw', value: row.raw},
@@ -477,7 +510,12 @@ function RecentRunsTable({runs, services}) {
               {sortedServices.map((service) => (
                 <tr key={`${service.date}:${service.service_key}`}>
                   <td>{service.date}</td>
-                  <td>{service.service_name}</td>
+                  <td>
+                    <ServiceLabel
+                      serviceKey={service.service_key}
+                      serviceName={service.service_name}
+                    />
+                  </td>
                   <td>
                     <StatusBadge status={service.collection?.status} />
                   </td>
@@ -552,7 +590,13 @@ function HorizontalBarChart({rows}) {
     <div className={styles.barChart}>
       {safeRows.map((row) => (
         <div className={styles.barRow} key={row.label}>
-          <span className={styles.barLabel}>{row.label}</span>
+          <span className={styles.barLabel}>
+            {row.serviceKey ? (
+              <ServiceLabel serviceKey={row.serviceKey} serviceName={row.label} />
+            ) : (
+              row.label
+            )}
+          </span>
           <div className={styles.barTrack}>
             <div
               className={styles.barFill}
@@ -586,7 +630,13 @@ function GroupedBarChart({rows}) {
       </div>
       {rows.map((row) => (
         <div className={styles.groupRow} key={row.label}>
-          <span className={styles.groupLabel}>{row.label}</span>
+          <span className={styles.groupLabel}>
+            {row.serviceKey ? (
+              <ServiceLabel serviceKey={row.serviceKey} serviceName={row.label} />
+            ) : (
+              row.label
+            )}
+          </span>
           <div className={styles.groupBars}>
             {row.values.map((value, index) => (
               <div className={styles.groupBarLine} key={value.label}>

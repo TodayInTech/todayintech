@@ -26,10 +26,14 @@ const SERVICE_ICONS = {
   },
 };
 
-export default function ServiceIcon({serviceKey, label, href, iconOnly = false}) {
+export default function ServiceIcon({serviceKey, label, href, iconOnly = false, size = 'default'}) {
   const iconPaths = SERVICE_ICONS[serviceKey];
   const lightIconUrl = useBaseUrl(iconPaths?.light || '/');
   const darkIconUrl = useBaseUrl(iconPaths?.dark || '/');
+  const iconFrameClassName =
+    size === 'compact' ? `${styles.iconFrame} ${styles.compactIconFrame}` : styles.iconFrame;
+  const iconOnlyClassName =
+    size === 'compact' ? `${styles.iconOnly} ${styles.compactIconOnly}` : styles.iconOnly;
 
   if (!iconPaths) {
     return href ? <a href={href}>{label}</a> : <span>{label}</span>;
@@ -37,7 +41,7 @@ export default function ServiceIcon({serviceKey, label, href, iconOnly = false})
 
   const content = (
     <>
-      <span className={styles.iconFrame}>
+      <span className={iconFrameClassName}>
         <img
           className={`${styles.icon} ${styles.lightIcon}`}
           src={lightIconUrl}
@@ -65,7 +69,7 @@ export default function ServiceIcon({serviceKey, label, href, iconOnly = false})
 
   return (
     <span
-      className={iconOnly ? styles.iconOnly : styles.serviceLabel}
+      className={iconOnly ? iconOnlyClassName : styles.serviceLabel}
       aria-label={iconOnly ? `${label} 브랜드 아이콘` : undefined}>
       {content}
     </span>
