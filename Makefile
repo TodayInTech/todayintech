@@ -90,7 +90,7 @@ ifneq ($(strip $(DATE)),)
 WORKFLOW_ARGS += -f target_date=$(DATE)
 endif
 
-.PHONY: help collect preprocess enrich write trace-collect trace-preprocess trace-enrich trace-write fetch-trace-history build-operations generate generate-openai test test-unit test-collection test-enrichment lint lint-fix format format-check check build serve serve-build verify quality ci-quality ci deploy deploy-status
+.PHONY: help collect preprocess enrich write trace-collect trace-preprocess trace-enrich trace-write fetch-trace-history build-operations generate generate-openai test test-unit test-collection test-enrichment lint lint-fix format format-check check build serve serve-build verify quality ci-quality ci deploy deploy-status deploy-static deploy-static-status
 
 help:
 	@echo "Today in Tech project commands"
@@ -144,6 +144,8 @@ help:
 	@echo "  make deploy"
 	@echo "  make deploy DATE=2026-06-07 BRANCH=main"
 	@echo "  make deploy-status"
+	@echo "  make deploy-static"
+	@echo "  make deploy-static-status"
 	@echo ""
 	@echo "Variables:"
 	@echo "  PYTHON      Python executable path. Default: .venv/bin/python"
@@ -275,3 +277,9 @@ deploy:
 
 deploy-status:
 	$(GH) run list --workflow daily-briefing.yml --limit 5
+
+deploy-static:
+	$(GH) workflow run static-pages.yml --ref $(BRANCH)
+
+deploy-static-status:
+	$(GH) run list --workflow static-pages.yml --limit 5

@@ -96,6 +96,7 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - Validate Docusaurus build
   - Validate actual GitHub Actions deployment
   - Validate GitHub Pages production settings
+  - Add a Static Pages Deploy workflow that deploys committed static docs without running the Agent
 
 ## Next Work Candidates
 
