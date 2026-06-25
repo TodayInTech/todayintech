@@ -22,6 +22,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -30,6 +35,12 @@ jobs:
 
       - name: Install Node dependencies
         run: npm ci
+
+      - name: Build Operations dashboard data
+        run: |
+          set -euo pipefail
+          make fetch-trace-history TRACE_HISTORY_DIR=.artifacts/tracing-history
+          make build-operations PYTHON=python TRACE_HISTORY_DIR=.artifacts/tracing-history
 
       - name: Build Docusaurus
         run: make build

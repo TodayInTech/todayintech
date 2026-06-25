@@ -96,7 +96,7 @@
   - Docusaurus 빌드 검증
   - GitHub Actions 실제 배포 검증
   - GitHub Pages 운영 설정 검증
-  - Agent 실행 없이 커밋된 정적 문서만 배포하는 Static Pages Deploy workflow 구성
+  - Agent 실행 없이 커밋된 정적 문서와 원격 trace 기반 운영 데이터를 배포하는 Static Pages Deploy workflow 구성
 
 ## 다음 작업 후보
 
