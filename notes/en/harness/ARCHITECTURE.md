@@ -155,7 +155,7 @@ docs/
 │   └── anthropic-blog/
 ```
 
-`index.md` is the entry point for recommended articles, new articles, and a filterable briefing list. The briefing list reads `static/data/briefings/index.json` and applies service and period filters on the client. `services/*.md` files are service-level indexes. `services/{service_key}/*.md` files are detailed briefings for individual source articles.
+`index.md` is the entry point for recommended articles, new articles, and a filterable briefing list. The briefing list reads `static/data/briefings/index.json` and applies service and period filters on the client. `services/*.md` files are service-level indexes. `services/{service_key}/*.md` files are detailed briefings for individual source articles. English locale docs are generated under the Docusaurus standard path `i18n/en/docusaurus-plugin-content-docs/current/`.
 Individual article pages should favor a natural editorial briefing format over a rigid report format.
 
 ## Step-by-Step Flow
@@ -299,7 +299,7 @@ Writer receives `EnrichmentResult`. `full_content`, `chunk_selection`, and `evid
 - Writer Agent selects candidates and creates editorial results.
 - Writer Generator only writes Markdown from Agent results.
 - Writer updates the `briefed_articles` state and cumulative indexes after all Markdown generation succeeds.
-- The main index uses the accumulated `briefed_articles` state to generate recommended articles, new articles, and card-based briefing list data. Service indexes show service-level priority briefings and cumulative lists.
+- The main index uses the accumulated `briefed_articles` state to generate recommended articles, new articles, and card-based briefing list data. Service indexes use the same card-based navigation structure. Writer updates both Korean `docs/` and English `i18n/en/docusaurus-plugin-content-docs/current/` main/service indexes, and copies article docs into the English docs path to preserve English locale article routes.
 - GitHub Actions commits generated `docs/` files and `data/briefed_articles.json` back to `main` so later runs can use them for duplicate filtering.
 - The default implementation uses `DraftNewsEditorAgent`. The Draft Agent does not generate summaries, why-it-matters text, or developer insights; it only creates `editorial_status=draft` documents.
 - Use `TODAYINTECH_WRITER_AGENT=openai` to enable `OpenAINewsEditorAgent` with structured output for publish decisions, publish/reject rationale, confidence score, summary scope, evidence basis, and a natural long-form Korean summary.
@@ -366,6 +366,9 @@ Generated paths:
 docs/index.md
 docs/services/{service_key}.md
 docs/services/{service_key}/{slug}.md
+i18n/en/docusaurus-plugin-content-docs/current/index.md
+i18n/en/docusaurus-plugin-content-docs/current/services/{service_key}.md
+i18n/en/docusaurus-plugin-content-docs/current/services/{service_key}/{slug}.md
 ```
 
 ## Build

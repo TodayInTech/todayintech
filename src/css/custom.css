@@ -79,6 +79,12 @@
   width: 1.25rem;
 }
 
+.service-sidebar-item > .menu__list,
+.service-sidebar-item > .menu__list-item-collapsible + .menu__list,
+.service-sidebar-item > .menu__list-item-collapsible > .menu__caret {
+  display: none !important;
+}
+
 .service-sidebar-anthropic-blog {
   --service-sidebar-icon:
     /* webpackIgnore: true */

@@ -8,15 +8,34 @@ from src.writer.agent.schemas import ArticleBriefing, EditorialResult
 MAIN_PRIORITY_LIMIT = 20
 MAIN_NEW_LIMIT = 20
 BRIEFING_DATA_PATH = Path("static/data/briefings/index.json")
+EN_DOCS_PATH = Path("i18n/en/docusaurus-plugin-content-docs/current")
+
+MAIN_LABELS = {
+    "ko": {
+        "generated_for": "생성일",
+        "featured": "추천 글",
+        "new": "새로운 글",
+        "list": "브리핑 리스트",
+    },
+    "en": {
+        "generated_for": "Generated for",
+        "featured": "Recommended Articles",
+        "new": "New Articles",
+        "list": "Briefing List",
+    },
+}
 
 
 def write_main_index_markdown(
     output_root: Path,
     editorial_result: EditorialResult,
     archived_articles: list[ArchivedArticle],
+    *,
+    locale: str = "ko",
 ) -> Path:
-    output_path = output_root / "index.md"
+    output_path = _localized_output_root(output_root, locale) / "index.md"
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    labels = MAIN_LABELS[locale]
 
     service_names = {
         service.service_key: service.service_name for service in editorial_result.services
@@ -47,14 +66,15 @@ def write_main_index_markdown(
         reverse=True,
     )[:MAIN_NEW_LIMIT]
 
-    _write_briefing_data(
-        output_root=output_root,
-        generated_for=editorial_result.generated_for,
-        service_names=service_names,
-        active_records=active_records,
-        priority_records=priority_records,
-        new_briefings=new_briefings,
-    )
+    if locale == "ko":
+        _write_briefing_data(
+            output_root=output_root,
+            generated_for=editorial_result.generated_for,
+            service_names=service_names,
+            active_records=active_records,
+            priority_records=priority_records,
+            new_briefings=new_briefings,
+        )
 
     lines = [
         "---",
@@ -64,17 +84,17 @@ def write_main_index_markdown(
         "",
         "# Today in Tech",
         "",
-        f"생성일: {editorial_result.generated_for}",
+        f"{labels['generated_for']}: {editorial_result.generated_for}",
         "",
-        "## 추천 글",
+        f"## {labels['featured']}",
         "",
         '<BriefingList mode="featured" />',
         "",
-        "## 새로운 글",
+        f"## {labels['new']}",
         "",
         '<BriefingList mode="new" />',
         "",
-        "## 브리핑 리스트",
+        f"## {labels['list']}",
         "",
         "<BriefingList />",
         "",
@@ -82,6 +102,15 @@ def write_main_index_markdown(
 
     output_path.write_text("\n".join(lines), encoding="utf-8")
     return output_path
+
+
+def _localized_output_root(output_root: Path, locale: str) -> Path:
+    if locale == "ko":
+        return output_root
+    if locale == "en":
+        return output_root.parent / EN_DOCS_PATH
+    msg = f"Unsupported docs locale: {locale}"
+    raise ValueError(msg)
 
 
 def _write_briefing_data(

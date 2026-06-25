@@ -1,19 +1,56 @@
 import React, {useEffect, useMemo, useState} from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import ServiceIcon from '@site/src/components/ServiceIcon';
 
 import styles from './styles.module.css';
 
-const PERIODS = [
-  {label: '전체', days: null},
-  {label: '7일', days: 7},
-  {label: '14일', days: 14},
-  {label: '30일', days: 30},
-];
+const LABELS = {
+  ko: {
+    all: '전체',
+    service: '서비스',
+    period: '기간',
+    periods: ['전체', '7일', '14일', '30일'],
+    fetchError: '브리핑 데이터를 불러오지 못했습니다',
+    loading: '브리핑 데이터를 불러오는 중입니다.',
+    unknownDate: '날짜 미상',
+    missingExcerpt: '요약 본문을 추출할 수 없습니다. 상세 문서에서 브리핑 내용을 확인하세요.',
+    empty: '조건에 맞는 브리핑 글이 없습니다.',
+    total: '총',
+    items: '개',
+    previous: '이전',
+    next: '다음',
+    previousAria: '이전 페이지',
+    nextAria: '다음 페이지',
+    paginationAria: '브리핑 페이지',
+  },
+  en: {
+    all: 'All',
+    service: 'Service',
+    period: 'Period',
+    periods: ['All', '7D', '14D', '30D'],
+    fetchError: 'Failed to load briefing data',
+    loading: 'Loading briefing data.',
+    unknownDate: 'Unknown date',
+    missingExcerpt: 'No excerpt is available. Open the article briefing for details.',
+    empty: 'No briefing articles match the selected filters.',
+    total: 'Total',
+    items: ' items',
+    previous: 'Previous',
+    next: 'Next',
+    previousAria: 'Previous page',
+    nextAria: 'Next page',
+    paginationAria: 'Briefing pages',
+  },
+};
+
+const PERIOD_DAYS = [null, 7, 14, 30];
 
 const PAGE_SIZE = 6;
 
 export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey = 'all'}) {
+  const {i18n} = useDocusaurusContext();
+  const labels = LABELS[i18n.currentLocale] || LABELS.ko;
   const dataUrl = useBaseUrl('/data/briefings/index.json');
   const [data, setData] = useState(null);
   const [error, setError] = useState('');
@@ -60,11 +97,15 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
   }, [mode, periodDays, serviceKey]);
 
   if (error) {
-    return <div className="alert alert--warning">브리핑 데이터를 불러오지 못했습니다: {error}</div>;
+    return (
+      <div className="alert alert--warning">
+        {labels.fetchError}: {error}
+      </div>
+    );
   }
 
   if (!data) {
-    return <div className="alert alert--secondary">브리핑 데이터를 불러오는 중입니다.</div>;
+    return <div className="alert alert--secondary">{labels.loading}</div>;
   }
 
   return (
@@ -73,7 +114,7 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
         <div className={styles.filterBar}>
           {fixedServiceKey === 'all' && (
             <div className={styles.filterField}>
-              <span>서비스</span>
+              <span>{labels.service}</span>
               <div className={styles.serviceFilters}>
                 <button
                   className={
@@ -81,7 +122,7 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
                   }
                   onClick={() => setSelectedServiceKey('all')}
                   type="button">
-                  전체
+                  {labels.all}
                 </button>
                 {services.map(([key, name]) => (
                   <button
@@ -99,15 +140,15 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
             </div>
           )}
           <div className={styles.filterField}>
-            <span>기간</span>
+            <span>{labels.period}</span>
             <div className={styles.segmented}>
-              {PERIODS.map((period) => (
+              {PERIOD_DAYS.map((days, index) => (
                 <button
-                  className={periodDays === period.days ? styles.activeButton : styles.button}
-                  key={period.label}
-                  onClick={() => setPeriodDays(period.days)}
+                  className={periodDays === days ? styles.activeButton : styles.button}
+                  key={labels.periods[index]}
+                  onClick={() => setPeriodDays(days)}
                   type="button">
-                  {period.label}
+                  {labels.periods[index]}
                 </button>
               ))}
             </div>
@@ -123,19 +164,22 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
           </div>
           <Pagination
             currentPage={currentPage}
+            labels={labels}
             onPageChange={setPage}
             totalItems={items.length}
             totalPages={totalPages}
           />
         </>
       ) : (
-        <p className={styles.emptyState}>조건에 맞는 브리핑 글이 없습니다.</p>
+        <p className={styles.emptyState}>{labels.empty}</p>
       )}
     </section>
   );
 }
 
 function BriefingCard({item}) {
+  const {i18n} = useDocusaurusContext();
+  const labels = LABELS[i18n.currentLocale] || LABELS.ko;
   const href = useBaseUrl(toDocHref(item.href));
 
   return (
@@ -148,12 +192,12 @@ function BriefingCard({item}) {
           size="compact"
         />
         <span>{item.service_name}</span>
-        <span>{item.published_at || item.briefed_at || '날짜 미상'}</span>
+        <span>{item.published_at || item.briefed_at || labels.unknownDate}</span>
       </div>
       <h3>
         <span>{item.title}</span>
       </h3>
-      <p>{item.excerpt || '요약 본문을 추출할 수 없습니다. 상세 문서에서 브리핑 내용을 확인하세요.'}</p>
+      <p>{item.excerpt || labels.missingExcerpt}</p>
       <div className={styles.cardFooter}>
         <span className={styles.status}>{item.status}</span>
         <span>score {item.score}</span>
@@ -162,25 +206,31 @@ function BriefingCard({item}) {
   );
 }
 
-function Pagination({currentPage, onPageChange, totalItems, totalPages}) {
+function Pagination({currentPage, labels, onPageChange, totalItems, totalPages}) {
   if (totalPages <= 1) {
-    return <p className={styles.pageSummary}>총 {totalItems}개</p>;
+    return (
+      <p className={styles.pageSummary}>
+        {labels.total} {totalItems}
+        {labels.items}
+      </p>
+    );
   }
   const pageItems = compactPageItems(currentPage, totalPages);
 
   return (
-    <nav className={styles.pagination} aria-label="브리핑 페이지">
+    <nav className={styles.pagination} aria-label={labels.paginationAria}>
       <span className={styles.pageSummary}>
-        총 {totalItems}개 · {currentPage}/{totalPages}
+        {labels.total} {totalItems}
+        {labels.items} · {currentPage}/{totalPages}
       </span>
       <div className={styles.pageButtons}>
         <button
-          aria-label="이전 페이지"
+          aria-label={labels.previousAria}
           className={styles.pageNavButton}
           disabled={currentPage === 1}
           onClick={() => onPageChange(currentPage - 1)}
           type="button">
-          Previous
+          {labels.previous}
         </button>
         {pageItems.map((pageItem, index) =>
           pageItem === 'ellipsis' ? (
@@ -199,12 +249,12 @@ function Pagination({currentPage, onPageChange, totalItems, totalPages}) {
           ),
         )}
         <button
-          aria-label="다음 페이지"
+          aria-label={labels.nextAria}
           className={styles.pageNavButton}
           disabled={currentPage === totalPages}
           onClick={() => onPageChange(currentPage + 1)}
           type="button">
-          Next
+          {labels.next}
         </button>
       </div>
     </nav>

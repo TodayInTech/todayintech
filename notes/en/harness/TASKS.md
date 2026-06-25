@@ -88,6 +88,8 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Add publish rationale, evidence scope, and confidence fields to the OpenAI Agent decision schema
   - [x] Simplify public article pages around a natural long-form Korean summary
   - [x] Apply OpenAI Agent summary length guidance by Enrichment input strategy
+  - [x] Add card-based briefing navigation UI for main and service pages
+  - [x] Add Docusaurus English locale generation for main, service, and operations docs
   - [ ] Implement publication status transition policy
 
 - [x] Build / Deploy - complete

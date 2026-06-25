@@ -88,6 +88,8 @@
   - [x] OpenAI Agent decision schema에 선정 이유, 근거 범위, 확신도 추가
   - [x] 공개 article 문서를 자연스러운 한국어 장문 요약 중심으로 단순화
   - [x] Enrichment 입력 전략별 OpenAI Agent 요약 분량 가이드 적용
+  - [x] 메인/서비스 페이지 카드형 브리핑 탐색 UI 구성
+  - [x] Docusaurus 영어 locale용 메인/서비스/운영 문서 생성 구조 적용
   - [ ] 게시 상태 전환 정책 구현
 
 - [x] Build / Deploy - 완료

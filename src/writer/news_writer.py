@@ -1,3 +1,4 @@
+import shutil
 from pathlib import Path
 
 from pydantic import BaseModel, Field
@@ -12,6 +13,8 @@ from src.writer.agent.schemas import AgentDecision, EditorialResult, EditorialSt
 from src.writer.generator.article_markdown_writer import write_article_markdown
 from src.writer.generator.main_index_writer import write_main_index_markdown
 from src.writer.generator.service_index_writer import write_service_index_markdown
+
+EN_DOCS_PATH = Path("i18n/en/docusaurus-plugin-content-docs/current")
 
 
 class WriterResult(BaseModel):
@@ -82,13 +85,30 @@ class NewsWriter:
         log_info("Writer", "3. briefed_articles 상태 갱신 완료")
 
         archived_articles = self._archive_articles_for_indexes(enrichment_result, editorial_result)
+        self._sync_english_article_docs(archived_articles)
         for service in editorial_result.services:
             written_paths.append(
                 write_service_index_markdown(self.output_dir, service, archived_articles)
             )
+            written_paths.append(
+                write_service_index_markdown(
+                    self.output_dir,
+                    service,
+                    archived_articles,
+                    locale="en",
+                )
+            )
 
         written_paths.append(
             write_main_index_markdown(self.output_dir, editorial_result, archived_articles)
+        )
+        written_paths.append(
+            write_main_index_markdown(
+                self.output_dir,
+                editorial_result,
+                archived_articles,
+                locale="en",
+            )
         )
         log_info("Writer", f"2. Markdown 파일 작성 완료: files={len(written_paths)}")
         trace_paths: list[Path] = []
@@ -136,3 +156,14 @@ class NewsWriter:
             ),
             reverse=True,
         )
+
+    def _sync_english_article_docs(self, archived_articles: list[ArchivedArticle]) -> None:
+        english_docs_root = self.output_dir.parent / EN_DOCS_PATH
+        for article in archived_articles:
+            article_path = Path(article.article_doc_path)
+            if not article_path.exists() or article_path.suffix not in {".md", ".mdx"}:
+                continue
+            relative_path = article_path.relative_to(self.output_dir)
+            target_path = english_docs_root / relative_path
+            target_path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(article_path, target_path)

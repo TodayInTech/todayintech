@@ -159,7 +159,7 @@ docs/
 │   └── anthropic-blog/
 ```
 
-`index.md`는 추천 글, 새로운 글, 필터 가능한 브리핑 리스트를 보여주는 진입점이다. 브리핑 리스트는 `static/data/briefings/index.json`을 읽어 서비스와 기간 필터를 적용한다. `services/*.md`는 서비스별 핵심 글 색인이다. `services/{service_key}/*.md`는 원문 글 하나에 대한 상세 브리핑이다.
+`index.md`는 추천 글, 새로운 글, 필터 가능한 브리핑 리스트를 보여주는 진입점이다. 브리핑 리스트는 `static/data/briefings/index.json`을 읽어 서비스와 기간 필터를 적용한다. `services/*.md`는 서비스별 핵심 글 색인이다. `services/{service_key}/*.md`는 원문 글 하나에 대한 상세 브리핑이다. 영어 locale 문서는 Docusaurus 표준 경로인 `i18n/en/docusaurus-plugin-content-docs/current/`에 생성한다.
 개별 article 문서는 리포트 형식보다 자연스러운 브리핑 글 형태를 우선한다.
 
 ## 단계별 플로우
@@ -303,7 +303,7 @@ Writer 단계는 Enrichment가 만든 `EnrichmentResult`를 받아 문서화 결
 - Writer Agent: 후보 중 문서화할 글을 선택하고 편집 결과를 만든다.
 - Writer Generator: Agent 결과만 받아 Markdown 파일을 쓴다.
 - Writer는 모든 Markdown 생성이 성공한 뒤 `briefed_articles` 상태와 누적 index를 갱신한다.
-- 메인 index는 누적된 `briefed_articles` 상태를 기준으로 추천 글, 새로운 글, 카드형 브리핑 리스트 데이터를 생성한다. 서비스 index는 서비스별 우선순위 브리핑과 누적 목록을 보여준다.
+- 메인 index는 누적된 `briefed_articles` 상태를 기준으로 추천 글, 새로운 글, 카드형 브리핑 리스트 데이터를 생성한다. 서비스 index도 같은 카드형 탐색 구조를 사용한다. Writer는 한국어 `docs/`와 영어 `i18n/en/docusaurus-plugin-content-docs/current/`의 메인/서비스 index를 함께 갱신하며, 영어 article route 유지를 위해 article 문서를 영어 docs 경로에 복제한다.
 - GitHub Actions는 생성된 `docs/`와 `data/briefed_articles.json`을 main에 커밋해 다음 실행의 중복 제거 기준으로 사용한다.
 - 기본 구현은 `DraftNewsEditorAgent`를 사용한다. Draft Agent는 요약, 왜 중요한가, 개발자 인사이트를 생성하지 않고 `editorial_status=draft` 문서만 만든다.
 - `TODAYINTECH_WRITER_AGENT=openai`를 사용하면 `OpenAINewsEditorAgent`가 structured output으로 게시 여부, 선정/제외 이유, 판단 확신도, 요약 근거 범위, 근거 목록, 자연스러운 한국어 장문 요약을 생성한다.
@@ -370,6 +370,9 @@ Draft 문서는 요약이나 중요성 판단을 생성하지 않고, 작성 대
 docs/index.md
 docs/services/{service_key}.md
 docs/services/{service_key}/{slug}.md
+i18n/en/docusaurus-plugin-content-docs/current/index.md
+i18n/en/docusaurus-plugin-content-docs/current/services/{service_key}.md
+i18n/en/docusaurus-plugin-content-docs/current/services/{service_key}/{slug}.md
 ```
 
 ## Build

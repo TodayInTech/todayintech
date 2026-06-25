@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "Today in Tech",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Today in Tech",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.브리핑": {
+    "message": "Briefings",
+    "description": "Navbar item with label 브리핑"
+  },
+  "item.label.트레이스": {
+    "message": "Traces",
+    "description": "Navbar item with label 트레이스"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.briefingSidebar.doc.Today in Tech": {
+    "message": "Today in Tech",
+    "description": "The label for the doc item 'Today in Tech' in sidebar 'briefingSidebar', linking to the doc index"
+  },
+  "sidebar.briefingSidebar.doc.Anthropic Blog": {
+    "message": "Anthropic Blog",
+    "description": "The label for the doc item 'Anthropic Blog' in sidebar 'briefingSidebar', linking to the doc services/anthropic-blog"
+  },
+  "sidebar.briefingSidebar.doc.GitHub Blog": {
+    "message": "GitHub Blog",
+    "description": "The label for the doc item 'GitHub Blog' in sidebar 'briefingSidebar', linking to the doc services/github-blog"
+  },
+  "sidebar.briefingSidebar.doc.Google Blog": {
+    "message": "Google Blog",
+    "description": "The label for the doc item 'Google Blog' in sidebar 'briefingSidebar', linking to the doc services/google-blog"
+  },
+  "sidebar.briefingSidebar.doc.Hacker News": {
+    "message": "Hacker News",
+    "description": "The label for the doc item 'Hacker News' in sidebar 'briefingSidebar', linking to the doc services/hacker-news"
+  },
+  "sidebar.briefingSidebar.doc.OpenAI Blog": {
+    "message": "OpenAI Blog",
+    "description": "The label for the doc item 'OpenAI Blog' in sidebar 'briefingSidebar', linking to the doc services/openai-blog"
+  },
+  "sidebar.operationsSidebar.doc.트레이스": {
+    "message": "Traces",
+    "description": "The label for the doc item '트레이스' in sidebar 'operationsSidebar', linking to the doc operations/index"
+  }
+}
