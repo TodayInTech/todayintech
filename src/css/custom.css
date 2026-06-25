@@ -62,11 +62,14 @@
   --service-sidebar-icon: none;
 }
 
+.service-sidebar-item > .menu__link,
 .service-sidebar-item > .menu__list-item-collapsible > .menu__link {
   align-items: center;
+  display: flex;
   gap: 0.55rem;
 }
 
+.service-sidebar-item > .menu__link::before,
 .service-sidebar-item > .menu__list-item-collapsible > .menu__link::before {
   background: var(--service-sidebar-icon) center / contain no-repeat;
   content: '';

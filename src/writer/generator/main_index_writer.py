@@ -1,11 +1,13 @@
 import json
+import re
 from pathlib import Path
 
-from src.generator.markdown_safety import mdx_safe_link_label, mdx_safe_plain_text
 from src.processing.models import ArchivedArticle
-from src.writer.agent.schemas import EditorialResult
+from src.writer.agent.schemas import ArticleBriefing, EditorialResult
 
 MAIN_PRIORITY_LIMIT = 20
+MAIN_NEW_LIMIT = 20
+BRIEFING_DATA_PATH = Path("static/data/briefings/index.json")
 
 
 def write_main_index_markdown(
@@ -16,24 +18,16 @@ def write_main_index_markdown(
     output_path = output_root / "index.md"
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    lines = [
-        "---",
-        "title: Today in Tech",
-        "sidebar_label: Today in Tech",
-        "---",
-        "",
-        "# Today in Tech",
-        "",
-        f"생성일: {editorial_result.generated_for}",
-        "",
-        "## 개요",
-        "",
-        "Today in Tech는 여러 기술 서비스에서 수집한 글을 선별해 읽기 쉬운 브리핑으로 정리하는 큐레이션 아카이브입니다.",
-        "",
-        "## 우선순위 브리핑",
-        "",
-    ]
-
+    service_names = {
+        service.service_key: service.service_name for service in editorial_result.services
+    }
+    service_names.update(
+        {
+            record.service_key: record.service_name
+            for record in archived_articles
+            if record.service_name
+        }
+    )
     active_records = [
         record
         for record in sorted(
@@ -47,77 +41,167 @@ def write_main_index_markdown(
         if record.article_doc_path
     ]
     priority_records = active_records[:MAIN_PRIORITY_LIMIT]
-    service_names = {
-        service.service_key: service.service_name for service in editorial_result.services
-    }
-
-    if not priority_records:
-        lines.append("아직 우선순위로 표시할 브리핑 글이 없습니다.")
-    else:
-        for record in priority_records:
-            article_path = _relative_article_path(record.article_doc_path or "")
-            title = mdx_safe_link_label(record.title)
-            service_name = mdx_safe_plain_text(
-                service_names.get(record.service_key, record.service_key)
-            )
-            lines.append(
-                f"- [{title}]({article_path}) "
-                f"- {service_name} `{mdx_safe_plain_text(record.status)}` "
-                f"/ score {record.candidate_score}"
-            )
-
     new_briefings = sorted(
-        (
-            (service.service_name, briefing)
-            for service in editorial_result.services
-            for briefing in service.briefings
-        ),
-        key=lambda item: item[1].candidate_score,
+        (briefing for service in editorial_result.services for briefing in service.briefings),
+        key=lambda briefing: briefing.candidate_score,
         reverse=True,
+    )[:MAIN_NEW_LIMIT]
+
+    _write_briefing_data(
+        output_root=output_root,
+        generated_for=editorial_result.generated_for,
+        service_names=service_names,
+        active_records=active_records,
+        priority_records=priority_records,
+        new_briefings=new_briefings,
     )
 
-    lines.extend(["", "## 이번 실행에서 추가된 글", ""])
-    if not new_briefings:
-        lines.append("이번 실행에서 새로 생성된 글은 없습니다.")
-    else:
-        for service_name, briefing in new_briefings:
-            article_path = f"./services/{briefing.service_key}/{briefing.suggested_doc_key}.md"
-            title = mdx_safe_link_label(briefing.title)
-            description = briefing.summary_ko or "브리핑 본문 작성 대기"
-            lines.append(
-                f"- [{title}]({article_path}) "
-                f"- {mdx_safe_plain_text(service_name)} / {mdx_safe_plain_text(description.splitlines()[0])} "
-                f"`{briefing.editorial_status.value}` / score {briefing.candidate_score}"
-            )
-
-    lines.extend(["", "## 서비스", ""])
-    for service in editorial_result.services:
-        service_name = mdx_safe_plain_text(service.service_name)
-        lines.append(
-            f'- <ServiceIcon serviceKey="{service.service_key}" '
-            f"label={json.dumps(service_name, ensure_ascii=False)} "
-            f'href="./services/{service.service_key}.md" />'
-        )
-    lines.append("")
-
-    lines.extend(["## 누적 브리핑 목록", ""])
-    if not active_records:
-        lines.append("아직 누적된 브리핑 글이 없습니다.")
-    else:
-        for record in active_records:
-            title = mdx_safe_link_label(record.title)
-            service_name = mdx_safe_plain_text(
-                service_names.get(record.service_key, record.service_key)
-            )
-            article_path = _relative_article_path(record.article_doc_path or "")
-            lines.append(
-                f"- [{title}]({article_path}) "
-                f"- {service_name} `{mdx_safe_plain_text(record.status)}`"
-            )
-    lines.append("")
+    lines = [
+        "---",
+        "title: Today in Tech",
+        "sidebar_label: Today in Tech",
+        "---",
+        "",
+        "# Today in Tech",
+        "",
+        f"생성일: {editorial_result.generated_for}",
+        "",
+        "## 추천 글",
+        "",
+        '<BriefingList mode="featured" />',
+        "",
+        "## 새로운 글",
+        "",
+        '<BriefingList mode="new" />',
+        "",
+        "## 브리핑 리스트",
+        "",
+        "<BriefingList />",
+        "",
+    ]
 
     output_path.write_text("\n".join(lines), encoding="utf-8")
     return output_path
+
+
+def _write_briefing_data(
+    *,
+    output_root: Path,
+    generated_for: str,
+    service_names: dict[str, str],
+    active_records: list[ArchivedArticle],
+    priority_records: list[ArchivedArticle],
+    new_briefings: list[ArticleBriefing],
+) -> None:
+    data_path = output_root.parent / BRIEFING_DATA_PATH
+    data_path.parent.mkdir(parents=True, exist_ok=True)
+    priority_paths = {record.article_doc_path for record in priority_records}
+    new_paths = {briefing.article_doc_path for briefing in new_briefings}
+    if not new_paths:
+        latest_briefed_at = max(
+            (record.briefed_at for record in active_records if record.briefed_at),
+            default=None,
+        )
+        if latest_briefed_at:
+            latest_date = latest_briefed_at.date()
+            new_paths = {
+                record.article_doc_path
+                for record in active_records
+                if record.briefed_at and record.briefed_at.date() == latest_date
+            }
+    items = [
+        _record_to_briefing_item(
+            output_root=output_root,
+            record=record,
+            service_name=service_names.get(record.service_key, record.service_key),
+            featured=record.article_doc_path in priority_paths,
+            new=record.article_doc_path in new_paths,
+        )
+        for record in active_records
+    ]
+    data_path.write_text(
+        json.dumps(
+            {
+                "generated_for": generated_for,
+                "services": service_names,
+                "items": items,
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+
+def _record_to_briefing_item(
+    *,
+    output_root: Path,
+    record: ArchivedArticle,
+    service_name: str,
+    featured: bool,
+    new: bool,
+) -> dict[str, str | float | bool | None]:
+    article_doc_path = record.article_doc_path or ""
+    article_path = _relative_article_path(article_doc_path)
+    article_file = output_root.parent / article_doc_path
+    published_at, excerpt = _extract_article_card_content(article_file)
+    return {
+        "title": record.title,
+        "service_key": record.service_key,
+        "service_name": service_name,
+        "href": article_path,
+        "status": record.status,
+        "score": record.candidate_score,
+        "briefed_at": record.briefed_at.date().isoformat() if record.briefed_at else None,
+        "published_at": published_at,
+        "excerpt": excerpt,
+        "featured": featured,
+        "new": new,
+    }
+
+
+def _extract_article_card_content(article_path: Path) -> tuple[str | None, str]:
+    if not article_path.exists():
+        return None, ""
+
+    text = article_path.read_text(encoding="utf-8")
+    published_at = None
+    for line in text.splitlines():
+        if line.startswith("> "):
+            parts = [part.strip() for part in line.removeprefix("> ").split("·")]
+            if len(parts) >= 2:
+                published_at = parts[1]
+            break
+
+    body = text.split("---", maxsplit=2)[-1]
+    paragraphs = [
+        _clean_markdown(paragraph)
+        for paragraph in re.split(r"\n{2,}", body)
+        if _is_summary_paragraph(paragraph)
+    ]
+    excerpt = " ".join(paragraphs[:2])
+    return published_at, _truncate(excerpt, 180)
+
+
+def _is_summary_paragraph(paragraph: str) -> bool:
+    stripped = paragraph.strip()
+    return bool(
+        stripped
+        and not stripped.startswith(("#", ">", "-", "[", "|", "<"))
+        and "원문 링크:" not in stripped
+    )
+
+
+def _clean_markdown(value: str) -> str:
+    value = re.sub(r"`([^`]+)`", r"\1", value)
+    value = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", value)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def _truncate(value: str, limit: int) -> str:
+    if len(value) <= limit:
+        return value
+    return f"{value[: limit - 1].rstrip()}…"
 
 
 def _relative_article_path(article_doc_path: str) -> str:
