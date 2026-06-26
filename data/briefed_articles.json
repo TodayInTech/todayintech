@@ -1870,6 +1870,66 @@
       "status": "published",
       "briefed_at": "2026-06-26T05:13:29.182405Z",
       "candidate_score": 43.0
+    },
+    "12ccecad9f87549caf86f020b0ba8463d22d69e7001e50c4cbad8df9a7f933b2": {
+      "normalized_url": "https://github.blog/open-source/social-impact/github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-open-source",
+      "title_fingerprint": "github and undp team up to advance development priorities in ghana with open source",
+      "service_key": "github-blog",
+      "title": "GitHub and UNDP team up to advance development priorities in Ghana with open source",
+      "article_doc_path": "docs/services/github-blog/2026-06-github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-12ccecad.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T23:07:24.507368Z",
+      "candidate_score": 42.0
+    },
+    "d1dff3b82d65ca5dad9bdf832df0758341df92a7769cb6ad1d46a81613ee4e70": {
+      "normalized_url": "https://github.blog/developer-skills/career-growth/transitioning-as-a-hubber",
+      "title_fingerprint": "transitioning as a hubber",
+      "service_key": "github-blog",
+      "title": "Transitioning as a Hubber",
+      "article_doc_path": "docs/services/github-blog/2026-06-transitioning-as-a-hubber-d1dff3b8.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T23:07:24.507397Z",
+      "candidate_score": 36.0
+    },
+    "0af70dc4df451a554ba04332b001b6ff40036beee5c7d503a762803e9d3f8501": {
+      "normalized_url": "https://github.com/workweave/router",
+      "title_fingerprint": "show hn smart model routing directly in claude codex and cursor",
+      "service_key": "hacker-news",
+      "title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+      "article_doc_path": "docs/services/hacker-news/2026-06-show-hn-smart-model-routing-directly-in-claude-codex-and-cursor-0af70dc4.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T23:07:24.507406Z",
+      "candidate_score": 67.7
+    },
+    "30f48121decc708b123e76182ad5478a2e1413a7c39b75bd8f4a904078e89cfb": {
+      "normalized_url": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "title_fingerprint": "previewing gpt 5 6 sol a next generation model",
+      "service_key": "hacker-news",
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model",
+      "article_doc_path": "docs/services/hacker-news/2026-06-previewing-gpt-5-6-sol-a-next-generation-model-30f48121.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T23:07:24.507412Z",
+      "candidate_score": 65.0
+    },
+    "1a1245a36f527a0a15bb3f8aec16ff0da640b7b5d21b544fed03b58e173c029a": {
+      "normalized_url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model",
+      "title_fingerprint": "u s government will decide who gets to use gpt 5 6",
+      "service_key": "hacker-news",
+      "title": "U.S. government will decide who gets to use GPT-5.6",
+      "article_doc_path": "docs/services/hacker-news/2026-06-u-s-government-will-decide-who-gets-to-use-gpt-5-6-1a1245a3.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T23:07:24.507417Z",
+      "candidate_score": 60.0
+    },
+    "3bd391c41e017d15a5424509c33fa852bb160a55224c65916dfdf89279d5f93c": {
+      "normalized_url": "https://www.science.org/content/article/why-have-papers-one-history-s-most-famous-physicists-been-retracted",
+      "title_fingerprint": "springer nature has removed two studies by max planck",
+      "service_key": "hacker-news",
+      "title": "Springer Nature has removed two studies by Max Planck",
+      "article_doc_path": "docs/services/hacker-news/2026-06-springer-nature-has-removed-two-studies-by-max-planck-3bd391c4.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T23:07:24.507422Z",
+      "candidate_score": 60.0
     }
   }
 }
