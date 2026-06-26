@@ -1,3 +1,4 @@
+import json
 from datetime import UTC, datetime
 
 from src.enrichment.models import (
@@ -173,15 +174,23 @@ def test_news_writer_keeps_cumulative_articles_in_indexes(tmp_path) -> None:
         encoding="utf-8"
     )
     index_content = tmp_path.joinpath("docs", "index.md").read_text(encoding="utf-8")
+    briefing_data = json.loads(
+        tmp_path.joinpath("static", "data", "briefings", "index.json").read_text(encoding="utf-8")
+    )
+    briefing_titles = {item["title"] for item in briefing_data["items"]}
 
-    assert "## 우선순위 브리핑" in service_content
-    assert "## 누적 브리핑 목록" in service_content
-    assert "New Agent Feature" in service_content
-    assert "Old Agent Feature" in service_content
-    assert "Old Agent Feature" in index_content
+    assert "## 추천 글" in service_content
+    assert "## 새로운 글" in service_content
+    assert "## 브리핑 리스트" in service_content
+    assert "## 추천 글" in index_content
+    assert "## 새로운 글" in index_content
+    assert "## 브리핑 리스트" in index_content
+    assert "New Agent Feature" in briefing_titles
+    assert "Old Agent Feature" in briefing_titles
     assert '<ServiceHeader serviceKey="hacker-news"' in service_content
     assert "hide_title: true" in service_content
-    assert '<ServiceIcon serviceKey="hacker-news"' in index_content
+    assert '<BriefingList serviceKey="hacker-news" />' in service_content
+    assert "<BriefingList />" in index_content
 
 
 def test_news_writer_writes_agent_decision_trace_when_enabled(tmp_path) -> None:
