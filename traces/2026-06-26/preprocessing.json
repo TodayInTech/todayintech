@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-26T05:11:20.895073+00:00",
+  "generated_at": "2026-06-26T23:03:09.842140+00:00",
   "generated_for": "2026-06-26",
   "stage": "preprocessing",
   "status": "success",
-  "git_sha": "15576a7b00845442bd28523c29031107ce0f74df",
-  "github_run_id": "28218528573",
+  "git_sha": "370c15349eaff3a92766c6d2d88d3db5b718d4e3",
+  "github_run_id": "28270000192",
   "service_count": 5,
-  "duration_ms": 7,
+  "duration_ms": 10,
   "raw_count": 120,
-  "candidate_count": 13,
-  "excluded_count": 107,
+  "candidate_count": 12,
+  "excluded_count": 108,
   "step_metrics": [
     {
       "step_name": "validation",
@@ -24,7 +24,7 @@
       "input_count": 120,
       "output_count": 120,
       "excluded_count": 0,
-      "duration_ms": 2,
+      "duration_ms": 3,
       "reason_counts": {}
     },
     {
@@ -38,33 +38,35 @@
     {
       "step_name": "run_deduplication",
       "input_count": 120,
-      "output_count": 120,
-      "excluded_count": 0,
+      "output_count": 119,
+      "excluded_count": 1,
       "duration_ms": 0,
-      "reason_counts": {}
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
     },
     {
       "step_name": "briefed_article_filter",
-      "input_count": 120,
-      "output_count": 25,
+      "input_count": 119,
+      "output_count": 24,
       "excluded_count": 95,
-      "duration_ms": 1,
+      "duration_ms": 2,
       "reason_counts": {
         "already_briefed": 95
       }
     },
     {
       "step_name": "candidate_scoring",
-      "input_count": 25,
-      "output_count": 25,
+      "input_count": 24,
+      "output_count": 24,
       "excluded_count": 0,
       "duration_ms": 1,
       "reason_counts": {}
     },
     {
       "step_name": "candidate_quality_gate",
-      "input_count": 25,
-      "output_count": 23,
+      "input_count": 24,
+      "output_count": 22,
       "excluded_count": 2,
       "duration_ms": 0,
       "reason_counts": {
@@ -73,8 +75,8 @@
     },
     {
       "step_name": "candidate_limiting",
-      "input_count": 23,
-      "output_count": 13,
+      "input_count": 22,
+      "output_count": 12,
       "excluded_count": 10,
       "duration_ms": 0,
       "reason_counts": {
@@ -98,53 +100,52 @@
       "service_key": "github-blog",
       "service_name": "GitHub Blog",
       "raw_count": 10,
-      "candidate_count": 1,
-      "excluded_count": 9,
+      "candidate_count": 2,
+      "excluded_count": 8,
       "top_candidates": [
         {
-          "candidate_id": "github-blog:2e0b2f76a5b7e197",
-          "title": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks",
-          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks",
-          "url_hash": "2e0b2f76a5b7e197d60e3ce83a431c939c9a2ca13acf22174bab84925d3ec80f",
-          "suggested_doc_key": "2026-06-evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harn-2e0b2f76",
-          "suggested_article_path": "docs/services/github-blog/2026-06-evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harn-2e0b2f76.md",
-          "candidate_score": 52.0,
+          "candidate_id": "github-blog:12ccecad9f87549c",
+          "title": "GitHub and UNDP team up to advance development priorities in Ghana with open source",
+          "normalized_url": "https://github.blog/open-source/social-impact/github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-open-source",
+          "url_hash": "12ccecad9f87549caf86f020b0ba8463d22d69e7001e50c4cbad8df9a7f933b2",
+          "suggested_doc_key": "2026-06-github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-12ccecad",
+          "suggested_article_path": "docs/services/github-blog/2026-06-github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-12ccecad.md",
+          "candidate_score": 42.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 8점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "중요 키워드 3개를 감지해 가산했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
             "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:d1dff3b82d65ca5d",
+          "title": "Transitioning as a Hubber",
+          "normalized_url": "https://github.blog/developer-skills/career-growth/transitioning-as-a-hubber",
+          "url_hash": "d1dff3b82d65ca5dad9bdf832df0758341df92a7769cb6ad1d46a81613ee4e70",
+          "suggested_doc_key": "2026-06-transitioning-as-a-hubber-d1dff3b8",
+          "suggested_article_path": "docs/services/github-blog/2026-06-transitioning-as-a-hubber-d1dff3b8.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
           ]
         }
       ],
       "excluded_reasons": {
-        "already_briefed": 9
+        "already_briefed": 8
       }
     },
     {
       "service_key": "google-blog",
       "service_name": "Google Blog",
       "raw_count": 20,
-      "candidate_count": 1,
-      "excluded_count": 19,
-      "top_candidates": [
-        {
-          "candidate_id": "google-blog:823e02f8667ea9dc",
-          "title": "Our latest Google Finance upgrades, including a new app",
-          "normalized_url": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026",
-          "url_hash": "823e02f8667ea9dcda49b35a4c6a16934def17bcf6df1ee7c4716d759f6da1ce",
-          "suggested_doc_key": "2026-06-our-latest-google-finance-upgrades-including-a-new-app-823e02f8",
-          "suggested_article_path": "docs/services/google-blog/2026-06-our-latest-google-finance-upgrades-including-a-new-app-823e02f8.md",
-          "candidate_score": 36.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 7점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
-          ]
-        }
-      ],
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
       "excluded_reasons": {
-        "already_briefed": 19
+        "already_briefed": 20
       }
     },
     {
@@ -155,84 +156,85 @@
       "excluded_count": 10,
       "top_candidates": [
         {
-          "candidate_id": "hacker-news:be793f916139b4f2",
-          "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
-          "normalized_url": "https://github.com/inkeep/open-knowledge",
-          "url_hash": "be793f916139b4f2936353ebc55b3de10f484b5267e33b3e94e6e268fc1523dd",
-          "suggested_doc_key": "2026-06-show-hn-openknowledge-open-source-ai-first-alternative-to-obsidian-notio-be793f91",
-          "suggested_article_path": "docs/services/hacker-news/2026-06-show-hn-openknowledge-open-source-ai-first-alternative-to-obsidian-notio-be793f91.md",
-          "candidate_score": 75.0,
+          "candidate_id": "hacker-news:0af70dc4df451a55",
+          "title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+          "normalized_url": "https://github.com/workweave/router",
+          "url_hash": "0af70dc4df451a554ba04332b001b6ff40036beee5c7d503a762803e9d3f8501",
+          "suggested_doc_key": "2026-06-show-hn-smart-model-routing-directly-in-claude-codex-and-cursor-0af70dc4",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-show-hn-smart-model-routing-directly-in-claude-codex-and-cursor-0af70dc4.md",
+          "candidate_score": 67.7,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
             "중요 키워드 3개를 감지해 가산했습니다.",
-            "Hacker News 점수 235점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 112개를 토론 신호로 반영했습니다.",
-            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 127점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 81개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:19e5cf7f580b2960",
-          "title": "The 'papers, please' era of the internet will decimate your privacy",
-          "normalized_url": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
-          "url_hash": "19e5cf7f580b296044431bbc8cef2d2837b74da061fc495065b2a51bee603194",
-          "suggested_doc_key": "2026-06-the-papers-please-era-of-the-internet-will-decimate-your-privacy-19e5cf7f",
-          "suggested_article_path": "docs/services/hacker-news/2026-06-the-papers-please-era-of-the-internet-will-decimate-your-privacy-19e5cf7f.md",
-          "candidate_score": 63.0,
+          "candidate_id": "hacker-news:30f48121decc708b",
+          "title": "Previewing GPT‑5.6 Sol: a next-generation model",
+          "normalized_url": "https://openai.com/index/previewing-gpt-5-6-sol",
+          "url_hash": "30f48121decc708b123e76182ad5478a2e1413a7c39b75bd8f4a904078e89cfb",
+          "suggested_doc_key": "2026-06-previewing-gpt-5-6-sol-a-next-generation-model-30f48121",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-previewing-gpt-5-6-sol-a-next-generation-model-30f48121.md",
+          "candidate_score": 65.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 538점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 243개를 토론 신호로 반영했습니다.",
-            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "hacker-news:17e244aef01933cb",
-          "title": "An entire Herculaneum scroll has been read for the first time",
-          "normalized_url": "https://scrollprize.org/firstscroll",
-          "url_hash": "17e244aef01933cb13f9d1d3bcd06f4e84db1260c074a9d9c85cbdbf5dd419d2",
-          "suggested_doc_key": "2026-06-an-entire-herculaneum-scroll-has-been-read-for-the-first-time-17e244ae",
-          "suggested_article_path": "docs/services/hacker-news/2026-06-an-entire-herculaneum-scroll-has-been-read-for-the-first-time-17e244ae.md",
-          "candidate_score": 60.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 5점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 1108점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 235개를 토론 신호로 반영했습니다.",
-            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "hacker-news:25f8087edea2a8f6",
-          "title": "IBM debuts sub-1 nanometer chip technology",
-          "normalized_url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
-          "url_hash": "25f8087edea2a8f60d563260aff9721bd365d3b2659e1bc43c55c333e89fac77",
-          "suggested_doc_key": "2026-06-ibm-debuts-sub-1-nanometer-chip-technology-25f8087e",
-          "suggested_article_path": "docs/services/hacker-news/2026-06-ibm-debuts-sub-1-nanometer-chip-technology-25f8087e.md",
-          "candidate_score": 60.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 5점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 289점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 159개를 토론 신호로 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 717점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 446개를 토론 신호로 반영했습니다.",
             "RSS 순위 17위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:a20e4cbfeeaa5e90",
-          "title": "Zig's new bitCast semantics and LLVM back end improvements",
-          "normalized_url": "https://ziglang.org/devlog/2026",
-          "url_hash": "a20e4cbfeeaa5e9065dd820d9bb5b23bd2108d2ad8f0912b3a75f061ec909ae4",
-          "suggested_doc_key": "2026-06-zig-s-new-bitcast-semantics-and-llvm-back-end-improvements-a20e4cbf",
-          "suggested_article_path": "docs/services/hacker-news/2026-06-zig-s-new-bitcast-semantics-and-llvm-back-end-improvements-a20e4cbf.md",
+          "candidate_id": "hacker-news:1a1245a36f527a0a",
+          "title": "U.S. government will decide who gets to use GPT-5.6",
+          "normalized_url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model",
+          "url_hash": "1a1245a36f527a0a15bb3f8aec16ff0da640b7b5d21b544fed03b58e173c029a",
+          "suggested_doc_key": "2026-06-u-s-government-will-decide-who-gets-to-use-gpt-5-6-1a1245a3",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-u-s-government-will-decide-who-gets-to-use-gpt-5-6-1a1245a3.md",
           "candidate_score": 60.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 223점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 102개를 토론 신호로 반영했습니다.",
-            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 656점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 805개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3bd391c41e017d15",
+          "title": "Springer Nature has removed two studies by Max Planck",
+          "normalized_url": "https://www.science.org/content/article/why-have-papers-one-history-s-most-famous-physicists-been-retracted",
+          "url_hash": "3bd391c41e017d15a5424509c33fa852bb160a55224c65916dfdf89279d5f93c",
+          "suggested_doc_key": "2026-06-springer-nature-has-removed-two-studies-by-max-planck-3bd391c4",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-springer-nature-has-removed-two-studies-by-max-planck-3bd391c4.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 330점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 161개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:cda7e3cd5e14799f",
+          "title": "Data centers trigger voter backlash",
+          "normalized_url": "https://www.newsweek.com/cost-me-the-election-data-centers-trigger-voter-backlash-12118327",
+          "url_hash": "cda7e3cd5e14799f0ccd1249e64d272686ebaf10e3315d94d8888269102db5da",
+          "suggested_doc_key": "2026-06-data-centers-trigger-voter-backlash-cda7e3cd",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-data-centers-trigger-voter-backlash-cda7e3cd.md",
+          "candidate_score": 53.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 134점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 240개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
           ]
         }
       ],
@@ -244,26 +246,11 @@
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
       "raw_count": 50,
-      "candidate_count": 1,
-      "excluded_count": 49,
-      "top_candidates": [
-        {
-          "candidate_id": "openai-blog:3d99cf87d464b7af",
-          "title": "How agents are transforming work",
-          "normalized_url": "https://openai.com/index/how-agents-are-transforming-work",
-          "url_hash": "3d99cf87d464b7af5461cdf1dc29e5bd6c5c008df9a0bfc30a0f3b0c56ddb179",
-          "suggested_doc_key": "2026-06-how-agents-are-transforming-work-3d99cf87",
-          "suggested_article_path": "docs/services/openai-blog/2026-06-how-agents-are-transforming-work-3d99cf87.md",
-          "candidate_score": 43.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 10점을 적용했습니다.",
-            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
-            "중요 키워드 1개를 감지해 가산했습니다.",
-            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
-          ]
-        }
-      ],
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
       "excluded_reasons": {
+        "duplicate_in_run": 1,
         "already_briefed": 47,
         "low_quality": 2
       }

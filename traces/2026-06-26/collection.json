@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-26T05:11:20.685662+00:00",
+  "generated_at": "2026-06-26T23:03:09.590117+00:00",
   "generated_for": "2026-06-26",
   "stage": "collection",
   "status": "success",
-  "git_sha": "15576a7b00845442bd28523c29031107ce0f74df",
-  "github_run_id": "28218528573",
+  "git_sha": "370c15349eaff3a92766c6d2d88d3db5b718d4e3",
+  "github_run_id": "28270000192",
   "service_count": 5,
   "failed_service_count": 0,
   "warning_count": 0,
   "total_article_count": 120,
-  "duration_ms": 39124,
+  "duration_ms": 103397,
   "services": [
     {
       "service_key": "hacker-news",
@@ -17,8 +17,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 535,
-      "avg_article_duration_ms": 26.75,
+      "duration_ms": 1310,
+      "avg_article_duration_ms": 65.5,
       "warning_codes": [],
       "error": null
     },
@@ -28,8 +28,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 10,
-      "duration_ms": 98,
-      "avg_article_duration_ms": 9.8,
+      "duration_ms": 193,
+      "avg_article_duration_ms": 19.3,
       "warning_codes": [],
       "error": null
     },
@@ -39,8 +39,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 332,
-      "avg_article_duration_ms": 16.6,
+      "duration_ms": 254,
+      "avg_article_duration_ms": 12.7,
       "warning_codes": [],
       "error": null
     },
@@ -50,8 +50,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 50,
-      "duration_ms": 504,
-      "avg_article_duration_ms": 10.08,
+      "duration_ms": 714,
+      "avg_article_duration_ms": 14.28,
       "warning_codes": [],
       "error": null
     },
@@ -61,8 +61,8 @@
       "strategy": "sitemap",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 37655,
-      "avg_article_duration_ms": 1882.75,
+      "duration_ms": 100926,
+      "avg_article_duration_ms": 5046.3,
       "warning_codes": [],
       "error": null
     }
