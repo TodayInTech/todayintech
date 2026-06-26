@@ -1800,6 +1800,76 @@
       "status": "published",
       "briefed_at": "2026-06-24T23:04:06.596119Z",
       "candidate_score": 39.0
+    },
+    "2e0b2f76a5b7e197d60e3ce83a431c939c9a2ca13acf22174bab84925d3ec80f": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks",
+      "title_fingerprint": "evaluating performance and efficiency of the github copilot agentic harness across models and tasks",
+      "service_key": "github-blog",
+      "title": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks",
+      "article_doc_path": "docs/services/github-blog/2026-06-evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harn-2e0b2f76.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T05:13:29.182348Z",
+      "candidate_score": 52.0
+    },
+    "823e02f8667ea9dcda49b35a4c6a16934def17bcf6df1ee7c4716d759f6da1ce": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026",
+      "title_fingerprint": "our latest google finance upgrades including a new app",
+      "service_key": "google-blog",
+      "title": "Our latest Google Finance upgrades, including a new app",
+      "article_doc_path": "docs/services/google-blog/2026-06-our-latest-google-finance-upgrades-including-a-new-app-823e02f8.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T05:13:29.182381Z",
+      "candidate_score": 36.0
+    },
+    "be793f916139b4f2936353ebc55b3de10f484b5267e33b3e94e6e268fc1523dd": {
+      "normalized_url": "https://github.com/inkeep/open-knowledge",
+      "title_fingerprint": "show hn openknowledge open source ai first alternative to obsidian notion",
+      "service_key": "hacker-news",
+      "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
+      "article_doc_path": "docs/services/hacker-news/2026-06-show-hn-openknowledge-open-source-ai-first-alternative-to-obsidian-notio-be793f91.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T05:13:29.182388Z",
+      "candidate_score": 75.0
+    },
+    "19e5cf7f580b296044431bbc8cef2d2837b74da061fc495065b2a51bee603194": {
+      "normalized_url": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
+      "title_fingerprint": "the papers please era of the internet will decimate your privacy",
+      "service_key": "hacker-news",
+      "title": "The 'papers, please' era of the internet will decimate your privacy",
+      "article_doc_path": "docs/services/hacker-news/2026-06-the-papers-please-era-of-the-internet-will-decimate-your-privacy-19e5cf7f.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T05:13:29.182393Z",
+      "candidate_score": 63.0
+    },
+    "17e244aef01933cb13f9d1d3bcd06f4e84db1260c074a9d9c85cbdbf5dd419d2": {
+      "normalized_url": "https://scrollprize.org/firstscroll",
+      "title_fingerprint": "an entire herculaneum scroll has been read for the first time",
+      "service_key": "hacker-news",
+      "title": "An entire Herculaneum scroll has been read for the first time",
+      "article_doc_path": "docs/services/hacker-news/2026-06-an-entire-herculaneum-scroll-has-been-read-for-the-first-time-17e244ae.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T05:13:29.182397Z",
+      "candidate_score": 60.0
+    },
+    "25f8087edea2a8f60d563260aff9721bd365d3b2659e1bc43c55c333e89fac77": {
+      "normalized_url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
+      "title_fingerprint": "ibm debuts sub 1 nanometer chip technology",
+      "service_key": "hacker-news",
+      "title": "IBM debuts sub-1 nanometer chip technology",
+      "article_doc_path": "docs/services/hacker-news/2026-06-ibm-debuts-sub-1-nanometer-chip-technology-25f8087e.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T05:13:29.182401Z",
+      "candidate_score": 60.0
+    },
+    "3d99cf87d464b7af5461cdf1dc29e5bd6c5c008df9a0bfc30a0f3b0c56ddb179": {
+      "normalized_url": "https://openai.com/index/how-agents-are-transforming-work",
+      "title_fingerprint": "how agents are transforming work",
+      "service_key": "openai-blog",
+      "title": "How agents are transforming work",
+      "article_doc_path": "docs/services/openai-blog/2026-06-how-agents-are-transforming-work-3d99cf87.md",
+      "status": "published",
+      "briefed_at": "2026-06-26T05:13:29.182405Z",
+      "candidate_score": 43.0
     }
   }
 }
