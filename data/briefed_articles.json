@@ -1930,6 +1930,46 @@
       "status": "published",
       "briefed_at": "2026-06-26T23:07:24.507422Z",
       "candidate_score": 60.0
+    },
+    "c2b5d5289408b847cf12cdcaf63b22796df237986c2874edeb69ccabcc16d414": {
+      "normalized_url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2",
+      "title_fingerprint": "zuckerberg s war on whistleblowers",
+      "service_key": "hacker-news",
+      "title": "Zuckerberg's war on whistleblowers",
+      "article_doc_path": "docs/services/hacker-news/2026-06-zuckerberg-s-war-on-whistleblowers-c2b5d528.md",
+      "status": "published",
+      "briefed_at": "2026-06-27T23:03:37.371175Z",
+      "candidate_score": 61.0
+    },
+    "0b4ad2e2f4cc413aeaa1f694b2811c89b2f6055518874115deaa0456f6e95628": {
+      "normalized_url": "https://ipcrawl.com/",
+      "title_fingerprint": "ip crawl living atlas of open webcams discovered on the public internet",
+      "service_key": "hacker-news",
+      "title": "IP Crawl: Living atlas of open webcams discovered on the public internet",
+      "article_doc_path": "docs/services/hacker-news/2026-06-ip-crawl-living-atlas-of-open-webcams-discovered-on-the-public-internet-0b4ad2e2.md",
+      "status": "published",
+      "briefed_at": "2026-06-27T23:03:37.371216Z",
+      "candidate_score": 60.7
+    },
+    "b2cf1ddaebde42be2ccccf5e646380ec0a3e6dfcb3da766346c2c7ee1a32632a": {
+      "normalized_url": "https://github.com/bikini/exploitarium",
+      "title_fingerprint": "anonymous github account mass dropping undisclosed 0 days",
+      "service_key": "hacker-news",
+      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
+      "article_doc_path": "docs/services/hacker-news/2026-06-anonymous-github-account-mass-dropping-undisclosed-0-days-b2cf1dda.md",
+      "status": "published",
+      "briefed_at": "2026-06-27T23:03:37.371228Z",
+      "candidate_score": 60.0
+    },
+    "307e7f1ccd5aa9c156da477be2e054a8db04ff4a22c44d04bf79433d15488485": {
+      "normalized_url": "https://www.openra.net/",
+      "title_fingerprint": "openra",
+      "service_key": "hacker-news",
+      "title": "OpenRA",
+      "article_doc_path": "docs/services/hacker-news/2026-06-openra-307e7f1c.md",
+      "status": "published",
+      "briefed_at": "2026-06-27T23:03:37.371234Z",
+      "candidate_score": 60.0
     }
   }
 }
