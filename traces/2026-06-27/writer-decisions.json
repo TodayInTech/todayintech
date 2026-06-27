@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-06-27T23:03:37.413039+00:00",
+  "generated_for": "2026-06-27",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "29288471b50779f166af9c2c4c86e73507f4bbb0",
+  "github_run_id": "28304409433",
+  "decision_count": 4,
+  "decision_counts": {
+    "published": 4
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:c2b5d5289408b847",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Zuckerberg's war on whistleblowers",
+      "normalized_url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2",
+      "article_doc_path": "docs/services/hacker-news/2026-06-zuckerberg-s-war-on-whistleblowers-c2b5d528.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "플랫폼 책임·규제",
+      "importance_level": "높음",
+      "confidence_score": 0.88,
+      "summary_scope": "chunk_selection",
+      "publish_reason_ko": "제공된 근거(두 개의 본문 청크)는 메타의 내부 고발자 침묵 강요와 강제 중재·불이익 조항의 실제 적용 사례를 상세히 보여주며, 플랫폼 거버넌스·법제도 관점에서 기술 독자에게 의미 있는 논점을 제시합니다. Hacker News 반응(포인트·댓글)도 높아 독자 관심도가 큽니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 61.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:0b4ad2e2f4cc413a",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "IP Crawl: Living atlas of open webcams discovered on the public internet",
+      "normalized_url": "https://ipcrawl.com/",
+      "article_doc_path": "docs/services/hacker-news/2026-06-ip-crawl-living-atlas-of-open-webcams-discovered-on-the-public-internet-0b4ad2e2.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Security/Privacy",
+      "importance_level": "Medium",
+      "confidence_score": 0.75,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "제목과 Hacker News 반응(HN 포인트 167, 댓글 86)으로 주제의 기술적·사회적 중요성이 확인되며, 공개 웹캠의 집계·공개는 보안·프라이버시 논의에서 의미가 크므로 전문 독자에게 유용한 브리핑 자료로 판단됩니다. 다만 제공된 메타데이터만으로 세부 방법론과 결과를 단정할 수 없어 원문 확인을 권장하는 한계를 명시했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title",
+        "source_url",
+        "authors",
+        "published_at",
+        "collected_at",
+        "feed_summary",
+        "metadata.hn_points",
+        "metadata.hn_comments",
+        "candidate_id"
+      ],
+      "candidate_score": 60.7,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:b2cf1ddaebde42be",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
+      "normalized_url": "https://github.com/bikini/exploitarium",
+      "article_doc_path": "docs/services/hacker-news/2026-06-anonymous-github-account-mass-dropping-undisclosed-0-days-b2cf1dda.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "보안",
+      "importance_level": "높음",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터 기준으로 해당 후보는 익명 계정의 '미공개 0-day' 대량 공개라는 민감한 보안 주제를 다루고 있고 Hacker News에서 590점, 232개 댓글로 높은 관심을 받았으므로 기술 독자 관점에서 주시할 가치가 있다고 판단했습니다. 원문 상세가 제공되지 않아 본문 확인을 권장합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title",
+        "source_url",
+        "feed_summary",
+        "metadata.hn_points",
+        "metadata.hn_comments",
+        "authors",
+        "published_at"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:307e7f1ccd5aa9c1",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "OpenRA",
+      "normalized_url": "https://www.openra.net/",
+      "article_doc_path": "docs/services/hacker-news/2026-06-openra-307e7f1c.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "오픈소스 게임",
+      "importance_level": "중간",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "OpenRA의 최신 플레이테스트(playtest-20260222)는 절차적 지도 생성기, 핵심 게임 모드 대응, 그래픽·자산 호환성 등 모딩·맵 제작자와 플레이어 모두에 실질적 영향을 주는 기술적 변화들을 포함하고 있어 Today in Tech 독자층에 유의미한 정보가 됩니다. Hacker News 상의 관심 신호도(포인트·댓글)도 높아 배포 가치가 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    }
+  ]
+}
