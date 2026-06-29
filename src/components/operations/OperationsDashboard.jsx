@@ -105,7 +105,7 @@ export default function OperationsDashboard({view = 'overview'}) {
 function FilterBar({periodDays, setPeriodDays, serviceKey, setServiceKey, serviceOptions}) {
   return (
     <div className={styles.filterBar}>
-      <div>
+      <div className={styles.filterField}>
         <span className={styles.filterLabel}>Period</span>
         <div className={styles.segmented}>
           {PERIODS.map((period) => (

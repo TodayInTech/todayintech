@@ -90,6 +90,7 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Simplify public article pages around a natural long-form Korean summary
   - [x] Apply OpenAI Agent summary length guidance by Enrichment input strategy
   - [x] Add card-based briefing navigation UI for main and service pages
+  - [x] Improve responsive layout and text handling for briefing/trace filter buttons and dropdowns
   - [x] Add Docusaurus English locale generation for main, service, and operations docs
   - [ ] Implement publication status transition policy
 

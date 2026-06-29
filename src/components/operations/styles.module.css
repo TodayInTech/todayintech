@@ -5,36 +5,46 @@
 }
 
 .filterBar {
-  align-items: end;
+  align-items: stretch;
   background: var(--ifm-background-surface-color);
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.9rem;
   padding: 1rem;
+}
+
+.filterField {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: min(100%, 13rem);
 }
 
 .filterLabel {
   color: var(--ifm-color-emphasis-700);
-  display: flex;
-  flex-direction: column;
+  display: block;
   font-size: 0.82rem;
   font-weight: 700;
-  gap: 0.4rem;
   text-transform: uppercase;
 }
 
 .segmented {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.35rem;
+  min-width: 0;
 }
 
 .dropdownField {
   display: flex;
+  flex: 1 1 15rem;
   flex-direction: column;
   gap: 0.4rem;
-  min-width: 13rem;
+  max-width: 24rem;
+  min-width: min(100%, 14rem);
   position: relative;
 }
 
@@ -49,14 +59,22 @@
   font-weight: 700;
   gap: 0.75rem;
   justify-content: space-between;
+  line-height: 1.2;
   min-height: 2.3rem;
+  min-width: 0;
   padding: 0.45rem 0.75rem 0.45rem 0.9rem;
+  text-align: left;
+  transition:
+    background-color 0.16s ease,
+    border-color 0.16s ease,
+    color 0.16s ease;
   width: 100%;
 }
 
 .serviceLabel {
   align-items: center;
   display: inline-flex;
+  flex: 1 1 auto;
   gap: 0.55rem;
   min-width: 0;
 }
@@ -127,12 +145,13 @@
   gap: 0.15rem;
   left: 0;
   max-height: 18rem;
-  min-width: 100%;
+  max-width: min(24rem, calc(100vw - 2rem));
+  min-width: min(100%, 14rem);
   overflow-y: auto;
   padding: 0.35rem;
   position: absolute;
   top: calc(100% + 0.35rem);
-  width: max-content;
+  width: max(100%, 18rem);
   z-index: 20;
 }
 
@@ -148,10 +167,13 @@
   font: inherit;
   font-weight: 700;
   gap: 0.45rem;
-  grid-template-columns: 1.1rem minmax(0, max-content);
-  min-width: 12rem;
+  grid-template-columns: 1.1rem minmax(0, 1fr);
+  line-height: 1.25;
+  min-height: 2.35rem;
+  min-width: 0;
   padding: 0.5rem 0.65rem;
   text-align: left;
+  width: 100%;
 }
 
 .dropdownOption:hover,
@@ -168,20 +190,43 @@
 
 .button,
 .activeButton {
+  align-items: center;
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 999px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: inline-flex;
   font-weight: 700;
+  justify-content: center;
+  line-height: 1.2;
+  min-height: 2.35rem;
+  min-width: 3.25rem;
   padding: 0.45rem 0.75rem;
+  text-align: center;
+  transition:
+    background-color 0.16s ease,
+    border-color 0.16s ease,
+    color 0.16s ease;
 }
 
 .button {
-  background: transparent;
+  background: var(--ifm-background-color);
   color: var(--ifm-font-color-base);
+}
+
+.button:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.button:focus-visible,
+.activeButton:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
 }
 
 .activeButton {
   background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
   color: white;
 }
 
@@ -434,6 +479,25 @@
 }
 
 @media (max-width: 640px) {
+  .filterBar {
+    padding: 0.85rem;
+  }
+
+  .filterField,
+  .dropdownField {
+    flex-basis: 100%;
+    max-width: none;
+  }
+
+  .button,
+  .activeButton {
+    flex: 1 1 auto;
+  }
+
+  .dropdownMenu {
+    width: 100%;
+  }
+
   .barRow,
   .groupRow,
   .groupBarLine {
