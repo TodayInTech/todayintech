@@ -1970,6 +1970,56 @@
       "status": "published",
       "briefed_at": "2026-06-27T23:03:37.371234Z",
       "candidate_score": 60.0
+    },
+    "5fd9aa29cdb4282a7acf78dca40b8768168d71e103170aa3346e0f0d32a34c22": {
+      "normalized_url": "https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-speech-06-29-2026",
+      "title_fingerprint": "age verification is just a precursor to automated attribution of speech",
+      "service_key": "hacker-news",
+      "title": "Age verification is just a precursor to automated attribution of speech",
+      "article_doc_path": "docs/services/hacker-news/2026-06-age-verification-is-just-a-precursor-to-automated-attribution-of-speech-5fd9aa29.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T06:22:34.940089Z",
+      "candidate_score": 67.0
+    },
+    "de4a5ca1025f85b2faf325836719213499dc150262216dad97b6b6d619cf8bcc": {
+      "normalized_url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks",
+      "title_fingerprint": "glm 5 2 beats claude in our benchmarks",
+      "service_key": "hacker-news",
+      "title": "GLM 5.2 beats Claude in our benchmarks",
+      "article_doc_path": "docs/services/hacker-news/2026-06-glm-5-2-beats-claude-in-our-benchmarks-de4a5ca1.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T06:22:34.940128Z",
+      "candidate_score": 65.0
+    },
+    "10655a197daec5485fde9571da1d4a307aabcb400e5ed392eee95ea77b343c74": {
+      "normalized_url": "https://github.com/librepods-org/librepods",
+      "title_fingerprint": "librepods airpods liberated",
+      "service_key": "hacker-news",
+      "title": "Librepods: AirPods liberated",
+      "article_doc_path": "docs/services/hacker-news/2026-06-librepods-airpods-liberated-10655a19.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T06:22:34.940145Z",
+      "candidate_score": 62.0
+    },
+    "69ee7bea325ca1abbf1aa24f23fa93de3c92656421344d45bf91c37e8dead58f": {
+      "normalized_url": "https://danunparsed.com/p/hackerrank-open-source-ats",
+      "title_fingerprint": "hackerrank open sourced its ats my resume scored 90 100 oh wait 74 no 88",
+      "service_key": "hacker-news",
+      "title": "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88",
+      "article_doc_path": "docs/services/hacker-news/2026-06-hackerrank-open-sourced-its-ats-my-resume-scored-90-100-oh-wait-74-no-88-69ee7bea.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T06:22:34.940180Z",
+      "candidate_score": 61.9
+    },
+    "5f8ae94d3d52ae74dcc04545cabfb0442c0afe91eccec520674715a73dc917b9": {
+      "normalized_url": "https://openai.com/index/hp-frontier-partnership",
+      "title_fingerprint": "hp inc launches frontier strategic partnership with openai",
+      "service_key": "openai-blog",
+      "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-06-hp-inc-launches-frontier-strategic-partnership-with-openai-5f8ae94d.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T06:22:34.940190Z",
+      "candidate_score": 44.0
     }
   }
 }
