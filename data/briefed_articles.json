@@ -2020,6 +2020,86 @@
       "status": "published",
       "briefed_at": "2026-06-29T06:22:34.940190Z",
       "candidate_score": 44.0
+    },
+    "4d3d9c5a5a7f9aec9369ba46f46ca591a5c1ce3dda675ed61faf0e19267ad5fe": {
+      "normalized_url": "https://github.blog/open-source/git/highlights-from-git-2-55",
+      "title_fingerprint": "highlights from git 2 55",
+      "service_key": "github-blog",
+      "title": "Highlights from Git 2.55",
+      "article_doc_path": "docs/services/github-blog/2026-06-highlights-from-git-2-55-4d3d9c5a.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T22:55:38.123569Z",
+      "candidate_score": 47.0
+    },
+    "6fd3a46f2d7c1938205dc35a1d2c2dc18e0060f79c0d831361735cffeb2e280d": {
+      "normalized_url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records",
+      "title_fingerprint": "inside the advisory database and what happens when vulnerability volume breaks records",
+      "service_key": "github-blog",
+      "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
+      "article_doc_path": "docs/services/github-blog/2026-06-inside-the-advisory-database-and-what-happens-when-vulnerability-volume-6fd3a46f.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T22:55:38.123605Z",
+      "candidate_score": 46.0
+    },
+    "e0616775a3b94cd091d815dc40b5c93ce0bfec56557e9a260f665b5a32c43557": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/full-stack-ai-explainer",
+      "title_fingerprint": "ask an ai expert what exactly is the full stack",
+      "service_key": "google-blog",
+      "title": "Ask an AI expert: What exactly is the full stack?",
+      "article_doc_path": "docs/services/google-blog/2026-06-ask-an-ai-expert-what-exactly-is-the-full-stack-e0616775.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T22:55:38.123618Z",
+      "candidate_score": 36.0
+    },
+    "f4febc5c1546a6ab28ede87695a5f7fa679be965a3de2e6a43c8abf28c7373d7": {
+      "normalized_url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain",
+      "title_fingerprint": "self a new top level domain designed to support self hosting",
+      "service_key": "hacker-news",
+      "title": ".self: A new top-level domain designed to support self-hosting",
+      "article_doc_path": "docs/services/hacker-news/2026-06-self-a-new-top-level-domain-designed-to-support-self-hosting-f4febc5c.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T22:55:38.123627Z",
+      "candidate_score": 65.3
+    },
+    "646cca419121edead6242d6617330fb53fa8cbc2eafcff8660c326e13ff5c52e": {
+      "normalized_url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
+      "title_fingerprint": "rocketlab acquires iridium",
+      "service_key": "hacker-news",
+      "title": "Rocketlab acquires Iridium",
+      "article_doc_path": "docs/services/hacker-news/2026-06-rocketlab-acquires-iridium-646cca41.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T22:55:38.123635Z",
+      "candidate_score": 65.0
+    },
+    "d3286e931d2295bc15496dfff8021b3b9dda68f01bf5622eb8e426e3a6b720ac": {
+      "normalized_url": "https://quesma.com/blog/qwen-36-is-awesome",
+      "title_fingerprint": "qwen 3 6 27b is the sweet spot for local development",
+      "service_key": "hacker-news",
+      "title": "Qwen 3.6 27B is the sweet spot for local development",
+      "article_doc_path": "docs/services/hacker-news/2026-06-qwen-3-6-27b-is-the-sweet-spot-for-local-development-d3286e93.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T22:55:38.123644Z",
+      "candidate_score": 61.0
+    },
+    "2e742293d083844ddfb632fbc567e9ecf34eab0ea123c99edb904ceb37ddfe1a": {
+      "normalized_url": "https://torrentfreak.com/european-isps-want-rightsholders-held-accountable-for-overblocking-damage",
+      "title_fingerprint": "european isps want rightsholders held accountable for overblocking damage",
+      "service_key": "hacker-news",
+      "title": "European ISPs Want Rightsholders Held Accountable for Overblocking Damage",
+      "article_doc_path": "docs/services/hacker-news/2026-06-european-isps-want-rightsholders-held-accountable-for-overblocking-damag-2e742293.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T22:55:38.123651Z",
+      "candidate_score": 60.0
+    },
+    "247324a6d137edef9b4c017a644a61addb0dcc8dd8073a444adaeb6d319ffa79": {
+      "normalized_url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "title_fingerprint": "mapping europe s ai workforce opportunity",
+      "service_key": "openai-blog",
+      "title": "Mapping Europe’s AI Workforce Opportunity",
+      "article_doc_path": "docs/services/openai-blog/2026-06-mapping-europe-s-ai-workforce-opportunity-247324a6.md",
+      "status": "published",
+      "briefed_at": "2026-06-29T22:55:38.123659Z",
+      "candidate_score": 39.0
     }
   }
 }
