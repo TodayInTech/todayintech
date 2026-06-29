@@ -1,4 +1,4 @@
-from datetime import UTC, datetime
+from datetime import UTC, datetime, time
 
 from src.processing.context import PreprocessingContext
 from src.processing.contracts import BasePreprocessingStep
@@ -12,9 +12,10 @@ class CandidateScoringStep(BasePreprocessingStep):
         self.scorer = scorer or DefaultCandidateScorer()
 
     def process(self, context: PreprocessingContext) -> PreprocessingContext:
+        reference_time = _reference_time(context.generated_for)
         context.replace_candidates(
             [
-                self.scorer.score(candidate)
+                self.scorer.score(candidate, now=reference_time)
                 for candidate in sorted(
                     context.candidates,
                     key=lambda item: item.article.published_at or datetime.min.replace(tzinfo=UTC),
@@ -23,3 +24,11 @@ class CandidateScoringStep(BasePreprocessingStep):
             ]
         )
         return context
+
+
+def _reference_time(generated_for: str) -> datetime:
+    try:
+        target_date = datetime.fromisoformat(generated_for).date()
+    except ValueError:
+        return datetime.now(UTC)
+    return datetime.combine(target_date, time.min, tzinfo=UTC)

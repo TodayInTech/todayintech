@@ -59,6 +59,7 @@
   - [x] Collector 구조와 맞춘 contracts/steps/scoring/state 기반 전처리 패키지 재구성
   - [x] 전처리 pipeline factory, scorer ABC, 제외 사유 enum, ranking signal 모델, step metrics, context helper, legacy helper 제거 적용
   - [x] 서비스별 전처리 정책, 후보 품질 게이트, 점수 산정 설명 추가
+  - [x] 후보 점수 산정 기준일을 실행 시각이 아닌 `generated_for` 기준으로 고정
 
 - [ ] Enrichment - 진행 중
   - [x] enrichment 상태와 Agent 입력 전략 모델 정의

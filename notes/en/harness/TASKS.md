@@ -59,6 +59,7 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Restructure the preprocessing package around contracts/steps/scoring/state to match the Collector structure
   - [x] Add preprocessing pipeline factory, scorer ABC, exclusion reason enum, ranking signal model, step metrics, context helpers, and remove legacy helpers
   - [x] Add service preprocessing policies, candidate quality gate, and scoring explanations
+  - [x] Make candidate scoring use the `generated_for` date instead of the workflow execution time
 
 - [ ] Enrichment - in progress
   - [x] Define enrichment statuses and Agent input strategies

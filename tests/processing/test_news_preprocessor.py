@@ -10,6 +10,7 @@ def make_article(
     title: str,
     url: str,
     *,
+    summary: str = "Agent release",
     metadata: dict[str, str | int | float | bool] | None = None,
 ) -> Article:
     return Article(
@@ -18,7 +19,7 @@ def make_article(
         url=url,
         published_at=datetime(2026, 6, 10, tzinfo=UTC),
         collected_at=datetime(2026, 6, 11, tzinfo=UTC),
-        summary="Agent release",
+        summary=summary,
         metadata=metadata or {},
     )
 
@@ -136,6 +137,31 @@ def test_news_preprocessor_applies_candidate_limits(tmp_path) -> None:
     assert service.excluded[0].excluded_reason == ExcludedReason.SERVICE_CANDIDATE_LIMIT
 
 
+def test_news_preprocessor_scores_candidates_against_generated_for_date(tmp_path) -> None:
+    preprocessor = NewsPreprocessor.create_default(
+        briefed_article_store=BriefedArticleStore(tmp_path / "briefed_articles.json"),
+        per_service_limit=10,
+        total_limit=10,
+    )
+
+    result = preprocessor.process(
+        "2026-06-11",
+        [
+            make_result(
+                [
+                    make_article("First Agent Release", "https://example.com/first"),
+                ]
+            )
+        ],
+    )
+
+    service = result.services[0]
+
+    assert service.candidate_count == 1
+    assert service.candidates[0].candidate_score == 34
+    assert service.candidates[0].ranking_signals.age_days == 1
+
+
 def test_news_preprocessor_filters_low_quality_candidates_before_limiting(tmp_path) -> None:
     preprocessor = NewsPreprocessor.create_default(
         briefed_article_store=BriefedArticleStore(tmp_path / "briefed_articles.json"),
@@ -151,6 +177,7 @@ def test_news_preprocessor_filters_low_quality_candidates_before_limiting(tmp_pa
                     make_article(
                         "Weekly Webinar Event",
                         "https://example.com/webinar",
+                        summary="Weekly promotional program",
                         metadata={"rss_rank": 20},
                     ),
                     make_article(
