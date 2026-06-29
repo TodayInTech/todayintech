@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-29T06:20:25.272626+00:00",
+  "generated_at": "2026-06-29T22:52:31.183534+00:00",
   "generated_for": "2026-06-29",
   "stage": "collection",
   "status": "success",
-  "git_sha": "620bab78d6138a05abf4a61a9ad4d22c5cb24362",
-  "github_run_id": "28352630703",
+  "git_sha": "8603ee171ec736ca1d6c1a8efa90497532cb5703",
+  "github_run_id": "28407890857",
   "service_count": 5,
   "failed_service_count": 0,
   "warning_count": 0,
   "total_article_count": 120,
-  "duration_ms": 49718,
+  "duration_ms": 41537,
   "services": [
     {
       "service_key": "hacker-news",
@@ -17,8 +17,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 1571,
-      "avg_article_duration_ms": 78.55,
+      "duration_ms": 1341,
+      "avg_article_duration_ms": 67.05,
       "warning_codes": [],
       "error": null
     },
@@ -28,8 +28,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 10,
-      "duration_ms": 116,
-      "avg_article_duration_ms": 11.6,
+      "duration_ms": 104,
+      "avg_article_duration_ms": 10.4,
       "warning_codes": [],
       "error": null
     },
@@ -39,8 +39,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 298,
-      "avg_article_duration_ms": 14.9,
+      "duration_ms": 224,
+      "avg_article_duration_ms": 11.2,
       "warning_codes": [],
       "error": null
     },
@@ -50,8 +50,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 50,
-      "duration_ms": 1139,
-      "avg_article_duration_ms": 22.78,
+      "duration_ms": 877,
+      "avg_article_duration_ms": 17.54,
       "warning_codes": [],
       "error": null
     },
@@ -61,8 +61,8 @@
       "strategy": "sitemap",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 46594,
-      "avg_article_duration_ms": 2329.7,
+      "duration_ms": 38991,
+      "avg_article_duration_ms": 1949.55,
       "warning_codes": [],
       "error": null
     }
