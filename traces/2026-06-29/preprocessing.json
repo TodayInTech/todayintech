@@ -1,0 +1,242 @@
+{
+  "generated_at": "2026-06-29T06:20:25.513448+00:00",
+  "generated_for": "2026-06-29",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "620bab78d6138a05abf4a61a9ad4d22c5cb24362",
+  "github_run_id": "28352630703",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 23,
+      "excluded_count": 97,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 97
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 23,
+      "output_count": 23,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 23,
+      "output_count": 21,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 21,
+      "output_count": 11,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:5fd9aa29cdb4282a",
+          "title": "Age verification is just a precursor to automated attribution of speech",
+          "normalized_url": "https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-speech-06-29-2026",
+          "url_hash": "5fd9aa29cdb4282a7acf78dca40b8768168d71e103170aa3346e0f0d32a34c22",
+          "suggested_doc_key": "2026-06-age-verification-is-just-a-precursor-to-automated-attribution-of-speech-5fd9aa29",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-age-verification-is-just-a-precursor-to-automated-attribution-of-speech-5fd9aa29.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 244점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 112개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:de4a5ca1025f85b2",
+          "title": "GLM 5.2 beats Claude in our benchmarks",
+          "normalized_url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks",
+          "url_hash": "de4a5ca1025f85b2faf325836719213499dc150262216dad97b6b6d619cf8bcc",
+          "suggested_doc_key": "2026-06-glm-5-2-beats-claude-in-our-benchmarks-de4a5ca1",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-glm-5-2-beats-claude-in-our-benchmarks-de4a5ca1.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 665점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 321개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:10655a197daec548",
+          "title": "Librepods: AirPods liberated",
+          "normalized_url": "https://github.com/librepods-org/librepods",
+          "url_hash": "10655a197daec5485fde9571da1d4a307aabcb400e5ed392eee95ea77b343c74",
+          "suggested_doc_key": "2026-06-librepods-airpods-liberated-10655a19",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-librepods-airpods-liberated-10655a19.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 338점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 111개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:69ee7bea325ca1ab",
+          "title": "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88",
+          "normalized_url": "https://danunparsed.com/p/hackerrank-open-source-ats",
+          "url_hash": "69ee7bea325ca1abbf1aa24f23fa93de3c92656421344d45bf91c37e8dead58f",
+          "suggested_doc_key": "2026-06-hackerrank-open-sourced-its-ats-my-resume-scored-90-100-oh-wait-74-no-88-69ee7bea",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-hackerrank-open-sourced-its-ats-my-resume-scored-90-100-oh-wait-74-no-88-69ee7bea.md",
+          "candidate_score": 61.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 187점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 36개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:dc3cd2e98096915a",
+          "title": "Historical memory prices 1960-2026",
+          "normalized_url": "https://dam.stanford.edu/memory-prices.html",
+          "url_hash": "dc3cd2e98096915aeb3f0e43f8fd2700ec9b0df6fd49f54e756105ee6c52f005",
+          "suggested_doc_key": "2026-06-historical-memory-prices-1960-2026-dc3cd2e9",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-historical-memory-prices-1960-2026-dc3cd2e9.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 256점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 91개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:5f8ae94d3d52ae74",
+          "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
+          "normalized_url": "https://openai.com/index/hp-frontier-partnership",
+          "url_hash": "5f8ae94d3d52ae74dcc04545cabfb0442c0afe91eccec520674715a73dc917b9",
+          "suggested_doc_key": "2026-06-hp-inc-launches-frontier-strategic-partnership-with-openai-5f8ae94d",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-hp-inc-launches-frontier-strategic-partnership-with-openai-5f8ae94d.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 47,
+        "low_quality": 2
+      }
+    }
+  ]
+}
