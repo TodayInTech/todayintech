@@ -1,0 +1,342 @@
+{
+  "generated_at": "2026-06-30T23:07:38.783971+00:00",
+  "generated_for": "2026-06-30",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "b5136f3cdef25ee4246ceb8f9fe5f2621a871d31",
+  "github_run_id": "28481610297",
+  "service_count": 5,
+  "duration_ms": 7,
+  "raw_count": 120,
+  "candidate_count": 18,
+  "excluded_count": 102,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 27,
+      "excluded_count": 92,
+      "duration_ms": 1,
+      "reason_counts": {
+        "already_briefed": 92
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 27,
+      "output_count": 18,
+      "excluded_count": 9,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 9
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:4307222bc7e5f2e4",
+          "title": "Introducing Claude Sonnet 5",
+          "normalized_url": "https://www.anthropic.com/news/claude-sonnet-5",
+          "url_hash": "4307222bc7e5f2e471152174bb7c460b9a7d74b4becbb1e59011c7ac18dd09e6",
+          "suggested_doc_key": "2026-06-introducing-claude-sonnet-5-4307222b",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-06-introducing-claude-sonnet-5-4307222b.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:a577f205a73beafc",
+          "title": "Claude Science, an AI workbench for scientists",
+          "normalized_url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+          "url_hash": "a577f205a73beafce77aadeaecd88d3adf064993a8df9a0486a01876856f0eb1",
+          "suggested_doc_key": "2026-06-claude-science-an-ai-workbench-for-scientists-a577f205",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-06-claude-science-an-ai-workbench-for-scientists-a577f205.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:7a02ff1cf7228351",
+          "title": "How GitHub maintains compliance for open source dependencies",
+          "normalized_url": "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies",
+          "url_hash": "7a02ff1cf72283519cb50eca9db616e2c731a1707e717fa3437169766a0519dd",
+          "suggested_doc_key": "2026-06-how-github-maintains-compliance-for-open-source-dependencies-7a02ff1c",
+          "suggested_article_path": "docs/services/github-blog/2026-06-how-github-maintains-compliance-for-open-source-dependencies-7a02ff1c.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:5318e0ba4dd3f11c",
+          "title": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
+          "normalized_url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+          "url_hash": "5318e0ba4dd3f11c49c78cea14b8476333fc3b74fa612fcbd499f67f1e25b4d8",
+          "suggested_doc_key": "2026-06-unlocking-britain-s-next-era-of-productivity-building-a-nation-of-ai-tra-5318e0ba",
+          "suggested_article_path": "docs/services/google-blog/2026-06-unlocking-britain-s-next-era-of-productivity-building-a-nation-of-ai-tra-5318e0ba.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:22fc2f37902aa111",
+          "title": "Nano Banana 2 Lite",
+          "normalized_url": "https://deepmind.google/models/gemini-image/flash-lite",
+          "url_hash": "22fc2f37902aa1116c1b73c3a3607af82b74c73b38cd7e9569a261ba710c6f3f",
+          "suggested_doc_key": "2026-06-nano-banana-2-lite-22fc2f37",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-nano-banana-2-lite-22fc2f37.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 271점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 102개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:48271a3e301679fb",
+          "title": "Claude Science",
+          "normalized_url": "https://claude.com/product/claude-science",
+          "url_hash": "48271a3e301679fb8ad2e1d625a1400f22a7bd63e8e94cad9ca58c29917efd6a",
+          "suggested_doc_key": "2026-06-claude-science-48271a3e",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-claude-science-48271a3e.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 313점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 107개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:459b1d9c8cefc706",
+          "title": "Claude Code is steganographically marking requests",
+          "normalized_url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+          "url_hash": "459b1d9c8cefc706c6929a2c44894e0bed6e8ae177267e5ce37a96560e2cdded",
+          "suggested_doc_key": "2026-06-claude-code-is-steganographically-marking-requests-459b1d9c",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-claude-code-is-steganographically-marking-requests-459b1d9c.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 1244점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 337개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:cc63e7d3b8f04b44",
+          "title": "Knoppix",
+          "normalized_url": "https://www.knopper.net/knoppix/index-en.html",
+          "url_hash": "cc63e7d3b8f04b4418d4e6a269c9a6f9dfece8b38e0af9ac3cb6af0541d1f635",
+          "suggested_doc_key": "2026-06-knoppix-cc63e7d3",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-knoppix-cc63e7d3.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 227점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 94개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7639defb5a0866fa",
+          "title": "Memoirs of Extraordinary Popular Delusions and the Madness of Crowds (1852)",
+          "normalized_url": "https://www.gutenberg.org/ebooks/24518",
+          "url_hash": "7639defb5a0866fa41f2c81156e38cf30c267d0eee97752e415cf7eb3573ef91",
+          "suggested_doc_key": "2026-06-memoirs-of-extraordinary-popular-delusions-and-the-madness-of-crowds-185-7639defb",
+          "suggested_article_path": "docs/services/hacker-news/2026-06-memoirs-of-extraordinary-popular-delusions-and-the-madness-of-crowds-185-7639defb.md",
+          "candidate_score": 50.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 156점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 51개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 4,
+      "excluded_count": 46,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:0b8dc2473cab870c",
+          "title": "Introducing GeneBench-Pro",
+          "normalized_url": "https://openai.com/index/introducing-genebench-pro",
+          "url_hash": "0b8dc2473cab870ca2495ea71e50026dae2531d9b8bf7afce176845dafa8ae95",
+          "suggested_doc_key": "2026-06-introducing-genebench-pro-0b8dc247",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-introducing-genebench-pro-0b8dc247.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:068c9bc43551fee5",
+          "title": "How ChatGPT adoption has expanded",
+          "normalized_url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+          "url_hash": "068c9bc43551fee5154c8fa53e2673adf3854265200e9d97577ed758458b2940",
+          "suggested_doc_key": "2026-06-how-chatgpt-adoption-has-expanded-068c9bc4",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-how-chatgpt-adoption-has-expanded-068c9bc4.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:f1f7d4f8001b4288",
+          "title": "Core dump epidemiology: fixing an 18-year-old bug",
+          "normalized_url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+          "url_hash": "f1f7d4f8001b4288ac8c42bb6a97b81382ec638bd4f67fcb73232167c1282993",
+          "suggested_doc_key": "2026-06-core-dump-epidemiology-fixing-an-18-year-old-bug-f1f7d4f8",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-core-dump-epidemiology-fixing-an-18-year-old-bug-f1f7d4f8.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:617f45738c65d6ba",
+          "title": "Inside Genebench-Pro",
+          "normalized_url": "https://openai.com/index/genebench-pro/case-studies",
+          "url_hash": "617f45738c65d6baaf10b9cf1e236f3c65b852b2bfcb9c1fc405aff51e76af1d",
+          "suggested_doc_key": "2026-06-inside-genebench-pro-617f4573",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-inside-genebench-pro-617f4573.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 46
+      }
+    }
+  ]
+}
