@@ -2100,6 +2100,106 @@
       "status": "published",
       "briefed_at": "2026-06-29T22:55:38.123659Z",
       "candidate_score": 39.0
+    },
+    "a577f205a73beafce77aadeaecd88d3adf064993a8df9a0486a01876856f0eb1": {
+      "normalized_url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+      "title_fingerprint": "claude science an ai workbench for scientists",
+      "service_key": "anthropic-blog",
+      "title": "Claude Science, an AI workbench for scientists",
+      "article_doc_path": "docs/services/anthropic-blog/2026-06-claude-science-an-ai-workbench-for-scientists-a577f205.md",
+      "status": "published",
+      "briefed_at": "2026-06-30T23:12:27.448671Z",
+      "candidate_score": 30.0
+    },
+    "7a02ff1cf72283519cb50eca9db616e2c731a1707e717fa3437169766a0519dd": {
+      "normalized_url": "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies",
+      "title_fingerprint": "how github maintains compliance for open source dependencies",
+      "service_key": "github-blog",
+      "title": "How GitHub maintains compliance for open source dependencies",
+      "article_doc_path": "docs/services/github-blog/2026-06-how-github-maintains-compliance-for-open-source-dependencies-7a02ff1c.md",
+      "status": "published",
+      "briefed_at": "2026-06-30T23:12:27.448707Z",
+      "candidate_score": 42.0
+    },
+    "5318e0ba4dd3f11c49c78cea14b8476333fc3b74fa612fcbd499f67f1e25b4d8": {
+      "normalized_url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+      "title_fingerprint": "unlocking britain s next era of productivity building a nation of ai trailblazers",
+      "service_key": "google-blog",
+      "title": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
+      "article_doc_path": "docs/services/google-blog/2026-06-unlocking-britain-s-next-era-of-productivity-building-a-nation-of-ai-tra-5318e0ba.md",
+      "status": "published",
+      "briefed_at": "2026-06-30T23:12:27.448717Z",
+      "candidate_score": 36.0
+    },
+    "22fc2f37902aa1116c1b73c3a3607af82b74c73b38cd7e9569a261ba710c6f3f": {
+      "normalized_url": "https://deepmind.google/models/gemini-image/flash-lite",
+      "title_fingerprint": "nano banana 2 lite",
+      "service_key": "hacker-news",
+      "title": "Nano Banana 2 Lite",
+      "article_doc_path": "docs/services/hacker-news/2026-06-nano-banana-2-lite-22fc2f37.md",
+      "status": "published",
+      "briefed_at": "2026-06-30T23:12:27.448724Z",
+      "candidate_score": 65.0
+    },
+    "4307222bc7e5f2e471152174bb7c460b9a7d74b4becbb1e59011c7ac18dd09e6": {
+      "normalized_url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "title_fingerprint": "claude sonnet 5",
+      "service_key": "hacker-news",
+      "title": "Claude Sonnet 5",
+      "article_doc_path": "docs/services/hacker-news/2026-06-claude-sonnet-5-4307222b.md",
+      "status": "published",
+      "briefed_at": "2026-06-30T23:12:27.448730Z",
+      "candidate_score": 61.0
+    },
+    "48271a3e301679fb8ad2e1d625a1400f22a7bd63e8e94cad9ca58c29917efd6a": {
+      "normalized_url": "https://claude.com/product/claude-science",
+      "title_fingerprint": "claude science",
+      "service_key": "hacker-news",
+      "title": "Claude Science",
+      "article_doc_path": "docs/services/hacker-news/2026-06-claude-science-48271a3e.md",
+      "status": "published",
+      "briefed_at": "2026-06-30T23:12:27.448735Z",
+      "candidate_score": 60.0
+    },
+    "459b1d9c8cefc706c6929a2c44894e0bed6e8ae177267e5ce37a96560e2cdded": {
+      "normalized_url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+      "title_fingerprint": "claude code is steganographically marking requests",
+      "service_key": "hacker-news",
+      "title": "Claude Code is steganographically marking requests",
+      "article_doc_path": "docs/services/hacker-news/2026-06-claude-code-is-steganographically-marking-requests-459b1d9c.md",
+      "status": "published",
+      "briefed_at": "2026-06-30T23:12:27.448740Z",
+      "candidate_score": 60.0
+    },
+    "0b8dc2473cab870ca2495ea71e50026dae2531d9b8bf7afce176845dafa8ae95": {
+      "normalized_url": "https://openai.com/index/introducing-genebench-pro",
+      "title_fingerprint": "introducing genebench pro",
+      "service_key": "openai-blog",
+      "title": "Introducing GeneBench-Pro",
+      "article_doc_path": "docs/services/openai-blog/2026-06-introducing-genebench-pro-0b8dc247.md",
+      "status": "published",
+      "briefed_at": "2026-06-30T23:12:27.448746Z",
+      "candidate_score": 43.0
+    },
+    "068c9bc43551fee5154c8fa53e2673adf3854265200e9d97577ed758458b2940": {
+      "normalized_url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "title_fingerprint": "how chatgpt adoption has expanded",
+      "service_key": "openai-blog",
+      "title": "How ChatGPT adoption has expanded",
+      "article_doc_path": "docs/services/openai-blog/2026-06-how-chatgpt-adoption-has-expanded-068c9bc4.md",
+      "status": "published",
+      "briefed_at": "2026-06-30T23:12:27.448751Z",
+      "candidate_score": 39.0
+    },
+    "f1f7d4f8001b4288ac8c42bb6a97b81382ec638bd4f67fcb73232167c1282993": {
+      "normalized_url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+      "title_fingerprint": "core dump epidemiology fixing an 18 year old bug",
+      "service_key": "openai-blog",
+      "title": "Core dump epidemiology: fixing an 18-year-old bug",
+      "article_doc_path": "docs/services/openai-blog/2026-06-core-dump-epidemiology-fixing-an-18-year-old-bug-f1f7d4f8.md",
+      "status": "published",
+      "briefed_at": "2026-06-30T23:12:27.448756Z",
+      "candidate_score": 37.0
     }
   }
 }
