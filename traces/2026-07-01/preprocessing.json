@@ -1,0 +1,298 @@
+{
+  "generated_at": "2026-07-01T23:10:00.160503+00:00",
+  "generated_for": "2026-07-01",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "3b4c6470ff8b255c9463b04082e5c4f7c8a12563",
+  "github_run_id": "28553701305",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 25,
+      "excluded_count": 95,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 95
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 25,
+      "output_count": 15,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:fdd9745edc3aad4e",
+          "title": "Redeploying Claude Fable 5",
+          "normalized_url": "https://www.anthropic.com/news/redeploying-fable-5",
+          "url_hash": "fdd9745edc3aad4e2c44e2c4201c1a339086331f2757c65b16bcb6b59a46ca48",
+          "suggested_doc_key": "2026-07-redeploying-claude-fable-5-fdd9745e",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-redeploying-claude-fable-5-fdd9745e.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:e9d700bb46ec696a",
+          "title": "6 security settings every GitHub maintainer should enable this week",
+          "normalized_url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week",
+          "url_hash": "e9d700bb46ec696a465fcbdadcffe948c0931238bda8281ad63f5097a5ab9e3a",
+          "suggested_doc_key": "2026-07-6-security-settings-every-github-maintainer-should-enable-this-week-e9d700bb",
+          "suggested_article_path": "docs/services/github-blog/2026-07-6-security-settings-every-github-maintainer-should-enable-this-week-e9d700bb.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:f64e2fd8a1805bea",
+          "title": "New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.",
+          "normalized_url": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit",
+          "url_hash": "f64e2fd8a1805beae87ab38e6f28ccf343f5679c1efc4c00af578ec5337a9a41",
+          "suggested_doc_key": "2026-07-new-york-city-educators-and-industry-leaders-gathered-at-google-s-office-f64e2fd8",
+          "suggested_article_path": "docs/services/google-blog/2026-07-new-york-city-educators-and-industry-leaders-gathered-at-google-s-office-f64e2fd8.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:dc57fe4bb7657854",
+          "title": "The latest AI news we announced in June 2026",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
+          "url_hash": "dc57fe4bb76578549e1674bede337b614a01b45ca30b47e3f002f2315af89354",
+          "suggested_doc_key": "2026-07-the-latest-ai-news-we-announced-in-june-2026-dc57fe4b",
+          "suggested_article_path": "docs/services/google-blog/2026-07-the-latest-ai-news-we-announced-in-june-2026-dc57fe4b.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:69e21e0ef41d0c76",
+          "title": "Fable 5 Is Back",
+          "normalized_url": "https://twitter.com/claudeai/status/2072402636813607381",
+          "url_hash": "69e21e0ef41d0c7695cc92772f5a863fce83efc2713c9ce658113e36ccbfc788",
+          "suggested_doc_key": "2026-07-fable-5-is-back-69e21e0e",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-fable-5-is-back-69e21e0e.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 258점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 231개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6a53551f625452b1",
+          "title": "For first time, a cell built from scratch grows and divides",
+          "normalized_url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701",
+          "url_hash": "6a53551f625452b1d934526ebfbc5df54810f496516bb8ad036cc70428ccddbe",
+          "suggested_doc_key": "2026-07-for-first-time-a-cell-built-from-scratch-grows-and-divides-6a53551f",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-for-first-time-a-cell-built-from-scratch-grows-and-divides-6a53551f.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 659점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 223개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3cde8451400b3190",
+          "title": "Show HN: GolemUI – Declarative Form Engine",
+          "normalized_url": "https://golemui.com/",
+          "url_hash": "3cde8451400b3190ef6bd3bfc61c57456f8c51b5448ba0c0a1d9f683d7fae4ee",
+          "suggested_doc_key": "2026-07-show-hn-golemui-declarative-form-engine-3cde8451",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-show-hn-golemui-declarative-form-engine-3cde8451.md",
+          "candidate_score": 58.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 4개를 감지해 가산했습니다.",
+            "Hacker News 점수 33점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 53개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:1480b48b884a9bff",
+          "title": "What to learn to be a graphics programmer",
+          "normalized_url": "https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer",
+          "url_hash": "1480b48b884a9bff31228591d4e5f4e8e5ee1123e3747334b4bc66734cc707eb",
+          "suggested_doc_key": "2026-07-what-to-learn-to-be-a-graphics-programmer-1480b48b",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-what-to-learn-to-be-a-graphics-programmer-1480b48b.md",
+          "candidate_score": 58.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 187점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 94개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:de35a29fa28d76b4",
+          "title": "ZCode – Harness for GLM-5.2",
+          "normalized_url": "https://zcode.z.ai/en",
+          "url_hash": "de35a29fa28d76b4b77034c813c5757c737805de4cf34d20234366822b7f6085",
+          "suggested_doc_key": "2026-07-zcode-harness-for-glm-5-2-de35a29f",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-zcode-harness-for-glm-5-2-de35a29f.md",
+          "candidate_score": 55.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 81점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 169개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:617f45738c65d6ba",
+          "title": "Inside Genebench-Pro",
+          "normalized_url": "https://openai.com/index/genebench-pro/case-studies",
+          "url_hash": "617f45738c65d6baaf10b9cf1e236f3c65b852b2bfcb9c1fc405aff51e76af1d",
+          "suggested_doc_key": "2026-06-inside-genebench-pro-617f4573",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-inside-genebench-pro-617f4573.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 49
+      }
+    }
+  ]
+}
