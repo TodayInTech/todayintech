@@ -2200,6 +2200,86 @@
       "status": "published",
       "briefed_at": "2026-06-30T23:12:27.448756Z",
       "candidate_score": 37.0
+    },
+    "fdd9745edc3aad4e2c44e2c4201c1a339086331f2757c65b16bcb6b59a46ca48": {
+      "normalized_url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "title_fingerprint": "redeploying claude fable 5",
+      "service_key": "anthropic-blog",
+      "title": "Redeploying Claude Fable 5",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-redeploying-claude-fable-5-fdd9745e.md",
+      "status": "published",
+      "briefed_at": "2026-07-01T23:13:38.486625Z",
+      "candidate_score": 35.0
+    },
+    "e9d700bb46ec696a465fcbdadcffe948c0931238bda8281ad63f5097a5ab9e3a": {
+      "normalized_url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week",
+      "title_fingerprint": "6 security settings every github maintainer should enable this week",
+      "service_key": "github-blog",
+      "title": "6 security settings every GitHub maintainer should enable this week",
+      "article_doc_path": "docs/services/github-blog/2026-07-6-security-settings-every-github-maintainer-should-enable-this-week-e9d700bb.md",
+      "status": "published",
+      "briefed_at": "2026-07-01T23:13:38.486666Z",
+      "candidate_score": 42.0
+    },
+    "f64e2fd8a1805beae87ab38e6f28ccf343f5679c1efc4c00af578ec5337a9a41": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit",
+      "title_fingerprint": "new york city educators and industry leaders gathered at google s offices to shape the future of ai in classrooms",
+      "service_key": "google-blog",
+      "title": "New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.",
+      "article_doc_path": "docs/services/google-blog/2026-07-new-york-city-educators-and-industry-leaders-gathered-at-google-s-office-f64e2fd8.md",
+      "status": "published",
+      "briefed_at": "2026-07-01T23:13:38.486682Z",
+      "candidate_score": 40.0
+    },
+    "dc57fe4bb76578549e1674bede337b614a01b45ca30b47e3f002f2315af89354": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
+      "title_fingerprint": "the latest ai news we announced in june 2026",
+      "service_key": "google-blog",
+      "title": "The latest AI news we announced in June 2026",
+      "article_doc_path": "docs/services/google-blog/2026-07-the-latest-ai-news-we-announced-in-june-2026-dc57fe4b.md",
+      "status": "published",
+      "briefed_at": "2026-07-01T23:13:38.486691Z",
+      "candidate_score": 36.0
+    },
+    "69e21e0ef41d0c7695cc92772f5a863fce83efc2713c9ce658113e36ccbfc788": {
+      "normalized_url": "https://twitter.com/claudeai/status/2072402636813607381",
+      "title_fingerprint": "fable 5 is back",
+      "service_key": "hacker-news",
+      "title": "Fable 5 Is Back",
+      "article_doc_path": "docs/services/hacker-news/2026-07-fable-5-is-back-69e21e0e.md",
+      "status": "published",
+      "briefed_at": "2026-07-01T23:13:38.486699Z",
+      "candidate_score": 60.0
+    },
+    "6a53551f625452b1d934526ebfbc5df54810f496516bb8ad036cc70428ccddbe": {
+      "normalized_url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701",
+      "title_fingerprint": "for first time a cell built from scratch grows and divides",
+      "service_key": "hacker-news",
+      "title": "For first time, a cell built from scratch grows and divides",
+      "article_doc_path": "docs/services/hacker-news/2026-07-for-first-time-a-cell-built-from-scratch-grows-and-divides-6a53551f.md",
+      "status": "published",
+      "briefed_at": "2026-07-01T23:13:38.486708Z",
+      "candidate_score": 60.0
+    },
+    "3cde8451400b3190ef6bd3bfc61c57456f8c51b5448ba0c0a1d9f683d7fae4ee": {
+      "normalized_url": "https://golemui.com/",
+      "title_fingerprint": "show hn golemui declarative form engine",
+      "service_key": "hacker-news",
+      "title": "Show HN: GolemUI – Declarative Form Engine",
+      "article_doc_path": "docs/services/hacker-news/2026-07-show-hn-golemui-declarative-form-engine-3cde8451.md",
+      "status": "published",
+      "briefed_at": "2026-07-01T23:13:38.486715Z",
+      "candidate_score": 58.9
+    },
+    "1480b48b884a9bff31228591d4e5f4e8e5ee1123e3747334b4bc66734cc707eb": {
+      "normalized_url": "https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer",
+      "title_fingerprint": "what to learn to be a graphics programmer",
+      "service_key": "hacker-news",
+      "title": "What to learn to be a graphics programmer",
+      "article_doc_path": "docs/services/hacker-news/2026-07-what-to-learn-to-be-a-graphics-programmer-1480b48b.md",
+      "status": "published",
+      "briefed_at": "2026-07-01T23:13:38.486723Z",
+      "candidate_score": 58.7
     }
   }
 }
