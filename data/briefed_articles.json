@@ -2280,6 +2280,56 @@
       "status": "published",
       "briefed_at": "2026-07-01T23:13:38.486723Z",
       "candidate_score": 58.7
+    },
+    "d082b0bc4e8bc0111f28ffda83e590e21b58fa1305c7aa8d4c240c678e2ef7f1": {
+      "normalized_url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero",
+      "title_fingerprint": "how github used secret scanning to reach inbox zero",
+      "service_key": "github-blog",
+      "title": "How GitHub used secret scanning to reach inbox zero",
+      "article_doc_path": "docs/services/github-blog/2026-07-how-github-used-secret-scanning-to-reach-inbox-zero-d082b0bc.md",
+      "status": "published",
+      "briefed_at": "2026-07-02T23:04:58.494291Z",
+      "candidate_score": 42.0
+    },
+    "aaf1ba8c5750ca048f394cd874317bc8890b792d2f339c85042ab07c5fa70554": {
+      "normalized_url": "https://manufact.com/",
+      "title_fingerprint": "launch hn manufact yc s25 mcp cloud",
+      "service_key": "hacker-news",
+      "title": "Launch HN: Manufact (YC S25) – MCP Cloud",
+      "article_doc_path": "docs/services/hacker-news/2026-07-launch-hn-manufact-yc-s25-mcp-cloud-aaf1ba8c.md",
+      "status": "published",
+      "briefed_at": "2026-07-02T23:04:58.494322Z",
+      "candidate_score": 71.8
+    },
+    "d5d3033da500eaac07667925f79c3236aede0060704899198b17486bc3bef959": {
+      "normalized_url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
+      "title_fingerprint": "virginia bans sale of geolocation data",
+      "service_key": "hacker-news",
+      "title": "Virginia bans sale of geolocation data",
+      "article_doc_path": "docs/services/hacker-news/2026-07-virginia-bans-sale-of-geolocation-data-d5d3033d.md",
+      "status": "published",
+      "briefed_at": "2026-07-02T23:04:58.494331Z",
+      "candidate_score": 64.2
+    },
+    "cb2b299cfff1edd8492c0978c2a2bcac17f4de1fb8999e6f7d700bf5f9534d00": {
+      "normalized_url": "https://mathstodon.xyz/@iblech/116769502749142438",
+      "title_fingerprint": "since linux 6 9 luks suspend stopped wiping disk encryption keys from memory",
+      "service_key": "hacker-news",
+      "title": "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory",
+      "article_doc_path": "docs/services/hacker-news/2026-07-since-linux-6-9-luks-suspend-stopped-wiping-disk-encryption-keys-from-me-cb2b299c.md",
+      "status": "published",
+      "briefed_at": "2026-07-02T23:04:58.494337Z",
+      "candidate_score": 60.0
+    },
+    "d79382acbd4bbe2372bfb47102e55c04460020c436026e2461deb0c88b08cc38": {
+      "normalized_url": "https://clashreport.com/world/articles/spain-orders-blacklist-of-us-tech-giant-palantir-from-public-and-private-companies-fsnc2z17gjv",
+      "title_fingerprint": "spain orders blacklist of palantir from public and private companies",
+      "service_key": "hacker-news",
+      "title": "Spain Orders Blacklist of Palantir from Public and Private Companies",
+      "article_doc_path": "docs/services/hacker-news/2026-07-spain-orders-blacklist-of-palantir-from-public-and-private-companies-d79382ac.md",
+      "status": "published",
+      "briefed_at": "2026-07-02T23:04:58.494342Z",
+      "candidate_score": 60.0
     }
   }
 }
