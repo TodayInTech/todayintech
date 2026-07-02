@@ -1,0 +1,254 @@
+{
+  "generated_at": "2026-07-02T23:02:19.316384+00:00",
+  "generated_for": "2026-07-02",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "5d04e0c56ab1177c0b7808f178f94d22e893de0a",
+  "github_run_id": "28626885824",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 12,
+  "excluded_count": 108,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 22,
+      "output_count": 12,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:d082b0bc4e8bc011",
+          "title": "How GitHub used secret scanning to reach inbox zero",
+          "normalized_url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero",
+          "url_hash": "d082b0bc4e8bc0111f28ffda83e590e21b58fa1305c7aa8d4c240c678e2ef7f1",
+          "suggested_doc_key": "2026-07-how-github-used-secret-scanning-to-reach-inbox-zero-d082b0bc",
+          "suggested_article_path": "docs/services/github-blog/2026-07-how-github-used-secret-scanning-to-reach-inbox-zero-d082b0bc.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:aaf1ba8c5750ca04",
+          "title": "Launch HN: Manufact (YC S25) – MCP Cloud",
+          "normalized_url": "https://manufact.com/",
+          "url_hash": "aaf1ba8c5750ca048f394cd874317bc8890b792d2f339c85042ab07c5fa70554",
+          "suggested_doc_key": "2026-07-launch-hn-manufact-yc-s25-mcp-cloud-aaf1ba8c",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-launch-hn-manufact-yc-s25-mcp-cloud-aaf1ba8c.md",
+          "candidate_score": 71.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 5개를 감지해 가산했습니다.",
+            "Hacker News 점수 96점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 61개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d5d3033da500eaac",
+          "title": "Virginia bans sale of geolocation data",
+          "normalized_url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
+          "url_hash": "d5d3033da500eaac07667925f79c3236aede0060704899198b17486bc3bef959",
+          "suggested_doc_key": "2026-07-virginia-bans-sale-of-geolocation-data-d5d3033d",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-virginia-bans-sale-of-geolocation-data-d5d3033d.md",
+          "candidate_score": 64.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 226점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 36개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:cb2b299cfff1edd8",
+          "title": "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory",
+          "normalized_url": "https://mathstodon.xyz/@iblech/116769502749142438",
+          "url_hash": "cb2b299cfff1edd8492c0978c2a2bcac17f4de1fb8999e6f7d700bf5f9534d00",
+          "suggested_doc_key": "2026-07-since-linux-6-9-luks-suspend-stopped-wiping-disk-encryption-keys-from-me-cb2b299c",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-since-linux-6-9-luks-suspend-stopped-wiping-disk-encryption-keys-from-me-cb2b299c.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 368점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 176개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d79382acbd4bbe23",
+          "title": "Spain Orders Blacklist of Palantir from Public and Private Companies",
+          "normalized_url": "https://clashreport.com/world/articles/spain-orders-blacklist-of-us-tech-giant-palantir-from-public-and-private-companies-fsnc2z17gjv",
+          "url_hash": "d79382acbd4bbe2372bfb47102e55c04460020c436026e2461deb0c88b08cc38",
+          "suggested_doc_key": "2026-07-spain-orders-blacklist-of-palantir-from-public-and-private-companies-d79382ac",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-spain-orders-blacklist-of-palantir-from-public-and-private-companies-d79382ac.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 528점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 170개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c9d6584409ba9e5a",
+          "title": "Podman v6.0.0",
+          "normalized_url": "https://blog.podman.io/2026/07/introducing-podman-v6-0-0",
+          "url_hash": "c9d6584409ba9e5ad876636d684d82585ddd9d88c088ce496884bccd166e26a7",
+          "suggested_doc_key": "2026-07-podman-v6-0-0-c9d65844",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-podman-v6-0-0-c9d65844.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 327점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 120개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:617f45738c65d6ba",
+          "title": "Inside Genebench-Pro",
+          "normalized_url": "https://openai.com/index/genebench-pro/case-studies",
+          "url_hash": "617f45738c65d6baaf10b9cf1e236f3c65b852b2bfcb9c1fc405aff51e76af1d",
+          "suggested_doc_key": "2026-06-inside-genebench-pro-617f4573",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-inside-genebench-pro-617f4573.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 49
+      }
+    }
+  ]
+}
