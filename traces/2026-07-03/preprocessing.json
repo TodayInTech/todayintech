@@ -1,0 +1,277 @@
+{
+  "generated_at": "2026-07-03T22:59:44.395489+00:00",
+  "generated_for": "2026-07-03",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "c4e3b10bb2ccbec93b736c337421b9de34f3402e",
+  "github_run_id": "28686864742",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 14,
+  "excluded_count": 106,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 24,
+      "excluded_count": 96,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 96
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 24,
+      "output_count": 14,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:8243dc3d3ead4c1c",
+          "title": "Claude's extended thinking",
+          "normalized_url": "https://www.anthropic.com/news/visible-extended-thinking",
+          "url_hash": "8243dc3d3ead4c1cf3e3d2148c9fa639903643eb4198b09d44056a4e1a981aa5",
+          "suggested_doc_key": "2026-07-claude-s-extended-thinking-8243dc3d",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-claude-s-extended-thinking-8243dc3d.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:394ea6d17701b621",
+          "title": "Announcing Anthropic's Responsible Scaling Policy",
+          "normalized_url": "https://www.anthropic.com/news/anthropics-responsible-scaling-policy",
+          "url_hash": "394ea6d17701b621eaa2b14f0bac885508025ea4e7b93655b336366df836e132",
+          "suggested_doc_key": "2026-07-announcing-anthropic-s-responsible-scaling-policy-394ea6d1",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-announcing-anthropic-s-responsible-scaling-policy-394ea6d1.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:aaef033dfabe2831",
+          "title": "More details on Fable 5’s cyber safeguards and our jailbreak framework",
+          "normalized_url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
+          "url_hash": "aaef033dfabe2831ee145aa078451f3a9a20afac3e40a4269c3eec073c860c43",
+          "suggested_doc_key": "2026-07-more-details-on-fable-5-s-cyber-safeguards-and-our-jailbreak-framework-aaef033d",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-more-details-on-fable-5-s-cyber-safeguards-and-our-jailbreak-framework-aaef033d.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:1320ae46b426dee5",
+          "title": "60% Fable cost cut by converting code to images and having the model OCR it",
+          "normalized_url": "https://github.com/teamchong/pxpipe",
+          "url_hash": "1320ae46b426dee5b1bb1ce5a2a0c9fa75d6aa4e8ed5cbd0c5a82e9fb4255d8f",
+          "suggested_doc_key": "2026-07-60-fable-cost-cut-by-converting-code-to-images-and-having-the-model-ocr-1320ae46",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-60-fable-cost-cut-by-converting-code-to-images-and-having-the-model-ocr-1320ae46.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 205점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 82개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:834123b660774d69",
+          "title": "Costco is the anti-Amazon",
+          "normalized_url": "https://phenomenalworld.org/analysis/the-anti-amazon",
+          "url_hash": "834123b660774d69023b4b724dfbeaed892b053bf6aa8b6f64978ba3c0a47796",
+          "suggested_doc_key": "2026-07-costco-is-the-anti-amazon-834123b6",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-costco-is-the-anti-amazon-834123b6.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 235점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 214개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:fda2072231b00dde",
+          "title": "Jamesob's guide to running SOTA LLMs locally",
+          "normalized_url": "https://github.com/jamesob/local-llm",
+          "url_hash": "fda2072231b00dde02ba1447cd243a36a51484066427e55b16ae144e2599ddca",
+          "suggested_doc_key": "2026-07-jamesob-s-guide-to-running-sota-llms-locally-fda20722",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-jamesob-s-guide-to-running-sota-llms-locally-fda20722.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 240점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 114개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:66e1b5e8f72a58a9",
+          "title": "Factories are just rooms",
+          "normalized_url": "https://interconnected.org/home/2026/07/03/factories",
+          "url_hash": "66e1b5e8f72a58a96385ff2748925393ab5deb43a520cf54f6e0ba969503d4f9",
+          "suggested_doc_key": "2026-07-factories-are-just-rooms-66e1b5e8",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-factories-are-just-rooms-66e1b5e8.md",
+          "candidate_score": 56.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 170점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 71개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7bb1e44052b93d27",
+          "title": "Espionage Against the European Parliament",
+          "normalized_url": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus",
+          "url_hash": "7bb1e44052b93d27ffa49d1eca817083472dd05c71d72ac85256599e2099a33c",
+          "suggested_doc_key": "2026-07-espionage-against-the-european-parliament-7bb1e440",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-espionage-against-the-european-parliament-7bb1e440.md",
+          "candidate_score": 54.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 189점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 49개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:617f45738c65d6ba",
+          "title": "Inside Genebench-Pro",
+          "normalized_url": "https://openai.com/index/genebench-pro/case-studies",
+          "url_hash": "617f45738c65d6baaf10b9cf1e236f3c65b852b2bfcb9c1fc405aff51e76af1d",
+          "suggested_doc_key": "2026-06-inside-genebench-pro-617f4573",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-inside-genebench-pro-617f4573.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 49
+      }
+    }
+  ]
+}
