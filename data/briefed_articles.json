@@ -2330,6 +2330,76 @@
       "status": "published",
       "briefed_at": "2026-07-02T23:04:58.494342Z",
       "candidate_score": 60.0
+    },
+    "8243dc3d3ead4c1cf3e3d2148c9fa639903643eb4198b09d44056a4e1a981aa5": {
+      "normalized_url": "https://www.anthropic.com/news/visible-extended-thinking",
+      "title_fingerprint": "claude s extended thinking",
+      "service_key": "anthropic-blog",
+      "title": "Claude's extended thinking",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-claude-s-extended-thinking-8243dc3d.md",
+      "status": "published",
+      "briefed_at": "2026-07-03T23:03:27.551808Z",
+      "candidate_score": 30.0
+    },
+    "394ea6d17701b621eaa2b14f0bac885508025ea4e7b93655b336366df836e132": {
+      "normalized_url": "https://www.anthropic.com/news/anthropics-responsible-scaling-policy",
+      "title_fingerprint": "announcing anthropic s responsible scaling policy",
+      "service_key": "anthropic-blog",
+      "title": "Announcing Anthropic's Responsible Scaling Policy",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-announcing-anthropic-s-responsible-scaling-policy-394ea6d1.md",
+      "status": "published",
+      "briefed_at": "2026-07-03T23:03:27.551848Z",
+      "candidate_score": 30.0
+    },
+    "aaef033dfabe2831ee145aa078451f3a9a20afac3e40a4269c3eec073c860c43": {
+      "normalized_url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
+      "title_fingerprint": "more details on fable 5 s cyber safeguards and our jailbreak framework",
+      "service_key": "anthropic-blog",
+      "title": "More details on Fable 5’s cyber safeguards and our jailbreak framework",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-more-details-on-fable-5-s-cyber-safeguards-and-our-jailbreak-framework-aaef033d.md",
+      "status": "published",
+      "briefed_at": "2026-07-03T23:03:27.551860Z",
+      "candidate_score": 30.0
+    },
+    "1320ae46b426dee5b1bb1ce5a2a0c9fa75d6aa4e8ed5cbd0c5a82e9fb4255d8f": {
+      "normalized_url": "https://github.com/teamchong/pxpipe",
+      "title_fingerprint": "60 fable cost cut by converting code to images and having the model ocr it",
+      "service_key": "hacker-news",
+      "title": "60% Fable cost cut by converting code to images and having the model OCR it",
+      "article_doc_path": "docs/services/hacker-news/2026-07-60-fable-cost-cut-by-converting-code-to-images-and-having-the-model-ocr-1320ae46.md",
+      "status": "published",
+      "briefed_at": "2026-07-03T23:03:27.551870Z",
+      "candidate_score": 65.0
+    },
+    "834123b660774d69023b4b724dfbeaed892b053bf6aa8b6f64978ba3c0a47796": {
+      "normalized_url": "https://phenomenalworld.org/analysis/the-anti-amazon",
+      "title_fingerprint": "costco is the anti amazon",
+      "service_key": "hacker-news",
+      "title": "Costco is the anti-Amazon",
+      "article_doc_path": "docs/services/hacker-news/2026-07-costco-is-the-anti-amazon-834123b6.md",
+      "status": "published",
+      "briefed_at": "2026-07-03T23:03:27.551878Z",
+      "candidate_score": 60.0
+    },
+    "fda2072231b00dde02ba1447cd243a36a51484066427e55b16ae144e2599ddca": {
+      "normalized_url": "https://github.com/jamesob/local-llm",
+      "title_fingerprint": "jamesob s guide to running sota llms locally",
+      "service_key": "hacker-news",
+      "title": "Jamesob's guide to running SOTA LLMs locally",
+      "article_doc_path": "docs/services/hacker-news/2026-07-jamesob-s-guide-to-running-sota-llms-locally-fda20722.md",
+      "status": "published",
+      "briefed_at": "2026-07-03T23:03:27.551889Z",
+      "candidate_score": 60.0
+    },
+    "66e1b5e8f72a58a96385ff2748925393ab5deb43a520cf54f6e0ba969503d4f9": {
+      "normalized_url": "https://interconnected.org/home/2026/07/03/factories",
+      "title_fingerprint": "factories are just rooms",
+      "service_key": "hacker-news",
+      "title": "Factories are just rooms",
+      "article_doc_path": "docs/services/hacker-news/2026-07-factories-are-just-rooms-66e1b5e8.md",
+      "status": "published",
+      "briefed_at": "2026-07-03T23:03:27.551897Z",
+      "candidate_score": 56.2
     }
   }
 }
