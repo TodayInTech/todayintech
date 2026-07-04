@@ -2400,6 +2400,46 @@
       "status": "published",
       "briefed_at": "2026-07-03T23:03:27.551897Z",
       "candidate_score": 56.2
+    },
+    "76478c45561451c29af093e4ed718287106f10aae3b6ede5230c40d9a85a8644": {
+      "normalized_url": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main",
+      "title_fingerprint": "command and conquer generals natively ported to macos iphone ipad using fable",
+      "service_key": "hacker-news",
+      "title": "Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable",
+      "article_doc_path": "docs/services/hacker-news/2026-07-command-and-conquer-generals-natively-ported-to-macos-iphone-ipad-using-76478c45.md",
+      "status": "published",
+      "briefed_at": "2026-07-04T22:57:54.862661Z",
+      "candidate_score": 66.0
+    },
+    "4022b78bdf42c8bad5c11846fb4cceaf7103047deb34ec12fafe81e6748106e0": {
+      "normalized_url": "https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234",
+      "title_fingerprint": "google books or similar all book scans 200k bounty 2025",
+      "service_key": "hacker-news",
+      "title": "Google Books (or similar) all book scans – $200k bounty (2025)",
+      "article_doc_path": "docs/services/hacker-news/2026-07-google-books-or-similar-all-book-scans-200k-bounty-2025-4022b78b.md",
+      "status": "published",
+      "briefed_at": "2026-07-04T22:57:54.862699Z",
+      "candidate_score": 60.0
+    },
+    "423b3675e7e96c0697524b898891f283c5da6f8218cae419ac5b8fbdfd85bd1d": {
+      "normalized_url": "https://javoriuski.com/post/youtube",
+      "title_fingerprint": "leaking youtube creators private videos",
+      "service_key": "hacker-news",
+      "title": "Leaking YouTube creators' private videos",
+      "article_doc_path": "docs/services/hacker-news/2026-07-leaking-youtube-creators-private-videos-423b3675.md",
+      "status": "published",
+      "briefed_at": "2026-07-04T22:57:54.862738Z",
+      "candidate_score": 60.0
+    },
+    "891291cd1100f0503f6f8c0fb60f69a37c0b43a911f8cd7173c6523fd04e37dd": {
+      "normalized_url": "https://github.com/anthropics/claude-code/issues/74066",
+      "title_fingerprint": "potential session cache leakage between workspace instances or consumer accounts",
+      "service_key": "hacker-news",
+      "title": "Potential session/cache leakage between workspace instances or consumer accounts",
+      "article_doc_path": "docs/services/hacker-news/2026-07-potential-session-cache-leakage-between-workspace-instances-or-consumer-891291cd.md",
+      "status": "published",
+      "briefed_at": "2026-07-04T22:57:54.862747Z",
+      "candidate_score": 60.0
     }
   }
 }
