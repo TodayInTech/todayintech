@@ -2440,6 +2440,46 @@
       "status": "published",
       "briefed_at": "2026-07-04T22:57:54.862747Z",
       "candidate_score": 60.0
+    },
+    "74b2f66ec001d4875fc3d793e3cf6033ee1eee9b03a0ef73357f4cbfe326d3f3": {
+      "normalized_url": "https://www.opentools.studio/",
+      "title_fingerprint": "reparaible and open source paper printer",
+      "service_key": "hacker-news",
+      "title": "Reparaible and open source paper printer",
+      "article_doc_path": "docs/services/hacker-news/2026-07-reparaible-and-open-source-paper-printer-74b2f66e.md",
+      "status": "published",
+      "briefed_at": "2026-07-05T23:03:15.224203Z",
+      "candidate_score": 61.6
+    },
+    "474a5cb98be8fa2f3b6eee5b6b68d3813c6681d6bc2f40601ba3abb13cd1eeba": {
+      "normalized_url": "https://blog.flipper.net/future-of-flipper-zero-development",
+      "title_fingerprint": "the future of flipper zero development",
+      "service_key": "hacker-news",
+      "title": "The future of Flipper Zero development",
+      "article_doc_path": "docs/services/hacker-news/2026-07-the-future-of-flipper-zero-development-474a5cb9.md",
+      "status": "published",
+      "briefed_at": "2026-07-05T23:03:15.224232Z",
+      "candidate_score": 52.8
+    },
+    "9013c9ce631457378f00d0bf09f12ec662601aaee5af9671663912d8ab9c558c": {
+      "normalized_url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
+      "title_fingerprint": "new ai tutor achieves 0 71 1 30 sd effect size in dartmouth course pdf",
+      "service_key": "hacker-news",
+      "title": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
+      "article_doc_path": "docs/services/hacker-news/2026-07-new-ai-tutor-achieves-0-71-1-30-sd-effect-size-in-dartmouth-course-pdf-9013c9ce.md",
+      "status": "published",
+      "briefed_at": "2026-07-05T23:03:15.224241Z",
+      "candidate_score": 45.8
+    },
+    "10a00849a1a50b27c56e87f402124b30eb0fd2c6ad0ea1d255fe6dc688c31c4e": {
+      "normalized_url": "https://www.starringthecomputer.com/computers.html",
+      "title_fingerprint": "starring the computer",
+      "service_key": "hacker-news",
+      "title": "Starring the Computer",
+      "article_doc_path": "docs/services/hacker-news/2026-07-starring-the-computer-10a00849.md",
+      "status": "published",
+      "briefed_at": "2026-07-05T23:03:15.224247Z",
+      "candidate_score": 45.7
     }
   }
 }
