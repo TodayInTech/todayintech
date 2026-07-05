@@ -1,0 +1,238 @@
+{
+  "generated_at": "2026-07-05T22:59:50.374799+00:00",
+  "generated_for": "2026-07-05",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "206de1c7432314ac5aa6b2453505eafc890a5ae6",
+  "github_run_id": "28757780157",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 21,
+      "excluded_count": 99,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 99
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 21,
+      "output_count": 21,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 21,
+      "output_count": 21,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 21,
+      "output_count": 11,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:74b2f66ec001d487",
+          "title": "Reparaible and open source paper printer",
+          "normalized_url": "https://www.opentools.studio/",
+          "url_hash": "74b2f66ec001d4875fc3d793e3cf6033ee1eee9b03a0ef73357f4cbfe326d3f3",
+          "suggested_doc_key": "2026-07-reparaible-and-open-source-paper-printer-74b2f66e",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-reparaible-and-open-source-paper-printer-74b2f66e.md",
+          "candidate_score": 58.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 154점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 46개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:474a5cb98be8fa2f",
+          "title": "The future of Flipper Zero development",
+          "normalized_url": "https://blog.flipper.net/future-of-flipper-zero-development",
+          "url_hash": "474a5cb98be8fa2f3b6eee5b6b68d3813c6681d6bc2f40601ba3abb13cd1eeba",
+          "suggested_doc_key": "2026-07-the-future-of-flipper-zero-development-474a5cb9",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-the-future-of-flipper-zero-development-474a5cb9.md",
+          "candidate_score": 51.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 175점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 44개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:10a00849a1a50b27",
+          "title": "Starring the Computer",
+          "normalized_url": "https://www.starringthecomputer.com/computers.html",
+          "url_hash": "10a00849a1a50b27c56e87f402124b30eb0fd2c6ad0ea1d255fe6dc688c31c4e",
+          "suggested_doc_key": "2026-07-starring-the-computer-10a00849",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-starring-the-computer-10a00849.md",
+          "candidate_score": 45.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 139점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 32개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9013c9ce63145737",
+          "title": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
+          "normalized_url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
+          "url_hash": "9013c9ce631457378f00d0bf09f12ec662601aaee5af9671663912d8ab9c558c",
+          "suggested_doc_key": "2026-07-new-ai-tutor-achieves-0-71-1-30-sd-effect-size-in-dartmouth-course-pdf-9013c9ce",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-new-ai-tutor-achieves-0-71-1-30-sd-effect-size-in-dartmouth-course-pdf-9013c9ce.md",
+          "candidate_score": 44.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "Hacker News 점수 103점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 67개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:89819b9e44976dea",
+          "title": "Completing a Computer Science Degree on Coursera",
+          "normalized_url": "https://notesbylex.com/completing-a-computer-science-degree-on-coursera",
+          "url_hash": "89819b9e44976dea4675dc9f7f44fc52667ce4f49ad7d80101973e52af6744bb",
+          "suggested_doc_key": "2026-07-completing-a-computer-science-degree-on-coursera-89819b9e",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-completing-a-computer-science-degree-on-coursera-89819b9e.md",
+          "candidate_score": 38.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 47점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 18개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:617f45738c65d6ba",
+          "title": "Inside Genebench-Pro",
+          "normalized_url": "https://openai.com/index/genebench-pro/case-studies",
+          "url_hash": "617f45738c65d6baaf10b9cf1e236f3c65b852b2bfcb9c1fc405aff51e76af1d",
+          "suggested_doc_key": "2026-06-inside-genebench-pro-617f4573",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-inside-genebench-pro-617f4573.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 5일이 지난 글로 최신성 15점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 49
+      }
+    }
+  ]
+}
