@@ -1,0 +1,253 @@
+{
+  "generated_at": "2026-07-06T23:04:18.178984+00:00",
+  "generated_for": "2026-07-06",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "b71a39904c108c377f4b572e6598b26b2f64cbb1",
+  "github_run_id": "28829159771",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 12,
+  "excluded_count": 108,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 22,
+      "output_count": 12,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:33ff9177ca69de68",
+          "title": "Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities",
+          "normalized_url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
+          "url_hash": "33ff9177ca69de68580e4fc447cd6380d54aedd145e949d3729ca7fe1ba878f1",
+          "suggested_doc_key": "2026-07-government-of-alberta-uses-claude-to-find-and-fix-cybersecurity-vulnerab-33ff9177",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-government-of-alberta-uses-claude-to-find-and-fix-cybersecurity-vulnerab-33ff9177.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:b36169a44d2ecc6a",
+          "title": "A global workspace in language models",
+          "normalized_url": "https://www.anthropic.com/research/global-workspace",
+          "url_hash": "b36169a44d2ecc6a9ad1fc41e3c5a57f43fd6bac9b460e933067fe8d28374e15",
+          "suggested_doc_key": "2026-07-a-global-workspace-in-language-models-b36169a4",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-a-global-workspace-in-language-models-b36169a4.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 212점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 70개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:27fc4cacdf45592d",
+          "title": "OpenWrt One – Open Hardware Router",
+          "normalized_url": "https://openwrt.org/toh/openwrt/one",
+          "url_hash": "27fc4cacdf45592d52e055914ae9738fb75aa39a373764991f5c6361746ddfc4",
+          "suggested_doc_key": "2026-07-openwrt-one-open-hardware-router-27fc4cac",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-openwrt-one-open-hardware-router-27fc4cac.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 330점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 142개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:84a7af73200dd3e1",
+          "title": "CoMaps – FOSS Offline Maps",
+          "normalized_url": "https://www.comaps.app/",
+          "url_hash": "84a7af73200dd3e1b4466efdf77d692be5a7c31de04ccf1ff91015745cff6fbd",
+          "suggested_doc_key": "2026-07-comaps-foss-offline-maps-84a7af73",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-comaps-foss-offline-maps-84a7af73.md",
+          "candidate_score": 53.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 235점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 44개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f334587351f5d361",
+          "title": "Show HN: Pulpie – Models for Cleaning the Web",
+          "normalized_url": "https://usefeyn.com/blog/pulpie-pareto-optimal-models-for-cleaning-the-web",
+          "url_hash": "f334587351f5d361e27ff7bd024f2a7a15972249be3c2676217984ab4916ea7c",
+          "suggested_doc_key": "2026-07-show-hn-pulpie-models-for-cleaning-the-web-f3345873",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-show-hn-pulpie-models-for-cleaning-the-web-f3345873.md",
+          "candidate_score": 51.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "Hacker News 점수 78점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 17개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5e2093ad66d7814c",
+          "title": "Learning to code is still worthwhile",
+          "normalized_url": "https://stevekrouse.com/learn-to-code",
+          "url_hash": "5e2093ad66d7814c361b2267438bae7ac2b1661e3415aca3235ffccc9564a44c",
+          "suggested_doc_key": "2026-07-learning-to-code-is-still-worthwhile-5e2093ad",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-learning-to-code-is-still-worthwhile-5e2093ad.md",
+          "candidate_score": 51.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 80점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 70개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:617f45738c65d6ba",
+          "title": "Inside Genebench-Pro",
+          "normalized_url": "https://openai.com/index/genebench-pro/case-studies",
+          "url_hash": "617f45738c65d6baaf10b9cf1e236f3c65b852b2bfcb9c1fc405aff51e76af1d",
+          "suggested_doc_key": "2026-06-inside-genebench-pro-617f4573",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-inside-genebench-pro-617f4573.md",
+          "candidate_score": 32.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 49
+      }
+    }
+  ]
+}

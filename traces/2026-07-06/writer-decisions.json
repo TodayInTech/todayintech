@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-07-06T23:07:33.047552+00:00",
+  "generated_for": "2026-07-06",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "b71a39904c108c377f4b572e6598b26b2f64cbb1",
+  "github_run_id": "28829159771",
+  "decision_count": 6,
+  "decision_counts": {
+    "published": 5,
+    "skipped": 1
+  },
+  "decisions": [
+    {
+      "candidate_id": "anthropic-blog:33ff9177ca69de68",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "title": "Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities",
+      "normalized_url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-government-of-alberta-uses-claude-to-find-and-fix-cybersecurity-vulnerab-33ff9177.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 보안·정부",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "앨버타 주 정부의 사례는 대규모 코드베이스에 AI 기반 도구를 적용해 단시간에 취약점을 찾아 패치하고 지속적 보안 점검 체계를 도입한 구체적 실증 사례로, 기술 독자에게 실무적 의미가 있는 내용이므로 게시 가치가 높다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 40.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:b36169a44d2ecc6a",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "A global workspace in language models",
+      "normalized_url": "https://www.anthropic.com/research/global-workspace",
+      "article_doc_path": "docs/services/hacker-news/2026-07-a-global-workspace-in-language-models-b36169a4.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI/LLM 해석학",
+      "importance_level": "높음",
+      "confidence_score": 0.88,
+      "summary_scope": "chunk_selection",
+      "publish_reason_ko": "제공된 근거(Anthropic 글)가 Claude 내부에서 새로 확인된 ‘J-space’라는 공유 작업공간의 존재와 그 특성·실험적 증거(보고·조작·인과성), 안전성·모니터링 응용(비밀스런 사고 관찰·counterfactual reflection 훈련), 그리고 코드·데모 공개를 포함해 기술적 독자에게 유의미한 논의를 제공하므로 게시 가치가 높다고 판단했습니다. Hacker News 반응(포인트·댓글) 역시 관심을 반영합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0003",
+        "chunk-0005",
+        "chunk-0006",
+        "hn_points:212",
+        "hn_comments:70"
+      ],
+      "candidate_score": 64.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:27fc4cacdf45592d",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "OpenWrt One – Open Hardware Router",
+      "normalized_url": "https://openwrt.org/toh/openwrt/one",
+      "article_doc_path": "docs/services/hacker-news/2026-07-openwrt-one-open-hardware-router-27fc4cac.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "네트워킹 하드웨어",
+      "importance_level": "Medium",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 OpenWrt One 하드웨어 사양과 설치·업그레이드·복구 절차를 상세히 기술하고 있어 기술 독자에게 실무적 가치가 높습니다. 장치의 SoC·포트·메모리 구성, 제조 배치별 M.2 고정 문제, USB·UART·TFTP 기반 복구 흐름과 필요한 도구·환경 설정을 구체적으로 제시하고 있어 Today in Tech 독자 대상 브리핑으로 적합합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:84a7af73200dd3e1",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "CoMaps – FOSS Offline Maps",
+      "normalized_url": "https://www.comaps.app/",
+      "article_doc_path": "docs/services/hacker-news/2026-07-comaps-foss-offline-maps-84a7af73.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "오픈소스·지도",
+      "importance_level": "Medium",
+      "confidence_score": 0.7,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 근거에서 오프라인 네비게이션, 개인정보 비수집 설계, 배터리 효율성, 커뮤니티 기반 오픈소스 프로젝트라는 핵심 특징이 명확하게 제시되어 기술 독자에게 유용한 정보가 있어서 게시 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 53.8,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:f334587351f5d361",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Show HN: Pulpie – Models for Cleaning the Web",
+      "normalized_url": "https://usefeyn.com/blog/pulpie-pareto-optimal-models-for-cleaning-the-web",
+      "article_doc_path": "docs/services/hacker-news/2026-07-show-hn-pulpie-models-for-cleaning-the-web-f3345873.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "데이터 전처리/추출",
+      "importance_level": "높음",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 웹 컨텐츠 추출 문제와 실제 성능·비용 수치, 아키텍처 차이, 학습·증류 절차까지 구체적인 근거를 제시해 기술 독자에게 유용한 기사를 구성할 수 있습니다. Pulpie의 엔코더 기반 단일 패스 설계, 벤치마크(ROUGE-5 F1), 처리량과 1억~1백억 페이지 단위 비용 비교, 데이터셋 구축 방식 등 실무적 시사점이 명확합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003"
+      ],
+      "candidate_score": 51.2,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:617f45738c65d6ba",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Inside Genebench-Pro",
+      "normalized_url": "https://openai.com/index/genebench-pro/case-studies",
+      "article_doc_path": "docs/services/openai-blog/2026-06-inside-genebench-pro-617f4573.md",
+      "status": "skipped",
+      "generation_method": "llm",
+      "category": null,
+      "importance_level": null,
+      "confidence_score": null,
+      "summary_scope": null,
+      "publish_reason_ko": null,
+      "reject_reason_ko": null,
+      "evidence_basis_ko": [],
+      "candidate_score": 32.0,
+      "error_message": "Source returned HTTP 403"
+    }
+  ]
+}
