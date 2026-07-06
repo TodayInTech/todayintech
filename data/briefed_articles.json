@@ -2480,6 +2480,56 @@
       "status": "published",
       "briefed_at": "2026-07-05T23:03:15.224247Z",
       "candidate_score": 45.7
+    },
+    "33ff9177ca69de68580e4fc447cd6380d54aedd145e949d3729ca7fe1ba878f1": {
+      "normalized_url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
+      "title_fingerprint": "government of alberta uses claude to find and fix cybersecurity vulnerabilities",
+      "service_key": "anthropic-blog",
+      "title": "Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-government-of-alberta-uses-claude-to-find-and-fix-cybersecurity-vulnerab-33ff9177.md",
+      "status": "published",
+      "briefed_at": "2026-07-06T23:07:32.968539Z",
+      "candidate_score": 40.0
+    },
+    "b36169a44d2ecc6a9ad1fc41e3c5a57f43fd6bac9b460e933067fe8d28374e15": {
+      "normalized_url": "https://www.anthropic.com/research/global-workspace",
+      "title_fingerprint": "a global workspace in language models",
+      "service_key": "hacker-news",
+      "title": "A global workspace in language models",
+      "article_doc_path": "docs/services/hacker-news/2026-07-a-global-workspace-in-language-models-b36169a4.md",
+      "status": "published",
+      "briefed_at": "2026-07-06T23:07:32.968570Z",
+      "candidate_score": 64.0
+    },
+    "27fc4cacdf45592d52e055914ae9738fb75aa39a373764991f5c6361746ddfc4": {
+      "normalized_url": "https://openwrt.org/toh/openwrt/one",
+      "title_fingerprint": "openwrt one open hardware router",
+      "service_key": "hacker-news",
+      "title": "OpenWrt One – Open Hardware Router",
+      "article_doc_path": "docs/services/hacker-news/2026-07-openwrt-one-open-hardware-router-27fc4cac.md",
+      "status": "published",
+      "briefed_at": "2026-07-06T23:07:32.968579Z",
+      "candidate_score": 60.0
+    },
+    "84a7af73200dd3e1b4466efdf77d692be5a7c31de04ccf1ff91015745cff6fbd": {
+      "normalized_url": "https://www.comaps.app/",
+      "title_fingerprint": "comaps foss offline maps",
+      "service_key": "hacker-news",
+      "title": "CoMaps – FOSS Offline Maps",
+      "article_doc_path": "docs/services/hacker-news/2026-07-comaps-foss-offline-maps-84a7af73.md",
+      "status": "published",
+      "briefed_at": "2026-07-06T23:07:32.968585Z",
+      "candidate_score": 53.8
+    },
+    "f334587351f5d361e27ff7bd024f2a7a15972249be3c2676217984ab4916ea7c": {
+      "normalized_url": "https://usefeyn.com/blog/pulpie-pareto-optimal-models-for-cleaning-the-web",
+      "title_fingerprint": "show hn pulpie models for cleaning the web",
+      "service_key": "hacker-news",
+      "title": "Show HN: Pulpie – Models for Cleaning the Web",
+      "article_doc_path": "docs/services/hacker-news/2026-07-show-hn-pulpie-models-for-cleaning-the-web-f3345873.md",
+      "status": "published",
+      "briefed_at": "2026-07-06T23:07:32.968589Z",
+      "candidate_score": 51.2
     }
   }
 }
