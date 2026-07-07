@@ -1,0 +1,342 @@
+{
+  "generated_at": "2026-07-07T22:58:03.035887+00:00",
+  "generated_for": "2026-07-07",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "696caa834caa52775608c2bc0107229a2579f0af",
+  "github_run_id": "28904393572",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 18,
+  "excluded_count": 102,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 29,
+      "excluded_count": 91,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 91
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 29,
+      "output_count": 29,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 29,
+      "output_count": 28,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 28,
+      "output_count": 18,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:5f8631613d32f6ed",
+          "title": "Building safeguards for Claude",
+          "normalized_url": "https://www.anthropic.com/news/building-safeguards-for-claude",
+          "url_hash": "5f8631613d32f6ed22d35e5c170caba99ba1589a78b1ecd13c8c37c63c848e2c",
+          "suggested_doc_key": "2026-07-building-safeguards-for-claude-5f863161",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-building-safeguards-for-claude-5f863161.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:3bf34041a17763a9",
+          "title": "Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide",
+          "normalized_url": "https://github.blog/news-insights/policy-news-and-insights/q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide",
+          "url_hash": "3bf34041a17763a983f046e9a204368c3301d7adcfba55293f4a82a2cf8d3fc7",
+          "suggested_doc_key": "2026-07-q1-2026-innovation-graph-update-open-source-collaboration-is-acceleratin-3bf34041",
+          "suggested_article_path": "docs/services/github-blog/2026-07-q1-2026-innovation-graph-update-open-source-collaboration-is-acceleratin-3bf34041.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:ecda44a79d6b631e",
+          "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api",
+          "url_hash": "ecda44a79d6b631e38c25b598b7c64bfc6063334354d01c99cd8be636ef78b62",
+          "suggested_doc_key": "2026-07-expanding-managed-agents-in-gemini-api-background-tasks-remote-mcp-and-m-ecda44a7",
+          "suggested_article_path": "docs/services/google-blog/2026-07-expanding-managed-agents-in-gemini-api-background-tasks-remote-mcp-and-m-ecda44a7.md",
+          "candidate_score": 49.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:ac4ae95d73434499",
+          "title": "Three new satellites join the fight against wildfires.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/firesat-satellites",
+          "url_hash": "ac4ae95d7343449900b76d263774929290f90a275a3cf75176288e8fb19ad27a",
+          "suggested_doc_key": "2026-07-three-new-satellites-join-the-fight-against-wildfires-ac4ae95d",
+          "suggested_article_path": "docs/services/google-blog/2026-07-three-new-satellites-join-the-fight-against-wildfires-ac4ae95d.md",
+          "candidate_score": 45.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:316dbe88a826d644",
+          "title": "How governments and organizations are leveraging Google’s AI breakthroughs for crisis resilience",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/research/technology-global-crisis-resilience",
+          "url_hash": "316dbe88a826d644c28dc8ae3b10bfb0e91cdf422d3236ce02a01e52faa79bae",
+          "suggested_doc_key": "2026-07-how-governments-and-organizations-are-leveraging-google-s-ai-breakthroug-316dbe88",
+          "suggested_article_path": "docs/services/google-blog/2026-07-how-governments-and-organizations-are-leveraging-google-s-ai-breakthroug-316dbe88.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:7d6be68271624842",
+          "title": "Every new car sold in the European Union must include a driver monitoring camera",
+          "normalized_url": "https://allaboutcookies.org/eu-mandatory-distracted-driver-system",
+          "url_hash": "7d6be682716248425cbc97bb943e841e6bb1c77e09f7ce38374089074ab45b21",
+          "suggested_doc_key": "2026-07-every-new-car-sold-in-the-european-union-must-include-a-driver-monitorin-7d6be682",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-every-new-car-sold-in-the-european-union-must-include-a-driver-monitorin-7d6be682.md",
+          "candidate_score": 69.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 297점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 358개를 토론 신호로 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f0dce2569389dc2e",
+          "title": "China sentences official to death for taking $325M in bribes",
+          "normalized_url": "https://www.bbc.com/news/articles/c33y0n1v1xjo",
+          "url_hash": "f0dce2569389dc2e634812952fd1e5ca15de4e88865e8733ae0bed92bcbf15c4",
+          "suggested_doc_key": "2026-07-china-sentences-official-to-death-for-taking-325m-in-bribes-f0dce256",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-china-sentences-official-to-death-for-taking-325m-in-bribes-f0dce256.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 242점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 285개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:08f95fff193570cf",
+          "title": "Microsoft fire idTech team at Id software",
+          "normalized_url": "https://gamefromscratch.com/microsoft-fire-idtech-team-at-id-software",
+          "url_hash": "08f95fff193570cf6a6442dd98af835b305497d05fe602b8e6b023884bd1386a",
+          "suggested_doc_key": "2026-07-microsoft-fire-idtech-team-at-id-software-08f95fff",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-microsoft-fire-idtech-team-at-id-software-08f95fff.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 476점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 444개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:89f3bcfab86e4255",
+          "title": "Chat Control passed first round in EU Parliament",
+          "normalized_url": "https://www.heise.de/en/news/Showdown-in-Strasbourg-The-unexpected-return-of-Chat-Control-1-0-11356680.html",
+          "url_hash": "89f3bcfab86e4255fe4a185594e2308b3bddcc679152bab43fe043d752058bb0",
+          "suggested_doc_key": "2026-07-chat-control-passed-first-round-in-eu-parliament-89f3bcfa",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-chat-control-passed-first-round-in-eu-parliament-89f3bcfa.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 511점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 221개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:88053f423256c9d7",
+          "title": "Chat Control 1.0 and 2.0 Explained",
+          "normalized_url": "https://fightchatcontrol.eu/chat-control-overview",
+          "url_hash": "88053f423256c9d7857f700f62f96cd4b6661a53cb06cdf609abe6883077363a",
+          "suggested_doc_key": "2026-07-chat-control-1-0-and-2-0-explained-88053f42",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-chat-control-1-0-and-2-0-explained-88053f42.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 365점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 115개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:ab9ea62ec59ebe1a",
+          "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
+          "normalized_url": "https://openai.com/index/australian-payments-plus",
+          "url_hash": "ab9ea62ec59ebe1add5fc5fdabc1f339aaf99db0f34b323b87c6c39d0c4ca049",
+          "suggested_doc_key": "2026-07-australian-payments-plus-moves-faster-with-chatgpt-and-codex-ab9ea62e",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-australian-payments-plus-moves-faster-with-chatgpt-and-codex-ab9ea62e.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:617f45738c65d6ba",
+          "title": "Inside Genebench-Pro",
+          "normalized_url": "https://openai.com/index/genebench-pro/case-studies",
+          "url_hash": "617f45738c65d6baaf10b9cf1e236f3c65b852b2bfcb9c1fc405aff51e76af1d",
+          "suggested_doc_key": "2026-06-inside-genebench-pro-617f4573",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-inside-genebench-pro-617f4573.md",
+          "candidate_score": 28.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 7일이 지난 글로 최신성 13점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:4d4647099296fbc4",
+          "title": "Designing Organisations That Can Keep Up With AI",
+          "normalized_url": "https://openai.com/deployco/news/designing-organisations-that-can-keep-up-with-ai",
+          "url_hash": "4d4647099296fbc48a4dcebbe43f64e1b477bb06842cc297784b39039c4cf7fb",
+          "suggested_doc_key": "2026-06-designing-organisations-that-can-keep-up-with-ai-4d464709",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-designing-organisations-that-can-keep-up-with-ai-4d464709.md",
+          "candidate_score": 20.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 11일이 지난 글로 최신성 9점을 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 46,
+        "low_quality": 1
+      }
+    }
+  ]
+}
