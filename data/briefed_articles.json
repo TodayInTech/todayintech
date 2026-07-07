@@ -2530,6 +2530,116 @@
       "status": "published",
       "briefed_at": "2026-07-06T23:07:32.968589Z",
       "candidate_score": 51.2
+    },
+    "5f8631613d32f6ed22d35e5c170caba99ba1589a78b1ecd13c8c37c63c848e2c": {
+      "normalized_url": "https://www.anthropic.com/news/building-safeguards-for-claude",
+      "title_fingerprint": "building safeguards for claude",
+      "service_key": "anthropic-blog",
+      "title": "Building safeguards for Claude",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-building-safeguards-for-claude-5f863161.md",
+      "status": "published",
+      "briefed_at": "2026-07-07T23:02:21.328374Z",
+      "candidate_score": 30.0
+    },
+    "3bf34041a17763a983f046e9a204368c3301d7adcfba55293f4a82a2cf8d3fc7": {
+      "normalized_url": "https://github.blog/news-insights/policy-news-and-insights/q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide",
+      "title_fingerprint": "q1 2026 innovation graph update open source collaboration is accelerating worldwide",
+      "service_key": "github-blog",
+      "title": "Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide",
+      "article_doc_path": "docs/services/github-blog/2026-07-q1-2026-innovation-graph-update-open-source-collaboration-is-acceleratin-3bf34041.md",
+      "status": "published",
+      "briefed_at": "2026-07-07T23:02:21.328412Z",
+      "candidate_score": 42.0
+    },
+    "ecda44a79d6b631e38c25b598b7c64bfc6063334354d01c99cd8be636ef78b62": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api",
+      "title_fingerprint": "expanding managed agents in gemini api background tasks remote mcp and more",
+      "service_key": "google-blog",
+      "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
+      "article_doc_path": "docs/services/google-blog/2026-07-expanding-managed-agents-in-gemini-api-background-tasks-remote-mcp-and-m-ecda44a7.md",
+      "status": "published",
+      "briefed_at": "2026-07-07T23:02:21.328424Z",
+      "candidate_score": 49.0
+    },
+    "ac4ae95d7343449900b76d263774929290f90a275a3cf75176288e8fb19ad27a": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/firesat-satellites",
+      "title_fingerprint": "three new satellites join the fight against wildfires",
+      "service_key": "google-blog",
+      "title": "Three new satellites join the fight against wildfires.",
+      "article_doc_path": "docs/services/google-blog/2026-07-three-new-satellites-join-the-fight-against-wildfires-ac4ae95d.md",
+      "status": "published",
+      "briefed_at": "2026-07-07T23:02:21.328432Z",
+      "candidate_score": 45.0
+    },
+    "316dbe88a826d644c28dc8ae3b10bfb0e91cdf422d3236ce02a01e52faa79bae": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/research/technology-global-crisis-resilience",
+      "title_fingerprint": "how governments and organizations are leveraging google s ai breakthroughs for crisis resilience",
+      "service_key": "google-blog",
+      "title": "How governments and organizations are leveraging Google’s AI breakthroughs for crisis resilience",
+      "article_doc_path": "docs/services/google-blog/2026-07-how-governments-and-organizations-are-leveraging-google-s-ai-breakthroug-316dbe88.md",
+      "status": "published",
+      "briefed_at": "2026-07-07T23:02:21.328440Z",
+      "candidate_score": 36.0
+    },
+    "7d6be682716248425cbc97bb943e841e6bb1c77e09f7ce38374089074ab45b21": {
+      "normalized_url": "https://allaboutcookies.org/eu-mandatory-distracted-driver-system",
+      "title_fingerprint": "every new car sold in the european union must include a driver monitoring camera",
+      "service_key": "hacker-news",
+      "title": "Every new car sold in the European Union must include a driver monitoring camera",
+      "article_doc_path": "docs/services/hacker-news/2026-07-every-new-car-sold-in-the-european-union-must-include-a-driver-monitorin-7d6be682.md",
+      "status": "published",
+      "briefed_at": "2026-07-07T23:02:21.328448Z",
+      "candidate_score": 69.0
+    },
+    "f0dce2569389dc2e634812952fd1e5ca15de4e88865e8733ae0bed92bcbf15c4": {
+      "normalized_url": "https://www.bbc.com/news/articles/c33y0n1v1xjo",
+      "title_fingerprint": "china sentences official to death for taking 325m in bribes",
+      "service_key": "hacker-news",
+      "title": "China sentences official to death for taking $325M in bribes",
+      "article_doc_path": "docs/services/hacker-news/2026-07-china-sentences-official-to-death-for-taking-325m-in-bribes-f0dce256.md",
+      "status": "published",
+      "briefed_at": "2026-07-07T23:02:21.328455Z",
+      "candidate_score": 61.0
+    },
+    "08f95fff193570cf6a6442dd98af835b305497d05fe602b8e6b023884bd1386a": {
+      "normalized_url": "https://gamefromscratch.com/microsoft-fire-idtech-team-at-id-software",
+      "title_fingerprint": "microsoft fire idtech team at id software",
+      "service_key": "hacker-news",
+      "title": "Microsoft fire idTech team at Id software",
+      "article_doc_path": "docs/services/hacker-news/2026-07-microsoft-fire-idtech-team-at-id-software-08f95fff.md",
+      "status": "published",
+      "briefed_at": "2026-07-07T23:02:21.328462Z",
+      "candidate_score": 60.0
+    },
+    "89f3bcfab86e4255fe4a185594e2308b3bddcc679152bab43fe043d752058bb0": {
+      "normalized_url": "https://www.heise.de/en/news/Showdown-in-Strasbourg-The-unexpected-return-of-Chat-Control-1-0-11356680.html",
+      "title_fingerprint": "chat control passed first round in eu parliament",
+      "service_key": "hacker-news",
+      "title": "Chat Control passed first round in EU Parliament",
+      "article_doc_path": "docs/services/hacker-news/2026-07-chat-control-passed-first-round-in-eu-parliament-89f3bcfa.md",
+      "status": "published",
+      "briefed_at": "2026-07-07T23:02:21.328469Z",
+      "candidate_score": 60.0
+    },
+    "ab9ea62ec59ebe1add5fc5fdabc1f339aaf99db0f34b323b87c6c39d0c4ca049": {
+      "normalized_url": "https://openai.com/index/australian-payments-plus",
+      "title_fingerprint": "australian payments plus moves faster with chatgpt and codex",
+      "service_key": "openai-blog",
+      "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-07-australian-payments-plus-moves-faster-with-chatgpt-and-codex-ab9ea62e.md",
+      "status": "published",
+      "briefed_at": "2026-07-07T23:02:21.328477Z",
+      "candidate_score": 39.0
+    },
+    "4d4647099296fbc48a4dcebbe43f64e1b477bb06842cc297784b39039c4cf7fb": {
+      "normalized_url": "https://openai.com/deployco/news/designing-organisations-that-can-keep-up-with-ai",
+      "title_fingerprint": "designing organisations that can keep up with ai",
+      "service_key": "openai-blog",
+      "title": "Designing Organisations That Can Keep Up With AI",
+      "article_doc_path": "docs/services/openai-blog/2026-06-designing-organisations-that-can-keep-up-with-ai-4d464709.md",
+      "status": "published",
+      "briefed_at": "2026-07-07T23:02:21.328484Z",
+      "candidate_score": 20.0
     }
   }
 }
