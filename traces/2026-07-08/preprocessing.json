@@ -1,0 +1,385 @@
+{
+  "generated_at": "2026-07-08T23:01:41.860451+00:00",
+  "generated_for": "2026-07-08",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "a6f583e5b743c07558c41f734eb9432208fab5c7",
+  "github_run_id": "28981562287",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 21,
+  "excluded_count": 99,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 118,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 2
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 118,
+      "output_count": 31,
+      "excluded_count": 87,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 87
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 31,
+      "output_count": 31,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 31,
+      "output_count": 31,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 31,
+      "output_count": 21,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 4,
+      "excluded_count": 16,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:521645e00650b7db",
+          "title": "Progress from our Frontier Red Team",
+          "normalized_url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
+          "url_hash": "521645e00650b7dbecdde6a8a6bc8d3dfe3f0dbb58745104b2d768ae7c7a17ed",
+          "suggested_doc_key": "2026-07-progress-from-our-frontier-red-team-521645e0",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-progress-from-our-frontier-red-team-521645e0.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:4ff5ab7d45bc6dc5",
+          "title": "Golden Gate Claude",
+          "normalized_url": "https://www.anthropic.com/news/golden-gate-claude",
+          "url_hash": "4ff5ab7d45bc6dc52d0c0c38149e80d816841fb1580772a2b85078a3fa9ecce8",
+          "suggested_doc_key": "2026-07-golden-gate-claude-4ff5ab7d",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-golden-gate-claude-4ff5ab7d.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:8478b13c6bec82ac",
+          "title": "Frontier threats red teaming for AI safety",
+          "normalized_url": "https://www.anthropic.com/news/frontier-threats-red-teaming-for-ai-safety",
+          "url_hash": "8478b13c6bec82ac4b513f76daf14eac18987a85fad5a0af19de5398d1724921",
+          "suggested_doc_key": "2026-07-frontier-threats-red-teaming-for-ai-safety-8478b13c",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-frontier-threats-red-teaming-for-ai-safety-8478b13c.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:fa8a476757126bcd",
+          "title": "Charting a path to AI accountability",
+          "normalized_url": "https://www.anthropic.com/news/charting-a-path-to-ai-accountability",
+          "url_hash": "fa8a476757126bcd48f05fe2fe03fc9523ee0b9a782f818d7ce9692e35957f85",
+          "suggested_doc_key": "2026-07-charting-a-path-to-ai-accountability-fa8a4767",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-charting-a-path-to-ai-accountability-fa8a4767.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 16
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 3,
+      "excluded_count": 7,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:2a7072ece5f3372b",
+          "title": "Automating cross-repo documentation with GitHub Agentic Workflows",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows",
+          "url_hash": "2a7072ece5f3372bd87b939f0fa79bf7e7e8ee8fdd5f6b124633b878d972ecad",
+          "suggested_doc_key": "2026-07-automating-cross-repo-documentation-with-github-agentic-workflows-2a7072ec",
+          "suggested_article_path": "docs/services/github-blog/2026-07-automating-cross-repo-documentation-with-github-agentic-workflows-2a7072ec.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:d40f27076813ce95",
+          "title": "GitHub availability report: June 2026",
+          "normalized_url": "https://github.blog/news-insights/company-news/github-availability-report-june-2026",
+          "url_hash": "d40f27076813ce95e57afdabe225578811a1aca6e4163bbac7af6b39d7af2793",
+          "suggested_doc_key": "2026-07-github-availability-report-june-2026-d40f2707",
+          "suggested_article_path": "docs/services/github-blog/2026-07-github-availability-report-june-2026-d40f2707.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:d78a15724199152a",
+          "title": "How GitHub Copilot enables zero DNS configuration for GitHub Pages",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages",
+          "url_hash": "d78a15724199152a7ba72fa5bcd435850f887cb90f62c2aa117e595c5a8583a9",
+          "suggested_doc_key": "2026-07-how-github-copilot-enables-zero-dns-configuration-for-github-pages-d78a1572",
+          "suggested_article_path": "docs/services/github-blog/2026-07-how-github-copilot-enables-zero-dns-configuration-for-github-pages-d78a1572.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 7
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:af236497e3cd3b71",
+          "title": "The classifiers Anthropic puts in front of Fable are too zealous",
+          "normalized_url": "https://combine-lab.github.io/blog/2026/07/07/fable-is-not-a-useful-model.html",
+          "url_hash": "af236497e3cd3b716e777defa47bd42ca1398d0075f80c8bac731c0bed05d910",
+          "suggested_doc_key": "2026-07-the-classifiers-anthropic-puts-in-front-of-fable-are-too-zealous-af236497",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-the-classifiers-anthropic-puts-in-front-of-fable-are-too-zealous-af236497.md",
+          "candidate_score": 66.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 158점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 144개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b7534fef03b25a7f",
+          "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+          "normalized_url": "https://microsoft.github.io/flint-chart",
+          "url_hash": "b7534fef03b25a7f4c5d8924f988d1dd26d99733161f9edf042c2a9f9ce1dcd7",
+          "suggested_doc_key": "2026-07-show-hn-microsoft-releases-flint-a-visualization-language-for-ai-agents-b7534fef",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-show-hn-microsoft-releases-flint-a-visualization-language-for-ai-agents-b7534fef.md",
+          "candidate_score": 66.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "Hacker News 점수 143점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 62개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4f744bee9310c9a1",
+          "title": "Chatto is now open source",
+          "normalized_url": "https://www.hmans.dev/blog/chatto-is-open-source",
+          "url_hash": "4f744bee9310c9a1ec8b076eb7d4eaed0c2c79d6c2f50601a752f7b154084648",
+          "suggested_doc_key": "2026-07-chatto-is-now-open-source-4f744bee",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-chatto-is-now-open-source-4f744bee.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 622점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 174개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:cafc9d3c3da053e9",
+          "title": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+          "normalized_url": "https://mistral.ai/news/robostral-navigate",
+          "url_hash": "cafc9d3c3da053e9739d61b137ae7a0eb001544e8ca90e0502d85a30c62c131e",
+          "suggested_doc_key": "2026-07-mistral-s-robostral-navigate-a-state-of-the-art-robotics-navigation-mode-cafc9d3c",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-mistral-s-robostral-navigate-a-state-of-the-art-robotics-navigation-mode-cafc9d3c.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 377점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 89개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c5fe4e158440bf6a",
+          "title": "Grok 4.5",
+          "normalized_url": "https://x.ai/news/grok-4-5",
+          "url_hash": "c5fe4e158440bf6accd86d9ebefe93caad92a136cad1fceb289cb91c5ba6cc44",
+          "suggested_doc_key": "2026-07-grok-4-5-c5fe4e15",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-grok-4-5-c5fe4e15.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 387점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 321개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 4,
+      "excluded_count": 46,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:e00d55023af7c16f",
+          "title": "Our approach to government and national security partnerships",
+          "normalized_url": "https://openai.com/index/government-national-security-partnerships",
+          "url_hash": "e00d55023af7c16fccc854fab5876b188ef56b5bc6412d9fb55c6ac3b7e3ed7f",
+          "suggested_doc_key": "2026-07-our-approach-to-government-and-national-security-partnerships-e00d5502",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-our-approach-to-government-and-national-security-partnerships-e00d5502.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3447f8d32f7ed63d",
+          "title": "Helping K–12 educators build practical AI skills",
+          "normalized_url": "https://openai.com/index/k-12-educators-practical-skills",
+          "url_hash": "3447f8d32f7ed63de07bb8550fcfb7882d0fd7e654e8cbee25a8290b7a5a7481",
+          "suggested_doc_key": "2026-07-helping-k-12-educators-build-practical-ai-skills-3447f8d3",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-helping-k-12-educators-build-practical-ai-skills-3447f8d3.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:b7195bbec0581aa4",
+          "title": "MUFG aims to become AI-native with OpenAI",
+          "normalized_url": "https://openai.com/index/mufg",
+          "url_hash": "b7195bbec0581aa4f92ada0dd09674535fb070400751141f7e4df598b418145c",
+          "suggested_doc_key": "2026-07-mufg-aims-to-become-ai-native-with-openai-b7195bbe",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-mufg-aims-to-become-ai-native-with-openai-b7195bbe.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:617f45738c65d6ba",
+          "title": "Inside Genebench-Pro",
+          "normalized_url": "https://openai.com/index/genebench-pro/case-studies",
+          "url_hash": "617f45738c65d6baaf10b9cf1e236f3c65b852b2bfcb9c1fc405aff51e76af1d",
+          "suggested_doc_key": "2026-06-inside-genebench-pro-617f4573",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-inside-genebench-pro-617f4573.md",
+          "candidate_score": 23.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 8일이 지난 글로 최신성 12점을 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 2,
+        "already_briefed": 44
+      }
+    }
+  ]
+}
