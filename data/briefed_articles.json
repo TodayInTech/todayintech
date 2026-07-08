@@ -2640,6 +2640,146 @@
       "status": "published",
       "briefed_at": "2026-07-07T23:02:21.328484Z",
       "candidate_score": 20.0
+    },
+    "521645e00650b7dbecdde6a8a6bc8d3dfe3f0dbb58745104b2d768ae7c7a17ed": {
+      "normalized_url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
+      "title_fingerprint": "progress from our frontier red team",
+      "service_key": "anthropic-blog",
+      "title": "Progress from our Frontier Red Team",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-progress-from-our-frontier-red-team-521645e0.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264465Z",
+      "candidate_score": 40.0
+    },
+    "4ff5ab7d45bc6dc52d0c0c38149e80d816841fb1580772a2b85078a3fa9ecce8": {
+      "normalized_url": "https://www.anthropic.com/news/golden-gate-claude",
+      "title_fingerprint": "golden gate claude",
+      "service_key": "anthropic-blog",
+      "title": "Golden Gate Claude",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-golden-gate-claude-4ff5ab7d.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264505Z",
+      "candidate_score": 35.0
+    },
+    "8478b13c6bec82ac4b513f76daf14eac18987a85fad5a0af19de5398d1724921": {
+      "normalized_url": "https://www.anthropic.com/news/frontier-threats-red-teaming-for-ai-safety",
+      "title_fingerprint": "frontier threats red teaming for ai safety",
+      "service_key": "anthropic-blog",
+      "title": "Frontier threats red teaming for AI safety",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-frontier-threats-red-teaming-for-ai-safety-8478b13c.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264517Z",
+      "candidate_score": 30.0
+    },
+    "fa8a476757126bcd48f05fe2fe03fc9523ee0b9a782f818d7ce9692e35957f85": {
+      "normalized_url": "https://www.anthropic.com/news/charting-a-path-to-ai-accountability",
+      "title_fingerprint": "charting a path to ai accountability",
+      "service_key": "anthropic-blog",
+      "title": "Charting a path to AI accountability",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-charting-a-path-to-ai-accountability-fa8a4767.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264525Z",
+      "candidate_score": 30.0
+    },
+    "2a7072ece5f3372bd87b939f0fa79bf7e7e8ee8fdd5f6b124633b878d972ecad": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows",
+      "title_fingerprint": "automating cross repo documentation with github agentic workflows",
+      "service_key": "github-blog",
+      "title": "Automating cross-repo documentation with GitHub Agentic Workflows",
+      "article_doc_path": "docs/services/github-blog/2026-07-automating-cross-repo-documentation-with-github-agentic-workflows-2a7072ec.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264533Z",
+      "candidate_score": 47.0
+    },
+    "d40f27076813ce95e57afdabe225578811a1aca6e4163bbac7af6b39d7af2793": {
+      "normalized_url": "https://github.blog/news-insights/company-news/github-availability-report-june-2026",
+      "title_fingerprint": "github availability report june 2026",
+      "service_key": "github-blog",
+      "title": "GitHub availability report: June 2026",
+      "article_doc_path": "docs/services/github-blog/2026-07-github-availability-report-june-2026-d40f2707.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264540Z",
+      "candidate_score": 36.0
+    },
+    "d78a15724199152a7ba72fa5bcd435850f887cb90f62c2aa117e595c5a8583a9": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages",
+      "title_fingerprint": "how github copilot enables zero dns configuration for github pages",
+      "service_key": "github-blog",
+      "title": "How GitHub Copilot enables zero DNS configuration for GitHub Pages",
+      "article_doc_path": "docs/services/github-blog/2026-07-how-github-copilot-enables-zero-dns-configuration-for-github-pages-d78a1572.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264547Z",
+      "candidate_score": 35.0
+    },
+    "af236497e3cd3b716e777defa47bd42ca1398d0075f80c8bac731c0bed05d910": {
+      "normalized_url": "https://combine-lab.github.io/blog/2026/07/07/fable-is-not-a-useful-model.html",
+      "title_fingerprint": "the classifiers anthropic puts in front of fable are too zealous",
+      "service_key": "hacker-news",
+      "title": "The classifiers Anthropic puts in front of Fable are too zealous",
+      "article_doc_path": "docs/services/hacker-news/2026-07-the-classifiers-anthropic-puts-in-front-of-fable-are-too-zealous-af236497.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264555Z",
+      "candidate_score": 66.8
+    },
+    "b7534fef03b25a7f4c5d8924f988d1dd26d99733161f9edf042c2a9f9ce1dcd7": {
+      "normalized_url": "https://microsoft.github.io/flint-chart",
+      "title_fingerprint": "show hn microsoft releases flint a visualization language for ai agents",
+      "service_key": "hacker-news",
+      "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+      "article_doc_path": "docs/services/hacker-news/2026-07-show-hn-microsoft-releases-flint-a-visualization-language-for-ai-agents-b7534fef.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264562Z",
+      "candidate_score": 66.7
+    },
+    "4f744bee9310c9a1ec8b076eb7d4eaed0c2c79d6c2f50601a752f7b154084648": {
+      "normalized_url": "https://www.hmans.dev/blog/chatto-is-open-source",
+      "title_fingerprint": "chatto is now open source",
+      "service_key": "hacker-news",
+      "title": "Chatto is now open source",
+      "article_doc_path": "docs/services/hacker-news/2026-07-chatto-is-now-open-source-4f744bee.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264569Z",
+      "candidate_score": 65.0
+    },
+    "cafc9d3c3da053e9739d61b137ae7a0eb001544e8ca90e0502d85a30c62c131e": {
+      "normalized_url": "https://mistral.ai/news/robostral-navigate",
+      "title_fingerprint": "mistral s robostral navigate a state of the art robotics navigation model",
+      "service_key": "hacker-news",
+      "title": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+      "article_doc_path": "docs/services/hacker-news/2026-07-mistral-s-robostral-navigate-a-state-of-the-art-robotics-navigation-mode-cafc9d3c.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264581Z",
+      "candidate_score": 65.0
+    },
+    "e00d55023af7c16fccc854fab5876b188ef56b5bc6412d9fb55c6ac3b7e3ed7f": {
+      "normalized_url": "https://openai.com/index/government-national-security-partnerships",
+      "title_fingerprint": "our approach to government and national security partnerships",
+      "service_key": "openai-blog",
+      "title": "Our approach to government and national security partnerships",
+      "article_doc_path": "docs/services/openai-blog/2026-07-our-approach-to-government-and-national-security-partnerships-e00d5502.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264588Z",
+      "candidate_score": 44.0
+    },
+    "3447f8d32f7ed63de07bb8550fcfb7882d0fd7e654e8cbee25a8290b7a5a7481": {
+      "normalized_url": "https://openai.com/index/k-12-educators-practical-skills",
+      "title_fingerprint": "helping k 12 educators build practical ai skills",
+      "service_key": "openai-blog",
+      "title": "Helping K–12 educators build practical AI skills",
+      "article_doc_path": "docs/services/openai-blog/2026-07-helping-k-12-educators-build-practical-ai-skills-3447f8d3.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264594Z",
+      "candidate_score": 37.0
+    },
+    "b7195bbec0581aa4f92ada0dd09674535fb070400751141f7e4df598b418145c": {
+      "normalized_url": "https://openai.com/index/mufg",
+      "title_fingerprint": "mufg aims to become ai native with openai",
+      "service_key": "openai-blog",
+      "title": "MUFG aims to become AI-native with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-07-mufg-aims-to-become-ai-native-with-openai-b7195bbe.md",
+      "status": "published",
+      "briefed_at": "2026-07-08T23:07:25.264601Z",
+      "candidate_score": 33.0
     }
   }
 }
