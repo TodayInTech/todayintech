@@ -2780,6 +2780,146 @@
       "status": "published",
       "briefed_at": "2026-07-08T23:07:25.264601Z",
       "candidate_score": 33.0
+    },
+    "d6c83eff09565929a6c5378ad1acb7dc4cc2583b285517855da12e835a4cf098": {
+      "normalized_url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
+      "title_fingerprint": "the long term benefit trust",
+      "service_key": "anthropic-blog",
+      "title": "The Long-Term Benefit Trust",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-the-long-term-benefit-trust-d6c83eff.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115161Z",
+      "candidate_score": 30.0
+    },
+    "5a81a35f01891896cff88ebe0f4d46aa2bef247a2bc9e79ed59f939e7660c017": {
+      "normalized_url": "https://www.anthropic.com/news/ben-bernanke",
+      "title_fingerprint": "ben bernanke appointed to anthropic s long term benefit trust",
+      "service_key": "anthropic-blog",
+      "title": "Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-ben-bernanke-appointed-to-anthropic-s-long-term-benefit-trust-5a81a35f.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115201Z",
+      "candidate_score": 30.0
+    },
+    "8dbb2238c30b71eb75bd5ec456178aef721af9b617469f92f1dcd2658417a594": {
+      "normalized_url": "https://www.anthropic.com/news/hard-questions",
+      "title_fingerprint": "inviting hard questions",
+      "service_key": "anthropic-blog",
+      "title": "Inviting hard questions",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-inviting-hard-questions-8dbb2238.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115216Z",
+      "candidate_score": 30.0
+    },
+    "96abb90589873af87cb1cf98a32aac73f750d4f2c9ba58951ddd81dc7215a092": {
+      "normalized_url": "https://www.anthropic.com/news/reflect-with-claude",
+      "title_fingerprint": "a new way to reflect on how you use claude",
+      "service_key": "anthropic-blog",
+      "title": "A new way to reflect on how you use Claude",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-a-new-way-to-reflect-on-how-you-use-claude-96abb905.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115224Z",
+      "candidate_score": 30.0
+    },
+    "e332350c7a691c20a38c35870ef99d1e03bb4b3a3fa4cb15c8ac6874f8693c48": {
+      "normalized_url": "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner",
+      "title_fingerprint": "how github gave every repository a durable owner",
+      "service_key": "github-blog",
+      "title": "How GitHub gave every repository a durable owner",
+      "article_doc_path": "docs/services/github-blog/2026-07-how-github-gave-every-repository-a-durable-owner-e332350c.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115233Z",
+      "candidate_score": 42.0
+    },
+    "6697c8fc10a779990eab933fd413496cb3f3289c9042dd293f8ffef3ae317686": {
+      "normalized_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-on-cloud",
+      "title_fingerprint": "we re rolling out alphaevolve widely to solve google cloud customers hardest problems",
+      "service_key": "google-blog",
+      "title": "We're rolling out AlphaEvolve widely to solve Google Cloud customers' hardest problems.",
+      "article_doc_path": "docs/services/google-blog/2026-07-we-re-rolling-out-alphaevolve-widely-to-solve-google-cloud-customers-har-6697c8fc.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115241Z",
+      "candidate_score": 41.0
+    },
+    "251553444cbc594f25a6a3f345a8fe5e04618174ef4dcf5b9a59085e2a090e07": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/health/open-health-stack-software-foundation",
+      "title_fingerprint": "building the future of global health together",
+      "service_key": "google-blog",
+      "title": "Building the future of global health, together",
+      "article_doc_path": "docs/services/google-blog/2026-07-building-the-future-of-global-health-together-25155344.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115273Z",
+      "candidate_score": 35.0
+    },
+    "e19fbb75eb44457e4dbe61ac0c57dd698fc70ccefdd1c171e2f4db8584de6c3d": {
+      "normalized_url": "https://openai.com/index/gpt-5-6",
+      "title_fingerprint": "gpt 5 6",
+      "service_key": "hacker-news",
+      "title": "GPT-5.6",
+      "article_doc_path": "docs/services/hacker-news/2026-07-gpt-5-6-e19fbb75.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115284Z",
+      "candidate_score": 74.0
+    },
+    "f8a956094e526a92caf3ce4eff950bbb824985a4609bd7aed3e57e51ebbc6ac1": {
+      "normalized_url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api",
+      "title_fingerprint": "muse spark 1 1",
+      "service_key": "hacker-news",
+      "title": "Muse Spark 1.1",
+      "article_doc_path": "docs/services/hacker-news/2026-07-muse-spark-1-1-f8a95609.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115292Z",
+      "candidate_score": 70.0
+    },
+    "6ab889a6e5472af422736a8c6d86658d620d94f4ba0e781ab95e4139e93f8480": {
+      "normalized_url": "https://toot-books.pages.dev/blog/glm-5-2-vat-benchmark",
+      "title_fingerprint": "glm 5 2 is nearly as accurate as a human book keeper",
+      "service_key": "hacker-news",
+      "title": "GLM 5.2 is nearly as accurate as a human book keeper",
+      "article_doc_path": "docs/services/hacker-news/2026-07-glm-5-2-is-nearly-as-accurate-as-a-human-book-keeper-6ab889a6.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115300Z",
+      "candidate_score": 68.0
+    },
+    "2015b07b78a1afecfd58b7e1d65d0291ceaa973b0db5939711b8104e58957b13": {
+      "normalized_url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+      "title_fingerprint": "chatgpt work",
+      "service_key": "hacker-news",
+      "title": "ChatGPT Work",
+      "article_doc_path": "docs/services/hacker-news/2026-07-chatgpt-work-2015b07b.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115307Z",
+      "candidate_score": 63.0
+    },
+    "b98a594ec40e8f26c7968fe75d31a1da2a33461d93d0f1d2ad6179c4ae9b048b": {
+      "normalized_url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+      "title_fingerprint": "gpt 5 6 is now the preferred model in microsoft 365 copilot",
+      "service_key": "openai-blog",
+      "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+      "article_doc_path": "docs/services/openai-blog/2026-07-gpt-5-6-is-now-the-preferred-model-in-microsoft-365-copilot-b98a594e.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115316Z",
+      "candidate_score": 44.0
+    },
+    "e9167e656930e3f1b73261c9a788f5db63117cf4ab761db67ca77af9283c2f81": {
+      "normalized_url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+      "title_fingerprint": "separating signal from noise in coding evaluations",
+      "service_key": "openai-blog",
+      "title": "Separating signal from noise in coding evaluations",
+      "article_doc_path": "docs/services/openai-blog/2026-07-separating-signal-from-noise-in-coding-evaluations-e9167e65.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115326Z",
+      "candidate_score": 44.0
+    },
+    "3fb14968493dc68260e4892ed338c85e26c34d1f5bd0189f7fdc8ddef48ad531": {
+      "normalized_url": "https://openai.com/index/introducing-gpt-live",
+      "title_fingerprint": "introducing gpt live",
+      "service_key": "openai-blog",
+      "title": "Introducing GPT-Live",
+      "article_doc_path": "docs/services/openai-blog/2026-07-introducing-gpt-live-3fb14968.md",
+      "status": "published",
+      "briefed_at": "2026-07-09T23:13:10.115330Z",
+      "candidate_score": 36.0
     }
   }
 }
