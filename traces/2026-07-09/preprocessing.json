@@ -1,0 +1,401 @@
+{
+  "generated_at": "2026-07-09T23:08:11.027823+00:00",
+  "generated_for": "2026-07-09",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "5b1aee535b81415978b1f43caa81b34b1589773e",
+  "github_run_id": "29056451209",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 22,
+  "excluded_count": 98,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 118,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 2
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 118,
+      "output_count": 32,
+      "excluded_count": 86,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 86
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 32,
+      "output_count": 22,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 4,
+      "excluded_count": 16,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:d6c83eff09565929",
+          "title": "The Long-Term Benefit Trust",
+          "normalized_url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
+          "url_hash": "d6c83eff09565929a6c5378ad1acb7dc4cc2583b285517855da12e835a4cf098",
+          "suggested_doc_key": "2026-07-the-long-term-benefit-trust-d6c83eff",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-the-long-term-benefit-trust-d6c83eff.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:5a81a35f01891896",
+          "title": "Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
+          "normalized_url": "https://www.anthropic.com/news/ben-bernanke",
+          "url_hash": "5a81a35f01891896cff88ebe0f4d46aa2bef247a2bc9e79ed59f939e7660c017",
+          "suggested_doc_key": "2026-07-ben-bernanke-appointed-to-anthropic-s-long-term-benefit-trust-5a81a35f",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-ben-bernanke-appointed-to-anthropic-s-long-term-benefit-trust-5a81a35f.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:8dbb2238c30b71eb",
+          "title": "Inviting hard questions",
+          "normalized_url": "https://www.anthropic.com/news/hard-questions",
+          "url_hash": "8dbb2238c30b71eb75bd5ec456178aef721af9b617469f92f1dcd2658417a594",
+          "suggested_doc_key": "2026-07-inviting-hard-questions-8dbb2238",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-inviting-hard-questions-8dbb2238.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:96abb90589873af8",
+          "title": "A new way to reflect on how you use Claude",
+          "normalized_url": "https://www.anthropic.com/news/reflect-with-claude",
+          "url_hash": "96abb90589873af87cb1cf98a32aac73f750d4f2c9ba58951ddd81dc7215a092",
+          "suggested_doc_key": "2026-07-a-new-way-to-reflect-on-how-you-use-claude-96abb905",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-a-new-way-to-reflect-on-how-you-use-claude-96abb905.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 16
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:e332350c7a691c20",
+          "title": "How GitHub gave every repository a durable owner",
+          "normalized_url": "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner",
+          "url_hash": "e332350c7a691c20a38c35870ef99d1e03bb4b3a3fa4cb15c8ac6874f8693c48",
+          "suggested_doc_key": "2026-07-how-github-gave-every-repository-a-durable-owner-e332350c",
+          "suggested_article_path": "docs/services/github-blog/2026-07-how-github-gave-every-repository-a-durable-owner-e332350c.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:6697c8fc10a77999",
+          "title": "We're rolling out AlphaEvolve widely to solve Google Cloud customers' hardest problems.",
+          "normalized_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-on-cloud",
+          "url_hash": "6697c8fc10a779990eab933fd413496cb3f3289c9042dd293f8ffef3ae317686",
+          "suggested_doc_key": "2026-07-we-re-rolling-out-alphaevolve-widely-to-solve-google-cloud-customers-har-6697c8fc",
+          "suggested_article_path": "docs/services/google-blog/2026-07-we-re-rolling-out-alphaevolve-widely-to-solve-google-cloud-customers-har-6697c8fc.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:251553444cbc594f",
+          "title": "Building the future of global health, together",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/health/open-health-stack-software-foundation",
+          "url_hash": "251553444cbc594f25a6a3f345a8fe5e04618174ef4dcf5b9a59085e2a090e07",
+          "suggested_doc_key": "2026-07-building-the-future-of-global-health-together-25155344",
+          "suggested_article_path": "docs/services/google-blog/2026-07-building-the-future-of-global-health-together-25155344.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:e19fbb75eb44457e",
+          "title": "GPT-5.6",
+          "normalized_url": "https://openai.com/index/gpt-5-6",
+          "url_hash": "e19fbb75eb44457e4dbe61ac0c57dd698fc70ccefdd1c171e2f4db8584de6c3d",
+          "suggested_doc_key": "2026-07-gpt-5-6-e19fbb75",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-gpt-5-6-e19fbb75.md",
+          "candidate_score": 74.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 914점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 679개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f8a956094e526a92",
+          "title": "Muse Spark 1.1",
+          "normalized_url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api",
+          "url_hash": "f8a956094e526a92caf3ce4eff950bbb824985a4609bd7aed3e57e51ebbc6ac1",
+          "suggested_doc_key": "2026-07-muse-spark-1-1-f8a95609",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-muse-spark-1-1-f8a95609.md",
+          "candidate_score": 70.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 298점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 164개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6ab889a6e5472af4",
+          "title": "GLM 5.2 is nearly as accurate as a human book keeper",
+          "normalized_url": "https://toot-books.pages.dev/blog/glm-5-2-vat-benchmark",
+          "url_hash": "6ab889a6e5472af422736a8c6d86658d620d94f4ba0e781ab95e4139e93f8480",
+          "suggested_doc_key": "2026-07-glm-5-2-is-nearly-as-accurate-as-a-human-book-keeper-6ab889a6",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-glm-5-2-is-nearly-as-accurate-as-a-human-book-keeper-6ab889a6.md",
+          "candidate_score": 68.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 160점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 96개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:2015b07b78a1afec",
+          "title": "ChatGPT Work",
+          "normalized_url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+          "url_hash": "2015b07b78a1afecfd58b7e1d65d0291ceaa973b0db5939711b8104e58957b13",
+          "suggested_doc_key": "2026-07-chatgpt-work-2015b07b",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-chatgpt-work-2015b07b.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 303점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 147개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3a733299905438f9",
+          "title": "Launch HN: Context.dev (YC S26) – API to get structured data from any website",
+          "normalized_url": "https://www.context.dev/",
+          "url_hash": "3a733299905438f9730f0254f05f2252be911626cbacd0e23d9f2983a3c6d473",
+          "suggested_doc_key": "2026-07-launch-hn-context-dev-yc-s26-api-to-get-structured-data-from-any-website-3a733299",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-launch-hn-context-dev-yc-s26-api-to-get-structured-data-from-any-website-3a733299.md",
+          "candidate_score": 61.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 4개를 감지해 가산했습니다.",
+            "Hacker News 점수 64점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 52개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:b98a594ec40e8f26",
+          "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+          "normalized_url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+          "url_hash": "b98a594ec40e8f26c7968fe75d31a1da2a33461d93d0f1d2ad6179c4ae9b048b",
+          "suggested_doc_key": "2026-07-gpt-5-6-is-now-the-preferred-model-in-microsoft-365-copilot-b98a594e",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-5-6-is-now-the-preferred-model-in-microsoft-365-copilot-b98a594e.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:e9167e656930e3f1",
+          "title": "Separating signal from noise in coding evaluations",
+          "normalized_url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+          "url_hash": "e9167e656930e3f1b73261c9a788f5db63117cf4ab761db67ca77af9283c2f81",
+          "suggested_doc_key": "2026-07-separating-signal-from-noise-in-coding-evaluations-e9167e65",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-separating-signal-from-noise-in-coding-evaluations-e9167e65.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:07aa5a8a45a2217e",
+          "title": "GPT-5.5 Bio Bug Bounty",
+          "normalized_url": "https://openai.com/index/bio-bug-bounty",
+          "url_hash": "07aa5a8a45a2217e5772972678fa56c02f77d49321e968f0a655c7418e20c696",
+          "suggested_doc_key": "2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3fb14968493dc682",
+          "title": "Introducing GPT-Live",
+          "normalized_url": "https://openai.com/index/introducing-gpt-live",
+          "url_hash": "3fb14968493dc68260e4892ed338c85e26c34d1f5bd0189f7fdc8ddef48ad531",
+          "suggested_doc_key": "2026-07-introducing-gpt-live-3fb14968",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-introducing-gpt-live-3fb14968.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:617f45738c65d6ba",
+          "title": "Inside Genebench-Pro",
+          "normalized_url": "https://openai.com/index/genebench-pro/case-studies",
+          "url_hash": "617f45738c65d6baaf10b9cf1e236f3c65b852b2bfcb9c1fc405aff51e76af1d",
+          "suggested_doc_key": "2026-06-inside-genebench-pro-617f4573",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-inside-genebench-pro-617f4573.md",
+          "candidate_score": 21.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 9일이 지난 글로 최신성 11점을 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 2,
+        "already_briefed": 43
+      }
+    }
+  ]
+}

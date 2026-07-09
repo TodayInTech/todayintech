@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-07-09T23:08:10.765293+00:00",
+  "generated_for": "2026-07-09",
+  "stage": "collection",
+  "status": "success",
+  "git_sha": "5b1aee535b81415978b1f43caa81b34b1589773e",
+  "github_run_id": "29056451209",
+  "service_count": 5,
+  "failed_service_count": 0,
+  "warning_count": 0,
+  "total_article_count": 120,
+  "duration_ms": 42592,
+  "services": [
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 20,
+      "duration_ms": 127,
+      "avg_article_duration_ms": 6.35,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 10,
+      "duration_ms": 100,
+      "avg_article_duration_ms": 10.0,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 20,
+      "duration_ms": 205,
+      "avg_article_duration_ms": 10.25,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 50,
+      "duration_ms": 841,
+      "avg_article_duration_ms": 16.82,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "strategy": "sitemap",
+      "status": "success",
+      "article_count": 20,
+      "duration_ms": 41319,
+      "avg_article_duration_ms": 2065.95,
+      "warning_codes": [],
+      "error": null
+    }
+  ]
+}
