@@ -2920,6 +2920,76 @@
       "status": "published",
       "briefed_at": "2026-07-09T23:13:10.115330Z",
       "candidate_score": 36.0
+    },
+    "2421a78a2bf886f857d4d42e6164699d9295b042730f59de77f625dd9f45a0b9": {
+      "normalized_url": "https://www.anthropic.com/news/ust-claude",
+      "title_fingerprint": "ust is bringing claude to physical ai",
+      "service_key": "anthropic-blog",
+      "title": "UST is bringing Claude to physical AI",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-ust-is-bringing-claude-to-physical-ai-2421a78a.md",
+      "status": "published",
+      "briefed_at": "2026-07-10T23:01:02.091016Z",
+      "candidate_score": 30.0
+    },
+    "c8dc1df614610019c8cf453e65821d05c9adf490f09052f5c0a0dadfd3a69d5e": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it",
+      "title_fingerprint": "better tools made copilot code review worse here s how we actually improved it",
+      "service_key": "github-blog",
+      "title": "Better tools made Copilot code review worse. Here’s how we actually improved it.",
+      "article_doc_path": "docs/services/github-blog/2026-07-better-tools-made-copilot-code-review-worse-here-s-how-we-actually-impro-c8dc1df6.md",
+      "status": "published",
+      "briefed_at": "2026-07-10T23:01:02.091055Z",
+      "candidate_score": 47.0
+    },
+    "24fd53f66cfcc1c62541b604f9f5ea372b042c0851db82c3157fed1f122017f3": {
+      "normalized_url": "https://www.tryai.dev/blog/gpt-5.6-build-off-12-models",
+      "title_fingerprint": "gpt 5 6 grok 4 5 claude and muse spark build the same 4 apps",
+      "service_key": "hacker-news",
+      "title": "GPT-5.6, Grok 4.5, Claude, and Muse Spark build the same 4 apps",
+      "article_doc_path": "docs/services/hacker-news/2026-07-gpt-5-6-grok-4-5-claude-and-muse-spark-build-the-same-4-apps-24fd53f6.md",
+      "status": "published",
+      "briefed_at": "2026-07-10T23:01:02.091066Z",
+      "candidate_score": 61.7
+    },
+    "66bbdd7828c6eff6e3728e9a33d659e0fc469cfe32fb093a332ac57b1e4f4405": {
+      "normalized_url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+      "title_fingerprint": "gpt 5 6 sol ultra produces proof of the cycle double cover conjecture pdf",
+      "service_key": "hacker-news",
+      "title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
+      "article_doc_path": "docs/services/hacker-news/2026-07-gpt-5-6-sol-ultra-produces-proof-of-the-cycle-double-cover-conjecture-pd-66bbdd78.md",
+      "status": "published",
+      "briefed_at": "2026-07-10T23:01:02.091072Z",
+      "candidate_score": 60.0
+    },
+    "3bdd4de3beb1ed39b9113e0c5696842da25443d3be843d6ee7f06538f0f9a33c": {
+      "normalized_url": "https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban",
+      "title_fingerprint": "new york city to become first in us to ban deceptive subscription practices",
+      "service_key": "hacker-news",
+      "title": "New York City to become first in US to ban deceptive subscription practices",
+      "article_doc_path": "docs/services/hacker-news/2026-07-new-york-city-to-become-first-in-us-to-ban-deceptive-subscription-practi-3bdd4de3.md",
+      "status": "published",
+      "briefed_at": "2026-07-10T23:01:02.091078Z",
+      "candidate_score": 60.0
+    },
+    "9e2f1d2080d30a9967feb0f5a01d1ecdbf2866f02767de53094cad98fec098ce": {
+      "normalized_url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall",
+      "title_fingerprint": "quadrf can spot drones and see wifi through my wall",
+      "service_key": "hacker-news",
+      "title": "QuadRF can spot drones and see WiFi through my wall",
+      "article_doc_path": "docs/services/hacker-news/2026-07-quadrf-can-spot-drones-and-see-wifi-through-my-wall-9e2f1d20.md",
+      "status": "published",
+      "briefed_at": "2026-07-10T23:01:02.091083Z",
+      "candidate_score": 60.0
+    },
+    "521cb8f5727237af1c44feb4444334a2faf7dfcc9e7d53764a3e5fae7e59bce7": {
+      "normalized_url": "https://openai.com/index/deutsche-telekom",
+      "title_fingerprint": "how deutsche telekom is rewiring telecommunications with ai",
+      "service_key": "openai-blog",
+      "title": "How Deutsche Telekom is rewiring telecommunications with AI",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-deutsche-telekom-is-rewiring-telecommunications-with-ai-521cb8f5.md",
+      "status": "published",
+      "briefed_at": "2026-07-10T23:01:02.091087Z",
+      "candidate_score": 39.0
     }
   }
 }
