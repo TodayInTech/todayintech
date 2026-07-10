@@ -1,0 +1,295 @@
+{
+  "generated_at": "2026-07-10T22:57:47.074220+00:00",
+  "generated_for": "2026-07-10",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "17e19511688a21cef67d1636ef2a5108df8db3a8",
+  "github_run_id": "29129042779",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 25,
+      "excluded_count": 95,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 95
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 25,
+      "output_count": 15,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:2421a78a2bf886f8",
+          "title": "UST is bringing Claude to physical AI",
+          "normalized_url": "https://www.anthropic.com/news/ust-claude",
+          "url_hash": "2421a78a2bf886f857d4d42e6164699d9295b042730f59de77f625dd9f45a0b9",
+          "suggested_doc_key": "2026-07-ust-is-bringing-claude-to-physical-ai-2421a78a",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-ust-is-bringing-claude-to-physical-ai-2421a78a.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:c8dc1df614610019",
+          "title": "Better tools made Copilot code review worse. Here’s how we actually improved it.",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it",
+          "url_hash": "c8dc1df614610019c8cf453e65821d05c9adf490f09052f5c0a0dadfd3a69d5e",
+          "suggested_doc_key": "2026-07-better-tools-made-copilot-code-review-worse-here-s-how-we-actually-impro-c8dc1df6",
+          "suggested_article_path": "docs/services/github-blog/2026-07-better-tools-made-copilot-code-review-worse-here-s-how-we-actually-impro-c8dc1df6.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:24fd53f66cfcc1c6",
+          "title": "GPT-5.6, Grok 4.5, Claude, and Muse Spark build the same 4 apps",
+          "normalized_url": "https://www.tryai.dev/blog/gpt-5.6-build-off-12-models",
+          "url_hash": "24fd53f66cfcc1c62541b604f9f5ea372b042c0851db82c3157fed1f122017f3",
+          "suggested_doc_key": "2026-07-gpt-5-6-grok-4-5-claude-and-muse-spark-build-the-same-4-apps-24fd53f6",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-gpt-5-6-grok-4-5-claude-and-muse-spark-build-the-same-4-apps-24fd53f6.md",
+          "candidate_score": 61.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 115점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 71개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:66bbdd7828c6eff6",
+          "title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
+          "normalized_url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+          "url_hash": "66bbdd7828c6eff6e3728e9a33d659e0fc469cfe32fb093a332ac57b1e4f4405",
+          "suggested_doc_key": "2026-07-gpt-5-6-sol-ultra-produces-proof-of-the-cycle-double-cover-conjecture-pd-66bbdd78",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-gpt-5-6-sol-ultra-produces-proof-of-the-cycle-double-cover-conjecture-pd-66bbdd78.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 253점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 223개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3bdd4de3beb1ed39",
+          "title": "New York City to become first in US to ban deceptive subscription practices",
+          "normalized_url": "https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban",
+          "url_hash": "3bdd4de3beb1ed39b9113e0c5696842da25443d3be843d6ee7f06538f0f9a33c",
+          "suggested_doc_key": "2026-07-new-york-city-to-become-first-in-us-to-ban-deceptive-subscription-practi-3bdd4de3",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-new-york-city-to-become-first-in-us-to-ban-deceptive-subscription-practi-3bdd4de3.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 310점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 176개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9e2f1d2080d30a99",
+          "title": "QuadRF can spot drones and see WiFi through my wall",
+          "normalized_url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall",
+          "url_hash": "9e2f1d2080d30a9967feb0f5a01d1ecdbf2866f02767de53094cad98fec098ce",
+          "suggested_doc_key": "2026-07-quadrf-can-spot-drones-and-see-wifi-through-my-wall-9e2f1d20",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-quadrf-can-spot-drones-and-see-wifi-through-my-wall-9e2f1d20.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 377점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 150개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:cbd395b29c731f14",
+          "title": "Write code like a human will maintain it",
+          "normalized_url": "https://unstack.io/write-code-like-a-human-will-maintain-it",
+          "url_hash": "cbd395b29c731f14d32e97a1089dd3cd56e508a9e860406ed020c33bdb997920",
+          "suggested_doc_key": "2026-07-write-code-like-a-human-will-maintain-it-cbd395b2",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-write-code-like-a-human-will-maintain-it-cbd395b2.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 318점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 260개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:521cb8f5727237af",
+          "title": "How Deutsche Telekom is rewiring telecommunications with AI",
+          "normalized_url": "https://openai.com/index/deutsche-telekom",
+          "url_hash": "521cb8f5727237af1c44feb4444334a2faf7dfcc9e7d53764a3e5fae7e59bce7",
+          "suggested_doc_key": "2026-07-how-deutsche-telekom-is-rewiring-telecommunications-with-ai-521cb8f5",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-how-deutsche-telekom-is-rewiring-telecommunications-with-ai-521cb8f5.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:07aa5a8a45a2217e",
+          "title": "GPT-5.5 Bio Bug Bounty",
+          "normalized_url": "https://openai.com/index/bio-bug-bounty",
+          "url_hash": "07aa5a8a45a2217e5772972678fa56c02f77d49321e968f0a655c7418e20c696",
+          "suggested_doc_key": "2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:617f45738c65d6ba",
+          "title": "Inside Genebench-Pro",
+          "normalized_url": "https://openai.com/index/genebench-pro/case-studies",
+          "url_hash": "617f45738c65d6baaf10b9cf1e236f3c65b852b2bfcb9c1fc405aff51e76af1d",
+          "suggested_doc_key": "2026-06-inside-genebench-pro-617f4573",
+          "suggested_article_path": "docs/services/openai-blog/2026-06-inside-genebench-pro-617f4573.md",
+          "candidate_score": 20.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 10일이 지난 글로 최신성 10점을 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 47
+      }
+    }
+  ]
+}
