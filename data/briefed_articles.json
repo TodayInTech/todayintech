@@ -2990,6 +2990,46 @@
       "status": "published",
       "briefed_at": "2026-07-10T23:01:02.091087Z",
       "candidate_score": 39.0
+    },
+    "93fceeb3ff8c2361bc7dd2c54747d158a12ce376727a3292909c62a4367974dd": {
+      "normalized_url": "https://www.theguardian.com/us-news/2026/jul/04/california-hawaii-rowing-solo-journey",
+      "title_fingerprint": "female us rower completes historic solo journey from california to hawaii",
+      "service_key": "hacker-news",
+      "title": "Female US rower completes historic solo journey from California to Hawaii",
+      "article_doc_path": "docs/services/hacker-news/2026-07-female-us-rower-completes-historic-solo-journey-from-california-to-hawai-93fceeb3.md",
+      "status": "published",
+      "briefed_at": "2026-07-11T22:45:38.923507Z",
+      "candidate_score": 59.2
+    },
+    "7afd7326cf524d5e4cdb116a17a42d27564238a250c9a4744894478773b78116": {
+      "normalized_url": "https://evanhahn.com/prefer-strict-tables-in-sqlite",
+      "title_fingerprint": "prefer strict tables in sqlite",
+      "service_key": "hacker-news",
+      "title": "Prefer strict tables in SQLite",
+      "article_doc_path": "docs/services/hacker-news/2026-07-prefer-strict-tables-in-sqlite-7afd7326.md",
+      "status": "published",
+      "briefed_at": "2026-07-11T22:45:38.923541Z",
+      "candidate_score": 59.1
+    },
+    "c3547331e720b325bbbbcd16f830f6666298d52ae495717850f07332f0ac95a2": {
+      "normalized_url": "https://geohot.github.io//blog/jekyll/update/2026/07/11/ai-2040.html",
+      "title_fingerprint": "ai 2040 and the cult of intelligence",
+      "service_key": "hacker-news",
+      "title": "AI 2040 and the cult of intelligence",
+      "article_doc_path": "docs/services/hacker-news/2026-07-ai-2040-and-the-cult-of-intelligence-c3547331.md",
+      "status": "published",
+      "briefed_at": "2026-07-11T22:45:38.923551Z",
+      "candidate_score": 58.9
+    },
+    "cef453d5d0ee4f0a45b8126f5368e7fab23df1a10a9976261367c06803be68fb": {
+      "normalized_url": "https://antjs.org/",
+      "title_fingerprint": "show hn ant a javascript runtime and ecosystem",
+      "service_key": "hacker-news",
+      "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
+      "article_doc_path": "docs/services/hacker-news/2026-07-show-hn-ant-a-javascript-runtime-and-ecosystem-cef453d5.md",
+      "status": "published",
+      "briefed_at": "2026-07-11T22:45:38.923557Z",
+      "candidate_score": 55.1
     }
   }
 }
