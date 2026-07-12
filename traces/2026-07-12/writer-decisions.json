@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-07-12T22:46:46.943244+00:00",
+  "generated_for": "2026-07-12",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "4fc79e925236e29717bc3578d17326301f8d27af",
+  "github_run_id": "29212002091",
+  "decision_count": 5,
+  "decision_counts": {
+    "published": 3,
+    "skipped": 2
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:398431a5f118d841",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+      "normalized_url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+      "article_doc_path": "docs/services/hacker-news/2026-07-claude-code-sends-33k-tokens-before-reading-the-prompt-opencode-sends-7k-398431a5.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 개발자 툴",
+      "importance_level": "높음",
+      "confidence_score": 0.83,
+      "summary_scope": "chunk_selection",
+      "publish_reason_ko": "동일한 모델·환경에서의 계측 데이터를 바탕으로 에이전트 허니스(Claude Code vs OpenCode)의 토큰 오버헤드, 캐시 행동, 실운영 구성(명령 파일·MCP·서브에이전트)이 비용·컨텍스트 예산에 미치는 영향을 구체적 수치로 제시해 기술 독자에게 실용적 인사이트를 제공하므로 게시 가치가 높습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0004",
+        "chunk-0005"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:bccddf2bab1ba522",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "I love LLMs, I hate hype",
+      "normalized_url": "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html",
+      "article_doc_path": "docs/services/hacker-news/2026-07-i-love-llms-i-hate-hype-bccddf2b.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "인공지능",
+      "importance_level": "중간",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "저자가 장기간 AI에 종사해온 배경에서 나온 실사용 경험(로컬 GLM-5.2 설치·구동, tmux 설정 등)과 함께, LLM과 관련된 낙관과 과장된 공포 서사를 동시에 비판하는 관점이 기술 독자에게 유용합니다. 프로그래밍 생산성 변화, 오픈소스·프론티어 랩의 가치 포획 문제, 실무에서의 피로도와 한계 등 기술적 쟁점을 다루어 독자 관심과 토론을 유도할 근거가 충분합니다. (출처: chunk-0001)",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:9f0e8ea0f31ae1ef",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Since Chromium 148, Math.tanh is now fingerprintable to link underlying OS",
+      "normalized_url": "https://scrapfly.dev/posts/browser-math-os-fingerprint",
+      "article_doc_path": "docs/services/hacker-news/2026-07-since-chromium-148-math-tanh-is-now-fingerprintable-to-link-underlying-o-9f0e8ea0.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "브라우저 보안·프라이버시",
+      "importance_level": "높음",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에서 Chromium 148 이후 Math.tanh가 운영체제 식별에 악용될 수 있다는 주제를 다루고 있음을 확인할 수 있으며, Hacker News에서 높은 관심(131점·52댓글)을 받은 기술적·프라이버시 이슈라 Today in Tech 독자에게 유의미하다고 판단했습니다. 원문 세부 근거는 메타데이터에만 제한되어 있어 본문 검토를 권고합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "normalized_url: https://scrapfly.dev/posts/browser-math-os-fingerprint",
+        "title: Since Chromium 148, Math.tanh is now fingerprintable to link underlying OS",
+        "feed_summary: Article URL: https://scrapfly.dev/posts/browser-math-os-fingerprint/ Comments URL: https://news.ycombinator.com/item?id=48884853 Points: 131 # Comments: 52",
+        "authors: [\"joahnn_s\"]",
+        "metadata.hn_points: 131",
+        "metadata.hn_comments: 52",
+        "published_at: 2026-07-12T21:12:11+00:00",
+        "collected_at: 2026-07-12T22:43:52.009703+00:00"
+      ],
+      "candidate_score": 55.5,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:cad321884f17b459",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Irish datacenters now guzzle 23% of the country's electricity",
+      "normalized_url": "https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013",
+      "article_doc_path": "docs/services/hacker-news/2026-07-irish-datacenters-now-guzzle-23-of-the-country-s-electricity-cad32188.md",
+      "status": "skipped",
+      "generation_method": "llm",
+      "category": "Energy/Datacenters",
+      "importance_level": "Medium",
+      "confidence_score": 0.25,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "",
+      "reject_reason_ko": "제공된 증거에 기사 본문이 포함되지 않아 제목의 주장(아일랜드 데이터센터가 국가 전력의 23% 사용)을 검증하거나 세부 근거·데이터 소스·시점·적용 범위를 확인할 수 없습니다. 기술 독자를 위한 구체적 수치 해석과 정책·인프라 영향 분석을 제시하기에 근거가 부족합니다.",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "metadata:title: Irish datacenters now guzzle 23% of the country's electricity"
+      ],
+      "candidate_score": 54.1,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:07aa5a8a45a2217e",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "normalized_url": "https://openai.com/index/bio-bug-bounty",
+      "article_doc_path": "docs/services/openai-blog/2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a.md",
+      "status": "skipped",
+      "generation_method": "llm",
+      "category": null,
+      "importance_level": null,
+      "confidence_score": null,
+      "summary_scope": null,
+      "publish_reason_ko": null,
+      "reject_reason_ko": null,
+      "evidence_basis_ko": [],
+      "candidate_score": 33.0,
+      "error_message": "Source returned HTTP 403"
+    }
+  ]
+}

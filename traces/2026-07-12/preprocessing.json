@@ -1,0 +1,240 @@
+{
+  "generated_at": "2026-07-12T22:43:02.654691+00:00",
+  "generated_for": "2026-07-12",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "4fc79e925236e29717bc3578d17326301f8d27af",
+  "github_run_id": "29212002091",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 21,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 21,
+      "output_count": 11,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:398431a5f118d841",
+          "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+          "normalized_url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+          "url_hash": "398431a5f118d841d6a8dd041caabbd674f935908d0bf2ed36b173c37cd5c111",
+          "suggested_doc_key": "2026-07-claude-code-sends-33k-tokens-before-reading-the-prompt-opencode-sends-7k-398431a5",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-claude-code-sends-33k-tokens-before-reading-the-prompt-opencode-sends-7k-398431a5.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 359점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 200개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:bccddf2bab1ba522",
+          "title": "I love LLMs, I hate hype",
+          "normalized_url": "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html",
+          "url_hash": "bccddf2bab1ba52291fe123edc5e821767fdcaa381d7ae782583400ffb064442",
+          "suggested_doc_key": "2026-07-i-love-llms-i-hate-hype-bccddf2b",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-i-love-llms-i-hate-hype-bccddf2b.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 256점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 141개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9f0e8ea0f31ae1ef",
+          "title": "Since Chromium 148, Math.tanh is now fingerprintable to link underlying OS",
+          "normalized_url": "https://scrapfly.dev/posts/browser-math-os-fingerprint",
+          "url_hash": "9f0e8ea0f31ae1efab2f3b6d94f1b77b3017e7557b8adbedb43980de0002b8cc",
+          "suggested_doc_key": "2026-07-since-chromium-148-math-tanh-is-now-fingerprintable-to-link-underlying-o-9f0e8ea0",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-since-chromium-148-math-tanh-is-now-fingerprintable-to-link-underlying-o-9f0e8ea0.md",
+          "candidate_score": 55.5,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 131점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 52개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:cad321884f17b459",
+          "title": "Irish datacenters now guzzle 23% of the country's electricity",
+          "normalized_url": "https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013",
+          "url_hash": "cad321884f17b459682a50fbf819c1fde1c5e6dd826cc689edc173b2981c3ed4",
+          "suggested_doc_key": "2026-07-irish-datacenters-now-guzzle-23-of-the-country-s-electricity-cad32188",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-irish-datacenters-now-guzzle-23-of-the-country-s-electricity-cad32188.md",
+          "candidate_score": 54.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 131점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 81개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:352a8d1c84ac268d",
+          "title": "Mechanistic interpretability researchers applying causality theory to LLMs",
+          "normalized_url": "https://cacm.acm.org/news/can-we-understand-how-large-language-models-reason",
+          "url_hash": "352a8d1c84ac268d6baa1be86d55cdb53c085da95fd7e665fae7af5f9243a37d",
+          "suggested_doc_key": "2026-07-mechanistic-interpretability-researchers-applying-causality-theory-to-ll-352a8d1c",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-mechanistic-interpretability-researchers-applying-causality-theory-to-ll-352a8d1c.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 66점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 57개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:07aa5a8a45a2217e",
+          "title": "GPT-5.5 Bio Bug Bounty",
+          "normalized_url": "https://openai.com/index/bio-bug-bounty",
+          "url_hash": "07aa5a8a45a2217e5772972678fa56c02f77d49321e968f0a655c7418e20c696",
+          "suggested_doc_key": "2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 48,
+        "low_quality": 1
+      }
+    }
+  ]
+}
