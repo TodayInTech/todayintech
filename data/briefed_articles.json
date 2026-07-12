@@ -3030,6 +3030,36 @@
       "status": "published",
       "briefed_at": "2026-07-11T22:45:38.923557Z",
       "candidate_score": 55.1
+    },
+    "398431a5f118d841d6a8dd041caabbd674f935908d0bf2ed36b173c37cd5c111": {
+      "normalized_url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+      "title_fingerprint": "claude code sends 33k tokens before reading the prompt opencode sends 7k",
+      "service_key": "hacker-news",
+      "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+      "article_doc_path": "docs/services/hacker-news/2026-07-claude-code-sends-33k-tokens-before-reading-the-prompt-opencode-sends-7k-398431a5.md",
+      "status": "published",
+      "briefed_at": "2026-07-12T22:46:46.850601Z",
+      "candidate_score": 65.0
+    },
+    "bccddf2bab1ba52291fe123edc5e821767fdcaa381d7ae782583400ffb064442": {
+      "normalized_url": "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html",
+      "title_fingerprint": "i love llms i hate hype",
+      "service_key": "hacker-news",
+      "title": "I love LLMs, I hate hype",
+      "article_doc_path": "docs/services/hacker-news/2026-07-i-love-llms-i-hate-hype-bccddf2b.md",
+      "status": "published",
+      "briefed_at": "2026-07-12T22:46:46.850738Z",
+      "candidate_score": 60.0
+    },
+    "9f0e8ea0f31ae1efab2f3b6d94f1b77b3017e7557b8adbedb43980de0002b8cc": {
+      "normalized_url": "https://scrapfly.dev/posts/browser-math-os-fingerprint",
+      "title_fingerprint": "since chromium 148 math tanh is now fingerprintable to link underlying os",
+      "service_key": "hacker-news",
+      "title": "Since Chromium 148, Math.tanh is now fingerprintable to link underlying OS",
+      "article_doc_path": "docs/services/hacker-news/2026-07-since-chromium-148-math-tanh-is-now-fingerprintable-to-link-underlying-o-9f0e8ea0.md",
+      "status": "published",
+      "briefed_at": "2026-07-12T22:46:46.850755Z",
+      "candidate_score": 55.5
     }
   }
 }
