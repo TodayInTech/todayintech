@@ -1,0 +1,281 @@
+{
+  "generated_at": "2026-07-13T22:52:48.079560+00:00",
+  "generated_for": "2026-07-13",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "9fea56ccba52a20016cda19aff295b7a8f8e3f53",
+  "github_run_id": "29291183172",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 14,
+  "excluded_count": 106,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 25,
+      "excluded_count": 95,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 95
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 25,
+      "output_count": 24,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 24,
+      "output_count": 14,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:8330c219eab8f928",
+          "title": "Claude for Creative Work",
+          "normalized_url": "https://www.anthropic.com/news/claude-for-creative-work",
+          "url_hash": "8330c219eab8f9285b180d364258f0a236ef9a40decac373cb2eb6ca8a00a64f",
+          "suggested_doc_key": "2026-07-claude-for-creative-work-8330c219",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-claude-for-creative-work-8330c219.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:67c81557e07f61f4",
+          "title": "Anthropic Sydney office",
+          "normalized_url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
+          "url_hash": "67c81557e07f61f416f7fd4b1ebbd925392ae3134e0c6ba1532e19994fd4796e",
+          "suggested_doc_key": "2026-07-anthropic-sydney-office-67c81557",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-anthropic-sydney-office-67c81557.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:4b26bc6796b4025e",
+          "title": "Climate.gov was destroyed. Open data saved it",
+          "normalized_url": "https://werd.io/climate-gov-was-destroyed-open-data-saved-it",
+          "url_hash": "4b26bc6796b4025ef355ea7a2619302f26bf5898fa5d77b90636086a61f9c4e6",
+          "suggested_doc_key": "2026-07-climate-gov-was-destroyed-open-data-saved-it-4b26bc67",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-climate-gov-was-destroyed-open-data-saved-it-4b26bc67.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 333점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 132개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8e7b66a42e7f5b26",
+          "title": "Building and Shipping Mac and iOS Apps Without Ever Opening Xcode",
+          "normalized_url": "https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode",
+          "url_hash": "8e7b66a42e7f5b264e762b25db397d381f824ad469f8f4b56c9cd1226359fd21",
+          "suggested_doc_key": "2026-07-building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode-8e7b66a4",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode-8e7b66a4.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 208점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 96개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d44bf35614bff66a",
+          "title": "Telegram's t.me domain has been suspended",
+          "normalized_url": "https://www.whois.com/whois/t.me",
+          "url_hash": "d44bf35614bff66aeff9a9c6d9328f3f46c0fe2268d657de364d3e751276bcb0",
+          "suggested_doc_key": "2026-07-telegram-s-t-me-domain-has-been-suspended-d44bf356",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-telegram-s-t-me-domain-has-been-suspended-d44bf356.md",
+          "candidate_score": 59.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 194점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 103개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c328c8ca299f5a2b",
+          "title": "Samsung Health app threatens data deletion if users opt out AI training",
+          "normalized_url": "https://neow.in/cWsyMTV3",
+          "url_hash": "c328c8ca299f5a2b38c3e8976204fa960f187d201712a208a9576b0618d89ba3",
+          "suggested_doc_key": "2026-07-samsung-health-app-threatens-data-deletion-if-users-opt-out-ai-training-c328c8ca",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-samsung-health-app-threatens-data-deletion-if-users-opt-out-ai-training-c328c8ca.md",
+          "candidate_score": 55.5,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 181점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 52개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0506b502ea584c7f",
+          "title": "The real prices of frontier models. Tokens * Price, right?",
+          "normalized_url": "https://playcode.io/blog/real-price-of-frontier-models",
+          "url_hash": "0506b502ea584c7f42a2f79739a53ed06c1ed96aa20c295c8615d2e15dd06c17",
+          "suggested_doc_key": "2026-07-the-real-prices-of-frontier-models-tokens-price-right-0506b502",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-the-real-prices-of-frontier-models-tokens-price-right-0506b502.md",
+          "candidate_score": 55.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 130점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 61개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 2,
+      "excluded_count": 48,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:aa67bf587bd0c123",
+          "title": "Getting started with ChatGPT",
+          "normalized_url": "https://openai.com/academy/getting-started",
+          "url_hash": "aa67bf587bd0c123b390ee5710d3ff93dc86f42fbae315d988bd4ea3911d1327",
+          "suggested_doc_key": "2026-07-getting-started-with-chatgpt-aa67bf58",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-getting-started-with-chatgpt-aa67bf58.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:07aa5a8a45a2217e",
+          "title": "GPT-5.5 Bio Bug Bounty",
+          "normalized_url": "https://openai.com/index/bio-bug-bounty",
+          "url_hash": "07aa5a8a45a2217e5772972678fa56c02f77d49321e968f0a655c7418e20c696",
+          "suggested_doc_key": "2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 47,
+        "low_quality": 1
+      }
+    }
+  ]
+}
