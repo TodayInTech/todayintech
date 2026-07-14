@@ -3120,6 +3120,126 @@
       "status": "published",
       "briefed_at": "2026-07-13T22:56:23.558215Z",
       "candidate_score": 55.5
+    },
+    "ad504bbdb221cc4452d27ee2dfd03c57cd285216e23fd4a4f7774231843af948": {
+      "normalized_url": "https://www.anthropic.com/news/claude-for-teachers",
+      "title_fingerprint": "introducing claude for teachers",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Claude for Teachers",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-introducing-claude-for-teachers-ad504bbd.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836391Z",
+      "candidate_score": 30.0
+    },
+    "0221b1d0649ec5f26c7eb99e765b98a519ac31a5131a6699024d06927a5192b4": {
+      "normalized_url": "https://www.anthropic.com/news/canadian-ai-research",
+      "title_fingerprint": "anthropic commits 10 million to canadian ai research",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic commits $10 million to Canadian AI research",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-anthropic-commits-10-million-to-canadian-ai-research-0221b1d0.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836434Z",
+      "candidate_score": 30.0
+    },
+    "bbfc4b37a73bf4793d60e253b028bd89406902fbd3099bb0efcf2fabefe48289": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary",
+      "title_fingerprint": "celebrating 25 years of visual search innovation",
+      "service_key": "google-blog",
+      "title": "Celebrating 25 years of visual search innovation",
+      "article_doc_path": "docs/services/google-blog/2026-07-celebrating-25-years-of-visual-search-innovation-bbfc4b37.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836447Z",
+      "candidate_score": 36.0
+    },
+    "9947dc4991f0591df0ed811f8d160d4e63aa0d097a5199d98cdee69d08f9b73a": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/reconstructing-peles-lost-goal",
+      "title_fingerprint": "reconstructing pel s lost goal",
+      "service_key": "google-blog",
+      "title": "Reconstructing Pelé’s “lost” goal",
+      "article_doc_path": "docs/services/google-blog/2026-07-reconstructing-pel-s-lost-goal-9947dc49.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836458Z",
+      "candidate_score": 35.0
+    },
+    "a0bc0f630680e91c459464a27ded2b00432c6ada7521b1f238629bab02e00e62": {
+      "normalized_url": "https://prismml.com/news/bonsai-27b",
+      "title_fingerprint": "bonsai 27b a 27b class model that runs on a phone",
+      "service_key": "hacker-news",
+      "title": "Bonsai 27B: A 27B-Class model that runs on a phone",
+      "article_doc_path": "docs/services/hacker-news/2026-07-bonsai-27b-a-27b-class-model-that-runs-on-a-phone-a0bc0f63.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836464Z",
+      "candidate_score": 67.0
+    },
+    "633cb3c8ca6c0718fa238d091fdccc02236c4a8daf9f9a4483d2cdf9a282bdaf": {
+      "normalized_url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising",
+      "title_fingerprint": "the tower keeps rising",
+      "service_key": "hacker-news",
+      "title": "The Tower Keeps Rising",
+      "article_doc_path": "docs/services/hacker-news/2026-07-the-tower-keeps-rising-633cb3c8.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836469Z",
+      "candidate_score": 60.0
+    },
+    "bfca9a1ad5375ccdbdf06eed5e0b73a9fede5d5ded64646be7e2ea5dc9cd97f8": {
+      "normalized_url": "https://marco-nett.de/blog/measuring-input-latency-on-linux-x11-vs-wayland-vrr-dxvk",
+      "title_fingerprint": "measuring input latency on linux x11 vs wayland vrr and dxvk",
+      "service_key": "hacker-news",
+      "title": "Measuring Input Latency on Linux: X11 vs. Wayland, VRR, and DXVK",
+      "article_doc_path": "docs/services/hacker-news/2026-07-measuring-input-latency-on-linux-x11-vs-wayland-vrr-and-dxvk-bfca9a1a.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836474Z",
+      "candidate_score": 60.0
+    },
+    "44a5172373879ebb36772b5ae0db4db4d9422636db9ed6cf3193b9a096498cc9": {
+      "normalized_url": "https://www.artfish.ai/p/offloading-thinking-to-ai",
+      "title_fingerprint": "are we offloading too much of our thinking to ai",
+      "service_key": "hacker-news",
+      "title": "Are we offloading too much of our thinking to AI?",
+      "article_doc_path": "docs/services/hacker-news/2026-07-are-we-offloading-too-much-of-our-thinking-to-ai-44a51723.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836479Z",
+      "candidate_score": 60.0
+    },
+    "0a5ca4c5b5238e08c45b818d5135ff075ac35b68528c7905c2a7a4bb897743f6": {
+      "normalized_url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+      "title_fingerprint": "how to manage ai investments in the agentic era",
+      "service_key": "openai-blog",
+      "title": "How to manage AI investments in the agentic era",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-to-manage-ai-investments-in-the-agentic-era-0a5ca4c5.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836484Z",
+      "candidate_score": 44.0
+    },
+    "578b3bdf5cbf1347ed534ff365f939bb7a31c354b068847f1423cc4e4796657a": {
+      "normalized_url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+      "title_fingerprint": "how data science teams use chatgpt work",
+      "service_key": "openai-blog",
+      "title": "How data science teams use ChatGPT Work",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-data-science-teams-use-chatgpt-work-578b3bdf.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836489Z",
+      "candidate_score": 38.0
+    },
+    "0090139282200a1d4cfac34ab586cc18df96a0ee157d791444ae330f7c6dab83": {
+      "normalized_url": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+      "title_fingerprint": "how sales teams use chatgpt work",
+      "service_key": "openai-blog",
+      "title": "How sales teams use ChatGPT Work",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-sales-teams-use-chatgpt-work-00901392.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836494Z",
+      "candidate_score": 37.0
+    },
+    "aa67bf587bd0c123b390ee5710d3ff93dc86f42fbae315d988bd4ea3911d1327": {
+      "normalized_url": "https://openai.com/academy/getting-started",
+      "title_fingerprint": "getting started with chatgpt",
+      "service_key": "openai-blog",
+      "title": "Getting started with ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-07-getting-started-with-chatgpt-aa67bf58.md",
+      "status": "published",
+      "briefed_at": "2026-07-14T22:59:04.836498Z",
+      "candidate_score": 31.0
     }
   }
 }
