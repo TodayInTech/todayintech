@@ -1,0 +1,353 @@
+{
+  "generated_at": "2026-07-14T22:54:24.835561+00:00",
+  "generated_for": "2026-07-14",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "9ffce6052d17e1cbaa0148a2edea022706a3efec",
+  "github_run_id": "29374384210",
+  "service_count": 5,
+  "duration_ms": 8,
+  "raw_count": 120,
+  "candidate_count": 19,
+  "excluded_count": 101,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 30,
+      "excluded_count": 90,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 90
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 30,
+      "output_count": 30,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 30,
+      "output_count": 29,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 29,
+      "output_count": 19,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:ad504bbdb221cc44",
+          "title": "Introducing Claude for Teachers",
+          "normalized_url": "https://www.anthropic.com/news/claude-for-teachers",
+          "url_hash": "ad504bbdb221cc4452d27ee2dfd03c57cd285216e23fd4a4f7774231843af948",
+          "suggested_doc_key": "2026-07-introducing-claude-for-teachers-ad504bbd",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-introducing-claude-for-teachers-ad504bbd.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:0221b1d0649ec5f2",
+          "title": "Anthropic commits $10 million to Canadian AI research",
+          "normalized_url": "https://www.anthropic.com/news/canadian-ai-research",
+          "url_hash": "0221b1d0649ec5f26c7eb99e765b98a519ac31a5131a6699024d06927a5192b4",
+          "suggested_doc_key": "2026-07-anthropic-commits-10-million-to-canadian-ai-research-0221b1d0",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-anthropic-commits-10-million-to-canadian-ai-research-0221b1d0.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:bbfc4b37a73bf479",
+          "title": "Celebrating 25 years of visual search innovation",
+          "normalized_url": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary",
+          "url_hash": "bbfc4b37a73bf4793d60e253b028bd89406902fbd3099bb0efcf2fabefe48289",
+          "suggested_doc_key": "2026-07-celebrating-25-years-of-visual-search-innovation-bbfc4b37",
+          "suggested_article_path": "docs/services/google-blog/2026-07-celebrating-25-years-of-visual-search-innovation-bbfc4b37.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:9947dc4991f0591d",
+          "title": "Reconstructing Pelé’s “lost” goal",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/reconstructing-peles-lost-goal",
+          "url_hash": "9947dc4991f0591df0ed811f8d160d4e63aa0d097a5199d98cdee69d08f9b73a",
+          "suggested_doc_key": "2026-07-reconstructing-pel-s-lost-goal-9947dc49",
+          "suggested_article_path": "docs/services/google-blog/2026-07-reconstructing-pel-s-lost-goal-9947dc49.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:a0bc0f630680e91c",
+          "title": "Bonsai 27B: A 27B-Class model that runs on a phone",
+          "normalized_url": "https://prismml.com/news/bonsai-27b",
+          "url_hash": "a0bc0f630680e91c459464a27ded2b00432c6ada7521b1f238629bab02e00e62",
+          "suggested_doc_key": "2026-07-bonsai-27b-a-27b-class-model-that-runs-on-a-phone-a0bc0f63",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-bonsai-27b-a-27b-class-model-that-runs-on-a-phone-a0bc0f63.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 317점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 110개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:633cb3c8ca6c0718",
+          "title": "The Tower Keeps Rising",
+          "normalized_url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising",
+          "url_hash": "633cb3c8ca6c0718fa238d091fdccc02236c4a8daf9f9a4483d2cdf9a282bdaf",
+          "suggested_doc_key": "2026-07-the-tower-keeps-rising-633cb3c8",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-the-tower-keeps-rising-633cb3c8.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 285점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 141개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:bfca9a1ad5375ccd",
+          "title": "Measuring Input Latency on Linux: X11 vs. Wayland, VRR, and DXVK",
+          "normalized_url": "https://marco-nett.de/blog/measuring-input-latency-on-linux-x11-vs-wayland-vrr-dxvk",
+          "url_hash": "bfca9a1ad5375ccdbdf06eed5e0b73a9fede5d5ded64646be7e2ea5dc9cd97f8",
+          "suggested_doc_key": "2026-07-measuring-input-latency-on-linux-x11-vs-wayland-vrr-and-dxvk-bfca9a1a",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-measuring-input-latency-on-linux-x11-vs-wayland-vrr-and-dxvk-bfca9a1a.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 329점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 205개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:44a5172373879ebb",
+          "title": "Are we offloading too much of our thinking to AI?",
+          "normalized_url": "https://www.artfish.ai/p/offloading-thinking-to-ai",
+          "url_hash": "44a5172373879ebb36772b5ae0db4db4d9422636db9ed6cf3193b9a096498cc9",
+          "suggested_doc_key": "2026-07-are-we-offloading-too-much-of-our-thinking-to-ai-44a51723",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-are-we-offloading-too-much-of-our-thinking-to-ai-44a51723.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 341점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 332개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7f97d56bb8a605fc",
+          "title": "How to stop Claude from saying load-bearing",
+          "normalized_url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+          "url_hash": "7f97d56bb8a605fc8a9373269c5db0a6dc85ea7f27e2a51982e73138cc44ef98",
+          "suggested_doc_key": "2026-07-how-to-stop-claude-from-saying-load-bearing-7f97d56b",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-how-to-stop-claude-from-saying-load-bearing-7f97d56b.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 390점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 446개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:0a5ca4c5b5238e08",
+          "title": "How to manage AI investments in the agentic era",
+          "normalized_url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+          "url_hash": "0a5ca4c5b5238e08c45b818d5135ff075ac35b68528c7905c2a7a4bb897743f6",
+          "suggested_doc_key": "2026-07-how-to-manage-ai-investments-in-the-agentic-era-0a5ca4c5",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-how-to-manage-ai-investments-in-the-agentic-era-0a5ca4c5.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:578b3bdf5cbf1347",
+          "title": "How data science teams use ChatGPT Work",
+          "normalized_url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+          "url_hash": "578b3bdf5cbf1347ed534ff365f939bb7a31c354b068847f1423cc4e4796657a",
+          "suggested_doc_key": "2026-07-how-data-science-teams-use-chatgpt-work-578b3bdf",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-how-data-science-teams-use-chatgpt-work-578b3bdf.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:0090139282200a1d",
+          "title": "How sales teams use ChatGPT Work",
+          "normalized_url": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+          "url_hash": "0090139282200a1d4cfac34ab586cc18df96a0ee157d791444ae330f7c6dab83",
+          "suggested_doc_key": "2026-07-how-sales-teams-use-chatgpt-work-00901392",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-how-sales-teams-use-chatgpt-work-00901392.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:aa67bf587bd0c123",
+          "title": "Getting started with ChatGPT",
+          "normalized_url": "https://openai.com/academy/getting-started",
+          "url_hash": "aa67bf587bd0c123b390ee5710d3ff93dc86f42fbae315d988bd4ea3911d1327",
+          "suggested_doc_key": "2026-07-getting-started-with-chatgpt-aa67bf58",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-getting-started-with-chatgpt-aa67bf58.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 4일이 지난 글로 최신성 16점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:07aa5a8a45a2217e",
+          "title": "GPT-5.5 Bio Bug Bounty",
+          "normalized_url": "https://openai.com/index/bio-bug-bounty",
+          "url_hash": "07aa5a8a45a2217e5772972678fa56c02f77d49321e968f0a655c7418e20c696",
+          "suggested_doc_key": "2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a.md",
+          "candidate_score": 27.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 4일이 지난 글로 최신성 16점을 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 44,
+        "low_quality": 1
+      }
+    }
+  ]
+}
