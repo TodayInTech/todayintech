@@ -1,0 +1,298 @@
+{
+  "generated_at": "2026-07-15T22:55:59.328506+00:00",
+  "generated_for": "2026-07-15",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "f1d785a23220a904fd22dd064ccc1574a41ca38d",
+  "github_run_id": "29456884673",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 26,
+      "excluded_count": 94,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 94
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 26,
+      "output_count": 26,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 26,
+      "output_count": 25,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 25,
+      "output_count": 15,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:8147e5470addb193",
+          "title": "Agents for financial services",
+          "normalized_url": "https://www.anthropic.com/news/finance-agents",
+          "url_hash": "8147e5470addb19351bca535a3f7596ad05ebcf4f49e4d8933729ca939afe33b",
+          "suggested_doc_key": "2026-07-agents-for-financial-services-8147e547",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-agents-for-financial-services-8147e547.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:302e367f0d3b6017",
+          "title": "GitHub for Beginners: Your roadmap to mastering the GitHub essentials",
+          "normalized_url": "https://github.blog/developer-skills/github/github-for-beginners-your-roadmap-to-mastering-the-github-essentials",
+          "url_hash": "302e367f0d3b6017380e4892dedb86637171ff71a6ae143d428adfffac1f9f31",
+          "suggested_doc_key": "2026-07-github-for-beginners-your-roadmap-to-mastering-the-github-essentials-302e367f",
+          "suggested_article_path": "docs/services/github-blog/2026-07-github-for-beginners-your-roadmap-to-mastering-the-github-essentials-302e367f.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:06531d4a7a0bcc74",
+          "title": "Inkling: Our Open-Weights Model",
+          "normalized_url": "https://thinkingmachines.ai/news/introducing-inkling",
+          "url_hash": "06531d4a7a0bcc744530e4c6bf7042ef09b48194ab2e9739d9aac68704ce9520",
+          "suggested_doc_key": "2026-07-inkling-our-open-weights-model-06531d4a",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-inkling-our-open-weights-model-06531d4a.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 502점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 124개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d7efcab6ba2cc61a",
+          "title": "Running Gemma 4 26B at 5 tokens/sec on a 13-year-old Xeon with no GPU",
+          "normalized_url": "https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu",
+          "url_hash": "d7efcab6ba2cc61a0f37dfa560e1a8a1bd20a3719e482ec8284abe0ebd22051b",
+          "suggested_doc_key": "2026-07-running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu-d7efcab6",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu-d7efcab6.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 206점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 128개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:32e9830d61cd1a68",
+          "title": "Mysteries of Telegram Data Centers (2022)",
+          "normalized_url": "https://dev.moe/en/3025",
+          "url_hash": "32e9830d61cd1a6881f90c7d99de59b2e805a7eb6de3f8c8d85bf9cadeff5064",
+          "suggested_doc_key": "2026-07-mysteries-of-telegram-data-centers-2022-32e9830d",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-mysteries-of-telegram-data-centers-2022-32e9830d.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 225점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 117개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:655dbcb47c5facdc",
+          "title": "Prioritize mental health, and why communication is so important",
+          "normalized_url": "https://ramones.dev/posts/mental-health",
+          "url_hash": "655dbcb47c5facdcade695b63de341df374f785e95cbdf3e097d0468de2177c0",
+          "suggested_doc_key": "2026-07-prioritize-mental-health-and-why-communication-is-so-important-655dbcb4",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-prioritize-mental-health-and-why-communication-is-so-important-655dbcb4.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 264점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 222개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:cc7d258f82fc4f05",
+          "title": "Grok Build",
+          "normalized_url": "https://github.com/xai-org/grok-build",
+          "url_hash": "cc7d258f82fc4f0550191f315b02c42e4a3c072042a3d154cf5667e8f7654507",
+          "suggested_doc_key": "2026-07-grok-build-cc7d258f",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-grok-build-cc7d258f.md",
+          "candidate_score": 57.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 143점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 160개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:23b1197c74335456",
+          "title": "The US is advancing AI safety through state and federal action",
+          "normalized_url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+          "url_hash": "23b1197c74335456a9552d5a5661cf050c548ca7ee725da5e63d6be172adcf52",
+          "suggested_doc_key": "2026-07-the-us-is-advancing-ai-safety-through-state-and-federal-action-23b1197c",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-the-us-is-advancing-ai-safety-through-state-and-federal-action-23b1197c.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:f8df3e0d3cc81402",
+          "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+          "normalized_url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+          "url_hash": "f8df3e0d3cc81402169fbdee61bfd5fe093e09e8ae9a90ce6327c888ac618438",
+          "suggested_doc_key": "2026-07-gpt-red-unlocking-self-improvement-for-robustness-f8df3e0d",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-red-unlocking-self-improvement-for-robustness-f8df3e0d.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:07aa5a8a45a2217e",
+          "title": "GPT-5.5 Bio Bug Bounty",
+          "normalized_url": "https://openai.com/index/bio-bug-bounty",
+          "url_hash": "07aa5a8a45a2217e5772972678fa56c02f77d49321e968f0a655c7418e20c696",
+          "suggested_doc_key": "2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a.md",
+          "candidate_score": 25.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 5일이 지난 글로 최신성 15점을 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 46,
+        "low_quality": 1
+      }
+    }
+  ]
+}
