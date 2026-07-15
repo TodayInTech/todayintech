@@ -3240,6 +3240,86 @@
       "status": "published",
       "briefed_at": "2026-07-14T22:59:04.836498Z",
       "candidate_score": 31.0
+    },
+    "8147e5470addb19351bca535a3f7596ad05ebcf4f49e4d8933729ca939afe33b": {
+      "normalized_url": "https://www.anthropic.com/news/finance-agents",
+      "title_fingerprint": "agents for financial services",
+      "service_key": "anthropic-blog",
+      "title": "Agents for financial services",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-agents-for-financial-services-8147e547.md",
+      "status": "published",
+      "briefed_at": "2026-07-15T23:00:18.084299Z",
+      "candidate_score": 35.0
+    },
+    "302e367f0d3b6017380e4892dedb86637171ff71a6ae143d428adfffac1f9f31": {
+      "normalized_url": "https://github.blog/developer-skills/github/github-for-beginners-your-roadmap-to-mastering-the-github-essentials",
+      "title_fingerprint": "github for beginners your roadmap to mastering the github essentials",
+      "service_key": "github-blog",
+      "title": "GitHub for Beginners: Your roadmap to mastering the GitHub essentials",
+      "article_doc_path": "docs/services/github-blog/2026-07-github-for-beginners-your-roadmap-to-mastering-the-github-essentials-302e367f.md",
+      "status": "published",
+      "briefed_at": "2026-07-15T23:00:18.084340Z",
+      "candidate_score": 37.0
+    },
+    "06531d4a7a0bcc744530e4c6bf7042ef09b48194ab2e9739d9aac68704ce9520": {
+      "normalized_url": "https://thinkingmachines.ai/news/introducing-inkling",
+      "title_fingerprint": "inkling our open weights model",
+      "service_key": "hacker-news",
+      "title": "Inkling: Our Open-Weights Model",
+      "article_doc_path": "docs/services/hacker-news/2026-07-inkling-our-open-weights-model-06531d4a.md",
+      "status": "published",
+      "briefed_at": "2026-07-15T23:00:18.084353Z",
+      "candidate_score": 65.0
+    },
+    "d7efcab6ba2cc61a0f37dfa560e1a8a1bd20a3719e482ec8284abe0ebd22051b": {
+      "normalized_url": "https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu",
+      "title_fingerprint": "running gemma 4 26b at 5 tokens sec on a 13 year old xeon with no gpu",
+      "service_key": "hacker-news",
+      "title": "Running Gemma 4 26B at 5 tokens/sec on a 13-year-old Xeon with no GPU",
+      "article_doc_path": "docs/services/hacker-news/2026-07-running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu-d7efcab6.md",
+      "status": "published",
+      "briefed_at": "2026-07-15T23:00:18.084361Z",
+      "candidate_score": 60.0
+    },
+    "32e9830d61cd1a6881f90c7d99de59b2e805a7eb6de3f8c8d85bf9cadeff5064": {
+      "normalized_url": "https://dev.moe/en/3025",
+      "title_fingerprint": "mysteries of telegram data centers 2022",
+      "service_key": "hacker-news",
+      "title": "Mysteries of Telegram Data Centers (2022)",
+      "article_doc_path": "docs/services/hacker-news/2026-07-mysteries-of-telegram-data-centers-2022-32e9830d.md",
+      "status": "published",
+      "briefed_at": "2026-07-15T23:00:18.084368Z",
+      "candidate_score": 60.0
+    },
+    "655dbcb47c5facdcade695b63de341df374f785e95cbdf3e097d0468de2177c0": {
+      "normalized_url": "https://ramones.dev/posts/mental-health",
+      "title_fingerprint": "prioritize mental health and why communication is so important",
+      "service_key": "hacker-news",
+      "title": "Prioritize mental health, and why communication is so important",
+      "article_doc_path": "docs/services/hacker-news/2026-07-prioritize-mental-health-and-why-communication-is-so-important-655dbcb4.md",
+      "status": "published",
+      "briefed_at": "2026-07-15T23:00:18.084375Z",
+      "candidate_score": 60.0
+    },
+    "23b1197c74335456a9552d5a5661cf050c548ca7ee725da5e63d6be172adcf52": {
+      "normalized_url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+      "title_fingerprint": "the us is advancing ai safety through state and federal action",
+      "service_key": "openai-blog",
+      "title": "The US is advancing AI safety through state and federal action",
+      "article_doc_path": "docs/services/openai-blog/2026-07-the-us-is-advancing-ai-safety-through-state-and-federal-action-23b1197c.md",
+      "status": "published",
+      "briefed_at": "2026-07-15T23:00:18.084382Z",
+      "candidate_score": 39.0
+    },
+    "f8df3e0d3cc81402169fbdee61bfd5fe093e09e8ae9a90ce6327c888ac618438": {
+      "normalized_url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "title_fingerprint": "gpt red unlocking self improvement for robustness",
+      "service_key": "openai-blog",
+      "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+      "article_doc_path": "docs/services/openai-blog/2026-07-gpt-red-unlocking-self-improvement-for-robustness-f8df3e0d.md",
+      "status": "published",
+      "briefed_at": "2026-07-15T23:00:18.084389Z",
+      "candidate_score": 38.0
     }
   }
 }
