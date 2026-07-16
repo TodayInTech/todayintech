@@ -3320,6 +3320,86 @@
       "status": "published",
       "briefed_at": "2026-07-15T23:00:18.084389Z",
       "candidate_score": 38.0
+    },
+    "23c6974aa4b45f04208cef5732953c5bccf0696f9e325733a6d69c1477dfced8": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/search/connected-apps",
+      "title_fingerprint": "connect more of your apps to search",
+      "service_key": "google-blog",
+      "title": "Connect more of your apps to Search",
+      "article_doc_path": "docs/services/google-blog/2026-07-connect-more-of-your-apps-to-search-23c6974a.md",
+      "status": "published",
+      "briefed_at": "2026-07-16T22:58:21.365428Z",
+      "candidate_score": 36.0
+    },
+    "0560403cacf5a7a127ad3346cf7cb4d95f0f91a7608124c700ae51ada640df2f": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars",
+      "title_fingerprint": "create edit and star in videos with two google vids updates",
+      "service_key": "google-blog",
+      "title": "Create, edit and star in videos with two Google Vids updates",
+      "article_doc_path": "docs/services/google-blog/2026-07-create-edit-and-star-in-videos-with-two-google-vids-updates-0560403c.md",
+      "status": "published",
+      "briefed_at": "2026-07-16T22:58:21.365490Z",
+      "candidate_score": 35.0
+    },
+    "7eac6faba30590a128e1c5e4a7f91de33979e6ca09e6f3b77f895c3c1d0394ad": {
+      "normalized_url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source",
+      "title_fingerprint": "microsoft comic chat is now open source",
+      "service_key": "hacker-news",
+      "title": "Microsoft Comic Chat is now open source",
+      "article_doc_path": "docs/services/hacker-news/2026-07-microsoft-comic-chat-is-now-open-source-7eac6fab.md",
+      "status": "published",
+      "briefed_at": "2026-07-16T22:58:21.365500Z",
+      "candidate_score": 65.0
+    },
+    "14acc7b6b8ee242976567fafa942b9f1163d0600794f1f11c38a031fba04176f": {
+      "normalized_url": "https://www.mixfont.com/experiments/decoy-font",
+      "title_fingerprint": "decoy font",
+      "service_key": "hacker-news",
+      "title": "Decoy Font",
+      "article_doc_path": "docs/services/hacker-news/2026-07-decoy-font-14acc7b6.md",
+      "status": "published",
+      "briefed_at": "2026-07-16T22:58:21.365507Z",
+      "candidate_score": 60.0
+    },
+    "7a40a45d7b6d5907da2ae7e1376258e933c0fe0c0421e480ef2915fa9f7ecd66": {
+      "normalized_url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook",
+      "title_fingerprint": "notebooklm is now gemini notebook",
+      "service_key": "hacker-news",
+      "title": "NotebookLM is now Gemini Notebook",
+      "article_doc_path": "docs/services/hacker-news/2026-07-notebooklm-is-now-gemini-notebook-7a40a45d.md",
+      "status": "published",
+      "briefed_at": "2026-07-16T22:58:21.365512Z",
+      "candidate_score": 59.6
+    },
+    "30068d7445a6d923138f19e9264cf944e49e477eaf384b809aad389d55f4687c": {
+      "normalized_url": "https://blog.lyc8503.net/en/post/llm-classifier",
+      "title_fingerprint": "detecting llm generated texts with classical machine learning",
+      "service_key": "hacker-news",
+      "title": "Detecting LLM-Generated Texts with “Classical” Machine Learning",
+      "article_doc_path": "docs/services/hacker-news/2026-07-detecting-llm-generated-texts-with-classical-machine-learning-30068d74.md",
+      "status": "published",
+      "briefed_at": "2026-07-16T22:58:21.365518Z",
+      "candidate_score": 52.7
+    },
+    "f47e8f0dcf67a37eae93618a0a25f51216c505f634e7722ae5be0eba4f7ac180": {
+      "normalized_url": "https://openai.com/index/cars24",
+      "title_fingerprint": "how cars24 scales conversations and builds faster with openai",
+      "service_key": "openai-blog",
+      "title": "How Cars24 scales conversations and builds faster with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-cars24-scales-conversations-and-builds-faster-with-openai-f47e8f0d.md",
+      "status": "published",
+      "briefed_at": "2026-07-16T22:58:21.365523Z",
+      "candidate_score": 43.0
+    },
+    "a907415b440a72c97ae113fef1ec4712f495e77ca68c1416652d44e576d949fd": {
+      "normalized_url": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+      "title_fingerprint": "why teens deserve access to safe ai",
+      "service_key": "openai-blog",
+      "title": "Why teens deserve access to safe AI",
+      "article_doc_path": "docs/services/openai-blog/2026-07-why-teens-deserve-access-to-safe-ai-a907415b.md",
+      "status": "published",
+      "briefed_at": "2026-07-16T22:58:21.365527Z",
+      "candidate_score": 39.0
     }
   }
 }
