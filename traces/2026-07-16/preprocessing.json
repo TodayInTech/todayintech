@@ -1,0 +1,299 @@
+{
+  "generated_at": "2026-07-16T22:54:39.736083+00:00",
+  "generated_for": "2026-07-16",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "bc451b4ceb7d0856c63997730522307a4aae3d34",
+  "github_run_id": "29540747857",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 26,
+      "excluded_count": 94,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 94
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 26,
+      "output_count": 26,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 26,
+      "output_count": 25,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 25,
+      "output_count": 15,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:23c6974aa4b45f04",
+          "title": "Connect more of your apps to Search",
+          "normalized_url": "https://blog.google/products-and-platforms/products/search/connected-apps",
+          "url_hash": "23c6974aa4b45f04208cef5732953c5bccf0696f9e325733a6d69c1477dfced8",
+          "suggested_doc_key": "2026-07-connect-more-of-your-apps-to-search-23c6974a",
+          "suggested_article_path": "docs/services/google-blog/2026-07-connect-more-of-your-apps-to-search-23c6974a.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:0560403cacf5a7a1",
+          "title": "Create, edit and star in videos with two Google Vids updates",
+          "normalized_url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars",
+          "url_hash": "0560403cacf5a7a127ad3346cf7cb4d95f0f91a7608124c700ae51ada640df2f",
+          "suggested_doc_key": "2026-07-create-edit-and-star-in-videos-with-two-google-vids-updates-0560403c",
+          "suggested_article_path": "docs/services/google-blog/2026-07-create-edit-and-star-in-videos-with-two-google-vids-updates-0560403c.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:7eac6faba30590a1",
+          "title": "Microsoft Comic Chat is now open source",
+          "normalized_url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source",
+          "url_hash": "7eac6faba30590a128e1c5e4a7f91de33979e6ca09e6f3b77f895c3c1d0394ad",
+          "suggested_doc_key": "2026-07-microsoft-comic-chat-is-now-open-source-7eac6fab",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-microsoft-comic-chat-is-now-open-source-7eac6fab.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 446점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 102개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:14acc7b6b8ee2429",
+          "title": "Decoy Font",
+          "normalized_url": "https://www.mixfont.com/experiments/decoy-font",
+          "url_hash": "14acc7b6b8ee242976567fafa942b9f1163d0600794f1f11c38a031fba04176f",
+          "suggested_doc_key": "2026-07-decoy-font-14acc7b6",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-decoy-font-14acc7b6.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 333점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 86개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7a40a45d7b6d5907",
+          "title": "NotebookLM is now Gemini Notebook",
+          "normalized_url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook",
+          "url_hash": "7a40a45d7b6d5907da2ae7e1376258e933c0fe0c0421e480ef2915fa9f7ecd66",
+          "suggested_doc_key": "2026-07-notebooklm-is-now-gemini-notebook-7a40a45d",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-notebooklm-is-now-gemini-notebook-7a40a45d.md",
+          "candidate_score": 59.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 196점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 111개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:30068d7445a6d923",
+          "title": "Detecting LLM-Generated Texts with “Classical” Machine Learning",
+          "normalized_url": "https://blog.lyc8503.net/en/post/llm-classifier",
+          "url_hash": "30068d7445a6d923138f19e9264cf944e49e477eaf384b809aad389d55f4687c",
+          "suggested_doc_key": "2026-07-detecting-llm-generated-texts-with-classical-machine-learning-30068d74",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-detecting-llm-generated-texts-with-classical-machine-learning-30068d74.md",
+          "candidate_score": 52.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 127점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 92개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e92da1656dac27d8",
+          "title": "LM Studio Bionic: the AI agent for open models",
+          "normalized_url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+          "url_hash": "e92da1656dac27d854f28180d0f8116ac5313df1bec49206e5fb03e8075351a7",
+          "suggested_doc_key": "2026-07-lm-studio-bionic-the-ai-agent-for-open-models-e92da165",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-lm-studio-bionic-the-ai-agent-for-open-models-e92da165.md",
+          "candidate_score": 48.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 83점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 27개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:f47e8f0dcf67a37e",
+          "title": "How Cars24 scales conversations and builds faster with OpenAI",
+          "normalized_url": "https://openai.com/index/cars24",
+          "url_hash": "f47e8f0dcf67a37eae93618a0a25f51216c505f634e7722ae5be0eba4f7ac180",
+          "suggested_doc_key": "2026-07-how-cars24-scales-conversations-and-builds-faster-with-openai-f47e8f0d",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-how-cars24-scales-conversations-and-builds-faster-with-openai-f47e8f0d.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:a907415b440a72c9",
+          "title": "Why teens deserve access to safe AI",
+          "normalized_url": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+          "url_hash": "a907415b440a72c97ae113fef1ec4712f495e77ca68c1416652d44e576d949fd",
+          "suggested_doc_key": "2026-07-why-teens-deserve-access-to-safe-ai-a907415b",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-why-teens-deserve-access-to-safe-ai-a907415b.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:07aa5a8a45a2217e",
+          "title": "GPT-5.5 Bio Bug Bounty",
+          "normalized_url": "https://openai.com/index/bio-bug-bounty",
+          "url_hash": "07aa5a8a45a2217e5772972678fa56c02f77d49321e968f0a655c7418e20c696",
+          "suggested_doc_key": "2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a.md",
+          "candidate_score": 24.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 46,
+        "low_quality": 1
+      }
+    }
+  ]
+}
