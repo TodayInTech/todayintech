@@ -3400,6 +3400,66 @@
       "status": "published",
       "briefed_at": "2026-07-16T22:58:21.365527Z",
       "candidate_score": 39.0
+    },
+    "3877d136049d29e0dcce549b3845eb9c5daa382d66fa73e4d16f5ee1fe339853": {
+      "normalized_url": "https://github.blog/engineering/the-cost-of-saying-yes-has-changed",
+      "title_fingerprint": "the cost of saying yes has changed",
+      "service_key": "github-blog",
+      "title": "The cost of saying yes has changed",
+      "article_doc_path": "docs/services/github-blog/2026-07-the-cost-of-saying-yes-has-changed-3877d136.md",
+      "status": "published",
+      "briefed_at": "2026-07-17T22:49:01.687612Z",
+      "candidate_score": 37.0
+    },
+    "14270184fe75ec594fc7aeaf3ee9c38ce1cf1cd321a1d977136f25b67da21670": {
+      "normalized_url": "https://stateofopensource.ai/",
+      "title_fingerprint": "the state of open source ai",
+      "service_key": "hacker-news",
+      "title": "The state of open source AI",
+      "article_doc_path": "docs/services/hacker-news/2026-07-the-state-of-open-source-ai-14270184.md",
+      "status": "published",
+      "briefed_at": "2026-07-17T22:49:01.687653Z",
+      "candidate_score": 65.0
+    },
+    "07f97d4cbd8ecd7bf5ac77b50235b52f025ea0dfdaae2655fc78038fbe5c8077": {
+      "normalized_url": "https://simonwillison.net/2026/Jul/16/kimi-k3",
+      "title_fingerprint": "kimi k3 and what we can still learn from the pelican benchmark",
+      "service_key": "hacker-news",
+      "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+      "article_doc_path": "docs/services/hacker-news/2026-07-kimi-k3-and-what-we-can-still-learn-from-the-pelican-benchmark-07f97d4c.md",
+      "status": "published",
+      "briefed_at": "2026-07-17T22:49:01.687675Z",
+      "candidate_score": 65.0
+    },
+    "a1210195b51a4aa56ca4982b3c43f7dfc7dcf6cbbee50f62f54a651cc457eb38": {
+      "normalized_url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
+      "title_fingerprint": "first atmosphere found on earth like planet in habitable zone of distant star",
+      "service_key": "hacker-news",
+      "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
+      "article_doc_path": "docs/services/hacker-news/2026-07-first-atmosphere-found-on-earth-like-planet-in-habitable-zone-of-distant-a1210195.md",
+      "status": "published",
+      "briefed_at": "2026-07-17T22:49:01.687684Z",
+      "candidate_score": 60.0
+    },
+    "5302555ff9e91f979f1401d1af1915ee535a74c3c39d1547b52257c782d3eca9": {
+      "normalized_url": "https://isene.org/2026/07/Frame.html",
+      "title_fingerprint": "frame linux x server in assembly",
+      "service_key": "hacker-news",
+      "title": "Frame – Linux X server in Assembly",
+      "article_doc_path": "docs/services/hacker-news/2026-07-frame-linux-x-server-in-assembly-5302555f.md",
+      "status": "published",
+      "briefed_at": "2026-07-17T22:49:01.687693Z",
+      "candidate_score": 52.4
+    },
+    "c5c5248230951857dae9664d8976aabb3764bf6936706cfde3b2931f62916be6": {
+      "normalized_url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "title_fingerprint": "a scorecard for the ai age",
+      "service_key": "openai-blog",
+      "title": "A scorecard for the AI age",
+      "article_doc_path": "docs/services/openai-blog/2026-07-a-scorecard-for-the-ai-age-c5c52482.md",
+      "status": "published",
+      "briefed_at": "2026-07-17T22:49:01.687701Z",
+      "candidate_score": 39.0
     }
   }
 }
