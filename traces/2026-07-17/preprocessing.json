@@ -1,0 +1,271 @@
+{
+  "generated_at": "2026-07-17T22:44:57.980963+00:00",
+  "generated_for": "2026-07-17",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "9bb4eb01cc18d1e32e57bc17f1ddb46437acf8e6",
+  "github_run_id": "29618666985",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 13,
+  "excluded_count": 107,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 24,
+      "excluded_count": 96,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 96
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 24,
+      "output_count": 23,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 23,
+      "output_count": 13,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:3877d136049d29e0",
+          "title": "The cost of saying yes has changed",
+          "normalized_url": "https://github.blog/engineering/the-cost-of-saying-yes-has-changed",
+          "url_hash": "3877d136049d29e0dcce549b3845eb9c5daa382d66fa73e4d16f5ee1fe339853",
+          "suggested_doc_key": "2026-07-the-cost-of-saying-yes-has-changed-3877d136",
+          "suggested_article_path": "docs/services/github-blog/2026-07-the-cost-of-saying-yes-has-changed-3877d136.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:14270184fe75ec59",
+          "title": "The state of open source AI",
+          "normalized_url": "https://stateofopensource.ai/",
+          "url_hash": "14270184fe75ec594fc7aeaf3ee9c38ce1cf1cd321a1d977136f25b67da21670",
+          "suggested_doc_key": "2026-07-the-state-of-open-source-ai-14270184",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-the-state-of-open-source-ai-14270184.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 344점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 245개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:07f97d4cbd8ecd7b",
+          "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+          "normalized_url": "https://simonwillison.net/2026/Jul/16/kimi-k3",
+          "url_hash": "07f97d4cbd8ecd7bf5ac77b50235b52f025ea0dfdaae2655fc78038fbe5c8077",
+          "suggested_doc_key": "2026-07-kimi-k3-and-what-we-can-still-learn-from-the-pelican-benchmark-07f97d4c",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-kimi-k3-and-what-we-can-still-learn-from-the-pelican-benchmark-07f97d4c.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 234점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 133개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a1210195b51a4aa5",
+          "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
+          "normalized_url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
+          "url_hash": "a1210195b51a4aa56ca4982b3c43f7dfc7dcf6cbbee50f62f54a651cc457eb38",
+          "suggested_doc_key": "2026-07-first-atmosphere-found-on-earth-like-planet-in-habitable-zone-of-distant-a1210195",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-first-atmosphere-found-on-earth-like-planet-in-habitable-zone-of-distant-a1210195.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 324점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 215개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5302555ff9e91f97",
+          "title": "Frame – Linux X server in Assembly",
+          "normalized_url": "https://isene.org/2026/07/Frame.html",
+          "url_hash": "5302555ff9e91f979f1401d1af1915ee535a74c3c39d1547b52257c782d3eca9",
+          "suggested_doc_key": "2026-07-frame-linux-x-server-in-assembly-5302555f",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-frame-linux-x-server-in-assembly-5302555f.md",
+          "candidate_score": 52.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 124점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 83개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:1fde6b194534de90",
+          "title": "Thanks HN for 15 years of support and helping me find my life's work",
+          "normalized_url": "https://news.ycombinator.com/item?id=48949551",
+          "url_hash": "1fde6b194534de9084a8e3c9acbdc8d05d348b5348945cbfad22a18aa64cea96",
+          "suggested_doc_key": "2026-07-thanks-hn-for-15-years-of-support-and-helping-me-find-my-life-s-work-1fde6b19",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-thanks-hn-for-15-years-of-support-and-helping-me-find-my-life-s-work-1fde6b19.md",
+          "candidate_score": 52.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 151점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 10개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 2,
+      "excluded_count": 48,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:c5c5248230951857",
+          "title": "A scorecard for the AI age",
+          "normalized_url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+          "url_hash": "c5c5248230951857dae9664d8976aabb3764bf6936706cfde3b2931f62916be6",
+          "suggested_doc_key": "2026-07-a-scorecard-for-the-ai-age-c5c52482",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-a-scorecard-for-the-ai-age-c5c52482.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:07aa5a8a45a2217e",
+          "title": "GPT-5.5 Bio Bug Bounty",
+          "normalized_url": "https://openai.com/index/bio-bug-bounty",
+          "url_hash": "07aa5a8a45a2217e5772972678fa56c02f77d49321e968f0a655c7418e20c696",
+          "suggested_doc_key": "2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a.md",
+          "candidate_score": 23.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 7일이 지난 글로 최신성 13점을 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 47,
+        "low_quality": 1
+      }
+    }
+  ]
+}
