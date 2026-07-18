@@ -1,0 +1,239 @@
+{
+  "generated_at": "2026-07-18T22:44:28.579539+00:00",
+  "generated_for": "2026-07-18",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "ad322f3694f5bcd93efb19fd449983bc34a1ef51",
+  "github_run_id": "29663924874",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 4,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 21,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 21,
+      "output_count": 11,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:0c74e7f905afa6c3",
+          "title": "The Kimi K3 Moment",
+          "normalized_url": "https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment",
+          "url_hash": "0c74e7f905afa6c382adddd3c79204bd218017aa5b9c5b1bfa32c6cdea79722b",
+          "suggested_doc_key": "2026-07-the-kimi-k3-moment-0c74e7f9",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-the-kimi-k3-moment-0c74e7f9.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 230점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 246개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:271cd1b24d5ceb67",
+          "title": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+          "normalized_url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a",
+          "url_hash": "271cd1b24d5ceb6706b5a79c375780f3c38b55b34731387957457a3adb704d9e",
+          "suggested_doc_key": "2026-07-gpt-5-6-used-a-prompt-to-close-a-30-year-gap-in-convex-optimization-271cd1b2",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-gpt-5-6-used-a-prompt-to-close-a-30-year-gap-in-convex-optimization-271cd1b2.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 472점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 302개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f87cf5105615bedd",
+          "title": "What AI did to stackoverflow in a graph",
+          "normalized_url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+          "url_hash": "f87cf5105615bedd7816b80d5f30bccfa3b8b9f7d95877336db00effbe96cbef",
+          "suggested_doc_key": "2026-07-what-ai-did-to-stackoverflow-in-a-graph-f87cf510",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-what-ai-did-to-stackoverflow-in-a-graph-f87cf510.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 342점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 397개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f94a24159d4109fb",
+          "title": "LG monitors silently install software through Windows Update without consent",
+          "normalized_url": "https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent",
+          "url_hash": "f94a24159d4109fb493141dc6bc2a019fe4432eb36831d93af31b1be05f285cb",
+          "suggested_doc_key": "2026-07-lg-monitors-silently-install-software-through-windows-update-without-con-f94a2415",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-lg-monitors-silently-install-software-through-windows-update-without-con-f94a2415.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 925점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 472개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e60638403f058be2",
+          "title": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+          "normalized_url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal",
+          "url_hash": "e60638403f058be26cf720ebd1ebd192d892850b9e38a115e50372c33cb43bdd",
+          "suggested_doc_key": "2026-07-fable-5-vs-gpt-5-6-sol-on-an-np-hard-problem-does-goal-help-e6063840",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-fable-5-vs-gpt-5-6-sol-on-an-np-hard-problem-does-goal-help-e6063840.md",
+          "candidate_score": 59.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 196점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 100개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:07aa5a8a45a2217e",
+          "title": "GPT-5.5 Bio Bug Bounty",
+          "normalized_url": "https://openai.com/index/bio-bug-bounty",
+          "url_hash": "07aa5a8a45a2217e5772972678fa56c02f77d49321e968f0a655c7418e20c696",
+          "suggested_doc_key": "2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a.md",
+          "candidate_score": 22.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 8일이 지난 글로 최신성 12점을 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 48,
+        "low_quality": 1
+      }
+    }
+  ]
+}
