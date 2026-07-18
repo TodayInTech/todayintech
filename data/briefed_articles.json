@@ -3460,6 +3460,46 @@
       "status": "published",
       "briefed_at": "2026-07-17T22:49:01.687701Z",
       "candidate_score": 39.0
+    },
+    "0c74e7f905afa6c382adddd3c79204bd218017aa5b9c5b1bfa32c6cdea79722b": {
+      "normalized_url": "https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment",
+      "title_fingerprint": "the kimi k3 moment",
+      "service_key": "hacker-news",
+      "title": "The Kimi K3 Moment",
+      "article_doc_path": "docs/services/hacker-news/2026-07-the-kimi-k3-moment-0c74e7f9.md",
+      "status": "published",
+      "briefed_at": "2026-07-18T22:46:56.164008Z",
+      "candidate_score": 62.0
+    },
+    "271cd1b24d5ceb6706b5a79c375780f3c38b55b34731387957457a3adb704d9e": {
+      "normalized_url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a",
+      "title_fingerprint": "gpt 5 6 used a prompt to close a 30 year gap in convex optimization",
+      "service_key": "hacker-news",
+      "title": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+      "article_doc_path": "docs/services/hacker-news/2026-07-gpt-5-6-used-a-prompt-to-close-a-30-year-gap-in-convex-optimization-271cd1b2.md",
+      "status": "published",
+      "briefed_at": "2026-07-18T22:46:56.164045Z",
+      "candidate_score": 60.0
+    },
+    "f87cf5105615bedd7816b80d5f30bccfa3b8b9f7d95877336db00effbe96cbef": {
+      "normalized_url": "https://data.stackexchange.com/stackoverflow/query/1953768",
+      "title_fingerprint": "what ai did to stackoverflow in a graph",
+      "service_key": "hacker-news",
+      "title": "What AI did to stackoverflow in a graph",
+      "article_doc_path": "docs/services/hacker-news/2026-07-what-ai-did-to-stackoverflow-in-a-graph-f87cf510.md",
+      "status": "published",
+      "briefed_at": "2026-07-18T22:46:56.164058Z",
+      "candidate_score": 60.0
+    },
+    "f94a24159d4109fb493141dc6bc2a019fe4432eb36831d93af31b1be05f285cb": {
+      "normalized_url": "https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent",
+      "title_fingerprint": "lg monitors silently install software through windows update without consent",
+      "service_key": "hacker-news",
+      "title": "LG monitors silently install software through Windows Update without consent",
+      "article_doc_path": "docs/services/hacker-news/2026-07-lg-monitors-silently-install-software-through-windows-update-without-con-f94a2415.md",
+      "status": "published",
+      "briefed_at": "2026-07-18T22:46:56.164067Z",
+      "candidate_score": 60.0
     }
   }
 }
