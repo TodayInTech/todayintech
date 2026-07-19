@@ -1,0 +1,241 @@
+{
+  "generated_at": "2026-07-19T22:47:25.890471+00:00",
+  "generated_for": "2026-07-19",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "3d0b9763b7be33d6b53eb8aec63cc5da3396edd3",
+  "github_run_id": "29706685928",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 21,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 21,
+      "output_count": 11,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:7a5ada317dd6ddd7",
+          "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
+          "normalized_url": "https://news.ycombinator.com/item?id=48968606",
+          "url_hash": "7a5ada317dd6ddd75a7a80f6f33fdff33c2201294179cfe4a1f56ee67d5f90ee",
+          "suggested_doc_key": "2026-07-show-hn-i-replaced-a-120k-bowling-center-system-with-1-600-in-esp32s-7a5ada31",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-show-hn-i-replaced-a-120k-bowling-center-system-with-1-600-in-esp32s-7a5ada31.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "Hacker News 점수 1065점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 114개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8e7ff08d008c12c1",
+          "title": "Minecraft: Java Edition now uses SDL3",
+          "normalized_url": "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4",
+          "url_hash": "8e7ff08d008c12c1d76e503b77bed94b40f6f3cf49a7d17726b451b82d895e66",
+          "suggested_doc_key": "2026-07-minecraft-java-edition-now-uses-sdl3-8e7ff08d",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-minecraft-java-edition-now-uses-sdl3-8e7ff08d.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 242점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 162개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8d304728ca8f16db",
+          "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
+          "normalized_url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+          "url_hash": "8d304728ca8f16db1c7909702ec15f76933646ebfa1d6fff959b3faceb7c414c",
+          "suggested_doc_key": "2026-07-what-i-learned-selling-2-500-midi-recorders-hardware-is-not-so-hard-8d304728",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-what-i-learned-selling-2-500-midi-recorders-hardware-is-not-so-hard-8d304728.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 380점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 181개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4f0e18b4fccc7d26",
+          "title": "Claude Code uses Bun written in Rust now",
+          "normalized_url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust",
+          "url_hash": "4f0e18b4fccc7d26864438c42e1da103e5bafc84f11ab4dc662784c8b99bf9ca",
+          "suggested_doc_key": "2026-07-claude-code-uses-bun-written-in-rust-now-4f0e18b4",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-claude-code-uses-bun-written-in-rust-now-4f0e18b4.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 358점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 479개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6e6c5f11cad27047",
+          "title": "I joined the IndieWeb, here's what I learned",
+          "normalized_url": "https://en.andros.dev/blog/0b8e451e/i-joined-the-indieweb-heres-what-i-learned",
+          "url_hash": "6e6c5f11cad270472106d31bf678679dc7df562a19b64a8ac47bde09888c4e96",
+          "suggested_doc_key": "2026-07-i-joined-the-indieweb-here-s-what-i-learned-6e6c5f11",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-i-joined-the-indieweb-here-s-what-i-learned-6e6c5f11.md",
+          "candidate_score": 53.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 133점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 83개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:07aa5a8a45a2217e",
+          "title": "GPT-5.5 Bio Bug Bounty",
+          "normalized_url": "https://openai.com/index/bio-bug-bounty",
+          "url_hash": "07aa5a8a45a2217e5772972678fa56c02f77d49321e968f0a655c7418e20c696",
+          "suggested_doc_key": "2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-gpt-5-5-bio-bug-bounty-07aa5a8a.md",
+          "candidate_score": 21.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 9일이 지난 글로 최신성 11점을 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 48,
+        "low_quality": 1
+      }
+    }
+  ]
+}
