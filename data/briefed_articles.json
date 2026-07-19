@@ -3500,6 +3500,46 @@
       "status": "published",
       "briefed_at": "2026-07-18T22:46:56.164067Z",
       "candidate_score": 60.0
+    },
+    "7a5ada317dd6ddd75a7a80f6f33fdff33c2201294179cfe4a1f56ee67d5f90ee": {
+      "normalized_url": "https://news.ycombinator.com/item?id=48968606",
+      "title_fingerprint": "show hn i replaced a 120k bowling center system with 1 600 in esp32s",
+      "service_key": "hacker-news",
+      "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
+      "article_doc_path": "docs/services/hacker-news/2026-07-show-hn-i-replaced-a-120k-bowling-center-system-with-1-600-in-esp32s-7a5ada31.md",
+      "status": "published",
+      "briefed_at": "2026-07-19T22:50:59.312068Z",
+      "candidate_score": 61.0
+    },
+    "8e7ff08d008c12c1d76e503b77bed94b40f6f3cf49a7d17726b451b82d895e66": {
+      "normalized_url": "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4",
+      "title_fingerprint": "minecraft java edition now uses sdl3",
+      "service_key": "hacker-news",
+      "title": "Minecraft: Java Edition now uses SDL3",
+      "article_doc_path": "docs/services/hacker-news/2026-07-minecraft-java-edition-now-uses-sdl3-8e7ff08d.md",
+      "status": "published",
+      "briefed_at": "2026-07-19T22:50:59.312106Z",
+      "candidate_score": 60.0
+    },
+    "8d304728ca8f16db1c7909702ec15f76933646ebfa1d6fff959b3faceb7c414c": {
+      "normalized_url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+      "title_fingerprint": "what i learned selling 2 500 midi recorders hardware is not so hard",
+      "service_key": "hacker-news",
+      "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
+      "article_doc_path": "docs/services/hacker-news/2026-07-what-i-learned-selling-2-500-midi-recorders-hardware-is-not-so-hard-8d304728.md",
+      "status": "published",
+      "briefed_at": "2026-07-19T22:50:59.312125Z",
+      "candidate_score": 60.0
+    },
+    "4f0e18b4fccc7d26864438c42e1da103e5bafc84f11ab4dc662784c8b99bf9ca": {
+      "normalized_url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust",
+      "title_fingerprint": "claude code uses bun written in rust now",
+      "service_key": "hacker-news",
+      "title": "Claude Code uses Bun written in Rust now",
+      "article_doc_path": "docs/services/hacker-news/2026-07-claude-code-uses-bun-written-in-rust-now-4f0e18b4.md",
+      "status": "published",
+      "briefed_at": "2026-07-19T22:50:59.312138Z",
+      "candidate_score": 60.0
     }
   }
 }
