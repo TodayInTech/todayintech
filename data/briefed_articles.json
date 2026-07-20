@@ -3540,6 +3540,76 @@
       "status": "published",
       "briefed_at": "2026-07-19T22:50:59.312138Z",
       "candidate_score": 60.0
+    },
+    "413ef8ab41769726c3ead68c933d0079f58968ff19d4288c05ea181d0a9bff07": {
+      "normalized_url": "https://www.anthropic.com/news/rare-disease-research-grants",
+      "title_fingerprint": "apply for anthropic s ai for science rare disease research grants",
+      "service_key": "anthropic-blog",
+      "title": "Apply for Anthropic’s AI for Science rare disease research grants",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-apply-for-anthropic-s-ai-for-science-rare-disease-research-grants-413ef8ab.md",
+      "status": "published",
+      "briefed_at": "2026-07-20T22:58:32.125040Z",
+      "candidate_score": 30.0
+    },
+    "6d50f3704b78e823aca57514abae0528ac7da8cf0e83bd82840236a2bfacdd10": {
+      "normalized_url": "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community",
+      "title_fingerprint": "100 million for open source a milestone built by the community",
+      "service_key": "github-blog",
+      "title": "$100 million for open source: A milestone built by the community",
+      "article_doc_path": "docs/services/github-blog/2026-07-100-million-for-open-source-a-milestone-built-by-the-community-6d50f370.md",
+      "status": "published",
+      "briefed_at": "2026-07-20T22:58:32.125070Z",
+      "candidate_score": 42.0
+    },
+    "61100fda2c4035d84f2e6d3256d4461a0a8f230335b15d11b19105d575e6f649": {
+      "normalized_url": "https://www.kimi.com/products/kimi-work",
+      "title_fingerprint": "kimi work",
+      "service_key": "hacker-news",
+      "title": "Kimi Work",
+      "article_doc_path": "docs/services/hacker-news/2026-07-kimi-work-61100fda.md",
+      "status": "published",
+      "briefed_at": "2026-07-20T22:58:32.125080Z",
+      "candidate_score": 60.0
+    },
+    "3b37fc49daf4ccb9f5288435889a39485b1988b6d865944c43866e31d166326f": {
+      "normalized_url": "https://jelly-ui.com/",
+      "title_fingerprint": "jelly ui soft body physics for native html form controls",
+      "service_key": "hacker-news",
+      "title": "Jelly UI: Soft-body physics for native HTML form controls",
+      "article_doc_path": "docs/services/hacker-news/2026-07-jelly-ui-soft-body-physics-for-native-html-form-controls-3b37fc49.md",
+      "status": "published",
+      "briefed_at": "2026-07-20T22:58:32.125085Z",
+      "candidate_score": 60.0
+    },
+    "4863eebd0681a6bf6bff0019dd2b64163ba73231b131e39d241a0ffd75c49c7b": {
+      "normalized_url": "https://www.emergingtrajectories.com/lh/frontier-lab-economics",
+      "title_fingerprint": "kimi k3 qwen 3 8 and anthropic s potential unravelling",
+      "service_key": "hacker-news",
+      "title": "Kimi K3, Qwen 3.8, and Anthropic's (Potential) Unravelling",
+      "article_doc_path": "docs/services/hacker-news/2026-07-kimi-k3-qwen-3-8-and-anthropic-s-potential-unravelling-4863eebd.md",
+      "status": "published",
+      "briefed_at": "2026-07-20T22:58:32.125090Z",
+      "candidate_score": 60.0
+    },
+    "b5d2f9ca5bc4d2f07ffd4a232ed34e00a1b1187ce3521b84b1fbbbc6765bf808": {
+      "normalized_url": "https://news.ycombinator.com/item?id=48981136",
+      "title_fingerprint": "launch hn bloomy yc s26 ai powered mastery learning for k 12",
+      "service_key": "hacker-news",
+      "title": "Launch HN: Bloomy (YC S26) – AI-powered mastery learning for K-12",
+      "article_doc_path": "docs/services/hacker-news/2026-07-launch-hn-bloomy-yc-s26-ai-powered-mastery-learning-for-k-12-b5d2f9ca.md",
+      "status": "published",
+      "briefed_at": "2026-07-20T22:58:32.125095Z",
+      "candidate_score": 59.7
+    },
+    "a5ab872c216c2f944ec77d4d072f84e82e060aae4903cb3932963f9bd7c8bda4": {
+      "normalized_url": "https://openai.com/index/safety-alignment-long-horizon-models",
+      "title_fingerprint": "safety and alignment in an era of long horizon models",
+      "service_key": "openai-blog",
+      "title": "Safety and alignment in an era of long-horizon models",
+      "article_doc_path": "docs/services/openai-blog/2026-07-safety-and-alignment-in-an-era-of-long-horizon-models-a5ab872c.md",
+      "status": "published",
+      "briefed_at": "2026-07-20T22:58:32.125100Z",
+      "candidate_score": 44.0
     }
   }
 }
