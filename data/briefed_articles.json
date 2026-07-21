@@ -3610,6 +3610,76 @@
       "status": "published",
       "briefed_at": "2026-07-20T22:58:32.125100Z",
       "candidate_score": 44.0
+    },
+    "24abb84d61b2e52549cc8a7a818f40d9461176c79085cb375bb556509feea02a": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases",
+      "title_fingerprint": "how to build interactive experiences with canvases",
+      "service_key": "github-blog",
+      "title": "How to build interactive experiences with canvases",
+      "article_doc_path": "docs/services/github-blog/2026-07-how-to-build-interactive-experiences-with-canvases-24abb84d.md",
+      "status": "published",
+      "briefed_at": "2026-07-21T22:56:10.275995Z",
+      "candidate_score": 37.0
+    },
+    "d925d8c91f460a44f07089c2f27b36a626fbcac0f80dde4b561ae3114c0febb2": {
+      "normalized_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "title_fingerprint": "openai and hugging face address security incident during model evaluation",
+      "service_key": "hacker-news",
+      "title": "OpenAI and Hugging Face address security incident during model evaluation",
+      "article_doc_path": "docs/services/hacker-news/2026-07-openai-and-hugging-face-address-security-incident-during-model-evaluatio-d925d8c9.md",
+      "status": "published",
+      "briefed_at": "2026-07-21T22:56:10.276026Z",
+      "candidate_score": 74.0
+    },
+    "3a7231974ec02593486995b1967de073ec0be769b05eec9a6abd3d29e3837156": {
+      "normalized_url": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
+      "title_fingerprint": "jack dorsey launches buzz to combine team chat ai agents and git hosting",
+      "service_key": "hacker-news",
+      "title": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
+      "article_doc_path": "docs/services/hacker-news/2026-07-jack-dorsey-launches-buzz-to-combine-team-chat-ai-agents-and-git-hosting-3a723197.md",
+      "status": "published",
+      "briefed_at": "2026-07-21T22:56:10.276042Z",
+      "candidate_score": 68.9
+    },
+    "c8cfea0372b0943f1b3ddf79e93317bfd304f450467a1444774b7d8fd95d94b3": {
+      "normalized_url": "https://www.techradar.com/vpn/vpn-privacy-security/vpns-are-lawful-technical-tools-says-eu-court-in-landmark-anne-frank-copyright-ruling",
+      "title_fingerprint": "vpns are lawful technical tools says eu court in landmark copyright ruling",
+      "service_key": "hacker-news",
+      "title": "'VPNs are lawful technical tools,' says EU Court in landmark copyright ruling",
+      "article_doc_path": "docs/services/hacker-news/2026-07-vpns-are-lawful-technical-tools-says-eu-court-in-landmark-copyright-ruli-c8cfea03.md",
+      "status": "published",
+      "briefed_at": "2026-07-21T22:56:10.276054Z",
+      "candidate_score": 62.2
+    },
+    "fd601a0300b1240008875d721214c52db4d278174fd5e22b9bcb3230ab6609e1": {
+      "normalized_url": "https://ads.openai.com/",
+      "title_fingerprint": "advertise in chatgpt",
+      "service_key": "hacker-news",
+      "title": "Advertise in ChatGPT",
+      "article_doc_path": "docs/services/hacker-news/2026-07-advertise-in-chatgpt-fd601a03.md",
+      "status": "published",
+      "briefed_at": "2026-07-21T22:56:10.276064Z",
+      "candidate_score": 62.0
+    },
+    "3064e426d18ccd85acab9b00d8511c97976c1d62bf25b663ad46f55f6cae1deb": {
+      "normalized_url": "https://openai.com/index/introducing-chatgpt-small-business-program",
+      "title_fingerprint": "introducing the chatgpt for small business program",
+      "service_key": "openai-blog",
+      "title": "Introducing the ChatGPT for small business program",
+      "article_doc_path": "docs/services/openai-blog/2026-07-introducing-the-chatgpt-for-small-business-program-3064e426.md",
+      "status": "published",
+      "briefed_at": "2026-07-21T22:56:10.276075Z",
+      "candidate_score": 44.0
+    },
+    "69e481323262afa1b5216cbe98dd7c3d5122fa06b483d2f7f01243ab98947b44": {
+      "normalized_url": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
+      "title_fingerprint": "david v lez and robin vince join the boards of the openai foundation and openai group pbc",
+      "service_key": "openai-blog",
+      "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
+      "article_doc_path": "docs/services/openai-blog/2026-07-david-v-lez-and-robin-vince-join-the-boards-of-the-openai-foundation-and-69e48132.md",
+      "status": "published",
+      "briefed_at": "2026-07-21T22:56:10.276084Z",
+      "candidate_score": 37.0
     }
   }
 }
