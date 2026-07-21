@@ -1,0 +1,182 @@
+{
+  "generated_at": "2026-07-21T22:56:10.384445+00:00",
+  "generated_for": "2026-07-21",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "0e4d9f1399b119ef6758818de2c2c93450da6fbd",
+  "github_run_id": "29875089798",
+  "decision_count": 7,
+  "decision_counts": {
+    "published": 7
+  },
+  "decisions": [
+    {
+      "candidate_id": "github-blog:24abb84d61b2e525",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "title": "How to build interactive experiences with canvases",
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases",
+      "article_doc_path": "docs/services/github-blog/2026-07-how-to-build-interactive-experiences-with-canvases-24abb84d.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI & ML",
+      "importance_level": "medium",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "GitHub Copilot의 새 기능인 'canvases'를 통해 에이전트와 사용자가 실시간으로 상호작용하는 시각적 작업공간을 만들고 즉시 조작할 수 있다는 실용적 사례와 사용법(/create-canvas, 실시간 업데이트 등)이 구체적으로 제시되어 있어 기술 독자에게 유의미한 변화와 적용 가능성을 제공함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 37.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:d925d8c91f460a44",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "OpenAI and Hugging Face address security incident during model evaluation",
+      "normalized_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "article_doc_path": "docs/services/hacker-news/2026-07-openai-and-hugging-face-address-security-incident-during-model-evaluatio-d925d8c9.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 보안",
+      "importance_level": "High",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터로 확인되는 주제(모델 평가 중 보안 사고)와 커뮤니티 반응(Hacker News 점수·댓글 수)이 높아 기술 독자에게 시사점이 있어 게시 가치가 있다고 판단했습니다. 다만 원문 본문이 제공되지 않아 세부 사실은 한정적으로 서술했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: OpenAI and Hugging Face address security incident during model evaluation",
+        "feed_summary (links to Axios and Hacker News item id references)",
+        "metadata.hn_points: 453",
+        "metadata.hn_comments: 294",
+        "source_url: https://openai.com/index/hugging-face-model-evaluation-security-incident",
+        "published_at: 2026-07-21T20:09:52+00:00"
+      ],
+      "candidate_score": 74.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:3a7231974ec02593",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
+      "normalized_url": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
+      "article_doc_path": "docs/services/hacker-news/2026-07-jack-dorsey-launches-buzz-to-combine-team-chat-ai-agents-and-git-hosting-3a723197.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "개발자 도구·협업 플랫폼",
+      "importance_level": "높음",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "잭 도시가 발표한 오픈소스 워크스페이스가 채팅, AI 에이전트, Git 호스팅을 하나의 신원 시스템 아래 통합한다는 점에서 기술적·시장적 의미가 있어 Today in Tech 독자에게 유의미합니다. 공개 리포지토리, Nostr 기반 설계, 에이전트를 사용자와 동일한 정체성으로 다루는 구조, Git Smart HTTP를 이용한 포지드 통합 등 구체적 구현 근거가 기사 근거(chunk-0001)에 포함되어 있습니다. Hacker News 반응과 버전·라이선스·현재 기능 상태 등 실무적 판단에 필요한 정보도 제공됩니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 68.9,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:c8cfea0372b0943f",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "'VPNs are lawful technical tools,' says EU Court in landmark copyright ruling",
+      "normalized_url": "https://www.techradar.com/vpn/vpn-privacy-security/vpns-are-lawful-technical-tools-says-eu-court-in-landmark-anne-frank-copyright-ruling",
+      "article_doc_path": "docs/services/hacker-news/2026-07-vpns-are-lawful-technical-tools-says-eu-court-in-landmark-copyright-ruli-c8cfea03.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "저작권·프라이버시",
+      "importance_level": "높음",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "CJEU의 판결은 VPN의 법적 지위와 저작권 집행의 기술적 기준을 명확히 한 획기적 사건으로, 기술 독자에게 직접적 영향을 미치는 정책적·법률적 판례라는 점에서 Today in Tech 독자에게 가치가 큽니다. 원문 근거가 명확하여 전문적 해설이 가능합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 62.2,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:fd601a0300b12400",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Advertise in ChatGPT",
+      "normalized_url": "https://ads.openai.com/",
+      "article_doc_path": "docs/services/hacker-news/2026-07-advertise-in-chatgpt-fd601a03.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 플랫폼/광고",
+      "importance_level": "높음",
+      "confidence_score": 0.75,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 OpenAI의 광고 관련 페이지(ads.openai.com)가 Hacker News에서 높은 관심(240점, 댓글 233개)을 받았고 최신 이슈로 기술·비즈니스 독자에게 의미 있는 논의 소재가 될 가능성이 있어 게시 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Advertise in ChatGPT",
+        "source_url: https://ads.openai.com/",
+        "feed_summary",
+        "metadata.hn_points",
+        "metadata.hn_comments",
+        "authors",
+        "published_at",
+        "candidate_score"
+      ],
+      "candidate_score": 62.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:3064e426d18ccd85",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Introducing the ChatGPT for small business program",
+      "normalized_url": "https://openai.com/index/introducing-chatgpt-small-business-program",
+      "article_doc_path": "docs/services/openai-blog/2026-07-introducing-the-chatgpt-for-small-business-program-3064e426.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI Adoption",
+      "importance_level": "Medium",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 OpenAI가 중소기업 대상의 'ChatGPT for Small Businesses' 프로그램을 출시하고 'ChatGPT Work'로 AI 역량 강화와 업무 자동화를 돕는다는 요약이 있어, 기술 독자들이 관심을 가질 만한 주제로 게시할 가치가 있다고 판단했습니다. 다만 원문 세부 내용은 제공된 메타데이터에 한정되어 있어 요약에서 한계를 명시했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Introducing the ChatGPT for small business program",
+        "feed_summary: OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work.",
+        "source_url: https://openai.com/index/introducing-chatgpt-small-business-program",
+        "published_at: 2026-07-21T17:00:00+00:00",
+        "tags: AI Adoption"
+      ],
+      "candidate_score": 44.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:69e481323262afa1",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
+      "normalized_url": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
+      "article_doc_path": "docs/services/openai-blog/2026-07-david-v-lez-and-robin-vince-join-the-boards-of-the-openai-foundation-and-69e48132.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Company",
+      "importance_level": "Medium",
+      "confidence_score": 0.62,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "회사 이사회 합류 소식은 거버넌스와 전략적 방향성에 직접적인 영향을 줄 수 있어 기술 및 투자 독자에게 유용한 맥락 정보를 제공하므로 게시 가치가 있다고 판단했습니다. 다만 원문 세부 내용이 없으므로 요약문에서 근거 한계를 명확히 했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
+        "feed_summary: David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC, bringing global leadership in finance, technology, and governance.",
+        "source_url: https://openai.com/index/david-velez-robin-vince-join-openai-boards",
+        "published_at: 2026-07-21T00:00:00+00:00"
+      ],
+      "candidate_score": 37.0,
+      "error_message": null
+    }
+  ]
+}
