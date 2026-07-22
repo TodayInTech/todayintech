@@ -1,0 +1,327 @@
+{
+  "generated_at": "2026-07-22T22:58:20.229633+00:00",
+  "generated_for": "2026-07-22",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "fa1436d40d884ccdcc2511bd05c1253f38c492ee",
+  "github_run_id": "29964537091",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 100,
+  "candidate_count": 17,
+  "excluded_count": 83,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 100,
+      "output_count": 29,
+      "excluded_count": 71,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 71
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 29,
+      "output_count": 29,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 29,
+      "output_count": 27,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 27,
+      "output_count": 17,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 0,
+      "candidate_count": 0,
+      "excluded_count": 0,
+      "top_candidates": [],
+      "excluded_reasons": {}
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 2,
+      "excluded_count": 8,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:98b061f178880396",
+          "title": "Copilot vs. raw API access: What are you actually paying for?",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for",
+          "url_hash": "98b061f178880396da023100e7784c5d8909cf4f217fd56315e2d4c50559b516",
+          "suggested_doc_key": "2026-07-copilot-vs-raw-api-access-what-are-you-actually-paying-for-98b061f1",
+          "suggested_article_path": "docs/services/github-blog/2026-07-copilot-vs-raw-api-access-what-are-you-actually-paying-for-98b061f1.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:91d03bfc81e607b1",
+          "title": "Next chapter: Restructuring GitHub’s bug bounty program",
+          "normalized_url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program",
+          "url_hash": "91d03bfc81e607b1aebeb2446cc72751b5cf70ab7ea36b81c90ed68209be2e47",
+          "suggested_doc_key": "2026-07-next-chapter-restructuring-github-s-bug-bounty-program-91d03bfc",
+          "suggested_article_path": "docs/services/github-blog/2026-07-next-chapter-restructuring-github-s-bug-bounty-program-91d03bfc.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 8
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:7c49a9cf52e16d8b",
+          "title": "3 Google updates from Galaxy Unpacked 2026",
+          "normalized_url": "https://blog.google/products-and-platforms/platforms/android/galaxy-unpacked-2026",
+          "url_hash": "7c49a9cf52e16d8bc5c300b81d5a8ac159e1275984e334dbcc0e4b30b11fa8a0",
+          "suggested_doc_key": "2026-07-3-google-updates-from-galaxy-unpacked-2026-7c49a9cf",
+          "suggested_article_path": "docs/services/google-blog/2026-07-3-google-updates-from-galaxy-unpacked-2026-7c49a9cf.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:2dca3e93e2d46932",
+          "title": "John C. Dvorak has died",
+          "normalized_url": "https://twitter.com/na_announce/status/2079952538040672302",
+          "url_hash": "2dca3e93e2d4693299cedef7413a96a092c2f8c621c3a247b8f207ac2191d3b4",
+          "suggested_doc_key": "2026-07-john-c-dvorak-has-died-2dca3e93",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-john-c-dvorak-has-died-2dca3e93.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 396점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 107개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3fc8bdb7cc18e687",
+          "title": "GigaToken: ~1000x faster Language model tokenization",
+          "normalized_url": "https://github.com/marcelroed/gigatoken",
+          "url_hash": "3fc8bdb7cc18e6870f3b22ca2b0778b4fd4dbc28231812dde82153629812e227",
+          "suggested_doc_key": "2026-07-gigatoken-1000x-faster-language-model-tokenization-3fc8bdb7",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-gigatoken-1000x-faster-language-model-tokenization-3fc8bdb7.md",
+          "candidate_score": 61.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 301점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 56개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3c187b67b93c0758",
+          "title": "Terrence Tao's ChatGPT Conversation about the Jacobian Conjecture Counterexample",
+          "normalized_url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
+          "url_hash": "3c187b67b93c075884c458428bae4127e422a7f78b6920f13dbeef90eaf5ad5a",
+          "suggested_doc_key": "2026-07-terrence-tao-s-chatgpt-conversation-about-the-jacobian-conjecture-counte-3c187b67",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-terrence-tao-s-chatgpt-conversation-about-the-jacobian-conjecture-counte-3c187b67.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 491점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 287개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:2f44a69f2a490321",
+          "title": "Are AI Labs Pelicanmaxxing?",
+          "normalized_url": "https://dylancastillo.co/posts/pelicanmaxxing.html",
+          "url_hash": "2f44a69f2a490321598597dde00108ef299c9c2817df1b2e1748e9a35abcdbcf",
+          "suggested_doc_key": "2026-07-are-ai-labs-pelicanmaxxing-2f44a69f",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-are-ai-labs-pelicanmaxxing-2f44a69f.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 318점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 129개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6e638b9e6aead253",
+          "title": "Does creatine make you smarter?",
+          "normalized_url": "https://dynomight.net/creatine",
+          "url_hash": "6e638b9e6aead253bbb19004ea7e88d2b53b263ab67599f80e8b9fc2ef553aae",
+          "suggested_doc_key": "2026-07-does-creatine-make-you-smarter-6e638b9e",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-does-creatine-make-you-smarter-6e638b9e.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 240점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 213개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 4,
+      "excluded_count": 46,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:839f7a51d7b587ae",
+          "title": "Introducing OpenAI Presence",
+          "normalized_url": "https://openai.com/index/introducing-openai-presence",
+          "url_hash": "839f7a51d7b587ae6fb6fad7749706514391475c0a696dde71fbacdaca270ce7",
+          "suggested_doc_key": "2026-07-introducing-openai-presence-839f7a51",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-introducing-openai-presence-839f7a51.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:082c4173c70b0451",
+          "title": "Building AI infrastructure with the Effingham County community",
+          "normalized_url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+          "url_hash": "082c4173c70b04519142ea2a756f2c82885c05f2267804c9d63123d0bb7bfe20",
+          "suggested_doc_key": "2026-07-building-ai-infrastructure-with-the-effingham-county-community-082c4173",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-building-ai-infrastructure-with-the-effingham-county-community-082c4173.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:932591afba7f1cf5",
+          "title": "How news organizations are using AI to advance their vital missions",
+          "normalized_url": "https://openai.com/index/how-news-organizations-are-using-ai",
+          "url_hash": "932591afba7f1cf55372f3f455c6c008f9ff2b3d6f73c68ab2f0a4a130897d6d",
+          "suggested_doc_key": "2026-07-how-news-organizations-are-using-ai-to-advance-their-vital-missions-932591af",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-how-news-organizations-are-using-ai-to-advance-their-vital-missions-932591af.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:577ddf6b90e6d70b",
+          "title": "Advancing the next era of national science",
+          "normalized_url": "https://openai.com/index/advancing-the-next-era-of-national-science",
+          "url_hash": "577ddf6b90e6d70b43383fc6b5bf29af9051645ec6ba8ce542b298223ecbfa62",
+          "suggested_doc_key": "2026-07-advancing-the-next-era-of-national-science-577ddf6b",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-advancing-the-next-era-of-national-science-577ddf6b.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 44,
+        "low_quality": 2
+      }
+    }
+  ]
+}

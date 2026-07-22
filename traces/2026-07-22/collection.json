@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-07-22T22:58:19.963420+00:00",
+  "generated_for": "2026-07-22",
+  "stage": "collection",
+  "status": "failed",
+  "git_sha": "fa1436d40d884ccdcc2511bd05c1253f38c492ee",
+  "github_run_id": "29964537091",
+  "service_count": 5,
+  "failed_service_count": 1,
+  "warning_count": 0,
+  "total_article_count": 100,
+  "duration_ms": 48599,
+  "services": [
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 20,
+      "duration_ms": 1464,
+      "avg_article_duration_ms": 73.2,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 10,
+      "duration_ms": 147,
+      "avg_article_duration_ms": 14.7,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 20,
+      "duration_ms": 413,
+      "avg_article_duration_ms": 20.65,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "strategy": "rss",
+      "status": "success",
+      "article_count": 50,
+      "duration_ms": 647,
+      "avg_article_duration_ms": 12.94,
+      "warning_codes": [],
+      "error": null
+    },
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "strategy": "sitemap",
+      "status": "failed",
+      "article_count": 0,
+      "duration_ms": 45928,
+      "avg_article_duration_ms": null,
+      "warning_codes": [],
+      "error": "Redirect response '308 Permanent Redirect' for url 'https://www.anthropic.com/news/skills'\nRedirect location: 'https://claude.com/blog/skills'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/308"
+    }
+  ]
+}
