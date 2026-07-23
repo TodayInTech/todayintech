@@ -3680,6 +3680,146 @@
       "status": "published",
       "briefed_at": "2026-07-21T22:56:10.276084Z",
       "candidate_score": 37.0
+    },
+    "ed2eeefbfeebb92789795414a1c5c5cf947c6a45e3bd5397f59606a31c2baa46": {
+      "normalized_url": "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates",
+      "title_fingerprint": "the case for a cooldown why dependabot now waits before issuing version updates",
+      "service_key": "github-blog",
+      "title": "The case for a cooldown: Why Dependabot now waits before issuing version updates",
+      "article_doc_path": "docs/services/github-blog/2026-07-the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-ed2eeefb.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915425Z",
+      "candidate_score": 47.0
+    },
+    "98b061f178880396da023100e7784c5d8909cf4f217fd56315e2d4c50559b516": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for",
+      "title_fingerprint": "copilot vs raw api access what are you actually paying for",
+      "service_key": "github-blog",
+      "title": "Copilot vs. raw API access: What are you actually paying for?",
+      "article_doc_path": "docs/services/github-blog/2026-07-copilot-vs-raw-api-access-what-are-you-actually-paying-for-98b061f1.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915473Z",
+      "candidate_score": 46.0
+    },
+    "91d03bfc81e607b1aebeb2446cc72751b5cf70ab7ea36b81c90ed68209be2e47": {
+      "normalized_url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program",
+      "title_fingerprint": "next chapter restructuring github s bug bounty program",
+      "service_key": "github-blog",
+      "title": "Next chapter: Restructuring GitHub’s bug bounty program",
+      "article_doc_path": "docs/services/github-blog/2026-07-next-chapter-restructuring-github-s-bug-bounty-program-91d03bfc.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915483Z",
+      "candidate_score": 40.0
+    },
+    "fd6648d06b6e33c0c039f8203f1329775c6e51c27cf847ab956cef2e23091162": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/research/understanding-the-ai-economy",
+      "title_fingerprint": "understanding the ai economy",
+      "service_key": "google-blog",
+      "title": "Understanding the AI economy",
+      "article_doc_path": "docs/services/google-blog/2026-07-understanding-the-ai-economy-fd6648d0.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915491Z",
+      "candidate_score": 36.0
+    },
+    "8993197dc39e9a85b64c90d60341e41447d70ffcef301c2997667e73d67b4a3b": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/selfie-video-sign-in",
+      "title_fingerprint": "introducing selfie for sign in a new easy way to access your google account",
+      "service_key": "google-blog",
+      "title": "Introducing selfie for sign-in: a new, easy way to access your Google Account",
+      "article_doc_path": "docs/services/google-blog/2026-07-introducing-selfie-for-sign-in-a-new-easy-way-to-access-your-google-acco-8993197d.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915498Z",
+      "candidate_score": 35.0
+    },
+    "7c49a9cf52e16d8bc5c300b81d5a8ac159e1275984e334dbcc0e4b30b11fa8a0": {
+      "normalized_url": "https://blog.google/products-and-platforms/platforms/android/galaxy-unpacked-2026",
+      "title_fingerprint": "3 google updates from galaxy unpacked 2026",
+      "service_key": "google-blog",
+      "title": "3 Google updates from Galaxy Unpacked 2026",
+      "article_doc_path": "docs/services/google-blog/2026-07-3-google-updates-from-galaxy-unpacked-2026-7c49a9cf.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915506Z",
+      "candidate_score": 34.0
+    },
+    "a0189ee4caf804186eef40aeface0225fadf1ee7eb5bce7204d90a3908d28e25": {
+      "normalized_url": "https://news.ycombinator.com/item?id=49026810",
+      "title_fingerprint": "show hn echo fable level results at 1 3 the cost using open weight models",
+      "service_key": "hacker-news",
+      "title": "Show HN: Echo – Fable-level results at 1/3 the cost using open-weight models",
+      "article_doc_path": "docs/services/hacker-news/2026-07-show-hn-echo-fable-level-results-at-1-3-the-cost-using-open-weight-model-a0189ee4.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915512Z",
+      "candidate_score": 76.5
+    },
+    "3f69097f6d07062145093c35f14d33ceb8c00230a158b054517f919f3bd32b69": {
+      "normalized_url": "https://news.ycombinator.com/item?id=49024620",
+      "title_fingerprint": "launch hn screenpipe yc s26 record how you work and turn that into agents",
+      "service_key": "hacker-news",
+      "title": "Launch HN: Screenpipe (YC S26) – Record how you work and turn that into agents",
+      "article_doc_path": "docs/services/hacker-news/2026-07-launch-hn-screenpipe-yc-s26-record-how-you-work-and-turn-that-into-agent-3f69097f.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915519Z",
+      "candidate_score": 71.1
+    },
+    "29bf7ed16e1c0028d9a31be7bb27589ed842b8ebb0bd3e4f6656160ab0194cf1": {
+      "normalized_url": "https://news.ycombinator.com/item?id=49028037",
+      "title_fingerprint": "namecheap gave my account to an unverified third party just because they asked",
+      "service_key": "hacker-news",
+      "title": "Namecheap Gave My Account to an Unverified Third Party Just Because They Asked",
+      "article_doc_path": "docs/services/hacker-news/2026-07-namecheap-gave-my-account-to-an-unverified-third-party-just-because-they-29bf7ed1.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915526Z",
+      "candidate_score": 64.8
+    },
+    "e3d4281bc1e8014e50627ded17f7ca04b25a34433283e5f89eba4fef1e4b294d": {
+      "normalized_url": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad",
+      "title_fingerprint": "the arguments against open source ai are bad",
+      "service_key": "hacker-news",
+      "title": "The arguments against open source AI are bad",
+      "article_doc_path": "docs/services/hacker-news/2026-07-the-arguments-against-open-source-ai-are-bad-e3d4281b.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915533Z",
+      "candidate_score": 63.2
+    },
+    "bf70d809f9542eeef4af8727140322b50521173b898dd368bf4dae652a9efd17": {
+      "normalized_url": "https://openai.com/index/health-in-chatgpt",
+      "title_fingerprint": "launching health in chatgpt",
+      "service_key": "openai-blog",
+      "title": "Launching Health in ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-07-launching-health-in-chatgpt-bf70d809.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915540Z",
+      "candidate_score": 44.0
+    },
+    "839f7a51d7b587ae6fb6fad7749706514391475c0a696dde71fbacdaca270ce7": {
+      "normalized_url": "https://openai.com/index/introducing-openai-presence",
+      "title_fingerprint": "introducing openai presence",
+      "service_key": "openai-blog",
+      "title": "Introducing OpenAI Presence",
+      "article_doc_path": "docs/services/openai-blog/2026-07-introducing-openai-presence-839f7a51.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915546Z",
+      "candidate_score": 40.0
+    },
+    "082c4173c70b04519142ea2a756f2c82885c05f2267804c9d63123d0bb7bfe20": {
+      "normalized_url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+      "title_fingerprint": "building ai infrastructure with the effingham county community",
+      "service_key": "openai-blog",
+      "title": "Building AI infrastructure with the Effingham County community",
+      "article_doc_path": "docs/services/openai-blog/2026-07-building-ai-infrastructure-with-the-effingham-county-community-082c4173.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915551Z",
+      "candidate_score": 38.0
+    },
+    "932591afba7f1cf55372f3f455c6c008f9ff2b3d6f73c68ab2f0a4a130897d6d": {
+      "normalized_url": "https://openai.com/index/how-news-organizations-are-using-ai",
+      "title_fingerprint": "how news organizations are using ai to advance their vital missions",
+      "service_key": "openai-blog",
+      "title": "How news organizations are using AI to advance their vital missions",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-news-organizations-are-using-ai-to-advance-their-vital-missions-932591af.md",
+      "status": "published",
+      "briefed_at": "2026-07-23T22:57:51.915557Z",
+      "candidate_score": 37.0
     }
   }
 }
