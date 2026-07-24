@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-07-24T22:59:57.013863+00:00",
+  "generated_for": "2026-07-24",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "665828e7fe65f0f9e7512ee1fdfc6eb70deb0728",
+  "github_run_id": "30132402923",
+  "decision_count": 7,
+  "decision_counts": {
+    "published": 7
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:d90ac5ab01e065ba",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Be skeptical of OpenAI's rogue hacker agent story",
+      "normalized_url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
+      "article_doc_path": "docs/services/hacker-news/2026-07-be-skeptical-of-openai-s-rogue-hacker-agent-story-d90ac5ab.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 거버넌스·보안",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "OpenAI의 PR 전략과 최근 '무단 해킹 에이전트' 사례를 통해 AI 거버넌스·투자 유인·사이버 방어 역학을 논의한 글로, 기술 독자가 관심 가질 정책적·실무적 함의를 담고 있어 Today in Tech 브리핑 가치가 있음.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 67.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:b421806248eeab67",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Government orders GitHub to remove Bluetooth-based chat app Bitchat: Jack Dorsey",
+      "normalized_url": "https://www.thehindu.com/news/national/government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-over-security-concerns-jack-dorsey/article71262049.ece",
+      "article_doc_path": "docs/services/hacker-news/2026-07-government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-jack-b4218062.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "사이버 보안",
+      "importance_level": "높음",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "정부가 GitHub에 특정 오프라인 블루투스 메시징 앱 삭제를 요청한 사실과, 분산형 블루투스 메시징의 기술적 특성이 수사·중재 측면에서 실질적 영향을 미칠 수 있다는 점을 원문 근거로 충분히 보여주므로 기술·정책 독자에게 가치 있는 보도임.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:f9e7da6ddbf890fa",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+      "normalized_url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+      "article_doc_path": "docs/services/hacker-news/2026-07-nvidia-microsoft-meta-warn-against-overregulating-open-weight-models-f9e7da6d.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "인공지능 정책",
+      "importance_level": "높음",
+      "confidence_score": 0.82,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Nvidia, Microsoft, Meta 등 주요 기술기업들이 공동 서한을 통해 오픈 웨이트 모델 규제에 반대하는 입장을 내놓았고, 원문 근거에는 기술적 사례(중국의 Kimi K3, Hugging Face의 대응 등)와 규제 대안 논의가 포함되어 있어 정책·기술 독자에게 유의미한 분석 가치가 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:10885b2541ba8325",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "My security camera shipped a GitHub admin token in its login page",
+      "normalized_url": "https://hhh.hn/hanwha-github-token",
+      "article_doc_path": "docs/services/hacker-news/2026-07-my-security-camera-shipped-a-github-admin-token-in-its-login-page-10885b25.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Security",
+      "importance_level": "High",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 임베디드 카메라 펌웨어 분석을 통해 하드코딩된 암호화 키와 CI 환경 변수가 빌드 시 노출되어 수백 개 레포지토리의 관리자 권한이 있는 GitHub 토큰이 유출된 정황을 기술하고 있으며, 취약점 원인과 확산 범위를 실무적으로 보여준다. 기술 독자에게 유의미한 재현·분석 절차와 대응(공개보고 및 즉각적 토큰 폐기) 결과가 포함되어 있어 Today in Tech 독자에게 가치가 높다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:577ddf6b90e6d70b",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Advancing the next era of national science",
+      "normalized_url": "https://openai.com/index/advancing-the-next-era-of-national-science",
+      "article_doc_path": "docs/services/openai-blog/2026-07-advancing-the-next-era-of-national-science-577ddf6b.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Global Affairs",
+      "importance_level": "Medium",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 OpenAI가 미 에너지부 및 국립 연구소들과 협력해 프런티어 AI를 과학 연구에 적용해 발견을 가속화하겠다는 의향을 밝힌 점은 기술·정책 독자에게 유의미한 소식으로 보입니다. 제한된 요약에도 불구하고 연구 인프라와 AI 결합의 잠재적 영향이 크므로 Today in Tech의 독자에게 가치가 있다고 판단합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title",
+        "feed_summary",
+        "service_name",
+        "source_url"
+      ],
+      "candidate_score": 35.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:389ebd02d2834f48",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+      "normalized_url": "https://openai.com/index/ntt-data",
+      "article_doc_path": "docs/services/openai-blog/2026-07-ntt-data-group-cuts-incident-analysis-to-30-minutes-with-codex-389ebd02.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "기업용 AI 도입",
+      "importance_level": "중간",
+      "confidence_score": 0.7,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 기업 규모(9,000명), 사용된 도구(ChatGPT Enterprise, Codex), 그리고 인시던트 분석 시간을 30분으로 단축했다는 핵심 성과가 명시되어 있어 엔터프라이즈 AI 도입 사례로 기술 독자에게 유용한 시사점을 제공하므로 게시 가치가 있다고 판단했습니다. 다만 상세 구현·보안·측정 방법 등은 메타데이터에 없어 요약문에서 이를 단정하지 않았습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title",
+        "feed_summary",
+        "source_url",
+        "published_at"
+      ],
+      "candidate_score": 32.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:49857bbbb2f8af4d",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "How Codex became a collaborator for OpenAI’s creative team",
+      "normalized_url": "https://openai.com/index/codex-collaborator-creative-team",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-codex-became-a-collaborator-for-openai-s-creative-team-49857bbb.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI/도구",
+      "importance_level": "중간",
+      "confidence_score": 0.6,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터가 OpenAI 크리에이티브 팀이 Codex를 도구로 활용해 맞춤형 창작 툴을 만들고 아이디어 발굴과 프로토타이핑을 가속화했다는 핵심 주제를 분명히 제시하므로 기술 독자에게 유용한 맥락을 제공함. 원문 상세 내용은 확인이 필요하나 피드 수준 정보로도 기사의 기술적 의미를 간결히 설명할 수 있어 게시함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: How Codex became a collaborator for OpenAI’s creative team",
+        "feed_summary: How OpenAI’s creative team uses Codex to build custom creative tools, accelerate ideation, and prototype faster with context-aware AI.",
+        "source_url: https://openai.com/index/codex-collaborator-creative-team",
+        "published_at: 2026-07-16T07:00:00+00:00",
+        "service_name: OpenAI Blog",
+        "tags: OpenAI on OpenAI"
+      ],
+      "candidate_score": 23.0,
+      "error_message": null
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "generated_at": "2026-07-24T22:57:32.105742+00:00",
+  "generated_for": "2026-07-24",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "665828e7fe65f0f9e7512ee1fdfc6eb70deb0728",
+  "github_run_id": "30132402923",
+  "service_count": 5,
+  "duration_ms": 7,
+  "raw_count": 100,
+  "candidate_count": 13,
+  "excluded_count": 87,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 100,
+      "output_count": 25,
+      "excluded_count": 75,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 75
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 25,
+      "output_count": 23,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 23,
+      "output_count": 13,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 0,
+      "candidate_count": 0,
+      "excluded_count": 0,
+      "top_candidates": [],
+      "excluded_reasons": {}
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:d90ac5ab01e065ba",
+          "title": "Be skeptical of OpenAI's rogue hacker agent story",
+          "normalized_url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
+          "url_hash": "d90ac5ab01e065ba2c6e635f94341f1a2690fa71a0b968651967fc486b7117a5",
+          "suggested_doc_key": "2026-07-be-skeptical-of-openai-s-rogue-hacker-agent-story-d90ac5ab",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-be-skeptical-of-openai-s-rogue-hacker-agent-story-d90ac5ab.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 362점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 192개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b421806248eeab67",
+          "title": "Government orders GitHub to remove Bluetooth-based chat app Bitchat: Jack Dorsey",
+          "normalized_url": "https://www.thehindu.com/news/national/government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-over-security-concerns-jack-dorsey/article71262049.ece",
+          "url_hash": "b421806248eeab679d48563f25fa11ed519a0ab9f63c3e6b557ef96f46c1c7b1",
+          "suggested_doc_key": "2026-07-government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-jack-b4218062",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-jack-b4218062.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 333점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 251개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f9e7da6ddbf890fa",
+          "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+          "normalized_url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+          "url_hash": "f9e7da6ddbf890fa64baf9220c4baa7e3824ebd2b49f34437714e1ef51fdd3a1",
+          "suggested_doc_key": "2026-07-nvidia-microsoft-meta-warn-against-overregulating-open-weight-models-f9e7da6d",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-nvidia-microsoft-meta-warn-against-overregulating-open-weight-models-f9e7da6d.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 434점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 206개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:10885b2541ba8325",
+          "title": "My security camera shipped a GitHub admin token in its login page",
+          "normalized_url": "https://hhh.hn/hanwha-github-token",
+          "url_hash": "10885b2541ba83258c3cf62e42347bfa399ad949e8efc9da419741f65f687372",
+          "suggested_doc_key": "2026-07-my-security-camera-shipped-a-github-admin-token-in-its-login-page-10885b25",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-my-security-camera-shipped-a-github-admin-token-in-its-login-page-10885b25.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 476점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 165개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c34a327604b5be4a",
+          "title": "Claude Opus 5",
+          "normalized_url": "https://www.anthropic.com/news/claude-opus-5",
+          "url_hash": "c34a327604b5be4a7c98002df4365d3ba7ea31a8a315f02f0082d8694e23de2f",
+          "suggested_doc_key": "2026-07-claude-opus-5-c34a3276",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-claude-opus-5-c34a3276.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 1152점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 623개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:577ddf6b90e6d70b",
+          "title": "Advancing the next era of national science",
+          "normalized_url": "https://openai.com/index/advancing-the-next-era-of-national-science",
+          "url_hash": "577ddf6b90e6d70b43383fc6b5bf29af9051645ec6ba8ce542b298223ecbfa62",
+          "suggested_doc_key": "2026-07-advancing-the-next-era-of-national-science-577ddf6b",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-advancing-the-next-era-of-national-science-577ddf6b.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:389ebd02d2834f48",
+          "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+          "normalized_url": "https://openai.com/index/ntt-data",
+          "url_hash": "389ebd02d2834f48054db326e779179584d07821b4cc86483479843fc8aba7d7",
+          "suggested_doc_key": "2026-07-ntt-data-group-cuts-incident-analysis-to-30-minutes-with-codex-389ebd02",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-ntt-data-group-cuts-incident-analysis-to-30-minutes-with-codex-389ebd02.md",
+          "candidate_score": 32.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:49857bbbb2f8af4d",
+          "title": "How Codex became a collaborator for OpenAI’s creative team",
+          "normalized_url": "https://openai.com/index/codex-collaborator-creative-team",
+          "url_hash": "49857bbbb2f8af4d05865cdcc952a457647c1a69bfbf2811e642c9f583ca523d",
+          "suggested_doc_key": "2026-07-how-codex-became-a-collaborator-for-openai-s-creative-team-49857bbb",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-how-codex-became-a-collaborator-for-openai-s-creative-team-49857bbb.md",
+          "candidate_score": 23.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 7일이 지난 글로 최신성 13점을 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 45,
+        "low_quality": 2
+      }
+    }
+  ]
+}
