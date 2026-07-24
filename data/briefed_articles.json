@@ -3820,6 +3820,76 @@
       "status": "published",
       "briefed_at": "2026-07-23T22:57:51.915557Z",
       "candidate_score": 37.0
+    },
+    "d90ac5ab01e065ba2c6e635f94341f1a2690fa71a0b968651967fc486b7117a5": {
+      "normalized_url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
+      "title_fingerprint": "be skeptical of openai s rogue hacker agent story",
+      "service_key": "hacker-news",
+      "title": "Be skeptical of OpenAI's rogue hacker agent story",
+      "article_doc_path": "docs/services/hacker-news/2026-07-be-skeptical-of-openai-s-rogue-hacker-agent-story-d90ac5ab.md",
+      "status": "published",
+      "briefed_at": "2026-07-24T22:59:56.939529Z",
+      "candidate_score": 67.0
+    },
+    "b421806248eeab679d48563f25fa11ed519a0ab9f63c3e6b557ef96f46c1c7b1": {
+      "normalized_url": "https://www.thehindu.com/news/national/government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-over-security-concerns-jack-dorsey/article71262049.ece",
+      "title_fingerprint": "government orders github to remove bluetooth based chat app bitchat jack dorsey",
+      "service_key": "hacker-news",
+      "title": "Government orders GitHub to remove Bluetooth-based chat app Bitchat: Jack Dorsey",
+      "article_doc_path": "docs/services/hacker-news/2026-07-government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-jack-b4218062.md",
+      "status": "published",
+      "briefed_at": "2026-07-24T22:59:56.939558Z",
+      "candidate_score": 65.0
+    },
+    "f9e7da6ddbf890fa64baf9220c4baa7e3824ebd2b49f34437714e1ef51fdd3a1": {
+      "normalized_url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+      "title_fingerprint": "nvidia microsoft meta warn against overregulating open weight models",
+      "service_key": "hacker-news",
+      "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+      "article_doc_path": "docs/services/hacker-news/2026-07-nvidia-microsoft-meta-warn-against-overregulating-open-weight-models-f9e7da6d.md",
+      "status": "published",
+      "briefed_at": "2026-07-24T22:59:56.939565Z",
+      "candidate_score": 65.0
+    },
+    "10885b2541ba83258c3cf62e42347bfa399ad949e8efc9da419741f65f687372": {
+      "normalized_url": "https://hhh.hn/hanwha-github-token",
+      "title_fingerprint": "my security camera shipped a github admin token in its login page",
+      "service_key": "hacker-news",
+      "title": "My security camera shipped a GitHub admin token in its login page",
+      "article_doc_path": "docs/services/hacker-news/2026-07-my-security-camera-shipped-a-github-admin-token-in-its-login-page-10885b25.md",
+      "status": "published",
+      "briefed_at": "2026-07-24T22:59:56.939570Z",
+      "candidate_score": 65.0
+    },
+    "577ddf6b90e6d70b43383fc6b5bf29af9051645ec6ba8ce542b298223ecbfa62": {
+      "normalized_url": "https://openai.com/index/advancing-the-next-era-of-national-science",
+      "title_fingerprint": "advancing the next era of national science",
+      "service_key": "openai-blog",
+      "title": "Advancing the next era of national science",
+      "article_doc_path": "docs/services/openai-blog/2026-07-advancing-the-next-era-of-national-science-577ddf6b.md",
+      "status": "published",
+      "briefed_at": "2026-07-24T22:59:56.939575Z",
+      "candidate_score": 35.0
+    },
+    "389ebd02d2834f48054db326e779179584d07821b4cc86483479843fc8aba7d7": {
+      "normalized_url": "https://openai.com/index/ntt-data",
+      "title_fingerprint": "ntt data group cuts incident analysis to 30 minutes with codex",
+      "service_key": "openai-blog",
+      "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-07-ntt-data-group-cuts-incident-analysis-to-30-minutes-with-codex-389ebd02.md",
+      "status": "published",
+      "briefed_at": "2026-07-24T22:59:56.939578Z",
+      "candidate_score": 32.0
+    },
+    "49857bbbb2f8af4d05865cdcc952a457647c1a69bfbf2811e642c9f583ca523d": {
+      "normalized_url": "https://openai.com/index/codex-collaborator-creative-team",
+      "title_fingerprint": "how codex became a collaborator for openai s creative team",
+      "service_key": "openai-blog",
+      "title": "How Codex became a collaborator for OpenAI’s creative team",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-codex-became-a-collaborator-for-openai-s-creative-team-49857bbb.md",
+      "status": "published",
+      "briefed_at": "2026-07-24T22:59:56.939582Z",
+      "candidate_score": 23.0
     }
   }
 }
