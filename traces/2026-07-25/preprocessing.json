@@ -1,0 +1,224 @@
+{
+  "generated_at": "2026-07-25T22:49:26.702969+00:00",
+  "generated_for": "2026-07-25",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "c94aa0d82cfe49b1824fd25684293e368e0a8411",
+  "github_run_id": "30178258477",
+  "service_count": 5,
+  "duration_ms": 8,
+  "raw_count": 100,
+  "candidate_count": 10,
+  "excluded_count": 90,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 100,
+      "output_count": 22,
+      "excluded_count": 78,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 78
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 20,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 20,
+      "output_count": 10,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 0,
+      "candidate_count": 0,
+      "excluded_count": 0,
+      "top_candidates": [],
+      "excluded_reasons": {}
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:d923a364b09ddb01",
+          "title": "Open-weight AI is having its Kubernetes moment",
+          "normalized_url": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment",
+          "url_hash": "d923a364b09ddb01750cc377e80cd1fe01a6679146f646660491bd3543e0bd4a",
+          "suggested_doc_key": "2026-07-open-weight-ai-is-having-its-kubernetes-moment-d923a364",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-open-weight-ai-is-having-its-kubernetes-moment-d923a364.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 277점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 222개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b1969cd7e76cd75c",
+          "title": "The Dark Night of Mathematics",
+          "normalized_url": "https://kirwinhampshire.substack.com/p/the-dark-night-of-mathematics",
+          "url_hash": "b1969cd7e76cd75c6a7a4f8ebf92bf7bad04a9af6fad672961c6f52b82e0e524",
+          "suggested_doc_key": "2026-07-the-dark-night-of-mathematics-b1969cd7",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-the-dark-night-of-mathematics-b1969cd7.md",
+          "candidate_score": 53.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 138점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 162개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8e418fc06184a07b",
+          "title": "The new rules of context engineering for Claude 5 generation models",
+          "normalized_url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+          "url_hash": "8e418fc06184a07b7c2a834f6f4f9c2dac52e95145fa8418f39df1968206dc0f",
+          "suggested_doc_key": "2026-07-the-new-rules-of-context-engineering-for-claude-5-generation-models-8e418fc0",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-the-new-rules-of-context-engineering-for-claude-5-generation-models-8e418fc0.md",
+          "candidate_score": 49.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 82점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 41개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:72419031be63158d",
+          "title": "The growing vigilante movement to knock out Flock surveillance cameras",
+          "normalized_url": "https://www.theguardian.com/us-news/ng-interactive/2026/jul/25/flock-surveillance-cameras",
+          "url_hash": "72419031be63158dbce53d598d0c649c74ba3127a23d0ea64139a523f03d7888",
+          "suggested_doc_key": "2026-07-the-growing-vigilante-movement-to-knock-out-flock-surveillance-cameras-72419031",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-the-growing-vigilante-movement-to-knock-out-flock-surveillance-cameras-72419031.md",
+          "candidate_score": 49.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 132점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 56개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:da2075ad7185e7a1",
+          "title": "Tile's security is so bad it's a feature for stalkers",
+          "normalized_url": "https://blog.adafruit.com/2026/03/05/tiles-security-is-so-bad-its-a-feature-for-stalkers",
+          "url_hash": "da2075ad7185e7a19b4ea558c1d664b41faf173f87d6d00e4fb9cff79535cc96",
+          "suggested_doc_key": "2026-07-tile-s-security-is-so-bad-it-s-a-feature-for-stalkers-da2075ad",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-tile-s-security-is-so-bad-it-s-a-feature-for-stalkers-da2075ad.md",
+          "candidate_score": 49.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 118점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 38개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 48,
+        "low_quality": 2
+      }
+    }
+  ]
+}
