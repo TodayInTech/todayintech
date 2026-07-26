@@ -1,0 +1,224 @@
+{
+  "generated_at": "2026-07-26T22:55:27.074002+00:00",
+  "generated_for": "2026-07-26",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "90281349ae77ebb78949af0801729e839cc65193",
+  "github_run_id": "30224073475",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 100,
+  "candidate_count": 10,
+  "excluded_count": 90,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 100,
+      "output_count": 22,
+      "excluded_count": 78,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 78
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 20,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 20,
+      "output_count": 10,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 0,
+      "candidate_count": 0,
+      "excluded_count": 0,
+      "top_candidates": [],
+      "excluded_reasons": {}
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:30e5fd07442ae6e6",
+          "title": "London Gatwick has launched a robotic airport parking service",
+          "normalized_url": "https://aerospaceglobalnews.com/news/gatwick-airport-robotic-parking-stanley-robotics",
+          "url_hash": "30e5fd07442ae6e624ad41b59eba2f7d13f5b270a278f1cd949266a876a4c163",
+          "suggested_doc_key": "2026-07-london-gatwick-has-launched-a-robotic-airport-parking-service-30e5fd07",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-london-gatwick-has-launched-a-robotic-airport-parking-service-30e5fd07.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 262점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 219개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:773fd439f2fc6a5d",
+          "title": "Htmx 4.0, the first JavaScript library to release exclusively on the Game Boy",
+          "normalized_url": "https://swag.htmx.org/en-cad/products/htmx-4-the-game",
+          "url_hash": "773fd439f2fc6a5da8c0f39f3af08267b370eeb915a7aeccb699100edad48686",
+          "suggested_doc_key": "2026-07-htmx-4-0-the-first-javascript-library-to-release-exclusively-on-the-game-773fd439",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-htmx-4-0-the-first-javascript-library-to-release-exclusively-on-the-game-773fd439.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 304점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 99개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4a0a620b6b935239",
+          "title": "It's not empowering to hand off the details",
+          "normalized_url": "https://davidnicholaswilliams.com/its-not-empowering-to-hand-off-the-details",
+          "url_hash": "4a0a620b6b9352394f3facab28542570797bff28c098d26be732d35f69534f00",
+          "suggested_doc_key": "2026-07-it-s-not-empowering-to-hand-off-the-details-4a0a620b",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-it-s-not-empowering-to-hand-off-the-details-4a0a620b.md",
+          "candidate_score": 55.5,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 149점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 73개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4ea62b2d7046cab7",
+          "title": "Design is compromise",
+          "normalized_url": "https://stephango.com/design-is-compromise",
+          "url_hash": "4ea62b2d7046cab7335434332d224cf4e22a433708d883dc2bd9331bd858b43f",
+          "suggested_doc_key": "2026-07-design-is-compromise-4ea62b2d",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-design-is-compromise-4ea62b2d.md",
+          "candidate_score": 53.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 157점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 66개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:cf99f0a3ecdb1854",
+          "title": "The relay market powering token resellers and fraud",
+          "normalized_url": "https://vectoral.com/blog/token-relay-market",
+          "url_hash": "cf99f0a3ecdb18542e9fbd479fa686466b3b2b49d024991e393f01ea0298954d",
+          "suggested_doc_key": "2026-07-the-relay-market-powering-token-resellers-and-fraud-cf99f0a3",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-the-relay-market-powering-token-resellers-and-fraud-cf99f0a3.md",
+          "candidate_score": 53.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 136점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 86개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 48,
+        "low_quality": 2
+      }
+    }
+  ]
+}
