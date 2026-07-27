@@ -1,0 +1,269 @@
+{
+  "generated_at": "2026-07-27T22:56:36.813401+00:00",
+  "generated_for": "2026-07-27",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "f8c8a5ede8ef84e2d5e5f418980bad0f9d324e0c",
+  "github_run_id": "30312411824",
+  "service_count": 5,
+  "duration_ms": 8,
+  "raw_count": 100,
+  "candidate_count": 13,
+  "excluded_count": 87,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 100,
+      "output_count": 100,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 100,
+      "output_count": 25,
+      "excluded_count": 75,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 75
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 25,
+      "output_count": 23,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 23,
+      "output_count": 13,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 0,
+      "candidate_count": 0,
+      "excluded_count": 0,
+      "top_candidates": [],
+      "excluded_reasons": {}
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 2,
+      "excluded_count": 8,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:3bbd8b07cb5a7e5a",
+          "title": "GitHub Copilot app for Beginners: Getting started",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started",
+          "url_hash": "3bbd8b07cb5a7e5a41480671273e089153a1edb0e012ee6b9c140ab34f7b4abe",
+          "suggested_doc_key": "2026-07-github-copilot-app-for-beginners-getting-started-3bbd8b07",
+          "suggested_article_path": "docs/services/github-blog/2026-07-github-copilot-app-for-beginners-getting-started-3bbd8b07.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:4e90420c69645ce5",
+          "title": "The harness is all you need (mostly)",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly",
+          "url_hash": "4e90420c69645ce576fce1fa06fbd03e9ca526dfc19600edad8ffcd0bf588612",
+          "suggested_doc_key": "2026-07-the-harness-is-all-you-need-mostly-4e90420c",
+          "suggested_article_path": "docs/services/github-blog/2026-07-the-harness-is-all-you-need-mostly-4e90420c.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 8
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:688b06fb84f51f17",
+          "title": "Our position on open-weights models",
+          "normalized_url": "https://www.anthropic.com/news/position-open-weights-models",
+          "url_hash": "688b06fb84f51f177c70597ddbed8f667858bb3cd8b9f4b4620209c1a995810b",
+          "suggested_doc_key": "2026-07-our-position-on-open-weights-models-688b06fb",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-our-position-on-open-weights-models-688b06fb.md",
+          "candidate_score": 67.5,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 145점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 118개를 토론 신호로 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c14b3e1645046873",
+          "title": "Judge Rejects Google's Attempt to DMCA Its Way Out of Being Scraped",
+          "normalized_url": "https://www.techdirt.com/2026/07/27/judge-rejects-googles-attempt-to-dmca-its-way-out-of-being-scraped",
+          "url_hash": "c14b3e16450468733ccac70c16d36599ef2375165733ae64a36893b95d94ba23",
+          "suggested_doc_key": "2026-07-judge-rejects-google-s-attempt-to-dmca-its-way-out-of-being-scraped-c14b3e16",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-judge-rejects-google-s-attempt-to-dmca-its-way-out-of-being-scraped-c14b3e16.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 204점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 77개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:2afea9953d9cbbaa",
+          "title": "MAI-Cyber-1-Flash inside MDASH",
+          "normalized_url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash",
+          "url_hash": "2afea9953d9cbbaa630986f3fa73294fa92852bcbf75713026a5e3b092329728",
+          "suggested_doc_key": "2026-07-mai-cyber-1-flash-inside-mdash-2afea995",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-mai-cyber-1-flash-inside-mdash-2afea995.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 204점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 107개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:590cc1ead9568ebb",
+          "title": "How is the Bun Rewrite in Rust going?",
+          "normalized_url": "https://lockwood.dev/ai/2026/07/27/how-is-the-bun-rewrite-in-rust-going.html",
+          "url_hash": "590cc1ead9568ebb104325a34361c324a6c14b2aeb396831ed840fe6f8707118",
+          "suggested_doc_key": "2026-07-how-is-the-bun-rewrite-in-rust-going-590cc1ea",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-how-is-the-bun-rewrite-in-rust-going-590cc1ea.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 432점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 328개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:77c2a5f63f4fd1cf",
+          "title": "Removing React.js from the codebase and adapting Htmx for UI interactivity (2023)",
+          "normalized_url": "https://misago-project.org/t/removing-reactjs-from-the-codebase-and-adapting-htmx-for-ui-interactivity/1267",
+          "url_hash": "77c2a5f63f4fd1cf3f7aa9379b9de2c14b89a4d909d73af788554a838477435d",
+          "suggested_doc_key": "2026-07-removing-react-js-from-the-codebase-and-adapting-htmx-for-ui-interactivi-77c2a5f6",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-removing-react-js-from-the-codebase-and-adapting-htmx-for-ui-interactivi-77c2a5f6.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 204점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 148개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:db9d0913513df69e",
+          "title": "How AI is expanding what people do at work",
+          "normalized_url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+          "url_hash": "db9d0913513df69e6eee2103c352167bdc6b0fd41d292f61fb456bed2e3c7061",
+          "suggested_doc_key": "2026-07-how-ai-is-expanding-what-people-do-at-work-db9d0913",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-how-ai-is-expanding-what-people-do-at-work-db9d0913.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 47,
+        "low_quality": 2
+      }
+    }
+  ]
+}

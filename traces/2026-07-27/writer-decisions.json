@@ -1,0 +1,180 @@
+{
+  "generated_at": "2026-07-27T22:58:38.027164+00:00",
+  "generated_for": "2026-07-27",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "f8c8a5ede8ef84e2d5e5f418980bad0f9d324e0c",
+  "github_run_id": "30312411824",
+  "decision_count": 7,
+  "decision_counts": {
+    "published": 7
+  },
+  "decisions": [
+    {
+      "candidate_id": "github-blog:3bbd8b07cb5a7e5a",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "title": "GitHub Copilot app for Beginners: Getting started",
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started",
+      "article_doc_path": "docs/services/github-blog/2026-07-github-copilot-app-for-beginners-getting-started-3bbd8b07.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "개발자 도구 / AI 보조 코딩",
+      "importance_level": "medium",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 GitHub Copilot 앱의 핵심 워크플로와 기능(프로젝트에 연결된 에이전트 세션, 다중 세션 관리, Quick Chat, 브라우저 캔버스 생성 및 Canvas Dev Mode의 Pick & Polish, Agent Merge를 통한 PR 모니터링 및 문제 해결)을 구체적으로 설명하며 기술 독자에게 실무 적용 가치를 제공하므로 Today in Tech 독자 대상 게시 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 41.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "github-blog:4e90420c69645ce5",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "title": "The harness is all you need (mostly)",
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly",
+      "article_doc_path": "docs/services/github-blog/2026-07-the-harness-is-all-you-need-mostly-4e90420c.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI & ML",
+      "importance_level": "Medium",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 GitHub Copilot을 실무에 적용하는 구체적이고 실용적인 워크플로우를 단계별로 제시하며, 도구 선택, 실행 권한(‘YOLO/Allow All’)과 샌드박스 실행, 프로토타이핑·계획·자동 실행(Autopilot)·검토(리뷰·Rubber Duck)까지의 반복적 절차를 포함해 기술 독자에게 즉시 적용 가능한 지침을 제공합니다. 또한 모델 선택(예: GPT 5.6 Terra, Claude Sonnet), 프롬프트 캐싱의 비용 이점, 서브에이전트·멀티모델 오케스트레이션의 작동 방식 등 기술적 근거를 제시해 게시 가치가 높다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003"
+      ],
+      "candidate_score": 37.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:688b06fb84f51f17",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Our position on open-weights models",
+      "normalized_url": "https://www.anthropic.com/news/position-open-weights-models",
+      "article_doc_path": "docs/services/hacker-news/2026-07-our-position-on-open-weights-models-688b06fb.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 정책/안전",
+      "importance_level": "높음",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Anthropic 최고경영자의 공개 입장문으로, 오픈 웨이트 모델에 대한 오해를 바로잡고 국가안보·오용 리스크에 대한 구체적 대응(칩 수출통제, 대규모 증류 단속, 사전 안전성 테스트)을 제안해 기술정책 논의에 직접적 영향을 줄 수 있어 Today in Tech 독자에게 유용합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 67.5,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:c14b3e1645046873",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Judge Rejects Google's Attempt to DMCA Its Way Out of Being Scraped",
+      "normalized_url": "https://www.techdirt.com/2026/07/27/judge-rejects-googles-attempt-to-dmca-its-way-out-of-being-scraped",
+      "article_doc_path": "docs/services/hacker-news/2026-07-judge-rejects-google-s-attempt-to-dmca-its-way-out-of-being-scraped-c14b3e16.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "법·기술",
+      "importance_level": "high",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 법적 쟁점(미국 DMCA §1201)과 기술적 보호조치(SearchGuard)의 작동방식에 대한 구체적 판결 근거를 제시하며, 오픈웹·스크래핑·AI 데이터 접근성에 미치는 영향이 분명하여 기술 독자에게 유의미한 해설을 제공할 수 있음.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003",
+        "chunk-0004"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:2afea9953d9cbbaa",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "MAI-Cyber-1-Flash inside MDASH",
+      "normalized_url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash",
+      "article_doc_path": "docs/services/hacker-news/2026-07-mai-cyber-1-flash-inside-mdash-2afea995.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI",
+      "importance_level": "Medium",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터상 Microsoft.ai에 'MAI-Cyber-1-Flash inside MDASH' 관련 공지가 올라왔고 Hacker News에서 204점·댓글 107개로 높은 관심을 모아 기술 독자에게 유의미한 신호를 제공하므로 게시할 가치가 있다고 판단했습니다. 다만 원문 본문은 제공되지 않아 세부 기술 내용은 확인이 필요합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title",
+        "source_url",
+        "published_at",
+        "feed_summary",
+        "metadata.hn_points",
+        "metadata.hn_comments",
+        "collected_at"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:590cc1ead9568ebb",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "How is the Bun Rewrite in Rust going?",
+      "normalized_url": "https://lockwood.dev/ai/2026/07/27/how-is-the-bun-rewrite-in-rust-going.html",
+      "article_doc_path": "docs/services/hacker-news/2026-07-how-is-the-bun-rewrite-in-rust-going-590cc1ea.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "인공지능·오픈소스",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문 전체 근거를 바탕으로 Bun의 Rust 리라이트와 Anthropic(Claude) 개입, 비용·CI 상황, PR 증가 등의 구체적 증거를 분석해 기술적·경제적 함의를 설명하고 있어 Today in Tech 독자들에게 유의미한 맥락을 제공함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:db9d0913513df69e",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "How AI is expanding what people do at work",
+      "normalized_url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-ai-is-expanding-what-people-do-at-work-db9d0913.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Company",
+      "importance_level": "medium",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "제공된 피드 메타데이터에 따르면 OpenAI의 최신 연구가 직무 경계와 작업 분배에 관한 의미 있는 관찰을 담고 있어 기술 독자 관심이 높을 주제이며, 출처(공식 블로그)와 신선도가 높아 Today in Tech에 브리핑 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: How AI is expanding what people do at work",
+        "feed_summary",
+        "source_url: https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+        "published_at: 2026-07-27T03:30:00+00:00",
+        "service_name: OpenAI Blog",
+        "candidate_id: openai-blog:db9d0913513df69e"
+      ],
+      "candidate_score": 44.0,
+      "error_message": null
+    }
+  ]
+}
