@@ -43,6 +43,7 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
   - [x] Daily snapshot collection policy documented
   - [x] RSS collector support for `collection_limit` / `lookback_days` source settings
   - [x] Hacker News points/comments/rank metadata extraction
+  - [x] Sitemap collector redirect handling and partial trace handling for individual page metadata failures
 
 - [x] Preprocessor - complete
   - [x] URL canonicalization

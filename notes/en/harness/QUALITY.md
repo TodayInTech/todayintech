@@ -121,6 +121,12 @@ Failure reasons are normalized to `fetch_failed`, `fetch_timeout`, `access_denie
 
 Enrichment traces do not store source text or chunk text. They store only `content_hash` plus size, structure, status, and strategy metrics to avoid source replication and unbounded trace-history growth.
 
+Collection trace statuses have the following meanings:
+
+- `success`: no service failed or partially failed.
+- `partial`: at least one service failed, or at least one service recorded recoverable warnings such as individual article metadata request failures.
+- `failed`: every service collection failed.
+
 ## Runtime Logs
 
 The full pipeline prints the following four numbered stages.
@@ -147,6 +153,7 @@ Published article pages do not expose internal decision details. Users see only 
 - `make trace-write` records Writer Agent publish, skip, and failure decisions with evidence for each candidate.
 - Trace duration is not used as a strict pass/fail condition because external network conditions can affect it.
 - A service with zero articles records an `empty_collection` warning.
+- Sitemap collection skips only the affected URL and records an `article_metadata_fetch_failed` warning when an individual page metadata request fails.
 - Partial service failures are recorded in the trace, but the collector CLI exits successfully when at least one service succeeds.
 - The collector CLI exits with failure when every service collection fails.
 - GitHub Actions installs dev dependencies and sets `PYTHON=python` so CI does not depend on the local `.venv` path.

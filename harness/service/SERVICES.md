@@ -47,7 +47,9 @@
   - 공식 sitemap XML을 가져온다.
   - `url_prefixes` 조건에 맞는 URL만 포함한다.
   - `lastmod` 기준 최신순으로 정렬한다.
-  - `collection_limit` 개수만큼 page metadata를 조회한다.
+  - 성공적으로 정규화된 article 수가 `collection_limit`에 도달할 때까지 page metadata를 조회한다.
+  - page metadata 요청은 HTTP redirect를 따른다.
+  - 개별 page metadata 요청이 실패하면 해당 URL만 건너뛰고 `article_metadata_fetch_failed` warning을 기록한다.
   - HTML title, og:title, description, og:description을 사용해 `Article`을 구성한다.
 
 ## 확장 시 업데이트 체크리스트

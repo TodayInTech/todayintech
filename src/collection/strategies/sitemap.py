@@ -54,6 +54,7 @@ class SitemapCollector(BaseCollectorStrategy):
     collector_type = "sitemap"
 
     def collect(self, source: BaseNewsSource) -> list[Article]:
+        self.warning_codes = []
         config = source.source_config()
         url_prefixes = config.get("url_prefixes", ())
         collection_limit = config.get("collection_limit", 20)
@@ -61,8 +62,14 @@ class SitemapCollector(BaseCollectorStrategy):
         collected_at = datetime.now(UTC)
         articles: list[Article] = []
 
-        for url, lastmod in sitemap_entries[:collection_limit]:
-            article = self.fetch_article_metadata(source, url, lastmod, collected_at)
+        for url, lastmod in sitemap_entries:
+            if len(articles) >= collection_limit:
+                break
+            try:
+                article = self.fetch_article_metadata(source, url, lastmod, collected_at)
+            except httpx.HTTPError:
+                self.warning_codes.append("article_metadata_fetch_failed")
+                continue
             if article is not None:
                 articles.append(article)
 
@@ -108,8 +115,9 @@ class SitemapCollector(BaseCollectorStrategy):
         lastmod: datetime | None,
         collected_at: datetime,
     ) -> Article | None:
-        response = httpx.get(url, timeout=20.0)
+        response = httpx.get(url, timeout=20.0, follow_redirects=True)
         response.raise_for_status()
+        final_url = str(response.url)
 
         parser = PageMetadataParser()
         parser.feed(response.text)
@@ -121,7 +129,7 @@ class SitemapCollector(BaseCollectorStrategy):
         return Article(
             source=source.service_name,
             title=title.replace("\\ Anthropic", "").strip(),
-            url=HttpUrl(url),
+            url=HttpUrl(final_url),
             published_at=lastmod,
             collected_at=collected_at,
             summary=parser.og_description or parser.description,

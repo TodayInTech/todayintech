@@ -12,17 +12,25 @@ def build_collection_trace(
 ) -> dict[str, object]:
     total_duration_ms = sum(result.duration_ms for result in results)
     failed_count = sum(1 for result in results if result.status == "failed")
+    partial_count = sum(1 for result in results if result.status == "partial")
     warning_count = sum(len(result.warning_codes) for result in results)
+    if failed_count == len(results):
+        status = "failed"
+    elif failed_count or partial_count:
+        status = "partial"
+    else:
+        status = "success"
 
     return {
         "generated_at": datetime.now(UTC).isoformat(),
         "generated_for": generated_for,
         "stage": "collection",
-        "status": "failed" if failed_count else "success",
+        "status": status,
         "git_sha": os.getenv("GITHUB_SHA"),
         "github_run_id": os.getenv("GITHUB_RUN_ID"),
         "service_count": len(results),
         "failed_service_count": failed_count,
+        "partial_service_count": partial_count,
         "warning_count": warning_count,
         "total_article_count": sum(len(result.articles) for result in results),
         "duration_ms": total_duration_ms,
@@ -60,6 +68,7 @@ def build_collection_trace_markdown(trace: dict[str, object]) -> str:
         f"- Status: `{trace['status']}`",
         f"- Services: {trace['service_count']}",
         f"- Failed services: {trace['failed_service_count']}",
+        f"- Partial services: {trace.get('partial_service_count', 0)}",
         f"- Warnings: {trace['warning_count']}",
         f"- Total articles: {trace['total_article_count']}",
         f"- Total duration: {trace['duration_ms']} ms",

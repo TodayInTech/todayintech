@@ -121,6 +121,12 @@ Enrichment trace의 상태는 다음 의미를 갖는다.
 
 Enrichment trace에는 원문 본문과 chunk 텍스트를 저장하지 않는다. `content_hash`와 크기·구조·상태 지표만 저장해 원문 복제와 trace-history 비대화를 방지한다.
 
+Collection trace의 전체 상태는 다음 의미를 갖는다.
+
+- `success`: 실패 또는 부분 실패 서비스가 없다.
+- `partial`: 일부 서비스가 실패했거나 일부 서비스가 개별 article metadata 요청 실패 같은 복구 가능한 경고를 기록했다.
+- `failed`: 모든 서비스 수집이 실패했다.
+
 ## 실행 로그
 
 전체 파이프라인은 다음 4단계 로그를 출력한다.
@@ -147,6 +153,7 @@ published article 문서는 내부 판단 정보를 노출하지 않는다. 사�
 - `make trace-write`는 Writer Agent가 후보별로 내린 게시, 제외, 실패 판단과 근거를 기록한다.
 - 외부 네트워크 영향이 있으므로 trace duration은 강한 pass/fail 조건으로 사용하지 않는다.
 - 서비스별 article count가 0이면 `empty_collection` warning을 기록한다.
+- sitemap 기반 수집에서 개별 page metadata 요청이 실패하면 해당 URL만 제외하고 `article_metadata_fetch_failed` warning을 기록한다.
 - 일부 서비스 수집 실패는 trace에 기록하되, 성공한 서비스가 하나라도 있으면 collector CLI는 성공으로 종료한다.
 - 모든 서비스 수집이 실패하면 collector CLI는 실패로 종료한다.
 - GitHub Actions에서는 dev 의존성을 설치하고 `PYTHON=python`을 명시해서 로컬 `.venv` 경로에 의존하지 않는다.

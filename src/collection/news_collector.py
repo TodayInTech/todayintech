@@ -62,9 +62,11 @@ class NewsCollector:
             )
 
         duration_ms = int((perf_counter() - started_at) * 1000)
-        warning_codes = []
+        strategy_warning_codes = list(strategy.warning_codes)
+        warning_codes = strategy_warning_codes.copy()
         if not articles:
             warning_codes.append("empty_collection")
+        status = "partial" if strategy_warning_codes else "success"
 
         return ServiceCollectionResult(
             service_key=source.service_key,
@@ -72,7 +74,7 @@ class NewsCollector:
             source_url=source.source_url,
             collection_method=source.collector_type,
             collected_at=collected_at,
-            status="success",
+            status=status,
             duration_ms=duration_ms,
             articles=articles,
             warning_codes=warning_codes,

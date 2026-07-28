@@ -9,6 +9,9 @@ from src.sources.contracts.base import BaseNewsSource
 class BaseCollectorStrategy(ABC):
     collector_type: str
 
+    def __init__(self) -> None:
+        self.warning_codes: list[str] = []
+
     @abstractmethod
     def collect(self, source: BaseNewsSource) -> list[Article]:
         """Collect articles for the given source metadata."""

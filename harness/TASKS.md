@@ -43,6 +43,7 @@
   - [x] daily snapshot 수집 정책 문서화
   - [x] RSS collector의 `collection_limit` / `lookback_days` source 설정 지원
   - [x] Hacker News points/comments/rank metadata 추출
+  - [x] Sitemap collector의 redirect 처리와 개별 page metadata 실패 partial trace 처리
 
 - [x] Preprocessor - 완료
   - [x] URL canonicalization

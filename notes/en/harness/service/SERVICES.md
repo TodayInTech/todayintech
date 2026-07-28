@@ -47,7 +47,9 @@ When service implementations, collection conditions, or collector strategies cha
   - Fetch the official sitemap XML.
   - Include only URLs that match `url_prefixes`.
   - Sort entries by `lastmod` descending.
-  - Fetch page metadata up to `collection_limit`.
+  - Fetch page metadata until `collection_limit` normalized articles are collected.
+  - Follow HTTP redirects for page metadata requests.
+  - If an individual page metadata request fails, skip only that URL and record an `article_metadata_fetch_failed` warning.
   - Build `Article` from HTML title, og:title, description, and og:description.
 
 ## Expansion Update Checklist

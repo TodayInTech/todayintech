@@ -26,9 +26,36 @@ def test_collection_trace_includes_duration_and_warnings() -> None:
     trace = build_collection_trace("2026-06-07", [make_result()])
 
     assert trace["stage"] == "collection"
+    assert trace["status"] == "success"
     assert trace["duration_ms"] == 12
     assert trace["warning_count"] == 1
     assert trace["total_article_count"] == 0
+
+
+def test_collection_trace_marks_mixed_failed_services_as_partial() -> None:
+    trace = build_collection_trace(
+        "2026-06-07",
+        [
+            make_result(service_key="hacker-news", status="success"),
+            make_result(service_key="anthropic-blog", status="failed"),
+        ],
+    )
+
+    assert trace["status"] == "partial"
+    assert trace["failed_service_count"] == 1
+
+
+def test_collection_trace_marks_partial_service_as_partial() -> None:
+    trace = build_collection_trace(
+        "2026-06-07",
+        [
+            make_result(service_key="hacker-news", status="success"),
+            make_result(service_key="anthropic-blog", status="partial"),
+        ],
+    )
+
+    assert trace["status"] == "partial"
+    assert trace["partial_service_count"] == 1
 
 
 def test_write_collection_trace_outputs_json_and_markdown(tmp_path) -> None:
