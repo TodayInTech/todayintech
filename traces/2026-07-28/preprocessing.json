@@ -1,0 +1,388 @@
+{
+  "generated_at": "2026-07-28T22:54:57.369673+00:00",
+  "generated_for": "2026-07-28",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "f916ca4a060aa0ba1b88b429a41bc11d00db7ecd",
+  "github_run_id": "30406196425",
+  "service_count": 5,
+  "duration_ms": 13,
+  "raw_count": 120,
+  "candidate_count": 26,
+  "excluded_count": 94,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 4,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 41,
+      "excluded_count": 79,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 79
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 41,
+      "output_count": 41,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 41,
+      "output_count": 39,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 39,
+      "output_count": 26,
+      "excluded_count": 13,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 13
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:18816edf464a073a",
+          "title": "Introducing Claude Sonnet 4.5",
+          "normalized_url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+          "url_hash": "18816edf464a073a0120719e06fa0be2e9a471bda9b788f9439a93944f139cdf",
+          "suggested_doc_key": "2026-07-introducing-claude-sonnet-4-5-18816edf",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-introducing-claude-sonnet-4-5-18816edf.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 5일이 지난 글로 최신성 15점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:6c20810f6d90adf9",
+          "title": "Claude Opus 4.6",
+          "normalized_url": "https://www.anthropic.com/news/claude-opus-4-6",
+          "url_hash": "6c20810f6d90adf92db32ee22ba494bfdeaf45dd33da5f1e1bcaac8fbf50ec1c",
+          "suggested_doc_key": "2026-07-claude-opus-4-6-6c20810f",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-claude-opus-4-6-6c20810f.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 5일이 지난 글로 최신성 15점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:c4a45eed67ee9087",
+          "title": "Introducing Sonnet 4.6",
+          "normalized_url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+          "url_hash": "c4a45eed67ee9087aae3c9b945a92b29f9357ae0f3fd0c70616efed64ef2fb9b",
+          "suggested_doc_key": "2026-07-introducing-sonnet-4-6-c4a45eed",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-introducing-sonnet-4-6-c4a45eed.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:c34a327604b5be4a",
+          "title": "Introducing Claude Opus 5",
+          "normalized_url": "https://www.anthropic.com/news/claude-opus-5",
+          "url_hash": "c34a327604b5be4a7c98002df4365d3ba7ea31a8a315f02f0082d8694e23de2f",
+          "suggested_doc_key": "2026-07-introducing-claude-opus-5-c34a3276",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-introducing-claude-opus-5-c34a3276.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:b8af8104c423c106",
+          "title": "Introducing Claude Opus 4.7",
+          "normalized_url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "url_hash": "b8af8104c423c106c246cf3888db9acd84a3e3debcc44faf937582581ca7fa67",
+          "suggested_doc_key": "2026-07-introducing-claude-opus-4-7-b8af8104",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-introducing-claude-opus-4-7-b8af8104.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 4일이 지난 글로 최신성 16점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 7,
+        "service_candidate_limit": 3
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:d67ee4f7cec79e24",
+          "title": "Disrupting supply chain attacks on npm and GitHub Actions",
+          "normalized_url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions",
+          "url_hash": "d67ee4f7cec79e246d54a40eb00d78809cc81038e339f90eb398949f16142002",
+          "suggested_doc_key": "2026-07-disrupting-supply-chain-attacks-on-npm-and-github-actions-d67ee4f7",
+          "suggested_article_path": "docs/services/github-blog/2026-07-disrupting-supply-chain-attacks-on-npm-and-github-actions-d67ee4f7.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 4,
+      "excluded_count": 16,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:9c57623ef609667d",
+          "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks",
+          "url_hash": "9c57623ef609667de3c28690663edbc3d6ea9d6e32d9bc0cafa73a9b64ae67ae",
+          "suggested_doc_key": "2026-07-gemini-api-managed-agents-3-6-flash-hooks-and-more-9c57623e",
+          "suggested_article_path": "docs/services/google-blog/2026-07-gemini-api-managed-agents-3-6-flash-hooks-and-more-9c57623e.md",
+          "candidate_score": 46.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:be504c5c66c517d1",
+          "title": "Google and KDDI are ready to back Japanese startups.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/ai-startup-support-program-japan",
+          "url_hash": "be504c5c66c517d1e7001081e02fba9f530f4c4a93458ff65fe4b50a5d7b9a53",
+          "suggested_doc_key": "2026-07-google-and-kddi-are-ready-to-back-japanese-startups-be504c5c",
+          "suggested_article_path": "docs/services/google-blog/2026-07-google-and-kddi-are-ready-to-back-japanese-startups-be504c5c.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:388fcf76f8058935",
+          "title": "5 ways AI Mode in Search helps you enjoy the real world",
+          "normalized_url": "https://blog.google/products-and-platforms/products/search/ai-mode-real-world-tips",
+          "url_hash": "388fcf76f805893583afbc4f1162f65a8fbb8ae6cc42f28a885840da4f39b22a",
+          "suggested_doc_key": "2026-07-5-ways-ai-mode-in-search-helps-you-enjoy-the-real-world-388fcf76",
+          "suggested_article_path": "docs/services/google-blog/2026-07-5-ways-ai-mode-in-search-helps-you-enjoy-the-real-world-388fcf76.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:0bc671dd2735ab91",
+          "title": "5 ways to host the ultimate dinner party with Google Search",
+          "normalized_url": "https://blog.google/products-and-platforms/products/search/dinner-party-hosting-tips",
+          "url_hash": "0bc671dd2735ab91413c00dbc042fa8f4e9fb876acd613335d004c68d3d46d0a",
+          "suggested_doc_key": "2026-07-5-ways-to-host-the-ultimate-dinner-party-with-google-search-0bc671dd",
+          "suggested_article_path": "docs/services/google-blog/2026-07-5-ways-to-host-the-ultimate-dinner-party-with-google-search-0bc671dd.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 16
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:328a7b2dd544e188",
+          "title": "OpenAI just open-sourced Codex Security",
+          "normalized_url": "https://github.com/openai/codex-security",
+          "url_hash": "328a7b2dd544e1886d6cbf15dbfdc68d58f69cba3baabc611b075422049f88b5",
+          "suggested_doc_key": "2026-07-openai-just-open-sourced-codex-security-328a7b2d",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-openai-just-open-sourced-codex-security-328a7b2d.md",
+          "candidate_score": 61.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 216점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 44개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:32e787672513e8f5",
+          "title": "Substack writers, you need a website",
+          "normalized_url": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website",
+          "url_hash": "32e787672513e8f516b53a86637b92378336915981c23ba43de9abb506b69de1",
+          "suggested_doc_key": "2026-07-substack-writers-you-need-a-website-32e78767",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-substack-writers-you-need-a-website-32e78767.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 350점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 189개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:dd184ba680ec280d",
+          "title": "Delayed Gratification – Proud to Be 'Last to Breaking News'",
+          "normalized_url": "https://www.slow-journalism.com/",
+          "url_hash": "dd184ba680ec280d0414816b2a4ea97f46c9d0a61aed0b551da3e2cecbdb303e",
+          "suggested_doc_key": "2026-07-delayed-gratification-proud-to-be-last-to-breaking-news-dd184ba6",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-delayed-gratification-proud-to-be-last-to-breaking-news-dd184ba6.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 211점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 118개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:dc536c0fa72163cb",
+          "title": "Steel Bank Common Lisp version 2.6.7",
+          "normalized_url": "https://sbcl.org/all-news.html",
+          "url_hash": "dc536c0fa72163cb0be99bdccc4dfa3658cd07272935fc1d846998189b2c16e8",
+          "suggested_doc_key": "2026-07-steel-bank-common-lisp-version-2-6-7-dc536c0f",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-steel-bank-common-lisp-version-2-6-7-dc536c0f.md",
+          "candidate_score": 55.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 173점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 68개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5f83f5347c32a35f",
+          "title": "Discovering Cryptographic Weaknesses with Claude",
+          "normalized_url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+          "url_hash": "5f83f5347c32a35f18a99c26b62ed61e83cebbab35692f8d34d163fc1f88c4a4",
+          "suggested_doc_key": "2026-07-discovering-cryptographic-weaknesses-with-claude-5f83f534",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-discovering-cryptographic-weaknesses-with-claude-5f83f534.md",
+          "candidate_score": 54.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 149점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 77개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:824b5ba22f1e74f5",
+          "title": "Scientific computing in the age of agentic AI",
+          "normalized_url": "https://openai.com/index/scientific-computing-agentic-ai",
+          "url_hash": "824b5ba22f1e74f57103cf97c6ccba2fd0427fcaf3709c76d98de2dd553286e5",
+          "suggested_doc_key": "2026-07-scientific-computing-in-the-age-of-agentic-ai-824b5ba2",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-scientific-computing-in-the-age-of-agentic-ai-824b5ba2.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 47,
+        "low_quality": 2
+      }
+    }
+  ]
+}
