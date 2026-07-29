@@ -4180,6 +4180,146 @@
       "status": "published",
       "briefed_at": "2026-07-28T23:00:01.854293Z",
       "candidate_score": 44.0
+    },
+    "b8af8104c423c106c246cf3888db9acd84a3e3debcc44faf937582581ca7fa67": {
+      "normalized_url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "title_fingerprint": "introducing claude opus 4 7",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Claude Opus 4.7",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-introducing-claude-opus-4-7-b8af8104.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448434Z",
+      "candidate_score": 30.0
+    },
+    "7b68f4f0be7a0fcc372615ad5188279e6c2bee0f504020fe74eda9a686b2b510": {
+      "normalized_url": "https://www.anthropic.com/news/cognizant-anthropic",
+      "title_fingerprint": "expanding our partnership with cognizant anthropic",
+      "service_key": "anthropic-blog",
+      "title": "Expanding our partnership with Cognizant | Anthropic",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-expanding-our-partnership-with-cognizant-anthropic-7b68f4f0.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448467Z",
+      "candidate_score": 29.0
+    },
+    "a66075dc0af41a686afede1c5419e8bcfa7d5dcd01f45ff6f177d12c89781cea": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+      "title_fingerprint": "the anthropic economic index connector",
+      "service_key": "anthropic-blog",
+      "title": "The Anthropic Economic Index connector",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-the-anthropic-economic-index-connector-a66075dc.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448485Z",
+      "candidate_score": 29.0
+    },
+    "96c3c2c753dd6a77fc8501be34460e46859bc7a0a07ed8a69482399dabe69f1d": {
+      "normalized_url": "https://claude.com/blog/skills",
+      "title_fingerprint": "introducing agent skills claude by anthropic",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Agent Skills | Claude by Anthropic",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-introducing-agent-skills-claude-by-anthropic-96c3c2c7.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448496Z",
+      "candidate_score": 29.0
+    },
+    "930d2a6442fd3ef5f50894dc7c56f10ca0dd1d262d09b77df3a47590ed1e00ee": {
+      "normalized_url": "https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast",
+      "title_fingerprint": "tame dependabot group your updates slow the cadence keep security fast",
+      "service_key": "github-blog",
+      "title": "Tame Dependabot: Group your updates, slow the cadence, keep security fast",
+      "article_doc_path": "docs/services/github-blog/2026-07-tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast-930d2a64.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448506Z",
+      "candidate_score": 47.0
+    },
+    "d0cb8897142476046f0642897ce547520d1b214296fbf249f94403dd9a6d4cf5": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5",
+      "title_fingerprint": "we re launching lyria 3 5 in google flow music with advances across musicality lyrics vocals and creative control",
+      "service_key": "google-blog",
+      "title": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control.",
+      "article_doc_path": "docs/services/google-blog/2026-07-we-re-launching-lyria-3-5-in-google-flow-music-with-advances-across-musi-d0cb8897.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448515Z",
+      "candidate_score": 50.0
+    },
+    "72a7707aaabf5684f9a62d5e719b6e7bafdee92f2309fe7b468d7d17d9575733": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/families/kids-summer-screen-time-tips",
+      "title_fingerprint": "how the head of youtube health handles screen time with his kids",
+      "service_key": "google-blog",
+      "title": "How the Head of YouTube Health handles screen time with his kids",
+      "article_doc_path": "docs/services/google-blog/2026-07-how-the-head-of-youtube-health-handles-screen-time-with-his-kids-72a7707a.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448523Z",
+      "candidate_score": 36.0
+    },
+    "38dccf62a921a5a9b41717b99f69cd01b810f5c831060a4f3c76ed567a6613e8": {
+      "normalized_url": "https://status.claude.com/incidents/q2kg8n613kr3",
+      "title_fingerprint": "claude elevated errors across all models",
+      "service_key": "hacker-news",
+      "title": "Claude: Elevated errors across all models",
+      "article_doc_path": "docs/services/hacker-news/2026-07-claude-elevated-errors-across-all-models-38dccf62.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448532Z",
+      "candidate_score": 68.0
+    },
+    "841775c77ab6b253763dd6eadc7592f71e8f67a3367f8793603b544ad4105191": {
+      "normalized_url": "https://www.kimi.com/code/docs/en/kimi-code/models",
+      "title_fingerprint": "kimi k3 256k",
+      "service_key": "hacker-news",
+      "title": "Kimi K3-256k",
+      "article_doc_path": "docs/services/hacker-news/2026-07-kimi-k3-256k-841775c7.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448539Z",
+      "candidate_score": 67.0
+    },
+    "fd81af94c7cbaab53d73ece7a891957c8fd912620dba245931ee9304e93ebc81": {
+      "normalized_url": "https://christianselig.com/2026/07/vision-pro-house",
+      "title_fingerprint": "the coolest use for the vision pro",
+      "service_key": "hacker-news",
+      "title": "The coolest use for the Vision Pro",
+      "article_doc_path": "docs/services/hacker-news/2026-07-the-coolest-use-for-the-vision-pro-fd81af94.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448547Z",
+      "candidate_score": 66.0
+    },
+    "7af3ac00212dbeff3f174fce4687bb895223883c8fb862485a5b0c84883d3ecf": {
+      "normalized_url": "https://github.com/drumih/turbo-fieldfare",
+      "title_fingerprint": "show hn open source engine running gemma 4 26b in 2 gb ram on any m series mac",
+      "service_key": "hacker-news",
+      "title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+      "article_doc_path": "docs/services/hacker-news/2026-07-show-hn-open-source-engine-running-gemma-4-26b-in-2-gb-ram-on-any-m-seri-7af3ac00.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448554Z",
+      "candidate_score": 65.0
+    },
+    "265c6a0134aba9b6d5ff886a2c1062b903d9dc8f0af87700b1f7d6960b8f6865": {
+      "normalized_url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "title_fingerprint": "how enabling two settings tripled our scores on the arc agi 3 benchmark",
+      "service_key": "openai-blog",
+      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-enabling-two-settings-tripled-our-scores-on-the-arc-agi-3-benchmark-265c6a01.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448562Z",
+      "candidate_score": 49.0
+    },
+    "eb71f165025c2507b7b7067abfaf7b4dd62559816723e433f19a86477a150965": {
+      "normalized_url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+      "title_fingerprint": "how gpt 5 6 fuses frontier intelligence with frontier efficiency",
+      "service_key": "openai-blog",
+      "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-gpt-5-6-fuses-frontier-intelligence-with-frontier-efficiency-eb71f165.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448570Z",
+      "candidate_score": 47.0
+    },
+    "47da73cdc4f72b4cf63e62ddec1cddac6d047b374618b3abac91adde86c4557b": {
+      "normalized_url": "https://openai.com/index/chatgpt-for-academic-researchers",
+      "title_fingerprint": "accelerating scientific discovery with chatgpt for academic researchers",
+      "service_key": "openai-blog",
+      "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+      "article_doc_path": "docs/services/openai-blog/2026-07-accelerating-scientific-discovery-with-chatgpt-for-academic-researchers-47da73cd.md",
+      "status": "published",
+      "briefed_at": "2026-07-29T23:01:34.448578Z",
+      "candidate_score": 43.0
     }
   }
 }
