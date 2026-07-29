@@ -1,0 +1,389 @@
+{
+  "generated_at": "2026-07-29T22:57:11.778708+00:00",
+  "generated_for": "2026-07-29",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "e5f09809d1c12e698976fe9ecac47d7ab5e2229b",
+  "github_run_id": "30497823381",
+  "service_count": 5,
+  "duration_ms": 14,
+  "raw_count": 120,
+  "candidate_count": 25,
+  "excluded_count": 95,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 4,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 37,
+      "excluded_count": 83,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 83
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 37,
+      "output_count": 37,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 37,
+      "output_count": 35,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 35,
+      "output_count": 25,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 9,
+      "excluded_count": 11,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:b8af8104c423c106",
+          "title": "Introducing Claude Opus 4.7",
+          "normalized_url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "url_hash": "b8af8104c423c106c246cf3888db9acd84a3e3debcc44faf937582581ca7fa67",
+          "suggested_doc_key": "2026-07-introducing-claude-opus-4-7-b8af8104",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-introducing-claude-opus-4-7-b8af8104.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 5일이 지난 글로 최신성 15점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:7b68f4f0be7a0fcc",
+          "title": "Expanding our partnership with Cognizant | Anthropic",
+          "normalized_url": "https://www.anthropic.com/news/cognizant-anthropic",
+          "url_hash": "7b68f4f0be7a0fcc372615ad5188279e6c2bee0f504020fe74eda9a686b2b510",
+          "suggested_doc_key": "2026-07-expanding-our-partnership-with-cognizant-anthropic-7b68f4f0",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-expanding-our-partnership-with-cognizant-anthropic-7b68f4f0.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:a66075dc0af41a68",
+          "title": "The Anthropic Economic Index connector",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+          "url_hash": "a66075dc0af41a686afede1c5419e8bcfa7d5dcd01f45ff6f177d12c89781cea",
+          "suggested_doc_key": "2026-07-the-anthropic-economic-index-connector-a66075dc",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-the-anthropic-economic-index-connector-a66075dc.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:96c3c2c753dd6a77",
+          "title": "Introducing Agent Skills | Claude by Anthropic",
+          "normalized_url": "https://claude.com/blog/skills",
+          "url_hash": "96c3c2c753dd6a77fc8501be34460e46859bc7a0a07ed8a69482399dabe69f1d",
+          "suggested_doc_key": "2026-07-introducing-agent-skills-claude-by-anthropic-96c3c2c7",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-introducing-agent-skills-claude-by-anthropic-96c3c2c7.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:e99bd76836c10fea",
+          "title": "Introducing Claude Haiku 4.5",
+          "normalized_url": "https://www.anthropic.com/news/claude-haiku-4-5",
+          "url_hash": "e99bd76836c10fea04c16c307618ffed3e38c573391fc5a2f3ca53ebc900cbe2",
+          "suggested_doc_key": "2026-07-introducing-claude-haiku-4-5-e99bd768",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-introducing-claude-haiku-4-5-e99bd768.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 11
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:930d2a6442fd3ef5",
+          "title": "Tame Dependabot: Group your updates, slow the cadence, keep security fast",
+          "normalized_url": "https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast",
+          "url_hash": "930d2a6442fd3ef5f50894dc7c56f10ca0dd1d262d09b77df3a47590ed1e00ee",
+          "suggested_doc_key": "2026-07-tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast-930d2a64",
+          "suggested_article_path": "docs/services/github-blog/2026-07-tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast-930d2a64.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:d0cb889714247604",
+          "title": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5",
+          "url_hash": "d0cb8897142476046f0642897ce547520d1b214296fbf249f94403dd9a6d4cf5",
+          "suggested_doc_key": "2026-07-we-re-launching-lyria-3-5-in-google-flow-music-with-advances-across-musi-d0cb8897",
+          "suggested_article_path": "docs/services/google-blog/2026-07-we-re-launching-lyria-3-5-in-google-flow-music-with-advances-across-musi-d0cb8897.md",
+          "candidate_score": 50.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:72a7707aaabf5684",
+          "title": "How the Head of YouTube Health handles screen time with his kids",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/families/kids-summer-screen-time-tips",
+          "url_hash": "72a7707aaabf5684f9a62d5e719b6e7bafdee92f2309fe7b468d7d17d9575733",
+          "suggested_doc_key": "2026-07-how-the-head-of-youtube-health-handles-screen-time-with-his-kids-72a7707a",
+          "suggested_article_path": "docs/services/google-blog/2026-07-how-the-head-of-youtube-health-handles-screen-time-with-his-kids-72a7707a.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:38dccf62a921a5a9",
+          "title": "Claude: Elevated errors across all models",
+          "normalized_url": "https://status.claude.com/incidents/q2kg8n613kr3",
+          "url_hash": "38dccf62a921a5a9b41717b99f69cd01b810f5c831060a4f3c76ed567a6613e8",
+          "suggested_doc_key": "2026-07-claude-elevated-errors-across-all-models-38dccf62",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-claude-elevated-errors-across-all-models-38dccf62.md",
+          "candidate_score": 68.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 241점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 215개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:841775c77ab6b253",
+          "title": "Kimi K3-256k",
+          "normalized_url": "https://www.kimi.com/code/docs/en/kimi-code/models",
+          "url_hash": "841775c77ab6b253763dd6eadc7592f71e8f67a3367f8793603b544ad4105191",
+          "suggested_doc_key": "2026-07-kimi-k3-256k-841775c7",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-kimi-k3-256k-841775c7.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 288점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 87개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:fd81af94c7cbaab5",
+          "title": "The coolest use for the Vision Pro",
+          "normalized_url": "https://christianselig.com/2026/07/vision-pro-house",
+          "url_hash": "fd81af94c7cbaab53d73ece7a891957c8fd912620dba245931ee9304e93ebc81",
+          "suggested_doc_key": "2026-07-the-coolest-use-for-the-vision-pro-fd81af94",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-the-coolest-use-for-the-vision-pro-fd81af94.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 226점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 102개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7af3ac00212dbeff",
+          "title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+          "normalized_url": "https://github.com/drumih/turbo-fieldfare",
+          "url_hash": "7af3ac00212dbeff3f174fce4687bb895223883c8fb862485a5b0c84883d3ecf",
+          "suggested_doc_key": "2026-07-show-hn-open-source-engine-running-gemma-4-26b-in-2-gb-ram-on-any-m-seri-7af3ac00",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-show-hn-open-source-engine-running-gemma-4-26b-in-2-gb-ram-on-any-m-seri-7af3ac00.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 588점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 207개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:22e15fc9f7a60605",
+          "title": "Keychron announces first open-source firmware for gaming mice",
+          "normalized_url": "https://www.digitalfoundry.net/news/2026/07/keychron-announces-first-open-source-firmware-for-gaming-mice",
+          "url_hash": "22e15fc9f7a606059c6a860761a663a512dde5b218f43e330d5f924d41bd339d",
+          "suggested_doc_key": "2026-07-keychron-announces-first-open-source-firmware-for-gaming-mice-22e15fc9",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-keychron-announces-first-open-source-firmware-for-gaming-mice-22e15fc9.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 240점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 93개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:265c6a0134aba9b6",
+          "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+          "normalized_url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+          "url_hash": "265c6a0134aba9b6d5ff886a2c1062b903d9dc8f0af87700b1f7d6960b8f6865",
+          "suggested_doc_key": "2026-07-how-enabling-two-settings-tripled-our-scores-on-the-arc-agi-3-benchmark-265c6a01",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-how-enabling-two-settings-tripled-our-scores-on-the-arc-agi-3-benchmark-265c6a01.md",
+          "candidate_score": 49.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:eb71f165025c2507",
+          "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+          "normalized_url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+          "url_hash": "eb71f165025c2507b7b7067abfaf7b4dd62559816723e433f19a86477a150965",
+          "suggested_doc_key": "2026-07-how-gpt-5-6-fuses-frontier-intelligence-with-frontier-efficiency-eb71f165",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-how-gpt-5-6-fuses-frontier-intelligence-with-frontier-efficiency-eb71f165.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:47da73cdc4f72b4c",
+          "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+          "normalized_url": "https://openai.com/index/chatgpt-for-academic-researchers",
+          "url_hash": "47da73cdc4f72b4cf63e62ddec1cddac6d047b374618b3abac91adde86c4557b",
+          "suggested_doc_key": "2026-07-accelerating-scientific-discovery-with-chatgpt-for-academic-researchers-47da73cd",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-accelerating-scientific-discovery-with-chatgpt-for-academic-researchers-47da73cd.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 45,
+        "low_quality": 2
+      }
+    }
+  ]
+}
