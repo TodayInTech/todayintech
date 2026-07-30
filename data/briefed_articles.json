@@ -4320,6 +4320,116 @@
       "status": "published",
       "briefed_at": "2026-07-29T23:01:34.448578Z",
       "candidate_score": 43.0
+    },
+    "e99bd76836c10fea04c16c307618ffed3e38c573391fc5a2f3ca53ebc900cbe2": {
+      "normalized_url": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "title_fingerprint": "introducing claude haiku 4 5",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Claude Haiku 4.5",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-introducing-claude-haiku-4-5-e99bd768.md",
+      "status": "published",
+      "briefed_at": "2026-07-30T23:04:03.129120Z",
+      "candidate_score": 28.0
+    },
+    "b205cd86d4ec238df483928edeb5f294e709ab16aebbeaf65235c3c5e414f8f8": {
+      "normalized_url": "https://www.anthropic.com/news/claude-for-small-business",
+      "title_fingerprint": "introducing claude for small business",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Claude for Small Business",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-introducing-claude-for-small-business-b205cd86.md",
+      "status": "published",
+      "briefed_at": "2026-07-30T23:04:03.129158Z",
+      "candidate_score": 28.0
+    },
+    "26b4e01c469da5ded83060c3fb2297eb76b1b3c0db7f57c22929bc2a002e9c69": {
+      "normalized_url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
+      "title_fingerprint": "supporting ambitious external research through the anthropic economic futures research fund",
+      "service_key": "anthropic-blog",
+      "title": "Supporting ambitious external research through the Anthropic Economic Futures Research Fund",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-supporting-ambitious-external-research-through-the-anthropic-economic-fu-26b4e01c.md",
+      "status": "published",
+      "briefed_at": "2026-07-30T23:04:03.129171Z",
+      "candidate_score": 25.0
+    },
+    "57f01cae307e1cb179e12adfd7ec1cd832866b98166c1a2601ae436e96ae4a85": {
+      "normalized_url": "https://www.anthropic.com/news/claude-opus-4-5",
+      "title_fingerprint": "introducing claude opus 4 5",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Claude Opus 4.5",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-introducing-claude-opus-4-5-57f01cae.md",
+      "status": "published",
+      "briefed_at": "2026-07-30T23:04:03.129178Z",
+      "candidate_score": 24.0
+    },
+    "44555fb737bc2545bd6b3d31cd7e9a4709807d68ede8586899514ba10b54b77d": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app",
+      "title_fingerprint": "stacked sessions and pull requests in the github copilot app",
+      "service_key": "github-blog",
+      "title": "Stacked sessions and pull requests in the GitHub Copilot app",
+      "article_doc_path": "docs/services/github-blog/2026-07-stacked-sessions-and-pull-requests-in-the-github-copilot-app-44555fb7.md",
+      "status": "published",
+      "briefed_at": "2026-07-30T23:04:03.129184Z",
+      "candidate_score": 37.0
+    },
+    "c9dcffb683fd112fc820eecbda90e3862c889363501bfd99486587352a677c9a": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/google-flow-sessions-short-films",
+      "title_fingerprint": "take a look at short films created by our latest group of artists in google s flow sessions program",
+      "service_key": "google-blog",
+      "title": "Take a look at short films created by our latest group of artists in Google’s Flow Sessions program.",
+      "article_doc_path": "docs/services/google-blog/2026-07-take-a-look-at-short-films-created-by-our-latest-group-of-artists-in-goo-c9dcffb6.md",
+      "status": "published",
+      "briefed_at": "2026-07-30T23:04:03.129190Z",
+      "candidate_score": 40.0
+    },
+    "a27bdeca482902167344c631ec0615b6f5cd05e92fc7b6a987d82882e74d16cc": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2",
+      "title_fingerprint": "introducing gemini robotics er 2",
+      "service_key": "google-blog",
+      "title": "Introducing Gemini Robotics ER 2",
+      "article_doc_path": "docs/services/google-blog/2026-07-introducing-gemini-robotics-er-2-a27bdeca.md",
+      "status": "published",
+      "briefed_at": "2026-07-30T23:04:03.129194Z",
+      "candidate_score": 36.0
+    },
+    "02990a389223d8b2cb5613122d9e10d7922d1224cc90d1c53aaa2a8af1cdc8f4": {
+      "normalized_url": "https://www.uefa.com/news-media/news/02a7-213a92896eb0-54dfbf454e3b-1000--statement-on-behalf-of-uefa-and-its-55-national-associations",
+      "title_fingerprint": "uefa and its national associations will not participate in fifa competitions",
+      "service_key": "hacker-news",
+      "title": "UEFA and its national associations will not participate in FIFA competitions",
+      "article_doc_path": "docs/services/hacker-news/2026-07-uefa-and-its-national-associations-will-not-participate-in-fifa-competit-02990a38.md",
+      "status": "published",
+      "briefed_at": "2026-07-30T23:04:03.129199Z",
+      "candidate_score": 66.0
+    },
+    "9c13428640bff23af0bf9aa9c1e9778a5b597ee86bc786406a42a72713fb565e": {
+      "normalized_url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick",
+      "title_fingerprint": "read this before you buy that tv streaming stick",
+      "service_key": "hacker-news",
+      "title": "Read this before you buy that TV streaming stick",
+      "article_doc_path": "docs/services/hacker-news/2026-07-read-this-before-you-buy-that-tv-streaming-stick-9c134286.md",
+      "status": "published",
+      "briefed_at": "2026-07-30T23:04:03.129204Z",
+      "candidate_score": 65.0
+    },
+    "0688993bfb00106de53113a01add20770a5b78d002f03d4c400a35c8f5ae6472": {
+      "normalized_url": "https://www.bottlenecklabs.com/blog/autonomously-run-businesses",
+      "title_fingerprint": "we gave gpt 5 6 sol a real business it lied spammed and lost 447",
+      "service_key": "hacker-news",
+      "title": "We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447",
+      "article_doc_path": "docs/services/hacker-news/2026-07-we-gave-gpt-5-6-sol-a-real-business-it-lied-spammed-and-lost-447-0688993b.md",
+      "status": "published",
+      "briefed_at": "2026-07-30T23:04:03.129208Z",
+      "candidate_score": 62.0
+    },
+    "dca7adc62d79fe1cd1f14123a9361fd37385e369d15b41b0dca2dfd1ff0e4aa7": {
+      "normalized_url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "title_fingerprint": "advancing the price performance frontier with gpt 5 6",
+      "service_key": "hacker-news",
+      "title": "Advancing the price-performance frontier with GPT‑5.6",
+      "article_doc_path": "docs/services/hacker-news/2026-07-advancing-the-price-performance-frontier-with-gpt-5-6-dca7adc6.md",
+      "status": "published",
+      "briefed_at": "2026-07-30T23:04:03.129213Z",
+      "candidate_score": 61.0
     }
   }
 }
