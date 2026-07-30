@@ -1,0 +1,341 @@
+{
+  "generated_at": "2026-07-30T23:00:32.725722+00:00",
+  "generated_for": "2026-07-30",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "d650673155220dfdbd9df9b1194136a2785ae1bd",
+  "github_run_id": "30589014102",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 18,
+  "excluded_count": 102,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 30,
+      "excluded_count": 89,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 89
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 30,
+      "output_count": 30,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 30,
+      "output_count": 28,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 28,
+      "output_count": 18,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 5,
+      "excluded_count": 15,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:e99bd76836c10fea",
+          "title": "Introducing Claude Haiku 4.5",
+          "normalized_url": "https://www.anthropic.com/news/claude-haiku-4-5",
+          "url_hash": "e99bd76836c10fea04c16c307618ffed3e38c573391fc5a2f3ca53ebc900cbe2",
+          "suggested_doc_key": "2026-07-introducing-claude-haiku-4-5-e99bd768",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-introducing-claude-haiku-4-5-e99bd768.md",
+          "candidate_score": 28.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 7일이 지난 글로 최신성 13점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:b205cd86d4ec238d",
+          "title": "Introducing Claude for Small Business",
+          "normalized_url": "https://www.anthropic.com/news/claude-for-small-business",
+          "url_hash": "b205cd86d4ec238df483928edeb5f294e709ab16aebbeaf65235c3c5e414f8f8",
+          "suggested_doc_key": "2026-07-introducing-claude-for-small-business-b205cd86",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-introducing-claude-for-small-business-b205cd86.md",
+          "candidate_score": 28.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 7일이 지난 글로 최신성 13점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:26b4e01c469da5de",
+          "title": "Supporting ambitious external research through the Anthropic Economic Futures Research Fund",
+          "normalized_url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
+          "url_hash": "26b4e01c469da5ded83060c3fb2297eb76b1b3c0db7f57c22929bc2a002e9c69",
+          "suggested_doc_key": "2026-07-supporting-ambitious-external-research-through-the-anthropic-economic-fu-26b4e01c",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-supporting-ambitious-external-research-through-the-anthropic-economic-fu-26b4e01c.md",
+          "candidate_score": 25.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 5일이 지난 글로 최신성 15점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:57f01cae307e1cb1",
+          "title": "Introducing Claude Opus 4.5",
+          "normalized_url": "https://www.anthropic.com/news/claude-opus-4-5",
+          "url_hash": "57f01cae307e1cb179e12adfd7ec1cd832866b98166c1a2601ae436e96ae4a85",
+          "suggested_doc_key": "2026-07-introducing-claude-opus-4-5-57f01cae",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-introducing-claude-opus-4-5-57f01cae.md",
+          "candidate_score": 24.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:9d9e4fbe80b29906",
+          "title": "Donating another $20 million to Public First Action",
+          "normalized_url": "https://www.anthropic.com/news/donation-public-first-action",
+          "url_hash": "9d9e4fbe80b29906125ae8d95500a6f0a6f6871ab5350a08b59e8c0e7528785b",
+          "suggested_doc_key": "2026-07-donating-another-20-million-to-public-first-action-9d9e4fbe",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-07-donating-another-20-million-to-public-first-action-9d9e4fbe.md",
+          "candidate_score": 23.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 7일이 지난 글로 최신성 13점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 15
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:44555fb737bc2545",
+          "title": "Stacked sessions and pull requests in the GitHub Copilot app",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app",
+          "url_hash": "44555fb737bc2545bd6b3d31cd7e9a4709807d68ede8586899514ba10b54b77d",
+          "suggested_doc_key": "2026-07-stacked-sessions-and-pull-requests-in-the-github-copilot-app-44555fb7",
+          "suggested_article_path": "docs/services/github-blog/2026-07-stacked-sessions-and-pull-requests-in-the-github-copilot-app-44555fb7.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:c9dcffb683fd112f",
+          "title": "Take a look at short films created by our latest group of artists in Google’s Flow Sessions program.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/google-flow-sessions-short-films",
+          "url_hash": "c9dcffb683fd112fc820eecbda90e3862c889363501bfd99486587352a677c9a",
+          "suggested_doc_key": "2026-07-take-a-look-at-short-films-created-by-our-latest-group-of-artists-in-goo-c9dcffb6",
+          "suggested_article_path": "docs/services/google-blog/2026-07-take-a-look-at-short-films-created-by-our-latest-group-of-artists-in-goo-c9dcffb6.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:a27bdeca48290216",
+          "title": "Introducing Gemini Robotics ER 2",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2",
+          "url_hash": "a27bdeca482902167344c631ec0615b6f5cd05e92fc7b6a987d82882e74d16cc",
+          "suggested_doc_key": "2026-07-introducing-gemini-robotics-er-2-a27bdeca",
+          "suggested_article_path": "docs/services/google-blog/2026-07-introducing-gemini-robotics-er-2-a27bdeca.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:02990a389223d8b2",
+          "title": "UEFA and its national associations will not participate in FIFA competitions",
+          "normalized_url": "https://www.uefa.com/news-media/news/02a7-213a92896eb0-54dfbf454e3b-1000--statement-on-behalf-of-uefa-and-its-55-national-associations",
+          "url_hash": "02990a389223d8b2cb5613122d9e10d7922d1224cc90d1c53aaa2a8af1cdc8f4",
+          "suggested_doc_key": "2026-07-uefa-and-its-national-associations-will-not-participate-in-fifa-competit-02990a38",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-uefa-and-its-national-associations-will-not-participate-in-fifa-competit-02990a38.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 607점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 340개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9c13428640bff23a",
+          "title": "Read this before you buy that TV streaming stick",
+          "normalized_url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick",
+          "url_hash": "9c13428640bff23af0bf9aa9c1e9778a5b597ee86bc786406a42a72713fb565e",
+          "suggested_doc_key": "2026-07-read-this-before-you-buy-that-tv-streaming-stick-9c134286",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-read-this-before-you-buy-that-tv-streaming-stick-9c134286.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 434점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 247개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0688993bfb00106d",
+          "title": "We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447",
+          "normalized_url": "https://www.bottlenecklabs.com/blog/autonomously-run-businesses",
+          "url_hash": "0688993bfb00106de53113a01add20770a5b78d002f03d4c400a35c8f5ae6472",
+          "suggested_doc_key": "2026-07-we-gave-gpt-5-6-sol-a-real-business-it-lied-spammed-and-lost-447-0688993b",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-we-gave-gpt-5-6-sol-a-real-business-it-lied-spammed-and-lost-447-0688993b.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 252점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 154개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:dca7adc62d79fe1c",
+          "title": "Advancing the price-performance frontier with GPT‑5.6",
+          "normalized_url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+          "url_hash": "dca7adc62d79fe1cd1f14123a9361fd37385e369d15b41b0dca2dfd1ff0e4aa7",
+          "suggested_doc_key": "2026-07-advancing-the-price-performance-frontier-with-gpt-5-6-dca7adc6",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-advancing-the-price-performance-frontier-with-gpt-5-6-dca7adc6.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 448점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 281개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:242ebce3d4d4dd18",
+          "title": "Stacked PRs are now live on GitHub",
+          "normalized_url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview",
+          "url_hash": "242ebce3d4d4dd183fde9a9969e0ce2e9b6b49143d747701b4c026476344168d",
+          "suggested_doc_key": "2026-07-stacked-prs-are-now-live-on-github-242ebce3",
+          "suggested_article_path": "docs/services/hacker-news/2026-07-stacked-prs-are-now-live-on-github-242ebce3.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 375점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 128개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 47,
+        "low_quality": 2
+      }
+    }
+  ]
+}
