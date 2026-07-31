@@ -4430,6 +4430,116 @@
       "status": "published",
       "briefed_at": "2026-07-30T23:04:03.129213Z",
       "candidate_score": 61.0
+    },
+    "8b96329aed14643e23bf39fb9aa7b5e56dc3afb98185d1d312a86b20fb5b2146": {
+      "normalized_url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+      "title_fingerprint": "investigating three real world incidents in our cybersecurity evaluations",
+      "service_key": "anthropic-blog",
+      "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-investigating-three-real-world-incidents-in-our-cybersecurity-evaluation-8b96329a.md",
+      "status": "published",
+      "briefed_at": "2026-07-31T22:58:37.479706Z",
+      "candidate_score": 40.0
+    },
+    "9d9e4fbe80b29906125ae8d95500a6f0a6f6871ab5350a08b59e8c0e7528785b": {
+      "normalized_url": "https://www.anthropic.com/news/donation-public-first-action",
+      "title_fingerprint": "donating another 20 million to public first action",
+      "service_key": "anthropic-blog",
+      "title": "Donating another $20 million to Public First Action",
+      "article_doc_path": "docs/services/anthropic-blog/2026-07-donating-another-20-million-to-public-first-action-9d9e4fbe.md",
+      "status": "published",
+      "briefed_at": "2026-07-31T22:58:37.479751Z",
+      "candidate_score": 22.0
+    },
+    "8374eb3de5361b2e06c4038d17ebcbc8bffd86ab76e22b36c33c5ed5c44ae2b4": {
+      "normalized_url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed",
+      "title_fingerprint": "don t stop early case folding source code at memory speed",
+      "service_key": "github-blog",
+      "title": "Don’t stop early: Case-folding source code at memory speed",
+      "article_doc_path": "docs/services/github-blog/2026-07-don-t-stop-early-case-folding-source-code-at-memory-speed-8374eb3d.md",
+      "status": "published",
+      "briefed_at": "2026-07-31T22:58:37.479764Z",
+      "candidate_score": 37.0
+    },
+    "f5a126490d5862de79d9bcadb30e39f1ddf356bc1794512e63344ec6218d5699": {
+      "normalized_url": "https://tailscale.com/blog/hugging-face-intrusion",
+      "title_fingerprint": "tailscale didn t stop the hugging face intrusion",
+      "service_key": "hacker-news",
+      "title": "Tailscale didn't stop the Hugging Face intrusion",
+      "article_doc_path": "docs/services/hacker-news/2026-07-tailscale-didn-t-stop-the-hugging-face-intrusion-f5a12649.md",
+      "status": "published",
+      "briefed_at": "2026-07-31T22:58:37.479772Z",
+      "candidate_score": 65.0
+    },
+    "872178780cb4ed91da4b8b0c8263cf133d1c37e73264d31c0daf87708fd8f0d0": {
+      "normalized_url": "https://github.com/yc-software/qm",
+      "title_fingerprint": "qm",
+      "service_key": "hacker-news",
+      "title": "qm",
+      "article_doc_path": "docs/services/hacker-news/2026-07-qm-87217878.md",
+      "status": "published",
+      "briefed_at": "2026-07-31T22:58:37.479780Z",
+      "candidate_score": 60.0
+    },
+    "d391748e5c28bf53bc9feb1412a67143e7ab98d48d14fb6163fc1f9ce16d4869": {
+      "normalized_url": "https://john.fun/elevators",
+      "title_fingerprint": "elevators",
+      "service_key": "hacker-news",
+      "title": "Elevators",
+      "article_doc_path": "docs/services/hacker-news/2026-07-elevators-d391748e.md",
+      "status": "published",
+      "briefed_at": "2026-07-31T22:58:37.479787Z",
+      "candidate_score": 60.0
+    },
+    "92e2a6b2f5f696c2529254825b028a472a4a2e135dd7a29b2cd700114c9195ac": {
+      "normalized_url": "https://www.lighthousereports.com/investigation/big-food-vs-the-people",
+      "title_fingerprint": "big food vs the people",
+      "service_key": "hacker-news",
+      "title": "Big Food vs. the People",
+      "article_doc_path": "docs/services/hacker-news/2026-07-big-food-vs-the-people-92e2a6b2.md",
+      "status": "published",
+      "briefed_at": "2026-07-31T22:58:37.479794Z",
+      "candidate_score": 56.4
+    },
+    "f8ec64126bdac17b3b31c4b605b37e973d9d687edd758330e6ea3e1eb48255f8": {
+      "normalized_url": "https://openai.com/index/advancing-responsible-ai-across-europe",
+      "title_fingerprint": "advancing responsible ai across europe",
+      "service_key": "openai-blog",
+      "title": "Advancing responsible AI across Europe",
+      "article_doc_path": "docs/services/openai-blog/2026-07-advancing-responsible-ai-across-europe-f8ec6412.md",
+      "status": "published",
+      "briefed_at": "2026-07-31T22:58:37.479801Z",
+      "candidate_score": 44.0
+    },
+    "966cd163f8692d8ca443109be9eebb5cc04899a4c12488381837a35fb8b36194": {
+      "normalized_url": "https://openai.com/index/building-abundant-intelligence",
+      "title_fingerprint": "building abundant intelligence",
+      "service_key": "openai-blog",
+      "title": "Building abundant intelligence",
+      "article_doc_path": "docs/services/openai-blog/2026-07-building-abundant-intelligence-966cd163.md",
+      "status": "published",
+      "briefed_at": "2026-07-31T22:58:37.479809Z",
+      "candidate_score": 38.0
+    },
+    "cd88270c00622dafecb0412d295703fb280f9b31487d7a171ee860abf6e9629b": {
+      "normalized_url": "https://openai.com/index/unive",
+      "title_fingerprint": "univ builds an ai ready workforce",
+      "service_key": "openai-blog",
+      "title": "Univé builds an AI-ready workforce",
+      "article_doc_path": "docs/services/openai-blog/2026-07-univ-builds-an-ai-ready-workforce-cd88270c.md",
+      "status": "published",
+      "briefed_at": "2026-07-31T22:58:37.479815Z",
+      "candidate_score": 37.0
+    },
+    "ff7c1653ce2eb767fcfcc9774affc2f411aa829832661f2c159f64d4069a72a7": {
+      "normalized_url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
+      "title_fingerprint": "disrupting a criminal scam operation",
+      "service_key": "openai-blog",
+      "title": "Disrupting a Criminal Scam Operation",
+      "article_doc_path": "docs/services/openai-blog/2026-07-disrupting-a-criminal-scam-operation-ff7c1653.md",
+      "status": "published",
+      "briefed_at": "2026-07-31T22:58:37.479822Z",
+      "candidate_score": 36.0
     }
   }
 }
