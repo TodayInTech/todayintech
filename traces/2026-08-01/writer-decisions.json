@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-08-01T22:51:18.947513+00:00",
+  "generated_for": "2026-08-01",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "d9307336085c2091fa83ec2e49c5d2a775c6f17a",
+  "github_run_id": "30722040283",
+  "decision_count": 6,
+  "decision_counts": {
+    "published": 6
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:ca741c1b46d0615e",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "NetBSD 11.0",
+      "normalized_url": "https://blog.netbsd.org/tnf/entry/netbsd_11_0_released",
+      "article_doc_path": "docs/services/hacker-news/2026-08-netbsd-11-0-ca741c1b.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "운영체제",
+      "importance_level": "높음",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "NetBSD 11.0의 공식 출시와 함께 설치 이미지 형식 변화, ARM용 사전 구성 이미지 안내, 보안 이슈에 대한 투명한 공개 방침 및 후속 패치 계획(11.1 목표)이 명확히 제시되어 기술 독자들에게 실무적 가치가 높아 보입니다. Hacker News 반응도 있어 배포 가치가 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 62.9,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:e958ae16fc0ccd77",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "The Silicon Valley Founder Meat Grinder",
+      "normalized_url": "https://zaksa.zip/blog/silicon-valley-founder-meat-grinder",
+      "article_doc_path": "docs/services/hacker-news/2026-08-the-silicon-valley-founder-meat-grinder-e958ae16.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "스타트업/오피니언",
+      "importance_level": "Medium",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 실무적 배경과 구체적 일화로 실리콘밸리의 '파이프라인'과 성공·붕괴의 역동성을 보여주며 기술 독자들이 스타트업 생태계의 선발·신호 체계와 리스크를 성찰할 만한 근거를 제시합니다. Hacker News 반응(포인트·댓글)도 있어 기술 커뮤니티 관심이 확인됩니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 62.8,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:ab2119482637f75b",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Cursor removed cost information from the usage page and CSV export",
+      "normalized_url": "https://forum.cursor.com/t/usage-page-to-token-amount-what/167153",
+      "article_doc_path": "docs/services/hacker-news/2026-08-cursor-removed-cost-information-from-the-usage-page-and-csv-export-ab211948.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "청구·사용량 리포팅 변경",
+      "importance_level": "High",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Cursor가 셀프서비스(개인·Teams 포함) 요금제의 사용량 페이지와 Usage CSV에서 달러(cost) 정보를 의도적으로 제거하고 토큰 기반 표시로 전환한 사실과, 이 변경이 API의 과거 기록까지 달러 필드를 0으로 만드는 방식으로 적용되어 기존 대시보드와 외부 리포팅 툴에 영향을 준 점이 원문 근거로 명확합니다. 기술적으로 메트릭·청구 추적에 중대한 영향이 있어 독자 가치가 높다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:7ac517d150ddf76b",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "A Surveillance Treaty in Disguise: Canada Signs UN Cybercrime Convention",
+      "normalized_url": "https://www.michaelgeist.ca/2026/07/a-surveillance-treaty-in-disguise-the-trouble-with-canadas-quiet-decision-to-sign-the-un-cybercrime-convention",
+      "article_doc_path": "docs/services/hacker-news/2026-08-a-surveillance-treaty-in-disguise-canada-signs-un-cybercrime-convention-7ac517d1.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "사이버보안·프라이버시 정책",
+      "importance_level": "높음",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "캐나다의 유엔 사이버범죄협약 서명이 국가간 전자증거·감시 권한 확대와 국내 법제(예: lawful access) 연계 가능성을 시사하며, 기술·법률·인권적 파급력이 크기 때문에 Today in Tech 독자 대상 가치가 높다. 원문은 배경, 반대 이유, 기술적 위험과 관련 단체의 우려를 구체적으로 제시한다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:e299630b866e2d7e",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Ten advances in mathematics and theoretical computer science",
+      "normalized_url": "https://openai.com/index/ten-advances-in-mathematics",
+      "article_doc_path": "docs/services/openai-blog/2026-08-ten-advances-in-mathematics-and-theoretical-computer-science-e299630b.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "수학·이론컴퓨터과학",
+      "importance_level": "중간-높음",
+      "confidence_score": 0.6,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 OpenAI가 기하학, 암호학, 복잡도 이론 등에서 오랫동안 열려 있던 문제들에 관한 새로운 결과를 공개했다는 핵심 정보를 제공하므로 기술 독자에게 관심을 끌 만합니다. 원문 전문은 제공되지 않아 구체적 내용이나 기법을 확인할 수 없다는 한계는 있으나 주제와 잠재적 영향이 명확해 배포 가치가 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Ten advances in mathematics and theoretical computer science",
+        "feed_summary: OpenAI shares new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity.",
+        "source_url: https://openai.com/index/ten-advances-in-mathematics",
+        "published_at: 2026-08-01T00:00:00+00:00",
+        "collected_at: 2026-08-01T22:49:26.342374+00:00"
+      ],
+      "candidate_score": 39.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:da425c76a8c018d0",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+      "normalized_url": "https://openai.com/index/avatarin",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-avatarin-built-a-24-7-retail-agent-with-gpt-realtime-da425c76.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 적용 사례",
+      "importance_level": "중간",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 실사용자 수와 만족도(2주간 3만명, 설문 긍정률 92%)가 명시되어 있어 GPT-Realtime 기반 리테일 고객지원 적용 사례로 기술 독자에게 유용한 초기 성과 정보를 제공함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "service_name: OpenAI Blog",
+        "title: How avatarin built a 24/7 retail agent with GPT-Realtime",
+        "feed_summary",
+        "published_at",
+        "collected_at"
+      ],
+      "candidate_score": 32.0,
+      "error_message": null
+    }
+  ]
+}

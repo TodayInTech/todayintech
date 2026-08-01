@@ -1,0 +1,256 @@
+{
+  "generated_at": "2026-08-01T22:49:14.190501+00:00",
+  "generated_for": "2026-08-01",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "d9307336085c2091fa83ec2e49c5d2a775c6f17a",
+  "github_run_id": "30722040283",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 12,
+  "excluded_count": 108,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 24,
+      "excluded_count": 96,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 96
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 24,
+      "output_count": 22,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 22,
+      "output_count": 12,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:ca741c1b46d0615e",
+          "title": "NetBSD 11.0",
+          "normalized_url": "https://blog.netbsd.org/tnf/entry/netbsd_11_0_released",
+          "url_hash": "ca741c1b46d0615e7fa42dfa32ad8a58bbe06e4ea58bfabaabcaee59fd3983b1",
+          "suggested_doc_key": "2026-08-netbsd-11-0-ca741c1b",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-netbsd-11-0-ca741c1b.md",
+          "candidate_score": 62.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 179점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 79개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e958ae16fc0ccd77",
+          "title": "The Silicon Valley Founder Meat Grinder",
+          "normalized_url": "https://zaksa.zip/blog/silicon-valley-founder-meat-grinder",
+          "url_hash": "e958ae16fc0ccd77c84b92e73a7dbc99ccbe0e5384c732dcbde9047788f34212",
+          "suggested_doc_key": "2026-08-the-silicon-valley-founder-meat-grinder-e958ae16",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-the-silicon-valley-founder-meat-grinder-e958ae16.md",
+          "candidate_score": 62.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 168점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 101개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:ab2119482637f75b",
+          "title": "Cursor removed cost information from the usage page and CSV export",
+          "normalized_url": "https://forum.cursor.com/t/usage-page-to-token-amount-what/167153",
+          "url_hash": "ab2119482637f75b055c8ca622b20df2f3fabd28ea9f7ed5d438fa02f3fca108",
+          "suggested_doc_key": "2026-08-cursor-removed-cost-information-from-the-usage-page-and-csv-export-ab211948",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-cursor-removed-cost-information-from-the-usage-page-and-csv-export-ab211948.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 275점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 121개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7ac517d150ddf76b",
+          "title": "A Surveillance Treaty in Disguise: Canada Signs UN Cybercrime Convention",
+          "normalized_url": "https://www.michaelgeist.ca/2026/07/a-surveillance-treaty-in-disguise-the-trouble-with-canadas-quiet-decision-to-sign-the-un-cybercrime-convention",
+          "url_hash": "7ac517d150ddf76bc8cb305120b2253d46bddcd52eeb88d93e24bfda9bd966a3",
+          "suggested_doc_key": "2026-08-a-surveillance-treaty-in-disguise-canada-signs-un-cybercrime-convention-7ac517d1",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-a-surveillance-treaty-in-disguise-canada-signs-un-cybercrime-convention-7ac517d1.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 241점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 130개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9e9238cf0bbd920f",
+          "title": "RipGrep musl binaries occasionally segfault during very-large searches",
+          "normalized_url": "https://github.com/BurntSushi/ripgrep/issues/3494",
+          "url_hash": "9e9238cf0bbd920f913738dd465e54834e5dd8f6afa4a8b578e8d716fc77c29a",
+          "suggested_doc_key": "2026-08-ripgrep-musl-binaries-occasionally-segfault-during-very-large-searches-9e9238cf",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-ripgrep-musl-binaries-occasionally-segfault-during-very-large-searches-9e9238cf.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 233점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 159개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 2,
+      "excluded_count": 48,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:e299630b866e2d7e",
+          "title": "Ten advances in mathematics and theoretical computer science",
+          "normalized_url": "https://openai.com/index/ten-advances-in-mathematics",
+          "url_hash": "e299630b866e2d7ebb7f543050983e5dd910dbcd47a219178da9f4e988c6a6ce",
+          "suggested_doc_key": "2026-08-ten-advances-in-mathematics-and-theoretical-computer-science-e299630b",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-ten-advances-in-mathematics-and-theoretical-computer-science-e299630b.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:da425c76a8c018d0",
+          "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+          "normalized_url": "https://openai.com/index/avatarin",
+          "url_hash": "da425c76a8c018d071b2c12789d5fcc92fecdaeeb09350e132a1dda9e2a72958",
+          "suggested_doc_key": "2026-07-how-avatarin-built-a-24-7-retail-agent-with-gpt-realtime-da425c76",
+          "suggested_article_path": "docs/services/openai-blog/2026-07-how-avatarin-built-a-24-7-retail-agent-with-gpt-realtime-da425c76.md",
+          "candidate_score": 32.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 46,
+        "low_quality": 2
+      }
+    }
+  ]
+}
