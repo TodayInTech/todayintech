@@ -5,7 +5,7 @@ sidebar_label: Today in Tech
 
 # Today in Tech
 
-생성일: 2026-07-31
+생성일: 2026-08-01
 
 ## 추천 글
 

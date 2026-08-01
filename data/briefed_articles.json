@@ -4540,6 +4540,66 @@
       "status": "published",
       "briefed_at": "2026-07-31T22:58:37.479822Z",
       "candidate_score": 36.0
+    },
+    "ca741c1b46d0615e7fa42dfa32ad8a58bbe06e4ea58bfabaabcaee59fd3983b1": {
+      "normalized_url": "https://blog.netbsd.org/tnf/entry/netbsd_11_0_released",
+      "title_fingerprint": "netbsd 11 0",
+      "service_key": "hacker-news",
+      "title": "NetBSD 11.0",
+      "article_doc_path": "docs/services/hacker-news/2026-08-netbsd-11-0-ca741c1b.md",
+      "status": "published",
+      "briefed_at": "2026-08-01T22:51:18.813324Z",
+      "candidate_score": 62.9
+    },
+    "e958ae16fc0ccd77c84b92e73a7dbc99ccbe0e5384c732dcbde9047788f34212": {
+      "normalized_url": "https://zaksa.zip/blog/silicon-valley-founder-meat-grinder",
+      "title_fingerprint": "the silicon valley founder meat grinder",
+      "service_key": "hacker-news",
+      "title": "The Silicon Valley Founder Meat Grinder",
+      "article_doc_path": "docs/services/hacker-news/2026-08-the-silicon-valley-founder-meat-grinder-e958ae16.md",
+      "status": "published",
+      "briefed_at": "2026-08-01T22:51:18.813363Z",
+      "candidate_score": 62.8
+    },
+    "ab2119482637f75b055c8ca622b20df2f3fabd28ea9f7ed5d438fa02f3fca108": {
+      "normalized_url": "https://forum.cursor.com/t/usage-page-to-token-amount-what/167153",
+      "title_fingerprint": "cursor removed cost information from the usage page and csv export",
+      "service_key": "hacker-news",
+      "title": "Cursor removed cost information from the usage page and CSV export",
+      "article_doc_path": "docs/services/hacker-news/2026-08-cursor-removed-cost-information-from-the-usage-page-and-csv-export-ab211948.md",
+      "status": "published",
+      "briefed_at": "2026-08-01T22:51:18.813379Z",
+      "candidate_score": 60.0
+    },
+    "7ac517d150ddf76bc8cb305120b2253d46bddcd52eeb88d93e24bfda9bd966a3": {
+      "normalized_url": "https://www.michaelgeist.ca/2026/07/a-surveillance-treaty-in-disguise-the-trouble-with-canadas-quiet-decision-to-sign-the-un-cybercrime-convention",
+      "title_fingerprint": "a surveillance treaty in disguise canada signs un cybercrime convention",
+      "service_key": "hacker-news",
+      "title": "A Surveillance Treaty in Disguise: Canada Signs UN Cybercrime Convention",
+      "article_doc_path": "docs/services/hacker-news/2026-08-a-surveillance-treaty-in-disguise-canada-signs-un-cybercrime-convention-7ac517d1.md",
+      "status": "published",
+      "briefed_at": "2026-08-01T22:51:18.813387Z",
+      "candidate_score": 60.0
+    },
+    "e299630b866e2d7ebb7f543050983e5dd910dbcd47a219178da9f4e988c6a6ce": {
+      "normalized_url": "https://openai.com/index/ten-advances-in-mathematics",
+      "title_fingerprint": "ten advances in mathematics and theoretical computer science",
+      "service_key": "openai-blog",
+      "title": "Ten advances in mathematics and theoretical computer science",
+      "article_doc_path": "docs/services/openai-blog/2026-08-ten-advances-in-mathematics-and-theoretical-computer-science-e299630b.md",
+      "status": "published",
+      "briefed_at": "2026-08-01T22:51:18.813396Z",
+      "candidate_score": 39.0
+    },
+    "da425c76a8c018d071b2c12789d5fcc92fecdaeeb09350e132a1dda9e2a72958": {
+      "normalized_url": "https://openai.com/index/avatarin",
+      "title_fingerprint": "how avatarin built a 24 7 retail agent with gpt realtime",
+      "service_key": "openai-blog",
+      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+      "article_doc_path": "docs/services/openai-blog/2026-07-how-avatarin-built-a-24-7-retail-agent-with-gpt-realtime-da425c76.md",
+      "status": "published",
+      "briefed_at": "2026-08-01T22:51:18.813403Z",
+      "candidate_score": 32.0
     }
   }
 }
