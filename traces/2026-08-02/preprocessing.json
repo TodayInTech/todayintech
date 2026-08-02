@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-08-02T22:51:26.230413+00:00",
+  "generated_for": "2026-08-02",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "0b7186b8ce3660f67a2676f671128de9db53083f",
+  "github_run_id": "30770978232",
+  "service_count": 5,
+  "duration_ms": 5,
+  "raw_count": 120,
+  "candidate_count": 10,
+  "excluded_count": 110,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 1,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 20,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 20,
+      "output_count": 10,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:e0555e3ee6651da7",
+          "title": "How the words we teach English language learners changed",
+          "normalized_url": "https://pudding.cool/2026/07/essential-words",
+          "url_hash": "e0555e3ee6651da70cbcff6c2ce373b54ca4b85bd2cf439e58388e5e567dc78d",
+          "suggested_doc_key": "2026-08-how-the-words-we-teach-english-language-learners-changed-e0555e3e",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-how-the-words-we-teach-english-language-learners-changed-e0555e3e.md",
+          "candidate_score": 58.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 180점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 112개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:50a41de829a5f964",
+          "title": "F*: A general-purpose proof-oriented programming language",
+          "normalized_url": "https://fstar-lang.org/",
+          "url_hash": "50a41de829a5f964908bf977d1a83f9fc057cdc07462e4bfe79e25e91690bf60",
+          "suggested_doc_key": "2026-08-f-a-general-purpose-proof-oriented-programming-language-50a41de8",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-f-a-general-purpose-proof-oriented-programming-language-50a41de8.md",
+          "candidate_score": 50.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 136점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 60개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6fb9e6914950ade0",
+          "title": "'Crush this lady': how eBay harassment campaign led to $56M payout",
+          "normalized_url": "https://www.ft.com/content/06ec1b03-d4af-40cf-b12a-4ba5a410f6d2",
+          "url_hash": "6fb9e6914950ade02f752efe096b6818dc8e7acb9a04f96d068068e1ba2489cf",
+          "suggested_doc_key": "2026-08-crush-this-lady-how-ebay-harassment-campaign-led-to-56m-payout-6fb9e691",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-crush-this-lady-how-ebay-harassment-campaign-led-to-56m-payout-6fb9e691.md",
+          "candidate_score": 46.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 119점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 50개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e2e6b589dfbe8939",
+          "title": "Show HN: Kakehashi – Experimental userspace to run macOS binaries on Linux ARM",
+          "normalized_url": "https://github.com/wie-project/kakehashi",
+          "url_hash": "e2e6b589dfbe893938166d0a4ba33cf2afda350bcabbe30f76be03f46b095069",
+          "suggested_doc_key": "2026-08-show-hn-kakehashi-experimental-userspace-to-run-macos-binaries-on-linux-e2e6b589",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-show-hn-kakehashi-experimental-userspace-to-run-macos-binaries-on-linux-e2e6b589.md",
+          "candidate_score": 46.5,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 143점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 36개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6bb183499112d0e3",
+          "title": "My personal AI benchmark: \"Generate an SVG of a frog with a Habsburg jaw.\"",
+          "normalized_url": "https://frogs.vaguespac.es/",
+          "url_hash": "6bb183499112d0e396390a8a46f3b98e56e26ba1fa1f136d53ecb1424c0d6593",
+          "suggested_doc_key": "2026-08-my-personal-ai-benchmark-generate-an-svg-of-a-frog-with-a-habsburg-jaw-6bb18349",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-my-personal-ai-benchmark-generate-an-svg-of-a-frog-with-a-habsburg-jaw-6bb18349.md",
+          "candidate_score": 45.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 67점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 38개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 48,
+        "low_quality": 2
+      }
+    }
+  ]
+}

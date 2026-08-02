@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-08-02T22:52:56.363103+00:00",
+  "generated_for": "2026-08-02",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "0b7186b8ce3660f67a2676f671128de9db53083f",
+  "github_run_id": "30770978232",
+  "decision_count": 4,
+  "decision_counts": {
+    "published": 4
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:e0555e3ee6651da7",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "How the words we teach English language learners changed",
+      "normalized_url": "https://pudding.cool/2026/07/essential-words",
+      "article_doc_path": "docs/services/hacker-news/2026-08-how-the-words-we-teach-english-language-learners-changed-e0555e3e.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "언어·교육",
+      "importance_level": "높음",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 1953년 GSL과 2023년 NGSL의 단어 목록 변화를 데이터 기반으로 비교해 언어적·사회적 변화를 드러내며, 사용된 방법론(USAS 의미 태깅, Brysbaert의 구체성 점수, NLTK 품사 태깅 등)과 한계를 명확히 제시해 기술 독자에게 유용한 인사이트를 제공합니다. 교육과 인지 측면의 함의를 논리적으로 연결해 Today in Tech 독자층에 적합합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003"
+      ],
+      "candidate_score": 58.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:50a41de829a5f964",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "F*: A general-purpose proof-oriented programming language",
+      "normalized_url": "https://fstar-lang.org/",
+      "article_doc_path": "docs/services/hacker-news/2026-08-f-a-general-purpose-proof-oriented-programming-language-50a41de8.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "프로그래밍 언어·형식검증",
+      "importance_level": "높음",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 근거에서는 F*가 의존형 타입과 SMT 기반 자동 증명·전술 기반 상호작용적 정리 증명을 결합한 범용 증명지향 프로그래밍 언어로 설명되며, KaRaMeL·Vale 등 실무용 추출 도구와 함께 암호 라이브러리(HACL*, EverCrypt), 파서(EverParse), TLS·QUIC·DICE 등 실제 생산 환경 적용 사례를 다수 제시하고 있어 기술적 의미와 보도 가치가 큽니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003"
+      ],
+      "candidate_score": 50.6,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:6fb9e6914950ade0",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "'Crush this lady': how eBay harassment campaign led to $56M payout",
+      "normalized_url": "https://www.ft.com/content/06ec1b03-d4af-40cf-b12a-4ba5a410f6d2",
+      "article_doc_path": "docs/services/hacker-news/2026-08-crush-this-lady-how-ebay-harassment-campaign-led-to-56m-payout-6fb9e691.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "플랫폼 안전·정책",
+      "importance_level": "중간",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터(제목·URL 등)만으로도 플랫폼상 괴롭힘이 대규모 배상으로 귀결됐다는 핵심 사실과 기술·정책적 함의를 전달할 수 있어 기술 독자에게 유의미하다고 판단했습니다. 원문 내용은 확인이 필요하지만 메타데이터만으로 기사 주제와 영향성을 요약할 수 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "candidate_id:hacker-news:6fb9e6914950ade0",
+        "title:'Crush this lady': how eBay harassment campaign led to $56M payout",
+        "source_url:https://www.ft.com/content/06ec1b03-d4af-40cf-b12a-4ba5a410f6d2",
+        "feed_summary",
+        "hn_points:119",
+        "hn_comments:50",
+        "published_at:2026-08-02T19:19:24+00:00"
+      ],
+      "candidate_score": 46.9,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:e2e6b589dfbe8939",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Show HN: Kakehashi – Experimental userspace to run macOS binaries on Linux ARM",
+      "normalized_url": "https://github.com/wie-project/kakehashi",
+      "article_doc_path": "docs/services/hacker-news/2026-08-show-hn-kakehashi-experimental-userspace-to-run-macos-binaries-on-linux-e2e6b589.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "시스템·호환성",
+      "importance_level": "중간",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "macOS ARM64 바이너리를 리눅스 aarch64에서 네이티브 CPU로 실행하도록 하는 실험적 사용자 공간 번역 계층이라는 기술적 가설과 CI 비용 절감이라는 실용적 목적을 동시에 제시하며, 리포지토리와 실행/테스트·벤치 스크립트, 구체적 성능 수치가 근거로 제시되어 기술 독자에게 유익하다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003"
+      ],
+      "candidate_score": 46.5,
+      "error_message": null
+    }
+  ]
+}
