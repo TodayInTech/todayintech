@@ -4600,6 +4600,46 @@
       "status": "published",
       "briefed_at": "2026-08-01T22:51:18.813403Z",
       "candidate_score": 32.0
+    },
+    "e0555e3ee6651da70cbcff6c2ce373b54ca4b85bd2cf439e58388e5e567dc78d": {
+      "normalized_url": "https://pudding.cool/2026/07/essential-words",
+      "title_fingerprint": "how the words we teach english language learners changed",
+      "service_key": "hacker-news",
+      "title": "How the words we teach English language learners changed",
+      "article_doc_path": "docs/services/hacker-news/2026-08-how-the-words-we-teach-english-language-learners-changed-e0555e3e.md",
+      "status": "published",
+      "briefed_at": "2026-08-02T22:52:56.303688Z",
+      "candidate_score": 58.0
+    },
+    "50a41de829a5f964908bf977d1a83f9fc057cdc07462e4bfe79e25e91690bf60": {
+      "normalized_url": "https://fstar-lang.org/",
+      "title_fingerprint": "f a general purpose proof oriented programming language",
+      "service_key": "hacker-news",
+      "title": "F*: A general-purpose proof-oriented programming language",
+      "article_doc_path": "docs/services/hacker-news/2026-08-f-a-general-purpose-proof-oriented-programming-language-50a41de8.md",
+      "status": "published",
+      "briefed_at": "2026-08-02T22:52:56.303718Z",
+      "candidate_score": 50.6
+    },
+    "6fb9e6914950ade02f752efe096b6818dc8e7acb9a04f96d068068e1ba2489cf": {
+      "normalized_url": "https://www.ft.com/content/06ec1b03-d4af-40cf-b12a-4ba5a410f6d2",
+      "title_fingerprint": "crush this lady how ebay harassment campaign led to 56m payout",
+      "service_key": "hacker-news",
+      "title": "'Crush this lady': how eBay harassment campaign led to $56M payout",
+      "article_doc_path": "docs/services/hacker-news/2026-08-crush-this-lady-how-ebay-harassment-campaign-led-to-56m-payout-6fb9e691.md",
+      "status": "published",
+      "briefed_at": "2026-08-02T22:52:56.303725Z",
+      "candidate_score": 46.9
+    },
+    "e2e6b589dfbe893938166d0a4ba33cf2afda350bcabbe30f76be03f46b095069": {
+      "normalized_url": "https://github.com/wie-project/kakehashi",
+      "title_fingerprint": "show hn kakehashi experimental userspace to run macos binaries on linux arm",
+      "service_key": "hacker-news",
+      "title": "Show HN: Kakehashi – Experimental userspace to run macOS binaries on Linux ARM",
+      "article_doc_path": "docs/services/hacker-news/2026-08-show-hn-kakehashi-experimental-userspace-to-run-macos-binaries-on-linux-e2e6b589.md",
+      "status": "published",
+      "briefed_at": "2026-08-02T22:52:56.303730Z",
+      "candidate_score": 46.5
     }
   }
 }
