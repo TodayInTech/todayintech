@@ -4640,6 +4640,76 @@
       "status": "published",
       "briefed_at": "2026-08-02T22:52:56.303730Z",
       "candidate_score": 46.5
+    },
+    "8de7aa6843a713359cdd950b7bdbce382e92b93d80c2391bf8d72cf56b630205": {
+      "normalized_url": "https://www.anthropic.com/news/claude-for-nonprofits",
+      "title_fingerprint": "introducing claude for nonprofits",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Claude for Nonprofits",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-introducing-claude-for-nonprofits-8de7aa68.md",
+      "status": "published",
+      "briefed_at": "2026-08-03T22:58:44.406690Z",
+      "candidate_score": 35.0
+    },
+    "7359c9bb4052aeb40e8235825a4a8259c5d95e9b83f2b21f70d4f0981e961ee5": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap-2026",
+      "title_fingerprint": "inside our 353 000 person vibe coding course",
+      "service_key": "google-blog",
+      "title": "Inside our 353,000-person vibe coding course",
+      "article_doc_path": "docs/services/google-blog/2026-08-inside-our-353-000-person-vibe-coding-course-7359c9bb.md",
+      "status": "published",
+      "briefed_at": "2026-08-03T22:58:44.406728Z",
+      "candidate_score": 36.0
+    },
+    "e5ab63e782eb47272150d3dbb61ffe43b216574f6c43a733888a63d8465c1194": {
+      "normalized_url": "https://www.seangoedecke.com/llms-reward-expertise",
+      "title_fingerprint": "llms reward expertise",
+      "service_key": "hacker-news",
+      "title": "LLMs reward expertise",
+      "article_doc_path": "docs/services/hacker-news/2026-08-llms-reward-expertise-e5ab63e7.md",
+      "status": "published",
+      "briefed_at": "2026-08-03T22:58:44.406741Z",
+      "candidate_score": 66.3
+    },
+    "0f1a6267701c7d7de19bd1d355b19f07a177b34f36b73a129b6c30f75173c9c5": {
+      "normalized_url": "https://blog.exe.dev/devtools-must-be-open-source",
+      "title_fingerprint": "devtools must be open source",
+      "service_key": "hacker-news",
+      "title": "Devtools must be open source",
+      "article_doc_path": "docs/services/hacker-news/2026-08-devtools-must-be-open-source-0f1a6267.md",
+      "status": "published",
+      "briefed_at": "2026-08-03T22:58:44.406750Z",
+      "candidate_score": 65.0
+    },
+    "5ef213ba49116f411f3a5093fb8d32ab5aff3b6ec3693efab0d3c160af444b35": {
+      "normalized_url": "https://hoplite.sh/",
+      "title_fingerprint": "launch hn hoplite yc s26 effortlessly deploy cloud coding agents",
+      "service_key": "hacker-news",
+      "title": "Launch HN: Hoplite (YC S26) – Effortlessly deploy cloud coding agents",
+      "article_doc_path": "docs/services/hacker-news/2026-08-launch-hn-hoplite-yc-s26-effortlessly-deploy-cloud-coding-agents-5ef213ba.md",
+      "status": "published",
+      "briefed_at": "2026-08-03T22:58:44.406758Z",
+      "candidate_score": 63.7
+    },
+    "e5e903aa32caf5fe7c3f6c05ca00b5328f81f6d548e96388dfee93ee01ea20cd": {
+      "normalized_url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+      "title_fingerprint": "minimax h3 day 0 support in comfyui open weights native audio and 2k video",
+      "service_key": "hacker-news",
+      "title": "MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, and 2K Video",
+      "article_doc_path": "docs/services/hacker-news/2026-08-minimax-h3-day-0-support-in-comfyui-open-weights-native-audio-and-2k-vid-e5e903aa.md",
+      "status": "published",
+      "briefed_at": "2026-08-03T22:58:44.406767Z",
+      "candidate_score": 59.4
+    },
+    "deec56a13e2b9b57f5b59222a713843e545d12e56c5cfa7a8c4462845968c02e": {
+      "normalized_url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+      "title_fingerprint": "how we built a realtime system for responsive voice ai in six months",
+      "service_key": "openai-blog",
+      "title": "How we built a realtime system for responsive voice AI in six months",
+      "article_doc_path": "docs/services/openai-blog/2026-08-how-we-built-a-realtime-system-for-responsive-voice-ai-in-six-months-deec56a1.md",
+      "status": "published",
+      "briefed_at": "2026-08-03T22:58:44.406774Z",
+      "candidate_score": 44.0
     }
   }
 }
