@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-08-03T22:58:44.549166+00:00",
+  "generated_for": "2026-08-03",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "fcf4661c0ae6261ad4c2431992a1c4ba3f7a4627",
+  "github_run_id": "30860411758",
+  "decision_count": 7,
+  "decision_counts": {
+    "published": 7
+  },
+  "decisions": [
+    {
+      "candidate_id": "anthropic-blog:8de7aa6843a71335",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "title": "Introducing Claude for Nonprofits",
+      "normalized_url": "https://www.anthropic.com/news/claude-for-nonprofits",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-introducing-claude-for-nonprofits-8de7aa68.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI/Nonprofit",
+      "importance_level": "medium",
+      "confidence_score": 0.92,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 근거는 Anthropic의 'Claude for Nonprofits' 출시 내용(최대 75% 할인, Team/Enterprise 플랜, Opus/Sonnet/Haiku 모델 포함), 비영리 전용 커넥터(Benevity, Blackbaud, Candid) 추가, 무료 교육 과정(AI Fluency for Nonprofits) 및 다양한 현장 사례(예: Epilepsy Foundation의 24/7 지원, IDinsight의 작업 속도 향상 등)를 명시하고 있어 기술 독자에게 유의미한 서비스·적용 사례와 구현 맥락을 전달합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 35.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "google-blog:7359c9bb4052aeb4",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "title": "Inside our 353,000-person vibe coding course",
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap-2026",
+      "article_doc_path": "docs/services/google-blog/2026-08-inside-our-353-000-person-vibe-coding-course-7359c9bb.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Developer tools",
+      "importance_level": "Medium",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "구글·Kaggle의 대규모 무상 코스가 개발자 학습 방식과 생산화 준비 현황을 보여주는 구체적 통계(등록자·활동자·캡스톤 제출 수 등)와 실제 프로젝트 사례를 포함해 기술 독자에게 가치 있는 정보가 충분해 게시할 만합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 36.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:e5ab63e782eb4727",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "LLMs reward expertise",
+      "normalized_url": "https://www.seangoedecke.com/llms-reward-expertise",
+      "article_doc_path": "docs/services/hacker-news/2026-08-llms-reward-expertise-e5ab63e7.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "인공지능/LLM",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 LLM 사용에 대한 실무적 통찰과 테렌스 타오의 대화 예시를 통해 도메인 전문성이 프롬프트 성과를 좌우한다는 명확한 주장을 제시합니다. 기술 독자에게 유의미한 관점과 구체적 관찰(메시지 길이·모드 전환·검증 방식 등)을 담고 있어 기술 뉴스 브리핑 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 66.3,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:0f1a6267701c7d7d",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Devtools must be open source",
+      "normalized_url": "https://blog.exe.dev/devtools-must-be-open-source",
+      "article_doc_path": "docs/services/hacker-news/2026-08-devtools-must-be-open-source-0f1a6267.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Developer Tools / Open Source",
+      "importance_level": "High",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "글은 에이전트 기반 개인화가 소스 코드 공개 여부와 직결된다는 명확한 주장과 구체적 사례(Shelley, meat.dev)를 제시하며, 개발자 도구·제품 설계 관점에서 실무적 함의를 논의한다. Hacker News에서의 반응(포인트·댓글)도 기술 독자 관심을 반영해 Today in Tech 독자에게 유효한 브리핑 소재라 판단됩니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:5ef213ba49116f41",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Launch HN: Hoplite (YC S26) – Effortlessly deploy cloud coding agents",
+      "normalized_url": "https://hoplite.sh/",
+      "article_doc_path": "docs/services/hacker-news/2026-08-launch-hn-hoplite-yc-s26-effortlessly-deploy-cloud-coding-agents-5ef213ba.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "클라우드 에이전트 / 개발자 도구",
+      "importance_level": "중간",
+      "confidence_score": 0.78,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 제품 목적, 설계 방향, 인프라 선택 등 기술적으로 흥미로운 근거가 포함되어 있어 개발자·인프라 독자에게 유의미한 브리핑이 가능합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title",
+        "feed_summary",
+        "authors",
+        "source_url",
+        "published_at",
+        "metadata.hn_points",
+        "metadata.hn_comments"
+      ],
+      "candidate_score": 63.7,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:e5e903aa32caf5fe",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, and 2K Video",
+      "normalized_url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+      "article_doc_path": "docs/services/hacker-news/2026-08-minimax-h3-day-0-support-in-comfyui-open-weights-native-audio-and-2k-vid-e5e903aa.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI/Generative Video",
+      "importance_level": "High",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "MiniMax H3의 'day‑0' 오픈 웨이트 공개와 ComfyUI의 즉시 네이티브 지원, 그리고 로컬 RTX 3060에서 2K 비디오+스테레오 오디오를 돌릴 수 있게 한 구체적 최적화(모듈레이션 웨이트 축소·int8 convrot 양자화·커스텀 커널·동적 VRAM 오프로드 등)에 대한 기술적 근거가 충분하여 기술 독자에게 유의미한 정보 제공이 가능합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 59.4,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:deec56a13e2b9b57",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "How we built a realtime system for responsive voice AI in six months",
+      "normalized_url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+      "article_doc_path": "docs/services/openai-blog/2026-08-how-we-built-a-realtime-system-for-responsive-voice-ai-in-six-months-deec56a1.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Engineering",
+      "importance_level": "Medium",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에서 연속 음성 상호작용, 'turnless speech model'과 저지연 아키텍처라는 기술적 키워드가 확인되어 기술 독자에게 유용한 맥락을 제공할 수 있습니다. 원문 전문은 없지만 메타정보만으로도 주요 설계 방향과 잠재적 의미를 간결하게 정리할 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: How we built a realtime system for responsive voice AI in six months",
+        "feed_summary: GPT-Live enables continuous voice interaction with AI, using a turnless speech model and low-latency architecture for faster, more natural conversations.",
+        "published_at: 2026-08-03T07:00:00+00:00",
+        "tags: [\"Engineering\"]"
+      ],
+      "candidate_score": 44.0,
+      "error_message": null
+    }
+  ]
+}
