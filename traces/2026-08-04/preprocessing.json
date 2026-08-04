@@ -1,0 +1,332 @@
+{
+  "generated_at": "2026-08-04T22:57:55.205130+00:00",
+  "generated_for": "2026-08-04",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "7dd0d5a716dd594af5b556562f0b3ac4471a4880",
+  "github_run_id": "30958272696",
+  "service_count": 5,
+  "duration_ms": 7,
+  "raw_count": 120,
+  "candidate_count": 17,
+  "excluded_count": 103,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 28,
+      "excluded_count": 91,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 91
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 28,
+      "output_count": 28,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 28,
+      "output_count": 27,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 27,
+      "output_count": 17,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:cde859f5c947a2b8",
+          "title": "Tino Cuellar joins Anthropic as Chief Global Affairs Officer",
+          "normalized_url": "https://www.anthropic.com/news/tino-cuellar",
+          "url_hash": "cde859f5c947a2b8f6e7312be2c483355fddf5f3dede1e28e18f31d24549eb32",
+          "suggested_doc_key": "2026-08-tino-cuellar-joins-anthropic-as-chief-global-affairs-officer-cde859f5",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-tino-cuellar-joins-anthropic-as-chief-global-affairs-officer-cde859f5.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 2,
+      "excluded_count": 8,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:157257b7e616fb06",
+          "title": "Turn one giant AI-generated pull request to a reviewable stack",
+          "normalized_url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack",
+          "url_hash": "157257b7e616fb06d925b9fdbd9ec32f05bf175fbfac7f12a3b419e5c00debb4",
+          "suggested_doc_key": "2026-08-turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack-157257b7",
+          "suggested_article_path": "docs/services/github-blog/2026-08-turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack-157257b7.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:f1d4877545a986a0",
+          "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows",
+          "url_hash": "f1d4877545a986a0c7349b5eb5d1a44624b88463c561ca50722ab9ee15c187b7",
+          "suggested_doc_key": "2026-08-how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows-f1d48775",
+          "suggested_article_path": "docs/services/github-blog/2026-08-how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows-f1d48775.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 8
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:639d81441a0d9473",
+          "title": "The latest AI news we announced in July 2026",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026",
+          "url_hash": "639d81441a0d947392fec3ea925322625063884e4fab0a9a5833310a2d78f30b",
+          "suggested_doc_key": "2026-08-the-latest-ai-news-we-announced-in-july-2026-639d8144",
+          "suggested_article_path": "docs/services/google-blog/2026-08-the-latest-ai-news-we-announced-in-july-2026-639d8144.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:a594752653c1015b",
+          "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+          "normalized_url": "https://mistral.ai/news/shieldstral",
+          "url_hash": "a594752653c1015b8463a50f098aca8409612def93676aefed7f1686558f358f",
+          "suggested_doc_key": "2026-08-mistral-s-shieldstral-3b-open-weights-model-for-multimodal-moderation-a5947526",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-mistral-s-shieldstral-3b-open-weights-model-for-multimodal-moderation-a5947526.md",
+          "candidate_score": 62.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 260점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 64개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5eb8906acde3ea3e",
+          "title": "Waymo in Dallas",
+          "normalized_url": "https://waymo.com/blog/shorts/dallas-open-to-all",
+          "url_hash": "5eb8906acde3ea3e24ee8e042f9f129430cfecf0b8d227180f7c3052c4b4a863",
+          "suggested_doc_key": "2026-08-waymo-in-dallas-5eb8906a",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-waymo-in-dallas-5eb8906a.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 203점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 237개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:2ee06b8c3471a8a0",
+          "title": "Apple says more ex-employees may have taken confidential data to OpenAI",
+          "normalized_url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai",
+          "url_hash": "2ee06b8c3471a8a08b901954649cbbebf83d2a473930a90a664d221fb5a6596a",
+          "suggested_doc_key": "2026-08-apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai-2ee06b8c",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai-2ee06b8c.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 312점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 238개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5d7c2abc4031828c",
+          "title": "Launch HN: EdotEnv (YC S26) – Quant Trading RL Envs to Teach LLMs Research",
+          "normalized_url": "https://edotenv.com/",
+          "url_hash": "5d7c2abc4031828c8dcbafba435ea47692440033e5b786ee44d4d54f0111d5ce",
+          "suggested_doc_key": "2026-08-launch-hn-edotenv-yc-s26-quant-trading-rl-envs-to-teach-llms-research-5d7c2abc",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-launch-hn-edotenv-yc-s26-quant-trading-rl-envs-to-teach-llms-research-5d7c2abc.md",
+          "candidate_score": 57.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 5개를 감지해 가산했습니다.",
+            "Hacker News 점수 26점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 19개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9fa1eff7844b6582",
+          "title": "In Memory of My Wife, Elise Cawley, with Thanks for 36 Wonderful Years",
+          "normalized_url": "https://writings.stephenwolfram.com/2026/08/in-memory-of-my-wife-elise-cawley-1961-2026-with-thanks-for-36-wonderful-years",
+          "url_hash": "9fa1eff7844b658226582cb18d2ea285d205e439ee9f4f9ed309697b52a4e419",
+          "suggested_doc_key": "2026-08-in-memory-of-my-wife-elise-cawley-with-thanks-for-36-wonderful-years-9fa1eff7",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-in-memory-of-my-wife-elise-cawley-with-thanks-for-36-wonderful-years-9fa1eff7.md",
+          "candidate_score": 55.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 672점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 42개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:97e92714d577da88",
+          "title": "Circles powers telco personalization with OpenAI technology",
+          "normalized_url": "https://openai.com/index/circles",
+          "url_hash": "97e92714d577da88c6e3099e0cf9afb3cc981105dadc42fff6bf30703b8cd73b",
+          "suggested_doc_key": "2026-08-circles-powers-telco-personalization-with-openai-technology-97e92714",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-circles-powers-telco-personalization-with-openai-technology-97e92714.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:129511f54188e7df",
+          "title": "New ways to learn and teach with ChatGPT Work and Codex",
+          "normalized_url": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+          "url_hash": "129511f54188e7df4ed8e9053336c86e351ea4b1cebcb97326b55267c4322922",
+          "suggested_doc_key": "2026-08-new-ways-to-learn-and-teach-with-chatgpt-work-and-codex-129511f5",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-new-ways-to-learn-and-teach-with-chatgpt-work-and-codex-129511f5.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:4a9b73e77846b899",
+          "title": "Apple is getting this wrong",
+          "normalized_url": "https://openai.com/index/apple-is-getting-this-wrong",
+          "url_hash": "4a9b73e77846b899c80a1aedb22971ace82ebcc3d3b85836ae454a41eb1c3e86",
+          "suggested_doc_key": "2026-08-apple-is-getting-this-wrong-4a9b73e7",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-apple-is-getting-this-wrong-4a9b73e7.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 45,
+        "low_quality": 1
+      }
+    }
+  ]
+}
