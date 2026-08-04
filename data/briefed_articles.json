@@ -4710,6 +4710,116 @@
       "status": "published",
       "briefed_at": "2026-08-03T22:58:44.406774Z",
       "candidate_score": 44.0
+    },
+    "cde859f5c947a2b8f6e7312be2c483355fddf5f3dede1e28e18f31d24549eb32": {
+      "normalized_url": "https://www.anthropic.com/news/tino-cuellar",
+      "title_fingerprint": "tino cuellar joins anthropic as chief global affairs officer",
+      "service_key": "anthropic-blog",
+      "title": "Tino Cuellar joins Anthropic as Chief Global Affairs Officer",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-tino-cuellar-joins-anthropic-as-chief-global-affairs-officer-cde859f5.md",
+      "status": "published",
+      "briefed_at": "2026-08-04T23:01:53.040572Z",
+      "candidate_score": 30.0
+    },
+    "157257b7e616fb06d925b9fdbd9ec32f05bf175fbfac7f12a3b419e5c00debb4": {
+      "normalized_url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack",
+      "title_fingerprint": "turn one giant ai generated pull request to a reviewable stack",
+      "service_key": "github-blog",
+      "title": "Turn one giant AI-generated pull request to a reviewable stack",
+      "article_doc_path": "docs/services/github-blog/2026-08-turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack-157257b7.md",
+      "status": "published",
+      "briefed_at": "2026-08-04T23:01:53.040620Z",
+      "candidate_score": 41.0
+    },
+    "f1d4877545a986a0c7349b5eb5d1a44624b88463c561ca50722ab9ee15c187b7": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows",
+      "title_fingerprint": "how the github legal team used copilot cli to streamline their workflows",
+      "service_key": "github-blog",
+      "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
+      "article_doc_path": "docs/services/github-blog/2026-08-how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows-f1d48775.md",
+      "status": "published",
+      "briefed_at": "2026-08-04T23:01:53.040632Z",
+      "candidate_score": 37.0
+    },
+    "639d81441a0d947392fec3ea925322625063884e4fab0a9a5833310a2d78f30b": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026",
+      "title_fingerprint": "the latest ai news we announced in july 2026",
+      "service_key": "google-blog",
+      "title": "The latest AI news we announced in July 2026",
+      "article_doc_path": "docs/services/google-blog/2026-08-the-latest-ai-news-we-announced-in-july-2026-639d8144.md",
+      "status": "published",
+      "briefed_at": "2026-08-04T23:01:53.040640Z",
+      "candidate_score": 36.0
+    },
+    "a594752653c1015b8463a50f098aca8409612def93676aefed7f1686558f358f": {
+      "normalized_url": "https://mistral.ai/news/shieldstral",
+      "title_fingerprint": "mistral s shieldstral 3b open weights model for multimodal moderation",
+      "service_key": "hacker-news",
+      "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+      "article_doc_path": "docs/services/hacker-news/2026-08-mistral-s-shieldstral-3b-open-weights-model-for-multimodal-moderation-a5947526.md",
+      "status": "published",
+      "briefed_at": "2026-08-04T23:01:53.040648Z",
+      "candidate_score": 62.8
+    },
+    "5eb8906acde3ea3e24ee8e042f9f129430cfecf0b8d227180f7c3052c4b4a863": {
+      "normalized_url": "https://waymo.com/blog/shorts/dallas-open-to-all",
+      "title_fingerprint": "waymo in dallas",
+      "service_key": "hacker-news",
+      "title": "Waymo in Dallas",
+      "article_doc_path": "docs/services/hacker-news/2026-08-waymo-in-dallas-5eb8906a.md",
+      "status": "published",
+      "briefed_at": "2026-08-04T23:01:53.040655Z",
+      "candidate_score": 60.0
+    },
+    "2ee06b8c3471a8a08b901954649cbbebf83d2a473930a90a664d221fb5a6596a": {
+      "normalized_url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai",
+      "title_fingerprint": "apple says more ex employees may have taken confidential data to openai",
+      "service_key": "hacker-news",
+      "title": "Apple says more ex-employees may have taken confidential data to OpenAI",
+      "article_doc_path": "docs/services/hacker-news/2026-08-apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai-2ee06b8c.md",
+      "status": "published",
+      "briefed_at": "2026-08-04T23:01:53.040662Z",
+      "candidate_score": 60.0
+    },
+    "5d7c2abc4031828c8dcbafba435ea47692440033e5b786ee44d4d54f0111d5ce": {
+      "normalized_url": "https://edotenv.com/",
+      "title_fingerprint": "launch hn edotenv yc s26 quant trading rl envs to teach llms research",
+      "service_key": "hacker-news",
+      "title": "Launch HN: EdotEnv (YC S26) – Quant Trading RL Envs to Teach LLMs Research",
+      "article_doc_path": "docs/services/hacker-news/2026-08-launch-hn-edotenv-yc-s26-quant-trading-rl-envs-to-teach-llms-research-5d7c2abc.md",
+      "status": "published",
+      "briefed_at": "2026-08-04T23:01:53.040669Z",
+      "candidate_score": 57.4
+    },
+    "97e92714d577da88c6e3099e0cf9afb3cc981105dadc42fff6bf30703b8cd73b": {
+      "normalized_url": "https://openai.com/index/circles",
+      "title_fingerprint": "circles powers telco personalization with openai technology",
+      "service_key": "openai-blog",
+      "title": "Circles powers telco personalization with OpenAI technology",
+      "article_doc_path": "docs/services/openai-blog/2026-08-circles-powers-telco-personalization-with-openai-technology-97e92714.md",
+      "status": "published",
+      "briefed_at": "2026-08-04T23:01:53.040674Z",
+      "candidate_score": 39.0
+    },
+    "129511f54188e7df4ed8e9053336c86e351ea4b1cebcb97326b55267c4322922": {
+      "normalized_url": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+      "title_fingerprint": "new ways to learn and teach with chatgpt work and codex",
+      "service_key": "openai-blog",
+      "title": "New ways to learn and teach with ChatGPT Work and Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-08-new-ways-to-learn-and-teach-with-chatgpt-work-and-codex-129511f5.md",
+      "status": "published",
+      "briefed_at": "2026-08-04T23:01:53.040681Z",
+      "candidate_score": 38.0
+    },
+    "4a9b73e77846b899c80a1aedb22971ace82ebcc3d3b85836ae454a41eb1c3e86": {
+      "normalized_url": "https://openai.com/index/apple-is-getting-this-wrong",
+      "title_fingerprint": "apple is getting this wrong",
+      "service_key": "openai-blog",
+      "title": "Apple is getting this wrong",
+      "article_doc_path": "docs/services/openai-blog/2026-08-apple-is-getting-this-wrong-4a9b73e7.md",
+      "status": "published",
+      "briefed_at": "2026-08-04T23:01:53.040687Z",
+      "candidate_score": 37.0
     }
   }
 }
