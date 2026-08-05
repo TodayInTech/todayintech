@@ -4820,6 +4820,56 @@
       "status": "published",
       "briefed_at": "2026-08-04T23:01:53.040687Z",
       "candidate_score": 37.0
+    },
+    "b323c71ed3d014cc4423fcf981d441406122e2b1586efabfefafd1eea923e2ad": {
+      "normalized_url": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery",
+      "title_fingerprint": "meta ran ads that contained ai generated child sexual abuse imagery",
+      "service_key": "hacker-news",
+      "title": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+      "article_doc_path": "docs/services/hacker-news/2026-08-meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery-b323c71e.md",
+      "status": "published",
+      "briefed_at": "2026-08-05T22:55:58.165067Z",
+      "candidate_score": 63.8
+    },
+    "050c74b3cdc0d942dbf1358c906bf81e885d63705afb601a377b12cb652b1cf8": {
+      "normalized_url": "https://zed.dev/deltadb",
+      "title_fingerprint": "zed deltadb",
+      "service_key": "hacker-news",
+      "title": "Zed DeltaDB",
+      "article_doc_path": "docs/services/hacker-news/2026-08-zed-deltadb-050c74b3.md",
+      "status": "published",
+      "briefed_at": "2026-08-05T22:55:58.165108Z",
+      "candidate_score": 61.0
+    },
+    "2703e3a983660afb22b72803c0fa42052381c8ea3ee8f64c7f2e9d49504f7345": {
+      "normalized_url": "https://www.discoveryloop.com/",
+      "title_fingerprint": "discovery loop",
+      "service_key": "hacker-news",
+      "title": "Discovery Loop",
+      "article_doc_path": "docs/services/hacker-news/2026-08-discovery-loop-2703e3a9.md",
+      "status": "published",
+      "briefed_at": "2026-08-05T22:55:58.165122Z",
+      "candidate_score": 60.0
+    },
+    "0d4b441f4176240654aff3b1c1a89283385f9e25da5d5fc5cfe5d106b855ac6a": {
+      "normalized_url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum",
+      "title_fingerprint": "changes at google deepmind demis hassabis from ceo to chair jeff dean departs",
+      "service_key": "hacker-news",
+      "title": "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
+      "article_doc_path": "docs/services/hacker-news/2026-08-changes-at-google-deepmind-demis-hassabis-from-ceo-to-chair-jeff-dean-de-0d4b441f.md",
+      "status": "published",
+      "briefed_at": "2026-08-05T22:55:58.165131Z",
+      "candidate_score": 60.0
+    },
+    "c99ec862b4e71599bc42c6f96a94ea0c61758ad0ed0c0445d6331b28e4539a2c": {
+      "normalized_url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "title_fingerprint": "third party cyber evaluations involving openai models",
+      "service_key": "openai-blog",
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "article_doc_path": "docs/services/openai-blog/2026-08-third-party-cyber-evaluations-involving-openai-models-c99ec862.md",
+      "status": "published",
+      "briefed_at": "2026-08-05T22:55:58.165140Z",
+      "candidate_score": 49.0
     }
   }
 }
