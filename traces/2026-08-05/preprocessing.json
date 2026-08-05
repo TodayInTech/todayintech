@@ -1,0 +1,240 @@
+{
+  "generated_at": "2026-08-05T22:54:06.942103+00:00",
+  "generated_for": "2026-08-05",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "ee783eb3302c38ea223cc456e4bda259c97afce0",
+  "github_run_id": "31054374280",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 21,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 21,
+      "output_count": 11,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:b323c71ed3d014cc",
+          "title": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+          "normalized_url": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery",
+          "url_hash": "b323c71ed3d014cc4423fcf981d441406122e2b1586efabfefafd1eea923e2ad",
+          "suggested_doc_key": "2026-08-meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery-b323c71e",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery-b323c71e.md",
+          "candidate_score": 63.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 198점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 147개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:050c74b3cdc0d942",
+          "title": "Zed DeltaDB",
+          "normalized_url": "https://zed.dev/deltadb",
+          "url_hash": "050c74b3cdc0d942dbf1358c906bf81e885d63705afb601a377b12cb652b1cf8",
+          "suggested_doc_key": "2026-08-zed-deltadb-050c74b3",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-zed-deltadb-050c74b3.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 241점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 110개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:2703e3a983660afb",
+          "title": "Discovery Loop",
+          "normalized_url": "https://www.discoveryloop.com/",
+          "url_hash": "2703e3a983660afb22b72803c0fa42052381c8ea3ee8f64c7f2e9d49504f7345",
+          "suggested_doc_key": "2026-08-discovery-loop-2703e3a9",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-discovery-loop-2703e3a9.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 502점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 305개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0d4b441f41762406",
+          "title": "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
+          "normalized_url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum",
+          "url_hash": "0d4b441f4176240654aff3b1c1a89283385f9e25da5d5fc5cfe5d106b855ac6a",
+          "suggested_doc_key": "2026-08-changes-at-google-deepmind-demis-hassabis-from-ceo-to-chair-jeff-dean-de-0d4b441f",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-changes-at-google-deepmind-demis-hassabis-from-ceo-to-chair-jeff-dean-de-0d4b441f.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 378점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 500개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:121eb4863486b07f",
+          "title": "I'm switching my phone from Android to Linux",
+          "normalized_url": "https://runarcn.no/android-to-linux",
+          "url_hash": "121eb4863486b07f03c2c74a90022a04620f2cfa59a60547eb4da38e0e6d9f16",
+          "suggested_doc_key": "2026-08-i-m-switching-my-phone-from-android-to-linux-121eb486",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-i-m-switching-my-phone-from-android-to-linux-121eb486.md",
+          "candidate_score": 58.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 131점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 93개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:c99ec862b4e71599",
+          "title": "Third-party cyber evaluations involving OpenAI models",
+          "normalized_url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+          "url_hash": "c99ec862b4e71599bc42c6f96a94ea0c61758ad0ed0c0445d6331b28e4539a2c",
+          "suggested_doc_key": "2026-08-third-party-cyber-evaluations-involving-openai-models-c99ec862",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-third-party-cyber-evaluations-involving-openai-models-c99ec862.md",
+          "candidate_score": 49.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 48,
+        "low_quality": 1
+      }
+    }
+  ]
+}

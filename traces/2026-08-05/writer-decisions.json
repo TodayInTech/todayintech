@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-08-05T22:55:58.310212+00:00",
+  "generated_for": "2026-08-05",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "ee783eb3302c38ea223cc456e4bda259c97afce0",
+  "github_run_id": "31054374280",
+  "decision_count": 5,
+  "decision_counts": {
+    "published": 5
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:b323c71ed3d014cc",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+      "normalized_url": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery",
+      "article_doc_path": "docs/services/hacker-news/2026-08-meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery-b323c71e.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "플랫폼 안전",
+      "importance_level": "높음",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "독립 연구단체의 조사 결과와 WIRED 보도를 근거로 Meta의 광고 심사 시스템과 생성형 AI 악용 사례가 확인되었으며, 아동 성착취물 관련 정책·기술적 허점이 드러나 플랫폼 안전과 규제 논의에 중요한 시사점을 제공함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 63.8,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:050c74b3cdc0d942",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Zed DeltaDB",
+      "normalized_url": "https://zed.dev/deltadb",
+      "article_doc_path": "docs/services/hacker-news/2026-08-zed-deltadb-050c74b3.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "버전 관리 / 개발자 도구",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 근거는 DeltaDB의 핵심 설계와 기능(커밋 사이 작업 캡처, 변경과 대화의 연결, 가상 워크트리로 언제든 브랜치 생성 등)을 직접적으로 설명하고 있어 개발자 도구 및 버전 관리 흐름에 대한 기술적 의미가 뚜렷합니다. Hacker News 반응도 있어 독자 관심 측면에서 가치가 큽니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 61.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:2703e3a983660afb",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Discovery Loop",
+      "normalized_url": "https://www.discoveryloop.com/",
+      "article_doc_path": "docs/services/hacker-news/2026-08-discovery-loop-2703e3a9.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI·연구·스타트업",
+      "importance_level": "High",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "창업자와 비전, 접근 방식, 구체적 예시(NAE 그랜드 챌린지 목록 등)가 원문 근거로 충분해 기술 독자에게 유의미한 브리핑을 제공할 수 있어 게시 가치가 높다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:0d4b441f41762406",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
+      "normalized_url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum",
+      "article_doc_path": "docs/services/hacker-news/2026-08-changes-at-google-deepmind-demis-hassabis-from-ceo-to-chair-jeff-dean-de-0d4b441f.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 조직/리더십",
+      "importance_level": "High",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Google DeepMind의 핵심 리더십 전환이 발표되어 모델 개발·연구·제품 조직에 즉각적 영향이 예상되며, Gemini 등 제품 지표와 Jeff Dean의 새 공익법인 출범까지 포함된 기술적·전략적 의미가 분명함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:c99ec862b4e71599",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "normalized_url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "article_doc_path": "docs/services/openai-blog/2026-08-third-party-cyber-evaluations-involving-openai-models-c99ec862.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Security",
+      "importance_level": "Medium",
+      "confidence_score": 0.75,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 OpenAI가 최근 타사 사이버보안 평가 관련 사건들을 설명하고 AI 모델 테스트·평가를 강화하기 위한 새로운 안전조치를 제시했다고 요약되어 있어 보안·검증 관련 독자에게 시사점이 있어 게시 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title",
+        "feed_summary",
+        "published_at",
+        "source_url",
+        "tags"
+      ],
+      "candidate_score": 49.0,
+      "error_message": null
+    }
+  ]
+}
