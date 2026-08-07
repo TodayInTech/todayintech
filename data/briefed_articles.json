@@ -4960,6 +4960,86 @@
       "status": "published",
       "briefed_at": "2026-08-07T01:33:01.405416Z",
       "candidate_score": 36.0
+    },
+    "cdd8d819f4855db7d80d6e91055e04761e43d9f685a924d2416e7ffd36b3193d": {
+      "normalized_url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "title_fingerprint": "improving fable 5 safeguards",
+      "service_key": "anthropic-blog",
+      "title": "Improving Fable 5 Safeguards",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-improving-fable-5-safeguards-cdd8d819.md",
+      "status": "published",
+      "briefed_at": "2026-08-07T22:31:06.654130Z",
+      "candidate_score": 30.0
+    },
+    "54351b57ba2ae434099981521263dc3eb434e88b39bfa7b4320be01c53ee3bd0": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders",
+      "title_fingerprint": "see what 5 builders are making with gemini omni",
+      "service_key": "google-blog",
+      "title": "See what 5 builders are making with Gemini Omni",
+      "article_doc_path": "docs/services/google-blog/2026-08-see-what-5-builders-are-making-with-gemini-omni-54351b57.md",
+      "status": "published",
+      "briefed_at": "2026-08-07T22:31:06.654173Z",
+      "candidate_score": 36.0
+    },
+    "8e88f94d8072960642fa8a649f359239dff8f0ec35c0bad73bd8e0d348145264": {
+      "normalized_url": "https://daringfireball.net/2026/08/app_store_rejection_of_the_week_dark_hours",
+      "title_fingerprint": "app store rejection of the week dark hours",
+      "service_key": "hacker-news",
+      "title": "App Store Rejection of the Week: Dark Hours",
+      "article_doc_path": "docs/services/hacker-news/2026-08-app-store-rejection-of-the-week-dark-hours-8e88f94d.md",
+      "status": "published",
+      "briefed_at": "2026-08-07T22:31:06.654185Z",
+      "candidate_score": 68.0
+    },
+    "5d4a40a5913456e4bde7c720be0b842d6849b2262dd58783fbe36dac1d3b9b73": {
+      "normalized_url": "https://github.com/Wyzer-Lang/wyzer",
+      "title_fingerprint": "show hn wyzer programming language",
+      "service_key": "hacker-news",
+      "title": "Show HN: Wyzer Programming Language",
+      "article_doc_path": "docs/services/hacker-news/2026-08-show-hn-wyzer-programming-language-5d4a40a5.md",
+      "status": "published",
+      "briefed_at": "2026-08-07T22:31:06.654194Z",
+      "candidate_score": 66.3
+    },
+    "2eff008df14346071cb7dd1957a191e18acebd03a307709e046e6d9b7008f527": {
+      "normalized_url": "https://arcprize.org/results/deepseek-v4-flash-0731",
+      "title_fingerprint": "deepseek v4 flash 0731",
+      "service_key": "hacker-news",
+      "title": "DeepSeek V4 Flash 0731",
+      "article_doc_path": "docs/services/hacker-news/2026-08-deepseek-v4-flash-0731-2eff008d.md",
+      "status": "published",
+      "briefed_at": "2026-08-07T22:31:06.654202Z",
+      "candidate_score": 63.0
+    },
+    "5c970cc4af2cfed09d2d402954f27a3123ea3fd7845c1c9f663668f067df803a": {
+      "normalized_url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+      "title_fingerprint": "oracle bans ai generated code from openjdk",
+      "service_key": "hacker-news",
+      "title": "Oracle bans AI-generated code from OpenJDK",
+      "article_doc_path": "docs/services/hacker-news/2026-08-oracle-bans-ai-generated-code-from-openjdk-5c970cc4.md",
+      "status": "published",
+      "briefed_at": "2026-08-07T22:31:06.654209Z",
+      "candidate_score": 62.0
+    },
+    "7347f06e7c916544f6e962de36961dbcdf8c00a50f21f56435f6b7de8971923e": {
+      "normalized_url": "https://openai.com/index/hsp-gruppe",
+      "title_fingerprint": "how hsp gruppe builds ai capabilities for tax advisory",
+      "service_key": "openai-blog",
+      "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
+      "article_doc_path": "docs/services/openai-blog/2026-08-how-hsp-gruppe-builds-ai-capabilities-for-tax-advisory-7347f06e.md",
+      "status": "published",
+      "briefed_at": "2026-08-07T22:31:06.654216Z",
+      "candidate_score": 38.0
+    },
+    "b1c9322e571fec76add6efbb8731702af6e8bef4bc88e55c10f99eba51b1b389": {
+      "normalized_url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "title_fingerprint": "improving gpt 5 6 sol in chatgpt and expanding access to gpt 5 6 luna for free users",
+      "service_key": "openai-blog",
+      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+      "article_doc_path": "docs/services/openai-blog/2026-08-improving-gpt-5-6-sol-in-chatgpt-and-expanding-access-to-gpt-5-6-luna-fo-b1c9322e.md",
+      "status": "published",
+      "briefed_at": "2026-08-07T22:31:06.654223Z",
+      "candidate_score": 37.0
     }
   }
 }
