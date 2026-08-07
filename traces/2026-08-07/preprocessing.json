@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-07T01:29:35.453951+00:00",
+  "generated_at": "2026-08-07T22:29:18.639513+00:00",
   "generated_for": "2026-08-07",
   "stage": "preprocessing",
   "status": "success",
-  "git_sha": "e48dd1e7601ae3b8694fc031a1d8550b8b4aa7b5",
-  "github_run_id": "31138114155",
+  "git_sha": "1701e8e55ade75fca79dfb9d27571878d294531e",
+  "github_run_id": "31223926551",
   "service_count": 5,
-  "duration_ms": 9,
+  "duration_ms": 10,
   "raw_count": 120,
-  "candidate_count": 15,
-  "excluded_count": 105,
+  "candidate_count": 14,
+  "excluded_count": 106,
   "step_metrics": [
     {
       "step_name": "validation",
@@ -48,25 +48,25 @@
     {
       "step_name": "briefed_article_filter",
       "input_count": 119,
-      "output_count": 26,
-      "excluded_count": 93,
-      "duration_ms": 2,
+      "output_count": 25,
+      "excluded_count": 94,
+      "duration_ms": 3,
       "reason_counts": {
-        "already_briefed": 93
+        "already_briefed": 94
       }
     },
     {
       "step_name": "candidate_scoring",
-      "input_count": 26,
-      "output_count": 26,
+      "input_count": 25,
+      "output_count": 25,
       "excluded_count": 0,
       "duration_ms": 1,
       "reason_counts": {}
     },
     {
       "step_name": "candidate_quality_gate",
-      "input_count": 26,
-      "output_count": 25,
+      "input_count": 25,
+      "output_count": 24,
       "excluded_count": 1,
       "duration_ms": 0,
       "reason_counts": {
@@ -75,8 +75,8 @@
     },
     {
       "step_name": "candidate_limiting",
-      "input_count": 25,
-      "output_count": 15,
+      "input_count": 24,
+      "output_count": 14,
       "excluded_count": 10,
       "duration_ms": 0,
       "reason_counts": {
@@ -89,52 +89,36 @@
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
       "raw_count": 20,
-      "candidate_count": 0,
-      "excluded_count": 20,
-      "top_candidates": [],
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:cdd8d819f4855db7",
+          "title": "Improving Fable 5 Safeguards",
+          "normalized_url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "url_hash": "cdd8d819f4855db7d80d6e91055e04761e43d9f685a924d2416e7ffd36b3193d",
+          "suggested_doc_key": "2026-08-improving-fable-5-safeguards-cdd8d819",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-improving-fable-5-safeguards-cdd8d819.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
       "excluded_reasons": {
-        "already_briefed": 20
+        "already_briefed": 19
       }
     },
     {
       "service_key": "github-blog",
       "service_name": "GitHub Blog",
       "raw_count": 10,
-      "candidate_count": 2,
-      "excluded_count": 8,
-      "top_candidates": [
-        {
-          "candidate_id": "github-blog:8eeba8b545559cd7",
-          "title": "How we took malware advisories beyond npm",
-          "normalized_url": "https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm",
-          "url_hash": "8eeba8b545559cd79eeec2598dc7b5587cf165345b9b1dc4c91fb09a39c436b3",
-          "suggested_doc_key": "2026-08-how-we-took-malware-advisories-beyond-npm-8eeba8b5",
-          "suggested_article_path": "docs/services/github-blog/2026-08-how-we-took-malware-advisories-beyond-npm-8eeba8b5.md",
-          "candidate_score": 41.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 8점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "중요 키워드 1개를 감지해 가산했습니다.",
-            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "github-blog:1441b6270a337095",
-          "title": "A guide to slash commands in the GitHub Copilot app",
-          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app",
-          "url_hash": "1441b6270a33709513b41e535651cb1907aa5922af8fcaeb79f3394147edf14c",
-          "suggested_doc_key": "2026-08-a-guide-to-slash-commands-in-the-github-copilot-app-1441b627",
-          "suggested_article_path": "docs/services/github-blog/2026-08-a-guide-to-slash-commands-in-the-github-copilot-app-1441b627.md",
-          "candidate_score": 37.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 8점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
-          ]
-        }
-      ],
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
       "excluded_reasons": {
-        "already_briefed": 8
+        "already_briefed": 10
       }
     },
     {
@@ -145,17 +129,16 @@
       "excluded_count": 19,
       "top_candidates": [
         {
-          "candidate_id": "google-blog:43aa2eeb6a2e4c41",
-          "title": "Our WeatherNext 2 AI model demonstrated a massive leap forward in predicting cyclones.",
-          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-2-cyclones",
-          "url_hash": "43aa2eeb6a2e4c419f7483063f4ba754661bfd167e4d298f0753fc2fbc55b757",
-          "suggested_doc_key": "2026-08-our-weathernext-2-ai-model-demonstrated-a-massive-leap-forward-in-predic-43aa2eeb",
-          "suggested_article_path": "docs/services/google-blog/2026-08-our-weathernext-2-ai-model-demonstrated-a-massive-leap-forward-in-predic-43aa2eeb.md",
-          "candidate_score": 46.0,
+          "candidate_id": "google-blog:54351b57ba2ae434",
+          "title": "See what 5 builders are making with Gemini Omni",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders",
+          "url_hash": "54351b57ba2ae434099981521263dc3eb434e88b39bfa7b4320be01c53ee3bd0",
+          "suggested_doc_key": "2026-08-see-what-5-builders-are-making-with-gemini-omni-54351b57",
+          "suggested_article_path": "docs/services/google-blog/2026-08-see-what-5-builders-are-making-with-gemini-omni-54351b57.md",
+          "candidate_score": 36.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 7점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "중요 키워드 2개를 감지해 가산했습니다.",
             "RSS 순위 1위를 우선순위 신호로 반영했습니다."
           ]
         }
@@ -172,87 +155,84 @@
       "excluded_count": 10,
       "top_candidates": [
         {
-          "candidate_id": "hacker-news:7c0d4eb2283cdad5",
-          "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
-          "normalized_url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
-          "url_hash": "7c0d4eb2283cdad527d745125c276984b4d01fb7e273402b57eedb0c65bd8abb",
-          "suggested_doc_key": "2026-08-amd-acquires-taalas-to-boost-inference-performance-by-etching-models-in-7c0d4eb2",
-          "suggested_article_path": "docs/services/hacker-news/2026-08-amd-acquires-taalas-to-boost-inference-performance-by-etching-models-in-7c0d4eb2.md",
-          "candidate_score": 72.0,
+          "candidate_id": "hacker-news:8e88f94d80729606",
+          "title": "App Store Rejection of the Week: Dark Hours",
+          "normalized_url": "https://daringfireball.net/2026/08/app_store_rejection_of_the_week_dark_hours",
+          "url_hash": "8e88f94d8072960642fa8a649f359239dff8f0ec35c0bad73bd8e0d348145264",
+          "suggested_doc_key": "2026-08-app-store-rejection-of-the-week-dark-hours-8e88f94d",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-app-store-rejection-of-the-week-dark-hours-8e88f94d.md",
+          "candidate_score": 68.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "중요 키워드 3개를 감지해 가산했습니다.",
-            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
-            "Hacker News 점수 338점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 272개를 토론 신호로 반영했습니다.",
-            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 204점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 98개를 토론 신호로 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:a4f2be4eb8ff3459",
-          "title": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
-          "normalized_url": "https://scalex.dev/blog/ai-agent-permissions-stats",
-          "url_hash": "a4f2be4eb8ff345986ca00afdf2fd4ffdfc856355b403894c2813507ff2cb855",
-          "suggested_doc_key": "2026-08-humans-missed-1-in-3-threats-approving-ai-agent-commands-across-40k-game-a4f2be4e",
-          "suggested_article_path": "docs/services/hacker-news/2026-08-humans-missed-1-in-3-threats-approving-ai-agent-commands-across-40k-game-a4f2be4e.md",
-          "candidate_score": 65.0,
+          "candidate_id": "hacker-news:5d4a40a5913456e4",
+          "title": "Show HN: Wyzer Programming Language",
+          "normalized_url": "https://github.com/Wyzer-Lang/wyzer",
+          "url_hash": "5d4a40a5913456e4bde7c720be0b842d6849b2262dd58783fbe36dac1d3b9b73",
+          "suggested_doc_key": "2026-08-show-hn-wyzer-programming-language-5d4a40a5",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-show-hn-wyzer-programming-language-5d4a40a5.md",
+          "candidate_score": 66.3,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "중요 키워드 1개를 감지해 가산했습니다.",
-            "Hacker News 점수 251점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 190개를 토론 신호로 반영했습니다.",
-            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 163점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 94개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:084471a0ee502a10",
-          "title": "Launch HN: ProvenMetal (YC S26) delivers circuit boards in days instead of weeks",
-          "normalized_url": "https://provenmetal.com/",
-          "url_hash": "084471a0ee502a104b330601049e3eb7874de04cbc435189ed218b8bff28601e",
-          "suggested_doc_key": "2026-08-launch-hn-provenmetal-yc-s26-delivers-circuit-boards-in-days-instead-of-084471a0",
-          "suggested_article_path": "docs/services/hacker-news/2026-08-launch-hn-provenmetal-yc-s26-delivers-circuit-boards-in-days-instead-of-084471a0.md",
-          "candidate_score": 63.5,
+          "candidate_id": "hacker-news:2eff008df1434607",
+          "title": "DeepSeek V4 Flash 0731",
+          "normalized_url": "https://arcprize.org/results/deepseek-v4-flash-0731",
+          "url_hash": "2eff008df14346071cb7dd1957a191e18acebd03a307709e046e6d9b7008f527",
+          "suggested_doc_key": "2026-08-deepseek-v4-flash-0731-2eff008d",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-deepseek-v4-flash-0731-2eff008d.md",
+          "candidate_score": 63.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "중요 키워드 1개를 감지해 가산했습니다.",
-            "Hacker News 점수 185점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 129개를 토론 신호로 반영했습니다.",
-            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 339점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 208개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:0277bbc956e24083",
-          "title": "Quake – 30th Anniversary Update",
-          "normalized_url": "https://slayersclub.bethesda.net/en-US/news/quake-30th-anniversary-update",
-          "url_hash": "0277bbc956e240834384a2ac6d6814450f25f2b1545be3db8f473a6a66cb22a7",
-          "suggested_doc_key": "2026-08-quake-30th-anniversary-update-0277bbc9",
-          "suggested_article_path": "docs/services/hacker-news/2026-08-quake-30th-anniversary-update-0277bbc9.md",
+          "candidate_id": "hacker-news:5c970cc4af2cfed0",
+          "title": "Oracle bans AI-generated code from OpenJDK",
+          "normalized_url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+          "url_hash": "5c970cc4af2cfed09d2d402954f27a3123ea3fd7845c1c9f663668f067df803a",
+          "suggested_doc_key": "2026-08-oracle-bans-ai-generated-code-from-openjdk-5c970cc4",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-oracle-bans-ai-generated-code-from-openjdk-5c970cc4.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 319점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 226개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:744435a062843541",
+          "title": "A year of fighting scrapers on my 1.5 million-page website",
+          "normalized_url": "https://patronview.com/news/99-percent-of-my-website-traffic-is-bots",
+          "url_hash": "744435a062843541181c6f0823b7e5b8f670375961c5c65c67d0d485d04bb801",
+          "suggested_doc_key": "2026-08-a-year-of-fighting-scrapers-on-my-1-5-million-page-website-744435a0",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-a-year-of-fighting-scrapers-on-my-1-5-million-page-website-744435a0.md",
           "candidate_score": 60.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 202점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 105개를 토론 신호로 반영했습니다.",
-            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "hacker-news:2b39750cacaaffd1",
-          "title": "GitHub Actions and Pages are experiencing degraded availability",
-          "normalized_url": "https://www.githubstatus.com/incidents/qcvjkzcs7j74",
-          "url_hash": "2b39750cacaaffd102235544d0658fcd57a4fb2c9d3d3b7cb11cb79146ccfa81",
-          "suggested_doc_key": "2026-08-github-actions-and-pages-are-experiencing-degraded-availability-2b39750c",
-          "suggested_article_path": "docs/services/hacker-news/2026-08-github-actions-and-pages-are-experiencing-degraded-availability-2b39750c.md",
-          "candidate_score": 60.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 5점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 314점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 267개를 토론 신호로 반영했습니다.",
-            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 346점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 325개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
           ]
         }
       ],
@@ -268,12 +248,12 @@
       "excluded_count": 48,
       "top_candidates": [
         {
-          "candidate_id": "openai-blog:0c4923a8268d927d",
-          "title": "Working with the American Psychological Association on youth mental health and AI",
-          "normalized_url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
-          "url_hash": "0c4923a8268d927d546252610841ad4a1fc1c83aca865bccdf7cd8269d11f0bf",
-          "suggested_doc_key": "2026-08-working-with-the-american-psychological-association-on-youth-mental-heal-0c4923a8",
-          "suggested_article_path": "docs/services/openai-blog/2026-08-working-with-the-american-psychological-association-on-youth-mental-heal-0c4923a8.md",
+          "candidate_id": "openai-blog:7347f06e7c916544",
+          "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
+          "normalized_url": "https://openai.com/index/hsp-gruppe",
+          "url_hash": "7347f06e7c916544f6e962de36961dbcdf8c00a50f21f56435f6b7de8971923e",
+          "suggested_doc_key": "2026-08-how-hsp-gruppe-builds-ai-capabilities-for-tax-advisory-7347f06e",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-how-hsp-gruppe-builds-ai-capabilities-for-tax-advisory-7347f06e.md",
           "candidate_score": 38.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 10점을 적용했습니다.",
@@ -282,16 +262,16 @@
           ]
         },
         {
-          "candidate_id": "openai-blog:3763c3e63f841c3b",
-          "title": "From asking to doing: How the world is putting ChatGPT to work",
-          "normalized_url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
-          "url_hash": "3763c3e63f841c3b3b74d16d1ba5de9c93b7101a863852074f838c2e6bfac109",
-          "suggested_doc_key": "2026-08-from-asking-to-doing-how-the-world-is-putting-chatgpt-to-work-3763c3e6",
-          "suggested_article_path": "docs/services/openai-blog/2026-08-from-asking-to-doing-how-the-world-is-putting-chatgpt-to-work-3763c3e6.md",
-          "candidate_score": 36.0,
+          "candidate_id": "openai-blog:b1c9322e571fec76",
+          "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+          "normalized_url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+          "url_hash": "b1c9322e571fec76add6efbb8731702af6e8bef4bc88e55c10f99eba51b1b389",
+          "suggested_doc_key": "2026-08-improving-gpt-5-6-sol-in-chatgpt-and-expanding-access-to-gpt-5-6-luna-fo-b1c9322e",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-improving-gpt-5-6-sol-in-chatgpt-and-expanding-access-to-gpt-5-6-luna-fo-b1c9322e.md",
+          "candidate_score": 37.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 10점을 적용했습니다.",
-            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
             "RSS 순위 3위를 우선순위 신호로 반영했습니다."
           ]
         }
