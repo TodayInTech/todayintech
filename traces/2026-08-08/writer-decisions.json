@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-08-08T22:24:37.648313+00:00",
+  "generated_for": "2026-08-08",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "9bbd84e93eeb44efbca5a95e0fc70774e8d0e8f5",
+  "github_run_id": "31281511750",
+  "decision_count": 5,
+  "decision_counts": {
+    "published": 5
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:74aa63caee4580f6",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "U.S. Department of Energy Launches the Genesis Open Models Initiative",
+      "normalized_url": "https://genesisopenmodels.anl.gov/",
+      "article_doc_path": "docs/services/hacker-news/2026-08-u-s-department-of-energy-launches-the-genesis-open-models-initiative-74aa63ca.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI/Science",
+      "importance_level": "High",
+      "confidence_score": 0.89,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "미국 에너지부(DOE)가 과학 발견 가속화를 목표로 오픈-웨이트 기반의 기초 모델 이니셔티브를 출범시키고 구체적 참여 절차와 심사 기준, 초기 파트너(Arcee)와 모델 계획을 제시한 점이 기술·연구 커뮤니티에 직·간접적 영향을 줄 가능성이 높아 Today in Tech 독자들에게 유용하다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 70.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:b4c9a080cd2e7ee7",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Denmark Requires Oral Defenses for Students' Written Work to Counter AI Cheating",
+      "normalized_url": "https://mezha.net/eng/bukvy/ca117584_denmark_requires_oral",
+      "article_doc_path": "docs/services/hacker-news/2026-08-denmark-requires-oral-defenses-for-students-written-work-to-counter-ai-c-b4c9a080.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "education / policy",
+      "importance_level": "medium",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터(제목, 출처 URL, Hacker News 반응)가 정책 변화 가능성을 시사하고 있어 기술·교육 평가 관점에서 독자 관심도가 높다고 판단됨.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title",
+        "source_url",
+        "feed_summary",
+        "metadata.hn_points",
+        "metadata.hn_comments",
+        "published_at"
+      ],
+      "candidate_score": 66.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:ebc5821a44c45c7a",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
+      "normalized_url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones",
+      "article_doc_path": "docs/services/hacker-news/2026-08-deepmind-s-weathernext-model-achieves-breakthrough-forecasting-cyclones-ebc5821a.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI for Weather",
+      "importance_level": "High",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 근거에서 모델 구조(FGN), 대규모 앙상블(1,000 멤버), TPU 상에서 15일 예측을 1분 이내로 생성하는 성능, 저해상도(28x28km·111x111km)에서의 정확도, 코드·모델 가중치 공개 등 기술적·운영적 혁신이 명확히 제시되어 있어 기술 독자에게 유의미한 브리핑 가치가 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:7f991e81baccb2db",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Fastmail offers EU data region",
+      "normalized_url": "https://www.fastmail.com/blog/fastmail-offers-eu-data-region",
+      "article_doc_path": "docs/services/hacker-news/2026-08-fastmail-offers-eu-data-region-7f991e81.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Email / Data residency",
+      "importance_level": "Medium",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Fastmail이 자체 하드웨어를 사용한 암호화된 EU 데이터 리전(암스테르담)을 새로 마련하고 사용자에게 지역 선택권을 제공한 점은 이메일 서비스의 데이터 거버넌스·운영 설계에 직접적 영향을 주는 기술적 변화입니다. 원문은 물리적 인프라 구성, 복제·백업 정책, 연결 실패 시 폴백 동작, 로그·제3자 서비스 취급, 법적 관할 등 핵심 요소를 상세히 밝히고 있어 기술 독자에게 유용한 근거를 제공합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 62.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:e66cc71d0943fe40",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Responding to the next frontier of critical cyber capabilities",
+      "normalized_url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+      "article_doc_path": "docs/services/openai-blog/2026-08-responding-to-the-next-frontier-of-critical-cyber-capabilities-e66cc71d.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Security",
+      "importance_level": "Medium",
+      "confidence_score": 0.75,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 OpenAI가 Astra에 대한 예비 사이버보안 평가와 안전장치·보안 통제 강화 조치 공유를 명시하고 있어 보안 관련 독자에게 가치 있는 브리핑 주제입니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title:Responding to the next frontier of critical cyber capabilities",
+        "feed_summary:OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
+        "service_name:OpenAI Blog",
+        "tags:Security",
+        "published_at:2026-08-07T15:20:00+00:00",
+        "source_url:https://openai.com/index/responding-next-frontier-critical-cyber-capabilities"
+      ],
+      "candidate_score": 44.0,
+      "error_message": null
+    }
+  ]
+}
