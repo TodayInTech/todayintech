@@ -5090,6 +5090,46 @@
       "status": "published",
       "briefed_at": "2026-08-08T22:24:37.497327Z",
       "candidate_score": 44.0
+    },
+    "b0d302e54ba168fa84dc328ef2ec5d5ba3040d5d143379fb8f3ca0e6df0742aa": {
+      "normalized_url": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn",
+      "title_fingerprint": "how i use llms to learn complex topics",
+      "service_key": "hacker-news",
+      "title": "How I use LLMs to learn complex topics",
+      "article_doc_path": "docs/services/hacker-news/2026-08-how-i-use-llms-to-learn-complex-topics-b0d302e5.md",
+      "status": "published",
+      "briefed_at": "2026-08-09T22:26:15.561786Z",
+      "candidate_score": 60.0
+    },
+    "b0098774b8d87565f9193b563127c229a6245c559118d90ee80c49b9273373f8": {
+      "normalized_url": "https://www.notebookcheck.net/Windows-11-s-built-in-Weather-app-wastes-more-than-1-GB-of-RAM.1364205.0.html",
+      "title_fingerprint": "windows 11 s built in weather app wastes more than 1 gb of ram",
+      "service_key": "hacker-news",
+      "title": "Windows 11's built-in Weather app wastes more than 1 GB of RAM",
+      "article_doc_path": "docs/services/hacker-news/2026-08-windows-11-s-built-in-weather-app-wastes-more-than-1-gb-of-ram-b0098774.md",
+      "status": "published",
+      "briefed_at": "2026-08-09T22:26:15.561823Z",
+      "candidate_score": 60.0
+    },
+    "a5511029d19ec197fe95d206d005e9f59cc47d0cb609c2a833b8ec849e67d813": {
+      "normalized_url": "https://kirahowe.com/2026/aug/8/is-it-all-just-vapourware",
+      "title_fingerprint": "is it all just vapourware",
+      "service_key": "hacker-news",
+      "title": "Is it all just vapourware?",
+      "article_doc_path": "docs/services/hacker-news/2026-08-is-it-all-just-vapourware-a5511029.md",
+      "status": "published",
+      "briefed_at": "2026-08-09T22:26:15.561839Z",
+      "candidate_score": 55.4
+    },
+    "76c3a3f4cc294533443ffb2799292333afe27b3dad26eadc104de801a7db99df": {
+      "normalized_url": "https://news.ycombinator.com/item?id=49233423",
+      "title_fingerprint": "ask hn what are you working on august 2026",
+      "service_key": "hacker-news",
+      "title": "Ask HN: What are you working on? (August 2026)",
+      "article_doc_path": "docs/services/hacker-news/2026-08-ask-hn-what-are-you-working-on-august-2026-76c3a3f4.md",
+      "status": "published",
+      "briefed_at": "2026-08-09T22:26:15.561850Z",
+      "candidate_score": 53.5
     }
   }
 }
