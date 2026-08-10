@@ -5130,6 +5130,106 @@
       "status": "published",
       "briefed_at": "2026-08-09T22:26:15.561850Z",
       "candidate_score": 53.5
+    },
+    "65c11cd6697d24998d9d17cfaffde38706fc2f1b41e928f72fde891ca215539a": {
+      "normalized_url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java",
+      "title_fingerprint": "using the github copilot sdk for java",
+      "service_key": "github-blog",
+      "title": "Using the GitHub Copilot SDK for Java",
+      "article_doc_path": "docs/services/github-blog/2026-08-using-the-github-copilot-sdk-for-java-65c11cd6.md",
+      "status": "published",
+      "briefed_at": "2026-08-10T22:35:57.173008Z",
+      "candidate_score": 37.0
+    },
+    "013cf06e857ce80e8c35cee5cc798d8411a0b5b9696bdfe840b80c5705f56dc0": {
+      "normalized_url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates",
+      "title_fingerprint": "evolve your marketing with new ai tools",
+      "service_key": "google-blog",
+      "title": "Evolve your marketing with new AI tools",
+      "article_doc_path": "docs/services/google-blog/2026-08-evolve-your-marketing-with-new-ai-tools-013cf06e.md",
+      "status": "published",
+      "briefed_at": "2026-08-10T22:35:57.173051Z",
+      "candidate_score": 36.0
+    },
+    "b4c0bfda42fcfc7c702f661a329246fde7642cd9d6c5e4e8ac4d4abffbdf9ed9": {
+      "normalized_url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+      "title_fingerprint": "mark zuckerberg attacks closed ai rivals as meta returns to open models",
+      "service_key": "hacker-news",
+      "title": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+      "article_doc_path": "docs/services/hacker-news/2026-08-mark-zuckerberg-attacks-closed-ai-rivals-as-meta-returns-to-open-models-b4c0bfda.md",
+      "status": "published",
+      "briefed_at": "2026-08-10T22:35:57.173066Z",
+      "candidate_score": 65.0
+    },
+    "993a29bfbdee74b47d67102865632c748988bf5839176e80fde874f0f5d3460e": {
+      "normalized_url": "https://linuxstans.com/illinois-hb5511-operating-system-age-verification",
+      "title_fingerprint": "illinois just passed a law that puts linux on the hook for age verification",
+      "service_key": "hacker-news",
+      "title": "Illinois Just Passed a Law That Puts Linux on the Hook for Age Verification",
+      "article_doc_path": "docs/services/hacker-news/2026-08-illinois-just-passed-a-law-that-puts-linux-on-the-hook-for-age-verificat-993a29bf.md",
+      "status": "published",
+      "briefed_at": "2026-08-10T22:35:57.173073Z",
+      "candidate_score": 64.0
+    },
+    "d7dddac5c9c6043e7c069229478b43302339e3f52166dba9a681e74708c0c1d2": {
+      "normalized_url": "https://cactuscompute.com/needle",
+      "title_fingerprint": "show hn needle2 14mb agentic llm for phones wearables smart home and robots",
+      "service_key": "hacker-news",
+      "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
+      "article_doc_path": "docs/services/hacker-news/2026-08-show-hn-needle2-14mb-agentic-llm-for-phones-wearables-smart-home-and-rob-d7dddac5.md",
+      "status": "published",
+      "briefed_at": "2026-08-10T22:35:57.173079Z",
+      "candidate_score": 61.9
+    },
+    "6f52ba547ec1fec9ee444b74acc9fbed563d8618cd66cc6a490d84c29d42801b": {
+      "normalized_url": "https://www.bbc.com/news/articles/c1j1kjy7gewo",
+      "title_fingerprint": "mars bar from 1991 found and it s 20g bigger than today s",
+      "service_key": "hacker-news",
+      "title": "Mars Bar from 1991 found – and it's 20g bigger than today's",
+      "article_doc_path": "docs/services/hacker-news/2026-08-mars-bar-from-1991-found-and-it-s-20g-bigger-than-today-s-6f52ba54.md",
+      "status": "published",
+      "briefed_at": "2026-08-10T22:35:57.173084Z",
+      "candidate_score": 60.0
+    },
+    "081601c279be28d3ef5aa58c1540b9bc9f0ea3d8209b55f9f8aeb4a2083ecf36": {
+      "normalized_url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "title_fingerprint": "expanding daybreak as the cyber defense window narrows",
+      "service_key": "openai-blog",
+      "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+      "article_doc_path": "docs/services/openai-blog/2026-08-expanding-daybreak-as-the-cyber-defense-window-narrows-081601c2.md",
+      "status": "published",
+      "briefed_at": "2026-08-10T22:35:57.173089Z",
+      "candidate_score": 51.0
+    },
+    "29b0e61ec6cd1ed38342bd3f0d233e41901ac8706bcd8411d89efe21c8f9b7d6": {
+      "normalized_url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+      "title_fingerprint": "putting frontier cyber models in more trusted hands",
+      "service_key": "openai-blog",
+      "title": "Putting frontier cyber models in more trusted hands",
+      "article_doc_path": "docs/services/openai-blog/2026-08-putting-frontier-cyber-models-in-more-trusted-hands-29b0e61e.md",
+      "status": "published",
+      "briefed_at": "2026-08-10T22:35:57.173093Z",
+      "candidate_score": 45.0
+    },
+    "95f74aeac90a93bb12cebd08a06d378eabf5fb66ffb6f949438941dc9bb3bdbe": {
+      "normalized_url": "https://openai.com/index/model-ml",
+      "title_fingerprint": "model ml completes finance work more efficiently with gpt 5 6 sol",
+      "service_key": "openai-blog",
+      "title": "Model ML completes finance work more efficiently with GPT-5.6 Sol",
+      "article_doc_path": "docs/services/openai-blog/2026-08-model-ml-completes-finance-work-more-efficiently-with-gpt-5-6-sol-95f74aea.md",
+      "status": "published",
+      "briefed_at": "2026-08-10T22:35:57.173098Z",
+      "candidate_score": 43.0
+    },
+    "5367cc95a8fd98172eb15540985f3472c41b6f393d6d65c9bf889b4f9238cbc1": {
+      "normalized_url": "https://openai.com/index/building-an-ai-native-finance-function",
+      "title_fingerprint": "what building an ai native finance function taught me",
+      "service_key": "openai-blog",
+      "title": "What building an AI-native finance function taught me",
+      "article_doc_path": "docs/services/openai-blog/2026-08-what-building-an-ai-native-finance-function-taught-me-5367cc95.md",
+      "status": "published",
+      "briefed_at": "2026-08-10T22:35:57.173102Z",
+      "candidate_score": 37.0
     }
   }
 }
