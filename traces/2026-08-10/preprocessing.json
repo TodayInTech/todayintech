@@ -1,0 +1,330 @@
+{
+  "generated_at": "2026-08-10T22:31:50.175575+00:00",
+  "generated_for": "2026-08-10",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "a748a6bac4039b825ad7b112169a5469bbe1bc24",
+  "github_run_id": "31438603530",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 17,
+  "excluded_count": 103,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 4,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 27,
+      "excluded_count": 92,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 92
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 27,
+      "output_count": 17,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:65c11cd6697d2499",
+          "title": "Using the GitHub Copilot SDK for Java",
+          "normalized_url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java",
+          "url_hash": "65c11cd6697d24998d9d17cfaffde38706fc2f1b41e928f72fde891ca215539a",
+          "suggested_doc_key": "2026-08-using-the-github-copilot-sdk-for-java-65c11cd6",
+          "suggested_article_path": "docs/services/github-blog/2026-08-using-the-github-copilot-sdk-for-java-65c11cd6.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:013cf06e857ce80e",
+          "title": "Evolve your marketing with new AI tools",
+          "normalized_url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates",
+          "url_hash": "013cf06e857ce80e8c35cee5cc798d8411a0b5b9696bdfe840b80c5705f56dc0",
+          "suggested_doc_key": "2026-08-evolve-your-marketing-with-new-ai-tools-013cf06e",
+          "suggested_article_path": "docs/services/google-blog/2026-08-evolve-your-marketing-with-new-ai-tools-013cf06e.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:b4c0bfda42fcfc7c",
+          "title": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+          "normalized_url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+          "url_hash": "b4c0bfda42fcfc7c702f661a329246fde7642cd9d6c5e4e8ac4d4abffbdf9ed9",
+          "suggested_doc_key": "2026-08-mark-zuckerberg-attacks-closed-ai-rivals-as-meta-returns-to-open-models-b4c0bfda",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-mark-zuckerberg-attacks-closed-ai-rivals-as-meta-returns-to-open-models-b4c0bfda.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 266점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 325개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:993a29bfbdee74b4",
+          "title": "Illinois Just Passed a Law That Puts Linux on the Hook for Age Verification",
+          "normalized_url": "https://linuxstans.com/illinois-hb5511-operating-system-age-verification",
+          "url_hash": "993a29bfbdee74b47d67102865632c748988bf5839176e80fde874f0f5d3460e",
+          "suggested_doc_key": "2026-08-illinois-just-passed-a-law-that-puts-linux-on-the-hook-for-age-verificat-993a29bf",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-illinois-just-passed-a-law-that-puts-linux-on-the-hook-for-age-verificat-993a29bf.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 204점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 239개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d7dddac5c9c6043e",
+          "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
+          "normalized_url": "https://cactuscompute.com/needle",
+          "url_hash": "d7dddac5c9c6043e7c069229478b43302339e3f52166dba9a681e74708c0c1d2",
+          "suggested_doc_key": "2026-08-show-hn-needle2-14mb-agentic-llm-for-phones-wearables-smart-home-and-rob-d7dddac5",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-show-hn-needle2-14mb-agentic-llm-for-phones-wearables-smart-home-and-rob-d7dddac5.md",
+          "candidate_score": 61.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 4개를 감지해 가산했습니다.",
+            "Hacker News 점수 67점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 41개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6f52ba547ec1fec9",
+          "title": "Mars Bar from 1991 found – and it's 20g bigger than today's",
+          "normalized_url": "https://www.bbc.com/news/articles/c1j1kjy7gewo",
+          "url_hash": "6f52ba547ec1fec9ee444b74acc9fbed563d8618cd66cc6a490d84c29d42801b",
+          "suggested_doc_key": "2026-08-mars-bar-from-1991-found-and-it-s-20g-bigger-than-today-s-6f52ba54",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-mars-bar-from-1991-found-and-it-s-20g-bigger-than-today-s-6f52ba54.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 263점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 412개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5cd8cebd0bb21786",
+          "title": "Mistral Patent for “Code implemented tool calls”",
+          "normalized_url": "https://patentsgazette.uspto.gov/week26/OG/html/1547-5/US12670045-20260630.html",
+          "url_hash": "5cd8cebd0bb21786bafbc71db6885977df34aac4001560a4c03be7cf34923517",
+          "suggested_doc_key": "2026-08-mistral-patent-for-code-implemented-tool-calls-5cd8cebd",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-mistral-patent-for-code-implemented-tool-calls-5cd8cebd.md",
+          "candidate_score": 59.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 196점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 164개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:081601c279be28d3",
+          "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+          "normalized_url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+          "url_hash": "081601c279be28d3ef5aa58c1540b9bc9f0ea3d8209b55f9f8aeb4a2083ecf36",
+          "suggested_doc_key": "2026-08-expanding-daybreak-as-the-cyber-defense-window-narrows-081601c2",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-expanding-daybreak-as-the-cyber-defense-window-narrows-081601c2.md",
+          "candidate_score": 51.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:29b0e61ec6cd1ed3",
+          "title": "Putting frontier cyber models in more trusted hands",
+          "normalized_url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+          "url_hash": "29b0e61ec6cd1ed38342bd3f0d233e41901ac8706bcd8411d89efe21c8f9b7d6",
+          "suggested_doc_key": "2026-08-putting-frontier-cyber-models-in-more-trusted-hands-29b0e61e",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-putting-frontier-cyber-models-in-more-trusted-hands-29b0e61e.md",
+          "candidate_score": 45.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:95f74aeac90a93bb",
+          "title": "Model ML completes finance work more efficiently with GPT-5.6 Sol",
+          "normalized_url": "https://openai.com/index/model-ml",
+          "url_hash": "95f74aeac90a93bb12cebd08a06d378eabf5fb66ffb6f949438941dc9bb3bdbe",
+          "suggested_doc_key": "2026-08-model-ml-completes-finance-work-more-efficiently-with-gpt-5-6-sol-95f74aea",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-model-ml-completes-finance-work-more-efficiently-with-gpt-5-6-sol-95f74aea.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:5367cc95a8fd9817",
+          "title": "What building an AI-native finance function taught me",
+          "normalized_url": "https://openai.com/index/building-an-ai-native-finance-function",
+          "url_hash": "5367cc95a8fd98172eb15540985f3472c41b6f393d6d65c9bf889b4f9238cbc1",
+          "suggested_doc_key": "2026-08-what-building-an-ai-native-finance-function-taught-me-5367cc95",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-what-building-an-ai-native-finance-function-taught-me-5367cc95.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:2a5c0cad5d8b2f9d",
+          "title": "Premium seats are coming to ChatGPT Business",
+          "normalized_url": "https://openai.com/index/premium-seats-chatgpt-business",
+          "url_hash": "2a5c0cad5d8b2f9d8e4a65a1f9a6b8a448a2a46b92e808a3d233f6af6db02405",
+          "suggested_doc_key": "2026-08-premium-seats-are-coming-to-chatgpt-business-2a5c0cad",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-premium-seats-are-coming-to-chatgpt-business-2a5c0cad.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 44
+      }
+    }
+  ]
+}
