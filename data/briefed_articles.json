@@ -5230,6 +5230,106 @@
       "status": "published",
       "briefed_at": "2026-08-10T22:35:57.173102Z",
       "candidate_score": 37.0
+    },
+    "377ad8a9aa3917a30a1158b5cb6757cab6c25f2c1b346e23f0b0c8a7f3e00be1": {
+      "normalized_url": "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer",
+      "title_fingerprint": "from coder to orchestrator how agents shift the role of a developer",
+      "service_key": "github-blog",
+      "title": "From coder to orchestrator: How agents shift the role of a developer",
+      "article_doc_path": "docs/services/github-blog/2026-08-from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer-377ad8a9.md",
+      "status": "published",
+      "briefed_at": "2026-08-11T22:39:32.104094Z",
+      "candidate_score": 42.0
+    },
+    "89df3427e525131aaaac50888389b5a09475c7e1001e5ab9fb1744efb73cc88b": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations",
+      "title_fingerprint": "amie our research medical ai system demonstrates real time clinical video consultation capabilities in a first of its kind study",
+      "service_key": "google-blog",
+      "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+      "article_doc_path": "docs/services/google-blog/2026-08-amie-our-research-medical-ai-system-demonstrates-real-time-clinical-vide-89df3427.md",
+      "status": "published",
+      "briefed_at": "2026-08-11T22:39:32.104133Z",
+      "candidate_score": 36.0
+    },
+    "5639e45f22b6bbc3efdf89cacd19436a822ecf5fb6b666eee59d9f1668bc75e5": {
+      "normalized_url": "https://stolen-thoughts.com/",
+      "title_fingerprint": "stealing reasoning traces from proprietary llm apis",
+      "service_key": "hacker-news",
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "article_doc_path": "docs/services/hacker-news/2026-08-stealing-reasoning-traces-from-proprietary-llm-apis-5639e45f.md",
+      "status": "published",
+      "briefed_at": "2026-08-11T22:39:32.104143Z",
+      "candidate_score": 65.0
+    },
+    "d90b2d52a09c655a12bd472f02d770942bf73d2d37c65978fdc7554fdd2a9563": {
+      "normalized_url": "https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here",
+      "title_fingerprint": "mojo 1 0",
+      "service_key": "hacker-news",
+      "title": "Mojo 1.0",
+      "article_doc_path": "docs/services/hacker-news/2026-08-mojo-1-0-d90b2d52.md",
+      "status": "published",
+      "briefed_at": "2026-08-11T22:39:32.104149Z",
+      "candidate_score": 60.0
+    },
+    "1bc670f34b9ddb418fda820c27ce50c48755a0b19c357e467693ce31f2260c10": {
+      "normalized_url": "https://www.bbc.com/news/articles/c75gk620r22o",
+      "title_fingerprint": "england set to be one of the first countries to eliminate hepatitis c",
+      "service_key": "hacker-news",
+      "title": "England set to be one of the first countries to eliminate hepatitis C",
+      "article_doc_path": "docs/services/hacker-news/2026-08-england-set-to-be-one-of-the-first-countries-to-eliminate-hepatitis-c-1bc670f3.md",
+      "status": "published",
+      "briefed_at": "2026-08-11T22:39:32.104156Z",
+      "candidate_score": 60.0
+    },
+    "3641f6219d1af40b8abeaffe8929480eb67a3690a20dc196b204b19b8e2242ec": {
+      "normalized_url": "https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0",
+      "title_fingerprint": "openai s head of ethics leaves less than a year after joining",
+      "service_key": "hacker-news",
+      "title": "OpenAI’s head of ethics leaves less than a year after joining",
+      "article_doc_path": "docs/services/hacker-news/2026-08-openai-s-head-of-ethics-leaves-less-than-a-year-after-joining-3641f621.md",
+      "status": "published",
+      "briefed_at": "2026-08-11T22:39:32.104162Z",
+      "candidate_score": 59.7
+    },
+    "5d3aff0aba5d0b8a3f2e93df1ad39730fb85c89988a96a7dff89f13df3bf1726": {
+      "normalized_url": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+      "title_fingerprint": "daybreak models are now available on aws",
+      "service_key": "openai-blog",
+      "title": "Daybreak models are now available on AWS",
+      "article_doc_path": "docs/services/openai-blog/2026-08-daybreak-models-are-now-available-on-aws-5d3aff0a.md",
+      "status": "published",
+      "briefed_at": "2026-08-11T22:39:32.104168Z",
+      "candidate_score": 48.0
+    },
+    "b19ec562c455e753267b0e04107e2217c787cdc2a4884378a6d93cdc79d11f47": {
+      "normalized_url": "https://openai.com/index/testing-ads-in-chatgpt",
+      "title_fingerprint": "testing ads in chatgpt",
+      "service_key": "openai-blog",
+      "title": "Testing ads in ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-08-testing-ads-in-chatgpt-b19ec562.md",
+      "status": "published",
+      "briefed_at": "2026-08-11T22:39:32.104174Z",
+      "candidate_score": 39.0
+    },
+    "3d196224ab27a2df369cbcf0994d8b85125e1e44f774a26b897579f4f210801c": {
+      "normalized_url": "https://openai.com/index/responsible-ai-infrastructure-texas",
+      "title_fingerprint": "openai s letter to governor abbott on responsible ai infrastructure in texas",
+      "service_key": "openai-blog",
+      "title": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
+      "article_doc_path": "docs/services/openai-blog/2026-08-openai-s-letter-to-governor-abbott-on-responsible-ai-infrastructure-in-t-3d196224.md",
+      "status": "published",
+      "briefed_at": "2026-08-11T22:39:32.104180Z",
+      "candidate_score": 37.0
+    },
+    "6476741ad7bd8e8e5ea0fb928bdcb77743ddeeb67c37e2872fd06e087ad2deef": {
+      "normalized_url": "https://openai.com/index/zapier",
+      "title_fingerprint": "how zapier transformed core marketing processes with chatgpt work",
+      "service_key": "openai-blog",
+      "title": "How Zapier transformed core marketing processes with ChatGPT Work",
+      "article_doc_path": "docs/services/openai-blog/2026-08-how-zapier-transformed-core-marketing-processes-with-chatgpt-work-6476741a.md",
+      "status": "published",
+      "briefed_at": "2026-08-11T22:39:32.104185Z",
+      "candidate_score": 35.0
     }
   }
 }
