@@ -1,0 +1,326 @@
+{
+  "generated_at": "2026-08-11T22:35:50.498243+00:00",
+  "generated_for": "2026-08-11",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "8e01018aa0025da0597830348a17ed3b956feb2a",
+  "github_run_id": "31543028338",
+  "service_count": 5,
+  "duration_ms": 8,
+  "raw_count": 120,
+  "candidate_count": 18,
+  "excluded_count": 102,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 28,
+      "excluded_count": 92,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 92
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 28,
+      "output_count": 28,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 28,
+      "output_count": 28,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 28,
+      "output_count": 18,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:377ad8a9aa3917a3",
+          "title": "From coder to orchestrator: How agents shift the role of a developer",
+          "normalized_url": "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer",
+          "url_hash": "377ad8a9aa3917a30a1158b5cb6757cab6c25f2c1b346e23f0b0c8a7f3e00be1",
+          "suggested_doc_key": "2026-08-from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer-377ad8a9",
+          "suggested_article_path": "docs/services/github-blog/2026-08-from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer-377ad8a9.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:89df3427e525131a",
+          "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations",
+          "url_hash": "89df3427e525131aaaac50888389b5a09475c7e1001e5ab9fb1744efb73cc88b",
+          "suggested_doc_key": "2026-08-amie-our-research-medical-ai-system-demonstrates-real-time-clinical-vide-89df3427",
+          "suggested_article_path": "docs/services/google-blog/2026-08-amie-our-research-medical-ai-system-demonstrates-real-time-clinical-vide-89df3427.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:5639e45f22b6bbc3",
+          "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+          "normalized_url": "https://stolen-thoughts.com/",
+          "url_hash": "5639e45f22b6bbc3efdf89cacd19436a822ecf5fb6b666eee59d9f1668bc75e5",
+          "suggested_doc_key": "2026-08-stealing-reasoning-traces-from-proprietary-llm-apis-5639e45f",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-stealing-reasoning-traces-from-proprietary-llm-apis-5639e45f.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 427점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 172개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d90b2d52a09c655a",
+          "title": "Mojo 1.0",
+          "normalized_url": "https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here",
+          "url_hash": "d90b2d52a09c655a12bd472f02d770942bf73d2d37c65978fdc7554fdd2a9563",
+          "suggested_doc_key": "2026-08-mojo-1-0-d90b2d52",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-mojo-1-0-d90b2d52.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 225점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 99개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:1bc670f34b9ddb41",
+          "title": "England set to be one of the first countries to eliminate hepatitis C",
+          "normalized_url": "https://www.bbc.com/news/articles/c75gk620r22o",
+          "url_hash": "1bc670f34b9ddb418fda820c27ce50c48755a0b19c357e467693ce31f2260c10",
+          "suggested_doc_key": "2026-08-england-set-to-be-one-of-the-first-countries-to-eliminate-hepatitis-c-1bc670f3",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-england-set-to-be-one-of-the-first-countries-to-eliminate-hepatitis-c-1bc670f3.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 463점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 329개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3641f6219d1af40b",
+          "title": "OpenAI’s head of ethics leaves less than a year after joining",
+          "normalized_url": "https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0",
+          "url_hash": "3641f6219d1af40b8abeaffe8929480eb67a3690a20dc196b204b19b8e2242ec",
+          "suggested_doc_key": "2026-08-openai-s-head-of-ethics-leaves-less-than-a-year-after-joining-3641f621",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-openai-s-head-of-ethics-leaves-less-than-a-year-after-joining-3641f621.md",
+          "candidate_score": 59.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 197점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 280개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:dad79aeca39c5980",
+          "title": "Compression is prediction",
+          "normalized_url": "https://ngrok.com/blog/compression-is-prediction",
+          "url_hash": "dad79aeca39c5980890670412348ae078f314a02444119cc8972bb1a7ac5875a",
+          "suggested_doc_key": "2026-08-compression-is-prediction-dad79aec",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-compression-is-prediction-dad79aec.md",
+          "candidate_score": 57.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 147점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 61개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 6,
+      "excluded_count": 44,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:5d3aff0aba5d0b8a",
+          "title": "Daybreak models are now available on AWS",
+          "normalized_url": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+          "url_hash": "5d3aff0aba5d0b8a3f2e93df1ad39730fb85c89988a96a7dff89f13df3bf1726",
+          "suggested_doc_key": "2026-08-daybreak-models-are-now-available-on-aws-5d3aff0a",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-daybreak-models-are-now-available-on-aws-5d3aff0a.md",
+          "candidate_score": 48.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:b19ec562c455e753",
+          "title": "Testing ads in ChatGPT",
+          "normalized_url": "https://openai.com/index/testing-ads-in-chatgpt",
+          "url_hash": "b19ec562c455e753267b0e04107e2217c787cdc2a4884378a6d93cdc79d11f47",
+          "suggested_doc_key": "2026-08-testing-ads-in-chatgpt-b19ec562",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-testing-ads-in-chatgpt-b19ec562.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3d196224ab27a2df",
+          "title": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
+          "normalized_url": "https://openai.com/index/responsible-ai-infrastructure-texas",
+          "url_hash": "3d196224ab27a2df369cbcf0994d8b85125e1e44f774a26b897579f4f210801c",
+          "suggested_doc_key": "2026-08-openai-s-letter-to-governor-abbott-on-responsible-ai-infrastructure-in-t-3d196224",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-openai-s-letter-to-governor-abbott-on-responsible-ai-infrastructure-in-t-3d196224.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:6476741ad7bd8e8e",
+          "title": "How Zapier transformed core marketing processes with ChatGPT Work",
+          "normalized_url": "https://openai.com/index/zapier",
+          "url_hash": "6476741ad7bd8e8e5ea0fb928bdcb77743ddeeb67c37e2872fd06e087ad2deef",
+          "suggested_doc_key": "2026-08-how-zapier-transformed-core-marketing-processes-with-chatgpt-work-6476741a",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-how-zapier-transformed-core-marketing-processes-with-chatgpt-work-6476741a.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:2a5c0cad5d8b2f9d",
+          "title": "Premium seats are coming to ChatGPT Business",
+          "normalized_url": "https://openai.com/index/premium-seats-chatgpt-business",
+          "url_hash": "2a5c0cad5d8b2f9d8e4a65a1f9a6b8a448a2a46b92e808a3d233f6af6db02405",
+          "suggested_doc_key": "2026-08-premium-seats-are-coming-to-chatgpt-business-2a5c0cad",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-premium-seats-are-coming-to-chatgpt-business-2a5c0cad.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 44
+      }
+    }
+  ]
+}
