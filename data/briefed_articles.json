@@ -5330,6 +5330,116 @@
       "status": "published",
       "briefed_at": "2026-08-11T22:39:32.104185Z",
       "candidate_score": 35.0
+    },
+    "7e17b92474bcfd24464a27163487c58f8c3702b5d2deb1221ec1963be55fb02b": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app",
+      "title_fingerprint": "write your first prompt with the github copilot app",
+      "service_key": "github-blog",
+      "title": "Write your first prompt with the GitHub Copilot app",
+      "article_doc_path": "docs/services/github-blog/2026-08-write-your-first-prompt-with-the-github-copilot-app-7e17b924.md",
+      "status": "published",
+      "briefed_at": "2026-08-12T22:38:00.841577Z",
+      "candidate_score": 41.0
+    },
+    "b59d07b14f51134c13e3e4a96c822004c3408f646109e479f2c5d4159b427e85": {
+      "normalized_url": "https://github.blog/news-insights/company-news/github-availability-report-july-2026",
+      "title_fingerprint": "github availability report july 2026",
+      "service_key": "github-blog",
+      "title": "GitHub availability report: July 2026",
+      "article_doc_path": "docs/services/github-blog/2026-08-github-availability-report-july-2026-b59d07b1.md",
+      "status": "published",
+      "briefed_at": "2026-08-12T22:38:00.841620Z",
+      "candidate_score": 37.0
+    },
+    "effc7fdbbfe96134380e8294992f1f5fd04932a3cea7004d9d7e4f285d0eebe0": {
+      "normalized_url": "https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project",
+      "title_fingerprint": "your contributors are ai first now is your project",
+      "service_key": "github-blog",
+      "title": "Your contributors are AI-first now. Is your project?",
+      "article_doc_path": "docs/services/github-blog/2026-08-your-contributors-are-ai-first-now-is-your-project-effc7fdb.md",
+      "status": "published",
+      "briefed_at": "2026-08-12T22:38:00.841632Z",
+      "candidate_score": 35.0
+    },
+    "de5acd99dd765901276f899758092eb3da9aab1d920171720caa64452d0ef11f": {
+      "normalized_url": "https://knownagents.com/insights",
+      "title_fingerprint": "someone is running mass vulnerability scans spoofing ai bots like claudebot",
+      "service_key": "hacker-news",
+      "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
+      "article_doc_path": "docs/services/hacker-news/2026-08-someone-is-running-mass-vulnerability-scans-spoofing-ai-bots-like-claude-de5acd99.md",
+      "status": "published",
+      "briefed_at": "2026-08-12T22:38:00.841640Z",
+      "candidate_score": 70.0
+    },
+    "bdc6284a9f1214e49f94ff485f93b1d00f6fbc7bf9e8740f908af8e059d90959": {
+      "normalized_url": "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
+      "title_fingerprint": "grok 4 6 scores 61 on the artificial analysis intelligence index",
+      "service_key": "hacker-news",
+      "title": "Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index",
+      "article_doc_path": "docs/services/hacker-news/2026-08-grok-4-6-scores-61-on-the-artificial-analysis-intelligence-index-bdc6284a.md",
+      "status": "published",
+      "briefed_at": "2026-08-12T22:38:00.841648Z",
+      "candidate_score": 69.0
+    },
+    "9e5a86081b76e231ceb82877e837e93a67d4cb6f1543564f9cd60cb628514db9": {
+      "normalized_url": "https://zed.dev/blog/introducing-delta",
+      "title_fingerprint": "delta",
+      "service_key": "hacker-news",
+      "title": "Delta",
+      "article_doc_path": "docs/services/hacker-news/2026-08-delta-9e5a8608.md",
+      "status": "published",
+      "briefed_at": "2026-08-12T22:38:00.841655Z",
+      "candidate_score": 66.0
+    },
+    "7408c6cd79dc3a539e394762aebc38ed31f5db1824bbb0d1306ee0c7983420dc": {
+      "normalized_url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+      "title_fingerprint": "deepseek v4 pro 0813",
+      "service_key": "hacker-news",
+      "title": "DeepSeek V4 Pro 0813",
+      "article_doc_path": "docs/services/hacker-news/2026-08-deepseek-v4-pro-0813-7408c6cd.md",
+      "status": "published",
+      "briefed_at": "2026-08-12T22:38:00.841662Z",
+      "candidate_score": 60.0
+    },
+    "e063daae6225e156953956818763e28a3d67a709a94829ba10d52a2df2fa945f": {
+      "normalized_url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+      "title_fingerprint": "from assistance to execution how enterprises put ai to work",
+      "service_key": "openai-blog",
+      "title": "From assistance to execution: How enterprises put AI to work",
+      "article_doc_path": "docs/services/openai-blog/2026-08-from-assistance-to-execution-how-enterprises-put-ai-to-work-e063daae.md",
+      "status": "published",
+      "briefed_at": "2026-08-12T22:38:00.841670Z",
+      "candidate_score": 44.0
+    },
+    "9bafa93fe08b847d5d92140912eaaad9a7a6da1c55940aa1439e6fdd8c2d3c44": {
+      "normalized_url": "https://openai.com/index/ringcentral",
+      "title_fingerprint": "how ringcentral builds ai native work from engineering to ops",
+      "service_key": "openai-blog",
+      "title": "How RingCentral builds AI-native work from engineering to ops",
+      "article_doc_path": "docs/services/openai-blog/2026-08-how-ringcentral-builds-ai-native-work-from-engineering-to-ops-9bafa93f.md",
+      "status": "published",
+      "briefed_at": "2026-08-12T22:38:00.841677Z",
+      "candidate_score": 38.0
+    },
+    "2a5c0cad5d8b2f9d8e4a65a1f9a6b8a448a2a46b92e808a3d233f6af6db02405": {
+      "normalized_url": "https://openai.com/index/premium-seats-chatgpt-business",
+      "title_fingerprint": "premium seats are coming to chatgpt business",
+      "service_key": "openai-blog",
+      "title": "Premium seats are coming to ChatGPT Business",
+      "article_doc_path": "docs/services/openai-blog/2026-08-premium-seats-are-coming-to-chatgpt-business-2a5c0cad.md",
+      "status": "published",
+      "briefed_at": "2026-08-12T22:38:00.841683Z",
+      "candidate_score": 28.0
+    },
+    "0e82d8998833621ad9c9d4a868b3fa853ac8b7bff6ddfee6c0a999eed463befc": {
+      "normalized_url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+      "title_fingerprint": "virgin atlantic sharpens customer journeys with chatgpt work",
+      "service_key": "openai-blog",
+      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
+      "article_doc_path": "docs/services/openai-blog/2026-08-virgin-atlantic-sharpens-customer-journeys-with-chatgpt-work-0e82d899.md",
+      "status": "published",
+      "briefed_at": "2026-08-12T22:38:00.841689Z",
+      "candidate_score": 28.0
     }
   }
 }
