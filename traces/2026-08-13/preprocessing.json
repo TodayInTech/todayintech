@@ -1,0 +1,330 @@
+{
+  "generated_at": "2026-08-13T22:35:24.153990+00:00",
+  "generated_for": "2026-08-13",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "ae9afdb3af4f52bcc18e994fcda3321b0de05a9b",
+  "github_run_id": "31750499024",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 17,
+  "excluded_count": 103,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 27,
+      "excluded_count": 93,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 93
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 27,
+      "output_count": 17,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 2,
+      "excluded_count": 8,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:583ca5de052f3b43",
+          "title": "What 50 open source projects taught us about security in the AI era",
+          "normalized_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era",
+          "url_hash": "583ca5de052f3b43836500f065c02b9830b320a6423682cc2ce25e8c1f25ca30",
+          "suggested_doc_key": "2026-08-what-50-open-source-projects-taught-us-about-security-in-the-ai-era-583ca5de",
+          "suggested_article_path": "docs/services/github-blog/2026-08-what-50-open-source-projects-taught-us-about-security-in-the-ai-era-583ca5de.md",
+          "candidate_score": 46.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:d1462aa20da5ec01",
+          "title": "Your guide to GitHub Universe 2026 is here: The schedule just launched!",
+          "normalized_url": "https://github.blog/news-insights/company-news/your-guide-to-github-universe-2026-is-here-the-schedule-just-launched",
+          "url_hash": "d1462aa20da5ec0133c6aa1360ee63b8510d051b95efbafe8d0ab1545535298b",
+          "suggested_doc_key": "2026-08-your-guide-to-github-universe-2026-is-here-the-schedule-just-launched-d1462aa2",
+          "suggested_article_path": "docs/services/github-blog/2026-08-your-guide-to-github-universe-2026-is-here-the-schedule-just-launched-d1462aa2.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 8
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:5ec796aab431af1a",
+          "title": "Omni experts share what excites them most about the model.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-experts-roundtable",
+          "url_hash": "5ec796aab431af1afd43dbd07483b670fbc1cfe719733d1d14f3e33855bd430e",
+          "suggested_doc_key": "2026-08-omni-experts-share-what-excites-them-most-about-the-model-5ec796aa",
+          "suggested_article_path": "docs/services/google-blog/2026-08-omni-experts-share-what-excites-them-most-about-the-model-5ec796aa.md",
+          "candidate_score": 45.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:e546c9507c4bdece",
+          "title": "Bring your spreadsheet data to life with Sheets canvas",
+          "normalized_url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets",
+          "url_hash": "e546c9507c4bdece8e78a9938c5519585e0b65f749ccceed110f32b1026fe6bd",
+          "suggested_doc_key": "2026-08-bring-your-spreadsheet-data-to-life-with-sheets-canvas-e546c950",
+          "suggested_article_path": "docs/services/google-blog/2026-08-bring-your-spreadsheet-data-to-life-with-sheets-canvas-e546c950.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:48a389c50c9bee68",
+          "title": "Gemini 3.7 Flash",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash",
+          "url_hash": "48a389c50c9bee68922ed985426b67e594982a38f9ebbba56956b01be7f2eef4",
+          "suggested_doc_key": "2026-08-gemini-3-7-flash-48a389c5",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-gemini-3-7-flash-48a389c5.md",
+          "candidate_score": 70.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 496점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 304개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7da85c9e93ae4c01",
+          "title": "Mistral OCR 4.1",
+          "normalized_url": "https://docs.mistral.ai/models/ocr-4-1",
+          "url_hash": "7da85c9e93ae4c01f4f8b233395798a4417960a86587165b521b4b273797ebd3",
+          "suggested_doc_key": "2026-08-mistral-ocr-4-1-7da85c9e",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-mistral-ocr-4-1-7da85c9e.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 210점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 83개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3868a8d41a043ac9",
+          "title": "Accelerating GPT-5.6 Sol Ultrafast",
+          "normalized_url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+          "url_hash": "3868a8d41a043ac91dadf3b6aa442a14e3e10500e803ab4b9d3ac4ce578c9b51",
+          "suggested_doc_key": "2026-08-accelerating-gpt-5-6-sol-ultrafast-3868a8d4",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-accelerating-gpt-5-6-sol-ultrafast-3868a8d4.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 326점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 126개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f9c2faed5b010c6e",
+          "title": "Choose Boring Technology (2015)",
+          "normalized_url": "https://mcfunley.com/choose-boring-technology",
+          "url_hash": "f9c2faed5b010c6eb9625aa17113c3184e91f73e020c5eafd27dfcf7887c20fb",
+          "suggested_doc_key": "2026-08-choose-boring-technology-2015-f9c2faed",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-choose-boring-technology-2015-f9c2faed.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 190점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 99개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8085d320f59fc227",
+          "title": "Spaghettifying DRAM",
+          "normalized_url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+          "url_hash": "8085d320f59fc227a75eb103cbc251b68fe3c7d5e41bc53544dc7959762644d8",
+          "suggested_doc_key": "2026-08-spaghettifying-dram-8085d320",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-spaghettifying-dram-8085d320.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 446점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 131개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:6f8368ac763b7373",
+          "title": "The builder’s guide to GPT‑5.6",
+          "normalized_url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+          "url_hash": "6f8368ac763b73731923fdf243c388a7d207e8e71307ee44061b49625d794f6b",
+          "suggested_doc_key": "2026-08-the-builder-s-guide-to-gpt-5-6-6f8368ac",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-the-builder-s-guide-to-gpt-5-6-6f8368ac.md",
+          "candidate_score": 54.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:c0986f6628d189a1",
+          "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+          "normalized_url": "https://openai.com/index/previewing-ultrafast",
+          "url_hash": "c0986f6628d189a1ac370992d714e2906f134950b6ed170922abe5ac2caf0e49",
+          "suggested_doc_key": "2026-08-previewing-ultrafast-mode-gpt-5-6-sol-at-up-to-14x-the-speed-c0986f66",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-previewing-ultrafast-mode-gpt-5-6-sol-at-up-to-14x-the-speed-c0986f66.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:6eaab463a55def87",
+          "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+          "normalized_url": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+          "url_hash": "6eaab463a55def8752bc46f2c536b71667c705dda0554f0b21cc44218f91b669",
+          "suggested_doc_key": "2026-08-openai-appoints-dali-rajic-as-chief-revenue-officer-6eaab463",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-openai-appoints-dali-rajic-as-chief-revenue-officer-6eaab463.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 47
+      }
+    }
+  ]
+}
