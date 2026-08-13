@@ -5440,6 +5440,116 @@
       "status": "published",
       "briefed_at": "2026-08-12T22:38:00.841689Z",
       "candidate_score": 28.0
+    },
+    "583ca5de052f3b43836500f065c02b9830b320a6423682cc2ce25e8c1f25ca30": {
+      "normalized_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era",
+      "title_fingerprint": "what 50 open source projects taught us about security in the ai era",
+      "service_key": "github-blog",
+      "title": "What 50 open source projects taught us about security in the AI era",
+      "article_doc_path": "docs/services/github-blog/2026-08-what-50-open-source-projects-taught-us-about-security-in-the-ai-era-583ca5de.md",
+      "status": "published",
+      "briefed_at": "2026-08-13T22:38:55.781336Z",
+      "candidate_score": 46.0
+    },
+    "d1462aa20da5ec0133c6aa1360ee63b8510d051b95efbafe8d0ab1545535298b": {
+      "normalized_url": "https://github.blog/news-insights/company-news/your-guide-to-github-universe-2026-is-here-the-schedule-just-launched",
+      "title_fingerprint": "your guide to github universe 2026 is here the schedule just launched",
+      "service_key": "github-blog",
+      "title": "Your guide to GitHub Universe 2026 is here: The schedule just launched!",
+      "article_doc_path": "docs/services/github-blog/2026-08-your-guide-to-github-universe-2026-is-here-the-schedule-just-launched-d1462aa2.md",
+      "status": "published",
+      "briefed_at": "2026-08-13T22:38:55.781376Z",
+      "candidate_score": 38.0
+    },
+    "5ec796aab431af1afd43dbd07483b670fbc1cfe719733d1d14f3e33855bd430e": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-experts-roundtable",
+      "title_fingerprint": "omni experts share what excites them most about the model",
+      "service_key": "google-blog",
+      "title": "Omni experts share what excites them most about the model.",
+      "article_doc_path": "docs/services/google-blog/2026-08-omni-experts-share-what-excites-them-most-about-the-model-5ec796aa.md",
+      "status": "published",
+      "briefed_at": "2026-08-13T22:38:55.781386Z",
+      "candidate_score": 45.0
+    },
+    "e546c9507c4bdece8e78a9938c5519585e0b65f749ccceed110f32b1026fe6bd": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets",
+      "title_fingerprint": "bring your spreadsheet data to life with sheets canvas",
+      "service_key": "google-blog",
+      "title": "Bring your spreadsheet data to life with Sheets canvas",
+      "article_doc_path": "docs/services/google-blog/2026-08-bring-your-spreadsheet-data-to-life-with-sheets-canvas-e546c950.md",
+      "status": "published",
+      "briefed_at": "2026-08-13T22:38:55.781392Z",
+      "candidate_score": 36.0
+    },
+    "48a389c50c9bee68922ed985426b67e594982a38f9ebbba56956b01be7f2eef4": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash",
+      "title_fingerprint": "gemini 3 7 flash",
+      "service_key": "hacker-news",
+      "title": "Gemini 3.7 Flash",
+      "article_doc_path": "docs/services/hacker-news/2026-08-gemini-3-7-flash-48a389c5.md",
+      "status": "published",
+      "briefed_at": "2026-08-13T22:38:55.781398Z",
+      "candidate_score": 70.0
+    },
+    "7da85c9e93ae4c01f4f8b233395798a4417960a86587165b521b4b273797ebd3": {
+      "normalized_url": "https://docs.mistral.ai/models/ocr-4-1",
+      "title_fingerprint": "mistral ocr 4 1",
+      "service_key": "hacker-news",
+      "title": "Mistral OCR 4.1",
+      "article_doc_path": "docs/services/hacker-news/2026-08-mistral-ocr-4-1-7da85c9e.md",
+      "status": "published",
+      "briefed_at": "2026-08-13T22:38:55.781402Z",
+      "candidate_score": 65.0
+    },
+    "3868a8d41a043ac91dadf3b6aa442a14e3e10500e803ab4b9d3ac4ce578c9b51": {
+      "normalized_url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+      "title_fingerprint": "accelerating gpt 5 6 sol ultrafast",
+      "service_key": "hacker-news",
+      "title": "Accelerating GPT-5.6 Sol Ultrafast",
+      "article_doc_path": "docs/services/hacker-news/2026-08-accelerating-gpt-5-6-sol-ultrafast-3868a8d4.md",
+      "status": "published",
+      "briefed_at": "2026-08-13T22:38:55.781407Z",
+      "candidate_score": 64.0
+    },
+    "f9c2faed5b010c6eb9625aa17113c3184e91f73e020c5eafd27dfcf7887c20fb": {
+      "normalized_url": "https://mcfunley.com/choose-boring-technology",
+      "title_fingerprint": "choose boring technology 2015",
+      "service_key": "hacker-news",
+      "title": "Choose Boring Technology (2015)",
+      "article_doc_path": "docs/services/hacker-news/2026-08-choose-boring-technology-2015-f9c2faed.md",
+      "status": "published",
+      "briefed_at": "2026-08-13T22:38:55.781411Z",
+      "candidate_score": 60.0
+    },
+    "6f8368ac763b73731923fdf243c388a7d207e8e71307ee44061b49625d794f6b": {
+      "normalized_url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+      "title_fingerprint": "the builder s guide to gpt 5 6",
+      "service_key": "openai-blog",
+      "title": "The builder’s guide to GPT‑5.6",
+      "article_doc_path": "docs/services/openai-blog/2026-08-the-builder-s-guide-to-gpt-5-6-6f8368ac.md",
+      "status": "published",
+      "briefed_at": "2026-08-13T22:38:55.781421Z",
+      "candidate_score": 54.0
+    },
+    "c0986f6628d189a1ac370992d714e2906f134950b6ed170922abe5ac2caf0e49": {
+      "normalized_url": "https://openai.com/index/previewing-ultrafast",
+      "title_fingerprint": "previewing ultrafast mode gpt 5 6 sol at up to 14x the speed",
+      "service_key": "openai-blog",
+      "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+      "article_doc_path": "docs/services/openai-blog/2026-08-previewing-ultrafast-mode-gpt-5-6-sol-at-up-to-14x-the-speed-c0986f66.md",
+      "status": "published",
+      "briefed_at": "2026-08-13T22:38:55.781425Z",
+      "candidate_score": 43.0
+    },
+    "6eaab463a55def8752bc46f2c536b71667c705dda0554f0b21cc44218f91b669": {
+      "normalized_url": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+      "title_fingerprint": "openai appoints dali rajic as chief revenue officer",
+      "service_key": "openai-blog",
+      "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+      "article_doc_path": "docs/services/openai-blog/2026-08-openai-appoints-dali-rajic-as-chief-revenue-officer-6eaab463.md",
+      "status": "published",
+      "briefed_at": "2026-08-13T22:38:55.781430Z",
+      "candidate_score": 37.0
     }
   }
 }
