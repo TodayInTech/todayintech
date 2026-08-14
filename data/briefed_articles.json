@@ -5550,6 +5550,66 @@
       "status": "published",
       "briefed_at": "2026-08-13T22:38:55.781430Z",
       "candidate_score": 37.0
+    },
+    "e68246067eeddf6e1d69054b26875df87dd7d6bd47ff2b0a5e4c670c0aaa6059": {
+      "normalized_url": "https://www.anthropic.com/news/claude-text-watermark",
+      "title_fingerprint": "how claude s text watermarking works",
+      "service_key": "anthropic-blog",
+      "title": "How Claude's text watermarking works",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-how-claude-s-text-watermarking-works-e6824606.md",
+      "status": "published",
+      "briefed_at": "2026-08-14T22:19:22.608290Z",
+      "candidate_score": 35.0
+    },
+    "4a8b8862f08d1092a2734c923096240fcf5aab347ad09521d937effe5f38cda1": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps",
+      "title_fingerprint": "how to bring your software delivery workflow into github with agent apps",
+      "service_key": "github-blog",
+      "title": "How to bring your software delivery workflow into GitHub with agent apps",
+      "article_doc_path": "docs/services/github-blog/2026-08-how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps-4a8b8862.md",
+      "status": "published",
+      "briefed_at": "2026-08-14T22:19:22.608348Z",
+      "candidate_score": 42.0
+    },
+    "8ad8cdf20609a5f098ffbf35682e55a125ecb37cc42d07697f36b53825d9a87b": {
+      "normalized_url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption",
+      "title_fingerprint": "google is making private ai practical with homomorphic encryption",
+      "service_key": "hacker-news",
+      "title": "Google is making private AI practical with homomorphic encryption",
+      "article_doc_path": "docs/services/hacker-news/2026-08-google-is-making-private-ai-practical-with-homomorphic-encryption-8ad8cdf2.md",
+      "status": "published",
+      "briefed_at": "2026-08-14T22:19:22.608361Z",
+      "candidate_score": 65.0
+    },
+    "6a7d423f3db6e64ae0dbc678d9f0793f773eb16d3721a36fbd976f4df6827cee": {
+      "normalized_url": "https://blog.plover.com/2026/08/02",
+      "title_fingerprint": "seven books i keep close because i love them",
+      "service_key": "hacker-news",
+      "title": "Seven books I keep close because I love them",
+      "article_doc_path": "docs/services/hacker-news/2026-08-seven-books-i-keep-close-because-i-love-them-6a7d423f.md",
+      "status": "published",
+      "briefed_at": "2026-08-14T22:19:22.608369Z",
+      "candidate_score": 60.0
+    },
+    "034c2462b05d2238837f8c8be9d9e76d7a7e444325858c29351aa92e77e7a726": {
+      "normalized_url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "title_fingerprint": "qwen 3 8 27b",
+      "service_key": "hacker-news",
+      "title": "Qwen 3.8 27B",
+      "article_doc_path": "docs/services/hacker-news/2026-08-qwen-3-8-27b-034c2462.md",
+      "status": "published",
+      "briefed_at": "2026-08-14T22:19:22.608376Z",
+      "candidate_score": 60.0
+    },
+    "f5c4f21f07c7db7cfb9725de914ce6586f3276a7448c71009e6141fd7700e7e8": {
+      "normalized_url": "https://lxe.github.io/everywebsite",
+      "title_fingerprint": "every fucking website 2020",
+      "service_key": "hacker-news",
+      "title": "Every Fucking Website (2020)",
+      "article_doc_path": "docs/services/hacker-news/2026-08-every-fucking-website-2020-f5c4f21f.md",
+      "status": "published",
+      "briefed_at": "2026-08-14T22:19:22.608382Z",
+      "candidate_score": 60.0
     }
   }
 }
