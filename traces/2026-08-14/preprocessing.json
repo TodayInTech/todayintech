@@ -1,0 +1,253 @@
+{
+  "generated_at": "2026-08-14T22:17:12.186611+00:00",
+  "generated_for": "2026-08-14",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "9587cc6975fe7361eb0d478179c9bfd25cf1da82",
+  "github_run_id": "31845950546",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 12,
+  "excluded_count": 108,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 22,
+      "output_count": 12,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:e68246067eeddf6e",
+          "title": "How Claude's text watermarking works",
+          "normalized_url": "https://www.anthropic.com/news/claude-text-watermark",
+          "url_hash": "e68246067eeddf6e1d69054b26875df87dd7d6bd47ff2b0a5e4c670c0aaa6059",
+          "suggested_doc_key": "2026-08-how-claude-s-text-watermarking-works-e6824606",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-how-claude-s-text-watermarking-works-e6824606.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:4a8b8862f08d1092",
+          "title": "How to bring your software delivery workflow into GitHub with agent apps",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps",
+          "url_hash": "4a8b8862f08d1092a2734c923096240fcf5aab347ad09521d937effe5f38cda1",
+          "suggested_doc_key": "2026-08-how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps-4a8b8862",
+          "suggested_article_path": "docs/services/github-blog/2026-08-how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps-4a8b8862.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:8ad8cdf20609a5f0",
+          "title": "Google is making private AI practical with homomorphic encryption",
+          "normalized_url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption",
+          "url_hash": "8ad8cdf20609a5f098ffbf35682e55a125ecb37cc42d07697f36b53825d9a87b",
+          "suggested_doc_key": "2026-08-google-is-making-private-ai-practical-with-homomorphic-encryption-8ad8cdf2",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-google-is-making-private-ai-practical-with-homomorphic-encryption-8ad8cdf2.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 208점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 131개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6a7d423f3db6e64a",
+          "title": "Seven books I keep close because I love them",
+          "normalized_url": "https://blog.plover.com/2026/08/02",
+          "url_hash": "6a7d423f3db6e64ae0dbc678d9f0793f773eb16d3721a36fbd976f4df6827cee",
+          "suggested_doc_key": "2026-08-seven-books-i-keep-close-because-i-love-them-6a7d423f",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-seven-books-i-keep-close-because-i-love-them-6a7d423f.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 275점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 114개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:034c2462b05d2238",
+          "title": "Qwen 3.8 27B",
+          "normalized_url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+          "url_hash": "034c2462b05d2238837f8c8be9d9e76d7a7e444325858c29351aa92e77e7a726",
+          "suggested_doc_key": "2026-08-qwen-3-8-27b-034c2462",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-qwen-3-8-27b-034c2462.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 736점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 473개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f5c4f21f07c7db7c",
+          "title": "Every Fucking Website (2020)",
+          "normalized_url": "https://lxe.github.io/everywebsite",
+          "url_hash": "f5c4f21f07c7db7cfb9725de914ce6586f3276a7448c71009e6141fd7700e7e8",
+          "suggested_doc_key": "2026-08-every-fucking-website-2020-f5c4f21f",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-every-fucking-website-2020-f5c4f21f.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 684점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 387개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:452ad631b601fbe9",
+          "title": "RustDesk now supports true unattended remote access on Wayland",
+          "normalized_url": "https://rustdesk.com/blog/unattended-remote-access-wayland",
+          "url_hash": "452ad631b601fbe92d2e126b660ba6988b00cdcf86cec81a000087d7e14c7756",
+          "suggested_doc_key": "2026-08-rustdesk-now-supports-true-unattended-remote-access-on-wayland-452ad631",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-rustdesk-now-supports-true-unattended-remote-access-on-wayland-452ad631.md",
+          "candidate_score": 57.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 176점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 81개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 50
+      }
+    }
+  ]
+}
