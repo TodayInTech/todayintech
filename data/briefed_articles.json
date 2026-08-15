@@ -5610,6 +5610,46 @@
       "status": "published",
       "briefed_at": "2026-08-14T22:19:22.608382Z",
       "candidate_score": 60.0
+    },
+    "ba9e2d42d5d6446bcd3739ac7138fd638e427259b9ae38b17abfd19657b29ef9": {
+      "normalized_url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+      "title_fingerprint": "ai has access to a vastly larger working memory than the human brain",
+      "service_key": "hacker-news",
+      "title": "AI has access to a vastly larger working memory than the human brain",
+      "article_doc_path": "docs/services/hacker-news/2026-08-ai-has-access-to-a-vastly-larger-working-memory-than-the-human-brain-ba9e2d42.md",
+      "status": "published",
+      "briefed_at": "2026-08-15T22:17:08.638010Z",
+      "candidate_score": 60.0
+    },
+    "cc46e9b7f6f7c44a68477f5de847b02cd32da81a6cc26d54edf7cada41ec900c": {
+      "normalized_url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432",
+      "title_fingerprint": "semaglutide linked to lower predicted dementia risk",
+      "service_key": "hacker-news",
+      "title": "Semaglutide linked to lower predicted dementia risk",
+      "article_doc_path": "docs/services/hacker-news/2026-08-semaglutide-linked-to-lower-predicted-dementia-risk-cc46e9b7.md",
+      "status": "published",
+      "briefed_at": "2026-08-15T22:17:08.638052Z",
+      "candidate_score": 60.0
+    },
+    "aa20b6f6518ce8d97a9da28d650d303b3e2541ec046f67ab41e388336ca6ff65": {
+      "normalized_url": "https://sankalp.bearblog.dev/autoresearch",
+      "title_fingerprint": "auto research with codex how i achieved a 232x faster kernel",
+      "service_key": "hacker-news",
+      "title": "Auto-research with codex: How I achieved a 232x Faster Kernel",
+      "article_doc_path": "docs/services/hacker-news/2026-08-auto-research-with-codex-how-i-achieved-a-232x-faster-kernel-aa20b6f6.md",
+      "status": "published",
+      "briefed_at": "2026-08-15T22:17:08.638065Z",
+      "candidate_score": 60.0
+    },
+    "d9504b248e36a59fbc025185abe7972db61b0e51b05de632073cfac4477ea61d": {
+      "normalized_url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
+      "title_fingerprint": "working with ai feels more like leadership than coding",
+      "service_key": "hacker-news",
+      "title": "Working with AI feels more like leadership than coding",
+      "article_doc_path": "docs/services/hacker-news/2026-08-working-with-ai-feels-more-like-leadership-than-coding-d9504b24.md",
+      "status": "published",
+      "briefed_at": "2026-08-15T22:17:08.638072Z",
+      "candidate_score": 60.0
     }
   }
 }
