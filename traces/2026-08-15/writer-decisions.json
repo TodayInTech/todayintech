@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-08-15T22:17:08.773379+00:00",
+  "generated_for": "2026-08-15",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "28841d2e433af2863b1b784e1afa0c6de573eebb",
+  "github_run_id": "31911607566",
+  "decision_count": 4,
+  "decision_counts": {
+    "published": 4
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:ba9e2d42d5d6446b",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "AI has access to a vastly larger working memory than the human brain",
+      "normalized_url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+      "article_doc_path": "docs/services/hacker-news/2026-08-ai-has-access-to-a-vastly-larger-working-memory-than-the-human-brain-ba9e2d42.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "인공지능·연구분석",
+      "importance_level": "높음",
+      "confidence_score": 0.87,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 AI의 수학 성과가 ‘추론 그 자체’보다는 거대한 외부 기호적 작업공간, 즉 확장된 작업기억(context window)에 기인할 수 있음을 구체적 근거와 실험적 예측까지 제시하며 설명합니다. 기술적 의미와 검증 가능한 주장(문제 유형별 우위 예측, 문맥 축소의 영향 등)이 분명해 기술 독자에게 유용합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003",
+        "chunk-0004"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:cc46e9b7f6f7c44a",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Semaglutide linked to lower predicted dementia risk",
+      "normalized_url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432",
+      "article_doc_path": "docs/services/hacker-news/2026-08-semaglutide-linked-to-lower-predicted-dementia-risk-cc46e9b7.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "헬스케어/바이오",
+      "importance_level": "중간",
+      "confidence_score": 0.62,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "Hacker News에서 높은 관심(포인트 288, 댓글 190)을 받은 주제로, 피드 메타데이터만으로도 간결하고 주의깊은 기술적 요약이 가능하여 Today in Tech 독자에게 가치가 있음. 다만 원문 근거가 없으므로 결과 해석은 신중히 제시함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Semaglutide linked to lower predicted dementia risk",
+        "source_url: https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432",
+        "feed_summary: Article URL 및 Hacker News 스레드(Points: 288, Comments: 190)",
+        "metadata.hn_points: 288",
+        "metadata.hn_comments: 190",
+        "published_at: 2026-08-15T15:58:53+00:00"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:aa20b6f6518ce8d9",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Auto-research with codex: How I achieved a 232x Faster Kernel",
+      "normalized_url": "https://sankalp.bearblog.dev/autoresearch",
+      "article_doc_path": "docs/services/hacker-news/2026-08-auto-research-with-codex-how-i-achieved-a-232x-faster-kernel-aa20b6f6.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "GPU 커널 최적화 / Auto-research",
+      "importance_level": "Medium",
+      "confidence_score": 0.85,
+      "summary_scope": "chunk_selection",
+      "publish_reason_ko": "제공된 근거(chunk-0001, chunk-0003, chunk-0007)가 실전 대회 맥락, 성능 향상 수치(232x), 사용한 자동화 루프와 도구(Codex/GPT-5.5, popcorn CLI, Modal, Triton), 그리고 알고리즘·정밀도·프로파일링 관련 구체적 교훈을 담고 있어 기술 독자들에게 실무적 인사이트를 줄 수 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0003",
+        "chunk-0007"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:d9504b248e36a59f",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Working with AI feels more like leadership than coding",
+      "normalized_url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
+      "article_doc_path": "docs/services/hacker-news/2026-08-working-with-ai-feels-more-like-leadership-than-coding-d9504b24.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI·리더십",
+      "importance_level": "중간",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 글은 코드의 결정론적 성격과 AI 상호작용의 불확실성을 대조하며, AI를 도구로 다루는 대신 리더십 관점에서 맥락과 의도를 전달하는 방식으로 접근할 것을 제안한다. 개발자·기술 리더에게 실무적 시사점을 주어 Today in Tech 독자에게 유용하다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    }
+  ]
+}
