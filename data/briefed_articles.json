@@ -5650,6 +5650,46 @@
       "status": "published",
       "briefed_at": "2026-08-15T22:17:08.638072Z",
       "candidate_score": 60.0
+    },
+    "cf6ec781d9fa6fab860958dcb0365ed6c2018d52113a358704aa1d4772e8bc55": {
+      "normalized_url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
+      "title_fingerprint": "models are getting dumber on purpose",
+      "service_key": "hacker-news",
+      "title": "Models Are Getting Dumber on Purpose",
+      "article_doc_path": "docs/services/hacker-news/2026-08-models-are-getting-dumber-on-purpose-cf6ec781.md",
+      "status": "published",
+      "briefed_at": "2026-08-16T22:16:40.100827Z",
+      "candidate_score": 65.4
+    },
+    "eb4edca3b5b878225e89b0a51d5393bd81f605fed4bcc93d90de2996f0823ef4": {
+      "normalized_url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+      "title_fingerprint": "claude system prompts",
+      "service_key": "hacker-news",
+      "title": "Claude: System Prompts",
+      "article_doc_path": "docs/services/hacker-news/2026-08-claude-system-prompts-eb4edca3.md",
+      "status": "published",
+      "briefed_at": "2026-08-16T22:16:40.100867Z",
+      "candidate_score": 65.0
+    },
+    "4d80e28d2941c7ac15320ad1ea79191d11ae86b10f49f7d58b255942fb84a439": {
+      "normalized_url": "https://rvembedded.com/blog_post/12",
+      "title_fingerprint": "a 3rd world embedded engineer responds to risc v they should have known better",
+      "service_key": "hacker-news",
+      "title": "A 3rd World Embedded Engineer Responds to \"RISC-V They Should Have Known Better\"",
+      "article_doc_path": "docs/services/hacker-news/2026-08-a-3rd-world-embedded-engineer-responds-to-risc-v-they-should-have-known-4d80e28d.md",
+      "status": "published",
+      "briefed_at": "2026-08-16T22:16:40.100881Z",
+      "candidate_score": 60.0
+    },
+    "51ee1c37ee66cdf94aeaae330e5a4b88ee4ad931add6725830563eb61aa86617": {
+      "normalized_url": "https://support.mozilla.org/en-US/kb/block-ads-firefox-ios",
+      "title_fingerprint": "firefox for ios now has a native adblocker",
+      "service_key": "hacker-news",
+      "title": "Firefox for iOS now has a native adblocker",
+      "article_doc_path": "docs/services/hacker-news/2026-08-firefox-for-ios-now-has-a-native-adblocker-51ee1c37.md",
+      "status": "published",
+      "briefed_at": "2026-08-16T22:16:40.100891Z",
+      "candidate_score": 60.0
     }
   }
 }
