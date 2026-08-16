@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-08-16T22:16:40.265565+00:00",
+  "generated_for": "2026-08-16",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "81c7ca72f21ea8aad95aedf9479ca1e38700c74a",
+  "github_run_id": "31975781551",
+  "decision_count": 4,
+  "decision_counts": {
+    "published": 4
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:cf6ec781d9fa6fab",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Models Are Getting Dumber on Purpose",
+      "normalized_url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
+      "article_doc_path": "docs/services/hacker-news/2026-08-models-are-getting-dumber-on-purpose-cf6ec781.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI/ML",
+      "importance_level": "High",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 최신 벤치마크 수치와 설계 변화를 근거로 모델들이 의도적으로 지식 용량을 줄이고 추론 절차를 가볍게 보관하는 방향으로 가고 있음을 분석합니다. 기술적 의미(로컬 실행, 환각 감소, 검색 기반 하니스 역할)가 명확해 기술 독자에게 유용한 인사이트를 제공합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 65.4,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:eb4edca3b5b87822",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Claude: System Prompts",
+      "normalized_url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+      "article_doc_path": "docs/services/hacker-news/2026-08-claude-system-prompts-eb4edca3.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI/Platform",
+      "importance_level": "medium",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 근거가 서비스 인터페이스와 API의 동작 차이, 시스템 프롬프트의 역할(현재 날짜 전달, 코드 스니펫 형식 권고)과 모델 버전 관리(Claude 4.6부터 모델 ID가 고정 스냅샷이라는 점)를 명확히 설명하며 기술 독자에게 유의미한 운영상·재현성 시사점을 주므로 Today in Tech에 적합합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:4d80e28d2941c7ac",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "A 3rd World Embedded Engineer Responds to \"RISC-V They Should Have Known Better\"",
+      "normalized_url": "https://rvembedded.com/blog_post/12",
+      "article_doc_path": "docs/services/hacker-news/2026-08-a-3rd-world-embedded-engineer-responds-to-risc-v-they-should-have-known-4d80e28d.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Opinion / 임베디드·아키텍처",
+      "importance_level": "Medium",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "현장 경험을 바탕으로 RISC-V와 ARM의 생태계·제품 경계·비용 문제를 연결해 기술적·사회적 의미를 제시하며, CH32V003·CH32H417·Baochip 등 구체적 사례와 비용 비교를 들어 실무자 관점의 반론을 제시해 기술 독자에게 유용한 논점을 제공함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003",
+        "chunk-0004"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:51ee1c37ee66cdf9",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Firefox for iOS now has a native adblocker",
+      "normalized_url": "https://support.mozilla.org/en-US/kb/block-ads-firefox-ios",
+      "article_doc_path": "docs/services/hacker-news/2026-08-firefox-for-ios-now-has-a-native-adblocker-51ee1c37.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "브라우저/모바일",
+      "importance_level": "중간",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 Firefox for iOS의 네이티브 광고 차단 도입이라는 명확한 주제와 Hacker News에서의 높은 반응(점수·댓글)이 확인되어 기술 독자에게 관심을 끌 만한 변경으로 보입니다. 원문 내용은 제공된 지원 문서 링크로 연결돼 있어 세부 검증이 가능하므로 배포 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Firefox for iOS now has a native adblocker",
+        "source_url: https://support.mozilla.org/en-US/kb/block-ads-firefox-ios",
+        "feed_summary (Article URL, Comments URL, Points, # Comments)",
+        "metadata.hn_points: 467",
+        "metadata.hn_comments: 198"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    }
+  ]
+}
