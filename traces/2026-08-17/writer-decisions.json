@@ -1,0 +1,223 @@
+{
+  "generated_at": "2026-08-17T22:22:04.065831+00:00",
+  "generated_for": "2026-08-17",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "1142814aa09054e560221b3b1d10f511715e734b",
+  "github_run_id": "32075319238",
+  "decision_count": 9,
+  "decision_counts": {
+    "published": 8,
+    "skipped": 1
+  },
+  "decisions": [
+    {
+      "candidate_id": "github-blog:1f08b431314013b7",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "title": "How canvases make agentic workflows visible, steerable, and cost-efficient",
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient",
+      "article_doc_path": "docs/services/github-blog/2026-08-how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient-1f08b431.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "GitHub Copilot",
+      "importance_level": "Medium",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 개발자 생산성 관점에서 에이전트·인간 협업 흐름의 가시화와 거버넌스 문제를 실제 예시와 비용 정보를 포함해 실무적으로 설명하고 있어 기술 독자에게 실용적 가치가 높습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 42.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "google-blog:3aca82d56d54fd7c",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "title": "Get closer to the game with Gemini and Pixel",
+      "normalized_url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships",
+      "article_doc_path": "docs/services/google-blog/2026-08-get-closer-to-the-game-with-gemini-and-pixel-3aca82d5.md",
+      "status": "skipped",
+      "generation_method": "llm",
+      "category": "AI·제품 파트너십",
+      "importance_level": "낮음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "",
+      "reject_reason_ko": "보도는 구글의 제미니(Gemini)와 픽셀(Pixel)이 아스널, 바르셀로나, 바이에른, 리버풀, PSG 등 5개 구단과 장기 파트너십을 맺고 팬 경험을 강화한다는 마케팅 발표에 가깝습니다. 기술적 근거나 구현 세부(모델 아키텍처, 온디바이스 처리 여부, 데이터 흐름·프라이버시 등)가 부족해 Today in Tech의 기술 독자에게 실무적 통찰을 제공하기 어렵습니다.",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 36.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:5011c8f47292fe5f",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Launch HN: Speko (YC S26) – OpenRouter for Voice AI",
+      "normalized_url": "https://speko.ai/",
+      "article_doc_path": "docs/services/hacker-news/2026-08-launch-hn-speko-yc-s26-openrouter-for-voice-ai-5011c8f4.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Voice AI",
+      "importance_level": "medium",
+      "confidence_score": 0.8,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 근거에서 Speko의 기능(모델 벤치마크·라우팅·API 호환성)과 실제 수치(모델별 WER·비용), 통합 예시 코드까지 확인되어 기술 독자에게 유용한 서비스 소개와 적용 가능성을 전달할 수 있어 게시 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "feed_summary",
+        "chunk-0001"
+      ],
+      "candidate_score": 73.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:7d49aacaa67b4da8",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "AI;DR (AI; Didn't Read)",
+      "normalized_url": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+      "article_doc_path": "docs/services/hacker-news/2026-08-ai-dr-ai-didn-t-read-7d49aaca.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "생산성/작업관행",
+      "importance_level": "보통",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "저자의 관찰을 바탕으로 한 실무적 정책 제안(‘AI;DR’)은 AI 활용이 보편화된 환경에서 인간-검토의 필요성을 간결하게 제시하며, Hacker News에서 높은 반응(387점, 235댓글)을 얻어 기술 독자들에게 공감과 토론 거리를 제공함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "hn_points: 387",
+        "hn_comments: 235"
+      ],
+      "candidate_score": 68.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:94984ea907ddb836",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Qwen3.8 27B scores 52 on Artificial Analysis",
+      "normalized_url": "https://artificialanalysis.ai/models/qwen3-8-27b",
+      "article_doc_path": "docs/services/hacker-news/2026-08-qwen3-8-27b-scores-52-on-artificial-analysis-94984ea9.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI/모델",
+      "importance_level": "High",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "소스 근거에서 Qwen3.8 27B가 높은 지능 지수(Artificial Analysis Intelligence Index 52), 멀티모달·추론 지원, 대용량 컨텍스트 윈도우, 오픈 웨이트·비용 우위 등 기술적 특징을 명확히 제시하고 있어 기술 독자들에게 유의미한 정보가 제공됩니다. 모델의 성능·비용·라이선스 측면에서 실무적·연구적 활용 가능성이 높아 Today in Tech 독자층의 관심사와 부합합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 67.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:76963b852e28c23f",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+      "normalized_url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "article_doc_path": "docs/services/hacker-news/2026-08-ai-generated-github-copilot-autofix-allowed-compromise-of-snowflake-s-ji-76963b85.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "정보보안",
+      "importance_level": "높음",
+      "confidence_score": 0.92,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "사건의 기술적 구체성과 AI 도구(코파일럿) 연계 취약성, 자동화된 침투·검증 도구(Red Agent)의 빠른 탐지·악용 사례가 보안 운영 및 데브섹옵스 관점에서 중요한 시사점을 제공하므로 게시 가치가 높음.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:1380f7766171a5a6",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "The Defender’s Window",
+      "normalized_url": "https://openai.com/index/the-defenders-window",
+      "article_doc_path": "docs/services/openai-blog/2026-08-the-defender-s-window-1380f776.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Security",
+      "importance_level": "Medium",
+      "confidence_score": 0.75,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 OpenAI 블로그 글이 AI가 사이버보안의 공격자·방어자 측면 모두에 미치는 영향과 OpenAI의 방어 강화 노력, 보안팀이 지금 취할 수 있는 조치들을 다루고 있어 기술 독자에게 유용한 배경과 맥락을 제공하므로 게시 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: The Defender’s Window",
+        "feed_summary: AI is reshaping cybersecurity for attackers and defenders alike. Learn how OpenAI is strengthening its defenses and what security teams can do now.",
+        "source_url: https://openai.com/index/the-defenders-window",
+        "published_at: 2026-08-17T05:30:00+00:00",
+        "tags: Security"
+      ],
+      "candidate_score": 49.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:22405ea1e27b33a1",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "OpenAI joins PORTS-Pike project",
+      "normalized_url": "https://openai.com/index/openai-joins-ports-pike-project",
+      "article_doc_path": "docs/services/openai-blog/2026-08-openai-joins-ports-pike-project-22405ea1.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Global Affairs",
+      "importance_level": "Medium",
+      "confidence_score": 0.55,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에서 OpenAI의 프로젝트 합류와 남부 오하이오의 대규모 고용 지원이라는 핵심이 확인되어 기술 독자에게 지역·산업 영향 관점에서 가치가 있어 게시를 권합니다. 다만 원문 세부 내용이 없어 문장은 제한적으로 구성했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title",
+        "feed_summary",
+        "tags",
+        "source_url",
+        "published_at",
+        "collected_at",
+        "candidate_id: openai-blog:22405ea1e27b33a1"
+      ],
+      "candidate_score": 38.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:3ff02964da6b7f4f",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "New policy ideas for the Intelligence Age",
+      "normalized_url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+      "article_doc_path": "docs/services/openai-blog/2026-08-new-policy-ideas-for-the-intelligence-age-3ff02964.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Global Affairs",
+      "importance_level": "Medium",
+      "confidence_score": 0.7,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 OpenAI가 14개 독립 프로젝트에 자금을 지원해 '지능의 시대'에 맞는 새로운 AI 정책 아이디어를 모색한다는 점이 기술·정책 독자에게 유의미한 소식으로 보입니다. 최신성도 높아 Today in Tech 독자에게 가치가 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "feed_summary",
+        "title",
+        "source_url",
+        "published_at"
+      ],
+      "candidate_score": 37.0,
+      "error_message": null
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "generated_at": "2026-08-17T22:18:43.818138+00:00",
+  "generated_for": "2026-08-17",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "1142814aa09054e560221b3b1d10f511715e734b",
+  "github_run_id": "32075319238",
+  "service_count": 5,
+  "duration_ms": 7,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 25,
+      "excluded_count": 95,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 95
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 25,
+      "output_count": 15,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:1f08b431314013b7",
+          "title": "How canvases make agentic workflows visible, steerable, and cost-efficient",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient",
+          "url_hash": "1f08b431314013b7175a456038152cef5284350da4be43d8ed0e58d6940d1eb3",
+          "suggested_doc_key": "2026-08-how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient-1f08b431",
+          "suggested_article_path": "docs/services/github-blog/2026-08-how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient-1f08b431.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:3aca82d56d54fd7c",
+          "title": "Get closer to the game with Gemini and Pixel",
+          "normalized_url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships",
+          "url_hash": "3aca82d56d54fd7c01e7de7e7e84434a4975606e52a81db4d50ec34ea8b5ff18",
+          "suggested_doc_key": "2026-08-get-closer-to-the-game-with-gemini-and-pixel-3aca82d5",
+          "suggested_article_path": "docs/services/google-blog/2026-08-get-closer-to-the-game-with-gemini-and-pixel-3aca82d5.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:5011c8f47292fe5f",
+          "title": "Launch HN: Speko (YC S26) – OpenRouter for Voice AI",
+          "normalized_url": "https://speko.ai/",
+          "url_hash": "5011c8f47292fe5f214a0034c8d969cc2301fe56ed0eb7a6ba5ee9f246bb0dfe",
+          "suggested_doc_key": "2026-08-launch-hn-speko-yc-s26-openrouter-for-voice-ai-5011c8f4",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-launch-hn-speko-yc-s26-openrouter-for-voice-ai-5011c8f4.md",
+          "candidate_score": 73.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 6개를 감지해 가산했습니다.",
+            "Hacker News 점수 80점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 50개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7d49aacaa67b4da8",
+          "title": "AI;DR (AI; Didn't Read)",
+          "normalized_url": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+          "url_hash": "7d49aacaa67b4da8958ea8aea392b8b1ce31d191d2da72537a9068dc4e2c3965",
+          "suggested_doc_key": "2026-08-ai-dr-ai-didn-t-read-7d49aaca",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-ai-dr-ai-didn-t-read-7d49aaca.md",
+          "candidate_score": 68.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 387점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 235개를 토론 신호로 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:94984ea907ddb836",
+          "title": "Qwen3.8 27B scores 52 on Artificial Analysis",
+          "normalized_url": "https://artificialanalysis.ai/models/qwen3-8-27b",
+          "url_hash": "94984ea907ddb8365072808003fe239fe3872081cca76eb94f550570ade799dc",
+          "suggested_doc_key": "2026-08-qwen3-8-27b-scores-52-on-artificial-analysis-94984ea9",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-qwen3-8-27b-scores-52-on-artificial-analysis-94984ea9.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 250점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 113개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:76963b852e28c23f",
+          "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+          "normalized_url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+          "url_hash": "76963b852e28c23f9b1be3422b8479721b08b01ceba4d5d7b05c2ce8fe7e09c4",
+          "suggested_doc_key": "2026-08-ai-generated-github-copilot-autofix-allowed-compromise-of-snowflake-s-ji-76963b85",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-ai-generated-github-copilot-autofix-allowed-compromise-of-snowflake-s-ji-76963b85.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 281점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 117개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3fa94f9b3ff7db6a",
+          "title": "How to disable or avoid intrusive AI",
+          "normalized_url": "https://www.librarian.net/notoai",
+          "url_hash": "3fa94f9b3ff7db6a96171a17c43261846c66ca77654aef93c115002a2131c3ae",
+          "suggested_doc_key": "2026-08-how-to-disable-or-avoid-intrusive-ai-3fa94f9b",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-how-to-disable-or-avoid-intrusive-ai-3fa94f9b.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 215점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 114개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:1380f7766171a5a6",
+          "title": "The Defender’s Window",
+          "normalized_url": "https://openai.com/index/the-defenders-window",
+          "url_hash": "1380f7766171a5a616fa9c577a9838fc6a9a2eedb637829cee254df1dadbabf0",
+          "suggested_doc_key": "2026-08-the-defender-s-window-1380f776",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-the-defender-s-window-1380f776.md",
+          "candidate_score": 49.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:22405ea1e27b33a1",
+          "title": "OpenAI joins PORTS-Pike project",
+          "normalized_url": "https://openai.com/index/openai-joins-ports-pike-project",
+          "url_hash": "22405ea1e27b33a112e5993768ccd8037502e8807b567c66afebae15a259b5d8",
+          "suggested_doc_key": "2026-08-openai-joins-ports-pike-project-22405ea1",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-openai-joins-ports-pike-project-22405ea1.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3ff02964da6b7f4f",
+          "title": "New policy ideas for the Intelligence Age",
+          "normalized_url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+          "url_hash": "3ff02964da6b7f4fea83906b54535d5964d43b96117d6a1ed402353b95aa89d8",
+          "suggested_doc_key": "2026-08-new-policy-ideas-for-the-intelligence-age-3ff02964",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-new-policy-ideas-for-the-intelligence-age-3ff02964.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 47
+      }
+    }
+  ]
+}
