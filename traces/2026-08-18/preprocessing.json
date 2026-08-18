@@ -1,0 +1,325 @@
+{
+  "generated_at": "2026-08-18T22:16:56.750491+00:00",
+  "generated_for": "2026-08-18",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "94b34644b0b213d398cdecddc8a69a6cfe3be493",
+  "github_run_id": "32191877419",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 17,
+  "excluded_count": 103,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 27,
+      "excluded_count": 92,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 92
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 27,
+      "output_count": 17,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:e187b900b96a47c4",
+          "title": "Ask a Scientist: How can researchers use AI to predict a flood?",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/research/flood-prediction-ai",
+          "url_hash": "e187b900b96a47c4d6c67a8f8f61b43e0e1181bde449a6de50c19ad538657da1",
+          "suggested_doc_key": "2026-08-ask-a-scientist-how-can-researchers-use-ai-to-predict-a-flood-e187b900",
+          "suggested_article_path": "docs/services/google-blog/2026-08-ask-a-scientist-how-can-researchers-use-ai-to-predict-a-flood-e187b900.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:553a582dcb3666bc",
+          "title": "Operation Blue Skies: Reducing aviation climate impact with AI",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies",
+          "url_hash": "553a582dcb3666bc7d480e74d2a6038ece10d73316fed0448aa14c106a64b6ad",
+          "suggested_doc_key": "2026-08-operation-blue-skies-reducing-aviation-climate-impact-with-ai-553a582d",
+          "suggested_article_path": "docs/services/google-blog/2026-08-operation-blue-skies-reducing-aviation-climate-impact-with-ai-553a582d.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:3aca82d56d54fd7c",
+          "title": "Get closer to the game with Gemini and Pixel",
+          "normalized_url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships",
+          "url_hash": "3aca82d56d54fd7c01e7de7e7e84434a4975606e52a81db4d50ec34ea8b5ff18",
+          "suggested_doc_key": "2026-08-get-closer-to-the-game-with-gemini-and-pixel-3aca82d5",
+          "suggested_article_path": "docs/services/google-blog/2026-08-get-closer-to-the-game-with-gemini-and-pixel-3aca82d5.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:1552027d48b2c566",
+          "title": "Norway Should Buy OpenAI",
+          "normalized_url": "https://www.onethousandmeans.com/p/norway-should-buy-openai",
+          "url_hash": "1552027d48b2c56685f0e71325e770ca6734fb26eae470a37120a0c723acb67f",
+          "suggested_doc_key": "2026-08-norway-should-buy-openai-1552027d",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-norway-should-buy-openai-1552027d.md",
+          "candidate_score": 61.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 166점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 194개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f9b5e7a505870971",
+          "title": "Beware Management Consultants",
+          "normalized_url": "https://about.iceland.co.uk/our-story/the-dark-ages/beware-management-consultants",
+          "url_hash": "f9b5e7a505870971c267ec2691026b131c7cd3310331488d6e986b57e9749f54",
+          "suggested_doc_key": "2026-08-beware-management-consultants-f9b5e7a5",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-beware-management-consultants-f9b5e7a5.md",
+          "candidate_score": 60.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 344점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 56개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d975dad9da538d93",
+          "title": "Data centers raise nearby temperatures by up to 4 degrees in Phoenix",
+          "normalized_url": "https://asmedigitalcollection.asme.org/sustainablebuildings/article/7/2/024501/1233035/Data-Center-Waste-Heat-as-an-Emerging-Urban",
+          "url_hash": "d975dad9da538d93708524da6502c2b834b93992573a607b2efd7642b795d1d4",
+          "suggested_doc_key": "2026-08-data-centers-raise-nearby-temperatures-by-up-to-4-degrees-in-phoenix-d975dad9",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-data-centers-raise-nearby-temperatures-by-up-to-4-degrees-in-phoenix-d975dad9.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 267점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 375개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:dbd5a2d63cbc4228",
+          "title": "The Amazon tax",
+          "normalized_url": "https://seths.blog/2026/08/the-amazon-tax",
+          "url_hash": "dbd5a2d63cbc4228e17f3b06df7125d38375f2d19ad202c1bdcc6647a70939fc",
+          "suggested_doc_key": "2026-08-the-amazon-tax-dbd5a2d6",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-the-amazon-tax-dbd5a2d6.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 753점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 472개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:11369da8f695009b",
+          "title": "Fixing a bricked Framework laptop",
+          "normalized_url": "https://quantum5.ca/2026/08/16/fixing-bricked-amd-7040-series-framework-13-laptop-with-20-tools",
+          "url_hash": "11369da8f695009bfd66b1dc0baf979f76872722fddceb78731030b02b9e765d",
+          "suggested_doc_key": "2026-08-fixing-a-bricked-framework-laptop-11369da8",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-fixing-a-bricked-framework-laptop-11369da8.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 321점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 210개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 4,
+      "excluded_count": 46,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:f0aa91974e0ad6ca",
+          "title": "Strengthening democratic oversight in national security",
+          "normalized_url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+          "url_hash": "f0aa91974e0ad6ca58685787e6b44fa037cfd800e1d56928380594665b146fc1",
+          "suggested_doc_key": "2026-08-strengthening-democratic-oversight-in-national-security-f0aa9197",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-strengthening-democratic-oversight-in-national-security-f0aa9197.md",
+          "candidate_score": 49.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:6d4ec902c728a021",
+          "title": "Partnering with CodeAI to prepare the first AI generation",
+          "normalized_url": "https://openai.com/index/partnering-with-codeai",
+          "url_hash": "6d4ec902c728a02128d0e9d0f2d97315b31b6e3516e9601be6e9577b06f5790c",
+          "suggested_doc_key": "2026-08-partnering-with-codeai-to-prepare-the-first-ai-generation-6d4ec902",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-partnering-with-codeai-to-prepare-the-first-ai-generation-6d4ec902.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:c3b0ed374d416807",
+          "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+          "normalized_url": "https://openai.com/index/chatgpt-for-teens",
+          "url_hash": "c3b0ed374d41680783fa20fc63770995e488c58603f5ef9d743356c3fd37e97e",
+          "suggested_doc_key": "2026-08-introducing-chatgpt-for-teens-built-for-learning-backed-by-protections-c3b0ed37",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-introducing-chatgpt-for-teens-built-for-learning-backed-by-protections-c3b0ed37.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:6023038a8912cd08",
+          "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+          "normalized_url": "https://openai.com/index/asana",
+          "url_hash": "6023038a8912cd08a228ab148d313f6cbcbb616de2e9ed683b2e7118ab009ee0",
+          "suggested_doc_key": "2026-08-asana-cleared-5-years-of-engineering-work-in-2-weeks-with-codex-6023038a",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-asana-cleared-5-years-of-engineering-work-in-2-weeks-with-codex-6023038a.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 45
+      }
+    }
+  ]
+}
