@@ -5770,6 +5770,116 @@
       "status": "published",
       "briefed_at": "2026-08-17T22:22:03.811755Z",
       "candidate_score": 37.0
+    },
+    "e187b900b96a47c4d6c67a8f8f61b43e0e1181bde449a6de50c19ad538657da1": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/research/flood-prediction-ai",
+      "title_fingerprint": "ask a scientist how can researchers use ai to predict a flood",
+      "service_key": "google-blog",
+      "title": "Ask a Scientist: How can researchers use AI to predict a flood?",
+      "article_doc_path": "docs/services/google-blog/2026-08-ask-a-scientist-how-can-researchers-use-ai-to-predict-a-flood-e187b900.md",
+      "status": "published",
+      "briefed_at": "2026-08-18T22:21:37.292701Z",
+      "candidate_score": 36.0
+    },
+    "553a582dcb3666bc7d480e74d2a6038ece10d73316fed0448aa14c106a64b6ad": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies",
+      "title_fingerprint": "operation blue skies reducing aviation climate impact with ai",
+      "service_key": "google-blog",
+      "title": "Operation Blue Skies: Reducing aviation climate impact with AI",
+      "article_doc_path": "docs/services/google-blog/2026-08-operation-blue-skies-reducing-aviation-climate-impact-with-ai-553a582d.md",
+      "status": "published",
+      "briefed_at": "2026-08-18T22:21:37.292755Z",
+      "candidate_score": 35.0
+    },
+    "3aca82d56d54fd7c01e7de7e7e84434a4975606e52a81db4d50ec34ea8b5ff18": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships",
+      "title_fingerprint": "get closer to the game with gemini and pixel",
+      "service_key": "google-blog",
+      "title": "Get closer to the game with Gemini and Pixel",
+      "article_doc_path": "docs/services/google-blog/2026-08-get-closer-to-the-game-with-gemini-and-pixel-3aca82d5.md",
+      "status": "published",
+      "briefed_at": "2026-08-18T22:21:37.292764Z",
+      "candidate_score": 34.0
+    },
+    "1552027d48b2c56685f0e71325e770ca6734fb26eae470a37120a0c723acb67f": {
+      "normalized_url": "https://www.onethousandmeans.com/p/norway-should-buy-openai",
+      "title_fingerprint": "norway should buy openai",
+      "service_key": "hacker-news",
+      "title": "Norway Should Buy OpenAI",
+      "article_doc_path": "docs/services/hacker-news/2026-08-norway-should-buy-openai-1552027d.md",
+      "status": "published",
+      "briefed_at": "2026-08-18T22:21:37.292770Z",
+      "candidate_score": 61.6
+    },
+    "f9b5e7a505870971c267ec2691026b131c7cd3310331488d6e986b57e9749f54": {
+      "normalized_url": "https://about.iceland.co.uk/our-story/the-dark-ages/beware-management-consultants",
+      "title_fingerprint": "beware management consultants",
+      "service_key": "hacker-news",
+      "title": "Beware Management Consultants",
+      "article_doc_path": "docs/services/hacker-news/2026-08-beware-management-consultants-f9b5e7a5.md",
+      "status": "published",
+      "briefed_at": "2026-08-18T22:21:37.292775Z",
+      "candidate_score": 60.2
+    },
+    "d975dad9da538d93708524da6502c2b834b93992573a607b2efd7642b795d1d4": {
+      "normalized_url": "https://asmedigitalcollection.asme.org/sustainablebuildings/article/7/2/024501/1233035/Data-Center-Waste-Heat-as-an-Emerging-Urban",
+      "title_fingerprint": "data centers raise nearby temperatures by up to 4 degrees in phoenix",
+      "service_key": "hacker-news",
+      "title": "Data centers raise nearby temperatures by up to 4 degrees in Phoenix",
+      "article_doc_path": "docs/services/hacker-news/2026-08-data-centers-raise-nearby-temperatures-by-up-to-4-degrees-in-phoenix-d975dad9.md",
+      "status": "published",
+      "briefed_at": "2026-08-18T22:21:37.292781Z",
+      "candidate_score": 60.0
+    },
+    "dbd5a2d63cbc4228e17f3b06df7125d38375f2d19ad202c1bdcc6647a70939fc": {
+      "normalized_url": "https://seths.blog/2026/08/the-amazon-tax",
+      "title_fingerprint": "the amazon tax",
+      "service_key": "hacker-news",
+      "title": "The Amazon tax",
+      "article_doc_path": "docs/services/hacker-news/2026-08-the-amazon-tax-dbd5a2d6.md",
+      "status": "published",
+      "briefed_at": "2026-08-18T22:21:37.292785Z",
+      "candidate_score": 60.0
+    },
+    "f0aa91974e0ad6ca58685787e6b44fa037cfd800e1d56928380594665b146fc1": {
+      "normalized_url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+      "title_fingerprint": "strengthening democratic oversight in national security",
+      "service_key": "openai-blog",
+      "title": "Strengthening democratic oversight in national security",
+      "article_doc_path": "docs/services/openai-blog/2026-08-strengthening-democratic-oversight-in-national-security-f0aa9197.md",
+      "status": "published",
+      "briefed_at": "2026-08-18T22:21:37.292790Z",
+      "candidate_score": 49.0
+    },
+    "6d4ec902c728a02128d0e9d0f2d97315b31b6e3516e9601be6e9577b06f5790c": {
+      "normalized_url": "https://openai.com/index/partnering-with-codeai",
+      "title_fingerprint": "partnering with codeai to prepare the first ai generation",
+      "service_key": "openai-blog",
+      "title": "Partnering with CodeAI to prepare the first AI generation",
+      "article_doc_path": "docs/services/openai-blog/2026-08-partnering-with-codeai-to-prepare-the-first-ai-generation-6d4ec902.md",
+      "status": "published",
+      "briefed_at": "2026-08-18T22:21:37.292794Z",
+      "candidate_score": 38.0
+    },
+    "c3b0ed374d41680783fa20fc63770995e488c58603f5ef9d743356c3fd37e97e": {
+      "normalized_url": "https://openai.com/index/chatgpt-for-teens",
+      "title_fingerprint": "introducing chatgpt for teens built for learning backed by protections",
+      "service_key": "openai-blog",
+      "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+      "article_doc_path": "docs/services/openai-blog/2026-08-introducing-chatgpt-for-teens-built-for-learning-backed-by-protections-c3b0ed37.md",
+      "status": "published",
+      "briefed_at": "2026-08-18T22:21:37.292799Z",
+      "candidate_score": 36.0
+    },
+    "6023038a8912cd08a228ab148d313f6cbcbb616de2e9ed683b2e7118ab009ee0": {
+      "normalized_url": "https://openai.com/index/asana",
+      "title_fingerprint": "asana cleared 5 years of engineering work in 2 weeks with codex",
+      "service_key": "openai-blog",
+      "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-08-asana-cleared-5-years-of-engineering-work-in-2-weeks-with-codex-6023038a.md",
+      "status": "published",
+      "briefed_at": "2026-08-18T22:21:37.292806Z",
+      "candidate_score": 35.0
     }
   }
 }
