@@ -1,0 +1,324 @@
+{
+  "generated_at": "2026-08-19T22:18:50.729848+00:00",
+  "generated_for": "2026-08-19",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "0f9596ae1b333d51a47fdbd9cc9b56c47a03b403",
+  "github_run_id": "32308150358",
+  "service_count": 5,
+  "duration_ms": 8,
+  "raw_count": 120,
+  "candidate_count": 17,
+  "excluded_count": 103,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 27,
+      "excluded_count": 93,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 93
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 27,
+      "output_count": 17,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:80d425e7482ca00d",
+          "title": "GitHub Copilot app for Beginners: Managing your work",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work",
+          "url_hash": "80d425e7482ca00d9b562e254a186798a0689fb5976322fdd0f911c7ccb89e1d",
+          "suggested_doc_key": "2026-08-github-copilot-app-for-beginners-managing-your-work-80d425e7",
+          "suggested_article_path": "docs/services/github-blog/2026-08-github-copilot-app-for-beginners-managing-your-work-80d425e7.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:d96b4129d44ca7f6",
+          "title": "5 new ways to level up your learning with Search",
+          "normalized_url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools",
+          "url_hash": "d96b4129d44ca7f6a2f5011273cddcf5eaf2d08ba9d94228da4952ec404c0d84",
+          "suggested_doc_key": "2026-08-5-new-ways-to-level-up-your-learning-with-search-d96b4129",
+          "suggested_article_path": "docs/services/google-blog/2026-08-5-new-ways-to-level-up-your-learning-with-search-d96b4129.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:b106111e9875f086",
+          "title": "Go 1.27",
+          "normalized_url": "https://go.dev/blog/go1.27",
+          "url_hash": "b106111e9875f086133446d9ab1bf3474c08300c0c9a771d706fe94f5d15665b",
+          "suggested_doc_key": "2026-08-go-1-27-b106111e",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-go-1-27-b106111e.md",
+          "candidate_score": 60.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 345점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 69개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8e399e61dadd7f77",
+          "title": "OpenRouter is joining Stripe",
+          "normalized_url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe",
+          "url_hash": "8e399e61dadd7f7793d39dabdbea09716acb57d9bf595fa3a65115206b6714f2",
+          "suggested_doc_key": "2026-08-openrouter-is-joining-stripe-8e399e61",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-openrouter-is-joining-stripe-8e399e61.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 472점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 263개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:090328b1d13105ad",
+          "title": "Remote workers report the highest well-being in study of 7,700 employees",
+          "normalized_url": "https://www.colorado.edu/today/2026/08/12/remote-workers-report-highest-well-being-study-7700-employees",
+          "url_hash": "090328b1d13105ad6347c1c8f266e7b7d62eb53abae95bdd8fca2ee5b65d3e80",
+          "suggested_doc_key": "2026-08-remote-workers-report-the-highest-well-being-in-study-of-7-700-employees-090328b1",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-remote-workers-report-the-highest-well-being-in-study-of-7-700-employees-090328b1.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 422점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 197개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e423a77f02f7a7e1",
+          "title": "Casio F-B100W-1A",
+          "normalized_url": "https://www.casio.com/uk/watches/casio/product.F-B100W-1A",
+          "url_hash": "e423a77f02f7a7e118e87ebdb12a0ab3e3c375f5e9a219bf7b9608531daca540",
+          "suggested_doc_key": "2026-08-casio-f-b100w-1a-e423a77f",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-casio-f-b100w-1a-e423a77f.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 224점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 177개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a6291b992fa380b9",
+          "title": "Moderna reports first positive Phase 3 for mRNA neoantigen therapy in melanoma",
+          "normalized_url": "https://twitter.com/NoubarAfeyan/status/2090050162441752787",
+          "url_hash": "a6291b992fa380b998c7fbbda0374bfbcdb255a5cb4e185ab0049af628c6c1de",
+          "suggested_doc_key": "2026-08-moderna-reports-first-positive-phase-3-for-mrna-neoantigen-therapy-in-me-a6291b99",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-moderna-reports-first-positive-phase-3-for-mrna-neoantigen-therapy-in-me-a6291b99.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 491점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 226개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:df8f12302a5b421a",
+          "title": "Offering Zero Data Retention for frontier models",
+          "normalized_url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+          "url_hash": "df8f12302a5b421ac18657dd3c98b85f0bbbcdb55f27a7a2a1e94cd20d3dde6b",
+          "suggested_doc_key": "2026-08-offering-zero-data-retention-for-frontier-models-df8f1230",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-offering-zero-data-retention-for-frontier-models-df8f1230.md",
+          "candidate_score": 49.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:9c25f4ae7a186d68",
+          "title": "Pacing model development in an era of cyber-critical capabilities",
+          "normalized_url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+          "url_hash": "9c25f4ae7a186d68926fabf7ba66321e74423e571b1f86a4351d93eff1c6252c",
+          "suggested_doc_key": "2026-08-pacing-model-development-in-an-era-of-cyber-critical-capabilities-9c25f4ae",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-pacing-model-development-in-an-era-of-cyber-critical-capabilities-9c25f4ae.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:2f00013902a29bc1",
+          "title": "Replit expands access to software creation with GPT-5.6 Luna",
+          "normalized_url": "https://openai.com/index/replit",
+          "url_hash": "2f00013902a29bc1e23dd248bb0d6a75ee356bf38627fa0f8884731fbff27534",
+          "suggested_doc_key": "2026-08-replit-expands-access-to-software-creation-with-gpt-5-6-luna-2f000139",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-replit-expands-access-to-software-creation-with-gpt-5-6-luna-2f000139.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:8393c843a171d723",
+          "title": "ChatGPT Ads expands across Europe",
+          "normalized_url": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+          "url_hash": "8393c843a171d72369b2dfabe36ce65b3e11844d7844cfc40853fcf71ec3d4b3",
+          "suggested_doc_key": "2026-08-chatgpt-ads-expands-across-europe-8393c843",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-chatgpt-ads-expands-across-europe-8393c843.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:baf07daff59f271b",
+          "title": "How NVIDIA scales expertise with ChatGPT Work",
+          "normalized_url": "https://openai.com/index/nvidia/chatgpt-work",
+          "url_hash": "baf07daff59f271b90795fd50023fb349ec75ddad4cd8dc3dc0716042648ecd3",
+          "suggested_doc_key": "2026-08-how-nvidia-scales-expertise-with-chatgpt-work-baf07daf",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-how-nvidia-scales-expertise-with-chatgpt-work-baf07daf.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 45
+      }
+    }
+  ]
+}
