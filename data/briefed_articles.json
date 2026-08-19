@@ -5880,6 +5880,106 @@
       "status": "published",
       "briefed_at": "2026-08-18T22:21:37.292806Z",
       "candidate_score": 35.0
+    },
+    "80d425e7482ca00d9b562e254a186798a0689fb5976322fdd0f911c7ccb89e1d": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work",
+      "title_fingerprint": "github copilot app for beginners managing your work",
+      "service_key": "github-blog",
+      "title": "GitHub Copilot app for Beginners: Managing your work",
+      "article_doc_path": "docs/services/github-blog/2026-08-github-copilot-app-for-beginners-managing-your-work-80d425e7.md",
+      "status": "published",
+      "briefed_at": "2026-08-19T22:22:46.165959Z",
+      "candidate_score": 37.0
+    },
+    "d96b4129d44ca7f6a2f5011273cddcf5eaf2d08ba9d94228da4952ec404c0d84": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools",
+      "title_fingerprint": "5 new ways to level up your learning with search",
+      "service_key": "google-blog",
+      "title": "5 new ways to level up your learning with Search",
+      "article_doc_path": "docs/services/google-blog/2026-08-5-new-ways-to-level-up-your-learning-with-search-d96b4129.md",
+      "status": "published",
+      "briefed_at": "2026-08-19T22:22:46.165994Z",
+      "candidate_score": 36.0
+    },
+    "b106111e9875f086133446d9ab1bf3474c08300c0c9a771d706fe94f5d15665b": {
+      "normalized_url": "https://go.dev/blog/go1.27",
+      "title_fingerprint": "go 1 27",
+      "service_key": "hacker-news",
+      "title": "Go 1.27",
+      "article_doc_path": "docs/services/hacker-news/2026-08-go-1-27-b106111e.md",
+      "status": "published",
+      "briefed_at": "2026-08-19T22:22:46.166005Z",
+      "candidate_score": 60.8
+    },
+    "8e399e61dadd7f7793d39dabdbea09716acb57d9bf595fa3a65115206b6714f2": {
+      "normalized_url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe",
+      "title_fingerprint": "openrouter is joining stripe",
+      "service_key": "hacker-news",
+      "title": "OpenRouter is joining Stripe",
+      "article_doc_path": "docs/services/hacker-news/2026-08-openrouter-is-joining-stripe-8e399e61.md",
+      "status": "published",
+      "briefed_at": "2026-08-19T22:22:46.166011Z",
+      "candidate_score": 60.0
+    },
+    "090328b1d13105ad6347c1c8f266e7b7d62eb53abae95bdd8fca2ee5b65d3e80": {
+      "normalized_url": "https://www.colorado.edu/today/2026/08/12/remote-workers-report-highest-well-being-study-7700-employees",
+      "title_fingerprint": "remote workers report the highest well being in study of 7 700 employees",
+      "service_key": "hacker-news",
+      "title": "Remote workers report the highest well-being in study of 7,700 employees",
+      "article_doc_path": "docs/services/hacker-news/2026-08-remote-workers-report-the-highest-well-being-in-study-of-7-700-employees-090328b1.md",
+      "status": "published",
+      "briefed_at": "2026-08-19T22:22:46.166018Z",
+      "candidate_score": 60.0
+    },
+    "e423a77f02f7a7e118e87ebdb12a0ab3e3c375f5e9a219bf7b9608531daca540": {
+      "normalized_url": "https://www.casio.com/uk/watches/casio/product.F-B100W-1A",
+      "title_fingerprint": "casio f b100w 1a",
+      "service_key": "hacker-news",
+      "title": "Casio F-B100W-1A",
+      "article_doc_path": "docs/services/hacker-news/2026-08-casio-f-b100w-1a-e423a77f.md",
+      "status": "published",
+      "briefed_at": "2026-08-19T22:22:46.166024Z",
+      "candidate_score": 60.0
+    },
+    "df8f12302a5b421ac18657dd3c98b85f0bbbcdb55f27a7a2a1e94cd20d3dde6b": {
+      "normalized_url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+      "title_fingerprint": "offering zero data retention for frontier models",
+      "service_key": "openai-blog",
+      "title": "Offering Zero Data Retention for frontier models",
+      "article_doc_path": "docs/services/openai-blog/2026-08-offering-zero-data-retention-for-frontier-models-df8f1230.md",
+      "status": "published",
+      "briefed_at": "2026-08-19T22:22:46.166031Z",
+      "candidate_score": 49.0
+    },
+    "9c25f4ae7a186d68926fabf7ba66321e74423e571b1f86a4351d93eff1c6252c": {
+      "normalized_url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+      "title_fingerprint": "pacing model development in an era of cyber critical capabilities",
+      "service_key": "openai-blog",
+      "title": "Pacing model development in an era of cyber-critical capabilities",
+      "article_doc_path": "docs/services/openai-blog/2026-08-pacing-model-development-in-an-era-of-cyber-critical-capabilities-9c25f4ae.md",
+      "status": "published",
+      "briefed_at": "2026-08-19T22:22:46.166037Z",
+      "candidate_score": 44.0
+    },
+    "2f00013902a29bc1e23dd248bb0d6a75ee356bf38627fa0f8884731fbff27534": {
+      "normalized_url": "https://openai.com/index/replit",
+      "title_fingerprint": "replit expands access to software creation with gpt 5 6 luna",
+      "service_key": "openai-blog",
+      "title": "Replit expands access to software creation with GPT-5.6 Luna",
+      "article_doc_path": "docs/services/openai-blog/2026-08-replit-expands-access-to-software-creation-with-gpt-5-6-luna-2f000139.md",
+      "status": "published",
+      "briefed_at": "2026-08-19T22:22:46.166043Z",
+      "candidate_score": 38.0
+    },
+    "8393c843a171d72369b2dfabe36ce65b3e11844d7844cfc40853fcf71ec3d4b3": {
+      "normalized_url": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+      "title_fingerprint": "chatgpt ads expands across europe",
+      "service_key": "openai-blog",
+      "title": "ChatGPT Ads expands across Europe",
+      "article_doc_path": "docs/services/openai-blog/2026-08-chatgpt-ads-expands-across-europe-8393c843.md",
+      "status": "published",
+      "briefed_at": "2026-08-19T22:22:46.166049Z",
+      "candidate_score": 37.0
     }
   }
 }
