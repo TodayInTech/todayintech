@@ -5980,6 +5980,86 @@
       "status": "published",
       "briefed_at": "2026-08-19T22:22:46.166049Z",
       "candidate_score": 37.0
+    },
+    "95cb8721e4c980ece8a73ebec24da744e48c2c6ad344a656019738512da64a71": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads",
+      "title_fingerprint": "inside the gemmaverse celebrating one billion gemma downloads",
+      "service_key": "google-blog",
+      "title": "Inside the Gemmaverse: Celebrating one billion Gemma downloads",
+      "article_doc_path": "docs/services/google-blog/2026-08-inside-the-gemmaverse-celebrating-one-billion-gemma-downloads-95cb8721.md",
+      "status": "published",
+      "briefed_at": "2026-08-20T22:23:41.877658Z",
+      "candidate_score": 36.0
+    },
+    "a5e5ba12584e9b3b848e80ca7c4e8d3e622a8738ab3cffe25f209f7090ab2221": {
+      "normalized_url": "https://blog.curiousquail.com/im-upset-again-about-a-co-creator-of-rss-being-prosecuted-for-something-meta-is-doing-with-little-consequence",
+      "title_fingerprint": "aaron swartz was prosecuted for scraping while meta does it without consequence",
+      "service_key": "hacker-news",
+      "title": "Aaron Swartz was prosecuted for scraping, while Meta does it without consequence",
+      "article_doc_path": "docs/services/hacker-news/2026-08-aaron-swartz-was-prosecuted-for-scraping-while-meta-does-it-without-cons-a5e5ba12.md",
+      "status": "published",
+      "briefed_at": "2026-08-20T22:23:41.877702Z",
+      "candidate_score": 67.6
+    },
+    "807ef9c2e44da735451da31e0cba2e6f21a1f03f150031d7c549ae00832ff86d": {
+      "normalized_url": "https://www.danielvaughn.dev/posts/huzzah",
+      "title_fingerprint": "show hn huzzah a novel approach to coding with ai",
+      "service_key": "hacker-news",
+      "title": "Show HN: Huzzah – a novel approach to coding with AI",
+      "article_doc_path": "docs/services/hacker-news/2026-08-show-hn-huzzah-a-novel-approach-to-coding-with-ai-807ef9c2.md",
+      "status": "published",
+      "briefed_at": "2026-08-20T22:23:41.877715Z",
+      "candidate_score": 63.1
+    },
+    "8a842e220ed91014230858eef2c8772bec08ca303bde612b82de5eadae606bc2": {
+      "normalized_url": "https://www.rathbiotaclan.com/tiktok-videos-deactivate-key-cognitive-brain-regions",
+      "title_fingerprint": "watching tiktok and instagram deactivates the cognitive control network study",
+      "service_key": "hacker-news",
+      "title": "Watching TikTok and Instagram deactivates the cognitive control network: Study",
+      "article_doc_path": "docs/services/hacker-news/2026-08-watching-tiktok-and-instagram-deactivates-the-cognitive-control-network-8a842e22.md",
+      "status": "published",
+      "briefed_at": "2026-08-20T22:23:41.877723Z",
+      "candidate_score": 61.0
+    },
+    "8f23da7e56640502c34c1f504ac056925fe6031682c7820a1e500e582c4c447d": {
+      "normalized_url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead",
+      "title_fingerprint": "the august 17 outage and the work ahead",
+      "service_key": "hacker-news",
+      "title": "The August 17 outage, and the work ahead",
+      "article_doc_path": "docs/services/hacker-news/2026-08-the-august-17-outage-and-the-work-ahead-8f23da7e.md",
+      "status": "published",
+      "briefed_at": "2026-08-20T22:23:41.877730Z",
+      "candidate_score": 60.3
+    },
+    "ad89fb510e3c78c26282cfd40541dc61653b3d8c142b323e38b2c22c1766bfa5": {
+      "normalized_url": "https://openai.com/index/stampli",
+      "title_fingerprint": "stampli cuts launch hours by 68 using chatgpt work",
+      "service_key": "openai-blog",
+      "title": "Stampli cuts launch hours by 68% using ChatGPT Work",
+      "article_doc_path": "docs/services/openai-blog/2026-08-stampli-cuts-launch-hours-by-68-using-chatgpt-work-ad89fb51.md",
+      "status": "published",
+      "briefed_at": "2026-08-20T22:23:41.877737Z",
+      "candidate_score": 43.0
+    },
+    "fc1a9abd82b35a9c86d54b1fb0f68bd137a90ec86cea086cc68200bb6a148bdd": {
+      "normalized_url": "https://openai.com/index/introducing-ai-futures",
+      "title_fingerprint": "introducing ai futures",
+      "service_key": "openai-blog",
+      "title": "Introducing AI Futures",
+      "article_doc_path": "docs/services/openai-blog/2026-08-introducing-ai-futures-fc1a9abd.md",
+      "status": "published",
+      "briefed_at": "2026-08-20T22:23:41.877744Z",
+      "candidate_score": 39.0
+    },
+    "baf07daff59f271b90795fd50023fb349ec75ddad4cd8dc3dc0716042648ecd3": {
+      "normalized_url": "https://openai.com/index/nvidia/chatgpt-work",
+      "title_fingerprint": "how nvidia scales expertise with chatgpt work",
+      "service_key": "openai-blog",
+      "title": "How NVIDIA scales expertise with ChatGPT Work",
+      "article_doc_path": "docs/services/openai-blog/2026-08-how-nvidia-scales-expertise-with-chatgpt-work-baf07daf.md",
+      "status": "published",
+      "briefed_at": "2026-08-20T22:23:41.877763Z",
+      "candidate_score": 28.0
     }
   }
 }
