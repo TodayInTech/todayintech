@@ -6060,6 +6060,56 @@
       "status": "published",
       "briefed_at": "2026-08-20T22:23:41.877763Z",
       "candidate_score": 28.0
+    },
+    "fd4caa640eadf5a58d453541a2b54fd335a3613536a337674e52eef753b8495a": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/what-full-stack-development-means",
+      "title_fingerprint": "what does full stack ai actually mean",
+      "service_key": "google-blog",
+      "title": "What does “full-stack” AI actually mean?",
+      "article_doc_path": "docs/services/google-blog/2026-08-what-does-full-stack-ai-actually-mean-fd4caa64.md",
+      "status": "published",
+      "briefed_at": "2026-08-21T22:19:51.260083Z",
+      "candidate_score": 41.0
+    },
+    "3bd3a02f3f5b10688124edb2e0e856c8a807d2dac8320c0352436ad1ee85c74c": {
+      "normalized_url": "https://bandarlabs.github.io/Cobalt",
+      "title_fingerprint": "kobo can run apps now",
+      "service_key": "hacker-news",
+      "title": "Kobo can run apps now",
+      "article_doc_path": "docs/services/hacker-news/2026-08-kobo-can-run-apps-now-3bd3a02f.md",
+      "status": "published",
+      "briefed_at": "2026-08-21T22:19:51.260117Z",
+      "candidate_score": 61.0
+    },
+    "404ef0e0d6981e27f75ec5610997b2fbe7c90554d98ed64e80506d3ccba4f8cd": {
+      "normalized_url": "https://www.felonybench.com/",
+      "title_fingerprint": "felony bench",
+      "service_key": "hacker-news",
+      "title": "Felony Bench",
+      "article_doc_path": "docs/services/hacker-news/2026-08-felony-bench-404ef0e0.md",
+      "status": "published",
+      "briefed_at": "2026-08-21T22:19:51.260127Z",
+      "candidate_score": 60.0
+    },
+    "578010e7f32a1bc43265caa596214a04292ee8e1857fcd2ccd9a51de45fae7c9": {
+      "normalized_url": "https://kagi.com/changelog",
+      "title_fingerprint": "kagi added a setting for removing paywalled links from search results",
+      "service_key": "hacker-news",
+      "title": "Kagi added a setting for removing paywalled links from search results",
+      "article_doc_path": "docs/services/hacker-news/2026-08-kagi-added-a-setting-for-removing-paywalled-links-from-search-results-578010e7.md",
+      "status": "published",
+      "briefed_at": "2026-08-21T22:19:51.260132Z",
+      "candidate_score": 60.0
+    },
+    "fd654dd805583d2c6fd44a3d0d4f8f552618bd680ca2c5b7ed1947f7b98cef41": {
+      "normalized_url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+      "title_fingerprint": "claudette make claude stop talking like a buzzfeed article",
+      "service_key": "hacker-news",
+      "title": "Claudette: Make Claude stop talking like a BuzzFeed article",
+      "article_doc_path": "docs/services/hacker-news/2026-08-claudette-make-claude-stop-talking-like-a-buzzfeed-article-fd654dd8.md",
+      "status": "published",
+      "briefed_at": "2026-08-21T22:19:51.260137Z",
+      "candidate_score": 54.8
     }
   }
 }
