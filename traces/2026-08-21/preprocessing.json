@@ -1,0 +1,237 @@
+{
+  "generated_at": "2026-08-21T22:18:04.199652+00:00",
+  "generated_for": "2026-08-21",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "b5e999f472583088b4acd6041e808ef200b764ce",
+  "github_run_id": "32532309388",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 21,
+      "excluded_count": 99,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 99
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 21,
+      "output_count": 21,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 21,
+      "output_count": 21,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 21,
+      "output_count": 11,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:fd4caa640eadf5a5",
+          "title": "What does “full-stack” AI actually mean?",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/what-full-stack-development-means",
+          "url_hash": "fd4caa640eadf5a58d453541a2b54fd335a3613536a337674e52eef753b8495a",
+          "suggested_doc_key": "2026-08-what-does-full-stack-ai-actually-mean-fd4caa64",
+          "suggested_article_path": "docs/services/google-blog/2026-08-what-does-full-stack-ai-actually-mean-fd4caa64.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:3bd3a02f3f5b1068",
+          "title": "Kobo can run apps now",
+          "normalized_url": "https://bandarlabs.github.io/Cobalt",
+          "url_hash": "3bd3a02f3f5b10688124edb2e0e856c8a807d2dac8320c0352436ad1ee85c74c",
+          "suggested_doc_key": "2026-08-kobo-can-run-apps-now-3bd3a02f",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-kobo-can-run-apps-now-3bd3a02f.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 334점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 114개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:404ef0e0d6981e27",
+          "title": "Felony Bench",
+          "normalized_url": "https://www.felonybench.com/",
+          "url_hash": "404ef0e0d6981e27f75ec5610997b2fbe7c90554d98ed64e80506d3ccba4f8cd",
+          "suggested_doc_key": "2026-08-felony-bench-404ef0e0",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-felony-bench-404ef0e0.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 394점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 182개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:578010e7f32a1bc4",
+          "title": "Kagi added a setting for removing paywalled links from search results",
+          "normalized_url": "https://kagi.com/changelog",
+          "url_hash": "578010e7f32a1bc43265caa596214a04292ee8e1857fcd2ccd9a51de45fae7c9",
+          "suggested_doc_key": "2026-08-kagi-added-a-setting-for-removing-paywalled-links-from-search-results-578010e7",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-kagi-added-a-setting-for-removing-paywalled-links-from-search-results-578010e7.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 917점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 316개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:fd654dd805583d2c",
+          "title": "Claudette: Make Claude stop talking like a BuzzFeed article",
+          "normalized_url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+          "url_hash": "fd654dd805583d2c6fd44a3d0d4f8f552618bd680ca2c5b7ed1947f7b98cef41",
+          "suggested_doc_key": "2026-08-claudette-make-claude-stop-talking-like-a-buzzfeed-article-fd654dd8",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-claudette-make-claude-stop-talking-like-a-buzzfeed-article-fd654dd8.md",
+          "candidate_score": 54.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 148점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 105개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4671a34b716a3c78",
+          "title": "I accidentally logged hundreds of thousands of phone calls to military bases",
+          "normalized_url": "https://lina.sh/blog/hijacking-e164-arpa",
+          "url_hash": "4671a34b716a3c78d556ec8a0dee33011e6d51bca788e47fd84a3d44dcea3a31",
+          "suggested_doc_key": "2026-08-i-accidentally-logged-hundreds-of-thousands-of-phone-calls-to-military-b-4671a34b",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-i-accidentally-logged-hundreds-of-thousands-of-phone-calls-to-military-b-4671a34b.md",
+          "candidate_score": 53.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 371점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 40개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 50
+      }
+    }
+  ]
+}
