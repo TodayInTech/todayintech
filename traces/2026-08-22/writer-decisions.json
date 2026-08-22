@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-08-22T22:17:12.486424+00:00",
+  "generated_for": "2026-08-22",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "0a5c2a1e24b3858c05c77c4f87d2da01983635d9",
+  "github_run_id": "32601904911",
+  "decision_count": 4,
+  "decision_counts": {
+    "published": 4
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:c248308cd463dc29",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Munder Difflin – Agent harness to run an office of your clones",
+      "normalized_url": "https://munderdiffl.in/",
+      "article_doc_path": "docs/services/hacker-news/2026-08-munder-difflin-agent-harness-to-run-an-office-of-your-clones-c248308c.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI/Developer Tools",
+      "importance_level": "Medium",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 로컬 우선(local-first) 에이전트 클론 아키텍처, BYO(Bring-Your-Own) 에이전트 CLI 지원, 엔드투엔드 암호화된 클론 간 메시징, 오픈소스 코드·암호화 기법 공개 등 기술적으로 관심 있는 독자에게 유의미한 기술 설명과 구현 선택지를 제공합니다. 팀 단위 지식베이스와 전용 샌드박스 VM을 통한 항상-on 클론 제공 등 실무 적용 가능성이 분명해 Today in Tech 독자층에 유용하다고 판단됩니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:068c7e8ae3f03d5c",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Scrap",
+      "normalized_url": "https://twitter.com/moxie/status/2091218652133732491",
+      "article_doc_path": "docs/services/hacker-news/2026-08-scrap-068c7e8a.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Hacker News 토론",
+      "importance_level": "중간",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터상 해커뉴스에서 높은 반응(포인트 180, 댓글 75)과 RSS 상위 노출이 확인되어 기술 독자 관심을 끌 가능성이 높음. 원문 내용은 피드에 포함되지 않아 요약은 메타데이터 기준으로 제한됨.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "source_url: https://twitter.com/moxie/status/2091218652133732491",
+        "feed_summary: Article URL and HN comments URL",
+        "hn_points: 180",
+        "hn_comments: 75",
+        "rss_rank: 7",
+        "published_at: 2026-08-22T18:08:56+00:00",
+        "collected_at: 2026-08-22T22:16:13.681822+00:00"
+      ],
+      "candidate_score": 61.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:f83cb012d1e02700",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "ElevenLabs, TwelveLabs, ThirteenLabs",
+      "normalized_url": "https://quantumi.sh/public/labs.html",
+      "article_doc_path": "docs/services/hacker-news/2026-08-elevenlabs-twelvelabs-thirteenlabs-f83cb012.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "스타트업 문화",
+      "importance_level": "중간",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 원문 근거(chunk-0001)를 바탕으로 '숫자+labs' 명명 관행을 정리하고 관찰된 패턴과 흥미로운 사례(예: ElevenLabs, TwelveLabs, ThirteenLabs, seventyonelab.com 등)를 기술 독자 관점에서 해설하고 있어 기술 문화·브랜딩 관찰 기사로 가치가 있음.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 61.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:95b84c19524261fb",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "New MCP Roadmap",
+      "normalized_url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap",
+      "article_doc_path": "docs/services/hacker-news/2026-08-new-mcp-roadmap-95b84c19.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "프로토콜/오픈스탠다드",
+      "importance_level": "중간-높음",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 원문은 MCP의 업데이트된 로드맵을 상세히 설명하고 있어 기술 독자에게 유용한 변경점(에이전트 메시징, 전송 통합, 에이전트 신원·보안, 도구 호출 개선, SDK 경험 등)을 포함하므로 Today in Tech의 브리핑으로 적절합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 61.0,
+      "error_message": null
+    }
+  ]
+}

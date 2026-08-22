@@ -1,0 +1,223 @@
+{
+  "generated_at": "2026-08-22T22:16:04.204131+00:00",
+  "generated_for": "2026-08-22",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "0a5c2a1e24b3858c05c77c4f87d2da01983635d9",
+  "github_run_id": "32601904911",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 10,
+  "excluded_count": 110,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 20,
+      "excluded_count": 100,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 100
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 20,
+      "output_count": 20,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 20,
+      "output_count": 20,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 20,
+      "output_count": 10,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:c248308cd463dc29",
+          "title": "Munder Difflin – Agent harness to run an office of your clones",
+          "normalized_url": "https://munderdiffl.in/",
+          "url_hash": "c248308cd463dc290e0378a0d932538f197ecf2b15d1250a8a933eab93c54012",
+          "suggested_doc_key": "2026-08-munder-difflin-agent-harness-to-run-an-office-of-your-clones-c248308c",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-munder-difflin-agent-harness-to-run-an-office-of-your-clones-c248308c.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 234점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 109개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:068c7e8ae3f03d5c",
+          "title": "Scrap",
+          "normalized_url": "https://twitter.com/moxie/status/2091218652133732491",
+          "url_hash": "068c7e8ae3f03d5c8e6fcfa2572a3b37e62dd5dca1313e58127ef115cf6f74cf",
+          "suggested_doc_key": "2026-08-scrap-068c7e8a",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-scrap-068c7e8a.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 180점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 75개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f83cb012d1e02700",
+          "title": "ElevenLabs, TwelveLabs, ThirteenLabs",
+          "normalized_url": "https://quantumi.sh/public/labs.html",
+          "url_hash": "f83cb012d1e02700cfeded73a7669e26162de1a7c76d457f7216b179780c7404",
+          "suggested_doc_key": "2026-08-elevenlabs-twelvelabs-thirteenlabs-f83cb012",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-elevenlabs-twelvelabs-thirteenlabs-f83cb012.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 268점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 87개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:95b84c19524261fb",
+          "title": "New MCP Roadmap",
+          "normalized_url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap",
+          "url_hash": "95b84c19524261fb18660930b0ccdfb4cae985aa7d0e1bc10cca1ec71bf5bc3b",
+          "suggested_doc_key": "2026-08-new-mcp-roadmap-95b84c19",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-new-mcp-roadmap-95b84c19.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 160점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 119개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:ef48a9723fd1cea4",
+          "title": "Canada will match US tariffs 'dollar for dollar' as trade talks break down",
+          "normalized_url": "https://www.bbc.com/news/articles/cvgvyy4x2mvo",
+          "url_hash": "ef48a9723fd1cea4139f7b3933a78ff3814dc99722fefbe53a7bac7421e7f220",
+          "suggested_doc_key": "2026-08-canada-will-match-us-tariffs-dollar-for-dollar-as-trade-talks-break-down-ef48a972",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-canada-will-match-us-tariffs-dollar-for-dollar-as-trade-talks-break-down-ef48a972.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 355점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 1035개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 50
+      }
+    }
+  ]
+}
