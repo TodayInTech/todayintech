@@ -6110,6 +6110,46 @@
       "status": "published",
       "briefed_at": "2026-08-21T22:19:51.260137Z",
       "candidate_score": 54.8
+    },
+    "c248308cd463dc290e0378a0d932538f197ecf2b15d1250a8a933eab93c54012": {
+      "normalized_url": "https://munderdiffl.in/",
+      "title_fingerprint": "munder difflin agent harness to run an office of your clones",
+      "service_key": "hacker-news",
+      "title": "Munder Difflin – Agent harness to run an office of your clones",
+      "article_doc_path": "docs/services/hacker-news/2026-08-munder-difflin-agent-harness-to-run-an-office-of-your-clones-c248308c.md",
+      "status": "published",
+      "briefed_at": "2026-08-22T22:17:12.312863Z",
+      "candidate_score": 65.0
+    },
+    "068c7e8ae3f03d5c8e6fcfa2572a3b37e62dd5dca1313e58127ef115cf6f74cf": {
+      "normalized_url": "https://twitter.com/moxie/status/2091218652133732491",
+      "title_fingerprint": "scrap",
+      "service_key": "hacker-news",
+      "title": "Scrap",
+      "article_doc_path": "docs/services/hacker-news/2026-08-scrap-068c7e8a.md",
+      "status": "published",
+      "briefed_at": "2026-08-22T22:17:12.312901Z",
+      "candidate_score": 61.0
+    },
+    "f83cb012d1e02700cfeded73a7669e26162de1a7c76d457f7216b179780c7404": {
+      "normalized_url": "https://quantumi.sh/public/labs.html",
+      "title_fingerprint": "elevenlabs twelvelabs thirteenlabs",
+      "service_key": "hacker-news",
+      "title": "ElevenLabs, TwelveLabs, ThirteenLabs",
+      "article_doc_path": "docs/services/hacker-news/2026-08-elevenlabs-twelvelabs-thirteenlabs-f83cb012.md",
+      "status": "published",
+      "briefed_at": "2026-08-22T22:17:12.312917Z",
+      "candidate_score": 61.0
+    },
+    "95b84c19524261fb18660930b0ccdfb4cae985aa7d0e1bc10cca1ec71bf5bc3b": {
+      "normalized_url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap",
+      "title_fingerprint": "new mcp roadmap",
+      "service_key": "hacker-news",
+      "title": "New MCP Roadmap",
+      "article_doc_path": "docs/services/hacker-news/2026-08-new-mcp-roadmap-95b84c19.md",
+      "status": "published",
+      "briefed_at": "2026-08-22T22:17:12.312927Z",
+      "candidate_score": 61.0
     }
   }
 }
