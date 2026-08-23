@@ -6150,6 +6150,46 @@
       "status": "published",
       "briefed_at": "2026-08-22T22:17:12.312927Z",
       "candidate_score": 61.0
+    },
+    "67ada8aa0238108ebc32cf7b6df3c2115b1136178bb3632d1b6ef48c452c90d1": {
+      "normalized_url": "https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model",
+      "title_fingerprint": "i gave qwen 3 8 27b a reverse engineering job and it finished in 30 minutes",
+      "service_key": "hacker-news",
+      "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
+      "article_doc_path": "docs/services/hacker-news/2026-08-i-gave-qwen-3-8-27b-a-reverse-engineering-job-and-it-finished-in-30-minu-67ada8aa.md",
+      "status": "published",
+      "briefed_at": "2026-08-23T22:16:32.704192Z",
+      "candidate_score": 61.9
+    },
+    "86668f1709126e8bd6bc376cbc3d6ef21aabb4b95fc4a8d7de9a1b6571eb47fe": {
+      "normalized_url": "https://nappertime.com/the-golden-rule-of-becoming-a-better-writer",
+      "title_fingerprint": "to become a better writer read as much as you can",
+      "service_key": "hacker-news",
+      "title": "To become a better writer, read as much as you can",
+      "article_doc_path": "docs/services/hacker-news/2026-08-to-become-a-better-writer-read-as-much-as-you-can-86668f17.md",
+      "status": "published",
+      "briefed_at": "2026-08-23T22:16:32.704224Z",
+      "candidate_score": 60.0
+    },
+    "ed4b986d85464002a22215ece23f5f6d9ac77804210e8af7e21531511b7d6fdd": {
+      "normalized_url": "https://malisper.me/jit-compiling-code-in-5-us",
+      "title_fingerprint": "jit compiling code in 5 s",
+      "service_key": "hacker-news",
+      "title": "JIT Compiling Code in 5μs",
+      "article_doc_path": "docs/services/hacker-news/2026-08-jit-compiling-code-in-5-s-ed4b986d.md",
+      "status": "published",
+      "briefed_at": "2026-08-23T22:16:32.704234Z",
+      "candidate_score": 52.3
+    },
+    "66e34c2569b6020d18eadb13c5cb49d5941e63c080c7ce8ab019502f628a356f": {
+      "normalized_url": "https://nappertime.com/the-art-of-and-beauty-of-blade-runner",
+      "title_fingerprint": "the art and beauty of blade runner 2015",
+      "service_key": "hacker-news",
+      "title": "The Art and Beauty of Blade Runner (2015)",
+      "article_doc_path": "docs/services/hacker-news/2026-08-the-art-and-beauty-of-blade-runner-2015-66e34c25.md",
+      "status": "published",
+      "briefed_at": "2026-08-23T22:16:32.704239Z",
+      "candidate_score": 52.2
     }
   }
 }
