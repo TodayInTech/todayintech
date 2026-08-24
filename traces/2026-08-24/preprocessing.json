@@ -1,0 +1,267 @@
+{
+  "generated_at": "2026-08-24T22:19:51.562826+00:00",
+  "generated_for": "2026-08-24",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "ace5903e5e5251594a4da4817096be02429c9992",
+  "github_run_id": "32784051867",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 13,
+  "excluded_count": 107,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 23,
+      "excluded_count": 97,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 97
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 23,
+      "output_count": 23,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 23,
+      "output_count": 23,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 23,
+      "output_count": 13,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:0149cc88b149ef15",
+          "title": "Your alt text passes automated checks. That doesn’t mean it’s any good.",
+          "normalized_url": "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good",
+          "url_hash": "0149cc88b149ef151ff23ed86b4a9e9d03dbf752a619e659a6345221afef149b",
+          "suggested_doc_key": "2026-08-your-alt-text-passes-automated-checks-that-doesn-t-mean-it-s-any-good-0149cc88",
+          "suggested_article_path": "docs/services/github-blog/2026-08-your-alt-text-passes-automated-checks-that-doesn-t-mean-it-s-any-good-0149cc88.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:e1067e721f975e93",
+          "title": "How developers build AI for good with Gemma 4",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/winning-entries-gemma-4-good-challenge",
+          "url_hash": "e1067e721f975e93d96efcbb49071fb0993f37099a842240d972068a859ea989",
+          "suggested_doc_key": "2026-08-how-developers-build-ai-for-good-with-gemma-4-e1067e72",
+          "suggested_article_path": "docs/services/google-blog/2026-08-how-developers-build-ai-for-good-with-gemma-4-e1067e72.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:53d975e083eaf7f3",
+          "title": "Oceans hit highest temperature on record",
+          "normalized_url": "https://www.bbc.com/news/articles/c62m4gpnp78o",
+          "url_hash": "53d975e083eaf7f3df887ebd414efede0210af959b10b0b1357e2feefebb47bf",
+          "suggested_doc_key": "2026-08-oceans-hit-highest-temperature-on-record-53d975e0",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-oceans-hit-highest-temperature-on-record-53d975e0.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 273점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 142개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:945e4068028bbca3",
+          "title": "The entire city of San Francisco as a video game",
+          "normalized_url": "https://sf.thijs.gg/",
+          "url_hash": "945e4068028bbca3435130c60c945f6137492a561b97d57277c6677c89c59a53",
+          "suggested_doc_key": "2026-08-the-entire-city-of-san-francisco-as-a-video-game-945e4068",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-the-entire-city-of-san-francisco-as-a-video-game-945e4068.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 261점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 89개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f01ba37662317a0a",
+          "title": "IPFS Maintainers Winding Down",
+          "normalized_url": "https://ipshipyard.com/blog/2026-the-end-of-ipfs-at-shipyard",
+          "url_hash": "f01ba37662317a0aa79d96926ff9b4e072eae163797e0d2cad22a1eeef088683",
+          "suggested_doc_key": "2026-08-ipfs-maintainers-winding-down-f01ba376",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-ipfs-maintainers-winding-down-f01ba376.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 290점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 146개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8317e1187afa3abd",
+          "title": "Coding expertise is going to collapse from AI reliance",
+          "normalized_url": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+          "url_hash": "8317e1187afa3abdb819c874e0a6785de86bda1ca42df776fd7f4059472f17cf",
+          "suggested_doc_key": "2026-08-coding-expertise-is-going-to-collapse-from-ai-reliance-8317e118",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-coding-expertise-is-going-to-collapse-from-ai-reliance-8317e118.md",
+          "candidate_score": 56.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "Hacker News 점수 374점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 387개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b37fd48eb5235fa9",
+          "title": "Anger, Anxiety and Agency",
+          "normalized_url": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency",
+          "url_hash": "b37fd48eb5235fa9c21fe14075a2202f58abfc87fea8cc6b381f3396eada181e",
+          "suggested_doc_key": "2026-08-anger-anxiety-and-agency-b37fd48e",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-anger-anxiety-and-agency-b37fd48e.md",
+          "candidate_score": 50.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 66점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 75개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:abd52c9f1dde403e",
+          "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+          "normalized_url": "https://openai.com/index/gpt-5-6-in-kiro",
+          "url_hash": "abd52c9f1dde403ea312fe1dcc8f2b7fc27a242eb1ec73041b234fa7076d6a46",
+          "suggested_doc_key": "2026-08-advancing-price-performance-for-developers-with-gpt-5-6-in-kiro-abd52c9f",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-advancing-price-performance-for-developers-with-gpt-5-6-in-kiro-abd52c9f.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 49
+      }
+    }
+  ]
+}
