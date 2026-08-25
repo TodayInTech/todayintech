@@ -6260,6 +6260,146 @@
       "status": "published",
       "briefed_at": "2026-08-24T22:22:04.343745Z",
       "candidate_score": 39.0
+    },
+    "1e032b3767d6bbcd1e1385c11548b6903347f69ac03f39af0a5ca6201bf922e1": {
+      "normalized_url": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "title_fingerprint": "funding better evaluations of ai s impact on wellbeing",
+      "service_key": "anthropic-blog",
+      "title": "Funding better evaluations of AI’s impact on wellbeing",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-funding-better-evaluations-of-ai-s-impact-on-wellbeing-1e032b37.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.983920Z",
+      "candidate_score": 35.0
+    },
+    "892905dcfc586fecce9ff17acbe06328963a0f9d42f1ae3c34e6370b0d5013eb": {
+      "normalized_url": "https://www.anthropic.com/news/economic-futures-uk-europe",
+      "title_fingerprint": "launching the anthropic economic futures programme in the uk and europe",
+      "service_key": "anthropic-blog",
+      "title": "Launching the Anthropic Economic Futures Programme in the UK and Europe",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-launching-the-anthropic-economic-futures-programme-in-the-uk-and-europe-892905dc.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.983955Z",
+      "candidate_score": 35.0
+    },
+    "9466a78c28e017400ff3829e40f6e9f3cca59b2ca00e02250c26864e72ee55ad": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7",
+      "title_fingerprint": "anthropic economic index insights from claude 3 7 sonnet",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic Economic Index: Insights from Claude 3.7 Sonnet",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-anthropic-economic-index-insights-from-claude-3-7-sonnet-9466a78c.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.983964Z",
+      "candidate_score": 30.0
+    },
+    "2be84f63d7cb417facc48bf89964530e1bb898dd4c95c34f5d3e47892e8ab39d": {
+      "normalized_url": "https://www.anthropic.com/news/the-anthropic-economic-index",
+      "title_fingerprint": "introducing the anthropic economic index",
+      "service_key": "anthropic-blog",
+      "title": "Introducing the Anthropic Economic Index",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-introducing-the-anthropic-economic-index-2be84f63.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.983971Z",
+      "candidate_score": 30.0
+    },
+    "30f2948e24a891190b3dbfd2e195d9b4e1e2bf24eab0246efe25b8fe2ccb31a5": {
+      "normalized_url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production",
+      "title_fingerprint": "how to evaluate llms before production",
+      "service_key": "github-blog",
+      "title": "How to evaluate LLMs before production",
+      "article_doc_path": "docs/services/github-blog/2026-08-how-to-evaluate-llms-before-production-30f2948e.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.983978Z",
+      "candidate_score": 37.0
+    },
+    "0f881d1e2cf8e9d711b3c484743cffd9b3b29084c51eb9a475ae40ff8197f6cc": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/search/home-decor-tips",
+      "title_fingerprint": "5 ways to upgrade your home decor with google search",
+      "service_key": "google-blog",
+      "title": "5 ways to upgrade your home decor with Google Search",
+      "article_doc_path": "docs/services/google-blog/2026-08-5-ways-to-upgrade-your-home-decor-with-google-search-0f881d1e.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.983984Z",
+      "candidate_score": 36.0
+    },
+    "48873335c69ed1582a93e4b6d647426e0259f82dbed75907ebcf6301d3bddd28": {
+      "normalized_url": "https://www.theguardian.com/music/2026/aug/25/dolly-parton-country-singer-dead",
+      "title_fingerprint": "dolly parton has died",
+      "service_key": "hacker-news",
+      "title": "Dolly Parton has died",
+      "article_doc_path": "docs/services/hacker-news/2026-08-dolly-parton-has-died-48873335.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.983989Z",
+      "candidate_score": 62.0
+    },
+    "25847b3565db870be77dcb59d2ed8963aa21ca57c6afda5254eb2f747a9678cd": {
+      "normalized_url": "https://github.com/zedeus/nitter/issues/1442",
+      "title_fingerprint": "nitter project received cease and desist",
+      "service_key": "hacker-news",
+      "title": "Nitter project received cease and desist",
+      "article_doc_path": "docs/services/hacker-news/2026-08-nitter-project-received-cease-and-desist-25847b35.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.983995Z",
+      "candidate_score": 60.0
+    },
+    "bb00e934598219a735842f6c01054fc057a4576c8a6e8e88536828ada95d9f3c": {
+      "normalized_url": "https://rorz.io/writing/my-friend-aaron",
+      "title_fingerprint": "my friend aaron",
+      "service_key": "hacker-news",
+      "title": "My Friend Aaron",
+      "article_doc_path": "docs/services/hacker-news/2026-08-my-friend-aaron-bb00e934.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.984001Z",
+      "candidate_score": 60.0
+    },
+    "64e5a3976e9279bde2e7c10e8153c49cca6fa971d26d0767aefa0d4f6a1203c5": {
+      "normalized_url": "https://www.spacex.com/sites/starbase-la",
+      "title_fingerprint": "starbase la",
+      "service_key": "hacker-news",
+      "title": "Starbase, LA",
+      "article_doc_path": "docs/services/hacker-news/2026-08-starbase-la-64e5a397.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.984006Z",
+      "candidate_score": 58.1
+    },
+    "51cfe3db04ed0bd3efb5e0e3e4cae24a73d01c55252ca81f5edad4c7faa7f89b": {
+      "normalized_url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+      "title_fingerprint": "the full stack behind abundant intelligence",
+      "service_key": "openai-blog",
+      "title": "The full stack behind abundant intelligence",
+      "article_doc_path": "docs/services/openai-blog/2026-08-the-full-stack-behind-abundant-intelligence-51cfe3db.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.984012Z",
+      "candidate_score": 44.0
+    },
+    "b9406ae170bd91336ab3bb25f8a481be998406cd07a127a0b7b7880fe2ac0b53": {
+      "normalized_url": "https://openai.com/index/jalapeno-first-results",
+      "title_fingerprint": "jalape o s first results show industry leading speed and efficiency in ai inference",
+      "service_key": "openai-blog",
+      "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+      "article_doc_path": "docs/services/openai-blog/2026-08-jalape-o-s-first-results-show-industry-leading-speed-and-efficiency-in-a-b9406ae1.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.984017Z",
+      "candidate_score": 43.0
+    },
+    "62003111f3b592c56acd9673289136816214f0ea1151bdbce20616ed93526390": {
+      "normalized_url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+      "title_fingerprint": "disrupting a new covert influence campaign from russia",
+      "service_key": "openai-blog",
+      "title": "Disrupting a new covert influence campaign from Russia",
+      "article_doc_path": "docs/services/openai-blog/2026-08-disrupting-a-new-covert-influence-campaign-from-russia-62003111.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.984023Z",
+      "candidate_score": 37.0
+    },
+    "33eae878317d27dcc0386f35e9a677d698ea074de44e94f879168ed6c243016a": {
+      "normalized_url": "https://openai.com/index/introducing-admin-plugin",
+      "title_fingerprint": "introducing the admin plugin for chatgpt work and codex",
+      "service_key": "openai-blog",
+      "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-08-introducing-the-admin-plugin-for-chatgpt-work-and-codex-33eae878.md",
+      "status": "published",
+      "briefed_at": "2026-08-25T22:24:39.984028Z",
+      "candidate_score": 36.0
     }
   }
 }
