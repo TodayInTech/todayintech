@@ -1,0 +1,366 @@
+{
+  "generated_at": "2026-08-25T22:20:32.698942+00:00",
+  "generated_for": "2026-08-25",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "cbc1793a1e5efbf75b7a2d226de62e8742e84a99",
+  "github_run_id": "32905588979",
+  "service_count": 5,
+  "duration_ms": 8,
+  "raw_count": 120,
+  "candidate_count": 20,
+  "excluded_count": 100,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 30,
+      "excluded_count": 90,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 90
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 30,
+      "output_count": 30,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 30,
+      "output_count": 30,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 30,
+      "output_count": 20,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 4,
+      "excluded_count": 16,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:1e032b3767d6bbcd",
+          "title": "Funding better evaluations of AI’s impact on wellbeing",
+          "normalized_url": "https://www.anthropic.com/news/wellbeing-research-grants",
+          "url_hash": "1e032b3767d6bbcd1e1385c11548b6903347f69ac03f39af0a5ca6201bf922e1",
+          "suggested_doc_key": "2026-08-funding-better-evaluations-of-ai-s-impact-on-wellbeing-1e032b37",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-funding-better-evaluations-of-ai-s-impact-on-wellbeing-1e032b37.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:892905dcfc586fec",
+          "title": "Launching the Anthropic Economic Futures Programme in the UK and Europe",
+          "normalized_url": "https://www.anthropic.com/news/economic-futures-uk-europe",
+          "url_hash": "892905dcfc586fecce9ff17acbe06328963a0f9d42f1ae3c34e6370b0d5013eb",
+          "suggested_doc_key": "2026-08-launching-the-anthropic-economic-futures-programme-in-the-uk-and-europe-892905dc",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-launching-the-anthropic-economic-futures-programme-in-the-uk-and-europe-892905dc.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:9466a78c28e01740",
+          "title": "Anthropic Economic Index: Insights from Claude 3.7 Sonnet",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7",
+          "url_hash": "9466a78c28e017400ff3829e40f6e9f3cca59b2ca00e02250c26864e72ee55ad",
+          "suggested_doc_key": "2026-08-anthropic-economic-index-insights-from-claude-3-7-sonnet-9466a78c",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-anthropic-economic-index-insights-from-claude-3-7-sonnet-9466a78c.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:2be84f63d7cb417f",
+          "title": "Introducing the Anthropic Economic Index",
+          "normalized_url": "https://www.anthropic.com/news/the-anthropic-economic-index",
+          "url_hash": "2be84f63d7cb417facc48bf89964530e1bb898dd4c95c34f5d3e47892e8ab39d",
+          "suggested_doc_key": "2026-08-introducing-the-anthropic-economic-index-2be84f63",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-introducing-the-anthropic-economic-index-2be84f63.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 16
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:30f2948e24a89119",
+          "title": "How to evaluate LLMs before production",
+          "normalized_url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production",
+          "url_hash": "30f2948e24a891190b3dbfd2e195d9b4e1e2bf24eab0246efe25b8fe2ccb31a5",
+          "suggested_doc_key": "2026-08-how-to-evaluate-llms-before-production-30f2948e",
+          "suggested_article_path": "docs/services/github-blog/2026-08-how-to-evaluate-llms-before-production-30f2948e.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:0f881d1e2cf8e9d7",
+          "title": "5 ways to upgrade your home decor with Google Search",
+          "normalized_url": "https://blog.google/products-and-platforms/products/search/home-decor-tips",
+          "url_hash": "0f881d1e2cf8e9d711b3c484743cffd9b3b29084c51eb9a475ae40ff8197f6cc",
+          "suggested_doc_key": "2026-08-5-ways-to-upgrade-your-home-decor-with-google-search-0f881d1e",
+          "suggested_article_path": "docs/services/google-blog/2026-08-5-ways-to-upgrade-your-home-decor-with-google-search-0f881d1e.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:48873335c69ed158",
+          "title": "Dolly Parton has died",
+          "normalized_url": "https://www.theguardian.com/music/2026/aug/25/dolly-parton-country-singer-dead",
+          "url_hash": "48873335c69ed1582a93e4b6d647426e0259f82dbed75907ebcf6301d3bddd28",
+          "suggested_doc_key": "2026-08-dolly-parton-has-died-48873335",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-dolly-parton-has-died-48873335.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 981점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 147개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:25847b3565db870b",
+          "title": "Nitter project received cease and desist",
+          "normalized_url": "https://github.com/zedeus/nitter/issues/1442",
+          "url_hash": "25847b3565db870be77dcb59d2ed8963aa21ca57c6afda5254eb2f747a9678cd",
+          "suggested_doc_key": "2026-08-nitter-project-received-cease-and-desist-25847b35",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-nitter-project-received-cease-and-desist-25847b35.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 448점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 304개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:bb00e934598219a7",
+          "title": "My Friend Aaron",
+          "normalized_url": "https://rorz.io/writing/my-friend-aaron",
+          "url_hash": "bb00e934598219a735842f6c01054fc057a4576c8a6e8e88536828ada95d9f3c",
+          "suggested_doc_key": "2026-08-my-friend-aaron-bb00e934",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-my-friend-aaron-bb00e934.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 375점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 92개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:64e5a3976e9279bd",
+          "title": "Starbase, LA",
+          "normalized_url": "https://www.spacex.com/sites/starbase-la",
+          "url_hash": "64e5a3976e9279bde2e7c10e8153c49cca6fa971d26d0767aefa0d4f6a1203c5",
+          "suggested_doc_key": "2026-08-starbase-la-64e5a397",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-starbase-la-64e5a397.md",
+          "candidate_score": 58.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 181점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 295개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:df1f73b59713f07d",
+          "title": "FDA authorizes first wearable device that monitors ketone and blood sugar levels",
+          "normalized_url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
+          "url_hash": "df1f73b59713f07d0bc60ed15cf9a3664c3aae219050c816a94dda304aa75ef9",
+          "suggested_doc_key": "2026-08-fda-authorizes-first-wearable-device-that-monitors-ketone-and-blood-suga-df1f73b5",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-fda-authorizes-first-wearable-device-that-monitors-ketone-and-blood-suga-df1f73b5.md",
+          "candidate_score": 55.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "Hacker News 점수 161점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 107개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 4,
+      "excluded_count": 46,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:51cfe3db04ed0bd3",
+          "title": "The full stack behind abundant intelligence",
+          "normalized_url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+          "url_hash": "51cfe3db04ed0bd3efb5e0e3e4cae24a73d01c55252ca81f5edad4c7faa7f89b",
+          "suggested_doc_key": "2026-08-the-full-stack-behind-abundant-intelligence-51cfe3db",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-the-full-stack-behind-abundant-intelligence-51cfe3db.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:b9406ae170bd9133",
+          "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+          "normalized_url": "https://openai.com/index/jalapeno-first-results",
+          "url_hash": "b9406ae170bd91336ab3bb25f8a481be998406cd07a127a0b7b7880fe2ac0b53",
+          "suggested_doc_key": "2026-08-jalape-o-s-first-results-show-industry-leading-speed-and-efficiency-in-a-b9406ae1",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-jalape-o-s-first-results-show-industry-leading-speed-and-efficiency-in-a-b9406ae1.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:62003111f3b592c5",
+          "title": "Disrupting a new covert influence campaign from Russia",
+          "normalized_url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+          "url_hash": "62003111f3b592c56acd9673289136816214f0ea1151bdbce20616ed93526390",
+          "suggested_doc_key": "2026-08-disrupting-a-new-covert-influence-campaign-from-russia-62003111",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-disrupting-a-new-covert-influence-campaign-from-russia-62003111.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:33eae878317d27dc",
+          "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+          "normalized_url": "https://openai.com/index/introducing-admin-plugin",
+          "url_hash": "33eae878317d27dcc0386f35e9a677d698ea074de44e94f879168ed6c243016a",
+          "suggested_doc_key": "2026-08-introducing-the-admin-plugin-for-chatgpt-work-and-codex-33eae878",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-introducing-the-admin-plugin-for-chatgpt-work-and-codex-33eae878.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 46
+      }
+    }
+  ]
+}
