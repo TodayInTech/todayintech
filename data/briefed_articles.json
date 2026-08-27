@@ -6400,6 +6400,126 @@
       "status": "published",
       "briefed_at": "2026-08-25T22:24:39.984028Z",
       "candidate_score": 36.0
+    },
+    "5a51bac8c3b3abfebea101dc662f132b8ef83f4fb60d0e3a93487eb6547b59cb": {
+      "normalized_url": "https://www.anthropic.com/news/frontier-model-security",
+      "title_fingerprint": "frontier model security",
+      "service_key": "anthropic-blog",
+      "title": "Frontier model security",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-frontier-model-security-5a51bac8.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724857Z",
+      "candidate_score": 40.0
+    },
+    "da2626b07e4771f55d9f0ba9a53c8edb94855a2ddfc754f903a4b801bf1c97b5": {
+      "normalized_url": "https://www.anthropic.com/news/lawrence-livermore-national-laboratory-expands-claude-for-enterprise-to-empower-scientists-and",
+      "title_fingerprint": "claude for enterprise powers llnl research",
+      "service_key": "anthropic-blog",
+      "title": "Claude for Enterprise powers LLNL research",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-claude-for-enterprise-powers-llnl-research-da2626b0.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724893Z",
+      "candidate_score": 35.0
+    },
+    "a00847af92fd67bd1d73afc1bc4ed4d111326db87e7c99706d274f91721b7fee": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-signs-pledge-to-americas-youth-investing-in-ai-education",
+      "title_fingerprint": "anthropic joins white house pledge for ai education",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic joins White House pledge for AI education",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-anthropic-joins-white-house-pledge-for-ai-education-a00847af.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724907Z",
+      "candidate_score": 30.0
+    },
+    "1b78f0aebe0fadea137704315eca79629a7b2db72979279bebf6f8a83019b760": {
+      "normalized_url": "https://www.anthropic.com/news/usage-policy-update",
+      "title_fingerprint": "usage policy update",
+      "service_key": "anthropic-blog",
+      "title": "Usage Policy update",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-usage-policy-update-1b78f0ae.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724917Z",
+      "candidate_score": 30.0
+    },
+    "9b368ab3b44b71646ac31c56aeacafc116c8c183c551b967038957d535a25386": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage",
+      "title_fingerprint": "github copilot app for beginners automate dependabot pull request triage",
+      "service_key": "github-blog",
+      "title": "GitHub Copilot app for Beginners: Automate Dependabot pull request triage",
+      "article_doc_path": "docs/services/github-blog/2026-08-github-copilot-app-for-beginners-automate-dependabot-pull-request-triage-9b368ab3.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724923Z",
+      "candidate_score": 37.0
+    },
+    "aec1fae1b903de5c43ba7fdfb6c77c2289db3af5639437d92a7c47247c7ff0d6": {
+      "normalized_url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+      "title_fingerprint": "nvidia agrees to acquire hugging face for 13b",
+      "service_key": "hacker-news",
+      "title": "Nvidia agrees to acquire Hugging Face for $13B",
+      "article_doc_path": "docs/services/hacker-news/2026-08-nvidia-agrees-to-acquire-hugging-face-for-13b-aec1fae1.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724928Z",
+      "candidate_score": 70.0
+    },
+    "e2f800cf55605b30e98440a868dde816c3921014d39c0ac138f05335d6743334": {
+      "normalized_url": "https://github.com/tailscale/tailcat",
+      "title_fingerprint": "tailcat like netcat but over tailscale s data plane",
+      "service_key": "hacker-news",
+      "title": "Tailcat – Like netcat, but over Tailscale’s data plane",
+      "article_doc_path": "docs/services/hacker-news/2026-08-tailcat-like-netcat-but-over-tailscale-s-data-plane-e2f800cf.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724933Z",
+      "candidate_score": 60.0
+    },
+    "a2e9a9c868c02de829f4cf88f0db7e4aa1aad95cfdb28d5d12eaf1bc4d2fb547": {
+      "normalized_url": "https://lwn.net/SubscriberLink/1089390/46116614cc74b814",
+      "title_fingerprint": "an ongoing 3d printer agpl violation",
+      "service_key": "hacker-news",
+      "title": "An ongoing 3D-printer AGPL violation",
+      "article_doc_path": "docs/services/hacker-news/2026-08-an-ongoing-3d-printer-agpl-violation-a2e9a9c8.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724937Z",
+      "candidate_score": 60.0
+    },
+    "2d4215e42b5eecb3db4f5182bda1e4ff5078552e9c666632c4075246e149977e": {
+      "normalized_url": "https://www.wsj.com/politics/policy/u-s-state-department-pauses-immigrant-visa-applications-25b31b23",
+      "title_fingerprint": "u s state department pauses immigrant visa applications",
+      "service_key": "hacker-news",
+      "title": "U.S. State Department pauses immigrant visa applications",
+      "article_doc_path": "docs/services/hacker-news/2026-08-u-s-state-department-pauses-immigrant-visa-applications-2d4215e4.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724942Z",
+      "candidate_score": 60.0
+    },
+    "fa2791fbc9af008fbec5e3ce56bf40bc113bb8071f7a73cfd61c5d71ead84cf1": {
+      "normalized_url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+      "title_fingerprint": "bringing chatgpt for teachers to more u s school districts",
+      "service_key": "openai-blog",
+      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+      "article_doc_path": "docs/services/openai-blog/2026-08-bringing-chatgpt-for-teachers-to-more-u-s-school-districts-fa2791fb.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724951Z",
+      "candidate_score": 39.0
+    },
+    "832a12c8f33a104e2b49b2d1442be1d80f1153a18abe85ca9b9a201d94b80ba6": {
+      "normalized_url": "https://openai.com/index/learning-never-stops",
+      "title_fingerprint": "learning never stops how ai makes learning continuous",
+      "service_key": "openai-blog",
+      "title": "Learning never stops: How AI makes learning continuous",
+      "article_doc_path": "docs/services/openai-blog/2026-08-learning-never-stops-how-ai-makes-learning-continuous-832a12c8.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724955Z",
+      "candidate_score": 38.0
+    },
+    "76c95cd852987031f9d74cac0c4196a0b720408dd9b0815aa14b07f6ec6f1b45": {
+      "normalized_url": "https://openai.com/index/loveholidays",
+      "title_fingerprint": "how loveholidays is making everyone a builder with codex",
+      "service_key": "openai-blog",
+      "title": "How loveholidays is making everyone a builder with Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-08-how-loveholidays-is-making-everyone-a-builder-with-codex-76c95cd8.md",
+      "status": "published",
+      "briefed_at": "2026-08-27T02:52:27.724960Z",
+      "candidate_score": 35.0
     }
   }
 }
