@@ -1,0 +1,400 @@
+{
+  "generated_at": "2026-08-28T05:54:59.755758+00:00",
+  "generated_for": "2026-08-28",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "7d33980bdede0e7c4ec638cd0b02bf474a304e56",
+  "github_run_id": "33146167933",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 27,
+  "excluded_count": 93,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 117,
+      "excluded_count": 3,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 3
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 117,
+      "output_count": 38,
+      "excluded_count": 79,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 79
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 38,
+      "output_count": 38,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 38,
+      "output_count": 38,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 38,
+      "output_count": 27,
+      "excluded_count": 11,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 11
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:35305757066a6f71",
+          "title": "Previewing the Model Hardware Standard",
+          "normalized_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+          "url_hash": "35305757066a6f711440489b52eb6596053277764468fc729848626d973d5835",
+          "suggested_doc_key": "2026-08-previewing-the-model-hardware-standard-35305757",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-previewing-the-model-hardware-standard-35305757.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:8905509e5a3e200b",
+          "title": "Anthropic and Teach For All launch global AI training initiative for educators",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-teach-for-all",
+          "url_hash": "8905509e5a3e200b61f5bd31738f735c07ed2ec4353cf645a1a3e3c3cffb5b3c",
+          "suggested_doc_key": "2026-08-anthropic-and-teach-for-all-launch-global-ai-training-initiative-for-edu-8905509e",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-anthropic-and-teach-for-all-launch-global-ai-training-initiative-for-edu-8905509e.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:3368e02f484edc23",
+          "title": "Expanding our support for scientists",
+          "normalized_url": "https://www.anthropic.com/news/expanding-support-for-scientists",
+          "url_hash": "3368e02f484edc23efd1c6136de01b0671f4745cace10562529ff1840597f7fe",
+          "suggested_doc_key": "2026-08-expanding-our-support-for-scientists-3368e02f",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-expanding-our-support-for-scientists-3368e02f.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:b36ba38b0f97a9f8",
+          "title": "Introducing Anthropic's AI for Science Program",
+          "normalized_url": "https://www.anthropic.com/news/ai-for-science-program",
+          "url_hash": "b36ba38b0f97a9f8abd3713602b9ff9a4ddcec4374df40553b5048ad2782f913",
+          "suggested_doc_key": "2026-08-introducing-anthropic-s-ai-for-science-program-b36ba38b",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-introducing-anthropic-s-ai-for-science-program-b36ba38b.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:89df73f468616e60",
+          "title": "Advancing Claude for Education",
+          "normalized_url": "https://www.anthropic.com/news/advancing-claude-for-education",
+          "url_hash": "89df73f468616e60a90798a327123399fb96fa70149cbfbcc8f60d90a45d6cd2",
+          "suggested_doc_key": "2026-08-advancing-claude-for-education-89df73f4",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-advancing-claude-for-education-89df73f4.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 7,
+        "service_candidate_limit": 3
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:da2b1f956ca7debb",
+          "title": "OpenClaw went viral. Meet the maintainers building and securing it.",
+          "normalized_url": "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it",
+          "url_hash": "da2b1f956ca7debb3947ce91b88209f0047b2438f977c91876b5d870787aded4",
+          "suggested_doc_key": "2026-08-openclaw-went-viral-meet-the-maintainers-building-and-securing-it-da2b1f95",
+          "suggested_article_path": "docs/services/github-blog/2026-08-openclaw-went-viral-meet-the-maintainers-building-and-securing-it-da2b1f95.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:729ea4e11add7401",
+          "title": "Google Flow brings new creative control features to enhance video editing.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-creative-controls-google-flow",
+          "url_hash": "729ea4e11add7401b9772133c06dce753ccb9b54afb470443bd4e0f82490f00b",
+          "suggested_doc_key": "2026-08-google-flow-brings-new-creative-control-features-to-enhance-video-editin-729ea4e1",
+          "suggested_article_path": "docs/services/google-blog/2026-08-google-flow-brings-new-creative-control-features-to-enhance-video-editin-729ea4e1.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:6ea4b2dafda1ebb5",
+          "title": "Gemini Omni 1.1 Flash lets you build with more control",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash",
+          "url_hash": "6ea4b2dafda1ebb5087f6ee43a318a70c7bdbbe1124df2f3fd25c873c64fbde5",
+          "suggested_doc_key": "2026-08-gemini-omni-1-1-flash-lets-you-build-with-more-control-6ea4b2da",
+          "suggested_article_path": "docs/services/google-blog/2026-08-gemini-omni-1-1-flash-lets-you-build-with-more-control-6ea4b2da.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:a7db6e12c1ae453b",
+          "title": "3 new ways to plan and book travel in Search",
+          "normalized_url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode",
+          "url_hash": "a7db6e12c1ae453b9e9d3bf924c5f3a7af148e960f556ca8c2b7d5497640930b",
+          "suggested_doc_key": "2026-08-3-new-ways-to-plan-and-book-travel-in-search-a7db6e12",
+          "suggested_article_path": "docs/services/google-blog/2026-08-3-new-ways-to-plan-and-book-travel-in-search-a7db6e12.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:e80566d64ce560f3",
+          "title": "Small Models Have Arrived",
+          "normalized_url": "https://calv.info/small-models-have-arrived",
+          "url_hash": "e80566d64ce560f374b6bc65f2ca3cf8c8590d14b1ebd1df14b746e998dd8cd3",
+          "suggested_doc_key": "2026-08-small-models-have-arrived-e80566d6",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-small-models-have-arrived-e80566d6.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 566점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 253개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:ef9818ad1f03a78e",
+          "title": "Judge Rules Trump Administration’s Blacklisting of Anthropic Was Illegal",
+          "normalized_url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+          "url_hash": "ef9818ad1f03a78ee6de021ab557471a1f919c83aa6acec123f72f99127d61fb",
+          "suggested_doc_key": "2026-08-judge-rules-trump-administration-s-blacklisting-of-anthropic-was-illegal-ef9818ad",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-judge-rules-trump-administration-s-blacklisting-of-anthropic-was-illegal-ef9818ad.md",
+          "candidate_score": 63.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 193점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 86개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7c81afa81614f7d1",
+          "title": "Gemini-3.5-Transcribe",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe",
+          "url_hash": "7c81afa81614f7d1eee5976bfc205dd470e2ba4cfe4abe84f2ccd9a3b7d752d9",
+          "suggested_doc_key": "2026-08-gemini-3-5-transcribe-7c81afa8",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-gemini-3-5-transcribe-7c81afa8.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 219점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 65개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:1b69e2f88c4ab8ec",
+          "title": "We found a division by zero bug in FFmpeg with a vibecoded fuzzer",
+          "normalized_url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290",
+          "url_hash": "1b69e2f88c4ab8ec0a8ae7ff6e5607b16cedb6d2f25dc600799904b546c399fa",
+          "suggested_doc_key": "2026-08-we-found-a-division-by-zero-bug-in-ffmpeg-with-a-vibecoded-fuzzer-1b69e2f8",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-we-found-a-division-by-zero-bug-in-ffmpeg-with-a-vibecoded-fuzzer-1b69e2f8.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 202점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 157개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:bd14a38b7d5acb6b",
+          "title": "Saving 100 terabytes of memory by optimizing 1.1.1.1's DNS cache",
+          "normalized_url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111",
+          "url_hash": "bd14a38b7d5acb6b899422abb9d39c952bfeb751ad8f96fd7b9d4653cf125b3e",
+          "suggested_doc_key": "2026-08-saving-100-terabytes-of-memory-by-optimizing-1-1-1-1-s-dns-cache-bd14a38b",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-saving-100-terabytes-of-memory-by-optimizing-1-1-1-1-s-dns-cache-bd14a38b.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 639점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 197개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 2,
+        "service_candidate_limit": 8
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:34e62ff4c7cf4def",
+          "title": "The Hugging Face incident and the road ahead",
+          "normalized_url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+          "url_hash": "34e62ff4c7cf4defda5bd7747a692840f7012595a2eb1a543614fdc32b51c94b",
+          "suggested_doc_key": "2026-08-the-hugging-face-incident-and-the-road-ahead-34e62ff4",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-the-hugging-face-incident-and-the-road-ahead-34e62ff4.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:5c8d75ef9c12c059",
+          "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+          "normalized_url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+          "url_hash": "5c8d75ef9c12c05961137bb4431a14c551ac90466a167ec85821c6aa78285922",
+          "suggested_doc_key": "2026-08-better-answers-broader-thinking-what-students-gain-from-chatgpt-and-crit-5c8d75ef",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-better-answers-broader-thinking-what-students-gain-from-chatgpt-and-crit-5c8d75ef.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:fe23f369e01db08d",
+          "title": "Expanding OpenAI’s presence in Brazil",
+          "normalized_url": "https://openai.com/index/expanding-our-presence-in-brazil",
+          "url_hash": "fe23f369e01db08d4a0477172cd7e0c5a8e1ac1fb959a7f41cba80240e425604",
+          "suggested_doc_key": "2026-08-expanding-openai-s-presence-in-brazil-fe23f369",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-expanding-openai-s-presence-in-brazil-fe23f369.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 46
+      }
+    }
+  ]
+}
