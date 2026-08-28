@@ -6520,6 +6520,146 @@
       "status": "published",
       "briefed_at": "2026-08-27T02:52:27.724960Z",
       "candidate_score": 35.0
+    },
+    "8905509e5a3e200b61f5bd31738f735c07ed2ec4353cf645a1a3e3c3cffb5b3c": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-teach-for-all",
+      "title_fingerprint": "anthropic and teach for all launch global ai training initiative for educators",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic and Teach For All launch global AI training initiative for educators",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-anthropic-and-teach-for-all-launch-global-ai-training-initiative-for-edu-8905509e.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081765Z",
+      "candidate_score": 35.0
+    },
+    "3368e02f484edc23efd1c6136de01b0671f4745cace10562529ff1840597f7fe": {
+      "normalized_url": "https://www.anthropic.com/news/expanding-support-for-scientists",
+      "title_fingerprint": "expanding our support for scientists",
+      "service_key": "anthropic-blog",
+      "title": "Expanding our support for scientists",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-expanding-our-support-for-scientists-3368e02f.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081804Z",
+      "candidate_score": 30.0
+    },
+    "b36ba38b0f97a9f8abd3713602b9ff9a4ddcec4374df40553b5048ad2782f913": {
+      "normalized_url": "https://www.anthropic.com/news/ai-for-science-program",
+      "title_fingerprint": "introducing anthropic s ai for science program",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Anthropic's AI for Science Program",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-introducing-anthropic-s-ai-for-science-program-b36ba38b.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081814Z",
+      "candidate_score": 30.0
+    },
+    "89df73f468616e60a90798a327123399fb96fa70149cbfbcc8f60d90a45d6cd2": {
+      "normalized_url": "https://www.anthropic.com/news/advancing-claude-for-education",
+      "title_fingerprint": "advancing claude for education",
+      "service_key": "anthropic-blog",
+      "title": "Advancing Claude for Education",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-advancing-claude-for-education-89df73f4.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081820Z",
+      "candidate_score": 30.0
+    },
+    "da2b1f956ca7debb3947ce91b88209f0047b2438f977c91876b5d870787aded4": {
+      "normalized_url": "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it",
+      "title_fingerprint": "openclaw went viral meet the maintainers building and securing it",
+      "service_key": "github-blog",
+      "title": "OpenClaw went viral. Meet the maintainers building and securing it.",
+      "article_doc_path": "docs/services/github-blog/2026-08-openclaw-went-viral-meet-the-maintainers-building-and-securing-it-da2b1f95.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081826Z",
+      "candidate_score": 37.0
+    },
+    "729ea4e11add7401b9772133c06dce753ccb9b54afb470443bd4e0f82490f00b": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-creative-controls-google-flow",
+      "title_fingerprint": "google flow brings new creative control features to enhance video editing",
+      "service_key": "google-blog",
+      "title": "Google Flow brings new creative control features to enhance video editing.",
+      "article_doc_path": "docs/services/google-blog/2026-08-google-flow-brings-new-creative-control-features-to-enhance-video-editin-729ea4e1.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081833Z",
+      "candidate_score": 44.0
+    },
+    "a7db6e12c1ae453b9e9d3bf924c5f3a7af148e960f556ca8c2b7d5497640930b": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode",
+      "title_fingerprint": "3 new ways to plan and book travel in search",
+      "service_key": "google-blog",
+      "title": "3 new ways to plan and book travel in Search",
+      "article_doc_path": "docs/services/google-blog/2026-08-3-new-ways-to-plan-and-book-travel-in-search-a7db6e12.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081839Z",
+      "candidate_score": 36.0
+    },
+    "e80566d64ce560f374b6bc65f2ca3cf8c8590d14b1ebd1df14b746e998dd8cd3": {
+      "normalized_url": "https://calv.info/small-models-have-arrived",
+      "title_fingerprint": "small models have arrived",
+      "service_key": "hacker-news",
+      "title": "Small Models Have Arrived",
+      "article_doc_path": "docs/services/hacker-news/2026-08-small-models-have-arrived-e80566d6.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081844Z",
+      "candidate_score": 65.0
+    },
+    "ef9818ad1f03a78ee6de021ab557471a1f919c83aa6acec123f72f99127d61fb": {
+      "normalized_url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+      "title_fingerprint": "judge rules trump administration s blacklisting of anthropic was illegal",
+      "service_key": "hacker-news",
+      "title": "Judge Rules Trump Administration’s Blacklisting of Anthropic Was Illegal",
+      "article_doc_path": "docs/services/hacker-news/2026-08-judge-rules-trump-administration-s-blacklisting-of-anthropic-was-illegal-ef9818ad.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081850Z",
+      "candidate_score": 63.3
+    },
+    "7c81afa81614f7d1eee5976bfc205dd470e2ba4cfe4abe84f2ccd9a3b7d752d9": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe",
+      "title_fingerprint": "gemini 3 5 transcribe",
+      "service_key": "hacker-news",
+      "title": "Gemini-3.5-Transcribe",
+      "article_doc_path": "docs/services/hacker-news/2026-08-gemini-3-5-transcribe-7c81afa8.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081856Z",
+      "candidate_score": 63.0
+    },
+    "1b69e2f88c4ab8ec0a8ae7ff6e5607b16cedb6d2f25dc600799904b546c399fa": {
+      "normalized_url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290",
+      "title_fingerprint": "we found a division by zero bug in ffmpeg with a vibecoded fuzzer",
+      "service_key": "hacker-news",
+      "title": "We found a division by zero bug in FFmpeg with a vibecoded fuzzer",
+      "article_doc_path": "docs/services/hacker-news/2026-08-we-found-a-division-by-zero-bug-in-ffmpeg-with-a-vibecoded-fuzzer-1b69e2f8.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081862Z",
+      "candidate_score": 60.0
+    },
+    "34e62ff4c7cf4defda5bd7747a692840f7012595a2eb1a543614fdc32b51c94b": {
+      "normalized_url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+      "title_fingerprint": "the hugging face incident and the road ahead",
+      "service_key": "openai-blog",
+      "title": "The Hugging Face incident and the road ahead",
+      "article_doc_path": "docs/services/openai-blog/2026-08-the-hugging-face-incident-and-the-road-ahead-34e62ff4.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081868Z",
+      "candidate_score": 43.0
+    },
+    "5c8d75ef9c12c05961137bb4431a14c551ac90466a167ec85821c6aa78285922": {
+      "normalized_url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+      "title_fingerprint": "better answers broader thinking what students gain from chatgpt and critical thinking training",
+      "service_key": "openai-blog",
+      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+      "article_doc_path": "docs/services/openai-blog/2026-08-better-answers-broader-thinking-what-students-gain-from-chatgpt-and-crit-5c8d75ef.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081874Z",
+      "candidate_score": 39.0
+    },
+    "fe23f369e01db08d4a0477172cd7e0c5a8e1ac1fb959a7f41cba80240e425604": {
+      "normalized_url": "https://openai.com/index/expanding-our-presence-in-brazil",
+      "title_fingerprint": "expanding openai s presence in brazil",
+      "service_key": "openai-blog",
+      "title": "Expanding OpenAI’s presence in Brazil",
+      "article_doc_path": "docs/services/openai-blog/2026-08-expanding-openai-s-presence-in-brazil-fe23f369.md",
+      "status": "published",
+      "briefed_at": "2026-08-28T05:58:01.081879Z",
+      "candidate_score": 38.0
     }
   }
 }
