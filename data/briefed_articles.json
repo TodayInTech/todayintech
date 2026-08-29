@@ -6660,6 +6660,116 @@
       "status": "published",
       "briefed_at": "2026-08-28T05:58:01.081879Z",
       "candidate_score": 38.0
+    },
+    "35305757066a6f711440489b52eb6596053277764468fc729848626d973d5835": {
+      "normalized_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "title_fingerprint": "previewing the model hardware standard",
+      "service_key": "anthropic-blog",
+      "title": "Previewing the Model Hardware Standard",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-previewing-the-model-hardware-standard-35305757.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T03:30:40.921899Z",
+      "candidate_score": 40.0
+    },
+    "f1584024fd99c557cc16c6e8755e3cc037c9b4b2ca4d3a5040b2993256bb032f": {
+      "normalized_url": "https://www.anthropic.com/news/claude-for-life-sciences",
+      "title_fingerprint": "claude for life sciences",
+      "service_key": "anthropic-blog",
+      "title": "Claude for Life Sciences",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-claude-for-life-sciences-f1584024.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T03:30:40.921941Z",
+      "candidate_score": 29.0
+    },
+    "48d3aa1168f3b7b2f9055c93b319cbe7da22f8fa1a0b57f87afa9c931553ae0f": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-education-pilots",
+      "title_fingerprint": "anthropic and iceland announce one of the world s first national ai education pilots",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic and Iceland announce one of the world’s first national AI education pilots",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-educ-48d3aa11.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T03:30:40.921954Z",
+      "candidate_score": 29.0
+    },
+    "87ff46e228edd2eed4dd7ffc5e559fb86f8517e593fce8037cc36e912d9304b9": {
+      "normalized_url": "https://www.anthropic.com/news/healthcare-life-sciences",
+      "title_fingerprint": "advancing claude in healthcare and the life sciences",
+      "service_key": "anthropic-blog",
+      "title": "Advancing Claude in healthcare and the life sciences",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-advancing-claude-in-healthcare-and-the-life-sciences-87ff46e2.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T03:30:40.921961Z",
+      "candidate_score": 29.0
+    },
+    "6ea4b2dafda1ebb5087f6ee43a318a70c7bdbbe1124df2f3fd25c873c64fbde5": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash",
+      "title_fingerprint": "gemini omni 1 1 flash lets you build with more control",
+      "service_key": "google-blog",
+      "title": "Gemini Omni 1.1 Flash lets you build with more control",
+      "article_doc_path": "docs/services/google-blog/2026-08-gemini-omni-1-1-flash-lets-you-build-with-more-control-6ea4b2da.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T03:30:40.921970Z",
+      "candidate_score": 39.0
+    },
+    "6b67b7c8437087610002d7d7ad7ba491bf78480fa0312761f9f679e0affa623e": {
+      "normalized_url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
+      "title_fingerprint": "htmx 4 0",
+      "service_key": "hacker-news",
+      "title": "Htmx 4.0",
+      "article_doc_path": "docs/services/hacker-news/2026-08-htmx-4-0-6b67b7c8.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T03:30:40.921977Z",
+      "candidate_score": 65.0
+    },
+    "a3d40848cd03fefda089033aa207044f75d9fa2864a4137adc51584fdeb139ab": {
+      "normalized_url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+      "title_fingerprint": "just the rumour of a bug is enough to find an exploit these days",
+      "service_key": "hacker-news",
+      "title": "Just the rumour of a bug is enough to find an exploit these days",
+      "article_doc_path": "docs/services/hacker-news/2026-08-just-the-rumour-of-a-bug-is-enough-to-find-an-exploit-these-days-a3d40848.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T03:30:40.921984Z",
+      "candidate_score": 60.0
+    },
+    "4424584ee706d4b4f373e9458a7d307eab25a264f74f5e9c8c29e557d43e69cd": {
+      "normalized_url": "https://huggingface.co/zai-org/GLM-5.3",
+      "title_fingerprint": "glm 5 3 is now open weight",
+      "service_key": "hacker-news",
+      "title": "GLM-5.3 is now open-weight",
+      "article_doc_path": "docs/services/hacker-news/2026-08-glm-5-3-is-now-open-weight-4424584e.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T03:30:40.921991Z",
+      "candidate_score": 60.0
+    },
+    "07aca43e12d4379f0d6200724b438814c4e858a88860c31b315ffa6a9772cf51": {
+      "normalized_url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
+      "title_fingerprint": "guis should be fully keyboard driven",
+      "service_key": "hacker-news",
+      "title": "GUIs should be fully keyboard-driven",
+      "article_doc_path": "docs/services/hacker-news/2026-08-guis-should-be-fully-keyboard-driven-07aca43e.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T03:30:40.921998Z",
+      "candidate_score": 60.0
+    },
+    "cb1db0d5c74b6e9eeb890e2ee46bb06c7f0b7f7e54363ac96a62606a772bbfa5": {
+      "normalized_url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+      "title_fingerprint": "supporting thailand s next generation of ai startups",
+      "service_key": "openai-blog",
+      "title": "Supporting Thailand’s next generation of AI startups",
+      "article_doc_path": "docs/services/openai-blog/2026-08-supporting-thailand-s-next-generation-of-ai-startups-cb1db0d5.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T03:30:40.922005Z",
+      "candidate_score": 43.0
+    },
+    "68bd2e32c09542cb22fc0e9cb7e8924fbe09bed5f190bd32b4c03a4e4190efe4": {
+      "normalized_url": "https://openai.com/index/introducing-intelligence-age",
+      "title_fingerprint": "introducing intelligence age",
+      "service_key": "openai-blog",
+      "title": "Introducing Intelligence Age",
+      "article_doc_path": "docs/services/openai-blog/2026-08-introducing-intelligence-age-68bd2e32.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T03:30:40.922011Z",
+      "candidate_score": 22.0
     }
   }
 }
