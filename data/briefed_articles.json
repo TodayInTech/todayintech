@@ -6770,6 +6770,96 @@
       "status": "published",
       "briefed_at": "2026-08-29T03:30:40.922011Z",
       "candidate_score": 22.0
+    },
+    "d8f5ba2b5c6d45ce54b9feefa22236a85ef6d168ce46c27d11166f50ad4f7bd0": {
+      "normalized_url": "https://www.anthropic.com/news/accelerating-scientific-research",
+      "title_fingerprint": "how scientists are using claude to accelerate research and discovery",
+      "service_key": "anthropic-blog",
+      "title": "How scientists are using Claude to accelerate research and discovery",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-how-scientists-are-using-claude-to-accelerate-research-and-discovery-d8f5ba2b.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T23:54:51.072456Z",
+      "candidate_score": 29.0
+    },
+    "bf7945e53d0d2f53fc391acad15796259be81aecf348a1710ab95851a579fb2c": {
+      "normalized_url": "https://www.anthropic.com/news/rwandan-government-partnership-ai-education",
+      "title_fingerprint": "anthropic partners with rwandan government and alx to bring ai education to hundreds of thousands of learners across africa",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic partners with Rwandan Government and ALX to bring AI education to hundreds of thousands of learners across Africa",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-anthropic-partners-with-rwandan-government-and-alx-to-bring-ai-education-bf7945e5.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T23:54:51.072494Z",
+      "candidate_score": 29.0
+    },
+    "98df153600e6195513ba40f6063c0b34acdf81598e3010d476adf38871f4080c": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
+      "title_fingerprint": "anthropic partners with allen institute and howard hughes medical institute to accelerate scientific discovery",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic partners with Allen Institute and Howard Hughes Medical Institute to accelerate scientific discovery",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-anthropic-partners-with-allen-institute-and-howard-hughes-medical-instit-98df1536.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T23:54:51.072502Z",
+      "candidate_score": 29.0
+    },
+    "55cc348bcfa4f00c26cd4891a2f295130d99a2729b57caacfa44a85bd676c4bb": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
+      "title_fingerprint": "anthropic partners with codepath to bring claude to the us s largest collegiate computer science program",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic partners with CodePath to bring Claude to the US’s largest collegiate computer science program",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-anthropic-partners-with-codepath-to-bring-claude-to-the-us-s-largest-col-55cc348b.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T23:54:51.072507Z",
+      "candidate_score": 29.0
+    },
+    "f55004a573850a672386f30ce8277386f67e9763185b9614e79dd4be85969e95": {
+      "normalized_url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview",
+      "title_fingerprint": "tencent releases and open sources tencent hy4 preview",
+      "service_key": "hacker-news",
+      "title": "Tencent Releases and Open-Sources Tencent Hy4 Preview",
+      "article_doc_path": "docs/services/hacker-news/2026-08-tencent-releases-and-open-sources-tencent-hy4-preview-f55004a5.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T23:54:51.072513Z",
+      "candidate_score": 65.9
+    },
+    "3623b6d02acbb35f0e000818f281ab8211e4ce21ce2bb25eb1b6ca190c60f63e": {
+      "normalized_url": "https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e",
+      "title_fingerprint": "grapheneos project pixel 11 no longer supports hardware memory tagging mte",
+      "service_key": "hacker-news",
+      "title": "GrapheneOS project: pixel 11 no longer supports hardware memory tagging (MTE)",
+      "article_doc_path": "docs/services/hacker-news/2026-08-grapheneos-project-pixel-11-no-longer-supports-hardware-memory-tagging-m-3623b6d0.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T23:54:51.072517Z",
+      "candidate_score": 60.0
+    },
+    "6c66c63ff1adf27b93d45699f134cb7d8bd8412e9ed3fab93b2d869b5b8ba26b": {
+      "normalized_url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+      "title_fingerprint": "samsung s processing in memory pim",
+      "service_key": "hacker-news",
+      "title": "Samsung's Processing-in-Memory (PIM)",
+      "article_doc_path": "docs/services/hacker-news/2026-08-samsung-s-processing-in-memory-pim-6c66c63f.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T23:54:51.072532Z",
+      "candidate_score": 60.0
+    },
+    "bd488c1cb70b7284a50610921ab6e557eb19c7dec0a7eabb943b41f3aecdcbc8": {
+      "normalized_url": "https://github.com/Lakr233/vphone-cli",
+      "title_fingerprint": "boot a virtual iphone via apple s virtualization framework",
+      "service_key": "hacker-news",
+      "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
+      "article_doc_path": "docs/services/hacker-news/2026-08-boot-a-virtual-iphone-via-apple-s-virtualization-framework-bd488c1c.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T23:54:51.072536Z",
+      "candidate_score": 60.0
+    },
+    "b42ac281ecaf56c08abb695644df43cc6560bb332ec6641a0a17b2c01529c31f": {
+      "normalized_url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "title_fingerprint": "our decision on cursor following its acquisition by spacex",
+      "service_key": "openai-blog",
+      "title": "Our decision on Cursor following its acquisition by SpaceX",
+      "article_doc_path": "docs/services/openai-blog/2026-08-our-decision-on-cursor-following-its-acquisition-by-spacex-b42ac281.md",
+      "status": "published",
+      "briefed_at": "2026-08-29T23:54:51.072540Z",
+      "candidate_score": 44.0
     }
   }
 }
