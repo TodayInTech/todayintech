@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-29T03:27:25.847863+00:00",
+  "generated_at": "2026-08-29T23:51:00.186560+00:00",
   "generated_for": "2026-08-29",
   "stage": "preprocessing",
   "status": "success",
-  "git_sha": "23e1b97614402448eaef78b560bbcd8839c34514",
-  "github_run_id": "33231399417",
+  "git_sha": "764b6d0beceb723bc3684f54cb446b023a753c41",
+  "github_run_id": "33281899832",
   "service_count": 5,
-  "duration_ms": 11,
+  "duration_ms": 5,
   "raw_count": 120,
-  "candidate_count": 22,
-  "excluded_count": 98,
+  "candidate_count": 16,
+  "excluded_count": 104,
   "step_metrics": [
     {
       "step_name": "validation",
       "input_count": 0,
       "output_count": 120,
       "excluded_count": 0,
-      "duration_ms": 1,
+      "duration_ms": 0,
       "reason_counts": {}
     },
     {
@@ -24,7 +24,7 @@
       "input_count": 120,
       "output_count": 120,
       "excluded_count": 0,
-      "duration_ms": 3,
+      "duration_ms": 1,
       "reason_counts": {}
     },
     {
@@ -32,49 +32,49 @@
       "input_count": 120,
       "output_count": 120,
       "excluded_count": 0,
-      "duration_ms": 2,
+      "duration_ms": 1,
       "reason_counts": {}
     },
     {
       "step_name": "run_deduplication",
       "input_count": 120,
-      "output_count": 118,
-      "excluded_count": 2,
+      "output_count": 119,
+      "excluded_count": 1,
       "duration_ms": 0,
       "reason_counts": {
-        "duplicate_in_run": 2
+        "duplicate_in_run": 1
       }
     },
     {
       "step_name": "briefed_article_filter",
-      "input_count": 118,
-      "output_count": 32,
-      "excluded_count": 86,
-      "duration_ms": 4,
+      "input_count": 119,
+      "output_count": 26,
+      "excluded_count": 93,
+      "duration_ms": 1,
       "reason_counts": {
-        "already_briefed": 86
+        "already_briefed": 93
       }
     },
     {
       "step_name": "candidate_scoring",
-      "input_count": 32,
-      "output_count": 32,
+      "input_count": 26,
+      "output_count": 26,
       "excluded_count": 0,
-      "duration_ms": 1,
+      "duration_ms": 0,
       "reason_counts": {}
     },
     {
       "step_name": "candidate_quality_gate",
-      "input_count": 32,
-      "output_count": 32,
+      "input_count": 26,
+      "output_count": 26,
       "excluded_count": 0,
       "duration_ms": 0,
       "reason_counts": {}
     },
     {
       "step_name": "candidate_limiting",
-      "input_count": 32,
-      "output_count": 22,
+      "input_count": 26,
+      "output_count": 16,
       "excluded_count": 10,
       "duration_ms": 0,
       "reason_counts": {
@@ -87,62 +87,9 @@
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
       "raw_count": 20,
-      "candidate_count": 9,
-      "excluded_count": 11,
+      "candidate_count": 5,
+      "excluded_count": 15,
       "top_candidates": [
-        {
-          "candidate_id": "anthropic-blog:35305757066a6f71",
-          "title": "Previewing the Model Hardware Standard",
-          "normalized_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-          "url_hash": "35305757066a6f711440489b52eb6596053277764468fc729848626d973d5835",
-          "suggested_doc_key": "2026-08-previewing-the-model-hardware-standard-35305757",
-          "suggested_article_path": "docs/services/anthropic-blog/2026-08-previewing-the-model-hardware-standard-35305757.md",
-          "candidate_score": 40.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 10점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "중요 키워드 2개를 감지해 가산했습니다."
-          ]
-        },
-        {
-          "candidate_id": "anthropic-blog:f1584024fd99c557",
-          "title": "Claude for Life Sciences",
-          "normalized_url": "https://www.anthropic.com/news/claude-for-life-sciences",
-          "url_hash": "f1584024fd99c557cc16c6e8755e3cc037c9b4b2ca4d3a5040b2993256bb032f",
-          "suggested_doc_key": "2026-08-claude-for-life-sciences-f1584024",
-          "suggested_article_path": "docs/services/anthropic-blog/2026-08-claude-for-life-sciences-f1584024.md",
-          "candidate_score": 29.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 10점을 적용했습니다.",
-            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "anthropic-blog:48d3aa1168f3b7b2",
-          "title": "Anthropic and Iceland announce one of the world’s first national AI education pilots",
-          "normalized_url": "https://www.anthropic.com/news/anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-education-pilots",
-          "url_hash": "48d3aa1168f3b7b2f9055c93b319cbe7da22f8fa1a0b57f87afa9c931553ae0f",
-          "suggested_doc_key": "2026-08-anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-educ-48d3aa11",
-          "suggested_article_path": "docs/services/anthropic-blog/2026-08-anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-educ-48d3aa11.md",
-          "candidate_score": 29.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 10점을 적용했습니다.",
-            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "anthropic-blog:87ff46e228edd2ee",
-          "title": "Advancing Claude in healthcare and the life sciences",
-          "normalized_url": "https://www.anthropic.com/news/healthcare-life-sciences",
-          "url_hash": "87ff46e228edd2eed4dd7ffc5e559fb86f8517e593fce8037cc36e912d9304b9",
-          "suggested_doc_key": "2026-08-advancing-claude-in-healthcare-and-the-life-sciences-87ff46e2",
-          "suggested_article_path": "docs/services/anthropic-blog/2026-08-advancing-claude-in-healthcare-and-the-life-sciences-87ff46e2.md",
-          "candidate_score": 29.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 10점을 적용했습니다.",
-            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
-          ]
-        },
         {
           "candidate_id": "anthropic-blog:d8f5ba2b5c6d45ce",
           "title": "How scientists are using Claude to accelerate research and discovery",
@@ -155,10 +102,62 @@
             "서비스 기본 가중치 10점을 적용했습니다.",
             "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
           ]
+        },
+        {
+          "candidate_id": "anthropic-blog:bf7945e53d0d2f53",
+          "title": "Anthropic partners with Rwandan Government and ALX to bring AI education to hundreds of thousands of learners across Africa",
+          "normalized_url": "https://www.anthropic.com/news/rwandan-government-partnership-ai-education",
+          "url_hash": "bf7945e53d0d2f53fc391acad15796259be81aecf348a1710ab95851a579fb2c",
+          "suggested_doc_key": "2026-08-anthropic-partners-with-rwandan-government-and-alx-to-bring-ai-education-bf7945e5",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-anthropic-partners-with-rwandan-government-and-alx-to-bring-ai-education-bf7945e5.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:98df153600e61955",
+          "title": "Anthropic partners with Allen Institute and Howard Hughes Medical Institute to accelerate scientific discovery",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
+          "url_hash": "98df153600e6195513ba40f6063c0b34acdf81598e3010d476adf38871f4080c",
+          "suggested_doc_key": "2026-08-anthropic-partners-with-allen-institute-and-howard-hughes-medical-instit-98df1536",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-anthropic-partners-with-allen-institute-and-howard-hughes-medical-instit-98df1536.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:55cc348bcfa4f00c",
+          "title": "Anthropic partners with CodePath to bring Claude to the US’s largest collegiate computer science program",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
+          "url_hash": "55cc348bcfa4f00c26cd4891a2f295130d99a2729b57caacfa44a85bd676c4bb",
+          "suggested_doc_key": "2026-08-anthropic-partners-with-codepath-to-bring-claude-to-the-us-s-largest-col-55cc348b",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-anthropic-partners-with-codepath-to-bring-claude-to-the-us-s-largest-col-55cc348b.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:4132eb3adfd532bf",
+          "title": "Anthropic and the Government of Rwanda sign MOU for AI in health and education",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
+          "url_hash": "4132eb3adfd532bf4a25f177a0b12f4f70ed340d2b3b8168879e5d30b8a7599e",
+          "suggested_doc_key": "2026-08-anthropic-and-the-government-of-rwanda-sign-mou-for-ai-in-health-and-edu-4132eb3a",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-anthropic-and-the-government-of-rwanda-sign-mou-for-ai-in-health-and-edu-4132eb3a.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
         }
       ],
       "excluded_reasons": {
-        "already_briefed": 11
+        "already_briefed": 15
       }
     },
     {
@@ -176,27 +175,11 @@
       "service_key": "google-blog",
       "service_name": "Google Blog",
       "raw_count": 20,
-      "candidate_count": 1,
-      "excluded_count": 19,
-      "top_candidates": [
-        {
-          "candidate_id": "google-blog:6ea4b2dafda1ebb5",
-          "title": "Gemini Omni 1.1 Flash lets you build with more control",
-          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash",
-          "url_hash": "6ea4b2dafda1ebb5087f6ee43a318a70c7bdbbe1124df2f3fd25c873c64fbde5",
-          "suggested_doc_key": "2026-08-gemini-omni-1-1-flash-lets-you-build-with-more-control-6ea4b2da",
-          "suggested_article_path": "docs/services/google-blog/2026-08-gemini-omni-1-1-flash-lets-you-build-with-more-control-6ea4b2da.md",
-          "candidate_score": 39.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 7점을 적용했습니다.",
-            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
-            "중요 키워드 1개를 감지해 가산했습니다.",
-            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
-          ]
-        }
-      ],
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
       "excluded_reasons": {
-        "already_briefed": 19
+        "already_briefed": 20
       }
     },
     {
@@ -207,84 +190,84 @@
       "excluded_count": 10,
       "top_candidates": [
         {
-          "candidate_id": "hacker-news:6b67b7c843708761",
-          "title": "Htmx 4.0",
-          "normalized_url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
-          "url_hash": "6b67b7c8437087610002d7d7ad7ba491bf78480fa0312761f9f679e0affa623e",
-          "suggested_doc_key": "2026-08-htmx-4-0-6b67b7c8",
-          "suggested_article_path": "docs/services/hacker-news/2026-08-htmx-4-0-6b67b7c8.md",
-          "candidate_score": 65.0,
+          "candidate_id": "hacker-news:f55004a573850a67",
+          "title": "Tencent Releases and Open-Sources Tencent Hy4 Preview",
+          "normalized_url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview",
+          "url_hash": "f55004a573850a672386f30ce8277386f67e9763185b9614e79dd4be85969e95",
+          "suggested_doc_key": "2026-08-tencent-releases-and-open-sources-tencent-hy4-preview-f55004a5",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-tencent-releases-and-open-sources-tencent-hy4-preview-f55004a5.md",
+          "candidate_score": 65.9,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
             "중요 키워드 1개를 감지해 가산했습니다.",
-            "Hacker News 점수 557점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 138개를 토론 신호로 반영했습니다.",
-            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 149점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 91개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:a3d40848cd03fefd",
-          "title": "Just the rumour of a bug is enough to find an exploit these days",
-          "normalized_url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
-          "url_hash": "a3d40848cd03fefda089033aa207044f75d9fa2864a4137adc51584fdeb139ab",
-          "suggested_doc_key": "2026-08-just-the-rumour-of-a-bug-is-enough-to-find-an-exploit-these-days-a3d40848",
-          "suggested_article_path": "docs/services/hacker-news/2026-08-just-the-rumour-of-a-bug-is-enough-to-find-an-exploit-these-days-a3d40848.md",
+          "candidate_id": "hacker-news:3623b6d02acbb35f",
+          "title": "GrapheneOS project: pixel 11 no longer supports hardware memory tagging (MTE)",
+          "normalized_url": "https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e",
+          "url_hash": "3623b6d02acbb35f0e000818f281ab8211e4ce21ce2bb25eb1b6ca190c60f63e",
+          "suggested_doc_key": "2026-08-grapheneos-project-pixel-11-no-longer-supports-hardware-memory-tagging-m-3623b6d0",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-grapheneos-project-pixel-11-no-longer-supports-hardware-memory-tagging-m-3623b6d0.md",
           "candidate_score": 60.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 272점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 97개를 토론 신호로 반영했습니다.",
+            "Hacker News 점수 241점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 107개를 토론 신호로 반영했습니다.",
             "RSS 순위 14위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:4424584ee706d4b4",
-          "title": "GLM-5.3 is now open-weight",
-          "normalized_url": "https://huggingface.co/zai-org/GLM-5.3",
-          "url_hash": "4424584ee706d4b4f373e9458a7d307eab25a264f74f5e9c8c29e557d43e69cd",
-          "suggested_doc_key": "2026-08-glm-5-3-is-now-open-weight-4424584e",
-          "suggested_article_path": "docs/services/hacker-news/2026-08-glm-5-3-is-now-open-weight-4424584e.md",
+          "candidate_id": "hacker-news:6c66c63ff1adf27b",
+          "title": "Samsung's Processing-in-Memory (PIM)",
+          "normalized_url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+          "url_hash": "6c66c63ff1adf27b93d45699f134cb7d8bd8412e9ed3fab93b2d869b5b8ba26b",
+          "suggested_doc_key": "2026-08-samsung-s-processing-in-memory-pim-6c66c63f",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-samsung-s-processing-in-memory-pim-6c66c63f.md",
           "candidate_score": 60.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 612점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 214개를 토론 신호로 반영했습니다.",
+            "Hacker News 점수 238점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 90개를 토론 신호로 반영했습니다.",
             "RSS 순위 16위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:07aca43e12d4379f",
-          "title": "GUIs should be fully keyboard-driven",
-          "normalized_url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
-          "url_hash": "07aca43e12d4379f0d6200724b438814c4e858a88860c31b315ffa6a9772cf51",
-          "suggested_doc_key": "2026-08-guis-should-be-fully-keyboard-driven-07aca43e",
-          "suggested_article_path": "docs/services/hacker-news/2026-08-guis-should-be-fully-keyboard-driven-07aca43e.md",
+          "candidate_id": "hacker-news:bd488c1cb70b7284",
+          "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
+          "normalized_url": "https://github.com/Lakr233/vphone-cli",
+          "url_hash": "bd488c1cb70b7284a50610921ab6e557eb19c7dec0a7eabb943b41f3aecdcbc8",
+          "suggested_doc_key": "2026-08-boot-a-virtual-iphone-via-apple-s-virtualization-framework-bd488c1c",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-boot-a-virtual-iphone-via-apple-s-virtualization-framework-bd488c1c.md",
           "candidate_score": 60.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 652점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 322개를 토론 신호로 반영했습니다.",
-            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 374점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 100개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:0f50e8401ebe9e32",
-          "title": "U.S. sanctions against the A/I Collective",
-          "normalized_url": "https://www.inventati.org/",
-          "url_hash": "0f50e8401ebe9e32006c0cfe8c7c6b54427392311c6341a9257764983ad6002f",
-          "suggested_doc_key": "2026-08-u-s-sanctions-against-the-a-i-collective-0f50e840",
-          "suggested_article_path": "docs/services/hacker-news/2026-08-u-s-sanctions-against-the-a-i-collective-0f50e840.md",
-          "candidate_score": 60.0,
+          "candidate_id": "hacker-news:f067a4ae268cdf65",
+          "title": "StemDeck, a free, open-source and local AI stem separator",
+          "normalized_url": "https://github.com/stemdeckapp/stemdeck",
+          "url_hash": "f067a4ae268cdf65160c49b3d56f61d9db46be141203e3f35d601287c8f2d32b",
+          "suggested_doc_key": "2026-08-stemdeck-a-free-open-source-and-local-ai-stem-separator-f067a4ae",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-stemdeck-a-free-open-source-and-local-ai-stem-separator-f067a4ae.md",
+          "candidate_score": 56.2,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 504점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 488개를 토론 신호로 반영했습니다.",
-            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 196점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 58개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
           ]
         }
       ],
@@ -296,42 +279,28 @@
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
       "raw_count": 50,
-      "candidate_count": 2,
-      "excluded_count": 48,
+      "candidate_count": 1,
+      "excluded_count": 49,
       "top_candidates": [
         {
-          "candidate_id": "openai-blog:cb1db0d5c74b6e9e",
-          "title": "Supporting Thailand’s next generation of AI startups",
-          "normalized_url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
-          "url_hash": "cb1db0d5c74b6e9eeb890e2ee46bb06c7f0b7f7e54363ac96a62606a772bbfa5",
-          "suggested_doc_key": "2026-08-supporting-thailand-s-next-generation-of-ai-startups-cb1db0d5",
-          "suggested_article_path": "docs/services/openai-blog/2026-08-supporting-thailand-s-next-generation-of-ai-startups-cb1db0d5.md",
-          "candidate_score": 43.0,
+          "candidate_id": "openai-blog:b42ac281ecaf56c0",
+          "title": "Our decision on Cursor following its acquisition by SpaceX",
+          "normalized_url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+          "url_hash": "b42ac281ecaf56c08abb695644df43cc6560bb332ec6641a0a17b2c01529c31f",
+          "suggested_doc_key": "2026-08-our-decision-on-cursor-following-its-acquisition-by-spacex-b42ac281",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-our-decision-on-cursor-following-its-acquisition-by-spacex-b42ac281.md",
+          "candidate_score": 44.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 10점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
             "중요 키워드 1개를 감지해 가산했습니다.",
-            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "openai-blog:68bd2e32c09542cb",
-          "title": "Introducing Intelligence Age",
-          "normalized_url": "https://openai.com/index/introducing-intelligence-age",
-          "url_hash": "68bd2e32c09542cb22fc0e9cb7e8924fbe09bed5f190bd32b4c03a4e4190efe4",
-          "suggested_doc_key": "2026-08-introducing-intelligence-age-68bd2e32",
-          "suggested_article_path": "docs/services/openai-blog/2026-08-introducing-intelligence-age-68bd2e32.md",
-          "candidate_score": 22.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 10점을 적용했습니다.",
-            "발행 후 8일이 지난 글로 최신성 12점을 반영했습니다.",
-            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
           ]
         }
       ],
       "excluded_reasons": {
-        "duplicate_in_run": 2,
-        "already_briefed": 46
+        "duplicate_in_run": 1,
+        "already_briefed": 48
       }
     }
   ]

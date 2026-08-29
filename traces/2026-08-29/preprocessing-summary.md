@@ -4,17 +4,17 @@
 
 - Status: `success`
 - Services: 5
-- Duration: 11 ms
+- Duration: 5 ms
 - Raw articles: 120
-- Candidates: 22
-- Excluded: 98
+- Candidates: 16
+- Excluded: 104
 
 ## Services
 
 | Service | Raw | Candidates | Excluded | Excluded reasons |
 | --- | ---: | ---: | ---: | --- |
-| anthropic-blog | 20 | 9 | 11 | already_briefed: 11 |
+| anthropic-blog | 20 | 5 | 15 | already_briefed: 15 |
 | github-blog | 10 | 0 | 10 | already_briefed: 10 |
-| google-blog | 20 | 1 | 19 | already_briefed: 19 |
+| google-blog | 20 | 0 | 20 | already_briefed: 20 |
 | hacker-news | 20 | 10 | 10 | service_candidate_limit: 10 |
-| openai-blog | 50 | 2 | 48 | duplicate_in_run: 2, already_briefed: 46 |
+| openai-blog | 50 | 1 | 49 | duplicate_in_run: 1, already_briefed: 48 |
