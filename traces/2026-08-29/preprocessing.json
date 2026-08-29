@@ -1,0 +1,338 @@
+{
+  "generated_at": "2026-08-29T03:27:25.847863+00:00",
+  "generated_for": "2026-08-29",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "23e1b97614402448eaef78b560bbcd8839c34514",
+  "github_run_id": "33231399417",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 22,
+  "excluded_count": 98,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 118,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 2
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 118,
+      "output_count": 32,
+      "excluded_count": 86,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 86
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 32,
+      "output_count": 22,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 9,
+      "excluded_count": 11,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:35305757066a6f71",
+          "title": "Previewing the Model Hardware Standard",
+          "normalized_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+          "url_hash": "35305757066a6f711440489b52eb6596053277764468fc729848626d973d5835",
+          "suggested_doc_key": "2026-08-previewing-the-model-hardware-standard-35305757",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-previewing-the-model-hardware-standard-35305757.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:f1584024fd99c557",
+          "title": "Claude for Life Sciences",
+          "normalized_url": "https://www.anthropic.com/news/claude-for-life-sciences",
+          "url_hash": "f1584024fd99c557cc16c6e8755e3cc037c9b4b2ca4d3a5040b2993256bb032f",
+          "suggested_doc_key": "2026-08-claude-for-life-sciences-f1584024",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-claude-for-life-sciences-f1584024.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:48d3aa1168f3b7b2",
+          "title": "Anthropic and Iceland announce one of the world’s first national AI education pilots",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-education-pilots",
+          "url_hash": "48d3aa1168f3b7b2f9055c93b319cbe7da22f8fa1a0b57f87afa9c931553ae0f",
+          "suggested_doc_key": "2026-08-anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-educ-48d3aa11",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-educ-48d3aa11.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:87ff46e228edd2ee",
+          "title": "Advancing Claude in healthcare and the life sciences",
+          "normalized_url": "https://www.anthropic.com/news/healthcare-life-sciences",
+          "url_hash": "87ff46e228edd2eed4dd7ffc5e559fb86f8517e593fce8037cc36e912d9304b9",
+          "suggested_doc_key": "2026-08-advancing-claude-in-healthcare-and-the-life-sciences-87ff46e2",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-advancing-claude-in-healthcare-and-the-life-sciences-87ff46e2.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:d8f5ba2b5c6d45ce",
+          "title": "How scientists are using Claude to accelerate research and discovery",
+          "normalized_url": "https://www.anthropic.com/news/accelerating-scientific-research",
+          "url_hash": "d8f5ba2b5c6d45ce54b9feefa22236a85ef6d168ce46c27d11166f50ad4f7bd0",
+          "suggested_doc_key": "2026-08-how-scientists-are-using-claude-to-accelerate-research-and-discovery-d8f5ba2b",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-how-scientists-are-using-claude-to-accelerate-research-and-discovery-d8f5ba2b.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 11
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:6ea4b2dafda1ebb5",
+          "title": "Gemini Omni 1.1 Flash lets you build with more control",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash",
+          "url_hash": "6ea4b2dafda1ebb5087f6ee43a318a70c7bdbbe1124df2f3fd25c873c64fbde5",
+          "suggested_doc_key": "2026-08-gemini-omni-1-1-flash-lets-you-build-with-more-control-6ea4b2da",
+          "suggested_article_path": "docs/services/google-blog/2026-08-gemini-omni-1-1-flash-lets-you-build-with-more-control-6ea4b2da.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:6b67b7c843708761",
+          "title": "Htmx 4.0",
+          "normalized_url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
+          "url_hash": "6b67b7c8437087610002d7d7ad7ba491bf78480fa0312761f9f679e0affa623e",
+          "suggested_doc_key": "2026-08-htmx-4-0-6b67b7c8",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-htmx-4-0-6b67b7c8.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 557점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 138개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a3d40848cd03fefd",
+          "title": "Just the rumour of a bug is enough to find an exploit these days",
+          "normalized_url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+          "url_hash": "a3d40848cd03fefda089033aa207044f75d9fa2864a4137adc51584fdeb139ab",
+          "suggested_doc_key": "2026-08-just-the-rumour-of-a-bug-is-enough-to-find-an-exploit-these-days-a3d40848",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-just-the-rumour-of-a-bug-is-enough-to-find-an-exploit-these-days-a3d40848.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 272점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 97개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4424584ee706d4b4",
+          "title": "GLM-5.3 is now open-weight",
+          "normalized_url": "https://huggingface.co/zai-org/GLM-5.3",
+          "url_hash": "4424584ee706d4b4f373e9458a7d307eab25a264f74f5e9c8c29e557d43e69cd",
+          "suggested_doc_key": "2026-08-glm-5-3-is-now-open-weight-4424584e",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-glm-5-3-is-now-open-weight-4424584e.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 612점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 214개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:07aca43e12d4379f",
+          "title": "GUIs should be fully keyboard-driven",
+          "normalized_url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
+          "url_hash": "07aca43e12d4379f0d6200724b438814c4e858a88860c31b315ffa6a9772cf51",
+          "suggested_doc_key": "2026-08-guis-should-be-fully-keyboard-driven-07aca43e",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-guis-should-be-fully-keyboard-driven-07aca43e.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 652점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 322개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0f50e8401ebe9e32",
+          "title": "U.S. sanctions against the A/I Collective",
+          "normalized_url": "https://www.inventati.org/",
+          "url_hash": "0f50e8401ebe9e32006c0cfe8c7c6b54427392311c6341a9257764983ad6002f",
+          "suggested_doc_key": "2026-08-u-s-sanctions-against-the-a-i-collective-0f50e840",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-u-s-sanctions-against-the-a-i-collective-0f50e840.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 504점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 488개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 2,
+      "excluded_count": 48,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:cb1db0d5c74b6e9e",
+          "title": "Supporting Thailand’s next generation of AI startups",
+          "normalized_url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+          "url_hash": "cb1db0d5c74b6e9eeb890e2ee46bb06c7f0b7f7e54363ac96a62606a772bbfa5",
+          "suggested_doc_key": "2026-08-supporting-thailand-s-next-generation-of-ai-startups-cb1db0d5",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-supporting-thailand-s-next-generation-of-ai-startups-cb1db0d5.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:68bd2e32c09542cb",
+          "title": "Introducing Intelligence Age",
+          "normalized_url": "https://openai.com/index/introducing-intelligence-age",
+          "url_hash": "68bd2e32c09542cb22fc0e9cb7e8924fbe09bed5f190bd32b4c03a4e4190efe4",
+          "suggested_doc_key": "2026-08-introducing-intelligence-age-68bd2e32",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-introducing-intelligence-age-68bd2e32.md",
+          "candidate_score": 22.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 8일이 지난 글로 최신성 12점을 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 2,
+        "already_briefed": 46
+      }
+    }
+  ]
+}
