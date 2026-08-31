@@ -1,0 +1,239 @@
+{
+  "generated_at": "2026-08-31T00:09:02.344267+00:00",
+  "generated_for": "2026-08-31",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "94d7f8dd689c5c9501a77088dce499cca773bfb3",
+  "github_run_id": "33343659792",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 21,
+      "excluded_count": 98,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 21,
+      "output_count": 21,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 21,
+      "output_count": 21,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 21,
+      "output_count": 11,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:4132eb3adfd532bf",
+          "title": "Anthropic and the Government of Rwanda sign MOU for AI in health and education",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
+          "url_hash": "4132eb3adfd532bf4a25f177a0b12f4f70ed340d2b3b8168879e5d30b8a7599e",
+          "suggested_doc_key": "2026-08-anthropic-and-the-government-of-rwanda-sign-mou-for-ai-in-health-and-edu-4132eb3a",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-anthropic-and-the-government-of-rwanda-sign-mou-for-ai-in-health-and-edu-4132eb3a.md",
+          "candidate_score": 27.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:ae7f02d03a5e1bb4",
+          "title": "Haiku R1/beta6 has been released",
+          "normalized_url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
+          "url_hash": "ae7f02d03a5e1bb48d5b26c1417bfdfacf1eea18a2583200e33d57140159c0b3",
+          "suggested_doc_key": "2026-08-haiku-r1-beta6-has-been-released-ae7f02d0",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-haiku-r1-beta6-has-been-released-ae7f02d0.md",
+          "candidate_score": 63.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 236점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 69개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3963eb8821dbb2c3",
+          "title": "Omarchy: Any User Process Can Escalate to Root",
+          "normalized_url": "https://0xcc.io/posts/omarchy-root-creds",
+          "url_hash": "3963eb8821dbb2c3d787d862dafd4040a2debfef5c0fc69649f5e86b4e67b32a",
+          "suggested_doc_key": "2026-08-omarchy-any-user-process-can-escalate-to-root-3963eb88",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-omarchy-any-user-process-can-escalate-to-root-3963eb88.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 375점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 382개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a072b325bc377db9",
+          "title": "European Commission Revives Push for Encryption Backdoors in ProtectEU Strategy",
+          "normalized_url": "https://reclaimthenet.org/eu-protecteu-strategy-encryption-backdoor-law-enforcement",
+          "url_hash": "a072b325bc377db940685c1f501678ab224fc88d7a09fa43db6040857332b66c",
+          "suggested_doc_key": "2026-08-european-commission-revives-push-for-encryption-backdoors-in-protecteu-s-a072b325",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-european-commission-revives-push-for-encryption-backdoors-in-protecteu-s-a072b325.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 341점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 141개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5d81de367ddaf8ce",
+          "title": "Europe's summer drought is so extreme that desertification is a growing threat",
+          "normalized_url": "https://fortune.com/2026/08/29/europe-summer-drought-desertification-threat-rivers-fish",
+          "url_hash": "5d81de367ddaf8ce47ffcef30bdbc906f0daad2457d262f386df1c7d13b00e6c",
+          "suggested_doc_key": "2026-08-europe-s-summer-drought-is-so-extreme-that-desertification-is-a-growing-5d81de36",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-europe-s-summer-drought-is-so-extreme-that-desertification-is-a-growing-5d81de36.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 242점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 294개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7d6bf71ac143a5ed",
+          "title": "METR and Redwood Offer Holy %^ Postmortem of the HuggingFace Hack",
+          "normalized_url": "https://thezvi.wordpress.com/2026/08/29/metr-and-redwood-offer-holy-postmortem-of-the-huggingface-hack",
+          "url_hash": "7d6bf71ac143a5edbd05406534760d6d30e390e97c043a9135209377c3a4ab7e",
+          "suggested_doc_key": "2026-08-metr-and-redwood-offer-holy-postmortem-of-the-huggingface-hack-7d6bf71a",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-metr-and-redwood-offer-holy-postmortem-of-the-huggingface-hack-7d6bf71a.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 217점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 166개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 49
+      }
+    }
+  ]
+}
