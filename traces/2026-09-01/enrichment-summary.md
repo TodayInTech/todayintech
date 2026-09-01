@@ -4,20 +4,20 @@
 
 - Status: `partial`
 - Policy: `adaptive-token-budget@1:min=100:full=4000:select=8000`
-- Duration: 113 ms
-- Candidates: 8
-- Usable candidates: 8 (100.0%)
-- Writer-ready candidates: 7 (87.5%)
-- Status counts: enriched: 5, fallback: 3
-- Input strategies: chunk_selection: 1, feed_metadata_only: 3, full_content: 4
+- Duration: 185 ms
+- Candidates: 11
+- Usable candidates: 11 (100.0%)
+- Writer-ready candidates: 9 (81.8%)
+- Status counts: enriched: 8, fallback: 3
+- Input strategies: chunk_selection: 1, evidence_selection: 1, feed_metadata_only: 3, full_content: 6
 - Failure reasons: access_denied: 3
-- Extracted tokens: p50 352, p90 3158, max 4288
+- Extracted tokens: p50 1055, p90 7177, max 13591
 
 ## Services
 
 | Service | Candidates | Usable | Enriched | Fallback | Failed | Tokens p50 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| anthropic-blog | 1 | 1 | 1 | 0 | 0 | 4288 |
-| google-blog | 1 | 1 | 1 | 0 | 0 | 256 |
-| hacker-news | 4 | 4 | 3 | 1 | 0 | 352 |
-| openai-blog | 2 | 2 | 0 | 2 | 0 | 0 |
+| anthropic-blog | 1 | 1 | 1 | 0 | 0 | 2535 |
+| google-blog | 3 | 3 | 3 | 0 | 0 | 908 |
+| hacker-news | 4 | 4 | 4 | 0 | 0 | 2374 |
+| openai-blog | 3 | 3 | 0 | 3 | 0 | 0 |

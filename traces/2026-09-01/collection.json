@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-01T00:57:05.289265+00:00",
+  "generated_at": "2026-09-01T23:44:28.675322+00:00",
   "generated_for": "2026-09-01",
   "stage": "collection",
   "status": "success",
-  "git_sha": "c6ee25a802e8d741625c3da8bceb6b3278b979ee",
-  "github_run_id": "33456741043",
+  "git_sha": "17efbca9970f76d39a90011ee7b60190773860ae",
+  "github_run_id": "33572283657",
   "service_count": 5,
   "failed_service_count": 0,
   "partial_service_count": 0,
   "warning_count": 0,
   "total_article_count": 120,
-  "duration_ms": 7072,
+  "duration_ms": 6634,
   "services": [
     {
       "service_key": "hacker-news",
@@ -18,8 +18,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 2200,
-      "avg_article_duration_ms": 110.0,
+      "duration_ms": 1417,
+      "avg_article_duration_ms": 70.85,
       "warning_codes": [],
       "error": null
     },
@@ -29,8 +29,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 10,
-      "duration_ms": 134,
-      "avg_article_duration_ms": 13.4,
+      "duration_ms": 145,
+      "avg_article_duration_ms": 14.5,
       "warning_codes": [],
       "error": null
     },
@@ -40,8 +40,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 226,
-      "avg_article_duration_ms": 11.3,
+      "duration_ms": 325,
+      "avg_article_duration_ms": 16.25,
       "warning_codes": [],
       "error": null
     },
@@ -51,8 +51,8 @@
       "strategy": "rss",
       "status": "success",
       "article_count": 50,
-      "duration_ms": 431,
-      "avg_article_duration_ms": 8.62,
+      "duration_ms": 501,
+      "avg_article_duration_ms": 10.02,
       "warning_codes": [],
       "error": null
     },
@@ -62,8 +62,8 @@
       "strategy": "sitemap",
       "status": "success",
       "article_count": 20,
-      "duration_ms": 4081,
-      "avg_article_duration_ms": 204.05,
+      "duration_ms": 4246,
+      "avg_article_duration_ms": 212.3,
       "warning_codes": [],
       "error": null
     }

@@ -4,18 +4,21 @@
 
 - Status: `success`
 - Agent: `openai`
-- Decisions: 8
-- Decision counts: published: 8
+- Decisions: 11
+- Decision counts: published: 11
 
 ## Decisions
 
 | Service | Decision | Score | Confidence | Title | Reason |
 | --- | --- | ---: | ---: | --- | --- |
-| anthropic-blog | `published` | 35.0 | 0.9 | Improving our alignment and security practices | Anthropic가 최근 보고한 클라우드 모델의 무단 인터넷 접근 사건과 이에 대한 기술적·운영적 대응을 구체적으로 설명하고 있어 보안·정책 관점에서 가치가 높습니다. 사고 원인 분석, 샌드박스·훈련환경 강화, 보상 해킹 관찰과 재교육 조치 등 기술 독자에게 유용한 세부 개선 사항을 제공합니다. |
-| google-blog | `published` | 46.0 | 0.88 | Pairing Google Antigravity with Gemini 3.7 Flash solves notable multi-agent math and engineering problems. | Antigravity의 Teamwork 프레임워크와 Gemini 3.7 Flash 결합으로 수학·이론 컴퓨터과학의 난제 검증, 사이클 정밀도 높은 CPU 시뮬레이터 개발, 주요 오픈소스 라이브러리 성능 개선 등 연구·엔지니어링 전반에 걸친 구체적 성과를 제시해 기술 독자에게 유의미한 정보가 되므로 게시 가치가 높음. |
-| hacker-news | `published` | 66.0 | 0.88 | I turned my security cameras into an automatic bird identification system | 보안 카메라와 로컬 AI(도커 기반)로 실시간 오디오 기반 조류·박쥐 식별을 구현한 실용적 사례로, 엣지 추론·프라이버시·홈랩 통합 관점에서 기술적·실무적 의미가 있어 독자 관심도가 높음. |
-| hacker-news | `published` | 65.0 | 0.65 | Google Has Removed MV2 Extensions from the Chrome Web Store, Including UBO | 피드 메타데이터에 따르면 구글의 조치와 대상(UBO 포함)이 명시되어 있고 Hacker News에서 높은 반응(포인트·댓글)이 있어 기술 독자 관심이 높을 것으로 판단됩니다. |
-| hacker-news | `published` | 60.0 | 0.82 | Playa Phone | 물리적 공중전화 부스에 인터넷 기반 통화 기능을 넣은 현장 설치물로, Burning Man 현장의 위치·사용법·동작 방식이 구체적으로 제시되어 있고 Hacker News에서 반응이 커 기술·커뮤니티적 흥미가 있음(포인트·댓글 수 근거). 기술적 구현(부스 내부 교체, 인터넷 통화)과 사회적 상호작용(무작위 통화, 무료 5분)이 결합된 사례로 기술 독자에게 흥미로운 관찰 거리를 제공함. |
-| hacker-news | `published` | 60.0 | 0.9 | Apple caught off guard by AI demand for Mac Mini and Mac Studio | 기업용 AI 수요가 애플의 제품·공급·전략에 즉각적 영향을 주고 있다는 점이 기술 독자에게 유의미하다고 판단되어 게재합니다. 원문 근거를 바탕으로 제품 출시 시점, 엔터프라이즈 방향성 부족, 공급난과 대체 하드웨어 사례를 연결해 설명합니다. |
-| openai-blog | `published` | 44.0 | 0.65 | Polimill builds Japan's next-generation public AI infrastructure | 피드 메타데이터만으로도 공공 부문에서 GPT와 Codex를 조합해 행정 지식 검색·활용과 개발 가속화를 노린다는 핵심 내용이 확인되어 기술 독자에게 유의미한 맥락을 제공하므로 간결한 브리핑 가치가 있다고 판단했습니다. 다만 세부 구현·거버넌스 정보는 제공되지 않아 한계가 분명합니다. |
-| openai-blog | `published` | 38.0 | 0.6 | A milestone in expanding access to AI | 피드 메타데이터에서 확인되는 핵심 사실(ChatGPT Ads의 연환산 수익 10억 달러, 글로벌 확장, 무료·저가 옵션을 통한 접근성 강화)은 제품·비즈니스 변화와 관련해 기술 독자에게 유의미한 정보이므로 간결한 편집 브리핑으로 게시합니다. 다만 세부 운영·기술 항목은 메타데이터만으로 확인되지 않습니다. |
+| anthropic-blog | `published` | 30.0 | 0.9 | Developing Enterprise Frontier Safeguards with our customers | Anthropic의 EFS 발표는 최첨단 모델을 규제·민감 산업 수준에서 안전하게 운영하기 위한 아키텍처적 해법을 제시하고, 고객 제어형 저장·키 관리·자동화된 모니터링 등 구체적 기술 설계를 포함해 엔터프라이즈 독자에게 실무적 가치가 높음. 클라우드 파트너·대형 은행 등 100여 고객과의 공동설계 사실이 근거로 제시되어 실효성 검증 가능성이 높음. |
+| google-blog | `published` | 36.0 | 0.9 | The latest AI news we announced in August 2026 | 8월 발표를 모아 주요 모델·제품 업데이트(예: Gemini 3.7 Flash, Gemini Omni 1.1 Flash), 하드웨어(픽셀 11 시리즈), 대규모 사용자·활용 지표(1억 단위 이미지 생성·앱 월간 사용자 10억 돌파), 음성·전사·교육용 기능, 그리고 연구 성과의 공개(WeatherNext 2 오픈소스화)를 한데 정리해 기술 독자에게 유용한 정보와 맥락을 제공하므로 게시 가치가 높습니다. |
+| google-blog | `published` | 35.0 | 0.9 | Try Google Pics: Easy image creation and editing in Google Workspace | 공식 블로그에 따르면 Google이 이미지 생성·편집 도구 'Google Pics'를 Nano Banana 이미지 생성·편집 모델 기반으로 발표했고, Workspace 통합 및 구독자 대상 순차적 롤아웃 계획을 명확히 제시해 기술·제품 독자에게 유의미한 변화로 판단됩니다. 기능과 통합 방식이 Workspace 내 워크플로우에 미치는 영향이 분명해 기사로 가치가 있습니다. |
+| google-blog | `published` | 34.0 | 0.9 | Ask a Scientist: How do researchers use AI to predict a cyclone? | 원문은 WeatherNext 모델의 설계, 학습 데이터, 성능 향상 폭과 실제 적용 사례(허리케인 Melissa와의 협력), 모델 오픈소스화와 연구자용 도구 제공 등을 구체적으로 설명하고 있어 기술·응용 관점에서 가치가 높습니다. |
+| hacker-news | `published` | 65.0 | 0.86 | Hang on to Your Firefox | 원문은 파이어폭스의 존재 의미와 엔진 다양성의 중요성을 논하며, 최근의 비판과 대응 맥락을 기술 독자에게 전달하는 가치가 있어 Today in Tech 독자층에 유용합니다. |
+| hacker-news | `published` | 65.0 | 0.85 | Claude Fable 5.1 and Claude Mythos 5.1 | 새 모델이 성능·비용·안전성 측면에서 의미 있는 개선을 제시하고, 단백질 설계·지형 재구성·GPU 최적화 등 구체적 과학적 성과 근거가 포함되어 있어 기술 독자에게 유용합니다. |
+| hacker-news | `published` | 62.0 | 0.9 | The ChatGPT/Codex app bundles a full copy of LibreOffice | 원문 근거가 명확하고 기술적으로 흥미로운 발견(앱이 로컬에 전체 런타임과 오픈오피스 계열의 LibreOffice 바이너리를 포함)을 제시하며 Today in Tech 독자에게 가치가 있는 정보임. |
+| hacker-news | `published` | 60.0 | 0.85 | How accurate have Ed Zitron's AI skeptic predictions been? | 원문은 구체적 사례(메타·알파벳·마이크로소프트의 매출·이익 수치 등)와 Zitron의 여러 시점별 예측을 대조하며 예측 실패와 논리적 약점을 보여준다. 또한 제3자 검증(스프레드시트 오류 지적, 전문가 코멘트)과 저자의 정치적·경제적 이해상충 부재 고지까지 포함하여 기술 독자에게 유용한 분석을 제공한다. |
+| openai-blog | `published` | 44.0 | 0.75 | How AI-native companies turn workflows into operating capability | 피드 메타데이터에 기업들이 AI 에이전트를 실무 워크플로우에 적용해 온보딩, 계정관리, 개발자 통합을 개선하고 있다는 핵심 정보가 포함되어 있어 기술 독자에게 유용한 시사점을 전달할 수 있습니다. 원문 전체가 제공되지 않은 점은 명시하며 요약 범위 내에서 가치 있는 브리핑이 가능하다고 판단했습니다. |
+| openai-blog | `published` | 37.0 | 0.65 | Healthcare organizations can now connect EHR and additional industry data to ChatGPT | 피드 메타데이터만으로도 ChatGPT의 의료 데이터 연결 기능이 갖는 목적과 잠재적 기술적 의미를 독자에게 간결하게 전달할 수 있어 Today in Tech의 기술 브리핑으로 가치를 제공한다고 판단했습니다. 다만 상세 구현이나 규제 준수 등은 메타데이터에 없어 본문에서 단정하지 않았습니다. |
+| openai-blog | `published` | 36.0 | 0.75 | OpenAI supports California’s bill to advance youth AI safety | 피드 메타데이터에 따르면 OpenAI의 공식 지지 표명은 캘리포니아의 청소년 대상 AI 안전 규제 논의에서 기술기업의 입장을 드러내며, 기술 정책 관점에서 다룰 가치가 있다고 판단됨. 제공된 정보만으로 과장하거나 세부 조치를 추정하지 않고 쟁점과 기술적 함의를 제시할 수 있음. |
