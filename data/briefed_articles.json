@@ -6910,6 +6910,86 @@
       "status": "published",
       "briefed_at": "2026-08-31T00:10:46.104360Z",
       "candidate_score": 60.0
+    },
+    "8ed1599eb95bc766b10165793bb5e4e829601d1922e97e695a52da29fe369d68": {
+      "normalized_url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "title_fingerprint": "improving our alignment and security practices",
+      "service_key": "anthropic-blog",
+      "title": "Improving our alignment and security practices",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-improving-our-alignment-and-security-practices-8ed1599e.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T00:59:49.644742Z",
+      "candidate_score": 35.0
+    },
+    "fdf2b3ead1fa63c24b26bb61664c777fce05829d3590986e923d02a393c94fcf": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/antigravity-teamwork-multi-agent",
+      "title_fingerprint": "pairing google antigravity with gemini 3 7 flash solves notable multi agent math and engineering problems",
+      "service_key": "google-blog",
+      "title": "Pairing Google Antigravity with Gemini 3.7 Flash solves notable multi-agent math and engineering problems.",
+      "article_doc_path": "docs/services/google-blog/2026-08-pairing-google-antigravity-with-gemini-3-7-flash-solves-notable-multi-ag-fdf2b3ea.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T00:59:49.644788Z",
+      "candidate_score": 46.0
+    },
+    "87dba8172bc3fe8362c1bbeab9677843ed06583ff3f9cf40f8ae6b54db57e29a": {
+      "normalized_url": "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go",
+      "title_fingerprint": "i turned my security cameras into an automatic bird identification system",
+      "service_key": "hacker-news",
+      "title": "I turned my security cameras into an automatic bird identification system",
+      "article_doc_path": "docs/services/hacker-news/2026-08-i-turned-my-security-cameras-into-an-automatic-bird-identification-syste-87dba817.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T00:59:49.644800Z",
+      "candidate_score": 66.0
+    },
+    "12036ab4003a549922e3907e23f52b5ea79b4d71b034fae4be887e7b4f4b4a56": {
+      "normalized_url": "https://webiterate.dev/google-removed-extensions-ublock-origin-108",
+      "title_fingerprint": "google has removed mv2 extensions from the chrome web store including ubo",
+      "service_key": "hacker-news",
+      "title": "Google Has Removed MV2 Extensions from the Chrome Web Store, Including UBO",
+      "article_doc_path": "docs/services/hacker-news/2026-08-google-has-removed-mv2-extensions-from-the-chrome-web-store-including-ub-12036ab4.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T00:59:49.644809Z",
+      "candidate_score": 65.0
+    },
+    "63994c0b6655e700b30c94f8aa177b0de97790a4091feaab9f6ba05b1d75f095": {
+      "normalized_url": "https://playaphone.com/",
+      "title_fingerprint": "playa phone",
+      "service_key": "hacker-news",
+      "title": "Playa Phone",
+      "article_doc_path": "docs/services/hacker-news/2026-08-playa-phone-63994c0b.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T00:59:49.644817Z",
+      "candidate_score": 60.0
+    },
+    "e07729cca810341c414ef7c60dc903b42d9966b6353e30c97cf459c24e813d2c": {
+      "normalized_url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand",
+      "title_fingerprint": "apple caught off guard by ai demand for mac mini and mac studio",
+      "service_key": "hacker-news",
+      "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+      "article_doc_path": "docs/services/hacker-news/2026-08-apple-caught-off-guard-by-ai-demand-for-mac-mini-and-mac-studio-e07729cc.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T00:59:49.644824Z",
+      "candidate_score": 60.0
+    },
+    "0b5a688ac44522d6851141a82925ed4d52e8227256bd0c561c149a506cd396f8": {
+      "normalized_url": "https://openai.com/index/polimill",
+      "title_fingerprint": "polimill builds japan s next generation public ai infrastructure",
+      "service_key": "openai-blog",
+      "title": "Polimill builds Japan's next-generation public AI infrastructure",
+      "article_doc_path": "docs/services/openai-blog/2026-08-polimill-builds-japan-s-next-generation-public-ai-infrastructure-0b5a688a.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T00:59:49.644831Z",
+      "candidate_score": 44.0
+    },
+    "8a7cdd78fd48385994a8dbca98a1e32138d055e0841fbba3f4c389fe7e61c2a0": {
+      "normalized_url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+      "title_fingerprint": "a milestone in expanding access to ai",
+      "service_key": "openai-blog",
+      "title": "A milestone in expanding access to AI",
+      "article_doc_path": "docs/services/openai-blog/2026-08-a-milestone-in-expanding-access-to-ai-8a7cdd78.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T00:59:49.644838Z",
+      "candidate_score": 38.0
     }
   }
 }
