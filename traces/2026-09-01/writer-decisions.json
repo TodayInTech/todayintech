@@ -1,0 +1,202 @@
+{
+  "generated_at": "2026-09-01T00:59:49.815427+00:00",
+  "generated_for": "2026-09-01",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "c6ee25a802e8d741625c3da8bceb6b3278b979ee",
+  "github_run_id": "33456741043",
+  "decision_count": 8,
+  "decision_counts": {
+    "published": 8
+  },
+  "decisions": [
+    {
+      "candidate_id": "anthropic-blog:8ed1599eb95bc766",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "title": "Improving our alignment and security practices",
+      "normalized_url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "article_doc_path": "docs/services/anthropic-blog/2026-08-improving-our-alignment-and-security-practices-8ed1599e.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 안전·보안",
+      "importance_level": "High",
+      "confidence_score": 0.9,
+      "summary_scope": "chunk_selection",
+      "publish_reason_ko": "Anthropic가 최근 보고한 클라우드 모델의 무단 인터넷 접근 사건과 이에 대한 기술적·운영적 대응을 구체적으로 설명하고 있어 보안·정책 관점에서 가치가 높습니다. 사고 원인 분석, 샌드박스·훈련환경 강화, 보상 해킹 관찰과 재교육 조치 등 기술 독자에게 유용한 세부 개선 사항을 제공합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0003",
+        "chunk-0004"
+      ],
+      "candidate_score": 35.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "google-blog:fdf2b3ead1fa63c2",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "title": "Pairing Google Antigravity with Gemini 3.7 Flash solves notable multi-agent math and engineering problems.",
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/antigravity-teamwork-multi-agent",
+      "article_doc_path": "docs/services/google-blog/2026-08-pairing-google-antigravity-with-gemini-3-7-flash-solves-notable-multi-ag-fdf2b3ea.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Developer tools",
+      "importance_level": "High",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Antigravity의 Teamwork 프레임워크와 Gemini 3.7 Flash 결합으로 수학·이론 컴퓨터과학의 난제 검증, 사이클 정밀도 높은 CPU 시뮬레이터 개발, 주요 오픈소스 라이브러리 성능 개선 등 연구·엔지니어링 전반에 걸친 구체적 성과를 제시해 기술 독자에게 유의미한 정보가 되므로 게시 가치가 높음.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 46.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:87dba8172bc3fe83",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "I turned my security cameras into an automatic bird identification system",
+      "normalized_url": "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go",
+      "article_doc_path": "docs/services/hacker-news/2026-08-i-turned-my-security-cameras-into-an-automatic-bird-identification-syste-87dba817.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Edge AI / Homelab",
+      "importance_level": "Medium",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "보안 카메라와 로컬 AI(도커 기반)로 실시간 오디오 기반 조류·박쥐 식별을 구현한 실용적 사례로, 엣지 추론·프라이버시·홈랩 통합 관점에서 기술적·실무적 의미가 있어 독자 관심도가 높음.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 66.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:12036ab4003a5499",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Google Has Removed MV2 Extensions from the Chrome Web Store, Including UBO",
+      "normalized_url": "https://webiterate.dev/google-removed-extensions-ublock-origin-108",
+      "article_doc_path": "docs/services/hacker-news/2026-08-google-has-removed-mv2-extensions-from-the-chrome-web-store-including-ub-12036ab4.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "브라우저/확장",
+      "importance_level": "높음",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 구글의 조치와 대상(UBO 포함)이 명시되어 있고 Hacker News에서 높은 반응(포인트·댓글)이 있어 기술 독자 관심이 높을 것으로 판단됩니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "candidate_id:hacker-news:12036ab4003a5499",
+        "source_url:https://webiterate.dev/google-removed-extensions-ublock-origin-108/",
+        "feed_summary",
+        "hn_points:437",
+        "hn_comments:355",
+        "collected_at:2026-09-01T00:57:14.827423+00:00"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:63994c0b6655e700",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Playa Phone",
+      "normalized_url": "https://playaphone.com/",
+      "article_doc_path": "docs/services/hacker-news/2026-08-playa-phone-63994c0b.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "인터넷전화·아트 설치",
+      "importance_level": "중간",
+      "confidence_score": 0.82,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "물리적 공중전화 부스에 인터넷 기반 통화 기능을 넣은 현장 설치물로, Burning Man 현장의 위치·사용법·동작 방식이 구체적으로 제시되어 있고 Hacker News에서 반응이 커 기술·커뮤니티적 흥미가 있음(포인트·댓글 수 근거). 기술적 구현(부스 내부 교체, 인터넷 통화)과 사회적 상호작용(무작위 통화, 무료 5분)이 결합된 사례로 기술 독자에게 흥미로운 관찰 거리를 제공함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "metadata.hn_points",
+        "metadata.hn_comments"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:e07729cca810341c",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+      "normalized_url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand",
+      "article_doc_path": "docs/services/hacker-news/2026-08-apple-caught-off-guard-by-ai-demand-for-mac-mini-and-mac-studio-e07729cc.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "하드웨어/기업 AI",
+      "importance_level": "높음",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "기업용 AI 수요가 애플의 제품·공급·전략에 즉각적 영향을 주고 있다는 점이 기술 독자에게 유의미하다고 판단되어 게재합니다. 원문 근거를 바탕으로 제품 출시 시점, 엔터프라이즈 방향성 부족, 공급난과 대체 하드웨어 사례를 연결해 설명합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:0b5a688ac44522d6",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Polimill builds Japan's next-generation public AI infrastructure",
+      "normalized_url": "https://openai.com/index/polimill",
+      "article_doc_path": "docs/services/openai-blog/2026-08-polimill-builds-japan-s-next-generation-public-ai-infrastructure-0b5a688a.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "공공 AI 인프라",
+      "importance_level": "중간",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터만으로도 공공 부문에서 GPT와 Codex를 조합해 행정 지식 검색·활용과 개발 가속화를 노린다는 핵심 내용이 확인되어 기술 독자에게 유의미한 맥락을 제공하므로 간결한 브리핑 가치가 있다고 판단했습니다. 다만 세부 구현·거버넌스 정보는 제공되지 않아 한계가 분명합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "candidate_id: openai-blog:0b5a688ac44522d6",
+        "service_name: OpenAI Blog",
+        "title: Polimill builds Japan's next-generation public AI infrastructure",
+        "feed_summary: Polimill uses OpenAI GPT models and Codex to help municipalities search and use administrative knowledge while accelerating development.",
+        "source_url: https://openai.com/index/polimill",
+        "published_at: 2026-08-31T07:00:00+00:00"
+      ],
+      "candidate_score": 44.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:8a7cdd78fd483859",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "A milestone in expanding access to AI",
+      "normalized_url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+      "article_doc_path": "docs/services/openai-blog/2026-08-a-milestone-in-expanding-access-to-ai-8a7cdd78.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Product",
+      "importance_level": "Medium",
+      "confidence_score": 0.6,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에서 확인되는 핵심 사실(ChatGPT Ads의 연환산 수익 10억 달러, 글로벌 확장, 무료·저가 옵션을 통한 접근성 강화)은 제품·비즈니스 변화와 관련해 기술 독자에게 유의미한 정보이므로 간결한 편집 브리핑으로 게시합니다. 다만 세부 운영·기술 항목은 메타데이터만으로 확인되지 않습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: A milestone in expanding access to AI",
+        "feed_summary: ChatGPT Ads reaches $1 billion in annualized revenue run rate and expands globally, supporting broader access to AI through free and affordable options.",
+        "source_url: https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+        "published_at: 2026-08-31T04:00:00+00:00",
+        "service_name: OpenAI Blog"
+      ],
+      "candidate_score": 38.0,
+      "error_message": null
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "generated_at": "2026-09-01T00:57:05.566479+00:00",
+  "generated_for": "2026-09-01",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "c6ee25a802e8d741625c3da8bceb6b3278b979ee",
+  "github_run_id": "33456741043",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 14,
+  "excluded_count": 106,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 24,
+      "excluded_count": 96,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 96
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 24,
+      "output_count": 14,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:8ed1599eb95bc766",
+          "title": "Improving our alignment and security practices",
+          "normalized_url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+          "url_hash": "8ed1599eb95bc766b10165793bb5e4e829601d1922e97e695a52da29fe369d68",
+          "suggested_doc_key": "2026-08-improving-our-alignment-and-security-practices-8ed1599e",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-08-improving-our-alignment-and-security-practices-8ed1599e.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:fdf2b3ead1fa63c2",
+          "title": "Pairing Google Antigravity with Gemini 3.7 Flash solves notable multi-agent math and engineering problems.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/antigravity-teamwork-multi-agent",
+          "url_hash": "fdf2b3ead1fa63c24b26bb61664c777fce05829d3590986e923d02a393c94fcf",
+          "suggested_doc_key": "2026-08-pairing-google-antigravity-with-gemini-3-7-flash-solves-notable-multi-ag-fdf2b3ea",
+          "suggested_article_path": "docs/services/google-blog/2026-08-pairing-google-antigravity-with-gemini-3-7-flash-solves-notable-multi-ag-fdf2b3ea.md",
+          "candidate_score": 46.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:87dba8172bc3fe83",
+          "title": "I turned my security cameras into an automatic bird identification system",
+          "normalized_url": "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go",
+          "url_hash": "87dba8172bc3fe8362c1bbeab9677843ed06583ff3f9cf40f8ae6b54db57e29a",
+          "suggested_doc_key": "2026-08-i-turned-my-security-cameras-into-an-automatic-bird-identification-syste-87dba817",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-i-turned-my-security-cameras-into-an-automatic-bird-identification-syste-87dba817.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 351점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 91개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:12036ab4003a5499",
+          "title": "Google Has Removed MV2 Extensions from the Chrome Web Store, Including UBO",
+          "normalized_url": "https://webiterate.dev/google-removed-extensions-ublock-origin-108",
+          "url_hash": "12036ab4003a549922e3907e23f52b5ea79b4d71b034fae4be887e7b4f4b4a56",
+          "suggested_doc_key": "2026-08-google-has-removed-mv2-extensions-from-the-chrome-web-store-including-ub-12036ab4",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-google-has-removed-mv2-extensions-from-the-chrome-web-store-including-ub-12036ab4.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 418점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 336개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:63994c0b6655e700",
+          "title": "Playa Phone",
+          "normalized_url": "https://playaphone.com/",
+          "url_hash": "63994c0b6655e700b30c94f8aa177b0de97790a4091feaab9f6ba05b1d75f095",
+          "suggested_doc_key": "2026-08-playa-phone-63994c0b",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-playa-phone-63994c0b.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 476점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 177개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e07729cca810341c",
+          "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+          "normalized_url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand",
+          "url_hash": "e07729cca810341c414ef7c60dc903b42d9966b6353e30c97cf459c24e813d2c",
+          "suggested_doc_key": "2026-08-apple-caught-off-guard-by-ai-demand-for-mac-mini-and-mac-studio-e07729cc",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-apple-caught-off-guard-by-ai-demand-for-mac-mini-and-mac-studio-e07729cc.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 282점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 324개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c1b0b4a70d7f1b0a",
+          "title": "I think the military commissary's freezers were hacked",
+          "normalized_url": "https://signalandsilence.substack.com/p/i-think-someone-hacked-the-commissary",
+          "url_hash": "c1b0b4a70d7f1b0a00121311e2c877b677d459cc179bbba39255144afafba7f3",
+          "suggested_doc_key": "2026-08-i-think-the-military-commissary-s-freezers-were-hacked-c1b0b4a7",
+          "suggested_article_path": "docs/services/hacker-news/2026-08-i-think-the-military-commissary-s-freezers-were-hacked-c1b0b4a7.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 237점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 137개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 2,
+      "excluded_count": 48,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:0b5a688ac44522d6",
+          "title": "Polimill builds Japan's next-generation public AI infrastructure",
+          "normalized_url": "https://openai.com/index/polimill",
+          "url_hash": "0b5a688ac44522d6851141a82925ed4d52e8227256bd0c561c149a506cd396f8",
+          "suggested_doc_key": "2026-08-polimill-builds-japan-s-next-generation-public-ai-infrastructure-0b5a688a",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-polimill-builds-japan-s-next-generation-public-ai-infrastructure-0b5a688a.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:8a7cdd78fd483859",
+          "title": "A milestone in expanding access to AI",
+          "normalized_url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+          "url_hash": "8a7cdd78fd48385994a8dbca98a1e32138d055e0841fbba3f4c389fe7e61c2a0",
+          "suggested_doc_key": "2026-08-a-milestone-in-expanding-access-to-ai-8a7cdd78",
+          "suggested_article_path": "docs/services/openai-blog/2026-08-a-milestone-in-expanding-access-to-ai-8a7cdd78.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 48
+      }
+    }
+  ]
+}
