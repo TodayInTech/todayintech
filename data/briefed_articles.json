@@ -6990,6 +6990,116 @@
       "status": "published",
       "briefed_at": "2026-09-01T00:59:49.644838Z",
       "candidate_score": 38.0
+    },
+    "b085c7f1762bfee8ae1c10fd6eb0d48760444eca14bc13ebebf0694a2daec5e9": {
+      "normalized_url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+      "title_fingerprint": "developing enterprise frontier safeguards with our customers",
+      "service_key": "anthropic-blog",
+      "title": "Developing Enterprise Frontier Safeguards with our customers",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-developing-enterprise-frontier-safeguards-with-our-customers-b085c7f1.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T23:47:25.395321Z",
+      "candidate_score": 30.0
+    },
+    "e6646933ca959a5fc8d118c8b793de49bb6b72b8147d5eceda7d378fce794266": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026",
+      "title_fingerprint": "the latest ai news we announced in august 2026",
+      "service_key": "google-blog",
+      "title": "The latest AI news we announced in August 2026",
+      "article_doc_path": "docs/services/google-blog/2026-09-the-latest-ai-news-we-announced-in-august-2026-e6646933.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T23:47:25.395371Z",
+      "candidate_score": 36.0
+    },
+    "ab46a267f212840f55ce0fca0e22055322d94e7d064bddcc231454dd875bafa7": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/workspace/google-pics",
+      "title_fingerprint": "try google pics easy image creation and editing in google workspace",
+      "service_key": "google-blog",
+      "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
+      "article_doc_path": "docs/services/google-blog/2026-09-try-google-pics-easy-image-creation-and-editing-in-google-workspace-ab46a267.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T23:47:25.395379Z",
+      "candidate_score": 35.0
+    },
+    "82eeb91b60cf1e72629b09927281ae0f2fe5e35f716f6ff33fe490e69e73ee20": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-extreme-weather-cyclone-predictions",
+      "title_fingerprint": "ask a scientist how do researchers use ai to predict a cyclone",
+      "service_key": "google-blog",
+      "title": "Ask a Scientist: How do researchers use AI to predict a cyclone?",
+      "article_doc_path": "docs/services/google-blog/2026-09-ask-a-scientist-how-do-researchers-use-ai-to-predict-a-cyclone-82eeb91b.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T23:47:25.395384Z",
+      "candidate_score": 34.0
+    },
+    "cfad4f83475895dc441ae7ecc024093ebd65a1e2da4c6e415148de72dc6331a5": {
+      "normalized_url": "https://www.newsonaut.com/articles/hang-on-to-your-firefox",
+      "title_fingerprint": "hang on to your firefox",
+      "service_key": "hacker-news",
+      "title": "Hang on to Your Firefox",
+      "article_doc_path": "docs/services/hacker-news/2026-09-hang-on-to-your-firefox-cfad4f83.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T23:47:25.395390Z",
+      "candidate_score": 65.0
+    },
+    "e7232d52f37fd859a2ad633164226f1c2f18c7af5a6da4e5e7f23ccb8f0263e9": {
+      "normalized_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "title_fingerprint": "claude fable 5 1 and claude mythos 5 1",
+      "service_key": "hacker-news",
+      "title": "Claude Fable 5.1 and Claude Mythos 5.1",
+      "article_doc_path": "docs/services/hacker-news/2026-09-claude-fable-5-1-and-claude-mythos-5-1-e7232d52.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T23:47:25.395394Z",
+      "candidate_score": 65.0
+    },
+    "0b5495377a7ef64209681b37857a5dbf6926412b763a450ea491d8a98bd6c1bf": {
+      "normalized_url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice",
+      "title_fingerprint": "the chatgpt codex app bundles a full copy of libreoffice",
+      "service_key": "hacker-news",
+      "title": "The ChatGPT/Codex app bundles a full copy of LibreOffice",
+      "article_doc_path": "docs/services/hacker-news/2026-09-the-chatgpt-codex-app-bundles-a-full-copy-of-libreoffice-0b549537.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T23:47:25.395399Z",
+      "candidate_score": 62.0
+    },
+    "283b94e044de8052b5b3e37ef119928c2af6ab76674611f6f50646f2cd69bbb8": {
+      "normalized_url": "https://danluu.com/zitron",
+      "title_fingerprint": "how accurate have ed zitron s ai skeptic predictions been",
+      "service_key": "hacker-news",
+      "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
+      "article_doc_path": "docs/services/hacker-news/2026-09-how-accurate-have-ed-zitron-s-ai-skeptic-predictions-been-283b94e0.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T23:47:25.395403Z",
+      "candidate_score": 60.0
+    },
+    "b0cbef382238cdd5b88df7d9e2e972c6de79dc01f5270d52514cbb50f83a1be1": {
+      "normalized_url": "https://openai.com/index/ai-native-company-workflows",
+      "title_fingerprint": "how ai native companies turn workflows into operating capability",
+      "service_key": "openai-blog",
+      "title": "How AI-native companies turn workflows into operating capability",
+      "article_doc_path": "docs/services/openai-blog/2026-09-how-ai-native-companies-turn-workflows-into-operating-capability-b0cbef38.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T23:47:25.395408Z",
+      "candidate_score": 44.0
+    },
+    "c0364833b41073ca7c0ea92e6ee2f69465ad17ef62fa3529c77a9a8d4c268e7b": {
+      "normalized_url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+      "title_fingerprint": "healthcare organizations can now connect ehr and additional industry data to chatgpt",
+      "service_key": "openai-blog",
+      "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-09-healthcare-organizations-can-now-connect-ehr-and-additional-industry-dat-c0364833.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T23:47:25.395412Z",
+      "candidate_score": 37.0
+    },
+    "4862f3d2c68fb1ad680a585cc64e80bc967fc99b89a1e7fef84c985e61d958c6": {
+      "normalized_url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
+      "title_fingerprint": "openai supports california s bill to advance youth ai safety",
+      "service_key": "openai-blog",
+      "title": "OpenAI supports California’s bill to advance youth AI safety",
+      "article_doc_path": "docs/services/openai-blog/2026-08-openai-supports-california-s-bill-to-advance-youth-ai-safety-4862f3d2.md",
+      "status": "published",
+      "briefed_at": "2026-09-01T23:47:25.395416Z",
+      "candidate_score": 36.0
     }
   }
 }
