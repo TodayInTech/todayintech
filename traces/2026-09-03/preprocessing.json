@@ -1,0 +1,330 @@
+{
+  "generated_at": "2026-09-03T23:46:30.322142+00:00",
+  "generated_for": "2026-09-03",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "5bdeff3c4f4c6257db72c6b9252681e8ed75d7c0",
+  "github_run_id": "33818844578",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 17,
+  "excluded_count": 103,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 27,
+      "excluded_count": 93,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 93
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 27,
+      "output_count": 17,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:c24e45e869c7b353",
+          "title": "GitHub Copilot app for Beginners: Run several agents at once",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once",
+          "url_hash": "c24e45e869c7b353ed209f04ffb04c9eff75167c9d6d4abbb5320d4327573b61",
+          "suggested_doc_key": "2026-09-github-copilot-app-for-beginners-run-several-agents-at-once-c24e45e8",
+          "suggested_article_path": "docs/services/github-blog/2026-09-github-copilot-app-for-beginners-run-several-agents-at-once-c24e45e8.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:68697d8b4a8e1c15",
+          "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3",
+          "url_hash": "68697d8b4a8e1c1514e1cf248e0a6deb99ecfb443872f8c842a68c6658d35b90",
+          "suggested_doc_key": "2026-09-introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-68697d8b",
+          "suggested_article_path": "docs/services/google-blog/2026-09-introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-68697d8b.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:bca1cbd37150b6b4",
+          "title": "5 amazing visuals show how the male fruit fly’s brain map is advancing neuroscience",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/research/male-fruit-fly-brain-map",
+          "url_hash": "bca1cbd37150b6b4ae8b9caca4f0dd9689cba865bd0a9ead415f6014b5a1e053",
+          "suggested_doc_key": "2026-09-5-amazing-visuals-show-how-the-male-fruit-fly-s-brain-map-is-advancing-n-bca1cbd3",
+          "suggested_article_path": "docs/services/google-blog/2026-09-5-amazing-visuals-show-how-the-male-fruit-fly-s-brain-map-is-advancing-n-bca1cbd3.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:039a4975e102cb53",
+          "title": "GPT-6 Astra",
+          "normalized_url": "https://openai.com/index/gpt-6-astra",
+          "url_hash": "039a4975e102cb538c368495a2e6d022853c448b8779c7d611c9069b00b28b50",
+          "suggested_doc_key": "2026-09-gpt-6-astra-039a4975",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-gpt-6-astra-039a4975.md",
+          "candidate_score": 68.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 1133점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 863개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:45a86641ba677818",
+          "title": "Qwen 3.8 27B available on Cerebras at 1500 tokens/s",
+          "normalized_url": "https://inference-docs.cerebras.ai/models/overview",
+          "url_hash": "45a86641ba677818c6954669d5532e3a9ec463c98b0f045b61d9c93ef2fef58c",
+          "suggested_doc_key": "2026-09-qwen-3-8-27b-available-on-cerebras-at-1500-tokens-s-45a86641",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-qwen-3-8-27b-available-on-cerebras-at-1500-tokens-s-45a86641.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 400점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 122개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:2649e5d991b83e5a",
+          "title": "K2 Horizon: A connected fleet of six open models",
+          "normalized_url": "https://ifm.ai/blog/k2",
+          "url_hash": "2649e5d991b83e5a936d81cb09b28c9a88c8f5b9e7b4d5926a8a595c0387c68b",
+          "suggested_doc_key": "2026-09-k2-horizon-a-connected-fleet-of-six-open-models-2649e5d9",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-k2-horizon-a-connected-fleet-of-six-open-models-2649e5d9.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 237점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 78개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b9197b873957814a",
+          "title": "Audacity 4.0",
+          "normalized_url": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0",
+          "url_hash": "b9197b873957814ae012ee50c39256886d26f5999c21c392d5f6d517e75fd53d",
+          "suggested_doc_key": "2026-09-audacity-4-0-b9197b87",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-audacity-4-0-b9197b87.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 1024점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 225개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:929c67df92b47164",
+          "title": "Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?",
+          "normalized_url": "https://news.ycombinator.com/item?id=49551096",
+          "url_hash": "929c67df92b47164bb2ebc720c5e4e773206d13c75d1c7f22afa08bbc662e596",
+          "suggested_doc_key": "2026-09-ask-hn-why-were-openai-claude-and-grok-simultaneously-down-929c67df",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-ask-hn-why-were-openai-claude-and-grok-simultaneously-down-929c67df.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 317점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 513개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 4,
+      "excluded_count": 46,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:39210f987919e80e",
+          "title": "Safety overview: GPT-6 Astra",
+          "normalized_url": "https://openai.com/index/safety-overview-gpt-6-astra",
+          "url_hash": "39210f987919e80e66f6bbb1aa542144273fd98d678c04dcbe26ae133654195a",
+          "suggested_doc_key": "2026-09-safety-overview-gpt-6-astra-39210f98",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-safety-overview-gpt-6-astra-39210f98.md",
+          "candidate_score": 46.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:325e9dcd840a97e9",
+          "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+          "normalized_url": "https://openai.com/index/playco-game-prototyping-with-astra",
+          "url_hash": "325e9dcd840a97e90ffb7c6d895af29ce36aa93bd90d00c36b3bf0be1def577e",
+          "suggested_doc_key": "2026-09-playco-cut-manual-fixes-50-prototyping-games-with-gpt-6-astra-325e9dcd",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-playco-cut-manual-fixes-50-prototyping-games-with-gpt-6-astra-325e9dcd.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:fc40ddafdd41e0cc",
+          "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+          "normalized_url": "https://openai.com/index/daybreak-for-frontline-defenders",
+          "url_hash": "fc40ddafdd41e0cc6b8e9f206273b63f31eac9928f23628f7fa12ba2cbcd62f3",
+          "suggested_doc_key": "2026-09-daybreak-for-frontline-defenders-1b-to-protect-essential-services-fc40ddaf",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-daybreak-for-frontline-defenders-1b-to-protect-essential-services-fc40ddaf.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:9281d6906e8350b6",
+          "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+          "normalized_url": "https://openai.com/index/legora-financial-statement-review-with-astra",
+          "url_hash": "9281d6906e8350b6fb5c6bd18ae05f4165747246556cded5f72137db99dfe912",
+          "suggested_doc_key": "2026-09-legora-reviewed-41-documents-in-minutes-with-gpt-6-astra-9281d690",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-legora-reviewed-41-documents-in-minutes-with-gpt-6-astra-9281d690.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 46
+      }
+    }
+  ]
+}
