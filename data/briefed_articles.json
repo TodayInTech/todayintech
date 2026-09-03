@@ -7220,6 +7220,116 @@
       "status": "published",
       "briefed_at": "2026-09-02T23:50:42.061881Z",
       "candidate_score": 35.0
+    },
+    "c24e45e869c7b353ed209f04ffb04c9eff75167c9d6d4abbb5320d4327573b61": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once",
+      "title_fingerprint": "github copilot app for beginners run several agents at once",
+      "service_key": "github-blog",
+      "title": "GitHub Copilot app for Beginners: Run several agents at once",
+      "article_doc_path": "docs/services/github-blog/2026-09-github-copilot-app-for-beginners-run-several-agents-at-once-c24e45e8.md",
+      "status": "published",
+      "briefed_at": "2026-09-03T23:49:41.164278Z",
+      "candidate_score": 42.0
+    },
+    "68697d8b4a8e1c1514e1cf248e0a6deb99ecfb443872f8c842a68c6658d35b90": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3",
+      "title_fingerprint": "introducing weathernext 3 our most advanced and accurate global weather ai model",
+      "service_key": "google-blog",
+      "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+      "article_doc_path": "docs/services/google-blog/2026-09-introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-68697d8b.md",
+      "status": "published",
+      "briefed_at": "2026-09-03T23:49:41.164328Z",
+      "candidate_score": 40.0
+    },
+    "bca1cbd37150b6b4ae8b9caca4f0dd9689cba865bd0a9ead415f6014b5a1e053": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/research/male-fruit-fly-brain-map",
+      "title_fingerprint": "5 amazing visuals show how the male fruit fly s brain map is advancing neuroscience",
+      "service_key": "google-blog",
+      "title": "5 amazing visuals show how the male fruit fly’s brain map is advancing neuroscience",
+      "article_doc_path": "docs/services/google-blog/2026-09-5-amazing-visuals-show-how-the-male-fruit-fly-s-brain-map-is-advancing-n-bca1cbd3.md",
+      "status": "published",
+      "briefed_at": "2026-09-03T23:49:41.164341Z",
+      "candidate_score": 36.0
+    },
+    "039a4975e102cb538c368495a2e6d022853c448b8779c7d611c9069b00b28b50": {
+      "normalized_url": "https://openai.com/index/gpt-6-astra",
+      "title_fingerprint": "gpt 6 astra",
+      "service_key": "hacker-news",
+      "title": "GPT-6 Astra",
+      "article_doc_path": "docs/services/hacker-news/2026-09-gpt-6-astra-039a4975.md",
+      "status": "published",
+      "briefed_at": "2026-09-03T23:49:41.164349Z",
+      "candidate_score": 68.0
+    },
+    "45a86641ba677818c6954669d5532e3a9ec463c98b0f045b61d9c93ef2fef58c": {
+      "normalized_url": "https://inference-docs.cerebras.ai/models/overview",
+      "title_fingerprint": "qwen 3 8 27b available on cerebras at 1500 tokens s",
+      "service_key": "hacker-news",
+      "title": "Qwen 3.8 27B available on Cerebras at 1500 tokens/s",
+      "article_doc_path": "docs/services/hacker-news/2026-09-qwen-3-8-27b-available-on-cerebras-at-1500-tokens-s-45a86641.md",
+      "status": "published",
+      "briefed_at": "2026-09-03T23:49:41.164358Z",
+      "candidate_score": 67.0
+    },
+    "2649e5d991b83e5a936d81cb09b28c9a88c8f5b9e7b4d5926a8a595c0387c68b": {
+      "normalized_url": "https://ifm.ai/blog/k2",
+      "title_fingerprint": "k2 horizon a connected fleet of six open models",
+      "service_key": "hacker-news",
+      "title": "K2 Horizon: A connected fleet of six open models",
+      "article_doc_path": "docs/services/hacker-news/2026-09-k2-horizon-a-connected-fleet-of-six-open-models-2649e5d9.md",
+      "status": "published",
+      "briefed_at": "2026-09-03T23:49:41.164366Z",
+      "candidate_score": 65.0
+    },
+    "b9197b873957814ae012ee50c39256886d26f5999c21c392d5f6d517e75fd53d": {
+      "normalized_url": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0",
+      "title_fingerprint": "audacity 4 0",
+      "service_key": "hacker-news",
+      "title": "Audacity 4.0",
+      "article_doc_path": "docs/services/hacker-news/2026-09-audacity-4-0-b9197b87.md",
+      "status": "published",
+      "briefed_at": "2026-09-03T23:49:41.164373Z",
+      "candidate_score": 65.0
+    },
+    "39210f987919e80e66f6bbb1aa542144273fd98d678c04dcbe26ae133654195a": {
+      "normalized_url": "https://openai.com/index/safety-overview-gpt-6-astra",
+      "title_fingerprint": "safety overview gpt 6 astra",
+      "service_key": "openai-blog",
+      "title": "Safety overview: GPT-6 Astra",
+      "article_doc_path": "docs/services/openai-blog/2026-09-safety-overview-gpt-6-astra-39210f98.md",
+      "status": "published",
+      "briefed_at": "2026-09-03T23:49:41.164380Z",
+      "candidate_score": 46.0
+    },
+    "325e9dcd840a97e90ffb7c6d895af29ce36aa93bd90d00c36b3bf0be1def577e": {
+      "normalized_url": "https://openai.com/index/playco-game-prototyping-with-astra",
+      "title_fingerprint": "playco cut manual fixes 50 prototyping games with gpt 6 astra",
+      "service_key": "openai-blog",
+      "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+      "article_doc_path": "docs/services/openai-blog/2026-09-playco-cut-manual-fixes-50-prototyping-games-with-gpt-6-astra-325e9dcd.md",
+      "status": "published",
+      "briefed_at": "2026-09-03T23:49:41.164387Z",
+      "candidate_score": 42.0
+    },
+    "fc40ddafdd41e0cc6b8e9f206273b63f31eac9928f23628f7fa12ba2cbcd62f3": {
+      "normalized_url": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "title_fingerprint": "daybreak for frontline defenders 1b to protect essential services",
+      "service_key": "openai-blog",
+      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "article_doc_path": "docs/services/openai-blog/2026-09-daybreak-for-frontline-defenders-1b-to-protect-essential-services-fc40ddaf.md",
+      "status": "published",
+      "briefed_at": "2026-09-03T23:49:41.164395Z",
+      "candidate_score": 39.0
+    },
+    "9281d6906e8350b6fb5c6bd18ae05f4165747246556cded5f72137db99dfe912": {
+      "normalized_url": "https://openai.com/index/legora-financial-statement-review-with-astra",
+      "title_fingerprint": "legora reviewed 41 documents in minutes with gpt 6 astra",
+      "service_key": "openai-blog",
+      "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+      "article_doc_path": "docs/services/openai-blog/2026-09-legora-reviewed-41-documents-in-minutes-with-gpt-6-astra-9281d690.md",
+      "status": "published",
+      "briefed_at": "2026-09-03T23:49:41.164402Z",
+      "candidate_score": 38.0
     }
   }
 }
