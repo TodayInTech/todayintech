@@ -7330,6 +7330,46 @@
       "status": "published",
       "briefed_at": "2026-09-03T23:49:41.164402Z",
       "candidate_score": 38.0
+    },
+    "f392024c58b83aecceb9b2abd448a1648755664aaba247b26a67ac431496d7be": {
+      "normalized_url": "https://opentrailpaper.com/",
+      "title_fingerprint": "show hn open source eink bike computer",
+      "service_key": "hacker-news",
+      "title": "Show HN: Open-Source eInk Bike Computer",
+      "article_doc_path": "docs/services/hacker-news/2026-09-show-hn-open-source-eink-bike-computer-f392024c.md",
+      "status": "published",
+      "briefed_at": "2026-09-04T23:40:03.497339Z",
+      "candidate_score": 64.2
+    },
+    "fd4e0b99ad94043355ab70395e800c316c5684b758e792cac2bb9eaf5eb9d77b": {
+      "normalized_url": "https://mullvad.net/en/blog/shutting-down-our-public-encrypted-dns-servers-and-sponsoring-quad9-instead",
+      "title_fingerprint": "shutting down our public encrypted dns",
+      "service_key": "hacker-news",
+      "title": "Shutting down our public encrypted DNS",
+      "article_doc_path": "docs/services/hacker-news/2026-09-shutting-down-our-public-encrypted-dns-fd4e0b99.md",
+      "status": "published",
+      "briefed_at": "2026-09-04T23:40:03.497378Z",
+      "candidate_score": 60.0
+    },
+    "e94fc2f0f03f56919cc939f7144edb3c0e89f5cdc2a59702ac4a99ca77e8cddd": {
+      "normalized_url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "title_fingerprint": "formalizing fermat s last theorem",
+      "service_key": "hacker-news",
+      "title": "Formalizing Fermat's Last Theorem",
+      "article_doc_path": "docs/services/hacker-news/2026-09-formalizing-fermat-s-last-theorem-e94fc2f0.md",
+      "status": "published",
+      "briefed_at": "2026-09-04T23:40:03.497392Z",
+      "candidate_score": 60.0
+    },
+    "04b138db4b8f3d2400c28f044b35db1e5183033c2c84737a26c0292c3f766c97": {
+      "normalized_url": "https://torrentfreak.com/adult-film-producer-unmasks-prolific-john-doe-torrent-pirate-as-meta-executive",
+      "title_fingerprint": "adult film producer unmasks prolific john doe torrent pirate as meta executive",
+      "service_key": "hacker-news",
+      "title": "Adult Film Producer Unmasks Prolific 'John DOE' Torrent Pirate as Meta Executive",
+      "article_doc_path": "docs/services/hacker-news/2026-09-adult-film-producer-unmasks-prolific-john-doe-torrent-pirate-as-meta-exe-04b138db.md",
+      "status": "published",
+      "briefed_at": "2026-09-04T23:40:03.497400Z",
+      "candidate_score": 60.0
     }
   }
 }
