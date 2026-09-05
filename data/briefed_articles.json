@@ -7370,6 +7370,56 @@
       "status": "published",
       "briefed_at": "2026-09-04T23:40:03.497400Z",
       "candidate_score": 60.0
+    },
+    "2ff277e441a4b0dab8ec201e1929a29ce4861d79fb1666b6c6ef5ad394fbb2c2": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+      "title_fingerprint": "project hydrafusion frontier quality via multi model orchestration",
+      "service_key": "github-blog",
+      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+      "article_doc_path": "docs/services/github-blog/2026-09-project-hydrafusion-frontier-quality-via-multi-model-orchestration-2ff277e4.md",
+      "status": "published",
+      "briefed_at": "2026-09-05T23:31:54.375470Z",
+      "candidate_score": 42.0
+    },
+    "630bf109ed96599c4aebb0a385574d44b2fdc12f4d78f1a412292ae4e7746f20": {
+      "normalized_url": "https://www.space.com/space-exploration/launches-spacecraft/isar-aerospace-second-launch-norway-andoya-spaceport-spectrum-rocket",
+      "title_fingerprint": "private german rocket makes history reaches orbit from european soil",
+      "service_key": "hacker-news",
+      "title": "Private German rocket makes history, reaches orbit from European soil",
+      "article_doc_path": "docs/services/hacker-news/2026-09-private-german-rocket-makes-history-reaches-orbit-from-european-soil-630bf109.md",
+      "status": "published",
+      "briefed_at": "2026-09-05T23:31:54.375509Z",
+      "candidate_score": 68.0
+    },
+    "e729b86c6ea8dabd73235e26a66c8dc3f2adbf553d937ce0d19e306be30a61fd": {
+      "normalized_url": "https://devquasar.com/hardware/the-60-gaming-pc-amd-bc-250",
+      "title_fingerprint": "the 60 gaming pc amd bc 250 2025",
+      "service_key": "hacker-news",
+      "title": "The \"$60 Gaming PC\" – AMD BC-250 (2025)",
+      "article_doc_path": "docs/services/hacker-news/2026-09-the-60-gaming-pc-amd-bc-250-2025-e729b86c.md",
+      "status": "published",
+      "briefed_at": "2026-09-05T23:31:54.375525Z",
+      "candidate_score": 60.0
+    },
+    "b64c6129c35952aa4bc83dfc9c63acb04f88965f910e14d69156a84cb68a0036": {
+      "normalized_url": "https://codeberg.org/mv12star/shitter/wiki/Instances",
+      "title_fingerprint": "nitter has more working instances than before the takedowns",
+      "service_key": "hacker-news",
+      "title": "Nitter has more working instances than before the takedowns",
+      "article_doc_path": "docs/services/hacker-news/2026-09-nitter-has-more-working-instances-than-before-the-takedowns-b64c6129.md",
+      "status": "published",
+      "briefed_at": "2026-09-05T23:31:54.375534Z",
+      "candidate_score": 60.0
+    },
+    "6a5cb4a438703700161c78b8f9eeef37719efc17cb5d4e9a586b7dc75966640c": {
+      "normalized_url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
+      "title_fingerprint": "actively exploited sandbox rce in all chromium versions",
+      "service_key": "hacker-news",
+      "title": "Actively exploited sandbox RCE in all Chromium versions",
+      "article_doc_path": "docs/services/hacker-news/2026-09-actively-exploited-sandbox-rce-in-all-chromium-versions-6a5cb4a4.md",
+      "status": "published",
+      "briefed_at": "2026-09-05T23:31:54.375542Z",
+      "candidate_score": 60.0
     }
   }
 }
