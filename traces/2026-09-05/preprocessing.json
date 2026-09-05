@@ -1,0 +1,238 @@
+{
+  "generated_at": "2026-09-05T23:30:17.647779+00:00",
+  "generated_for": "2026-09-05",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "a262d7c96204bdffb335ee7360c7873f3bc3bb7e",
+  "github_run_id": "33998787308",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 21,
+      "excluded_count": 99,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 99
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 21,
+      "output_count": 21,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 21,
+      "output_count": 21,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 21,
+      "output_count": 11,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:2ff277e441a4b0da",
+          "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+          "url_hash": "2ff277e441a4b0dab8ec201e1929a29ce4861d79fb1666b6c6ef5ad394fbb2c2",
+          "suggested_doc_key": "2026-09-project-hydrafusion-frontier-quality-via-multi-model-orchestration-2ff277e4",
+          "suggested_article_path": "docs/services/github-blog/2026-09-project-hydrafusion-frontier-quality-via-multi-model-orchestration-2ff277e4.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:630bf109ed96599c",
+          "title": "Private German rocket makes history, reaches orbit from European soil",
+          "normalized_url": "https://www.space.com/space-exploration/launches-spacecraft/isar-aerospace-second-launch-norway-andoya-spaceport-spectrum-rocket",
+          "url_hash": "630bf109ed96599c4aebb0a385574d44b2fdc12f4d78f1a412292ae4e7746f20",
+          "suggested_doc_key": "2026-09-private-german-rocket-makes-history-reaches-orbit-from-european-soil-630bf109",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-private-german-rocket-makes-history-reaches-orbit-from-european-soil-630bf109.md",
+          "candidate_score": 68.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 255점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 121개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e729b86c6ea8dabd",
+          "title": "The \"$60 Gaming PC\" – AMD BC-250 (2025)",
+          "normalized_url": "https://devquasar.com/hardware/the-60-gaming-pc-amd-bc-250",
+          "url_hash": "e729b86c6ea8dabd73235e26a66c8dc3f2adbf553d937ce0d19e306be30a61fd",
+          "suggested_doc_key": "2026-09-the-60-gaming-pc-amd-bc-250-2025-e729b86c",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-the-60-gaming-pc-amd-bc-250-2025-e729b86c.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 254점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 76개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b64c6129c35952aa",
+          "title": "Nitter has more working instances than before the takedowns",
+          "normalized_url": "https://codeberg.org/mv12star/shitter/wiki/Instances",
+          "url_hash": "b64c6129c35952aa4bc83dfc9c63acb04f88965f910e14d69156a84cb68a0036",
+          "suggested_doc_key": "2026-09-nitter-has-more-working-instances-than-before-the-takedowns-b64c6129",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-nitter-has-more-working-instances-than-before-the-takedowns-b64c6129.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 601점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 285개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6a5cb4a438703700",
+          "title": "Actively exploited sandbox RCE in all Chromium versions",
+          "normalized_url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
+          "url_hash": "6a5cb4a438703700161c78b8f9eeef37719efc17cb5d4e9a586b7dc75966640c",
+          "suggested_doc_key": "2026-09-actively-exploited-sandbox-rce-in-all-chromium-versions-6a5cb4a4",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-actively-exploited-sandbox-rce-in-all-chromium-versions-6a5cb4a4.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 733점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 433개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5553f4409f200ed4",
+          "title": "Statichost.eu – European static site hosting",
+          "normalized_url": "https://www.statichost.eu/",
+          "url_hash": "5553f4409f200ed4fd30873c58dffd52c777d1953b8ebf15570bba075e93141c",
+          "suggested_doc_key": "2026-09-statichost-eu-european-static-site-hosting-5553f440",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-statichost-eu-european-static-site-hosting-5553f440.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 436점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 199개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 50
+      }
+    }
+  ]
+}
