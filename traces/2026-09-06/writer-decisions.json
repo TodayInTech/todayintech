@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-09-06T23:25:52.404711+00:00",
+  "generated_for": "2026-09-06",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "81be4f333c369177240e27151730930059ae86cf",
+  "github_run_id": "34066761521",
+  "decision_count": 4,
+  "decision_counts": {
+    "published": 4
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:742806d6d415fe0c",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Nitter and XCancel resume service after legal advice",
+      "normalized_url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
+      "article_doc_path": "docs/services/hacker-news/2026-09-nitter-and-xcancel-resume-service-after-legal-advice-742806d6.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "오픈소스·프라이버시",
+      "importance_level": "중간",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "레포지토리 커밋으로 직접 공지된 법적 대응(cease and desist) 사실과 그에 대한 프로젝트의 공식 업데이트(법률 자문 후 서비스 지속 결정)가 근거로 명확히 확인되며, Nitter의 기술적 성격(프라이버시 중심의 오픈소스 트위터 프론트엔드, 비자바스크립트·백엔드 경유 요청·비공식 API 사용 등)과 라이선스·로드맵 정보가 함께 제공되어 기술 독자에게 유의미한 맥락을 전달하므로 게시 가치가 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:e0f75446731d598c",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "An Alien Mind",
+      "normalized_url": "https://openai.com/index/an-alien-mind",
+      "article_doc_path": "docs/services/hacker-news/2026-09-an-alien-mind-e0f75446.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI / OpenAI",
+      "importance_level": "High",
+      "confidence_score": 0.45,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터상 OpenAI 원문과 Hacker News에서의 높은 참여(291점, 243댓글)가 확인되어 기술 독자 관심이 클 것으로 판단됩니다. 다만 본문 근거가 없어 본문 내용은 원문 확인을 권고합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title",
+        "source_url",
+        "authors",
+        "published_at",
+        "feed_summary",
+        "metadata.hn_points",
+        "metadata.hn_comments",
+        "metadata.hn_comments_url"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:55ccd427fe2d4a60",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "A/I shuts down – Stay human",
+      "normalized_url": "https://keepitfree.ai/announcements/a/i-shuts-down-stay-human",
+      "article_doc_path": "docs/services/hacker-news/2026-09-a-i-shuts-down-stay-human-55ccd427.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "디지털 권리·프라이버시",
+      "importance_level": "높음",
+      "confidence_score": 0.93,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "오랫동안 무료·프라이버시 지향 인프라를 운영해온 Autistici/Inventati 집단이 '글로벌 테러 조직'으로 지목된 상황에서 사용자와 커뮤니티의 안전을 이유로 서비스를 중단한다고 직접 발표했습니다. 이는 보안·프라이버시 도구에 의존하는 기술 사용자와 인프라에 즉각적 영향을 미치므로 기술 독자에게 중요한 소식입니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:ddcc8f15d68afac8",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Asahi Linux on M3",
+      "normalized_url": "https://asahilinux.org/2026/09/m2-episode-1",
+      "article_doc_path": "docs/services/hacker-news/2026-09-asahi-linux-on-m3-ddcc8f15.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "오픈소스/운영체제",
+      "importance_level": "높음",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Asahi Linux의 M3 시리즈 정식 지원 병합 소식은 기술적으로 의미가 크고 설치 절차·제한사항(Expert 모드, 수면·HDMI 문제, M3 Ultra 미지원)과 하드웨어 기능(웹캠, 오디오, USB 10Gb/s, AV1 디코딩 등)을 구체적으로 제시해 실무적 가치가 높음.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    }
+  ]
+}
