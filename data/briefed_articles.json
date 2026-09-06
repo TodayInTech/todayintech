@@ -7420,6 +7420,46 @@
       "status": "published",
       "briefed_at": "2026-09-05T23:31:54.375542Z",
       "candidate_score": 60.0
+    },
+    "742806d6d415fe0c893d30ea4bcbabf084c6fcf88973629bf3c8c03b727807db": {
+      "normalized_url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
+      "title_fingerprint": "nitter and xcancel resume service after legal advice",
+      "service_key": "hacker-news",
+      "title": "Nitter and XCancel resume service after legal advice",
+      "article_doc_path": "docs/services/hacker-news/2026-09-nitter-and-xcancel-resume-service-after-legal-advice-742806d6.md",
+      "status": "published",
+      "briefed_at": "2026-09-06T23:25:52.195715Z",
+      "candidate_score": 60.0
+    },
+    "e0f75446731d598ce3aa65499f449c5b7555321e70d85cabfdb7b6f4f8659ba0": {
+      "normalized_url": "https://openai.com/index/an-alien-mind",
+      "title_fingerprint": "an alien mind",
+      "service_key": "hacker-news",
+      "title": "An Alien Mind",
+      "article_doc_path": "docs/services/hacker-news/2026-09-an-alien-mind-e0f75446.md",
+      "status": "published",
+      "briefed_at": "2026-09-06T23:25:52.195753Z",
+      "candidate_score": 60.0
+    },
+    "55ccd427fe2d4a6039d6c3581f03e099eeb688e59a009726da398f587cb7058c": {
+      "normalized_url": "https://keepitfree.ai/announcements/a/i-shuts-down-stay-human",
+      "title_fingerprint": "a i shuts down stay human",
+      "service_key": "hacker-news",
+      "title": "A/I shuts down – Stay human",
+      "article_doc_path": "docs/services/hacker-news/2026-09-a-i-shuts-down-stay-human-55ccd427.md",
+      "status": "published",
+      "briefed_at": "2026-09-06T23:25:52.195768Z",
+      "candidate_score": 60.0
+    },
+    "ddcc8f15d68afac848396115a5a0dc433093446ea972759c7654d93f966f5bdb": {
+      "normalized_url": "https://asahilinux.org/2026/09/m2-episode-1",
+      "title_fingerprint": "asahi linux on m3",
+      "service_key": "hacker-news",
+      "title": "Asahi Linux on M3",
+      "article_doc_path": "docs/services/hacker-news/2026-09-asahi-linux-on-m3-ddcc8f15.md",
+      "status": "published",
+      "briefed_at": "2026-09-06T23:25:52.195777Z",
+      "candidate_score": 60.0
     }
   }
 }
