@@ -7460,6 +7460,86 @@
       "status": "published",
       "briefed_at": "2026-09-06T23:25:52.195777Z",
       "candidate_score": 60.0
+    },
+    "1908c6027b69920ed9da5ae6ad7e78b8f83fb8cc5eb6a20c5835c862f2a69650": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/contrail-avoidance-ultra-long-haul-flights",
+      "title_fingerprint": "our new contrail avoidance trial in asia pacific",
+      "service_key": "google-blog",
+      "title": "Our new contrail avoidance trial in Asia-Pacific",
+      "article_doc_path": "docs/services/google-blog/2026-09-our-new-contrail-avoidance-trial-in-asia-pacific-1908c602.md",
+      "status": "published",
+      "briefed_at": "2026-09-07T23:57:22.220473Z",
+      "candidate_score": 36.0
+    },
+    "cd9518f111ea5ff15e0f72beedb9de6de51c6a0598ac4d31fe96450d0df08991": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ai-planet-accelerator-apac",
+      "title_fingerprint": "backing 16 green ai projects in asia pacific",
+      "service_key": "google-blog",
+      "title": "Backing 16 green AI projects in Asia-Pacific",
+      "article_doc_path": "docs/services/google-blog/2026-09-backing-16-green-ai-projects-in-asia-pacific-cd9518f1.md",
+      "status": "published",
+      "briefed_at": "2026-09-07T23:57:22.220520Z",
+      "candidate_score": 35.0
+    },
+    "f65bd5f6dff1b20888a7428689adb62d86f87788720ef713002fc74f37486ed3": {
+      "normalized_url": "https://github.com/iczelia/bzip3",
+      "title_fingerprint": "bzip3",
+      "service_key": "hacker-news",
+      "title": "bzip3",
+      "article_doc_path": "docs/services/hacker-news/2026-09-bzip3-f65bd5f6.md",
+      "status": "published",
+      "briefed_at": "2026-09-07T23:57:22.220532Z",
+      "candidate_score": 63.0
+    },
+    "8493d613fc03cf2654aaf80a6dabdf1d1d4192406487874ecc2710cd2cdd114d": {
+      "normalized_url": "https://lax-skyline.parcelscope.net/",
+      "title_fingerprint": "watch los angeles get built one building at a time 1880 2026",
+      "service_key": "hacker-news",
+      "title": "Watch Los Angeles get built, one building at a time (1880–2026)",
+      "article_doc_path": "docs/services/hacker-news/2026-09-watch-los-angeles-get-built-one-building-at-a-time-1880-2026-8493d613.md",
+      "status": "published",
+      "briefed_at": "2026-09-07T23:57:22.220541Z",
+      "candidate_score": 62.5
+    },
+    "21315ed80f398c9ab3baf8fe2178beb3d4a59c9724c6d10d3494ec3ccf33ff1a": {
+      "normalized_url": "https://mathathonchallenge.com/index.html",
+      "title_fingerprint": "caltech mathathon first hackathon ever devoted to research level mathematics",
+      "service_key": "hacker-news",
+      "title": "Caltech Mathathon – first hackathon ever devoted to research level mathematics",
+      "article_doc_path": "docs/services/hacker-news/2026-09-caltech-mathathon-first-hackathon-ever-devoted-to-research-level-mathema-21315ed8.md",
+      "status": "published",
+      "briefed_at": "2026-09-07T23:57:22.220549Z",
+      "candidate_score": 62.0
+    },
+    "eaf3a16a915781a664083cf107b9cf5604772c32c48a5d74b5437e655b9dd874": {
+      "normalized_url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september",
+      "title_fingerprint": "keep our servers running",
+      "service_key": "hacker-news",
+      "title": "Keep Our Servers Running",
+      "article_doc_path": "docs/services/hacker-news/2026-09-keep-our-servers-running-eaf3a16a.md",
+      "status": "published",
+      "briefed_at": "2026-09-07T23:57:22.220563Z",
+      "candidate_score": 60.0
+    },
+    "3784d7aba9718af9aa1923cc7e21d6332b37aba7cf0db2607f02e2b6f30a7e79": {
+      "normalized_url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "title_fingerprint": "research acceleration the view inside openai",
+      "service_key": "openai-blog",
+      "title": "Research acceleration: The view inside OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-09-research-acceleration-the-view-inside-openai-3784d7ab.md",
+      "status": "published",
+      "briefed_at": "2026-09-07T23:57:22.220570Z",
+      "candidate_score": 47.0
+    },
+    "073b13b14ae0138b1424f5cc2e744960df78c0d7dd4268101cf3c123a809ae5f": {
+      "normalized_url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "title_fingerprint": "supporting independent journalism in ukraine",
+      "service_key": "openai-blog",
+      "title": "Supporting independent journalism in Ukraine",
+      "article_doc_path": "docs/services/openai-blog/2026-09-supporting-independent-journalism-in-ukraine-073b13b1.md",
+      "status": "published",
+      "briefed_at": "2026-09-07T23:57:22.220578Z",
+      "candidate_score": 44.0
     }
   }
 }
