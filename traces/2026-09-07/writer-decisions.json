@@ -1,0 +1,200 @@
+{
+  "generated_at": "2026-09-07T23:57:22.401006+00:00",
+  "generated_for": "2026-09-07",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "0df09e44e931205ad4b712cf96dd903db8d514e7",
+  "github_run_id": "34171520132",
+  "decision_count": 8,
+  "decision_counts": {
+    "published": 8
+  },
+  "decisions": [
+    {
+      "candidate_id": "google-blog:1908c6027b69920e",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "title": "Our new contrail avoidance trial in Asia-Pacific",
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/contrail-avoidance-ultra-long-haul-flights",
+      "article_doc_path": "docs/services/google-blog/2026-09-our-new-contrail-avoidance-trial-in-asia-pacific-1908c602.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "기후·항공·AI",
+      "importance_level": "높음",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "실제 운영 시험 데이터(80회 이상 파일럿 운항, 약 40% 추정 온난화 영향 저감)와 항공사 파트너십 확대(캐세이퍼시픽, 아시아·태평양 대상), AI·위성·기상정보 결합을 통한 실무 적용 등 기술적·운영적 의미가 분명하여 기술 독자에게 유용함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 36.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "google-blog:cd9518f111ea5ff1",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "title": "Backing 16 green AI projects in Asia-Pacific",
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ai-planet-accelerator-apac",
+      "article_doc_path": "docs/services/google-blog/2026-09-backing-16-green-ai-projects-in-asia-pacific-cd9518f1.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI & Sustainability (APAC)",
+      "importance_level": "High",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "구글 딥마인드의 APAC 대상 가속기 프로그램이 16개 프로젝트를 선정해 구체적 사례와 기술 적용 영역(원격탐사, 바이오어쿠스틱스, Geo-AI, 에이전트형 최적화 등)을 제시하고 있으며, 참가팀에 최신 구글 AI 스택 및 멘토링을 제공하는 등 기술적·실무적 의의가 분명해 기술 독자에게 유용한 정보라고 판단됨.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 35.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:f65bd5f6dff1b208",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "bzip3",
+      "normalized_url": "https://github.com/iczelia/bzip3",
+      "article_doc_path": "docs/services/hacker-news/2026-09-bzip3-f65bd5f6.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "오픈소스",
+      "importance_level": "높음",
+      "confidence_score": 0.67,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "Hacker News에서의 높은 반응(HN 포인트 364, 댓글 104)과 공개 GitHub 저장소라는 점에서 기술 독자의 관심을 끌 가능성이 높아 게시할 가치가 있다고 판단했습니다. 다만 제공된 정보만으로는 프로젝트의 구체적 기능·성능을 확인할 수 없어 본문에서는 그 한계를 명확히 밝혔습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: bzip3",
+        "source_url: https://github.com/iczelia/bzip3",
+        "service_name: Hacker News",
+        "hn_points: 364",
+        "hn_comments: 104",
+        "rss_rank: 7",
+        "published_at: 2026-09-07T13:35:13+00:00",
+        "feed_summary: Article URL and HN metadata"
+      ],
+      "candidate_score": 63.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:8493d613fc03cf26",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Watch Los Angeles get built, one building at a time (1880–2026)",
+      "normalized_url": "https://lax-skyline.parcelscope.net/",
+      "article_doc_path": "docs/services/hacker-news/2026-09-watch-los-angeles-get-built-one-building-at-a-time-1880-2026-8493d613.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "데이터 시각화 / 도시 분석",
+      "importance_level": "중간",
+      "confidence_score": 0.78,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "인터랙티브 3D 시각화와 근거 데이터(LARIAC 2020·LA County Assessor)를 기반으로 로스앤젤레스의 현존 건축 물리적 변화를 시간축으로 보여주며, 도시 연구자·GIS 실무자에게 유용한 관찰 가치를 제공함. 시각화의 작동 방식과 제한점이 근거에 명확히 드러나 있어 기술적 독자에게 유의미함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 62.5,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:21315ed80f398c9a",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Caltech Mathathon – first hackathon ever devoted to research level mathematics",
+      "normalized_url": "https://mathathonchallenge.com/index.html",
+      "article_doc_path": "docs/services/hacker-news/2026-09-caltech-mathathon-first-hackathon-ever-devoted-to-research-level-mathema-21315ed8.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "events",
+      "importance_level": "High",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "캘리포니아공과대학에서 연구 수준의 수학을 주제로 한 최초의 해커톤 개최는 AI와 순수수학의 교차점에서 실질적 실험이자 토론을 촉발할 사건으로 보입니다. 주최 측이 제시한 구체적 내용(40시간, 100개 팀, $2M+ AI 크레딧, 공개된 최근 AI 수학 성과 인용, 전문가 심사와 커뮤니티 검증을 통한 2차 시상 등)은 기술 독자에게 의미 있는 맥락을 제공합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 62.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:eaf3a16a915781a6",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Keep Our Servers Running",
+      "normalized_url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september",
+      "article_doc_path": "docs/services/hacker-news/2026-09-keep-our-servers-running-eaf3a16a.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Internet Archive / 디지털 보존",
+      "importance_level": "medium",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 근거가 캠페인의 목적, 기술 인프라 필요성, 매칭 기부 조건(3배 매칭)과 구체적 금액 예시를 명확히 담고 있어 기술 독자에게 유의미한 요약을 제공할 수 있습니다. Hacker News에서의 반응도(포인트·댓글)가 높아 독자 관심도도 입증됩니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:3784d7aba9718af9",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Research acceleration: The view inside OpenAI",
+      "normalized_url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "article_doc_path": "docs/services/openai-blog/2026-09-research-acceleration-the-view-inside-openai-3784d7ab.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Research",
+      "importance_level": "Medium",
+      "confidence_score": 0.45,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터로 확인되는 주제가 AI 연구의 워크플로 변화와 연구 가속화라는 기술적 관심을 불러일으키므로 기술 독자에게 유용한 맥락을 제공한다고 판단했습니다. 원문 전문 확인이 권장되나 제공된 요약만으로도 브리핑 가치가 있어 게시합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "candidate_id: openai-blog:3784d7aba9718af9",
+        "service_name: OpenAI Blog",
+        "title: Research acceleration: The view inside OpenAI",
+        "feed_summary: Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+        "published_at: 2026-09-06T08:00:00+00:00",
+        "source_url: https://openai.com/index/research-acceleration-view-inside-openai",
+        "metadata.rss_rank: 3"
+      ],
+      "candidate_score": 47.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:073b13b14ae0138b",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Supporting independent journalism in Ukraine",
+      "normalized_url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "article_doc_path": "docs/services/openai-blog/2026-09-supporting-independent-journalism-in-ukraine-073b13b1.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Global Affairs",
+      "importance_level": "Medium",
+      "confidence_score": 0.72,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 OpenAI가 AIRPPU 및 WAN-IFRA와 함께 우크라이나 독립언론 지원을 위한 AI 프로그램을 시작했다는 내용이 명시되어 있어 기술적·정책적 함의를 가진 주제로 Today in Tech 독자에게 유용하다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Supporting independent journalism in Ukraine",
+        "feed_summary",
+        "source_url",
+        "published_at",
+        "service_name: OpenAI Blog"
+      ],
+      "candidate_score": 44.0,
+      "error_message": null
+    }
+  ]
+}

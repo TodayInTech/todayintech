@@ -1,0 +1,281 @@
+{
+  "generated_at": "2026-09-07T23:54:27.677072+00:00",
+  "generated_for": "2026-09-07",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "0df09e44e931205ad4b712cf96dd903db8d514e7",
+  "github_run_id": "34171520132",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 14,
+  "excluded_count": 106,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 24,
+      "excluded_count": 96,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 96
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 24,
+      "output_count": 14,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:1908c6027b69920e",
+          "title": "Our new contrail avoidance trial in Asia-Pacific",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/contrail-avoidance-ultra-long-haul-flights",
+          "url_hash": "1908c6027b69920ed9da5ae6ad7e78b8f83fb8cc5eb6a20c5835c862f2a69650",
+          "suggested_doc_key": "2026-09-our-new-contrail-avoidance-trial-in-asia-pacific-1908c602",
+          "suggested_article_path": "docs/services/google-blog/2026-09-our-new-contrail-avoidance-trial-in-asia-pacific-1908c602.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:cd9518f111ea5ff1",
+          "title": "Backing 16 green AI projects in Asia-Pacific",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ai-planet-accelerator-apac",
+          "url_hash": "cd9518f111ea5ff15e0f72beedb9de6de51c6a0598ac4d31fe96450d0df08991",
+          "suggested_doc_key": "2026-09-backing-16-green-ai-projects-in-asia-pacific-cd9518f1",
+          "suggested_article_path": "docs/services/google-blog/2026-09-backing-16-green-ai-projects-in-asia-pacific-cd9518f1.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:f65bd5f6dff1b208",
+          "title": "bzip3",
+          "normalized_url": "https://github.com/iczelia/bzip3",
+          "url_hash": "f65bd5f6dff1b20888a7428689adb62d86f87788720ef713002fc74f37486ed3",
+          "suggested_doc_key": "2026-09-bzip3-f65bd5f6",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-bzip3-f65bd5f6.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 364점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 104개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8493d613fc03cf26",
+          "title": "Watch Los Angeles get built, one building at a time (1880–2026)",
+          "normalized_url": "https://lax-skyline.parcelscope.net/",
+          "url_hash": "8493d613fc03cf2654aaf80a6dabdf1d1d4192406487874ecc2710cd2cdd114d",
+          "suggested_doc_key": "2026-09-watch-los-angeles-get-built-one-building-at-a-time-1880-2026-8493d613",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-watch-los-angeles-get-built-one-building-at-a-time-1880-2026-8493d613.md",
+          "candidate_score": 62.5,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 185점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 90개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:21315ed80f398c9a",
+          "title": "Caltech Mathathon – first hackathon ever devoted to research level mathematics",
+          "normalized_url": "https://mathathonchallenge.com/index.html",
+          "url_hash": "21315ed80f398c9ab3baf8fe2178beb3d4a59c9724c6d10d3494ec3ccf33ff1a",
+          "suggested_doc_key": "2026-09-caltech-mathathon-first-hackathon-ever-devoted-to-research-level-mathema-21315ed8",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-caltech-mathathon-first-hackathon-ever-devoted-to-research-level-mathema-21315ed8.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 215점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 76개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:eaf3a16a915781a6",
+          "title": "Keep Our Servers Running",
+          "normalized_url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september",
+          "url_hash": "eaf3a16a915781a664083cf107b9cf5604772c32c48a5d74b5437e655b9dd874",
+          "suggested_doc_key": "2026-09-keep-our-servers-running-eaf3a16a",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-keep-our-servers-running-eaf3a16a.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 938점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 244개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4421a36886f3fdb8",
+          "title": "216M Spy TVs – The LG Smart TV Problem [video]",
+          "normalized_url": "https://www.youtube.com/watch?v=6IFVTcM28KA",
+          "url_hash": "4421a36886f3fdb879605827cbff838e90a20ba05ceb10a473a86c3c43958807",
+          "suggested_doc_key": "2026-09-216m-spy-tvs-the-lg-smart-tv-problem-video-4421a368",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-216m-spy-tvs-the-lg-smart-tv-problem-video-4421a368.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 443점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 697개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 2,
+      "excluded_count": 48,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:3784d7aba9718af9",
+          "title": "Research acceleration: The view inside OpenAI",
+          "normalized_url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "url_hash": "3784d7aba9718af9aa1923cc7e21d6332b37aba7cf0db2607f02e2b6f30a7e79",
+          "suggested_doc_key": "2026-09-research-acceleration-the-view-inside-openai-3784d7ab",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-research-acceleration-the-view-inside-openai-3784d7ab.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:073b13b14ae0138b",
+          "title": "Supporting independent journalism in Ukraine",
+          "normalized_url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+          "url_hash": "073b13b14ae0138b1424f5cc2e744960df78c0d7dd4268101cf3c123a809ae5f",
+          "suggested_doc_key": "2026-09-supporting-independent-journalism-in-ukraine-073b13b1",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-supporting-independent-journalism-in-ukraine-073b13b1.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 48
+      }
+    }
+  ]
+}
