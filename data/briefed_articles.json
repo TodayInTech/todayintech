@@ -7540,6 +7540,126 @@
       "status": "published",
       "briefed_at": "2026-09-07T23:57:22.220578Z",
       "candidate_score": 44.0
+    },
+    "f42b1051076dff0e62ba7c3da7ac6de0c223416c7c8e4c70914ea6679a349999": {
+      "normalized_url": "https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025",
+      "title_fingerprint": "detecting and countering malicious uses of claude",
+      "service_key": "anthropic-blog",
+      "title": "Detecting and countering malicious uses of Claude",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-detecting-and-countering-malicious-uses-of-claude-f42b1051.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404349Z",
+      "candidate_score": 30.0
+    },
+    "4ba107b71a0707f9baebfbcb2e165c787cd79c38dabacaf90bbc8d6a1022d2f4": {
+      "normalized_url": "https://www.anthropic.com/news/disrupting-AI-espionage",
+      "title_fingerprint": "disrupting the first reported ai orchestrated cyber espionage campaign",
+      "service_key": "anthropic-blog",
+      "title": "Disrupting the first reported AI-orchestrated cyber espionage campaign",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-disrupting-the-first-reported-ai-orchestrated-cyber-espionage-campaign-4ba107b7.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404385Z",
+      "candidate_score": 30.0
+    },
+    "fdcaadbbe674abde249a0b796f9429345652f608ddf86c451b9f1354bb260992": {
+      "normalized_url": "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025",
+      "title_fingerprint": "detecting and countering misuse of ai august 2025",
+      "service_key": "anthropic-blog",
+      "title": "Detecting and countering misuse of AI: August 2025",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-detecting-and-countering-misuse-of-ai-august-2025-fdcaadbb.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404399Z",
+      "candidate_score": 30.0
+    },
+    "d3d38ded1c6032b4580b2d55fcf2ea72defa0ed32bf4cfbc14c6f1adbb322e39": {
+      "normalized_url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "title_fingerprint": "detecting and preventing distillation attacks",
+      "service_key": "anthropic-blog",
+      "title": "Detecting and preventing distillation attacks",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-detecting-and-preventing-distillation-attacks-d3d38ded.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404408Z",
+      "candidate_score": 26.0
+    },
+    "b4f131d2c0032d693234e85eaaa469b6a7686a2b11dab31ff2651054461418d9": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas",
+      "title_fingerprint": "google deepmind releases alphagenome atlas",
+      "service_key": "hacker-news",
+      "title": "Google DeepMind Releases AlphaGenome Atlas",
+      "article_doc_path": "docs/services/hacker-news/2026-09-google-deepmind-releases-alphagenome-atlas-b4f131d2.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404414Z",
+      "candidate_score": 70.0
+    },
+    "080cedd90d470c4db650f26c6f51826723573f79a410782e2f04da937dd8371f": {
+      "normalized_url": "https://ai.meta.com/muse",
+      "title_fingerprint": "muse meta s personal ai agent features and capabilities",
+      "service_key": "hacker-news",
+      "title": "Muse: Meta's personal AI agent, features and capabilities",
+      "article_doc_path": "docs/services/hacker-news/2026-09-muse-meta-s-personal-ai-agent-features-and-capabilities-080cedd9.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404419Z",
+      "candidate_score": 67.0
+    },
+    "7a1ea54dcb3d938389dd6a2fb79267bb5aa7838f6cc591be7dff7f85922560e3": {
+      "normalized_url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked",
+      "title_fingerprint": "benchmarking qwen3 8 27b quantizations 4 bit holds up 1 bit collapses",
+      "service_key": "hacker-news",
+      "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses",
+      "article_doc_path": "docs/services/hacker-news/2026-09-benchmarking-qwen3-8-27b-quantizations-4-bit-holds-up-1-bit-collapses-7a1ea54d.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404424Z",
+      "candidate_score": 65.0
+    },
+    "46f3c1d6124190bd41b81397d3ce3ed570d55a8c1b8799befb69f78070ce6b43": {
+      "normalized_url": "https://github.com/ayghri/i-have-adhd",
+      "title_fingerprint": "i have adhd a skill to stop coding agents from burying the answer",
+      "service_key": "hacker-news",
+      "title": "I-have-ADHD: A skill to stop coding agents from burying the answer",
+      "article_doc_path": "docs/services/hacker-news/2026-09-i-have-adhd-a-skill-to-stop-coding-agents-from-burying-the-answer-46f3c1d6.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404428Z",
+      "candidate_score": 65.0
+    },
+    "a1b72811dd254b5043b516f3ea7a8da4d179aec7a12b38de59f64e80e43d4193": {
+      "normalized_url": "https://openai.com/index/1password",
+      "title_fingerprint": "1password increases engineering productivity 21 with codex",
+      "service_key": "openai-blog",
+      "title": "1Password increases engineering productivity 21% with Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-09-1password-increases-engineering-productivity-21-with-codex-a1b72811.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404433Z",
+      "candidate_score": 43.0
+    },
+    "503e9c2326e78f3e54698b505fc7f3dd73547fa559154576a0082b0cd2cdb79c": {
+      "normalized_url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "title_fingerprint": "how gpt 5 6 sol helps run quantum computing experiments",
+      "service_key": "openai-blog",
+      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "article_doc_path": "docs/services/openai-blog/2026-09-how-gpt-5-6-sol-helps-run-quantum-computing-experiments-503e9c23.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404438Z",
+      "candidate_score": 39.0
+    },
+    "a00fc889a2dd293b42049381f3a99cbbead2f5c6d3c52e4e209b3057ea2e2a3b": {
+      "normalized_url": "https://openai.com/index/the-work-now-within-reach",
+      "title_fingerprint": "the work now within reach",
+      "service_key": "openai-blog",
+      "title": "The Work Now Within Reach",
+      "article_doc_path": "docs/services/openai-blog/2026-09-the-work-now-within-reach-a00fc889.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404442Z",
+      "candidate_score": 38.0
+    },
+    "1dcea8b0f8acab144d9449d9a882270327a9c7315cef0dad2195f7c1e05184af": {
+      "normalized_url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "title_fingerprint": "introducing chatgpt images 2 5",
+      "service_key": "openai-blog",
+      "title": "Introducing ChatGPT Images 2.5",
+      "article_doc_path": "docs/services/openai-blog/2026-09-introducing-chatgpt-images-2-5-1dcea8b0.md",
+      "status": "published",
+      "briefed_at": "2026-09-08T23:51:49.404446Z",
+      "candidate_score": 37.0
     }
   }
 }
