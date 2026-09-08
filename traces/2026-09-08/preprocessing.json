@@ -1,0 +1,370 @@
+{
+  "generated_at": "2026-09-08T23:47:44.983260+00:00",
+  "generated_for": "2026-09-08",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "cc7602704985022c265496328a1232bc3b6fe5ad",
+  "github_run_id": "34292157030",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 21,
+  "excluded_count": 99,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 118,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 2
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 118,
+      "output_count": 30,
+      "excluded_count": 88,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 88
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 30,
+      "output_count": 30,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 30,
+      "output_count": 30,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 30,
+      "output_count": 21,
+      "excluded_count": 9,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 9
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 4,
+      "excluded_count": 16,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:f42b1051076dff0e",
+          "title": "Detecting and countering malicious uses of Claude",
+          "normalized_url": "https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025",
+          "url_hash": "f42b1051076dff0e62ba7c3da7ac6de0c223416c7c8e4c70914ea6679a349999",
+          "suggested_doc_key": "2026-09-detecting-and-countering-malicious-uses-of-claude-f42b1051",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-detecting-and-countering-malicious-uses-of-claude-f42b1051.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:4ba107b71a0707f9",
+          "title": "Disrupting the first reported AI-orchestrated cyber espionage campaign",
+          "normalized_url": "https://www.anthropic.com/news/disrupting-AI-espionage",
+          "url_hash": "4ba107b71a0707f9baebfbcb2e165c787cd79c38dabacaf90bbc8d6a1022d2f4",
+          "suggested_doc_key": "2026-09-disrupting-the-first-reported-ai-orchestrated-cyber-espionage-campaign-4ba107b7",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-disrupting-the-first-reported-ai-orchestrated-cyber-espionage-campaign-4ba107b7.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:fdcaadbbe674abde",
+          "title": "Detecting and countering misuse of AI: August 2025",
+          "normalized_url": "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025",
+          "url_hash": "fdcaadbbe674abde249a0b796f9429345652f608ddf86c451b9f1354bb260992",
+          "suggested_doc_key": "2026-09-detecting-and-countering-misuse-of-ai-august-2025-fdcaadbb",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-detecting-and-countering-misuse-of-ai-august-2025-fdcaadbb.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:d3d38ded1c6032b4",
+          "title": "Detecting and preventing distillation attacks",
+          "normalized_url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+          "url_hash": "d3d38ded1c6032b4580b2d55fcf2ea72defa0ed32bf4cfbc14c6f1adbb322e39",
+          "suggested_doc_key": "2026-09-detecting-and-preventing-distillation-attacks-d3d38ded",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-detecting-and-preventing-distillation-attacks-d3d38ded.md",
+          "candidate_score": 26.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 16
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:b4f131d2c0032d69",
+          "title": "AlphaGenome Atlas: a high-resolution map of human DNA",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas",
+          "url_hash": "b4f131d2c0032d693234e85eaaa469b6a7686a2b11dab31ff2651054461418d9",
+          "suggested_doc_key": "2026-09-alphagenome-atlas-a-high-resolution-map-of-human-dna-b4f131d2",
+          "suggested_article_path": "docs/services/google-blog/2026-09-alphagenome-atlas-a-high-resolution-map-of-human-dna-b4f131d2.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:080cedd90d470c4d",
+          "title": "Muse: Meta's personal AI agent, features and capabilities",
+          "normalized_url": "https://ai.meta.com/muse",
+          "url_hash": "080cedd90d470c4db650f26c6f51826723573f79a410782e2f04da937dd8371f",
+          "suggested_doc_key": "2026-09-muse-meta-s-personal-ai-agent-features-and-capabilities-080cedd9",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-muse-meta-s-personal-ai-agent-features-and-capabilities-080cedd9.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 210점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 205개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7a1ea54dcb3d9383",
+          "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses",
+          "normalized_url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked",
+          "url_hash": "7a1ea54dcb3d938389dd6a2fb79267bb5aa7838f6cc591be7dff7f85922560e3",
+          "suggested_doc_key": "2026-09-benchmarking-qwen3-8-27b-quantizations-4-bit-holds-up-1-bit-collapses-7a1ea54d",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-benchmarking-qwen3-8-27b-quantizations-4-bit-holds-up-1-bit-collapses-7a1ea54d.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 201점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 98개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:46f3c1d6124190bd",
+          "title": "I-have-ADHD: A skill to stop coding agents from burying the answer",
+          "normalized_url": "https://github.com/ayghri/i-have-adhd",
+          "url_hash": "46f3c1d6124190bd41b81397d3ce3ed570d55a8c1b8799befb69f78070ce6b43",
+          "suggested_doc_key": "2026-09-i-have-adhd-a-skill-to-stop-coding-agents-from-burying-the-answer-46f3c1d6",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-i-have-adhd-a-skill-to-stop-coding-agents-from-burying-the-answer-46f3c1d6.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 284점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 221개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3ffc81ecc2813572",
+          "title": "DaVinci Resolve 21.1",
+          "normalized_url": "https://www.blackmagicdesign.com/media/release/20260908-03",
+          "url_hash": "3ffc81ecc2813572e7854ec9201d01e875b41d672bbb375af335e10c513411de",
+          "suggested_doc_key": "2026-09-davinci-resolve-21-1-3ffc81ec",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-davinci-resolve-21-1-3ffc81ec.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 332점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 148개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a9e40bcc77117409",
+          "title": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro, streamed from four SSDs",
+          "normalized_url": "https://github.com/argonautlabsai/deltafin",
+          "url_hash": "a9e40bcc771174092a201e91e069e6d804439d5a1227359ef5064a38466e9d47",
+          "suggested_doc_key": "2026-09-kimi-k3-2-8t-at-1-token-s-on-a-macbook-pro-streamed-from-four-ssds-a9e40bcc",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-kimi-k3-2-8t-at-1-token-s-on-a-macbook-pro-streamed-from-four-ssds-a9e40bcc.md",
+          "candidate_score": 62.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 191점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 92개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 6,
+      "excluded_count": 44,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:a1b72811dd254b50",
+          "title": "1Password increases engineering productivity 21% with Codex",
+          "normalized_url": "https://openai.com/index/1password",
+          "url_hash": "a1b72811dd254b5043b516f3ea7a8da4d179aec7a12b38de59f64e80e43d4193",
+          "suggested_doc_key": "2026-09-1password-increases-engineering-productivity-21-with-codex-a1b72811",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-1password-increases-engineering-productivity-21-with-codex-a1b72811.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:503e9c2326e78f3e",
+          "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+          "normalized_url": "https://openai.com/index/codex-quantum-computing-experiments",
+          "url_hash": "503e9c2326e78f3e54698b505fc7f3dd73547fa559154576a0082b0cd2cdb79c",
+          "suggested_doc_key": "2026-09-how-gpt-5-6-sol-helps-run-quantum-computing-experiments-503e9c23",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-how-gpt-5-6-sol-helps-run-quantum-computing-experiments-503e9c23.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:a00fc889a2dd293b",
+          "title": "The Work Now Within Reach",
+          "normalized_url": "https://openai.com/index/the-work-now-within-reach",
+          "url_hash": "a00fc889a2dd293b42049381f3a99cbbead2f5c6d3c52e4e209b3057ea2e2a3b",
+          "suggested_doc_key": "2026-09-the-work-now-within-reach-a00fc889",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-the-work-now-within-reach-a00fc889.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:1dcea8b0f8acab14",
+          "title": "Introducing ChatGPT Images 2.5",
+          "normalized_url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+          "url_hash": "1dcea8b0f8acab144d9449d9a882270327a9c7315cef0dad2195f7c1e05184af",
+          "suggested_doc_key": "2026-09-introducing-chatgpt-images-2-5-1dcea8b0",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-introducing-chatgpt-images-2-5-1dcea8b0.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:7948c39493cbd65e",
+          "title": "Funding grants for new research into AI and teen development",
+          "normalized_url": "https://openai.com/index/teen-development-research-grants",
+          "url_hash": "7948c39493cbd65ea48c44d8291ea8805b71fa184ba9ab468b25c600c015d072",
+          "suggested_doc_key": "2026-09-funding-grants-for-new-research-into-ai-and-teen-development-7948c394",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-funding-grants-for-new-research-into-ai-and-teen-development-7948c394.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 43
+      }
+    }
+  ]
+}
