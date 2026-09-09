@@ -7660,6 +7660,156 @@
       "status": "published",
       "briefed_at": "2026-09-08T23:51:49.404446Z",
       "candidate_score": 37.0
+    },
+    "94f6451e3643ff77788bb2b75cab5ea5310c6124e9d7d83422f7939dd42e156e": {
+      "normalized_url": "https://www.anthropic.com/news/servicenow-anthropic-claude",
+      "title_fingerprint": "servicenow chooses claude",
+      "service_key": "anthropic-blog",
+      "title": "ServiceNow chooses Claude",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-servicenow-chooses-claude-94f6451e.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934564Z",
+      "candidate_score": 40.0
+    },
+    "5eb893081b000593ce346317ab3c2b30f6ad49cc9fa6971012631d718230f462": {
+      "normalized_url": "https://www.anthropic.com/news/apple-xcode-claude-agent-sdk",
+      "title_fingerprint": "apple s xcode now supports the claude agent sdk",
+      "service_key": "anthropic-blog",
+      "title": "Apple’s Xcode now supports the Claude Agent SDK",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-apple-s-xcode-now-supports-the-claude-agent-sdk-5eb89308.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934602Z",
+      "candidate_score": 35.0
+    },
+    "89c09d6960f28f3fc2da4896bbb0ea32c3189a6c52a7ee9861c5cbcd8621668b": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-infosys",
+      "title_fingerprint": "anthropic and infosys build ai agents",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic and Infosys build AI agents",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-anthropic-and-infosys-build-ai-agents-89c09d69.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934610Z",
+      "candidate_score": 35.0
+    },
+    "4d535568cbd37c262538f9c08300b4d2749cf329bf712e25b0c3a3fe6c471bf6": {
+      "normalized_url": "https://www.anthropic.com/news/compliance-framework-SB53",
+      "title_fingerprint": "our compliance framework for california s sb 53",
+      "service_key": "anthropic-blog",
+      "title": "Our compliance framework for California's SB 53",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-our-compliance-framework-for-california-s-sb-53-4d535568.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934615Z",
+      "candidate_score": 30.0
+    },
+    "fe76df8ee90684ba13a0dd553ccc88259aac84212bee0c4e0a1c5827beac75f0": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/mapping-global-methane-emissions-from-space",
+      "title_fingerprint": "a new deep learning model maps global methane emissions from space",
+      "service_key": "google-blog",
+      "title": "A new deep learning model maps global methane emissions from space.",
+      "article_doc_path": "docs/services/google-blog/2026-09-a-new-deep-learning-model-maps-global-methane-emissions-from-space-fe76df8e.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934620Z",
+      "candidate_score": 46.0
+    },
+    "77adb66885449411a18b9aff250fee2a331f402f3913023bba76bcaaf9c7806e": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/search/football-features-google-search",
+      "title_fingerprint": "get ready for the game with new football features in search",
+      "service_key": "google-blog",
+      "title": "Get ready for the game with new football features in Search",
+      "article_doc_path": "docs/services/google-blog/2026-09-get-ready-for-the-game-with-new-football-features-in-search-77adb668.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934624Z",
+      "candidate_score": 35.0
+    },
+    "a7dff6d25b9078cb3b66ab9fbae60bbdc7463e4b955f403f6458a5d3f5e082bc": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film",
+      "title_fingerprint": "recreating a 70 year love story frame by frame",
+      "service_key": "google-blog",
+      "title": "Recreating a 70-year love story frame by frame",
+      "article_doc_path": "docs/services/google-blog/2026-09-recreating-a-70-year-love-story-frame-by-frame-a7dff6d2.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934629Z",
+      "candidate_score": 34.0
+    },
+    "28c1a92a9f59d5e783a41dede281e49e9fd46838a162d887d242743f0d64d684": {
+      "normalized_url": "https://www.apple.com/iphone-duo",
+      "title_fingerprint": "iphone duo",
+      "service_key": "hacker-news",
+      "title": "iPhone Duo",
+      "article_doc_path": "docs/services/hacker-news/2026-09-iphone-duo-28c1a92a.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934633Z",
+      "candidate_score": 68.0
+    },
+    "1029162212c66bbe84f5c9b0b499def8e1c8293089eeffae5a86b15e5da1050d": {
+      "normalized_url": "https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation",
+      "title_fingerprint": "airpods 5",
+      "service_key": "hacker-news",
+      "title": "AirPods 5",
+      "article_doc_path": "docs/services/hacker-news/2026-09-airpods-5-10291622.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934636Z",
+      "candidate_score": 65.0
+    },
+    "974a0184b5938549ce6e9799152304860116065de3a255ce22c57ed60e0a0cee": {
+      "normalized_url": "https://desertant.com/blog/introducing-desert-ant-labs",
+      "title_fingerprint": "desert ant labs local fast models that run on device",
+      "service_key": "hacker-news",
+      "title": "Desert Ant Labs: local, fast models that run on device",
+      "article_doc_path": "docs/services/hacker-news/2026-09-desert-ant-labs-local-fast-models-that-run-on-device-974a0184.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934640Z",
+      "candidate_score": 65.0
+    },
+    "aca5bab48984ebc08f68c1a32fdd990e9540bb5bfab17fbecda7c2442e0cdb62": {
+      "normalized_url": "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system",
+      "title_fingerprint": "apple watch series 12",
+      "service_key": "hacker-news",
+      "title": "Apple Watch Series 12",
+      "article_doc_path": "docs/services/hacker-news/2026-09-apple-watch-series-12-aca5bab4.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934644Z",
+      "candidate_score": 64.7
+    },
+    "333ccaae81484d3a4e17f3d07427086a4f15c586f13019420a43c3e347dda8d9": {
+      "normalized_url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "title_fingerprint": "gpt 6 astra the next generation in intelligence for work",
+      "service_key": "openai-blog",
+      "title": "GPT-6 Astra: The next generation in intelligence for work",
+      "article_doc_path": "docs/services/openai-blog/2026-09-gpt-6-astra-the-next-generation-in-intelligence-for-work-333ccaae.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934648Z",
+      "candidate_score": 44.0
+    },
+    "3eb3e9557eb7038ef8ad3df076aa5e92d0cbd3c59ac0c798d17083acd964491d": {
+      "normalized_url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "title_fingerprint": "paul christiano joins openai foundation board",
+      "service_key": "openai-blog",
+      "title": "Paul Christiano joins OpenAI Foundation Board",
+      "article_doc_path": "docs/services/openai-blog/2026-09-paul-christiano-joins-openai-foundation-board-3eb3e955.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934652Z",
+      "candidate_score": 43.0
+    },
+    "2c827cba158d2f26e6e9908863169f3221245661ed3a7c374917498ca5d75374": {
+      "normalized_url": "https://openai.com/index/navier-stokes-solution",
+      "title_fingerprint": "on the navier stokes millennium prize problem",
+      "service_key": "openai-blog",
+      "title": "On the Navier–Stokes Millennium Prize Problem",
+      "article_doc_path": "docs/services/openai-blog/2026-09-on-the-navier-stokes-millennium-prize-problem-2c827cba.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934656Z",
+      "candidate_score": 34.0
+    },
+    "7948c39493cbd65ea48c44d8291ea8805b71fa184ba9ab468b25c600c015d072": {
+      "normalized_url": "https://openai.com/index/teen-development-research-grants",
+      "title_fingerprint": "funding grants for new research into ai and teen development",
+      "service_key": "openai-blog",
+      "title": "Funding grants for new research into AI and teen development",
+      "article_doc_path": "docs/services/openai-blog/2026-09-funding-grants-for-new-research-into-ai-and-teen-development-7948c394.md",
+      "status": "published",
+      "briefed_at": "2026-09-09T23:50:35.934660Z",
+      "candidate_score": 33.0
     }
   }
 }
