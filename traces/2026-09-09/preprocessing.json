@@ -1,0 +1,409 @@
+{
+  "generated_at": "2026-09-09T23:46:22.666389+00:00",
+  "generated_for": "2026-09-09",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "8542dc86cc4c67213fdc8566ec58420241746b74",
+  "github_run_id": "34418316896",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 28,
+  "excluded_count": 92,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 42,
+      "excluded_count": 78,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 78
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 42,
+      "output_count": 42,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 42,
+      "output_count": 42,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 42,
+      "output_count": 28,
+      "excluded_count": 14,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 14
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:94f6451e3643ff77",
+          "title": "ServiceNow chooses Claude",
+          "normalized_url": "https://www.anthropic.com/news/servicenow-anthropic-claude",
+          "url_hash": "94f6451e3643ff77788bb2b75cab5ea5310c6124e9d7d83422f7939dd42e156e",
+          "suggested_doc_key": "2026-09-servicenow-chooses-claude-94f6451e",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-servicenow-chooses-claude-94f6451e.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:5eb893081b000593",
+          "title": "Apple’s Xcode now supports the Claude Agent SDK",
+          "normalized_url": "https://www.anthropic.com/news/apple-xcode-claude-agent-sdk",
+          "url_hash": "5eb893081b000593ce346317ab3c2b30f6ad49cc9fa6971012631d718230f462",
+          "suggested_doc_key": "2026-09-apple-s-xcode-now-supports-the-claude-agent-sdk-5eb89308",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-apple-s-xcode-now-supports-the-claude-agent-sdk-5eb89308.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:89c09d6960f28f3f",
+          "title": "Anthropic and Infosys build AI agents",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-infosys",
+          "url_hash": "89c09d6960f28f3fc2da4896bbb0ea32c3189a6c52a7ee9861c5cbcd8621668b",
+          "suggested_doc_key": "2026-09-anthropic-and-infosys-build-ai-agents-89c09d69",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-anthropic-and-infosys-build-ai-agents-89c09d69.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:4d535568cbd37c26",
+          "title": "Our compliance framework for California's SB 53",
+          "normalized_url": "https://www.anthropic.com/news/compliance-framework-SB53",
+          "url_hash": "4d535568cbd37c262538f9c08300b4d2749cf329bf712e25b0c3a3fe6c471bf6",
+          "suggested_doc_key": "2026-09-our-compliance-framework-for-california-s-sb-53-4d535568",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-our-compliance-framework-for-california-s-sb-53-4d535568.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:6d0046ccd858de43",
+          "title": "Introducing Labs",
+          "normalized_url": "https://www.anthropic.com/news/introducing-anthropic-labs",
+          "url_hash": "6d0046ccd858de43c271c1503a65492ee44037c87f31521e1f863c59e28caec2",
+          "suggested_doc_key": "2026-09-introducing-labs-6d0046cc",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-introducing-labs-6d0046cc.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 6,
+        "service_candidate_limit": 4
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:fe76df8ee90684ba",
+          "title": "A new deep learning model maps global methane emissions from space.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/mapping-global-methane-emissions-from-space",
+          "url_hash": "fe76df8ee90684ba13a0dd553ccc88259aac84212bee0c4e0a1c5827beac75f0",
+          "suggested_doc_key": "2026-09-a-new-deep-learning-model-maps-global-methane-emissions-from-space-fe76df8e",
+          "suggested_article_path": "docs/services/google-blog/2026-09-a-new-deep-learning-model-maps-global-methane-emissions-from-space-fe76df8e.md",
+          "candidate_score": 46.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:77adb66885449411",
+          "title": "Get ready for the game with new football features in Search",
+          "normalized_url": "https://blog.google/products-and-platforms/products/search/football-features-google-search",
+          "url_hash": "77adb66885449411a18b9aff250fee2a331f402f3913023bba76bcaaf9c7806e",
+          "suggested_doc_key": "2026-09-get-ready-for-the-game-with-new-football-features-in-search-77adb668",
+          "suggested_article_path": "docs/services/google-blog/2026-09-get-ready-for-the-game-with-new-football-features-in-search-77adb668.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:a7dff6d25b9078cb",
+          "title": "Recreating a 70-year love story frame by frame",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film",
+          "url_hash": "a7dff6d25b9078cb3b66ab9fbae60bbdc7463e4b955f403f6458a5d3f5e082bc",
+          "suggested_doc_key": "2026-09-recreating-a-70-year-love-story-frame-by-frame-a7dff6d2",
+          "suggested_article_path": "docs/services/google-blog/2026-09-recreating-a-70-year-love-story-frame-by-frame-a7dff6d2.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:28c1a92a9f59d5e7",
+          "title": "iPhone Duo",
+          "normalized_url": "https://www.apple.com/iphone-duo",
+          "url_hash": "28c1a92a9f59d5e783a41dede281e49e9fd46838a162d887d242743f0d64d684",
+          "suggested_doc_key": "2026-09-iphone-duo-28c1a92a",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-iphone-duo-28c1a92a.md",
+          "candidate_score": 68.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 780점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 1543개를 토론 신호로 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:1029162212c66bbe",
+          "title": "AirPods 5",
+          "normalized_url": "https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation",
+          "url_hash": "1029162212c66bbe84f5c9b0b499def8e1c8293089eeffae5a86b15e5da1050d",
+          "suggested_doc_key": "2026-09-airpods-5-10291622",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-airpods-5-10291622.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 342점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 281개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:974a0184b5938549",
+          "title": "Desert Ant Labs: local, fast models that run on device",
+          "normalized_url": "https://desertant.com/blog/introducing-desert-ant-labs",
+          "url_hash": "974a0184b5938549ce6e9799152304860116065de3a255ce22c57ed60e0a0cee",
+          "suggested_doc_key": "2026-09-desert-ant-labs-local-fast-models-that-run-on-device-974a0184",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-desert-ant-labs-local-fast-models-that-run-on-device-974a0184.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 373점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 88개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:aca5bab48984ebc0",
+          "title": "Apple Watch Series 12",
+          "normalized_url": "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system",
+          "url_hash": "aca5bab48984ebc08f68c1a32fdd990e9540bb5bfab17fbecda7c2442e0cdb62",
+          "suggested_doc_key": "2026-09-apple-watch-series-12-aca5bab4",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-apple-watch-series-12-aca5bab4.md",
+          "candidate_score": 64.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 187점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 212개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f0de3af1a83e220a",
+          "title": "iPhone 18 Pro and iPhone 18 Pro Max",
+          "normalized_url": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max",
+          "url_hash": "f0de3af1a83e220affe7aff95fb128d222c58f5b88b6d5628572fcf3a7c1070a",
+          "suggested_doc_key": "2026-09-iphone-18-pro-and-iphone-18-pro-max-f0de3af1",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-iphone-18-pro-and-iphone-18-pro-max-f0de3af1.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 241점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 253개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:333ccaae81484d3a",
+          "title": "GPT-6 Astra: The next generation in intelligence for work",
+          "normalized_url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+          "url_hash": "333ccaae81484d3a4e17f3d07427086a4f15c586f13019420a43c3e347dda8d9",
+          "suggested_doc_key": "2026-09-gpt-6-astra-the-next-generation-in-intelligence-for-work-333ccaae",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-gpt-6-astra-the-next-generation-in-intelligence-for-work-333ccaae.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3eb3e9557eb7038e",
+          "title": "Paul Christiano joins OpenAI Foundation Board",
+          "normalized_url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+          "url_hash": "3eb3e9557eb7038ef8ad3df076aa5e92d0cbd3c59ac0c798d17083acd964491d",
+          "suggested_doc_key": "2026-09-paul-christiano-joins-openai-foundation-board-3eb3e955",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-paul-christiano-joins-openai-foundation-board-3eb3e955.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:2c827cba158d2f26",
+          "title": "On the Navier–Stokes Millennium Prize Problem",
+          "normalized_url": "https://openai.com/index/navier-stokes-solution",
+          "url_hash": "2c827cba158d2f26e6e9908863169f3221245661ed3a7c374917498ca5d75374",
+          "suggested_doc_key": "2026-09-on-the-navier-stokes-millennium-prize-problem-2c827cba",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-on-the-navier-stokes-millennium-prize-problem-2c827cba.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:7948c39493cbd65e",
+          "title": "Funding grants for new research into AI and teen development",
+          "normalized_url": "https://openai.com/index/teen-development-research-grants",
+          "url_hash": "7948c39493cbd65ea48c44d8291ea8805b71fa184ba9ab468b25c600c015d072",
+          "suggested_doc_key": "2026-09-funding-grants-for-new-research-into-ai-and-teen-development-7948c394",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-funding-grants-for-new-research-into-ai-and-teen-development-7948c394.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:4a36ea7ba6bb268a",
+          "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+          "normalized_url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+          "url_hash": "4a36ea7ba6bb268a569ba1bda62fe3a651ce22624e6c80e44fc2f66bda887c59",
+          "suggested_doc_key": "2026-09-openai-expands-initiatives-to-support-journalism-from-classrooms-to-news-4a36ea7b",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-openai-expands-initiatives-to-support-journalism-from-classrooms-to-news-4a36ea7b.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 45
+      }
+    }
+  ]
+}
