@@ -7810,6 +7810,166 @@
       "status": "published",
       "briefed_at": "2026-09-09T23:50:35.934660Z",
       "candidate_score": 33.0
+    },
+    "7b57c749250dd40e0ee0db2e2661c9cc2b1c179b861180b36eeea01b761a4023": {
+      "normalized_url": "https://www.anthropic.com/news/salesforce-anthropic-expanded-partnership",
+      "title_fingerprint": "salesforce and anthropic expand partnership",
+      "service_key": "anthropic-blog",
+      "title": "Salesforce and Anthropic expand partnership",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-salesforce-and-anthropic-expand-partnership-7b57c749.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550666Z",
+      "candidate_score": 40.0
+    },
+    "8cf8913d069b2b1a3d6480dcb02d1a3a3ab29b97bc76af1d7e0fea5a249aea91": {
+      "normalized_url": "https://www.anthropic.com/news/introducing-the-anthropic-national-security-and-public-sector-advisory-council",
+      "title_fingerprint": "national security and public sector advisory council",
+      "service_key": "anthropic-blog",
+      "title": "National Security and Public Sector Advisory Council",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-national-security-and-public-sector-advisory-council-8cf8913d.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550711Z",
+      "candidate_score": 35.0
+    },
+    "0b95537322bb8aed60fd5bc2c09f53df603c4650c52310810a5cd1ab95d61dbb": {
+      "normalized_url": "https://www.anthropic.com/news/updates-to-our-consumer-terms",
+      "title_fingerprint": "updates to consumer terms and privacy policy",
+      "service_key": "anthropic-blog",
+      "title": "Updates to Consumer Terms and Privacy Policy",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-updates-to-consumer-terms-and-privacy-policy-0b955373.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550720Z",
+      "candidate_score": 35.0
+    },
+    "96bb717697d4896736e250c72f2c5744338e1dee75939e7ee6cf9d14a0a45a01": {
+      "normalized_url": "https://www.anthropic.com/news/advancing-claude-for-financial-services",
+      "title_fingerprint": "advancing claude for financial services",
+      "service_key": "anthropic-blog",
+      "title": "Advancing Claude for Financial Services",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-advancing-claude-for-financial-services-96bb7176.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550727Z",
+      "candidate_score": 35.0
+    },
+    "e9d0ce4e62f9dc498b6aaeb17594e841308fce5a8cc38b8509cd688651ae3164": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser",
+      "title_fingerprint": "github copilot app for beginners using the diff terminal and browser",
+      "service_key": "github-blog",
+      "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+      "article_doc_path": "docs/services/github-blog/2026-09-github-copilot-app-for-beginners-using-the-diff-terminal-and-browser-e9d0ce4e.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550733Z",
+      "candidate_score": 42.0
+    },
+    "d244d5806739a7a3de164192bbdfe3554ec25aa2bcbf66583144a7a66fbbdc5c": {
+      "normalized_url": "https://github.blog/news-insights/company-news/github-availability-report-august-2026",
+      "title_fingerprint": "github availability report august 2026",
+      "service_key": "github-blog",
+      "title": "GitHub availability report: August 2026",
+      "article_doc_path": "docs/services/github-blog/2026-09-github-availability-report-august-2026-d244d580.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550739Z",
+      "candidate_score": 36.0
+    },
+    "1a6824181b506ebff18bfcd1931f32d30b4a9031280e94923b4a3dbad7ef7916": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/dreambeans-expansion-september-2026",
+      "title_fingerprint": "dreambeans daily stories brewed just for you now available to all accounts in the u s",
+      "service_key": "google-blog",
+      "title": "Dreambeans: Daily stories, brewed just for you, now available to all accounts in the U.S.",
+      "article_doc_path": "docs/services/google-blog/2026-09-dreambeans-daily-stories-brewed-just-for-you-now-available-to-all-accoun-1a682418.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550745Z",
+      "candidate_score": 41.0
+    },
+    "338a77b082d6e9b86e328b08afac47f92cf7f3361fd27cb7a912724972c65194": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips",
+      "title_fingerprint": "3 ways to prep for your next big race with search",
+      "service_key": "google-blog",
+      "title": "3 ways to prep for your next big race with Search",
+      "article_doc_path": "docs/services/google-blog/2026-09-3-ways-to-prep-for-your-next-big-race-with-search-338a77b0.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550749Z",
+      "candidate_score": 35.0
+    },
+    "403f674bcee8f9ccc517614366eaf750f1784cbad08bad08befbae2201c56e89": {
+      "normalized_url": "https://cognition.com/blog/swe-2",
+      "title_fingerprint": "cognition launches new swe 2 model rivaling fable 5 1 and gpt astra",
+      "service_key": "hacker-news",
+      "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+      "article_doc_path": "docs/services/hacker-news/2026-09-cognition-launches-new-swe-2-model-rivaling-fable-5-1-and-gpt-astra-403f674b.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550755Z",
+      "candidate_score": 70.0
+    },
+    "8f306be0e7de3b790e054953542cfb1350c8f65f0af73c958cfdf28006ff45f7": {
+      "normalized_url": "https://www.johndcook.com/blog/2026/09/09/formal-method-revolution",
+      "title_fingerprint": "openai s navier stokes release included a lean 4 formal proof",
+      "service_key": "hacker-news",
+      "title": "OpenAI’s Navier-Stokes release included a Lean 4 formal proof",
+      "article_doc_path": "docs/services/hacker-news/2026-09-openai-s-navier-stokes-release-included-a-lean-4-formal-proof-8f306be0.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550760Z",
+      "candidate_score": 65.8
+    },
+    "3dffb20e2b3c17eabe90eadb26923fd01ef01fc88b1602c3707eba800a95a5f0": {
+      "normalized_url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+      "title_fingerprint": "openai agents api",
+      "service_key": "hacker-news",
+      "title": "OpenAI Agents API",
+      "article_doc_path": "docs/services/hacker-news/2026-09-openai-agents-api-3dffb20e.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550765Z",
+      "candidate_score": 60.4
+    },
+    "c97840590384081315e5cc024dbe9d0fe5591402274b25d32a579b11b84c5676": {
+      "normalized_url": "https://blog.jim-nielsen.com/2026/hands-off-my-cables",
+      "title_fingerprint": "don t let anyone take away your big box of cables",
+      "service_key": "hacker-news",
+      "title": "Don't let anyone take away your big box of cables",
+      "article_doc_path": "docs/services/hacker-news/2026-09-don-t-let-anyone-take-away-your-big-box-of-cables-c9784059.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550770Z",
+      "candidate_score": 60.0
+    },
+    "b32e9b847135398762b9f07d35cf91524321a4ec5b7684b5ff2392213918b73a": {
+      "normalized_url": "https://openai.com/index/introducing-the-agents-api",
+      "title_fingerprint": "introducing the agents api",
+      "service_key": "openai-blog",
+      "title": "Introducing the Agents API",
+      "article_doc_path": "docs/services/openai-blog/2026-09-introducing-the-agents-api-b32e9b84.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550775Z",
+      "candidate_score": 50.0
+    },
+    "6a886414536a09e3da65022e4b81fb0e9329e1e8f8d489895f13b523de737c68": {
+      "normalized_url": "https://openai.com/index/put-data-to-work",
+      "title_fingerprint": "now everyone can put data to work",
+      "service_key": "openai-blog",
+      "title": "Now everyone can put data to work",
+      "article_doc_path": "docs/services/openai-blog/2026-09-now-everyone-can-put-data-to-work-6a886414.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550780Z",
+      "candidate_score": 43.0
+    },
+    "0bb946f0c421538942e425649beb92ebcc573674a0f10cbfe699bb79671506eb": {
+      "normalized_url": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "title_fingerprint": "introducing chatgpt for financial services",
+      "service_key": "openai-blog",
+      "title": "Introducing ChatGPT for Financial Services",
+      "article_doc_path": "docs/services/openai-blog/2026-09-introducing-chatgpt-for-financial-services-0bb946f0.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550785Z",
+      "candidate_score": 42.0
+    },
+    "39842fa0b34b37cbe3f74a631eb53c7b3f91d6f6e5ad7b93c66d1420605c9599": {
+      "normalized_url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+      "title_fingerprint": "how a researcher uses codex and chatgpt to search for new antimicrobial molecules",
+      "service_key": "openai-blog",
+      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+      "article_doc_path": "docs/services/openai-blog/2026-09-how-a-researcher-uses-codex-and-chatgpt-to-search-for-new-antimicrobial-39842fa0.md",
+      "status": "published",
+      "briefed_at": "2026-09-10T23:44:55.550789Z",
+      "candidate_score": 39.0
     }
   }
 }
