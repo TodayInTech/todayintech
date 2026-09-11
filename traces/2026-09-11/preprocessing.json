@@ -1,0 +1,395 @@
+{
+  "generated_at": "2026-09-11T23:48:40.655427+00:00",
+  "generated_for": "2026-09-11",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "b9c205f333d584b29d361a14e7ad82b6d77b2cf5",
+  "github_run_id": "34659376915",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 27,
+  "excluded_count": 93,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 39,
+      "excluded_count": 81,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 81
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 39,
+      "output_count": 39,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 39,
+      "output_count": 39,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 39,
+      "output_count": 27,
+      "excluded_count": 12,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 12
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:3ac21b56f945c964",
+          "title": "Higher education advisory board and AI Fluency courses",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-higher-education-initiatives",
+          "url_hash": "3ac21b56f945c96438ffb0ff9d7053b1f88c8678295a1c243e6ec2c98807c8db",
+          "suggested_doc_key": "2026-09-higher-education-advisory-board-and-ai-fluency-courses-3ac21b56",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-higher-education-advisory-board-and-ai-fluency-courses-3ac21b56.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:83a73ffe5e230d5f",
+          "title": "Anthropic raises $13B Series F at $183B valuation",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation",
+          "url_hash": "83a73ffe5e230d5feb7e5f3ec79d0fd33c430ceb082e7e975acfa114bf86ff42",
+          "suggested_doc_key": "2026-09-anthropic-raises-13b-series-f-at-183b-valuation-83a73ffe",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-anthropic-raises-13b-series-f-at-183b-valuation-83a73ffe.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:64649d20fc84427c",
+          "title": "Updating sales restrictions for unsupported regions",
+          "normalized_url": "https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions",
+          "url_hash": "64649d20fc84427ca4c59f47718c77774f5e9baf5537038efbce90c790408977",
+          "suggested_doc_key": "2026-09-updating-sales-restrictions-for-unsupported-regions-64649d20",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-updating-sales-restrictions-for-unsupported-regions-64649d20.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:4bdb43a2c86b9ea3",
+          "title": "Strengthening safeguards with US CAISI and UK AISI",
+          "normalized_url": "https://www.anthropic.com/news/strengthening-our-safeguards-through-collaboration-with-us-caisi-and-uk-aisi",
+          "url_hash": "4bdb43a2c86b9ea3cf18df0f2bf2a8958658f034b87ea8e07e64bb4b3cc937ad",
+          "suggested_doc_key": "2026-09-strengthening-safeguards-with-us-caisi-and-uk-aisi-4bdb43a2",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-strengthening-safeguards-with-us-caisi-and-uk-aisi-4bdb43a2.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:e51a9f82540a1841",
+          "title": "Chris Ciauri named Managing Director of International",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-expands-global-leadership-in-enterprise-ai-naming-chris-ciauri-as-managing-director-of",
+          "url_hash": "e51a9f82540a18418c664510094829e7c9ad7fa4724766234dac9462739d0883",
+          "suggested_doc_key": "2026-09-chris-ciauri-named-managing-director-of-international-e51a9f82",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-chris-ciauri-named-managing-director-of-international-e51a9f82.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 8,
+        "service_candidate_limit": 2
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:30a36306f538ac1a",
+          "title": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
+          "url_hash": "30a36306f538ac1af96f572883174082173478c732479a6c198f0eda11dd4fde",
+          "suggested_doc_key": "2026-09-marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-gi-30a36306",
+          "suggested_article_path": "docs/services/github-blog/2026-09-marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-gi-30a36306.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:682eb16bd27715da",
+          "title": "Three Google supported projects premiere during the 83rd Venice International Film Festival.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/xr-ar/three-google-supported-projects-premiere-during-the-83rd-venice-international-film-festival",
+          "url_hash": "682eb16bd27715da40a322064f0a4deeced1875184c816312229027d74eecfe4",
+          "suggested_doc_key": "2026-09-three-google-supported-projects-premiere-during-the-83rd-venice-internat-682eb16b",
+          "suggested_article_path": "docs/services/google-blog/2026-09-three-google-supported-projects-premiere-during-the-83rd-venice-internat-682eb16b.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:5e97932056794107",
+          "title": "GrapheneOS' rewritten Messages app is released",
+          "normalized_url": "https://github.com/GrapheneOS/Messaging/releases/tag/13",
+          "url_hash": "5e97932056794107383e18a7288528d82ddec90b39c3192306348948e45c471b",
+          "suggested_doc_key": "2026-09-grapheneos-rewritten-messages-app-is-released-5e979320",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-grapheneos-rewritten-messages-app-is-released-5e979320.md",
+          "candidate_score": 65.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 168점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 96개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:536fd16941c60eb4",
+          "title": "The EPA is planning to scrap public review rules for data center pollution",
+          "normalized_url": "https://capitalbnews.org/data-centers-permit-rules-epa",
+          "url_hash": "536fd16941c60eb45ef38d537a3e8b71d5e79a16336b2df7efd67d17b26482b6",
+          "suggested_doc_key": "2026-09-the-epa-is-planning-to-scrap-public-review-rules-for-data-center-polluti-536fd169",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-the-epa-is-planning-to-scrap-public-review-rules-for-data-center-polluti-536fd169.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 301점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 207개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3d89ca3caa719b39",
+          "title": "I spent $220 on Google app ads and 60% of the installs were robots",
+          "normalized_url": "https://dayzlegame.com/blog/google-ads-bot-farm",
+          "url_hash": "3d89ca3caa719b3999e6e710693175eccd44607e3cc2b3c491103252bfe2140b",
+          "suggested_doc_key": "2026-09-i-spent-220-on-google-app-ads-and-60-of-the-installs-were-robots-3d89ca3c",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-i-spent-220-on-google-app-ads-and-60-of-the-installs-were-robots-3d89ca3c.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 223점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 117개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:27d3981660ac3e51",
+          "title": "A misalignment of AI in mathematics",
+          "normalized_url": "https://mathandai.org/",
+          "url_hash": "27d3981660ac3e517308131ccb747314bfd4c65b2e1d23ef6910cf83c1218766",
+          "suggested_doc_key": "2026-09-a-misalignment-of-ai-in-mathematics-27d39816",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-a-misalignment-of-ai-in-mathematics-27d39816.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 542점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 607개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:214c86f57b820be1",
+          "title": "Claude is only available to people over 18 years",
+          "normalized_url": "https://support.claude.com/en/articles/15171100-age-assurance-on-claude",
+          "url_hash": "214c86f57b820be1487c714bbb2a7e2ccd80d9c230e4b685eabefb3d1adabdb5",
+          "suggested_doc_key": "2026-09-claude-is-only-available-to-people-over-18-years-214c86f5",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-claude-is-only-available-to-people-over-18-years-214c86f5.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 551점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 584개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:46fcf5bb7b99520f",
+          "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+          "normalized_url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+          "url_hash": "46fcf5bb7b99520f1816e2b783a8be714e81f0b319fca3a31d07e256a8f0729d",
+          "suggested_doc_key": "2026-09-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-46fcf5bb",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-46fcf5bb.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:b8a75fb67d817922",
+          "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+          "normalized_url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+          "url_hash": "b8a75fb67d8179220690902f52a5b2dfa14a706eaeb8e0fe3d9794b58800e16b",
+          "suggested_doc_key": "2026-09-build-more-natural-voice-experiences-with-gpt-live-1-in-the-api-b8a75fb6",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-build-more-natural-voice-experiences-with-gpt-live-1-in-the-api-b8a75fb6.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3802aa15c4b6ae22",
+          "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+          "normalized_url": "https://openai.com/index/expanding-ai-access-us-government",
+          "url_hash": "3802aa15c4b6ae22021ae0ee38d1b326bfae76ce787892fb81ed73e6ffa883e6",
+          "suggested_doc_key": "2026-09-expanding-ai-access-and-cyber-defense-for-federal-state-local-and-tribal-3802aa15",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-expanding-ai-access-and-cyber-defense-for-federal-state-local-and-tribal-3802aa15.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:a7c183de5112de47",
+          "title": "The AI policy window is open. We need to act.",
+          "normalized_url": "https://openai.com/index/ai-policy-window",
+          "url_hash": "a7c183de5112de4747c23486d7487a321f4ddb9d54d97fdfcde71054c47a0d6e",
+          "suggested_doc_key": "2026-09-the-ai-policy-window-is-open-we-need-to-act-a7c183de",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-the-ai-policy-window-is-open-we-need-to-act-a7c183de.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:4a36ea7ba6bb268a",
+          "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+          "normalized_url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+          "url_hash": "4a36ea7ba6bb268a569ba1bda62fe3a651ce22624e6c80e44fc2f66bda887c59",
+          "suggested_doc_key": "2026-09-openai-expands-initiatives-to-support-journalism-from-classrooms-to-news-4a36ea7b",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-openai-expands-initiatives-to-support-journalism-from-classrooms-to-news-4a36ea7b.md",
+          "candidate_score": 27.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 45
+      }
+    }
+  ]
+}
