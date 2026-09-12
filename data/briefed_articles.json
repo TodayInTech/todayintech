@@ -8110,6 +8110,116 @@
       "status": "published",
       "briefed_at": "2026-09-11T23:54:56.565560Z",
       "candidate_score": 31.0
+    },
+    "e51a9f82540a18418c664510094829e7c9ad7fa4724766234dac9462739d0883": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-expands-global-leadership-in-enterprise-ai-naming-chris-ciauri-as-managing-director-of",
+      "title_fingerprint": "chris ciauri named managing director of international",
+      "service_key": "anthropic-blog",
+      "title": "Chris Ciauri named Managing Director of International",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-chris-ciauri-named-managing-director-of-international-e51a9f82.md",
+      "status": "published",
+      "briefed_at": "2026-09-12T23:43:35.548982Z",
+      "candidate_score": 29.0
+    },
+    "46e65537a7e36e9d56d7ba3540a5b11fb7facd2877e0bd7d99bb4daf4be8ab0a": {
+      "normalized_url": "https://www.anthropic.com/news/deloitte-anthropic-partnership",
+      "title_fingerprint": "deloitte brings claude to 470 000 people",
+      "service_key": "anthropic-blog",
+      "title": "Deloitte brings Claude to 470,000 people",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-deloitte-brings-claude-to-470-000-people-46e65537.md",
+      "status": "published",
+      "briefed_at": "2026-09-12T23:43:35.549026Z",
+      "candidate_score": 29.0
+    },
+    "1e1f2389348ed1246dff3b43a80266b2ef3a03b7073d9030eac1d4ac2c8235c5": {
+      "normalized_url": "https://www.anthropic.com/news/rahul-patil-joins-anthropic",
+      "title_fingerprint": "rahul patil joins as chief technology officer",
+      "service_key": "anthropic-blog",
+      "title": "Rahul Patil joins as Chief Technology Officer",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-rahul-patil-joins-as-chief-technology-officer-1e1f2389.md",
+      "status": "published",
+      "briefed_at": "2026-09-12T23:43:35.549037Z",
+      "candidate_score": 29.0
+    },
+    "9c54a6bc752d5776d923c310c397b30c77b71be2cc08a60c3da912894079d783": {
+      "normalized_url": "https://www.anthropic.com/news/expanding-global-operations-to-india",
+      "title_fingerprint": "anthropic expands to india with bengaluru office",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic expands to India with Bengaluru office",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-anthropic-expands-to-india-with-bengaluru-office-9c54a6bc.md",
+      "status": "published",
+      "briefed_at": "2026-09-12T23:43:35.549043Z",
+      "candidate_score": 29.0
+    },
+    "9cce0b5683586620cf3ad30ed0e91d1a3be6ba512a4771c1a7424da0d2b8b2b7": {
+      "normalized_url": "https://high5apps.github.io/josm-plugin-website-wizard",
+      "title_fingerprint": "make your first edit to openstreetmap",
+      "service_key": "hacker-news",
+      "title": "Make your first edit to OpenStreetMap",
+      "article_doc_path": "docs/services/hacker-news/2026-09-make-your-first-edit-to-openstreetmap-9cce0b56.md",
+      "status": "published",
+      "briefed_at": "2026-09-12T23:43:35.549050Z",
+      "candidate_score": 60.0
+    },
+    "bacf7aac6987233eb08816b8de439185b5f8e3a92fa98fc9786f6a719ef6236d": {
+      "normalized_url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+      "title_fingerprint": "nvidia is the central bank of ai",
+      "service_key": "hacker-news",
+      "title": "Nvidia is the central bank of AI",
+      "article_doc_path": "docs/services/hacker-news/2026-09-nvidia-is-the-central-bank-of-ai-bacf7aac.md",
+      "status": "published",
+      "briefed_at": "2026-09-12T23:43:35.549055Z",
+      "candidate_score": 60.0
+    },
+    "874a2fd905ea6c7bd367e41e878d3bc5363d50e880a53a1f5cdbca98b0dfdf32": {
+      "normalized_url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "title_fingerprint": "we must pace the frontier",
+      "service_key": "hacker-news",
+      "title": "We must pace the frontier",
+      "article_doc_path": "docs/services/hacker-news/2026-09-we-must-pace-the-frontier-874a2fd9.md",
+      "status": "published",
+      "briefed_at": "2026-09-12T23:43:35.549060Z",
+      "candidate_score": 60.0
+    },
+    "132e7b2b3e5253f98e6545e9ee6f96a29981c746bec8a9198c7aa1981eec5e0a": {
+      "normalized_url": "https://www.claymath.org/news/navier-stokes-announcement",
+      "title_fingerprint": "navier stokes announcement",
+      "service_key": "hacker-news",
+      "title": "Navier-Stokes Announcement",
+      "article_doc_path": "docs/services/hacker-news/2026-09-navier-stokes-announcement-132e7b2b.md",
+      "status": "published",
+      "briefed_at": "2026-09-12T23:43:35.549065Z",
+      "candidate_score": 60.0
+    },
+    "968c32634dc2a1cb83f007064d0bd309276c504696b107928b2bc3d51ba9601b": {
+      "normalized_url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "title_fingerprint": "perplexity trusts gpt 6 astra with end to end systems",
+      "service_key": "openai-blog",
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "article_doc_path": "docs/services/openai-blog/2026-09-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-968c3263.md",
+      "status": "published",
+      "briefed_at": "2026-09-12T23:43:35.549070Z",
+      "candidate_score": 44.0
+    },
+    "4aeb82da9975e2f5f564fba46674441b8ef455135ac302c60f8f7eb501572ba0": {
+      "normalized_url": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "title_fingerprint": "cognition helps devin test its own work with gpt 6 astra",
+      "service_key": "openai-blog",
+      "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+      "article_doc_path": "docs/services/openai-blog/2026-09-cognition-helps-devin-test-its-own-work-with-gpt-6-astra-4aeb82da.md",
+      "status": "published",
+      "briefed_at": "2026-09-12T23:43:35.549075Z",
+      "candidate_score": 37.0
+    },
+    "4a36ea7ba6bb268a569ba1bda62fe3a651ce22624e6c80e44fc2f66bda887c59": {
+      "normalized_url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+      "title_fingerprint": "openai expands initiatives to support journalism from classrooms to newsrooms",
+      "service_key": "openai-blog",
+      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+      "article_doc_path": "docs/services/openai-blog/2026-09-openai-expands-initiatives-to-support-journalism-from-classrooms-to-news-4a36ea7b.md",
+      "status": "published",
+      "briefed_at": "2026-09-12T23:43:35.549080Z",
+      "candidate_score": 26.0
     }
   }
 }
