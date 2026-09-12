@@ -1,0 +1,331 @@
+{
+  "generated_at": "2026-09-12T23:39:58.890207+00:00",
+  "generated_for": "2026-09-12",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "790254be4f00b3aa29001170377aa148c481aa92",
+  "github_run_id": "34725971139",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 21,
+  "excluded_count": 99,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 31,
+      "excluded_count": 89,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 89
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 31,
+      "output_count": 31,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 31,
+      "output_count": 31,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 31,
+      "output_count": 21,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 8,
+      "excluded_count": 12,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:e51a9f82540a1841",
+          "title": "Chris Ciauri named Managing Director of International",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-expands-global-leadership-in-enterprise-ai-naming-chris-ciauri-as-managing-director-of",
+          "url_hash": "e51a9f82540a18418c664510094829e7c9ad7fa4724766234dac9462739d0883",
+          "suggested_doc_key": "2026-09-chris-ciauri-named-managing-director-of-international-e51a9f82",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-chris-ciauri-named-managing-director-of-international-e51a9f82.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:46e65537a7e36e9d",
+          "title": "Deloitte brings Claude to 470,000 people",
+          "normalized_url": "https://www.anthropic.com/news/deloitte-anthropic-partnership",
+          "url_hash": "46e65537a7e36e9d56d7ba3540a5b11fb7facd2877e0bd7d99bb4daf4be8ab0a",
+          "suggested_doc_key": "2026-09-deloitte-brings-claude-to-470-000-people-46e65537",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-deloitte-brings-claude-to-470-000-people-46e65537.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:1e1f2389348ed124",
+          "title": "Rahul Patil joins as Chief Technology Officer",
+          "normalized_url": "https://www.anthropic.com/news/rahul-patil-joins-anthropic",
+          "url_hash": "1e1f2389348ed1246dff3b43a80266b2ef3a03b7073d9030eac1d4ac2c8235c5",
+          "suggested_doc_key": "2026-09-rahul-patil-joins-as-chief-technology-officer-1e1f2389",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-rahul-patil-joins-as-chief-technology-officer-1e1f2389.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:9c54a6bc752d5776",
+          "title": "Anthropic expands to India with Bengaluru office",
+          "normalized_url": "https://www.anthropic.com/news/expanding-global-operations-to-india",
+          "url_hash": "9c54a6bc752d5776d923c310c397b30c77b71be2cc08a60c3da912894079d783",
+          "suggested_doc_key": "2026-09-anthropic-expands-to-india-with-bengaluru-office-9c54a6bc",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-anthropic-expands-to-india-with-bengaluru-office-9c54a6bc.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:a05ac2a749c14fc0",
+          "title": "Dario Amodei on American AI leadership",
+          "normalized_url": "https://www.anthropic.com/news/statement-dario-amodei-american-ai-leadership",
+          "url_hash": "a05ac2a749c14fc0e372afe820d6d179b8c28823c147dafcdc795927c148b54a",
+          "suggested_doc_key": "2026-09-dario-amodei-on-american-ai-leadership-a05ac2a7",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-dario-amodei-on-american-ai-leadership-a05ac2a7.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 12
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:bacf7aac6987233e",
+          "title": "Nvidia is the central bank of AI",
+          "normalized_url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+          "url_hash": "bacf7aac6987233eb08816b8de439185b5f8e3a92fa98fc9786f6a719ef6236d",
+          "suggested_doc_key": "2026-09-nvidia-is-the-central-bank-of-ai-bacf7aac",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-nvidia-is-the-central-bank-of-ai-bacf7aac.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 356점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 239개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:874a2fd905ea6c7b",
+          "title": "We must pace the frontier",
+          "normalized_url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+          "url_hash": "874a2fd905ea6c7bd367e41e878d3bc5363d50e880a53a1f5cdbca98b0dfdf32",
+          "suggested_doc_key": "2026-09-we-must-pace-the-frontier-874a2fd9",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-we-must-pace-the-frontier-874a2fd9.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 487점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 675개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:132e7b2b3e5253f9",
+          "title": "Navier-Stokes Announcement",
+          "normalized_url": "https://www.claymath.org/news/navier-stokes-announcement",
+          "url_hash": "132e7b2b3e5253f98e6545e9ee6f96a29981c746bec8a9198c7aa1981eec5e0a",
+          "suggested_doc_key": "2026-09-navier-stokes-announcement-132e7b2b",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-navier-stokes-announcement-132e7b2b.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 306점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 249개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9cce0b5683586620",
+          "title": "Make your first edit to OpenStreetMap",
+          "normalized_url": "https://high5apps.github.io/josm-plugin-website-wizard",
+          "url_hash": "9cce0b5683586620cf3ad30ed0e91d1a3be6ba512a4771c1a7424da0d2b8b2b7",
+          "suggested_doc_key": "2026-09-make-your-first-edit-to-openstreetmap-9cce0b56",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-make-your-first-edit-to-openstreetmap-9cce0b56.md",
+          "candidate_score": 58.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 275점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 69개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5b5318e43ea03e31",
+          "title": "λ Snap – An inviting programming language for kids and adults for CS study",
+          "normalized_url": "https://snap.berkeley.edu/",
+          "url_hash": "5b5318e43ea03e312c5fff6f546ab94fb9cd7c38680c03fa2c15808eba8fbb52",
+          "suggested_doc_key": "2026-09-snap-an-inviting-programming-language-for-kids-and-adults-for-cs-study-5b5318e4",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-snap-an-inviting-programming-language-for-kids-and-adults-for-cs-study-5b5318e4.md",
+          "candidate_score": 57.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 171점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 109개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:968c32634dc2a1cb",
+          "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+          "normalized_url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+          "url_hash": "968c32634dc2a1cb83f007064d0bd309276c504696b107928b2bc3d51ba9601b",
+          "suggested_doc_key": "2026-09-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-968c3263",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-968c3263.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:4aeb82da9975e2f5",
+          "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+          "normalized_url": "https://openai.com/index/cognition-devin-testing-with-astra",
+          "url_hash": "4aeb82da9975e2f5f564fba46674441b8ef455135ac302c60f8f7eb501572ba0",
+          "suggested_doc_key": "2026-09-cognition-helps-devin-test-its-own-work-with-gpt-6-astra-4aeb82da",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-cognition-helps-devin-test-its-own-work-with-gpt-6-astra-4aeb82da.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:4a36ea7ba6bb268a",
+          "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+          "normalized_url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+          "url_hash": "4a36ea7ba6bb268a569ba1bda62fe3a651ce22624e6c80e44fc2f66bda887c59",
+          "suggested_doc_key": "2026-09-openai-expands-initiatives-to-support-journalism-from-classrooms-to-news-4a36ea7b",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-openai-expands-initiatives-to-support-journalism-from-classrooms-to-news-4a36ea7b.md",
+          "candidate_score": 26.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 4일이 지난 글로 최신성 16점을 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 47
+      }
+    }
+  ]
+}
