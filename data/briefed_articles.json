@@ -8220,6 +8220,86 @@
       "status": "published",
       "briefed_at": "2026-09-12T23:43:35.549080Z",
       "candidate_score": 26.0
+    },
+    "a05ac2a749c14fc0e372afe820d6d179b8c28823c147dafcdc795927c148b54a": {
+      "normalized_url": "https://www.anthropic.com/news/statement-dario-amodei-american-ai-leadership",
+      "title_fingerprint": "dario amodei on american ai leadership",
+      "service_key": "anthropic-blog",
+      "title": "Dario Amodei on American AI leadership",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-dario-amodei-on-american-ai-leadership-a05ac2a7.md",
+      "status": "published",
+      "briefed_at": "2026-09-13T23:54:22.172130Z",
+      "candidate_score": 28.0
+    },
+    "c96a93ddc54203eb45f9d3406b64f8f15bd414d68b0d0c5c026ad7a74955b35e": {
+      "normalized_url": "https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific",
+      "title_fingerprint": "seoul becomes anthropic s third apac office",
+      "service_key": "anthropic-blog",
+      "title": "Seoul becomes Anthropic's third APAC office",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-seoul-becomes-anthropic-s-third-apac-office-c96a93dd.md",
+      "status": "published",
+      "briefed_at": "2026-09-13T23:54:22.172161Z",
+      "candidate_score": 28.0
+    },
+    "97c582cac173ba0ce62b30d9caaaf082301d055136d08e1c093fab21bd3362e3": {
+      "normalized_url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
+      "title_fingerprint": "expanding our use of google cloud tpus",
+      "service_key": "anthropic-blog",
+      "title": "Expanding our use of Google Cloud TPUs",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-expanding-our-use-of-google-cloud-tpus-97c582ca.md",
+      "status": "published",
+      "briefed_at": "2026-09-13T23:54:22.172167Z",
+      "candidate_score": 28.0
+    },
+    "27a5c853589b704d00dc73e06becd4f8a99cef9d985ea6b682033b45ac57c911": {
+      "normalized_url": "https://www.anthropic.com/news/opening-our-tokyo-office",
+      "title_fingerprint": "anthropic opens tokyo office",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic opens Tokyo office",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-anthropic-opens-tokyo-office-27a5c853.md",
+      "status": "published",
+      "briefed_at": "2026-09-13T23:54:22.172170Z",
+      "candidate_score": 28.0
+    },
+    "3ea606d07abfdfe6acd0a1ef14fc051dffcbf65fb12b943386acf8feaba32708": {
+      "normalized_url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+      "title_fingerprint": "fable 5 1 solves the cyphral distich a 370 year old cipher",
+      "service_key": "hacker-news",
+      "title": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
+      "article_doc_path": "docs/services/hacker-news/2026-09-fable-5-1-solves-the-cyphral-distich-a-370-year-old-cipher-3ea606d0.md",
+      "status": "published",
+      "briefed_at": "2026-09-13T23:54:22.172173Z",
+      "candidate_score": 65.0
+    },
+    "223c811be8738dde267a90f4b4e92f2f9afa90016d6aca56dcfe99598e57f230": {
+      "normalized_url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too",
+      "title_fingerprint": "garry tan wants us open weight ai labs to distill frontier models too",
+      "service_key": "hacker-news",
+      "title": "Garry Tan wants US open-weight AI labs to 'distill' frontier models, too",
+      "article_doc_path": "docs/services/hacker-news/2026-09-garry-tan-wants-us-open-weight-ai-labs-to-distill-frontier-models-too-223c811b.md",
+      "status": "published",
+      "briefed_at": "2026-09-13T23:54:22.172176Z",
+      "candidate_score": 65.0
+    },
+    "a20d42b13c6137cb9d80a3e34723e354b64b1b223b167bce1c628544435de68b": {
+      "normalized_url": "https://twitter.com/TechEmails/status/2099214399840059428",
+      "title_fingerprint": "mark zuckerberg cambridge analytica 2017",
+      "service_key": "hacker-news",
+      "title": "Mark Zuckerberg: \"Cambridge Analytica\" (2017)",
+      "article_doc_path": "docs/services/hacker-news/2026-09-mark-zuckerberg-cambridge-analytica-2017-a20d42b1.md",
+      "status": "published",
+      "briefed_at": "2026-09-13T23:54:22.172178Z",
+      "candidate_score": 63.0
+    },
+    "d42ce96dc59dee3e31ddcf07da4040b7f9d8f9dc285e5702996a90bbc41d7e7e": {
+      "normalized_url": "https://dreamstation.systems/personal/tesla.html",
+      "title_fingerprint": "i m being cyberattacked by tesla inc",
+      "service_key": "hacker-news",
+      "title": "I'm being cyberattacked by Tesla, Inc",
+      "article_doc_path": "docs/services/hacker-news/2026-09-i-m-being-cyberattacked-by-tesla-inc-d42ce96d.md",
+      "status": "published",
+      "briefed_at": "2026-09-13T23:54:22.172181Z",
+      "candidate_score": 62.0
     }
   }
 }
