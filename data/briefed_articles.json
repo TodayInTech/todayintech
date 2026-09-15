@@ -8370,6 +8370,86 @@
       "status": "published",
       "briefed_at": "2026-09-15T00:13:37.031906Z",
       "candidate_score": 44.0
+    },
+    "9f33226da6dc2269773d03c3c1b6b3228b6d36f4e80618155c6cbc4837651f93": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio",
+      "title_fingerprint": "build real time voice applications with gemini 3 8 live and 3 5 transcribe",
+      "service_key": "google-blog",
+      "title": "Build real-time voice applications with Gemini 3.8 Live and 3.5 Transcribe",
+      "article_doc_path": "docs/services/google-blog/2026-09-build-real-time-voice-applications-with-gemini-3-8-live-and-3-5-transcri-9f33226d.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T23:58:39.781730Z",
+      "candidate_score": 41.0
+    },
+    "dfe2f7f06070ffbc61225b84e3f2b4412af71548f838585d1e2e1039faf175a9": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact",
+      "title_fingerprint": "ai for societal impact",
+      "service_key": "google-blog",
+      "title": "AI for Societal Impact",
+      "article_doc_path": "docs/services/google-blog/2026-09-ai-for-societal-impact-dfe2f7f0.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T23:58:39.781762Z",
+      "candidate_score": 40.0
+    },
+    "419a0d7bd8653188b6f438f24918653839815edcf001cf2cbbd21c040a0085a3": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people",
+      "title_fingerprint": "building ai to accelerate science and improve lives",
+      "service_key": "google-blog",
+      "title": "Building AI to accelerate science and improve lives",
+      "article_doc_path": "docs/services/google-blog/2026-09-building-ai-to-accelerate-science-and-improve-lives-419a0d7b.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T23:58:39.781778Z",
+      "candidate_score": 34.0
+    },
+    "7a00acf92df0c96e97506b3bcbe8a85093a78e23b6fa651307e399c37ab92a3e": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language",
+      "title_fingerprint": "ai for everyone in every language",
+      "service_key": "google-blog",
+      "title": "AI for everyone in every language",
+      "article_doc_path": "docs/services/google-blog/2026-09-ai-for-everyone-in-every-language-7a00acf9.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T23:58:39.781789Z",
+      "candidate_score": 33.0
+    },
+    "0157005b9d1f296a502364c93fb5782ff5512404597bbc61689a29129dc93814": {
+      "normalized_url": "https://withcapsule.app/",
+      "title_fingerprint": "show hn capsule single file web apps that save their data into sqlite",
+      "service_key": "hacker-news",
+      "title": "Show HN: Capsule – Single-file web apps that save their data into SQLite",
+      "article_doc_path": "docs/services/hacker-news/2026-09-show-hn-capsule-single-file-web-apps-that-save-their-data-into-sqlite-0157005b.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T23:58:39.781799Z",
+      "candidate_score": 75.0
+    },
+    "0605bcba6b5c77399fdaf77885c39da92c3863c23b42be21557bb8a9e269ef5d": {
+      "normalized_url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "title_fingerprint": "introducing system one models and jev",
+      "service_key": "hacker-news",
+      "title": "Introducing System One Models and Jev",
+      "article_doc_path": "docs/services/hacker-news/2026-09-introducing-system-one-models-and-jev-0605bcba.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T23:58:39.781807Z",
+      "candidate_score": 69.0
+    },
+    "25823e681aab7b46b5222f5c907d42bee6ce88a044bcbc928942510e6c743401": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking",
+      "title_fingerprint": "gemini 3 8 live and 3 8 live extended thinking",
+      "service_key": "hacker-news",
+      "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "article_doc_path": "docs/services/hacker-news/2026-09-gemini-3-8-live-and-3-8-live-extended-thinking-25823e68.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T23:58:39.781815Z",
+      "candidate_score": 65.0
+    },
+    "4143a67a3e3a9fa2e2ae27bf0ed5dc0aa522500e26b1e7cd84253348103d4ca0": {
+      "normalized_url": "https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access",
+      "title_fingerprint": "an update on wayback machine access",
+      "service_key": "hacker-news",
+      "title": "An Update on Wayback Machine Access",
+      "article_doc_path": "docs/services/hacker-news/2026-09-an-update-on-wayback-machine-access-4143a67a.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T23:58:39.781822Z",
+      "candidate_score": 60.0
     }
   }
 }
