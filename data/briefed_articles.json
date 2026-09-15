@@ -8300,6 +8300,76 @@
       "status": "published",
       "briefed_at": "2026-09-13T23:54:22.172181Z",
       "candidate_score": 62.0
+    },
+    "ff082bc32dcf39bfd27812edc1e6795d89a33c6620e4fac168c5a51bfe3c1f63": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+      "title_fingerprint": "watch astronaut christina koch and google s james manyika discuss space technology and discovery",
+      "service_key": "google-blog",
+      "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+      "article_doc_path": "docs/services/google-blog/2026-09-watch-astronaut-christina-koch-and-google-s-james-manyika-discuss-space-ff082bc3.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T00:13:37.031820Z",
+      "candidate_score": 41.0
+    },
+    "fd1baec08311b505543d5a8c71d0a693c44e2ce54fd7ece1e317669825fe6f4e": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
+      "title_fingerprint": "devfest is back",
+      "service_key": "google-blog",
+      "title": "DevFest is back",
+      "article_doc_path": "docs/services/google-blog/2026-09-devfest-is-back-fd1baec0.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T00:13:37.031858Z",
+      "candidate_score": 35.0
+    },
+    "b54bfac470e15413bc3b66a7050fd806dd70198b5512200e1b4e25ecc201c992": {
+      "normalized_url": "https://andonlabs.com/blog/why-we-built-pion",
+      "title_fingerprint": "pion an agent designed to run any company autonomously",
+      "service_key": "hacker-news",
+      "title": "Pion, an agent designed to run any company autonomously",
+      "article_doc_path": "docs/services/hacker-news/2026-09-pion-an-agent-designed-to-run-any-company-autonomously-b54bfac4.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T00:13:37.031871Z",
+      "candidate_score": 67.0
+    },
+    "fac46a005f782f526ab3ec110c248e49556dec54ef89d488778af33ec874bf09": {
+      "normalized_url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available",
+      "title_fingerprint": "ios 27 ipados 27 and macos 27",
+      "service_key": "hacker-news",
+      "title": "iOS 27, iPadOS 27, and macOS 27",
+      "article_doc_path": "docs/services/hacker-news/2026-09-ios-27-ipados-27-and-macos-27-fac46a00.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T00:13:37.031880Z",
+      "candidate_score": 64.0
+    },
+    "6521ac2763494dd5ccda8eb7212820283f0a924638922463a90d39e98e41a31f": {
+      "normalized_url": "https://store.steampowered.com/hardware/steamframe",
+      "title_fingerprint": "steam frame starts at 1059",
+      "service_key": "hacker-news",
+      "title": "Steam Frame starts at $1059",
+      "article_doc_path": "docs/services/hacker-news/2026-09-steam-frame-starts-at-1059-6521ac27.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T00:13:37.031889Z",
+      "candidate_score": 63.0
+    },
+    "937e97743839da56b8913212d40858128def69adb972370fd31fe847e88db701": {
+      "normalized_url": "https://law.justia.com/cases/federal/appellate-courts/ca9/26-1444/26-1444-2026-08-04.html",
+      "title_fingerprint": "amazon vs perplexity u s court of appeals for the ninth circuit",
+      "service_key": "hacker-news",
+      "title": "Amazon vs. Perplexity – U.S. Court of Appeals for the Ninth Circuit",
+      "article_doc_path": "docs/services/hacker-news/2026-09-amazon-vs-perplexity-u-s-court-of-appeals-for-the-ninth-circuit-937e9774.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T00:13:37.031897Z",
+      "candidate_score": 62.5
+    },
+    "7f82d995c515e5ba429e7e06d184bac39c4f16f7fff73a80b082fdc2812fc58f": {
+      "normalized_url": "https://openai.com/index/fyxer",
+      "title_fingerprint": "how fyxer built an ai executive assistant people trust",
+      "service_key": "openai-blog",
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "article_doc_path": "docs/services/openai-blog/2026-09-how-fyxer-built-an-ai-executive-assistant-people-trust-7f82d995.md",
+      "status": "published",
+      "briefed_at": "2026-09-15T00:13:37.031906Z",
+      "candidate_score": 44.0
     }
   }
 }
