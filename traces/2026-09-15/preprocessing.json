@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-15T00:10:38.306691+00:00",
+  "generated_at": "2026-09-15T23:54:48.487788+00:00",
   "generated_for": "2026-09-15",
   "stage": "preprocessing",
   "status": "success",
-  "git_sha": "e91d1cf47cb9b32a88df1ddc4e251574e95f36dc",
-  "github_run_id": "34911985751",
+  "git_sha": "c6497b3589ab78d948ed2693dcd7e231338f400b",
+  "github_run_id": "35037644643",
   "service_count": 5,
-  "duration_ms": 11,
+  "duration_ms": 12,
   "raw_count": 120,
-  "candidate_count": 13,
-  "excluded_count": 107,
+  "candidate_count": 16,
+  "excluded_count": 104,
   "step_metrics": [
     {
       "step_name": "validation",
@@ -46,33 +46,33 @@
     {
       "step_name": "briefed_article_filter",
       "input_count": 120,
-      "output_count": 23,
-      "excluded_count": 97,
-      "duration_ms": 3,
+      "output_count": 26,
+      "excluded_count": 94,
+      "duration_ms": 4,
       "reason_counts": {
-        "already_briefed": 97
+        "already_briefed": 94
       }
     },
     {
       "step_name": "candidate_scoring",
-      "input_count": 23,
-      "output_count": 23,
+      "input_count": 26,
+      "output_count": 26,
       "excluded_count": 0,
       "duration_ms": 1,
       "reason_counts": {}
     },
     {
       "step_name": "candidate_quality_gate",
-      "input_count": 23,
-      "output_count": 23,
+      "input_count": 26,
+      "output_count": 26,
       "excluded_count": 0,
       "duration_ms": 0,
       "reason_counts": {}
     },
     {
       "step_name": "candidate_limiting",
-      "input_count": 23,
-      "output_count": 13,
+      "input_count": 26,
+      "output_count": 16,
       "excluded_count": 10,
       "duration_ms": 0,
       "reason_counts": {
@@ -107,16 +107,16 @@
       "service_key": "google-blog",
       "service_name": "Google Blog",
       "raw_count": 20,
-      "candidate_count": 2,
-      "excluded_count": 18,
+      "candidate_count": 6,
+      "excluded_count": 14,
       "top_candidates": [
         {
-          "candidate_id": "google-blog:ff082bc32dcf39bf",
-          "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
-          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
-          "url_hash": "ff082bc32dcf39bfd27812edc1e6795d89a33c6620e4fac168c5a51bfe3c1f63",
-          "suggested_doc_key": "2026-09-watch-astronaut-christina-koch-and-google-s-james-manyika-discuss-space-ff082bc3",
-          "suggested_article_path": "docs/services/google-blog/2026-09-watch-astronaut-christina-koch-and-google-s-james-manyika-discuss-space-ff082bc3.md",
+          "candidate_id": "google-blog:9f33226da6dc2269",
+          "title": "Build real-time voice applications with Gemini 3.8 Live and 3.5 Transcribe",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio",
+          "url_hash": "9f33226da6dc2269773d03c3c1b6b3228b6d36f4e80618155c6cbc4837651f93",
+          "suggested_doc_key": "2026-09-build-real-time-voice-applications-with-gemini-3-8-live-and-3-5-transcri-9f33226d",
+          "suggested_article_path": "docs/services/google-blog/2026-09-build-real-time-voice-applications-with-gemini-3-8-live-and-3-5-transcri-9f33226d.md",
           "candidate_score": 41.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 7점을 적용했습니다.",
@@ -126,22 +126,65 @@
           ]
         },
         {
-          "candidate_id": "google-blog:fd1baec08311b505",
-          "title": "DevFest is back",
-          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
-          "url_hash": "fd1baec08311b505543d5a8c71d0a693c44e2ce54fd7ece1e317669825fe6f4e",
-          "suggested_doc_key": "2026-09-devfest-is-back-fd1baec0",
-          "suggested_article_path": "docs/services/google-blog/2026-09-devfest-is-back-fd1baec0.md",
-          "candidate_score": 35.0,
+          "candidate_id": "google-blog:dfe2f7f06070ffbc",
+          "title": "AI for Societal Impact",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact",
+          "url_hash": "dfe2f7f06070ffbc61225b84e3f2b4412af71548f838585d1e2e1039faf175a9",
+          "suggested_doc_key": "2026-09-ai-for-societal-impact-dfe2f7f0",
+          "suggested_article_path": "docs/services/google-blog/2026-09-ai-for-societal-impact-dfe2f7f0.md",
+          "candidate_score": 40.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 7점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
             "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:419a0d7bd8653188",
+          "title": "Building AI to accelerate science and improve lives",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people",
+          "url_hash": "419a0d7bd8653188b6f438f24918653839815edcf001cf2cbbd21c040a0085a3",
+          "suggested_doc_key": "2026-09-building-ai-to-accelerate-science-and-improve-lives-419a0d7b",
+          "suggested_article_path": "docs/services/google-blog/2026-09-building-ai-to-accelerate-science-and-improve-lives-419a0d7b.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:7a00acf92df0c96e",
+          "title": "AI for everyone in every language",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language",
+          "url_hash": "7a00acf92df0c96e97506b3bcbe8a85093a78e23b6fa651307e399c37ab92a3e",
+          "suggested_doc_key": "2026-09-ai-for-everyone-in-every-language-7a00acf9",
+          "suggested_article_path": "docs/services/google-blog/2026-09-ai-for-everyone-in-every-language-7a00acf9.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:b58ee074bbbb14cb",
+          "title": "Ask a Scientist: How can researchers use AI to spot a wildfire?",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/wildfire-tracking-ai",
+          "url_hash": "b58ee074bbbb14cbdaa9b770deb7c22f7aa71692e1d3bd68c75769e3ed0ca51f",
+          "suggested_doc_key": "2026-09-ask-a-scientist-how-can-researchers-use-ai-to-spot-a-wildfire-b58ee074",
+          "suggested_article_path": "docs/services/google-blog/2026-09-ask-a-scientist-how-can-researchers-use-ai-to-spot-a-wildfire-b58ee074.md",
+          "candidate_score": 32.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
           ]
         }
       ],
       "excluded_reasons": {
-        "already_briefed": 18
+        "already_briefed": 14
       }
     },
     {
@@ -152,85 +195,86 @@
       "excluded_count": 10,
       "top_candidates": [
         {
-          "candidate_id": "hacker-news:b54bfac470e15413",
-          "title": "Pion, an agent designed to run any company autonomously",
-          "normalized_url": "https://andonlabs.com/blog/why-we-built-pion",
-          "url_hash": "b54bfac470e15413bc3b66a7050fd806dd70198b5512200e1b4e25ecc201c992",
-          "suggested_doc_key": "2026-09-pion-an-agent-designed-to-run-any-company-autonomously-b54bfac4",
-          "suggested_article_path": "docs/services/hacker-news/2026-09-pion-an-agent-designed-to-run-any-company-autonomously-b54bfac4.md",
-          "candidate_score": 67.0,
+          "candidate_id": "hacker-news:0157005b9d1f296a",
+          "title": "Show HN: Capsule – Single-file web apps that save their data into SQLite",
+          "normalized_url": "https://withcapsule.app/",
+          "url_hash": "0157005b9d1f296a502364c93fb5782ff5512404597bbc61689a29129dc93814",
+          "suggested_doc_key": "2026-09-show-hn-capsule-single-file-web-apps-that-save-their-data-into-sqlite-0157005b",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-show-hn-capsule-single-file-web-apps-that-save-their-data-into-sqlite-0157005b.md",
+          "candidate_score": 75.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "Hacker News 점수 263점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 114개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0605bcba6b5c7739",
+          "title": "Introducing System One Models and Jev",
+          "normalized_url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+          "url_hash": "0605bcba6b5c77399fdaf77885c39da92c3863c23b42be21557bb8a9e269ef5d",
+          "suggested_doc_key": "2026-09-introducing-system-one-models-and-jev-0605bcba",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-introducing-system-one-models-and-jev-0605bcba.md",
+          "candidate_score": 69.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
             "중요 키워드 1개를 감지해 가산했습니다.",
-            "Hacker News 점수 269점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 276개를 토론 신호로 반영했습니다.",
-            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "hacker-news:fac46a005f782f52",
-          "title": "iOS 27, iPadOS 27, and macOS 27",
-          "normalized_url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available",
-          "url_hash": "fac46a005f782f526ab3ec110c248e49556dec54ef89d488778af33ec874bf09",
-          "suggested_doc_key": "2026-09-ios-27-ipados-27-and-macos-27-fac46a00",
-          "suggested_article_path": "docs/services/hacker-news/2026-09-ios-27-ipados-27-and-macos-27-fac46a00.md",
-          "candidate_score": 64.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 5점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 318점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 353개를 토론 신호로 반영했습니다.",
+            "Hacker News 점수 616점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 205개를 토론 신호로 반영했습니다.",
             "RSS 순위 6위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:6521ac2763494dd5",
-          "title": "Steam Frame starts at $1059",
-          "normalized_url": "https://store.steampowered.com/hardware/steamframe",
-          "url_hash": "6521ac2763494dd5ccda8eb7212820283f0a924638922463a90d39e98e41a31f",
-          "suggested_doc_key": "2026-09-steam-frame-starts-at-1059-6521ac27",
-          "suggested_article_path": "docs/services/hacker-news/2026-09-steam-frame-starts-at-1059-6521ac27.md",
-          "candidate_score": 63.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 5점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 461점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 343개를 토론 신호로 반영했습니다.",
-            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "hacker-news:937e97743839da56",
-          "title": "Amazon vs. Perplexity – U.S. Court of Appeals for the Ninth Circuit",
-          "normalized_url": "https://law.justia.com/cases/federal/appellate-courts/ca9/26-1444/26-1444-2026-08-04.html",
-          "url_hash": "937e97743839da56b8913212d40858128def69adb972370fd31fe847e88db701",
-          "suggested_doc_key": "2026-09-amazon-vs-perplexity-u-s-court-of-appeals-for-the-ninth-circuit-937e9774",
-          "suggested_article_path": "docs/services/hacker-news/2026-09-amazon-vs-perplexity-u-s-court-of-appeals-for-the-ninth-circuit-937e9774.md",
-          "candidate_score": 62.5,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 5점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 155점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 157개를 토론 신호로 반영했습니다.",
-            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "hacker-news:baf3658e1d9c87c8",
-          "title": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
-          "normalized_url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
-          "url_hash": "baf3658e1d9c87c8b494d3b18d8716d1a38e89f9db15a6cbdba08c5990fb61ef",
-          "suggested_doc_key": "2026-09-gpt-5-6-luna-vs-gpt-6-astra-is-a-1-20-model-good-enough-for-code-review-baf3658e",
-          "suggested_article_path": "docs/services/hacker-news/2026-09-gpt-5-6-luna-vs-gpt-6-astra-is-a-1-20-model-good-enough-for-code-review-baf3658e.md",
-          "candidate_score": 60.2,
+          "candidate_id": "hacker-news:25823e681aab7b46",
+          "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking",
+          "url_hash": "25823e681aab7b46b5222f5c907d42bee6ce88a044bcbc928942510e6c743401",
+          "suggested_doc_key": "2026-09-gemini-3-8-live-and-3-8-live-extended-thinking-25823e68",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-gemini-3-8-live-and-3-8-live-extended-thinking-25823e68.md",
+          "candidate_score": 65.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
             "중요 키워드 1개를 감지해 가산했습니다.",
-            "Hacker News 점수 92점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 100개를 토론 신호로 반영했습니다.",
-            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 255점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 174개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4143a67a3e3a9fa2",
+          "title": "An Update on Wayback Machine Access",
+          "normalized_url": "https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access",
+          "url_hash": "4143a67a3e3a9fa2e2ae27bf0ed5dc0aa522500e26b1e7cd84253348103d4ca0",
+          "suggested_doc_key": "2026-09-an-update-on-wayback-machine-access-4143a67a",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-an-update-on-wayback-machine-access-4143a67a.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 334점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 180개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:45e988c726e7178c",
+          "title": "We got admin access to Baseten's production GitHub in 25 minutes",
+          "normalized_url": "https://www.strix.ai/blog/baseten-harbor-github-pat-takeover",
+          "url_hash": "45e988c726e7178ce3c2283c3d2b9cda10fcfa58b5eb3f5fa35d1f811a2531c5",
+          "suggested_doc_key": "2026-09-we-got-admin-access-to-baseten-s-production-github-in-25-minutes-45e988c7",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-we-got-admin-access-to-baseten-s-production-github-in-25-minutes-45e988c7.md",
+          "candidate_score": 59.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 188점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 96개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
           ]
         }
       ],
@@ -242,27 +286,11 @@
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
       "raw_count": 50,
-      "candidate_count": 1,
-      "excluded_count": 49,
-      "top_candidates": [
-        {
-          "candidate_id": "openai-blog:7f82d995c515e5ba",
-          "title": "How Fyxer built an AI executive assistant people trust",
-          "normalized_url": "https://openai.com/index/fyxer",
-          "url_hash": "7f82d995c515e5ba429e7e06d184bac39c4f16f7fff73a80b082fdc2812fc58f",
-          "suggested_doc_key": "2026-09-how-fyxer-built-an-ai-executive-assistant-people-trust-7f82d995",
-          "suggested_article_path": "docs/services/openai-blog/2026-09-how-fyxer-built-an-ai-executive-assistant-people-trust-7f82d995.md",
-          "candidate_score": 44.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 10점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "중요 키워드 1개를 감지해 가산했습니다.",
-            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
-          ]
-        }
-      ],
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
       "excluded_reasons": {
-        "already_briefed": 49
+        "already_briefed": 50
       }
     }
   ]

@@ -2,21 +2,20 @@
 
 ## Summary
 
-- Status: `partial`
+- Status: `success`
 - Policy: `adaptive-token-budget@1:min=100:full=4000:select=8000`
-- Duration: 845 ms
-- Candidates: 7
-- Usable candidates: 7 (100.0%)
-- Writer-ready candidates: 7 (100.0%)
-- Status counts: enriched: 4, fallback: 3
-- Input strategies: feed_metadata_only: 3, full_content: 4
-- Failure reasons: access_denied: 2, extraction_failed: 1
-- Extracted tokens: p50 1125, p90 2420, max 2673
+- Duration: 4 ms
+- Candidates: 8
+- Usable candidates: 8 (100.0%)
+- Writer-ready candidates: 7 (87.5%)
+- Status counts: enriched: 8
+- Input strategies: chunk_selection: 1, full_content: 7
+- Failure reasons: -
+- Extracted tokens: p50 776, p90 3099, max 4006
 
 ## Services
 
 | Service | Candidates | Usable | Enriched | Fallback | Failed | Tokens p50 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| google-blog | 2 | 2 | 2 | 0 | 0 | 300 |
-| hacker-news | 4 | 4 | 2 | 2 | 0 | 2252 |
-| openai-blog | 1 | 1 | 0 | 1 | 0 | 0 |
+| google-blog | 4 | 4 | 4 | 0 | 0 | 1265 |
+| hacker-news | 4 | 4 | 4 | 0 | 0 | 664 |
