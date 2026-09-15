@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-09-15T00:13:37.272470+00:00",
+  "generated_for": "2026-09-15",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "e91d1cf47cb9b32a88df1ddc4e251574e95f36dc",
+  "github_run_id": "34911985751",
+  "decision_count": 7,
+  "decision_counts": {
+    "published": 7
+  },
+  "decisions": [
+    {
+      "candidate_id": "google-blog:ff082bc32dcf39bf",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+      "article_doc_path": "docs/services/google-blog/2026-09-watch-astronaut-christina-koch-and-google-s-james-manyika-discuss-space-ff082bc3.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI/우주",
+      "importance_level": "중간",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "우주비행사의 경험과 AI·로보틱스와의 협업을 주제로 한 대화로 기술 독자에게 시사점이 있어 게시 가치가 있다고 판단했습니다. 제공된 근거가 직접적인 인용과 핵심 문장을 담고 있어 짧은 브리핑으로 전달하기에 충분합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 41.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "google-blog:fd1baec08311b505",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "title": "DevFest is back",
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
+      "article_doc_path": "docs/services/google-blog/2026-09-devfest-is-back-fd1baec0.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Developer Events",
+      "importance_level": "Medium",
+      "confidence_score": 0.83,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "글이 DevFest 2026의 일정, 주제, 현장 활동(코드랩·워크숍·agent‑athon), 참여 가능한 도구 목록(Gemini, Google AI Studio, Google Antigravity, Google Cloud 등)과 지역 GDG의 역할·범위(800개 행사, 115개국)를 구체적으로 제시해 개발자·기술 독자에게 실용적 가치가 있어 게시할 만합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 35.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:b54bfac470e15413",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Pion, an agent designed to run any company autonomously",
+      "normalized_url": "https://andonlabs.com/blog/why-we-built-pion",
+      "article_doc_path": "docs/services/hacker-news/2026-09-pion-an-agent-designed-to-run-any-company-autonomously-b54bfac4.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 안전성",
+      "importance_level": "높음",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 실험적 에이전트의 실세계 자원 획득 능력과 안전성 위험을 실증적으로 다루며, Vending‑Bench와 실제 자판기·상점·카페 배포 사례를 근거로 기술적 진전과 문제점을 명확히 제시합니다. 기술 독자와 정책입안자 관점에서 가치 있는 실증적 데이터와 Pion 플랫폼 공개 의도가 포함되어 있어 Today in Tech 독자층에 적절합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 67.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:fac46a005f782f52",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "iOS 27, iPadOS 27, and macOS 27",
+      "normalized_url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available",
+      "article_doc_path": "docs/services/hacker-news/2026-09-ios-27-ipados-27-and-macos-27-fac46a00.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "운영체제·플랫폼",
+      "importance_level": "High",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "애플의 주요 연례 플랫폼 업데이트로서 Siri AI와 Apple Intelligence라는 차세대 기능이 도입되고, 사진·검색·성능·자녀 보호 등 광범위한 시스템 개선이 포함되어 기술 독자들에게 유의미한 변화가 있어 게시 가치가 높다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003"
+      ],
+      "candidate_score": 64.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:6521ac2763494dd5",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Steam Frame starts at $1059",
+      "normalized_url": "https://store.steampowered.com/hardware/steamframe",
+      "article_doc_path": "docs/services/hacker-news/2026-09-steam-frame-starts-at-1059-6521ac27.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "하드웨어",
+      "importance_level": "중간",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 Steam 스토어 페이지와 시작가($1059) 표기가 확인되고 Hacker News에서 높은 관심(포인트 461, 댓글 343)이 관찰되어 기술 독자에게 알릴 가치가 있다고 판단했습니다. 다만 상세 사양은 메타데이터에 없어 추가 확인이 필요합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "candidate_id: hacker-news:6521ac2763494dd5",
+        "source_url: https://store.steampowered.com/hardware/steamframe",
+        "feed_summary: Article URL: https://store.steampowered.com/hardware/steamframe; Comments URL: https://news.ycombinator.com/item?id=49700661; Points: 461; # Comments: 343",
+        "authors: bsimpson",
+        "metadata.hn_points: 461",
+        "metadata.hn_comments: 343"
+      ],
+      "candidate_score": 63.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:937e97743839da56",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Amazon vs. Perplexity – U.S. Court of Appeals for the Ninth Circuit",
+      "normalized_url": "https://law.justia.com/cases/federal/appellate-courts/ca9/26-1444/26-1444-2026-08-04.html",
+      "article_doc_path": "docs/services/hacker-news/2026-09-amazon-vs-perplexity-u-s-court-of-appeals-for-the-ninth-circuit-937e9774.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "법률·AI",
+      "importance_level": "중간",
+      "confidence_score": 0.6,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "제공된 메타데이터는 미국 제9순회항소법원 판결 문서 링크와 해커뉴스에서의 높은 관심(155점, 157개 댓글)을 가리켜 기술 독자들이 주목할 만한 사안임을 보여준다. 원문 검토 전까지는 세부 판단을 단정할 수 없으나 관심사와 잠재적 영향력을 안내하는 브리핑 가치가 있다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Amazon vs. Perplexity – U.S. Court of Appeals for the Ninth Circuit",
+        "source_url: https://law.justia.com/cases/federal/appellate-courts/ca9/26-1444/26-1444-2026-08-04.html",
+        "feed_summary (Article URL, Comments URL, Points, # Comments)",
+        "hn_points: 155",
+        "hn_comments: 157",
+        "published_at: 2026-09-14T21:05:22+00:00",
+        "collected_at: 2026-09-15T00:10:44.619158+00:00",
+        "service_name: Hacker News"
+      ],
+      "candidate_score": 62.5,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:7f82d995c515e5ba",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "normalized_url": "https://openai.com/index/fyxer",
+      "article_doc_path": "docs/services/openai-blog/2026-09-how-fyxer-built-an-ai-executive-assistant-people-trust-7f82d995.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Startup",
+      "importance_level": "Medium",
+      "confidence_score": 0.75,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터가 Fyxer의 핵심 기능(오픈AI 모델 이용, 파인튜닝, 메모리, 실제 사용자 피드백 등)을 명시해 기술 독자에게 유의미한 주제성과 적용 맥락을 제공하므로 Today in Tech 독자에게 유용한 브리핑으로 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: How Fyxer built an AI executive assistant people trust",
+        "feed_summary: Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
+        "source_url: https://openai.com/index/fyxer",
+        "tags: Startup",
+        "published_at: 2026-09-14T12:00:00+00:00"
+      ],
+      "candidate_score": 44.0,
+      "error_message": null
+    }
+  ]
+}

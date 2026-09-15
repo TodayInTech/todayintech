@@ -1,0 +1,269 @@
+{
+  "generated_at": "2026-09-15T00:10:38.306691+00:00",
+  "generated_for": "2026-09-15",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "e91d1cf47cb9b32a88df1ddc4e251574e95f36dc",
+  "github_run_id": "34911985751",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 13,
+  "excluded_count": 107,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 23,
+      "excluded_count": 97,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 97
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 23,
+      "output_count": 23,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 23,
+      "output_count": 23,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 23,
+      "output_count": 13,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:ff082bc32dcf39bf",
+          "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+          "url_hash": "ff082bc32dcf39bfd27812edc1e6795d89a33c6620e4fac168c5a51bfe3c1f63",
+          "suggested_doc_key": "2026-09-watch-astronaut-christina-koch-and-google-s-james-manyika-discuss-space-ff082bc3",
+          "suggested_article_path": "docs/services/google-blog/2026-09-watch-astronaut-christina-koch-and-google-s-james-manyika-discuss-space-ff082bc3.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:fd1baec08311b505",
+          "title": "DevFest is back",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
+          "url_hash": "fd1baec08311b505543d5a8c71d0a693c44e2ce54fd7ece1e317669825fe6f4e",
+          "suggested_doc_key": "2026-09-devfest-is-back-fd1baec0",
+          "suggested_article_path": "docs/services/google-blog/2026-09-devfest-is-back-fd1baec0.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:b54bfac470e15413",
+          "title": "Pion, an agent designed to run any company autonomously",
+          "normalized_url": "https://andonlabs.com/blog/why-we-built-pion",
+          "url_hash": "b54bfac470e15413bc3b66a7050fd806dd70198b5512200e1b4e25ecc201c992",
+          "suggested_doc_key": "2026-09-pion-an-agent-designed-to-run-any-company-autonomously-b54bfac4",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-pion-an-agent-designed-to-run-any-company-autonomously-b54bfac4.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 269점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 276개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:fac46a005f782f52",
+          "title": "iOS 27, iPadOS 27, and macOS 27",
+          "normalized_url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available",
+          "url_hash": "fac46a005f782f526ab3ec110c248e49556dec54ef89d488778af33ec874bf09",
+          "suggested_doc_key": "2026-09-ios-27-ipados-27-and-macos-27-fac46a00",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-ios-27-ipados-27-and-macos-27-fac46a00.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 318점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 353개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6521ac2763494dd5",
+          "title": "Steam Frame starts at $1059",
+          "normalized_url": "https://store.steampowered.com/hardware/steamframe",
+          "url_hash": "6521ac2763494dd5ccda8eb7212820283f0a924638922463a90d39e98e41a31f",
+          "suggested_doc_key": "2026-09-steam-frame-starts-at-1059-6521ac27",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-steam-frame-starts-at-1059-6521ac27.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 461점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 343개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:937e97743839da56",
+          "title": "Amazon vs. Perplexity – U.S. Court of Appeals for the Ninth Circuit",
+          "normalized_url": "https://law.justia.com/cases/federal/appellate-courts/ca9/26-1444/26-1444-2026-08-04.html",
+          "url_hash": "937e97743839da56b8913212d40858128def69adb972370fd31fe847e88db701",
+          "suggested_doc_key": "2026-09-amazon-vs-perplexity-u-s-court-of-appeals-for-the-ninth-circuit-937e9774",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-amazon-vs-perplexity-u-s-court-of-appeals-for-the-ninth-circuit-937e9774.md",
+          "candidate_score": 62.5,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 155점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 157개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:baf3658e1d9c87c8",
+          "title": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "normalized_url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+          "url_hash": "baf3658e1d9c87c8b494d3b18d8716d1a38e89f9db15a6cbdba08c5990fb61ef",
+          "suggested_doc_key": "2026-09-gpt-5-6-luna-vs-gpt-6-astra-is-a-1-20-model-good-enough-for-code-review-baf3658e",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-gpt-5-6-luna-vs-gpt-6-astra-is-a-1-20-model-good-enough-for-code-review-baf3658e.md",
+          "candidate_score": 60.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 92점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 100개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:7f82d995c515e5ba",
+          "title": "How Fyxer built an AI executive assistant people trust",
+          "normalized_url": "https://openai.com/index/fyxer",
+          "url_hash": "7f82d995c515e5ba429e7e06d184bac39c4f16f7fff73a80b082fdc2812fc58f",
+          "suggested_doc_key": "2026-09-how-fyxer-built-an-ai-executive-assistant-people-trust-7f82d995",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-how-fyxer-built-an-ai-executive-assistant-people-trust-7f82d995.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 49
+      }
+    }
+  ]
+}
