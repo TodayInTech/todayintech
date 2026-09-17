@@ -8560,6 +8560,96 @@
       "status": "published",
       "briefed_at": "2026-09-17T00:06:55.912103Z",
       "candidate_score": 35.0
+    },
+    "a3c8e138d995ff558ec9129cf2e7144dfc460cd06d3711b6bd0255312e3155e4": {
+      "normalized_url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "title_fingerprint": "introducing the life sciences verification program",
+      "service_key": "anthropic-blog",
+      "title": "Introducing the Life Sciences Verification Program",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-introducing-the-life-sciences-verification-program-a3c8e138.md",
+      "status": "published",
+      "briefed_at": "2026-09-17T23:54:15.409099Z",
+      "candidate_score": 30.0
+    },
+    "71ca52f40c8e50d8b84b023998cf6a69cdd5419a0e4c15280e1e6cc200ed7b20": {
+      "normalized_url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot",
+      "title_fingerprint": "migrating the github copilot runtime to rust using copilot",
+      "service_key": "github-blog",
+      "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
+      "article_doc_path": "docs/services/github-blog/2026-09-migrating-the-github-copilot-runtime-to-rust-using-copilot-71ca52f4.md",
+      "status": "published",
+      "briefed_at": "2026-09-17T23:54:15.409137Z",
+      "candidate_score": 42.0
+    },
+    "87ea82b3d53e6d4a2167bb9660b23043018d9cc0700532a821b557e8b95233f1": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/cc-expanding-to-groups",
+      "title_fingerprint": "the new cc an ai agent built for families",
+      "service_key": "google-blog",
+      "title": "The new CC, an AI agent built for families",
+      "article_doc_path": "docs/services/google-blog/2026-09-the-new-cc-an-ai-agent-built-for-families-87ea82b3.md",
+      "status": "published",
+      "briefed_at": "2026-09-17T23:54:15.409148Z",
+      "candidate_score": 40.0
+    },
+    "57bb3f72439b837e28ac1b35aca7b555ce4d9b9e8eaa5b3871ead9d0c35fee24": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform",
+      "title_fingerprint": "making global data easier to explore",
+      "service_key": "google-blog",
+      "title": "Making global data easier to explore",
+      "article_doc_path": "docs/services/google-blog/2026-09-making-global-data-easier-to-explore-57bb3f72.md",
+      "status": "published",
+      "briefed_at": "2026-09-17T23:54:15.409154Z",
+      "candidate_score": 36.0
+    },
+    "4e40bb256af08a131ef86ceb0554f08273d74261345a99126d191b2b1ffb1374": {
+      "normalized_url": "https://mysetup.ai/",
+      "title_fingerprint": "show hn share your ai setup learn from others",
+      "service_key": "hacker-news",
+      "title": "Show HN: Share your AI Setup, Learn from others",
+      "article_doc_path": "docs/services/hacker-news/2026-09-show-hn-share-your-ai-setup-learn-from-others-4e40bb25.md",
+      "status": "published",
+      "briefed_at": "2026-09-17T23:54:15.409161Z",
+      "candidate_score": 61.6
+    },
+    "2529c4416d7268f8c69f64e423a9e4c52c93507080aee283a9e9b90eb8043f4f": {
+      "normalized_url": "https://bend-lang.com/",
+      "title_fingerprint": "bend a language that blocks ai mistakes via proof on cpu and gpu",
+      "service_key": "hacker-news",
+      "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+      "article_doc_path": "docs/services/hacker-news/2026-09-bend-a-language-that-blocks-ai-mistakes-via-proof-on-cpu-and-gpu-2529c441.md",
+      "status": "published",
+      "briefed_at": "2026-09-17T23:54:15.409166Z",
+      "candidate_score": 61.0
+    },
+    "192794312f979cbd50ee7eab3653eaf23d7dcaf9f5076493368af8f38e17a29e": {
+      "normalized_url": "https://openai.com/index/astra-for-law",
+      "title_fingerprint": "astra for law",
+      "service_key": "hacker-news",
+      "title": "Astra for Law",
+      "article_doc_path": "docs/services/hacker-news/2026-09-astra-for-law-19279431.md",
+      "status": "published",
+      "briefed_at": "2026-09-17T23:54:15.409170Z",
+      "candidate_score": 60.0
+    },
+    "70e117d494aa90cf3e1ae0b7afb460cba5d7e94278c184514fe7ae3f47e8fdb4": {
+      "normalized_url": "https://github.com/asciimoo/hister",
+      "title_fingerprint": "hister a private search engine for the pages you visit and the files you keep",
+      "service_key": "hacker-news",
+      "title": "Hister: A private search engine for the pages you visit and the files you keep",
+      "article_doc_path": "docs/services/hacker-news/2026-09-hister-a-private-search-engine-for-the-pages-you-visit-and-the-files-you-70e117d4.md",
+      "status": "published",
+      "briefed_at": "2026-09-17T23:54:15.409175Z",
+      "candidate_score": 60.0
+    },
+    "7d2872733a614740ea67cf0d6caa1be41e67dc215acdfe91a81bd31a341b0343": {
+      "normalized_url": "https://openai.com/index/unlocking-new-ways-of-working",
+      "title_fingerprint": "how workers are unlocking new ways of working",
+      "service_key": "openai-blog",
+      "title": "How workers are unlocking new ways of working",
+      "article_doc_path": "docs/services/openai-blog/2026-09-how-workers-are-unlocking-new-ways-of-working-7d287273.md",
+      "status": "published",
+      "briefed_at": "2026-09-17T23:54:15.409180Z",
+      "candidate_score": 34.0
     }
   }
 }
