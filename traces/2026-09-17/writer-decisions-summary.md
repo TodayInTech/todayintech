@@ -4,21 +4,19 @@
 
 - Status: `success`
 - Agent: `openai`
-- Decisions: 11
-- Decision counts: published: 11
+- Decisions: 9
+- Decision counts: published: 9
 
 ## Decisions
 
 | Service | Decision | Score | Confidence | Title | Reason |
 | --- | --- | ---: | ---: | --- | --- |
-| google-blog | `published` | 36.0 | 0.9 | 5 things to know about teens' views on AI today | 미국 13~17세 청소년 대상의 설문(1,000명 이상 샘플과 6개 주 별도 표본, 포커스 그룹 병행)을 근거로 실사용 통계와 구체적 수치가 제시되어 있어 기술·교육 정책 맥락에서 시사점이 뚜렷합니다. 청소년의 AI 이용 방식(학습보조·창작 도구), 정보 검증 행동, 디지털 리터러시 요구, 가족 신뢰 지표가 명확히 제시되어 있어 Today in Tech 독자에게 유용한 분석 자료가 됩니다. |
-| google-blog | `published` | 30.0 | 0.9 | Ask a Scientist: How can researchers use AI to spot a wildfire? | Google Research와 파트너들이 위성·AI를 결합해 소규모 화재(5×5m) 탐지와 연속 관측을 목표로 한 구체적 계획과 초기 성과를 제시한다. 기술적 접근(저비용 소형 위성군+머신러닝), 데이터 수집·검증 방법, 운영 일정(단계별 글로벌 커버리지 목표) 등 기술 독자에게 유의미한 근거를 담고 있어 게시 가치가 높다. |
-| google-blog | `published` | 29.0 | 0.85 | New insights from Google’s AI & Economy ATLAS | ATLAS가 제시한 직업·국가별 AI 활용 통계와 구글·딥마인드·MIT 공동연구의 과학 분야 실증 결과는 기술 독자에게 유의미한 인사이트를 제공하며, 대화형 오픈액세스 도구와 함께 데이터·방법론 근거가 충분해 배포 가치가 높음. |
-| hacker-news | `published` | 65.0 | 0.9 | Hackers Got Inside a Flock Camera | 장치 탈취를 통해 암호화 키와 대량의 영상·로그가 복구된 점, 카메라가 사람 탐지 기능을 갖추고 있고 광범위한 검색 네트워크와 연결된 점 등 기술적·사회적 함의가 명확하여 기술 독자에게 유용한 분석 기사임. |
-| hacker-news | `published` | 64.4 | 0.85 | Training a 4B model to produce 81% faster query plans than Postgres | 저자는 실험 설정·측정 방법·정량적 개선값(113개 쿼리에서 44.7% 지연 감소) 등 기술 독자에게 유의미한 근거를 제공하며, 소형(4B) 모델을 SFT와 에이전트형 강화학습으로 튜닝해 실제 Postgres 계획을 개선한 방법론적 기여가 있어 게시 가치가 높습니다. |
-| hacker-news | `published` | 60.2 | 0.55 | Xiaomi Mimo 2.6 live post-training dashboard | 피드 메타데이터에 작품 제목과 Hacker News상의 높은 관심(포인트 196, 댓글 53)이 기록되어 있어 기술 독자 대상의 간단한 브리핑 가치가 있다고 판단했습니다. 원문 자체는 제공되지 않아 본문 확인을 권고하는 한계를 명시했습니다. |
-| hacker-news | `published` | 60.0 | 0.85 | Small programming tricks | 원문은 개발 실무에서 즉시 적용 가능한 여러 소소한 트릭을 구체적 예시와 함께 제시하여 기술 독자에게 실용적 가치가 높습니다. 제공된 근거가 풍부하고 도구·언어별로 적용 맥락을 설명해 기술 독자에게 유용하므로 Today in Tech에 적절합니다. |
-| openai-blog | `published` | 41.0 | 0.65 | Our framework for reporting model misalignment | 피드 메타데이터에 따르면 OpenAI가 모델 미스얼라인먼트 추적·조사·공개를 위한 프레임워크와 예상 외·우려스러운 동작 사례 6건을 함께 공개했다고 되어 있어, 기술적·운영적 시사점이 있어 배포 가치가 있습니다. |
-| openai-blog | `published` | 39.0 | 0.65 | Reimagining advertising with AI | 메타데이터만으로도 AI를 광고 영역에 적용하려는 핵심 방향(스폰서드 에이전트, 마케터용 도구, HubSpot·Shopify 통합)을 확인할 수 있어 기술 독자에게 유의미한 맥락을 제공하므로 간결한 브리핑 가치가 있다고 판단했습니다. 다만 세부 구현은 원문에서 확인 필요함을 명시합니다. |
-| openai-blog | `published` | 37.0 | 0.65 | How to connect AI usage to business value | 피드 메타데이터의 요약이 ChatGPT Work와 Codex의 사용·비용 분석을 통해 AI 도입을 사업 성과와 연결하는 주제를 명확히 제시하고 있어, 기술 독자에게 유용한 맥락 제공이 가능하다고 판단되어 게시합니다. |
-| openai-blog | `published` | 35.0 | 0.65 | Helping older adults use AI in everyday life | 피드 메타데이터에 워크숍 목적(실용적 AI 역량), 대상(미국 10개 도시의 1,000명 고령층), 주최(OpenAI와 AARP)가 명확히 제시되어 있어 기술 접근성과 디지털 포용성 관점에서 읽을 가치가 있습니다. |
+| anthropic-blog | `published` | 30.0 | 0.85 | Introducing the Life Sciences Verification Program | 프로그램의 접근 유형·검증 절차·보안 설계(모니터링 전환, 위협 모델, 데이터 보존) 등 기술적 세부가 포함되어 있어 생명과학 분야 AI 활용과 리스크 관리를 이해하는 데 유용합니다. |
+| github-blog | `published` | 42.0 | 0.86 | Migrating the GitHub Copilot runtime to Rust, using Copilot | 제공 근거에서 대규모 런타임 포팅의 기술적 동기·전략·규모·성과(라인 수, 릴리스 빈도 등)를 구체적으로 제시하고 있어 개발자·아키텍트 독자에게 실무적 인사이트를 제공함. 에이전트가 포팅을 주도한 점과 인플레이스(in-place) 점진적 전환 방식, Rust 선택의 장단점이 명확히 서술되어 있어 Today in Tech 독자층에 가치가 있다고 판단됨. |
+| google-blog | `published` | 40.0 | 0.88 | The new CC, an AI agent built for families | 구글이 가정과 가구를 겨냥한 에이전트 버전의 CC를 공개하며, 에이전트 정체성(전용 Google 계정), 권한 모델, 가족 단위 공유 메모리, Antigravity 에이전트·Gemini 모델 같은 기술적 기반을 명시한 점은 제품·기술 독자에게 유의미한 변화다. 가족 일정·할일 통합, 자동 달력 등록·서류 자동작성 등 실사용 시나리오가 구체적으로 제시되어 있어 실무적 영향과 개인정보 관리 관점에서 검토 가치가 있다. |
+| google-blog | `published` | 36.0 | 0.9 | Making global data easier to explore | UN 체계 통계의 통합·표준화와 AI 준비형 지식 그래프 도입이 데이터 분석 워크플로우에 미칠 기술적 영향을 구체적으로 설명하고 있어 Today in Tech 독자에게 유용합니다. |
+| hacker-news | `published` | 61.6 | 0.85 | Show HN: Share your AI Setup, Learn from others | Hacker News 출처의 글이 엔지니어들이 실제로 사용하는 에이전트·도구·워크플로를 예시로 제시하며, 실무적 관점에서 설정 공유의 필요성과 구현 방식(로컬 에이전트 vs 클라우드, 장기 작업 관리 등)을 다루어 기술 독자에게 실용적 인사이트를 제공하므로 게시 가치가 있다고 판단했습니다. |
+| hacker-news | `published` | 61.0 | 0.72 | Bend – A language that blocks AI mistakes via proof, on CPU and GPU | 피드 메타데이터에 따르면 'Bend'라는 새로운 언어가 CPU와 GPU에서 동작하면서 '증명(proof)'을 통해 AI의 오류를 차단한다고 소개되며, Hacker News에서 높은 관심(포인트 218, 댓글 118)을 받은 점이 기술 독자 대상 브리핑 가치가 있다고 판단됩니다. 제공된 정보만으로는 구현 세부사항이나 성능 근거가 부족하지만 주제와 잠재적 기술적 의미가 명확하여 게시했습니다. |
+| hacker-news | `published` | 60.0 | 0.45 | Astra for Law | 피드 메타데이터에 따르면 OpenAI의 'Astra for Law' 게시물이 Hacker News에서 높은 관심(238 포인트, 댓글 266개)을 받았고 원문이 OpenAI 사이트에 올라와 있어 기술 독자 관점에서 주목할 가치가 있습니다. 다만 제공된 정보만으로 본문 세부사항을 확인할 수 없어 요약에서 한계를 명확히 표기했습니다. |
+| hacker-news | `published` | 60.0 | 0.85 | Hister: A private search engine for the pages you visit and the files you keep | Hister는 개인용 전체 텍스트 검색을 로컬에서 구현하는 오픈소스 도구로, 설치·운영 방법과 프라이버시 설계, 기능적 세부사항(브라우저 익스텐션, 전체 색인, 쿼리 기능, 임베딩 기반 의미 검색 등)이 명확히 제시되어 있어 기술 독자에게 실무적 유용성이 높습니다. |
+| openai-blog | `published` | 34.0 | 0.65 | How workers are unlocking new ways of working | 피드 메타데이터는 OpenAI의 경제 연구가 노동자들이 전통적 역할을 넘어서 AI를 활용하고 어떤 활동들이 일상 업무로 정착되는지에 주목한다고 명시해 기술 독자에게 유의미한 주제임을 보인다. 원문 전문은 제공되지 않았으나 주제의 시사성과 기술적 함의가 Today in Tech 독자층에 적절하다고 판단된다. |
