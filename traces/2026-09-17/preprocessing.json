@@ -1,0 +1,341 @@
+{
+  "generated_at": "2026-09-17T00:01:53.473162+00:00",
+  "generated_for": "2026-09-17",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "bbe8b52d6f48e94532dd5ebde2b32d198e5dce30",
+  "github_run_id": "35164723293",
+  "service_count": 5,
+  "duration_ms": 7,
+  "raw_count": 120,
+  "candidate_count": 18,
+  "excluded_count": 102,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 28,
+      "excluded_count": 92,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 92
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 28,
+      "output_count": 28,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 28,
+      "output_count": 28,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 28,
+      "output_count": 18,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:dca2608e62df068c",
+          "title": "5 things to know about teens' views on AI today",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/families/teens-ai-research-findings",
+          "url_hash": "dca2608e62df068ccb2b8995142d0a38ec117b7c33143863882449c0011ee794",
+          "suggested_doc_key": "2026-09-5-things-to-know-about-teens-views-on-ai-today-dca2608e",
+          "suggested_article_path": "docs/services/google-blog/2026-09-5-things-to-know-about-teens-views-on-ai-today-dca2608e.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:b58ee074bbbb14cb",
+          "title": "Ask a Scientist: How can researchers use AI to spot a wildfire?",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/wildfire-tracking-ai",
+          "url_hash": "b58ee074bbbb14cbdaa9b770deb7c22f7aa71692e1d3bd68c75769e3ed0ca51f",
+          "suggested_doc_key": "2026-09-ask-a-scientist-how-can-researchers-use-ai-to-spot-a-wildfire-b58ee074",
+          "suggested_article_path": "docs/services/google-blog/2026-09-ask-a-scientist-how-can-researchers-use-ai-to-spot-a-wildfire-b58ee074.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:64730bcdfc3a3522",
+          "title": "New insights from Google’s AI & Economy ATLAS",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026",
+          "url_hash": "64730bcdfc3a35229b481acfce94fb07b15462de1b2e63893c551ff0e8190f0a",
+          "suggested_doc_key": "2026-09-new-insights-from-google-s-ai-economy-atlas-64730bcd",
+          "suggested_article_path": "docs/services/google-blog/2026-09-new-insights-from-google-s-ai-economy-atlas-64730bcd.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:364974e3ad262d93",
+          "title": "Hackers Got Inside a Flock Camera",
+          "normalized_url": "https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works",
+          "url_hash": "364974e3ad262d9386f0762e1922e4d5f00eda594e90004b8609456db54ab0ef",
+          "suggested_doc_key": "2026-09-hackers-got-inside-a-flock-camera-364974e3",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-hackers-got-inside-a-flock-camera-364974e3.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 445점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 208개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4b99a853d3afdbe8",
+          "title": "Training a 4B model to produce 81% faster query plans than Postgres",
+          "normalized_url": "https://rohanbansal.com/qorl",
+          "url_hash": "4b99a853d3afdbe8b64f2b036fbd7294e109d34e0dac21f17b0aa5801a8bf391",
+          "suggested_doc_key": "2026-09-training-a-4b-model-to-produce-81-faster-query-plans-than-postgres-4b99a853",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-training-a-4b-model-to-produce-81-faster-query-plans-than-postgres-4b99a853.md",
+          "candidate_score": 64.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 346점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 67개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:ef3108bbe51e361e",
+          "title": "Xiaomi Mimo 2.6 live post-training dashboard",
+          "normalized_url": "https://mimo.xiaomi.com/rl",
+          "url_hash": "ef3108bbe51e361e098e2f72a90056178be23c1f771d002ebb65d316699548c0",
+          "suggested_doc_key": "2026-09-xiaomi-mimo-2-6-live-post-training-dashboard-ef3108bb",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-xiaomi-mimo-2-6-live-post-training-dashboard-ef3108bb.md",
+          "candidate_score": 60.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 196점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 53개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8359f9bf919de2cd",
+          "title": "Small programming tricks",
+          "normalized_url": "https://will-keleher.com/posts/small-programming-tricks-matter",
+          "url_hash": "8359f9bf919de2cdb99e7b8379bb27448123445ccb4add2a5fdb79942709067d",
+          "suggested_doc_key": "2026-09-small-programming-tricks-8359f9bf",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-small-programming-tricks-8359f9bf.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 355점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 175개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:2f8f18216af63f9f",
+          "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+          "normalized_url": "https://arxiv.org/abs/2609.14858",
+          "url_hash": "2f8f18216af63f9fbdaa443dce3b961f2392c361808987ab0d5939a1230adb66",
+          "suggested_doc_key": "2026-09-dream-rsi-recursive-self-improvement-through-evolving-worlds-2f8f1821",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-dream-rsi-recursive-self-improvement-through-evolving-worlds-2f8f1821.md",
+          "candidate_score": 52.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 178점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 49개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:f3899afd4d6a0a2d",
+          "title": "Our framework for reporting model misalignment",
+          "normalized_url": "https://openai.com/index/model-misalignment-reporting-framework",
+          "url_hash": "f3899afd4d6a0a2de4790fb5c615ac53b070686d5705d2fd135b1814acc6d5b3",
+          "suggested_doc_key": "2026-09-our-framework-for-reporting-model-misalignment-f3899afd",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-our-framework-for-reporting-model-misalignment-f3899afd.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:6ac27c68838b29ee",
+          "title": "Reimagining advertising with AI",
+          "normalized_url": "https://openai.com/index/reimagining-advertising-with-ai",
+          "url_hash": "6ac27c68838b29eeea8939f0e49b9f8d5c9f70da6aec6f577cdae354b1b5aa63",
+          "suggested_doc_key": "2026-09-reimagining-advertising-with-ai-6ac27c68",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-reimagining-advertising-with-ai-6ac27c68.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:4410122683c56925",
+          "title": "How to connect AI usage to business value",
+          "normalized_url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+          "url_hash": "4410122683c569258d5a0a362f1b6f8fd8c0f990511414b3cd22c476b31d6130",
+          "suggested_doc_key": "2026-09-how-to-connect-ai-usage-to-business-value-44101226",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-how-to-connect-ai-usage-to-business-value-44101226.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:b0366f9850a9d166",
+          "title": "Helping older adults use AI in everyday life",
+          "normalized_url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+          "url_hash": "b0366f9850a9d166d4a5ba39bed68a6273ef6289577e4ca4c3d1ff2dc628de25",
+          "suggested_doc_key": "2026-09-helping-older-adults-use-ai-in-everyday-life-b0366f98",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-helping-older-adults-use-ai-in-everyday-life-b0366f98.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:7d2872733a614740",
+          "title": "How workers are unlocking new ways of working",
+          "normalized_url": "https://openai.com/index/unlocking-new-ways-of-working",
+          "url_hash": "7d2872733a614740ea67cf0d6caa1be41e67dc215acdfe91a81bd31a341b0343",
+          "suggested_doc_key": "2026-09-how-workers-are-unlocking-new-ways-of-working-7d287273",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-how-workers-are-unlocking-new-ways-of-working-7d287273.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 45
+      }
+    }
+  ]
+}
