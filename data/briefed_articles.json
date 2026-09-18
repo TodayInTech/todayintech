@@ -8650,6 +8650,106 @@
       "status": "published",
       "briefed_at": "2026-09-17T23:54:15.409180Z",
       "candidate_score": 34.0
+    },
+    "5ec4e61a2a5169ebbf2e4ee08dac2281185ad73ad1169c3035a9c4aa6624eba7": {
+      "normalized_url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "title_fingerprint": "partnering with accenture on embedded evaluation",
+      "service_key": "anthropic-blog",
+      "title": "Partnering with Accenture on embedded evaluation",
+      "article_doc_path": "docs/services/anthropic-blog/2026-09-partnering-with-accenture-on-embedded-evaluation-5ec4e61a.md",
+      "status": "published",
+      "briefed_at": "2026-09-18T23:53:11.881248Z",
+      "candidate_score": 30.0
+    },
+    "b02dba448db72934509fe9b4f75bea3637f42dd1185ea0d7ddd2b1eea991710c": {
+      "normalized_url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp",
+      "title_fingerprint": "should you read the code is rag dead and did skills kill mcp",
+      "service_key": "github-blog",
+      "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
+      "article_doc_path": "docs/services/github-blog/2026-09-should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp-b02dba44.md",
+      "status": "published",
+      "briefed_at": "2026-09-18T23:53:11.881292Z",
+      "candidate_score": 33.0
+    },
+    "2ad49dd9b65fe3aef9a784214d6883e36da0e0e55e33778bed2d2eed5e0619c0": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench",
+      "title_fingerprint": "new experts join google s ai economy team",
+      "service_key": "google-blog",
+      "title": "New experts join Google’s AI & Economy team",
+      "article_doc_path": "docs/services/google-blog/2026-09-new-experts-join-google-s-ai-economy-team-2ad49dd9.md",
+      "status": "published",
+      "briefed_at": "2026-09-18T23:53:11.881309Z",
+      "candidate_score": 36.0
+    },
+    "332bec2b752a921dc0773efff01ad676064470aa9e86f80b5eb30a32d60686fb": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week",
+      "title_fingerprint": "co creating the future of fashion with google",
+      "service_key": "google-blog",
+      "title": "Co-creating the future of fashion with Google",
+      "article_doc_path": "docs/services/google-blog/2026-09-co-creating-the-future-of-fashion-with-google-332bec2b.md",
+      "status": "published",
+      "briefed_at": "2026-09-18T23:53:11.881319Z",
+      "candidate_score": 35.0
+    },
+    "3d68ad8e1324eb33b763f82183f512fc6276fa6e33aa56b7b51a994d2a3e9fb9": {
+      "normalized_url": "https://code.claude.com/docs/en/changelog",
+      "title_fingerprint": "claude code now reads agents md if there is no claude md",
+      "service_key": "hacker-news",
+      "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
+      "article_doc_path": "docs/services/hacker-news/2026-09-claude-code-now-reads-agents-md-if-there-is-no-claude-md-3d68ad8e.md",
+      "status": "published",
+      "briefed_at": "2026-09-18T23:53:11.881328Z",
+      "candidate_score": 71.0
+    },
+    "c9a125d04430ed26d2076d71fe99d8b39b41d93e58ebd228a87de00743328c54": {
+      "normalized_url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
+      "title_fingerprint": "android 17 is the first since 3 x to add new apis without releasing to the aosp",
+      "service_key": "hacker-news",
+      "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
+      "article_doc_path": "docs/services/hacker-news/2026-09-android-17-is-the-first-since-3-x-to-add-new-apis-without-releasing-to-t-c9a125d0.md",
+      "status": "published",
+      "briefed_at": "2026-09-18T23:53:11.881337Z",
+      "candidate_score": 69.0
+    },
+    "36b71d7b15092af0e63adcf3083841c7c3785b18ba2c42c0226427aba63eeb88": {
+      "normalized_url": "https://www.koreajoongangdaily.com/business/korea-raises-data-breach-fines-to-10-of-revenue/12869899",
+      "title_fingerprint": "korea raises data breach fines to 10 of revenue",
+      "service_key": "hacker-news",
+      "title": "Korea raises data breach fines to 10% of revenue",
+      "article_doc_path": "docs/services/hacker-news/2026-09-korea-raises-data-breach-fines-to-10-of-revenue-36b71d7b.md",
+      "status": "published",
+      "briefed_at": "2026-09-18T23:53:11.881345Z",
+      "candidate_score": 64.8
+    },
+    "e67173ec00bbb4067d3f1bbdb5db057716daf4d675dcd4212bf441d10dc1918f": {
+      "normalized_url": "https://overreacted.io/how-i-vibed-a-proof-of-conways-conjecture",
+      "title_fingerprint": "i vibed a proof of conway s conjecture",
+      "service_key": "hacker-news",
+      "title": "I vibed a proof of Conway's conjecture",
+      "article_doc_path": "docs/services/hacker-news/2026-09-i-vibed-a-proof-of-conway-s-conjecture-e67173ec.md",
+      "status": "published",
+      "briefed_at": "2026-09-18T23:53:11.881353Z",
+      "candidate_score": 60.0
+    },
+    "d22acfa5d0cc1d093c4a65f65bd5a5e37fe40593680fa261c56e48d108a9e1af": {
+      "normalized_url": "https://openai.com/index/cooley-gopublic",
+      "title_fingerprint": "how cooley is accelerating ipo work with chatgpt",
+      "service_key": "openai-blog",
+      "title": "How Cooley is accelerating IPO work with ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-09-how-cooley-is-accelerating-ipo-work-with-chatgpt-d22acfa5.md",
+      "status": "published",
+      "briefed_at": "2026-09-18T23:53:11.881361Z",
+      "candidate_score": 39.0
+    },
+    "27cd99b1dbe3442031772f3a6d585b1e1a3c80964cdaf385f883ff0b52fbc073": {
+      "normalized_url": "https://openai.com/index/hex-gpt-6-astra",
+      "title_fingerprint": "hex turns complex analysis into visual reports with gpt 6 astra",
+      "service_key": "openai-blog",
+      "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
+      "article_doc_path": "docs/services/openai-blog/2026-09-hex-turns-complex-analysis-into-visual-reports-with-gpt-6-astra-27cd99b1.md",
+      "status": "published",
+      "briefed_at": "2026-09-18T23:53:11.881369Z",
+      "candidate_score": 39.0
     }
   }
 }
