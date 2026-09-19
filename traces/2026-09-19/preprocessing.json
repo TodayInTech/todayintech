@@ -1,0 +1,238 @@
+{
+  "generated_at": "2026-09-19T23:51:07.328150+00:00",
+  "generated_for": "2026-09-19",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "c309ecdc8083e1f944bcea08f71dd3832d76f843",
+  "github_run_id": "35477159496",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 20,
+      "excluded_count": 100,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 100
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 20,
+      "output_count": 20,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 20,
+      "output_count": 20,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 20,
+      "output_count": 11,
+      "excluded_count": 9,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 9
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:957dad81750da0dc",
+          "title": "I built non-autoregressive decision models with RL a year ago",
+          "normalized_url": "https://laya.convaiinnovations.com/",
+          "url_hash": "957dad81750da0dc352c6ba8ae33c09019d7514e0bcced60d3147202e8fa535b",
+          "suggested_doc_key": "2026-09-i-built-non-autoregressive-decision-models-with-rl-a-year-ago-957dad81",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-i-built-non-autoregressive-decision-models-with-rl-a-year-ago-957dad81.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 1052점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 243개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6d84fb98ba3b24a1",
+          "title": "I think you should almost never use AI to write",
+          "normalized_url": "https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai",
+          "url_hash": "6d84fb98ba3b24a1620be1f83ed5317503981c6bf7948f4b8d124e1c44954103",
+          "suggested_doc_key": "2026-09-i-think-you-should-almost-never-use-ai-to-write-6d84fb98",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-i-think-you-should-almost-never-use-ai-to-write-6d84fb98.md",
+          "candidate_score": 60.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 197점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 110개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:caa03cc38739079c",
+          "title": "GPT-6 Astra Solves a WWI German Radio Cipher",
+          "normalized_url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+          "url_hash": "caa03cc38739079cca5e3764ab5e19bd4cb493c8ac3f951f0623dfff3b690065",
+          "suggested_doc_key": "2026-09-gpt-6-astra-solves-a-wwi-german-radio-cipher-caa03cc3",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-gpt-6-astra-solves-a-wwi-german-radio-cipher-caa03cc3.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 360점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 166개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:2768900d6daeb932",
+          "title": "If math is more than proof, we need to better celebrate the rest of it",
+          "normalized_url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it",
+          "url_hash": "2768900d6daeb93246a0dbeb92127f58a821c749e99f84922c4cac8a459922e2",
+          "suggested_doc_key": "2026-09-if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it-2768900d",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it-2768900d.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 297점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 231개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4ebdefeee4195b08",
+          "title": "Two parallel neural ectoderm progenitors contribute to the developing brain",
+          "normalized_url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+          "url_hash": "4ebdefeee4195b0853a748c9e8d78baf34f2989c9ec5b16e7a217c88f5a16a51",
+          "suggested_doc_key": "2026-09-two-parallel-neural-ectoderm-progenitors-contribute-to-the-developing-br-4ebdefee",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-two-parallel-neural-ectoderm-progenitors-contribute-to-the-developing-br-4ebdefee.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 603점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 234개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:a00923bf4ddda715",
+          "title": "Introducing the Australian Youth Safety Blueprint",
+          "normalized_url": "https://openai.com/index/australian-youth-safety-blueprint",
+          "url_hash": "a00923bf4ddda715364788a2da3f2ff96c940524eada89a0c5609e53d1b669fd",
+          "suggested_doc_key": "2026-09-introducing-the-australian-youth-safety-blueprint-a00923bf",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-introducing-the-australian-youth-safety-blueprint-a00923bf.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 49
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-09-19T23:53:01.784152+00:00",
+  "generated_for": "2026-09-19",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "c309ecdc8083e1f944bcea08f71dd3832d76f843",
+  "github_run_id": "35477159496",
+  "decision_count": 5,
+  "decision_counts": {
+    "published": 5
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:957dad81750da0dc",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "I built non-autoregressive decision models with RL a year ago",
+      "normalized_url": "https://laya.convaiinnovations.com/",
+      "article_doc_path": "docs/services/hacker-news/2026-09-i-built-non-autoregressive-decision-models-with-rl-a-year-ago-957dad81.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "모델 출시·연구",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문에는 모델 설계, 학습방법(RL/PPO·RLCD), 성능 벤치마크(지연시간·보정·정확도), 다국어 라우터 동작, 한계(옵션 수·제로샷 한계·온도 보정)와 함께 공개 허가(Apache 2.0)·허깅페이스·코드 링크 등 실사용에 필요한 근거가 충분히 제시되어 있어 기술 독자에게 유의미한 브리핑 가치가 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:6d84fb98ba3b24a1",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "I think you should almost never use AI to write",
+      "normalized_url": "https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai",
+      "article_doc_path": "docs/services/hacker-news/2026-09-i-think-you-should-almost-never-use-ai-to-write-6d84fb98.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 윤리·생산성",
+      "importance_level": "중간",
+      "confidence_score": 0.67,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "허커뉴스에서 높은 관심(HN 점수 197, 댓글 110)을 받은 주제로 기술 커뮤니티에서 논쟁을 촉발할 가능성이 있어 독자 가치가 있다고 판단했습니다. 다만 원문 전문은 제공되지 않아 세부 주장과 근거는 메타데이터 범위에서만 요약했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: I think you should almost never use AI to write",
+        "source_url: https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai",
+        "hn_points: 197",
+        "hn_comments: 110",
+        "feed_summary: Article URL and HN links, points and comments counts"
+      ],
+      "candidate_score": 60.7,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:caa03cc38739079c",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "GPT-6 Astra Solves a WWI German Radio Cipher",
+      "normalized_url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+      "article_doc_path": "docs/services/hacker-news/2026-09-gpt-6-astra-solves-a-wwi-german-radio-cipher-caa03cc3.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI·암호해독",
+      "importance_level": "Medium",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문 근거가 한 건(chunk-0001)으로 충분히 구체적이며, GPT-6 Astra가 ADFGVX 방식으로 암호문을 해독해 원문과 영어 번역, 사용한 암호키와 해독 절차, 역사적 사건(함선 도착 일자) 검증까지 제시한 점이 기술적 독자에게 흥미롭고 유의미한 뉴스 가치가 있어 게시합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:2768900d6daeb932",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "If math is more than proof, we need to better celebrate the rest of it",
+      "normalized_url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it",
+      "article_doc_path": "docs/services/hacker-news/2026-09-if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it-2768900d.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "수학·연구 문화",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 증명 자동화 시대에 수학의 본질적 가치를 재정의하려는 실질적 제안들을 담고 있으며, 증명과는 다른 ‘동기화된 설명(motivated explanation)’의 개념을 분명히 하고 이를 학계 보상 체계에 반영하자는 구체적 실행안을 제시합니다. 예시(Princeton Companion, Thurston의 활동, GPT-도움의 Erdős 문제 사례)와 실무적 권고(박사 교육 방식, 전시(展示) 문제 정의, 저널·임용 기준 변경 등)가 포함되어 기술 독자에게 유의미한 논의를 제공합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002",
+        "chunk-0003"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:a00923bf4ddda715",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Introducing the Australian Youth Safety Blueprint",
+      "normalized_url": "https://openai.com/index/australian-youth-safety-blueprint",
+      "article_doc_path": "docs/services/openai-blog/2026-09-introducing-the-australian-youth-safety-blueprint-a00923bf.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Company",
+      "importance_level": "Medium",
+      "confidence_score": 0.7,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에서 확인되는 최신 발표로 청소년 대상 AI 안전성 로드맵(여섯 기둥)을 제시해 기술·제품·정책 관점에서 유의미한 시사점을 제공하므로 게시 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Introducing the Australian Youth Safety Blueprint",
+        "feed_summary: OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people.",
+        "published_at: 2026-09-18T12:00:00+00:00",
+        "source_url: https://openai.com/index/australian-youth-safety-blueprint",
+        "service_name: OpenAI Blog"
+      ],
+      "candidate_score": 39.0,
+      "error_message": null
+    }
+  ]
+}
