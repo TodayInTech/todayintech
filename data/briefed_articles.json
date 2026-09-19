@@ -8750,6 +8750,56 @@
       "status": "published",
       "briefed_at": "2026-09-18T23:53:11.881369Z",
       "candidate_score": 39.0
+    },
+    "957dad81750da0dc352c6ba8ae33c09019d7514e0bcced60d3147202e8fa535b": {
+      "normalized_url": "https://laya.convaiinnovations.com/",
+      "title_fingerprint": "i built non autoregressive decision models with rl a year ago",
+      "service_key": "hacker-news",
+      "title": "I built non-autoregressive decision models with RL a year ago",
+      "article_doc_path": "docs/services/hacker-news/2026-09-i-built-non-autoregressive-decision-models-with-rl-a-year-ago-957dad81.md",
+      "status": "published",
+      "briefed_at": "2026-09-19T23:53:01.569422Z",
+      "candidate_score": 65.0
+    },
+    "6d84fb98ba3b24a1620be1f83ed5317503981c6bf7948f4b8d124e1c44954103": {
+      "normalized_url": "https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai",
+      "title_fingerprint": "i think you should almost never use ai to write",
+      "service_key": "hacker-news",
+      "title": "I think you should almost never use AI to write",
+      "article_doc_path": "docs/services/hacker-news/2026-09-i-think-you-should-almost-never-use-ai-to-write-6d84fb98.md",
+      "status": "published",
+      "briefed_at": "2026-09-19T23:53:01.569461Z",
+      "candidate_score": 60.7
+    },
+    "caa03cc38739079cca5e3764ab5e19bd4cb493c8ac3f951f0623dfff3b690065": {
+      "normalized_url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+      "title_fingerprint": "gpt 6 astra solves a wwi german radio cipher",
+      "service_key": "hacker-news",
+      "title": "GPT-6 Astra Solves a WWI German Radio Cipher",
+      "article_doc_path": "docs/services/hacker-news/2026-09-gpt-6-astra-solves-a-wwi-german-radio-cipher-caa03cc3.md",
+      "status": "published",
+      "briefed_at": "2026-09-19T23:53:01.569473Z",
+      "candidate_score": 60.0
+    },
+    "2768900d6daeb93246a0dbeb92127f58a821c749e99f84922c4cac8a459922e2": {
+      "normalized_url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it",
+      "title_fingerprint": "if math is more than proof we need to better celebrate the rest of it",
+      "service_key": "hacker-news",
+      "title": "If math is more than proof, we need to better celebrate the rest of it",
+      "article_doc_path": "docs/services/hacker-news/2026-09-if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it-2768900d.md",
+      "status": "published",
+      "briefed_at": "2026-09-19T23:53:01.569480Z",
+      "candidate_score": 60.0
+    },
+    "a00923bf4ddda715364788a2da3f2ff96c940524eada89a0c5609e53d1b669fd": {
+      "normalized_url": "https://openai.com/index/australian-youth-safety-blueprint",
+      "title_fingerprint": "introducing the australian youth safety blueprint",
+      "service_key": "openai-blog",
+      "title": "Introducing the Australian Youth Safety Blueprint",
+      "article_doc_path": "docs/services/openai-blog/2026-09-introducing-the-australian-youth-safety-blueprint-a00923bf.md",
+      "status": "published",
+      "briefed_at": "2026-09-19T23:53:01.569487Z",
+      "candidate_score": 39.0
     }
   }
 }
