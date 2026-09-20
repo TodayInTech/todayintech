@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-09-20T23:49:04.648145+00:00",
+  "generated_for": "2026-09-20",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "df424cfb99fdbb7e9f272398ad20dc354c22fd40",
+  "github_run_id": "35545636057",
+  "decision_count": 4,
+  "decision_counts": {
+    "published": 4
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:f55f1ed9949fcf5c",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Samsung is expected to more than double output of its HBM4 and HBM4E DRAM",
+      "normalized_url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+      "article_doc_path": "docs/services/hacker-news/2026-09-samsung-is-expected-to-more-than-double-output-of-its-hbm4-and-hbm4e-dra-f55f1ed9.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "반도체",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "삼성이 HBM4·HBM4E 생산을 연간으로 두 배 이상 확대할 가능성이 높고(글래스 캐리어 수요 2.5배 증가), 웨이퍼 투입량·제품 믹스 변화(연간 약 180k→250k 웨이퍼, HBM4 계열 비중 40%→80%) 등 구체적 수치가 제시되어 반도체 공급망과 고대역폭 메모리 시장에 실질적 영향이 예상되므로 기술 독자 대상 뉴스 가치가 큽니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:8100bdd4d0e18a71",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "ChatGPT now knows what you do on other websites via ad collector",
+      "normalized_url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector",
+      "article_doc_path": "docs/services/hacker-news/2026-09-chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector-8100bdd4.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "프라이버시/보안",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 근거는 복제 가능한 기술적 관찰과 네트워크 캡처를 바탕으로 OpenAI의 광고 수집기가 로그인된 계정과 장치 식별자를 교차-사이트로 전송하는 구체적 메커니즘을 설명합니다. 사용자 추적·광고 매칭과 AI 챗 서비스의 민감성 결합이라는 기술적·정책적 의미가 크고 Hacker News에서 활발한 논의가 있어 독자 가치가 높습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:b9a96080db72d51b",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Singapore’s National Library Board offers micropayments to build reading habits",
+      "normalized_url": "https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books",
+      "article_doc_path": "docs/services/hacker-news/2026-09-singapore-s-national-library-board-offers-micropayments-to-build-reading-b9a96080.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "GovTech",
+      "importance_level": "Medium",
+      "confidence_score": 0.88,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문 근거가 캠페인 설계(동전 메커닉, 보상 환산율, 일일 15분 기준, 1일 1세션 제한, 50일 연속 보상 등), 병행 프로그램(Read for Good)과 목표, 파일럿 지위 및 논쟁적 쟁점(보상 규모의 적정성, 행동경제학적 효용)까지 구체적으로 담고 있어 기술·정책적 의미를 설명하기에 충분합니다. 정부의 거버넌스·게이미피케이션 실험이라는 관점에서 Today in Tech 독자에게 유용한 맥락을 제공합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 55.1,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:fb7287db3f6ab02d",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Nobody pays for FOSS, we can force them to",
+      "normalized_url": "https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to",
+      "article_doc_path": "docs/services/hacker-news/2026-09-nobody-pays-for-foss-we-can-force-them-to-fb7287db.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "오픈소스 지속가능성",
+      "importance_level": "높음",
+      "confidence_score": 0.88,
+      "summary_scope": "chunk_selection",
+      "publish_reason_ko": "근거가 충분하고 실무적 대안(레지스트리 기반의 로열티 분배)을 제시해 기술 독자에게 유용합니다. 오픈소스 유지관리자의 무보수·번아웃 문제, 기업이 이미 공급망 레이어에 큰 비용을 지불하고 있다는 사실, 그리고 레지스트리를 통한 자동 분배 설계와 현실적 한계(사기 등)를 원문 근거로 설명하고 있어 Today in Tech 독자에게 가치가 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0003",
+        "chunk-0005"
+      ],
+      "candidate_score": 52.8,
+      "error_message": null
+    }
+  ]
+}
