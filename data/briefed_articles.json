@@ -8840,6 +8840,86 @@
       "status": "published",
       "briefed_at": "2026-09-20T23:49:04.531923Z",
       "candidate_score": 52.8
+    },
+    "c5d1f531ff9cdcc70730b5622ab1ee149f2717f481cb62ef45b08a09f8099d3d": {
+      "normalized_url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "title_fingerprint": "xiaomi mimo v2 6",
+      "service_key": "hacker-news",
+      "title": "Xiaomi MiMo v2.6",
+      "article_doc_path": "docs/services/hacker-news/2026-09-xiaomi-mimo-v2-6-c5d1f531.md",
+      "status": "published",
+      "briefed_at": "2026-09-22T00:33:24.852170Z",
+      "candidate_score": 63.0
+    },
+    "a87360e29b891b8c7784f8a9f6f288b6975a91701950444234b2b31b4f77fc25": {
+      "normalized_url": "https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead",
+      "title_fingerprint": "nasa s mars sample return mission is dead",
+      "service_key": "hacker-news",
+      "title": "NASA’s Mars Sample Return mission is dead",
+      "article_doc_path": "docs/services/hacker-news/2026-09-nasa-s-mars-sample-return-mission-is-dead-a87360e2.md",
+      "status": "published",
+      "briefed_at": "2026-09-22T00:33:24.852206Z",
+      "candidate_score": 60.0
+    },
+    "6b2ddadac8c5326e6340ebb93ef49f61d83ec4c8cc8569a7465456cf7b993551": {
+      "normalized_url": "https://support.apple.com/guide/mac-help/turn-restrict-access-apple-intelligence-mchlb2e44f94/mac",
+      "title_fingerprint": "turn off and restrict access to apple intelligence features on mac",
+      "service_key": "hacker-news",
+      "title": "Turn off and restrict access to Apple Intelligence features on Mac",
+      "article_doc_path": "docs/services/hacker-news/2026-09-turn-off-and-restrict-access-to-apple-intelligence-features-on-mac-6b2ddada.md",
+      "status": "published",
+      "briefed_at": "2026-09-22T00:33:24.852212Z",
+      "candidate_score": 60.0
+    },
+    "b06f3f01f9109d2c12efc0ea20a3d5f1e51757c2406b1fa028135966ecb771e0": {
+      "normalized_url": "https://www.reuters.com/world/us/faa-halts-some-us-east-coast-flights-due-communication-issues-2026-09-21",
+      "title_fingerprint": "us halts flights at busy east coast airports says fiber line cut",
+      "service_key": "hacker-news",
+      "title": "US halts flights at busy East Coast airports, says fiber line cut",
+      "article_doc_path": "docs/services/hacker-news/2026-09-us-halts-flights-at-busy-east-coast-airports-says-fiber-line-cut-b06f3f01.md",
+      "status": "published",
+      "briefed_at": "2026-09-22T00:33:24.852217Z",
+      "candidate_score": 58.6
+    },
+    "08ffdb24bebd9aa2ffda2f849b7e7af9dba92daa36ecb3bc96d64f49fd7ead95": {
+      "normalized_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "title_fingerprint": "advisory group on mathematics and artificial intelligence",
+      "service_key": "openai-blog",
+      "title": "Advisory Group on Mathematics and Artificial Intelligence",
+      "article_doc_path": "docs/services/openai-blog/2026-09-advisory-group-on-mathematics-and-artificial-intelligence-08ffdb24.md",
+      "status": "published",
+      "briefed_at": "2026-09-22T00:33:24.852221Z",
+      "candidate_score": 39.0
+    },
+    "d2871d486c61275aa18316221b2aa4fe0c0c7a730e7f24a395d9c1672c5c3fc3": {
+      "normalized_url": "https://openai.com/index/v7",
+      "title_fingerprint": "how v7 gives ai agents institutional memory",
+      "service_key": "openai-blog",
+      "title": "How V7 gives AI agents institutional memory",
+      "article_doc_path": "docs/services/openai-blog/2026-09-how-v7-gives-ai-agents-institutional-memory-d2871d48.md",
+      "status": "published",
+      "briefed_at": "2026-09-22T00:33:24.852224Z",
+      "candidate_score": 39.0
+    },
+    "8fe4474fdbb9c4c46a22f878515427114b676069cfc965f6786182578d7743d9": {
+      "normalized_url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "title_fingerprint": "higgsfield ai ships new video features in a day with gpt 6 astra",
+      "service_key": "openai-blog",
+      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+      "article_doc_path": "docs/services/openai-blog/2026-09-higgsfield-ai-ships-new-video-features-in-a-day-with-gpt-6-astra-8fe4474f.md",
+      "status": "published",
+      "briefed_at": "2026-09-22T00:33:24.852228Z",
+      "candidate_score": 38.0
+    },
+    "10538c022345675d1abd4a83236ec639afd16c383bf12f43a3ea4520388033d1": {
+      "normalized_url": "https://openai.com/index/building-standards-next-phase-ai",
+      "title_fingerprint": "building standards for the next phase of ai",
+      "service_key": "openai-blog",
+      "title": "Building standards for the next phase of AI",
+      "article_doc_path": "docs/services/openai-blog/2026-09-building-standards-for-the-next-phase-of-ai-10538c02.md",
+      "status": "published",
+      "briefed_at": "2026-09-22T00:33:24.852231Z",
+      "candidate_score": 37.0
     }
   }
 }
