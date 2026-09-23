@@ -4,10 +4,10 @@
 
 - Status: `success`
 - Services: 5
-- Duration: 7 ms
+- Duration: 11 ms
 - Raw articles: 120
-- Candidates: 15
-- Excluded: 105
+- Candidates: 14
+- Excluded: 106
 
 ## Services
 
@@ -17,4 +17,4 @@
 | github-blog | 10 | 0 | 10 | already_briefed: 10 |
 | google-blog | 20 | 0 | 20 | already_briefed: 20 |
 | hacker-news | 20 | 10 | 10 | service_candidate_limit: 10 |
-| openai-blog | 50 | 5 | 45 | already_briefed: 45 |
+| openai-blog | 50 | 4 | 46 | duplicate_in_run: 1, already_briefed: 45 |
