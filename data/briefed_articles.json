@@ -8920,6 +8920,86 @@
       "status": "published",
       "briefed_at": "2026-09-22T00:33:24.852231Z",
       "candidate_score": 37.0
+    },
+    "918d27378b4c836ea623b9c34b4f8ad53145be003b618f436492ffcafe52b9d8": {
+      "normalized_url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
+      "title_fingerprint": "pentagon says overreliance on ai contributed to missile strike on iran school",
+      "service_key": "hacker-news",
+      "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
+      "article_doc_path": "docs/services/hacker-news/2026-09-pentagon-says-overreliance-on-ai-contributed-to-missile-strike-on-iran-s-918d2737.md",
+      "status": "published",
+      "briefed_at": "2026-09-23T00:01:27.724448Z",
+      "candidate_score": 65.0
+    },
+    "308053ac246a0171282872cd14291284e96d335bf8c22d29aeaffa40665a689a": {
+      "normalized_url": "https://artificialanalysis.ai/models/claude-opus-5-5",
+      "title_fingerprint": "claude opus 5 5 intelligence performance and price analysis max",
+      "service_key": "hacker-news",
+      "title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
+      "article_doc_path": "docs/services/hacker-news/2026-09-claude-opus-5-5-intelligence-performance-and-price-analysis-max-308053ac.md",
+      "status": "published",
+      "briefed_at": "2026-09-23T00:01:27.724494Z",
+      "candidate_score": 62.4
+    },
+    "73461b3e97af0d93277a11c940eddd760e1483f50dc51139e0bbfefde7d9b54f": {
+      "normalized_url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "title_fingerprint": "gpt 6 sol and luna",
+      "service_key": "hacker-news",
+      "title": "GPT-6 Sol and Luna",
+      "article_doc_path": "docs/services/hacker-news/2026-09-gpt-6-sol-and-luna-73461b3e.md",
+      "status": "published",
+      "briefed_at": "2026-09-23T00:01:27.724507Z",
+      "candidate_score": 62.0
+    },
+    "267168497ec5ef9e369b8d511df4c328a598a70e3a0cb3c8899f35c220d100f7": {
+      "normalized_url": "https://foxscript.org/",
+      "title_fingerprint": "microsoft killed foxpro in 2007 anyway here s foxpro revived",
+      "service_key": "hacker-news",
+      "title": "Microsoft killed FoxPro in 2007. Anyway, here's FoxPro revived",
+      "article_doc_path": "docs/services/hacker-news/2026-09-microsoft-killed-foxpro-in-2007-anyway-here-s-foxpro-revived-26716849.md",
+      "status": "published",
+      "briefed_at": "2026-09-23T00:01:27.724515Z",
+      "candidate_score": 61.3
+    },
+    "3fcefd9c665fb2c2484965cf43548bc94be5c40db4dc345287024e6c77f2703e": {
+      "normalized_url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "title_fingerprint": "parallel cut research time and cost in half with gpt 6 astra",
+      "service_key": "openai-blog",
+      "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+      "article_doc_path": "docs/services/openai-blog/2026-09-parallel-cut-research-time-and-cost-in-half-with-gpt-6-astra-3fcefd9c.md",
+      "status": "published",
+      "briefed_at": "2026-09-23T00:01:27.724524Z",
+      "candidate_score": 47.0
+    },
+    "60efaf744a4d6c2c20e9e8f1dc0a4ae280a89a1d1a7f55c198827b62cda36b8e": {
+      "normalized_url": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "title_fingerprint": "priorities and principles for effective third party assessments",
+      "service_key": "openai-blog",
+      "title": "Priorities and principles for effective third party assessments",
+      "article_doc_path": "docs/services/openai-blog/2026-09-priorities-and-principles-for-effective-third-party-assessments-60efaf74.md",
+      "status": "published",
+      "briefed_at": "2026-09-23T00:01:27.724532Z",
+      "candidate_score": 41.0
+    },
+    "f9027d80e820682e90d7e8a7deab6fe99d243c44073836087c19a4dccdea5fb4": {
+      "normalized_url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "title_fingerprint": "better prompt caching for gpt 6",
+      "service_key": "openai-blog",
+      "title": "Better prompt caching for GPT-6",
+      "article_doc_path": "docs/services/openai-blog/2026-09-better-prompt-caching-for-gpt-6-f9027d80.md",
+      "status": "published",
+      "briefed_at": "2026-09-23T00:01:27.724539Z",
+      "candidate_score": 39.0
+    },
+    "2f8d9b98fc157bb338d3eee240b684935f4eb48a8a141e592a8d2b7cadec3422": {
+      "normalized_url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+      "title_fingerprint": "expanding openai academy with new learning paths",
+      "service_key": "openai-blog",
+      "title": "Expanding OpenAI Academy with new learning paths",
+      "article_doc_path": "docs/services/openai-blog/2026-09-expanding-openai-academy-with-new-learning-paths-2f8d9b98.md",
+      "status": "published",
+      "briefed_at": "2026-09-23T00:01:27.724546Z",
+      "candidate_score": 32.0
     }
   }
 }
