@@ -1,0 +1,387 @@
+{
+  "generated_at": "2026-09-24T00:11:49.939437+00:00",
+  "generated_for": "2026-09-24",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "6a9061d77b9745e869c7bdd9672d318ae25ba584",
+  "github_run_id": "35937185686",
+  "service_count": 5,
+  "duration_ms": 13,
+  "raw_count": 120,
+  "candidate_count": 25,
+  "excluded_count": 95,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 34,
+      "excluded_count": 85,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 85
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 34,
+      "output_count": 34,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 34,
+      "output_count": 34,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 34,
+      "output_count": 25,
+      "excluded_count": 9,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 9
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:ef1b3a4772eab837",
+          "title": "Claude discovers a novel enzyme system",
+          "normalized_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+          "url_hash": "ef1b3a4772eab8370f467eb49319d91c1c1642fda763a0cf8c75d29f7c5a5328",
+          "suggested_doc_key": "2026-09-claude-discovers-a-novel-enzyme-system-ef1b3a47",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-09-claude-discovers-a-novel-enzyme-system-ef1b3a47.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 2,
+      "excluded_count": 8,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:adfc9716558ca6b5",
+          "title": "Rendering huge pull requests in the GitHub Copilot app",
+          "normalized_url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app",
+          "url_hash": "adfc9716558ca6b5ec069670983997e3594216792ae01ceb681cf2c43a457991",
+          "suggested_doc_key": "2026-09-rendering-huge-pull-requests-in-the-github-copilot-app-adfc9716",
+          "suggested_article_path": "docs/services/github-blog/2026-09-rendering-huge-pull-requests-in-the-github-copilot-app-adfc9716.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:a3603d79b3a51a3d",
+          "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
+          "normalized_url": "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need",
+          "url_hash": "a3603d79b3a51a3d9a94bd2388432bcb2215c4b1dc729ba598f829b02d4963a2",
+          "suggested_doc_key": "2026-09-developers-want-more-efficient-software-here-s-what-over-1000-github-use-a3603d79",
+          "suggested_article_path": "docs/services/github-blog/2026-09-developers-want-more-efficient-software-here-s-what-over-1000-github-use-a3603d79.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 8
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:8772414765b134fe",
+          "title": "Google Beam expands with new regions, partners, and customers",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion",
+          "url_hash": "8772414765b134fe3b8873daf43a31b101922bac916843adc16c2c5fdd271500",
+          "suggested_doc_key": "2026-09-google-beam-expands-with-new-regions-partners-and-customers-87724147",
+          "suggested_article_path": "docs/services/google-blog/2026-09-google-beam-expands-with-new-regions-partners-and-customers-87724147.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:534c06d39c77a49f",
+          "title": "6 new Google Flow Tools built by industry creatives",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/six-new-tools-built-by-creatives",
+          "url_hash": "534c06d39c77a49faf8330fb752409eed32a4b99191a9dc0f665e4469dc67348",
+          "suggested_doc_key": "2026-09-6-new-google-flow-tools-built-by-industry-creatives-534c06d3",
+          "suggested_article_path": "docs/services/google-blog/2026-09-6-new-google-flow-tools-built-by-industry-creatives-534c06d3.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:edc41372cc963d70",
+          "title": "MedGemma is helping global healthcare providers deliver better care",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/health/medgemma-global-healthcare",
+          "url_hash": "edc41372cc963d703b542ee391ebe0e3bc10383eb4ca40b9f2aee4900c47d536",
+          "suggested_doc_key": "2026-09-medgemma-is-helping-global-healthcare-providers-deliver-better-care-edc41372",
+          "suggested_article_path": "docs/services/google-blog/2026-09-medgemma-is-helping-global-healthcare-providers-deliver-better-care-edc41372.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:c99106a5c97c0f28",
+          "title": "Gemini 3.8 text-to-speech",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech",
+          "url_hash": "c99106a5c97c0f2896acaac1876a093ae8abbd3c9c0cb73e9c86b7c20b80f7c0",
+          "suggested_doc_key": "2026-09-gemini-3-8-text-to-speech-c99106a5",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-gemini-3-8-text-to-speech-c99106a5.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 243점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 118개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8504edc740ab862b",
+          "title": "Seattle City Council votes to ban surveillance pricing in sale of groceries",
+          "normalized_url": "https://advocacy.consumerreports.org/press_release/seattle-city-council-votes-to-ban-surveillance-pricing-in-sale-of-groceries",
+          "url_hash": "8504edc740ab862ba0bd4e5eff0c036bd84adb3dbc5d40660be7aa2c2eddaf83",
+          "suggested_doc_key": "2026-09-seattle-city-council-votes-to-ban-surveillance-pricing-in-sale-of-grocer-8504edc7",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-seattle-city-council-votes-to-ban-surveillance-pricing-in-sale-of-grocer-8504edc7.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 288점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 179개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c446d1a2fd60ffec",
+          "title": "Italian parliament votes for return to nuclear energy",
+          "normalized_url": "https://apnews.com/article/italy-nuclear-chernobyl-4891b6b7c7791ae84db6b0bf0f7cf567",
+          "url_hash": "c446d1a2fd60ffec00ec1f154667f02900fafb7c699b6ac97d0a09be02015fca",
+          "suggested_doc_key": "2026-09-italian-parliament-votes-for-return-to-nuclear-energy-c446d1a2",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-italian-parliament-votes-for-return-to-nuclear-energy-c446d1a2.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 540점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 349개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:da2bc10c5ac9b90e",
+          "title": "28% of job postings on company career sites have been open over 90 days",
+          "normalized_url": "https://unlisted.careers/ghost-jobs/report/2026-09",
+          "url_hash": "da2bc10c5ac9b90ea7f78775c5b3bc1400a0891f340ae077b92fc866a31a6007",
+          "suggested_doc_key": "2026-09-28-of-job-postings-on-company-career-sites-have-been-open-over-90-days-da2bc10c",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-28-of-job-postings-on-company-career-sites-have-been-open-over-90-days-da2bc10c.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 218점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 281개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5cc25c4929de125e",
+          "title": "Fixing the Portobello Police Station Clock",
+          "normalized_url": "https://pointinthecloud.com/2026-04-11-211700.html",
+          "url_hash": "5cc25c4929de125e5816a97db5fb104341864ebc4d0364874aba938f9e229e60",
+          "suggested_doc_key": "2026-09-fixing-the-portobello-police-station-clock-5cc25c49",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-fixing-the-portobello-police-station-clock-5cc25c49.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 371점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 84개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 9,
+      "excluded_count": 41,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:347b65ce144a221e",
+          "title": "Sam Altman’s remarks at the United Nations Security Council",
+          "normalized_url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+          "url_hash": "347b65ce144a221e189c1995b6f8e902fff172db7617e6d8030d51c8740ce826",
+          "suggested_doc_key": "2026-09-sam-altman-s-remarks-at-the-united-nations-security-council-347b65ce",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-sam-altman-s-remarks-at-the-united-nations-security-council-347b65ce.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:52e46e8371e1f699",
+          "title": "Two years of OpenAI Academy",
+          "normalized_url": "https://openai.com/index/two-years-of-openai-academy",
+          "url_hash": "52e46e8371e1f69996c0f8fdcd7f1aabc16e63bd6bcc1139e79b18fa15fc40d2",
+          "suggested_doc_key": "2026-09-two-years-of-openai-academy-52e46e83",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-two-years-of-openai-academy-52e46e83.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:4e56c7312349a760",
+          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "normalized_url": "https://openai.com/index/ringg",
+          "url_hash": "4e56c7312349a760a0edf744bd151f1352583693dfaa6156b9b09ca8e15ad634",
+          "suggested_doc_key": "2026-09-ringg-s-ai-agents-resolve-up-to-65-of-customer-calls-with-openai-4e56c731",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-ringg-s-ai-agents-resolve-up-to-65-of-customer-calls-with-openai-4e56c731.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:9328fa400dd37e6b",
+          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+          "normalized_url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+          "url_hash": "9328fa400dd37e6b9e773781e78a2a50934d49d24282a5ac7e2d36068da55aca",
+          "suggested_doc_key": "2026-09-openai-extends-cyber-access-to-ukraine-for-civilian-defense-9328fa40",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-openai-extends-cyber-access-to-ukraine-for-civilian-defense-9328fa40.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3d7b9aab56c8f4fe",
+          "title": "Introducing MentalHealthBench",
+          "normalized_url": "https://openai.com/index/introducing-mentalhealthbench",
+          "url_hash": "3d7b9aab56c8f4fe22c00cc0057db0cb0a00b0a30d0d99d476abe36917bfac64",
+          "suggested_doc_key": "2026-09-introducing-mentalhealthbench-3d7b9aab",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-introducing-mentalhealthbench-3d7b9aab.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 41
+      }
+    }
+  ]
+}
