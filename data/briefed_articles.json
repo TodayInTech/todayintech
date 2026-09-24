@@ -9000,6 +9000,136 @@
       "status": "published",
       "briefed_at": "2026-09-23T00:01:27.724546Z",
       "candidate_score": 32.0
+    },
+    "adfc9716558ca6b5ec069670983997e3594216792ae01ceb681cf2c43a457991": {
+      "normalized_url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app",
+      "title_fingerprint": "rendering huge pull requests in the github copilot app",
+      "service_key": "github-blog",
+      "title": "Rendering huge pull requests in the GitHub Copilot app",
+      "article_doc_path": "docs/services/github-blog/2026-09-rendering-huge-pull-requests-in-the-github-copilot-app-adfc9716.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016100Z",
+      "candidate_score": 37.0
+    },
+    "a3603d79b3a51a3d9a94bd2388432bcb2215c4b1dc729ba598f829b02d4963a2": {
+      "normalized_url": "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need",
+      "title_fingerprint": "developers want more efficient software here s what over 1000 github users told us they need",
+      "service_key": "github-blog",
+      "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
+      "article_doc_path": "docs/services/github-blog/2026-09-developers-want-more-efficient-software-here-s-what-over-1000-github-use-a3603d79.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016143Z",
+      "candidate_score": 36.0
+    },
+    "8772414765b134fe3b8873daf43a31b101922bac916843adc16c2c5fdd271500": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion",
+      "title_fingerprint": "google beam expands with new regions partners and customers",
+      "service_key": "google-blog",
+      "title": "Google Beam expands with new regions, partners, and customers",
+      "article_doc_path": "docs/services/google-blog/2026-09-google-beam-expands-with-new-regions-partners-and-customers-87724147.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016159Z",
+      "candidate_score": 36.0
+    },
+    "534c06d39c77a49faf8330fb752409eed32a4b99191a9dc0f665e4469dc67348": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/six-new-tools-built-by-creatives",
+      "title_fingerprint": "6 new google flow tools built by industry creatives",
+      "service_key": "google-blog",
+      "title": "6 new Google Flow Tools built by industry creatives",
+      "article_doc_path": "docs/services/google-blog/2026-09-6-new-google-flow-tools-built-by-industry-creatives-534c06d3.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016169Z",
+      "candidate_score": 35.0
+    },
+    "edc41372cc963d703b542ee391ebe0e3bc10383eb4ca40b9f2aee4900c47d536": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/health/medgemma-global-healthcare",
+      "title_fingerprint": "medgemma is helping global healthcare providers deliver better care",
+      "service_key": "google-blog",
+      "title": "MedGemma is helping global healthcare providers deliver better care",
+      "article_doc_path": "docs/services/google-blog/2026-09-medgemma-is-helping-global-healthcare-providers-deliver-better-care-edc41372.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016178Z",
+      "candidate_score": 34.0
+    },
+    "c99106a5c97c0f2896acaac1876a093ae8abbd3c9c0cb73e9c86b7c20b80f7c0": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech",
+      "title_fingerprint": "gemini 3 8 text to speech",
+      "service_key": "hacker-news",
+      "title": "Gemini 3.8 text-to-speech",
+      "article_doc_path": "docs/services/hacker-news/2026-09-gemini-3-8-text-to-speech-c99106a5.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016186Z",
+      "candidate_score": 65.0
+    },
+    "8504edc740ab862ba0bd4e5eff0c036bd84adb3dbc5d40660be7aa2c2eddaf83": {
+      "normalized_url": "https://advocacy.consumerreports.org/press_release/seattle-city-council-votes-to-ban-surveillance-pricing-in-sale-of-groceries",
+      "title_fingerprint": "seattle city council votes to ban surveillance pricing in sale of groceries",
+      "service_key": "hacker-news",
+      "title": "Seattle City Council votes to ban surveillance pricing in sale of groceries",
+      "article_doc_path": "docs/services/hacker-news/2026-09-seattle-city-council-votes-to-ban-surveillance-pricing-in-sale-of-grocer-8504edc7.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016194Z",
+      "candidate_score": 65.0
+    },
+    "ef1b3a4772eab8370f467eb49319d91c1c1642fda763a0cf8c75d29f7c5a5328": {
+      "normalized_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "title_fingerprint": "claude discovers a novel enzyme system with crispr like repeats",
+      "service_key": "hacker-news",
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "article_doc_path": "docs/services/hacker-news/2026-09-claude-discovers-a-novel-enzyme-system-with-crispr-like-repeats-ef1b3a47.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016201Z",
+      "candidate_score": 60.0
+    },
+    "c446d1a2fd60ffec00ec1f154667f02900fafb7c699b6ac97d0a09be02015fca": {
+      "normalized_url": "https://apnews.com/article/italy-nuclear-chernobyl-4891b6b7c7791ae84db6b0bf0f7cf567",
+      "title_fingerprint": "italian parliament votes for return to nuclear energy",
+      "service_key": "hacker-news",
+      "title": "Italian parliament votes for return to nuclear energy",
+      "article_doc_path": "docs/services/hacker-news/2026-09-italian-parliament-votes-for-return-to-nuclear-energy-c446d1a2.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016209Z",
+      "candidate_score": 60.0
+    },
+    "347b65ce144a221e189c1995b6f8e902fff172db7617e6d8030d51c8740ce826": {
+      "normalized_url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "title_fingerprint": "sam altman s remarks at the united nations security council",
+      "service_key": "openai-blog",
+      "title": "Sam Altman’s remarks at the United Nations Security Council",
+      "article_doc_path": "docs/services/openai-blog/2026-09-sam-altman-s-remarks-at-the-united-nations-security-council-347b65ce.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016217Z",
+      "candidate_score": 42.0
+    },
+    "52e46e8371e1f69996c0f8fdcd7f1aabc16e63bd6bcc1139e79b18fa15fc40d2": {
+      "normalized_url": "https://openai.com/index/two-years-of-openai-academy",
+      "title_fingerprint": "two years of openai academy",
+      "service_key": "openai-blog",
+      "title": "Two years of OpenAI Academy",
+      "article_doc_path": "docs/services/openai-blog/2026-09-two-years-of-openai-academy-52e46e83.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016225Z",
+      "candidate_score": 39.0
+    },
+    "4e56c7312349a760a0edf744bd151f1352583693dfaa6156b9b09ca8e15ad634": {
+      "normalized_url": "https://openai.com/index/ringg",
+      "title_fingerprint": "ringg s ai agents resolve up to 65 of customer calls with openai",
+      "service_key": "openai-blog",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-09-ringg-s-ai-agents-resolve-up-to-65-of-customer-calls-with-openai-4e56c731.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016233Z",
+      "candidate_score": 39.0
+    },
+    "9328fa400dd37e6b9e773781e78a2a50934d49d24282a5ac7e2d36068da55aca": {
+      "normalized_url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "title_fingerprint": "openai extends cyber access to ukraine for civilian defense",
+      "service_key": "openai-blog",
+      "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+      "article_doc_path": "docs/services/openai-blog/2026-09-openai-extends-cyber-access-to-ukraine-for-civilian-defense-9328fa40.md",
+      "status": "published",
+      "briefed_at": "2026-09-24T00:15:14.016241Z",
+      "candidate_score": 38.0
     }
   }
 }
