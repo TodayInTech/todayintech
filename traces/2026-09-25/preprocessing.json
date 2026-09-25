@@ -1,0 +1,346 @@
+{
+  "generated_at": "2026-09-25T00:13:25.337539+00:00",
+  "generated_for": "2026-09-25",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "f265b92c3f4511cc3519d6831afa8f2bf4311b6f",
+  "github_run_id": "36076425629",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 19,
+  "excluded_count": 101,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 28,
+      "excluded_count": 91,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 91
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 28,
+      "output_count": 28,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 28,
+      "output_count": 28,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 28,
+      "output_count": 19,
+      "excluded_count": 9,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 9
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 2,
+      "excluded_count": 8,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:2690558920b683f4",
+          "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+          "normalized_url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+          "url_hash": "2690558920b683f436705f883e7be7c7b496af0690c85cbb72e9d0479d551ca1",
+          "suggested_doc_key": "2026-09-ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent-26905589",
+          "suggested_article_path": "docs/services/github-blog/2026-09-ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent-26905589.md",
+          "candidate_score": 46.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:4135fa3a00799524",
+          "title": "When chat is the wrong UI",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
+          "url_hash": "4135fa3a00799524e73b45e5e8a18ea8c11a9949e9197f51bf60e5f284bf0180",
+          "suggested_doc_key": "2026-09-when-chat-is-the-wrong-ui-4135fa3a",
+          "suggested_article_path": "docs/services/github-blog/2026-09-when-chat-is-the-wrong-ui-4135fa3a.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 8
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:07542d541c09e698",
+          "title": "Behind Project Suncatcher, our moonshot to put AI in space",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts",
+          "url_hash": "07542d541c09e6983ca95bc5b359798b18f35121e088f746babfd3dbccc49c58",
+          "suggested_doc_key": "2026-09-behind-project-suncatcher-our-moonshot-to-put-ai-in-space-07542d54",
+          "suggested_article_path": "docs/services/google-blog/2026-09-behind-project-suncatcher-our-moonshot-to-put-ai-in-space-07542d54.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:e5a8f0f458eaba58",
+          "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
+          "normalized_url": "https://transluce.org/agent-activity",
+          "url_hash": "e5a8f0f458eaba583740ce10c1d2f79aeb23a63b9633f12fb0df9a86f08811ae",
+          "suggested_doc_key": "2026-09-early-rogue-ai-agent-activity-and-attempts-to-hack-found-on-urlquery-net-e5a8f0f4",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-early-rogue-ai-agent-activity-and-attempts-to-hack-found-on-urlquery-net-e5a8f0f4.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 235점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 223개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:70359c27b4e5e0d8",
+          "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+          "normalized_url": "https://github.com/devdotfast/whiteboard",
+          "url_hash": "70359c27b4e5e0d8185411a12d50032e8781d4a89e6d38dde0171252a348cdf6",
+          "suggested_doc_key": "2026-09-show-hn-whiteboard-yc-w26-an-open-source-ide-for-thoughtful-software-des-70359c27",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-show-hn-whiteboard-yc-w26-an-open-source-ide-for-thoughtful-software-des-70359c27.md",
+          "candidate_score": 62.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "Hacker News 점수 168점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 75개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3179c5de5974307a",
+          "title": "Why is the liver so weirdly regenerative?",
+          "normalized_url": "https://dynomight.substack.com/p/liver",
+          "url_hash": "3179c5de5974307ad0f47e603ff9f815b6abb2b6ecbfc18a413e6f9af4fd59ce",
+          "suggested_doc_key": "2026-09-why-is-the-liver-so-weirdly-regenerative-3179c5de",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-why-is-the-liver-so-weirdly-regenerative-3179c5de.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 210점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 135개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:74bfdf1e70f01c20",
+          "title": "F-Droid 2.0",
+          "normalized_url": "https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html",
+          "url_hash": "74bfdf1e70f01c200ae55ec905f6976f8d14ac7f433097d1d69ba754a51513d3",
+          "suggested_doc_key": "2026-09-f-droid-2-0-74bfdf1e",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-f-droid-2-0-74bfdf1e.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 880점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 248개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4d2ff9efcd68a32e",
+          "title": "Two-tier encryption in the UK",
+          "normalized_url": "https://macanorak.com/two-tier-encryption-in-the-uk",
+          "url_hash": "4d2ff9efcd68a32e5b07c1d70ce50db5f6a6afc10d9326acaf59fa9f20d98d74",
+          "suggested_doc_key": "2026-09-two-tier-encryption-in-the-uk-4d2ff9ef",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-two-tier-encryption-in-the-uk-4d2ff9ef.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 365점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 362개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 6,
+      "excluded_count": 44,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:3d7b9aab56c8f4fe",
+          "title": "Introducing MentalHealthBench",
+          "normalized_url": "https://openai.com/index/introducing-mentalhealthbench",
+          "url_hash": "3d7b9aab56c8f4fe22c00cc0057db0cb0a00b0a30d0d99d476abe36917bfac64",
+          "suggested_doc_key": "2026-09-introducing-mentalhealthbench-3d7b9aab",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-introducing-mentalhealthbench-3d7b9aab.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:52b80abd4e046c04",
+          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+          "normalized_url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+          "url_hash": "52b80abd4e046c041ffbe2a48399ded2b227e51686189386944c8dd9b0045fd6",
+          "suggested_doc_key": "2026-09-harvey-turns-legal-context-into-stronger-drafts-with-gpt-6-astra-52b80abd",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-harvey-turns-legal-context-into-stronger-drafts-with-gpt-6-astra-52b80abd.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:0765deb144589280",
+          "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+          "normalized_url": "https://openai.com/index/airbnb-gpt-6-astra",
+          "url_hash": "0765deb144589280c16b6c389f4ff0fb7d519b5edcb7c4cad6d5247ca7a27572",
+          "suggested_doc_key": "2026-09-airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models-0765deb1",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models-0765deb1.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:f2ff7f7605612041",
+          "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+          "normalized_url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
+          "url_hash": "f2ff7f76056120414cf01f1bb6ef7b8e983d9d91ccfa0c5266573b74a0f9d93f",
+          "suggested_doc_key": "2026-09-how-invideo-improves-color-grading-3x-with-gpt-6-astra-f2ff7f76",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-how-invideo-improves-color-grading-3x-with-gpt-6-astra-f2ff7f76.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:5ab590850491008e",
+          "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+          "normalized_url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+          "url_hash": "5ab590850491008e2cefeb696721869fa1b9dd449fc9a908867a23da166dfb52",
+          "suggested_doc_key": "2026-09-grab-and-openai-bring-practical-ai-skills-to-southeast-asia-5ab59085",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-grab-and-openai-bring-practical-ai-skills-to-southeast-asia-5ab59085.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 44
+      }
+    }
+  ]
+}
