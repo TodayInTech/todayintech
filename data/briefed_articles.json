@@ -9230,6 +9230,106 @@
       "status": "published",
       "briefed_at": "2026-09-25T00:16:28.052006Z",
       "candidate_score": 34.0
+    },
+    "7d128752a2cf63b44ec1ea9348a23b27b029e1b62fd126d7e4b91340997ac54b": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
+      "title_fingerprint": "github copilot app for beginners how to build custom workflows with canvases",
+      "service_key": "github-blog",
+      "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+      "article_doc_path": "docs/services/github-blog/2026-09-github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canv-7d128752.md",
+      "status": "published",
+      "briefed_at": "2026-09-26T00:22:17.370313Z",
+      "candidate_score": 42.0
+    },
+    "df0f4b95aa75fa2d62098d3752935fe51f7ff05d87941d1d14d43c160e35ceca": {
+      "normalized_url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css",
+      "title_fingerprint": "improving site performance by shipping more css",
+      "service_key": "github-blog",
+      "title": "Improving site performance by shipping more CSS",
+      "article_doc_path": "docs/services/github-blog/2026-09-improving-site-performance-by-shipping-more-css-df0f4b95.md",
+      "status": "published",
+      "briefed_at": "2026-09-26T00:22:17.370359Z",
+      "candidate_score": 36.0
+    },
+    "07542d541c09e6983ca95bc5b359798b18f35121e088f746babfd3dbccc49c58": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts",
+      "title_fingerprint": "behind project suncatcher our moonshot to put ai in space",
+      "service_key": "google-blog",
+      "title": "Behind Project Suncatcher, our moonshot to put AI in space",
+      "article_doc_path": "docs/services/google-blog/2026-09-behind-project-suncatcher-our-moonshot-to-put-ai-in-space-07542d54.md",
+      "status": "published",
+      "briefed_at": "2026-09-26T00:22:17.370376Z",
+      "candidate_score": 35.0
+    },
+    "325d3ee537dadcef4283f02a68f5e0972051b8f1ff985540f2bc623ecc8f7172": {
+      "normalized_url": "https://ollaya.dev/",
+      "title_fingerprint": "ollaya ollama for open source jev style decision models",
+      "service_key": "hacker-news",
+      "title": "Ollaya – Ollama for open-source, Jev-style decision models",
+      "article_doc_path": "docs/services/hacker-news/2026-09-ollaya-ollama-for-open-source-jev-style-decision-models-325d3ee5.md",
+      "status": "published",
+      "briefed_at": "2026-09-26T00:22:17.370387Z",
+      "candidate_score": 65.0
+    },
+    "9973f8e7ebb5939a587ed163958ef7e7449742952df845b8c3a44cf31053d9aa": {
+      "normalized_url": "https://swarmtraces.org/",
+      "title_fingerprint": "revealing the details of how openai agents hacked hugging face",
+      "service_key": "hacker-news",
+      "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
+      "article_doc_path": "docs/services/hacker-news/2026-09-revealing-the-details-of-how-openai-agents-hacked-hugging-face-9973f8e7.md",
+      "status": "published",
+      "briefed_at": "2026-09-26T00:22:17.370396Z",
+      "candidate_score": 64.8
+    },
+    "4bfa8e77beb059840ac2a84b95c69e6c17f35d1d49a38d3534721e1a680edee1": {
+      "normalized_url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+      "title_fingerprint": "u s appeals court upholds designation of anthropic as supply chain risk",
+      "service_key": "hacker-news",
+      "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+      "article_doc_path": "docs/services/hacker-news/2026-09-u-s-appeals-court-upholds-designation-of-anthropic-as-supply-chain-risk-4bfa8e77.md",
+      "status": "published",
+      "briefed_at": "2026-09-26T00:22:17.370404Z",
+      "candidate_score": 60.0
+    },
+    "4b31fbd0b4f33ec5c5919e90137ed64eef2b15ec4a45107e7544998dcc24a24b": {
+      "normalized_url": "https://factorio.com/blog/post/fff-447",
+      "title_fingerprint": "factorio that you can touch",
+      "service_key": "hacker-news",
+      "title": "Factorio that you can touch",
+      "article_doc_path": "docs/services/hacker-news/2026-09-factorio-that-you-can-touch-4b31fbd0.md",
+      "status": "published",
+      "briefed_at": "2026-09-26T00:22:17.370413Z",
+      "candidate_score": 60.0
+    },
+    "9de028fbe46cac8b155a7c08a35dfcf47f00596edbfe763bda6c0737c9cb02fb": {
+      "normalized_url": "https://openai.com/index/proaction",
+      "title_fingerprint": "proaction boosts sales 60 and saves 75 hours with codex",
+      "service_key": "openai-blog",
+      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-09-proaction-boosts-sales-60-and-saves-75-hours-with-codex-9de028fb.md",
+      "status": "published",
+      "briefed_at": "2026-09-26T00:22:17.370422Z",
+      "candidate_score": 39.0
+    },
+    "5ab590850491008e2cefeb696721869fa1b9dd449fc9a908867a23da166dfb52": {
+      "normalized_url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+      "title_fingerprint": "grab and openai bring practical ai skills to southeast asia",
+      "service_key": "openai-blog",
+      "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+      "article_doc_path": "docs/services/openai-blog/2026-09-grab-and-openai-bring-practical-ai-skills-to-southeast-asia-5ab59085.md",
+      "status": "published",
+      "briefed_at": "2026-09-26T00:22:17.370430Z",
+      "candidate_score": 32.0
+    },
+    "bb71e409dd7f29f762c233b6b0e3a367ed44a43dd4b05ce6408a8edddeb7b53b": {
+      "normalized_url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+      "title_fingerprint": "chatgpt ads expands to southeast asia and taiwan",
+      "service_key": "openai-blog",
+      "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+      "article_doc_path": "docs/services/openai-blog/2026-09-chatgpt-ads-expands-to-southeast-asia-and-taiwan-bb71e409.md",
+      "status": "published",
+      "briefed_at": "2026-09-26T00:22:17.370438Z",
+      "candidate_score": 29.0
     }
   }
 }
