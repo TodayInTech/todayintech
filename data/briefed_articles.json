@@ -9330,6 +9330,46 @@
       "status": "published",
       "briefed_at": "2026-09-26T00:22:17.370438Z",
       "candidate_score": 29.0
+    },
+    "62596fdba5547abf59f29e10884ccc62158c0cffb4421e9bc36d208f9cc20466": {
+      "normalized_url": "https://gultsch.de/posts/breaking-up-with-google-play",
+      "title_fingerprint": "breaking up with google play why conversations is now free",
+      "service_key": "hacker-news",
+      "title": "Breaking Up with Google Play: Why Conversations Is Now Free",
+      "article_doc_path": "docs/services/hacker-news/2026-09-breaking-up-with-google-play-why-conversations-is-now-free-62596fdb.md",
+      "status": "published",
+      "briefed_at": "2026-09-27T00:08:26.877104Z",
+      "candidate_score": 60.0
+    },
+    "694d66cc71d806e63494f24d290a5aa659a96074d9382bfeb450930cb83d7b53": {
+      "normalized_url": "https://lexontech.org/fifteen-years-later-the-apple-cards-origin-story",
+      "title_fingerprint": "fifteen years later the apple cards origin story",
+      "service_key": "hacker-news",
+      "title": "Fifteen years later, the Apple Cards origin story",
+      "article_doc_path": "docs/services/hacker-news/2026-09-fifteen-years-later-the-apple-cards-origin-story-694d66cc.md",
+      "status": "published",
+      "briefed_at": "2026-09-27T00:08:26.877133Z",
+      "candidate_score": 60.0
+    },
+    "334a6646400953ddb11c164b22ae36a66bb7987fd72bae057e0b9f8e97a6c4ec": {
+      "normalized_url": "https://github.com/reladraw/reladraw",
+      "title_fingerprint": "show hn reladraw a diagram language where you decide where to place things",
+      "service_key": "hacker-news",
+      "title": "Show HN: Reladraw – A diagram language where you decide where to place things",
+      "article_doc_path": "docs/services/hacker-news/2026-09-show-hn-reladraw-a-diagram-language-where-you-decide-where-to-place-thin-334a6646.md",
+      "status": "published",
+      "briefed_at": "2026-09-27T00:08:26.877151Z",
+      "candidate_score": 56.7
+    },
+    "02340bd8d13f0a86926997f3051a34c870fc3e2e48f6a5e51d53034e6a473a7c": {
+      "normalized_url": "https://www.aljazeera.com/economy/2026/9/25/japan-moves-to-tighten-rules-for-foreigners-throwing-futures-into-doubt",
+      "title_fingerprint": "japan moves to tighten rules for foreigners",
+      "service_key": "hacker-news",
+      "title": "Japan moves to tighten rules for foreigners",
+      "article_doc_path": "docs/services/hacker-news/2026-09-japan-moves-to-tighten-rules-for-foreigners-02340bd8.md",
+      "status": "published",
+      "briefed_at": "2026-09-27T00:08:26.877163Z",
+      "candidate_score": 55.4
     }
   }
 }
