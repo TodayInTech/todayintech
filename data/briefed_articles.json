@@ -9370,6 +9370,46 @@
       "status": "published",
       "briefed_at": "2026-09-27T00:08:26.877163Z",
       "candidate_score": 55.4
+    },
+    "91006088bffa5fb4a7538cea1bcece97bf40763dae253745a12a51dac4cc9fa1": {
+      "normalized_url": "https://sancho.bearblog.dev/google-weird",
+      "title_fingerprint": "when did google get so weird",
+      "service_key": "hacker-news",
+      "title": "When did Google get so weird?",
+      "article_doc_path": "docs/services/hacker-news/2026-09-when-did-google-get-so-weird-91006088.md",
+      "status": "published",
+      "briefed_at": "2026-09-28T00:17:07.924008Z",
+      "candidate_score": 66.0
+    },
+    "ee0a4957fb506dcdf5ee313104b402f3de90f33e8aff5695210078050b6fe110": {
+      "normalized_url": "https://fireworks.ai/blog/ember-1",
+      "title_fingerprint": "ember 1",
+      "service_key": "hacker-news",
+      "title": "Ember-1",
+      "article_doc_path": "docs/services/hacker-news/2026-09-ember-1-ee0a4957.md",
+      "status": "published",
+      "briefed_at": "2026-09-28T00:17:07.924048Z",
+      "candidate_score": 60.0
+    },
+    "bb4a647c437a23adbca87f53a3b5ad86e892a0f2581618c7b6de9d9dbe968601": {
+      "normalized_url": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html",
+      "title_fingerprint": "the normalization of inexplicable failures",
+      "service_key": "hacker-news",
+      "title": "The Normalization of Inexplicable Failures",
+      "article_doc_path": "docs/services/hacker-news/2026-09-the-normalization-of-inexplicable-failures-bb4a647c.md",
+      "status": "published",
+      "briefed_at": "2026-09-28T00:17:07.924061Z",
+      "candidate_score": 60.0
+    },
+    "3963357786e8471541d6cf6c077888dff7e6231ec15a35278b0aa8a275364a06": {
+      "normalized_url": "https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users",
+      "title_fingerprint": "on caring for user data neovim caused vim undo files to be deleted",
+      "service_key": "hacker-news",
+      "title": "On caring for user data: NeoVim caused Vim undo files to be deleted",
+      "article_doc_path": "docs/services/hacker-news/2026-09-on-caring-for-user-data-neovim-caused-vim-undo-files-to-be-deleted-39633577.md",
+      "status": "published",
+      "briefed_at": "2026-09-28T00:17:07.924070Z",
+      "candidate_score": 60.0
     }
   }
 }
