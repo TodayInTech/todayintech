@@ -1,0 +1,221 @@
+{
+  "generated_at": "2026-09-28T00:16:06.466713+00:00",
+  "generated_for": "2026-09-28",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "bcb940270c1fb5bd6993d80ddfb50e54cee3dc68",
+  "github_run_id": "36361482595",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 10,
+  "excluded_count": 110,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 20,
+      "excluded_count": 100,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 100
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 20,
+      "output_count": 20,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 20,
+      "output_count": 20,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 20,
+      "output_count": 10,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:91006088bffa5fb4",
+          "title": "When did Google get so weird?",
+          "normalized_url": "https://sancho.bearblog.dev/google-weird",
+          "url_hash": "91006088bffa5fb4a7538cea1bcece97bf40763dae253745a12a51dac4cc9fa1",
+          "suggested_doc_key": "2026-09-when-did-google-get-so-weird-91006088",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-when-did-google-get-so-weird-91006088.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 608점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 325개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:ee0a4957fb506dcd",
+          "title": "Ember-1",
+          "normalized_url": "https://fireworks.ai/blog/ember-1",
+          "url_hash": "ee0a4957fb506dcdf5ee313104b402f3de90f33e8aff5695210078050b6fe110",
+          "suggested_doc_key": "2026-09-ember-1-ee0a4957",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-ember-1-ee0a4957.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 311점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 167개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:bb4a647c437a23ad",
+          "title": "The Normalization of Inexplicable Failures",
+          "normalized_url": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html",
+          "url_hash": "bb4a647c437a23adbca87f53a3b5ad86e892a0f2581618c7b6de9d9dbe968601",
+          "suggested_doc_key": "2026-09-the-normalization-of-inexplicable-failures-bb4a647c",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-the-normalization-of-inexplicable-failures-bb4a647c.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 233점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 95개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3963357786e84715",
+          "title": "On caring for user data: NeoVim caused Vim undo files to be deleted",
+          "normalized_url": "https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users",
+          "url_hash": "3963357786e8471541d6cf6c077888dff7e6231ec15a35278b0aa8a275364a06",
+          "suggested_doc_key": "2026-09-on-caring-for-user-data-neovim-caused-vim-undo-files-to-be-deleted-39633577",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-on-caring-for-user-data-neovim-caused-vim-undo-files-to-be-deleted-39633577.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 342점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 303개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6672b7a93d127084",
+          "title": "In an $80 motel room, a discovery to shed light on the origins of life",
+          "normalized_url": "https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html",
+          "url_hash": "6672b7a93d127084cf77c0cfcd012c5b2df50a673a99b7373d43bb0990d2b48b",
+          "suggested_doc_key": "2026-09-in-an-80-motel-room-a-discovery-to-shed-light-on-the-origins-of-life-6672b7a9",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-in-an-80-motel-room-a-discovery-to-shed-light-on-the-origins-of-life-6672b7a9.md",
+          "candidate_score": 59.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 194점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 79개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 50
+      }
+    }
+  ]
+}

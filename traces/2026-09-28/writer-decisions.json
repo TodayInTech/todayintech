@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-09-28T00:17:08.167505+00:00",
+  "generated_for": "2026-09-28",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "bcb940270c1fb5bd6993d80ddfb50e54cee3dc68",
+  "github_run_id": "36361482595",
+  "decision_count": 4,
+  "decision_counts": {
+    "published": 4
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:91006088bffa5fb4",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "When did Google get so weird?",
+      "normalized_url": "https://sancho.bearblog.dev/google-weird",
+      "article_doc_path": "docs/services/hacker-news/2026-09-when-did-google-get-so-weird-91006088.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Search / AI",
+      "importance_level": "Medium",
+      "confidence_score": 0.84,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "단순 검색어에 대한 개인적 경험을 통해 2026년의 검색 엔진이 생성형 AI 개요로 사용자 의도를 잘못 해석하는 문제와 그로 인한 사용자 경험 불일치를 명확하게 드러내며, 기술적 논의(의도 인식·UI 모드 분리·LLM의 역할)에 관심 있는 독자에게 유의미한 사례를 제공하므로 게시 가치가 있다고 판단합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 66.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:ee0a4957fb506dcd",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Ember-1",
+      "normalized_url": "https://fireworks.ai/blog/ember-1",
+      "article_doc_path": "docs/services/hacker-news/2026-09-ember-1-ee0a4957.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "인공지능/모델 효율성",
+      "importance_level": "높음",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Fireworks Research의 Ember-1은 Kimi K3 수준의 품질을 유지하면서 토큰 사용을 크게 줄인 점, 공개 벤치마크와 실사용 A/B 테스트에서 입증된 결과, 서버리스 학습 플랫폼을 활용한 연구·상용 전환 사례가 기술 독자에게 실용적 의미가 있어 Today in Tech 독자에게 유용하다고 판단됩니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:bb4a647c437a23ad",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "The Normalization of Inexplicable Failures",
+      "normalized_url": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html",
+      "article_doc_path": "docs/services/hacker-news/2026-09-the-normalization-of-inexplicable-failures-bb4a647c.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI/소프트웨어 엔지니어링",
+      "importance_level": "Medium",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 LLM 기반 서비스 도입에서 발생하는 운영적·엔지니어링 문제를 경험적 사례와 논리로 정리해 기술 독자에게 시사점을 제공하므로 Today in Tech 독자층에 유용하다고 판단했습니다. 신뢰도·보정·소유권 등 구체적 쟁점을 다루고 있어 기술적 논의가 촉발될 수 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:3963357786e84715",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "On caring for user data: NeoVim caused Vim undo files to be deleted",
+      "normalized_url": "https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users",
+      "article_doc_path": "docs/services/hacker-news/2026-09-on-caring-for-user-data-neovim-caused-vim-undo-files-to-be-deleted-39633577.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "개발 도구",
+      "importance_level": "중간",
+      "confidence_score": 0.86,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 Vim의 ‘persistent undo’ 같은 사용자 데이터 보존 기능의 실제 가치와, NeoVim가 기존 undo 파일을 삭제해 사용자 신뢰를 훼손한 사례를 직접 인용해 보여 줍니다. 개발자·도구 사용자에게 온디스크 포맷 안정성·호환성·데이터 보존의 실질적 의미를 전달하므로 기술 독자에게 유익합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    }
+  ]
+}
