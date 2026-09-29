@@ -9410,6 +9410,106 @@
       "status": "published",
       "briefed_at": "2026-09-28T00:17:07.924070Z",
       "candidate_score": 60.0
+    },
+    "b4c2f06bca4278c043f19e7415479aa1c81dd727f1b46049ab0b1b32ae40d1fd": {
+      "normalized_url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
+      "title_fingerprint": "how we found 24 android vulnerabilities using our open source ai security agent",
+      "service_key": "github-blog",
+      "title": "How we found 24 Android vulnerabilities using our open source AI security agent",
+      "article_doc_path": "docs/services/github-blog/2026-09-how-we-found-24-android-vulnerabilities-using-our-open-source-ai-securit-b4c2f06b.md",
+      "status": "published",
+      "briefed_at": "2026-09-29T01:26:45.247371Z",
+      "candidate_score": 52.0
+    },
+    "f6010caa7c643cd8836df1d110867e433632ebb91d76d3794555dfa5b0a5c4ba": {
+      "normalized_url": "https://github.blog/open-source/git/highlights-from-git-2-56",
+      "title_fingerprint": "highlights from git 2 56",
+      "service_key": "github-blog",
+      "title": "Highlights from Git 2.56",
+      "article_doc_path": "docs/services/github-blog/2026-09-highlights-from-git-2-56-f6010caa.md",
+      "status": "published",
+      "briefed_at": "2026-09-29T01:26:45.247415Z",
+      "candidate_score": 46.0
+    },
+    "7ba7170e114ec367c0aea60b2aad34063147c275e6f3d6808f9994c5791df5e3": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize",
+      "title_fingerprint": "watch the winning trailer from the future vision xprize the gifted",
+      "service_key": "google-blog",
+      "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+      "article_doc_path": "docs/services/google-blog/2026-09-watch-the-winning-trailer-from-the-future-vision-xprize-the-gifted-7ba7170e.md",
+      "status": "published",
+      "briefed_at": "2026-09-29T01:26:45.247427Z",
+      "candidate_score": 41.0
+    },
+    "dcae03d826e6a913e617e1d7951c6e5ae34f18ead5abf2ee282e0df917fb314d": {
+      "normalized_url": "https://github.com/firelex/jeff",
+      "title_fingerprint": "jeff jev compatible 0 8b decision models trained at home 30 ms",
+      "service_key": "hacker-news",
+      "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
+      "article_doc_path": "docs/services/hacker-news/2026-09-jeff-jev-compatible-0-8b-decision-models-trained-at-home-30-ms-dcae03d8.md",
+      "status": "published",
+      "briefed_at": "2026-09-29T01:26:45.247436Z",
+      "candidate_score": 70.0
+    },
+    "6fc9692e4557b48b627a07ed547d99cb8d5ecfa58d89fe6b58c3b4f2583ef4fb": {
+      "normalized_url": "https://calnewport.com/its-time-to-investigate-the-ai-labs",
+      "title_fingerprint": "it s time to investigate the ai labs",
+      "service_key": "hacker-news",
+      "title": "It's Time to Investigate the AI Labs",
+      "article_doc_path": "docs/services/hacker-news/2026-09-it-s-time-to-investigate-the-ai-labs-6fc9692e.md",
+      "status": "published",
+      "briefed_at": "2026-09-29T01:26:45.247444Z",
+      "candidate_score": 61.0
+    },
+    "c05735ac6fea208f936e476637fd51b61a28139454fd2338c55986f47dbbb8dc": {
+      "normalized_url": "https://www.worldlabs.ai/blog/amd-announcement",
+      "title_fingerprint": "world labs is joining amd",
+      "service_key": "hacker-news",
+      "title": "World Labs Is Joining AMD",
+      "article_doc_path": "docs/services/hacker-news/2026-09-world-labs-is-joining-amd-c05735ac.md",
+      "status": "published",
+      "briefed_at": "2026-09-29T01:26:45.247452Z",
+      "candidate_score": 60.0
+    },
+    "4e3ca8a95d36633072bd77285767813ca85390ba65b7f2620d8350c617b7240e": {
+      "normalized_url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "title_fingerprint": "sonnet 5 5",
+      "service_key": "hacker-news",
+      "title": "Sonnet 5.5",
+      "article_doc_path": "docs/services/hacker-news/2026-09-sonnet-5-5-4e3ca8a9.md",
+      "status": "published",
+      "briefed_at": "2026-09-29T01:26:45.247460Z",
+      "candidate_score": 60.0
+    },
+    "0adf5bb2a473897d12526e4b9a8c88391e22c0769cbbe7208af0a1f61691cd5f": {
+      "normalized_url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "title_fingerprint": "the lenfest institute grows landmark program with expanded openai support",
+      "service_key": "openai-blog",
+      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+      "article_doc_path": "docs/services/openai-blog/2026-09-the-lenfest-institute-grows-landmark-program-with-expanded-openai-suppor-0adf5bb2.md",
+      "status": "published",
+      "briefed_at": "2026-09-29T01:26:45.247468Z",
+      "candidate_score": 39.0
+    },
+    "833e9419a34f8836dc9d75020b228e7e76dd99c1c482fbba6af088c9a08dec28": {
+      "normalized_url": "https://openai.com/form/codex-originals",
+      "title_fingerprint": "are you a codex original",
+      "service_key": "openai-blog",
+      "title": "Are you a Codex Original?",
+      "article_doc_path": "docs/services/openai-blog/2026-09-are-you-a-codex-original-833e9419.md",
+      "status": "published",
+      "briefed_at": "2026-09-29T01:26:45.247497Z",
+      "candidate_score": 37.0
+    },
+    "eb674100bb687fff764326a192483a4161fa4fa5dc17727e3c5a9e490b0e4544": {
+      "normalized_url": "https://openai.com/index/basis-tax-workbook-with-astra",
+      "title_fingerprint": "basis completes a tax workbook 2x faster with gpt 6 astra",
+      "service_key": "openai-blog",
+      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+      "article_doc_path": "docs/services/openai-blog/2026-09-basis-completes-a-tax-workbook-2x-faster-with-gpt-6-astra-eb674100.md",
+      "status": "published",
+      "briefed_at": "2026-09-29T01:26:45.247504Z",
+      "candidate_score": 36.0
     }
   }
 }
