@@ -9510,6 +9510,96 @@
       "status": "published",
       "briefed_at": "2026-09-29T01:26:45.247504Z",
       "candidate_score": 36.0
+    },
+    "f94c536e6deab72f502b4871f670d66b33343a2d546ca591aa326c350b066470": {
+      "normalized_url": "https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-transparency-state-policy-and-whats-ahead",
+      "title_fingerprint": "developer policy update transparency state policy and what s ahead",
+      "service_key": "github-blog",
+      "title": "Developer policy update: Transparency, state policy, and what’s ahead",
+      "article_doc_path": "docs/services/github-blog/2026-09-developer-policy-update-transparency-state-policy-and-what-s-ahead-f94c536e.md",
+      "status": "published",
+      "briefed_at": "2026-09-30T01:00:43.864585Z",
+      "candidate_score": 42.0
+    },
+    "4b32c24d2dbc7a71835d3e960ce927178d3bedd56a55df757c85db231da28dc3": {
+      "normalized_url": "https://github.com/PostHog/jeeves",
+      "title_fingerprint": "jeeves reasoning improves jev like decision models",
+      "service_key": "hacker-news",
+      "title": "Jeeves. Reasoning improves Jev-like decision models",
+      "article_doc_path": "docs/services/hacker-news/2026-09-jeeves-reasoning-improves-jev-like-decision-models-4b32c24d.md",
+      "status": "published",
+      "briefed_at": "2026-09-30T01:00:43.864627Z",
+      "candidate_score": 65.0
+    },
+    "9ee133e6f5024f08c80af91c432ff32d93361f41fda5a0390f7f814b47cf3b57": {
+      "normalized_url": "https://github.com/ninjahawk/livenerf",
+      "title_fingerprint": "livenerf has opus 5 5 been nerfed yet",
+      "service_key": "hacker-news",
+      "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
+      "article_doc_path": "docs/services/hacker-news/2026-09-livenerf-has-opus-5-5-been-nerfed-yet-9ee133e6.md",
+      "status": "published",
+      "briefed_at": "2026-09-30T01:00:43.864652Z",
+      "candidate_score": 64.3
+    },
+    "d7a5e9264debf951c49997b9db636bcd48308782920a73c8101e192dd731d544": {
+      "normalized_url": "https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels",
+      "title_fingerprint": "u s postal inspectors shut down website selling counterfeit postage labels",
+      "service_key": "hacker-news",
+      "title": "U.S. postal inspectors shut down website selling counterfeit postage labels",
+      "article_doc_path": "docs/services/hacker-news/2026-09-u-s-postal-inspectors-shut-down-website-selling-counterfeit-postage-labe-d7a5e926.md",
+      "status": "published",
+      "briefed_at": "2026-09-30T01:00:43.864658Z",
+      "candidate_score": 61.5
+    },
+    "7111adc7355e98148d1380e189713218e84b69ffb7eefae4100614f7b32367e7": {
+      "normalized_url": "https://www.tcl-lang.org/software/tcltk/9.1.html",
+      "title_fingerprint": "tcl tk 9 1",
+      "service_key": "hacker-news",
+      "title": "Tcl/Tk 9.1",
+      "article_doc_path": "docs/services/hacker-news/2026-09-tcl-tk-9-1-7111adc7.md",
+      "status": "published",
+      "briefed_at": "2026-09-30T01:00:43.864663Z",
+      "candidate_score": 60.0
+    },
+    "6071f63e21f6425413eb63722b1604896ffdb702f04f5beb8c9ad701e7ae765e": {
+      "normalized_url": "https://openai.com/index/devday-2026-recap",
+      "title_fingerprint": "devday 2026 recap",
+      "service_key": "openai-blog",
+      "title": "DevDay 2026 Recap",
+      "article_doc_path": "docs/services/openai-blog/2026-09-devday-2026-recap-6071f63e.md",
+      "status": "published",
+      "briefed_at": "2026-09-30T01:00:43.864668Z",
+      "candidate_score": 48.0
+    },
+    "dec620cb7225d2434a9b02e6e0197b1952a6412dcad780af2099d9910f2c9ee8": {
+      "normalized_url": "https://openai.com/index/introducing-dots",
+      "title_fingerprint": "introducing dots",
+      "service_key": "openai-blog",
+      "title": "Introducing dots",
+      "article_doc_path": "docs/services/openai-blog/2026-09-introducing-dots-dec620cb.md",
+      "status": "published",
+      "briefed_at": "2026-09-30T01:00:43.864673Z",
+      "candidate_score": 36.0
+    },
+    "2fc54b690d7b20a2e14328388fc3694e3eecf9d62246b7618620635188f7c454": {
+      "normalized_url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "title_fingerprint": "towards safety cases for frontier ai training",
+      "service_key": "openai-blog",
+      "title": "Towards safety cases for frontier AI training",
+      "article_doc_path": "docs/services/openai-blog/2026-09-towards-safety-cases-for-frontier-ai-training-2fc54b69.md",
+      "status": "published",
+      "briefed_at": "2026-09-30T01:00:43.864678Z",
+      "candidate_score": 35.0
+    },
+    "50d71cd52400f551c336b9ad5bff210544c56459b813f45adc29b8abfb63cfa4": {
+      "normalized_url": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "title_fingerprint": "how we will do better for australia",
+      "service_key": "openai-blog",
+      "title": "How we will do better for Australia",
+      "article_doc_path": "docs/services/openai-blog/2026-09-how-we-will-do-better-for-australia-50d71cd5.md",
+      "status": "published",
+      "briefed_at": "2026-09-30T01:00:43.864682Z",
+      "candidate_score": 34.0
     }
   }
 }
