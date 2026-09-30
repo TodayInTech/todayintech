@@ -1,0 +1,299 @@
+{
+  "generated_at": "2026-09-30T00:58:18.289184+00:00",
+  "generated_for": "2026-09-30",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "f388ab2896147d3496f2c06ef022e0d079597fcd",
+  "github_run_id": "36652746105",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 25,
+      "excluded_count": 94,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 94
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 25,
+      "output_count": 15,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:f94c536e6deab72f",
+          "title": "Developer policy update: Transparency, state policy, and what’s ahead",
+          "normalized_url": "https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-transparency-state-policy-and-whats-ahead",
+          "url_hash": "f94c536e6deab72f502b4871f670d66b33343a2d546ca591aa326c350b066470",
+          "suggested_doc_key": "2026-09-developer-policy-update-transparency-state-policy-and-what-s-ahead-f94c536e",
+          "suggested_article_path": "docs/services/github-blog/2026-09-developer-policy-update-transparency-state-policy-and-what-s-ahead-f94c536e.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:4b32c24d2dbc7a71",
+          "title": "Jeeves. Reasoning improves Jev-like decision models",
+          "normalized_url": "https://github.com/PostHog/jeeves",
+          "url_hash": "4b32c24d2dbc7a71835d3e960ce927178d3bedd56a55df757c85db231da28dc3",
+          "suggested_doc_key": "2026-09-jeeves-reasoning-improves-jev-like-decision-models-4b32c24d",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-jeeves-reasoning-improves-jev-like-decision-models-4b32c24d.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 224점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 85개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9ee133e6f5024f08",
+          "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
+          "normalized_url": "https://github.com/ninjahawk/livenerf",
+          "url_hash": "9ee133e6f5024f08c80af91c432ff32d93361f41fda5a0390f7f814b47cf3b57",
+          "suggested_doc_key": "2026-09-livenerf-has-opus-5-5-been-nerfed-yet-9ee133e6",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-livenerf-has-opus-5-5-been-nerfed-yet-9ee133e6.md",
+          "candidate_score": 64.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 163점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 87개를 토론 신호로 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d7a5e9264debf951",
+          "title": "U.S. postal inspectors shut down website selling counterfeit postage labels",
+          "normalized_url": "https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels",
+          "url_hash": "d7a5e9264debf951c49997b9db636bcd48308782920a73c8101e192dd731d544",
+          "suggested_doc_key": "2026-09-u-s-postal-inspectors-shut-down-website-selling-counterfeit-postage-labe-d7a5e926",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-u-s-postal-inspectors-shut-down-website-selling-counterfeit-postage-labe-d7a5e926.md",
+          "candidate_score": 61.5,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 165점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 86개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7111adc7355e9814",
+          "title": "Tcl/Tk 9.1",
+          "normalized_url": "https://www.tcl-lang.org/software/tcltk/9.1.html",
+          "url_hash": "7111adc7355e98148d1380e189713218e84b69ffb7eefae4100614f7b32367e7",
+          "suggested_doc_key": "2026-09-tcl-tk-9-1-7111adc7",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-tcl-tk-9-1-7111adc7.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 234점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 80개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d6b9f5e651b1891e",
+          "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+          "normalized_url": "https://openai.com/index/introducing-gpt-6-1-sol",
+          "url_hash": "d6b9f5e651b1891e950e0096b862ca9527c5eacf458b2804fa20b6d4b208ad61",
+          "suggested_doc_key": "2026-09-gpt-6-1-sol-near-astra-intelligence-for-a-fifth-of-the-price-d6b9f5e6",
+          "suggested_article_path": "docs/services/hacker-news/2026-09-gpt-6-1-sol-near-astra-intelligence-for-a-fifth-of-the-price-d6b9f5e6.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 767점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 710개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 4,
+      "excluded_count": 46,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:6071f63e21f64254",
+          "title": "DevDay 2026 Recap",
+          "normalized_url": "https://openai.com/index/devday-2026-recap",
+          "url_hash": "6071f63e21f6425413eb63722b1604896ffdb702f04f5beb8c9ad701e7ae765e",
+          "suggested_doc_key": "2026-09-devday-2026-recap-6071f63e",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-devday-2026-recap-6071f63e.md",
+          "candidate_score": 48.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:dec620cb7225d243",
+          "title": "Introducing dots",
+          "normalized_url": "https://openai.com/index/introducing-dots",
+          "url_hash": "dec620cb7225d2434a9b02e6e0197b1952a6412dcad780af2099d9910f2c9ee8",
+          "suggested_doc_key": "2026-09-introducing-dots-dec620cb",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-introducing-dots-dec620cb.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:2fc54b690d7b20a2",
+          "title": "Towards safety cases for frontier AI training",
+          "normalized_url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+          "url_hash": "2fc54b690d7b20a2e14328388fc3694e3eecf9d62246b7618620635188f7c454",
+          "suggested_doc_key": "2026-09-towards-safety-cases-for-frontier-ai-training-2fc54b69",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-towards-safety-cases-for-frontier-ai-training-2fc54b69.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:50d71cd52400f551",
+          "title": "How we will do better for Australia",
+          "normalized_url": "https://openai.com/index/how-we-will-do-better-for-australia",
+          "url_hash": "50d71cd52400f551c336b9ad5bff210544c56459b813f45adc29b8abfb63cfa4",
+          "suggested_doc_key": "2026-09-how-we-will-do-better-for-australia-50d71cd5",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-how-we-will-do-better-for-australia-50d71cd5.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 45
+      }
+    }
+  ]
+}
