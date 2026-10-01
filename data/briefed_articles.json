@@ -9600,6 +9600,96 @@
       "status": "published",
       "briefed_at": "2026-09-30T01:00:43.864682Z",
       "candidate_score": 34.0
+    },
+    "145709ee5f164f9f810ba244685327465c37b9e292cd78b6c5f6cadf0306df00": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-science-ai-flu-forecasts",
+      "title_fingerprint": "google s ai ranks 1 for predicting flu hospitalizations",
+      "service_key": "google-blog",
+      "title": "Google's AI ranks #1 for predicting flu hospitalizations.",
+      "article_doc_path": "docs/services/google-blog/2026-09-google-s-ai-ranks-1-for-predicting-flu-hospitalizations-145709ee.md",
+      "status": "published",
+      "briefed_at": "2026-10-01T01:03:42.582596Z",
+      "candidate_score": 46.0
+    },
+    "3dc726db0267e4d646dc9189d1a5fd006b7ce0132b07181baa6f88ba5862f0ae": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synthid-bio",
+      "title_fingerprint": "we re introducing synthid bio bringing our watermarking technology to synthetic biology",
+      "service_key": "google-blog",
+      "title": "We’re introducing SynthID Bio, bringing our watermarking technology to synthetic biology.",
+      "article_doc_path": "docs/services/google-blog/2026-09-we-re-introducing-synthid-bio-bringing-our-watermarking-technology-to-sy-3dc726db.md",
+      "status": "published",
+      "briefed_at": "2026-10-01T01:03:42.582637Z",
+      "candidate_score": 40.0
+    },
+    "0241e600b90d751edb67d0e42bee7f0465567b2f0886c79fce263ae1be3a93c2": {
+      "normalized_url": "https://github.com/magnitudedev/magnitude",
+      "title_fingerprint": "launch hn magnitude yc s25 self optimizing inference engine for agents",
+      "service_key": "hacker-news",
+      "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+      "article_doc_path": "docs/services/hacker-news/2026-09-launch-hn-magnitude-yc-s25-self-optimizing-inference-engine-for-agents-0241e600.md",
+      "status": "published",
+      "briefed_at": "2026-10-01T01:03:42.582648Z",
+      "candidate_score": 73.5
+    },
+    "8a18dee8ca8f941c5640998a7936264e339959ad54d85c845d4be8deff47c3c7": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon",
+      "title_fingerprint": "gemini 4 argon",
+      "service_key": "hacker-news",
+      "title": "Gemini 4 Argon",
+      "article_doc_path": "docs/services/hacker-news/2026-09-gemini-4-argon-8a18dee8.md",
+      "status": "published",
+      "briefed_at": "2026-10-01T01:03:42.582653Z",
+      "candidate_score": 64.0
+    },
+    "757dc7ec93bdca9a55c265265e55c2e232ed60c8a604b4b2c21faef7407b79c8": {
+      "normalized_url": "https://spectrum.ieee.org/bloomberg-terminal",
+      "title_fingerprint": "a brief history of the bloomberg terminal",
+      "service_key": "hacker-news",
+      "title": "A brief history of the Bloomberg terminal",
+      "article_doc_path": "docs/services/hacker-news/2026-09-a-brief-history-of-the-bloomberg-terminal-757dc7ec.md",
+      "status": "published",
+      "briefed_at": "2026-10-01T01:03:42.582663Z",
+      "candidate_score": 60.0
+    },
+    "a3b9dad44086bb865a30b71042ef65b6b262a682e9b8477cb48f97c069a26479": {
+      "normalized_url": "https://edgcpp.org/",
+      "title_fingerprint": "edg c front end goes public",
+      "service_key": "hacker-news",
+      "title": "EDG C++ front-end goes public",
+      "article_doc_path": "docs/services/hacker-news/2026-09-edg-c-front-end-goes-public-a3b9dad4.md",
+      "status": "published",
+      "briefed_at": "2026-10-01T01:03:42.582668Z",
+      "candidate_score": 55.6
+    },
+    "90249c2a3882c6d31b88e7cea8a85045e4eeb6a0a24ec30e6774300a2c2f9921": {
+      "normalized_url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "title_fingerprint": "disrupting a coordinated model distillation campaign",
+      "service_key": "openai-blog",
+      "title": "Disrupting a coordinated model-distillation campaign",
+      "article_doc_path": "docs/services/openai-blog/2026-09-disrupting-a-coordinated-model-distillation-campaign-90249c2a.md",
+      "status": "published",
+      "briefed_at": "2026-10-01T01:03:42.582672Z",
+      "candidate_score": 44.0
+    },
+    "d6b9f5e651b1891e950e0096b862ca9527c5eacf458b2804fa20b6d4b208ad61": {
+      "normalized_url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "title_fingerprint": "introducing gpt 6 1 sol",
+      "service_key": "openai-blog",
+      "title": "Introducing GPT-6.1 Sol",
+      "article_doc_path": "docs/services/openai-blog/2026-09-introducing-gpt-6-1-sol-d6b9f5e6.md",
+      "status": "published",
+      "briefed_at": "2026-10-01T01:03:42.582677Z",
+      "candidate_score": 41.0
+    },
+    "061338e668ed697490e5190ccd3e1fba28ac269698517daa2fcec5875990601f": {
+      "normalized_url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+      "title_fingerprint": "helping small businesses put ai to work",
+      "service_key": "openai-blog",
+      "title": "Helping small businesses put AI to work",
+      "article_doc_path": "docs/services/openai-blog/2026-09-helping-small-businesses-put-ai-to-work-061338e6.md",
+      "status": "published",
+      "briefed_at": "2026-10-01T01:03:42.582681Z",
+      "candidate_score": 38.0
     }
   }
 }
