@@ -1,0 +1,222 @@
+{
+  "generated_at": "2026-10-01T01:03:42.766759+00:00",
+  "generated_for": "2026-10-01",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "2aad030741a8a4d3d9c19a098da095720fcef88b",
+  "github_run_id": "36798981012",
+  "decision_count": 9,
+  "decision_counts": {
+    "published": 9
+  },
+  "decisions": [
+    {
+      "candidate_id": "google-blog:145709ee5f164f9f",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "title": "Google's AI ranks #1 for predicting flu hospitalizations.",
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-science-ai-flu-forecasts",
+      "article_doc_path": "docs/services/google-blog/2026-09-google-s-ai-ranks-1-for-predicting-flu-hospitalizations-145709ee.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI·보건",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "CDC의 FluSight 연말 분석에서 구글의 AI 모델이 39개 후보 중 최상위를 기록한 점과, 해당 예측이 실제 주별 입원 수요 전망에 활용되는 FluSight 프로세스 맥락이 제공되어 기술·보건 독자에게 가치가 있음. 또한 예측 알고리즘 개발에 사용된 Empirical Research Assistance(ERA)에 대한 연구가 Nature에 게재된 점도 기술적 의미를 더함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 46.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "google-blog:3dc726db0267e4d6",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "title": "We’re introducing SynthID Bio, bringing our watermarking technology to synthetic biology.",
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synthid-bio",
+      "article_doc_path": "docs/services/google-blog/2026-09-we-re-introducing-synthid-bio-bringing-our-watermarking-technology-to-sy-3dc726db.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "합성생물학",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Google DeepMind가 AI 설계 단백질에 불가시적·검증 가능한 워터마크를 삽입하는 새 기술을 발표했고, 실험에서 워터마크가 삽입된 설계가 기능성과 자연다양성 측면에서 비삽입 설계와 동등한 성능을 보였다는 근거가 있어 생물안보와 데이터 무결성 측면에서 실용적 가치가 있음.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 40.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:0241e600b90d751e",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+      "normalized_url": "https://github.com/magnitudedev/magnitude",
+      "article_doc_path": "docs/services/hacker-news/2026-09-launch-hn-magnitude-yc-s25-self-optimizing-inference-engine-for-agents-0241e600.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "머신러닝/추론엔진",
+      "importance_level": "중간",
+      "confidence_score": 0.75,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 요약에 프로젝트 목표와 핵심 설계(온디바이스 튜닝, 동적 메모리, 하이브리드 페이징 어텐션) 및 HN 상호작용이 포함되어 있어 기술 독자에게 유의미한 브리핑을 제공할 수 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "feed_summary",
+        "title",
+        "published_at",
+        "metadata.hn_points",
+        "normalized_url"
+      ],
+      "candidate_score": 73.5,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:8a18dee8ca8f941c",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Gemini 4 Argon",
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon",
+      "article_doc_path": "docs/services/hacker-news/2026-09-gemini-4-argon-8a18dee8.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 모델 출시",
+      "importance_level": "High",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 Gemini 4 Argon의 기술적 성능(대규모 토큰 한도, 코딩·지식작업·보안 성능 지표), 구체적 사례(퀀텀 알고리즘 최적화, 메모리 절감, 대규모 코드 마이그레이션, libgav1 성능 개선)와 보안·배포 정책(단계적 공개, 정부 사전접근 절차 참여, 여러 방어 대책)을 상세히 제시하고 있어 기술 독자에게 유용한 브리핑 자료로 적절합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 64.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:757dc7ec93bdca9a",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "A brief history of the Bloomberg terminal",
+      "normalized_url": "https://spectrum.ieee.org/bloomberg-terminal",
+      "article_doc_path": "docs/services/hacker-news/2026-09-a-brief-history-of-the-bloomberg-terminal-757dc7ec.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "금융기술·역사",
+      "importance_level": "중",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 블룸버그 터미널의 기원·설계·진화 과정을 기술적·문화적 맥락에서 충분히 설명하며, 전자화된 시장 데이터 인터페이스가 금융 업무에 미친 영향과 구체적 기술·제품 변화(전용 네트워크, 특수 키보드, 다국어·바이오인증, Instant Bloomberg 등)를 제시하므로 기술 독자에게 유용한 역사적·실무적 통찰을 제공합니다. Hacker News 반응도(포인트·댓글)도 높아 독자 관심도가 입증됩니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:a3b9dad44086bb86",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "EDG C++ front-end goes public",
+      "normalized_url": "https://edgcpp.org/",
+      "article_doc_path": "docs/services/hacker-news/2026-09-edg-c-front-end-goes-public-a3b9dad4.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Compilers / 프로그래밍 언어",
+      "importance_level": "High",
+      "confidence_score": 0.82,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "EDG의 C++ 프런트엔드 소스 공개와 관리 이관은 생산 수준의 소스-투-소스 엔진이 공개 코드베이스로 전환된 핵심 인프라 변화로, 컴파일러 및 도구 생태계에 즉각적 기술적 영향을 줄 수 있어 기술 독자에게 가치가 큽니다. 제공 근거(공개일, 관리 주체, 개발·기금·거버넌스 모델 등)가 충분합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 55.6,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:90249c2a3882c6d3",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Disrupting a coordinated model-distillation campaign",
+      "normalized_url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "article_doc_path": "docs/services/openai-blog/2026-09-disrupting-a-coordinated-model-distillation-campaign-90249c2a.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Security",
+      "importance_level": "High",
+      "confidence_score": 0.7,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "주제(모델 추론 보호 및 적대적 증류 대응)는 기술 독자에게 중요하며 OpenAI의 최신 대응 사례라는 점에서 관심도가 높음. 다만 제공된 정보는 메타데이터 수준이므로 본문 세부 내용 없이 요약·해설 형태로 게시하는 것이 적절함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Disrupting a coordinated model-distillation campaign",
+        "feed_summary: Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
+        "tags: Security",
+        "published_at: 2026-09-30T10:30:00+00:00",
+        "source_url: https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign"
+      ],
+      "candidate_score": 44.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:d6b9f5e651b1891e",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Introducing GPT-6.1 Sol",
+      "normalized_url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "article_doc_path": "docs/services/openai-blog/2026-09-introducing-gpt-6-1-sol-d6b9f5e6.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Product",
+      "importance_level": "Medium",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 요약에 제품명, 적용 분야(코딩·컴퓨터 활용·전문 업무)와 가격(‘Astra 표준 API 입력·출력 토큰 가격의 1/5 수준’)이라는 핵심 정보가 있어 기술 독자에게 유의미한 제품 브리핑이 가능하다고 판단했습니다. 단, 상세 성능 지표는 제공되지 않아 제약을 분명히 했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Introducing GPT-6.1 Sol",
+        "feed_summary",
+        "published_at",
+        "source_url",
+        "tags"
+      ],
+      "candidate_score": 41.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:061338e668ed6974",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Helping small businesses put AI to work",
+      "normalized_url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+      "article_doc_path": "docs/services/openai-blog/2026-09-helping-small-businesses-put-ai-to-work-061338e6.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Global Affairs",
+      "importance_level": "Medium",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 OpenAI가 America’s SBDC와 협력해 소규모 사업자를 대상으로 실습형 AI 교육과 지역 지원을 확대하고, 소규모 팀의 AI 활용 실태를 다룬 새 보고서를 함께 발표한다고 요약되어 있어 기술 독자에게 가치 있는 정책·현장 적용성 정보를 제공할 가능성이 큽니다. 원문 전문 확인을 권장하되 피드만으로도 보도의 주제성과 잠재적 의미가 분명합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "candidate_id: openai-blog:061338e668ed6974",
+        "title: Helping small businesses put AI to work",
+        "feed_summary: OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
+        "source_url: https://openai.com/index/helping-small-businesses-put-ai-to-work",
+        "published_at: 2026-09-30T10:00:00+00:00"
+      ],
+      "candidate_score": 38.0,
+      "error_message": null
+    }
+  ]
+}
