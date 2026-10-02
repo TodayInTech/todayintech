@@ -1,0 +1,312 @@
+{
+  "generated_at": "2026-10-02T01:15:18.960745+00:00",
+  "generated_for": "2026-10-02",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "fe83284177047d39c4391f10f7a1f4c124eecbbe",
+  "github_run_id": "36949940891",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 16,
+  "excluded_count": 104,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 26,
+      "excluded_count": 94,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 94
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 26,
+      "output_count": 26,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 26,
+      "output_count": 26,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 26,
+      "output_count": 16,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:c08402b8f22a4b15",
+          "title": "Barclays scales Claude to upgrade operations and improve client experience",
+          "normalized_url": "https://www.anthropic.com/news/barclays-scales-claude",
+          "url_hash": "c08402b8f22a4b159df3858cefc3416269ca944c9595105093b01c30fd1a8c02",
+          "suggested_doc_key": "2026-10-barclays-scales-claude-to-upgrade-operations-and-improve-client-experien-c08402b8",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-barclays-scales-claude-to-upgrade-operations-and-improve-client-experien-c08402b8.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:14fde7ae875e54b4",
+          "title": "10 technical talks I’m excited about at GitHub Universe 2026",
+          "normalized_url": "https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026",
+          "url_hash": "14fde7ae875e54b430f46218c1706ab941ee7fec22a0e5215bb29428e4599b2c",
+          "suggested_doc_key": "2026-10-10-technical-talks-i-m-excited-about-at-github-universe-2026-14fde7ae",
+          "suggested_article_path": "docs/services/github-blog/2026-10-10-technical-talks-i-m-excited-about-at-github-universe-2026-14fde7ae.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:c3e5533bd61884fa",
+          "title": "Our Project Suncatcher prototype satellite is in orbit.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype",
+          "url_hash": "c3e5533bd61884fa8f0b1331dedcb718d79d12a26fb0c0cce170e01e19e350fc",
+          "suggested_doc_key": "2026-10-our-project-suncatcher-prototype-satellite-is-in-orbit-c3e5533b",
+          "suggested_article_path": "docs/services/google-blog/2026-10-our-project-suncatcher-prototype-satellite-is-in-orbit-c3e5533b.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:014ceec41d32275c",
+          "title": "Clef: Open-weight decision models, and new RL fine-tuning platform",
+          "normalized_url": "https://blog.cloudflare.com/clef-decision-models",
+          "url_hash": "014ceec41d32275ca8877d98e108d3c83bad263d7c5c7ed45ed79d5f0da3dbb6",
+          "suggested_doc_key": "2026-10-clef-open-weight-decision-models-and-new-rl-fine-tuning-platform-014ceec4",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-clef-open-weight-decision-models-and-new-rl-fine-tuning-platform-014ceec4.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 422점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 158개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:275e6c33bbffccef",
+          "title": "Pi 1.0",
+          "normalized_url": "https://earendil.com/posts/pi-1-0",
+          "url_hash": "275e6c33bbffccef6f58c1289ced61ebf7eeaccebca1289beb23b403d11e08bd",
+          "suggested_doc_key": "2026-10-pi-1-0-275e6c33",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-pi-1-0-275e6c33.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 716점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 246개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:ba7d73ca40f2b4c2",
+          "title": "Git 3.0's upcoming SHA-256 default will be a costly mistake",
+          "normalized_url": "https://blog.gitbutler.com/git-3-sha-256",
+          "url_hash": "ba7d73ca40f2b4c24d9251386b18aba1d27ddba2c72b1a396cdc745e5c9f17c1",
+          "suggested_doc_key": "2026-10-git-3-0-s-upcoming-sha-256-default-will-be-a-costly-mistake-ba7d73ca",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-git-3-0-s-upcoming-sha-256-default-will-be-a-costly-mistake-ba7d73ca.md",
+          "candidate_score": 59.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 193점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 213개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3b45bae29fda7f2c",
+          "title": "The death of web development education",
+          "normalized_url": "https://molily.de/web-dev-education",
+          "url_hash": "3b45bae29fda7f2c3e6017c0c5edba8ab0542fd3f1427f8efaddde33ebe7e7d2",
+          "suggested_doc_key": "2026-10-the-death-of-web-development-education-3b45bae2",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-the-death-of-web-development-education-3b45bae2.md",
+          "candidate_score": 57.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 154점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 115개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9b136a20e472933b",
+          "title": "Automatic Transmission – a data-privacy study of connected vehicles",
+          "normalized_url": "https://automatictransmission.khoury.northeastern.edu/index.html",
+          "url_hash": "9b136a20e472933b7c0920481ad988b93e69f8ef558968c0e5e3370cc607e60c",
+          "suggested_doc_key": "2026-10-automatic-transmission-a-data-privacy-study-of-connected-vehicles-9b136a20",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-automatic-transmission-a-data-privacy-study-of-connected-vehicles-9b136a20.md",
+          "candidate_score": 53.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 138점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 135개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:b8087b88cb63ae7f",
+          "title": "The eternal complement",
+          "normalized_url": "https://openai.com/index/the-eternal-complement",
+          "url_hash": "b8087b88cb63ae7fc829eff8f3b1641fe52f1b99617f195c5f0644b836600735",
+          "suggested_doc_key": "2026-10-the-eternal-complement-b8087b88",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-the-eternal-complement-b8087b88.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:637d3dfa247fa816",
+          "title": "How Albertsons Companies is reimagining retail from the inside out",
+          "normalized_url": "https://openai.com/index/albertsons-reimagining-retail",
+          "url_hash": "637d3dfa247fa816a4c4160f323cf7816f7979e28cc1acd637f643ec28fcb5fc",
+          "suggested_doc_key": "2026-10-how-albertsons-companies-is-reimagining-retail-from-the-inside-out-637d3dfa",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-how-albertsons-companies-is-reimagining-retail-from-the-inside-out-637d3dfa.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:2167384f51e2a446",
+          "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+          "normalized_url": "https://openai.com/index/the-den-family-social",
+          "url_hash": "2167384f51e2a4466793a69c16672f4e00ce182695dce33954cb527247ddf545",
+          "suggested_doc_key": "2026-10-the-den-frees-up-10-15-hours-a-week-to-grow-with-chatgpt-work-2167384f",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-the-den-frees-up-10-15-hours-a-week-to-grow-with-chatgpt-work-2167384f.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 47
+      }
+    }
+  ]
+}
