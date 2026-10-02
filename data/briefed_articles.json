@@ -9690,6 +9690,106 @@
       "status": "published",
       "briefed_at": "2026-10-01T01:03:42.582681Z",
       "candidate_score": 38.0
+    },
+    "c08402b8f22a4b159df3858cefc3416269ca944c9595105093b01c30fd1a8c02": {
+      "normalized_url": "https://www.anthropic.com/news/barclays-scales-claude",
+      "title_fingerprint": "barclays scales claude to upgrade operations and improve client experience",
+      "service_key": "anthropic-blog",
+      "title": "Barclays scales Claude to upgrade operations and improve client experience",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-barclays-scales-claude-to-upgrade-operations-and-improve-client-experien-c08402b8.md",
+      "status": "published",
+      "briefed_at": "2026-10-02T01:17:18.861142Z",
+      "candidate_score": 30.0
+    },
+    "14fde7ae875e54b430f46218c1706ab941ee7fec22a0e5215bb29428e4599b2c": {
+      "normalized_url": "https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026",
+      "title_fingerprint": "10 technical talks i m excited about at github universe 2026",
+      "service_key": "github-blog",
+      "title": "10 technical talks I’m excited about at GitHub Universe 2026",
+      "article_doc_path": "docs/services/github-blog/2026-10-10-technical-talks-i-m-excited-about-at-github-universe-2026-14fde7ae.md",
+      "status": "published",
+      "briefed_at": "2026-10-02T01:17:18.861185Z",
+      "candidate_score": 37.0
+    },
+    "c3e5533bd61884fa8f0b1331dedcb718d79d12a26fb0c0cce170e01e19e350fc": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype",
+      "title_fingerprint": "our project suncatcher prototype satellite is in orbit",
+      "service_key": "google-blog",
+      "title": "Our Project Suncatcher prototype satellite is in orbit.",
+      "article_doc_path": "docs/services/google-blog/2026-10-our-project-suncatcher-prototype-satellite-is-in-orbit-c3e5533b.md",
+      "status": "published",
+      "briefed_at": "2026-10-02T01:17:18.861202Z",
+      "candidate_score": 41.0
+    },
+    "014ceec41d32275ca8877d98e108d3c83bad263d7c5c7ed45ed79d5f0da3dbb6": {
+      "normalized_url": "https://blog.cloudflare.com/clef-decision-models",
+      "title_fingerprint": "clef open weight decision models and new rl fine tuning platform",
+      "service_key": "hacker-news",
+      "title": "Clef: Open-weight decision models, and new RL fine-tuning platform",
+      "article_doc_path": "docs/services/hacker-news/2026-10-clef-open-weight-decision-models-and-new-rl-fine-tuning-platform-014ceec4.md",
+      "status": "published",
+      "briefed_at": "2026-10-02T01:17:18.861212Z",
+      "candidate_score": 65.0
+    },
+    "275e6c33bbffccef6f58c1289ced61ebf7eeaccebca1289beb23b403d11e08bd": {
+      "normalized_url": "https://earendil.com/posts/pi-1-0",
+      "title_fingerprint": "pi 1 0",
+      "service_key": "hacker-news",
+      "title": "Pi 1.0",
+      "article_doc_path": "docs/services/hacker-news/2026-10-pi-1-0-275e6c33.md",
+      "status": "published",
+      "briefed_at": "2026-10-02T01:17:18.861220Z",
+      "candidate_score": 60.0
+    },
+    "ba7d73ca40f2b4c24d9251386b18aba1d27ddba2c72b1a396cdc745e5c9f17c1": {
+      "normalized_url": "https://blog.gitbutler.com/git-3-sha-256",
+      "title_fingerprint": "git 3 0 s upcoming sha 256 default will be a costly mistake",
+      "service_key": "hacker-news",
+      "title": "Git 3.0's upcoming SHA-256 default will be a costly mistake",
+      "article_doc_path": "docs/services/hacker-news/2026-10-git-3-0-s-upcoming-sha-256-default-will-be-a-costly-mistake-ba7d73ca.md",
+      "status": "published",
+      "briefed_at": "2026-10-02T01:17:18.861229Z",
+      "candidate_score": 59.3
+    },
+    "3b45bae29fda7f2c3e6017c0c5edba8ab0542fd3f1427f8efaddde33ebe7e7d2": {
+      "normalized_url": "https://molily.de/web-dev-education",
+      "title_fingerprint": "the death of web development education",
+      "service_key": "hacker-news",
+      "title": "The death of web development education",
+      "article_doc_path": "docs/services/hacker-news/2026-10-the-death-of-web-development-education-3b45bae2.md",
+      "status": "published",
+      "briefed_at": "2026-10-02T01:17:18.861237Z",
+      "candidate_score": 57.4
+    },
+    "b8087b88cb63ae7fc829eff8f3b1641fe52f1b99617f195c5f0644b836600735": {
+      "normalized_url": "https://openai.com/index/the-eternal-complement",
+      "title_fingerprint": "the eternal complement",
+      "service_key": "openai-blog",
+      "title": "The eternal complement",
+      "article_doc_path": "docs/services/openai-blog/2026-10-the-eternal-complement-b8087b88.md",
+      "status": "published",
+      "briefed_at": "2026-10-02T01:17:18.861245Z",
+      "candidate_score": 39.0
+    },
+    "637d3dfa247fa816a4c4160f323cf7816f7979e28cc1acd637f643ec28fcb5fc": {
+      "normalized_url": "https://openai.com/index/albertsons-reimagining-retail",
+      "title_fingerprint": "how albertsons companies is reimagining retail from the inside out",
+      "service_key": "openai-blog",
+      "title": "How Albertsons Companies is reimagining retail from the inside out",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-albertsons-companies-is-reimagining-retail-from-the-inside-out-637d3dfa.md",
+      "status": "published",
+      "briefed_at": "2026-10-02T01:17:18.861253Z",
+      "candidate_score": 39.0
+    },
+    "2167384f51e2a4466793a69c16672f4e00ce182695dce33954cb527247ddf545": {
+      "normalized_url": "https://openai.com/index/the-den-family-social",
+      "title_fingerprint": "the den frees up 10 15 hours a week to grow with chatgpt work",
+      "service_key": "openai-blog",
+      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+      "article_doc_path": "docs/services/openai-blog/2026-10-the-den-frees-up-10-15-hours-a-week-to-grow-with-chatgpt-work-2167384f.md",
+      "status": "published",
+      "briefed_at": "2026-10-02T01:17:18.861260Z",
+      "candidate_score": 36.0
     }
   }
 }
