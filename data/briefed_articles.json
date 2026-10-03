@@ -9790,6 +9790,96 @@
       "status": "published",
       "briefed_at": "2026-10-02T01:17:18.861260Z",
       "candidate_score": 36.0
+    },
+    "bfc4355d370530a85bd883140fdc928f1c1047dc3775c054fb182f528bdce99d": {
+      "normalized_url": "https://www.anthropic.com/news/claude-frontier-academy",
+      "title_fingerprint": "claude frontier academy 100m to train 10 000 engineers",
+      "service_key": "anthropic-blog",
+      "title": "Claude Frontier Academy: $100M to train 10,000 engineers",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-claude-frontier-academy-100m-to-train-10-000-engineers-bfc4355d.md",
+      "status": "published",
+      "briefed_at": "2026-10-03T00:55:25.455604Z",
+      "candidate_score": 30.0
+    },
+    "3adf82e6716a48e97371c4978181d9427e807e6dc914088dee634342ea7570ad": {
+      "normalized_url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
+      "title_fingerprint": "ai is changing developer work here are three skills to strengthen",
+      "service_key": "github-blog",
+      "title": "AI is changing developer work. Here are three skills to strengthen.",
+      "article_doc_path": "docs/services/github-blog/2026-10-ai-is-changing-developer-work-here-are-three-skills-to-strengthen-3adf82e6.md",
+      "status": "published",
+      "briefed_at": "2026-10-03T00:55:25.455650Z",
+      "candidate_score": 42.0
+    },
+    "aacb8ca8a4a96bc0cfecf6685ab1bf86aa3d3c1f13feb6fac21b8b58211ab9da": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026",
+      "title_fingerprint": "the latest ai news we announced in september 2026",
+      "service_key": "google-blog",
+      "title": "The latest AI news we announced in September 2026",
+      "article_doc_path": "docs/services/google-blog/2026-10-the-latest-ai-news-we-announced-in-september-2026-aacb8ca8.md",
+      "status": "published",
+      "briefed_at": "2026-10-03T00:55:25.455659Z",
+      "candidate_score": 36.0
+    },
+    "78bf3aff5dedfe2ec98db51a687c8a6eb2503a516a936691449588f0d564156e": {
+      "normalized_url": "https://ziglang.org/download/0.17.0/release-notes.html",
+      "title_fingerprint": "zig v0 17 0",
+      "service_key": "hacker-news",
+      "title": "Zig v0.17.0",
+      "article_doc_path": "docs/services/hacker-news/2026-10-zig-v0-17-0-78bf3aff.md",
+      "status": "published",
+      "briefed_at": "2026-10-03T00:55:25.455678Z",
+      "candidate_score": 70.9
+    },
+    "1dd250effc5142eb3f257f516e3dec5c6526f0501fb9939199cd6999b142a5ea": {
+      "normalized_url": "https://developer.apple.com/pass-designer",
+      "title_fingerprint": "apple pass designer",
+      "service_key": "hacker-news",
+      "title": "Apple Pass Designer",
+      "article_doc_path": "docs/services/hacker-news/2026-10-apple-pass-designer-1dd250ef.md",
+      "status": "published",
+      "briefed_at": "2026-10-03T00:55:25.455685Z",
+      "candidate_score": 62.0
+    },
+    "75e9adf76cb1c21e264a87effad8735dd1cd3d6d5c9269b5fb46a1258eec84b6": {
+      "normalized_url": "https://gwern.net/doc/math/1973-halmos.pdf",
+      "title_fingerprint": "the legend of von neumann 1973 pdf",
+      "service_key": "hacker-news",
+      "title": "The Legend of von Neumann (1973) [pdf]",
+      "article_doc_path": "docs/services/hacker-news/2026-10-the-legend-of-von-neumann-1973-pdf-75e9adf7.md",
+      "status": "published",
+      "briefed_at": "2026-10-03T00:55:25.455690Z",
+      "candidate_score": 60.0
+    },
+    "7d79f8594f999d47092d84027b7875b52ab81f8e3faac1034f23a15b6fb20959": {
+      "normalized_url": "https://blog.sshh.io/p/the-harness-is-the-company",
+      "title_fingerprint": "every saas business will become a harness around a model",
+      "service_key": "hacker-news",
+      "title": "Every SaaS business will become a harness around a model",
+      "article_doc_path": "docs/services/hacker-news/2026-10-every-saas-business-will-become-a-harness-around-a-model-7d79f859.md",
+      "status": "published",
+      "briefed_at": "2026-10-03T00:55:25.455695Z",
+      "candidate_score": 57.3
+    },
+    "c38af6e5cae43e23a64c1d509c6a587da67c166f4c093fc7e47ef57f26c07a7c": {
+      "normalized_url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "title_fingerprint": "a model guide for the gpt 6 family",
+      "service_key": "openai-blog",
+      "title": "A model guide for the GPT-6 family",
+      "article_doc_path": "docs/services/openai-blog/2026-10-a-model-guide-for-the-gpt-6-family-c38af6e5.md",
+      "status": "published",
+      "briefed_at": "2026-10-03T00:55:25.455699Z",
+      "candidate_score": 44.0
+    },
+    "882596cbc7639eb42bf210ab4eea91363285a86aec67b5711dcb8d9b7dff3b7d": {
+      "normalized_url": "https://openai.com/index/chatham-financial",
+      "title_fingerprint": "chatham scales its capital markets expertise with openai",
+      "service_key": "openai-blog",
+      "title": "Chatham scales its capital markets expertise with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-10-chatham-scales-its-capital-markets-expertise-with-openai-882596cb.md",
+      "status": "published",
+      "briefed_at": "2026-10-03T00:55:25.455703Z",
+      "candidate_score": 42.0
     }
   }
 }
