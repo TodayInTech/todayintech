@@ -1,0 +1,302 @@
+{
+  "generated_at": "2026-10-03T00:53:38.052567+00:00",
+  "generated_for": "2026-10-03",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "f938a00b2213a409c62c4416b6f36a7029b48855",
+  "github_run_id": "37083853590",
+  "service_count": 5,
+  "duration_ms": 8,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 24,
+      "excluded_count": 95,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 95
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 24,
+      "output_count": 15,
+      "excluded_count": 9,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 9
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:bfc4355d370530a8",
+          "title": "Claude Frontier Academy: $100M to train 10,000 engineers",
+          "normalized_url": "https://www.anthropic.com/news/claude-frontier-academy",
+          "url_hash": "bfc4355d370530a85bd883140fdc928f1c1047dc3775c054fb182f528bdce99d",
+          "suggested_doc_key": "2026-10-claude-frontier-academy-100m-to-train-10-000-engineers-bfc4355d",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-claude-frontier-academy-100m-to-train-10-000-engineers-bfc4355d.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:3adf82e6716a48e9",
+          "title": "AI is changing developer work. Here are three skills to strengthen.",
+          "normalized_url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
+          "url_hash": "3adf82e6716a48e97371c4978181d9427e807e6dc914088dee634342ea7570ad",
+          "suggested_doc_key": "2026-10-ai-is-changing-developer-work-here-are-three-skills-to-strengthen-3adf82e6",
+          "suggested_article_path": "docs/services/github-blog/2026-10-ai-is-changing-developer-work-here-are-three-skills-to-strengthen-3adf82e6.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:aacb8ca8a4a96bc0",
+          "title": "The latest AI news we announced in September 2026",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026",
+          "url_hash": "aacb8ca8a4a96bc0cfecf6685ab1bf86aa3d3c1f13feb6fac21b8b58211ab9da",
+          "suggested_doc_key": "2026-10-the-latest-ai-news-we-announced-in-september-2026-aacb8ca8",
+          "suggested_article_path": "docs/services/google-blog/2026-10-the-latest-ai-news-we-announced-in-september-2026-aacb8ca8.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:78bf3aff5dedfe2e",
+          "title": "Zig v0.17.0",
+          "normalized_url": "https://ziglang.org/download/0.17.0/release-notes.html",
+          "url_hash": "78bf3aff5dedfe2ec98db51a687c8a6eb2503a516a936691449588f0d564156e",
+          "suggested_doc_key": "2026-10-zig-v0-17-0-78bf3aff",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-zig-v0-17-0-78bf3aff.md",
+          "candidate_score": 70.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 199점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 115개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:1dd250effc5142eb",
+          "title": "Apple Pass Designer",
+          "normalized_url": "https://developer.apple.com/pass-designer",
+          "url_hash": "1dd250effc5142eb3f257f516e3dec5c6526f0501fb9939199cd6999b142a5ea",
+          "suggested_doc_key": "2026-10-apple-pass-designer-1dd250ef",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-apple-pass-designer-1dd250ef.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 300점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 197개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:75e9adf76cb1c21e",
+          "title": "The Legend of von Neumann (1973) [pdf]",
+          "normalized_url": "https://gwern.net/doc/math/1973-halmos.pdf",
+          "url_hash": "75e9adf76cb1c21e264a87effad8735dd1cd3d6d5c9269b5fb46a1258eec84b6",
+          "suggested_doc_key": "2026-10-the-legend-of-von-neumann-1973-pdf-75e9adf7",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-the-legend-of-von-neumann-1973-pdf-75e9adf7.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 236점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 138개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7d79f8594f999d47",
+          "title": "Every SaaS business will become a harness around a model",
+          "normalized_url": "https://blog.sshh.io/p/the-harness-is-the-company",
+          "url_hash": "7d79f8594f999d47092d84027b7875b52ab81f8e3faac1034f23a15b6fb20959",
+          "suggested_doc_key": "2026-10-every-saas-business-will-become-a-harness-around-a-model-7d79f859",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-every-saas-business-will-become-a-harness-around-a-model-7d79f859.md",
+          "candidate_score": 57.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 83점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 60개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e7998846bd78d7e2",
+          "title": "With most information hidden, the game Stratego had stumped AI until now",
+          "normalized_url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget",
+          "url_hash": "e7998846bd78d7e2ff5856e3a68596f85b3608cbae69136be04bca56d6c13ca5",
+          "suggested_doc_key": "2026-10-with-most-information-hidden-the-game-stratego-had-stumped-ai-until-now-e7998846",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-with-most-information-hidden-the-game-stratego-had-stumped-ai-until-now-e7998846.md",
+          "candidate_score": 56.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 166점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 81개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 2,
+      "excluded_count": 48,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:c38af6e5cae43e23",
+          "title": "A model guide for the GPT-6 family",
+          "normalized_url": "https://openai.com/index/practical-guide-building-gpt-6",
+          "url_hash": "c38af6e5cae43e23a64c1d509c6a587da67c166f4c093fc7e47ef57f26c07a7c",
+          "suggested_doc_key": "2026-10-a-model-guide-for-the-gpt-6-family-c38af6e5",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-a-model-guide-for-the-gpt-6-family-c38af6e5.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:882596cbc7639eb4",
+          "title": "Chatham scales its capital markets expertise with OpenAI",
+          "normalized_url": "https://openai.com/index/chatham-financial",
+          "url_hash": "882596cbc7639eb42bf210ab4eea91363285a86aec67b5711dcb8d9b7dff3b7d",
+          "suggested_doc_key": "2026-10-chatham-scales-its-capital-markets-expertise-with-openai-882596cb",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-chatham-scales-its-capital-markets-expertise-with-openai-882596cb.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 48
+      }
+    }
+  ]
+}
