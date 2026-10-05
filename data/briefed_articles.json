@@ -9920,6 +9920,46 @@
       "status": "published",
       "briefed_at": "2026-10-04T00:19:37.258138Z",
       "candidate_score": 54.3
+    },
+    "b0ff7ff167326d548247287acd291fd1fe83a706470c081870dd5596c0499d43": {
+      "normalized_url": "https://github.com/omlahore/RemoveMacAI",
+      "title_fingerprint": "turn off apple intelligence on macos 27 and get its disk space back",
+      "service_key": "hacker-news",
+      "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
+      "article_doc_path": "docs/services/hacker-news/2026-10-turn-off-apple-intelligence-on-macos-27-and-get-its-disk-space-back-b0ff7ff1.md",
+      "status": "published",
+      "briefed_at": "2026-10-05T00:25:58.039800Z",
+      "candidate_score": 65.0
+    },
+    "2d7abfc71e84c7c63f1ccaaeff6983b6c0574f5e163cc747585bc98345f86909": {
+      "normalized_url": "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage",
+      "title_fingerprint": "improper redaction reveals google data center water and electricity usage",
+      "service_key": "hacker-news",
+      "title": "Improper redaction reveals Google Data Center water and electricity usage",
+      "article_doc_path": "docs/services/hacker-news/2026-10-improper-redaction-reveals-google-data-center-water-and-electricity-usag-2d7abfc7.md",
+      "status": "published",
+      "briefed_at": "2026-10-05T00:25:58.039830Z",
+      "candidate_score": 64.0
+    },
+    "89be4e220d9f6acb170fc63b77a3f0804233de21a22642a4ebd25c6e1c90f383": {
+      "normalized_url": "https://github.com/Niko1221/Strata",
+      "title_fingerprint": "run qwen 3 8 flash next 125b on consumer hardware rtx 4090 at 100t s",
+      "service_key": "hacker-news",
+      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+      "article_doc_path": "docs/services/hacker-news/2026-10-run-qwen-3-8-flash-next-125b-on-consumer-hardware-rtx-4090-at-100t-s-89be4e22.md",
+      "status": "published",
+      "briefed_at": "2026-10-05T00:25:58.039840Z",
+      "candidate_score": 60.0
+    },
+    "4a499d4214367ea058b6f51c1236d58bb02b76037df4e911d4a2be6d91d7b50b": {
+      "normalized_url": "https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform",
+      "title_fingerprint": "why don t more developers use the platform",
+      "service_key": "hacker-news",
+      "title": "Why don't more developers “use the platform”?",
+      "article_doc_path": "docs/services/hacker-news/2026-10-why-don-t-more-developers-use-the-platform-4a499d42.md",
+      "status": "published",
+      "briefed_at": "2026-10-05T00:25:58.039847Z",
+      "candidate_score": 60.0
     }
   }
 }
