@@ -1,0 +1,221 @@
+{
+  "generated_at": "2026-10-05T00:24:48.412192+00:00",
+  "generated_for": "2026-10-05",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "7477ecec36cf91770e61cd8036bc4dbe6bf53d03",
+  "github_run_id": "37247276755",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 10,
+  "excluded_count": 110,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 20,
+      "excluded_count": 100,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 100
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 20,
+      "output_count": 20,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 20,
+      "output_count": 20,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 20,
+      "output_count": 10,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:b0ff7ff167326d54",
+          "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
+          "normalized_url": "https://github.com/omlahore/RemoveMacAI",
+          "url_hash": "b0ff7ff167326d548247287acd291fd1fe83a706470c081870dd5596c0499d43",
+          "suggested_doc_key": "2026-10-turn-off-apple-intelligence-on-macos-27-and-get-its-disk-space-back-b0ff7ff1",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-turn-off-apple-intelligence-on-macos-27-and-get-its-disk-space-back-b0ff7ff1.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 305점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 189개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:2d7abfc71e84c7c6",
+          "title": "Improper redaction reveals Google Data Center water and electricity usage",
+          "normalized_url": "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage",
+          "url_hash": "2d7abfc71e84c7c63f1ccaaeff6983b6c0574f5e163cc747585bc98345f86909",
+          "suggested_doc_key": "2026-10-improper-redaction-reveals-google-data-center-water-and-electricity-usag-2d7abfc7",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-improper-redaction-reveals-google-data-center-water-and-electricity-usag-2d7abfc7.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 205점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 302개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:89be4e220d9f6acb",
+          "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+          "normalized_url": "https://github.com/Niko1221/Strata",
+          "url_hash": "89be4e220d9f6acb170fc63b77a3f0804233de21a22642a4ebd25c6e1c90f383",
+          "suggested_doc_key": "2026-10-run-qwen-3-8-flash-next-125b-on-consumer-hardware-rtx-4090-at-100t-s-89be4e22",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-run-qwen-3-8-flash-next-125b-on-consumer-hardware-rtx-4090-at-100t-s-89be4e22.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 573점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 274개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4a499d4214367ea0",
+          "title": "Why don't more developers “use the platform”?",
+          "normalized_url": "https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform",
+          "url_hash": "4a499d4214367ea058b6f51c1236d58bb02b76037df4e911d4a2be6d91d7b50b",
+          "suggested_doc_key": "2026-10-why-don-t-more-developers-use-the-platform-4a499d42",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-why-don-t-more-developers-use-the-platform-4a499d42.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 272점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 287개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b722d5fe788efcd8",
+          "title": "Tell HN: Bob Cringely has died",
+          "normalized_url": "https://news.ycombinator.com/item?id=49949438",
+          "url_hash": "b722d5fe788efcd8b4fa02c279ca36b51f890fa8488654cbd5cf966843a94fb7",
+          "suggested_doc_key": "2026-10-tell-hn-bob-cringely-has-died-b722d5fe",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-tell-hn-bob-cringely-has-died-b722d5fe.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 799점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 173개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 50
+      }
+    }
+  ]
+}
