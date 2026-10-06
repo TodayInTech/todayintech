@@ -9960,6 +9960,86 @@
       "status": "published",
       "briefed_at": "2026-10-05T00:25:58.039847Z",
       "candidate_score": 60.0
+    },
+    "d8885d98544ba54844d4d88a982939683be9bd5fe47c375a58e9133fb3bd611a": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review",
+      "title_fingerprint": "reviewbench an open benchmark for ai code review",
+      "service_key": "github-blog",
+      "title": "ReviewBench: An open benchmark for AI code review",
+      "article_doc_path": "docs/services/github-blog/2026-10-reviewbench-an-open-benchmark-for-ai-code-review-d8885d98.md",
+      "status": "published",
+      "briefed_at": "2026-10-06T02:04:28.772475Z",
+      "candidate_score": 52.0
+    },
+    "dbf6a51fde3f190f1405f6559444f4c41e55bf52a234e53a4e1a3545cdc68829": {
+      "normalized_url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+      "title_fingerprint": "opus 5 5 agents discover two room temperature magnetic semiconductor candidates",
+      "service_key": "hacker-news",
+      "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+      "article_doc_path": "docs/services/hacker-news/2026-10-opus-5-5-agents-discover-two-room-temperature-magnetic-semiconductor-can-dbf6a51f.md",
+      "status": "published",
+      "briefed_at": "2026-10-06T02:04:28.772507Z",
+      "candidate_score": 65.0
+    },
+    "917ba46d3f15f0c5b9b71443d754a728f1090204be0a113eec5e6bd6f3edf869": {
+      "normalized_url": "https://reflection.ai/blog/introducing-beam",
+      "title_fingerprint": "beam reflection s 501b open weight model",
+      "service_key": "hacker-news",
+      "title": "Beam: Reflection's 501B open-weight model",
+      "article_doc_path": "docs/services/hacker-news/2026-10-beam-reflection-s-501b-open-weight-model-917ba46d.md",
+      "status": "published",
+      "briefed_at": "2026-10-06T02:04:28.772514Z",
+      "candidate_score": 65.0
+    },
+    "fa40a8a38d6b278e48d387858dd9ebf5d0ed434453cf8b0a5358145e8fa3b56c": {
+      "normalized_url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api",
+      "title_fingerprint": "web search api",
+      "service_key": "hacker-news",
+      "title": "Web Search API",
+      "article_doc_path": "docs/services/hacker-news/2026-10-web-search-api-fa40a8a3.md",
+      "status": "published",
+      "briefed_at": "2026-10-06T02:04:28.772517Z",
+      "candidate_score": 65.0
+    },
+    "2170a314eb31f5023557bdd738626970b61acce96b2477efa6df658d88bc83b9": {
+      "normalized_url": "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons",
+      "title_fingerprint": "chatgpt is adding real cartoonists signatures to fake new yorker cartoons",
+      "service_key": "hacker-news",
+      "title": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
+      "article_doc_path": "docs/services/hacker-news/2026-10-chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoon-2170a314.md",
+      "status": "published",
+      "briefed_at": "2026-10-06T02:04:28.772521Z",
+      "candidate_score": 64.0
+    },
+    "d2b5b29b4c815525619915dcf133df4d932068a91ccef332cbfb8777febef4ef": {
+      "normalized_url": "https://openai.com/index/eu-text-provenance",
+      "title_fingerprint": "our approach to eu text provenance rules",
+      "service_key": "openai-blog",
+      "title": "Our approach to EU text provenance rules",
+      "article_doc_path": "docs/services/openai-blog/2026-10-our-approach-to-eu-text-provenance-rules-d2b5b29b.md",
+      "status": "published",
+      "briefed_at": "2026-10-06T02:04:28.772525Z",
+      "candidate_score": 39.0
+    },
+    "2d8e70fb45cef7470a5baf361c95df26b5ff7249933c340d169f562e1258ded9": {
+      "normalized_url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "title_fingerprint": "building advertising for the way people use ai",
+      "service_key": "openai-blog",
+      "title": "Building advertising for the way people use AI",
+      "article_doc_path": "docs/services/openai-blog/2026-10-building-advertising-for-the-way-people-use-ai-2d8e70fb.md",
+      "status": "published",
+      "briefed_at": "2026-10-06T02:04:28.772528Z",
+      "candidate_score": 38.0
+    },
+    "6c85667bb456be979ea054b861dd8e0dfa0bf5249f02bd5eaf15388544cd6c9b": {
+      "normalized_url": "https://openai.com/index/wayfair",
+      "title_fingerprint": "wayfair boosts catalog accuracy and support speed with openai",
+      "service_key": "openai-blog",
+      "title": "Wayfair boosts catalog accuracy and support speed with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-09-wayfair-boosts-catalog-accuracy-and-support-speed-with-openai-6c85667b.md",
+      "status": "published",
+      "briefed_at": "2026-10-06T02:04:28.772531Z",
+      "candidate_score": 24.0
     }
   }
 }
