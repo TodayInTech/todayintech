@@ -10040,6 +10040,136 @@
       "status": "published",
       "briefed_at": "2026-10-06T02:04:28.772531Z",
       "candidate_score": 24.0
+    },
+    "2bd8707fdab8226a9f675f85f9755994f2b63d5ba4355bb897dec2473e579ae5": {
+      "normalized_url": "https://www.anthropic.com/news/cyber-verification-program",
+      "title_fingerprint": "expanding the cyber verification program",
+      "service_key": "anthropic-blog",
+      "title": "Expanding the Cyber Verification Program",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-expanding-the-cyber-verification-program-2bd8707f.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185104Z",
+      "candidate_score": 40.0
+    },
+    "b4388effe8232b37dff1dd10e253a2dfd6f86e72033ba1e011abd99d8eae512d": {
+      "normalized_url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development",
+      "title_fingerprint": "building git infrastructure for agent scale development",
+      "service_key": "github-blog",
+      "title": "Building Git infrastructure for agent-scale development",
+      "article_doc_path": "docs/services/github-blog/2026-10-building-git-infrastructure-for-agent-scale-development-b4388eff.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185136Z",
+      "candidate_score": 42.0
+    },
+    "651d5d4131fcec8ac936b56b4f2a89be83d3689a9839bf3850626bf82a634f50": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
+      "title_fingerprint": "embeddinggemma 2 an open lightweight multimodal embedding model",
+      "service_key": "google-blog",
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "article_doc_path": "docs/services/google-blog/2026-10-embeddinggemma-2-an-open-lightweight-multimodal-embedding-model-651d5d41.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185145Z",
+      "candidate_score": 40.0
+    },
+    "41c67fbc57089a0b554e9db2625e61592e64ae1a306d9cdc550d078c900f72b9": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/create-music-production-plugins-google-flow",
+      "title_fingerprint": "producers can now vibe code their own music production tools using google flow music",
+      "service_key": "google-blog",
+      "title": "Producers can now vibe code their own music production tools using Google Flow Music.",
+      "article_doc_path": "docs/services/google-blog/2026-10-producers-can-now-vibe-code-their-own-music-production-tools-using-googl-41c67fbc.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185151Z",
+      "candidate_score": 39.0
+    },
+    "f7882e0044bf3ab307bfe7c06b6d3dad705b47b89952f34e2754079dbeb1f957": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blind-sweep-ultrasounds-ai",
+      "title_fingerprint": "ask a scientist how are researchers using ai to help pregnant women access ultrasounds",
+      "service_key": "google-blog",
+      "title": "Ask a Scientist: How are researchers using AI to help pregnant women access ultrasounds?",
+      "article_doc_path": "docs/services/google-blog/2026-10-ask-a-scientist-how-are-researchers-using-ai-to-help-pregnant-women-acce-f7882e00.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185156Z",
+      "candidate_score": 36.0
+    },
+    "26d1f854e36357e246168c7a3c29fe051b6d38cf0fed40172074cd319f100988": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/health/google-earth-ai",
+      "title_fingerprint": "making global public health more proactive with google earth ai",
+      "service_key": "google-blog",
+      "title": "Making global public health more proactive with Google Earth AI",
+      "article_doc_path": "docs/services/google-blog/2026-10-making-global-public-health-more-proactive-with-google-earth-ai-26d1f854.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185161Z",
+      "candidate_score": 33.0
+    },
+    "00427e47df5ef3064509e152a77372922244883355c7072ea1ab24de41848a25": {
+      "normalized_url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "title_fingerprint": "sharing ai progress in mathematics",
+      "service_key": "hacker-news",
+      "title": "Sharing AI progress in mathematics",
+      "article_doc_path": "docs/services/hacker-news/2026-10-sharing-ai-progress-in-mathematics-00427e47.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185166Z",
+      "candidate_score": 63.0
+    },
+    "069f76d54edd397fa04fff54202b895349f1ddfbea57fd7956a7be1498dea8c8": {
+      "normalized_url": "https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth",
+      "title_fingerprint": "paramount skydance has completed its 111b merger with warner bros discovery",
+      "service_key": "hacker-news",
+      "title": "Paramount Skydance has completed its $111B merger with Warner Bros. Discovery",
+      "article_doc_path": "docs/services/hacker-news/2026-10-paramount-skydance-has-completed-its-111b-merger-with-warner-bros-discov-069f76d5.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185171Z",
+      "candidate_score": 56.4
+    },
+    "f6e419d4eb7036026425d57d61cdd77dce2dd684cf4bc7c275b90eaeb71f4ffb": {
+      "normalized_url": "https://developers.openai.com/api/docs/guides/decisions",
+      "title_fingerprint": "decisions api is in public beta",
+      "service_key": "hacker-news",
+      "title": "Decisions API is in public beta",
+      "article_doc_path": "docs/services/hacker-news/2026-10-decisions-api-is-in-public-beta-f6e419d4.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185176Z",
+      "candidate_score": 51.8
+    },
+    "eee53d0231e76d4edce17ad85c101029bb9de5be5864275fe9b55e5e8e5d2c1a": {
+      "normalized_url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+      "title_fingerprint": "claude code s suggested message feature i think the real customer is the model",
+      "service_key": "hacker-news",
+      "title": "Claude Code’s suggested message feature: I think the real customer is the model",
+      "article_doc_path": "docs/services/hacker-news/2026-10-claude-code-s-suggested-message-feature-i-think-the-real-customer-is-the-eee53d02.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185181Z",
+      "candidate_score": 47.8
+    },
+    "f57eff9c23a4454b476bbb268bd95c2d23fd7e230b5d7db7db7e5bb00c25353b": {
+      "normalized_url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "title_fingerprint": "advancing computer use with ironclad",
+      "service_key": "openai-blog",
+      "title": "Advancing computer use with Ironclad",
+      "article_doc_path": "docs/services/openai-blog/2026-10-advancing-computer-use-with-ironclad-f57eff9c.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185186Z",
+      "candidate_score": 42.0
+    },
+    "2896758265cec81d95898858cf3558ac9cdd51e4e22038c8fc6ca0aa5193f521": {
+      "normalized_url": "https://openai.com/index/atlassian-partnership",
+      "title_fingerprint": "atlassian and openai expand partnership to turn enterprise knowledge into action",
+      "service_key": "openai-blog",
+      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "article_doc_path": "docs/services/openai-blog/2026-10-atlassian-and-openai-expand-partnership-to-turn-enterprise-knowledge-int-28967582.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185190Z",
+      "candidate_score": 41.0
+    },
+    "ebb413cc5359756bf9234b81256f87104efa96c0b88df88826702769f053f0a0": {
+      "normalized_url": "https://openai.com/index/jump-trading",
+      "title_fingerprint": "how jump trading is scaling quant research with chatgpt",
+      "service_key": "openai-blog",
+      "title": "How Jump Trading is scaling quant research with ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-jump-trading-is-scaling-quant-research-with-chatgpt-ebb413cc.md",
+      "status": "published",
+      "briefed_at": "2026-10-07T01:15:15.185195Z",
+      "candidate_score": 39.0
     }
   }
 }
