@@ -1,0 +1,361 @@
+{
+  "generated_at": "2026-10-07T01:11:44.512233+00:00",
+  "generated_for": "2026-10-07",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "08990cdd07ccdef5b37be53a42467b9590c22c66",
+  "github_run_id": "37555734988",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 19,
+  "excluded_count": 101,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 29,
+      "excluded_count": 90,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 90
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 29,
+      "output_count": 29,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 29,
+      "output_count": 29,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 29,
+      "output_count": 19,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:2bd8707fdab8226a",
+          "title": "Expanding the Cyber Verification Program",
+          "normalized_url": "https://www.anthropic.com/news/cyber-verification-program",
+          "url_hash": "2bd8707fdab8226a9f675f85f9755994f2b63d5ba4355bb897dec2473e579ae5",
+          "suggested_doc_key": "2026-10-expanding-the-cyber-verification-program-2bd8707f",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-expanding-the-cyber-verification-program-2bd8707f.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:b4388effe8232b37",
+          "title": "Building Git infrastructure for agent-scale development",
+          "normalized_url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development",
+          "url_hash": "b4388effe8232b37dff1dd10e253a2dfd6f86e72033ba1e011abd99d8eae512d",
+          "suggested_doc_key": "2026-10-building-git-infrastructure-for-agent-scale-development-b4388eff",
+          "suggested_article_path": "docs/services/github-blog/2026-10-building-git-infrastructure-for-agent-scale-development-b4388eff.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 4,
+      "excluded_count": 16,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:651d5d4131fcec8a",
+          "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
+          "url_hash": "651d5d4131fcec8ac936b56b4f2a89be83d3689a9839bf3850626bf82a634f50",
+          "suggested_doc_key": "2026-10-embeddinggemma-2-an-open-lightweight-multimodal-embedding-model-651d5d41",
+          "suggested_article_path": "docs/services/google-blog/2026-10-embeddinggemma-2-an-open-lightweight-multimodal-embedding-model-651d5d41.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:41c67fbc57089a0b",
+          "title": "Producers can now vibe code their own music production tools using Google Flow Music.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/create-music-production-plugins-google-flow",
+          "url_hash": "41c67fbc57089a0b554e9db2625e61592e64ae1a306d9cdc550d078c900f72b9",
+          "suggested_doc_key": "2026-10-producers-can-now-vibe-code-their-own-music-production-tools-using-googl-41c67fbc",
+          "suggested_article_path": "docs/services/google-blog/2026-10-producers-can-now-vibe-code-their-own-music-production-tools-using-googl-41c67fbc.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:f7882e0044bf3ab3",
+          "title": "Ask a Scientist: How are researchers using AI to help pregnant women access ultrasounds?",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blind-sweep-ultrasounds-ai",
+          "url_hash": "f7882e0044bf3ab307bfe7c06b6d3dad705b47b89952f34e2754079dbeb1f957",
+          "suggested_doc_key": "2026-10-ask-a-scientist-how-are-researchers-using-ai-to-help-pregnant-women-acce-f7882e00",
+          "suggested_article_path": "docs/services/google-blog/2026-10-ask-a-scientist-how-are-researchers-using-ai-to-help-pregnant-women-acce-f7882e00.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:26d1f854e36357e2",
+          "title": "Making global public health more proactive with Google Earth AI",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/health/google-earth-ai",
+          "url_hash": "26d1f854e36357e246168c7a3c29fe051b6d38cf0fed40172074cd319f100988",
+          "suggested_doc_key": "2026-10-making-global-public-health-more-proactive-with-google-earth-ai-26d1f854",
+          "suggested_article_path": "docs/services/google-blog/2026-10-making-global-public-health-more-proactive-with-google-earth-ai-26d1f854.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 16
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:00427e47df5ef306",
+          "title": "Sharing AI progress in mathematics",
+          "normalized_url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+          "url_hash": "00427e47df5ef3064509e152a77372922244883355c7072ea1ab24de41848a25",
+          "suggested_doc_key": "2026-10-sharing-ai-progress-in-mathematics-00427e47",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-sharing-ai-progress-in-mathematics-00427e47.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 357점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 295개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:069f76d54edd397f",
+          "title": "Paramount Skydance has completed its $111B merger with Warner Bros. Discovery",
+          "normalized_url": "https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth",
+          "url_hash": "069f76d54edd397fa04fff54202b895349f1ddfbea57fd7956a7be1498dea8c8",
+          "suggested_doc_key": "2026-10-paramount-skydance-has-completed-its-111b-merger-with-warner-bros-discov-069f76d5",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-paramount-skydance-has-completed-its-111b-merger-with-warner-bros-discov-069f76d5.md",
+          "candidate_score": 56.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 164점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 255개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f6e419d4eb703602",
+          "title": "Decisions API is in public beta",
+          "normalized_url": "https://developers.openai.com/api/docs/guides/decisions",
+          "url_hash": "f6e419d4eb7036026425d57d61cdd77dce2dd684cf4bc7c275b90eaeb71f4ffb",
+          "suggested_doc_key": "2026-10-decisions-api-is-in-public-beta-f6e419d4",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-decisions-api-is-in-public-beta-f6e419d4.md",
+          "candidate_score": 51.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 118점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 50개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:eee53d0231e76d4e",
+          "title": "Claude Code’s suggested message feature: I think the real customer is the model",
+          "normalized_url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+          "url_hash": "eee53d0231e76d4edce17ad85c101029bb9de5be5864275fe9b55e5e8e5d2c1a",
+          "suggested_doc_key": "2026-10-claude-code-s-suggested-message-feature-i-think-the-real-customer-is-the-eee53d02",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-claude-code-s-suggested-message-feature-i-think-the-real-customer-is-the-eee53d02.md",
+          "candidate_score": 47.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 84점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 47개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:31957b3da098cd88",
+          "title": "Utah to let AI examine patients and prescribe medication without human oversight",
+          "normalized_url": "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html",
+          "url_hash": "31957b3da098cd881aa6788c9bad36a00fc9441e9dc76be245ccc24a618323d6",
+          "suggested_doc_key": "2026-10-utah-to-let-ai-examine-patients-and-prescribe-medication-without-human-o-31957b3d",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-utah-to-let-ai-examine-patients-and-prescribe-medication-without-human-o-31957b3d.md",
+          "candidate_score": 46.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 63점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 86개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:f57eff9c23a4454b",
+          "title": "Advancing computer use with Ironclad",
+          "normalized_url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+          "url_hash": "f57eff9c23a4454b476bbb268bd95c2d23fd7e230b5d7db7db7e5bb00c25353b",
+          "suggested_doc_key": "2026-10-advancing-computer-use-with-ironclad-f57eff9c",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-advancing-computer-use-with-ironclad-f57eff9c.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:2896758265cec81d",
+          "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+          "normalized_url": "https://openai.com/index/atlassian-partnership",
+          "url_hash": "2896758265cec81d95898858cf3558ac9cdd51e4e22038c8fc6ca0aa5193f521",
+          "suggested_doc_key": "2026-10-atlassian-and-openai-expand-partnership-to-turn-enterprise-knowledge-int-28967582",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-atlassian-and-openai-expand-partnership-to-turn-enterprise-knowledge-int-28967582.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:ebb413cc5359756b",
+          "title": "How Jump Trading is scaling quant research with ChatGPT",
+          "normalized_url": "https://openai.com/index/jump-trading",
+          "url_hash": "ebb413cc5359756bf9234b81256f87104efa96c0b88df88826702769f053f0a0",
+          "suggested_doc_key": "2026-10-how-jump-trading-is-scaling-quant-research-with-chatgpt-ebb413cc",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-how-jump-trading-is-scaling-quant-research-with-chatgpt-ebb413cc.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 46
+      }
+    }
+  ]
+}
