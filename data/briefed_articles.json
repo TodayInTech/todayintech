@@ -10170,6 +10170,86 @@
       "status": "published",
       "briefed_at": "2026-10-07T01:15:15.185195Z",
       "candidate_score": 39.0
+    },
+    "daa797ee943974350fccaa4f3fa1205a9777e20bb6bac528a7cbf14d38e472e1": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software",
+      "title_fingerprint": "secret protection must scale with software",
+      "service_key": "github-blog",
+      "title": "Secret protection must scale with software",
+      "article_doc_path": "docs/services/github-blog/2026-10-secret-protection-must-scale-with-software-daa797ee.md",
+      "status": "published",
+      "briefed_at": "2026-10-08T01:33:32.713238Z",
+      "candidate_score": 37.0
+    },
+    "4445812bafe5629af074b98faa41cb79b65d3448713f91ba2a24f06c0d5636b8": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content",
+      "title_fingerprint": "we re making it easier to identify ai generated content globally",
+      "service_key": "google-blog",
+      "title": "We're making it easier to identify AI-generated content globally.",
+      "article_doc_path": "docs/services/google-blog/2026-10-we-re-making-it-easier-to-identify-ai-generated-content-globally-4445812b.md",
+      "status": "published",
+      "briefed_at": "2026-10-08T01:33:32.713280Z",
+      "candidate_score": 46.0
+    },
+    "39d2fed3d43463e525e62503e46f563022e4cb8bbf12633c0287a8ee9ee453d9": {
+      "normalized_url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+      "title_fingerprint": "margaret hamilton has died",
+      "service_key": "hacker-news",
+      "title": "Margaret Hamilton has died",
+      "article_doc_path": "docs/services/hacker-news/2026-10-margaret-hamilton-has-died-39d2fed3.md",
+      "status": "published",
+      "briefed_at": "2026-10-08T01:33:32.713297Z",
+      "candidate_score": 68.0
+    },
+    "a41f902727221c5e5bd98ace22b86cec08d5b8e9a9539a8b10c6d9e9c7b86f80": {
+      "normalized_url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai",
+      "title_fingerprint": "meta and microsoft take steps to reduce employee usage of claude ai",
+      "service_key": "hacker-news",
+      "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+      "article_doc_path": "docs/services/hacker-news/2026-10-meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai-a41f9027.md",
+      "status": "published",
+      "briefed_at": "2026-10-08T01:33:32.713307Z",
+      "candidate_score": 66.0
+    },
+    "cdb1d51fae0431106fedcd9b04b5f3c39e2b73ba97f1a80fa573c763d8f96f73": {
+      "normalized_url": "https://www.anthropic.com/claude-haiku-5-5",
+      "title_fingerprint": "claude haiku 5 5",
+      "service_key": "hacker-news",
+      "title": "Claude Haiku 5.5",
+      "article_doc_path": "docs/services/hacker-news/2026-10-claude-haiku-5-5-cdb1d51f.md",
+      "status": "published",
+      "briefed_at": "2026-10-08T01:33:32.713317Z",
+      "candidate_score": 64.0
+    },
+    "286c732492720fc1292ac0691d116ef8764644af3fee9134fe856ab04a63b4b8": {
+      "normalized_url": "https://github.com/docker/docker-agent",
+      "title_fingerprint": "docker agent",
+      "service_key": "hacker-news",
+      "title": "Docker Agent",
+      "article_doc_path": "docs/services/hacker-news/2026-10-docker-agent-286c7324.md",
+      "status": "published",
+      "briefed_at": "2026-10-08T01:33:32.713327Z",
+      "candidate_score": 63.5
+    },
+    "661f64ddb5f472a2675ed75a0fb09828b0ce7323472abe119ea9528dee004ac6": {
+      "normalized_url": "https://openai.com/index/teens-learn-and-plan",
+      "title_fingerprint": "helping teens learn plan and shape the future of ai",
+      "service_key": "openai-blog",
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "article_doc_path": "docs/services/openai-blog/2026-10-helping-teens-learn-plan-and-shape-the-future-of-ai-661f64dd.md",
+      "status": "published",
+      "briefed_at": "2026-10-08T01:33:32.713337Z",
+      "candidate_score": 39.0
+    },
+    "4e324623ab7ca6fee0e142410ae1fff634372bb9b83078fd1d25f73483da7134": {
+      "normalized_url": "https://openai.com/index/radisson",
+      "title_fingerprint": "radisson hotel group brings hotel discovery into chatgpt",
+      "service_key": "openai-blog",
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-10-radisson-hotel-group-brings-hotel-discovery-into-chatgpt-4e324623.md",
+      "status": "published",
+      "briefed_at": "2026-10-08T01:33:32.713346Z",
+      "candidate_score": 38.0
     }
   }
 }
