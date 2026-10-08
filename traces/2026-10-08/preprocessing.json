@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-10-08T01:31:16.353751+00:00",
+  "generated_for": "2026-10-08",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "0cc48a46a81bf6fe1f5ab9835a9655d41e1d21cc",
+  "github_run_id": "37713204740",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 117,
+      "excluded_count": 3,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 3
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 117,
+      "output_count": 24,
+      "excluded_count": 93,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 93
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 24,
+      "output_count": 15,
+      "excluded_count": 9,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 9
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:daa797ee94397435",
+          "title": "Secret protection must scale with software",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software",
+          "url_hash": "daa797ee943974350fccaa4f3fa1205a9777e20bb6bac528a7cbf14d38e472e1",
+          "suggested_doc_key": "2026-10-secret-protection-must-scale-with-software-daa797ee",
+          "suggested_article_path": "docs/services/github-blog/2026-10-secret-protection-must-scale-with-software-daa797ee.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:4445812bafe5629a",
+          "title": "We're making it easier to identify AI-generated content globally.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content",
+          "url_hash": "4445812bafe5629af074b98faa41cb79b65d3448713f91ba2a24f06c0d5636b8",
+          "suggested_doc_key": "2026-10-we-re-making-it-easier-to-identify-ai-generated-content-globally-4445812b",
+          "suggested_article_path": "docs/services/google-blog/2026-10-we-re-making-it-easier-to-identify-ai-generated-content-globally-4445812b.md",
+          "candidate_score": 46.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:e04d1da693503b0f",
+          "title": "Introducing Playground: Create and play custom games",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform",
+          "url_hash": "e04d1da693503b0f1282c2e253e5172059c771fc995159d2f4bd4a20f0f195fa",
+          "suggested_doc_key": "2026-10-introducing-playground-create-and-play-custom-games-e04d1da6",
+          "suggested_article_path": "docs/services/google-blog/2026-10-introducing-playground-create-and-play-custom-games-e04d1da6.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:39d2fed3d43463e5",
+          "title": "Margaret Hamilton has died",
+          "normalized_url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+          "url_hash": "39d2fed3d43463e525e62503e46f563022e4cb8bbf12633c0287a8ee9ee453d9",
+          "suggested_doc_key": "2026-10-margaret-hamilton-has-died-39d2fed3",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-margaret-hamilton-has-died-39d2fed3.md",
+          "candidate_score": 68.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 675점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 76개를 토론 신호로 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a41f902727221c5e",
+          "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+          "normalized_url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai",
+          "url_hash": "a41f902727221c5e5bd98ace22b86cec08d5b8e9a9539a8b10c6d9e9c7b86f80",
+          "suggested_doc_key": "2026-10-meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai-a41f9027",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai-a41f9027.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 267점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 271개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:cdb1d51fae043110",
+          "title": "Claude Haiku 5.5",
+          "normalized_url": "https://www.anthropic.com/claude-haiku-5-5",
+          "url_hash": "cdb1d51fae0431106fedcd9b04b5f3c39e2b73ba97f1a80fa573c763d8f96f73",
+          "suggested_doc_key": "2026-10-claude-haiku-5-5-cdb1d51f",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-claude-haiku-5-5-cdb1d51f.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 668점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 336개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:286c732492720fc1",
+          "title": "Docker Agent",
+          "normalized_url": "https://github.com/docker/docker-agent",
+          "url_hash": "286c732492720fc1292ac0691d116ef8764644af3fee9134fe856ab04a63b4b8",
+          "suggested_doc_key": "2026-10-docker-agent-286c7324",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-docker-agent-286c7324.md",
+          "candidate_score": 63.5,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 175점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 82개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a097ef0d441a7216",
+          "title": "GPT‑6 and Intelligent UI for everyone",
+          "normalized_url": "https://openai.com/index/gpt-6-for-everyone",
+          "url_hash": "a097ef0d441a7216b7cd0e2333e660cab42270878853c22c33f188284ed638d5",
+          "suggested_doc_key": "2026-10-gpt-6-and-intelligent-ui-for-everyone-a097ef0d",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-gpt-6-and-intelligent-ui-for-everyone-a097ef0d.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 490점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 258개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 2,
+      "excluded_count": 48,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:661f64ddb5f472a2",
+          "title": "Helping teens learn, plan, and shape the future of AI",
+          "normalized_url": "https://openai.com/index/teens-learn-and-plan",
+          "url_hash": "661f64ddb5f472a2675ed75a0fb09828b0ce7323472abe119ea9528dee004ac6",
+          "suggested_doc_key": "2026-10-helping-teens-learn-plan-and-shape-the-future-of-ai-661f64dd",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-helping-teens-learn-plan-and-shape-the-future-of-ai-661f64dd.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:4e324623ab7ca6fe",
+          "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+          "normalized_url": "https://openai.com/index/radisson",
+          "url_hash": "4e324623ab7ca6fee0e142410ae1fff634372bb9b83078fd1d25f73483da7134",
+          "suggested_doc_key": "2026-10-radisson-hotel-group-brings-hotel-discovery-into-chatgpt-4e324623",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-radisson-hotel-group-brings-hotel-discovery-into-chatgpt-4e324623.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 2,
+        "already_briefed": 46
+      }
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-10-08T01:33:33.019352+00:00",
+  "generated_for": "2026-10-08",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "0cc48a46a81bf6fe1f5ab9835a9655d41e1d21cc",
+  "github_run_id": "37713204740",
+  "decision_count": 8,
+  "decision_counts": {
+    "published": 8
+  },
+  "decisions": [
+    {
+      "candidate_id": "github-blog:daa797ee94397435",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "title": "Secret protection must scale with software",
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software",
+      "article_doc_path": "docs/services/github-blog/2026-10-secret-protection-must-scale-with-software-daa797ee.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Security",
+      "importance_level": "High",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 최근 데이터와 구체적 수치(AI 에이전트 비중, 비밀 노출 빈도·증가율, 수동 복구 소요 시간)와 함께 GitHub의 기술적 대응(파트너 프로그램, 푸시 보호, 새 분류기 ModernBERT의 성능 및 배포 계획)을 제시해 기술 독자에게 유의미한 정보와 적용 맥락을 제공하므로 Today in Tech에 적합합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 37.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "google-blog:4445812bafe5629a",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "title": "We're making it easier to identify AI-generated content globally.",
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content",
+      "article_doc_path": "docs/services/google-blog/2026-10-we-re-making-it-easier-to-identify-ai-generated-content-globally-4445812b.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Safety & Security",
+      "importance_level": "High",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "구글이 2023년부터 적용해온 imperceptible 워터마크 기반의 SynthID 확산 실적(이미지·비디오 1800억 건, 오디오 24만 년 분량)과, 미디어 전문가용에서 일반 이용자용으로 확대한 SynthID Detector의 전세계(영어) 공개라는 실질적 변화가 보도 근거에 명확히 있어 기술 독자에게 유의미한 공지로 판단했습니다. 검색·Gemini 앱·크롬의 검증 기능 연계와 하루 100만 건 이상의 처리량 언급도 기술적 의미를 제공합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 46.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:39d2fed3d43463e5",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Margaret Hamilton has died",
+      "normalized_url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+      "article_doc_path": "docs/services/hacker-news/2026-10-margaret-hamilton-has-died-39d2fed3.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "기술/부고",
+      "importance_level": "높음",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터 기준으로 MIT 뉴스의 관련 기사가 수집되었고 해커뉴스에서 675포인트, 댓글 76개로 높은 관심을 받은 사안이라 기술·역사적 관심이 크다고 판단됩니다. 제공된 정보만으로는 상세 본문 내용을 확인할 수 없어 사실 관계와 영향 해석은 신중히 제시했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "candidate_id: hacker-news:39d2fed3d43463e5",
+        "source_url: https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+        "published_at: 2026-10-07T21:16:18+00:00",
+        "collected_at: 2026-10-08T01:31:22.210087+00:00",
+        "feed_summary: Article URL 및 Hacker News 링크, Points 675, Comments 76",
+        "metadata.hn_points: 675",
+        "metadata.hn_comments: 76"
+      ],
+      "candidate_score": 68.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:a41f902727221c5e",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+      "normalized_url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai",
+      "article_doc_path": "docs/services/hacker-news/2026-10-meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai-a41f9027.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 산업",
+      "importance_level": "높음",
+      "confidence_score": 0.82,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Meta와 Microsoft의 내부 AI 도구 사용 정책 변화는 대규모 엔지니어링 작업 방식과 비용 관리에 직접적 영향을 주며, 코드 보조 AI의 보안·비용·제품 전략 측면에서 의미 있는 시사점을 제공하므로 기술 독자에게 유용합니다. 제공된 근거에 수치와 취지(예: 예산 상한 축소, 내부 사용자 감소, 자체 코드 도구 전환, 보안 취약점 사례)가 포함되어 있어 편집 게시 가치가 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 66.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:cdb1d51fae043110",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Claude Haiku 5.5",
+      "normalized_url": "https://www.anthropic.com/claude-haiku-5-5",
+      "article_doc_path": "docs/services/hacker-news/2026-10-claude-haiku-5-5-cdb1d51f.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "인공지능 모델",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Anthropic의 새로운 Haiku 5.5는 성능·가격·가용성 측면에서 실무 개발자와 비용 민감한 대량 워크로드에 직접적 영향을 주는 변화를 제시하므로 기술 독자에게 유의미한 뉴스로 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 64.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:286c732492720fc1",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Docker Agent",
+      "normalized_url": "https://github.com/docker/docker-agent",
+      "article_doc_path": "docs/services/hacker-news/2026-10-docker-agent-286c7324.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "개발자 도구 (AI 에이전트)",
+      "importance_level": "높음",
+      "confidence_score": 0.87,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "제공된 원문 근거(chunk-0001)에서 Docker CLI 플러그인 형태의 'docker-agent'가 선언적 YAML 구성, 멀티에이전트 오케스트레이션, 다양한 모델 공급자 지원, RAG와 메모리·내장 도구 등 실용적 기능을 갖추고 있고 Docker Desktop 및 Homebrew 설치 경로와 실행 예시(docker agent run, docker agent new, OCI 레지스트리 푸시/풀 등)가 명시되어 있어 기술 독자에게 유의미한 도구 소개로 가치가 있다고 판단됩니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 63.5,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:661f64ddb5f472a2",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "normalized_url": "https://openai.com/index/teens-learn-and-plan",
+      "article_doc_path": "docs/services/openai-blog/2026-10-helping-teens-learn-plan-and-shape-the-future-of-ai-661f64dd.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Product",
+      "importance_level": "Medium",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 교육용 기능 확장(대학 지원 도구·학습 보조 기능·청소년 자문위원회)이 발표되어 기술·교육 분야 독자에 유의미한 변경으로 판단됩니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title",
+        "feed_summary",
+        "published_at",
+        "source_url",
+        "service_name",
+        "tags"
+      ],
+      "candidate_score": 39.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:4e324623ab7ca6fe",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "normalized_url": "https://openai.com/index/radisson",
+      "article_doc_path": "docs/services/openai-blog/2026-10-radisson-hotel-group-brings-hotel-discovery-into-chatgpt-4e324623.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "여행 테크·AI 통합",
+      "importance_level": "보통",
+      "confidence_score": 0.7,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터로 OpenAI 블로그에 Radisson과 Accenture의 협업으로 ChatGPT 플러그인을 통한 호텔 검색·예약 기능 통합이 발표된 것으로 확인되어, 여행·대화형 AI 통합 측면에서 기술 독자들의 관심을 끌 수 있다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "service_name: OpenAI Blog",
+        "title: Radisson Hotel Group brings hotel discovery into ChatGPT",
+        "feed_summary: Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+        "source_url: https://openai.com/index/radisson",
+        "published_at: 2026-10-07T07:00:00+00:00",
+        "metadata.rss_rank: 2"
+      ],
+      "candidate_score": 38.0,
+      "error_message": null
+    }
+  ]
+}
