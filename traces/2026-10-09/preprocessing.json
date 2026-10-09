@@ -1,0 +1,393 @@
+{
+  "generated_at": "2026-10-09T01:40:18.752185+00:00",
+  "generated_for": "2026-10-09",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "ecea433213448f3ef38461a1a9bf552c15a4fb6e",
+  "github_run_id": "37870774641",
+  "service_count": 5,
+  "duration_ms": 13,
+  "raw_count": 120,
+  "candidate_count": 22,
+  "excluded_count": 98,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 32,
+      "excluded_count": 88,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 88
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 32,
+      "output_count": 22,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:c4a1f46e5a98744a",
+          "title": "Introducing the Anthropic Cyber Mission",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+          "url_hash": "c4a1f46e5a98744a7c57fd6e9c295bcadb554f343d53e79729cbf02ab67f63eb",
+          "suggested_doc_key": "2026-10-introducing-the-anthropic-cyber-mission-c4a1f46e",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-introducing-the-anthropic-cyber-mission-c4a1f46e.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:4e66a7e453a3193b",
+          "title": "2026 Usage Policy update",
+          "normalized_url": "https://www.anthropic.com/news/2026-usage-policy-update",
+          "url_hash": "4e66a7e453a3193bb5cb6a8f8081827e5a6357c436d5caa87cc204d983c3cfdb",
+          "suggested_doc_key": "2026-10-2026-usage-policy-update-4e66a7e4",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-2026-usage-policy-update-4e66a7e4.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:6c062b861d6d205b",
+          "title": "Building on our commitment to American scientific discovery",
+          "normalized_url": "https://www.anthropic.com/news/genesis-mission-commitment",
+          "url_hash": "6c062b861d6d205bc313e939a094b3dab87b6b0c40df64dfabe563ffb4db5445",
+          "suggested_doc_key": "2026-10-building-on-our-commitment-to-american-scientific-discovery-6c062b86",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-building-on-our-commitment-to-american-scientific-discovery-6c062b86.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:ff6e9590c8f46567",
+          "title": "How one bug bounty researcher chooses the features they investigate",
+          "normalized_url": "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate",
+          "url_hash": "ff6e9590c8f46567d42db4193f6000b8ca4e2122d4785f63746ad4897f8ba855",
+          "suggested_doc_key": "2026-10-how-one-bug-bounty-researcher-chooses-the-features-they-investigate-ff6e9590",
+          "suggested_article_path": "docs/services/github-blog/2026-10-how-one-bug-bounty-researcher-chooses-the-features-they-investigate-ff6e9590.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:d03b0c3cffb801da",
+          "title": "Study in The Lancet suggests AI could improve patient-physician relationships.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/health/amie-clinical-study-lancet",
+          "url_hash": "d03b0c3cffb801dae5e0cfcb7f21b3b885cbab8c6560ad86e55bd67f1b92486f",
+          "suggested_doc_key": "2026-10-study-in-the-lancet-suggests-ai-could-improve-patient-physician-relation-d03b0c3c",
+          "suggested_article_path": "docs/services/google-blog/2026-10-study-in-the-lancet-suggests-ai-could-improve-patient-physician-relation-d03b0c3c.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:3b4e00f80438de3b",
+          "title": "Sign in quickly and securely with passkeys.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/how-to-set-up-passkey",
+          "url_hash": "3b4e00f80438de3ba827afd80061cf8def5c0dff1cbb996e9512c8eea698a6ac",
+          "suggested_doc_key": "2026-10-sign-in-quickly-and-securely-with-passkeys-3b4e00f8",
+          "suggested_article_path": "docs/services/google-blog/2026-10-sign-in-quickly-and-securely-with-passkeys-3b4e00f8.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:e04d1da693503b0f",
+          "title": "Introducing Playground: Create and play custom games",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform",
+          "url_hash": "e04d1da693503b0f1282c2e253e5172059c771fc995159d2f4bd4a20f0f195fa",
+          "suggested_doc_key": "2026-10-introducing-playground-create-and-play-custom-games-e04d1da6",
+          "suggested_article_path": "docs/services/google-blog/2026-10-introducing-playground-create-and-play-custom-games-e04d1da6.md",
+          "candidate_score": 32.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:59bde841e4dd6b43",
+          "title": "Theranos.world",
+          "normalized_url": "https://www.theranos.world/",
+          "url_hash": "59bde841e4dd6b43f8775adb14f271d506626402e0b4a96742c92038e781f4c1",
+          "suggested_doc_key": "2026-10-theranos-world-59bde841",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-theranos-world-59bde841.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 270점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 114개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6d2ccd890a1e9dae",
+          "title": "ADHD as a circadian rhythm disorder: evidence and implications for chronotherapy (2025)",
+          "normalized_url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1697900/full",
+          "url_hash": "6d2ccd890a1e9daec2ada3596f3d49c5cee82a6d77526d14855e52f50139fd3e",
+          "suggested_doc_key": "2026-10-adhd-as-a-circadian-rhythm-disorder-evidence-and-implications-for-chrono-6d2ccd89",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-adhd-as-a-circadian-rhythm-disorder-evidence-and-implications-for-chrono-6d2ccd89.md",
+          "candidate_score": 60.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 163점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 123개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8e671fda16b4ef2f",
+          "title": "Whistle: Speech to Text in 16.9 MB",
+          "normalized_url": "https://cactuscompute.com/blog/whistle",
+          "url_hash": "8e671fda16b4ef2f8e723ff198d4bee0366e171d5ba2a3096d223acbf9f9eed7",
+          "suggested_doc_key": "2026-10-whistle-speech-to-text-in-16-9-mb-8e671fda",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-whistle-speech-to-text-in-16-9-mb-8e671fda.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 529점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 119개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c1f5c5558bed0e28",
+          "title": "Beauty in DVD Menus",
+          "normalized_url": "https://vale.rocks/posts/dvd-menus",
+          "url_hash": "c1f5c5558bed0e28c7cff17973f3933e1aa39d135d472473793b5587e22dea76",
+          "suggested_doc_key": "2026-10-beauty-in-dvd-menus-c1f5c555",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-beauty-in-dvd-menus-c1f5c555.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 259점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 145개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c5982e3d365efdc5",
+          "title": "I gave Opus 5.5 one prompt and six hours to visualize Invisible Cities",
+          "normalized_url": "https://quesma.com/blog/invisible-cities-one-shot",
+          "url_hash": "c5982e3d365efdc5e55d6de333a7533e841c875d45993ea1eb18e9bd33a1f319",
+          "suggested_doc_key": "2026-10-i-gave-opus-5-5-one-prompt-and-six-hours-to-visualize-invisible-cities-c5982e3d",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-i-gave-opus-5-5-one-prompt-and-six-hours-to-visualize-invisible-cities-c5982e3d.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 355점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 179개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:db7b9e6fe248e314",
+          "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+          "normalized_url": "https://openai.com/index/oracle",
+          "url_hash": "db7b9e6fe248e3146f87743abb423de6e3dc46759771b422f1331a63b0725822",
+          "suggested_doc_key": "2026-10-how-oracle-turns-days-of-work-into-minutes-with-chatgpt-and-codex-db7b9e6f",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-how-oracle-turns-days-of-work-into-minutes-with-chatgpt-and-codex-db7b9e6f.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:855092fba1df7e8a",
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "normalized_url": "https://openai.com/index/pollo-ai",
+          "url_hash": "855092fba1df7e8a668bec1b409ac85f8b110a1f64384b826a3381f6d67156e4",
+          "suggested_doc_key": "2026-10-pollo-ai-turns-creative-ideas-into-campaigns-with-openai-855092fb",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-pollo-ai-turns-creative-ideas-into-campaigns-with-openai-855092fb.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:45d6a2b79938283a",
+          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "normalized_url": "https://openai.com/index/legalon-halves-codex-costs",
+          "url_hash": "45d6a2b79938283a07ca47b39fd2409f4bc34d8465757047a15ff56c4f0b15f8",
+          "suggested_doc_key": "2026-10-legalon-halves-codex-costs-while-maintaining-development-speed-45d6a2b7",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-legalon-halves-codex-costs-while-maintaining-development-speed-45d6a2b7.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:d9e485b409fe8517",
+          "title": "Disrupting AI-enabled “false front” operations",
+          "normalized_url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+          "url_hash": "d9e485b409fe8517ac6e3a5ba39a5770caf1a72ddba21f80f7ddf66c5e1760f2",
+          "suggested_doc_key": "2026-10-disrupting-ai-enabled-false-front-operations-d9e485b4",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-disrupting-ai-enabled-false-front-operations-d9e485b4.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:a097ef0d441a7216",
+          "title": "GPT-6 and Intelligent UI for everyone",
+          "normalized_url": "https://openai.com/index/gpt-6-for-everyone",
+          "url_hash": "a097ef0d441a7216b7cd0e2333e660cab42270878853c22c33f188284ed638d5",
+          "suggested_doc_key": "2026-10-gpt-6-and-intelligent-ui-for-everyone-a097ef0d",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-gpt-6-and-intelligent-ui-for-everyone-a097ef0d.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 45
+      }
+    }
+  ]
+}
