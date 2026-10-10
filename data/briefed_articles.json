@@ -10400,6 +10400,96 @@
       "status": "published",
       "briefed_at": "2026-10-09T01:43:34.442359Z",
       "candidate_score": 35.0
+    },
+    "a546f1a038948b34df980fa346ea8c267bb28c534d4fef0a9d825116168805e8": {
+      "normalized_url": "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build",
+      "title_fingerprint": "hack the world why hackathons are still the best place to learn to build",
+      "service_key": "github-blog",
+      "title": "Hack the World: Why hackathons are still the best place to learn to build",
+      "article_doc_path": "docs/services/github-blog/2026-10-hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build-a546f1a0.md",
+      "status": "published",
+      "briefed_at": "2026-10-10T01:29:38.623501Z",
+      "candidate_score": 37.0
+    },
+    "500dae7445b0744d302c17cd60e1b5b926889c7c21650a023080b4d9bba496d5": {
+      "normalized_url": "https://gizmodo.com/youtuber-says-cops-paid-him-a-visit-after-he-built-flock-style-camera-to-track-cops-2000824306",
+      "title_fingerprint": "youtuber says cops visited him after he built a flock style camera to track cops",
+      "service_key": "hacker-news",
+      "title": "YouTuber Says Cops Visited Him After He Built a Flock-Style Camera to Track Cops",
+      "article_doc_path": "docs/services/hacker-news/2026-10-youtuber-says-cops-visited-him-after-he-built-a-flock-style-camera-to-tr-500dae74.md",
+      "status": "published",
+      "briefed_at": "2026-10-10T01:29:38.623538Z",
+      "candidate_score": 61.0
+    },
+    "917825c0315309567de60f7fe954da62a99d9eb6209eae549a3a5b445320c69e": {
+      "normalized_url": "https://typesafe.ai/blog/series-ai",
+      "title_fingerprint": "typesafe ai raises 870m at 7 5b",
+      "service_key": "hacker-news",
+      "title": "Typesafe AI raises $870M at $7.5B",
+      "article_doc_path": "docs/services/hacker-news/2026-10-typesafe-ai-raises-870m-at-7-5b-917825c0.md",
+      "status": "published",
+      "briefed_at": "2026-10-10T01:29:38.623553Z",
+      "candidate_score": 60.0
+    },
+    "5f84afa7a273882a799e9c5223fe7e8a5e2fc1db17250443fcfaeca0a66250a4": {
+      "normalized_url": "https://minesweeper.mikelacher.com/",
+      "title_fingerprint": "triple a minesweeper",
+      "service_key": "hacker-news",
+      "title": "Triple-A Minesweeper",
+      "article_doc_path": "docs/services/hacker-news/2026-10-triple-a-minesweeper-5f84afa7.md",
+      "status": "published",
+      "briefed_at": "2026-10-10T01:29:38.623564Z",
+      "candidate_score": 60.0
+    },
+    "e75b329c912d87c0732b16deacc9718fe0187ce08216447315cb988603376f06": {
+      "normalized_url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry",
+      "title_fingerprint": "microsoft decision 1 our model for fast decision making",
+      "service_key": "hacker-news",
+      "title": "Microsoft-Decision-1, our model for fast decision-making",
+      "article_doc_path": "docs/services/hacker-news/2026-10-microsoft-decision-1-our-model-for-fast-decision-making-e75b329c.md",
+      "status": "published",
+      "briefed_at": "2026-10-10T01:29:38.623573Z",
+      "candidate_score": 54.6
+    },
+    "9bf93d58cc35db9987f8bca45379eba94bc31d29b6afb6124531fcd7a11cbc41": {
+      "normalized_url": "https://openai.com/index/asana-browser-agent",
+      "title_fingerprint": "asana cuts model costs 76x in browser tests with gpt 6 1 sol",
+      "service_key": "openai-blog",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "article_doc_path": "docs/services/openai-blog/2026-10-asana-cuts-model-costs-76x-in-browser-tests-with-gpt-6-1-sol-9bf93d58.md",
+      "status": "published",
+      "briefed_at": "2026-10-10T01:29:38.623581Z",
+      "candidate_score": 48.0
+    },
+    "570fe3204556675e8dd927e7dbd15e7142796fd7ecb68cb1f56d47b91d75ac01": {
+      "normalized_url": "https://openai.com/index/sophos",
+      "title_fingerprint": "sophos cuts threat investigation time by 96 with openai daybreak",
+      "service_key": "openai-blog",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "article_doc_path": "docs/services/openai-blog/2026-10-sophos-cuts-threat-investigation-time-by-96-with-openai-daybreak-570fe320.md",
+      "status": "published",
+      "briefed_at": "2026-10-10T01:29:38.623589Z",
+      "candidate_score": 39.0
+    },
+    "a097ef0d441a7216b7cd0e2333e660cab42270878853c22c33f188284ed638d5": {
+      "normalized_url": "https://openai.com/index/gpt-6-for-everyone",
+      "title_fingerprint": "gpt 6 and intelligent ui for everyone",
+      "service_key": "openai-blog",
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "article_doc_path": "docs/services/openai-blog/2026-10-gpt-6-and-intelligent-ui-for-everyone-a097ef0d.md",
+      "status": "published",
+      "briefed_at": "2026-10-10T01:29:38.623597Z",
+      "candidate_score": 28.0
+    },
+    "3971cab2d7d4566fcc70a8f709ba6758e74d35ff8ace548876a5f6204fbc9bab": {
+      "normalized_url": "https://openai.com/index/lowes",
+      "title_fingerprint": "lowe s answers millions of home improvement questions with openai",
+      "service_key": "openai-blog",
+      "title": "Lowe’s answers millions of home improvement questions with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-09-lowe-s-answers-millions-of-home-improvement-questions-with-openai-3971cab2.md",
+      "status": "published",
+      "briefed_at": "2026-10-10T01:29:38.623604Z",
+      "candidate_score": 21.0
     }
   }
 }
