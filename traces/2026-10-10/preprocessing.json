@@ -1,0 +1,296 @@
+{
+  "generated_at": "2026-10-10T01:27:41.042716+00:00",
+  "generated_for": "2026-10-10",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "d0713bc2c51c926b8f821be6f579955a5a366cf5",
+  "github_run_id": "38013159722",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 25,
+      "excluded_count": 95,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 95
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 25,
+      "output_count": 25,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 25,
+      "output_count": 15,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:a546f1a038948b34",
+          "title": "Hack the World: Why hackathons are still the best place to learn to build",
+          "normalized_url": "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build",
+          "url_hash": "a546f1a038948b34df980fa346ea8c267bb28c534d4fef0a9d825116168805e8",
+          "suggested_doc_key": "2026-10-hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build-a546f1a0",
+          "suggested_article_path": "docs/services/github-blog/2026-10-hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build-a546f1a0.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:500dae7445b0744d",
+          "title": "YouTuber Says Cops Visited Him After He Built a Flock-Style Camera to Track Cops",
+          "normalized_url": "https://gizmodo.com/youtuber-says-cops-paid-him-a-visit-after-he-built-flock-style-camera-to-track-cops-2000824306",
+          "url_hash": "500dae7445b0744d302c17cd60e1b5b926889c7c21650a023080b4d9bba496d5",
+          "suggested_doc_key": "2026-10-youtuber-says-cops-visited-him-after-he-built-a-flock-style-camera-to-tr-500dae74",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-youtuber-says-cops-visited-him-after-he-built-a-flock-style-camera-to-tr-500dae74.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 402점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 214개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:917825c031530956",
+          "title": "Typesafe AI raises $870M at $7.5B",
+          "normalized_url": "https://typesafe.ai/blog/series-ai",
+          "url_hash": "917825c0315309567de60f7fe954da62a99d9eb6209eae549a3a5b445320c69e",
+          "suggested_doc_key": "2026-10-typesafe-ai-raises-870m-at-7-5b-917825c0",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-typesafe-ai-raises-870m-at-7-5b-917825c0.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 266점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 206개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5f84afa7a273882a",
+          "title": "Triple-A Minesweeper",
+          "normalized_url": "https://minesweeper.mikelacher.com/",
+          "url_hash": "5f84afa7a273882a799e9c5223fe7e8a5e2fc1db17250443fcfaeca0a66250a4",
+          "suggested_doc_key": "2026-10-triple-a-minesweeper-5f84afa7",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-triple-a-minesweeper-5f84afa7.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 644점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 119개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e75b329c912d87c0",
+          "title": "Microsoft-Decision-1, our model for fast decision-making",
+          "normalized_url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry",
+          "url_hash": "e75b329c912d87c0732b16deacc9718fe0187ce08216447315cb988603376f06",
+          "suggested_doc_key": "2026-10-microsoft-decision-1-our-model-for-fast-decision-making-e75b329c",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-microsoft-decision-1-our-model-for-fast-decision-making-e75b329c.md",
+          "candidate_score": 54.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 140점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 53개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:64581bfda36978c6",
+          "title": "Show HN: Carrier-Explode: iPhone, Pixel and Galaxy carrier settings decoded",
+          "normalized_url": "https://carrierexplode.com/",
+          "url_hash": "64581bfda36978c6945c89f02ed3f16ee1b15e52288dbc7da963334c2cebb48b",
+          "suggested_doc_key": "2026-10-show-hn-carrier-explode-iphone-pixel-and-galaxy-carrier-settings-decoded-64581bfd",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-show-hn-carrier-explode-iphone-pixel-and-galaxy-carrier-settings-decoded-64581bfd.md",
+          "candidate_score": 49.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 211점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 20개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 4,
+      "excluded_count": 46,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:9bf93d58cc35db99",
+          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+          "normalized_url": "https://openai.com/index/asana-browser-agent",
+          "url_hash": "9bf93d58cc35db9987f8bca45379eba94bc31d29b6afb6124531fcd7a11cbc41",
+          "suggested_doc_key": "2026-10-asana-cuts-model-costs-76x-in-browser-tests-with-gpt-6-1-sol-9bf93d58",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-asana-cuts-model-costs-76x-in-browser-tests-with-gpt-6-1-sol-9bf93d58.md",
+          "candidate_score": 48.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:570fe3204556675e",
+          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+          "normalized_url": "https://openai.com/index/sophos",
+          "url_hash": "570fe3204556675e8dd927e7dbd15e7142796fd7ecb68cb1f56d47b91d75ac01",
+          "suggested_doc_key": "2026-10-sophos-cuts-threat-investigation-time-by-96-with-openai-daybreak-570fe320",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-sophos-cuts-threat-investigation-time-by-96-with-openai-daybreak-570fe320.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:a097ef0d441a7216",
+          "title": "GPT-6 and Intelligent UI for everyone",
+          "normalized_url": "https://openai.com/index/gpt-6-for-everyone",
+          "url_hash": "a097ef0d441a7216b7cd0e2333e660cab42270878853c22c33f188284ed638d5",
+          "suggested_doc_key": "2026-10-gpt-6-and-intelligent-ui-for-everyone-a097ef0d",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-gpt-6-and-intelligent-ui-for-everyone-a097ef0d.md",
+          "candidate_score": 28.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3971cab2d7d4566f",
+          "title": "Lowe’s answers millions of home improvement questions with OpenAI",
+          "normalized_url": "https://openai.com/index/lowes",
+          "url_hash": "3971cab2d7d4566fcc70a8f709ba6758e74d35ff8ace548876a5f6204fbc9bab",
+          "suggested_doc_key": "2026-09-lowe-s-answers-millions-of-home-improvement-questions-with-openai-3971cab2",
+          "suggested_article_path": "docs/services/openai-blog/2026-09-lowe-s-answers-millions-of-home-improvement-questions-with-openai-3971cab2.md",
+          "candidate_score": 21.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 14일이 지난 글로 최신성 6점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 32위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 46
+      }
+    }
+  ]
+}
