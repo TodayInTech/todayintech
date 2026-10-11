@@ -10490,6 +10490,46 @@
       "status": "published",
       "briefed_at": "2026-10-10T01:29:38.623604Z",
       "candidate_score": 21.0
+    },
+    "4e3dd727b793f881e47c9cca03f89915125ebf127b088389aba58d9201b863de": {
+      "normalized_url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+      "title_fingerprint": "bitwarden dual license model",
+      "service_key": "hacker-news",
+      "title": "Bitwarden Dual License Model",
+      "article_doc_path": "docs/services/hacker-news/2026-10-bitwarden-dual-license-model-4e3dd727.md",
+      "status": "published",
+      "briefed_at": "2026-10-11T00:39:42.687022Z",
+      "candidate_score": 67.0
+    },
+    "5c1db9239c15fa63153fb9af93c75fe74782fb4a6b7c7adc6152b7c684041ca2": {
+      "normalized_url": "https://github.com/rociiu/talorys",
+      "title_fingerprint": "talorys a self hosted personal ai agent on cloudflare s free tier",
+      "service_key": "hacker-news",
+      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+      "article_doc_path": "docs/services/hacker-news/2026-10-talorys-a-self-hosted-personal-ai-agent-on-cloudflare-s-free-tier-5c1db923.md",
+      "status": "published",
+      "briefed_at": "2026-10-11T00:39:42.687066Z",
+      "candidate_score": 65.0
+    },
+    "7e1e24ae7a9d1b06e9ffbe60efd17e710ed2e3a0215f81c1facb2a9e62bbfd8b": {
+      "normalized_url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover",
+      "title_fingerprint": "telegram desktop vulnerability allowed any user s file to be stolen",
+      "service_key": "hacker-news",
+      "title": "Telegram Desktop vulnerability allowed any user's file to be stolen",
+      "article_doc_path": "docs/services/hacker-news/2026-10-telegram-desktop-vulnerability-allowed-any-user-s-file-to-be-stolen-7e1e24ae.md",
+      "status": "published",
+      "briefed_at": "2026-10-11T00:39:42.687080Z",
+      "candidate_score": 65.0
+    },
+    "ff937c40252284431292beae6a7a9f200cd28a2d8e1688a50fffda47505a8d14": {
+      "normalized_url": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a",
+      "title_fingerprint": "nvidia in talks to acquire us open model startup reflection ai",
+      "service_key": "hacker-news",
+      "title": "Nvidia in talks to acquire US 'open' model startup Reflection AI",
+      "article_doc_path": "docs/services/hacker-news/2026-10-nvidia-in-talks-to-acquire-us-open-model-startup-reflection-ai-ff937c40.md",
+      "status": "published",
+      "briefed_at": "2026-10-11T00:39:42.687088Z",
+      "candidate_score": 61.0
     }
   }
 }
