@@ -1,0 +1,221 @@
+{
+  "generated_at": "2026-10-12T00:55:24.583202+00:00",
+  "generated_for": "2026-10-12",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "2459683d1b1637285acc9440253d1db6b0a38b31",
+  "github_run_id": "38189768681",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 10,
+  "excluded_count": 110,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 20,
+      "excluded_count": 100,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 100
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 20,
+      "output_count": 20,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 20,
+      "output_count": 20,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 20,
+      "output_count": 10,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:69f867972cf05685",
+          "title": "Passkeys are a trap. Do not use them",
+          "normalized_url": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
+          "url_hash": "69f867972cf0568522367c85f185811b8f3e67939fe68a2162195c02ff2f1442",
+          "suggested_doc_key": "2026-10-passkeys-are-a-trap-do-not-use-them-69f86797",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-passkeys-are-a-trap-do-not-use-them-69f86797.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 211점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 114개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d16bd93ff857d83d",
+          "title": "The gap in shared understanding of LLM capability is widening",
+          "normalized_url": "https://twitter.com/karpathy/status/2109361546505966046",
+          "url_hash": "d16bd93ff857d83dc220c14f56bb9293164099fcc4f37d26a9b93bb7efacc66c",
+          "suggested_doc_key": "2026-10-the-gap-in-shared-understanding-of-llm-capability-is-widening-d16bd93f",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-the-gap-in-shared-understanding-of-llm-capability-is-widening-d16bd93f.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 217점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 349개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:59d9a6d123f1b426",
+          "title": "Total Annihilation, rebuilt for modern computers",
+          "normalized_url": "https://nanolathe.gg/",
+          "url_hash": "59d9a6d123f1b426d60f2e89647a18c92021c9396c19cbefbea6bef52a8b8636",
+          "suggested_doc_key": "2026-10-total-annihilation-rebuilt-for-modern-computers-59d9a6d1",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-total-annihilation-rebuilt-for-modern-computers-59d9a6d1.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 341점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 145개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f059340783d441bc",
+          "title": "NYC's \"Click to Cancel\" rule is now in effect",
+          "normalized_url": "https://www.nyc.gov/main/click-to-cancel",
+          "url_hash": "f059340783d441bc0dfbc264e3dc8d9ba8522401f250d3ded3feb3393f0b89e7",
+          "suggested_doc_key": "2026-10-nyc-s-click-to-cancel-rule-is-now-in-effect-f0593407",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-nyc-s-click-to-cancel-rule-is-now-in-effect-f0593407.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 334점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 165개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:73ae61f26eaef668",
+          "title": "A Remote Employee Refused 160 Webcam Photos a Day. Her Employer Fired Her",
+          "normalized_url": "https://www.inc.com/chloe-rosenberg/a-remote-employee-refused-160-webcam-photos-a-day-her-employer-fired-her/91415963",
+          "url_hash": "73ae61f26eaef66882aedd64b46116c2456cc731530c3f9872afb857b81c03e5",
+          "suggested_doc_key": "2026-10-a-remote-employee-refused-160-webcam-photos-a-day-her-employer-fired-her-73ae61f2",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-a-remote-employee-refused-160-webcam-photos-a-day-her-employer-fired-her-73ae61f2.md",
+          "candidate_score": 53.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 133점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 97개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 50
+      }
+    }
+  ]
+}

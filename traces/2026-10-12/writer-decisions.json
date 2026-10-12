@@ -1,0 +1,119 @@
+{
+  "generated_at": "2026-10-12T00:56:31.088437+00:00",
+  "generated_for": "2026-10-12",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "2459683d1b1637285acc9440253d1db6b0a38b31",
+  "github_run_id": "38189768681",
+  "decision_count": 4,
+  "decision_counts": {
+    "published": 4
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:69f867972cf05685",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Passkeys are a trap. Do not use them",
+      "normalized_url": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
+      "article_doc_path": "docs/services/hacker-news/2026-10-passkeys-are-a-trap-do-not-use-them-69f86797.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "보안/인증",
+      "importance_level": "중간",
+      "confidence_score": 0.45,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "Hacker News에서 높은 관심(포인트·댓글)이 확인되어 기술 담론 유발 가치가 있음. 피드 메타데이터만으로도 주제와 논쟁 가능성을 전할 수 있어 Today in Tech 독자에게 유의미한 브리핑이 될 것으로 판단됨.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Passkeys are a trap. Do not use them",
+        "source_url: https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
+        "authors: laurex",
+        "hn_points: 211",
+        "hn_comments: 114",
+        "rss_rank: 11",
+        "published_at: 2026-10-11T21:59:48+00:00",
+        "collected_at: 2026-10-12T00:55:29.950891+00:00",
+        "feed_summary: Article URL 및 HN 토론 링크, 포인트·댓글 수"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:d16bd93ff857d83d",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "The gap in shared understanding of LLM capability is widening",
+      "normalized_url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "article_doc_path": "docs/services/hacker-news/2026-10-the-gap-in-shared-understanding-of-llm-capability-is-widening-d16bd93f.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "인공지능",
+      "importance_level": "중간",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터상 원문(카파시 트윗) 제목이 LLM 능력에 대한 공감대 격차를 지적하고 있으며, Hacker News에서 포인트(217)와 댓글(349)로 활발히 논의되고 있어 기술 커뮤니티 관점의 관심도를 반영한다. 제공된 메타데이터만으로 주제와 기술적 함의를 요약하기에 적절하다고 판단된다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "source_url: https://twitter.com/karpathy/status/2109361546505966046",
+        "feed_summary: Article URL: https://twitter.com/karpathy/status/2109361546505966046; Comments URL: https://news.ycombinator.com/item?id=50047422; Points: 217; # Comments: 349",
+        "metadata.hn_points: 217",
+        "metadata.hn_comments: 349",
+        "collected_at: 2026-10-12T00:55:29.950891+00:00"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:59d9a6d123f1b426",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Total Annihilation, rebuilt for modern computers",
+      "normalized_url": "https://nanolathe.gg/",
+      "article_doc_path": "docs/services/hacker-news/2026-10-total-annihilation-rebuilt-for-modern-computers-59d9a6d1.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "게임 엔진·오픈소스",
+      "importance_level": "높음",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원본 게임 파일을 활용하는 클린룸 재구현과 MIT 라이선스 공개, 문서화된 포맷과 모딩·검토가 가능한 구조 등 기술적 가치가 큽니다. 브라우저 데모와 Windows/Mac/Linux 네이티브 베타, 현대적 렌더링·타일 합성 등 구체적 구현 근거가 있어 기술 독자에게 유용합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "hn_points:341"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:f059340783d441bc",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "NYC's \"Click to Cancel\" rule is now in effect",
+      "normalized_url": "https://www.nyc.gov/main/click-to-cancel",
+      "article_doc_path": "docs/services/hacker-news/2026-10-nyc-s-click-to-cancel-rule-is-now-in-effect-f0593407.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "소비자 규제·제품 UX",
+      "importance_level": "중간",
+      "confidence_score": 0.6,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "제공된 피드 메타데이터에 'NYC의 \"Click to Cancel\" 규정이 시행'되었다는 제목과 높은 Hacker News 반응(포인트·댓글)이 있어 기술·제품 독자에게 유의미한 주제로 보입니다. 원문 전문이 없으므로 구체 조항 대신 적용·영향 관점의 해설형 브리핑이 적절합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "candidate_id: hacker-news:f059340783d441bc",
+        "title: NYC's \"Click to Cancel\" rule is now in effect",
+        "source_url: https://www.nyc.gov/main/click-to-cancel",
+        "published_at: 2026-10-11T18:01:16+00:00",
+        "collected_at: 2026-10-12T00:55:29.950891+00:00",
+        "feed_summary: Article URL and Hacker News engagement (Points: 334, Comments: 165)",
+        "metadata.hn_points: 334",
+        "metadata.hn_comments: 165"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    }
+  ]
+}
