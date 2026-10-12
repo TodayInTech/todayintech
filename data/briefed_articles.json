@@ -10530,6 +10530,46 @@
       "status": "published",
       "briefed_at": "2026-10-11T00:39:42.687088Z",
       "candidate_score": 61.0
+    },
+    "69f867972cf0568522367c85f185811b8f3e67939fe68a2162195c02ff2f1442": {
+      "normalized_url": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
+      "title_fingerprint": "passkeys are a trap do not use them",
+      "service_key": "hacker-news",
+      "title": "Passkeys are a trap. Do not use them",
+      "article_doc_path": "docs/services/hacker-news/2026-10-passkeys-are-a-trap-do-not-use-them-69f86797.md",
+      "status": "published",
+      "briefed_at": "2026-10-12T00:56:30.773227Z",
+      "candidate_score": 60.0
+    },
+    "d16bd93ff857d83dc220c14f56bb9293164099fcc4f37d26a9b93bb7efacc66c": {
+      "normalized_url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "title_fingerprint": "the gap in shared understanding of llm capability is widening",
+      "service_key": "hacker-news",
+      "title": "The gap in shared understanding of LLM capability is widening",
+      "article_doc_path": "docs/services/hacker-news/2026-10-the-gap-in-shared-understanding-of-llm-capability-is-widening-d16bd93f.md",
+      "status": "published",
+      "briefed_at": "2026-10-12T00:56:30.773265Z",
+      "candidate_score": 60.0
+    },
+    "59d9a6d123f1b426d60f2e89647a18c92021c9396c19cbefbea6bef52a8b8636": {
+      "normalized_url": "https://nanolathe.gg/",
+      "title_fingerprint": "total annihilation rebuilt for modern computers",
+      "service_key": "hacker-news",
+      "title": "Total Annihilation, rebuilt for modern computers",
+      "article_doc_path": "docs/services/hacker-news/2026-10-total-annihilation-rebuilt-for-modern-computers-59d9a6d1.md",
+      "status": "published",
+      "briefed_at": "2026-10-12T00:56:30.773285Z",
+      "candidate_score": 60.0
+    },
+    "f059340783d441bc0dfbc264e3dc8d9ba8522401f250d3ded3feb3393f0b89e7": {
+      "normalized_url": "https://www.nyc.gov/main/click-to-cancel",
+      "title_fingerprint": "nyc s click to cancel rule is now in effect",
+      "service_key": "hacker-news",
+      "title": "NYC's \"Click to Cancel\" rule is now in effect",
+      "article_doc_path": "docs/services/hacker-news/2026-10-nyc-s-click-to-cancel-rule-is-now-in-effect-f0593407.md",
+      "status": "published",
+      "briefed_at": "2026-10-12T00:56:30.773297Z",
+      "candidate_score": 60.0
     }
   }
 }
