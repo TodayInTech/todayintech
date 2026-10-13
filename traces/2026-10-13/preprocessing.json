@@ -1,0 +1,253 @@
+{
+  "generated_at": "2026-10-13T02:48:47.937038+00:00",
+  "generated_for": "2026-10-13",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "f9332c7ccd6ae84b4e8e3f52f0bc3fadca28c0be",
+  "github_run_id": "38338585070",
+  "service_count": 5,
+  "duration_ms": 6,
+  "raw_count": 120,
+  "candidate_count": 12,
+  "excluded_count": 108,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 2,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 22,
+      "output_count": 12,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:91597643c193a9c7",
+          "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+          "url_hash": "91597643c193a9c7e9c907164a09265d1b6cd5df8a0598ba02dae9e04ba2e194",
+          "suggested_doc_key": "2026-10-github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebas-91597643",
+          "suggested_article_path": "docs/services/github-blog/2026-10-github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebas-91597643.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:35af64855246b34f",
+          "title": "Applying technology to understand and treat disease",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/health/ai-health-research",
+          "url_hash": "35af64855246b34fb8cc749235330671ab7beed8e983294c7293f8163572e983",
+          "suggested_doc_key": "2026-10-applying-technology-to-understand-and-treat-disease-35af6485",
+          "suggested_article_path": "docs/services/google-blog/2026-10-applying-technology-to-understand-and-treat-disease-35af6485.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:f4c98356fbd17919",
+          "title": "AI is a tool and using it well takes skill",
+          "normalized_url": "https://yyhh.org/blog/2026/10/ai-is-a-tool",
+          "url_hash": "f4c98356fbd1791920c8b12095f2528c8c4b15e23df10649e7a024b3374a6fb9",
+          "suggested_doc_key": "2026-10-ai-is-a-tool-and-using-it-well-takes-skill-f4c98356",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-ai-is-a-tool-and-using-it-well-takes-skill-f4c98356.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 246점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 215개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:93481ec2e3a9d5b0",
+          "title": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
+          "normalized_url": "https://news.ycombinator.com/item?id=50059096",
+          "url_hash": "93481ec2e3a9d5b087b696ce15ad93aea9f9a650fcdc7f822b6de120e1b35cc0",
+          "suggested_doc_key": "2026-10-launch-hn-agent37-yc-f26-low-cost-agent-sandboxes-for-running-agents-93481ec2",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-launch-hn-agent37-yc-f26-low-cost-agent-sandboxes-for-running-agents-93481ec2.md",
+          "candidate_score": 60.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 109점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 71개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:99e810c974b3b034",
+          "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "normalized_url": "https://github.com/openai/codex/issues/48195",
+          "url_hash": "99e810c974b3b03406fb2cde0675d0d04dccf07854d795b263f7c813c091da4c",
+          "suggested_doc_key": "2026-10-codex-cli-installs-a-persistent-self-updating-background-daemon-by-defau-99e810c9",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-codex-cli-installs-a-persistent-self-updating-background-daemon-by-defau-99e810c9.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 478점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 244개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:1ca80a3b20c064d4",
+          "title": "Thinking will become a hobby",
+          "normalized_url": "https://www.spinellis.gr/blog/20261008",
+          "url_hash": "1ca80a3b20c064d4eba20f4772103dff361468c6582435fc396b12f97baaf30d",
+          "suggested_doc_key": "2026-10-thinking-will-become-a-hobby-1ca80a3b",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-thinking-will-become-a-hobby-1ca80a3b.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 237점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 317개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7758c02a15e38393",
+          "title": "Muse Wonder",
+          "normalized_url": "https://research.meta.ai/blog/muse-wonder",
+          "url_hash": "7758c02a15e383930365eec29ec6665c26a186432d9cd464ff4ee010f8e3708e",
+          "suggested_doc_key": "2026-10-muse-wonder-7758c02a",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-muse-wonder-7758c02a.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 536점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 299개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 50
+      }
+    }
+  ]
+}
