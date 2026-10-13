@@ -10570,6 +10570,66 @@
       "status": "published",
       "briefed_at": "2026-10-12T00:56:30.773297Z",
       "candidate_score": 60.0
+    },
+    "91597643c193a9c7e9c907164a09265d1b6cd5df8a0598ba02dae9e04ba2e194": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+      "title_fingerprint": "github copilot app for beginners how to teach copilot about your codebase",
+      "service_key": "github-blog",
+      "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "article_doc_path": "docs/services/github-blog/2026-10-github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebas-91597643.md",
+      "status": "published",
+      "briefed_at": "2026-10-13T02:50:16.327566Z",
+      "candidate_score": 42.0
+    },
+    "35af64855246b34fb8cc749235330671ab7beed8e983294c7293f8163572e983": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/health/ai-health-research",
+      "title_fingerprint": "applying technology to understand and treat disease",
+      "service_key": "google-blog",
+      "title": "Applying technology to understand and treat disease",
+      "article_doc_path": "docs/services/google-blog/2026-10-applying-technology-to-understand-and-treat-disease-35af6485.md",
+      "status": "published",
+      "briefed_at": "2026-10-13T02:50:16.327602Z",
+      "candidate_score": 36.0
+    },
+    "f4c98356fbd1791920c8b12095f2528c8c4b15e23df10649e7a024b3374a6fb9": {
+      "normalized_url": "https://yyhh.org/blog/2026/10/ai-is-a-tool",
+      "title_fingerprint": "ai is a tool and using it well takes skill",
+      "service_key": "hacker-news",
+      "title": "AI is a tool and using it well takes skill",
+      "article_doc_path": "docs/services/hacker-news/2026-10-ai-is-a-tool-and-using-it-well-takes-skill-f4c98356.md",
+      "status": "published",
+      "briefed_at": "2026-10-13T02:50:16.327609Z",
+      "candidate_score": 64.0
+    },
+    "93481ec2e3a9d5b087b696ce15ad93aea9f9a650fcdc7f822b6de120e1b35cc0": {
+      "normalized_url": "https://news.ycombinator.com/item?id=50059096",
+      "title_fingerprint": "launch hn agent37 yc f26 low cost agent sandboxes for running agents",
+      "service_key": "hacker-news",
+      "title": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
+      "article_doc_path": "docs/services/hacker-news/2026-10-launch-hn-agent37-yc-f26-low-cost-agent-sandboxes-for-running-agents-93481ec2.md",
+      "status": "published",
+      "briefed_at": "2026-10-13T02:50:16.327613Z",
+      "candidate_score": 60.1
+    },
+    "99e810c974b3b03406fb2cde0675d0d04dccf07854d795b263f7c813c091da4c": {
+      "normalized_url": "https://github.com/openai/codex/issues/48195",
+      "title_fingerprint": "codex cli installs a persistent self updating background daemon by default",
+      "service_key": "hacker-news",
+      "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+      "article_doc_path": "docs/services/hacker-news/2026-10-codex-cli-installs-a-persistent-self-updating-background-daemon-by-defau-99e810c9.md",
+      "status": "published",
+      "briefed_at": "2026-10-13T02:50:16.327616Z",
+      "candidate_score": 60.0
+    },
+    "1ca80a3b20c064d4eba20f4772103dff361468c6582435fc396b12f97baaf30d": {
+      "normalized_url": "https://www.spinellis.gr/blog/20261008",
+      "title_fingerprint": "thinking will become a hobby",
+      "service_key": "hacker-news",
+      "title": "Thinking will become a hobby",
+      "article_doc_path": "docs/services/hacker-news/2026-10-thinking-will-become-a-hobby-1ca80a3b.md",
+      "status": "published",
+      "briefed_at": "2026-10-13T02:50:16.327619Z",
+      "candidate_score": 60.0
     }
   }
 }
