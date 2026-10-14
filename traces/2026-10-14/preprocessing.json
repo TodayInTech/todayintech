@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-10-14T00:49:48.342763+00:00",
+  "generated_for": "2026-10-14",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "415be3ecd0a728f481956b56ea14c2b53aab1705",
+  "github_run_id": "38492213653",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 24,
+      "excluded_count": 96,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 96
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 24,
+      "output_count": 24,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 24,
+      "output_count": 15,
+      "excluded_count": 9,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 9
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:532983178914e715",
+          "title": "GitHub’s model for secret detection: Finding more secrets with less noise",
+          "normalized_url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise",
+          "url_hash": "532983178914e7154ea96fb14552d2a1dd60c506a976febd1a585c4ef13d6800",
+          "suggested_doc_key": "2026-10-github-s-model-for-secret-detection-finding-more-secrets-with-less-noise-53298317",
+          "suggested_article_path": "docs/services/github-blog/2026-10-github-s-model-for-secret-detection-finding-more-secrets-with-less-noise-53298317.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:11e9f2eebcc1194b",
+          "title": "Gemini 4 Argon is now available for developers.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon",
+          "url_hash": "11e9f2eebcc1194bfc39723af46777018d298552ec3120f545ed4cf061351271",
+          "suggested_doc_key": "2026-10-gemini-4-argon-is-now-available-for-developers-11e9f2ee",
+          "suggested_article_path": "docs/services/google-blog/2026-10-gemini-4-argon-is-now-available-for-developers-11e9f2ee.md",
+          "candidate_score": 45.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:0fb6a7bf6fd66852",
+          "title": "Developing Gemini 4 Argon responsibly and safely",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security",
+          "url_hash": "0fb6a7bf6fd66852ffc35a85c981598fb28916e5f15f4061e5e6f40fa5a4420a",
+          "suggested_doc_key": "2026-10-developing-gemini-4-argon-responsibly-and-safely-0fb6a7bf",
+          "suggested_article_path": "docs/services/google-blog/2026-10-developing-gemini-4-argon-responsibly-and-safely-0fb6a7bf.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:ed1be8ea5f53c737",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon",
+          "url_hash": "ed1be8ea5f53c7373a9c44e9eac0273d1adbb7107c6453b9da7b6d9e6a52dfb0",
+          "suggested_doc_key": "2026-10-gemini-4-argon-built-to-solve-your-hardest-problems-ed1be8ea",
+          "suggested_article_path": "docs/services/google-blog/2026-10-gemini-4-argon-built-to-solve-your-hardest-problems-ed1be8ea.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:020dc58f2fcbb5ec",
+          "title": "OpenAI engineer arrested in bugging of executive conference room",
+          "normalized_url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room",
+          "url_hash": "020dc58f2fcbb5ec65c7930e1a78a75ec6f05ca33f53847ed373a167138c9051",
+          "suggested_doc_key": "2026-10-openai-engineer-arrested-in-bugging-of-executive-conference-room-020dc58f",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-openai-engineer-arrested-in-bugging-of-executive-conference-room-020dc58f.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 370점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 337개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a52daacfcae86727",
+          "title": "Show HN: Guitoro, a virtual guitar you strum with your keyboard",
+          "normalized_url": "https://guitoro.com/",
+          "url_hash": "a52daacfcae867271ea56a23a9fa63988a9dac69a3cad79f8c62e4039f6c3ef6",
+          "suggested_doc_key": "2026-10-show-hn-guitoro-a-virtual-guitar-you-strum-with-your-keyboard-a52daacf",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-show-hn-guitoro-a-virtual-guitar-you-strum-with-your-keyboard-a52daacf.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 233점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 78개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:56ee56e48ed29025",
+          "title": "Redesigning source control at Anthropic",
+          "normalized_url": "https://www.anthropic.com/engineering/redesigning-source-control",
+          "url_hash": "56ee56e48ed29025cce52423c0bd8f143d1e4288abebf73af8cff8fd2f7d9fd5",
+          "suggested_doc_key": "2026-10-redesigning-source-control-at-anthropic-56ee56e4",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-redesigning-source-control-at-anthropic-56ee56e4.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 500점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 499개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:52a9ce5ab88212e3",
+          "title": "I posted to HN, and then my website was flooded with AI bot traffic",
+          "normalized_url": "https://www.sammystraus.com/",
+          "url_hash": "52a9ce5ab88212e3cd79e74ae972b262f10e6552ace9e89833390c87d587571d",
+          "suggested_doc_key": "2026-10-i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic-52a9ce5a",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic-52a9ce5a.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 233점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 144개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e673309e73619b38",
+          "title": "Thunderbird for iOS",
+          "normalized_url": "https://blog.thunderbird.net/2026/10/thunderbird-for-ios-a-first-look-at-the-native-iphone-email-app-in-development",
+          "url_hash": "e673309e73619b3851d6c35a79fcf1484a8a0a1ef4fffd3d4a94f9c38569d9ab",
+          "suggested_doc_key": "2026-10-thunderbird-for-ios-e673309e",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-thunderbird-for-ios-e673309e.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 325점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 138개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:8d45898e533e591d",
+          "title": "Higgsfield takes AI video from 1 minute to over 10",
+          "normalized_url": "https://openai.com/index/higgsfield-longer-videos-voice",
+          "url_hash": "8d45898e533e591d4241f4c1821bbb7b4d6f05ca764b796c7fbe29eb68dd7bc4",
+          "suggested_doc_key": "2026-10-higgsfield-takes-ai-video-from-1-minute-to-over-10-8d45898e",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-higgsfield-takes-ai-video-from-1-minute-to-over-10-8d45898e.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 49
+      }
+    }
+  ]
+}
