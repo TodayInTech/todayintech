@@ -10630,6 +10630,96 @@
       "status": "published",
       "briefed_at": "2026-10-13T02:50:16.327619Z",
       "candidate_score": 60.0
+    },
+    "532983178914e7154ea96fb14552d2a1dd60c506a976febd1a585c4ef13d6800": {
+      "normalized_url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise",
+      "title_fingerprint": "github s model for secret detection finding more secrets with less noise",
+      "service_key": "github-blog",
+      "title": "GitHub’s model for secret detection: Finding more secrets with less noise",
+      "article_doc_path": "docs/services/github-blog/2026-10-github-s-model-for-secret-detection-finding-more-secrets-with-less-noise-53298317.md",
+      "status": "published",
+      "briefed_at": "2026-10-14T00:51:53.456978Z",
+      "candidate_score": 42.0
+    },
+    "11e9f2eebcc1194bfc39723af46777018d298552ec3120f545ed4cf061351271": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon",
+      "title_fingerprint": "gemini 4 argon is now available for developers",
+      "service_key": "google-blog",
+      "title": "Gemini 4 Argon is now available for developers.",
+      "article_doc_path": "docs/services/google-blog/2026-10-gemini-4-argon-is-now-available-for-developers-11e9f2ee.md",
+      "status": "published",
+      "briefed_at": "2026-10-14T00:51:53.457013Z",
+      "candidate_score": 45.0
+    },
+    "0fb6a7bf6fd66852ffc35a85c981598fb28916e5f15f4061e5e6f40fa5a4420a": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security",
+      "title_fingerprint": "developing gemini 4 argon responsibly and safely",
+      "service_key": "google-blog",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "article_doc_path": "docs/services/google-blog/2026-10-developing-gemini-4-argon-responsibly-and-safely-0fb6a7bf.md",
+      "status": "published",
+      "briefed_at": "2026-10-14T00:51:53.457023Z",
+      "candidate_score": 36.0
+    },
+    "ed1be8ea5f53c7373a9c44e9eac0273d1adbb7107c6453b9da7b6d9e6a52dfb0": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon",
+      "title_fingerprint": "gemini 4 argon built to solve your hardest problems",
+      "service_key": "google-blog",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "article_doc_path": "docs/services/google-blog/2026-10-gemini-4-argon-built-to-solve-your-hardest-problems-ed1be8ea.md",
+      "status": "published",
+      "briefed_at": "2026-10-14T00:51:53.457031Z",
+      "candidate_score": 34.0
+    },
+    "020dc58f2fcbb5ec65c7930e1a78a75ec6f05ca33f53847ed373a167138c9051": {
+      "normalized_url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room",
+      "title_fingerprint": "openai engineer arrested in bugging of executive conference room",
+      "service_key": "hacker-news",
+      "title": "OpenAI engineer arrested in bugging of executive conference room",
+      "article_doc_path": "docs/services/hacker-news/2026-10-openai-engineer-arrested-in-bugging-of-executive-conference-room-020dc58f.md",
+      "status": "published",
+      "briefed_at": "2026-10-14T00:51:53.457039Z",
+      "candidate_score": 64.0
+    },
+    "a52daacfcae867271ea56a23a9fa63988a9dac69a3cad79f8c62e4039f6c3ef6": {
+      "normalized_url": "https://guitoro.com/",
+      "title_fingerprint": "show hn guitoro a virtual guitar you strum with your keyboard",
+      "service_key": "hacker-news",
+      "title": "Show HN: Guitoro, a virtual guitar you strum with your keyboard",
+      "article_doc_path": "docs/services/hacker-news/2026-10-show-hn-guitoro-a-virtual-guitar-you-strum-with-your-keyboard-a52daacf.md",
+      "status": "published",
+      "briefed_at": "2026-10-14T00:51:53.457045Z",
+      "candidate_score": 61.0
+    },
+    "56ee56e48ed29025cce52423c0bd8f143d1e4288abebf73af8cff8fd2f7d9fd5": {
+      "normalized_url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "title_fingerprint": "redesigning source control at anthropic",
+      "service_key": "hacker-news",
+      "title": "Redesigning source control at Anthropic",
+      "article_doc_path": "docs/services/hacker-news/2026-10-redesigning-source-control-at-anthropic-56ee56e4.md",
+      "status": "published",
+      "briefed_at": "2026-10-14T00:51:53.457051Z",
+      "candidate_score": 60.0
+    },
+    "52a9ce5ab88212e3cd79e74ae972b262f10e6552ace9e89833390c87d587571d": {
+      "normalized_url": "https://www.sammystraus.com/",
+      "title_fingerprint": "i posted to hn and then my website was flooded with ai bot traffic",
+      "service_key": "hacker-news",
+      "title": "I posted to HN, and then my website was flooded with AI bot traffic",
+      "article_doc_path": "docs/services/hacker-news/2026-10-i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic-52a9ce5a.md",
+      "status": "published",
+      "briefed_at": "2026-10-14T00:51:53.457058Z",
+      "candidate_score": 60.0
+    },
+    "8d45898e533e591d4241f4c1821bbb7b4d6f05ca764b796c7fbe29eb68dd7bc4": {
+      "normalized_url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "title_fingerprint": "higgsfield takes ai video from 1 minute to over 10",
+      "service_key": "openai-blog",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "article_doc_path": "docs/services/openai-blog/2026-10-higgsfield-takes-ai-video-from-1-minute-to-over-10-8d45898e.md",
+      "status": "published",
+      "briefed_at": "2026-10-14T00:51:53.457063Z",
+      "candidate_score": 39.0
     }
   }
 }
