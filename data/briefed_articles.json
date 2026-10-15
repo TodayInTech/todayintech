@@ -10720,6 +10720,146 @@
       "status": "published",
       "briefed_at": "2026-10-14T00:51:53.457063Z",
       "candidate_score": 39.0
+    },
+    "ad577cc4d385593cb7c01bf987f497d37cde5b45e9e2ed8312c055180c24ff3e": {
+      "normalized_url": "https://www.anthropic.com/news/2026-us-midterms",
+      "title_fingerprint": "preparing for the 2026 us midterms",
+      "service_key": "anthropic-blog",
+      "title": "Preparing for the 2026 US midterms",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-preparing-for-the-2026-us-midterms-ad577cc4.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139125Z",
+      "candidate_score": 30.0
+    },
+    "241a0eb7150b75c2c4dd1c670aeff735965e9595a15d3b8c006bc41c1279457d": {
+      "normalized_url": "https://www.anthropic.com/news/singapore-office-opening",
+      "title_fingerprint": "singapore office and government mou anthropic",
+      "service_key": "anthropic-blog",
+      "title": "Singapore office and government MOU | Anthropic",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-singapore-office-and-government-mou-anthropic-241a0eb7.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139163Z",
+      "candidate_score": 30.0
+    },
+    "5d15c391e24287d68058dc537aeeeb59aa41360b83b329adf831d54dd40b62fb": {
+      "normalized_url": "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers",
+      "title_fingerprint": "from 2 500 requests to 24 rebuilding star history without the stargazers",
+      "service_key": "github-blog",
+      "title": "From 2,500 requests to 24: Rebuilding star history without the stargazers",
+      "article_doc_path": "docs/services/github-blog/2026-10-from-2-500-requests-to-24-rebuilding-star-history-without-the-stargazers-5d15c391.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139178Z",
+      "candidate_score": 41.0
+    },
+    "abaa4fc3e5e2f32da5feb93ed4f8da3c1b7f9adafd697ed54fa79478c3a7eec1": {
+      "normalized_url": "https://github.blog/news-insights/company-news/github-availability-report-september-2026",
+      "title_fingerprint": "github availability report september 2026",
+      "service_key": "github-blog",
+      "title": "GitHub availability report: September 2026",
+      "article_doc_path": "docs/services/github-blog/2026-10-github-availability-report-september-2026-abaa4fc3.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139187Z",
+      "candidate_score": 37.0
+    },
+    "8c997f8b183458ce9e4466789e65b0411a50e41f209d34473838550d3bc1aed6": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models",
+      "title_fingerprint": "we re powering european scientific discovery with advanced ai compute and frontier models",
+      "service_key": "google-blog",
+      "title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
+      "article_doc_path": "docs/services/google-blog/2026-10-we-re-powering-european-scientific-discovery-with-advanced-ai-compute-an-8c997f8b.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139193Z",
+      "candidate_score": 40.0
+    },
+    "3ddecbe234eb639b578e17b6de622c8396858adac456d3090f8e37c46b97181b": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/research/research-capabilities-intelligence-2026",
+      "title_fingerprint": "research 2026 novel capabilities and intelligence",
+      "service_key": "google-blog",
+      "title": "Research@ 2026: Novel capabilities and intelligence",
+      "article_doc_path": "docs/services/google-blog/2026-10-research-2026-novel-capabilities-and-intelligence-3ddecbe2.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139198Z",
+      "candidate_score": 36.0
+    },
+    "3edeaa8d7764aa277fd52cfb351208e00ccbe8f89c8ee92faf6329aed447d742": {
+      "normalized_url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "title_fingerprint": "containment and monitoring failures are to blame for ai hacking reports experts",
+      "service_key": "hacker-news",
+      "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+      "article_doc_path": "docs/services/hacker-news/2026-10-containment-and-monitoring-failures-are-to-blame-for-ai-hacking-reports-3edeaa8d.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139203Z",
+      "candidate_score": 70.0
+    },
+    "037a02a278580c554a8037776f1ca31a48bdbb0e74b1e8e55d994ffb4f6bfe46": {
+      "normalized_url": "https://anoma.ly/notes/opencode-2-0",
+      "title_fingerprint": "opencode 2 0",
+      "service_key": "hacker-news",
+      "title": "OpenCode 2.0",
+      "article_doc_path": "docs/services/hacker-news/2026-10-opencode-2-0-037a02a2.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139207Z",
+      "candidate_score": 66.0
+    },
+    "c5372ca3c1ac28b344aab5d535bba6a228db187997cf84d05280f23de72c4d29": {
+      "normalized_url": "https://sunshowers.io/posts/anthropic-mononoke",
+      "title_fingerprint": "anthropic s scion is heavily inspired by mononoke",
+      "service_key": "hacker-news",
+      "title": "Anthropic's Scion is heavily inspired by Mononoke",
+      "article_doc_path": "docs/services/hacker-news/2026-10-anthropic-s-scion-is-heavily-inspired-by-mononoke-c5372ca3.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139212Z",
+      "candidate_score": 65.0
+    },
+    "5225b848d44727b158cebd018d549beab1a43b479a2152dfd972770b17a6c701": {
+      "normalized_url": "https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer",
+      "title_fingerprint": "things to know when you get cancer 2026 edition",
+      "service_key": "hacker-news",
+      "title": "Things to know when you get cancer – 2026 Edition",
+      "article_doc_path": "docs/services/hacker-news/2026-10-things-to-know-when-you-get-cancer-2026-edition-5225b848.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139217Z",
+      "candidate_score": 62.0
+    },
+    "57c3309db5bedcdec4e0532a65e896970f7cad30f5011350fb2a735b14cb8cdd": {
+      "normalized_url": "https://openai.com/index/amp-beyond-coding",
+      "title_fingerprint": "amp puts ai agents to work beyond code with openai models",
+      "service_key": "openai-blog",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "article_doc_path": "docs/services/openai-blog/2026-10-amp-puts-ai-agents-to-work-beyond-code-with-openai-models-57c3309d.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139221Z",
+      "candidate_score": 49.0
+    },
+    "a8b8c31de898145e14c82e5a132c6ade438a779372caca6da84483874bea0325": {
+      "normalized_url": "https://openai.com/index/third-moment-research",
+      "title_fingerprint": "how third moment research runs 10 000 agents for 36 hours",
+      "service_key": "openai-blog",
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-third-moment-research-runs-10-000-agents-for-36-hours-a8b8c31d.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139226Z",
+      "candidate_score": 47.0
+    },
+    "94ee28b93f9d2d830319b5f76c0aa72745ffecd9af8552d923f3dc0ab202dce3": {
+      "normalized_url": "https://openai.com/index/block-ai-powered-security",
+      "title_fingerprint": "how block is building ai powered security with openai technology",
+      "service_key": "openai-blog",
+      "title": "How Block is building AI-powered security with OpenAI technology",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-block-is-building-ai-powered-security-with-openai-technology-94ee28b9.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139231Z",
+      "candidate_score": 41.0
+    },
+    "200a5d3dd39c6bfb7a20192865ba844eee2602b52233f3070983235051951aad": {
+      "normalized_url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "title_fingerprint": "the eu s next chapter in ai is agentic",
+      "service_key": "openai-blog",
+      "title": "The EU’s next chapter in AI is agentic",
+      "article_doc_path": "docs/services/openai-blog/2026-10-the-eu-s-next-chapter-in-ai-is-agentic-200a5d3d.md",
+      "status": "published",
+      "briefed_at": "2026-10-15T00:21:16.139235Z",
+      "candidate_score": 39.0
     }
   }
 }
