@@ -1,0 +1,384 @@
+{
+  "generated_at": "2026-10-15T00:16:17.834767+00:00",
+  "generated_for": "2026-10-15",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "83401209e586f73acb552385416f2caba8ba1372",
+  "github_run_id": "38658903972",
+  "service_count": 5,
+  "duration_ms": 13,
+  "raw_count": 120,
+  "candidate_count": 21,
+  "excluded_count": 99,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 31,
+      "excluded_count": 89,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 89
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 31,
+      "output_count": 31,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 31,
+      "output_count": 31,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 31,
+      "output_count": 21,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:ad577cc4d385593c",
+          "title": "Preparing for the 2026 US midterms",
+          "normalized_url": "https://www.anthropic.com/news/2026-us-midterms",
+          "url_hash": "ad577cc4d385593cb7c01bf987f497d37cde5b45e9e2ed8312c055180c24ff3e",
+          "suggested_doc_key": "2026-10-preparing-for-the-2026-us-midterms-ad577cc4",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-preparing-for-the-2026-us-midterms-ad577cc4.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:241a0eb7150b75c2",
+          "title": "Singapore office and government MOU | Anthropic",
+          "normalized_url": "https://www.anthropic.com/news/singapore-office-opening",
+          "url_hash": "241a0eb7150b75c2c4dd1c670aeff735965e9595a15d3b8c006bc41c1279457d",
+          "suggested_doc_key": "2026-10-singapore-office-and-government-mou-anthropic-241a0eb7",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-singapore-office-and-government-mou-anthropic-241a0eb7.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 2,
+      "excluded_count": 8,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:5d15c391e24287d6",
+          "title": "From 2,500 requests to 24: Rebuilding star history without the stargazers",
+          "normalized_url": "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers",
+          "url_hash": "5d15c391e24287d68058dc537aeeeb59aa41360b83b329adf831d54dd40b62fb",
+          "suggested_doc_key": "2026-10-from-2-500-requests-to-24-rebuilding-star-history-without-the-stargazers-5d15c391",
+          "suggested_article_path": "docs/services/github-blog/2026-10-from-2-500-requests-to-24-rebuilding-star-history-without-the-stargazers-5d15c391.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:abaa4fc3e5e2f32d",
+          "title": "GitHub availability report: September 2026",
+          "normalized_url": "https://github.blog/news-insights/company-news/github-availability-report-september-2026",
+          "url_hash": "abaa4fc3e5e2f32da5feb93ed4f8da3c1b7f9adafd697ed54fa79478c3a7eec1",
+          "suggested_doc_key": "2026-10-github-availability-report-september-2026-abaa4fc3",
+          "suggested_article_path": "docs/services/github-blog/2026-10-github-availability-report-september-2026-abaa4fc3.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 8
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:8c997f8b183458ce",
+          "title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models",
+          "url_hash": "8c997f8b183458ce9e4466789e65b0411a50e41f209d34473838550d3bc1aed6",
+          "suggested_doc_key": "2026-10-we-re-powering-european-scientific-discovery-with-advanced-ai-compute-an-8c997f8b",
+          "suggested_article_path": "docs/services/google-blog/2026-10-we-re-powering-european-scientific-discovery-with-advanced-ai-compute-an-8c997f8b.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:3ddecbe234eb639b",
+          "title": "Research@ 2026: Novel capabilities and intelligence",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/research/research-capabilities-intelligence-2026",
+          "url_hash": "3ddecbe234eb639b578e17b6de622c8396858adac456d3090f8e37c46b97181b",
+          "suggested_doc_key": "2026-10-research-2026-novel-capabilities-and-intelligence-3ddecbe2",
+          "suggested_article_path": "docs/services/google-blog/2026-10-research-2026-novel-capabilities-and-intelligence-3ddecbe2.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:3edeaa8d7764aa27",
+          "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+          "normalized_url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+          "url_hash": "3edeaa8d7764aa277fd52cfb351208e00ccbe8f89c8ee92faf6329aed447d742",
+          "suggested_doc_key": "2026-10-containment-and-monitoring-failures-are-to-blame-for-ai-hacking-reports-3edeaa8d",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-containment-and-monitoring-failures-are-to-blame-for-ai-hacking-reports-3edeaa8d.md",
+          "candidate_score": 70.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 816점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 439개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:037a02a278580c55",
+          "title": "OpenCode 2.0",
+          "normalized_url": "https://anoma.ly/notes/opencode-2-0",
+          "url_hash": "037a02a278580c554a8037776f1ca31a48bdbb0e74b1e8e55d994ffb4f6bfe46",
+          "suggested_doc_key": "2026-10-opencode-2-0-037a02a2",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-opencode-2-0-037a02a2.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 230점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 88개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c5372ca3c1ac28b3",
+          "title": "Anthropic's Scion is heavily inspired by Mononoke",
+          "normalized_url": "https://sunshowers.io/posts/anthropic-mononoke",
+          "url_hash": "c5372ca3c1ac28b344aab5d535bba6a228db187997cf84d05280f23de72c4d29",
+          "suggested_doc_key": "2026-10-anthropic-s-scion-is-heavily-inspired-by-mononoke-c5372ca3",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-anthropic-s-scion-is-heavily-inspired-by-mononoke-c5372ca3.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 218점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 97개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5225b848d44727b1",
+          "title": "Things to know when you get cancer – 2026 Edition",
+          "normalized_url": "https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer",
+          "url_hash": "5225b848d44727b158cebd018d549beab1a43b479a2152dfd972770b17a6c701",
+          "suggested_doc_key": "2026-10-things-to-know-when-you-get-cancer-2026-edition-5225b848",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-things-to-know-when-you-get-cancer-2026-edition-5225b848.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 657점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 174개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:fdfe8d477a75fd4f",
+          "title": "Suicide rates highest ever among middle-aged men",
+          "normalized_url": "https://www.telegraph.co.uk/news/2026/10/13/suicide-rates-highest-ever-among-middle-aged-men",
+          "url_hash": "fdfe8d477a75fd4fd150e8550cd15464fb437f8505c71452c76a8bf7ea292b03",
+          "suggested_doc_key": "2026-10-suicide-rates-highest-ever-among-middle-aged-men-fdfe8d47",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-suicide-rates-highest-ever-among-middle-aged-men-fdfe8d47.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 220점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 287개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:57c3309db5bedcde",
+          "title": "Amp puts AI agents to work beyond code with OpenAI models",
+          "normalized_url": "https://openai.com/index/amp-beyond-coding",
+          "url_hash": "57c3309db5bedcdec4e0532a65e896970f7cad30f5011350fb2a735b14cb8cdd",
+          "suggested_doc_key": "2026-10-amp-puts-ai-agents-to-work-beyond-code-with-openai-models-57c3309d",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-amp-puts-ai-agents-to-work-beyond-code-with-openai-models-57c3309d.md",
+          "candidate_score": 49.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:a8b8c31de898145e",
+          "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+          "normalized_url": "https://openai.com/index/third-moment-research",
+          "url_hash": "a8b8c31de898145e14c82e5a132c6ade438a779372caca6da84483874bea0325",
+          "suggested_doc_key": "2026-10-how-third-moment-research-runs-10-000-agents-for-36-hours-a8b8c31d",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-how-third-moment-research-runs-10-000-agents-for-36-hours-a8b8c31d.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:94ee28b93f9d2d83",
+          "title": "How Block is building AI-powered security with OpenAI technology",
+          "normalized_url": "https://openai.com/index/block-ai-powered-security",
+          "url_hash": "94ee28b93f9d2d830319b5f76c0aa72745ffecd9af8552d923f3dc0ab202dce3",
+          "suggested_doc_key": "2026-10-how-block-is-building-ai-powered-security-with-openai-technology-94ee28b9",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-how-block-is-building-ai-powered-security-with-openai-technology-94ee28b9.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:200a5d3dd39c6bfb",
+          "title": "The EU’s next chapter in AI is agentic",
+          "normalized_url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+          "url_hash": "200a5d3dd39c6bfb7a20192865ba844eee2602b52233f3070983235051951aad",
+          "suggested_doc_key": "2026-10-the-eu-s-next-chapter-in-ai-is-agentic-200a5d3d",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-the-eu-s-next-chapter-in-ai-is-agentic-200a5d3d.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:004cd593adabcd24",
+          "title": "SentinelOne cuts malware analysis from weeks to hours",
+          "normalized_url": "https://openai.com/index/sentinelone",
+          "url_hash": "004cd593adabcd24c97d9e96a166c251028359017ae1a6a5fbaa8f542a33706f",
+          "suggested_doc_key": "2026-10-sentinelone-cuts-malware-analysis-from-weeks-to-hours-004cd593",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-sentinelone-cuts-malware-analysis-from-weeks-to-hours-004cd593.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 45
+      }
+    }
+  ]
+}
