@@ -5,7 +5,7 @@ sidebar_label: Today in Tech
 
 # Today in Tech
 
-Generated for: 2026-06-24
+<DateCard value="2026-06-24" label="Updated" />
 
 ## Recommended Articles
 
