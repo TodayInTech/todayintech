@@ -10860,6 +10860,156 @@
       "status": "published",
       "briefed_at": "2026-10-15T00:21:16.139235Z",
       "candidate_score": 39.0
+    },
+    "c3f9aa1e97f35f2465d0af14f3b196ebc11ad7498a8811b869b071034882ea93": {
+      "normalized_url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "title_fingerprint": "anthropic update on independent evaluators",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic update on independent evaluators",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-anthropic-update-on-independent-evaluators-c3f9aa1e.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328053Z",
+      "candidate_score": 30.0
+    },
+    "45d95f59d051d70aad29fb9a13d19de9cebe8e19f3c3a796a3c994f9a8e1bec6": {
+      "normalized_url": "https://www.anthropic.com/news/offering-expanded-claude-access-across-all-three-branches-of-government",
+      "title_fingerprint": "offering expanded claude access across all three branches of government",
+      "service_key": "anthropic-blog",
+      "title": "Offering expanded Claude access across all three branches of government",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-offering-expanded-claude-access-across-all-three-branches-of-government-45d95f59.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328097Z",
+      "candidate_score": 30.0
+    },
+    "feaefaa2e2292ba8ee0af1f5ba945d86bde107dd0fa3c05afc85a94711e186b8": {
+      "normalized_url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence",
+      "title_fingerprint": "the next developer interface is ambient intelligence",
+      "service_key": "github-blog",
+      "title": "The next developer interface is ambient intelligence",
+      "article_doc_path": "docs/services/github-blog/2026-10-the-next-developer-interface-is-ambient-intelligence-feaefaa2.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328108Z",
+      "candidate_score": 42.0
+    },
+    "1281d0f6e7757847581ee7554d73fe86b1f6e03ec8e8d9c8ba1b92d7c7c4537d": {
+      "normalized_url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org",
+      "title_fingerprint": "staying evergreen how we automated secure access and repo hygiene in a shared org",
+      "service_key": "github-blog",
+      "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
+      "article_doc_path": "docs/services/github-blog/2026-10-staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-s-1281d0f6.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328114Z",
+      "candidate_score": 41.0
+    },
+    "9f330545df8b1651d7629f814c4e4080b17903a52a99172d74b1b7bdd77c8ee7": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/circle-to-search-android-text-message-scams",
+      "title_fingerprint": "check if a text message is a scam using circle to search",
+      "service_key": "google-blog",
+      "title": "Check if a text message is a scam using Circle to Search.",
+      "article_doc_path": "docs/services/google-blog/2026-10-check-if-a-text-message-is-a-scam-using-circle-to-search-9f330545.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328121Z",
+      "candidate_score": 40.0
+    },
+    "2e61bf69e9562d75cc1723acaccffdd5a7fbdc7ad6f777147f4e23fcfa61fa7c": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synthid-time-best-inventions",
+      "title_fingerprint": "time has named google synthid one of the best inventions of 2026",
+      "service_key": "google-blog",
+      "title": "TIME has named Google SynthID one of the Best Inventions of 2026.",
+      "article_doc_path": "docs/services/google-blog/2026-10-time-has-named-google-synthid-one-of-the-best-inventions-of-2026-2e61bf69.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328127Z",
+      "candidate_score": 38.0
+    },
+    "a7cf7b5743bc41152d85330db6596356bcb8288bf6ce934659facbb845045727": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/quantum-computing/magic-state-cultivation-quantum-computing",
+      "title_fingerprint": "bringing the magic google breaks open a bottleneck in quantum computing",
+      "service_key": "google-blog",
+      "title": "Bringing the magic: Google breaks open a bottleneck in quantum computing",
+      "article_doc_path": "docs/services/google-blog/2026-10-bringing-the-magic-google-breaks-open-a-bottleneck-in-quantum-computing-a7cf7b57.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328133Z",
+      "candidate_score": 36.0
+    },
+    "7c2c7d55b5b0eabab267e7a3e4adf877859619acc81f6c3f138569324c057e7f": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/crisis-resilience-white-paper",
+      "title_fingerprint": "how we re helping the world prepare for natural disasters",
+      "service_key": "google-blog",
+      "title": "How we're helping the world prepare for natural disasters",
+      "article_doc_path": "docs/services/google-blog/2026-10-how-we-re-helping-the-world-prepare-for-natural-disasters-7c2c7d55.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328139Z",
+      "candidate_score": 34.0
+    },
+    "499fcbd081b8b35bf4722856fa5b3b40d9b4794609079e10c8914519004d979e": {
+      "normalized_url": "https://research.meta.ai/blog/muse-spark-open",
+      "title_fingerprint": "muse spark open",
+      "service_key": "hacker-news",
+      "title": "Muse Spark Open",
+      "article_doc_path": "docs/services/hacker-news/2026-10-muse-spark-open-499fcbd0.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328145Z",
+      "candidate_score": 75.0
+    },
+    "50150b2440eae6e7477a1261cead5467f0397a58d2cd1eeb8b11c3f6a23b10ff": {
+      "normalized_url": "https://www.krea.ai/krea-3",
+      "title_fingerprint": "krea 3 an image model built for editing at scale",
+      "service_key": "hacker-news",
+      "title": "Krea 3 – An image model built for editing at scale",
+      "article_doc_path": "docs/services/hacker-news/2026-10-krea-3-an-image-model-built-for-editing-at-scale-50150b24.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328151Z",
+      "candidate_score": 68.0
+    },
+    "b4c2d978e8d5e2c3ffda0ad6c8e7374caf381f7100cb30386a6b4fdd50d77de2": {
+      "normalized_url": "https://viceconsole.fyi/blog/2026/10/10/what-i-self-host",
+      "title_fingerprint": "what i self host",
+      "service_key": "hacker-news",
+      "title": "What I Self-Host",
+      "article_doc_path": "docs/services/hacker-news/2026-10-what-i-self-host-b4c2d978.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328157Z",
+      "candidate_score": 67.5
+    },
+    "4c80085abce7e63dd1569450cec00bac4dae6cfcfe3a5ef50f4cda0ab0370a95": {
+      "normalized_url": "https://respawnfirst.com/steam-client-is-now-faster-than-epics-new-vibe-coded-launcher",
+      "title_fingerprint": "steam client is now faster than epic s new vibe coded launcher",
+      "service_key": "hacker-news",
+      "title": "Steam Client is now faster than Epic's new vibe coded launcher",
+      "article_doc_path": "docs/services/hacker-news/2026-10-steam-client-is-now-faster-than-epic-s-new-vibe-coded-launcher-4c80085a.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328163Z",
+      "candidate_score": 66.0
+    },
+    "32165ee6af8945a5bd83e4231d3e052413905bc21e8455b93c147e03ace99490": {
+      "normalized_url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "title_fingerprint": "bringing gpt rosalind to academic research labs",
+      "service_key": "openai-blog",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "article_doc_path": "docs/services/openai-blog/2026-10-bringing-gpt-rosalind-to-academic-research-labs-32165ee6.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328169Z",
+      "candidate_score": 39.0
+    },
+    "a60f4a701f887ae8f46b94e06646a5fb82b2851c561d6cf99f41823c6f66011d": {
+      "normalized_url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "title_fingerprint": "teaching students to think and learn through questions",
+      "service_key": "openai-blog",
+      "title": "Teaching students to think and learn through questions",
+      "article_doc_path": "docs/services/openai-blog/2026-10-teaching-students-to-think-and-learn-through-questions-a60f4a70.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328175Z",
+      "candidate_score": 38.0
+    },
+    "004cd593adabcd24c97d9e96a166c251028359017ae1a6a5fbaa8f542a33706f": {
+      "normalized_url": "https://openai.com/index/sentinelone",
+      "title_fingerprint": "sentinelone cuts malware analysis from weeks to hours",
+      "service_key": "openai-blog",
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "article_doc_path": "docs/services/openai-blog/2026-10-sentinelone-cuts-malware-analysis-from-weeks-to-hours-004cd593.md",
+      "status": "published",
+      "briefed_at": "2026-10-16T00:07:27.328181Z",
+      "candidate_score": 35.0
     }
   }
 }
