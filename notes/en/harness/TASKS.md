@@ -106,3 +106,25 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 - Refine Agent-based chunk/evidence selection
 - Persist enrichment cache and optimize GitHub Actions cost
 - Add Agent claim-evidence validation
+
+- [x] Refine the UI using B4React as a reference: minimal navigation, neutral cards, frameless SVGs in original brand colors, concise trace copy, accessible metric tooltips, and responsive layouts
+
+- [x] Remove navigation/sidebar dividers, simplify the sidebar to 200px, center content, and unify card/filter/dropdown proportions
+
+- [x] Prevent sidebar shrinking, size empty states consistently, fix dark-theme/current-page style precedence, and add article return links that preserve filters and pagination
+
+- [x] Add the custom trace dropdown, inverse-theme tooltips, text-only selected navbar items without backgrounds or borders, shared DateCard, briefing cards with dates only at the bottom right, and remove introductory slogans
+
+- [x] Remove the all-services icon and unify operations table text/numeric alignment, row spacing, and separators
+
+- [x] Remove duplicate article return links, simplify date styling, and replace table status pills with emphasized text
+
+- [x] Isolate main-list filters from featured/new articles and preserve the results height to prevent filter/pagination scroll jumps
+
+- [x] Center main titles/update dates, service headers, and article headings/metadata; keep main section headings left-aligned
+
+- [x] Center pagination controls within the article list
+
+- [x] Fix briefing card heights and reserve two title lines plus three excerpt lines with truncation
+
+- [x] Show first/last and immediate neighboring pages in pagination

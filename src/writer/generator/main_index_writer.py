@@ -12,13 +12,13 @@ EN_DOCS_PATH = Path("i18n/en/docusaurus-plugin-content-docs/current")
 
 MAIN_LABELS = {
     "ko": {
-        "generated_for": "생성일",
+        "generated_for": "업데이트",
         "featured": "추천 글",
         "new": "새로운 글",
         "list": "브리핑 리스트",
     },
     "en": {
-        "generated_for": "Generated for",
+        "generated_for": "Updated",
         "featured": "Recommended Articles",
         "new": "New Articles",
         "list": "Briefing List",
@@ -84,7 +84,7 @@ def write_main_index_markdown(
         "",
         "# Today in Tech",
         "",
-        f"{labels['generated_for']}: {editorial_result.generated_for}",
+        f'<DateCard value="{editorial_result.generated_for}" label="{labels["generated_for"]}" />',
         "",
         f"## {labels['featured']}",
         "",

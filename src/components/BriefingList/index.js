@@ -1,6 +1,9 @@
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useEffect, useMemo, useRef, useState} from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
+import {useHistory, useLocation} from '@docusaurus/router';
+import DateCard from '@site/src/components/DateCard';
 import ServiceIcon from '@site/src/components/ServiceIcon';
 
 import styles from './styles.module.css';
@@ -12,9 +15,9 @@ const LABELS = {
     period: '기간',
     periods: ['전체', '7일', '14일', '30일'],
     fetchError: '브리핑 데이터를 불러오지 못했습니다',
-    loading: '브리핑 데이터를 불러오는 중입니다.',
+    loading: '브리핑 불러오는 중…',
     unknownDate: '날짜 미상',
-    missingExcerpt: '요약 본문을 추출할 수 없습니다. 상세 문서에서 브리핑 내용을 확인하세요.',
+    missingExcerpt: '브리핑을 열어 내용을 확인하세요.',
     empty: '조건에 맞는 브리핑 글이 없습니다.',
     total: '총',
     items: '개',
@@ -54,9 +57,40 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
   const dataUrl = useBaseUrl('/data/briefings/index.json');
   const [data, setData] = useState(null);
   const [error, setError] = useState('');
-  const [selectedServiceKey, setSelectedServiceKey] = useState(fixedServiceKey);
-  const [periodDays, setPeriodDays] = useState(null);
-  const [page, setPage] = useState(1);
+  const location = useLocation();
+  const history = useHistory();
+  const params = new URLSearchParams(location.search);
+  const pageKey = `${mode}-${fixedServiceKey}-page`;
+  const serviceParam = mode === 'all' ? params.get('service') || fixedServiceKey : fixedServiceKey;
+  const selectedServiceKey = serviceParam;
+  const resultsRef = useRef(null);
+  const [reservedHeight, setReservedHeight] = useState(0);
+  useEffect(() => {
+    let width = window.innerWidth;
+    const resetHeight = () => {
+      if (window.innerWidth !== width) { width = window.innerWidth; setReservedHeight(0); }
+    };
+    window.addEventListener('resize', resetHeight);
+    return () => window.removeEventListener('resize', resetHeight);
+  }, []);
+  const periodDays = PERIOD_DAYS.includes(Number(params.get('days'))) ? Number(params.get('days')) || null : null;
+  const page = Math.max(1, Number.parseInt(params.get(pageKey), 10) || 1);
+  function updateFilters(values) {
+    // Preserve the list's footprint so shorter results cannot clamp the page's scroll position.
+    const height = resultsRef.current?.getBoundingClientRect().height || 0;
+    setReservedHeight((previous) => Math.max(previous, height));
+    const next = new URLSearchParams(location.search);
+    Object.entries(values).forEach(([key, value]) => {
+      if (value === null || value === 'all' || value === 1) next.delete(key);
+      else next.set(key, String(value));
+    });
+    const search = next.size ? `?${next}` : '';
+    if (search === location.search) return;
+    history.replace({...location, search});
+  }
+  const setPage = (value) => updateFilters({[pageKey]: value});
+  const setSelectedServiceKey = (value) => updateFilters({service: value, [pageKey]: 1});
+  const setPeriodDays = (value) => updateFilters({days: value, [pageKey]: 1});
   const serviceKey = fixedServiceKey === 'all' ? selectedServiceKey : fixedServiceKey;
 
   useEffect(() => {
@@ -92,10 +126,6 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
   const currentPage = Math.min(page, totalPages);
   const paginatedItems = items.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
 
-  useEffect(() => {
-    setPage(1);
-  }, [mode, periodDays, serviceKey]);
-
   if (error) {
     return (
       <div className="alert alert--warning">
@@ -120,6 +150,7 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
                   className={
                     serviceKey === 'all' ? styles.activeServiceButton : styles.serviceButton
                   }
+                  aria-pressed={serviceKey === 'all'}
                   onClick={() => setSelectedServiceKey('all')}
                   type="button">
                   {labels.all}
@@ -130,6 +161,7 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
                       serviceKey === key ? styles.activeServiceButton : styles.serviceButton
                     }
                     key={key}
+                    aria-pressed={serviceKey === key}
                     onClick={() => setSelectedServiceKey(key)}
                     type="button">
                     <ServiceIcon serviceKey={key} label={name} iconOnly size="compact" />
@@ -144,6 +176,7 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
             <div className={styles.segmented}>
               {PERIOD_DAYS.map((days, index) => (
                 <button
+                  aria-pressed={periodDays === days}
                   className={periodDays === days ? styles.activeButton : styles.button}
                   key={labels.periods[index]}
                   onClick={() => setPeriodDays(days)}
@@ -155,6 +188,7 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
           </div>
         </div>
       )}
+      <div className={styles.results} ref={resultsRef} style={{minHeight: reservedHeight || undefined}}>
       {paginatedItems.length ? (
         <>
           <div className={styles.cardGrid}>
@@ -171,8 +205,9 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
           />
         </>
       ) : (
-        <p className={styles.emptyState}>{labels.empty}</p>
+        <div className={styles.emptyState} role="status"><p>{labels.empty}</p></div>
       )}
+      </div>
     </section>
   );
 }
@@ -181,9 +216,15 @@ function BriefingCard({item}) {
   const {i18n} = useDocusaurusContext();
   const labels = LABELS[i18n.currentLocale] || LABELS.ko;
   const href = useBaseUrl(toDocHref(item.href));
+  const location = useLocation();
+  const history = useHistory();
 
   return (
-    <a className={styles.card} href={href}>
+    <Link className={styles.card} to={href} onClick={(event) => {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      history.push(href, {briefingReturnTo: `${location.pathname}${location.search}${location.hash}`});
+    }}>
       <div className={styles.cardMeta}>
         <ServiceIcon
           serviceKey={item.service_key}
@@ -192,17 +233,15 @@ function BriefingCard({item}) {
           size="compact"
         />
         <span>{item.service_name}</span>
-        <span>{item.published_at || item.briefed_at || labels.unknownDate}</span>
       </div>
       <h3>
         <span>{item.title}</span>
       </h3>
       <p>{item.excerpt || labels.missingExcerpt}</p>
       <div className={styles.cardFooter}>
-        <span className={styles.status}>{item.status}</span>
-        <span>score {item.score}</span>
+        <DateCard value={item.published_at || item.briefed_at} />
       </div>
-    </a>
+    </Link>
   );
 }
 
@@ -262,19 +301,19 @@ function Pagination({currentPage, labels, onPageChange, totalItems, totalPages})
 }
 
 function compactPageItems(currentPage, totalPages) {
-  if (totalPages <= 5) {
+  if (totalPages <= 7) {
     return Array.from({length: totalPages}, (_, index) => index + 1);
   }
-
-  if (currentPage <= 2) {
-    return [1, 2, 'ellipsis', totalPages];
-  }
-
-  if (currentPage >= totalPages - 1) {
-    return [1, 'ellipsis', totalPages - 1, totalPages];
-  }
-
-  return [1, 'ellipsis', currentPage, 'ellipsis', totalPages];
+  const visible = new Set([1, totalPages]);
+  const start = currentPage <= 3 ? 2 : currentPage >= totalPages - 2 ? totalPages - 3 : currentPage - 1;
+  const end = currentPage <= 3 ? 4 : currentPage >= totalPages - 2 ? totalPages - 1 : currentPage + 1;
+  for (let page = start; page <= end; page += 1) visible.add(page);
+  const pages = Array.from(visible).sort((left, right) => left - right);
+  return pages.flatMap((page, index) => {
+    const previous = pages[index - 1];
+    if (!index || page === previous + 1) return [page];
+    return page === previous + 2 ? [previous + 1, page] : ['ellipsis', page];
+  });
 }
 
 function filterItems(items, {mode, serviceKey, periodDays}) {

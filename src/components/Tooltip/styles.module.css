@@ -1,0 +1,6 @@
+.root { display: inline-flex; vertical-align: middle; }
+.trigger { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border: 0; background: transparent; color: var(--tit-muted); border-radius: 50%; font: 600 11px Georgia, serif; cursor: help; }
+.trigger:hover, .trigger:focus-visible { background: var(--tit-hover-bg); color: var(--ifm-font-color-base); }
+.content { position: fixed; z-index: 10000; width: max-content; max-width: min(260px, calc(100vw - 24px)); padding: 7px 10px; border: 0; border-radius: 7px; background: #18181b; color: #fafafa; box-shadow: 0 3px 12px #0002; font-size: 11px; line-height: 1.5; font-weight: 400; transform: translateX(-50%); pointer-events: none; }
+[data-theme='dark'] .content { background: #fafafa; color: #18181b; }
+@media (pointer: coarse) { .trigger { width: 36px; height: 36px; } }

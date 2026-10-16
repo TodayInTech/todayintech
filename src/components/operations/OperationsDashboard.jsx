@@ -1,8 +1,12 @@
-import React, {useEffect, useMemo, useRef, useState} from 'react';
+import React, {useEffect, useId, useMemo, useRef, useState} from 'react';
+import {METRIC_HINTS, useCopy} from './copy';
+import Tooltip from '@site/src/components/Tooltip';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import DateCard from '@site/src/components/DateCard';
 import ServiceIcon from '@site/src/components/ServiceIcon';
 
 import styles from './styles.module.css';
+
 
 const PERIODS = [
   {label: 'Latest', days: 'latest'},
@@ -20,6 +24,7 @@ const STAGE_LABELS = {
 };
 
 export default function OperationsDashboard({view = 'overview'}) {
+  const t = useCopy();
   const dataUrl = useBaseUrl('/data/operations/trace-metrics.json');
   const [data, setData] = useState(null);
   const [error, setError] = useState('');
@@ -59,13 +64,13 @@ export default function OperationsDashboard({view = 'overview'}) {
   if (error) {
     return (
       <div className="alert alert--warning">
-        Operations 데이터를 불러오지 못했습니다: {error}
+        {t("Could not load traces")}: {error}
       </div>
     );
   }
 
   if (!data) {
-    return <div className="alert alert--secondary">Operations 데이터를 불러오는 중입니다.</div>;
+    return <div className="alert alert--secondary">{t("Loading traces…")}</div>;
   }
 
   const serviceOptions = Object.entries(data.service_names || {}).sort(([left], [right]) =>
@@ -82,8 +87,7 @@ export default function OperationsDashboard({view = 'overview'}) {
         serviceOptions={serviceOptions}
       />
       <p className={styles.sourceNote}>
-        Source: <code>{data.source}</code> · Range: {data.date_range?.start || '-'} ~{' '}
-        {data.date_range?.end || '-'} · Generated: {formatDateTime(data.generated_at)}
+        {t("History")} <DateCard value={data.generated_at} label={t("Updated")} withTime />
       </p>
       {view === 'services' ? (
         <ServicesView services={filtered.services} />
@@ -103,18 +107,20 @@ export default function OperationsDashboard({view = 'overview'}) {
 }
 
 function FilterBar({periodDays, setPeriodDays, serviceKey, setServiceKey, serviceOptions}) {
+  const t = useCopy();
   return (
     <div className={styles.filterBar}>
       <div className={styles.filterField}>
-        <span className={styles.filterLabel}>Period</span>
+        <span className={styles.filterLabel}>{t("Period")}</span>
         <div className={styles.segmented}>
           {PERIODS.map((period) => (
             <button
+              aria-pressed={periodDays === period.days}
               className={periodDays === period.days ? styles.activeButton : styles.button}
-              key={period.label}
+              key={t(period.label)}
               onClick={() => setPeriodDays(period.days)}
               type="button">
-              {period.label}
+              {t(period.label)}
             </button>
           ))}
         </div>
@@ -129,70 +135,66 @@ function FilterBar({periodDays, setPeriodDays, serviceKey, setServiceKey, servic
 }
 
 function ServiceDropdown({serviceKey, setServiceKey, serviceOptions}) {
+  const t = useCopy();
+  const id = useId();
+  const root = useRef(null);
+  const trigger = useRef(null);
   const [open, setOpen] = useState(false);
-  const rootRef = useRef(null);
-  const selectedLabel =
-    serviceKey === 'all'
-      ? 'All services'
-      : serviceOptions.find(([key]) => key === serviceKey)?.[1] || serviceKey;
-  const options = [['all', 'All services'], ...serviceOptions];
-
+  const [activeIndex, setActiveIndex] = useState(0);
+  const options = [['all', t("All services")], ...serviceOptions];
+  const selectedIndex = Math.max(options.findIndex(([key]) => key === serviceKey), 0);
+  const selected = options[selectedIndex];
+  const show = () => { setActiveIndex(selectedIndex); setOpen(true); };
+  const choose = (index) => {
+    setServiceKey(options[index][0]);
+    setOpen(false);
+    trigger.current?.focus();
+  };
   useEffect(() => {
-    if (!open) {
-      return undefined;
-    }
-
-    function handlePointerDown(event) {
-      if (!rootRef.current?.contains(event.target)) {
-        setOpen(false);
-      }
-    }
-
-    function handleKeyDown(event) {
-      if (event.key === 'Escape') {
-        setOpen(false);
-      }
-    }
-
-    document.addEventListener('pointerdown', handlePointerDown);
-    document.addEventListener('keydown', handleKeyDown);
-    return () => {
-      document.removeEventListener('pointerdown', handlePointerDown);
-      document.removeEventListener('keydown', handleKeyDown);
-    };
+    if (!open) return undefined;
+    const outside = (event) => { if (!root.current?.contains(event.target)) setOpen(false); };
+    document.addEventListener('pointerdown', outside);
+    return () => document.removeEventListener('pointerdown', outside);
   }, [open]);
-
+  const onKeyDown = (event) => {
+    if (event.key === 'Escape') { event.preventDefault(); setOpen(false); return; }
+    if (event.key === 'Tab') { setOpen(false); return; }
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      if (open) choose(activeIndex); else show();
+      return;
+    }
+    if (['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) {
+      event.preventDefault();
+      if (!open) { show(); return; }
+      setActiveIndex((index) => event.key === 'Home' ? 0 : event.key === 'End' ? options.length - 1
+        : (index + (event.key === 'ArrowDown' ? 1 : -1) + options.length) % options.length);
+    } else if (event.key.length === 1) {
+      const index = options.findIndex(([, name]) => name.toLowerCase().startsWith(event.key.toLowerCase()));
+      if (index >= 0) { event.preventDefault(); setActiveIndex(index); setOpen(true); }
+    }
+  };
   return (
-    <div className={styles.dropdownField} ref={rootRef}>
-      <span className={styles.filterLabel}>Service</span>
-      <button
-        aria-expanded={open}
-        aria-haspopup="listbox"
-        className={styles.dropdownToggle}
-        onClick={() => setOpen((value) => !value)}
-        type="button">
-        <ServiceLabel serviceKey={serviceKey} serviceName={selectedLabel} />
-        <span className={open ? styles.dropdownChevronOpen : styles.dropdownChevron}>⌄</span>
+    <div className={styles.dropdownField} ref={root}>
+      <span className={styles.filterLabel} id={`${id}-label`}>{t("Service")}</span>
+      <button ref={trigger} type="button" role="combobox" aria-labelledby={`${id}-label`}
+        aria-expanded={open} aria-haspopup="listbox" aria-controls={`${id}-options`}
+        aria-activedescendant={open ? `${id}-option-${activeIndex}` : undefined}
+        className={styles.dropdownTrigger} onKeyDown={onKeyDown}
+        onClick={() => open ? setOpen(false) : show()}
+        onBlur={(event) => { if (!root.current?.contains(event.relatedTarget)) setOpen(false); }}>
+        <ServiceLabel serviceKey={selected[0]} serviceName={selected[1]} />
+        <svg aria-hidden="true" className={styles.chevron} data-open={open} width="14" height="14" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
       </button>
-      {open && (
-        <div className={styles.dropdownMenu} role="listbox">
-          {options.map(([key, label]) => (
-            <button
-              aria-selected={serviceKey === key}
-              className={serviceKey === key ? styles.dropdownOptionActive : styles.dropdownOption}
-              key={key}
-              onClick={() => {
-                setServiceKey(key);
-                setOpen(false);
-              }}
-              role="option"
-              type="button">
-              <span className={styles.dropdownCheck}>{serviceKey === key ? '✓' : ''}</span>
-              <ServiceLabel serviceKey={key} serviceName={label} />
-            </button>
-          ))}
-        </div>
-      )}
+      {open && <div className={styles.dropdownMenu} id={`${id}-options`} role="listbox" aria-labelledby={`${id}-label`}>
+        {options.map(([key, name], index) => <div key={key} id={`${id}-option-${index}`} role="option"
+          aria-selected={serviceKey === key} data-active={index === activeIndex}
+          className={styles.dropdownOption} onMouseDown={(event) => event.preventDefault()}
+          onPointerMove={() => setActiveIndex(index)} onClick={() => choose(index)}>
+          <ServiceLabel serviceKey={key} serviceName={name} />
+          <span className={styles.optionCheck} aria-hidden="true">{serviceKey === key ? '✓' : ''}</span>
+        </div>)}
+      </div>}
     </div>
   );
 }
@@ -201,11 +203,6 @@ function ServiceLabel({serviceKey, serviceName}) {
   if (serviceKey === 'all') {
     return (
       <span className={styles.serviceLabel}>
-        <span className={styles.allServicesIcon} aria-hidden="true">
-          <i />
-          <i />
-          <i />
-        </span>
         <span>{serviceName}</span>
       </span>
     );
@@ -220,63 +217,64 @@ function ServiceLabel({serviceKey, serviceName}) {
 }
 
 function OverviewView({runs, services}) {
+  const t = useCopy();
   const totals = summarize(runs, services);
   const latest = [...runs].sort((left, right) => right.date.localeCompare(left.date))[0];
   return (
     <>
       <div className={styles.cardGrid}>
-        <MetricCard label="Runs" value={runs.length} />
-        <MetricCard label="Raw articles" value={totals.rawArticles} />
-        <MetricCard label="Candidates" value={totals.candidates} />
-        <MetricCard label="Writer-ready (traced)" value={totals.writerReady} />
-        <MetricCard label="Published (traced)" value={totals.published} />
-        <MetricCard label="Publish rate" value={`${rate(totals.published, totals.decisions)}%`} />
+        <MetricCard label={t("Runs")} value={runs.length} />
+        <MetricCard label={t("Raw articles")} value={totals.rawArticles} />
+        <MetricCard label={t("Candidates")} value={totals.candidates} />
+        <MetricCard label={t("Writer-ready (traced)")} value={totals.writerReady} />
+        <MetricCard label={t("Published (traced)")} value={totals.published} />
+        <MetricCard label={t("Publish rate")} value={`${rate(totals.published, totals.decisions)}%`} />
         <MetricCard
-          label="Enrichment trace coverage"
+          label={t("Enrichment trace coverage")}
           value={`${totals.enrichmentTraceRuns}/${runs.length}`}
         />
-        <MetricCard label="Writer trace coverage" value={`${totals.writerTraceRuns}/${runs.length}`} />
+        <MetricCard label={t("Writer trace coverage")} value={`${totals.writerTraceRuns}/${runs.length}`} />
       </div>
       <section className={styles.panel}>
-        <h2>Latest run</h2>
+        <h2>{t("Latest run")}</h2>
         {latest ? (
           <dl className={styles.definitionGrid}>
-            <dt>Date</dt>
-            <dd>{latest.date}</dd>
-            <dt>Status</dt>
+            <dt>{t("Date")}</dt>
+            <dd><DateCard value={latest.date} /></dd>
+            <dt>{t("Status")}</dt>
             <dd>
               <StatusBadge status={latest.status} />
             </dd>
-            <dt>GitHub run</dt>
+            <dt>{t("GitHub run")}</dt>
             <dd>{latest.github_run_id || '-'}</dd>
-            <dt>Commit</dt>
+            <dt>{t("Commit")}</dt>
             <dd>{latest.git_sha ? latest.git_sha.slice(0, 7) : '-'}</dd>
           </dl>
         ) : (
-          <p>No remote trace runs found.</p>
+          <p>{t("No remote trace runs found.")}</p>
         )}
       </section>
       <section className={styles.panel}>
-        <h2>Pipeline funnel</h2>
+        <h2>{t("Pipeline funnel")}</h2>
         <HorizontalBarChart
           rows={[
-            {label: 'Raw articles', value: totals.rawArticles},
-            {label: 'Candidates', value: totals.candidates},
-            {label: 'Writer-ready (traced)', value: totals.writerReady},
-            {label: 'Published (traced)', value: totals.published},
+            {label: t("Raw articles"), value: totals.rawArticles},
+            {label: t("Candidates"), value: totals.candidates},
+            {label: t("Writer-ready (traced)"), value: totals.writerReady},
+            {label: t("Published (traced)"), value: totals.published},
           ]}
         />
       </section>
       <section className={styles.chartGrid}>
         <SparklinePanel
-          title="Candidate trend"
+          title={t("Candidate trend")}
           rows={runs}
-          value={(run) => run.preprocessing?.candidate_count || 0}
+          value={(run) => services.filter((service) => service.date === run.date).reduce((total, service) => total + (service.preprocessing?.candidate_count || 0), 0)}
         />
         <SparklinePanel
-          title="Published trend"
+          title={t("Published trend")}
           rows={runs}
-          value={(run) => run.writer?.published_count || 0}
+          value={(run) => services.filter((service) => service.date === run.date).reduce((total, service) => total + (service.writer?.published_count || 0), 0)}
         />
       </section>
       <RecentRunsTable runs={runs} services={services} />
@@ -285,38 +283,39 @@ function OverviewView({runs, services}) {
 }
 
 function ServicesView({services}) {
+  const t = useCopy();
   const rows = serviceMetricRows(services);
 
   return (
     <>
       <section className={styles.panel}>
-        <h2>Service funnel</h2>
+        <h2>{t("Service funnel")}</h2>
         <GroupedBarChart
           rows={rows.map((row) => ({
             serviceKey: row.service_key,
             label: row.service_name,
             values: [
-              {label: 'Raw', value: row.raw},
-              {label: 'Candidates', value: row.candidates},
-              {label: 'Writer-ready', value: row.writerReady},
-              {label: 'Published', value: row.published},
+              {label: t("Raw"), value: row.raw},
+              {label: t("Candidates"), value: row.candidates},
+              {label: t("Writer-ready"), value: row.writerReady},
+              {label: t("Published"), value: row.published},
             ],
           }))}
         />
       </section>
       <section className={styles.panel}>
-        <h2>Service metrics</h2>
+        <h2>{t("Service metrics")}</h2>
         <div className={styles.tableWrap}>
           <table>
             <thead>
               <tr>
-                <th>Service</th>
-                <th>Raw</th>
-                <th>Candidates</th>
-                <th>Writer-ready</th>
-                <th>Published</th>
-                <th>Candidate rate</th>
-                <th>Publish rate</th>
+                <th>{t("Service")}</th>
+                <th className={styles.numeric}>{t("Raw")}</th>
+                <th className={styles.numeric}>{t("Candidates")}</th>
+                <th className={styles.numeric}>{t("Writer-ready")}</th>
+                <th className={styles.numeric}>{t("Published")}</th>
+                <th className={styles.numeric}>{t("Candidate rate")}</th>
+                <th className={styles.numeric}>{t("Publish rate")}</th>
               </tr>
             </thead>
             <tbody>
@@ -325,12 +324,12 @@ function ServicesView({services}) {
                   <td>
                     <ServiceLabel serviceKey={row.service_key} serviceName={row.service_name} />
                   </td>
-                  <td>{row.raw}</td>
-                  <td>{row.candidates}</td>
-                  <td>{row.writerReady}</td>
-                  <td>{row.published}</td>
-                  <td>{rate(row.candidates, row.raw)}%</td>
-                  <td>{rate(row.published, row.decisions)}%</td>
+                  <td className={styles.numeric}>{row.raw}</td>
+                  <td className={styles.numeric}>{row.candidates}</td>
+                  <td className={styles.numeric}>{row.writerReady}</td>
+                  <td className={styles.numeric}>{row.published}</td>
+                  <td className={styles.numeric}>{rate(row.candidates, row.raw)}%</td>
+                  <td className={styles.numeric}>{rate(row.published, row.decisions)}%</td>
                 </tr>
               ))}
             </tbody>
@@ -342,60 +341,61 @@ function ServicesView({services}) {
 }
 
 function StageView({stage, services, runs}) {
+  const t = useCopy();
   const totals = summarize(runs, services);
   return (
     <>
       <div className={styles.cardGrid}>
         {stage === 'collection' && (
           <>
-            <MetricCard label="Raw articles" value={totals.rawArticles} />
-            <MetricCard label="Collection failures" value={totals.collectionFailures} />
-            <MetricCard label="Warnings" value={totals.warnings} />
+            <MetricCard label={t("Raw articles")} value={totals.rawArticles} />
+            <MetricCard label={t("Collection failures")} value={totals.collectionFailures} />
+            <MetricCard label={t("Warnings")} value={totals.warnings} />
           </>
         )}
         {stage === 'preprocessing' && (
           <>
-            <MetricCard label="Raw articles" value={totals.rawArticles} />
-            <MetricCard label="Candidates" value={totals.candidates} />
-            <MetricCard label="Candidate rate" value={`${rate(totals.candidates, totals.rawArticles)}%`} />
+            <MetricCard label={t("Raw articles")} value={totals.rawArticles} />
+            <MetricCard label={t("Candidates")} value={totals.candidates} />
+            <MetricCard label={t("Candidate rate")} value={`${rate(totals.candidates, totals.rawArticles)}%`} />
           </>
         )}
         {stage === 'enrichment' && (
           <>
-            <MetricCard label="Enrichment candidates" value={totals.enrichmentCandidates} />
-            <MetricCard label="Writer-ready" value={totals.writerReady} />
-            <MetricCard label="Writer-ready rate" value={`${rate(totals.writerReady, totals.enrichmentCandidates)}%`} />
+            <MetricCard label={t("Enrichment candidates")} value={totals.enrichmentCandidates} />
+            <MetricCard label={t("Writer-ready")} value={totals.writerReady} />
+            <MetricCard label={t("Writer-ready rate")} value={`${rate(totals.writerReady, totals.enrichmentCandidates)}%`} />
           </>
         )}
         {stage === 'writer' && (
           <>
-            <MetricCard label="Decisions" value={totals.decisions} />
-            <MetricCard label="Published" value={totals.published} />
-            <MetricCard label="Publish rate" value={`${rate(totals.published, totals.decisions)}%`} />
+            <MetricCard label={t("Decisions")} value={totals.decisions} />
+            <MetricCard label={t("Published")} value={totals.published} />
+            <MetricCard label={t("Publish rate")} value={`${rate(totals.published, totals.decisions)}%`} />
           </>
         )}
       </div>
       <StageCharts stage={stage} services={services} />
       <section className={styles.panel}>
-        <h2>{STAGE_LABELS[stage]} by service</h2>
+        <h2>{t(STAGE_LABELS[stage])} · {t("Service")}</h2>
         <div className={styles.tableWrap}>
           <table>
             <thead>
               <tr>
-                <th>Date</th>
-                <th>Service</th>
-                <th>Status</th>
-                <th>Raw</th>
-                <th>Candidates</th>
-                <th>Writer-ready</th>
-                <th>Published</th>
-                <th>Failure / reason</th>
+                <th>{t("Date")}</th>
+                <th>{t("Service")}</th>
+                <th>{t("Status")}</th>
+                <th className={styles.numeric}>{t("Raw")}</th>
+                <th className={styles.numeric}>{t("Candidates")}</th>
+                <th className={styles.numeric}>{t("Writer-ready")}</th>
+                <th className={styles.numeric}>{t("Published")}</th>
+                <th>{t("Failure / reason")}</th>
               </tr>
             </thead>
             <tbody>
               {services.map((service) => (
                 <tr key={`${service.date}:${service.service_key}`}>
-                  <td>{service.date}</td>
+                  <td><DateCard value={service.date} /></td>
                   <td>
                     <ServiceLabel
                       serviceKey={service.service_key}
@@ -405,11 +405,11 @@ function StageView({stage, services, runs}) {
                   <td>
                     <StatusBadge status={service[stage]?.status || service.collection?.status} />
                   </td>
-                  <td>{service.preprocessing?.raw_count || service.collection?.article_count || 0}</td>
-                  <td>{service.preprocessing?.candidate_count || service.enrichment?.candidate_count || 0}</td>
-                  <td>{service.enrichment?.writer_ready_count || 0}</td>
-                  <td>{service.writer?.published_count || 0}</td>
-                  <td>{topReason(service, stage)}</td>
+                  <td className={styles.numeric}>{service.preprocessing?.raw_count || service.collection?.article_count || 0}</td>
+                  <td className={styles.numeric}>{service.preprocessing?.candidate_count || service.enrichment?.candidate_count || 0}</td>
+                  <td className={styles.numeric}>{service.enrichment?.writer_ready_count || 0}</td>
+                  <td className={styles.numeric}>{service.writer?.published_count || 0}</td>
+                  <td className={styles.reasonCell}>{topReason(service, stage)}</td>
                 </tr>
               ))}
             </tbody>
@@ -421,6 +421,7 @@ function StageView({stage, services, runs}) {
 }
 
 function StageCharts({stage, services}) {
+  const t = useCopy();
   if (stage === 'collection') {
     const rows = serviceMetricRows(services).map((row) => ({
       serviceKey: row.service_key,
@@ -429,7 +430,7 @@ function StageCharts({stage, services}) {
     }));
     return (
       <section className={styles.panel}>
-        <h2>Collected articles by service</h2>
+        <h2>{t("Collected articles by service")}</h2>
         <HorizontalBarChart rows={rows} />
       </section>
     );
@@ -438,14 +439,14 @@ function StageCharts({stage, services}) {
   if (stage === 'preprocessing') {
     return (
       <section className={styles.panel}>
-        <h2>Candidate conversion by service</h2>
+        <h2>{t("Candidate conversion by service")}</h2>
         <GroupedBarChart
           rows={serviceMetricRows(services).map((row) => ({
             serviceKey: row.service_key,
             label: row.service_name,
             values: [
-              {label: 'Raw', value: row.raw},
-              {label: 'Candidates', value: row.candidates},
+              {label: t("Raw"), value: row.raw},
+              {label: t("Candidates"), value: row.candidates},
             ],
           }))}
         />
@@ -457,11 +458,11 @@ function StageCharts({stage, services}) {
     return (
       <section className={styles.chartGrid}>
         <div className={styles.panel}>
-          <h2>Input strategy distribution</h2>
+          <h2>{t("Input strategy distribution")}</h2>
           <HorizontalBarChart rows={countRows(services, 'enrichment', 'strategy_counts')} />
         </div>
         <div className={styles.panel}>
-          <h2>Failure reasons</h2>
+          <h2>{t("Failure reasons")}</h2>
           <HorizontalBarChart rows={countRows(services, 'enrichment', 'failure_reason_counts')} />
         </div>
       </section>
@@ -472,11 +473,11 @@ function StageCharts({stage, services}) {
     return (
       <section className={styles.chartGrid}>
         <div className={styles.panel}>
-          <h2>Decision distribution</h2>
+          <h2>{t("Decision distribution")}</h2>
           <HorizontalBarChart rows={countRows(services, 'writer', 'decision_counts')} />
         </div>
         <div className={styles.panel}>
-          <h2>Summary scope</h2>
+          <h2>{t("Summary scope")}</h2>
           <HorizontalBarChart rows={countRows(services, 'writer', 'summary_scope_counts')} />
         </div>
       </section>
@@ -487,29 +488,30 @@ function StageCharts({stage, services}) {
 }
 
 function RecentRunsTable({runs, services}) {
+  const t = useCopy();
   const serviceKeys = new Set(services.map((service) => service.service_key));
   if (serviceKeys.size === 1) {
     const sortedServices = [...services].sort((left, right) => right.date.localeCompare(left.date));
     return (
       <section className={styles.panel}>
-        <h2>Recent service runs</h2>
+        <h2>{t("Recent service runs")}</h2>
         <div className={styles.tableWrap}>
           <table>
             <thead>
               <tr>
-                <th>Date</th>
-                <th>Service</th>
-                <th>Status</th>
-                <th>Raw</th>
-                <th>Candidates</th>
-                <th>Writer-ready</th>
-                <th>Published</th>
+                <th>{t("Date")}</th>
+                <th>{t("Service")}</th>
+                <th>{t("Status")}</th>
+                <th className={styles.numeric}>{t("Raw")}</th>
+                <th className={styles.numeric}>{t("Candidates")}</th>
+                <th className={styles.numeric}>{t("Writer-ready")}</th>
+                <th className={styles.numeric}>{t("Published")}</th>
               </tr>
             </thead>
             <tbody>
               {sortedServices.map((service) => (
                 <tr key={`${service.date}:${service.service_key}`}>
-                  <td>{service.date}</td>
+                  <td><DateCard value={service.date} /></td>
                   <td>
                     <ServiceLabel
                       serviceKey={service.service_key}
@@ -519,10 +521,10 @@ function RecentRunsTable({runs, services}) {
                   <td>
                     <StatusBadge status={service.collection?.status} />
                   </td>
-                  <td>{service.preprocessing?.raw_count || service.collection?.article_count || 0}</td>
-                  <td>{service.preprocessing?.candidate_count || 0}</td>
-                  <td>{service.enrichment?.writer_ready_count || 0}</td>
-                  <td>{service.writer?.published_count || 0}</td>
+                  <td className={styles.numeric}>{service.preprocessing?.raw_count || service.collection?.article_count || 0}</td>
+                  <td className={styles.numeric}>{service.preprocessing?.candidate_count || 0}</td>
+                  <td className={styles.numeric}>{service.enrichment?.writer_ready_count || 0}</td>
+                  <td className={styles.numeric}>{service.writer?.published_count || 0}</td>
                 </tr>
               ))}
             </tbody>
@@ -534,32 +536,32 @@ function RecentRunsTable({runs, services}) {
   const sortedRuns = [...runs].sort((left, right) => right.date.localeCompare(left.date));
   return (
     <section className={styles.panel}>
-      <h2>Recent runs</h2>
+      <h2>{t("Recent runs")}</h2>
       <div className={styles.tableWrap}>
         <table>
           <thead>
             <tr>
-              <th>Date</th>
-              <th>Status</th>
-              <th>Raw</th>
-              <th>Candidates</th>
-              <th>Writer-ready</th>
-              <th>Published</th>
-              <th>Traces</th>
-              <th>Run</th>
+              <th>{t("Date")}</th>
+              <th>{t("Status")}</th>
+              <th className={styles.numeric}>{t("Raw")}</th>
+              <th className={styles.numeric}>{t("Candidates")}</th>
+              <th className={styles.numeric}>{t("Writer-ready")}</th>
+              <th className={styles.numeric}>{t("Published")}</th>
+              <th>{t("Traces")}</th>
+              <th>{t("Run")}</th>
             </tr>
           </thead>
           <tbody>
             {sortedRuns.map((run) => (
               <tr key={run.date}>
-                <td>{run.date}</td>
+                <td><DateCard value={run.date} /></td>
                 <td>
                   <StatusBadge status={run.status} />
                 </td>
-                <td>{run.collection?.total_article_count || 0}</td>
-                <td>{run.preprocessing?.candidate_count || 0}</td>
-                <td>{run.enrichment?.writer_ready_count || 0}</td>
-                <td>{run.writer?.published_count || 0}</td>
+                <td className={styles.numeric}>{run.collection?.total_article_count || 0}</td>
+                <td className={styles.numeric}>{run.preprocessing?.candidate_count || 0}</td>
+                <td className={styles.numeric}>{run.enrichment?.writer_ready_count || 0}</td>
+                <td className={styles.numeric}>{run.writer?.published_count || 0}</td>
                 <td>{stageCoverageLabel(run)}</td>
                 <td>{run.github_run_id || '-'}</td>
               </tr>
@@ -572,19 +574,21 @@ function RecentRunsTable({runs, services}) {
 }
 
 function MetricCard({label, value}) {
+  const t = useCopy();
   return (
     <div className={styles.card}>
-      <span>{label}</span>
+      <span>{label}{METRIC_HINTS[label] && <Tooltip label={`${label} · ${t("About this metric")}`} content={t(METRIC_HINTS[label])} />}</span>
       <strong>{value}</strong>
     </div>
   );
 }
 
 function HorizontalBarChart({rows}) {
+  const t = useCopy();
   const safeRows = rows.filter((row) => row.value > 0);
   const maxValue = Math.max(...safeRows.map((row) => row.value), 1);
   if (!safeRows.length) {
-    return <p className={styles.emptyState}>No metric data for the selected filter.</p>;
+    return <p className={styles.emptyState}>{t("No metric data for the selected filter.")}</p>;
   }
   return (
     <div className={styles.barChart}>
@@ -594,7 +598,7 @@ function HorizontalBarChart({rows}) {
             {row.serviceKey ? (
               <ServiceLabel serviceKey={row.serviceKey} serviceName={row.label} />
             ) : (
-              row.label
+              t(row.label)
             )}
           </span>
           <div className={styles.barTrack}>
@@ -611,20 +615,21 @@ function HorizontalBarChart({rows}) {
 }
 
 function GroupedBarChart({rows}) {
+  const t = useCopy();
   const maxValue = Math.max(
     ...rows.flatMap((row) => row.values.map((value) => value.value)),
     1,
   );
   if (!rows.length) {
-    return <p className={styles.emptyState}>No service metric data for the selected filter.</p>;
+    return <p className={styles.emptyState}>{t("No service metric data for the selected filter.")}</p>;
   }
   return (
     <div className={styles.groupedChart}>
       <div className={styles.legend}>
         {rows[0]?.values.map((value, index) => (
-          <span key={value.label}>
+          <span key={t(value.label)}>
             <i className={styles[`series${index}`]} />
-            {value.label}
+            {t(value.label)}
           </span>
         ))}
       </div>
@@ -634,13 +639,13 @@ function GroupedBarChart({rows}) {
             {row.serviceKey ? (
               <ServiceLabel serviceKey={row.serviceKey} serviceName={row.label} />
             ) : (
-              row.label
+              t(row.label)
             )}
           </span>
           <div className={styles.groupBars}>
             {row.values.map((value, index) => (
-              <div className={styles.groupBarLine} key={value.label}>
-                <span>{value.label}</span>
+              <div className={styles.groupBarLine} key={t(value.label)}>
+                <span>{t(value.label)}</span>
                 <div className={styles.barTrack}>
                   <div
                     className={`${styles.barFill} ${styles[`series${index}`]}`}
@@ -658,46 +663,50 @@ function GroupedBarChart({rows}) {
 }
 
 function SparklinePanel({title, rows, value}) {
+  const t = useCopy();
   const sortedRows = [...rows].sort((left, right) => left.date.localeCompare(right.date));
   const values = sortedRows.map(value);
   const latest = values.at(-1) || 0;
   return (
     <div className={styles.panel}>
       <h2>{title}</h2>
-      <Sparkline values={values} />
+      <Sparkline values={values} label={title} />
       <p className={styles.sparklineSummary}>
-        Latest: <strong>{latest}</strong> · Points: {values.length}
+        {t("Latest")}: <strong>{latest}</strong> · {values.length} {t("Runs")}
       </p>
     </div>
   );
 }
 
-function Sparkline({values}) {
+function Sparkline({values, label}) {
+  const t = useCopy();
   if (!values.length) {
-    return <p className={styles.emptyState}>No trend data.</p>;
+    return <p className={styles.emptyState}>{t("No trend data.")}</p>;
   }
   const maxValue = Math.max(...values, 1);
   const width = 320;
   const height = 88;
   const points = values
     .map((value, index) => {
-      const x = values.length === 1 ? width : (index / (values.length - 1)) * width;
+      const x = values.length === 1 ? width / 2 : (index / (values.length - 1)) * width;
       const y = height - (value / maxValue) * (height - 10) - 5;
       return `${x},${y}`;
     })
     .join(' ');
   return (
-    <svg className={styles.sparkline} viewBox={`0 0 ${width} ${height}`} role="img">
+    <svg className={styles.sparkline} viewBox={`0 0 ${width} ${height}`} role="img" aria-label={`${label}: ${values.join(", ")}`}>
+      {values.length === 1 && <circle cx={width / 2} cy={height - (values[0] / maxValue) * (height - 10) - 5} r="4" fill="currentColor" />}
       <polyline points={points} fill="none" stroke="currentColor" strokeWidth="4" />
     </svg>
   );
 }
 
 function StatusBadge({status}) {
+  const t = useCopy();
   const safeStatus = status || 'missing';
   return (
     <span className={`${styles.badge} ${styles[`status_${safeStatus}`] || ''}`}>
-      {safeStatus}
+      {t(safeStatus)}
     </span>
   );
 }
@@ -851,11 +860,4 @@ function sum(items, getter) {
 
 function rate(value, total) {
   return total ? Math.round((value / total) * 1000) / 10 : 0;
-}
-
-function formatDateTime(value) {
-  if (!value) {
-    return '-';
-  }
-  return value.replace('T', ' ').replace(/\.\d+.*$/, ' UTC');
 }

@@ -160,3 +160,26 @@ Published article pages do not expose internal decision details. Users see only 
 - GitHub Actions must commit generated `docs/` files and `data/briefed_articles.json` back to `main`. That state file is the duplicate-filtering source for later runs.
 - The Markdown generator must normalize HTML and MDX tokens from external RSS, Atom, and sitemap sources into safe text.
 - If OpenAI structured output fails because of token limits or JSON parsing, the agent retries once with a larger output limit and skips only the candidate that still fails.
+
+## UI verification (2026-10-16)
+
+- Refined navigation, briefing cards, and traces using B4React's neutral surfaces, borders, and rounded controls as a reference.
+- The dashboard still uses remote trace input. Service filters also scope trend charts. Metric names, statuses, and empty states use concise Korean/English copy; metric tooltips explain coverage and publication rates.
+- Tooltips support keyboard focus/taps, Escape, and outside taps. Service selection uses a custom combobox/listbox with arrow-key, Enter, and Escape navigation. Animations respect reduced motion.
+- Validation: six existing document-generation, article Markdown, and operations metric tests passed, along with Python lint/format and SVG XML validation. Both Docusaurus locales built successfully. Browser checks covered light/dark themes, 390px card/trace layouts, tooltip open/Escape dismissal, and service-scoped trend updates.
+
+- Follow-up UI refinement restores original brand colors, removes icon frames and navigation/sidebar dividers, centers content, and applies 36px controls (44px on touch devices) with tighter card padding.
+
+- Navigation regression checks: the sidebar remains 200px regardless of content. Dark-theme tokens and current-page backgrounds have higher specificity than shared defaults. Filters/pagination persist in the URL; the single article return link restores the originating list, falling back to the service list on direct entry. Empty states use the full list width and a 144px minimum height. Browser checks covered Anthropic page 2 → article → list and selected-page contrast in both themes.
+
+- Shared DateCard covers the main update, briefing cards, article metadata, and trace update/run/table dates. Existing Markdown dates and feed extraction formats remain intact; MDX decorates metadata at render time. Cards align brand icons/names and remove footer copy. Trace service selection uses a custom combobox/listbox. Tooltips use black backgrounds in light mode and white backgrounds in dark mode. Browser checks covered keyboard selection, tooltip colors in both themes, and article dates. Six existing generation/operations tests and Python lint/format checks passed.
+
+- Operations tables align dates, services, and statuses left, and numeric values/rates right. Headers and cells share alignment, vertical centering, and thin row separators. All services uses text without an icon.
+
+- Dates use a small background treatment without icons or borders. Articles have one return link at the top. Table statuses use text color/weight without pill backgrounds.
+
+- Main service filters only affect the mode=all list. Featured/new sections retain their fixed service scope. Filter/pagination updates preserve the current results footprint to prevent document-height shrinkage from clamping the scroll position; resizing resets the reserved height. Active navbar items use text color/weight without backgrounds or borders.
+
+- Briefing cards use a fixed 16rem height, reserving two title lines and three excerpt lines. Browser checks on port 3100 confirmed unchanged featured/new article links after lower-list filtering and stable scroll position during keyboard period changes.
+
+- Final verification: make check passed Ruff lint/format and all 67 tests; Korean/English static builds passed. Pagination retains first/last and immediate neighboring pages, with 1 … 25 26 27 … 30 verified at page 26 of 30. Browser measurements confirmed 256px cards and 48px title areas.
