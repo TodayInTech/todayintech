@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-17T00:07:21.494527+00:00",
+  "generated_at": "2026-10-17T23:43:32.032669+00:00",
   "generated_for": "2026-10-17",
   "stage": "preprocessing",
   "status": "success",
-  "git_sha": "48c87553a570258f51b3729989f18897cfeed5bc",
-  "github_run_id": "38984759218",
+  "git_sha": "6fcf1e07b03a6af6542d8ea041b4a855e2884864",
+  "github_run_id": "39080024281",
   "service_count": 5,
-  "duration_ms": 9,
+  "duration_ms": 11,
   "raw_count": 120,
-  "candidate_count": 13,
-  "excluded_count": 107,
+  "candidate_count": 11,
+  "excluded_count": 109,
   "step_metrics": [
     {
       "step_name": "validation",
@@ -24,7 +24,7 @@
       "input_count": 120,
       "output_count": 120,
       "excluded_count": 0,
-      "duration_ms": 2,
+      "duration_ms": 3,
       "reason_counts": {}
     },
     {
@@ -46,33 +46,33 @@
     {
       "step_name": "briefed_article_filter",
       "input_count": 120,
-      "output_count": 23,
-      "excluded_count": 97,
+      "output_count": 21,
+      "excluded_count": 99,
       "duration_ms": 3,
       "reason_counts": {
-        "already_briefed": 97
+        "already_briefed": 99
       }
     },
     {
       "step_name": "candidate_scoring",
-      "input_count": 23,
-      "output_count": 23,
+      "input_count": 21,
+      "output_count": 21,
       "excluded_count": 0,
       "duration_ms": 1,
       "reason_counts": {}
     },
     {
       "step_name": "candidate_quality_gate",
-      "input_count": 23,
-      "output_count": 23,
+      "input_count": 21,
+      "output_count": 21,
       "excluded_count": 0,
       "duration_ms": 0,
       "reason_counts": {}
     },
     {
       "step_name": "candidate_limiting",
-      "input_count": 23,
-      "output_count": 13,
+      "input_count": 21,
+      "output_count": 11,
       "excluded_count": 10,
       "duration_ms": 0,
       "reason_counts": {
@@ -122,85 +122,84 @@
       "excluded_count": 10,
       "top_candidates": [
         {
-          "candidate_id": "hacker-news:5a13ce7aaffad260",
-          "title": "Show HN: Gemini 4 Argon plays StarCraft",
-          "normalized_url": "https://starskirmish.com/bench/v0-2",
-          "url_hash": "5a13ce7aaffad260996313a0c4eb43b20b03e0fdf0625ba9ca1d50b97940cbc6",
-          "suggested_doc_key": "2026-10-show-hn-gemini-4-argon-plays-starcraft-5a13ce7a",
-          "suggested_article_path": "docs/services/hacker-news/2026-10-show-hn-gemini-4-argon-plays-starcraft-5a13ce7a.md",
-          "candidate_score": 67.9,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 5점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "중요 키워드 2개를 감지해 가산했습니다.",
-            "Hacker News 점수 179점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 87개를 토론 신호로 반영했습니다.",
-            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "hacker-news:6d6f8ad0753534aa",
-          "title": "How the Claude Code team does code review",
-          "normalized_url": "https://claude.dev/blog/solving-code-review-at-anthropic",
-          "url_hash": "6d6f8ad0753534aab211d62e20d2ed19db564953fdf5909882c5651fc110b977",
-          "suggested_doc_key": "2026-10-how-the-claude-code-team-does-code-review-6d6f8ad0",
-          "suggested_article_path": "docs/services/hacker-news/2026-10-how-the-claude-code-team-does-code-review-6d6f8ad0.md",
+          "candidate_id": "hacker-news:6ea16c172c83caf0",
+          "title": "OpenCode Hacked: User credentials leaked",
+          "normalized_url": "https://twitter.com/opencode/status/2111516673953935833",
+          "url_hash": "6ea16c172c83caf06b5859e77c232da68e3e4e443f8723e0eb20831611534265",
+          "suggested_doc_key": "2026-10-opencode-hacked-user-credentials-leaked-6ea16c17",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-opencode-hacked-user-credentials-leaked-6ea16c17.md",
           "candidate_score": 66.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 200점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 188개를 토론 신호로 반영했습니다.",
+            "Hacker News 점수 676점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 118개를 토론 신호로 반영했습니다.",
             "RSS 순위 4위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:08562e287debb5d5",
-          "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-          "normalized_url": "https://www.mercor.com/research/labor-index/benchmark-map",
-          "url_hash": "08562e287debb5d59876ecd956593ba43424b161a9515da9b56e95bfa99745f9",
-          "suggested_doc_key": "2026-10-90-of-us-working-hours-are-spent-on-tasks-not-covered-well-by-ai-benchma-08562e28",
-          "suggested_article_path": "docs/services/hacker-news/2026-10-90-of-us-working-hours-are-spent-on-tasks-not-covered-well-by-ai-benchma-08562e28.md",
+          "candidate_id": "hacker-news:cac24968e5aa0d5b",
+          "title": "DeepSeek-v4.1-Flash-1017",
+          "normalized_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "url_hash": "cac24968e5aa0d5bf28d3c60ce48378a0d33bee3f4a7e39824b4f1e7eb461454",
+          "suggested_doc_key": "2026-10-deepseek-v4-1-flash-1017-cac24968",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-deepseek-v4-1-flash-1017-cac24968.md",
           "candidate_score": 65.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
             "중요 키워드 1개를 감지해 가산했습니다.",
-            "Hacker News 점수 371점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 320개를 토론 신호로 반영했습니다.",
-            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 656점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 554개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:918cdd953ecffda0",
-          "title": "Claude reveals ECDSA curve origins",
-          "normalized_url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-          "url_hash": "918cdd953ecffda0b6789e24ddbbf1c913da8d7c807a36ec29e5347c016ec4a9",
-          "suggested_doc_key": "2026-10-claude-reveals-ecdsa-curve-origins-918cdd95",
-          "suggested_article_path": "docs/services/hacker-news/2026-10-claude-reveals-ecdsa-curve-origins-918cdd95.md",
-          "candidate_score": 64.0,
+          "candidate_id": "hacker-news:4e9a757f861c0ea6",
+          "title": "Gold is now the top U.S. export",
+          "normalized_url": "https://www.numismaticnews.net/gold-now-top-u-s-export",
+          "url_hash": "4e9a757f861c0ea6e4263d7cdadb5a838dffb4207fd56b918362d096bf80bfd9",
+          "suggested_doc_key": "2026-10-gold-is-now-the-top-u-s-export-4e9a757f",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-gold-is-now-the-top-u-s-export-4e9a757f.md",
+          "candidate_score": 60.6,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 593점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 247개를 토론 신호로 반영했습니다.",
-            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 186점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 104개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
           ]
         },
         {
-          "candidate_id": "hacker-news:6b04052164311588",
-          "title": "I never authorized an integration that scans my secrets",
-          "normalized_url": "https://github.com/home-assistant/home-assistant.io/issues/49314",
-          "url_hash": "6b04052164311588fe6acd13ae7e21ff6b9a90f8b63c52183cd033f835690f96",
-          "suggested_doc_key": "2026-10-i-never-authorized-an-integration-that-scans-my-secrets-6b040521",
-          "suggested_article_path": "docs/services/hacker-news/2026-10-i-never-authorized-an-integration-that-scans-my-secrets-6b040521.md",
-          "candidate_score": 63.8,
+          "candidate_id": "hacker-news:21767c06a3d50e26",
+          "title": "Solar surpasses nuclear power globally for first time",
+          "normalized_url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time",
+          "url_hash": "21767c06a3d50e267cc0625a1db30fae431641f98b257202b9c418d1e841b392",
+          "suggested_doc_key": "2026-10-solar-surpasses-nuclear-power-globally-for-first-time-21767c06",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-solar-surpasses-nuclear-power-globally-for-first-time-21767c06.md",
+          "candidate_score": 60.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 5점을 적용했습니다.",
             "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "Hacker News 점수 158점을 반응 신호로 반영했습니다.",
-            "Hacker News 댓글 108개를 토론 신호로 반영했습니다.",
-            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+            "Hacker News 점수 443점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 288개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5cf8bc3a52e1e15c",
+          "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+          "normalized_url": "https://llmspeed.dev/",
+          "url_hash": "5cf8bc3a52e1e15c3bc18eead82aee48586425afe74cfa072d98fa5d141c6eb7",
+          "suggested_doc_key": "2026-10-show-hn-llmspeed-feel-how-fast-a-local-llm-runs-before-you-buy-the-hardw-5cf8bc3a",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-show-hn-llmspeed-feel-how-fast-a-local-llm-runs-before-you-buy-the-hardw-5cf8bc3a.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 234점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 75개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
           ]
         }
       ],
@@ -212,55 +211,26 @@
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
       "raw_count": 50,
-      "candidate_count": 3,
-      "excluded_count": 47,
+      "candidate_count": 1,
+      "excluded_count": 49,
       "top_candidates": [
         {
-          "candidate_id": "openai-blog:9e63539289a31c86",
-          "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-          "normalized_url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-          "url_hash": "9e63539289a31c8631b61e2dab00ee4355731974576a94679adaae67ea1b4655",
-          "suggested_doc_key": "2026-10-stack-overflow-for-agents-triples-signups-with-chatgpt-plugin-9e635392",
-          "suggested_article_path": "docs/services/openai-blog/2026-10-stack-overflow-for-agents-triples-signups-with-chatgpt-plugin-9e635392.md",
-          "candidate_score": 42.0,
+          "candidate_id": "openai-blog:b6756c0a180ee554",
+          "title": "Benefit Street Partners answers questions faster with Codex",
+          "normalized_url": "https://openai.com/index/benefit-street-partners",
+          "url_hash": "b6756c0a180ee554226c332b456c2b3fe634b3c508ea217138686c0c0ae92870",
+          "suggested_doc_key": "2026-10-benefit-street-partners-answers-questions-faster-with-codex-b6756c0a",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-benefit-street-partners-answers-questions-faster-with-codex-b6756c0a.md",
+          "candidate_score": 37.0,
           "ranking_reasons_ko": [
             "서비스 기본 가중치 10점을 적용했습니다.",
             "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
-            "중요 키워드 1개를 감지해 가산했습니다.",
             "RSS 순위 2위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "openai-blog:9732b2763df5a67a",
-          "title": "How Itaú is building generative AI for its entire customer base",
-          "normalized_url": "https://openai.com/index/itau-generative-ai",
-          "url_hash": "9732b2763df5a67ab9455b8255aee23064fe436ed165bb52468ec0f54969accf",
-          "suggested_doc_key": "2026-10-how-ita-is-building-generative-ai-for-its-entire-customer-base-9732b276",
-          "suggested_article_path": "docs/services/openai-blog/2026-10-how-ita-is-building-generative-ai-for-its-entire-customer-base-9732b276.md",
-          "candidate_score": 39.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 10점을 적용했습니다.",
-            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
-            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
-          ]
-        },
-        {
-          "candidate_id": "openai-blog:94eadcab22c41e35",
-          "title": "Sullivan & Cromwell brings legal expertise into agreement review",
-          "normalized_url": "https://openai.com/index/sullivan-cromwell",
-          "url_hash": "94eadcab22c41e356a1d9bf1e35dbdb6491d04804b7eea5ceec3829024496784",
-          "suggested_doc_key": "2026-10-sullivan-cromwell-brings-legal-expertise-into-agreement-review-94eadcab",
-          "suggested_article_path": "docs/services/openai-blog/2026-10-sullivan-cromwell-brings-legal-expertise-into-agreement-review-94eadcab.md",
-          "candidate_score": 33.0,
-          "ranking_reasons_ko": [
-            "서비스 기본 가중치 10점을 적용했습니다.",
-            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
-            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
           ]
         }
       ],
       "excluded_reasons": {
-        "already_briefed": 47
+        "already_briefed": 49
       }
     }
   ]
