@@ -11010,6 +11010,76 @@
       "status": "published",
       "briefed_at": "2026-10-16T00:07:27.328181Z",
       "candidate_score": 35.0
+    },
+    "5a13ce7aaffad260996313a0c4eb43b20b03e0fdf0625ba9ca1d50b97940cbc6": {
+      "normalized_url": "https://starskirmish.com/bench/v0-2",
+      "title_fingerprint": "show hn gemini 4 argon plays starcraft",
+      "service_key": "hacker-news",
+      "title": "Show HN: Gemini 4 Argon plays StarCraft",
+      "article_doc_path": "docs/services/hacker-news/2026-10-show-hn-gemini-4-argon-plays-starcraft-5a13ce7a.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T00:09:00.971858Z",
+      "candidate_score": 67.9
+    },
+    "6d6f8ad0753534aab211d62e20d2ed19db564953fdf5909882c5651fc110b977": {
+      "normalized_url": "https://claude.dev/blog/solving-code-review-at-anthropic",
+      "title_fingerprint": "how the claude code team does code review",
+      "service_key": "hacker-news",
+      "title": "How the Claude Code team does code review",
+      "article_doc_path": "docs/services/hacker-news/2026-10-how-the-claude-code-team-does-code-review-6d6f8ad0.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T00:09:00.971900Z",
+      "candidate_score": 66.0
+    },
+    "08562e287debb5d59876ecd956593ba43424b161a9515da9b56e95bfa99745f9": {
+      "normalized_url": "https://www.mercor.com/research/labor-index/benchmark-map",
+      "title_fingerprint": "90 of us working hours are spent on tasks not covered well by ai benchmarks",
+      "service_key": "hacker-news",
+      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+      "article_doc_path": "docs/services/hacker-news/2026-10-90-of-us-working-hours-are-spent-on-tasks-not-covered-well-by-ai-benchma-08562e28.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T00:09:00.971911Z",
+      "candidate_score": 65.0
+    },
+    "918cdd953ecffda0b6789e24ddbbf1c913da8d7c807a36ec29e5347c016ec4a9": {
+      "normalized_url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "title_fingerprint": "claude reveals ecdsa curve origins",
+      "service_key": "hacker-news",
+      "title": "Claude reveals ECDSA curve origins",
+      "article_doc_path": "docs/services/hacker-news/2026-10-claude-reveals-ecdsa-curve-origins-918cdd95.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T00:09:00.971931Z",
+      "candidate_score": 64.0
+    },
+    "9e63539289a31c8631b61e2dab00ee4355731974576a94679adaae67ea1b4655": {
+      "normalized_url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "title_fingerprint": "stack overflow for agents triples signups with chatgpt plugin",
+      "service_key": "openai-blog",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "article_doc_path": "docs/services/openai-blog/2026-10-stack-overflow-for-agents-triples-signups-with-chatgpt-plugin-9e635392.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T00:09:00.971937Z",
+      "candidate_score": 42.0
+    },
+    "9732b2763df5a67ab9455b8255aee23064fe436ed165bb52468ec0f54969accf": {
+      "normalized_url": "https://openai.com/index/itau-generative-ai",
+      "title_fingerprint": "how ita is building generative ai for its entire customer base",
+      "service_key": "openai-blog",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-ita-is-building-generative-ai-for-its-entire-customer-base-9732b276.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T00:09:00.971942Z",
+      "candidate_score": 39.0
+    },
+    "94eadcab22c41e356a1d9bf1e35dbdb6491d04804b7eea5ceec3829024496784": {
+      "normalized_url": "https://openai.com/index/sullivan-cromwell",
+      "title_fingerprint": "sullivan cromwell brings legal expertise into agreement review",
+      "service_key": "openai-blog",
+      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+      "article_doc_path": "docs/services/openai-blog/2026-10-sullivan-cromwell-brings-legal-expertise-into-agreement-review-94eadcab.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T00:09:00.971946Z",
+      "candidate_score": 33.0
     }
   }
 }
