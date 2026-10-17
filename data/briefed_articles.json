@@ -11080,6 +11080,56 @@
       "status": "published",
       "briefed_at": "2026-10-17T00:09:00.971946Z",
       "candidate_score": 33.0
+    },
+    "6ea16c172c83caf06b5859e77c232da68e3e4e443f8723e0eb20831611534265": {
+      "normalized_url": "https://twitter.com/opencode/status/2111516673953935833",
+      "title_fingerprint": "opencode hacked user credentials leaked",
+      "service_key": "hacker-news",
+      "title": "OpenCode Hacked: User credentials leaked",
+      "article_doc_path": "docs/services/hacker-news/2026-10-opencode-hacked-user-credentials-leaked-6ea16c17.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T23:45:44.083766Z",
+      "candidate_score": 66.0
+    },
+    "cac24968e5aa0d5bf28d3c60ce48378a0d33bee3f4a7e39824b4f1e7eb461454": {
+      "normalized_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "title_fingerprint": "deepseek v4 1 flash 1017",
+      "service_key": "hacker-news",
+      "title": "DeepSeek-v4.1-Flash-1017",
+      "article_doc_path": "docs/services/hacker-news/2026-10-deepseek-v4-1-flash-1017-cac24968.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T23:45:44.083808Z",
+      "candidate_score": 65.0
+    },
+    "4e9a757f861c0ea6e4263d7cdadb5a838dffb4207fd56b918362d096bf80bfd9": {
+      "normalized_url": "https://www.numismaticnews.net/gold-now-top-u-s-export",
+      "title_fingerprint": "gold is now the top u s export",
+      "service_key": "hacker-news",
+      "title": "Gold is now the top U.S. export",
+      "article_doc_path": "docs/services/hacker-news/2026-10-gold-is-now-the-top-u-s-export-4e9a757f.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T23:45:44.083822Z",
+      "candidate_score": 60.6
+    },
+    "21767c06a3d50e267cc0625a1db30fae431641f98b257202b9c418d1e841b392": {
+      "normalized_url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time",
+      "title_fingerprint": "solar surpasses nuclear power globally for first time",
+      "service_key": "hacker-news",
+      "title": "Solar surpasses nuclear power globally for first time",
+      "article_doc_path": "docs/services/hacker-news/2026-10-solar-surpasses-nuclear-power-globally-for-first-time-21767c06.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T23:45:44.083834Z",
+      "candidate_score": 60.0
+    },
+    "b6756c0a180ee554226c332b456c2b3fe634b3c508ea217138686c0c0ae92870": {
+      "normalized_url": "https://openai.com/index/benefit-street-partners",
+      "title_fingerprint": "benefit street partners answers questions faster with codex",
+      "service_key": "openai-blog",
+      "title": "Benefit Street Partners answers questions faster with Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-10-benefit-street-partners-answers-questions-faster-with-codex-b6756c0a.md",
+      "status": "published",
+      "briefed_at": "2026-10-17T23:45:44.083844Z",
+      "candidate_score": 37.0
     }
   }
 }
