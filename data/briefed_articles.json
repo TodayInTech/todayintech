@@ -11130,6 +11130,56 @@
       "status": "published",
       "briefed_at": "2026-10-17T23:45:44.083844Z",
       "candidate_score": 37.0
+    },
+    "a0595c813318ccae8c08950da5c942c92349612b84631a22de879ac40ef1f743": {
+      "normalized_url": "https://www.anthropic.com/news/public-benefit-fund",
+      "title_fingerprint": "investing in the public benefit",
+      "service_key": "anthropic-blog",
+      "title": "Investing in the public benefit",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-investing-in-the-public-benefit-a0595c81.md",
+      "status": "published",
+      "briefed_at": "2026-10-18T23:55:01.177978Z",
+      "candidate_score": 30.0
+    },
+    "ae6e49210029e41a672a7f639a040f260b0aeb7595e36baced9dfc8765964be4": {
+      "normalized_url": "https://arxiv.org/abs/2610.18861",
+      "title_fingerprint": "hybrid reasoning agents llm agents that think in latent space act through text",
+      "service_key": "hacker-news",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "article_doc_path": "docs/services/hacker-news/2026-10-hybrid-reasoning-agents-llm-agents-that-think-in-latent-space-act-throug-ae6e4921.md",
+      "status": "published",
+      "briefed_at": "2026-10-18T23:55:01.178012Z",
+      "candidate_score": 67.7
+    },
+    "56ddeb4dc142762fd27d1a22025b5a5ab442e28057dc9d2acd3794d84b6bd6f2": {
+      "normalized_url": "https://api-docs.deepseek.com/guides/search",
+      "title_fingerprint": "deepseek search and fetch 0 75 per 1000 successful requests",
+      "service_key": "hacker-news",
+      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+      "article_doc_path": "docs/services/hacker-news/2026-10-deepseek-search-and-fetch-0-75-per-1000-successful-requests-56ddeb4d.md",
+      "status": "published",
+      "briefed_at": "2026-10-18T23:55:01.178021Z",
+      "candidate_score": 65.0
+    },
+    "0e1c32a585dd4e05db26ac4f3767b3389724719c87ea2a07b858dd3b3022cc6b": {
+      "normalized_url": "https://sphinx-six-theta.vercel.app/",
+      "title_fingerprint": "show hn sphinx a hook that quizzes you on your ai s code before shipping",
+      "service_key": "hacker-news",
+      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "article_doc_path": "docs/services/hacker-news/2026-10-show-hn-sphinx-a-hook-that-quizzes-you-on-your-ai-s-code-before-shipping-0e1c32a5.md",
+      "status": "published",
+      "briefed_at": "2026-10-18T23:55:01.178029Z",
+      "candidate_score": 65.0
+    },
+    "49bb7688995bb7418c37432552ba3d8bbea04e73e74f718ca6495592100f1c63": {
+      "normalized_url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains",
+      "title_fingerprint": "namecheap just seized and disabled all my domains",
+      "service_key": "hacker-news",
+      "title": "Namecheap just seized and disabled all my domains",
+      "article_doc_path": "docs/services/hacker-news/2026-10-namecheap-just-seized-and-disabled-all-my-domains-49bb7688.md",
+      "status": "published",
+      "briefed_at": "2026-10-18T23:55:01.178035Z",
+      "candidate_score": 63.0
     }
   }
 }
