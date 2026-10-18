@@ -1,0 +1,238 @@
+{
+  "generated_at": "2026-10-18T23:52:52.770018+00:00",
+  "generated_for": "2026-10-18",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "22b9183fabb18ab301e49d70244189411f826d08",
+  "github_run_id": "39178231549",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 11,
+  "excluded_count": 109,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 21,
+      "excluded_count": 99,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 99
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 21,
+      "output_count": 21,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 21,
+      "output_count": 21,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 21,
+      "output_count": 11,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:a0595c813318ccae",
+          "title": "Investing in the public benefit",
+          "normalized_url": "https://www.anthropic.com/news/public-benefit-fund",
+          "url_hash": "a0595c813318ccae8c08950da5c942c92349612b84631a22de879ac40ef1f743",
+          "suggested_doc_key": "2026-10-investing-in-the-public-benefit-a0595c81",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-investing-in-the-public-benefit-a0595c81.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:ae6e49210029e41a",
+          "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+          "normalized_url": "https://arxiv.org/abs/2610.18861",
+          "url_hash": "ae6e49210029e41a672a7f639a040f260b0aeb7595e36baced9dfc8765964be4",
+          "suggested_doc_key": "2026-10-hybrid-reasoning-agents-llm-agents-that-think-in-latent-space-act-throug-ae6e4921",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-hybrid-reasoning-agents-llm-agents-that-think-in-latent-space-act-throug-ae6e4921.md",
+          "candidate_score": 67.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 147점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 84개를 토론 신호로 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:56ddeb4dc142762f",
+          "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+          "normalized_url": "https://api-docs.deepseek.com/guides/search",
+          "url_hash": "56ddeb4dc142762fd27d1a22025b5a5ab442e28057dc9d2acd3794d84b6bd6f2",
+          "suggested_doc_key": "2026-10-deepseek-search-and-fetch-0-75-per-1000-successful-requests-56ddeb4d",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-deepseek-search-and-fetch-0-75-per-1000-successful-requests-56ddeb4d.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 527점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 253개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0e1c32a585dd4e05",
+          "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+          "normalized_url": "https://sphinx-six-theta.vercel.app/",
+          "url_hash": "0e1c32a585dd4e05db26ac4f3767b3389724719c87ea2a07b858dd3b3022cc6b",
+          "suggested_doc_key": "2026-10-show-hn-sphinx-a-hook-that-quizzes-you-on-your-ai-s-code-before-shipping-0e1c32a5",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-show-hn-sphinx-a-hook-that-quizzes-you-on-your-ai-s-code-before-shipping-0e1c32a5.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 238점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 81개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:49bb7688995bb741",
+          "title": "Namecheap just seized and disabled all my domains",
+          "normalized_url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains",
+          "url_hash": "49bb7688995bb7418c37432552ba3d8bbea04e73e74f718ca6495592100f1c63",
+          "suggested_doc_key": "2026-10-namecheap-just-seized-and-disabled-all-my-domains-49bb7688",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-namecheap-just-seized-and-disabled-all-my-domains-49bb7688.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 378점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 182개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9e8247d936d87c46",
+          "title": "Someone behind the software",
+          "normalized_url": "https://karrisaarinen.com/posts/someone-behind-the-software",
+          "url_hash": "9e8247d936d87c468958efaced79e809bcd5e43a4b377821ba8cd15adf206139",
+          "suggested_doc_key": "2026-10-someone-behind-the-software-9e8247d9",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-someone-behind-the-software-9e8247d9.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 274점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 114개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 50
+      }
+    }
+  ]
+}

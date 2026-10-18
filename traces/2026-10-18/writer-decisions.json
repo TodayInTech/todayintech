@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-10-18T23:55:01.410822+00:00",
+  "generated_for": "2026-10-18",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "22b9183fabb18ab301e49d70244189411f826d08",
+  "github_run_id": "39178231549",
+  "decision_count": 5,
+  "decision_counts": {
+    "published": 5
+  },
+  "decisions": [
+    {
+      "candidate_id": "anthropic-blog:a0595c813318ccae",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "title": "Investing in the public benefit",
+      "normalized_url": "https://www.anthropic.com/news/public-benefit-fund",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-investing-in-the-public-benefit-a0595c81.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "AI 거버넌스·기업정책",
+      "importance_level": "High",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "Anthropic가 회사 지분 일부를 공익 목적을 위해 새로 설립한 Anthropic Public Benefit Fund에 헌납하고, 지분 배분 방식·제한(로비·정치기부 금지)·기존 창업자·직원 기부 프로그램과의 연계 등을 구체적으로 밝혀 AI 거버넌스와 기업 지배구조 측면에서 실질적 의미가 있어 기술 독자에게 유익합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 30.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:ae6e49210029e41a",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "normalized_url": "https://arxiv.org/abs/2610.18861",
+      "article_doc_path": "docs/services/hacker-news/2026-10-hybrid-reasoning-agents-llm-agents-that-think-in-latent-space-act-throug-ae6e4921.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "인공지능·머신러닝",
+      "importance_level": "높음",
+      "confidence_score": 0.87,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "논문 초록에서 HybridLink 아키텍처, 연속적 워킹 메모리, HybridSFT·HybridRL 같은 사후 학습 알고리즘과 함께 구체적 성능·효율 개선 수치(성능 +10.4%, 토큰 절감 35.5–54.7%, 추론 속도 1.8–2.6배, 비용 2.7–3.7배)를 제시하고 있어 기술적 가치와 검증 근거가 충분합니다. 코드·데이터 공개도 명시되어 있어 재현성·실무 적용 가능성이 높습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 67.7,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:56ddeb4dc142762f",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+      "normalized_url": "https://api-docs.deepseek.com/guides/search",
+      "article_doc_path": "docs/services/hacker-news/2026-10-deepseek-search-and-fetch-0-75-per-1000-successful-requests-56ddeb4d.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "검색 API",
+      "importance_level": "중간",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "문서가 Search와 Fetch의 엔드포인트, 인증 방식, 요청·응답 스키마, 쿼리 연산자, 오류 코드, 과금 및 QPS 제한을 구체적으로 제시해 RAG·에이전트 통합 관점에서 실무적 가치가 높습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:0e1c32a585dd4e05",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "normalized_url": "https://sphinx-six-theta.vercel.app/",
+      "article_doc_path": "docs/services/hacker-news/2026-10-show-hn-sphinx-a-hook-that-quizzes-you-on-your-ai-s-code-before-shipping-0e1c32a5.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Developer tools / AI-assisted coding",
+      "importance_level": "Medium",
+      "confidence_score": 0.78,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "FOSS로 공개된 개발자용 훅이라는 점과 ‘배포 전 AI가 생성한 코드에 대해 개발자가 이해하는지 묻는’ 설계가 개발 워크플로우와 AI 안전성 논의 모두에 직접적으로 맞닿아 있어 기술 독자에게 유용한 정보성을 제공함. Hacker News에서의 관심도(포인트·댓글)를 근거로 독자 관심 가능성도 높음.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+        "feed_summary: FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing works.",
+        "source_url: https://sphinx-six-theta.vercel.app/",
+        "published_at: 2026-10-18T04:33:49+00:00",
+        "authors: critiquebrowser",
+        "hn_points: 238",
+        "hn_comments: 81",
+        "hn_comments_url: https://news.ycombinator.com/item?id=50137950"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:49bb7688995bb741",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Namecheap just seized and disabled all my domains",
+      "normalized_url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains",
+      "article_doc_path": "docs/services/hacker-news/2026-10-namecheap-just-seized-and-disabled-all-my-domains-49bb7688.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "인프라/운영",
+      "importance_level": "높음",
+      "confidence_score": 0.7,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "제공된 메타데이터로는 'Namecheap이 도메인을 압수·비활성화했다'는 심각한 주장과 관련해 다수의 기술 커뮤니티 반응(Hacker News 378점, 댓글 182개)이 확인되어 시스템 관리자·보안 담당자 대상의 브리핑 가치가 높다고 판단됩니다. 다만 본문 상세는 메타데이터에 없어 한계가 있습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "title: Namecheap just seized and disabled all my domains",
+        "source_url: https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/",
+        "feed_summary: Article URL and Comments URL; Points: 378; # Comments: 182",
+        "service_name: Hacker News",
+        "collected_at: 2026-10-18T23:53:00.227918+00:00"
+      ],
+      "candidate_score": 63.0,
+      "error_message": null
+    }
+  ]
+}
