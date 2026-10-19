@@ -128,3 +128,5 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 - [x] Fix briefing card heights and reserve two title lines plus three excerpt lines with truncation
 
 - [x] Show first/last and immediate neighboring pages in pagination
+
+- [x] Replace briefing loading text with a small theme-aware spinner, accessible status labeling, and reduced-motion support

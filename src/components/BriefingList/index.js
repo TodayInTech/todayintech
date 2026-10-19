@@ -135,7 +135,11 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
   }
 
   if (!data) {
-    return <div className="alert alert--secondary">{labels.loading}</div>;
+    return (
+      <div className={styles.loading} role="status" aria-label={labels.loading}>
+        <span className={styles.spinner} aria-hidden="true" />
+      </div>
+    );
   }
 
   return (
