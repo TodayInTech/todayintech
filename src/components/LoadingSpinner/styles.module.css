@@ -1,0 +1,4 @@
+.loading { display: grid; place-items: center; width: 100%; min-height: 144px; margin: 1rem 0 2rem; color: var(--tit-muted); }
+.spinner { width: 24px; height: 24px; box-sizing: border-box; border: 2px solid var(--tit-panel-border); border-top-color: currentColor; border-radius: 50%; animation: loading-spin 800ms linear infinite; }
+@keyframes loading-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }

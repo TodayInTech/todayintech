@@ -4,6 +4,7 @@ import Tooltip from '@site/src/components/Tooltip';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import DateCard from '@site/src/components/DateCard';
 import ServiceIcon from '@site/src/components/ServiceIcon';
+import LoadingSpinner from '@site/src/components/LoadingSpinner';
 
 import styles from './styles.module.css';
 
@@ -70,7 +71,7 @@ export default function OperationsDashboard({view = 'overview'}) {
   }
 
   if (!data) {
-    return <div className="alert alert--secondary">{t("Loading traces…")}</div>;
+    return <LoadingSpinner label={t("Loading traces…")} />;
   }
 
   const serviceOptions = Object.entries(data.service_names || {}).sort(([left], [right]) =>

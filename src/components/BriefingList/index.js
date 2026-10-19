@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import {useHistory, useLocation} from '@docusaurus/router';
 import DateCard from '@site/src/components/DateCard';
 import ServiceIcon from '@site/src/components/ServiceIcon';
+import LoadingSpinner from '@site/src/components/LoadingSpinner';
 
 import styles from './styles.module.css';
 
@@ -135,11 +136,7 @@ export default function BriefingList({mode = 'all', serviceKey: fixedServiceKey 
   }
 
   if (!data) {
-    return (
-      <div className={styles.loading} role="status" aria-label={labels.loading}>
-        <span className={styles.spinner} aria-hidden="true" />
-      </div>
-    );
+    return <LoadingSpinner label={labels.loading} />;
   }
 
   return (

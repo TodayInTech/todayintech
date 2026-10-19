@@ -1,8 +1,4 @@
 .briefingList { width: 100%; min-width: min(100%, 320px); display: flex; flex-direction: column; gap: 1.25rem; margin: 1rem 0 2rem; }
-.loading { display: grid; place-items: center; width: 100%; min-height: 144px; margin: 1rem 0 2rem; color: var(--tit-muted); }
-.spinner { width: 24px; height: 24px; box-sizing: border-box; border: 2px solid var(--tit-panel-border); border-top-color: currentColor; border-radius: 50%; animation: briefing-spin 800ms linear infinite; }
-@keyframes briefing-spin { to { transform: rotate(360deg); } }
-@media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }
 .filterBar { display: flex; flex-wrap: wrap; align-items: end; gap: 1rem 2rem; margin-bottom: 0.25rem; }
 .filterField { display: flex; flex-direction: column; gap: 0.5rem; min-width: 0; color: var(--tit-muted); font-size: 0.72rem; font-weight: 500; }
 .filterField:first-child { flex: 1 1 100%; }
