@@ -11180,6 +11180,66 @@
       "status": "published",
       "briefed_at": "2026-10-18T23:55:01.178035Z",
       "candidate_score": 63.0
+    },
+    "1be45fb0ef68a5f78aff9b0c3266fee630ee825083130359fdbcd0f3a60737cf": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
+      "title_fingerprint": "how to continue a github copilot app session in vs code",
+      "service_key": "github-blog",
+      "title": "How to continue a GitHub Copilot app session in VS Code",
+      "article_doc_path": "docs/services/github-blog/2026-10-how-to-continue-a-github-copilot-app-session-in-vs-code-1be45fb0.md",
+      "status": "published",
+      "briefed_at": "2026-10-20T00:55:43.809099Z",
+      "candidate_score": 42.0
+    },
+    "94b00070d9730e6c1637bc085abeb195873457fb64067327a03361f80808c9c4": {
+      "normalized_url": "https://josie.lol/blog/linux-rtx-spark",
+      "title_fingerprint": "putting linux on my rtx spark laptop because i don t have a microsoft account",
+      "service_key": "hacker-news",
+      "title": "Putting Linux on my RTX Spark laptop because I don't have a Microsoft account",
+      "article_doc_path": "docs/services/hacker-news/2026-10-putting-linux-on-my-rtx-spark-laptop-because-i-don-t-have-a-microsoft-ac-94b00070.md",
+      "status": "published",
+      "briefed_at": "2026-10-20T00:55:43.809138Z",
+      "candidate_score": 60.5
+    },
+    "379accb38d21583f9cf481d5117a3eb52cb304b68f04fc15869a11b6c38310df": {
+      "normalized_url": "https://github.com/kksimp/Mac.apk",
+      "title_fingerprint": "android apps running native on macos",
+      "service_key": "hacker-news",
+      "title": "Android apps running native on macOS",
+      "article_doc_path": "docs/services/hacker-news/2026-10-android-apps-running-native-on-macos-379accb3.md",
+      "status": "published",
+      "briefed_at": "2026-10-20T00:55:43.809148Z",
+      "candidate_score": 60.0
+    },
+    "b984a5c544e6313764ddbb1cb0dab8320a3a820a9c198b515761e8a455c480cc": {
+      "normalized_url": "https://www.minimax.io/blog/minimax-m31f",
+      "title_fingerprint": "minimax m3 1 flash",
+      "service_key": "hacker-news",
+      "title": "MiniMax M3.1 Flash",
+      "article_doc_path": "docs/services/hacker-news/2026-10-minimax-m3-1-flash-b984a5c5.md",
+      "status": "published",
+      "briefed_at": "2026-10-20T00:55:43.809154Z",
+      "candidate_score": 60.0
+    },
+    "67faafe4c9b4a947aba08a668aa7d32cf45e1cf111b53ced9542bd7f27b72880": {
+      "normalized_url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+      "title_fingerprint": "wine ported to openbsd",
+      "service_key": "hacker-news",
+      "title": "Wine ported to OpenBSD",
+      "article_doc_path": "docs/services/hacker-news/2026-10-wine-ported-to-openbsd-67faafe4.md",
+      "status": "published",
+      "briefed_at": "2026-10-20T00:55:43.809159Z",
+      "candidate_score": 60.0
+    },
+    "1dbe22633003a2af4fddcdba3c780b2ba9f507be061699ce02dd407e5165c7ab": {
+      "normalized_url": "https://openai.com/index/low-resource-programming-languages",
+      "title_fingerprint": "advancing coding in low resource programming languages",
+      "service_key": "openai-blog",
+      "title": "Advancing coding in low‑resource programming languages",
+      "article_doc_path": "docs/services/openai-blog/2026-10-advancing-coding-in-low-resource-programming-languages-1dbe2263.md",
+      "status": "published",
+      "briefed_at": "2026-10-20T00:55:43.809164Z",
+      "candidate_score": 39.0
     }
   }
 }
