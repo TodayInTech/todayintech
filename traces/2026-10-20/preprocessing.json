@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-10-20T00:53:34.515745+00:00",
+  "generated_for": "2026-10-20",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "5838da231ec7f0e937eeaae22fdfd20323f5ce7b",
+  "github_run_id": "39350152058",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 12,
+  "excluded_count": 108,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 22,
+      "output_count": 12,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:1be45fb0ef68a5f7",
+          "title": "How to continue a GitHub Copilot app session in VS Code",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
+          "url_hash": "1be45fb0ef68a5f78aff9b0c3266fee630ee825083130359fdbcd0f3a60737cf",
+          "suggested_doc_key": "2026-10-how-to-continue-a-github-copilot-app-session-in-vs-code-1be45fb0",
+          "suggested_article_path": "docs/services/github-blog/2026-10-how-to-continue-a-github-copilot-app-session-in-vs-code-1be45fb0.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:94b00070d9730e6c",
+          "title": "Putting Linux on my RTX Spark laptop because I don't have a Microsoft account",
+          "normalized_url": "https://josie.lol/blog/linux-rtx-spark",
+          "url_hash": "94b00070d9730e6c1637bc085abeb195873457fb64067327a03361f80808c9c4",
+          "suggested_doc_key": "2026-10-putting-linux-on-my-rtx-spark-laptop-because-i-don-t-have-a-microsoft-ac-94b00070",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-putting-linux-on-my-rtx-spark-laptop-because-i-don-t-have-a-microsoft-ac-94b00070.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 164점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 73개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:614a0336a7737e51",
+          "title": "Mercury 3: Diffusion at scale",
+          "normalized_url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+          "url_hash": "614a0336a7737e51afb3b077cdb47d041cfcc6e0785f6808a08729d3ded841df",
+          "suggested_doc_key": "2026-10-mercury-3-diffusion-at-scale-614a0336",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-mercury-3-diffusion-at-scale-614a0336.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 218점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 84개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:379accb38d21583f",
+          "title": "Android apps running native on macOS",
+          "normalized_url": "https://github.com/kksimp/Mac.apk",
+          "url_hash": "379accb38d21583f9cf481d5117a3eb52cb304b68f04fc15869a11b6c38310df",
+          "suggested_doc_key": "2026-10-android-apps-running-native-on-macos-379accb3",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-android-apps-running-native-on-macos-379accb3.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 245점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 125개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b984a5c544e63137",
+          "title": "MiniMax M3.1 Flash",
+          "normalized_url": "https://www.minimax.io/blog/minimax-m31f",
+          "url_hash": "b984a5c544e6313764ddbb1cb0dab8320a3a820a9c198b515761e8a455c480cc",
+          "suggested_doc_key": "2026-10-minimax-m3-1-flash-b984a5c5",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-minimax-m3-1-flash-b984a5c5.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 363점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 156개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:67faafe4c9b4a947",
+          "title": "Wine ported to OpenBSD",
+          "normalized_url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+          "url_hash": "67faafe4c9b4a947aba08a668aa7d32cf45e1cf111b53ced9542bd7f27b72880",
+          "suggested_doc_key": "2026-10-wine-ported-to-openbsd-67faafe4",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-wine-ported-to-openbsd-67faafe4.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 488점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 162개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:1dbe22633003a2af",
+          "title": "Advancing coding in low‑resource programming languages",
+          "normalized_url": "https://openai.com/index/low-resource-programming-languages",
+          "url_hash": "1dbe22633003a2af4fddcdba3c780b2ba9f507be061699ce02dd407e5165c7ab",
+          "suggested_doc_key": "2026-10-advancing-coding-in-low-resource-programming-languages-1dbe2263",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-advancing-coding-in-low-resource-programming-languages-1dbe2263.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 49
+      }
+    }
+  ]
+}
