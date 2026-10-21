@@ -1,0 +1,350 @@
+{
+  "generated_at": "2026-10-21T00:21:22.514017+00:00",
+  "generated_for": "2026-10-21",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "69accd37e38cff6078e38d1df11729b018c10915",
+  "github_run_id": "39520626872",
+  "service_count": 5,
+  "duration_ms": 13,
+  "raw_count": 120,
+  "candidate_count": 19,
+  "excluded_count": 101,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 29,
+      "excluded_count": 91,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 91
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 29,
+      "output_count": 29,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 29,
+      "output_count": 29,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 29,
+      "output_count": 19,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 5,
+      "excluded_count": 15,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:c38f4a2297fd9fa3",
+          "title": "Claude Gov models for US national security",
+          "normalized_url": "https://www.anthropic.com/news/claude-gov-models-for-u-s-national-security-customers",
+          "url_hash": "c38f4a2297fd9fa3272a44b3b5cb5faa5db43ee9509497023a9f8a0747e8571d",
+          "suggested_doc_key": "2026-10-claude-gov-models-for-us-national-security-c38f4a22",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-claude-gov-models-for-us-national-security-c38f4a22.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:753804538177a6fb",
+          "title": "Anthropic's position on the diffusion rule",
+          "normalized_url": "https://www.anthropic.com/news/securing-america-s-compute-advantage-anthropic-s-position-on-the-diffusion-rule",
+          "url_hash": "753804538177a6fb83ae7f8e0298f25ef360060b3d42c2b9f8206b42a5448110",
+          "suggested_doc_key": "2026-10-anthropic-s-position-on-the-diffusion-rule-75380453",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-anthropic-s-position-on-the-diffusion-rule-75380453.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:2349adbe13dcaf9d",
+          "title": "Testing and mitigating elections-related risks",
+          "normalized_url": "https://www.anthropic.com/news/testing-and-mitigating-elections-related-risks",
+          "url_hash": "2349adbe13dcaf9dab14c7711f71cd1e4a5957ded5d9c6f2692bbae0cdb48d63",
+          "suggested_doc_key": "2026-10-testing-and-mitigating-elections-related-risks-2349adbe",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-testing-and-mitigating-elections-related-risks-2349adbe.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:e258fe41ba82a747",
+          "title": "Strengthening our defenses against distillation attacks",
+          "normalized_url": "https://www.anthropic.com/news/distillation-defenses",
+          "url_hash": "e258fe41ba82a7475f5f3f8c4acd944eb9c1353d98db89b2d7e5ff02ee984808",
+          "suggested_doc_key": "2026-10-strengthening-our-defenses-against-distillation-attacks-e258fe41",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-strengthening-our-defenses-against-distillation-attacks-e258fe41.md",
+          "candidate_score": 32.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:0d40f97ea619e69d",
+          "title": "Responsible Scaling Policy Version 3.0",
+          "normalized_url": "https://www.anthropic.com/news/responsible-scaling-policy-v3",
+          "url_hash": "0d40f97ea619e69da2455c23bb9616b833fcec3d6c370d9d979f18705bb56e2c",
+          "suggested_doc_key": "2026-10-responsible-scaling-policy-version-3-0-0d40f97e",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-responsible-scaling-policy-version-3-0-0d40f97e.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 15
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:c59142aad3a717b8",
+          "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity",
+          "url_hash": "c59142aad3a717b875d2006884606848f9530a186a95383c4c7e572935374417",
+          "suggested_doc_key": "2026-10-how-3-java-champions-are-using-github-copilot-for-increased-productivity-c59142aa",
+          "suggested_article_path": "docs/services/github-blog/2026-10-how-3-java-champions-are-using-github-copilot-for-increased-productivity-c59142aa.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:d57ddeaa485c7191",
+          "title": "Ask a Scientist: How can AI help doctors spend more time on collaborative care?",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-clinical-study",
+          "url_hash": "d57ddeaa485c7191315bc7637a048f11fd28e9dfbf1e5c0f43e39ef2e42ae3b7",
+          "suggested_doc_key": "2026-10-ask-a-scientist-how-can-ai-help-doctors-spend-more-time-on-collaborative-d57ddeaa",
+          "suggested_article_path": "docs/services/google-blog/2026-10-ask-a-scientist-how-can-ai-help-doctors-spend-more-time-on-collaborative-d57ddeaa.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:f933f1f1a760390e",
+          "title": "SimCity, but with Permits",
+          "normalized_url": "https://permit.petercai.com/",
+          "url_hash": "f933f1f1a760390e4190cc5ef8f2d74d986f61fc04960d2b3d8c8e872542573e",
+          "suggested_doc_key": "2026-10-simcity-but-with-permits-f933f1f1",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-simcity-but-with-permits-f933f1f1.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 492점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 263개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3182b8cd885a906e",
+          "title": "What shall I teach my son?",
+          "normalized_url": "https://stevekrouse.com/ends",
+          "url_hash": "3182b8cd885a906ec74ba1dc591720502ddf71ed3b3f69988964fcaa8340d006",
+          "suggested_doc_key": "2026-10-what-shall-i-teach-my-son-3182b8cd",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-what-shall-i-teach-my-son-3182b8cd.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 231점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 294개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4c6292fc5ecba5f2",
+          "title": "Voxtral 3",
+          "normalized_url": "https://mistral.ai/news/voxtral-3",
+          "url_hash": "4c6292fc5ecba5f2e0a9084156b47d5dbe0a85c39204b9c1840be9eb7e97963a",
+          "suggested_doc_key": "2026-10-voxtral-3-4c6292fc",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-voxtral-3-4c6292fc.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 494점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 134개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:433855b38a1a2af0",
+          "title": "Facebook Pages require paid subscription to post more than two links per month",
+          "normalized_url": "https://mastodon.gamedev.place/@AshleyGullen/117473851565913919",
+          "url_hash": "433855b38a1a2af0d8abdf117d071f15b349641063db6b08effbc9af0beef84b",
+          "suggested_doc_key": "2026-10-facebook-pages-require-paid-subscription-to-post-more-than-two-links-per-433855b3",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-facebook-pages-require-paid-subscription-to-post-more-than-two-links-per-433855b3.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 406점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 372개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4fb697f521be73ee",
+          "title": "Ofcom concedes defeat in 4chan case",
+          "normalized_url": "https://prestonbyrne.com/2026/10/20/ofcom-concedes-defeat",
+          "url_hash": "4fb697f521be73ee78278a70fcc5dc3aa6d9e3b52c82662f3f461a4fc9084b43",
+          "suggested_doc_key": "2026-10-ofcom-concedes-defeat-in-4chan-case-4fb697f5",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-ofcom-concedes-defeat-in-4chan-case-4fb697f5.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 317점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 221개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 2,
+      "excluded_count": 48,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:1725d137aa3debc0",
+          "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+          "normalized_url": "https://openai.com/index/ted-taylor-restaurant",
+          "url_hash": "1725d137aa3debc0d8ae9b76a5f8f5fc192130afd14f5151c2319be05f1a5dd1",
+          "suggested_doc_key": "2026-10-franchisee-reconciles-cash-in-94-less-time-with-chatgpt-work-1725d137",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-franchisee-reconciles-cash-in-94-less-time-with-chatgpt-work-1725d137.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:1cfb6291fa158d05",
+          "title": "OpenAI acquires Orchestra Bio",
+          "normalized_url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+          "url_hash": "1cfb6291fa158d05a5bad0e638547e0ff07dabd8e5700299a43b136146616242",
+          "suggested_doc_key": "2026-10-openai-acquires-orchestra-bio-1cfb6291",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-openai-acquires-orchestra-bio-1cfb6291.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 48
+      }
+    }
+  ]
+}
