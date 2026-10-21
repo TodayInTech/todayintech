@@ -11240,6 +11240,126 @@
       "status": "published",
       "briefed_at": "2026-10-20T00:55:43.809164Z",
       "candidate_score": 39.0
+    },
+    "c38f4a2297fd9fa3272a44b3b5cb5faa5db43ee9509497023a9f8a0747e8571d": {
+      "normalized_url": "https://www.anthropic.com/news/claude-gov-models-for-u-s-national-security-customers",
+      "title_fingerprint": "claude gov models for us national security",
+      "service_key": "anthropic-blog",
+      "title": "Claude Gov models for US national security",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-claude-gov-models-for-us-national-security-c38f4a22.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783544Z",
+      "candidate_score": 39.0
+    },
+    "753804538177a6fb83ae7f8e0298f25ef360060b3d42c2b9f8206b42a5448110": {
+      "normalized_url": "https://www.anthropic.com/news/securing-america-s-compute-advantage-anthropic-s-position-on-the-diffusion-rule",
+      "title_fingerprint": "anthropic s position on the diffusion rule",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic's position on the diffusion rule",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-anthropic-s-position-on-the-diffusion-rule-75380453.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783583Z",
+      "candidate_score": 34.0
+    },
+    "2349adbe13dcaf9dab14c7711f71cd1e4a5957ded5d9c6f2692bbae0cdb48d63": {
+      "normalized_url": "https://www.anthropic.com/news/testing-and-mitigating-elections-related-risks",
+      "title_fingerprint": "testing and mitigating elections related risks",
+      "service_key": "anthropic-blog",
+      "title": "Testing and mitigating elections-related risks",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-testing-and-mitigating-elections-related-risks-2349adbe.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783596Z",
+      "candidate_score": 34.0
+    },
+    "e258fe41ba82a7475f5f3f8c4acd944eb9c1353d98db89b2d7e5ff02ee984808": {
+      "normalized_url": "https://www.anthropic.com/news/distillation-defenses",
+      "title_fingerprint": "strengthening our defenses against distillation attacks",
+      "service_key": "anthropic-blog",
+      "title": "Strengthening our defenses against distillation attacks",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-strengthening-our-defenses-against-distillation-attacks-e258fe41.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783603Z",
+      "candidate_score": 32.0
+    },
+    "c59142aad3a717b875d2006884606848f9530a186a95383c4c7e572935374417": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity",
+      "title_fingerprint": "how 3 java champions are using github copilot for increased productivity",
+      "service_key": "github-blog",
+      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+      "article_doc_path": "docs/services/github-blog/2026-10-how-3-java-champions-are-using-github-copilot-for-increased-productivity-c59142aa.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783608Z",
+      "candidate_score": 37.0
+    },
+    "d57ddeaa485c7191315bc7637a048f11fd28e9dfbf1e5c0f43e39ef2e42ae3b7": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-clinical-study",
+      "title_fingerprint": "ask a scientist how can ai help doctors spend more time on collaborative care",
+      "service_key": "google-blog",
+      "title": "Ask a Scientist: How can AI help doctors spend more time on collaborative care?",
+      "article_doc_path": "docs/services/google-blog/2026-10-ask-a-scientist-how-can-ai-help-doctors-spend-more-time-on-collaborative-d57ddeaa.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783614Z",
+      "candidate_score": 36.0
+    },
+    "f933f1f1a760390e4190cc5ef8f2d74d986f61fc04960d2b3d8c8e872542573e": {
+      "normalized_url": "https://permit.petercai.com/",
+      "title_fingerprint": "simcity but with permits",
+      "service_key": "hacker-news",
+      "title": "SimCity, but with Permits",
+      "article_doc_path": "docs/services/hacker-news/2026-10-simcity-but-with-permits-f933f1f1.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783619Z",
+      "candidate_score": 66.0
+    },
+    "3182b8cd885a906ec74ba1dc591720502ddf71ed3b3f69988964fcaa8340d006": {
+      "normalized_url": "https://stevekrouse.com/ends",
+      "title_fingerprint": "what shall i teach my son",
+      "service_key": "hacker-news",
+      "title": "What shall I teach my son?",
+      "article_doc_path": "docs/services/hacker-news/2026-10-what-shall-i-teach-my-son-3182b8cd.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783624Z",
+      "candidate_score": 65.0
+    },
+    "4c6292fc5ecba5f2e0a9084156b47d5dbe0a85c39204b9c1840be9eb7e97963a": {
+      "normalized_url": "https://mistral.ai/news/voxtral-3",
+      "title_fingerprint": "voxtral 3",
+      "service_key": "hacker-news",
+      "title": "Voxtral 3",
+      "article_doc_path": "docs/services/hacker-news/2026-10-voxtral-3-4c6292fc.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783628Z",
+      "candidate_score": 62.0
+    },
+    "433855b38a1a2af0d8abdf117d071f15b349641063db6b08effbc9af0beef84b": {
+      "normalized_url": "https://mastodon.gamedev.place/@AshleyGullen/117473851565913919",
+      "title_fingerprint": "facebook pages require paid subscription to post more than two links per month",
+      "service_key": "hacker-news",
+      "title": "Facebook Pages require paid subscription to post more than two links per month",
+      "article_doc_path": "docs/services/hacker-news/2026-10-facebook-pages-require-paid-subscription-to-post-more-than-two-links-per-433855b3.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783633Z",
+      "candidate_score": 60.0
+    },
+    "1725d137aa3debc0d8ae9b76a5f8f5fc192130afd14f5151c2319be05f1a5dd1": {
+      "normalized_url": "https://openai.com/index/ted-taylor-restaurant",
+      "title_fingerprint": "franchisee reconciles cash in 94 less time with chatgpt work",
+      "service_key": "openai-blog",
+      "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+      "article_doc_path": "docs/services/openai-blog/2026-10-franchisee-reconciles-cash-in-94-less-time-with-chatgpt-work-1725d137.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783639Z",
+      "candidate_score": 39.0
+    },
+    "1cfb6291fa158d05a5bad0e638547e0ff07dabd8e5700299a43b136146616242": {
+      "normalized_url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+      "title_fingerprint": "openai acquires orchestra bio",
+      "service_key": "openai-blog",
+      "title": "OpenAI acquires Orchestra Bio",
+      "article_doc_path": "docs/services/openai-blog/2026-10-openai-acquires-orchestra-bio-1cfb6291.md",
+      "status": "published",
+      "briefed_at": "2026-10-21T00:24:37.783643Z",
+      "candidate_score": 37.0
     }
   }
 }
