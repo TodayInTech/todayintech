@@ -11360,6 +11360,126 @@
       "status": "published",
       "briefed_at": "2026-10-21T00:24:37.783643Z",
       "candidate_score": 37.0
+    },
+    "252684366be4bd9dc11d1a78acc15756e22a0d95eba13c48db3525b0687beb00": {
+      "normalized_url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "title_fingerprint": "physicist christopher stubbs joins anthropic s long term benefit trust",
+      "service_key": "anthropic-blog",
+      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-physicist-christopher-stubbs-joins-anthropic-s-long-term-benefit-trust-25268436.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214664Z",
+      "candidate_score": 45.0
+    },
+    "0d40f97ea619e69da2455c23bb9616b833fcec3d6c370d9d979f18705bb56e2c": {
+      "normalized_url": "https://www.anthropic.com/news/responsible-scaling-policy-v3",
+      "title_fingerprint": "responsible scaling policy version 3 0",
+      "service_key": "anthropic-blog",
+      "title": "Responsible Scaling Policy Version 3.0",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-responsible-scaling-policy-version-3-0-0d40f97e.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214698Z",
+      "candidate_score": 28.0
+    },
+    "885fe3c67de05637ce5b9612baa0a6e50e729bbbcf8015191def57f8d564f7ca": {
+      "normalized_url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure",
+      "title_fingerprint": "the bridge to agent scale git infrastructure",
+      "service_key": "github-blog",
+      "title": "The bridge to agent-scale Git infrastructure",
+      "article_doc_path": "docs/services/github-blog/2026-10-the-bridge-to-agent-scale-git-infrastructure-885fe3c6.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214709Z",
+      "candidate_score": 42.0
+    },
+    "78cebe09803b57417ff218b15d870961ff466abfed4da57b0fd3b78c08861131": {
+      "normalized_url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026",
+      "title_fingerprint": "southeast asia s digital economy to hit 368 billion",
+      "service_key": "google-blog",
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "article_doc_path": "docs/services/google-blog/2026-10-southeast-asia-s-digital-economy-to-hit-368-billion-78cebe09.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214716Z",
+      "candidate_score": 36.0
+    },
+    "f650128f337315b2b21b4080206f66c8916d073c88c39c54b34bd8634592691e": {
+      "normalized_url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security",
+      "title_fingerprint": "today s php security release and how we re strengthening security",
+      "service_key": "hacker-news",
+      "title": "Today's PHP security release, and how we're strengthening security",
+      "article_doc_path": "docs/services/hacker-news/2026-10-today-s-php-security-release-and-how-we-re-strengthening-security-f650128f.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214722Z",
+      "candidate_score": 70.0
+    },
+    "553fc6102cbe795433d05e0d85e3aeebfff966b6cb3cd0cd4fc867643f2814de": {
+      "normalized_url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
+      "title_fingerprint": "php 8 2 35",
+      "service_key": "hacker-news",
+      "title": "PHP 8.2.35",
+      "article_doc_path": "docs/services/hacker-news/2026-10-php-8-2-35-553fc610.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214728Z",
+      "candidate_score": 70.0
+    },
+    "0915eb386a43b980e398121ed2d5601642352196cb9018c01385b9690f59ed0a": {
+      "normalized_url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+      "title_fingerprint": "railway security disclosure",
+      "service_key": "hacker-news",
+      "title": "Railway Security Disclosure",
+      "article_doc_path": "docs/services/hacker-news/2026-10-railway-security-disclosure-0915eb38.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214734Z",
+      "candidate_score": 69.0
+    },
+    "7643c65b324449e8de637398642f94451a3a642df020cf6b0c03155765698332": {
+      "normalized_url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+      "title_fingerprint": "meta ordered to pay 25b penalty in new mexico cambridge analytica case",
+      "service_key": "hacker-news",
+      "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+      "article_doc_path": "docs/services/hacker-news/2026-10-meta-ordered-to-pay-25b-penalty-in-new-mexico-cambridge-analytica-case-7643c65b.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214739Z",
+      "candidate_score": 65.0
+    },
+    "95dedf578de78f3ec264f66e37a7c309d1f2cf3d8987fe8b4de9182187d1ff7b": {
+      "normalized_url": "https://openai.com/index/openai-models-google-cloud",
+      "title_fingerprint": "openai models are coming to google cloud",
+      "service_key": "openai-blog",
+      "title": "OpenAI models are coming to Google Cloud",
+      "article_doc_path": "docs/services/openai-blog/2026-10-openai-models-are-coming-to-google-cloud-95dedf57.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214745Z",
+      "candidate_score": 42.0
+    },
+    "39cad894cdd240fbe2dba606200e547216d43a1655f56c86db3d6329a851a826": {
+      "normalized_url": "https://openai.com/index/att-legal",
+      "title_fingerprint": "how at t is rethinking in house legal work with openai",
+      "service_key": "openai-blog",
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-at-t-is-rethinking-in-house-legal-work-with-openai-39cad894.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214750Z",
+      "candidate_score": 39.0
+    },
+    "64ddfb139fec8a1cb4597ec213ad7265ff7b827324c2efbb180615bde9f68d90": {
+      "normalized_url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "title_fingerprint": "using thousands of ai agents to uncover new leads in biological data",
+      "service_key": "openai-blog",
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "article_doc_path": "docs/services/openai-blog/2026-10-using-thousands-of-ai-agents-to-uncover-new-leads-in-biological-data-64ddfb13.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214756Z",
+      "candidate_score": 39.0
+    },
+    "3f1a11956436b167380065dcbfb11acfb4b7400895eeef122ae6e9ec1be674ee": {
+      "normalized_url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "title_fingerprint": "broad access through consistent standards",
+      "service_key": "openai-blog",
+      "title": "Broad access through consistent standards",
+      "article_doc_path": "docs/services/openai-blog/2026-10-broad-access-through-consistent-standards-3f1a1195.md",
+      "status": "published",
+      "briefed_at": "2026-10-22T00:26:10.214762Z",
+      "candidate_score": 38.0
     }
   }
 }
