@@ -1,0 +1,362 @@
+{
+  "generated_at": "2026-10-22T00:22:22.267585+00:00",
+  "generated_for": "2026-10-22",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "3eb994c3de88a9770be58b97323989431f094967",
+  "github_run_id": "39699145523",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 22,
+  "excluded_count": 98,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 32,
+      "excluded_count": 87,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 87
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 32,
+      "output_count": 22,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:252684366be4bd9d",
+          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+          "normalized_url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+          "url_hash": "252684366be4bd9dc11d1a78acc15756e22a0d95eba13c48db3525b0687beb00",
+          "suggested_doc_key": "2026-10-physicist-christopher-stubbs-joins-anthropic-s-long-term-benefit-trust-25268436",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-physicist-christopher-stubbs-joins-anthropic-s-long-term-benefit-trust-25268436.md",
+          "candidate_score": 45.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:0d40f97ea619e69d",
+          "title": "Responsible Scaling Policy Version 3.0",
+          "normalized_url": "https://www.anthropic.com/news/responsible-scaling-policy-v3",
+          "url_hash": "0d40f97ea619e69da2455c23bb9616b833fcec3d6c370d9d979f18705bb56e2c",
+          "suggested_doc_key": "2026-10-responsible-scaling-policy-version-3-0-0d40f97e",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-responsible-scaling-policy-version-3-0-0d40f97e.md",
+          "candidate_score": 28.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:885fe3c67de05637",
+          "title": "The bridge to agent-scale Git infrastructure",
+          "normalized_url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure",
+          "url_hash": "885fe3c67de05637ce5b9612baa0a6e50e729bbbcf8015191def57f8d564f7ca",
+          "suggested_doc_key": "2026-10-the-bridge-to-agent-scale-git-infrastructure-885fe3c6",
+          "suggested_article_path": "docs/services/github-blog/2026-10-the-bridge-to-agent-scale-git-infrastructure-885fe3c6.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:78cebe09803b5741",
+          "title": "Southeast Asia’s digital economy to hit $368 billion",
+          "normalized_url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026",
+          "url_hash": "78cebe09803b57417ff218b15d870961ff466abfed4da57b0fd3b78c08861131",
+          "suggested_doc_key": "2026-10-southeast-asia-s-digital-economy-to-hit-368-billion-78cebe09",
+          "suggested_article_path": "docs/services/google-blog/2026-10-southeast-asia-s-digital-economy-to-hit-368-billion-78cebe09.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:f650128f337315b2",
+          "title": "Today's PHP security release, and how we're strengthening security",
+          "normalized_url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security",
+          "url_hash": "f650128f337315b2b21b4080206f66c8916d073c88c39c54b34bd8634592691e",
+          "suggested_doc_key": "2026-10-today-s-php-security-release-and-how-we-re-strengthening-security-f650128f",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-today-s-php-security-release-and-how-we-re-strengthening-security-f650128f.md",
+          "candidate_score": 70.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 654점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 323개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:553fc6102cbe7954",
+          "title": "PHP 8.2.35",
+          "normalized_url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
+          "url_hash": "553fc6102cbe795433d05e0d85e3aeebfff966b6cb3cd0cd4fc867643f2814de",
+          "suggested_doc_key": "2026-10-php-8-2-35-553fc610",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-php-8-2-35-553fc610.md",
+          "candidate_score": 70.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 957점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 529개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0915eb386a43b980",
+          "title": "Railway Security Disclosure",
+          "normalized_url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+          "url_hash": "0915eb386a43b980e398121ed2d5601642352196cb9018c01385b9690f59ed0a",
+          "suggested_doc_key": "2026-10-railway-security-disclosure-0915eb38",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-railway-security-disclosure-0915eb38.md",
+          "candidate_score": 69.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 248점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 114개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7643c65b324449e8",
+          "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+          "normalized_url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+          "url_hash": "7643c65b324449e8de637398642f94451a3a642df020cf6b0c03155765698332",
+          "suggested_doc_key": "2026-10-meta-ordered-to-pay-25b-penalty-in-new-mexico-cambridge-analytica-case-7643c65b",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-meta-ordered-to-pay-25b-penalty-in-new-mexico-cambridge-analytica-case-7643c65b.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 324점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 200개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:de9db6f384cbc788",
+          "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+          "normalized_url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+          "url_hash": "de9db6f384cbc788775550a92a01be7699e7a41c8058849be39721a76c544e4d",
+          "suggested_doc_key": "2026-10-patch-the-planet-global-response-coordination-as-agents-uncover-vulnerab-de9db6f3",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-patch-the-planet-global-response-coordination-as-agents-uncover-vulnerab-de9db6f3.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 228점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 151개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 8,
+      "excluded_count": 42,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:95dedf578de78f3e",
+          "title": "OpenAI models are coming to Google Cloud",
+          "normalized_url": "https://openai.com/index/openai-models-google-cloud",
+          "url_hash": "95dedf578de78f3ec264f66e37a7c309d1f2cf3d8987fe8b4de9182187d1ff7b",
+          "suggested_doc_key": "2026-10-openai-models-are-coming-to-google-cloud-95dedf57",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-openai-models-are-coming-to-google-cloud-95dedf57.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:39cad894cdd240fb",
+          "title": "How AT&T is rethinking in-house legal work with OpenAI",
+          "normalized_url": "https://openai.com/index/att-legal",
+          "url_hash": "39cad894cdd240fbe2dba606200e547216d43a1655f56c86db3d6329a851a826",
+          "suggested_doc_key": "2026-10-how-at-t-is-rethinking-in-house-legal-work-with-openai-39cad894",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-how-at-t-is-rethinking-in-house-legal-work-with-openai-39cad894.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:64ddfb139fec8a1c",
+          "title": "Using thousands of AI agents to uncover new leads in biological data",
+          "normalized_url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+          "url_hash": "64ddfb139fec8a1cb4597ec213ad7265ff7b827324c2efbb180615bde9f68d90",
+          "suggested_doc_key": "2026-10-using-thousands-of-ai-agents-to-uncover-new-leads-in-biological-data-64ddfb13",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-using-thousands-of-ai-agents-to-uncover-new-leads-in-biological-data-64ddfb13.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3f1a11956436b167",
+          "title": "Broad access through consistent standards",
+          "normalized_url": "https://openai.com/index/broad-access-through-consistent-standards",
+          "url_hash": "3f1a11956436b167380065dcbfb11acfb4b7400895eeef122ae6e9ec1be674ee",
+          "suggested_doc_key": "2026-10-broad-access-through-consistent-standards-3f1a1195",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-broad-access-through-consistent-standards-3f1a1195.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:e270f5ba4688033d",
+          "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+          "normalized_url": "https://openai.com/index/empowering-cyber-defenders",
+          "url_hash": "e270f5ba4688033de075906df89466646eb9f009fa8bcee5c8b60ee62cebab43",
+          "suggested_doc_key": "2026-10-democratic-governance-of-frontier-ai-part-ii-empowering-cyber-defenders-e270f5ba",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-democratic-governance-of-frontier-ai-part-ii-empowering-cyber-defenders-e270f5ba.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 41
+      }
+    }
+  ]
+}
