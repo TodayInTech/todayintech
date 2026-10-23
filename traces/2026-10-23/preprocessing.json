@@ -1,0 +1,343 @@
+{
+  "generated_at": "2026-10-23T00:22:00.630440+00:00",
+  "generated_for": "2026-10-23",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "2ca8004d012812bfb8f4299fb70c6207bfc398a3",
+  "github_run_id": "39877558227",
+  "service_count": 5,
+  "duration_ms": 7,
+  "raw_count": 120,
+  "candidate_count": 22,
+  "excluded_count": 98,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 32,
+      "excluded_count": 88,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 88
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 32,
+      "output_count": 22,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:bdc7b775ab8d2106",
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "normalized_url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "url_hash": "bdc7b775ab8d2106278d159705fd6d94a25bd08e4a2ec21ac5741a513f56d5a8",
+          "suggested_doc_key": "2026-10-donating-agent-skills-to-the-agentic-ai-foundation-bdc7b775",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-donating-agent-skills-to-the-agentic-ai-foundation-bdc7b775.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:6950f6169e819866",
+          "title": "Open call for guest investigators in the life sciences",
+          "normalized_url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+          "url_hash": "6950f6169e819866442dc86ad980d2ea7ec3dda5c64fe7cf1333921ecc953a5c",
+          "suggested_doc_key": "2026-10-open-call-for-guest-investigators-in-the-life-sciences-6950f616",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-open-call-for-guest-investigators-in-the-life-sciences-6950f616.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:8566195c9f888e1f",
+          "title": "How bug bounty sharpens one researcher’s security skills",
+          "normalized_url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills",
+          "url_hash": "8566195c9f888e1fef6dfd98cf186649208cf774c7e2c58fadde57cb69ec3324",
+          "suggested_doc_key": "2026-10-how-bug-bounty-sharpens-one-researcher-s-security-skills-8566195c",
+          "suggested_article_path": "docs/services/github-blog/2026-10-how-bug-bounty-sharpens-one-researcher-s-security-skills-8566195c.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:6eb73169f84ce43f",
+          "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+          "normalized_url": "https://github.com/NVIDIA/OpenShell",
+          "url_hash": "6eb73169f84ce43f98c75fcf0a5b59a0b6373d3829a3919151941cd320d6c61f",
+          "suggested_doc_key": "2026-10-openshell-a-safe-private-runtime-for-fleets-of-autonomous-ai-agents-6eb73169",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-openshell-a-safe-private-runtime-for-fleets-of-autonomous-ai-agents-6eb73169.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 277점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 143개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:58cb78b92a32576d",
+          "title": "Jared Kushner Hacked Phone Reveals Secret Negotiations, Millions in Transactions",
+          "normalized_url": "https://www.vanityfair.com/story/jared-kushner-hacked-phone-secret-negotiations",
+          "url_hash": "58cb78b92a32576d79140d08279b1104f067a81b5216f65eb010fce9f35e86e0",
+          "suggested_doc_key": "2026-10-jared-kushner-hacked-phone-reveals-secret-negotiations-millions-in-trans-58cb78b9",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-jared-kushner-hacked-phone-reveals-secret-negotiations-millions-in-trans-58cb78b9.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 228점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 89개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c4ef979d44385fe4",
+          "title": "Every AI model has the same \"controversial\" take on humans",
+          "normalized_url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+          "url_hash": "c4ef979d44385fe4aefb53eb4baf66a9fe0af7d53f5967f2d5f7f71fd6461e6a",
+          "suggested_doc_key": "2026-10-every-ai-model-has-the-same-controversial-take-on-humans-c4ef979d",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-every-ai-model-has-the-same-controversial-take-on-humans-c4ef979d.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 206점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 248개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4172a5d1f8093727",
+          "title": "eMudhra to exit global SSL/TLS certificate business",
+          "normalized_url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+          "url_hash": "4172a5d1f809372749576bc797f2b576d25223f4b2a1c9f5179cebfaf9c2f264",
+          "suggested_doc_key": "2026-10-emudhra-to-exit-global-ssl-tls-certificate-business-4172a5d1",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-emudhra-to-exit-global-ssl-tls-certificate-business-4172a5d1.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 906점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 618개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:760ea34d457135c0",
+          "title": "Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.",
+          "normalized_url": "https://news.ycombinator.com/item?id=50193416",
+          "url_hash": "760ea34d457135c08086e770dd7f30863e35558ba3887ad0520d770f927aeaf0",
+          "suggested_doc_key": "2026-10-tell-hn-i-unknowingly-broke-the-php-rce-embargo-i-am-sorry-760ea34d",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-tell-hn-i-unknowingly-broke-the-php-rce-embargo-i-am-sorry-760ea34d.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 340점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 139개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 9,
+      "excluded_count": 41,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:de9db6f384cbc788",
+          "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+          "normalized_url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+          "url_hash": "de9db6f384cbc788775550a92a01be7699e7a41c8058849be39721a76c544e4d",
+          "suggested_doc_key": "2026-10-patch-the-planet-global-response-coordination-as-agents-uncover-critical-de9db6f3",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-patch-the-planet-global-response-coordination-as-agents-uncover-critical-de9db6f3.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:891b7e0bbf66f86d",
+          "title": "Build more responsive apps with the Decisions API",
+          "normalized_url": "https://openai.com/index/decisions-api",
+          "url_hash": "891b7e0bbf66f86d27b770f3dc53e0fbecfc246eeadf29503262f6d9c70adad7",
+          "suggested_doc_key": "2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:6400feb681472530",
+          "title": "What FDE means at OpenAI",
+          "normalized_url": "https://openai.com/index/forward-deployed-engineering-means",
+          "url_hash": "6400feb681472530a689e8c59132cfe6d13f5863532ecd60e409a4825c59746b",
+          "suggested_doc_key": "2026-10-what-fde-means-at-openai-6400feb6",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-what-fde-means-at-openai-6400feb6.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:eda525050cea8fce",
+          "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+          "normalized_url": "https://openai.com/index/uber-chatgpt-work-rollout",
+          "url_hash": "eda525050cea8fce4b13823379a8b9659ff224375e0356616ea34596cdb17cc5",
+          "suggested_doc_key": "2026-10-uber-brings-chatgpt-work-to-all-employees-with-openai-eda52505",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-uber-brings-chatgpt-work-to-all-employees-with-openai-eda52505.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3fe372fb2e8166f0",
+          "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+          "normalized_url": "https://openai.com/index/cloudflare-cyber",
+          "url_hash": "3fe372fb2e8166f0e8146fd86373d22b0c153e5f155ff56beb03c21126360e38",
+          "suggested_doc_key": "2026-10-cloudflare-links-vulnerability-discovery-to-defense-with-openai-3fe372fb",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-cloudflare-links-vulnerability-discovery-to-defense-with-openai-3fe372fb.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 41
+      }
+    }
+  ]
+}
