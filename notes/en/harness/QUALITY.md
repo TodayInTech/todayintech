@@ -183,3 +183,5 @@ Published article pages do not expose internal decision details. Users see only 
 - Briefing cards use a fixed 16rem height, reserving two title lines and three excerpt lines. Browser checks on port 3100 confirmed unchanged featured/new article links after lower-list filtering and stable scroll position during keyboard period changes.
 
 - Final verification: make check passed Ruff lint/format and all 67 tests; Korean/English static builds passed. Pagination retains first/last and immediate neighboring pages, with 1 … 25 26 27 … 30 verified at page 26 of 30. Browser measurements confirmed 256px cards and 48px title areas.
+
+- Sidebar hover regression: reproduce and fix Infima's category-link `background: none !important` conflict. Verify Korean/English builds, light/dark hover on all six service navigation items, the selected service, keyboard focus, and hover on all six trace navigation items in the browser.

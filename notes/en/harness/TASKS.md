@@ -132,3 +132,5 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 - [x] Replace briefing loading text with a small theme-aware spinner, accessible status labeling, and reduced-motion support
 
 - [x] Share LoadingSpinner across briefing lists and every trace view
+
+- [x] Resolve Docusaurus category/active style conflicts for consistent sidebar hover and keyboard focus feedback

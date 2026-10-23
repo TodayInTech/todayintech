@@ -197,7 +197,8 @@ h1, h2, h3 { letter-spacing: -0.035em; }
 .menu__link { border-radius: 6px; padding: 0.6rem 0.65rem; font-weight: 400; color: var(--tit-muted); transition: color 160ms ease, background 160ms ease; }
 .menu__list-item { margin-top: 0.2rem; }
 .menu__link.menu__link--active { background: transparent; color: var(--ifm-heading-color); font-weight: 600; }
-.menu__link:hover { background: var(--tit-hover-bg); }
+/* Infima clears category-link hover backgrounds with !important. */
+.menu .menu__list .menu__link:is(:hover, :focus-visible) { background: var(--tit-hover-bg) !important; color: var(--ifm-heading-color); }
 .menu__list-item-collapsible:hover { background: transparent; }
 .breadcrumbs { display: none; }
 .theme-doc-toc-desktop { display: none; }
