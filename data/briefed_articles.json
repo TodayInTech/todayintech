@@ -11480,6 +11480,96 @@
       "status": "published",
       "briefed_at": "2026-10-22T00:26:10.214762Z",
       "candidate_score": 38.0
+    },
+    "bdc7b775ab8d2106278d159705fd6d94a25bd08e4a2ec21ac5741a513f56d5a8": {
+      "normalized_url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "title_fingerprint": "donating agent skills to the agentic ai foundation",
+      "service_key": "anthropic-blog",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-donating-agent-skills-to-the-agentic-ai-foundation-bdc7b775.md",
+      "status": "published",
+      "briefed_at": "2026-10-23T00:23:57.166126Z",
+      "candidate_score": 35.0
+    },
+    "6950f6169e819866442dc86ad980d2ea7ec3dda5c64fe7cf1333921ecc953a5c": {
+      "normalized_url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "title_fingerprint": "open call for guest investigators in the life sciences",
+      "service_key": "anthropic-blog",
+      "title": "Open call for guest investigators in the life sciences",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-open-call-for-guest-investigators-in-the-life-sciences-6950f616.md",
+      "status": "published",
+      "briefed_at": "2026-10-23T00:23:57.166159Z",
+      "candidate_score": 30.0
+    },
+    "8566195c9f888e1fef6dfd98cf186649208cf774c7e2c58fadde57cb69ec3324": {
+      "normalized_url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills",
+      "title_fingerprint": "how bug bounty sharpens one researcher s security skills",
+      "service_key": "github-blog",
+      "title": "How bug bounty sharpens one researcher’s security skills",
+      "article_doc_path": "docs/services/github-blog/2026-10-how-bug-bounty-sharpens-one-researcher-s-security-skills-8566195c.md",
+      "status": "published",
+      "briefed_at": "2026-10-23T00:23:57.166165Z",
+      "candidate_score": 42.0
+    },
+    "6eb73169f84ce43f98c75fcf0a5b59a0b6373d3829a3919151941cd320d6c61f": {
+      "normalized_url": "https://github.com/NVIDIA/OpenShell",
+      "title_fingerprint": "openshell a safe private runtime for fleets of autonomous ai agents",
+      "service_key": "hacker-news",
+      "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "article_doc_path": "docs/services/hacker-news/2026-10-openshell-a-safe-private-runtime-for-fleets-of-autonomous-ai-agents-6eb73169.md",
+      "status": "published",
+      "briefed_at": "2026-10-23T00:23:57.166170Z",
+      "candidate_score": 67.0
+    },
+    "58cb78b92a32576d79140d08279b1104f067a81b5216f65eb010fce9f35e86e0": {
+      "normalized_url": "https://www.vanityfair.com/story/jared-kushner-hacked-phone-secret-negotiations",
+      "title_fingerprint": "jared kushner hacked phone reveals secret negotiations millions in transactions",
+      "service_key": "hacker-news",
+      "title": "Jared Kushner Hacked Phone Reveals Secret Negotiations, Millions in Transactions",
+      "article_doc_path": "docs/services/hacker-news/2026-10-jared-kushner-hacked-phone-reveals-secret-negotiations-millions-in-trans-58cb78b9.md",
+      "status": "published",
+      "briefed_at": "2026-10-23T00:23:57.166174Z",
+      "candidate_score": 65.0
+    },
+    "c4ef979d44385fe4aefb53eb4baf66a9fe0af7d53f5967f2d5f7f71fd6461e6a": {
+      "normalized_url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+      "title_fingerprint": "every ai model has the same controversial take on humans",
+      "service_key": "hacker-news",
+      "title": "Every AI model has the same \"controversial\" take on humans",
+      "article_doc_path": "docs/services/hacker-news/2026-10-every-ai-model-has-the-same-controversial-take-on-humans-c4ef979d.md",
+      "status": "published",
+      "briefed_at": "2026-10-23T00:23:57.166178Z",
+      "candidate_score": 65.0
+    },
+    "4172a5d1f809372749576bc797f2b576d25223f4b2a1c9f5179cebfaf9c2f264": {
+      "normalized_url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+      "title_fingerprint": "emudhra to exit global ssl tls certificate business",
+      "service_key": "hacker-news",
+      "title": "eMudhra to exit global SSL/TLS certificate business",
+      "article_doc_path": "docs/services/hacker-news/2026-10-emudhra-to-exit-global-ssl-tls-certificate-business-4172a5d1.md",
+      "status": "published",
+      "briefed_at": "2026-10-23T00:23:57.166182Z",
+      "candidate_score": 65.0
+    },
+    "de9db6f384cbc788775550a92a01be7699e7a41c8058849be39721a76c544e4d": {
+      "normalized_url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "title_fingerprint": "patch the planet global response coordination as agents uncover critical vulnerabilities",
+      "service_key": "openai-blog",
+      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "article_doc_path": "docs/services/openai-blog/2026-10-patch-the-planet-global-response-coordination-as-agents-uncover-critical-de9db6f3.md",
+      "status": "published",
+      "briefed_at": "2026-10-23T00:23:57.166185Z",
+      "candidate_score": 47.0
+    },
+    "eda525050cea8fce4b13823379a8b9659ff224375e0356616ea34596cdb17cc5": {
+      "normalized_url": "https://openai.com/index/uber-chatgpt-work-rollout",
+      "title_fingerprint": "uber brings chatgpt work to all employees with openai",
+      "service_key": "openai-blog",
+      "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-10-uber-brings-chatgpt-work-to-all-employees-with-openai-eda52505.md",
+      "status": "published",
+      "briefed_at": "2026-10-23T00:23:57.166191Z",
+      "candidate_score": 36.0
     }
   }
 }
