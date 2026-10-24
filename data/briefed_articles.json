@@ -11570,6 +11570,66 @@
       "status": "published",
       "briefed_at": "2026-10-23T00:23:57.166191Z",
       "candidate_score": 36.0
+    },
+    "bf44de9e544de4cbe9fe1a2a613ba67b03dda83fe8633fc284d5c9ec8453b5d7": {
+      "normalized_url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "title_fingerprint": "kimi k3 1 pro and k3 1 pro highspeed",
+      "service_key": "hacker-news",
+      "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+      "article_doc_path": "docs/services/hacker-news/2026-10-kimi-k3-1-pro-and-k3-1-pro-highspeed-bf44de9e.md",
+      "status": "published",
+      "briefed_at": "2026-10-24T00:13:36.739011Z",
+      "candidate_score": 65.0
+    },
+    "b5cb20bfbe29ca467252b9888181d30061954fb596893731cbf1f457ba320a26": {
+      "normalized_url": "https://block.xyz/dessa",
+      "title_fingerprint": "dessa the most authentic full duplex speech model ever built",
+      "service_key": "hacker-news",
+      "title": "Dessa: the most authentic full-duplex speech model ever built",
+      "article_doc_path": "docs/services/hacker-news/2026-10-dessa-the-most-authentic-full-duplex-speech-model-ever-built-b5cb20bf.md",
+      "status": "published",
+      "briefed_at": "2026-10-24T00:13:36.739049Z",
+      "candidate_score": 63.6
+    },
+    "a9526976eeebfbfe11f723ec9d420402046ad8a284b661480087bc896dcebdb4": {
+      "normalized_url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+      "title_fingerprint": "now google says it might use your gmail and google photos data to target ads",
+      "service_key": "hacker-news",
+      "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+      "article_doc_path": "docs/services/hacker-news/2026-10-now-google-says-it-might-use-your-gmail-and-google-photos-data-to-target-a9526976.md",
+      "status": "published",
+      "briefed_at": "2026-10-24T00:13:36.739057Z",
+      "candidate_score": 60.0
+    },
+    "6309a052e042f22fec0e0aaa5cbe68118ca26c2453d98714c9bc6ab59e264c1a": {
+      "normalized_url": "https://blog.calif.io/p/iphone",
+      "title_fingerprint": "today we hacked what we d set out to hack the iphone",
+      "service_key": "hacker-news",
+      "title": "Today, we hacked what we'd set out to hack: the iPhone",
+      "article_doc_path": "docs/services/hacker-news/2026-10-today-we-hacked-what-we-d-set-out-to-hack-the-iphone-6309a052.md",
+      "status": "published",
+      "briefed_at": "2026-10-24T00:13:36.739062Z",
+      "candidate_score": 60.0
+    },
+    "ee4c22366ef7e7abd786b0a4bc8d65774ddf350a3208b6c38568ae822ed0b9b0": {
+      "normalized_url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "title_fingerprint": "rapidly scaling online storage to serve over 1 billion chatgpt users part ii",
+      "service_key": "openai-blog",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "article_doc_path": "docs/services/openai-blog/2026-10-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-par-ee4c2236.md",
+      "status": "published",
+      "briefed_at": "2026-10-24T00:13:36.739068Z",
+      "candidate_score": 44.0
+    },
+    "1a543055a02f9816518cc03996b6a0ed89e5e65a847f479103d96112c902ed21": {
+      "normalized_url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "title_fingerprint": "openai and poland s nask partner to advance ai safety and security",
+      "service_key": "openai-blog",
+      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "article_doc_path": "docs/services/openai-blog/2026-10-openai-and-poland-s-nask-partner-to-advance-ai-safety-and-security-1a543055.md",
+      "status": "published",
+      "briefed_at": "2026-10-24T00:13:36.739072Z",
+      "candidate_score": 41.0
     }
   }
 }
