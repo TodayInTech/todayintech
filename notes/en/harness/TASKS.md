@@ -136,3 +136,5 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 - [x] Resolve Docusaurus category/active style conflicts for consistent sidebar hover and keyboard focus feedback
 
 - [x] Separate list summaries from dynamic detailed Markdown articles with evidence-aware depth, safe Docusaurus rendering and legacy compatibility
+
+- [x] Left-align article headings and restore the native scroll-aware right-side desktop table of contents

@@ -187,3 +187,5 @@ Public articles separate a one-to-two-sentence list summary (`summary_ko`) from 
 - Sidebar hover regression: reproduce and fix Infima's category-link `background: none !important` conflict. Verify Korean/English builds, light/dark hover on all six service navigation items, the selected service, keyboard focus, and hover on all six trace navigation items in the browser.
 
 - Dynamic articles: `make check` passed Ruff lint/format and all 70 tests. Live old/new prompt generation on three identical cached source packets compared length, headings, numerical claims and evidence IDs. Korean/English Docusaurus builds and browser checks verified the 780px article reader, dynamic headings, source link, Markdown tables/lists/quotes/code and inert HTML/MDX/unsafe links. See [article generation verification](ARTICLE_GENERATION.md) for results and sampling limits.
+
+- Article alignment/TOC: Korean/English builds and browser checks verified left-aligned H1–H6 rules, a sticky 200px right-side TOC, section navigation and active-item highlighting. At 390px the collapsible TOC remains available without horizontal overflow. Main title and section alignment remain unchanged.
