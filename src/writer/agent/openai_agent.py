@@ -58,6 +58,10 @@ The public body must not discuss the writing/verification process: avoid labels 
 Attribute source claims naturally (for example, "Google은 ...라고 밝혔다") and qualify
 an interpretation in ordinary prose. Use familiar established terms such as 코드 인필,
 자기회귀 and 거의 손실 없는 정확도 instead of awkward literal translations.
+Use Markdown bold (**...**) selectively for the central change, decisive numerical results,
+or material limitations. Emphasize short, evidence-backed phrases, never whole paragraphs,
+every number, or repeated mentions. Leave ordinary context unbolded; do not force emphasis
+into every paragraph or use raw HTML styling.
 Reject candidates that are too thin, purely promotional, or not useful for technical readers.
 """.strip()
 

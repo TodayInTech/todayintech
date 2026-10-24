@@ -64,7 +64,7 @@ def test_article_markdown_preserves_structure_and_code_without_executing_mdx() -
 
 ## 달라진 API
 
-- 버전 2 지원
+- **버전 2 지원**
 
 | 이전 | 이후 |
 | --- | --- |
@@ -83,7 +83,7 @@ import Thing from './x'
 [클릭](javascript:alert(1))
 """
     rendered = mdx_safe_article(body)
-    assert "## 달라진 API\n\n- 버전 2 지원" in rendered
+    assert "## 달라진 API\n\n- **버전 2 지원**" in rendered
     assert "| 이전 | 이후 |" in rendered
     assert "> 원문의 짧은 발언" in rendered
     assert "`Map<string, int>`" in rendered

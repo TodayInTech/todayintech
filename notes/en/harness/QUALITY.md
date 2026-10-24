@@ -189,3 +189,5 @@ Public articles separate a one-to-two-sentence list summary (`summary_ko`) from 
 - Dynamic articles: `make check` passed Ruff lint/format and all 70 tests. Live old/new prompt generation on three identical cached source packets compared length, headings, numerical claims and evidence IDs. Korean/English Docusaurus builds and browser checks verified the 780px article reader, dynamic headings, source link, Markdown tables/lists/quotes/code and inert HTML/MDX/unsafe links. See [article generation verification](ARTICLE_GENERATION.md) for results and sampling limits.
 
 - Article alignment/TOC: Korean/English builds and browser checks verified left-aligned H1–H6 rules, a sticky 200px right-side TOC, section navigation and active-item highlighting. At 390px the collapsible TOC remains available without horizontal overflow. Main title and section alignment remain unchanged.
+
+- Emphasis: use short `**bold phrases**` selectively for core changes, decisive numbers and material limits. Avoid whole-paragraph, every-number or repeated emphasis, and verify bold syntax survives Markdown safety handling.
