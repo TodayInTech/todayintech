@@ -6,6 +6,7 @@ import {useHistory, useLocation} from '@docusaurus/router';
 import DateCard from '@site/src/components/DateCard';
 import ServiceIcon from '@site/src/components/ServiceIcon';
 import LoadingSpinner from '@site/src/components/LoadingSpinner';
+import {compareBriefings} from '@site/src/lib/briefing-order.mjs';
 
 import styles from './styles.module.css';
 
@@ -330,12 +331,7 @@ function filterItems(items, {mode, serviceKey, periodDays}) {
     }
     return withinPeriod(item.briefed_at || item.published_at, periodDays);
   });
-  return [...baseItems].sort(
-    (left, right) =>
-      dateValue(right.briefed_at || right.published_at) -
-        dateValue(left.briefed_at || left.published_at) ||
-      Number(right.score) - Number(left.score),
-  );
+  return [...baseItems].sort(compareBriefings);
 }
 
 function withinPeriod(dateString, periodDays) {

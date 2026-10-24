@@ -140,3 +140,5 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 - [x] Left-align article headings and restore the native scroll-aware right-side desktop table of contents
 
 - [x] Instruct article generation to selectively bold short phrases covering core changes, decisive numbers and material constraints
+
+- [x] Hide document pagination on main/service indexes and traces; link article neighbors only within the same service using list order

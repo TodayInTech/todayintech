@@ -191,3 +191,5 @@ Public articles separate a one-to-two-sentence list summary (`summary_ko`) from 
 - Article alignment/TOC: Korean/English builds and browser checks verified left-aligned H1–H6 rules, a sticky 200px right-side TOC, section navigation and active-item highlighting. At 390px the collapsible TOC remains available without horizontal overflow. Main title and section alignment remain unchanged.
 
 - Emphasis: use short `**bold phrases**` selectively for core changes, decisive numbers and material limits. Avoid whole-paragraph, every-number or repeated emphasis, and verify bold syntax survives Markdown safety handling.
+
+- Article navigation: all 3 checks in `node --test tests/site/briefing-navigation.test.mjs` passed. Lists and sidebars share newest briefing date (source-date fallback), descending score, then stable document-path order. Previous/next refer to adjacent items in that order within the same service; omit boundary links. Audited all 2,326 Korean/English rendered article pages for neighbor order/boundaries and verified no document paginator on 24 main/service-index/trace pages.
