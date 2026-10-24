@@ -302,8 +302,8 @@ Writer receives `EnrichmentResult`. `full_content`, `chunk_selection`, and `evid
 - The main index uses the accumulated `briefed_articles` state to generate recommended articles, new articles, and card-based briefing list data. Service indexes use the same card-based navigation structure. Writer updates both Korean `docs/` and English `i18n/en/docusaurus-plugin-content-docs/current/` main/service indexes, and copies article docs into the English docs path to preserve English locale article routes.
 - GitHub Actions commits generated `docs/` files and `data/briefed_articles.json` back to `main` so later runs can use them for duplicate filtering.
 - The default implementation uses `DraftNewsEditorAgent`. The Draft Agent does not generate summaries, why-it-matters text, or developer insights; it only creates `editorial_status=draft` documents.
-- Use `TODAYINTECH_WRITER_AGENT=openai` to enable `OpenAINewsEditorAgent` with structured output for publish decisions, publish/reject rationale, confidence score, summary scope, evidence basis, and a natural long-form Korean summary.
-- Public article pages show only the cohesive two-to-three-paragraph summary and source link. Summary length is guided by evidence strategy: `feed_metadata_only` 450–700 Korean characters, `full_content` 700–1200, and `chunk_selection`/`evidence_selection` 700–1100. Publish rationale, confidence, evidence scope, and evidence lists remain in Writer traces.
+- Use `TODAYINTECH_WRITER_AGENT=openai` to enable `OpenAINewsEditorAgent` with structured output for publish decisions, publish/reject rationale, confidence score, summary scope, evidence basis, a short list summary and a dynamic detailed Korean Markdown article.
+- Public articles separate a one-to-two-sentence list summary (`summary_ko`) from a dynamic detailed body (`article_markdown_ko`). Headings, paragraphs, lists, tables and source-backed code/quotes are optional and article-specific. Ordinary news targets 800–1500 Korean characters and rich technical announcements 1500–2500+, with shorter output for sparse evidence. The generator adds the source link; rationale, confidence and evidence lists stay in traces.
 - The OpenAI Agent uses only source evidence selected by Enrichment plus candidate metadata.
 
 Writer execution:
@@ -421,3 +421,5 @@ make deploy
 make deploy DATE=2026-06-07
 make deploy-status
 ```
+
+- Store the list summary in standard `description` frontmatter; legacy pages keep paragraph-based excerpt extraction. Preserve Markdown headings/lists/tables/code, render HTML/MDX expressions and import/export as inert text, and disable model-generated links/images. Code blocks preserve literal contents. Existing Enrichment evidence budgets (up to 4,000 tokens) and output token budgets remain unchanged.

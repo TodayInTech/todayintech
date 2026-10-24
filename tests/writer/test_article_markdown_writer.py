@@ -6,6 +6,7 @@ from src.writer.agent.schemas import (
     GenerationMethod,
 )
 from src.writer.generator.article_markdown_writer import write_article_markdown
+from src.writer.generator.main_index_writer import _extract_article_card_content
 
 
 def test_article_markdown_writer_renders_published_briefing_as_natural_article(
@@ -56,3 +57,22 @@ def test_article_markdown_writer_renders_published_briefing_as_natural_article(
     assert "## 확인할 점" not in content
     assert "## 문서 정보" not in content
     assert "## 후보 판단 근거" not in content
+    assert "description:" not in content
+    assert _extract_article_card_content(output_path)[1].startswith("OpenAI가 개발자용 도구")
+
+    briefing.article_markdown_ko = (
+        "실제 상세 설명입니다.\n\n## 통합 경로가 달라지는 이유\n\n"
+        + "근거가 풍부한 기술 내용을 설명합니다. " * 100
+        + '\n\n```json\n{"enabled": true}\n```'
+    )
+    content = write_article_markdown(tmp_path, briefing).read_text(encoding="utf-8")
+    assert "## 통합 경로가 달라지는 이유" in content
+    assert "\\##" not in content
+    assert '```json\n{"enabled": true}\n```' in content
+    assert len(briefing.article_markdown_ko) > 1600
+    assert "description: " in content
+
+    date, excerpt = _extract_article_card_content(output_path)
+    assert date == "2026-06-10"
+    assert excerpt.startswith("OpenAI가 개발자용 도구")
+    assert "실제 상세 설명" not in excerpt

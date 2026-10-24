@@ -1,7 +1,13 @@
 import json
 from pathlib import Path
 
-from src.generator.markdown_safety import mdx_safe_link_label, mdx_safe_plain_text, mdx_safe_text
+from src.generator.markdown_safety import (
+    mdx_safe_article,
+    mdx_safe_link_label,
+    mdx_safe_plain_text,
+    mdx_safe_text,
+    normalize_plain_text,
+)
 from src.writer.agent.schemas import ArticleBriefing, EditorialStatus
 
 
@@ -19,6 +25,13 @@ def write_article_markdown(output_root: Path, briefing: ArticleBriefing) -> Path
         "---",
         f"title: {json.dumps(mdx_safe_plain_text(briefing.title), ensure_ascii=False)}",
         f"sidebar_label: {json.dumps(mdx_safe_plain_text(briefing.title), ensure_ascii=False)}",
+        *(
+            [
+                f"description: {json.dumps(' '.join(normalize_plain_text(briefing.summary_ko).split()), ensure_ascii=False)}"
+            ]
+            if briefing.article_markdown_ko and briefing.summary_ko
+            else []
+        ),
         "---",
         "",
         f"# {mdx_safe_plain_text(briefing.title)}",
@@ -40,7 +53,11 @@ def write_article_markdown(output_root: Path, briefing: ArticleBriefing) -> Path
 
 
 def _published_lines(briefing: ArticleBriefing) -> list[str]:
-    summary = mdx_safe_text(briefing.summary_ko or "")
+    summary = (
+        mdx_safe_article(briefing.article_markdown_ko)
+        if briefing.article_markdown_ko
+        else mdx_safe_text(briefing.summary_ko or "")
+    )
     return [
         summary or "요약이 아직 생성되지 않았습니다.",
         "",

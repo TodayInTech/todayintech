@@ -194,6 +194,16 @@ def _extract_article_card_content(article_path: Path) -> tuple[str | None, str]:
         return None, ""
 
     text = article_path.read_text(encoding="utf-8")
+    description = None
+    frontmatter = text.split("---", maxsplit=2)[1] if text.startswith("---\n") else ""
+    for line in frontmatter.splitlines():
+        if line.startswith("description: "):
+            try:
+                value = json.loads(line.removeprefix("description: "))
+                if isinstance(value, str) and value.strip():
+                    description = value
+            except ValueError:
+                pass
     published_at = None
     for line in text.splitlines():
         if line.startswith("> "):
@@ -201,6 +211,9 @@ def _extract_article_card_content(article_path: Path) -> tuple[str | None, str]:
             if len(parts) >= 2:
                 published_at = parts[1]
             break
+
+    if description:
+        return published_at, _truncate(description, 180)
 
     body = text.split("---", maxsplit=2)[-1]
     paragraphs = [

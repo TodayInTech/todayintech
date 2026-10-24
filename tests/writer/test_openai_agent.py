@@ -166,6 +166,7 @@ def make_fallback_result() -> EnrichmentResult:
 def test_openai_agent_creates_published_briefing_from_structured_output() -> None:
     decision = OpenAIArticleDecision(
         should_publish=True,
+        article_markdown_ko="원문에 근거한 기술적 변화를 설명합니다.\n\n## 통합 방식의 변화\n\n확인된 적용 범위와 제약을 설명합니다.",
         category="AI",
         importance_level="High",
         confidence_score=0.82,
@@ -194,6 +195,7 @@ def test_openai_agent_creates_published_briefing_from_structured_output() -> Non
     assert briefing.publish_reason_ko == "개발자 워크플로에 영향을 줄 수 있는 업데이트입니다."
     assert briefing.evidence_basis_ko == ["피드 설명이 개발자 업데이트를 언급합니다."]
     assert briefing.summary_ko == decision.summary_ko
+    assert briefing.article_markdown_ko == decision.article_markdown_ko
     assert result.decisions[0].status == AgentDecisionStatus.PUBLISHED
     assert result.decisions[0].publish_reason_ko == decision.publish_reason_ko
     assert result.decisions[0].confidence_score == 0.82
@@ -201,8 +203,8 @@ def test_openai_agent_creates_published_briefing_from_structured_output() -> Non
     assert "chunk-0001" in client.responses.last_input
     assert "concrete developer tooling changes" in client.responses.last_input
     assert "ranking_reasons_ko" in client.responses.last_input
-    assert "700~1200자" in client.responses.last_input
-    assert "2~3문단" in client.responses.last_input
+    assert "800~1500자" in client.responses.last_input
+    assert "article_markdown_ko" in client.responses.last_input
     assert "원문 전체 근거를 바탕으로" in client.responses.last_input
     assert "첫 문장과 문단 구성을 고정하지 말고" in client.responses.last_input
     assert "'해당 글은', '이 글은' 같은 표현" in client.responses.last_input
@@ -229,6 +231,7 @@ def test_openai_agent_skips_candidate_when_decision_says_not_to_publish() -> Non
 def test_openai_agent_retries_when_structured_output_parse_fails() -> None:
     decision = OpenAIArticleDecision(
         should_publish=True,
+        article_markdown_ko="원문에 근거한 기술적 변화를 설명합니다.\n\n## 통합 방식의 변화\n\n확인된 적용 범위와 제약을 설명합니다.",
         category="AI",
         importance_level="Medium",
         publish_reason_ko="개발자 업데이트로 볼 수 있습니다.",
@@ -281,6 +284,7 @@ def test_openai_agent_skips_unselected_long_content_without_api_call() -> None:
 def test_openai_agent_publishes_selected_long_content() -> None:
     decision = OpenAIArticleDecision(
         should_publish=True,
+        article_markdown_ko="원문에 근거한 기술적 변화를 설명합니다.\n\n## 통합 방식의 변화\n\n확인된 적용 범위와 제약을 설명합니다.",
         category="AI",
         importance_level="Medium",
         confidence_score=0.74,
@@ -306,7 +310,7 @@ def test_openai_agent_publishes_selected_long_content() -> None:
 
     assert result.services[0].briefings[0].summary_scope == "chunk_selection"
     assert "source_evidence" in client.responses.last_input
-    assert "700~1100자" in client.responses.last_input
+    assert "1500~2500자" in client.responses.last_input
     assert "선택된 원문 chunk 범위 안에서" in client.responses.last_input
 
 
@@ -318,10 +322,19 @@ def test_openai_agent_uses_shorter_guideline_for_feed_metadata_only() -> None:
     result = agent.edit(make_fallback_result())
 
     assert result.decisions[0].status == AgentDecisionStatus.SKIPPED
-    assert "450~700자" in client.responses.last_input
-    assert "피드 메타데이터로 확인되는 주제" in client.responses.last_input
+    assert "500~800자" in client.responses.last_input
+    assert "피드 메타데이터로 확인되는 주제와 사실" in client.responses.last_input
 
 
 def test_openai_agent_requires_api_key_without_injected_client() -> None:
     with pytest.raises(ValueError, match="OPENAI_API_KEY"):
         OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini")
+
+
+def test_published_output_without_body_is_retried_and_not_published() -> None:
+    client = RetryOpenAIClient(OpenAIArticleDecision(should_publish=True, summary_ko="짧은 요약"))
+    agent = OpenAINewsEditorAgent(api_key=None, model="gpt-5-mini", client=client)
+    result = agent.edit(make_enrichment_result())
+    assert client.responses.calls == 2
+    assert result.services[0].briefings == []
+    assert result.decisions[0].status == AgentDecisionStatus.FAILED

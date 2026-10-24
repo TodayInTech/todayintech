@@ -134,3 +134,5 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 - [x] Share LoadingSpinner across briefing lists and every trace view
 
 - [x] Resolve Docusaurus category/active style conflicts for consistent sidebar hover and keyboard focus feedback
+
+- [x] Separate list summaries from dynamic detailed Markdown articles with evidence-aware depth, safe Docusaurus rendering and legacy compatibility

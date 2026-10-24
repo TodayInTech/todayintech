@@ -142,7 +142,7 @@ Enrichment can also run independently through `make enrich` or `make trace-enric
 
 Inside Writer, Agent editing, Markdown writing, and `briefed_articles` state updates are logged in order. The OpenAI Agent logs candidate review order, publish/skip decisions, structured output parse failures, and retry attempts. Writer decision trace stores per-candidate decision status, publish/reject rationale, confidence score, summary scope, and evidence basis as JSON and Markdown.
 
-Published article pages do not expose internal decision details. Users see only a cohesive two-to-three-paragraph Korean summary covering the subject, central content, and technical significance, plus the source link. OpenAI Agent summary length is validated by evidence strategy: `feed_metadata_only` 450–700 Korean characters, `full_content` 700–1200, and `chunk_selection`/`evidence_selection` 700–1100. Publish rationale and evidence remain available through the Writer decision trace.
+Public articles separate a one-to-two-sentence list summary (`summary_ko`) from a dynamic detailed body (`article_markdown_ko`). Headings, paragraphs, lists, tables and source-backed code/quotes are optional and article-specific. Ordinary news targets 800–1500 Korean characters and rich technical announcements 1500–2500+, with shorter output for sparse evidence. The generator adds the source link; rationale, confidence and evidence lists stay in traces.
 
 ## Operating Rules
 
@@ -185,3 +185,5 @@ Published article pages do not expose internal decision details. Users see only 
 - Final verification: make check passed Ruff lint/format and all 67 tests; Korean/English static builds passed. Pagination retains first/last and immediate neighboring pages, with 1 … 25 26 27 … 30 verified at page 26 of 30. Browser measurements confirmed 256px cards and 48px title areas.
 
 - Sidebar hover regression: reproduce and fix Infima's category-link `background: none !important` conflict. Verify Korean/English builds, light/dark hover on all six service navigation items, the selected service, keyboard focus, and hover on all six trace navigation items in the browser.
+
+- Dynamic articles: `make check` passed Ruff lint/format and all 70 tests. Live old/new prompt generation on three identical cached source packets compared length, headings, numerical claims and evidence IDs. Korean/English Docusaurus builds and browser checks verified the 780px article reader, dynamic headings, source link, Markdown tables/lists/quotes/code and inert HTML/MDX/unsafe links. See [article generation verification](ARTICLE_GENERATION.md) for results and sampling limits.

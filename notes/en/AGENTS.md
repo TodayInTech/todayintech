@@ -83,7 +83,7 @@ docs/
 │   └── anthropic-blog/
 ```
 
-Article pages should read like natural editorial briefings, not rigid reports. A published page contains a cohesive two-to-three-paragraph Korean summary covering the subject, central content, and technical significance, followed by the source link. OpenAI Agent summary length is guided by evidence strategy: `feed_metadata_only` 450–700 Korean characters, `full_content` 700–1200, and `chunk_selection`/`evidence_selection` 700–1100. It must not force fixed opening phrases, section headings, or bullet lists. Publish rationale, confidence, evidence scope, and evidence lists belong only in Writer traces. Draft pages must not pretend to summarize the article; they should only show pending status, feed summary, and candidate evidence.
+Published articles separate a one-to-two-sentence list summary (`summary_ko`) from a detailed Korean Markdown body (`article_markdown_ko`). Explain the core change, relevant background, technical significance and practical impact only where supported by evidence. Choose headings, paragraphs, lists, tables, source-backed code and short quotations dynamically; do not force a template or section count. Recommended lengths are 500–800 Korean characters for simple updates, 800–1500 for ordinary news, 1200–2000 for security news, 1500–2500 for AI/framework announcements, and 2000+ for deep technical topics. These are guidance, not minimums or caps; feed-only or thin selected evidence warrants shorter writing. Do not pad with repetition, generic advice or invented details. Raw HTML and executable MDX are not allowed. The generator adds the source link. Publish rationale, confidence and evidence lists remain in Writer traces. Draft pages retain pending status, feed descriptions and candidate evidence.
 
 ## Agent Rules
 
@@ -108,7 +108,7 @@ Each stage must remain independently executable for development and debugging.
 - Writer contains the Agent and Generator. The Agent creates editorial results and the Generator only writes Markdown.
 - The default Writer uses `DraftNewsEditorAgent`, which does not generate summaries or insights.
 - Use `TODAYINTECH_WRITER_AGENT=openai` or `make write WRITER_AGENT=openai` to use `OpenAINewsEditorAgent`.
-- The OpenAI Agent does not crawl full article text. It only uses the title, feed summary, tags, metadata, and ranking signals provided by Collector and Preprocessor.
+- The OpenAI Agent uses source evidence selected by Enrichment and candidate metadata. Feed-only fallback must not imply that the full article was read.
 - Writer consumes `.var/local/enriched/{YYYY-MM-DD}/enrichment.json`. The OpenAI Agent uses selected source chunks, falling back to feed metadata only when policy explicitly allows it.
 - `chunk_selection` and `evidence_selection` candidates become Writer review targets when the selector provides evidence chunks.
 - The full `.venv/bin/python -m src.main` pipeline now connects Collector, Preprocessor, Enrichment, and Writer.

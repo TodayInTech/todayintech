@@ -32,7 +32,10 @@ class OpenAIArticleDecision(BaseModel):
     publish_reason_ko: str = ""
     reject_reason_ko: str = ""
     evidence_basis_ko: list[str] = Field(default_factory=list)
-    summary_ko: str = Field(default="", max_length=1600)
+    summary_ko: str = Field(default="", max_length=400, description="목록용 한국어 요약 1~2문장")
+    article_markdown_ko: str = Field(
+        default="", description="근거에 맞게 구성한 상세 Markdown 아티클"
+    )
 
 
 class AgentDecision(BaseModel):
@@ -81,6 +84,7 @@ class ArticleBriefing(BaseModel):
     reject_reason_ko: str | None = None
     evidence_basis_ko: list[str] = Field(default_factory=list)
     summary_ko: str | None = None
+    article_markdown_ko: str | None = None
 
 
 class ServiceWritingResult(BaseModel):

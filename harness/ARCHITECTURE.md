@@ -306,8 +306,8 @@ Writer 단계는 Enrichment가 만든 `EnrichmentResult`를 받아 문서화 결
 - 메인 index는 누적된 `briefed_articles` 상태를 기준으로 추천 글, 새로운 글, 카드형 브리핑 리스트 데이터를 생성한다. 서비스 index도 같은 카드형 탐색 구조를 사용한다. Writer는 한국어 `docs/`와 영어 `i18n/en/docusaurus-plugin-content-docs/current/`의 메인/서비스 index를 함께 갱신하며, 영어 article route 유지를 위해 article 문서를 영어 docs 경로에 복제한다.
 - GitHub Actions는 생성된 `docs/`와 `data/briefed_articles.json`을 main에 커밋해 다음 실행의 중복 제거 기준으로 사용한다.
 - 기본 구현은 `DraftNewsEditorAgent`를 사용한다. Draft Agent는 요약, 왜 중요한가, 개발자 인사이트를 생성하지 않고 `editorial_status=draft` 문서만 만든다.
-- `TODAYINTECH_WRITER_AGENT=openai`를 사용하면 `OpenAINewsEditorAgent`가 structured output으로 게시 여부, 선정/제외 이유, 판단 확신도, 요약 근거 범위, 근거 목록, 자연스러운 한국어 장문 요약을 생성한다.
-- 공개 article 문서는 요약 2~3문단과 원문 링크만 표시한다. 요약 분량은 `feed_metadata_only` 450~700자, `full_content` 700~1200자, `chunk_selection`/`evidence_selection` 700~1100자를 기준으로 한다. 선정 이유, 판단 확신도, 근거 범위, 근거 목록은 Writer trace에만 남긴다.
+- `TODAYINTECH_WRITER_AGENT=openai`를 사용하면 `OpenAINewsEditorAgent`가 structured output으로 게시 여부, 선정/제외 이유, 판단 확신도, 요약 근거 범위, 근거 목록, 목록용 짧은 요약과 동적 상세 Markdown을 생성한다.
+- 공개 article은 목록용 `summary_ko` 1~2문장과 상세 `article_markdown_ko`를 분리한다. 상세 본문은 기사별로 소제목·문단·목록·표·근거 기반 코드/인용문을 선택하며 고정 섹션을 강제하지 않는다. 일반 뉴스 800~1500자, 풍부한 기술 발표 1500~2500자 이상을 권장하지만 근거가 부족하면 짧게 작성한다. 원문 링크는 Generator가 추가하고 선정 이유·확신도·근거 목록은 trace에만 남긴다.
 - OpenAI Agent는 Enrichment가 선택한 source evidence와 후보 메타데이터만 사용한다.
 
 Writer 실행:
@@ -425,3 +425,5 @@ make deploy
 make deploy DATE=2026-06-07
 make deploy-status
 ```
+
+- `description` frontmatter에 목록 요약을 저장해 카드 데이터가 상세 본문과 분리되도록 한다. 예전 문서는 기존 문단 추출로 호환한다. Markdown 본문의 소제목·목록·표·코드는 보존하되 HTML/MDX 표현식과 import/export는 텍스트로 처리하고 모델이 만든 링크/이미지는 비활성화한다. 코드 블록은 원문 문자열을 보존한다. 기존 Enrichment 근거 예산(최대 4,000토큰)과 출력 토큰 예산은 유지한다.

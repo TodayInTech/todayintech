@@ -142,7 +142,7 @@ Enrichment는 `make enrich` 또는 `make trace-enrich`로 독립 실행할 수�
 
 Writer 내부에서는 Agent 편집, Markdown 작성, `briefed_articles` 상태 갱신을 다시 순서대로 기록한다. OpenAI Agent는 후보별 검토 순서, 게시/제외 결정, structured output 파싱 실패와 재시도 여부를 로그로 남긴다. Writer decision trace는 후보별 decision status, 선정/제외 이유, 판단 확신도, 요약 범위, 근거 목록을 JSON과 Markdown으로 저장한다.
 
-published article 문서는 내부 판단 정보를 노출하지 않는다. 사용자에게는 글의 주제, 핵심 내용, 기술적 의미를 연결한 자연스러운 한국어 요약 2~3문단과 원문 링크만 제공하고, 선정 이유와 판단 근거는 Writer decision trace에서 확인한다. OpenAI Agent 요약 분량은 `feed_metadata_only` 450~700자, `full_content` 700~1200자, `chunk_selection`/`evidence_selection` 700~1100자를 기준으로 검증한다.
+공개 article은 목록용 `summary_ko` 1~2문장과 상세 `article_markdown_ko`를 분리한다. 상세 본문은 기사별로 소제목·문단·목록·표·근거 기반 코드/인용문을 선택하며 고정 섹션을 강제하지 않는다. 일반 뉴스 800~1500자, 풍부한 기술 발표 1500~2500자 이상을 권장하지만 근거가 부족하면 짧게 작성한다. 원문 링크는 Generator가 추가하고 선정 이유·확신도·근거 목록은 trace에만 남긴다.
 
 ## 운영 기준
 
@@ -185,3 +185,5 @@ published article 문서는 내부 판단 정보를 노출하지 않는다. 사�
 - 최종 검증: make check의 Ruff lint/format과 전체 테스트 67개, 한국어/영어 정적 빌드가 통과했다. 페이지네이션은 첫/마지막 페이지와 현재 페이지 양옆 번호를 표시하며 26/30에서 1 … 25 26 27 … 30을 확인했다. 모든 카드 높이 256px과 제목 영역 48px을 실제 브라우저에서 확인했다.
 
 - 사이드바 호버 회귀 확인: Infima의 카테고리 링크 `background: none !important` 충돌을 재현하고 수정했다. 한국어·영어 빌드와 실제 브라우저에서 서비스 6개 항목의 라이트/다크 호버, 선택된 서비스, 키보드 포커스 및 트레이스 6개 항목의 호버를 확인한다.
+
+- 동적 아티클 생성: `make check`의 Ruff lint/format 및 전체 테스트 70개가 통과했다. 동일 보관 근거 3건을 기존/개선 프롬프트로 실제 생성해 분량·소제목·수치·근거 ID를 비교했다. 한국어/영어 Docusaurus 빌드와 실제 상세 페이지의 780px 읽기 영역·소제목·원문 링크, Markdown 표/목록/인용/코드 보존 및 HTML/MDX/위험 링크 비활성화를 확인했다. 상세 결과와 표본 한계는 [아티클 생성 검증](ARTICLE_GENERATION.md)에 기록한다.
