@@ -136,7 +136,8 @@ jobs:
           git config user.name "choi-hyk"
           git config user.email "blindlchoil@gmail.com"
 
-          git add docs data/briefed_articles.json
+          git add docs data/briefed_articles.json static/data/briefings/index.json \
+            i18n/en/docusaurus-plugin-content-docs/current
 
           if git diff --cached --quiet; then
             echo "No generated archive changes to publish."

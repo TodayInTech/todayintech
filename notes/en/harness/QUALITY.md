@@ -193,3 +193,5 @@ Public articles separate a one-to-two-sentence list summary (`summary_ko`) from 
 - Emphasis: use short `**bold phrases**` selectively for core changes, decisive numbers and material limits. Avoid whole-paragraph, every-number or repeated emphasis, and verify bold syntax survives Markdown safety handling.
 
 - Article navigation: all 3 checks in `node --test tests/site/briefing-navigation.test.mjs` passed. Lists and sidebars share newest briefing date (source-date fallback), descending score, then stable document-path order. Previous/next refer to adjacent items in that order within the same service; omit boundary links. Audited all 2,326 Korean/English rendered article pages for neighbor order/boundaries and verified no document paginator on 24 main/service-index/trace pages.
+
+- Archive synchronization: fix omitted card JSON and generated English docs in the daily publication staging paths. Refresh 1,163 index entries dated 2026-10-24 from stored state without invoking the Agent or rewriting articles; verify every service card order matches actual detail-page neighbors.
