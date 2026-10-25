@@ -11,11 +11,11 @@
 
 | Service | Decision | Score | Confidence | Title | Reason |
 | --- | --- | ---: | ---: | --- | --- |
-| hacker-news | `published` | 65.0 | 0.82 | Kimi K3.1 Pro and K3.1 Pro Highspeed | Kimi가 공개한 K3.1 Pro는 1백만 토큰 컨텍스트와 3T급 오픈 웨이트 사양, 속도형 변형 등 실무적 기능과 벤치마크 수치가 함께 제시되어 기술 독자에게 유의미한 정보임. 평가 방법·하이퍼파라미터와 내부 벤치 결과(코딩·3D·금융·에이전트 등)가 구체적으로 제공되어 기사 형식의 브리핑 가치가 높음. |
-| hacker-news | `published` | 63.6 | 0.9 | Dessa: the most authentic full-duplex speech model ever built | 제공된 근거는 dessa.com(블록 소유)용 개인정보 처리방침 전문으로, 수집 항목·이용 목적·제3자 제공·권리·저장 위치 등 기술적으로 유의미한 정보가 포함되어 있어 기술 독자에게 가치가 있다고 판단했습니다. |
-| hacker-news | `published` | 60.0 | 0.9 | Now Google says it might use your Gmail and Google Photos data to target ads | Google이 개인정보 활용 예외를 명시하는 형태로 프라이버시 정책을 변경해, 개인화 AI 기능과 연동될 경우 Gmail·Drive·Photos의 내용이 광고 타깃팅에 활용될 수 있음을 밝힌 점은 사용자 동의·설정과 연계된 중요한 사안으로 기술 독자와 일반 사용자 모두에게 실용적 영향이 커 게시 가치가 높습니다. |
-| hacker-news | `published` | 60.0 | 0.45 | Today, we hacked what we'd set out to hack: the iPhone | Hacker News에서의 높은 반응(708점, 댓글 467개)으로 기술 커뮤니티의 관심이 뚜렷하고, 아이폰 해킹을 주장하는 제목 자체가 보안·익스플로잇 연구 관점에서 의미가 있어 Today in Tech 독자에게 알릴 가치가 있다고 판단했습니다. 다만 본문 내용은 제공된 메타데이터로만 확인되어 상세한 기술적 근거는 원문 검토로 보완되어야 합니다. |
-| openai-blog | `published` | 44.0 | 0.65 | Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II) | 피드 메타데이터만으로는 OpenAI가 'Habitat' 저장소 계층을 확장해 다중 테넌시, 전역 캐싱, Azure Cosmos DB를 도입하고 ChatGPT의 읽기 성능을 12× 개선했다는 핵심 내용을 확인할 수 있어 기술 독자에게 유의미한 주제입니다. |
-| openai-blog | `published` | 41.0 | 0.6 | OpenAI and Poland’s NASK partner to advance AI safety and security | AI 안전과 보안 분야에서 글로벌 기업과 국가 기관의 협력 소식은 기술 독자에게 정책·연구·인프라 관점에서 관심도가 높아 게시 가치가 있습니다. 단, 제공된 정보가 메타데이터 수준에 한정되어 있어 세부 내용은 후속 공개 자료로 보완할 필요가 있습니다. |
+| hacker-news | `published` | 64.0 | 0.65 | Show HN: Steal My Bitcoin | Hacker News에서 주목을 받는 'Show HN' 게시물이며 피드 요약에 PHP 원격코드실행(RCE) 관련 문구와 함께 공개 의도가 명시되어 있어 기술 독자가 주목할 만한 보안 이슈로 판단됩니다. 게시물의 HN 점수(347)와 댓글(186)도 별도 검토 근거가 됩니다. |
+| hacker-news | `published` | 63.0 | 0.85 | No signs of AI payoff outside the tech sector | 원문은 Apollo의 Marc Rowan이 Mag 7(대형 기술주)과 S&P 493(비(非)테크 기업군)을 비교한 차트 기반 분석을 제시하고 있으며, Hacker News에서 활발한 토론이 진행되는 등 기술 독자 관심이 높아 Today in Tech 독자에게 유의미한 맥락을 제공합니다. 근거(chunk-0001)가 단일 문서로 일관되게 주장 및 근거(매출·마진·생산성 차이, 토큰 지출 현황)를 담고 있어 기사화 가치가 있습니다. |
+| hacker-news | `published` | 60.0 | 0.45 | Roku developer repositories moved from GitHub to GitLab | 피드 메타데이터로 확인되는 핵심 사실(제목, 원문 URL)과 Hacker News 반응(포인트·댓글 수)이 있어 기술 독자에게 알릴 가치가 있다고 판단했습니다. 단, 본문 세부 내용은 제공되지 않아 추가 확인이 필요합니다. |
+| hacker-news | `published` | 60.0 | 0.6 | I don't understand quantum physics (2018) | 피드 기준으로 Hacker News에서 높은 반응(점수 267, 댓글 202)을 기록한 게시물이므로 독자 관심도가 높아 보입니다. 원문은 사우샘프턴 대학교 호스팅 페이지로 연결되며, 제공된 메타데이터만으로 간결한 안내 기사 작성이 가능합니다. |
+| openai-blog | `published` | 43.0 | 0.65 | Securing our frontier model training environment | OpenAI의 최신 블로그 게시물이 'frontier 모델 훈련 환경'의 컨테인먼트 강화라는 보안 관련 소식을 다루며, 오프라인 환경과 고연산 레드팀을 포함한다고 메타데이터가 명시합니다. 보안·AI 운영 독자에게 중요해 보이는 주제여서 공개 가치가 있습니다. 다만 본 브리핑은 피드 메타데이터만을 근거로 작성되었습니다. |
 | openai-blog | `skipped` | 40.0 | - | Build more responsive apps with the Decisions API | Source returned HTTP 403 |
 | openai-blog | `skipped` | 34.0 | - | What FDE means at OpenAI | Source returned HTTP 403 |
+| openai-blog | `published` | 32.0 | 0.7 | Cloudflare links vulnerability discovery to defense with OpenAI | 피드 메타데이터가 Cloudflare의 OpenAI 도구 활용(취약점 조사·수정 제안, Codex 활용)을 명시해 기술·보안 독자에게 유의미한 업데이트를 제공하므로 게시 가치가 있습니다. |
