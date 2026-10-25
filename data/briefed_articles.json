@@ -11630,6 +11630,66 @@
       "status": "published",
       "briefed_at": "2026-10-24T00:13:36.739072Z",
       "candidate_score": 41.0
+    },
+    "1f21a11f54e05b7b977f3d53d1bff76b315691f6db20dc1b27ab0c59dccc7d01": {
+      "normalized_url": "https://stealmybitcoin.com/",
+      "title_fingerprint": "show hn steal my bitcoin",
+      "service_key": "hacker-news",
+      "title": "Show HN: Steal My Bitcoin",
+      "article_doc_path": "docs/services/hacker-news/2026-10-show-hn-steal-my-bitcoin-1f21a11f.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T00:00:37.570795Z",
+      "candidate_score": 64.0
+    },
+    "a54fd0e20dbb904635705d00828a70dee1c0f1d1dbd7b937a4e8c27246fb911b": {
+      "normalized_url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "title_fingerprint": "no signs of ai payoff outside the tech sector",
+      "service_key": "hacker-news",
+      "title": "No signs of AI payoff outside the tech sector",
+      "article_doc_path": "docs/services/hacker-news/2026-10-no-signs-of-ai-payoff-outside-the-tech-sector-a54fd0e2.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T00:00:37.570831Z",
+      "candidate_score": 63.0
+    },
+    "c852cf262baca51dc366fcd1c2efa7b82968161d0543632825f68d69c4ea60e7": {
+      "normalized_url": "https://blog.roku.com/developer/gitlab-move",
+      "title_fingerprint": "roku developer repositories moved from github to gitlab",
+      "service_key": "hacker-news",
+      "title": "Roku developer repositories moved from GitHub to GitLab",
+      "article_doc_path": "docs/services/hacker-news/2026-10-roku-developer-repositories-moved-from-github-to-gitlab-c852cf26.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T00:00:37.570841Z",
+      "candidate_score": 60.0
+    },
+    "c755b08d9cb3b23c3f6f4d2f7d107f12fe5e64eb51b8a85f3da380979f316aac": {
+      "normalized_url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
+      "title_fingerprint": "i don t understand quantum physics 2018",
+      "service_key": "hacker-news",
+      "title": "I don't understand quantum physics (2018)",
+      "article_doc_path": "docs/services/hacker-news/2026-10-i-don-t-understand-quantum-physics-2018-c755b08d.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T00:00:37.570847Z",
+      "candidate_score": 60.0
+    },
+    "f8c156dba7886826388b35c0408d87e493aa3c6ad59ba61bfe6146ea7a6b00f6": {
+      "normalized_url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "title_fingerprint": "securing our frontier model training environment",
+      "service_key": "openai-blog",
+      "title": "Securing our frontier model training environment",
+      "article_doc_path": "docs/services/openai-blog/2026-10-securing-our-frontier-model-training-environment-f8c156db.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T00:00:37.570853Z",
+      "candidate_score": 43.0
+    },
+    "3fe372fb2e8166f0e8146fd86373d22b0c153e5f155ff56beb03c21126360e38": {
+      "normalized_url": "https://openai.com/index/cloudflare-cyber",
+      "title_fingerprint": "cloudflare links vulnerability discovery to defense with openai",
+      "service_key": "openai-blog",
+      "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-10-cloudflare-links-vulnerability-discovery-to-defense-with-openai-3fe372fb.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T00:00:37.570859Z",
+      "candidate_score": 32.0
     }
   }
 }
