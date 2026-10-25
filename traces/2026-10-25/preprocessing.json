@@ -1,0 +1,296 @@
+{
+  "generated_at": "2026-10-25T23:43:57.189603+00:00",
+  "generated_for": "2026-10-25",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "bdbb3bdbf1d28b1671846f3413bc7e8950ebcacf",
+  "github_run_id": "40245963529",
+  "service_count": 5,
+  "duration_ms": 13,
+  "raw_count": 120,
+  "candidate_count": 16,
+  "excluded_count": 104,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 26,
+      "excluded_count": 94,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 94
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 26,
+      "output_count": 26,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 26,
+      "output_count": 26,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 26,
+      "output_count": 16,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:e1545bcc45f4c70b",
+          "title": "Cerebras Deploys Trillion-Parameter AI Models",
+          "normalized_url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+          "url_hash": "e1545bcc45f4c70b2ebb90e8b8d9899e1127cfbe0b10b94deb75bf9d3d2df627",
+          "suggested_doc_key": "2026-10-cerebras-deploys-trillion-parameter-ai-models-e1545bcc",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-cerebras-deploys-trillion-parameter-ai-models-e1545bcc.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 348점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 127개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:062549172a9c6fbc",
+          "title": "Serbia's Vucic concedes election defeat in historic win for student movement",
+          "normalized_url": "https://www.reuters.com/world/europe/serbia-votes-students-seek-unseat-vucic-snap-election-2026-10-25",
+          "url_hash": "062549172a9c6fbcedc2b5326aa9d710a4e858ac48eb1880167d5f4a40f1b77e",
+          "suggested_doc_key": "2026-10-serbia-s-vucic-concedes-election-defeat-in-historic-win-for-student-move-06254917",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-serbia-s-vucic-concedes-election-defeat-in-historic-win-for-student-move-06254917.md",
+          "candidate_score": 60.5,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 163점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 61개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a09be98aff5a2dbd",
+          "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
+          "normalized_url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee",
+          "url_hash": "a09be98aff5a2dbde594b6ead00f11226785cda28b4d69b85b844e4a5030e0e5",
+          "suggested_doc_key": "2026-10-oregon-police-are-charging-a-local-news-outlet-2-5m-for-records-about-on-a09be98a",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-oregon-police-are-charging-a-local-news-outlet-2-5m-for-records-about-on-a09be98a.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 332점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 84개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8239d599eb269760",
+          "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
+          "normalized_url": "https://talkweb.eu/openweb/4558",
+          "url_hash": "8239d599eb2697605faaae0e620678e1f98ebf29852c44256683af1fffde7845",
+          "suggested_doc_key": "2026-10-i-refuse-to-accept-a-censored-internet-join-me-at-fosdem-27-8239d599",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-i-refuse-to-accept-a-censored-internet-join-me-at-fosdem-27-8239d599.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 350점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 172개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b83204b7e9c12d9e",
+          "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+          "normalized_url": "https://lynchlab.net/llm-skin-cancer",
+          "url_hash": "b83204b7e9c12d9e6eae8031dc41ae67c598936afc3870c83bd71dd1f0e37cfd",
+          "suggested_doc_key": "2026-10-a-10-year-old-cnn-outperforms-frontier-llms-for-skin-cancer-diagnosis-b83204b7",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-a-10-year-old-cnn-outperforms-frontier-llms-for-skin-cancer-diagnosis-b83204b7.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 373점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 182개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 6,
+      "excluded_count": 44,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:891b7e0bbf66f86d",
+          "title": "Build more responsive apps with the Decisions API",
+          "normalized_url": "https://openai.com/index/decisions-api",
+          "url_hash": "891b7e0bbf66f86d27b770f3dc53e0fbecfc246eeadf29503262f6d9c70adad7",
+          "suggested_doc_key": "2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:6400feb681472530",
+          "title": "What FDE means at OpenAI",
+          "normalized_url": "https://openai.com/index/forward-deployed-engineering-means",
+          "url_hash": "6400feb681472530a689e8c59132cfe6d13f5863532ecd60e409a4825c59746b",
+          "suggested_doc_key": "2026-10-what-fde-means-at-openai-6400feb6",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-what-fde-means-at-openai-6400feb6.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:e270f5ba4688033d",
+          "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+          "normalized_url": "https://openai.com/index/empowering-cyber-defenders",
+          "url_hash": "e270f5ba4688033de075906df89466646eb9f009fa8bcee5c8b60ee62cebab43",
+          "suggested_doc_key": "2026-10-democratic-governance-of-frontier-ai-part-ii-empowering-cyber-defenders-e270f5ba",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-democratic-governance-of-frontier-ai-part-ii-empowering-cyber-defenders-e270f5ba.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 4일이 지난 글로 최신성 16점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:aa8847d44cbae332",
+          "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+          "normalized_url": "https://openai.com/index/terminal-x",
+          "url_hash": "aa8847d44cbae3328f3c5cbb65bcffcd3b77355e99faf584c20aa718f2bc61fa",
+          "suggested_doc_key": "2026-10-terminal-x-matches-senior-investor-judgment-88-6-with-gpt-6-1-aa8847d4",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-terminal-x-matches-senior-investor-judgment-88-6-with-gpt-6-1-aa8847d4.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 4일이 지난 글로 최신성 16점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:b1215e1aefc04c61",
+          "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+          "normalized_url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+          "url_hash": "b1215e1aefc04c61e203617a80fd84e7760e29072f8e8c5c2b0a50c22fe019fd",
+          "suggested_doc_key": "2026-10-chatgpt-ads-expands-to-26-new-countries-as-over-100-000-advertisers-have-b1215e1a",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-chatgpt-ads-expands-to-26-new-countries-as-over-100-000-advertisers-have-b1215e1a.md",
+          "candidate_score": 27.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 44
+      }
+    }
+  ]
+}
