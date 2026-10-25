@@ -11690,6 +11690,66 @@
       "status": "published",
       "briefed_at": "2026-10-25T00:00:37.570859Z",
       "candidate_score": 32.0
+    },
+    "e1545bcc45f4c70b2ebb90e8b8d9899e1127cfbe0b10b94deb75bf9d3d2df627": {
+      "normalized_url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "title_fingerprint": "cerebras deploys trillion parameter ai models",
+      "service_key": "hacker-news",
+      "title": "Cerebras Deploys Trillion-Parameter AI Models",
+      "article_doc_path": "docs/services/hacker-news/2026-10-cerebras-deploys-trillion-parameter-ai-models-e1545bcc.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T23:45:49.196998Z",
+      "candidate_score": 65.0
+    },
+    "062549172a9c6fbcedc2b5326aa9d710a4e858ac48eb1880167d5f4a40f1b77e": {
+      "normalized_url": "https://www.reuters.com/world/europe/serbia-votes-students-seek-unseat-vucic-snap-election-2026-10-25",
+      "title_fingerprint": "serbia s vucic concedes election defeat in historic win for student movement",
+      "service_key": "hacker-news",
+      "title": "Serbia's Vucic concedes election defeat in historic win for student movement",
+      "article_doc_path": "docs/services/hacker-news/2026-10-serbia-s-vucic-concedes-election-defeat-in-historic-win-for-student-move-06254917.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T23:45:49.197033Z",
+      "candidate_score": 60.5
+    },
+    "a09be98aff5a2dbde594b6ead00f11226785cda28b4d69b85b844e4a5030e0e5": {
+      "normalized_url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee",
+      "title_fingerprint": "oregon police are charging a local news outlet 2 5m for records about one cop",
+      "service_key": "hacker-news",
+      "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
+      "article_doc_path": "docs/services/hacker-news/2026-10-oregon-police-are-charging-a-local-news-outlet-2-5m-for-records-about-on-a09be98a.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T23:45:49.197054Z",
+      "candidate_score": 60.0
+    },
+    "8239d599eb2697605faaae0e620678e1f98ebf29852c44256683af1fffde7845": {
+      "normalized_url": "https://talkweb.eu/openweb/4558",
+      "title_fingerprint": "i refuse to accept a censored internet join me at fosdem 27",
+      "service_key": "hacker-news",
+      "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
+      "article_doc_path": "docs/services/hacker-news/2026-10-i-refuse-to-accept-a-censored-internet-join-me-at-fosdem-27-8239d599.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T23:45:49.197067Z",
+      "candidate_score": 60.0
+    },
+    "e270f5ba4688033de075906df89466646eb9f009fa8bcee5c8b60ee62cebab43": {
+      "normalized_url": "https://openai.com/index/empowering-cyber-defenders",
+      "title_fingerprint": "democratic governance of frontier ai part ii empowering cyber defenders",
+      "service_key": "openai-blog",
+      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+      "article_doc_path": "docs/services/openai-blog/2026-10-democratic-governance-of-frontier-ai-part-ii-empowering-cyber-defenders-e270f5ba.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T23:45:49.197078Z",
+      "candidate_score": 31.0
+    },
+    "aa8847d44cbae3328f3c5cbb65bcffcd3b77355e99faf584c20aa718f2bc61fa": {
+      "normalized_url": "https://openai.com/index/terminal-x",
+      "title_fingerprint": "terminal x matches senior investor judgment 88 6 with gpt 6 1",
+      "service_key": "openai-blog",
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "article_doc_path": "docs/services/openai-blog/2026-10-terminal-x-matches-senior-investor-judgment-88-6-with-gpt-6-1-aa8847d4.md",
+      "status": "published",
+      "briefed_at": "2026-10-25T23:45:49.197087Z",
+      "candidate_score": 31.0
     }
   }
 }

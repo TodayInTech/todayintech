@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-10-24",
+  "generated_for": "2026-10-25",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -2193,6 +2193,19 @@
       "new": false
     },
     {
+      "title": "Cerebras Deploys Trillion-Parameter AI Models",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-cerebras-deploys-trillion-parameter-ai-models-e1545bcc.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": null,
+      "published_at": "2026-10-25",
+      "excerpt": "Cerebras는 WSE-3T(온칩 SRAM 44GB) 웨이퍼를 59개로 연결해 Kimi K3(약 3조 파라미터)를 분할·파이프라인화해 1,000–2,000+ 토큰/초 수준으로 서비스한다고 밝혔다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2306,6 +2319,19 @@
       "briefed_at": "2026-06-23",
       "published_at": "2026-06-23",
       "excerpt": "VibeThinker-3B는 3억이 아닌 30억(3B) 파라미터 규모의 조밀한(sparse가 아닌 dense) 소형 언어모델로, ‘검증 가능한 추론(verifiable reasoning)’을 소형 모델 계열에서 어디까지 끌어올릴 수 있는지를 실험적으로 탐구한 기술 보고서의 중심 주제입니다. 저자들은 Spectrum-to…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Show HN: Steal My Bitcoin",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-show-hn-steal-my-bitcoin-1f21a11f.md",
+      "status": "published",
+      "score": 64.0,
+      "briefed_at": "2026-10-25",
+      "published_at": "2026-10-24",
+      "excerpt": "Hacker News에 'Steal My Bitcoin'이란 Show HN 게시물이 올라왔다. 제작자는 최근 겪은 PHP 원격코드실행(RCE)을 누가 실제로 활용할 수 있는지 궁금해 사이트를 공개했다고 밝혔으며, 게시물은 HN에서 **347점**, **186개** 댓글을 기록 중이다.",
       "featured": false,
       "new": false
     },
@@ -2451,19 +2477,6 @@
       "excerpt": "Anthropic 연구진은 대형 언어모델 Claude 내부에서 사람의 ‘의식적 접근’ 개념과 유사한 작동을 하는 작은 신경 패턴 집합을 발견했다고 보고한다. 이른바 J-space는 각 패턴이 특정 단어와 연결되지만, 해당 패턴이 활성화된다고 해서 모델이 그 단어를 출력하는 것은 아니다. 대신 J-space는 모델이 말로…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Show HN: Steal My Bitcoin",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-show-hn-steal-my-bitcoin-1f21a11f.md",
-      "status": "published",
-      "score": 64.0,
-      "briefed_at": null,
-      "published_at": "2026-10-24",
-      "excerpt": "Hacker News에 'Steal My Bitcoin'이란 Show HN 게시물이 올라왔다. 제작자는 최근 겪은 PHP 원격코드실행(RCE)을 누가 실제로 활용할 수 있는지 궁금해 사이트를 공개했다고 밝혔으며, 게시물은 HN에서 **347점**, **186개** 댓글을 기록 중이다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
@@ -2648,6 +2661,19 @@
       "new": false
     },
     {
+      "title": "No signs of AI payoff outside the tech sector",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-no-signs-of-ai-payoff-outside-the-tech-sector-a54fd0e2.md",
+      "status": "published",
+      "score": 63.0,
+      "briefed_at": "2026-10-25",
+      "published_at": "2026-10-24",
+      "excerpt": "Apollo의 Marc Rowan은 AI 투자가 Mag 7(대형 기술주)에는 매출·마진·노동생산성 향상을 가져왔지만, **S&P 493에는 매출·마진·생산성 개선 징후가 전혀 없다고** 분석하며, 주류 기업들은 토큰 비용을 성장 원천이 아닌 비용으로 보기 시작했다고 평가했다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Namecheap just seized and disabled all my domains",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2789,19 +2815,6 @@
       "excerpt": "피드 기준으로는 SXX가 'Apple is about to make Hide My Email useless'라는 글을 올렸습니다. 제목은 애플이 Hide My Email 기능을 사실상 무력화할 변화가 임박했다고 주장합니다. Hacker News에서 높은 관심을 받았고 포인트 330, 댓글 194를 기록했습니다. 제공된…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "No signs of AI payoff outside the tech sector",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-no-signs-of-ai-payoff-outside-the-tech-sector-a54fd0e2.md",
-      "status": "published",
-      "score": 63.0,
-      "briefed_at": null,
-      "published_at": "2026-10-24",
-      "excerpt": "Apollo의 Marc Rowan은 AI 투자가 Mag 7(대형 기술주)에는 매출·마진·노동생산성 향상을 가져왔지만, **S&P 493에는 매출·마진·생산성 개선 징후가 전혀 없다고** 분석하며, 주류 기업들은 토큰 비용을 성장 원천이 아닌 비용으로 보기 시작했다고 평가했다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "NetBSD 11.0",
@@ -3597,6 +3610,19 @@
       "new": false
     },
     {
+      "title": "Serbia's Vucic concedes election defeat in historic win for student movement",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-serbia-s-vucic-concedes-election-defeat-in-historic-win-for-student-move-06254917.md",
+      "status": "published",
+      "score": 60.5,
+      "briefed_at": null,
+      "published_at": "2026-10-25",
+      "excerpt": "피드 기준으로는 로이터 보도 제목이 '세르비아의 부치치(Vučić)가 선거 패배를 인정했고 학생 운동이 역사적 승리를 거두었다'고 전합니다. 메타데이터에는 기사 URL과 발행 시각만 확인됩니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "OpenAI Agents API",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3671,6 +3697,32 @@
       "briefed_at": "2026-10-13",
       "published_at": "2026-10-12",
       "excerpt": "Agent37은 AI 에이전트를 위한 '저비용 샌드박스'를 표방하며 호스트당 평균 비용을 업계의 10% 이하로 낮췄다고 소개한다. 창업자 비슈누는 고객당 평균 지출을 월 $0.37로 제시하고, 무료 플랜의 인프라 비용은 사용자당 월 $0.05~$0.10 수준이라고 밝힌다. 초기에는 OpenClaw 래퍼로 시작했으나 다양…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "I don't understand quantum physics (2018)",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-i-don-t-understand-quantum-physics-2018-c755b08d.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-10-25",
+      "published_at": "2026-10-24",
+      "excerpt": "피드 기준으로는 'I don't understand quantum physics (2018)'라는 제목의 글이 University of Southampton 호스팅 페이지로 공유되어 Hacker News에서 267점, 댓글 202개를 기록했습니다. 제공된 정보는 링크·참여 수치에 한정됩니다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Roku developer repositories moved from GitHub to GitLab",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-roku-developer-repositories-moved-from-github-to-gitlab-c852cf26.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-10-25",
+      "published_at": "2026-10-24",
+      "excerpt": "피드 기준으로는 Roku가 개발자 리포지토리를 GitHub에서 GitLab으로 이전했다는 블로그 게시물이 등록되었고, Hacker News에서 포인트 235·댓글 159로 크게 주목받았습니다.",
       "featured": false,
       "new": false
     },
@@ -6301,28 +6353,28 @@
       "new": false
     },
     {
-      "title": "Roku developer repositories moved from GitHub to GitLab",
+      "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-roku-developer-repositories-moved-from-github-to-gitlab-c852cf26.md",
+      "href": "./services/hacker-news/2026-10-oregon-police-are-charging-a-local-news-outlet-2-5m-for-records-about-on-a09be98a.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-10-24",
-      "excerpt": "피드 기준으로는 Roku가 개발자 리포지토리를 GitHub에서 GitLab으로 이전했다는 블로그 게시물이 등록되었고, Hacker News에서 포인트 235·댓글 159로 크게 주목받았습니다.",
+      "published_at": "2026-10-25",
+      "excerpt": "오리건 유진시 경찰이 지역 매체의 한 경찰관 관련 공공기록 요청에 대해 **44,816시간·$2,484,599.04**의 처리비용을 청구했고, 같은 부서가 **$342,000** 규모의 AI 기반 번호판 인식 장비 계약을 체결한 점이 같은 기사에서 지적되었습니다.",
       "featured": false,
       "new": true
     },
     {
-      "title": "I don't understand quantum physics (2018)",
+      "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-i-don-t-understand-quantum-physics-2018-c755b08d.md",
+      "href": "./services/hacker-news/2026-10-i-refuse-to-accept-a-censored-internet-join-me-at-fosdem-27-8239d599.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-10-24",
-      "excerpt": "피드 기준으로는 'I don't understand quantum physics (2018)'라는 제목의 글이 University of Southampton 호스팅 페이지로 공유되어 Hacker News에서 267점, 댓글 202개를 기록했습니다. 제공된 정보는 링크·참여 수치에 한정됩니다.",
+      "published_at": "2026-10-25",
+      "excerpt": "FOSDEM 2027에 ‘Digital Dissident’ 데브룸이 신설됐다. 검열 우회·익명성·안전한 고발·운용 보안 등 도구 체인 관점에서 발표를 모으며 **참여신청은 2026-10-24~2026-11-30(23:59 UTC)**이다.",
       "featured": false,
       "new": true
     },
@@ -8121,6 +8173,19 @@
       "new": false
     },
     {
+      "title": "Securing our frontier model training environment",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-securing-our-frontier-model-training-environment-f8c156db.md",
+      "status": "published",
+      "score": 43.0,
+      "briefed_at": "2026-10-25",
+      "published_at": "2026-10-23",
+      "excerpt": "피드 기준으로는 OpenAI가 2026‑10‑23 블로그에서 최첨단 모델 훈련·평가 환경의 컨테인먼트(격리)를 강화했다고 밝혔으며, 메타데이터는 오프라인 환경과 고연산 레드팀을 포함한다고 전합니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Now everyone can put data to work",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -8340,19 +8405,6 @@
       "excerpt": "피드 기준으로는 OpenAI가 2026-06-14자 공지로 ‘OpenAI Partner Network’를 출범하고 1억5천만 달러를 투자한다고 전합니다. 이 네트워크는 전 세계 파트너들이 기업용 AI의 채택, 배포, 전환을 가속화하도록 지원하기 위한 목적이라고 요약됩니다. 제공된 정보만 보면 대규모 자금 투입을 통한 파…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Securing our frontier model training environment",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-10-securing-our-frontier-model-training-environment-f8c156db.md",
-      "status": "published",
-      "score": 43.0,
-      "briefed_at": null,
-      "published_at": "2026-10-23",
-      "excerpt": "피드 기준으로는 OpenAI가 2026‑10‑23 블로그에서 최첨단 모델 훈련·평가 환경의 컨테인먼트(격리)를 강화했다고 밝혔으며, 메타데이터는 오프라인 환경과 고연산 레드팀을 포함한다고 전합니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "How bug bounty sharpens one researcher’s security skills",
@@ -13048,6 +13100,19 @@
       "new": false
     },
     {
+      "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-cloudflare-links-vulnerability-discovery-to-defense-with-openai-3fe372fb.md",
+      "status": "published",
+      "score": 32.0,
+      "briefed_at": "2026-10-25",
+      "published_at": "2026-10-21",
+      "excerpt": "피드 기준으로는 Cloudflare가 OpenAI의 Daybreak를 취약점 조사와 검토용 수정 제안에, Codex를 개발자 생산성(코드 속도·품질) 개선에 도입했다고 발표했습니다(2026-10-21).",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Strengthening our defenses against distillation attacks",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -13165,19 +13230,6 @@
       "new": false
     },
     {
-      "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-10-cloudflare-links-vulnerability-discovery-to-defense-with-openai-3fe372fb.md",
-      "status": "published",
-      "score": 32.0,
-      "briefed_at": null,
-      "published_at": "2026-10-21",
-      "excerpt": "피드 기준으로는 Cloudflare가 OpenAI의 Daybreak를 취약점 조사와 검토용 수정 제안에, Codex를 개발자 생산성(코드 속도·품질) 개선에 도입했다고 발표했습니다(2026-10-21).",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "The AI policy window is open. We need to act.",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -13228,6 +13280,32 @@
       "excerpt": "피드 기준으로는 이 글은 GitHub Copilot CLI에 언어 서버 프로토콜(LSP) 서버를 설치·구성해 기존의 무차별 grep/디컴파일 방식 대신 실제 코드 인텔리전스를 제공하는 방법을 설명한다고 합니다. 개발자가 CLI 환경에서 더 정확한 코드 탐색과 추천을 받을 수 있도록 설정하는 내용을 다룹니다. 제공된 정보…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-democratic-governance-of-frontier-ai-part-ii-empowering-cyber-defenders-e270f5ba.md",
+      "status": "published",
+      "score": 31.0,
+      "briefed_at": null,
+      "published_at": "2026-10-21",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-10-21자 블로그에서 최첨단 AI로 사이버 방어 역량을 강화하고 강력한 안전장치, 현대화된 사이버보안, 회복력 있는 공공기관 구축을 목표로 하는 청사진을 제시했다고 요약됩니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-terminal-x-matches-senior-investor-judgment-88-6-with-gpt-6-1-aa8847d4.md",
+      "status": "published",
+      "score": 31.0,
+      "briefed_at": null,
+      "published_at": "2026-10-20",
+      "excerpt": "피드 기준으로는 OpenAI 블로그가 Terminal X의 Eval Agent가 GPT-6.1 Sol로 시니어 투자자 판단과 **88.6%** 일치하고, **54개 기준**으로 평가해 펀드 명세 위반을 **25% 더** 포착했다고 보고했다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Open call for guest investigators in the life sciences",
