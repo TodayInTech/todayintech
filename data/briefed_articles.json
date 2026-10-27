@@ -11750,6 +11750,116 @@
       "status": "published",
       "briefed_at": "2026-10-25T23:45:49.197087Z",
       "candidate_score": 31.0
+    },
+    "9a064d95901e645ea065cfa704b4762ef050dfe46763269ed9ec0fab35c9cee2": {
+      "normalized_url": "https://www.anthropic.com/news/s1-sec",
+      "title_fingerprint": "anthropic files s 1 with the sec for proposed initial public offering",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-offering-9a064d95.md",
+      "status": "published",
+      "briefed_at": "2026-10-27T01:06:31.366369Z",
+      "candidate_score": 30.0
+    },
+    "9a15b40232fdbf825a34f1cb708e4553949c400aff4f3528a83f8e0a1a014861": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks",
+      "title_fingerprint": "our newest ai quest mapping the human brain",
+      "service_key": "google-blog",
+      "title": "Our newest AI Quest: Mapping the human brain",
+      "article_doc_path": "docs/services/google-blog/2026-10-our-newest-ai-quest-mapping-the-human-brain-9a15b402.md",
+      "status": "published",
+      "briefed_at": "2026-10-27T01:06:31.366416Z",
+      "candidate_score": 36.0
+    },
+    "d43c5eef92ce2ffba0a027ed26ea0cd8ca4013d4f84ec2854e0cf24329522e34": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/research/google-beam-uso-docuseries-service-members",
+      "title_fingerprint": "how google beam connects military families globally",
+      "service_key": "google-blog",
+      "title": "How Google Beam connects military families globally",
+      "article_doc_path": "docs/services/google-blog/2026-10-how-google-beam-connects-military-families-globally-d43c5eef.md",
+      "status": "published",
+      "briefed_at": "2026-10-27T01:06:31.366424Z",
+      "candidate_score": 35.0
+    },
+    "35e334c198740f7416638922d137b34400b1d3f32a340ea04060840443b03b8a": {
+      "normalized_url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "title_fingerprint": "gpt 6 1 terra",
+      "service_key": "hacker-news",
+      "title": "GPT-6.1 Terra",
+      "article_doc_path": "docs/services/hacker-news/2026-10-gpt-6-1-terra-35e334c1.md",
+      "status": "published",
+      "briefed_at": "2026-10-27T01:06:31.366430Z",
+      "candidate_score": 72.0
+    },
+    "2f04de563efd474f33e1507186cb633e9790b98365f3bba15d16332a3934d4a9": {
+      "normalized_url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "title_fingerprint": "the exponential time hypothesis is false pdf",
+      "service_key": "hacker-news",
+      "title": "The Exponential Time Hypothesis Is False [pdf]",
+      "article_doc_path": "docs/services/hacker-news/2026-10-the-exponential-time-hypothesis-is-false-pdf-2f04de56.md",
+      "status": "published",
+      "briefed_at": "2026-10-27T01:06:31.366435Z",
+      "candidate_score": 67.0
+    },
+    "5bde0ad724a89177124192528183380eaa48a148eb54f089adb6075a13092f9b": {
+      "normalized_url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
+      "title_fingerprint": "type server protocol",
+      "service_key": "hacker-news",
+      "title": "Type Server Protocol",
+      "article_doc_path": "docs/services/hacker-news/2026-10-type-server-protocol-5bde0ad7.md",
+      "status": "published",
+      "briefed_at": "2026-10-27T01:06:31.366440Z",
+      "candidate_score": 66.4
+    },
+    "8eb6001a836a6e50b8fb133e1590f182de0e7997306db3a54dcb8d2c2e5a6daa": {
+      "normalized_url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "title_fingerprint": "announcing three new discoveries in mathematics computer science and physics",
+      "service_key": "hacker-news",
+      "title": "Announcing three new discoveries in mathematics, computer science, and physics",
+      "article_doc_path": "docs/services/hacker-news/2026-10-announcing-three-new-discoveries-in-mathematics-computer-science-and-phy-8eb6001a.md",
+      "status": "published",
+      "briefed_at": "2026-10-27T01:06:31.366444Z",
+      "candidate_score": 66.0
+    },
+    "7d972df501d01ba1f64ace9f515a56fb23b6429c84e2c13cce6a1dfa0631bf43": {
+      "normalized_url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "title_fingerprint": "gpt 6 1 sol helps coderabbit strengthen security across complex codebases",
+      "service_key": "openai-blog",
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "article_doc_path": "docs/services/openai-blog/2026-10-gpt-6-1-sol-helps-coderabbit-strengthen-security-across-complex-codebase-7d972df5.md",
+      "status": "published",
+      "briefed_at": "2026-10-27T01:06:31.366449Z",
+      "candidate_score": 47.0
+    },
+    "a9c488820a62ac4adcd9d66c87dfdb487fb6897ef015ab83ccdf2e6a9db2968a": {
+      "normalized_url": "https://openai.com/index/greptile-code-review-codex-astra",
+      "title_fingerprint": "greptile takes bug detection beyond code review with gpt 6 astra",
+      "service_key": "openai-blog",
+      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+      "article_doc_path": "docs/services/openai-blog/2026-10-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra-a9c48882.md",
+      "status": "published",
+      "briefed_at": "2026-10-27T01:06:31.366454Z",
+      "candidate_score": 44.0
+    },
+    "742d30efdc4090c11a97794f6a72e90c1243857798823aeed51fe879a1c3fcd7": {
+      "normalized_url": "https://openai.com/index/openai-cut-incident-investigation",
+      "title_fingerprint": "how ultrafast cut incident investigation from hours to minutes at openai",
+      "service_key": "openai-blog",
+      "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-at-openai-742d30ef.md",
+      "status": "published",
+      "briefed_at": "2026-10-27T01:06:31.366458Z",
+      "candidate_score": 39.0
+    },
+    "27334100e818b98514ff319836bc3b78479c8228c2a09656f9dea445b0edf902": {
+      "normalized_url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+      "title_fingerprint": "chatgpt s expanding world of work",
+      "service_key": "openai-blog",
+      "title": "ChatGPT’s expanding world of work",
+      "article_doc_path": "docs/services/openai-blog/2026-10-chatgpt-s-expanding-world-of-work-27334100.md",
+      "status": "published",
+      "briefed_at": "2026-10-27T01:06:31.366462Z",
+      "candidate_score": 36.0
     }
   }
 }
