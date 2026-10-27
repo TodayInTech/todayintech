@@ -1,0 +1,345 @@
+{
+  "generated_at": "2026-10-27T01:03:34.668017+00:00",
+  "generated_for": "2026-10-27",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "f31f717274a4c62a3b14a2775378f16243186ba4",
+  "github_run_id": "40430137450",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 22,
+  "excluded_count": 98,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 118,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 2
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 118,
+      "output_count": 32,
+      "excluded_count": 86,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 86
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 32,
+      "output_count": 22,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:9a064d95901e645e",
+          "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+          "normalized_url": "https://www.anthropic.com/news/s1-sec",
+          "url_hash": "9a064d95901e645ea065cfa704b4762ef050dfe46763269ed9ec0fab35c9cee2",
+          "suggested_doc_key": "2026-10-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-offering-9a064d95",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-offering-9a064d95.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:9a15b40232fdbf82",
+          "title": "Our newest AI Quest: Mapping the human brain",
+          "normalized_url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks",
+          "url_hash": "9a15b40232fdbf825a34f1cb708e4553949c400aff4f3528a83f8e0a1a014861",
+          "suggested_doc_key": "2026-10-our-newest-ai-quest-mapping-the-human-brain-9a15b402",
+          "suggested_article_path": "docs/services/google-blog/2026-10-our-newest-ai-quest-mapping-the-human-brain-9a15b402.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:d43c5eef92ce2ffb",
+          "title": "How Google Beam connects military families globally",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/research/google-beam-uso-docuseries-service-members",
+          "url_hash": "d43c5eef92ce2ffba0a027ed26ea0cd8ca4013d4f84ec2854e0cf24329522e34",
+          "suggested_doc_key": "2026-10-how-google-beam-connects-military-families-globally-d43c5eef",
+          "suggested_article_path": "docs/services/google-blog/2026-10-how-google-beam-connects-military-families-globally-d43c5eef.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:35e334c198740f74",
+          "title": "GPT-6.1 Terra",
+          "normalized_url": "https://openai.com/index/introducing-gpt-6-1-terra",
+          "url_hash": "35e334c198740f7416638922d137b34400b1d3f32a340ea04060840443b03b8a",
+          "suggested_doc_key": "2026-10-gpt-6-1-terra-35e334c1",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-gpt-6-1-terra-35e334c1.md",
+          "candidate_score": 72.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 485점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 308개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:2f04de563efd474f",
+          "title": "The Exponential Time Hypothesis Is False [pdf]",
+          "normalized_url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+          "url_hash": "2f04de563efd474f33e1507186cb633e9790b98365f3bba15d16332a3934d4a9",
+          "suggested_doc_key": "2026-10-the-exponential-time-hypothesis-is-false-pdf-2f04de56",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-the-exponential-time-hypothesis-is-false-pdf-2f04de56.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 215점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 92개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5bde0ad724a89177",
+          "title": "Type Server Protocol",
+          "normalized_url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
+          "url_hash": "5bde0ad724a89177124192528183380eaa48a148eb54f089adb6075a13092f9b",
+          "suggested_doc_key": "2026-10-type-server-protocol-5bde0ad7",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-type-server-protocol-5bde0ad7.md",
+          "candidate_score": 66.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 184점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 135개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8eb6001a836a6e50",
+          "title": "Announcing three new discoveries in mathematics, computer science, and physics",
+          "normalized_url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+          "url_hash": "8eb6001a836a6e50b8fb133e1590f182de0e7997306db3a54dcb8d2c2e5a6daa",
+          "suggested_doc_key": "2026-10-announcing-three-new-discoveries-in-mathematics-computer-science-and-phy-8eb6001a",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-announcing-three-new-discoveries-in-mathematics-computer-science-and-phy-8eb6001a.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 352점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 137개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:da8785cc5779f5c9",
+          "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+          "normalized_url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+          "url_hash": "da8785cc5779f5c99a9497af0bbc10a24e66f14979af685060f18bf8df927b12",
+          "suggested_doc_key": "2026-10-sebastian-raschka-s-from-scratch-video-course-on-building-reasoning-mode-da8785cc",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-sebastian-raschka-s-from-scratch-video-course-on-building-reasoning-mode-da8785cc.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 534점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 79개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 9,
+      "excluded_count": 41,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:7d972df501d01ba1",
+          "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+          "normalized_url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+          "url_hash": "7d972df501d01ba1f64ace9f515a56fb23b6429c84e2c13cce6a1dfa0631bf43",
+          "suggested_doc_key": "2026-10-gpt-6-1-sol-helps-coderabbit-strengthen-security-across-complex-codebase-7d972df5",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-gpt-6-1-sol-helps-coderabbit-strengthen-security-across-complex-codebase-7d972df5.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:a9c488820a62ac4a",
+          "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+          "normalized_url": "https://openai.com/index/greptile-code-review-codex-astra",
+          "url_hash": "a9c488820a62ac4adcd9d66c87dfdb487fb6897ef015ab83ccdf2e6a9db2968a",
+          "suggested_doc_key": "2026-10-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra-a9c48882",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra-a9c48882.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:742d30efdc4090c1",
+          "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+          "normalized_url": "https://openai.com/index/openai-cut-incident-investigation",
+          "url_hash": "742d30efdc4090c11a97794f6a72e90c1243857798823aeed51fe879a1c3fcd7",
+          "suggested_doc_key": "2026-10-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-at-openai-742d30ef",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-at-openai-742d30ef.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:27334100e818b985",
+          "title": "ChatGPT’s expanding world of work",
+          "normalized_url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+          "url_hash": "27334100e818b98514ff319836bc3b78479c8228c2a09656f9dea445b0edf902",
+          "suggested_doc_key": "2026-10-chatgpt-s-expanding-world-of-work-27334100",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-chatgpt-s-expanding-world-of-work-27334100.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:7e73eebe3e909303",
+          "title": "How Fanatics and OpenAI streamline the fan experience",
+          "normalized_url": "https://openai.com/index/fanatics-streamline-fan-experience",
+          "url_hash": "7e73eebe3e909303c4c59a7dc0b734e92c38bcdbedd7db32071af67e1885bb5c",
+          "suggested_doc_key": "2026-10-how-fanatics-and-openai-streamline-the-fan-experience-7e73eebe",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-how-fanatics-and-openai-streamline-the-fan-experience-7e73eebe.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 2,
+        "already_briefed": 39
+      }
+    }
+  ]
+}
