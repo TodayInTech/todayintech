@@ -5,7 +5,7 @@ sidebar_label: Today in Tech
 
 # Today in Tech
 
-<DateCard value="2026-10-27" label="Updated" />
+<DateCard value="2026-10-28" label="Updated" />
 
 ## Recommended Articles
 

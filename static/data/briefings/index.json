@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-10-27",
+  "generated_for": "2026-10-28",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -126,6 +126,19 @@
       "new": false
     },
     {
+      "title": "GPT-6.1 Terra",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-gpt-6-1-terra-35e334c1.md",
+      "status": "published",
+      "score": 72.0,
+      "briefed_at": "2026-10-27",
+      "published_at": "2026-10-26",
+      "excerpt": "피드 메타데이터 기준으로 OpenAI가 'GPT-6.1 Terra' 소개 페이지(2026-10-26)를 공개한 것으로 보이며, 개발자 문서 링크와 함께 Hacker News에서 485점·308댓글의 활발한 논의가 발생했습니다.",
+      "featured": true,
+      "new": false
+    },
+    {
       "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -137,19 +150,6 @@
       "excerpt": "AMD가 AI 칩 스타트업 Taalas를 인수했다는 보도는 '모델을 실리콘에 새기는(etching) 방식'으로 추론 성능을 끌어올리려는 시도를 중심에 둔다. 기사에 따르면 Taalas가 개발한 모델 전용 집적회로(MSIC: model-specific integrated circuits) 초기 기술 시연에서 초당 최대 1…",
       "featured": true,
       "new": false
-    },
-    {
-      "title": "GPT-6.1 Terra",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-gpt-6-1-terra-35e334c1.md",
-      "status": "published",
-      "score": 72.0,
-      "briefed_at": null,
-      "published_at": "2026-10-26",
-      "excerpt": "피드 메타데이터 기준으로 OpenAI가 'GPT-6.1 Terra' 소개 페이지(2026-10-26)를 공개한 것으로 보이며, 개발자 문서 링크와 함께 Hacker News에서 485점·308댓글의 활발한 논의가 발생했습니다.",
-      "featured": true,
-      "new": true
     },
     {
       "title": "Launch HN: Manufact (YC S25) – MCP Cloud",
@@ -646,6 +646,19 @@
       "new": false
     },
     {
+      "title": "The Exponential Time Hypothesis Is False [pdf]",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-the-exponential-time-hypothesis-is-false-pdf-2f04de56.md",
+      "status": "published",
+      "score": 67.0,
+      "briefed_at": "2026-10-27",
+      "published_at": "2026-10-26",
+      "excerpt": "피드 기준으로는 OpenAI 수학 깃허브에 'The Exponential Time Hypothesis Is False'라는 제목의 논문(PDF)이 올라왔고 Hacker News에서 215점·댓글 92개로 주목받고 있다. 원문 본문 내용은 피드에 포함되지 않았습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -815,19 +828,6 @@
       "new": false
     },
     {
-      "title": "The Exponential Time Hypothesis Is False [pdf]",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-the-exponential-time-hypothesis-is-false-pdf-2f04de56.md",
-      "status": "published",
-      "score": 67.0,
-      "briefed_at": null,
-      "published_at": "2026-10-26",
-      "excerpt": "피드 기준으로는 OpenAI 수학 깃허브에 'The Exponential Time Hypothesis Is False'라는 제목의 논문(PDF)이 올라왔고 Hacker News에서 215점·댓글 92개로 주목받고 있다. 원문 본문 내용은 피드에 포함되지 않았습니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "The classifiers Anthropic puts in front of Fable are too zealous",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -860,11 +860,11 @@
       "href": "./services/hacker-news/2026-10-type-server-protocol-5bde0ad7.md",
       "status": "published",
       "score": 66.4,
-      "briefed_at": null,
+      "briefed_at": "2026-10-27",
       "published_at": "2026-10-26",
       "excerpt": "Pylance 저장소에 공개된 Type Server Protocol(TSP)은 Python 타입 분석을 위한 JSON-RPC 규격으로, 스냅샷 기반 일관성, 0.x 버전 규칙, 및 선택적 멀티-커넥션(ipc) 읽기 전용 채널 협상 방식 등을 명확히 규정합니다. (업데이트: Pylance 2026.4.1 기준)",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "Show HN: Wyzer Programming Language",
@@ -889,6 +889,19 @@
       "briefed_at": "2026-08-03",
       "published_at": "2026-08-03",
       "excerpt": "대형 언어모델(LLM)이 누구나 ‘어느 정도의’ 작업을 수행하게 만들어 일반화를 촉진하지만, 그로 인해 프롬프팅에 기술이 필요 없다고 오해하기 쉽다는 점을 문제 삼습니다. 글은 테렌스 타오가 ChatGPT와 나눈 수학적 대화를 사례로 들어, 단순히 모델에 질문을 던지는 것만으로는 동일한 성과를 얻을 수 없음을 보입니다.…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Announcing three new discoveries in mathematics, computer science, and physics",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-announcing-three-new-discoveries-in-mathematics-computer-science-and-phy-8eb6001a.md",
+      "status": "published",
+      "score": 66.0,
+      "briefed_at": "2026-10-27",
+      "published_at": "2026-10-26",
+      "excerpt": "피드 기준으로는 OpenAI가 수학·컴퓨터과학·물리학에서의 **세 가지 새 발견**을 발표했고, 해당 게시물이 Hacker News에서 **352점·댓글137개**의 반응을 얻고 있습니다. 원문 전문은 공개 피드 링크로 확인해야 합니다.",
       "featured": false,
       "new": false
     },
@@ -1086,19 +1099,6 @@
       "excerpt": "피드 기준으로는 덴마크의 프라이버시 활동가 Lars Andersen이 경찰에 의해 급습되었다는 트윗이 유통되었고, 해당 소식이 Hacker News에서 활발히 공유되어 많은 토론을 촉발하고 있습니다. 제공된 정보는 트윗 원문 링크와 HN 토론 스레드 포인터, 2026-06-22 게시 시점, 그리고 HN 포인트(240)와…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Announcing three new discoveries in mathematics, computer science, and physics",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-announcing-three-new-discoveries-in-mathematics-computer-science-and-phy-8eb6001a.md",
-      "status": "published",
-      "score": 66.0,
-      "briefed_at": null,
-      "published_at": "2026-10-26",
-      "excerpt": "피드 기준으로는 OpenAI가 수학·컴퓨터과학·물리학에서의 **세 가지 새 발견**을 발표했고, 해당 게시물이 Hacker News에서 **352점·댓글137개**의 반응을 얻고 있습니다. 원문 전문은 공개 피드 링크로 확인해야 합니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Tencent Releases and Open-Sources Tencent Hy4 Preview",
@@ -2256,6 +2256,19 @@
       "excerpt": "피드 기준으로는 원문 전문이 제공되지 않습니다. 제목 'There is a shadow hanging over this Fable thing'은 Fable 관련 사안에 문제 제기나 우려가 있다는 인상을 줍니다. 이 글은 Hacker News에서 높은 관심을 받았습니다(포인트 216, 댓글 190). 자세한 주장과 근거는…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Ghostty 1.4",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-ghostty-1-4-89bdc412.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": null,
+      "published_at": "2026-10-27",
+      "excerpt": "Ghostty 1.4.0(2026-10-27)은 Kitty 그래픽스의 애니메이션·상대 배치 완전 지원(비-Kitty 터미널 최초), 성능·메모리 개선, 다수의 GHSA 보안 권고 및 SSH(+ssh)·클립보드(OSC 5522)·렌더러 변경을 포함합니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
@@ -6431,6 +6444,45 @@
       "new": false
     },
     {
+      "title": "Discord will soon let anyone find public server messages through Google",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-discord-will-soon-let-anyone-find-public-server-messages-through-google-293b0483.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-10-27",
+      "excerpt": "Discord는 Discoverable Server(최소 1,000명)에 대해 **Server Web Page**를 만들어 2026-11-16부터 페이지를 공개하고, 일부 공개 채널 메시지는 2026년 12월 중순부터 웹 검색에 노출될 수 있으며 관리자·사용자가 각각 옵트아웃할 수 있습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-amazon-is-gutting-its-ai-division-after-sustained-failure-a17083d6.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-10-27",
+      "excerpt": "블룸버그 보도에 따르면 Amazon이 자사 'Nova' AI 모델 개발을 대부분 동결하고 텍스트·영상·이미지 모델을 'keep the lights on' 수준으로 축소한 뒤 인력과 컴퓨팅을 Pieter Abbeel 주도의 프런티어 모델에 집중하고 있으며, 샌프란시스코 AI 연구소(약 80명 규모)도 최근 폐쇄했습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "New 14‑inch MacBook Pro with M6",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-new-14-inch-macbook-pro-with-m6-eec5583d.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-10-27",
+      "excerpt": "Apple이 발표한 14인치 MacBook Pro(M6)는 **12‑코어 CPU·12‑코어 GPU·듀얼 16‑코어 Neural Engine**을 탑재해 M5 대비 그래픽 최대 30%, AI 워크로드 최대 25% 향상과 최대 **24시간** 배터리를 제공한다. 인도 시작가는 **INR 239900**, 예약은 10월28일…",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Linux 7.1",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -6951,6 +7003,19 @@
       "new": false
     },
     {
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-retell-uses-openai-models-to-help-power-100m-monthly-calls-1e3ebf94.md",
+      "status": "published",
+      "score": 54.0,
+      "briefed_at": null,
+      "published_at": "2026-10-27",
+      "excerpt": "피드 기준으로는 Retell이 OpenAI 모델로 월간 1억 호출을 처리하며, GPT-6 Astra가 음성 에이전트 벤치마크에서 상위를 차지하고 Codex가 직원당 연간 매출 160만 달러 달성에 기여했다고 전합니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Design is compromise",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -7432,6 +7497,19 @@
       "new": false
     },
     {
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-gpt-6-1-sol-helps-coderabbit-strengthen-security-across-complex-codebase-7d972df5.md",
+      "status": "published",
+      "score": 47.0,
+      "briefed_at": "2026-10-27",
+      "published_at": "2026-10-26",
+      "excerpt": "피드 기준으로는 OpenAI(2026-10-26) 블로그가 CodeRabbit이 GPT-6.1 Sol 기반 보안 에이전트를 도입해 복잡한 코드베이스의 보안 리스크 조사와 개발자 대상 수정 제안 지원을 강화했다고 전합니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -7560,19 +7638,6 @@
       "excerpt": "Git 2.55는 대형 저장소 관리와 메타데이터 유지비용을 줄이기 위한 실용적 개선에 초점을 맞췄다. 가장 큰 변화 가운데 하나는 증분 멀티팩 인덱스(incremental MIDX)를 직접 쓰도록 git repack을 확장한 것으로, --write-midx=incremental 모드에서 기본적으로는 기존 레이어를 건드리…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-10-gpt-6-1-sol-helps-coderabbit-strengthen-security-across-complex-codebase-7d972df5.md",
-      "status": "published",
-      "score": 47.0,
-      "briefed_at": null,
-      "published_at": "2026-10-26",
-      "excerpt": "피드 기준으로는 OpenAI(2026-10-26) 블로그가 CodeRabbit이 GPT-6.1 Sol 기반 보안 에이전트를 도입해 복잡한 코드베이스의 보안 리스크 조사와 개발자 대상 수정 제안 지원을 강화했다고 전합니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "'Crush this lady': how eBay harassment campaign led to $56M payout",
@@ -7757,6 +7822,32 @@
       "new": false
     },
     {
+      "title": "We’re announcing Genie 4, our new world model for real-time interactive simulation.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-10-we-re-announcing-genie-4-our-new-world-model-for-real-time-interactive-s-9ff996ab.md",
+      "status": "published",
+      "score": 46.0,
+      "briefed_at": null,
+      "published_at": "2026-10-27",
+      "excerpt": "Google DeepMind는 실시간 상호작용 시뮬레이션용 월드 모델 'Genie 4'를 공개했다. 자연어로 장면을 조작할 수 있고 **네이티브 오디오(환경음·음악·대화)**를 즉석 생성하며 제한적 테스터와 Google AI Ultra·Gemini API·AI Studio 얼리 액세스로 배포될 예정이라고 밝혔다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "How Check Point accelerates vulnerability research with Daybreak",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-how-check-point-accelerates-vulnerability-research-with-daybreak-c44dc9ed.md",
+      "status": "published",
+      "score": 46.0,
+      "briefed_at": null,
+      "published_at": "2026-10-27",
+      "excerpt": "OpenAI 블로그(2026-10-27) 요약에 따르면 Check Point는 OpenAI의 Daybreak를 도입해 취약점 연구를 가속화하고, 분석가들이 취약점 인텔을 고객 방어로 더 빠르게 전환할 수 있게 했다고 전했다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -7844,6 +7935,19 @@
       "briefed_at": "2026-07-07",
       "published_at": "2026-07-07",
       "excerpt": "미 캘리포니아 반덴버그 우주군 기지에서 세 대의 추가 FireSat 위성이 성공적으로 발사되며 FireSat 프로그램이 확장됐다. 이 프로그램은 비영리 단체 Earth Fire Alliance(EFA)가 주도하는 글로벌 이니셔티브로, 소방 기관이 산불이 번지기 전에 감지할 수 있도록 연속적인 관측을 제공하는 목적형 성층…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra-a9c48882.md",
+      "status": "published",
+      "score": 44.0,
+      "briefed_at": "2026-10-27",
+      "published_at": "2026-10-26",
+      "excerpt": "피드 기준으로는 Greptile이 OpenAI 블로그(2026-10-26)에서 GPT-6 Astra로 사용자 워크플로우 테스트를 수행하고 Daybreak로 보안을 강화하며 Codex로 재작업을 줄였다고 소개했습니다.",
       "featured": false,
       "new": false
     },
@@ -8238,19 +8342,6 @@
       "new": false
     },
     {
-      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-10-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra-a9c48882.md",
-      "status": "published",
-      "score": 44.0,
-      "briefed_at": null,
-      "published_at": "2026-10-26",
-      "excerpt": "피드 기준으로는 Greptile이 OpenAI 블로그(2026-10-26)에서 GPT-6 Astra로 사용자 워크플로우 테스트를 수행하고 Daybreak로 보안을 강화하며 Codex로 재작업을 줄였다고 소개했습니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Securing our frontier model training environment",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -8483,6 +8574,19 @@
       "excerpt": "피드 기준으로는 OpenAI가 2026-06-14자 공지로 ‘OpenAI Partner Network’를 출범하고 1억5천만 달러를 투자한다고 전합니다. 이 네트워크는 전 세계 파트너들이 기업용 AI의 채택, 배포, 전환을 가속화하도록 지원하기 위한 목적이라고 요약됩니다. 제공된 정보만 보면 대규모 자금 투입을 통한 파…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-openai-expands-partnership-with-oracle-to-bring-its-apps-to-chatgpt-c417f8e3.md",
+      "status": "published",
+      "score": 43.0,
+      "briefed_at": null,
+      "published_at": "2026-10-27",
+      "excerpt": "피드 기준으로는 OpenAI와 Oracle이 파트너십을 확장해 기업용 애플리케이션과 AI 에이전트를 ChatGPT에 통합하고, 이를 통해 새로운 Oracle 제품을 지원한다고 밝혔다 (2026-10-27).",
+      "featured": false,
+      "new": true
     },
     {
       "title": "How bug bounty sharpens one researcher’s security skills",
@@ -9616,6 +9720,19 @@
       "new": false
     },
     {
+      "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-at-openai-742d30ef.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": "2026-10-27",
+      "published_at": "2026-10-26",
+      "excerpt": "피드 기준으로는 OpenAI가 **Codex Ultrafast**를 도입해 사고 조사 시간을 수시간에서 **수분으로 단축**했다고 밝혔다. 구체적 방법·수치는 메타데이터에 한정되어 있어 원문 확인이 필요하다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Using thousands of AI agents to uncover new leads in biological data",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -10329,19 +10446,6 @@
       "excerpt": "피드 기준으로는 GitHub가 대규모 비밀 스캐닝의 오탐을 줄이기 위해 검증 단계에 컨텍스트 인식 LLM 추론을 도입했다고 보고했습니다. 이 변화는 경보의 잡음을 줄여 신뢰성과 실행 가능성을 높이는 것을 목표로 합니다. 제공된 정보만 보면 구체적 구현·평가 수치 등 상세는 없으므로, 실무 적용이나 기술적 검토는 원문 확…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-10-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-at-openai-742d30ef.md",
-      "status": "published",
-      "score": 39.0,
-      "briefed_at": null,
-      "published_at": "2026-10-26",
-      "excerpt": "피드 기준으로는 OpenAI가 **Codex Ultrafast**를 도입해 사고 조사 시간을 수시간에서 **수분으로 단축**했다고 밝혔다. 구체적 방법·수치는 메타데이터에 한정되어 있어 원문 확인이 필요하다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Broad access through consistent standards",
@@ -11397,6 +11501,32 @@
       "new": false
     },
     {
+      "title": "ChatGPT’s expanding world of work",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-chatgpt-s-expanding-world-of-work-27334100.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": "2026-10-27",
+      "published_at": "2026-10-26",
+      "excerpt": "피드 기준으로는 OpenAI가 'OpenAI Signals' 데이터를 활용해 165개 업무 활동을 거의 100개국에서 분석해 ChatGPT의 업무 활용 방식과 시간에 따른 변화를 공개했다고 전합니다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Our newest AI Quest: Mapping the human brain",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-10-our-newest-ai-quest-mapping-the-human-brain-9a15b402.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": "2026-10-27",
+      "published_at": "2026-10-26",
+      "excerpt": "Google Research와 Stanford Accelerator for Learning이 제작한 AI Quests의 세 번째 미션 **'Polar Peaks'**가 출시됐다. 11–14세 대상이며 학생들이 뉴런 스캔·지도 작성(연결체학)을 체험하고 교사용 연수 모듈이 순차 제공된다. 현재까지 400,000개 이상 미…",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Uber brings ChatGPT Work to all employees with OpenAI",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -12151,30 +12281,17 @@
       "new": false
     },
     {
-      "title": "Our newest AI Quest: Mapping the human brain",
+      "title": "How Google Beam connects military families globally",
       "service_key": "google-blog",
       "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-10-our-newest-ai-quest-mapping-the-human-brain-9a15b402.md",
+      "href": "./services/google-blog/2026-10-how-google-beam-connects-military-families-globally-d43c5eef.md",
       "status": "published",
-      "score": 36.0,
-      "briefed_at": null,
+      "score": 35.0,
+      "briefed_at": "2026-10-27",
       "published_at": "2026-10-26",
-      "excerpt": "Google Research와 Stanford Accelerator for Learning이 제작한 AI Quests의 세 번째 미션 **'Polar Peaks'**가 출시됐다. 11–14세 대상이며 학생들이 뉴런 스캔·지도 작성(연결체학)을 체험하고 교사용 연수 모듈이 순차 제공된다. 현재까지 400,000개 이상 미…",
+      "excerpt": "Google이 USO와 손잡고 **HP Dimension with Google Beam을 20개 USO 지점에 배포**하며, 폴란드-텍사스 파일럿을 확장해 독일(그래펜뵈르)과 포트 후드(텍사스) 포함 도큐시리즈로 군인가족의 실감형 연결 사례를 공개했다.",
       "featured": false,
-      "new": true
-    },
-    {
-      "title": "ChatGPT’s expanding world of work",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-10-chatgpt-s-expanding-world-of-work-27334100.md",
-      "status": "published",
-      "score": 36.0,
-      "briefed_at": null,
-      "published_at": "2026-10-26",
-      "excerpt": "피드 기준으로는 OpenAI가 'OpenAI Signals' 데이터를 활용해 165개 업무 활동을 거의 100개국에서 분석해 ChatGPT의 업무 활용 방식과 시간에 따른 변화를 공개했다고 전합니다.",
-      "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "Donating Agent Skills to the Agentic AI Foundation",
@@ -12840,19 +12957,6 @@
       "new": false
     },
     {
-      "title": "How Google Beam connects military families globally",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-10-how-google-beam-connects-military-families-globally-d43c5eef.md",
-      "status": "published",
-      "score": 35.0,
-      "briefed_at": null,
-      "published_at": "2026-10-26",
-      "excerpt": "Google이 USO와 손잡고 **HP Dimension with Google Beam을 20개 USO 지점에 배포**하며, 폴란드-텍사스 파일럿을 확장해 독일(그래펜뵈르)과 포트 후드(텍사스) 포함 도큐시리즈로 군인가족의 실감형 연결 사례를 공개했다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Testing and mitigating elections-related risks",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -13434,6 +13538,19 @@
       "briefed_at": "2026-06-14",
       "published_at": "2026-06-10",
       "excerpt": "피드 기준으로는 이 글은 GitHub Copilot CLI에 언어 서버 프로토콜(LSP) 서버를 설치·구성해 기존의 무차별 grep/디컴파일 방식 대신 실제 코드 인텔리전스를 제공하는 방법을 설명한다고 합니다. 개발자가 CLI 환경에서 더 정확한 코드 탐색과 추천을 받을 수 있도록 설정하는 내용을 다룹니다. 제공된 정보…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-10-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-offering-9a064d95.md",
+      "status": "published",
+      "score": 30.0,
+      "briefed_at": "2026-10-27",
+      "published_at": "2026-10-26",
+      "excerpt": "Anthropic가 2026-10-26 SEC에 Form S-1 등록신고서를 제출해 Class A 보통주의 Nasdaq 상장을 추진한다. 상장 예정 티커는 'ANT'이며, 발행 주식수와 가격대는 아직 결정되지 않았다.",
       "featured": false,
       "new": false
     },
@@ -14166,15 +14283,15 @@
       "new": false
     },
     {
-      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-      "service_key": "anthropic-blog",
-      "service_name": "Anthropic Blog",
-      "href": "./services/anthropic-blog/2026-10-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-offering-9a064d95.md",
+      "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-anima-helps-clinics-cut-call-waits-by-75-with-gpt-6-and-gpt-live-3b5a2a6a.md",
       "status": "published",
       "score": 30.0,
       "briefed_at": null,
-      "published_at": "2026-10-26",
-      "excerpt": "Anthropic가 2026-10-26 SEC에 Form S-1 등록신고서를 제출해 Class A 보통주의 Nasdaq 상장을 추진한다. 상장 예정 티커는 'ANT'이며, 발행 주식수와 가격대는 아직 결정되지 않았다.",
+      "published_at": "2026-10-23",
+      "excerpt": "피드 기준으로는 OpenAI 블로그가 Anima가 GPT-6·GPT-Live를 활용해 진료 기관의 통화 대기 시간을 75% 줄였다고 전하며, 이를 통해 케어팀의 환자 대응 여력이 넓어졌다고 밝히고 있습니다.",
       "featured": false,
       "new": true
     },

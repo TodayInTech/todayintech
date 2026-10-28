@@ -11860,6 +11860,96 @@
       "status": "published",
       "briefed_at": "2026-10-27T01:06:31.366462Z",
       "candidate_score": 36.0
+    },
+    "9ff996ab2fc65b5415bf7da50cfe6f18ccb4ca4cb9f92582b13df18eef66f732": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4",
+      "title_fingerprint": "we re announcing genie 4 our new world model for real time interactive simulation",
+      "service_key": "google-blog",
+      "title": "We’re announcing Genie 4, our new world model for real-time interactive simulation.",
+      "article_doc_path": "docs/services/google-blog/2026-10-we-re-announcing-genie-4-our-new-world-model-for-real-time-interactive-s-9ff996ab.md",
+      "status": "published",
+      "briefed_at": "2026-10-28T00:57:28.055511Z",
+      "candidate_score": 46.0
+    },
+    "89bdc41236fdfe55d838a313da0f9cbf4f2eb4b33982b696c2a74d4b528a32cf": {
+      "normalized_url": "https://ghostty.org/docs/install/release-notes/1-4-0",
+      "title_fingerprint": "ghostty 1 4",
+      "service_key": "hacker-news",
+      "title": "Ghostty 1.4",
+      "article_doc_path": "docs/services/hacker-news/2026-10-ghostty-1-4-89bdc412.md",
+      "status": "published",
+      "briefed_at": "2026-10-28T00:57:28.055543Z",
+      "candidate_score": 65.0
+    },
+    "293b048364315092f5c0330b9f9d98c614d616802a6151761a9fb4bd122f5c0d": {
+      "normalized_url": "https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover",
+      "title_fingerprint": "discord will soon let anyone find public server messages through google",
+      "service_key": "hacker-news",
+      "title": "Discord will soon let anyone find public server messages through Google",
+      "article_doc_path": "docs/services/hacker-news/2026-10-discord-will-soon-let-anyone-find-public-server-messages-through-google-293b0483.md",
+      "status": "published",
+      "briefed_at": "2026-10-28T00:57:28.055552Z",
+      "candidate_score": 60.0
+    },
+    "a17083d6bd141e2d3bbdd22b4880993a88608dd7ad12ca9854ad264c7a13dd5c": {
+      "normalized_url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+      "title_fingerprint": "amazon is gutting its ai division after sustained failure",
+      "service_key": "hacker-news",
+      "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
+      "article_doc_path": "docs/services/hacker-news/2026-10-amazon-is-gutting-its-ai-division-after-sustained-failure-a17083d6.md",
+      "status": "published",
+      "briefed_at": "2026-10-28T00:57:28.055557Z",
+      "candidate_score": 60.0
+    },
+    "eec5583d058a44a11044096c57b6075489db98b05ef446383c7fc23d569601b1": {
+      "normalized_url": "https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6",
+      "title_fingerprint": "new 14 inch macbook pro with m6",
+      "service_key": "hacker-news",
+      "title": "New 14‑inch MacBook Pro with M6",
+      "article_doc_path": "docs/services/hacker-news/2026-10-new-14-inch-macbook-pro-with-m6-eec5583d.md",
+      "status": "published",
+      "briefed_at": "2026-10-28T00:57:28.055562Z",
+      "candidate_score": 60.0
+    },
+    "1e3ebf94e41ebe19793bfa16d9a1ceac171abfb39683d16886169781f84081b8": {
+      "normalized_url": "https://openai.com/index/retell-ai",
+      "title_fingerprint": "retell uses openai models to help power 100m monthly calls",
+      "service_key": "openai-blog",
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "article_doc_path": "docs/services/openai-blog/2026-10-retell-uses-openai-models-to-help-power-100m-monthly-calls-1e3ebf94.md",
+      "status": "published",
+      "briefed_at": "2026-10-28T00:57:28.055567Z",
+      "candidate_score": 54.0
+    },
+    "c44dc9ed271ff418b14ac5c964f0f9272d3413bd0c2b38b09efd327bf214a17d": {
+      "normalized_url": "https://openai.com/index/check-point-daybreak",
+      "title_fingerprint": "how check point accelerates vulnerability research with daybreak",
+      "service_key": "openai-blog",
+      "title": "How Check Point accelerates vulnerability research with Daybreak",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-check-point-accelerates-vulnerability-research-with-daybreak-c44dc9ed.md",
+      "status": "published",
+      "briefed_at": "2026-10-28T00:57:28.055573Z",
+      "candidate_score": 46.0
+    },
+    "c417f8e3d39d0b893c07541bfe85fce19056b39882f88193551609651d5af4ff": {
+      "normalized_url": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "title_fingerprint": "openai expands partnership with oracle to bring its apps to chatgpt",
+      "service_key": "openai-blog",
+      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-10-openai-expands-partnership-with-oracle-to-bring-its-apps-to-chatgpt-c417f8e3.md",
+      "status": "published",
+      "briefed_at": "2026-10-28T00:57:28.055588Z",
+      "candidate_score": 43.0
+    },
+    "3b5a2a6a27ab5490f80a687648b2065a68ce67e05adc25593f1750ad9e5136e3": {
+      "normalized_url": "https://openai.com/index/anima",
+      "title_fingerprint": "anima helps clinics cut call waits by 75 with gpt 6 and gpt live",
+      "service_key": "openai-blog",
+      "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
+      "article_doc_path": "docs/services/openai-blog/2026-10-anima-helps-clinics-cut-call-waits-by-75-with-gpt-6-and-gpt-live-3b5a2a6a.md",
+      "status": "published",
+      "briefed_at": "2026-10-28T00:57:28.055597Z",
+      "candidate_score": 30.0
     }
   }
 }

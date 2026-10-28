@@ -5,7 +5,7 @@ sidebar_label: Today in Tech
 
 # Today in Tech
 
-<DateCard value="2026-10-27" label="업데이트" />
+<DateCard value="2026-10-28" label="업데이트" />
 
 ## 추천 글
 
