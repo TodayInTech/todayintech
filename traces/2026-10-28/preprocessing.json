@@ -1,0 +1,332 @@
+{
+  "generated_at": "2026-10-28T00:54:19.338101+00:00",
+  "generated_for": "2026-10-28",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "7a09a5678ec1cd7d938a1525ccd81e00e21a138c",
+  "github_run_id": "40611566092",
+  "service_count": 5,
+  "duration_ms": 13,
+  "raw_count": 120,
+  "candidate_count": 22,
+  "excluded_count": 98,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 32,
+      "excluded_count": 87,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 87
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 32,
+      "output_count": 22,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:550f4d88633d4245",
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "normalized_url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+          "url_hash": "550f4d88633d42452645fe28be1f95c7b820136518ea7942332ddf189b2d73b8",
+          "suggested_doc_key": "2026-10-expanding-our-partnership-with-gsa-to-bring-claude-to-all-levels-of-gove-550f4d88",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-expanding-our-partnership-with-gsa-to-bring-claude-to-all-levels-of-gove-550f4d88.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:9ff996ab2fc65b54",
+          "title": "We’re announcing Genie 4, our new world model for real-time interactive simulation.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4",
+          "url_hash": "9ff996ab2fc65b5415bf7da50cfe6f18ccb4ca4cb9f92582b13df18eef66f732",
+          "suggested_doc_key": "2026-10-we-re-announcing-genie-4-our-new-world-model-for-real-time-interactive-s-9ff996ab",
+          "suggested_article_path": "docs/services/google-blog/2026-10-we-re-announcing-genie-4-our-new-world-model-for-real-time-interactive-s-9ff996ab.md",
+          "candidate_score": 46.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:89bdc41236fdfe55",
+          "title": "Ghostty 1.4",
+          "normalized_url": "https://ghostty.org/docs/install/release-notes/1-4-0",
+          "url_hash": "89bdc41236fdfe55d838a313da0f9cbf4f2eb4b33982b696c2a74d4b528a32cf",
+          "suggested_doc_key": "2026-10-ghostty-1-4-89bdc412",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-ghostty-1-4-89bdc412.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 721점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 220개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:293b048364315092",
+          "title": "Discord will soon let anyone find public server messages through Google",
+          "normalized_url": "https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover",
+          "url_hash": "293b048364315092f5c0330b9f9d98c614d616802a6151761a9fb4bd122f5c0d",
+          "suggested_doc_key": "2026-10-discord-will-soon-let-anyone-find-public-server-messages-through-google-293b0483",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-discord-will-soon-let-anyone-find-public-server-messages-through-google-293b0483.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 228점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 129개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a17083d6bd141e2d",
+          "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
+          "normalized_url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+          "url_hash": "a17083d6bd141e2d3bbdd22b4880993a88608dd7ad12ca9854ad264c7a13dd5c",
+          "suggested_doc_key": "2026-10-amazon-is-gutting-its-ai-division-after-sustained-failure-a17083d6",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-amazon-is-gutting-its-ai-division-after-sustained-failure-a17083d6.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 242점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 149개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:eec5583d058a44a1",
+          "title": "New 14‑inch MacBook Pro with M6",
+          "normalized_url": "https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6",
+          "url_hash": "eec5583d058a44a11044096c57b6075489db98b05ef446383c7fc23d569601b1",
+          "suggested_doc_key": "2026-10-new-14-inch-macbook-pro-with-m6-eec5583d",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-new-14-inch-macbook-pro-with-m6-eec5583d.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 275점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 329개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e960e8891f7d7ad8",
+          "title": "Genie 4",
+          "normalized_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
+          "url_hash": "e960e8891f7d7ad86d1b82fb38dd6339695a2e548b1364f330e5b8eceb6d79af",
+          "suggested_doc_key": "2026-10-genie-4-e960e889",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-genie-4-e960e889.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 704점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 425개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:1e3ebf94e41ebe19",
+          "title": "Retell uses OpenAI models to help power 100M monthly calls",
+          "normalized_url": "https://openai.com/index/retell-ai",
+          "url_hash": "1e3ebf94e41ebe19793bfa16d9a1ceac171abfb39683d16886169781f84081b8",
+          "suggested_doc_key": "2026-10-retell-uses-openai-models-to-help-power-100m-monthly-calls-1e3ebf94",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-retell-uses-openai-models-to-help-power-100m-monthly-calls-1e3ebf94.md",
+          "candidate_score": 54.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:c44dc9ed271ff418",
+          "title": "How Check Point accelerates vulnerability research with Daybreak",
+          "normalized_url": "https://openai.com/index/check-point-daybreak",
+          "url_hash": "c44dc9ed271ff418b14ac5c964f0f9272d3413bd0c2b38b09efd327bf214a17d",
+          "suggested_doc_key": "2026-10-how-check-point-accelerates-vulnerability-research-with-daybreak-c44dc9ed",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-how-check-point-accelerates-vulnerability-research-with-daybreak-c44dc9ed.md",
+          "candidate_score": 46.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:c417f8e3d39d0b89",
+          "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+          "normalized_url": "https://openai.com/index/oracle-apps-in-chatgpt",
+          "url_hash": "c417f8e3d39d0b893c07541bfe85fce19056b39882f88193551609651d5af4ff",
+          "suggested_doc_key": "2026-10-openai-expands-partnership-with-oracle-to-bring-its-apps-to-chatgpt-c417f8e3",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-openai-expands-partnership-with-oracle-to-bring-its-apps-to-chatgpt-c417f8e3.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3b5a2a6a27ab5490",
+          "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
+          "normalized_url": "https://openai.com/index/anima",
+          "url_hash": "3b5a2a6a27ab5490f80a687648b2065a68ce67e05adc25593f1750ad9e5136e3",
+          "suggested_doc_key": "2026-10-anima-helps-clinics-cut-call-waits-by-75-with-gpt-6-and-gpt-live-3b5a2a6a",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-anima-helps-clinics-cut-call-waits-by-75-with-gpt-6-and-gpt-live-3b5a2a6a.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 5일이 지난 글로 최신성 15점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:891b7e0bbf66f86d",
+          "title": "Build more responsive apps with the Decisions API",
+          "normalized_url": "https://openai.com/index/decisions-api",
+          "url_hash": "891b7e0bbf66f86d27b770f3dc53e0fbecfc246eeadf29503262f6d9c70adad7",
+          "suggested_doc_key": "2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 5일이 지난 글로 최신성 15점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 39,
+        "service_candidate_limit": 1
+      }
+    }
+  ]
+}
