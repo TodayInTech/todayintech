@@ -1,0 +1,387 @@
+{
+  "generated_at": "2026-10-29T01:31:31.490961+00:00",
+  "generated_for": "2026-10-29",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "11fcb0d04f54c9d13620786c2df8c251bf5baea2",
+  "github_run_id": "40800635853",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 26,
+  "excluded_count": 94,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 35,
+      "excluded_count": 84,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 84
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 35,
+      "output_count": 35,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 35,
+      "output_count": 35,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 35,
+      "output_count": 26,
+      "excluded_count": 9,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 9
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:e63c44ee253751eb",
+          "title": "AI for Science expands to foundations and institutions",
+          "normalized_url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+          "url_hash": "e63c44ee253751eb72aef3f2b8bd6200913735fee19428e07e0f2cafc0129b53",
+          "suggested_doc_key": "2026-10-ai-for-science-expands-to-foundations-and-institutions-e63c44ee",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-ai-for-science-expands-to-foundations-and-institutions-e63c44ee.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:550f4d88633d4245",
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "normalized_url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+          "url_hash": "550f4d88633d42452645fe28be1f95c7b820136518ea7942332ddf189b2d73b8",
+          "suggested_doc_key": "2026-10-expanding-our-partnership-with-gsa-to-bring-claude-to-all-levels-of-gove-550f4d88",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-10-expanding-our-partnership-with-gsa-to-bring-claude-to-all-levels-of-gove-550f4d88.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 2,
+      "excluded_count": 8,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:bc75ed686e56f082",
+          "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+          "normalized_url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
+          "url_hash": "bc75ed686e56f0828cdf2ce79457b8bd8897762095938ce7d57c2e527f4c4624",
+          "suggested_doc_key": "2026-10-octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-wit-bc75ed68",
+          "suggested_article_path": "docs/services/github-blog/2026-10-octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-wit-bc75ed68.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:59f92a9af33d7787",
+          "title": "GitHub Universe 2026: Evolving every layer of the stack",
+          "normalized_url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack",
+          "url_hash": "59f92a9af33d7787220cb11b5652970253e8402c5b3f58ecb811ad66129f56a1",
+          "suggested_doc_key": "2026-10-github-universe-2026-evolving-every-layer-of-the-stack-59f92a9a",
+          "suggested_article_path": "docs/services/github-blog/2026-10-github-universe-2026-evolving-every-layer-of-the-stack-59f92a9a.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 8
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:370e028ff47ae5fe",
+          "title": "XREAL AURA: Wired XR glasses to watch, work, and play",
+          "normalized_url": "https://blog.google/products-and-platforms/platforms/android/xreal-aura",
+          "url_hash": "370e028ff47ae5fef76a3b9bc8cc37d8b0fcf409544786594fad307c3a1b0050",
+          "suggested_doc_key": "2026-10-xreal-aura-wired-xr-glasses-to-watch-work-and-play-370e028f",
+          "suggested_article_path": "docs/services/google-blog/2026-10-xreal-aura-wired-xr-glasses-to-watch-work-and-play-370e028f.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:a128891378e42ce0",
+          "title": "Build and manage Connected Apps in one place",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place",
+          "url_hash": "a128891378e42ce095b475cf9d58d26aadedbe26bab7ca7ff3e78b65ea58d66d",
+          "suggested_doc_key": "2026-10-build-and-manage-connected-apps-in-one-place-a1288913",
+          "suggested_article_path": "docs/services/google-blog/2026-10-build-and-manage-connected-apps-in-one-place-a1288913.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:a92d7b7ef0e2da4d",
+          "title": "Gemini 4 Carbon",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon",
+          "url_hash": "a92d7b7ef0e2da4d5922c4312bd7f7df8d2b093b922e0a6553e761255b0eac7a",
+          "suggested_doc_key": "2026-10-gemini-4-carbon-a92d7b7e",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-gemini-4-carbon-a92d7b7e.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 800점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 658개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:17a75de37df03bf6",
+          "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+          "normalized_url": "https://surgehq.ai/blog/dayjob-tax",
+          "url_hash": "17a75de37df03bf69cc8cd6f945d43030c6c3e3ce93699d18b7dc09af34e59c0",
+          "suggested_doc_key": "2026-10-dayjob-tax-evaluating-ai-agents-on-50-professional-tax-assignments-17a75de3",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-dayjob-tax-evaluating-ai-agents-on-50-professional-tax-assignments-17a75de3.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 202점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 125개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:50d36c1a28126eb5",
+          "title": "Why is this fingerprinting script creating bioweapons?",
+          "normalized_url": "https://nullpt.rs/fingerprinting-bioweapons",
+          "url_hash": "50d36c1a28126eb5fd3570035da7311ce771b821a873d19852e50cc63f0d9f6b",
+          "suggested_doc_key": "2026-10-why-is-this-fingerprinting-script-creating-bioweapons-50d36c1a",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-why-is-this-fingerprinting-script-creating-bioweapons-50d36c1a.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 840점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 184개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4771015fefbf7d34",
+          "title": "MacBook Pro with PROLED XDR Display and Touch",
+          "normalized_url": "https://www.apple.com/macbook-pro/proled-xdr-display",
+          "url_hash": "4771015fefbf7d342941ee41047998de236498ead77f161ea7a4e90484c378ed",
+          "suggested_doc_key": "2026-10-macbook-pro-with-proled-xdr-display-and-touch-4771015f",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-macbook-pro-with-proled-xdr-display-and-touch-4771015f.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 497점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 846개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9878f7ac96f933da",
+          "title": "CNC Stone Carving",
+          "normalized_url": "https://carmelitegothic.com/cnc-stone-carving",
+          "url_hash": "9878f7ac96f933dabcad9c816494e7983001dfcefc78af266ac1b92c7d2f04ee",
+          "suggested_doc_key": "2026-10-cnc-stone-carving-9878f7ac",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-cnc-stone-carving-9878f7ac.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 399점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 118개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:a395c7da350b5086",
+          "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+          "normalized_url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+          "url_hash": "a395c7da350b5086cc15f6b616a71f222298172ced3c491458f1fd1d38e79b77",
+          "suggested_doc_key": "2026-10-openai-and-servicenow-expand-partnership-across-enterprise-workflows-a395c7da",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-openai-and-servicenow-expand-partnership-across-enterprise-workflows-a395c7da.md",
+          "candidate_score": 49.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:709cc8e2bd467b79",
+          "title": "Legora is building the agentic operating system for legal work",
+          "normalized_url": "https://openai.com/index/legora",
+          "url_hash": "709cc8e2bd467b7916899fb3ec62dbecfa135fc3209b011a85a1239ca7c1f0f6",
+          "suggested_doc_key": "2026-10-legora-is-building-the-agentic-operating-system-for-legal-work-709cc8e2",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-legora-is-building-the-agentic-operating-system-for-legal-work-709cc8e2.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:e2ed7680c50ae3f0",
+          "title": "The future of the firm",
+          "normalized_url": "https://openai.com/index/the-future-of-the-firm",
+          "url_hash": "e2ed7680c50ae3f074e04f962f033e8bab070f352fa8087e45258e537064a005",
+          "suggested_doc_key": "2026-10-the-future-of-the-firm-e2ed7680",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-the-future-of-the-firm-e2ed7680.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:891b7e0bbf66f86d",
+          "title": "Build more responsive apps with the Decisions API",
+          "normalized_url": "https://openai.com/index/decisions-api",
+          "url_hash": "891b7e0bbf66f86d27b770f3dc53e0fbecfc246eeadf29503262f6d9c70adad7",
+          "suggested_doc_key": "2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:d3b9ba6f7bd01af0",
+          "title": "How Localiza reorganized work around generative AI",
+          "normalized_url": "https://openai.com/index/localiza-generative-ai",
+          "url_hash": "d3b9ba6f7bd01af06315d29c49e1c46aec299d60d23b626afa8e8db74404734d",
+          "suggested_doc_key": "2026-10-how-localiza-reorganized-work-around-generative-ai-d3b9ba6f",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-how-localiza-reorganized-work-around-generative-ai-d3b9ba6f.md",
+          "candidate_score": 27.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 13일이 지난 글로 최신성 7점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 36위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 40
+      }
+    }
+  ]
+}
