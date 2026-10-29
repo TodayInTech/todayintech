@@ -200,4 +200,4 @@ Public articles separate a one-to-two-sentence list summary (`summary_ko`) from 
 
 [Retrieval flow and live rechecks](EVIDENCE_RECOVERY.md) cover canonical-path retries, Retry-After handling, PDF MIME/signature validation, balanced HTML extraction and challenge rejection, PDF text/encrypted/empty cases, queue limits/restarts and prevention of published-article regeneration. `traces/{date}/evidence-recovery.json` contains queue status counts and request/extraction records only. Original text remains in enrichment artifacts.
 
-Validation: `make check` passed Ruff lint/format and all 87 tests; Korean and English Docusaurus production builds passed. One existing unused-directive warning in the htmx article is unrelated to this change.
+Validation: `make check` passed Ruff lint/format and all 88 tests; Korean and English Docusaurus production builds passed. One existing unused-directive warning in the htmx article is unrelated to this change.

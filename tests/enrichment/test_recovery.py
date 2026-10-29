@@ -171,3 +171,15 @@ def test_writer_rejection_is_acknowledged_without_endless_regeneration(tmp_path)
         )
         is None
     )
+
+
+def test_new_access_failure_returns_previously_recovered_source_to_pending(tmp_path):
+    queue = EvidenceRecoveryQueue(tmp_path / "requests.json")
+    queue.observe(make_result(), now=NOW)
+    queue.observe(make_result(status=EnrichmentStatus.ENRICHED), now=NOW)
+    queue.observe(make_result(), now=NOW + timedelta(hours=1))
+    request = queue.requests["https://example.com/0"]
+    assert request.status == "pending"
+    assert request.last_failure == "access_denied"
+    assert request.recovered_at == NOW
+    assert request.next_attempt_at > NOW + timedelta(days=1)

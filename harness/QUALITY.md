@@ -200,4 +200,4 @@ Writer 내부에서는 Agent 편집, Markdown 작성, `briefed_articles` 상태 
 
 [원문 근거 확보 흐름과 실제 재확인](EVIDENCE_RECOVERY.md)을 기준으로 canonical 경로 재시도, Retry-After 준수, PDF MIME·바이너리 검증, HTML 보완 추출·챌린지 거부, PDF 텍스트·암호화·빈 문서, 대기열 재시도 상한·재실행·발행 글 중복 방지를 검증한다. `traces/{date}/evidence-recovery.json`은 대기열 상태 건수와 요청/추출 record만 포함하고 원문 텍스트를 포함하지 않는다. 상세 원문은 enrichment artifact에만 남긴다.
 
-검증 결과: `make check`의 Ruff lint/format 및 전체 테스트 87개, 한국어·영어 Docusaurus production build가 통과했다. 기존 htmx 문서의 unused directive 경고 1건은 이번 변경과 무관하다.
+검증 결과: `make check`의 Ruff lint/format 및 전체 테스트 88개, 한국어·영어 Docusaurus production build가 통과했다. 기존 htmx 문서의 unused directive 경고 1건은 이번 변경과 무관하다.

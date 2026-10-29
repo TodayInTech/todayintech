@@ -57,3 +57,7 @@ Four problematic articles from the 2026-10-27 operational artifact were checked 
 | What FDE means at OpenAI | HTTP 403; 49-character feed description insufficient for fallback | Still 403; failed and pending recovery |
 
 Local reproduction output is `.var/local/evidence-recovery/probe/enrichment.json`. No existing article was regenerated and no LLM call was made. Local success does not prove success from GitHub Actions; remaining access denials must be monitored through the queue and recovery metrics.
+
+### GitHub Actions environment check
+
+[Run 40831332113](https://github.com/TodayInTech/todayintech/actions/runs/40831332113) passed quality checks and generation. The final ten candidates included five enriched, three feed fallbacks and two failed original fetches; Writer published eight articles. Decisions API still returned 403 in CI. A follow-up regression check ensures that a previously ready request returns to pending after a new access failure, rather than treating local success as CI access success. All 88 local tests passed including this follow-up.

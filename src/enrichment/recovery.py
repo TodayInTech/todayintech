@@ -62,6 +62,12 @@ class EvidenceRecoveryQueue:
                     next_attempt_at=now + timedelta(days=1),
                     last_failure=item.failure_reason.value if item.failure_reason else None,
                 )
+            elif self.requests[key].status == "ready":
+                # Recovery in another environment does not prove this fetch succeeded.
+                request = self.requests[key]
+                request.status = "pending"
+                request.last_failure = item.failure_reason.value if item.failure_reason else None
+                request.next_attempt_at = now + timedelta(days=1)
 
     def retry(
         self,
