@@ -195,3 +195,9 @@ Writer 내부에서는 Agent 편집, Markdown 작성, `briefed_articles` 상태 
 - 글 이동: `node --test tests/site/briefing-navigation.test.mjs`의 3개 검증이 통과했다. 정렬은 브리핑일(없으면 원문 발행일) 최신순 → 점수 내림차순 → 문서 경로순으로 목록/사이드바에서 공유한다. 같은 서비스 순서에서 이전은 앞 항목, 다음은 뒤 항목이며 서비스 경계에서는 링크를 생략한다. 한국어·영어 빌드 HTML 총 2,326개 상세 페이지에서 모든 인접 링크와 순서·경계를 대조했고, 메인/서비스 색인/트레이스 24개 페이지에 문서 페이지네이션이 없는 것을 확인했다.
 
 - 목록 동기화: 일일 배포의 `git add`에 카드 JSON과 영어 생성 문서가 빠져 있던 원인을 수정했다. Agent/본문 재생성 없이 보관 상태로 목록을 1,163건·2026-10-24 기준으로 갱신하고 모든 카드의 서비스별 순서와 실제 상세 이동 링크가 일치하는 것을 대조했다.
+
+## 원문 확보 회귀 검증
+
+[원문 근거 확보 흐름과 실제 재확인](EVIDENCE_RECOVERY.md)을 기준으로 canonical 경로 재시도, Retry-After 준수, PDF MIME·바이너리 검증, HTML 보완 추출·챌린지 거부, PDF 텍스트·암호화·빈 문서, 대기열 재시도 상한·재실행·발행 글 중복 방지를 검증한다. `traces/{date}/evidence-recovery.json`은 대기열 상태 건수와 요청/추출 record만 포함하고 원문 텍스트를 포함하지 않는다. 상세 원문은 enrichment artifact에만 남긴다.
+
+검증 결과: `make check`의 Ruff lint/format 및 전체 테스트 87개, 한국어·영어 Docusaurus production build가 통과했다. 기존 htmx 문서의 unused directive 경고 1건은 이번 변경과 무관하다.

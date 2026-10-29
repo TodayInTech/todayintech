@@ -427,3 +427,7 @@ make deploy-status
 ```
 
 - `description` frontmatter에 목록 요약을 저장해 카드 데이터가 상세 본문과 분리되도록 한다. 예전 문서는 기존 문단 추출로 호환한다. Markdown 본문의 소제목·목록·표·코드는 보존하되 HTML/MDX 표현식과 import/export는 텍스트로 처리하고 모델이 만든 링크/이미지는 비활성화한다. 코드 블록은 원문 문자열을 보존한다. 기존 Enrichment 근거 예산(최대 4,000토큰)과 출력 토큰 예산은 유지한다.
+
+## 원문 확보와 복구 경계
+
+Enrichment의 HTTP fetcher는 공식 다운로드 경로와 일시적 오류 재시도를 담당하고, RoutingContentExtractor는 HTML/PDF 추출기를 선택한다. EvidenceRecoveryQueue는 근거 확보가 부족한 후보 메타데이터와 재확인 시점을 별도 JSON에 저장한다. 전체 파이프라인은 복구된 미발행 글만 Writer에 합치며 기존 briefed URL/문서 제외 규칙을 유지한다. 상세 흐름과 제한은 [원문 근거 확보](EVIDENCE_RECOVERY.md)를 따른다.

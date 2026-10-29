@@ -67,8 +67,9 @@ class ContentEnricher:
     ) -> ContentEnricher:
         token_counter = TiktokenTokenCounter()
         extractor = ContentExtractorFactory().create(
-            "text/html",
+            "auto",
             token_counter=token_counter,
+            minimum_tokens=minimum_tokens,
         )
         fetcher = ContentFetcherFactory().create_http(
             timeout_seconds=timeout_seconds,
@@ -198,6 +199,7 @@ def _record_from_result(
     if document is not None:
         record.content_hash = document.content_hash
         record.document_type = document.document_type
+        record.extraction_method = document.extraction_method
         record.detected_language = document.detected_language
         record.extracted_char_count = document.char_count
         record.extracted_token_count = document.token_count

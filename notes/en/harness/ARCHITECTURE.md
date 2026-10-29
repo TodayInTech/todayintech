@@ -423,3 +423,7 @@ make deploy-status
 ```
 
 - Store the list summary in standard `description` frontmatter; legacy pages keep paragraph-based excerpt extraction. Preserve Markdown headings/lists/tables/code, render HTML/MDX expressions and import/export as inert text, and disable model-generated links/images. Code blocks preserve literal contents. Existing Enrichment evidence budgets (up to 4,000 tokens) and output token budgets remain unchanged.
+
+## Retrieval and recovery boundaries
+
+The Enrichment HTTP fetcher resolves original download URLs and handles bounded transient retries. RoutingContentExtractor selects HTML/PDF extraction. EvidenceRecoveryQueue persists insufficient-evidence candidate metadata and recheck schedules in separate JSON. The full pipeline merges only unbriefed recovered articles into Writer input, preserving existing URL/document deduplication. See [original evidence recovery](EVIDENCE_RECOVERY.md) for flow and limits.

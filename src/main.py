@@ -1,5 +1,9 @@
+import json
+from collections import Counter
+
 from src.collection import NewsCollector, write_raw_collection_results
 from src.enrichment.content_enricher import ContentEnricher
+from src.enrichment.recovery import EvidenceRecoveryQueue, merge_unbriefed_recovery
 from src.enrichment.storage import write_enrichment_result
 from src.processing import BriefedArticleStore, NewsPreprocessor
 from src.processing.processed_writer import write_preprocessing_result
@@ -71,6 +75,50 @@ def run_pipeline(target_date: str | None = None) -> WriterResult:
         selected_chunks_max_tokens=SETTINGS.enrichment_selected_chunks_max_tokens,
     )
     enrichment_result = enricher.enrich(preprocessing_result)
+    recovery_queue = EvidenceRecoveryQueue(
+        SETTINGS.briefed_articles_path.with_name("evidence_requests.json")
+    )
+    recovery_queue.observe(enrichment_result)
+    recovered = recovery_queue.retry(
+        enricher,
+        generated_for=generated_for,
+        exclude_urls={item.candidate.normalized_url for item in enrichment_result.candidates},
+        briefed_urls={
+            url
+            for url, request in recovery_queue.requests.items()
+            if briefed_article_store.contains(
+                url,
+                request.candidate.title_fingerprint,
+                request.candidate.service_key,
+                request.candidate.suggested_article_path,
+            )
+        },
+    )
+    if recovered is not None:
+        merge_unbriefed_recovery(enrichment_result, recovered, briefed_article_store)
+        # Full evidence is an artifact, never the trace-history branch.
+        write_enrichment_result(
+            SETTINGS.enriched_output_dir / generated_for / "recovery", recovered
+        )
+    recovery_queue.save()
+    recovery_summary_path = SETTINGS.trace_output_dir / generated_for / "evidence-recovery.json"
+    recovery_summary_path.parent.mkdir(parents=True, exist_ok=True)
+    recovery_summary_path.write_text(
+        json.dumps(
+            {
+                "generated_for": generated_for,
+                "status_counts": dict(
+                    Counter(item.status for item in recovery_queue.requests.values())
+                ),
+                "records": [record.model_dump(mode="json") for record in recovered.records]
+                if recovered
+                else [],
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
     enriched_paths = write_enrichment_result(
         SETTINGS.enriched_output_dir / generated_for,
         enrichment_result,
@@ -101,6 +149,8 @@ def run_pipeline(target_date: str | None = None) -> WriterResult:
         agent_name=SETTINGS.writer_agent,
     )
     writer_result = writer.write(enrichment_result)
+    recovery_queue.acknowledge(writer_result.agent_decisions)
+    recovery_queue.save()
     written_articles = sum(
         len(service.briefings) for service in writer_result.editorial_result.services
     )

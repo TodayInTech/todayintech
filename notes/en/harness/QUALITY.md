@@ -195,3 +195,9 @@ Public articles separate a one-to-two-sentence list summary (`summary_ko`) from 
 - Article navigation: all 3 checks in `node --test tests/site/briefing-navigation.test.mjs` passed. Lists and sidebars share newest briefing date (source-date fallback), descending score, then stable document-path order. Previous/next refer to adjacent items in that order within the same service; omit boundary links. Audited all 2,326 Korean/English rendered article pages for neighbor order/boundaries and verified no document paginator on 24 main/service-index/trace pages.
 
 - Archive synchronization: fix omitted card JSON and generated English docs in the daily publication staging paths. Refresh 1,163 index entries dated 2026-10-24 from stored state without invoking the Agent or rewriting articles; verify every service card order matches actual detail-page neighbors.
+
+## Evidence recovery regression checks
+
+[Retrieval flow and live rechecks](EVIDENCE_RECOVERY.md) cover canonical-path retries, Retry-After handling, PDF MIME/signature validation, balanced HTML extraction and challenge rejection, PDF text/encrypted/empty cases, queue limits/restarts and prevention of published-article regeneration. `traces/{date}/evidence-recovery.json` contains queue status counts and request/extraction records only. Original text remains in enrichment artifacts.
+
+Validation: `make check` passed Ruff lint/format and all 87 tests; Korean and English Docusaurus production builds passed. One existing unused-directive warning in the htmx article is unrelated to this change.

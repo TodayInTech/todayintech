@@ -142,3 +142,9 @@ The project has completed the `Project Init`, `Collector`, and `Preprocessor` st
 - [x] Instruct article generation to selectively bold short phrases covering core changes, decisive numbers and material constraints
 
 - [x] Hide document pagination on main/service indexes and traces; link article neighbors only within the same service using list order
+
+## Original evidence recovery
+
+- [x] Official-path retry, balanced HTML fallback, original GitHub PDF downloads and PDF text extraction
+- [x] Durable recovery queue, unbriefed recovery integration and no regeneration of published articles
+- [x] Failure/extraction metrics and live checks of four problematic articles ([flow](EVIDENCE_RECOVERY.md))

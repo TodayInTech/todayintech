@@ -41,3 +41,53 @@ def test_html_extractor_preserves_structural_blocks_without_duplicates() -> None
         DocumentBlockType.LIST_ITEM,
         DocumentBlockType.CODE,
     ]
+
+
+def test_thin_precision_output_uses_balanced_source_evidence(monkeypatch):
+    import trafilatura
+
+    article = "The Decisions API is generally available and routes application decisions. " * 30
+
+    def extract(_body, **kwargs):
+        import json
+
+        if kwargs["output_format"] == "json":
+            return json.dumps({"title": "Decisions API"})
+        text = "Loading demo" if kwargs["favor_precision"] else article
+        return f"<doc><main><p>{text}</p></main></doc>"
+
+    monkeypatch.setattr(trafilatura, "extract", extract)
+    document = HtmlContentExtractor(TiktokenTokenCounter()).extract(
+        FetchedContent(
+            source_url="https://example.com/article",
+            final_url="https://example.com/article",
+            http_status=200,
+            content_type="text/html",
+            body="<html><title>Decisions API</title></html>",
+            response_bytes=10,
+            duration_ms=0,
+        )
+    )
+    assert document.extraction_method == "balanced_retry"
+    assert document.plain_text == article.strip()
+
+
+def test_challenge_page_is_not_source_evidence():
+    import pytest
+
+    from src.enrichment.errors import EnrichmentError
+    from src.enrichment.models import EnrichmentFailureReason
+
+    with pytest.raises(EnrichmentError) as error:
+        HtmlContentExtractor(TiktokenTokenCounter()).extract(
+            FetchedContent(
+                source_url="https://example.com/article",
+                final_url="https://example.com/article",
+                http_status=200,
+                content_type="text/html",
+                body="<html><title>Just a moment...</title><p>Checking your browser</p></html>",
+                response_bytes=10,
+                duration_ms=0,
+            )
+        )
+    assert error.value.reason == EnrichmentFailureReason.ACCESS_DENIED

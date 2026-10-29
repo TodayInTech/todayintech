@@ -3,6 +3,8 @@ import json
 from xml.etree import ElementTree
 
 import trafilatura
+from lxml import html
+from lxml.etree import ParserError
 from trafilatura import __version__ as trafilatura_version
 
 from src.enrichment.contracts import BaseContentExtractor, BaseTokenCounter
@@ -27,12 +29,51 @@ BLOCK_TAGS = {
 
 class HtmlContentExtractor(BaseContentExtractor):
     name = "trafilatura"
-    version = trafilatura_version
+    version = f"{trafilatura_version}-recovery-1"
 
-    def __init__(self, token_counter: BaseTokenCounter) -> None:
+    def __init__(self, token_counter: BaseTokenCounter, minimum_tokens: int = 100) -> None:
         self.token_counter = token_counter
+        self.minimum_tokens = minimum_tokens
 
     def extract(self, fetched: FetchedContent) -> ExtractedDocument:
+        # Challenge/session pages must never become evidence, even if long enough.
+        try:
+            page = html.fromstring(fetched.body)
+            title = " ".join(page.xpath("//title/text()")).lower()
+        except ValueError, ParserError:
+            title = ""
+        if any(
+            marker in title
+            for marker in ("just a moment", "access denied", "security check", "sign in to github")
+        ):
+            raise EnrichmentError(
+                EnrichmentFailureReason.ACCESS_DENIED,
+                "Publisher returned a challenge or login page",
+            )
+        primary = None
+        primary_error = None
+        try:
+            primary = self._extract(fetched, favor_precision=True)
+        except EnrichmentError as exc:
+            primary_error = exc
+        if primary is not None and primary.token_count >= self.minimum_tokens:
+            return primary
+        try:
+            alternate = self._extract(fetched, favor_precision=False)
+        except EnrichmentError:
+            if primary is not None:
+                return primary
+            assert primary_error is not None
+            raise primary_error from None
+        if alternate.token_count >= self.minimum_tokens and (
+            primary is None or alternate.token_count > primary.token_count
+        ):
+            return alternate
+        if primary is not None:
+            return primary
+        return alternate
+
+    def _extract(self, fetched: FetchedContent, *, favor_precision: bool) -> ExtractedDocument:
         xml_output = trafilatura.extract(
             fetched.body,
             output_format="xml",
@@ -40,7 +81,7 @@ class HtmlContentExtractor(BaseContentExtractor):
             include_comments=False,
             include_tables=True,
             include_links=False,
-            favor_precision=True,
+            favor_precision=favor_precision,
             url=fetched.final_url,
         )
         metadata_output = trafilatura.extract(
@@ -49,7 +90,7 @@ class HtmlContentExtractor(BaseContentExtractor):
             with_metadata=True,
             include_comments=False,
             include_tables=True,
-            favor_precision=True,
+            favor_precision=favor_precision,
             url=fetched.final_url,
         )
         if not xml_output:
@@ -76,6 +117,7 @@ class HtmlContentExtractor(BaseContentExtractor):
             )
 
         return ExtractedDocument(
+            extraction_method="precision" if favor_precision else "balanced_retry",
             title=metadata.get("title"),
             author=metadata.get("author"),
             published_at=metadata.get("date"),

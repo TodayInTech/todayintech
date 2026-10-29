@@ -52,6 +52,7 @@ class FetchedContent(BaseModel):
     http_status: int = Field(ge=100, le=599)
     content_type: str
     body: str
+    binary_base64: str | None = None
     response_bytes: int = Field(ge=0)
     duration_ms: int = Field(ge=0)
     attempt_count: int = Field(default=1, ge=1)
@@ -72,6 +73,7 @@ class ExtractedDocument(BaseModel):
     published_at: str | None = None
     detected_language: str | None = None
     document_type: str = "article"
+    extraction_method: str = "precision"
     plain_text: str
     content_hash: str
     char_count: int = Field(ge=0)
@@ -120,6 +122,7 @@ class EnrichmentRecord(BaseModel):
     selection_duration_ms: int = Field(default=0, ge=0)
     extractor_name: str | None = None
     extractor_version: str | None = None
+    extraction_method: str | None = None
     content_hash: str | None = None
     document_type: str | None = None
     detected_language: str | None = None

@@ -33,5 +33,6 @@ class ContentExtractionStep(BaseEnrichmentStep):
         context.record.extraction_duration_ms = round((perf_counter() - started_at) * 1000)
         context.record.extractor_name = self.extractor.name
         context.record.extractor_version = self.extractor.version
+        context.record.extraction_method = document.extraction_method
         context.extracted_document = document
         return context
