@@ -1,0 +1,646 @@
+{
+  "https://openai.com/index/introducing-gpt-6-1-terra": {
+    "candidate": {
+      "candidate_id": "hacker-news:35e334c198740f74",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "GPT-6.1 Terra",
+        "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+        "published_at": "2026-10-26T18:01:17Z",
+        "collected_at": "2026-10-27T01:03:40.747601Z",
+        "summary": "<p><a href=\"https://developers.openai.com/api/docs/models/gpt-6.1-terra\" rel=\"nofollow\">https://developers.openai.com/api/docs/models/gpt-6.1-terra</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50248124\">https://news.ycombinator.com/item?id=50248124</a></p>\n<p>Points: 485</p>\n<p># Comments: 308</p>",
+        "authors": [
+          "meetpateltech"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 8,
+          "hn_points": 485,
+          "hn_comments": 308,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50248124"
+        }
+      },
+      "normalized_url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "url_hash": "35e334c198740f7416638922d137b34400b1d3f32a340ea04060840443b03b8a",
+      "title_fingerprint": "gpt 6 1 terra",
+      "feed_summary": "<p><a href=\"https://developers.openai.com/api/docs/models/gpt-6.1-terra\" rel=\"nofollow\">https://developers.openai.com/api/docs/models/gpt-6.1-terra</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50248124\">https://news.ycombinator.com/item?id=50248124</a></p>\n<p>Points: 485</p>\n<p># Comments: 308</p>",
+      "suggested_doc_key": "2026-10-gpt-6-1-terra-35e334c1",
+      "suggested_article_path": "docs/services/hacker-news/2026-10-gpt-6-1-terra-35e334c1.md",
+      "candidate_score": 72.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 2.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "Hacker News 점수 485점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 308개를 토론 신호로 반영했습니다.",
+        "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:40:05.654302Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf": {
+    "candidate": {
+      "candidate_id": "hacker-news:2f04de563efd474f",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "The Exponential Time Hypothesis Is False [pdf]",
+        "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+        "published_at": "2026-10-26T21:59:15Z",
+        "collected_at": "2026-10-27T01:03:40.747601Z",
+        "summary": "<p>See also: <i>Announcing three new discoveries in mathematics, computer science, and physics</i> - <a href=\"https://news.ycombinator.com/item?id=50251344\">https://news.ycombinator.com/item?id=50251344</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50251661\">https://news.ycombinator.com/item?id=50251661</a></p>\n<p>Points: 215</p>\n<p># Comments: 92</p>",
+        "authors": [
+          "vok"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 3,
+          "hn_points": 215,
+          "hn_comments": 92,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50251661"
+        }
+      },
+      "normalized_url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "url_hash": "2f04de563efd474f33e1507186cb633e9790b98365f3bba15d16332a3934d4a9",
+      "title_fingerprint": "the exponential time hypothesis is false pdf",
+      "feed_summary": "<p>See also: <i>Announcing three new discoveries in mathematics, computer science, and physics</i> - <a href=\"https://news.ycombinator.com/item?id=50251344\">https://news.ycombinator.com/item?id=50251344</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50251661\">https://news.ycombinator.com/item?id=50251661</a></p>\n<p>Points: 215</p>\n<p># Comments: 92</p>",
+      "suggested_doc_key": "2026-10-the-exponential-time-hypothesis-is-false-pdf-2f04de56",
+      "suggested_article_path": "docs/services/hacker-news/2026-10-the-exponential-time-hypothesis-is-false-pdf-2f04de56.md",
+      "candidate_score": 67.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 215점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 92개를 토론 신호로 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "ready",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-29T06:45:49.989656Z",
+    "last_failure": null,
+    "recovered_at": "2026-10-29T06:45:49.989656Z",
+    "extraction_method": "pdf_text",
+    "token_count": 63222
+  },
+  "https://openai.com/index/building-scientific-understanding-with-academic-communities": {
+    "candidate": {
+      "candidate_id": "hacker-news:8eb6001a836a6e50",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Announcing three new discoveries in mathematics, computer science, and physics",
+        "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+        "published_at": "2026-10-26T21:35:28Z",
+        "collected_at": "2026-10-27T01:03:40.747601Z",
+        "summary": "<p>Related:<p><i>The Exponential Time Hypothesis Is False [pdf]</i> - <a href=\"https://news.ycombinator.com/item?id=50251661\">https://news.ycombinator.com/item?id=50251661</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50251344\">https://news.ycombinator.com/item?id=50251344</a></p>\n<p>Points: 352</p>\n<p># Comments: 137</p>",
+        "authors": [
+          "jonluca"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 4,
+          "hn_points": 352,
+          "hn_comments": 137,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50251344"
+        }
+      },
+      "normalized_url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "url_hash": "8eb6001a836a6e50b8fb133e1590f182de0e7997306db3a54dcb8d2c2e5a6daa",
+      "title_fingerprint": "announcing three new discoveries in mathematics computer science and physics",
+      "feed_summary": "<p>Related:<p><i>The Exponential Time Hypothesis Is False [pdf]</i> - <a href=\"https://news.ycombinator.com/item?id=50251661\">https://news.ycombinator.com/item?id=50251661</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50251344\">https://news.ycombinator.com/item?id=50251344</a></p>\n<p>Points: 352</p>\n<p># Comments: 137</p>",
+      "suggested_doc_key": "2026-10-announcing-three-new-discoveries-in-mathematics-computer-science-and-phy-8eb6001a",
+      "suggested_article_path": "docs/services/hacker-news/2026-10-announcing-three-new-discoveries-in-mathematics-computer-science-and-phy-8eb6001a.md",
+      "candidate_score": 66.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 352점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 137개를 토론 신호로 반영했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:40:05.654302Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security": {
+    "candidate": {
+      "candidate_id": "openai-blog:7d972df501d01ba1",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+        "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+        "published_at": "2026-10-26T13:45:00Z",
+        "collected_at": "2026-10-27T01:03:41.799843Z",
+        "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+        "authors": [],
+        "tags": [
+          "Security"
+        ],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "url_hash": "7d972df501d01ba1f64ace9f515a56fb23b6429c84e2c13cce6a1dfa0631bf43",
+      "title_fingerprint": "gpt 6 1 sol helps coderabbit strengthen security across complex codebases",
+      "feed_summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+      "suggested_doc_key": "2026-10-gpt-6-1-sol-helps-coderabbit-strengthen-security-across-complex-codebase-7d972df5",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-gpt-6-1-sol-helps-coderabbit-strengthen-security-across-complex-codebase-7d972df5.md",
+      "candidate_score": 47.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:40:05.654302Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/greptile-code-review-codex-astra": {
+    "candidate": {
+      "candidate_id": "openai-blog:a9c488820a62ac4a",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+        "url": "https://openai.com/index/greptile-code-review-codex-astra",
+        "published_at": "2026-10-26T22:00:00Z",
+        "collected_at": "2026-10-27T01:03:41.799843Z",
+        "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
+        "authors": [],
+        "tags": [
+          "Startup"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/greptile-code-review-codex-astra",
+      "url_hash": "a9c488820a62ac4adcd9d66c87dfdb487fb6897ef015ab83ccdf2e6a9db2968a",
+      "title_fingerprint": "greptile takes bug detection beyond code review with gpt 6 astra",
+      "feed_summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
+      "suggested_doc_key": "2026-10-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra-a9c48882",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra-a9c48882.md",
+      "candidate_score": 44.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:40:05.654302Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/openai-cut-incident-investigation": {
+    "candidate": {
+      "candidate_id": "openai-blog:742d30efdc4090c1",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+        "url": "https://openai.com/index/openai-cut-incident-investigation",
+        "published_at": "2026-10-26T07:00:00Z",
+        "collected_at": "2026-10-27T01:03:41.799843Z",
+        "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.",
+        "authors": [],
+        "tags": [
+          "OpenAI on OpenAI"
+        ],
+        "metadata": {
+          "rss_rank": 6
+        }
+      },
+      "normalized_url": "https://openai.com/index/openai-cut-incident-investigation",
+      "url_hash": "742d30efdc4090c11a97794f6a72e90c1243857798823aeed51fe879a1c3fcd7",
+      "title_fingerprint": "how ultrafast cut incident investigation from hours to minutes at openai",
+      "feed_summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.",
+      "suggested_doc_key": "2026-10-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-at-openai-742d30ef",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-at-openai-742d30ef.md",
+      "candidate_score": 39.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 4.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:40:05.654302Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/chatgpt-expanding-world-of-work": {
+    "candidate": {
+      "candidate_id": "openai-blog:27334100e818b985",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "ChatGPT’s expanding world of work",
+        "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+        "published_at": "2026-10-26T10:00:00Z",
+        "collected_at": "2026-10-27T01:03:41.799843Z",
+        "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
+        "authors": [],
+        "tags": [
+          "Research"
+        ],
+        "metadata": {
+          "rss_rank": 4
+        }
+      },
+      "normalized_url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+      "url_hash": "27334100e818b98514ff319836bc3b78479c8228c2a09656f9dea445b0edf902",
+      "title_fingerprint": "chatgpt s expanding world of work",
+      "feed_summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
+      "suggested_doc_key": "2026-10-chatgpt-s-expanding-world-of-work-27334100",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-chatgpt-s-expanding-world-of-work-27334100.md",
+      "candidate_score": 36.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:40:05.654302Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/decisions-api": {
+    "candidate": {
+      "candidate_id": "openai-blog:891b7e0bbf66f86d",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Build more responsive apps with the Decisions API",
+        "url": "https://openai.com/index/decisions-api",
+        "published_at": "2026-10-22T19:00:00Z",
+        "collected_at": "2026-10-27T01:03:41.799843Z",
+        "summary": "Fast, focused, low-cost decisions for any application.",
+        "authors": [],
+        "tags": [
+          "Product"
+        ],
+        "metadata": {
+          "rss_rank": 11
+        }
+      },
+      "normalized_url": "https://openai.com/index/decisions-api",
+      "url_hash": "891b7e0bbf66f86d27b770f3dc53e0fbecfc246eeadf29503262f6d9c70adad7",
+      "title_fingerprint": "build more responsive apps with the decisions api",
+      "feed_summary": "Fast, focused, low-cost decisions for any application.",
+      "suggested_doc_key": "2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b.md",
+      "candidate_score": 31.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 4,
+        "freshness_score": 16.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 4일이 지난 글로 최신성 16점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "ready",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-29T06:45:49.989656Z",
+    "last_failure": null,
+    "recovered_at": "2026-10-29T06:45:49.989656Z",
+    "extraction_method": "balanced_retry",
+    "token_count": 1116
+  },
+  "https://openai.com/index/forward-deployed-engineering-means": {
+    "candidate": {
+      "candidate_id": "openai-blog:6400feb681472530",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "What FDE means at OpenAI",
+        "url": "https://openai.com/index/forward-deployed-engineering-means",
+        "published_at": "2026-10-22T06:00:00Z",
+        "collected_at": "2026-10-27T01:03:41.799843Z",
+        "summary": "What forward deployed engineering means at OpenAI",
+        "authors": [],
+        "tags": [
+          "AI Adoption"
+        ],
+        "metadata": {
+          "rss_rank": 12
+        }
+      },
+      "normalized_url": "https://openai.com/index/forward-deployed-engineering-means",
+      "url_hash": "6400feb681472530a689e8c59132cfe6d13f5863532ecd60e409a4825c59746b",
+      "title_fingerprint": "what fde means at openai",
+      "feed_summary": "What forward deployed engineering means at OpenAI",
+      "suggested_doc_key": "2026-10-what-fde-means-at-openai-6400feb6",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-what-fde-means-at-openai-6400feb6.md",
+      "candidate_score": 26.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 4,
+        "freshness_score": 16.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 4일이 지난 글로 최신성 16점을 반영했습니다.",
+        "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:40:05.654500Z",
+    "last_failure": null,
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/openai-servicenow-partnership-expansion": {
+    "candidate": {
+      "candidate_id": "openai-blog:a395c7da350b5086",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+        "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+        "published_at": "2026-10-28T13:15:00Z",
+        "collected_at": "2026-10-29T01:31:42.503614Z",
+        "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+        "authors": [],
+        "tags": [
+          "Company"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "url_hash": "a395c7da350b5086cc15f6b616a71f222298172ced3c491458f1fd1d38e79b77",
+      "title_fingerprint": "openai and servicenow expand partnership across enterprise workflows",
+      "feed_summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+      "suggested_doc_key": "2026-10-openai-and-servicenow-expand-partnership-across-enterprise-workflows-a395c7da",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-openai-and-servicenow-expand-partnership-across-enterprise-workflows-a395c7da.md",
+      "candidate_score": 49.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:47:04.140489Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/legora": {
+    "candidate": {
+      "candidate_id": "openai-blog:709cc8e2bd467b79",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Legora is building the agentic operating system for legal work",
+        "url": "https://openai.com/index/legora",
+        "published_at": "2026-10-28T09:30:00Z",
+        "collected_at": "2026-10-29T01:31:42.503614Z",
+        "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/index/legora",
+      "url_hash": "709cc8e2bd467b7916899fb3ec62dbecfa135fc3209b011a85a1239ca7c1f0f6",
+      "title_fingerprint": "legora is building the agentic operating system for legal work",
+      "feed_summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+      "suggested_doc_key": "2026-10-legora-is-building-the-agentic-operating-system-for-legal-work-709cc8e2",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-legora-is-building-the-agentic-operating-system-for-legal-work-709cc8e2.md",
+      "candidate_score": 47.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:47:04.140489Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/the-future-of-the-firm": {
+    "candidate": {
+      "candidate_id": "openai-blog:e2ed7680c50ae3f0",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "The future of the firm",
+        "url": "https://openai.com/index/the-future-of-the-firm",
+        "published_at": "2026-10-28T10:00:00Z",
+        "collected_at": "2026-10-29T01:31:42.503614Z",
+        "summary": "How AI might enter the org chart—beneath, beside, and between us.",
+        "authors": [],
+        "tags": [
+          "Intelligence Age"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/index/the-future-of-the-firm",
+      "url_hash": "e2ed7680c50ae3f074e04f962f033e8bab070f352fa8087e45258e537064a005",
+      "title_fingerprint": "the future of the firm",
+      "feed_summary": "How AI might enter the org chart—beneath, beside, and between us.",
+      "suggested_doc_key": "2026-10-the-future-of-the-firm-e2ed7680",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-the-future-of-the-firm-e2ed7680.md",
+      "candidate_score": 38.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:47:04.140489Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  }
+}
