@@ -11950,6 +11950,116 @@
       "status": "published",
       "briefed_at": "2026-10-28T00:57:28.055597Z",
       "candidate_score": 30.0
+    },
+    "e63c44ee253751eb72aef3f2b8bd6200913735fee19428e07e0f2cafc0129b53": {
+      "normalized_url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "title_fingerprint": "ai for science expands to foundations and institutions",
+      "service_key": "anthropic-blog",
+      "title": "AI for Science expands to foundations and institutions",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-ai-for-science-expands-to-foundations-and-institutions-e63c44ee.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T01:35:24.540749Z",
+      "candidate_score": 30.0
+    },
+    "550f4d88633d42452645fe28be1f95c7b820136518ea7942332ddf189b2d73b8": {
+      "normalized_url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "title_fingerprint": "expanding our partnership with gsa to bring claude to all levels of government",
+      "service_key": "anthropic-blog",
+      "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+      "article_doc_path": "docs/services/anthropic-blog/2026-10-expanding-our-partnership-with-gsa-to-bring-claude-to-all-levels-of-gove-550f4d88.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T01:35:24.540792Z",
+      "candidate_score": 29.0
+    },
+    "bc75ed686e56f0828cdf2ce79457b8bd8897762095938ce7d57c2e527f4c4624": {
+      "normalized_url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
+      "title_fingerprint": "octoverse commits pushes reach new highs in 2026 as developers build with agents",
+      "service_key": "github-blog",
+      "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+      "article_doc_path": "docs/services/github-blog/2026-10-octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-wit-bc75ed68.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T01:35:24.540802Z",
+      "candidate_score": 41.0
+    },
+    "59f92a9af33d7787220cb11b5652970253e8402c5b3f58ecb811ad66129f56a1": {
+      "normalized_url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack",
+      "title_fingerprint": "github universe 2026 evolving every layer of the stack",
+      "service_key": "github-blog",
+      "title": "GitHub Universe 2026: Evolving every layer of the stack",
+      "article_doc_path": "docs/services/github-blog/2026-10-github-universe-2026-evolving-every-layer-of-the-stack-59f92a9a.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T01:35:24.540810Z",
+      "candidate_score": 37.0
+    },
+    "a128891378e42ce095b475cf9d58d26aadedbe26bab7ca7ff3e78b65ea58d66d": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place",
+      "title_fingerprint": "build and manage connected apps in one place",
+      "service_key": "google-blog",
+      "title": "Build and manage Connected Apps in one place",
+      "article_doc_path": "docs/services/google-blog/2026-10-build-and-manage-connected-apps-in-one-place-a1288913.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T01:35:24.540817Z",
+      "candidate_score": 35.0
+    },
+    "a92d7b7ef0e2da4d5922c4312bd7f7df8d2b093b922e0a6553e761255b0eac7a": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon",
+      "title_fingerprint": "gemini 4 carbon",
+      "service_key": "hacker-news",
+      "title": "Gemini 4 Carbon",
+      "article_doc_path": "docs/services/hacker-news/2026-10-gemini-4-carbon-a92d7b7e.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T01:35:24.540823Z",
+      "candidate_score": 65.0
+    },
+    "17a75de37df03bf69cc8cd6f945d43030c6c3e3ce93699d18b7dc09af34e59c0": {
+      "normalized_url": "https://surgehq.ai/blog/dayjob-tax",
+      "title_fingerprint": "dayjob tax evaluating ai agents on 50 professional tax assignments",
+      "service_key": "hacker-news",
+      "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+      "article_doc_path": "docs/services/hacker-news/2026-10-dayjob-tax-evaluating-ai-agents-on-50-professional-tax-assignments-17a75de3.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T01:35:24.540830Z",
+      "candidate_score": 65.0
+    },
+    "50d36c1a28126eb5fd3570035da7311ce771b821a873d19852e50cc63f0d9f6b": {
+      "normalized_url": "https://nullpt.rs/fingerprinting-bioweapons",
+      "title_fingerprint": "why is this fingerprinting script creating bioweapons",
+      "service_key": "hacker-news",
+      "title": "Why is this fingerprinting script creating bioweapons?",
+      "article_doc_path": "docs/services/hacker-news/2026-10-why-is-this-fingerprinting-script-creating-bioweapons-50d36c1a.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T01:35:24.540836Z",
+      "candidate_score": 60.0
+    },
+    "4771015fefbf7d342941ee41047998de236498ead77f161ea7a4e90484c378ed": {
+      "normalized_url": "https://www.apple.com/macbook-pro/proled-xdr-display",
+      "title_fingerprint": "macbook pro with proled xdr display and touch",
+      "service_key": "hacker-news",
+      "title": "MacBook Pro with PROLED XDR Display and Touch",
+      "article_doc_path": "docs/services/hacker-news/2026-10-macbook-pro-with-proled-xdr-display-and-touch-4771015f.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T01:35:24.540841Z",
+      "candidate_score": 60.0
+    },
+    "a395c7da350b5086cc15f6b616a71f222298172ced3c491458f1fd1d38e79b77": {
+      "normalized_url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "title_fingerprint": "openai and servicenow expand partnership across enterprise workflows",
+      "service_key": "openai-blog",
+      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+      "article_doc_path": "docs/services/openai-blog/2026-10-openai-and-servicenow-expand-partnership-across-enterprise-workflows-a395c7da.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T01:35:24.540848Z",
+      "candidate_score": 49.0
+    },
+    "709cc8e2bd467b7916899fb3ec62dbecfa135fc3209b011a85a1239ca7c1f0f6": {
+      "normalized_url": "https://openai.com/index/legora",
+      "title_fingerprint": "legora is building the agentic operating system for legal work",
+      "service_key": "openai-blog",
+      "title": "Legora is building the agentic operating system for legal work",
+      "article_doc_path": "docs/services/openai-blog/2026-10-legora-is-building-the-agentic-operating-system-for-legal-work-709cc8e2.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T01:35:24.540859Z",
+      "candidate_score": 47.0
     }
   }
 }
