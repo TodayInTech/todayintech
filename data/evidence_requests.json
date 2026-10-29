@@ -427,10 +427,10 @@
       ],
       "excluded_reason": null
     },
-    "status": "reviewed",
+    "status": "pending",
     "attempts": 0,
-    "next_attempt_at": "2026-10-29T06:45:49.989656Z",
-    "last_failure": null,
+    "next_attempt_at": "2026-10-30T06:56:31.704750Z",
+    "last_failure": "access_denied",
     "recovered_at": "2026-10-29T06:45:49.989656Z",
     "extraction_method": "balanced_retry",
     "token_count": 1116
