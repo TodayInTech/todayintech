@@ -427,7 +427,7 @@
       ],
       "excluded_reason": null
     },
-    "status": "ready",
+    "status": "reviewed",
     "attempts": 0,
     "next_attempt_at": "2026-10-29T06:45:49.989656Z",
     "last_failure": null,
@@ -638,6 +638,165 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-10-30T06:47:04.140489Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://data.stackexchange.com/stackoverflow/query/1926661": {
+    "candidate": {
+      "candidate_id": "hacker-news:5d2a2027ecbb796f",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "StackOverflow now gets fewer than 1000 questions a month",
+        "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
+        "published_at": "2026-10-28T23:35:02Z",
+        "collected_at": "2026-10-29T06:48:59.854463Z",
+        "summary": "<p>Article URL: <a href=\"https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1\">https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50282454\">https://news.ycombinator.com/item?id=50282454</a></p>\n<p>Points: 280</p>\n<p># Comments: 253</p>",
+        "authors": [
+          "babelfish"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 6,
+          "hn_points": 280,
+          "hn_comments": 253,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50282454"
+        }
+      },
+      "normalized_url": "https://data.stackexchange.com/stackoverflow/query/1926661",
+      "url_hash": "5d2a2027ecbb796f35d42b42ac320d4b463d0a9521c567883ee414a708c331ce",
+      "title_fingerprint": "stackoverflow now gets fewer than 1000 questions a month",
+      "feed_summary": "<p>Article URL: <a href=\"https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1\">https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50282454\">https://news.ycombinator.com/item?id=50282454</a></p>\n<p>Points: 280</p>\n<p># Comments: 253</p>",
+      "suggested_doc_key": "2026-10-stackoverflow-now-gets-fewer-than-1000-questions-a-month-5d2a2027",
+      "suggested_article_path": "docs/services/hacker-news/2026-10-stackoverflow-now-gets-fewer-than-1000-questions-a-month-5d2a2027.md",
+      "candidate_score": 64.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 4.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 280점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 253개를 토론 신호로 반영했습니다.",
+        "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:49:05.349976Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/localiza-generative-ai": {
+    "candidate": {
+      "candidate_id": "openai-blog:d3b9ba6f7bd01af0",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "How Localiza reorganized work around generative AI",
+        "url": "https://openai.com/index/localiza-generative-ai",
+        "published_at": "2026-10-16T00:00:00Z",
+        "collected_at": "2026-10-29T06:49:00.993383Z",
+        "summary": "See how Localiza uses ChatGPT Enterprise, the OpenAI API, Codex, and 60+ specialized agents to reorganize work and build AI-native mobility experiences.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 36
+        }
+      },
+      "normalized_url": "https://openai.com/index/localiza-generative-ai",
+      "url_hash": "d3b9ba6f7bd01af06315d29c49e1c46aec299d60d23b626afa8e8db74404734d",
+      "title_fingerprint": "how localiza reorganized work around generative ai",
+      "feed_summary": "See how Localiza uses ChatGPT Enterprise, the OpenAI API, Codex, and 60+ specialized agents to reorganize work and build AI-native mobility experiences.",
+      "suggested_doc_key": "2026-10-how-localiza-reorganized-work-around-generative-ai-d3b9ba6f",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-how-localiza-reorganized-work-around-generative-ai-d3b9ba6f.md",
+      "candidate_score": 27.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 13,
+        "freshness_score": 7.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 13일이 지난 글로 최신성 7점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 36위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:49:05.349976Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/fanatics-streamline-fan-experience": {
+    "candidate": {
+      "candidate_id": "openai-blog:7e73eebe3e909303",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "How Fanatics and OpenAI streamline the fan experience",
+        "url": "https://openai.com/index/fanatics-streamline-fan-experience",
+        "published_at": "2026-10-26T07:00:00Z",
+        "collected_at": "2026-10-29T06:49:00.993383Z",
+        "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 11
+        }
+      },
+      "normalized_url": "https://openai.com/index/fanatics-streamline-fan-experience",
+      "url_hash": "7e73eebe3e909303c4c59a7dc0b734e92c38bcdbedd7db32071af67e1885bb5c",
+      "title_fingerprint": "how fanatics and openai streamline the fan experience",
+      "feed_summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
+      "suggested_doc_key": "2026-10-how-fanatics-and-openai-streamline-the-fan-experience-7e73eebe",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-how-fanatics-and-openai-streamline-the-fan-experience-7e73eebe.md",
+      "candidate_score": 24.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 2,
+        "freshness_score": 18.0,
+        "high_signal_count": 0,
+        "low_signal_count": 1,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+        "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+        "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-30T06:49:05.349976Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,

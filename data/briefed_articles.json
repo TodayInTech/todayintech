@@ -12060,6 +12060,86 @@
       "status": "published",
       "briefed_at": "2026-10-29T01:35:24.540859Z",
       "candidate_score": 47.0
+    },
+    "ce1b34a80db9a6e7c540ca7ab9506acad9fce79df449f269b2a96043042aad52": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/health/google-for-health-summit-singapore",
+      "title_fingerprint": "partnering with singapore to bring frontier ai to public health",
+      "service_key": "google-blog",
+      "title": "Partnering with Singapore to bring frontier AI to public health",
+      "article_doc_path": "docs/services/google-blog/2026-10-partnering-with-singapore-to-bring-frontier-ai-to-public-health-ce1b34a8.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T06:52:12.266502Z",
+      "candidate_score": 36.0
+    },
+    "370e028ff47ae5fef76a3b9bc8cc37d8b0fcf409544786594fad307c3a1b0050": {
+      "normalized_url": "https://blog.google/products-and-platforms/platforms/android/xreal-aura",
+      "title_fingerprint": "xreal aura wired xr glasses to watch work and play",
+      "service_key": "google-blog",
+      "title": "XREAL AURA: Wired XR glasses to watch, work, and play",
+      "article_doc_path": "docs/services/google-blog/2026-10-xreal-aura-wired-xr-glasses-to-watch-work-and-play-370e028f.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T06:52:12.266544Z",
+      "candidate_score": 35.0
+    },
+    "94430ceaa839cbc65bd3beb50f4a415e11e18e27e79127cc99549442483ed67e": {
+      "normalized_url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "title_fingerprint": "claude code regularly sends each background agent s transcript to its model",
+      "service_key": "hacker-news",
+      "title": "Claude Code regularly sends each background agent’s transcript to its model",
+      "article_doc_path": "docs/services/hacker-news/2026-10-claude-code-regularly-sends-each-background-agent-s-transcript-to-its-mo-94430cea.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T06:52:12.266559Z",
+      "candidate_score": 75.0
+    },
+    "871d193932e074981dd0de78158d4366d0b62a01255f159ad38a0e9d8c4552ed": {
+      "normalized_url": "https://divagr.com/blog/qwenputer",
+      "title_fingerprint": "qwenputer a functioning deterministic risc v cpu inside qwen3 5",
+      "service_key": "hacker-news",
+      "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
+      "article_doc_path": "docs/services/hacker-news/2026-10-qwenputer-a-functioning-deterministic-risc-v-cpu-inside-qwen3-5-871d1939.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T06:52:12.266568Z",
+      "candidate_score": 64.8
+    },
+    "5d2a2027ecbb796f35d42b42ac320d4b463d0a9521c567883ee414a708c331ce": {
+      "normalized_url": "https://data.stackexchange.com/stackoverflow/query/1926661",
+      "title_fingerprint": "stackoverflow now gets fewer than 1000 questions a month",
+      "service_key": "hacker-news",
+      "title": "StackOverflow now gets fewer than 1000 questions a month",
+      "article_doc_path": "docs/services/hacker-news/2026-10-stackoverflow-now-gets-fewer-than-1000-questions-a-month-5d2a2027.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T06:52:12.266577Z",
+      "candidate_score": 64.0
+    },
+    "fd6c7c6c47f5d5049702ca08a6933694635921b8555fd24e166cf09a1039c341": {
+      "normalized_url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+      "title_fingerprint": "gitlab security incident attempted exploitation of cve 2026 97229",
+      "service_key": "hacker-news",
+      "title": "GitLab Security Incident: Attempted Exploitation of CVE-2026-97229",
+      "article_doc_path": "docs/services/hacker-news/2026-10-gitlab-security-incident-attempted-exploitation-of-cve-2026-97229-fd6c7c6c.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T06:52:12.266585Z",
+      "candidate_score": 61.3
+    },
+    "d3b9ba6f7bd01af06315d29c49e1c46aec299d60d23b626afa8e8db74404734d": {
+      "normalized_url": "https://openai.com/index/localiza-generative-ai",
+      "title_fingerprint": "how localiza reorganized work around generative ai",
+      "service_key": "openai-blog",
+      "title": "How Localiza reorganized work around generative AI",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-localiza-reorganized-work-around-generative-ai-d3b9ba6f.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T06:52:12.266592Z",
+      "candidate_score": 27.0
+    },
+    "7e73eebe3e909303c4c59a7dc0b734e92c38bcdbedd7db32071af67e1885bb5c": {
+      "normalized_url": "https://openai.com/index/fanatics-streamline-fan-experience",
+      "title_fingerprint": "how fanatics and openai streamline the fan experience",
+      "service_key": "openai-blog",
+      "title": "How Fanatics and OpenAI streamline the fan experience",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-fanatics-and-openai-streamline-the-fan-experience-7e73eebe.md",
+      "status": "published",
+      "briefed_at": "2026-10-29T06:52:12.266600Z",
+      "candidate_score": 24.0
     }
   }
 }
