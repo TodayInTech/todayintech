@@ -60,4 +60,4 @@ Local reproduction output is `.var/local/evidence-recovery/probe/enrichment.json
 
 ### GitHub Actions environment check
 
-[Run 40831332113](https://github.com/TodayInTech/todayintech/actions/runs/40831332113) passed quality checks and generation. The final ten candidates included five enriched, three feed fallbacks and two failed original fetches; Writer published eight articles. Decisions API still returned 403 in CI. A follow-up regression check ensures that a previously ready request returns to pending after a new access failure, rather than treating local success as CI access success. All 88 local tests passed including this follow-up.
+[Run 40831332113](https://github.com/TodayInTech/todayintech/actions/runs/40831332113) passed quality checks and generation. The final ten candidates included five enriched, three feed fallbacks and two failed original fetches; Writer published eight articles. Decisions API still returned 403 in CI. A follow-up regression check ensures that a previously ready request returns to pending after a new access failure, rather than treating local success as CI access success. All 89 local tests passed including this follow-up.

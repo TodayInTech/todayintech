@@ -60,4 +60,4 @@ PDF는 바이너리 시그니처를 검사하고 pypdf로 텍스트를 추출한
 
 ### GitHub Actions 환경 확인
 
-[40831332113 실행](https://github.com/TodayInTech/todayintech/actions/runs/40831332113)에서 품질 검증과 생성 단계가 성공했다. 최종 후보 10건은 원문 확보 5건, 피드 fallback 3건, 원문 미확보 2건이며 Writer가 8건을 발행했다. Decisions API는 CI에서도 403이었다. 로컬 성공을 CI 접근 성공으로 표시하지 않도록, 이전에 ready였더라도 새 요청이 실패하면 pending으로 되돌리는 회귀 검증을 추가했다. 이 보완을 포함한 로컬 전체 테스트는 88개가 통과했다.
+[40831332113 실행](https://github.com/TodayInTech/todayintech/actions/runs/40831332113)에서 품질 검증과 생성 단계가 성공했다. 최종 후보 10건은 원문 확보 5건, 피드 fallback 3건, 원문 미확보 2건이며 Writer가 8건을 발행했다. Decisions API는 CI에서도 403이었다. 로컬 성공을 CI 접근 성공으로 표시하지 않도록, 이전에 ready였더라도 새 요청이 실패하면 pending으로 되돌리는 회귀 검증을 추가했다. 이 보완을 포함한 로컬 전체 테스트는 89개가 통과했다.

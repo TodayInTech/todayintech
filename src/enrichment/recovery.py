@@ -136,6 +136,7 @@ class EvidenceRecoveryQueue:
             if (
                 request is not None
                 and request.status == "ready"
+                and decision.error_message is None
                 and decision.status.value in {"published", "draft", "skipped"}
             ):
                 request.status = "reviewed"

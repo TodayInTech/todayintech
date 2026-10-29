@@ -158,7 +158,9 @@ def test_writer_rejection_is_acknowledged_without_endless_regeneration(tmp_path)
     queue.acknowledge(
         [
             SimpleNamespace(
-                normalized_url="https://example.com/0", status=AgentDecisionStatus.SKIPPED
+                normalized_url="https://example.com/0",
+                status=AgentDecisionStatus.SKIPPED,
+                error_message=None,
             )
         ]
     )
@@ -183,3 +185,23 @@ def test_new_access_failure_returns_previously_recovered_source_to_pending(tmp_p
     assert request.last_failure == "access_denied"
     assert request.recovered_at == NOW
     assert request.next_attempt_at > NOW + timedelta(days=1)
+
+
+def test_source_access_error_is_not_an_editorial_rejection(tmp_path):
+    from types import SimpleNamespace
+
+    from src.writer.agent.schemas import AgentDecisionStatus
+
+    queue = EvidenceRecoveryQueue(tmp_path / "requests.json")
+    queue.observe(make_result(), now=NOW)
+    queue.observe(make_result(status=EnrichmentStatus.ENRICHED), now=NOW)
+    queue.acknowledge(
+        [
+            SimpleNamespace(
+                normalized_url="https://example.com/0",
+                status=AgentDecisionStatus.SKIPPED,
+                error_message="Source returned HTTP 403",
+            )
+        ]
+    )
+    assert queue.requests["https://example.com/0"].status == "ready"
