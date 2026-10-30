@@ -801,5 +801,275 @@
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0
+  },
+  "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8": {
+    "candidate": {
+      "candidate_id": "hacker-news:541ef083bcb7fa92",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
+        "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+        "published_at": "2026-10-29T21:38:59Z",
+        "collected_at": "2026-10-30T01:31:37.000121Z",
+        "summary": "<p>Article URL: <a href=\"https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8\">https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50296470\">https://news.ycombinator.com/item?id=50296470</a></p>\n<p>Points: 669</p>\n<p># Comments: 411</p>",
+        "authors": [
+          "Tiberium"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 7,
+          "hn_points": 669,
+          "hn_comments": 411,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50296470"
+        }
+      },
+      "normalized_url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+      "url_hash": "541ef083bcb7fa9234f025c4fd5fa37d381fe18b6aa87a0499dd75fb5e553b59",
+      "title_fingerprint": "binance hacker 1029 5 6b stolen from binance",
+      "feed_summary": "<p>Article URL: <a href=\"https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8\">https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50296470\">https://news.ycombinator.com/item?id=50296470</a></p>\n<p>Points: 669</p>\n<p># Comments: 411</p>",
+      "suggested_doc_key": "2026-10-binance-hacker-1029-5-6b-stolen-from-binance-541ef083",
+      "suggested_article_path": "docs/services/hacker-news/2026-10-binance-hacker-1029-5-6b-stolen-from-binance-541ef083.md",
+      "candidate_score": 63.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 3.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 669점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 411개를 토론 신호로 반영했습니다.",
+        "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-31T01:31:44.275850Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html": {
+    "candidate": {
+      "candidate_id": "hacker-news:359d8adedf56d9a8",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Patrick Stewart has died",
+        "url": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
+        "published_at": "2026-10-29T19:41:39Z",
+        "collected_at": "2026-10-30T01:31:37.000121Z",
+        "summary": "<p><a href=\"https://archive.ph/y4Egm\" rel=\"nofollow\">https://archive.ph/y4Egm</a><p><a href=\"https://en.wikipedia.org/wiki/Patrick_Stewart\" rel=\"nofollow\">https://en.wikipedia.org/wiki/Patrick_Stewart</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50294702\">https://news.ycombinator.com/item?id=50294702</a></p>\n<p>Points: 2352</p>\n<p># Comments: 491</p>",
+        "authors": [
+          "j4mie"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 11,
+          "hn_points": 2352,
+          "hn_comments": 491,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50294702"
+        }
+      },
+      "normalized_url": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
+      "url_hash": "359d8adedf56d9a882b5a64e94d70418b5f6fbfe6303124c1a894b851e18e10d",
+      "title_fingerprint": "patrick stewart has died",
+      "feed_summary": "<p><a href=\"https://archive.ph/y4Egm\" rel=\"nofollow\">https://archive.ph/y4Egm</a><p><a href=\"https://en.wikipedia.org/wiki/Patrick_Stewart\" rel=\"nofollow\">https://en.wikipedia.org/wiki/Patrick_Stewart</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50294702\">https://news.ycombinator.com/item?id=50294702</a></p>\n<p>Points: 2352</p>\n<p># Comments: 491</p>",
+      "suggested_doc_key": "2026-10-patrick-stewart-has-died-359d8ade",
+      "suggested_article_path": "docs/services/hacker-news/2026-10-patrick-stewart-has-died-359d8ade.md",
+      "candidate_score": 60.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 2352점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 491개를 토론 신호로 반영했습니다.",
+        "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-31T01:31:44.275850Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/how-we-detect-frontier-model-misalignment": {
+    "candidate": {
+      "candidate_id": "openai-blog:0f01adb2acab0a67",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "How we detect frontier model misalignment",
+        "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+        "published_at": "2026-10-29T09:00:00Z",
+        "collected_at": "2026-10-30T01:31:38.249355Z",
+        "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
+        "authors": [],
+        "tags": [
+          "Security"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "url_hash": "0f01adb2acab0a67ba71c0b077a856b8d5e6ddb0aecdbfc3051cca05fba1e4d6",
+      "title_fingerprint": "how we detect frontier model misalignment",
+      "feed_summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
+      "suggested_doc_key": "2026-10-how-we-detect-frontier-model-misalignment-0f01adb2",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-how-we-detect-frontier-model-misalignment-0f01adb2.md",
+      "candidate_score": 48.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-31T01:31:44.275850Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/updated-model-spec": {
+    "candidate": {
+      "candidate_id": "openai-blog:9349f418e7bc7ab4",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "An updated Model Spec for more capable and beneficial AI",
+        "url": "https://openai.com/index/updated-model-spec",
+        "published_at": "2026-10-29T17:00:00Z",
+        "collected_at": "2026-10-30T01:31:38.249355Z",
+        "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
+        "authors": [],
+        "tags": [
+          "Safety"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/updated-model-spec",
+      "url_hash": "9349f418e7bc7ab45091d36c0bfe75e2136622d8b5dbcf107bb7aa7386820b2a",
+      "title_fingerprint": "an updated model spec for more capable and beneficial ai",
+      "feed_summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
+      "suggested_doc_key": "2026-10-an-updated-model-spec-for-more-capable-and-beneficial-ai-9349f418",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-an-updated-model-spec-for-more-capable-and-beneficial-ai-9349f418.md",
+      "candidate_score": 44.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-31T01:31:44.275850Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/ropes-gray-ai-diligence": {
+    "candidate": {
+      "candidate_id": "openai-blog:d948735545c20cf3",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "How Ropes & Gray is developing AI for transactional diligence",
+        "url": "https://openai.com/index/ropes-gray-ai-diligence",
+        "published_at": "2026-10-29T07:00:00Z",
+        "collected_at": "2026-10-30T01:31:38.249355Z",
+        "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/index/ropes-gray-ai-diligence",
+      "url_hash": "d948735545c20cf3072195dbbc120386d43c1319abb3514dc8f0d2f4f07f9bdc",
+      "title_fingerprint": "how ropes gray is developing ai for transactional diligence",
+      "feed_summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
+      "suggested_doc_key": "2026-10-how-ropes-gray-is-developing-ai-for-transactional-diligence-d9487355",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-how-ropes-gray-is-developing-ai-for-transactional-diligence-d9487355.md",
+      "candidate_score": 37.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-10-31T01:31:44.275850Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
   }
 }

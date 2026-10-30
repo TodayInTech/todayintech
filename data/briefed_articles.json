@@ -12140,6 +12140,76 @@
       "status": "published",
       "briefed_at": "2026-10-29T06:52:12.266600Z",
       "candidate_score": 24.0
+    },
+    "78f16d28b1ed69b60235961df541d46173a0860b792593233035233b3a261118": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/health/google-ai-for-healthcare-professionals-certificate",
+      "title_fingerprint": "equipping healthcare professionals with practical ai skills",
+      "service_key": "google-blog",
+      "title": "Equipping healthcare professionals with practical AI skills",
+      "article_doc_path": "docs/services/google-blog/2026-10-equipping-healthcare-professionals-with-practical-ai-skills-78f16d28.md",
+      "status": "published",
+      "briefed_at": "2026-10-30T01:34:28.456638Z",
+      "candidate_score": 36.0
+    },
+    "700f3e4bbfb43c82f28d7ce51a99b7f53710868cc020cfa013e382ec90b47148": {
+      "normalized_url": "https://news.ycombinator.com/item?id=50291116",
+      "title_fingerprint": "launch hn simantic yc f26 firmware simulation for ai agents",
+      "service_key": "hacker-news",
+      "title": "Launch HN: Simantic (YC F26) – Firmware Simulation for AI Agents",
+      "article_doc_path": "docs/services/hacker-news/2026-10-launch-hn-simantic-yc-f26-firmware-simulation-for-ai-agents-700f3e4b.md",
+      "status": "published",
+      "briefed_at": "2026-10-30T01:34:28.456685Z",
+      "candidate_score": 62.8
+    },
+    "359d8adedf56d9a882b5a64e94d70418b5f6fbfe6303124c1a894b851e18e10d": {
+      "normalized_url": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
+      "title_fingerprint": "patrick stewart has died",
+      "service_key": "hacker-news",
+      "title": "Patrick Stewart has died",
+      "article_doc_path": "docs/services/hacker-news/2026-10-patrick-stewart-has-died-359d8ade.md",
+      "status": "published",
+      "briefed_at": "2026-10-30T01:34:28.456700Z",
+      "candidate_score": 60.0
+    },
+    "e0b45e4a3fafe6bfea48a711bdc2a84b4f206eba44d4e3a4c6376bef59aceb05": {
+      "normalized_url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report",
+      "title_fingerprint": "alleged chinese spy had close relationship with nvidia boss jensen huang",
+      "service_key": "hacker-news",
+      "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+      "article_doc_path": "docs/services/hacker-news/2026-10-alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-e0b45e4a.md",
+      "status": "published",
+      "briefed_at": "2026-10-30T01:34:28.456710Z",
+      "candidate_score": 60.0
+    },
+    "0f01adb2acab0a67ba71c0b077a856b8d5e6ddb0aecdbfc3051cca05fba1e4d6": {
+      "normalized_url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "title_fingerprint": "how we detect frontier model misalignment",
+      "service_key": "openai-blog",
+      "title": "How we detect frontier model misalignment",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-we-detect-frontier-model-misalignment-0f01adb2.md",
+      "status": "published",
+      "briefed_at": "2026-10-30T01:34:28.456719Z",
+      "candidate_score": 48.0
+    },
+    "9349f418e7bc7ab45091d36c0bfe75e2136622d8b5dbcf107bb7aa7386820b2a": {
+      "normalized_url": "https://openai.com/index/updated-model-spec",
+      "title_fingerprint": "an updated model spec for more capable and beneficial ai",
+      "service_key": "openai-blog",
+      "title": "An updated Model Spec for more capable and beneficial AI",
+      "article_doc_path": "docs/services/openai-blog/2026-10-an-updated-model-spec-for-more-capable-and-beneficial-ai-9349f418.md",
+      "status": "published",
+      "briefed_at": "2026-10-30T01:34:28.456728Z",
+      "candidate_score": 44.0
+    },
+    "d948735545c20cf3072195dbbc120386d43c1319abb3514dc8f0d2f4f07f9bdc": {
+      "normalized_url": "https://openai.com/index/ropes-gray-ai-diligence",
+      "title_fingerprint": "how ropes gray is developing ai for transactional diligence",
+      "service_key": "openai-blog",
+      "title": "How Ropes & Gray is developing AI for transactional diligence",
+      "article_doc_path": "docs/services/openai-blog/2026-10-how-ropes-gray-is-developing-ai-for-transactional-diligence-d9487355.md",
+      "status": "published",
+      "briefed_at": "2026-10-30T01:34:28.456736Z",
+      "candidate_score": 37.0
     }
   }
 }
