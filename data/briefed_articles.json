@@ -12210,6 +12210,106 @@
       "status": "published",
       "briefed_at": "2026-10-30T01:34:28.456736Z",
       "candidate_score": 37.0
+    },
+    "c468748a949f72d4dc5f825780dd40d22f646a3aab32fae43d6165fce6711cde": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/google-security-checkup",
+      "title_fingerprint": "see who has access to your gmail inbox in 2 minutes",
+      "service_key": "google-blog",
+      "title": "See who has access to your Gmail inbox in 2 minutes.",
+      "article_doc_path": "docs/services/google-blog/2026-10-see-who-has-access-to-your-gmail-inbox-in-2-minutes-c468748a.md",
+      "status": "published",
+      "briefed_at": "2026-10-31T01:25:58.462284Z",
+      "candidate_score": 45.0
+    },
+    "cbcd682a693800b6056a7441d36e624dcb6fdbb69206a9b39fcd9ff6ce00a21a": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response",
+      "title_fingerprint": "we ve received our first response from the project suncatcher prototype satellite",
+      "service_key": "google-blog",
+      "title": "We’ve received our first response from the Project Suncatcher prototype satellite.",
+      "article_doc_path": "docs/services/google-blog/2026-10-we-ve-received-our-first-response-from-the-project-suncatcher-prototype-cbcd682a.md",
+      "status": "published",
+      "briefed_at": "2026-10-31T01:25:58.462326Z",
+      "candidate_score": 36.0
+    },
+    "4fafb24bf0bf0a34db9ce155a4a3b30e070062198d6954971cb4922cc2cf8de6": {
+      "normalized_url": "https://status.linode.com/incidents/nt58zhx3pmgm",
+      "title_fingerprint": "linode security incident",
+      "service_key": "hacker-news",
+      "title": "Linode Security Incident",
+      "article_doc_path": "docs/services/hacker-news/2026-10-linode-security-incident-4fafb24b.md",
+      "status": "published",
+      "briefed_at": "2026-10-31T01:25:58.462340Z",
+      "candidate_score": 66.6
+    },
+    "3730fecf762f6322602d99034dd90b92724b0d2288fd38d6a5ae13bb46c10b8c": {
+      "normalized_url": "https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation",
+      "title_fingerprint": "through captain jean luc picard patrick stewart taught us the measure of a man",
+      "service_key": "hacker-news",
+      "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
+      "article_doc_path": "docs/services/hacker-news/2026-10-through-captain-jean-luc-picard-patrick-stewart-taught-us-the-measure-of-3730fecf.md",
+      "status": "published",
+      "briefed_at": "2026-10-31T01:25:58.462352Z",
+      "candidate_score": 64.8
+    },
+    "0d3b5aac153790f53564e16a7c8f96c8248c5778da507c03e30f5bc35e32a965": {
+      "normalized_url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+      "title_fingerprint": "azure s weakest link five full cross tenant compromises",
+      "service_key": "hacker-news",
+      "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
+      "article_doc_path": "docs/services/hacker-news/2026-10-azure-s-weakest-link-five-full-cross-tenant-compromises-0d3b5aac.md",
+      "status": "published",
+      "briefed_at": "2026-10-31T01:25:58.462364Z",
+      "candidate_score": 60.2
+    },
+    "55737272f83db8f20c925a42cebb24bf05305780f9db527180de3677b5e23b08": {
+      "normalized_url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "title_fingerprint": "ai isn t replacing sres it s deskilling them",
+      "service_key": "hacker-news",
+      "title": "AI isn't replacing SREs, it's deskilling them",
+      "article_doc_path": "docs/services/hacker-news/2026-10-ai-isn-t-replacing-sres-it-s-deskilling-them-55737272.md",
+      "status": "published",
+      "briefed_at": "2026-10-31T01:25:58.462372Z",
+      "candidate_score": 60.0
+    },
+    "84abd1857de5dfd951d90dcfdd8cecc910571c46b00c6ecbe7661909d42cb5b5": {
+      "normalized_url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "title_fingerprint": "making it easier for websites to express ai training preferences",
+      "service_key": "openai-blog",
+      "title": "Making it easier for websites to express AI training preferences",
+      "article_doc_path": "docs/services/openai-blog/2026-10-making-it-easier-for-websites-to-express-ai-training-preferences-84abd185.md",
+      "status": "published",
+      "briefed_at": "2026-10-31T01:25:58.462386Z",
+      "candidate_score": 39.0
+    },
+    "574dbaf7fc8731e405753fdd629edf08113dcd8a86398ab5c6140b68360db244": {
+      "normalized_url": "https://openai.com/index/fair-use-benefits-everyone",
+      "title_fingerprint": "fair use benefits everyone",
+      "service_key": "openai-blog",
+      "title": "Fair use benefits everyone",
+      "article_doc_path": "docs/services/openai-blog/2026-10-fair-use-benefits-everyone-574dbaf7.md",
+      "status": "published",
+      "briefed_at": "2026-10-31T01:25:58.462393Z",
+      "candidate_score": 36.0
+    },
+    "a86d24c59c826150d16deb117d5d2c5c4ade94e1abd42be5bfff46adde0bd560": {
+      "normalized_url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "title_fingerprint": "community safety report and new protections for teens",
+      "service_key": "openai-blog",
+      "title": "Community safety report and new protections for teens",
+      "article_doc_path": "docs/services/openai-blog/2026-10-community-safety-report-and-new-protections-for-teens-a86d24c5.md",
+      "status": "published",
+      "briefed_at": "2026-10-31T01:25:58.462401Z",
+      "candidate_score": 34.0
+    },
+    "85f94c0fe8f02a81789bf1080d36944ec8ac0a0eece0a3547fb83f15ce90723f": {
+      "normalized_url": "https://openai.com/index/credit-saison",
+      "title_fingerprint": "credit saison achieves 954 roi in a chatgpt enterprise pilot",
+      "service_key": "openai-blog",
+      "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+      "article_doc_path": "docs/services/openai-blog/2026-10-credit-saison-achieves-954-roi-in-a-chatgpt-enterprise-pilot-85f94c0f.md",
+      "status": "published",
+      "briefed_at": "2026-10-31T01:25:58.462409Z",
+      "candidate_score": 31.0
     }
   }
 }
