@@ -375,8 +375,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-30T06:40:05.654302Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-03T00:37:47.334132Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -533,8 +533,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-30T06:47:04.140489Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-03T00:37:47.334132Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -584,8 +584,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-30T06:47:04.140489Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-03T00:37:47.334132Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -693,8 +693,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-30T06:49:05.349976Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-03T00:37:47.334132Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -744,8 +744,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-30T06:49:05.349976Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-03T00:37:47.334132Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1328,6 +1328,58 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-01T01:22:43.173177Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/chatgpt-ads-expands-26-new-countries": {
+    "candidate": {
+      "candidate_id": "openai-blog:b1215e1aefc04c61",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+        "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+        "published_at": "2026-10-21T13:00:00Z",
+        "collected_at": "2026-11-01T00:37:42.922632Z",
+        "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+        "authors": [],
+        "tags": [
+          "Product"
+        ],
+        "metadata": {
+          "rss_rank": 32
+        }
+      },
+      "normalized_url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "url_hash": "b1215e1aefc04c61e203617a80fd84e7760e29072f8e8c5c2b0a50c22fe019fd",
+      "title_fingerprint": "chatgpt ads expands to 26 new countries as over 100 000 advertisers have used the platform",
+      "feed_summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+      "suggested_doc_key": "2026-10-chatgpt-ads-expands-to-26-new-countries-as-over-100-000-advertisers-have-b1215e1a",
+      "suggested_article_path": "docs/services/openai-blog/2026-10-chatgpt-ads-expands-to-26-new-countries-as-over-100-000-advertisers-have-b1215e1a.md",
+      "candidate_score": 20.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 10,
+        "freshness_score": 10.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 10일이 지난 글로 최신성 10점을 반영했습니다.",
+        "RSS 순위 32위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-02T00:37:47.333259Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,

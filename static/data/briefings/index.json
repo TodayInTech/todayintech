@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-10-31",
+  "generated_for": "2026-11-01",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -873,11 +873,11 @@
       "href": "./services/hacker-news/2026-10-linode-security-incident-4fafb24b.md",
       "status": "published",
       "score": 66.6,
-      "briefed_at": null,
+      "briefed_at": "2026-10-31",
       "published_at": "2026-10-30",
       "excerpt": "Linode 상태 페이지는 2026-10-30 21:18 UTC 공지에서 Akamai가 원격 코드 실행 취약점 **CVE-2026-98432**를 인지했으며 Linode가 현재 조사 및 완화 작업을 진행 중이라고 밝혔다. 영향이 의심되면 지원 티켓 제출을 권장한다.",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "Type Server Protocol",
@@ -2323,6 +2323,19 @@
       "new": false
     },
     {
+      "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-through-captain-jean-luc-picard-patrick-stewart-taught-us-the-measure-of-3730fecf.md",
+      "status": "published",
+      "score": 64.8,
+      "briefed_at": "2026-10-31",
+      "published_at": "2026-10-30",
+      "excerpt": "패트릭 스튜어트가 가족에 따르면 알츠하이머와 루이소체 치매로 사망했다. 그는 스타트렉: 더 넥스트 제너레이션의 장 피카드 역으로 세대에 영향을 준 연기로 기억된다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2373,19 +2386,6 @@
       "excerpt": "작성자는 13년째 NameCheap 고객으로, 자신 명의(이름·주소·전화)로 등록해 관리하던 동아리 .com 도메인에서 발생한 계정 탈취 사례를 설명한다. 리더 교체 과정에서 새 리더가 도메인의 호스팅사가 NameCheap임을 확인하고 비밀번호 초기화를 시도했고, 작성자는 비밀번호 재설정 이메일을 받고 즉시 “내가 요청…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-through-captain-jean-luc-picard-patrick-stewart-taught-us-the-measure-of-3730fecf.md",
-      "status": "published",
-      "score": 64.8,
-      "briefed_at": null,
-      "published_at": "2026-10-30",
-      "excerpt": "패트릭 스튜어트가 가족에 따르면 알츠하이머와 루이소체 치매로 사망했다. 그는 스타트렉: 더 넥스트 제너레이션의 장 피카드 역으로 세대에 영향을 준 연기로 기억된다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Apple Watch Series 12",
@@ -3727,6 +3727,19 @@
       "new": false
     },
     {
+      "title": "HackerTube: YouTube built from videos recommended by HN",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-hackertube-youtube-built-from-videos-recommended-by-hn-1a9ec137.md",
+      "status": "published",
+      "score": 61.0,
+      "briefed_at": null,
+      "published_at": "2026-10-31",
+      "excerpt": "Karpathy는 Opus 5.5와 Sonnet 기반 워크플로로 Hacker News 댓글에서 추천된 6,454개(2007–2026, 150주제) 유튜브 영상을 모아 hackertube.org로 배포했으며, 로컬 세션 기반 추천·50% 썸네일·데이터 내보내기 등 기능을 제공한다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Go 1.27",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3844,6 +3857,19 @@
       "new": false
     },
     {
+      "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-azure-s-weakest-link-five-full-cross-tenant-compromises-0d3b5aac.md",
+      "status": "published",
+      "score": 60.2,
+      "briefed_at": "2026-10-31",
+      "published_at": "2026-10-30",
+      "excerpt": "블로거 swq115는 Azure API Connections의 구조적 결함을 이용해 DynamicInvoke/DynamicList와 host.api.RuntimeUrl 등으로 테넌트 간 완전 침해(키볼트·Azure SQL 포함)가 가능하며, 보고한 다섯 건의 취약점으로 총 20만 달러 보상을 받았다고 밝혔다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Xiaomi Mimo 2.6 live post-training dashboard",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3870,19 +3896,6 @@
       "new": false
     },
     {
-      "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-azure-s-weakest-link-five-full-cross-tenant-compromises-0d3b5aac.md",
-      "status": "published",
-      "score": 60.2,
-      "briefed_at": null,
-      "published_at": "2026-10-30",
-      "excerpt": "블로거 swq115는 Azure API Connections의 구조적 결함을 이용해 DynamicInvoke/DynamicList와 host.api.RuntimeUrl 등으로 테넌트 간 완전 침해(키볼트·Azure SQL 포함)가 가능하며, 보고한 다섯 건의 취약점으로 총 20만 달러 보상을 받았다고 밝혔다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3892,6 +3905,19 @@
       "briefed_at": "2026-10-13",
       "published_at": "2026-10-12",
       "excerpt": "Agent37은 AI 에이전트를 위한 '저비용 샌드박스'를 표방하며 호스트당 평균 비용을 업계의 10% 이하로 낮췄다고 소개한다. 창업자 비슈누는 고객당 평균 지출을 월 $0.37로 제시하고, 무료 플랜의 인프라 비용은 사용자당 월 $0.05~$0.10 수준이라고 밝힌다. 초기에는 OpenClaw 래퍼로 시작했으나 다양…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "AI isn't replacing SREs, it's deskilling them",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-ai-isn-t-replacing-sres-it-s-deskilling-them-55737272.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-10-31",
+      "published_at": "2026-10-30",
+      "excerpt": "SigNoz 뉴스레터는 AI가 반복적 사고·트리아지 작업을 자동화하면서 SRE의 실전 대응 능력이 약화되는 'deskilling'과 신입이 숙련을 얻지 못하는 'never-skilling' 위험을 경고한다. 글은 Bainbridge의 자동화 역설을 근거로 95% 자동화 시 남은 5%의 대응 역량 저하를 우려합니다.",
       "featured": false,
       "new": false
     },
@@ -6665,15 +6691,41 @@
       "new": false
     },
     {
-      "title": "AI isn't replacing SREs, it's deskilling them",
+      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-ai-isn-t-replacing-sres-it-s-deskilling-them-55737272.md",
+      "href": "./services/hacker-news/2026-10-tcp-use-after-free-cve-2026-98432-cvss-9-8-5545fe35.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-10-30",
-      "excerpt": "SigNoz 뉴스레터는 AI가 반복적 사고·트리아지 작업을 자동화하면서 SRE의 실전 대응 능력이 약화되는 'deskilling'과 신입이 숙련을 얻지 못하는 'never-skilling' 위험을 경고한다. 글은 Bainbridge의 자동화 역설을 근거로 95% 자동화 시 남은 5%의 대응 역량 저하를 우려합니다.",
+      "published_at": "2026-10-31",
+      "excerpt": "CVE-2026-98432는 IPv4 TCP 핸드셰이크 처리 중 발생하는 use-after-free로 커널 권한 상승 가능성이 있으며 커널 CNA가 CVSS 3.1 9.8로 분류했습니다. 업스트림은 10월 11·15·18일에 여러 버전을 고쳤지만 배포판별로 패치 적용 상황이 달라 즉시 커널 버전 확인과 재부팅이 권고됩니…",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Do the math: How we took over ChatGPT accounts",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-do-the-math-how-we-took-over-chatgpt-accounts-1c640f88.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-10-31",
+      "excerpt": "Parameter Labs 연구진은 ChatGPT의 공개 공유 링크와 Preview, MathLive의 postMessage 처리, iframe srcdoc·YouTube JSONP 조합으로 공격자가 공유 링크만으로 피해자 세션에서 chatgpt.com 신분의 자바스크립트를 실행해 사적 대화를 조회·유출할 수 있음을 시…",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-molly-signal-fork-has-not-been-updated-since-3-months-and-is-vulnerable-f70b44b5.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-10-31",
+      "excerpt": "Molly(신호 포크)는 마지막 릴리스가 **2026-07-31 v8.19.2-4**로 3개월간 업데이트가 없으며, 10월에 공개된 익스플로잇을 포함해 메인라인 Signal에서 패치된 취약점에 여전히 노출되어 있어 메인라인 Signal 사용 및 Molly 삭제를 권고합니다.",
       "featured": false,
       "new": true
     },
@@ -8108,6 +8160,19 @@
       "new": false
     },
     {
+      "title": "See who has access to your Gmail inbox in 2 minutes.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-10-see-who-has-access-to-your-gmail-inbox-in-2-minutes-c468748a.md",
+      "status": "published",
+      "score": 45.0,
+      "briefed_at": "2026-10-31",
+      "published_at": "2026-10-30",
+      "excerpt": "피드 기준으로는 Google이 2026-10-30 게시한 블로그에서 'Google Security Checkup'으로 **2분 안에** Gmail에 누가 접근 가능한지 확인하고 이메일을 보호할 수 있으며, **세 가지 간단한 단계**로 안내한다고 밝혔다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -8171,19 +8236,6 @@
       "excerpt": "미 캘리포니아 반덴버그 우주군 기지에서 세 대의 추가 FireSat 위성이 성공적으로 발사되며 FireSat 프로그램이 확장됐다. 이 프로그램은 비영리 단체 Earth Fire Alliance(EFA)가 주도하는 글로벌 이니셔티브로, 소방 기관이 산불이 번지기 전에 감지할 수 있도록 연속적인 관측을 제공하는 목적형 성층…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "See who has access to your Gmail inbox in 2 minutes.",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-10-see-who-has-access-to-your-gmail-inbox-in-2-minutes-c468748a.md",
-      "status": "published",
-      "score": 45.0,
-      "briefed_at": null,
-      "published_at": "2026-10-30",
-      "excerpt": "피드 기준으로는 Google이 2026-10-30 게시한 블로그에서 'Google Security Checkup'으로 **2분 안에** Gmail에 누가 접근 가능한지 확인하고 이메일을 보호할 수 있으며, **세 가지 간단한 단계**로 안내한다고 밝혔다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "An updated Model Spec for more capable and beneficial AI",
@@ -9993,6 +10045,19 @@
       "new": false
     },
     {
+      "title": "Making it easier for websites to express AI training preferences",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-making-it-easier-for-websites-to-express-ai-training-preferences-84abd185.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": "2026-10-31",
+      "published_at": "2026-10-30",
+      "excerpt": "피드 기준으로는 OpenAI가 공유된 robots.txt 신호를 준수해 웹사이트 운영자가 AI 학습에 대한 선호를 참여 제공업체에 전달할 수 있도록 지원한다고 발표(2026-10-30).",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -10719,19 +10784,6 @@
       "excerpt": "피드 기준으로는 GitHub가 대규모 비밀 스캐닝의 오탐을 줄이기 위해 검증 단계에 컨텍스트 인식 LLM 추론을 도입했다고 보고했습니다. 이 변화는 경보의 잡음을 줄여 신뢰성과 실행 가능성을 높이는 것을 목표로 합니다. 제공된 정보만 보면 구체적 구현·평가 수치 등 상세는 없으므로, 실무 적용이나 기술적 검토는 원문 확…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Making it easier for websites to express AI training preferences",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-10-making-it-easier-for-websites-to-express-ai-training-preferences-84abd185.md",
-      "status": "published",
-      "score": 39.0,
-      "briefed_at": null,
-      "published_at": "2026-10-30",
-      "excerpt": "피드 기준으로는 OpenAI가 공유된 robots.txt 신호를 준수해 웹사이트 운영자가 AI 학습에 대한 선호를 참여 제공업체에 전달할 수 있도록 지원한다고 발표(2026-10-30).",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Broad access through consistent standards",
@@ -11813,6 +11865,32 @@
       "new": false
     },
     {
+      "title": "Fair use benefits everyone",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-fair-use-benefits-everyone-574dbaf7.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": "2026-10-31",
+      "published_at": "2026-10-30",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-10-30자 블로그 글에서 창작자·학계·접근성 단체·법률 전문가의 법정 서면 발췌를 공유하며, 공정 이용이 AI 훈련과 혁신을 뒷받침한다고 제시했다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "We’ve received our first response from the Project Suncatcher prototype satellite.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-10-we-ve-received-our-first-response-from-the-project-suncatcher-prototype-cbcd682a.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": "2026-10-31",
+      "published_at": "2026-10-30",
+      "excerpt": "Google의 Project Suncatcher 프로토타입 위성이 탑재한 데이터센터급 TPU가 Gemma 4 모델로 생성한 최초의 AI 응답(하이쿠)을 10월 1일 발사 후 지상으로 성공적으로 전송했으며, 열·방사선 테스트와 2027년 쌍위성 연결이 다음 단계로 예정되어 있습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Equipping healthcare professionals with practical AI skills",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -12619,32 +12697,6 @@
       "new": false
     },
     {
-      "title": "We’ve received our first response from the Project Suncatcher prototype satellite.",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-10-we-ve-received-our-first-response-from-the-project-suncatcher-prototype-cbcd682a.md",
-      "status": "published",
-      "score": 36.0,
-      "briefed_at": null,
-      "published_at": "2026-10-30",
-      "excerpt": "Google의 Project Suncatcher 프로토타입 위성이 탑재한 데이터센터급 TPU가 Gemma 4 모델로 생성한 최초의 AI 응답(하이쿠)을 10월 1일 발사 후 지상으로 성공적으로 전송했으며, 열·방사선 테스트와 2027년 쌍위성 연결이 다음 단계로 예정되어 있습니다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Fair use benefits everyone",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-10-fair-use-benefits-everyone-574dbaf7.md",
-      "status": "published",
-      "score": 36.0,
-      "briefed_at": null,
-      "published_at": "2026-10-30",
-      "excerpt": "피드 기준으로는 OpenAI가 2026-10-30자 블로그 글에서 창작자·학계·접근성 단체·법률 전문가의 법정 서면 발췌를 공유하며, 공정 이용이 AI 훈련과 혁신을 뒷받침한다고 제시했다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "XREAL AURA: Wired XR glasses to watch, work, and play",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -13347,6 +13399,19 @@
       "new": false
     },
     {
+      "title": "Community safety report and new protections for teens",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-community-safety-report-and-new-protections-for-teens-a86d24c5.md",
+      "status": "published",
+      "score": 34.0,
+      "briefed_at": "2026-10-31",
+      "published_at": "2026-10-30",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-10-30 발표에서 ChatGPT의 폭력 예방을 강화하고 10대 보호를 위한 확장된 안전장치와 조기 개입을 도입하며 공개 안전보고를 약속했다고 요약됩니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Testing and mitigating elections-related risks",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -13592,19 +13657,6 @@
       "excerpt": "앤트로픽이 'Claude Corps'라는 전국 펠로우십 프로그램을 발표했습니다. 피드 기준으로는 초기 경력자들을 대상으로 AI 혜택을 미국 전역의 커뮤니티로 확장하는 데 관심 있는 사람들을 지원하는 프로그램이라고 소개합니다. 세부 사항(선발 인원, 지원 자격, 기간, 자금 지원 등)은 피드 기준으로는 제공되지 않았습니다…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Community safety report and new protections for teens",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-10-community-safety-report-and-new-protections-for-teens-a86d24c5.md",
-      "status": "published",
-      "score": 34.0,
-      "briefed_at": null,
-      "published_at": "2026-10-30",
-      "excerpt": "피드 기준으로는 OpenAI가 2026-10-30 발표에서 ChatGPT의 폭력 예방을 강화하고 10대 보호를 위한 확장된 안전장치와 조기 개입을 도입하며 공개 안전보고를 약속했다고 요약됩니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Sullivan & Cromwell brings legal expertise into agreement review",
@@ -13867,6 +13919,19 @@
       "new": false
     },
     {
+      "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-credit-saison-achieves-954-roi-in-a-chatgpt-enterprise-pilot-85f94c0f.md",
+      "status": "published",
+      "score": 31.0,
+      "briefed_at": "2026-10-31",
+      "published_at": "2026-10-29",
+      "excerpt": "피드 기준으로는 Credit Saison이 ChatGPT Enterprise 파일럿에서 **954% ROI**를 달성했고, 리더와 직원의 참여로 회사 전체 도입으로 확산됐다고 OpenAI 블로그(2026-10-29)가 전했다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -13943,19 +14008,6 @@
       "excerpt": "피드 기준으로는 이 글은 GitHub Copilot CLI에 언어 서버 프로토콜(LSP) 서버를 설치·구성해 기존의 무차별 grep/디컴파일 방식 대신 실제 코드 인텔리전스를 제공하는 방법을 설명한다고 합니다. 개발자가 CLI 환경에서 더 정확한 코드 탐색과 추천을 받을 수 있도록 설정하는 내용을 다룹니다. 제공된 정보…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-10-credit-saison-achieves-954-roi-in-a-chatgpt-enterprise-pilot-85f94c0f.md",
-      "status": "published",
-      "score": 31.0,
-      "briefed_at": null,
-      "published_at": "2026-10-29",
-      "excerpt": "피드 기준으로는 Credit Saison이 ChatGPT Enterprise 파일럿에서 **954% ROI**를 달성했고, 리더와 직원의 참여로 회사 전체 도입으로 확산됐다고 OpenAI 블로그(2026-10-29)가 전했다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "AI for Science expands to foundations and institutions",
@@ -15594,6 +15646,19 @@
       "excerpt": "피드 기준으로는 OpenAI의 글 'Designing Organisations That Can Keep Up With AI'가 조직적 지연(organizational latency)을 AI의 잠재적 이익을 완전히 실현하는 데 가장 큰 장벽으로 지목한다고 요약됩니다. 제공된 설명은 조직 설계 관점에서 AI 도입의 속도 문…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-chatgpt-ads-expands-to-26-new-countries-as-over-100-000-advertisers-have-b1215e1a.md",
+      "status": "published",
+      "score": 20.0,
+      "briefed_at": null,
+      "published_at": "2026-10-21",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-10-21자 블로그에서 ChatGPT Ads를 26개국으로 확장했고, 10만 명이 넘는 광고주가 플랫폼을 사용했다고 밝혔다. 이 확장으로 광고주들이 ChatGPT 내 사용자의 구매 탐색·비교·결정 과정에 도달할 수 있게 됐다고 피드가 전합니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "OpenAI frontier models and Codex are now available on AWS",

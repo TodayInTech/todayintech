@@ -12310,6 +12310,56 @@
       "status": "published",
       "briefed_at": "2026-10-31T01:25:58.462409Z",
       "candidate_score": 31.0
+    },
+    "1a9ec1373c3bf14508b7a7982f35e7229921857317edbc754e7a2568d787c033": {
+      "normalized_url": "https://karpathy.bearblog.dev/hacker-tube",
+      "title_fingerprint": "hackertube youtube built from videos recommended by hn",
+      "service_key": "hacker-news",
+      "title": "HackerTube: YouTube built from videos recommended by HN",
+      "article_doc_path": "docs/services/hacker-news/2026-10-hackertube-youtube-built-from-videos-recommended-by-hn-1a9ec137.md",
+      "status": "published",
+      "briefed_at": "2026-11-01T00:40:58.760850Z",
+      "candidate_score": 61.0
+    },
+    "5545fe355a55d4d0a42c2aa823c8951ec75bf4cc09ab286b8396013bafe4f307": {
+      "normalized_url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+      "title_fingerprint": "tcp use after free cve 2026 98432 cvss 9 8",
+      "service_key": "hacker-news",
+      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+      "article_doc_path": "docs/services/hacker-news/2026-10-tcp-use-after-free-cve-2026-98432-cvss-9-8-5545fe35.md",
+      "status": "published",
+      "briefed_at": "2026-11-01T00:40:58.760884Z",
+      "candidate_score": 60.0
+    },
+    "1c640f88e053cb517a45732d6f16f620b91ae8dcc8c28cbe79a3d64ecb89b0a9": {
+      "normalized_url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "title_fingerprint": "do the math how we took over chatgpt accounts",
+      "service_key": "hacker-news",
+      "title": "Do the math: How we took over ChatGPT accounts",
+      "article_doc_path": "docs/services/hacker-news/2026-10-do-the-math-how-we-took-over-chatgpt-accounts-1c640f88.md",
+      "status": "published",
+      "briefed_at": "2026-11-01T00:40:58.760891Z",
+      "candidate_score": 60.0
+    },
+    "f70b44b5822e23f939b7e874eb2891de7b30fa7e97c298376d4a5a73e2f54de3": {
+      "normalized_url": "https://piefed.world/post/1503394",
+      "title_fingerprint": "molly signal fork has not been updated since 3 months and is vulnerable",
+      "service_key": "hacker-news",
+      "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
+      "article_doc_path": "docs/services/hacker-news/2026-10-molly-signal-fork-has-not-been-updated-since-3-months-and-is-vulnerable-f70b44b5.md",
+      "status": "published",
+      "briefed_at": "2026-11-01T00:40:58.760895Z",
+      "candidate_score": 60.0
+    },
+    "b1215e1aefc04c61e203617a80fd84e7760e29072f8e8c5c2b0a50c22fe019fd": {
+      "normalized_url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "title_fingerprint": "chatgpt ads expands to 26 new countries as over 100 000 advertisers have used the platform",
+      "service_key": "openai-blog",
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "article_doc_path": "docs/services/openai-blog/2026-10-chatgpt-ads-expands-to-26-new-countries-as-over-100-000-advertisers-have-b1215e1a.md",
+      "status": "published",
+      "briefed_at": "2026-11-01T00:40:58.760899Z",
+      "candidate_score": 20.0
     }
   }
 }
