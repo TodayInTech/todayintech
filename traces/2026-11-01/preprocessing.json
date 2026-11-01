@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-11-01T00:37:33.964275+00:00",
+  "generated_for": "2026-11-01",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "46546aeb8c9a6d61e7f103ee1738164c072fd0bb",
+  "github_run_id": "41257474488",
+  "service_count": 5,
+  "duration_ms": 7,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 26,
+      "excluded_count": 94,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 94
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 26,
+      "output_count": 26,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 26,
+      "output_count": 25,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 25,
+      "output_count": 15,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:1a9ec1373c3bf145",
+          "title": "HackerTube: YouTube built from videos recommended by HN",
+          "normalized_url": "https://karpathy.bearblog.dev/hacker-tube",
+          "url_hash": "1a9ec1373c3bf14508b7a7982f35e7229921857317edbc754e7a2568d787c033",
+          "suggested_doc_key": "2026-10-hackertube-youtube-built-from-videos-recommended-by-hn-1a9ec137",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-hackertube-youtube-built-from-videos-recommended-by-hn-1a9ec137.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 592점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 214개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5545fe355a55d4d0",
+          "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+          "normalized_url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+          "url_hash": "5545fe355a55d4d0a42c2aa823c8951ec75bf4cc09ab286b8396013bafe4f307",
+          "suggested_doc_key": "2026-10-tcp-use-after-free-cve-2026-98432-cvss-9-8-5545fe35",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-tcp-use-after-free-cve-2026-98432-cvss-9-8-5545fe35.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 291점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 141개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:1c640f88e053cb51",
+          "title": "Do the math: How we took over ChatGPT accounts",
+          "normalized_url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+          "url_hash": "1c640f88e053cb517a45732d6f16f620b91ae8dcc8c28cbe79a3d64ecb89b0a9",
+          "suggested_doc_key": "2026-10-do-the-math-how-we-took-over-chatgpt-accounts-1c640f88",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-do-the-math-how-we-took-over-chatgpt-accounts-1c640f88.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 299점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 148개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f70b44b5822e23f9",
+          "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
+          "normalized_url": "https://piefed.world/post/1503394",
+          "url_hash": "f70b44b5822e23f939b7e874eb2891de7b30fa7e97c298376d4a5a73e2f54de3",
+          "suggested_doc_key": "2026-10-molly-signal-fork-has-not-been-updated-since-3-months-and-is-vulnerable-f70b44b5",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-molly-signal-fork-has-not-been-updated-since-3-months-and-is-vulnerable-f70b44b5.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 296점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 172개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3c488a5d9e8fc9b7",
+          "title": "Anthropic blocks users for anything touching training larger models",
+          "normalized_url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+          "url_hash": "3c488a5d9e8fc9b748dff7aa188e11c59b7333143151dc184d1add66c5e1b5ad",
+          "suggested_doc_key": "2026-10-anthropic-blocks-users-for-anything-touching-training-larger-models-3c488a5d",
+          "suggested_article_path": "docs/services/hacker-news/2026-10-anthropic-blocks-users-for-anything-touching-training-larger-models-3c488a5d.md",
+          "candidate_score": 59.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 163점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 67개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:e2ed7680c50ae3f0",
+          "title": "The future of the firm",
+          "normalized_url": "https://openai.com/index/the-future-of-the-firm",
+          "url_hash": "e2ed7680c50ae3f074e04f962f033e8bab070f352fa8087e45258e537064a005",
+          "suggested_doc_key": "2026-10-the-future-of-the-firm-e2ed7680",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-the-future-of-the-firm-e2ed7680.md",
+          "candidate_score": 28.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:891b7e0bbf66f86d",
+          "title": "Build more responsive apps with the Decisions API",
+          "normalized_url": "https://openai.com/index/decisions-api",
+          "url_hash": "891b7e0bbf66f86d27b770f3dc53e0fbecfc246eeadf29503262f6d9c70adad7",
+          "suggested_doc_key": "2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b.md",
+          "candidate_score": 26.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 9일이 지난 글로 최신성 11점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 25위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:6400feb681472530",
+          "title": "What FDE means at OpenAI",
+          "normalized_url": "https://openai.com/index/forward-deployed-engineering-means",
+          "url_hash": "6400feb681472530a689e8c59132cfe6d13f5863532ecd60e409a4825c59746b",
+          "suggested_doc_key": "2026-10-what-fde-means-at-openai-6400feb6",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-what-fde-means-at-openai-6400feb6.md",
+          "candidate_score": 21.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 9일이 지난 글로 최신성 11점을 반영했습니다.",
+            "RSS 순위 26위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:b1215e1aefc04c61",
+          "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+          "normalized_url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+          "url_hash": "b1215e1aefc04c61e203617a80fd84e7760e29072f8e8c5c2b0a50c22fe019fd",
+          "suggested_doc_key": "2026-10-chatgpt-ads-expands-to-26-new-countries-as-over-100-000-advertisers-have-b1215e1a",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-chatgpt-ads-expands-to-26-new-countries-as-over-100-000-advertisers-have-b1215e1a.md",
+          "candidate_score": 20.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 10일이 지난 글로 최신성 10점을 반영했습니다.",
+            "RSS 순위 32위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:ea92da5c121ecb45",
+          "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+          "normalized_url": "https://openai.com/index/building-chatgpt-ad-stack",
+          "url_hash": "ea92da5c121ecb4527027c2b13ff73af702f93ebcad0444b648bb527336561d3",
+          "suggested_doc_key": "2026-10-how-we-built-chatgpt-s-novel-ad-stack-for-user-trust-and-relevance-ea92da5c",
+          "suggested_article_path": "docs/services/openai-blog/2026-10-how-we-built-chatgpt-s-novel-ad-stack-for-user-trust-and-relevance-ea92da5c.md",
+          "candidate_score": 20.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 10일이 지난 글로 최신성 10점을 반영했습니다.",
+            "RSS 순위 35위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 44,
+        "low_quality": 1
+      }
+    }
+  ]
+}
