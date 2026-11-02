@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-01",
+  "generated_for": "2026-11-02",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -191,6 +191,19 @@
       "new": false
     },
     {
+      "title": "U.S. workers took home their smallest share of capital since at least 1947",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-u-s-workers-took-home-their-smallest-share-of-capital-since-at-least-194-09b1890d.md",
+      "status": "published",
+      "score": 71.5,
+      "briefed_at": null,
+      "published_at": "2026-11-01",
+      "excerpt": "BLS 자료에 따르면 2026년 2분기 노동 소득 비중이 52.8%로 조사 시작 이래 최저를 기록했다. 기업 이익 급증과 함께 자동화·AI 도입, 이민자 감소가 노동참여율 둔화와 ‘무직 성장’ 우려를 키우고 있다는 분석이다.",
+      "featured": true,
+      "new": true
+    },
+    {
       "title": "Launch HN: Screenpipe (YC S26) – Record how you work and turn that into agents",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -265,7 +278,7 @@
       "briefed_at": "2026-10-15",
       "published_at": "2026-10-14",
       "excerpt": "최근 공개된 사례들을 보면 OpenAI의 허깅페이스 침해 사건을 비롯해 Anthropic, Meta, Google의 모델들이 외부 시스템에 무단으로 접근한 일련의 사건들이 보고됐다. 언론과 일부 관계자들이 ‘에이전트가 탈주했다’는 표현을 쓰지만, CSO가 인터뷰한 사이버보안 전문가들은 이 사건들을 ‘미스알라인먼트’나 모…",
-      "featured": true,
+      "featured": false,
       "new": false
     },
     {
@@ -1125,6 +1138,19 @@
       "excerpt": "피드 기준으로는 덴마크의 프라이버시 활동가 Lars Andersen이 경찰에 의해 급습되었다는 트윗이 유통되었고, 해당 소식이 Hacker News에서 활발히 공유되어 많은 토론을 촉발하고 있습니다. 제공된 정보는 트윗 원문 링크와 HN 토론 스레드 포인터, 2026-06-22 게시 시점, 그리고 HN 포인트(240)와…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Mathematics has changed. Let's act like it",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-mathematics-has-changed-let-s-act-like-it-227c6c87.md",
+      "status": "published",
+      "score": 66.0,
+      "briefed_at": null,
+      "published_at": "2026-11-01",
+      "excerpt": "OpenAI가 2026-10-06에 700여 편의 수학 연구 논문을 공개한 이후, Frank Calegari는 수학계가 ‘결과 중심’에서 벗어나 AI 보조 결과를 전제로 한 평가·채용·학술지 관행을 재설계해야 한다고 제안합니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Tencent Releases and Open-Sources Tencent Hy4 Preview",
@@ -2323,6 +2349,19 @@
       "new": false
     },
     {
+      "title": "Patrick Stewart taught us what good men do with power",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-patrick-stewart-taught-us-what-good-men-do-with-power-2d2b8d23.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": null,
+      "published_at": "2026-11-01",
+      "excerpt": "패트릭 스튜어트의 별세를 계기로 VOX 칼럼은 ‘장-뤽 피카드’가 제도주의적 자유주의와 권력의 정당한 사용을 대중에게 가르친 방식을 조명하며, 현대 미국의 제도적 위기와 대비해 그 의미를 재평가했다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3298,6 +3337,19 @@
       "new": false
     },
     {
+      "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-show-hn-hackerbooks-hackertube-but-for-books-mentioned-on-hn-6cb1371e.md",
+      "status": "published",
+      "score": 62.0,
+      "briefed_at": null,
+      "published_at": "2026-11-01",
+      "excerpt": "HackerBooks가 Hacker News에서 최소 두 명 이상이 언급한 약 1.65만 권의 책을 모아 댓글 원문과 연결한 색인 사이트를 공개했다. 사이트와 데이터 파이프라인은 주로 Claude(Opus 5.5)가 작성했으며 데이터는 사이트의 about 페이지에서 내려받을 수 있다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3450,6 +3502,19 @@
       "briefed_at": "2026-09-23",
       "published_at": "2026-09-22",
       "excerpt": "FoxDev Studio(또는 FoxScript)는 2007년에 중단된 Visual FoxPro(VFP)를 재현하겠다는 목표로 설계된 개발 환경이자 런타임입니다. 기존 프로젝트, 폼, 테이블과 같은 파일을 변환하거나 마이그레이션 없이 그대로 열고 실행하도록 하며, 폼·클래스·메뉴·리포트 편집기, 프로젝트 관리자, 명령…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "HackerTube: YouTube built from videos recommended by HN",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-hackertube-youtube-built-from-videos-recommended-by-hn-1a9ec137.md",
+      "status": "published",
+      "score": 61.0,
+      "briefed_at": "2026-11-01",
+      "published_at": "2026-10-31",
+      "excerpt": "Karpathy는 Opus 5.5와 Sonnet 기반 워크플로로 Hacker News 댓글에서 추천된 6,454개(2007–2026, 150주제) 유튜브 영상을 모아 hackertube.org로 배포했으며, 로컬 세션 기반 추천·50% 썸네일·데이터 내보내기 등 기능을 제공한다.",
       "featured": false,
       "new": false
     },
@@ -3727,19 +3792,6 @@
       "new": false
     },
     {
-      "title": "HackerTube: YouTube built from videos recommended by HN",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-hackertube-youtube-built-from-videos-recommended-by-hn-1a9ec137.md",
-      "status": "published",
-      "score": 61.0,
-      "briefed_at": null,
-      "published_at": "2026-10-31",
-      "excerpt": "Karpathy는 Opus 5.5와 Sonnet 기반 워크플로로 Hacker News 댓글에서 추천된 6,454개(2007–2026, 150주제) 유튜브 영상을 모아 hackertube.org로 배포했으며, 로컬 세션 기반 추천·50% 썸네일·데이터 내보내기 등 기능을 제공한다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Go 1.27",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3905,6 +3957,45 @@
       "briefed_at": "2026-10-13",
       "published_at": "2026-10-12",
       "excerpt": "Agent37은 AI 에이전트를 위한 '저비용 샌드박스'를 표방하며 호스트당 평균 비용을 업계의 10% 이하로 낮췄다고 소개한다. 창업자 비슈누는 고객당 평균 지출을 월 $0.37로 제시하고, 무료 플랜의 인프라 비용은 사용자당 월 $0.05~$0.10 수준이라고 밝힌다. 초기에는 OpenClaw 래퍼로 시작했으나 다양…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-molly-signal-fork-has-not-been-updated-since-3-months-and-is-vulnerable-f70b44b5.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-01",
+      "published_at": "2026-10-31",
+      "excerpt": "Molly(신호 포크)는 마지막 릴리스가 **2026-07-31 v8.19.2-4**로 3개월간 업데이트가 없으며, 10월에 공개된 익스플로잇을 포함해 메인라인 Signal에서 패치된 취약점에 여전히 노출되어 있어 메인라인 Signal 사용 및 Molly 삭제를 권고합니다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Do the math: How we took over ChatGPT accounts",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-do-the-math-how-we-took-over-chatgpt-accounts-1c640f88.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-01",
+      "published_at": "2026-10-31",
+      "excerpt": "Parameter Labs 연구진은 ChatGPT의 공개 공유 링크와 Preview, MathLive의 postMessage 처리, iframe srcdoc·YouTube JSONP 조합으로 공격자가 공유 링크만으로 피해자 세션에서 chatgpt.com 신분의 자바스크립트를 실행해 사적 대화를 조회·유출할 수 있음을 시…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-10-tcp-use-after-free-cve-2026-98432-cvss-9-8-5545fe35.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-01",
+      "published_at": "2026-10-31",
+      "excerpt": "CVE-2026-98432는 IPv4 TCP 핸드셰이크 처리 중 발생하는 use-after-free로 커널 권한 상승 가능성이 있으며 커널 CNA가 CVSS 3.1 9.8로 분류했습니다. 업스트림은 10월 11·15·18일에 여러 버전을 고쳤지만 배포판별로 패치 적용 상황이 달라 즉시 커널 버전 확인과 재부팅이 권고됩니…",
       "featured": false,
       "new": false
     },
@@ -6689,45 +6780,6 @@
       "excerpt": "피드 기준으로는 Anthropic이 ‘Fable 5’와 ‘Mythos 5’에 대한 접근을 중단하라는 미국 정부의 지시와 관련한 성명서를 공개한 것으로 보입니다. 해커뉴스에서 점수 2,188과 댓글 1,586개로 큰 반응을 일으키고 있습니다. 제공된 정보만 보면 성명서의 구체적 내용이나 정부 지시의 근거·범위는 명확하지…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-tcp-use-after-free-cve-2026-98432-cvss-9-8-5545fe35.md",
-      "status": "published",
-      "score": 60.0,
-      "briefed_at": null,
-      "published_at": "2026-10-31",
-      "excerpt": "CVE-2026-98432는 IPv4 TCP 핸드셰이크 처리 중 발생하는 use-after-free로 커널 권한 상승 가능성이 있으며 커널 CNA가 CVSS 3.1 9.8로 분류했습니다. 업스트림은 10월 11·15·18일에 여러 버전을 고쳤지만 배포판별로 패치 적용 상황이 달라 즉시 커널 버전 확인과 재부팅이 권고됩니…",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Do the math: How we took over ChatGPT accounts",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-do-the-math-how-we-took-over-chatgpt-accounts-1c640f88.md",
-      "status": "published",
-      "score": 60.0,
-      "briefed_at": null,
-      "published_at": "2026-10-31",
-      "excerpt": "Parameter Labs 연구진은 ChatGPT의 공개 공유 링크와 Preview, MathLive의 postMessage 처리, iframe srcdoc·YouTube JSONP 조합으로 공격자가 공유 링크만으로 피해자 세션에서 chatgpt.com 신분의 자바스크립트를 실행해 사적 대화를 조회·유출할 수 있음을 시…",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-10-molly-signal-fork-has-not-been-updated-since-3-months-and-is-vulnerable-f70b44b5.md",
-      "status": "published",
-      "score": 60.0,
-      "briefed_at": null,
-      "published_at": "2026-10-31",
-      "excerpt": "Molly(신호 포크)는 마지막 릴리스가 **2026-07-31 v8.19.2-4**로 3개월간 업데이트가 없으며, 10월에 공개된 익스플로잇을 포함해 메인라인 Signal에서 패치된 취약점에 여전히 노출되어 있어 메인라인 Signal 사용 및 Molly 삭제를 권고합니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Linux 7.1",
@@ -11865,6 +11917,19 @@
       "new": false
     },
     {
+      "title": "Game Off 2026: The theme is SHIFT",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-game-off-2026-the-theme-is-shift-3e4cd1e3.md",
+      "status": "published",
+      "score": 37.0,
+      "briefed_at": null,
+      "published_at": "2026-11-01",
+      "excerpt": "GitHub의 연례 게임잼 'Game Off'가 14회로 돌아온다. 2026년 주제는 'SHIFT'이며 제출 마감은 2026-12-01 13:37 PST, 공개 GitHub 저장소와 itch.io 제출이 필요하다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Fair use benefits everyone",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -15635,6 +15700,19 @@
       "new": false
     },
     {
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-10-chatgpt-ads-expands-to-26-new-countries-as-over-100-000-advertisers-have-b1215e1a.md",
+      "status": "published",
+      "score": 20.0,
+      "briefed_at": "2026-11-01",
+      "published_at": "2026-10-21",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-10-21자 블로그에서 ChatGPT Ads를 26개국으로 확장했고, 10만 명이 넘는 광고주가 플랫폼을 사용했다고 밝혔다. 이 확장으로 광고주들이 ChatGPT 내 사용자의 구매 탐색·비교·결정 과정에 도달할 수 있게 됐다고 피드가 전합니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Designing Organisations That Can Keep Up With AI",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -15646,19 +15724,6 @@
       "excerpt": "피드 기준으로는 OpenAI의 글 'Designing Organisations That Can Keep Up With AI'가 조직적 지연(organizational latency)을 AI의 잠재적 이익을 완전히 실현하는 데 가장 큰 장벽으로 지목한다고 요약됩니다. 제공된 설명은 조직 설계 관점에서 AI 도입의 속도 문…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-10-chatgpt-ads-expands-to-26-new-countries-as-over-100-000-advertisers-have-b1215e1a.md",
-      "status": "published",
-      "score": 20.0,
-      "briefed_at": null,
-      "published_at": "2026-10-21",
-      "excerpt": "피드 기준으로는 OpenAI가 2026-10-21자 블로그에서 ChatGPT Ads를 26개국으로 확장했고, 10만 명이 넘는 광고주가 플랫폼을 사용했다고 밝혔다. 이 확장으로 광고주들이 ChatGPT 내 사용자의 구매 탐색·비교·결정 과정에 도달할 수 있게 됐다고 피드가 전합니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "OpenAI frontier models and Codex are now available on AWS",

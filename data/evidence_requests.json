@@ -795,8 +795,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-30T06:49:05.349976Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-04T01:12:07.281456Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -852,8 +852,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-31T01:31:44.275850Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-04T01:12:07.281456Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -909,8 +909,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-31T01:31:44.275850Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-04T01:12:07.281456Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -962,8 +962,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-31T01:31:44.275850Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-04T01:12:07.281456Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1015,8 +1015,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-31T01:31:44.275850Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-04T01:12:07.281456Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1381,6 +1381,63 @@
     "attempts": 0,
     "next_attempt_at": "2026-11-02T00:37:47.333259Z",
     "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://hackerbooks.org/": {
+    "candidate": {
+      "candidate_id": "hacker-news:6cb1371eb8947994",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+        "url": "https://hackerbooks.org/",
+        "published_at": "2026-11-01T15:58:28Z",
+        "collected_at": "2026-11-02T01:12:02.109018Z",
+        "summary": "<p>Saw Karpathy's HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5).<p>It's ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each book links back to the comments that mentioned it. Data is downloadable from the about page.<p>To be clear: Claude wrote almost all of it, including the data pipeline and the site. I mostly steered and made calls, bought the domain name, etc.<p>It counts mentions, so it's not perfect (praising a book and trashing it both count). If your favourite book is missing or matched to the wrong thing, tell me.</p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50326821\">https://news.ycombinator.com/item?id=50326821</a></p>\n<p>Points: 884</p>\n<p># Comments: 172</p>",
+        "authors": [
+          "roansh"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 8,
+          "hn_points": 884,
+          "hn_comments": 172,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50326821"
+        }
+      },
+      "normalized_url": "https://hackerbooks.org/",
+      "url_hash": "6cb1371eb89479945e8fce7318d4a5b4ab2d0a316b2ecb30edaa62845b017208",
+      "title_fingerprint": "show hn hackerbooks hackertube but for books mentioned on hn",
+      "feed_summary": "<p>Saw Karpathy's HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5).<p>It's ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each book links back to the comments that mentioned it. Data is downloadable from the about page.<p>To be clear: Claude wrote almost all of it, including the data pipeline and the site. I mostly steered and made calls, bought the domain name, etc.<p>It counts mentions, so it's not perfect (praising a book and trashing it both count). If your favourite book is missing or matched to the wrong thing, tell me.</p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50326821\">https://news.ycombinator.com/item?id=50326821</a></p>\n<p>Points: 884</p>\n<p># Comments: 172</p>",
+      "suggested_doc_key": "2026-11-show-hn-hackerbooks-hackertube-but-for-books-mentioned-on-hn-6cb1371e",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-show-hn-hackerbooks-hackertube-but-for-books-mentioned-on-hn-6cb1371e.md",
+      "candidate_score": 62.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 2.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 884점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 172개를 토론 신호로 반영했습니다.",
+        "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-03T01:12:07.280188Z",
+    "last_failure": "thin_content",
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0

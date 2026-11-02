@@ -12360,6 +12360,56 @@
       "status": "published",
       "briefed_at": "2026-11-01T00:40:58.760899Z",
       "candidate_score": 20.0
+    },
+    "3e4cd1e3871dc6c4ca350785836e987a02249c1fce0d6c2c14266d1b5697c950": {
+      "normalized_url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift",
+      "title_fingerprint": "game off 2026 the theme is shift",
+      "service_key": "github-blog",
+      "title": "Game Off 2026: The theme is SHIFT",
+      "article_doc_path": "docs/services/github-blog/2026-11-game-off-2026-the-theme-is-shift-3e4cd1e3.md",
+      "status": "published",
+      "briefed_at": "2026-11-02T01:13:58.977519Z",
+      "candidate_score": 37.0
+    },
+    "09b1890dc57faf89940efc5e711aa0ed80ac0a450e14c24f3f18d3f3919f8950": {
+      "normalized_url": "https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded",
+      "title_fingerprint": "u s workers took home their smallest share of capital since at least 1947",
+      "service_key": "hacker-news",
+      "title": "U.S. workers took home their smallest share of capital since at least 1947",
+      "article_doc_path": "docs/services/hacker-news/2026-11-u-s-workers-took-home-their-smallest-share-of-capital-since-at-least-194-09b1890d.md",
+      "status": "published",
+      "briefed_at": "2026-11-02T01:13:58.977565Z",
+      "candidate_score": 71.5
+    },
+    "227c6c87545048c4cbe5c87feb5162ff11942625a9ea61fd99b2d3975b3a08fb": {
+      "normalized_url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it",
+      "title_fingerprint": "mathematics has changed let s act like it",
+      "service_key": "hacker-news",
+      "title": "Mathematics has changed. Let's act like it",
+      "article_doc_path": "docs/services/hacker-news/2026-11-mathematics-has-changed-let-s-act-like-it-227c6c87.md",
+      "status": "published",
+      "briefed_at": "2026-11-02T01:13:58.977582Z",
+      "candidate_score": 66.0
+    },
+    "2d2b8d23d92f6967812ddd3542babac3e27ab7fdcf3a39176a990547781c747f": {
+      "normalized_url": "https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism",
+      "title_fingerprint": "patrick stewart taught us what good men do with power",
+      "service_key": "hacker-news",
+      "title": "Patrick Stewart taught us what good men do with power",
+      "article_doc_path": "docs/services/hacker-news/2026-11-patrick-stewart-taught-us-what-good-men-do-with-power-2d2b8d23.md",
+      "status": "published",
+      "briefed_at": "2026-11-02T01:13:58.977591Z",
+      "candidate_score": 65.0
+    },
+    "6cb1371eb89479945e8fce7318d4a5b4ab2d0a316b2ecb30edaa62845b017208": {
+      "normalized_url": "https://hackerbooks.org/",
+      "title_fingerprint": "show hn hackerbooks hackertube but for books mentioned on hn",
+      "service_key": "hacker-news",
+      "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+      "article_doc_path": "docs/services/hacker-news/2026-11-show-hn-hackerbooks-hackertube-but-for-books-mentioned-on-hn-6cb1371e.md",
+      "status": "published",
+      "briefed_at": "2026-11-02T01:13:58.977600Z",
+      "candidate_score": 62.0
     }
   }
 }
