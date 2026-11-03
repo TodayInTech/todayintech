@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-02",
+  "generated_for": "2026-11-03",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -197,11 +197,11 @@
       "href": "./services/hacker-news/2026-11-u-s-workers-took-home-their-smallest-share-of-capital-since-at-least-194-09b1890d.md",
       "status": "published",
       "score": 71.5,
-      "briefed_at": null,
+      "briefed_at": "2026-11-02",
       "published_at": "2026-11-01",
       "excerpt": "BLS 자료에 따르면 2026년 2분기 노동 소득 비중이 52.8%로 조사 시작 이래 최저를 기록했다. 기업 이익 급증과 함께 자동화·AI 도입, 이민자 감소가 노동참여율 둔화와 ‘무직 성장’ 우려를 키우고 있다는 분석이다.",
       "featured": true,
-      "new": true
+      "new": false
     },
     {
       "title": "Launch HN: Screenpipe (YC S26) – Record how you work and turn that into agents",
@@ -386,6 +386,19 @@
       "new": false
     },
     {
+      "title": "Show HN: Subvocal – Talk to your computer without making noise",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-show-hn-subvocal-talk-to-your-computer-without-making-noise-b00f3c61.md",
+      "status": "published",
+      "score": 70.0,
+      "briefed_at": null,
+      "published_at": "2026-11-02",
+      "excerpt": "Subvocal(창업자 Aarush·Arnav)은 RF 안테나를 안경 프레임에 넣어 입 내부에서 생기는 RF 변화를 학습된 모델로 텍스트로 디코딩하는 스마트 글라스를 개발했습니다. EMG 한계를 극복하고 데이터 스케일링으로 크로스-유저 성능을 확보했으며, 500대 선주문(할인)으로 Q1 2027 출하를 목표로 합니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Railway Security Disclosure",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -462,6 +475,19 @@
       "excerpt": "Jack Dorsey와 Block이 공개한 Buzz는 직원, AI 에이전트, 대화와 소스 리포지토리를 하나의 신원 시스템 아래에 넣으려는 오픈소스 워크스페이스입니다. 제품은 Nostr 기반의 자체 호스팅 가능한 릴레이를 중심으로 설계되어 모든 메시지·반응·워크플로 단계·코드 이벤트를 암호학적으로 서명된 이벤트로 저장하고…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-launch-hn-momentic-yc-w24-agents-that-catch-bugs-by-using-your-app-570f5e1e.md",
+      "status": "published",
+      "score": 68.1,
+      "briefed_at": null,
+      "published_at": "2026-11-02",
+      "excerpt": "Momentic은 에이전트 기반 자동 QA 플랫폼 'Mo'를 정식 출시했다. 웹·iOS·Android를 직접 탐색해 버그를 재현·분류하고 자가 치유·트리아지와 PR/CI 연동, plain‑English YAML 테스트로 테스트 유지비를 낮추는 것이 핵심 변화입니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Krea 3 – An image model built for editing at scale",
@@ -932,6 +958,19 @@
       "new": false
     },
     {
+      "title": "Mathematics has changed. Let's act like it",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-mathematics-has-changed-let-s-act-like-it-227c6c87.md",
+      "status": "published",
+      "score": 66.0,
+      "briefed_at": "2026-11-02",
+      "published_at": "2026-11-01",
+      "excerpt": "OpenAI가 2026-10-06에 700여 편의 수학 연구 논문을 공개한 이후, Frank Calegari는 수학계가 ‘결과 중심’에서 벗어나 AI 보조 결과를 전제로 한 평가·채용·학술지 관행을 재설계해야 한다고 제안합니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Announcing three new discoveries in mathematics, computer science, and physics",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -1140,19 +1179,6 @@
       "new": false
     },
     {
-      "title": "Mathematics has changed. Let's act like it",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-mathematics-has-changed-let-s-act-like-it-227c6c87.md",
-      "status": "published",
-      "score": 66.0,
-      "briefed_at": null,
-      "published_at": "2026-11-01",
-      "excerpt": "OpenAI가 2026-10-06에 700여 편의 수학 연구 논문을 공개한 이후, Frank Calegari는 수학계가 ‘결과 중심’에서 벗어나 AI 보조 결과를 전제로 한 평가·채용·학술지 관행을 재설계해야 한다고 제안합니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Tencent Releases and Open-Sources Tencent Hy4 Preview",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -1214,6 +1240,19 @@
       "briefed_at": "2026-06-29",
       "published_at": "2026-06-29",
       "excerpt": "인터넷이 강력한 소통 도구임에도 불구하고 그 기반 인프라가 사용자 데이터 수집과 주의력 착취로 활용돼 왔다는 문제의식에서 출발한다는 점을 Human-Centered Computing Foundation(HCCF)이 제기한다. HCCF는 웹을 위한 대안적 아키텍처를 만들겠다는 비전을 제시하며, 인간 중심적 기술 원칙을 전…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Patrick Stewart taught us what good men do with power",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-patrick-stewart-taught-us-what-good-men-do-with-power-2d2b8d23.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-02",
+      "published_at": "2026-11-01",
+      "excerpt": "패트릭 스튜어트의 별세를 계기로 VOX 칼럼은 ‘장-뤽 피카드’가 제도주의적 자유주의와 권력의 정당한 사용을 대중에게 가르친 방식을 조명하며, 현대 미국의 제도적 위기와 대비해 그 의미를 재평가했다.",
       "featured": false,
       "new": false
     },
@@ -2349,15 +2388,15 @@
       "new": false
     },
     {
-      "title": "Patrick Stewart taught us what good men do with power",
+      "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-patrick-stewart-taught-us-what-good-men-do-with-power-2d2b8d23.md",
+      "href": "./services/hacker-news/2026-11-ubuntu-still-has-not-released-patch-for-linux-0day-rce-in-almost-3-weeks-81a05a5d.md",
       "status": "published",
       "score": 65.0,
       "briefed_at": null,
-      "published_at": "2026-11-01",
-      "excerpt": "패트릭 스튜어트의 별세를 계기로 VOX 칼럼은 ‘장-뤽 피카드’가 제도주의적 자유주의와 권력의 정당한 사용을 대중에게 가르친 방식을 조명하며, 현대 미국의 제도적 위기와 대비해 그 의미를 재평가했다.",
+      "published_at": "2026-11-02",
+      "excerpt": "Ubuntu는 CVE-2026-98432(평가치 CVSS 9.8)에 대한 LTS 커널(22.04·24.04·26.04) 패치를 아직 배포하지 않았으며, Ubuntu의 ETA 발표가 없어 인터넷 노출·다중 테넌시 시스템이 노출 상태로 남아 있다.",
       "featured": false,
       "new": true
     },
@@ -3129,6 +3168,19 @@
       "new": false
     },
     {
+      "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-show-hn-hackerbooks-hackertube-but-for-books-mentioned-on-hn-6cb1371e.md",
+      "status": "published",
+      "score": 62.0,
+      "briefed_at": "2026-11-02",
+      "published_at": "2026-11-01",
+      "excerpt": "HackerBooks가 Hacker News에서 최소 두 명 이상이 언급한 약 1.65만 권의 책을 모아 댓글 원문과 연결한 색인 사이트를 공개했다. 사이트와 데이터 파이프라인은 주로 Claude(Opus 5.5)가 작성했으며 데이터는 사이트의 about 페이지에서 내려받을 수 있다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Voxtral 3",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3337,15 +3389,15 @@
       "new": false
     },
     {
-      "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+      "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-show-hn-hackerbooks-hackertube-but-for-books-mentioned-on-hn-6cb1371e.md",
+      "href": "./services/hacker-news/2026-11-the-sec-should-block-anthropic-s-ipo-to-protect-the-public-4fbe630e.md",
       "status": "published",
       "score": 62.0,
       "briefed_at": null,
-      "published_at": "2026-11-01",
-      "excerpt": "HackerBooks가 Hacker News에서 최소 두 명 이상이 언급한 약 1.65만 권의 책을 모아 댓글 원문과 연결한 색인 사이트를 공개했다. 사이트와 데이터 파이프라인은 주로 Claude(Opus 5.5)가 작성했으며 데이터는 사이트의 about 페이지에서 내려받을 수 있다.",
+      "published_at": "2026-11-02",
+      "excerpt": "TechPolicy 기고는 SEC가 Anthropic의 IPO를 차단해야 한다고 주장한다. Anthropic은 $96 billion 현금에도 불구하고 **$582 billion** 이상의 비취소 인프라 계약(총 **$895 billion** 약정)을 공시했고 2026년 실적은 미감사여서 투자자 위험이 크다고 지적한다.",
       "featured": false,
       "new": true
     },
@@ -9460,6 +9512,19 @@
       "new": false
     },
     {
+      "title": "Rewarding defenders with bigger bug bounties",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-rewarding-defenders-with-bigger-bug-bounties-bca108e4.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": null,
+      "published_at": "2026-11-02",
+      "excerpt": "피드 기준으로는 OpenAI가 보안 버그 바운티 보상을 인상하고 리포트 품질·충성도·우선 캠페인 보너스를 새로 도입해 독립 보안 리서처 대상 인센티브를 확대한다고 합니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
       "service_key": "github-blog",
       "service_name": "GitHub Blog",
@@ -9798,6 +9863,19 @@
       "new": false
     },
     {
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-preparing-our-next-security-sprint-to-harden-openai-0d297090.md",
+      "status": "published",
+      "score": 41.0,
+      "briefed_at": null,
+      "published_at": "2026-11-02",
+      "excerpt": "피드 메타데이터 기준으로는 OpenAI가 Cathedral Systems와 함께 내부 보안 스프린트를 준비해 AI를 이용해 방어 체계를 시험·강화하려고 한다고 2026-11-02 블로그에서 알렸습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Check if a text message is a scam using Circle to Search.",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -10095,6 +10173,19 @@
       "excerpt": "피드 기준으로는 Anthropic이 Claude Fable 5와 Claude Mythos 5를 발표했습니다. Claude Fable 5는 ‘Mythos‑class’ 모델로 일반 사용에 맞게 안전하게 설계되었다고 요약되어 있습니다. 제공된 정보만 보면 출시 사실과 안전성 강조가 핵심입니다. 기술적 세부사항이나 배포 방식…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "LifeVal",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-lifeval-5a014341.md",
+      "status": "published",
+      "score": 40.0,
+      "briefed_at": null,
+      "published_at": "2026-11-02",
+      "excerpt": "피드 메타데이터 기준으로 OpenAI는 2026-11-02에 일상 과제에서 AI의 지원 능력을 평가하는 벤치마크 'LifeVal'을 공개했다. 벤치마크는 보육 찾기, 재무 관리, 관공서 서류 처리 같은 실생활 업무에서의 AI 보조 성능을 측정하는 것이 목적이라고 명시돼 있다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Making it easier for websites to express AI training preferences",
@@ -11215,6 +11306,32 @@
       "new": false
     },
     {
+      "title": "Introducing the Grid Protectors Program",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-introducing-the-grid-protectors-program-5d33ed0c.md",
+      "status": "published",
+      "score": 38.0,
+      "briefed_at": null,
+      "published_at": "2026-11-02",
+      "excerpt": "OpenAI는 'Grid Protectors Program'을 발표했다. 피드 기준으로는 유틸리티와 협력해 향후 컴퓨트 캠퍼스가 전력망 신뢰성 지원과 소비자 전기요금 보호에 기여하도록 돕는 프로그램이다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Game Off 2026: The theme is SHIFT",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-game-off-2026-the-theme-is-shift-3e4cd1e3.md",
+      "status": "published",
+      "score": 37.0,
+      "briefed_at": "2026-11-02",
+      "published_at": "2026-11-01",
+      "excerpt": "GitHub의 연례 게임잼 'Game Off'가 14회로 돌아온다. 2026년 주제는 'SHIFT'이며 제출 마감은 2026-12-01 13:37 PST, 공개 GitHub 저장소와 itch.io 제출이 필요하다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "How Ropes & Gray is developing AI for transactional diligence",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -11915,19 +12032,6 @@
       "excerpt": "제공된 메타데이터에 따르면 GitHub는 Copilot CLI의 위임(delegation) 결정을 더 선택적으로 만들기 위한 개선을 발표했습니다. 피드 기준으로는 오케스트레이션 향상, 핸드오프 감소, 더 빠른 진행을 목표로 했고 새 설정(토글)은 추가하지 않았다고 요약됩니다. 해당 내용은 GitHub Copilot 사용…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Game Off 2026: The theme is SHIFT",
-      "service_key": "github-blog",
-      "service_name": "GitHub Blog",
-      "href": "./services/github-blog/2026-11-game-off-2026-the-theme-is-shift-3e4cd1e3.md",
-      "status": "published",
-      "score": 37.0,
-      "briefed_at": null,
-      "published_at": "2026-11-01",
-      "excerpt": "GitHub의 연례 게임잼 'Game Off'가 14회로 돌아온다. 2026년 주제는 'SHIFT'이며 제출 마감은 2026-12-01 13:37 PST, 공개 GitHub 저장소와 itch.io 제출이 필요하다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Fair use benefits everyone",
@@ -12760,6 +12864,19 @@
       "excerpt": "피드 기준으로는 GitHub가 CC0-1.0 라이선스 아래 새로운 저장소 수준(repository-level) 데이터셋을 공개했습니다. 데이터셋은 README, 이슈, 풀 리퀘스트 등 개발자 생성 멀티링구얼 콘텐츠를 발견하도록 설계되었다고 나옵니다. 제공된 정보만 보면 이 데이터셋은 멀티언어 AI를 연구·개발하는 연구자…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "The latest AI news we announced in October 2026",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-the-latest-ai-news-we-announced-in-october-2026-996c88df.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": null,
+      "published_at": "2026-11-02",
+      "excerpt": "Google은 10월에 **Gemini 4 Argon의 글로벌 배포**와 **Gemini 4 Carbon의 사전 테스트**, 실시간 시뮬레이션용 **Genie 4**, 영어권 전역의 **SynthID Detector** 확장, EmbeddingGemma 2(740M) 공개, 우주 TPU 시연(프로젝트 Suncatcher…",
+      "featured": false,
+      "new": true
     },
     {
       "title": "XREAL AURA: Wired XR glasses to watch, work, and play",

@@ -428,8 +428,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-30T06:56:31.704750Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-05T03:15:41.727641Z",
     "last_failure": "access_denied",
     "recovered_at": "2026-10-29T06:45:49.989656Z",
     "extraction_method": "balanced_retry",
@@ -480,9 +480,9 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-30T06:40:05.654500Z",
-    "last_failure": null,
+    "attempts": 1,
+    "next_attempt_at": "2026-11-05T03:15:41.727641Z",
+    "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0
@@ -636,8 +636,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-30T06:47:04.140489Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-05T03:15:41.727641Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1065,8 +1065,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-10-31T01:31:44.275850Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-05T03:15:41.727641Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1119,8 +1119,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-01T01:22:43.173177Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-05T03:15:41.727641Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1438,6 +1438,217 @@
     "attempts": 0,
     "next_attempt_at": "2026-11-03T01:12:07.280188Z",
     "last_failure": "thin_content",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties": {
+    "candidate": {
+      "candidate_id": "openai-blog:bca108e4c77bd86b",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Rewarding defenders with bigger bug bounties",
+        "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+        "published_at": "2026-11-02T18:00:00Z",
+        "collected_at": "2026-11-03T03:15:37.317609Z",
+        "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+        "authors": [],
+        "tags": [
+          "Security"
+        ],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "url_hash": "bca108e4c77bd86b238b884ff1c18e5c63018f84444ba049fc49aa2f4ac03dcf",
+      "title_fingerprint": "rewarding defenders with bigger bug bounties",
+      "feed_summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+      "suggested_doc_key": "2026-11-rewarding-defenders-with-bigger-bug-bounties-bca108e4",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-rewarding-defenders-with-bigger-bug-bounties-bca108e4.md",
+      "candidate_score": 42.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-04T03:15:41.726673Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai": {
+    "candidate": {
+      "candidate_id": "openai-blog:0d297090385ad5a7",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Preparing our next security sprint to harden OpenAI",
+        "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+        "published_at": "2026-11-02T18:00:00Z",
+        "collected_at": "2026-11-03T03:15:37.317609Z",
+        "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+        "authors": [],
+        "tags": [
+          "Security"
+        ],
+        "metadata": {
+          "rss_rank": 4
+        }
+      },
+      "normalized_url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "url_hash": "0d297090385ad5a7245151aa36b61200b4bbf9fa9e2ae1ab47c6dc913703fe4d",
+      "title_fingerprint": "preparing our next security sprint to harden openai",
+      "feed_summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+      "suggested_doc_key": "2026-11-preparing-our-next-security-sprint-to-harden-openai-0d297090",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-preparing-our-next-security-sprint-to-harden-openai-0d297090.md",
+      "candidate_score": 41.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-04T03:15:41.726673Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/lifeval": {
+    "candidate": {
+      "candidate_id": "openai-blog:5a014341bc3fc0f1",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "LifeVal",
+        "url": "https://openai.com/index/lifeval",
+        "published_at": "2026-11-02T09:00:00Z",
+        "collected_at": "2026-11-03T03:15:37.317609Z",
+        "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
+        "authors": [],
+        "tags": [
+          "Research"
+        ],
+        "metadata": {
+          "rss_rank": 5
+        }
+      },
+      "normalized_url": "https://openai.com/index/lifeval",
+      "url_hash": "5a014341bc3fc0f1d8b6431c4e4adac34c7a9984ff7e1d40ed22dd094e75323f",
+      "title_fingerprint": "lifeval",
+      "feed_summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
+      "suggested_doc_key": "2026-11-lifeval-5a014341",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-lifeval-5a014341.md",
+      "candidate_score": 40.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 5.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-04T03:15:41.726673Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/grid-protectors-program": {
+    "candidate": {
+      "candidate_id": "openai-blog:5d33ed0c66ace544",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Introducing the Grid Protectors Program",
+        "url": "https://openai.com/index/grid-protectors-program",
+        "published_at": "2026-11-02T15:00:00Z",
+        "collected_at": "2026-11-03T03:15:37.317609Z",
+        "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
+        "authors": [],
+        "tags": [
+          "Global Affairs"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/index/grid-protectors-program",
+      "url_hash": "5d33ed0c66ace544e65f6063efa96737fd184e0288033033361ae48877b21fc8",
+      "title_fingerprint": "introducing the grid protectors program",
+      "feed_summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
+      "suggested_doc_key": "2026-11-introducing-the-grid-protectors-program-5d33ed0c",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-introducing-the-grid-protectors-program-5d33ed0c.md",
+      "candidate_score": 38.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-04T03:15:41.726673Z",
+    "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0

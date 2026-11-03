@@ -12410,6 +12410,96 @@
       "status": "published",
       "briefed_at": "2026-11-02T01:13:58.977600Z",
       "candidate_score": 62.0
+    },
+    "996c88dfa31d64c0a9d691ce9aa9d84c870ff31a54172125d0220f44806491fe": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026",
+      "title_fingerprint": "the latest ai news we announced in october 2026",
+      "service_key": "google-blog",
+      "title": "The latest AI news we announced in October 2026",
+      "article_doc_path": "docs/services/google-blog/2026-11-the-latest-ai-news-we-announced-in-october-2026-996c88df.md",
+      "status": "published",
+      "briefed_at": "2026-11-03T03:19:22.165837Z",
+      "candidate_score": 36.0
+    },
+    "b00f3c61979d2dea4922d18a9b712fc6f1c29b983a9b8149920f2091a4b92746": {
+      "normalized_url": "https://news.ycombinator.com/item?id=50340088",
+      "title_fingerprint": "show hn subvocal talk to your computer without making noise",
+      "service_key": "hacker-news",
+      "title": "Show HN: Subvocal – Talk to your computer without making noise",
+      "article_doc_path": "docs/services/hacker-news/2026-11-show-hn-subvocal-talk-to-your-computer-without-making-noise-b00f3c61.md",
+      "status": "published",
+      "briefed_at": "2026-11-03T03:19:22.165871Z",
+      "candidate_score": 70.0
+    },
+    "570f5e1efb5964ca71378f8912fd84517cb3958f6b4f348190c33995b5d684fd": {
+      "normalized_url": "https://momentic.ai/",
+      "title_fingerprint": "launch hn momentic yc w24 agents that catch bugs by using your app",
+      "service_key": "hacker-news",
+      "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+      "article_doc_path": "docs/services/hacker-news/2026-11-launch-hn-momentic-yc-w24-agents-that-catch-bugs-by-using-your-app-570f5e1e.md",
+      "status": "published",
+      "briefed_at": "2026-11-03T03:19:22.165879Z",
+      "candidate_score": 68.1
+    },
+    "81a05a5d9bd4a46320e8379d565b9b2c417db4d91aeee0488f3956d850a1f469": {
+      "normalized_url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+      "title_fingerprint": "ubuntu still has not released patch for linux 0day rce in almost 3 weeks",
+      "service_key": "hacker-news",
+      "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+      "article_doc_path": "docs/services/hacker-news/2026-11-ubuntu-still-has-not-released-patch-for-linux-0day-rce-in-almost-3-weeks-81a05a5d.md",
+      "status": "published",
+      "briefed_at": "2026-11-03T03:19:22.165885Z",
+      "candidate_score": 65.0
+    },
+    "4fbe630e0f0ceedf83ff14ec1c78ead794b8fdd16ddbbcf4273f3f591957f1b4": {
+      "normalized_url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public",
+      "title_fingerprint": "the sec should block anthropic s ipo to protect the public",
+      "service_key": "hacker-news",
+      "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+      "article_doc_path": "docs/services/hacker-news/2026-11-the-sec-should-block-anthropic-s-ipo-to-protect-the-public-4fbe630e.md",
+      "status": "published",
+      "briefed_at": "2026-11-03T03:19:22.165890Z",
+      "candidate_score": 62.0
+    },
+    "bca108e4c77bd86b238b884ff1c18e5c63018f84444ba049fc49aa2f4ac03dcf": {
+      "normalized_url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "title_fingerprint": "rewarding defenders with bigger bug bounties",
+      "service_key": "openai-blog",
+      "title": "Rewarding defenders with bigger bug bounties",
+      "article_doc_path": "docs/services/openai-blog/2026-11-rewarding-defenders-with-bigger-bug-bounties-bca108e4.md",
+      "status": "published",
+      "briefed_at": "2026-11-03T03:19:22.165894Z",
+      "candidate_score": 42.0
+    },
+    "0d297090385ad5a7245151aa36b61200b4bbf9fa9e2ae1ab47c6dc913703fe4d": {
+      "normalized_url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "title_fingerprint": "preparing our next security sprint to harden openai",
+      "service_key": "openai-blog",
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-11-preparing-our-next-security-sprint-to-harden-openai-0d297090.md",
+      "status": "published",
+      "briefed_at": "2026-11-03T03:19:22.165898Z",
+      "candidate_score": 41.0
+    },
+    "5a014341bc3fc0f1d8b6431c4e4adac34c7a9984ff7e1d40ed22dd094e75323f": {
+      "normalized_url": "https://openai.com/index/lifeval",
+      "title_fingerprint": "lifeval",
+      "service_key": "openai-blog",
+      "title": "LifeVal",
+      "article_doc_path": "docs/services/openai-blog/2026-11-lifeval-5a014341.md",
+      "status": "published",
+      "briefed_at": "2026-11-03T03:19:22.165902Z",
+      "candidate_score": 40.0
+    },
+    "5d33ed0c66ace544e65f6063efa96737fd184e0288033033361ae48877b21fc8": {
+      "normalized_url": "https://openai.com/index/grid-protectors-program",
+      "title_fingerprint": "introducing the grid protectors program",
+      "service_key": "openai-blog",
+      "title": "Introducing the Grid Protectors Program",
+      "article_doc_path": "docs/services/openai-blog/2026-11-introducing-the-grid-protectors-program-5d33ed0c.md",
+      "status": "published",
+      "briefed_at": "2026-11-03T03:19:22.165906Z",
+      "candidate_score": 38.0
     }
   }
 }
