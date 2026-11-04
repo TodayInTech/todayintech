@@ -1,0 +1,343 @@
+{
+  "generated_at": "2026-11-04T01:50:18.613098+00:00",
+  "generated_for": "2026-11-04",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "4d0bb8639ea1535dd982597092e119c271c7d6dc",
+  "github_run_id": "41756586116",
+  "service_count": 5,
+  "duration_ms": 14,
+  "raw_count": 120,
+  "candidate_count": 23,
+  "excluded_count": 97,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 35,
+      "excluded_count": 85,
+      "duration_ms": 6,
+      "reason_counts": {
+        "already_briefed": 85
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 35,
+      "output_count": 35,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 35,
+      "output_count": 33,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 33,
+      "output_count": 23,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:20ff7d9385ef646d",
+          "title": "Arnis turns any place on Earth into a Minecraft world",
+          "normalized_url": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world",
+          "url_hash": "20ff7d9385ef646db52bb6944c17bb34ca400c1fe382e56d73c8195245c833d2",
+          "suggested_doc_key": "2026-11-arnis-turns-any-place-on-earth-into-a-minecraft-world-20ff7d93",
+          "suggested_article_path": "docs/services/github-blog/2026-11-arnis-turns-any-place-on-earth-into-a-minecraft-world-20ff7d93.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:e557c70ef358aa0f",
+          "title": "Working collaboratively to fight scams in Asia Pacific",
+          "normalized_url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/fight-against-apac-scams",
+          "url_hash": "e557c70ef358aa0f25ec4cd458f7901b08b96c2a059c609615b79e53099d6658",
+          "suggested_doc_key": "2026-11-working-collaboratively-to-fight-scams-in-asia-pacific-e557c70e",
+          "suggested_article_path": "docs/services/google-blog/2026-11-working-collaboratively-to-fight-scams-in-asia-pacific-e557c70e.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:4bbda0ce74fa502d",
+          "title": "Advancing research and partnering with universities in Singapore",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/research/partnering-singapore-advance-scientific-discovery",
+          "url_hash": "4bbda0ce74fa502d3f007143c65037f9307ca9c66a8f200ec2ac5efac7fcd9ee",
+          "suggested_doc_key": "2026-11-advancing-research-and-partnering-with-universities-in-singapore-4bbda0ce",
+          "suggested_article_path": "docs/services/google-blog/2026-11-advancing-research-and-partnering-with-universities-in-singapore-4bbda0ce.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:a42ee61cf827eb37",
+          "title": "Safari introduces Adaptive Dark Mode in 27.3",
+          "normalized_url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode",
+          "url_hash": "a42ee61cf827eb379951920ceed048b39aa5a7cf38c44e129e5ccd51855a21d3",
+          "suggested_doc_key": "2026-11-safari-introduces-adaptive-dark-mode-in-27-3-a42ee61c",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-safari-introduces-adaptive-dark-mode-in-27-3-a42ee61c.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 288점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 184개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f7735096343ce811",
+          "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+          "normalized_url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+          "url_hash": "f7735096343ce81152b1d5c648c011ed31e805aac536109f028e21653f468c45",
+          "suggested_doc_key": "2026-11-us-tech-giants-hidden-ai-debt-swells-90-to-3-2t-in-6-months-f7735096",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-us-tech-giants-hidden-ai-debt-swells-90-to-3-2t-in-6-months-f7735096.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 232점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 98개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b5cba0d011349b3b",
+          "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+          "normalized_url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights",
+          "url_hash": "b5cba0d011349b3bc50111809ab484ae3a7ae1efda7d7776ece58fac266468bd",
+          "suggested_doc_key": "2026-11-qwen-3-8-27b-on-my-laptop-can-interpret-model-weights-too-b5cba0d0",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-qwen-3-8-27b-on-my-laptop-can-interpret-model-weights-too-b5cba0d0.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 488점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 152개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:210b26f029f33a3e",
+          "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+          "normalized_url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+          "url_hash": "210b26f029f33a3ef7fe3515ece25538b3c2fd8043720d57f14f3a706409d450",
+          "suggested_doc_key": "2026-11-postman-silently-auto-installs-ai-plugins-and-attempts-to-share-all-api-210b26f0",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-postman-silently-auto-installs-ai-plugins-and-attempts-to-share-all-api-210b26f0.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 1021점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 342개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:db83d0eb2b26ea41",
+          "title": "Stringman, an $800 open-source room scale gripper robot",
+          "normalized_url": "https://neufangled.com/",
+          "url_hash": "db83d0eb2b26ea41b7d4f1d4388682985a55d140c9653f3dcdf79eb40e9e2b78",
+          "suggested_doc_key": "2026-11-stringman-an-800-open-source-room-scale-gripper-robot-db83d0eb",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-stringman-an-800-open-source-room-scale-gripper-robot-db83d0eb.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 377점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 142개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:34e7d62615202d0d",
+          "title": "How Cisco defends at machine speed with OpenAI",
+          "normalized_url": "https://openai.com/index/cisco-cyber",
+          "url_hash": "34e7d62615202d0de65fe802c6c6ca14703e67df603d58e71ec501e575fe9eda",
+          "suggested_doc_key": "2026-11-how-cisco-defends-at-machine-speed-with-openai-34e7d626",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-how-cisco-defends-at-machine-speed-with-openai-34e7d626.md",
+          "candidate_score": 48.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:25493a43cba550c7",
+          "title": "Accelerating engineering for the physical world",
+          "normalized_url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+          "url_hash": "25493a43cba550c7fe81484acae2a066a0e92a0ab7396a9764a18c9bb949ba12",
+          "suggested_doc_key": "2026-11-accelerating-engineering-for-the-physical-world-25493a43",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-accelerating-engineering-for-the-physical-world-25493a43.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:fc87a45dcfbf03d4",
+          "title": "Heimstaden is changing residential real estate management with AI",
+          "normalized_url": "https://openai.com/index/heimstaden",
+          "url_hash": "fc87a45dcfbf03d417250555e1df3237ca0ef7928116e265a011dfff6b14fbc2",
+          "suggested_doc_key": "2026-11-heimstaden-is-changing-residential-real-estate-management-with-ai-fc87a45d",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-heimstaden-is-changing-residential-real-estate-management-with-ai-fc87a45d.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:019edb616369c332",
+          "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+          "normalized_url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+          "url_hash": "019edb616369c3322f4c44a55e04677f77bd523e681eb1a6308bc4ebad0c1377",
+          "suggested_doc_key": "2026-11-openai-appoints-jill-hazelbaker-as-chief-corporate-affairs-officer-019edb61",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-openai-appoints-jill-hazelbaker-as-chief-corporate-affairs-officer-019edb61.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:277870ffc8d71544",
+          "title": "Scaling Git at OpenAI",
+          "normalized_url": "https://openai.com/index/scaling-git-at-openai",
+          "url_hash": "277870ffc8d71544c0465c137654062f6f2bf7e7d7a1ec8af9071c966d86edc3",
+          "suggested_doc_key": "2026-11-scaling-git-at-openai-277870ff",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-scaling-git-at-openai-277870ff.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 38,
+        "low_quality": 2
+      }
+    }
+  ]
+}
