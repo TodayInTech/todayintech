@@ -1171,8 +1171,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-01T01:22:43.173177Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-06T01:50:36.267088Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1223,8 +1223,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-01T01:22:43.173177Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-06T01:50:36.267088Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1276,8 +1276,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-01T01:22:43.173177Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-06T01:50:36.267088Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1326,8 +1326,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-01T01:22:43.173177Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-06T01:50:36.267088Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1378,8 +1378,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-02T00:37:47.333259Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-06T01:50:36.267088Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1648,6 +1648,211 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-04T03:15:41.726673Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/cisco-cyber": {
+    "candidate": {
+      "candidate_id": "openai-blog:34e7d62615202d0d",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "How Cisco defends at machine speed with OpenAI",
+        "url": "https://openai.com/index/cisco-cyber",
+        "published_at": "2026-11-03T08:00:00Z",
+        "collected_at": "2026-11-04T01:50:33.101288Z",
+        "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/index/cisco-cyber",
+      "url_hash": "34e7d62615202d0de65fe802c6c6ca14703e67df603d58e71ec501e575fe9eda",
+      "title_fingerprint": "how cisco defends at machine speed with openai",
+      "feed_summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+      "suggested_doc_key": "2026-11-how-cisco-defends-at-machine-speed-with-openai-34e7d626",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-how-cisco-defends-at-machine-speed-with-openai-34e7d626.md",
+      "candidate_score": 48.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-05T01:50:36.265630Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/accelerating-engineering-for-the-physical-world": {
+    "candidate": {
+      "candidate_id": "openai-blog:25493a43cba550c7",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Accelerating engineering for the physical world",
+        "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+        "published_at": "2026-11-03T12:00:00Z",
+        "collected_at": "2026-11-04T01:50:33.101288Z",
+        "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+        "authors": [],
+        "tags": [
+          "Research"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "url_hash": "25493a43cba550c7fe81484acae2a066a0e92a0ab7396a9764a18c9bb949ba12",
+      "title_fingerprint": "accelerating engineering for the physical world",
+      "feed_summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+      "suggested_doc_key": "2026-11-accelerating-engineering-for-the-physical-world-25493a43",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-accelerating-engineering-for-the-physical-world-25493a43.md",
+      "candidate_score": 39.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-05T01:50:36.265630Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/heimstaden": {
+    "candidate": {
+      "candidate_id": "openai-blog:fc87a45dcfbf03d4",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Heimstaden is changing residential real estate management with AI",
+        "url": "https://openai.com/index/heimstaden",
+        "published_at": "2026-11-03T08:00:00Z",
+        "collected_at": "2026-11-04T01:50:33.101288Z",
+        "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/index/heimstaden",
+      "url_hash": "fc87a45dcfbf03d417250555e1df3237ca0ef7928116e265a011dfff6b14fbc2",
+      "title_fingerprint": "heimstaden is changing residential real estate management with ai",
+      "feed_summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+      "suggested_doc_key": "2026-11-heimstaden-is-changing-residential-real-estate-management-with-ai-fc87a45d",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-heimstaden-is-changing-residential-real-estate-management-with-ai-fc87a45d.md",
+      "candidate_score": 37.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-05T01:50:36.265630Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer": {
+    "candidate": {
+      "candidate_id": "openai-blog:019edb616369c332",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+        "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+        "published_at": "2026-11-03T00:00:00Z",
+        "collected_at": "2026-11-04T01:50:33.101288Z",
+        "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
+        "authors": [],
+        "tags": [
+          "Company"
+        ],
+        "metadata": {
+          "rss_rank": 4
+        }
+      },
+      "normalized_url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "url_hash": "019edb616369c3322f4c44a55e04677f77bd523e681eb1a6308bc4ebad0c1377",
+      "title_fingerprint": "openai appoints jill hazelbaker as chief corporate affairs officer",
+      "feed_summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
+      "suggested_doc_key": "2026-11-openai-appoints-jill-hazelbaker-as-chief-corporate-affairs-officer-019edb61",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-openai-appoints-jill-hazelbaker-as-chief-corporate-affairs-officer-019edb61.md",
+      "candidate_score": 35.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-05T01:50:36.265630Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
