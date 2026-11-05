@@ -12610,6 +12610,96 @@
       "status": "published",
       "briefed_at": "2026-11-04T01:54:06.634873Z",
       "candidate_score": 35.0
+    },
+    "6ca7ade89b448d15482d757a805a2df204c1e5287a307157fb92953c1041b8fb": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/health/evaluating-health-ai-at-scale",
+      "title_fingerprint": "we re sharing our framework for building safer and more helpful ai for health",
+      "service_key": "google-blog",
+      "title": "We're sharing our framework for building safer and more helpful AI for health.",
+      "article_doc_path": "docs/services/google-blog/2026-11-we-re-sharing-our-framework-for-building-safer-and-more-helpful-ai-for-h-6ca7ade8.md",
+      "status": "published",
+      "briefed_at": "2026-11-05T02:01:48.118862Z",
+      "candidate_score": 41.0
+    },
+    "dfa876a54a2df16b901af7d5d98eae674e32f3e96c3e77ba85e114a5b2058a8e": {
+      "normalized_url": "https://www.ricursive.com/ripple",
+      "title_fingerprint": "ripple 65b preview u s open weight sota on agentic coding",
+      "service_key": "hacker-news",
+      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "article_doc_path": "docs/services/hacker-news/2026-11-ripple-65b-preview-u-s-open-weight-sota-on-agentic-coding-dfa876a5.md",
+      "status": "published",
+      "briefed_at": "2026-11-05T02:01:48.118908Z",
+      "candidate_score": 65.0
+    },
+    "c69a4026f5b4f206efbb3eb8ad67da0438be42c094ac455943a98bf9fd5da8d0": {
+      "normalized_url": "https://go.dev/blog/jsonv2",
+      "title_fingerprint": "a new go api for json",
+      "service_key": "hacker-news",
+      "title": "A new Go API for JSON",
+      "article_doc_path": "docs/services/hacker-news/2026-11-a-new-go-api-for-json-c69a4026.md",
+      "status": "published",
+      "briefed_at": "2026-11-05T02:01:48.118915Z",
+      "candidate_score": 65.0
+    },
+    "f4a904d03d800a16a7770eb45e6294e17d198382b354ef891a63e5cd21dfe6b8": {
+      "normalized_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "title_fingerprint": "kimi k3 1 pro model weights are out",
+      "service_key": "hacker-news",
+      "title": "Kimi K3.1 Pro model weights are out",
+      "article_doc_path": "docs/services/hacker-news/2026-11-kimi-k3-1-pro-model-weights-are-out-f4a904d0.md",
+      "status": "published",
+      "briefed_at": "2026-11-05T02:01:48.118920Z",
+      "candidate_score": 65.0
+    },
+    "6b097a287e2a565e2b170c9e3cfc2961827394e4a7796625868eb55501a51368": {
+      "normalized_url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+      "title_fingerprint": "residential proxies detected on white house network",
+      "service_key": "hacker-news",
+      "title": "Residential proxies detected on White House network",
+      "article_doc_path": "docs/services/hacker-news/2026-11-residential-proxies-detected-on-white-house-network-6b097a28.md",
+      "status": "published",
+      "briefed_at": "2026-11-05T02:01:48.118924Z",
+      "candidate_score": 63.0
+    },
+    "a3433e936d2c04bfa7722c64f05b5efdfdc6024634f8a182254f80d5e66c1036": {
+      "normalized_url": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "title_fingerprint": "daybreak red is now available in aws govcloud us east",
+      "service_key": "openai-blog",
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "article_doc_path": "docs/services/openai-blog/2026-11-daybreak-red-is-now-available-in-aws-govcloud-us-east-a3433e93.md",
+      "status": "published",
+      "briefed_at": "2026-11-05T02:01:48.118929Z",
+      "candidate_score": 43.0
+    },
+    "1be4fdd8e6ca80f0ec0127711bf05d7cfcd7194eac7f7e3b9f6a7d04824358c9": {
+      "normalized_url": "https://openai.com/index/openai-to-acquire-pierre",
+      "title_fingerprint": "openai to acquire pierre computer company inc",
+      "service_key": "openai-blog",
+      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "article_doc_path": "docs/services/openai-blog/2026-11-openai-to-acquire-pierre-computer-company-inc-1be4fdd8.md",
+      "status": "published",
+      "briefed_at": "2026-11-05T02:01:48.118933Z",
+      "candidate_score": 39.0
+    },
+    "981785a01550309d0739d8f0393613130409c9a98cd0180f1072e2be43156c86": {
+      "normalized_url": "https://openai.com/index/devrev-enterprise-self-service",
+      "title_fingerprint": "devrev delivers autonomous self service with gpt 6 1 sol",
+      "service_key": "openai-blog",
+      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+      "article_doc_path": "docs/services/openai-blog/2026-11-devrev-delivers-autonomous-self-service-with-gpt-6-1-sol-981785a0.md",
+      "status": "published",
+      "briefed_at": "2026-11-05T02:01:48.118937Z",
+      "candidate_score": 34.0
+    },
+    "945f879ef3a469b4aebe760cf27598de5ac153aec5be30239cc23bf038b35a21": {
+      "normalized_url": "https://openai.com/index/dan-driscoll-joins-openai",
+      "title_fingerprint": "openai appoints dan driscoll as senior counselor for national security modernization",
+      "service_key": "openai-blog",
+      "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+      "article_doc_path": "docs/services/openai-blog/2026-11-openai-appoints-dan-driscoll-as-senior-counselor-for-national-security-m-945f879e.md",
+      "status": "published",
+      "briefed_at": "2026-11-05T02:01:48.118940Z",
+      "candidate_score": 32.0
     }
   }
 }

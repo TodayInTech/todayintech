@@ -50,8 +50,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-02T01:22:43.174921Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-09T01:57:45.507210Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -164,8 +164,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-02T01:22:43.174921Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-09T01:57:45.507210Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -217,8 +217,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-02T01:22:43.174921Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-09T01:57:45.507210Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -270,8 +270,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-02T01:22:43.174921Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-09T01:57:45.507210Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -323,8 +323,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-02T01:22:43.174921Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-09T01:57:45.507210Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1853,6 +1853,274 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-05T01:50:36.265630Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://www.ricursive.com/ripple": {
+    "candidate": {
+      "candidate_id": "hacker-news:dfa876a54a2df16b",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+        "url": "https://www.ricursive.com/ripple",
+        "published_at": "2026-11-04T18:53:29Z",
+        "collected_at": "2026-11-05T01:57:40.257838Z",
+        "summary": "<p>Article URL: <a href=\"https://www.ricursive.com/ripple\">https://www.ricursive.com/ripple</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50369925\">https://news.ycombinator.com/item?id=50369925</a></p>\n<p>Points: 222</p>\n<p># Comments: 78</p>",
+        "authors": [
+          "Philpax"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 11,
+          "hn_points": 222,
+          "hn_comments": 78,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50369925"
+        }
+      },
+      "normalized_url": "https://www.ricursive.com/ripple",
+      "url_hash": "dfa876a54a2df16b901af7d5d98eae674e32f3e96c3e77ba85e114a5b2058a8e",
+      "title_fingerprint": "ripple 65b preview u s open weight sota on agentic coding",
+      "feed_summary": "<p>Article URL: <a href=\"https://www.ricursive.com/ripple\">https://www.ricursive.com/ripple</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50369925\">https://news.ycombinator.com/item?id=50369925</a></p>\n<p>Points: 222</p>\n<p># Comments: 78</p>",
+      "suggested_doc_key": "2026-11-ripple-65b-preview-u-s-open-weight-sota-on-agentic-coding-dfa876a5",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-ripple-65b-preview-u-s-open-weight-sota-on-agentic-coding-dfa876a5.md",
+      "candidate_score": 65.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "Hacker News 점수 222점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 78개를 토론 신호로 반영했습니다.",
+        "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-06T01:57:45.506098Z",
+    "last_failure": "title_mismatch",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/daybreak-red-aws-govcloud": {
+    "candidate": {
+      "candidate_id": "openai-blog:a3433e936d2c04bf",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+        "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+        "published_at": "2026-11-04T07:00:00Z",
+        "collected_at": "2026-11-05T01:57:41.065512Z",
+        "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
+        "authors": [],
+        "tags": [
+          "Product"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "url_hash": "a3433e936d2c04bfa7722c64f05b5efdfdc6024634f8a182254f80d5e66c1036",
+      "title_fingerprint": "daybreak red is now available in aws govcloud us east",
+      "feed_summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
+      "suggested_doc_key": "2026-11-daybreak-red-is-now-available-in-aws-govcloud-us-east-a3433e93",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-daybreak-red-is-now-available-in-aws-govcloud-us-east-a3433e93.md",
+      "candidate_score": 43.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-06T01:57:45.506098Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/openai-to-acquire-pierre": {
+    "candidate": {
+      "candidate_id": "openai-blog:1be4fdd8e6ca80f0",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+        "url": "https://openai.com/index/openai-to-acquire-pierre",
+        "published_at": "2026-11-04T14:30:00Z",
+        "collected_at": "2026-11-05T01:57:41.065512Z",
+        "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
+        "authors": [],
+        "tags": [
+          "Company"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/openai-to-acquire-pierre",
+      "url_hash": "1be4fdd8e6ca80f0ec0127711bf05d7cfcd7194eac7f7e3b9f6a7d04824358c9",
+      "title_fingerprint": "openai to acquire pierre computer company inc",
+      "feed_summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
+      "suggested_doc_key": "2026-11-openai-to-acquire-pierre-computer-company-inc-1be4fdd8",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-openai-to-acquire-pierre-computer-company-inc-1be4fdd8.md",
+      "candidate_score": 39.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-06T01:57:45.506098Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/devrev-enterprise-self-service": {
+    "candidate": {
+      "candidate_id": "openai-blog:981785a01550309d",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+        "url": "https://openai.com/index/devrev-enterprise-self-service",
+        "published_at": "2026-11-04T00:00:00Z",
+        "collected_at": "2026-11-05T01:57:41.065512Z",
+        "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+        "authors": [],
+        "tags": [
+          "Startup"
+        ],
+        "metadata": {
+          "rss_rank": 5
+        }
+      },
+      "normalized_url": "https://openai.com/index/devrev-enterprise-self-service",
+      "url_hash": "981785a01550309d0739d8f0393613130409c9a98cd0180f1072e2be43156c86",
+      "title_fingerprint": "devrev delivers autonomous self service with gpt 6 1 sol",
+      "feed_summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+      "suggested_doc_key": "2026-11-devrev-delivers-autonomous-self-service-with-gpt-6-1-sol-981785a0",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-devrev-delivers-autonomous-self-service-with-gpt-6-1-sol-981785a0.md",
+      "candidate_score": 34.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 5.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-06T01:57:45.506098Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/dan-driscoll-joins-openai": {
+    "candidate": {
+      "candidate_id": "openai-blog:945f879ef3a469b4",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+        "url": "https://openai.com/index/dan-driscoll-joins-openai",
+        "published_at": "2026-11-02T00:00:00Z",
+        "collected_at": "2026-11-05T01:57:41.065512Z",
+        "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
+        "authors": [],
+        "tags": [
+          "Company"
+        ],
+        "metadata": {
+          "rss_rank": 15
+        }
+      },
+      "normalized_url": "https://openai.com/index/dan-driscoll-joins-openai",
+      "url_hash": "945f879ef3a469b4aebe760cf27598de5ac153aec5be30239cc23bf038b35a21",
+      "title_fingerprint": "openai appoints dan driscoll as senior counselor for national security modernization",
+      "feed_summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
+      "suggested_doc_key": "2026-11-openai-appoints-dan-driscoll-as-senior-counselor-for-national-security-m-945f879e",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-openai-appoints-dan-driscoll-as-senior-counselor-for-national-security-m-945f879e.md",
+      "candidate_score": 32.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 3,
+        "freshness_score": 17.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-06T01:57:45.506098Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
