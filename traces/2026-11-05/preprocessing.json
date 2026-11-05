@@ -1,0 +1,320 @@
+{
+  "generated_at": "2026-11-05T01:57:32.563136+00:00",
+  "generated_for": "2026-11-05",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "2225b2ef04e7ed69390e53256d1a5870db637cf1",
+  "github_run_id": "41951855319",
+  "service_count": 5,
+  "duration_ms": 7,
+  "raw_count": 120,
+  "candidate_count": 20,
+  "excluded_count": 100,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 118,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 2
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 118,
+      "output_count": 31,
+      "excluded_count": 87,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 87
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 31,
+      "output_count": 31,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 31,
+      "output_count": 30,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 30,
+      "output_count": 20,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:6ca7ade89b448d15",
+          "title": "We're sharing our framework for building safer and more helpful AI for health.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/health/evaluating-health-ai-at-scale",
+          "url_hash": "6ca7ade89b448d15482d757a805a2df204c1e5287a307157fb92953c1041b8fb",
+          "suggested_doc_key": "2026-11-we-re-sharing-our-framework-for-building-safer-and-more-helpful-ai-for-h-6ca7ade8",
+          "suggested_article_path": "docs/services/google-blog/2026-11-we-re-sharing-our-framework-for-building-safer-and-more-helpful-ai-for-h-6ca7ade8.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:dfa876a54a2df16b",
+          "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+          "normalized_url": "https://www.ricursive.com/ripple",
+          "url_hash": "dfa876a54a2df16b901af7d5d98eae674e32f3e96c3e77ba85e114a5b2058a8e",
+          "suggested_doc_key": "2026-11-ripple-65b-preview-u-s-open-weight-sota-on-agentic-coding-dfa876a5",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-ripple-65b-preview-u-s-open-weight-sota-on-agentic-coding-dfa876a5.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 222점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 78개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c69a4026f5b4f206",
+          "title": "A new Go API for JSON",
+          "normalized_url": "https://go.dev/blog/jsonv2",
+          "url_hash": "c69a4026f5b4f206efbb3eb8ad67da0438be42c094ac455943a98bf9fd5da8d0",
+          "suggested_doc_key": "2026-11-a-new-go-api-for-json-c69a4026",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-a-new-go-api-for-json-c69a4026.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 229점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 95개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f4a904d03d800a16",
+          "title": "Kimi K3.1 Pro model weights are out",
+          "normalized_url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "url_hash": "f4a904d03d800a16a7770eb45e6294e17d198382b354ef891a63e5cd21dfe6b8",
+          "suggested_doc_key": "2026-11-kimi-k3-1-pro-model-weights-are-out-f4a904d0",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-kimi-k3-1-pro-model-weights-are-out-f4a904d0.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 373점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 102개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6b097a287e2a565e",
+          "title": "Residential proxies detected on White House network",
+          "normalized_url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+          "url_hash": "6b097a287e2a565e2b170c9e3cfc2961827394e4a7796625868eb55501a51368",
+          "suggested_doc_key": "2026-11-residential-proxies-detected-on-white-house-network-6b097a28",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-residential-proxies-detected-on-white-house-network-6b097a28.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 642점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 211개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:43862ef771dfba65",
+          "title": "Progress on provable inference for large language models",
+          "normalized_url": "https://www.anthropic.com/research/provable-inference",
+          "url_hash": "43862ef771dfba655e31d47f5f3fba512fc1609345b0a2f5a572fe4e8eddc516",
+          "suggested_doc_key": "2026-11-progress-on-provable-inference-for-large-language-models-43862ef7",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-progress-on-provable-inference-for-large-language-models-43862ef7.md",
+          "candidate_score": 62.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 174점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 84개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 9,
+      "excluded_count": 41,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:a3433e936d2c04bf",
+          "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+          "normalized_url": "https://openai.com/index/daybreak-red-aws-govcloud",
+          "url_hash": "a3433e936d2c04bfa7722c64f05b5efdfdc6024634f8a182254f80d5e66c1036",
+          "suggested_doc_key": "2026-11-daybreak-red-is-now-available-in-aws-govcloud-us-east-a3433e93",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-daybreak-red-is-now-available-in-aws-govcloud-us-east-a3433e93.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:1be4fdd8e6ca80f0",
+          "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+          "normalized_url": "https://openai.com/index/openai-to-acquire-pierre",
+          "url_hash": "1be4fdd8e6ca80f0ec0127711bf05d7cfcd7194eac7f7e3b9f6a7d04824358c9",
+          "suggested_doc_key": "2026-11-openai-to-acquire-pierre-computer-company-inc-1be4fdd8",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-openai-to-acquire-pierre-computer-company-inc-1be4fdd8.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:981785a01550309d",
+          "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+          "normalized_url": "https://openai.com/index/devrev-enterprise-self-service",
+          "url_hash": "981785a01550309d0739d8f0393613130409c9a98cd0180f1072e2be43156c86",
+          "suggested_doc_key": "2026-11-devrev-delivers-autonomous-self-service-with-gpt-6-1-sol-981785a0",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-devrev-delivers-autonomous-self-service-with-gpt-6-1-sol-981785a0.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:945f879ef3a469b4",
+          "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+          "normalized_url": "https://openai.com/index/dan-driscoll-joins-openai",
+          "url_hash": "945f879ef3a469b4aebe760cf27598de5ac153aec5be30239cc23bf038b35a21",
+          "suggested_doc_key": "2026-11-openai-appoints-dan-driscoll-as-senior-counselor-for-national-security-m-945f879e",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-openai-appoints-dan-driscoll-as-senior-counselor-for-national-security-m-945f879e.md",
+          "candidate_score": 32.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:277870ffc8d71544",
+          "title": "Scaling Git at OpenAI",
+          "normalized_url": "https://openai.com/index/scaling-git-at-openai",
+          "url_hash": "277870ffc8d71544c0465c137654062f6f2bf7e7d7a1ec8af9071c966d86edc3",
+          "suggested_doc_key": "2026-11-scaling-git-at-openai-277870ff",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-scaling-git-at-openai-277870ff.md",
+          "candidate_score": 28.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 2,
+        "already_briefed": 38,
+        "low_quality": 1
+      }
+    }
+  ]
+}
