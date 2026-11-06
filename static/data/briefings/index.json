@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-05",
+  "generated_for": "2026-11-06",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -620,6 +620,19 @@
       "new": false
     },
     {
+      "title": "MS Paint Remote Code Execution Vulnerability",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-ms-paint-remote-code-execution-vulnerability-ef3f53e2.md",
+      "status": "published",
+      "score": 68.0,
+      "briefed_at": null,
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 MS Paint의 원격 코드 실행 취약점(CVE-2026-83844)이 CVE 레코드로 등록되었고, Hacker News에서 포인트 321·댓글 105로 활발히 논의되고 있습니다. 제공된 정보에는 영향 범위·패치 여부 등 세부 내용이 포함되어 있지 않습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Show HN: Gemini 4 Argon plays StarCraft",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -1231,6 +1244,19 @@
       "new": false
     },
     {
+      "title": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-launch-hn-rivet-yc-w23-scale-and-orchestrate-agents-on-s3-335e94a0.md",
+      "status": "published",
+      "score": 65.7,
+      "briefed_at": null,
+      "published_at": "2026-11-05",
+      "excerpt": "Rivet은 S3에 데이터를 두고 메모리·실행을 경량 액터로 처리하는 오픈소스 액터 플랫폼입니다. 문서상 **액터당 72KB**, **p99 콜드스타트 4.99ms**, SQLite를 S3에 저장해 내구성을 확보하는 아키텍처를 표준 런타임(Node/Bun)으로 제공합니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Models Are Getting Dumber on Purpose",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -1253,6 +1279,45 @@
       "briefed_at": "2026-06-29",
       "published_at": "2026-06-29",
       "excerpt": "인터넷이 강력한 소통 도구임에도 불구하고 그 기반 인프라가 사용자 데이터 수집과 주의력 착취로 활용돼 왔다는 문제의식에서 출발한다는 점을 Human-Centered Computing Foundation(HCCF)이 제기한다. HCCF는 웹을 위한 대안적 아키텍처를 만들겠다는 비전을 제시하며, 인간 중심적 기술 원칙을 전…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Kimi K3.1 Pro model weights are out",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-kimi-k3-1-pro-model-weights-are-out-f4a904d0.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-05",
+      "published_at": "2026-11-04",
+      "excerpt": "Moonshot의 Kimi K3.1 Pro 가중치가 공개됐다. **총 2.8T, 활성화 104B, 1백만 토큰(context length 1,048,576)** 지원하는 MoE 기반 멀티모달 에이전트 모델로, OpenAI/Anthropic 호환 API와 플랫폼 배포가 제공된다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "A new Go API for JSON",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-a-new-go-api-for-json-c69a4026.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-05",
+      "published_at": "2026-11-04",
+      "excerpt": "Go 1.27에서 **encoding/json/v2**와 **encoding/json/jsontext**가 안정화되었습니다. 새 API는 RFC 8259 준수를 강화하고 스트리밍 토큰 기반 처리와 옵션 기반 마이그레이션을 지원합니다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-ripple-65b-preview-u-s-open-weight-sota-on-agentic-coding-dfa876a5.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-05",
+      "published_at": "2026-11-04",
+      "excerpt": "피드 기준으로는 Ricursive에 2026-11-04자 'Ripple-65B' 프리뷰가 올라왔으며, 제목은 'U.S. Open-Weight SOTA on Agentic Coding'을 표제로 모델의 에이전트형 코딩 성능을 강조합니다. Hacker News에서 포인트 222·댓글 78로 관심이 집중되어 있습니다.",
       "featured": false,
       "new": false
     },
@@ -2453,41 +2518,15 @@
       "new": false
     },
     {
-      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-ripple-65b-preview-u-s-open-weight-sota-on-agentic-coding-dfa876a5.md",
+      "href": "./services/hacker-news/2026-11-alpine-linux-security-advisory-openssh-server-password-authentication-by-c45ff08f.md",
       "status": "published",
       "score": 65.0,
       "briefed_at": null,
-      "published_at": "2026-11-04",
-      "excerpt": "피드 기준으로는 Ricursive에 2026-11-04자 'Ripple-65B' 프리뷰가 올라왔으며, 제목은 'U.S. Open-Weight SOTA on Agentic Coding'을 표제로 모델의 에이전트형 코딩 성능을 강조합니다. Hacker News에서 포인트 222·댓글 78로 관심이 집중되어 있습니다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "A new Go API for JSON",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-a-new-go-api-for-json-c69a4026.md",
-      "status": "published",
-      "score": 65.0,
-      "briefed_at": null,
-      "published_at": "2026-11-04",
-      "excerpt": "Go 1.27에서 **encoding/json/v2**와 **encoding/json/jsontext**가 안정화되었습니다. 새 API는 RFC 8259 준수를 강화하고 스트리밍 토큰 기반 처리와 옵션 기반 마이그레이션을 지원합니다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Kimi K3.1 Pro model weights are out",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-kimi-k3-1-pro-model-weights-are-out-f4a904d0.md",
-      "status": "published",
-      "score": 65.0,
-      "briefed_at": null,
-      "published_at": "2026-11-04",
-      "excerpt": "Moonshot의 Kimi K3.1 Pro 가중치가 공개됐다. **총 2.8T, 활성화 104B, 1백만 토큰(context length 1,048,576)** 지원하는 MoE 기반 멀티모달 에이전트 모델로, OpenAI/Anthropic 호환 API와 플랫폼 배포가 제공된다.",
+      "published_at": "2026-11-05",
+      "excerpt": "Alpine Linux는 openssh-server의 비밀번호 인증 우회 취약점을 공지했다. PAM 미사용 또는 UsePAM no 환경에서 PasswordAuthentication yes, '*' 비밀번호 필드(비밀번호 없음) 계정과 $5/$6 해시가 공존하면 원격에서 비밀번호 없이 로그인 가능—즉시 배포판용 고정 패키…",
       "featured": false,
       "new": true
     },
@@ -2804,6 +2843,19 @@
       "new": false
     },
     {
+      "title": "Claude Code sends your email address to websites",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-claude-code-sends-your-email-address-to-websites-199af8ae.md",
+      "status": "published",
+      "score": 64.0,
+      "briefed_at": null,
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 GitHub 이슈 제목 'Claude Code sends your email address to websites'가 Hacker News에서 활발히 공유(포인트 507, 댓글 172)되고 있다. 제공된 정보만으로는 이슈의 구체적 내용이나 증거는 확인되지 않는다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2986,6 +3038,19 @@
       "new": false
     },
     {
+      "title": "Residential proxies detected on White House network",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-residential-proxies-detected-on-white-house-network-6b097a28.md",
+      "status": "published",
+      "score": 63.0,
+      "briefed_at": "2026-11-05",
+      "published_at": "2026-11-04",
+      "excerpt": "Layer3 Intel 관측에서 10월5일~11월3일 동안 Executive Office of the President(AS2650) 네트워크를 통해 **총 236회**의 리지덴셜 프록시 엑시트가 발생했다. 6개 주소, 28개 서비스가 관련되며 활동은 미 동부 저녁 시간대에 집중됐다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "No signs of AI payoff outside the tech sector",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3140,19 +3205,6 @@
       "excerpt": "피드 기준으로는 SXX가 'Apple is about to make Hide My Email useless'라는 글을 올렸습니다. 제목은 애플이 Hide My Email 기능을 사실상 무력화할 변화가 임박했다고 주장합니다. Hacker News에서 높은 관심을 받았고 포인트 330, 댓글 194를 기록했습니다. 제공된…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Residential proxies detected on White House network",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-residential-proxies-detected-on-white-house-network-6b097a28.md",
-      "status": "published",
-      "score": 63.0,
-      "briefed_at": null,
-      "published_at": "2026-11-04",
-      "excerpt": "Layer3 Intel 관측에서 10월5일~11월3일 동안 Executive Office of the President(AS2650) 네트워크를 통해 **총 236회**의 리지덴셜 프록시 엑시트가 발생했다. 6개 주소, 28개 서비스가 관련되며 활동은 미 동부 저녁 시간대에 집중됐다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "NetBSD 11.0",
@@ -7523,6 +7575,19 @@
       "new": false
     },
     {
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-gpt-6-cyber-advancing-the-frontier-of-aligned-cybersecurity-agents-14e90e72.md",
+      "status": "published",
+      "score": 53.0,
+      "briefed_at": null,
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-05에 **GPT‑6 Cyber**를 공개했다. 이 모델은 악용 가능한 취약점 탐지와 수정 개발을 목표로 하며, '허가된 범위 내' 작동하도록 훈련됐다고 요약된다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Nobody pays for FOSS, we can force them to",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -8875,6 +8940,19 @@
       "new": false
     },
     {
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-daybreak-red-is-now-available-in-aws-govcloud-us-east-a3433e93.md",
+      "status": "published",
+      "score": 43.0,
+      "briefed_at": "2026-11-05",
+      "published_at": "2026-11-04",
+      "excerpt": "피드 기준으로는 OpenAI가 Daybreak Red(GPT-5.6 Cyber)를 AWS GovCloud(US‑East)의 Amazon Bedrock을 통해 승인된 고객에게 제공한다고 2026-11-04에 발표했다. 사용 범위는 권한 있는 사이버보안 작업으로 명시되어 있다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -9120,19 +9198,6 @@
       "excerpt": "피드 기준으로는 OpenAI가 2026-06-14자 공지로 ‘OpenAI Partner Network’를 출범하고 1억5천만 달러를 투자한다고 전합니다. 이 네트워크는 전 세계 파트너들이 기업용 AI의 채택, 배포, 전환을 가속화하도록 지원하기 위한 목적이라고 요약됩니다. 제공된 정보만 보면 대규모 자금 투입을 통한 파…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-daybreak-red-is-now-available-in-aws-govcloud-us-east-a3433e93.md",
-      "status": "published",
-      "score": 43.0,
-      "briefed_at": null,
-      "published_at": "2026-11-04",
-      "excerpt": "피드 기준으로는 OpenAI가 Daybreak Red(GPT-5.6 Cyber)를 AWS GovCloud(US‑East)의 Amazon Bedrock을 통해 승인된 고객에게 제공한다고 2026-11-04에 발표했다. 사용 범위는 권한 있는 사이버보안 작업으로 명시되어 있다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Rewarding defenders with bigger bug bounties",
@@ -9655,6 +9720,32 @@
       "new": false
     },
     {
+      "title": "Inside GitHub’s new Git storage architecture",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-inside-github-s-new-git-storage-architecture-c18d658a.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": null,
+      "published_at": "2026-11-05",
+      "excerpt": "GitHub는 ‘Project Rubicon’으로 단일 리포지토리에서 **수천 쓰기/초**를 처리하도록 새 Git 저장소 아키텍처를 도입했다. 팩은 Azure Blob Storage에, 참조는 **Ref-CAS**라는 참조 전용 복제 로그로 분리하고 가상 레플리카와 별도 컴팩션 노드로 확장성을 확보했다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "We're sharing our framework for building safer and more helpful AI for health.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-we-re-sharing-our-framework-for-building-safer-and-more-helpful-ai-for-h-6ca7ade8.md",
+      "status": "published",
+      "score": 41.0,
+      "briefed_at": "2026-11-05",
+      "published_at": "2026-11-04",
+      "excerpt": "Google은 의료용 AI 평가를 위한 백서와 프레임워크를 공개했다. **정확성·안전성·유용성** 세 영역을 기준으로 폐쇄형 벤치마크, 자동평가기(autoraters), 전문가 인력 리뷰를 결합해 일반·고위험 시나리오를 평가한다고 밝혔다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Working collaboratively to fight scams in Asia Pacific",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -10019,19 +10110,6 @@
       "new": false
     },
     {
-      "title": "We're sharing our framework for building safer and more helpful AI for health.",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-we-re-sharing-our-framework-for-building-safer-and-more-helpful-ai-for-h-6ca7ade8.md",
-      "status": "published",
-      "score": 41.0,
-      "briefed_at": null,
-      "published_at": "2026-11-04",
-      "excerpt": "Google은 의료용 AI 평가를 위한 백서와 프레임워크를 공개했다. **정확성·안전성·유용성** 세 영역을 기준으로 폐쇄형 벤치마크, 자동평가기(autoraters), 전문가 인력 리뷰를 결합해 일반·고위험 시나리오를 평가한다고 밝혔다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "LifeVal",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -10340,6 +10418,19 @@
       "briefed_at": "2026-06-13",
       "published_at": "2026-06-13",
       "excerpt": "피드 기준으로는 Anthropic이 Claude Fable 5와 Claude Mythos 5를 발표했습니다. Claude Fable 5는 ‘Mythos‑class’ 모델로 일반 사용에 맞게 안전하게 설계되었다고 요약되어 있습니다. 제공된 정보만 보면 출시 사실과 안전성 강조가 핵심입니다. 기술적 세부사항이나 배포 방식…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-openai-to-acquire-pierre-computer-company-inc-1be4fdd8.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": "2026-11-05",
+      "published_at": "2026-11-04",
+      "excerpt": "피드 기준으로는 OpenAI가 Pierre Computer Company, Inc. 인수를 발표해 Codex의 코드 작성·이해·검토 도구를 확대한다고 밝혔습니다(공식 블로그, 2026-11-04). 인수 조건·통합 일정 등 구체 내용은 피드에 포함되지 않았습니다.",
       "featured": false,
       "new": false
     },
@@ -11098,15 +11189,15 @@
       "new": false
     },
     {
-      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "title": "Cult.fit builds operational muscle with Codex",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-openai-to-acquire-pierre-computer-company-inc-1be4fdd8.md",
+      "href": "./services/openai-blog/2026-11-cult-fit-builds-operational-muscle-with-codex-bbd492ca.md",
       "status": "published",
       "score": 39.0,
       "briefed_at": null,
-      "published_at": "2026-11-04",
-      "excerpt": "피드 기준으로는 OpenAI가 Pierre Computer Company, Inc. 인수를 발표해 Codex의 코드 작성·이해·검토 도구를 확대한다고 밝혔습니다(공식 블로그, 2026-11-04). 인수 조건·통합 일정 등 구체 내용은 피드에 포함되지 않았습니다.",
+      "published_at": "2026-11-05",
+      "excerpt": "OpenAI 블로그 요약에 따르면 인도 피트니스 기업 Cult.fit이 Codex를 도입해 조직 전반에서 도구 개발을 지원하고 업무 속도 및 업무 방식 변화를 추진하고 있다. 제공된 피드 정보만으로는 세부 도구나 성과 수치가 확인되지 않습니다.",
       "featured": false,
       "new": true
     },
@@ -12242,6 +12333,19 @@
       "new": false
     },
     {
+      "title": "Merge builds product and business tools with OpenAI technology",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-merge-builds-product-and-business-tools-with-openai-technology-db9792e9.md",
+      "status": "published",
+      "score": 37.0,
+      "briefed_at": null,
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 Merge가 OpenAI 블로그에서 **GPT-6 Astra, ChatGPT, Codex**를 제품 코드 검토와 마케팅 지원에 적용하고, AI를 임원 만찬 기획과 영업 업데이트 준비에도 활용한다고 밝혔다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "The latest AI news we announced in October 2026",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -13087,6 +13191,45 @@
       "new": false
     },
     {
+      "title": "Accessibility statements now have a home on GitHub",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-accessibility-statements-now-have-a-home-on-github-478057fc.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": null,
+      "published_at": "2026-11-05",
+      "excerpt": "GitHub은 저장소 개요에 ACCESSIBILITY.md를 표시하고 루트, .github/, docs/ 경로와 조직 .github/ 상속을 지원하며, 공개 저장소는 Insights > Community Standards에서 접근성 성명을 추가·제안할 수 있고 새 저장소에 접근성 이슈 라벨을 기본 포함한다고 발표했습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-gemini-omni-1-2-flash-fast-and-cost-effective-with-longer-clips-485654c1.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": null,
+      "published_at": "2026-11-05",
+      "excerpt": "Google이 Gemini Omni 1.2 Flash를 일반 공개했다. 네이티브 15초 영상 생성(3~15초 1초 단위), 멀티턴 대화식 편집, 참조 고정성 개선과 720p 초당 $0.07(Omni 1.1 대비 30% 인하)를 제공한다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-setting-a-new-standard-for-responsible-ai-infrastructure-25fa4dd1.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": null,
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-05에 'National Community Compact'와 'Compute Campus Policy Blueprint'를 공개해 지역자원 보호, 일자리 창출, 책임 있는 AI 인프라 개발을 지향하는 정책 지침을 제시했다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -13815,6 +13958,19 @@
       "new": false
     },
     {
+      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-devrev-delivers-autonomous-self-service-with-gpt-6-1-sol-981785a0.md",
+      "status": "published",
+      "score": 34.0,
+      "briefed_at": "2026-11-05",
+      "published_at": "2026-11-04",
+      "excerpt": "피드 기준으로는 DevRev가 OpenAI의 GPT-6.1 Sol을 도입해 'Computer'와 'Operator'라는 자율 셀프서비스 기능을 제공하며, 추론 능력·속도·비용의 균형을 강조하고 있다고 전해집니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Community safety report and new protections for teens",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -14075,19 +14231,6 @@
       "new": false
     },
     {
-      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-devrev-delivers-autonomous-self-service-with-gpt-6-1-sol-981785a0.md",
-      "status": "published",
-      "score": 34.0,
-      "briefed_at": null,
-      "published_at": "2026-11-04",
-      "excerpt": "피드 기준으로는 DevRev가 OpenAI의 GPT-6.1 Sol을 도입해 'Computer'와 'Operator'라는 자율 셀프서비스 기능을 제공하며, 추론 능력·속도·비용의 균형을 강조하고 있다고 전해집니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Sullivan & Cromwell brings legal expertise into agreement review",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -14214,6 +14357,19 @@
       "briefed_at": "2026-06-14",
       "published_at": "2026-06-11",
       "excerpt": "피드 기준으로는 BBVA가 OpenAI와 협력해 ChatGPT Enterprise를 은행 핵심에 도입했고, 이를 100,000명 규모로 확장했다는 내용입니다. 제공된 정보만 보면 이 파트너십은 전 세계적으로 AI 기반 은행 혁신을 가속하는 목적을 강조합니다. 원문에서 구체적 도입 방식이나 운영·보안 세부사항은 확인이 필…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-openai-appoints-dan-driscoll-as-senior-counselor-for-national-security-m-945f879e.md",
+      "status": "published",
+      "score": 32.0,
+      "briefed_at": "2026-11-05",
+      "published_at": "2026-11-02",
+      "excerpt": "피드 기준으로는 OpenAI가 Dan Driscoll를 'Senior Counselor for National Security Modernization'로 임명했으며, 책임 있는 AI 적용·국가 안보 현대화·사이버 복원력·미 동맹국 협력 자문 역할이 명시되어 있다.",
       "featured": false,
       "new": false
     },
@@ -14346,19 +14502,6 @@
       "excerpt": "Google 블로그에 올라온 ‘DiffusionGemma’ 소식은 피드 기준으로 텍스트 생성 속도를 4배 빠르게 개선했다고 요약합니다. 게시자와 저자로는 Brendan O'Donoghue와 Sebastian Flennerhag가 표기되어 있습니다. 제공된 정보만 보면 이 발표는 개발자 도구 관점에서 성능 향상에 초점을…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-openai-appoints-dan-driscoll-as-senior-counselor-for-national-security-m-945f879e.md",
-      "status": "published",
-      "score": 32.0,
-      "briefed_at": null,
-      "published_at": "2026-11-02",
-      "excerpt": "피드 기준으로는 OpenAI가 Dan Driscoll를 'Senior Counselor for National Security Modernization'로 임명했으며, 책임 있는 AI 적용·국가 안보 현대화·사이버 복원력·미 동맹국 협력 자문 역할이 명시되어 있다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
