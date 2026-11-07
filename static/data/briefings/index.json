@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-06",
+  "generated_for": "2026-11-07",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -490,6 +490,19 @@
       "new": false
     },
     {
+      "title": "MS Paint Remote Code Execution Vulnerability",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-ms-paint-remote-code-execution-vulnerability-ef3f53e2.md",
+      "status": "published",
+      "score": 68.0,
+      "briefed_at": "2026-11-06",
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 MS Paint의 원격 코드 실행 취약점(CVE-2026-83844)이 CVE 레코드로 등록되었고, Hacker News에서 포인트 321·댓글 105로 활발히 논의되고 있습니다. 제공된 정보에는 영향 범위·패치 여부 등 세부 내용이 포함되어 있지 않습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Krea 3 – An image model built for editing at scale",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -618,19 +631,6 @@
       "excerpt": "저비용 오픈웨이트 모델인 GLM 5.2를 소규모 영국 회사의 분기별 부가가치세(VAT) 신고에 적용한 벤치마크는 실무적 의미가 큰 결과를 보여준다. 벤치마크 대상은 Vineyard Finance의 2026년 1분기 장부(59건)이며, 모델은 GCP 인스턴스에서 사전 인증된 CLI 도구를 통해 회계 소프트웨어에 거래를 입…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "MS Paint Remote Code Execution Vulnerability",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-ms-paint-remote-code-execution-vulnerability-ef3f53e2.md",
-      "status": "published",
-      "score": 68.0,
-      "briefed_at": null,
-      "published_at": "2026-11-05",
-      "excerpt": "피드 기준으로는 MS Paint의 원격 코드 실행 취약점(CVE-2026-83844)이 CVE 레코드로 등록되었고, Hacker News에서 포인트 321·댓글 105로 활발히 논의되고 있습니다. 제공된 정보에는 영향 범위·패치 여부 등 세부 내용이 포함되어 있지 않습니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Show HN: Gemini 4 Argon plays StarCraft",
@@ -1250,11 +1250,11 @@
       "href": "./services/hacker-news/2026-11-launch-hn-rivet-yc-w23-scale-and-orchestrate-agents-on-s3-335e94a0.md",
       "status": "published",
       "score": 65.7,
-      "briefed_at": null,
+      "briefed_at": "2026-11-06",
       "published_at": "2026-11-05",
       "excerpt": "Rivet은 S3에 데이터를 두고 메모리·실행을 경량 액터로 처리하는 오픈소스 액터 플랫폼입니다. 문서상 **액터당 72KB**, **p99 콜드스타트 4.99ms**, SQLite를 S3에 저장해 내구성을 확보하는 아키텍처를 표준 런타임(Node/Bun)으로 제공합니다.",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "Models Are Getting Dumber on Purpose",
@@ -1279,6 +1279,19 @@
       "briefed_at": "2026-06-29",
       "published_at": "2026-06-29",
       "excerpt": "인터넷이 강력한 소통 도구임에도 불구하고 그 기반 인프라가 사용자 데이터 수집과 주의력 착취로 활용돼 왔다는 문제의식에서 출발한다는 점을 Human-Centered Computing Foundation(HCCF)이 제기한다. HCCF는 웹을 위한 대안적 아키텍처를 만들겠다는 비전을 제시하며, 인간 중심적 기술 원칙을 전…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-alpine-linux-security-advisory-openssh-server-password-authentication-by-c45ff08f.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-06",
+      "published_at": "2026-11-05",
+      "excerpt": "Alpine Linux는 openssh-server의 비밀번호 인증 우회 취약점을 공지했다. PAM 미사용 또는 UsePAM no 환경에서 PasswordAuthentication yes, '*' 비밀번호 필드(비밀번호 없음) 계정과 $5/$6 해시가 공존하면 원격에서 비밀번호 없이 로그인 가능—즉시 배포판용 고정 패키…",
       "featured": false,
       "new": false
     },
@@ -2518,19 +2531,6 @@
       "new": false
     },
     {
-      "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-alpine-linux-security-advisory-openssh-server-password-authentication-by-c45ff08f.md",
-      "status": "published",
-      "score": 65.0,
-      "briefed_at": null,
-      "published_at": "2026-11-05",
-      "excerpt": "Alpine Linux는 openssh-server의 비밀번호 인증 우회 취약점을 공지했다. PAM 미사용 또는 UsePAM no 환경에서 PasswordAuthentication yes, '*' 비밀번호 필드(비밀번호 없음) 계정과 $5/$6 해시가 공존하면 원격에서 비밀번호 없이 로그인 가능—즉시 배포판용 고정 패키…",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2661,6 +2661,19 @@
       "new": false
     },
     {
+      "title": "AI is dramatically accelerating AI research",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-ai-is-dramatically-accelerating-ai-research-e0c8b454.md",
+      "status": "published",
+      "score": 64.2,
+      "briefed_at": null,
+      "published_at": "2026-11-06",
+      "excerpt": "METR의 심층 조사에 따르면 Anthropic 내부 지표(AECI) 기준 2025년10월~2026년10월 사이 역량 진전 속도가 약 2배로 빨라졌고, 보고서는 그 대다수를 AI의 연구 자동화 탓으로 돌립니다. 이로 인해 연구자 생산성은 수배(보고서 추정 4–9x, 내부 자가보고 ~12x)로 증가했으며, 산업 전반의 보…",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2670,6 +2683,19 @@
       "briefed_at": "2026-06-23",
       "published_at": "2026-06-23",
       "excerpt": "VibeThinker-3B는 3억이 아닌 30억(3B) 파라미터 규모의 조밀한(sparse가 아닌 dense) 소형 언어모델로, ‘검증 가능한 추론(verifiable reasoning)’을 소형 모델 계열에서 어디까지 끌어올릴 수 있는지를 실험적으로 탐구한 기술 보고서의 중심 주제입니다. 저자들은 Spectrum-to…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Claude Code sends your email address to websites",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-claude-code-sends-your-email-address-to-websites-199af8ae.md",
+      "status": "published",
+      "score": 64.0,
+      "briefed_at": "2026-11-06",
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 GitHub 이슈 제목 'Claude Code sends your email address to websites'가 Hacker News에서 활발히 공유(포인트 507, 댓글 172)되고 있다. 제공된 정보만으로는 이슈의 구체적 내용이나 증거는 확인되지 않는다.",
       "featured": false,
       "new": false
     },
@@ -2841,19 +2867,6 @@
       "excerpt": "Anthropic 연구진은 대형 언어모델 Claude 내부에서 사람의 ‘의식적 접근’ 개념과 유사한 작동을 하는 작은 신경 패턴 집합을 발견했다고 보고한다. 이른바 J-space는 각 패턴이 특정 단어와 연결되지만, 해당 패턴이 활성화된다고 해서 모델이 그 단어를 출력하는 것은 아니다. 대신 J-space는 모델이 말로…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Claude Code sends your email address to websites",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-claude-code-sends-your-email-address-to-websites-199af8ae.md",
-      "status": "published",
-      "score": 64.0,
-      "briefed_at": null,
-      "published_at": "2026-11-05",
-      "excerpt": "피드 기준으로는 GitHub 이슈 제목 'Claude Code sends your email address to websites'가 Hacker News에서 활발히 공유(포인트 507, 댓글 172)되고 있다. 제공된 정보만으로는 이슈의 구체적 내용이나 증거는 확인되지 않는다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
@@ -3608,6 +3621,19 @@
       "excerpt": "OpenAI가 공개한 @openai/codex-security는 코드베이스의 취약점을 찾아 검증하고 수정하는 데 쓰이는 CLI와 TypeScript SDK입니다. 레포지토리 스캔, 변경사항 검토, 발견사항의 시간 추적 기능을 제공하며 CI 파이프라인에서 보안 검사를 실행할 수 있도록 설계되어 있어 개발 흐름에 직접 통합…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-a-jev-that-can-ask-opus-for-help-gives-opus-accuracy-at-4x-lower-cost-60724c83.md",
+      "status": "published",
+      "score": 61.8,
+      "briefed_at": null,
+      "published_at": "2026-11-06",
+      "excerpt": "Hightouch 실험에서 **경량 결정 모델 Jev를 1차 판정기로 쓰고 불확실 사례만 고성능 모델(Opus)으로 넘기는 하이브리드가 Opus 단독과 유사한 정확도(예: 99.0% 근접)를 유지하면서 비용을 >4배 낮췄다. Jev의 신뢰도 보정 우위가 핵심 기전이다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "GPT-5.6, Grok 4.5, Claude, and Muse Spark build the same 4 apps",
@@ -6990,6 +7016,19 @@
       "new": false
     },
     {
+      "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-anthropic-ipo-buyers-see-valuation-as-low-as-1-1t-0a5391d7.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-11-06",
+      "excerpt": "Bloomberg 헤드라인에 따르면 Anthropic IPO 매수측이 회사 가치를 1.1조 달러까지 낮게 보는 것으로 전해졌으며, 해당 보도는 Hacker News에서 활발히 논의(포인트 221·댓글 474)되고 있다. 피드 기준으로는 기사 본문은 제공되지 않았다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Linux 7.1",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -7196,6 +7235,19 @@
       "excerpt": "1953년의 General Service List(GSL, 약 2,284개 단어)와 2023년의 New General Service List(NGSL, 2,809개)를 비교하면, 핵심 어휘의 구성 자체가 70년 사이에 크게 바뀌었다. 약 1,153개 단어가 추가되고 628개가 빠지며(1,656개는 유지), 텔레그래프가…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Firecracker VM Escape: PwnEscape Part 2",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-firecracker-vm-escape-pwnescape-part-2-19e5a3d3.md",
+      "status": "published",
+      "score": 58.0,
+      "briefed_at": null,
+      "published_at": "2026-11-06",
+      "excerpt": "게스트가 호스트 메모리 접근을 이용해 Firecracker의 vCPU에 저장된 pt_regs를 찾아 수정하고, KVM_RUN 복귀 시 Firecracker의 write(2, \"N8V23M2\\n\", 8)를 호출하도록 조작해 호스트에서 루트 권한으로 코드 실행(CVE-2026-99999)을 달성했습니다. 실험은 Firecr…",
+      "featured": false,
+      "new": true
     },
     {
       "title": "The death of web development education",
@@ -7581,11 +7633,11 @@
       "href": "./services/openai-blog/2026-11-gpt-6-cyber-advancing-the-frontier-of-aligned-cybersecurity-agents-14e90e72.md",
       "status": "published",
       "score": 53.0,
-      "briefed_at": null,
+      "briefed_at": "2026-11-06",
       "published_at": "2026-11-05",
       "excerpt": "피드 기준으로는 OpenAI가 2026-11-05에 **GPT‑6 Cyber**를 공개했다. 이 모델은 악용 가능한 취약점 탐지와 수정 개발을 목표로 하며, '허가된 범위 내' 작동하도록 훈련됐다고 요약된다.",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "Nobody pays for FOSS, we can force them to",
@@ -8210,6 +8262,19 @@
       "excerpt": "Git 2.55는 대형 저장소 관리와 메타데이터 유지비용을 줄이기 위한 실용적 개선에 초점을 맞췄다. 가장 큰 변화 가운데 하나는 증분 멀티팩 인덱스(incremental MIDX)를 직접 쓰도록 git repack을 확장한 것으로, --write-midx=incremental 모드에서 기본적으로는 기존 레이어를 건드리…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-measuring-how-ai-agents-handle-everyday-wet-lab-science-5f721228.md",
+      "status": "published",
+      "score": 47.0,
+      "briefed_at": null,
+      "published_at": "2026-11-06",
+      "excerpt": "피드 기준으로는 OpenAI가 **BioBasicsBench**라는 100개 과제 벤치마크를 공개했다. 이 벤치마크는 AI 에이전트의 원시 실험 데이터 해석 능력과 일상적인 wet‑lab 작업 처리 역량을 측정하는 목적이라고 전해진다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "'Crush this lady': how eBay harassment campaign led to $56M payout",
@@ -9200,6 +9265,19 @@
       "new": false
     },
     {
+      "title": "Inside GitHub’s new Git storage architecture",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-inside-github-s-new-git-storage-architecture-c18d658a.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": "2026-11-06",
+      "published_at": "2026-11-05",
+      "excerpt": "GitHub는 ‘Project Rubicon’으로 단일 리포지토리에서 **수천 쓰기/초**를 처리하도록 새 Git 저장소 아키텍처를 도입했다. 팩은 Azure Blob Storage에, 참조는 **Ref-CAS**라는 참조 전용 복제 로그로 분리하고 가상 레플리카와 별도 컴팩션 노드로 확장성을 확보했다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Rewarding defenders with bigger bug bounties",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -9720,15 +9798,15 @@
       "new": false
     },
     {
-      "title": "Inside GitHub’s new Git storage architecture",
+      "title": "Beyond code generation: A developer’s guide to agentic engineering",
       "service_key": "github-blog",
       "service_name": "GitHub Blog",
-      "href": "./services/github-blog/2026-11-inside-github-s-new-git-storage-architecture-c18d658a.md",
+      "href": "./services/github-blog/2026-11-beyond-code-generation-a-developer-s-guide-to-agentic-engineering-92b8001e.md",
       "status": "published",
       "score": 42.0,
       "briefed_at": null,
-      "published_at": "2026-11-05",
-      "excerpt": "GitHub는 ‘Project Rubicon’으로 단일 리포지토리에서 **수천 쓰기/초**를 처리하도록 새 Git 저장소 아키텍처를 도입했다. 팩은 Azure Blob Storage에, 참조는 **Ref-CAS**라는 참조 전용 복제 로그로 분리하고 가상 레플리카와 별도 컴팩션 노드로 확장성을 확보했다.",
+      "published_at": "2026-11-06",
+      "excerpt": "GitHub은 Copilot을 중심으로 계획(Plan)·구현(Build)·검증(Verify)·관찰(Observe)을 잇는 'agentic engineering' 워크플로를 제시하며, **1주간 12억+ 커밋(전년 대비 400% 증가)**과 PR 검토 지연(441% 증가)을 근거로 세션 지속성, 클라우드 실행, 자동 코드…",
       "featured": false,
       "new": true
     },
@@ -10418,6 +10496,19 @@
       "briefed_at": "2026-06-13",
       "published_at": "2026-06-13",
       "excerpt": "피드 기준으로는 Anthropic이 Claude Fable 5와 Claude Mythos 5를 발표했습니다. Claude Fable 5는 ‘Mythos‑class’ 모델로 일반 사용에 맞게 안전하게 설계되었다고 요약되어 있습니다. 제공된 정보만 보면 출시 사실과 안전성 강조가 핵심입니다. 기술적 세부사항이나 배포 방식…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Cult.fit builds operational muscle with Codex",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-cult-fit-builds-operational-muscle-with-codex-bbd492ca.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": "2026-11-06",
+      "published_at": "2026-11-05",
+      "excerpt": "OpenAI 블로그 요약에 따르면 인도 피트니스 기업 Cult.fit이 Codex를 도입해 조직 전반에서 도구 개발을 지원하고 업무 속도 및 업무 방식 변화를 추진하고 있다. 제공된 피드 정보만으로는 세부 도구나 성과 수치가 확인되지 않습니다.",
       "featured": false,
       "new": false
     },
@@ -11189,15 +11280,15 @@
       "new": false
     },
     {
-      "title": "Cult.fit builds operational muscle with Codex",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-cult-fit-builds-operational-muscle-with-codex-bbd492ca.md",
+      "href": "./services/openai-blog/2026-11-partnering-with-hacktron-to-find-vulnerabilities-in-openai-s-systems-a0a44ed0.md",
       "status": "published",
       "score": 39.0,
       "briefed_at": null,
-      "published_at": "2026-11-05",
-      "excerpt": "OpenAI 블로그 요약에 따르면 인도 피트니스 기업 Cult.fit이 Codex를 도입해 조직 전반에서 도구 개발을 지원하고 업무 속도 및 업무 방식 변화를 추진하고 있다. 제공된 피드 정보만으로는 세부 도구나 성과 수치가 확인되지 않습니다.",
+      "published_at": "2026-11-06",
+      "excerpt": "피드 기준으로는 OpenAI가 Hacktron과 협력해 시스템 취약점 발굴, 서드파티 연동 테스트, 최첨단 AI를 활용한 방어 강화 계획을 2026-11-06에 발표했다고 나옵니다.",
       "featured": false,
       "new": true
     },
@@ -11588,6 +11679,19 @@
       "briefed_at": "2026-06-13",
       "published_at": "2026-06-11",
       "excerpt": "피드 기준으로는 OpenAI가 Ona를 인수할 계획이라고 발표했습니다. 인수 목적은 Codex를 보강해 보안되고 지속적인 클라우드 환경을 제공하는 것으로 보입니다. 제공된 정보만 보면 이 변화는 장기 실행형 AI 에이전트를 기업 워크플로에 통합하는 것을 목표로 합니다. 구체적인 조건이나 일정은 피드에 포함되어 있지 않습…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Merge builds product and business tools with OpenAI technology",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-merge-builds-product-and-business-tools-with-openai-technology-db9792e9.md",
+      "status": "published",
+      "score": 37.0,
+      "briefed_at": "2026-11-06",
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 Merge가 OpenAI 블로그에서 **GPT-6 Astra, ChatGPT, Codex**를 제품 코드 검토와 마케팅 지원에 적용하고, AI를 임원 만찬 기획과 영업 업데이트 준비에도 활용한다고 밝혔다.",
       "featured": false,
       "new": false
     },
@@ -12333,17 +12437,43 @@
       "new": false
     },
     {
-      "title": "Merge builds product and business tools with OpenAI technology",
+      "title": "Setting a new standard for responsible AI infrastructure",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-merge-builds-product-and-business-tools-with-openai-technology-db9792e9.md",
+      "href": "./services/openai-blog/2026-11-setting-a-new-standard-for-responsible-ai-infrastructure-25fa4dd1.md",
       "status": "published",
-      "score": 37.0,
-      "briefed_at": null,
+      "score": 36.0,
+      "briefed_at": "2026-11-06",
       "published_at": "2026-11-05",
-      "excerpt": "피드 기준으로는 Merge가 OpenAI 블로그에서 **GPT-6 Astra, ChatGPT, Codex**를 제품 코드 검토와 마케팅 지원에 적용하고, AI를 임원 만찬 기획과 영업 업데이트 준비에도 활용한다고 밝혔다.",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-05에 'National Community Compact'와 'Compute Campus Policy Blueprint'를 공개해 지역자원 보호, 일자리 창출, 책임 있는 AI 인프라 개발을 지향하는 정책 지침을 제시했다.",
       "featured": false,
-      "new": true
+      "new": false
+    },
+    {
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-gemini-omni-1-2-flash-fast-and-cost-effective-with-longer-clips-485654c1.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": "2026-11-06",
+      "published_at": "2026-11-05",
+      "excerpt": "Google이 Gemini Omni 1.2 Flash를 일반 공개했다. 네이티브 15초 영상 생성(3~15초 1초 단위), 멀티턴 대화식 편집, 참조 고정성 개선과 720p 초당 $0.07(Omni 1.1 대비 30% 인하)를 제공한다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Accessibility statements now have a home on GitHub",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-accessibility-statements-now-have-a-home-on-github-478057fc.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": "2026-11-06",
+      "published_at": "2026-11-05",
+      "excerpt": "GitHub은 저장소 개요에 ACCESSIBILITY.md를 표시하고 루트, .github/, docs/ 경로와 조직 .github/ 상속을 지원하며, 공개 저장소는 Insights > Community Standards에서 접근성 성명을 추가·제안할 수 있고 새 저장소에 접근성 이슈 라벨을 기본 포함한다고 발표했습니다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "The latest AI news we announced in October 2026",
@@ -13191,41 +13321,15 @@
       "new": false
     },
     {
-      "title": "Accessibility statements now have a home on GitHub",
-      "service_key": "github-blog",
-      "service_name": "GitHub Blog",
-      "href": "./services/github-blog/2026-11-accessibility-statements-now-have-a-home-on-github-478057fc.md",
-      "status": "published",
-      "score": 36.0,
-      "briefed_at": null,
-      "published_at": "2026-11-05",
-      "excerpt": "GitHub은 저장소 개요에 ACCESSIBILITY.md를 표시하고 루트, .github/, docs/ 경로와 조직 .github/ 상속을 지원하며, 공개 저장소는 Insights > Community Standards에서 접근성 성명을 추가·제안할 수 있고 새 저장소에 접근성 이슈 라벨을 기본 포함한다고 발표했습니다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-gemini-omni-1-2-flash-fast-and-cost-effective-with-longer-clips-485654c1.md",
-      "status": "published",
-      "score": 36.0,
-      "briefed_at": null,
-      "published_at": "2026-11-05",
-      "excerpt": "Google이 Gemini Omni 1.2 Flash를 일반 공개했다. 네이티브 15초 영상 생성(3~15초 1초 단위), 멀티턴 대화식 편집, 참조 고정성 개선과 720p 초당 $0.07(Omni 1.1 대비 30% 인하)를 제공한다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Setting a new standard for responsible AI infrastructure",
+      "title": "Australian universities are creating AI-native graduates",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-setting-a-new-standard-for-responsible-ai-infrastructure-25fa4dd1.md",
+      "href": "./services/openai-blog/2026-11-australian-universities-are-creating-ai-native-graduates-616c6817.md",
       "status": "published",
       "score": 36.0,
       "briefed_at": null,
       "published_at": "2026-11-05",
-      "excerpt": "피드 기준으로는 OpenAI가 2026-11-05에 'National Community Compact'와 'Compute Campus Policy Blueprint'를 공개해 지역자원 보호, 일자리 창출, 책임 있는 AI 인프라 개발을 지향하는 정책 지침을 제시했다.",
+      "excerpt": "피드 기준으로는 호주 대학들이 ChatGPT 접근을 확대하고 교육·학습에 AI를 통합해 학생들을 AI 기반 노동시장에 대비시키고 있다고 전합니다(출처: OpenAI 블로그, 2026-11-05).",
       "featured": false,
       "new": true
     },
@@ -14502,6 +14606,19 @@
       "excerpt": "Google 블로그에 올라온 ‘DiffusionGemma’ 소식은 피드 기준으로 텍스트 생성 속도를 4배 빠르게 개선했다고 요약합니다. 게시자와 저자로는 Brendan O'Donoghue와 Sebastian Flennerhag가 표기되어 있습니다. 제공된 정보만 보면 이 발표는 개발자 도구 관점에서 성능 향상에 초점을…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Introducing Images 2.6",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-introducing-images-2-6-295354ff.md",
+      "status": "published",
+      "score": 32.0,
+      "briefed_at": null,
+      "published_at": "2026-11-04",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-04에 Images 2.6을 발표했다. 빠른 이미지 생성, GIF 제작, 정밀 편집, ChatGPT·Codex·API용 신규 제어를 포함한다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",

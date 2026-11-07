@@ -795,8 +795,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-04T01:12:07.281456Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-11T01:31:34.299134Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -852,8 +852,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-04T01:12:07.281456Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-11T01:31:34.299134Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -909,8 +909,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-04T01:12:07.281456Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-11T01:31:34.299134Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -962,8 +962,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-04T01:12:07.281456Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-11T01:31:34.299134Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1435,8 +1435,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-03T01:12:07.280188Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-09T01:31:34.299134Z",
     "last_failure": "thin_content",
     "recovered_at": null,
     "extraction_method": null,
@@ -2441,6 +2441,273 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-07T01:59:04.986905Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout": {
+    "candidate": {
+      "candidate_id": "hacker-news:0a5391d7db4b8ea1",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+        "published_at": "2026-11-06T16:54:36Z",
+        "collected_at": "2026-11-07T01:31:29.661977Z",
+        "summary": "<p><a href=\"https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3-trillion-as-major-investors\" rel=\"nofollow\">https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3...</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50394906\">https://news.ycombinator.com/item?id=50394906</a></p>\n<p>Points: 221</p>\n<p># Comments: 474</p>",
+        "authors": [
+          "dgellow"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 18,
+          "hn_points": 221,
+          "hn_comments": 474,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50394906"
+        }
+      },
+      "normalized_url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+      "url_hash": "0a5391d7db4b8ea1805b6cff36b817f3a80381fa2cdd0427d1fc5e999d267598",
+      "title_fingerprint": "anthropic ipo buyers see valuation as low as 1 1t",
+      "feed_summary": "<p><a href=\"https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3-trillion-as-major-investors\" rel=\"nofollow\">https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3...</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50394906\">https://news.ycombinator.com/item?id=50394906</a></p>\n<p>Points: 221</p>\n<p># Comments: 474</p>",
+      "suggested_doc_key": "2026-11-anthropic-ipo-buyers-see-valuation-as-low-as-1-1t-0a5391d7",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-anthropic-ipo-buyers-see-valuation-as-low-as-1-1t-0a5391d7.md",
+      "candidate_score": 60.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 221점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 474개를 토론 신호로 반영했습니다.",
+        "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-08T01:31:34.297862Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science": {
+    "candidate": {
+      "candidate_id": "openai-blog:5f721228af3682c2",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Measuring how AI agents handle everyday wet-lab science",
+        "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+        "published_at": "2026-11-06T00:00:00Z",
+        "collected_at": "2026-11-07T01:31:30.402976Z",
+        "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+        "authors": [],
+        "tags": [
+          "Publication"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "url_hash": "5f721228af3682c2417b4131d4680ee3211f1024fcf682ecae1568fe5c5140e2",
+      "title_fingerprint": "measuring how ai agents handle everyday wet lab science",
+      "feed_summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+      "suggested_doc_key": "2026-11-measuring-how-ai-agents-handle-everyday-wet-lab-science-5f721228",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-measuring-how-ai-agents-handle-everyday-wet-lab-science-5f721228.md",
+      "candidate_score": 47.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-08T01:31:34.297862Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/partnering-with-hacktron": {
+    "candidate": {
+      "candidate_id": "openai-blog:a0a44ed09dc9a108",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+        "url": "https://openai.com/index/partnering-with-hacktron",
+        "published_at": "2026-11-06T08:00:00Z",
+        "collected_at": "2026-11-07T01:31:30.402976Z",
+        "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+        "authors": [],
+        "tags": [
+          "Security"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/partnering-with-hacktron",
+      "url_hash": "a0a44ed09dc9a1089b4e099f4e0fbf8e71ea906b8e386a1df3e114e9f9678292",
+      "title_fingerprint": "partnering with hacktron to find vulnerabilities in openai s systems",
+      "feed_summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+      "suggested_doc_key": "2026-11-partnering-with-hacktron-to-find-vulnerabilities-in-openai-s-systems-a0a44ed0",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-partnering-with-hacktron-to-find-vulnerabilities-in-openai-s-systems-a0a44ed0.md",
+      "candidate_score": 39.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-08T01:31:34.297862Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/australian-universities-ai-native-graduates": {
+    "candidate": {
+      "candidate_id": "openai-blog:616c68177b707eae",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Australian universities are creating AI-native graduates",
+        "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+        "published_at": "2026-11-05T17:00:00Z",
+        "collected_at": "2026-11-07T01:31:30.402976Z",
+        "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+        "authors": [],
+        "tags": [
+          "Company"
+        ],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "url_hash": "616c68177b707eae60eb2b7e618a86105e3926c540e149caa916945e5a2342dd",
+      "title_fingerprint": "australian universities are creating ai native graduates",
+      "feed_summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+      "suggested_doc_key": "2026-11-australian-universities-are-creating-ai-native-graduates-616c6817",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-australian-universities-are-creating-ai-native-graduates-616c6817.md",
+      "candidate_score": 36.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-08T01:31:34.297862Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/introducing-images-2-6": {
+    "candidate": {
+      "candidate_id": "openai-blog:295354ff422b0d4d",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Introducing Images 2.6",
+        "url": "https://openai.com/index/introducing-images-2-6",
+        "published_at": "2026-11-04T00:00:00Z",
+        "collected_at": "2026-11-07T01:31:30.402976Z",
+        "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+        "authors": [],
+        "tags": [
+          "Product"
+        ],
+        "metadata": {
+          "rss_rank": 13
+        }
+      },
+      "normalized_url": "https://openai.com/index/introducing-images-2-6",
+      "url_hash": "295354ff422b0d4db922748e7c3d1bbebb7a9ab588c6d205b09352b92e57d424",
+      "title_fingerprint": "introducing images 2 6",
+      "feed_summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+      "suggested_doc_key": "2026-11-introducing-images-2-6-295354ff",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-introducing-images-2-6-295354ff.md",
+      "candidate_score": 32.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 3,
+        "freshness_score": 17.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-08T01:31:34.297862Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,

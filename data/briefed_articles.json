@@ -12810,6 +12810,96 @@
       "status": "published",
       "briefed_at": "2026-11-06T02:03:38.618270Z",
       "candidate_score": 36.0
+    },
+    "92b8001eea640de46464379cffa617f3e3cc9f4ee90230a364293b2d939b5f3c": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering",
+      "title_fingerprint": "beyond code generation a developer s guide to agentic engineering",
+      "service_key": "github-blog",
+      "title": "Beyond code generation: A developer’s guide to agentic engineering",
+      "article_doc_path": "docs/services/github-blog/2026-11-beyond-code-generation-a-developer-s-guide-to-agentic-engineering-92b8001e.md",
+      "status": "published",
+      "briefed_at": "2026-11-07T01:34:29.950232Z",
+      "candidate_score": 42.0
+    },
+    "e0c8b4541e0b5e8be31a9bff4568011d13ec940dcb82958e18289ef296b725f4": {
+      "normalized_url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "title_fingerprint": "ai is dramatically accelerating ai research",
+      "service_key": "hacker-news",
+      "title": "AI is dramatically accelerating AI research",
+      "article_doc_path": "docs/services/hacker-news/2026-11-ai-is-dramatically-accelerating-ai-research-e0c8b454.md",
+      "status": "published",
+      "briefed_at": "2026-11-07T01:34:29.950267Z",
+      "candidate_score": 64.2
+    },
+    "60724c835de1389a14bee876fee8bbbda6e1b2eb42037cd889c60772d29662ad": {
+      "normalized_url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+      "title_fingerprint": "a jev that can ask opus for help gives opus accuracy at 4x lower cost",
+      "service_key": "hacker-news",
+      "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+      "article_doc_path": "docs/services/hacker-news/2026-11-a-jev-that-can-ask-opus-for-help-gives-opus-accuracy-at-4x-lower-cost-60724c83.md",
+      "status": "published",
+      "briefed_at": "2026-11-07T01:34:29.950275Z",
+      "candidate_score": 61.8
+    },
+    "0a5391d7db4b8ea1805b6cff36b817f3a80381fa2cdd0427d1fc5e999d267598": {
+      "normalized_url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+      "title_fingerprint": "anthropic ipo buyers see valuation as low as 1 1t",
+      "service_key": "hacker-news",
+      "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+      "article_doc_path": "docs/services/hacker-news/2026-11-anthropic-ipo-buyers-see-valuation-as-low-as-1-1t-0a5391d7.md",
+      "status": "published",
+      "briefed_at": "2026-11-07T01:34:29.950281Z",
+      "candidate_score": 60.0
+    },
+    "19e5a3d3b856bd20631f2915f952d33dca57ea6d0337ea7ea2ea61d42199dcf5": {
+      "normalized_url": "https://pwn.ai/blog/firecracker-escape",
+      "title_fingerprint": "firecracker vm escape pwnescape part 2",
+      "service_key": "hacker-news",
+      "title": "Firecracker VM Escape: PwnEscape Part 2",
+      "article_doc_path": "docs/services/hacker-news/2026-11-firecracker-vm-escape-pwnescape-part-2-19e5a3d3.md",
+      "status": "published",
+      "briefed_at": "2026-11-07T01:34:29.950285Z",
+      "candidate_score": 58.0
+    },
+    "5f721228af3682c2417b4131d4680ee3211f1024fcf682ecae1568fe5c5140e2": {
+      "normalized_url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "title_fingerprint": "measuring how ai agents handle everyday wet lab science",
+      "service_key": "openai-blog",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "article_doc_path": "docs/services/openai-blog/2026-11-measuring-how-ai-agents-handle-everyday-wet-lab-science-5f721228.md",
+      "status": "published",
+      "briefed_at": "2026-11-07T01:34:29.950290Z",
+      "candidate_score": 47.0
+    },
+    "a0a44ed09dc9a1089b4e099f4e0fbf8e71ea906b8e386a1df3e114e9f9678292": {
+      "normalized_url": "https://openai.com/index/partnering-with-hacktron",
+      "title_fingerprint": "partnering with hacktron to find vulnerabilities in openai s systems",
+      "service_key": "openai-blog",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "article_doc_path": "docs/services/openai-blog/2026-11-partnering-with-hacktron-to-find-vulnerabilities-in-openai-s-systems-a0a44ed0.md",
+      "status": "published",
+      "briefed_at": "2026-11-07T01:34:29.950295Z",
+      "candidate_score": 39.0
+    },
+    "616c68177b707eae60eb2b7e618a86105e3926c540e149caa916945e5a2342dd": {
+      "normalized_url": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "title_fingerprint": "australian universities are creating ai native graduates",
+      "service_key": "openai-blog",
+      "title": "Australian universities are creating AI-native graduates",
+      "article_doc_path": "docs/services/openai-blog/2026-11-australian-universities-are-creating-ai-native-graduates-616c6817.md",
+      "status": "published",
+      "briefed_at": "2026-11-07T01:34:29.950300Z",
+      "candidate_score": 36.0
+    },
+    "295354ff422b0d4db922748e7c3d1bbebb7a9ab588c6d205b09352b92e57d424": {
+      "normalized_url": "https://openai.com/index/introducing-images-2-6",
+      "title_fingerprint": "introducing images 2 6",
+      "service_key": "openai-blog",
+      "title": "Introducing Images 2.6",
+      "article_doc_path": "docs/services/openai-blog/2026-11-introducing-images-2-6-295354ff.md",
+      "status": "published",
+      "briefed_at": "2026-11-07T01:34:29.950303Z",
+      "candidate_score": 32.0
     }
   }
 }
