@@ -1,0 +1,314 @@
+{
+  "generated_at": "2026-11-07T01:31:23.309336+00:00",
+  "generated_for": "2026-11-07",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "d46d05aa7d02c953e0ca3f7bff12079c805d4f56",
+  "github_run_id": "42324392595",
+  "service_count": 5,
+  "duration_ms": 7,
+  "raw_count": 120,
+  "candidate_count": 21,
+  "excluded_count": 99,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 31,
+      "excluded_count": 88,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 88
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 31,
+      "output_count": 31,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 31,
+      "output_count": 31,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 31,
+      "output_count": 21,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:92b8001eea640de4",
+          "title": "Beyond code generation: A developer’s guide to agentic engineering",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering",
+          "url_hash": "92b8001eea640de46464379cffa617f3e3cc9f4ee90230a364293b2d939b5f3c",
+          "suggested_doc_key": "2026-11-beyond-code-generation-a-developer-s-guide-to-agentic-engineering-92b8001e",
+          "suggested_article_path": "docs/services/github-blog/2026-11-beyond-code-generation-a-developer-s-guide-to-agentic-engineering-92b8001e.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:e0c8b4541e0b5e8b",
+          "title": "AI is dramatically accelerating AI research",
+          "normalized_url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+          "url_hash": "e0c8b4541e0b5e8be31a9bff4568011d13ec940dcb82958e18289ef296b725f4",
+          "suggested_doc_key": "2026-11-ai-is-dramatically-accelerating-ai-research-e0c8b454",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-ai-is-dramatically-accelerating-ai-research-e0c8b454.md",
+          "candidate_score": 64.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 192점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 148개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:60724c835de1389a",
+          "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+          "normalized_url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+          "url_hash": "60724c835de1389a14bee876fee8bbbda6e1b2eb42037cd889c60772d29662ad",
+          "suggested_doc_key": "2026-11-a-jev-that-can-ask-opus-for-help-gives-opus-accuracy-at-4x-lower-cost-60724c83",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-a-jev-that-can-ask-opus-for-help-gives-opus-accuracy-at-4x-lower-cost-60724c83.md",
+          "candidate_score": 61.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 320점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 69개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0a5391d7db4b8ea1",
+          "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+          "normalized_url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+          "url_hash": "0a5391d7db4b8ea1805b6cff36b817f3a80381fa2cdd0427d1fc5e999d267598",
+          "suggested_doc_key": "2026-11-anthropic-ipo-buyers-see-valuation-as-low-as-1-1t-0a5391d7",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-anthropic-ipo-buyers-see-valuation-as-low-as-1-1t-0a5391d7.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 221점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 474개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:19e5a3d3b856bd20",
+          "title": "Firecracker VM Escape: PwnEscape Part 2",
+          "normalized_url": "https://pwn.ai/blog/firecracker-escape",
+          "url_hash": "19e5a3d3b856bd20631f2915f952d33dca57ea6d0337ea7ea2ea61d42199dcf5",
+          "suggested_doc_key": "2026-11-firecracker-vm-escape-pwnescape-part-2-19e5a3d3",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-firecracker-vm-escape-pwnescape-part-2-19e5a3d3.md",
+          "candidate_score": 58.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 166점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 72개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b81ea0f95984f901",
+          "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
+          "normalized_url": "https://github.com/anomalyco/rune",
+          "url_hash": "b81ea0f95984f901c2eb308482799f6e8f6c959c31f57ca8733bac6e7baac858",
+          "suggested_doc_key": "2026-11-rune-a-native-gpu-rendered-rust-ui-framework-for-macos-windows-linux-and-b81ea0f9",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-rune-a-native-gpu-rendered-rust-ui-framework-for-macos-windows-linux-and-b81ea0f9.md",
+          "candidate_score": 55.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 153점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 107개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:5f721228af3682c2",
+          "title": "Measuring how AI agents handle everyday wet-lab science",
+          "normalized_url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+          "url_hash": "5f721228af3682c2417b4131d4680ee3211f1024fcf682ecae1568fe5c5140e2",
+          "suggested_doc_key": "2026-11-measuring-how-ai-agents-handle-everyday-wet-lab-science-5f721228",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-measuring-how-ai-agents-handle-everyday-wet-lab-science-5f721228.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:a0a44ed09dc9a108",
+          "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+          "normalized_url": "https://openai.com/index/partnering-with-hacktron",
+          "url_hash": "a0a44ed09dc9a1089b4e099f4e0fbf8e71ea906b8e386a1df3e114e9f9678292",
+          "suggested_doc_key": "2026-11-partnering-with-hacktron-to-find-vulnerabilities-in-openai-s-systems-a0a44ed0",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-partnering-with-hacktron-to-find-vulnerabilities-in-openai-s-systems-a0a44ed0.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:616c68177b707eae",
+          "title": "Australian universities are creating AI-native graduates",
+          "normalized_url": "https://openai.com/index/australian-universities-ai-native-graduates",
+          "url_hash": "616c68177b707eae60eb2b7e618a86105e3926c540e149caa916945e5a2342dd",
+          "suggested_doc_key": "2026-11-australian-universities-are-creating-ai-native-graduates-616c6817",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-australian-universities-are-creating-ai-native-graduates-616c6817.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:295354ff422b0d4d",
+          "title": "Introducing Images 2.6",
+          "normalized_url": "https://openai.com/index/introducing-images-2-6",
+          "url_hash": "295354ff422b0d4db922748e7c3d1bbebb7a9ab588c6d205b09352b92e57d424",
+          "suggested_doc_key": "2026-11-introducing-images-2-6-295354ff",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-introducing-images-2-6-295354ff.md",
+          "candidate_score": 32.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:2d1d326185a62641",
+          "title": "Flipsnack grows product signups with conversion optimization",
+          "normalized_url": "https://openai.com/ads/customers/flipsnack",
+          "url_hash": "2d1d326185a62641bed05bf7f26ce7de70018d67127b0626b6b2080acbead4c8",
+          "suggested_doc_key": "2026-11-flipsnack-grows-product-signups-with-conversion-optimization-2d1d3261",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-flipsnack-grows-product-signups-with-conversion-optimization-2d1d3261.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 39,
+        "service_candidate_limit": 1
+      }
+    }
+  ]
+}
