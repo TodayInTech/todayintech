@@ -12900,6 +12900,86 @@
       "status": "published",
       "briefed_at": "2026-11-07T01:34:29.950303Z",
       "candidate_score": 32.0
+    },
+    "10bdc73097cfd2386d0a762b95dc77e518c680989d890e766788d398671a3536": {
+      "normalized_url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "title_fingerprint": "claude code s don t ask again exposes passwords in 1 122 public github files",
+      "service_key": "hacker-news",
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "article_doc_path": "docs/services/hacker-news/2026-11-claude-code-s-don-t-ask-again-exposes-passwords-in-1-122-public-github-f-10bdc730.md",
+      "status": "published",
+      "briefed_at": "2026-11-08T01:03:33.939681Z",
+      "candidate_score": 66.6
+    },
+    "afa17e14952fa29978e18d9e7f872ec6385ef2d28b1a44a937a52e0102b3cdf7": {
+      "normalized_url": "https://blog.bosscher.ch/posts/openstick",
+      "title_fingerprint": "what i run on my 10 usd openstick homelab",
+      "service_key": "hacker-news",
+      "title": "What I run on my $10 USD OpenStick homelab",
+      "article_doc_path": "docs/services/hacker-news/2026-11-what-i-run-on-my-10-usd-openstick-homelab-afa17e14.md",
+      "status": "published",
+      "briefed_at": "2026-11-08T01:03:33.939712Z",
+      "candidate_score": 61.0
+    },
+    "8017ce29f6d88c8d95a2209177888f3f25a01062fdf68e0d0a30026ee2c203ba": {
+      "normalized_url": "https://hunch.net/?p=13764006",
+      "title_fingerprint": "the end of microsoft research s ai frontiers group",
+      "service_key": "hacker-news",
+      "title": "The end of Microsoft Research's AI Frontiers group",
+      "article_doc_path": "docs/services/hacker-news/2026-11-the-end-of-microsoft-research-s-ai-frontiers-group-8017ce29.md",
+      "status": "published",
+      "briefed_at": "2026-11-08T01:03:33.939718Z",
+      "candidate_score": 60.0
+    },
+    "840f536384a14a6f8423ebbd5c9f3e0989c18fb77ab7aed616825c238db63d18": {
+      "normalized_url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
+      "title_fingerprint": "apple s grey list words and phrases your iphone won t help you spell",
+      "service_key": "hacker-news",
+      "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+      "article_doc_path": "docs/services/hacker-news/2026-11-apple-s-grey-list-words-and-phrases-your-iphone-won-t-help-you-spell-840f5363.md",
+      "status": "published",
+      "briefed_at": "2026-11-08T01:03:33.939721Z",
+      "candidate_score": 60.0
+    },
+    "2d1d326185a62641bed05bf7f26ce7de70018d67127b0626b6b2080acbead4c8": {
+      "normalized_url": "https://openai.com/ads/customers/flipsnack",
+      "title_fingerprint": "flipsnack grows product signups with conversion optimization",
+      "service_key": "openai-blog",
+      "title": "Flipsnack grows product signups with conversion optimization",
+      "article_doc_path": "docs/services/openai-blog/2026-11-flipsnack-grows-product-signups-with-conversion-optimization-2d1d3261.md",
+      "status": "published",
+      "briefed_at": "2026-11-08T01:03:33.939726Z",
+      "candidate_score": 30.0
+    },
+    "a8e215d1c3fca63aee0ffd81acf9a149c8070d7929a87491384cb6b33805423d": {
+      "normalized_url": "https://openai.com/index/franklin-templeton",
+      "title_fingerprint": "franklin templeton uses openai to support investment research",
+      "service_key": "openai-blog",
+      "title": "Franklin Templeton uses OpenAI to support investment research",
+      "article_doc_path": "docs/services/openai-blog/2026-11-franklin-templeton-uses-openai-to-support-investment-research-a8e215d1.md",
+      "status": "published",
+      "briefed_at": "2026-11-08T01:03:33.939729Z",
+      "candidate_score": 28.0
+    },
+    "fbaa86a829ad59fd10c58d013d5956116602b056ae7817da772b6c91267e6908": {
+      "normalized_url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "title_fingerprint": "a thousand fewer paths to root",
+      "service_key": "openai-blog",
+      "title": "A thousand fewer paths to root",
+      "article_doc_path": "docs/services/openai-blog/2026-11-a-thousand-fewer-paths-to-root-fbaa86a8.md",
+      "status": "published",
+      "briefed_at": "2026-11-08T01:03:33.939733Z",
+      "candidate_score": 27.0
+    },
+    "277870ffc8d71544c0465c137654062f6f2bf7e7d7a1ec8af9071c966d86edc3": {
+      "normalized_url": "https://openai.com/index/scaling-git-at-openai",
+      "title_fingerprint": "scaling git at openai",
+      "service_key": "openai-blog",
+      "title": "Scaling Git at OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-11-scaling-git-at-openai-277870ff.md",
+      "status": "published",
+      "briefed_at": "2026-11-08T01:03:33.939735Z",
+      "candidate_score": 25.0
     }
   }
 }

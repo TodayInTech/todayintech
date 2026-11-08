@@ -1015,8 +1015,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-04T01:12:07.281456Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-12T01:01:06.136505Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1488,8 +1488,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-04T03:15:41.726673Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-10T01:01:06.136505Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1541,8 +1541,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-04T03:15:41.726673Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-10T01:01:06.136505Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1594,8 +1594,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-04T03:15:41.726673Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-10T01:01:06.136505Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1646,8 +1646,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-04T03:15:41.726673Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-10T01:01:06.136505Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2708,6 +2708,268 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-08T01:31:34.297862Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again": {
+    "candidate": {
+      "candidate_id": "hacker-news:10bdc73097cfd238",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+        "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+        "published_at": "2026-11-07T20:45:32Z",
+        "collected_at": "2026-11-08T01:01:01.600703Z",
+        "summary": "<p>Article URL: <a href=\"https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again\">https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50407882\">https://news.ycombinator.com/item?id=50407882</a></p>\n<p>Points: 146</p>\n<p># Comments: 104</p>",
+        "authors": [
+          "shmulc"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 8,
+          "hn_points": 146,
+          "hn_comments": 104,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50407882"
+        }
+      },
+      "normalized_url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "url_hash": "10bdc73097cfd2386d0a762b95dc77e518c680989d890e766788d398671a3536",
+      "title_fingerprint": "claude code s don t ask again exposes passwords in 1 122 public github files",
+      "feed_summary": "<p>Article URL: <a href=\"https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again\">https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50407882\">https://news.ycombinator.com/item?id=50407882</a></p>\n<p>Points: 146</p>\n<p># Comments: 104</p>",
+      "suggested_doc_key": "2026-11-claude-code-s-don-t-ask-again-exposes-passwords-in-1-122-public-github-f-10bdc730",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-claude-code-s-don-t-ask-again-exposes-passwords-in-1-122-public-github-f-10bdc730.md",
+      "candidate_score": 66.6,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": 14.6,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 2.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "Hacker News 점수 146점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 104개를 토론 신호로 반영했습니다.",
+        "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-09T01:01:06.135344Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/ads/customers/flipsnack": {
+    "candidate": {
+      "candidate_id": "openai-blog:2d1d326185a62641",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Flipsnack grows product signups with conversion optimization",
+        "url": "https://openai.com/ads/customers/flipsnack",
+        "published_at": "2026-11-05T00:45:15Z",
+        "collected_at": "2026-11-08T01:01:02.467160Z",
+        "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 8
+        }
+      },
+      "normalized_url": "https://openai.com/ads/customers/flipsnack",
+      "url_hash": "2d1d326185a62641bed05bf7f26ce7de70018d67127b0626b6b2080acbead4c8",
+      "title_fingerprint": "flipsnack grows product signups with conversion optimization",
+      "feed_summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
+      "suggested_doc_key": "2026-11-flipsnack-grows-product-signups-with-conversion-optimization-2d1d3261",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-flipsnack-grows-product-signups-with-conversion-optimization-2d1d3261.md",
+      "candidate_score": 30.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 2,
+        "freshness_score": 18.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 2.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+        "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-09T01:01:06.135344Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/franklin-templeton": {
+    "candidate": {
+      "candidate_id": "openai-blog:a8e215d1c3fca63a",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Franklin Templeton uses OpenAI to support investment research",
+        "url": "https://openai.com/index/franklin-templeton",
+        "published_at": "2026-11-05T00:00:00Z",
+        "collected_at": "2026-11-08T01:01:02.467160Z",
+        "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 9
+        }
+      },
+      "normalized_url": "https://openai.com/index/franklin-templeton",
+      "url_hash": "a8e215d1c3fca63aee0ffd81acf9a149c8070d7929a87491384cb6b33805423d",
+      "title_fingerprint": "franklin templeton uses openai to support investment research",
+      "feed_summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
+      "suggested_doc_key": "2026-11-franklin-templeton-uses-openai-to-support-investment-research-a8e215d1",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-franklin-templeton-uses-openai-to-support-investment-research-a8e215d1.md",
+      "candidate_score": 28.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 3,
+        "freshness_score": 17.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 1.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+        "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-09T01:01:06.135344Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/a-thousand-fewer-paths-to-root": {
+    "candidate": {
+      "candidate_id": "openai-blog:fbaa86a829ad59fd",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "A thousand fewer paths to root",
+        "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+        "published_at": "2026-11-04T08:00:00Z",
+        "collected_at": "2026-11-08T01:01:02.467160Z",
+        "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
+        "authors": [],
+        "tags": [
+          "Security"
+        ],
+        "metadata": {
+          "rss_rank": 12
+        }
+      },
+      "normalized_url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "url_hash": "fbaa86a829ad59fd10c58d013d5956116602b056ae7817da772b6c91267e6908",
+      "title_fingerprint": "a thousand fewer paths to root",
+      "feed_summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
+      "suggested_doc_key": "2026-11-a-thousand-fewer-paths-to-root-fbaa86a8",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-a-thousand-fewer-paths-to-root-fbaa86a8.md",
+      "candidate_score": 27.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 3,
+        "freshness_score": 17.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+        "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-09T01:01:06.135344Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/scaling-git-at-openai": {
+    "candidate": {
+      "candidate_id": "openai-blog:277870ffc8d71544",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Scaling Git at OpenAI",
+        "url": "https://openai.com/index/scaling-git-at-openai",
+        "published_at": "2026-11-02T15:30:00Z",
+        "collected_at": "2026-11-08T01:01:02.467160Z",
+        "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+        "authors": [],
+        "tags": [
+          "Engineering"
+        ],
+        "metadata": {
+          "rss_rank": 19
+        }
+      },
+      "normalized_url": "https://openai.com/index/scaling-git-at-openai",
+      "url_hash": "277870ffc8d71544c0465c137654062f6f2bf7e7d7a1ec8af9071c966d86edc3",
+      "title_fingerprint": "scaling git at openai",
+      "feed_summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+      "suggested_doc_key": "2026-11-scaling-git-at-openai-277870ff",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-scaling-git-at-openai-277870ff.md",
+      "candidate_score": 25.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 5,
+        "freshness_score": 15.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 5일이 지난 글로 최신성 15점을 반영했습니다.",
+        "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-09T01:01:06.135344Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,

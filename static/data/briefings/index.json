@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-07",
+  "generated_for": "2026-11-08",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -930,6 +930,19 @@
       "excerpt": "Linode 상태 페이지는 2026-10-30 21:18 UTC 공지에서 Akamai가 원격 코드 실행 취약점 **CVE-2026-98432**를 인지했으며 Linode가 현재 조사 및 완화 작업을 진행 중이라고 밝혔다. 영향이 의심되면 지원 티켓 제출을 권장한다.",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-claude-code-s-don-t-ask-again-exposes-passwords-in-1-122-public-github-f-10bdc730.md",
+      "status": "published",
+      "score": 66.6,
+      "briefed_at": null,
+      "published_at": "2026-11-07",
+      "excerpt": "피드 기준으로는 Claude Code의 'Don't Ask Again' 기능이 1,122개의 공개 GitHub 파일에서 비밀번호를 노출했다고 보도되었으며, 해당 게시물은 Hacker News에서 높은 관심(146포인트, 댓글 104개)을 받았습니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Type Server Protocol",
@@ -2635,6 +2648,19 @@
       "new": false
     },
     {
+      "title": "AI is dramatically accelerating AI research",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-ai-is-dramatically-accelerating-ai-research-e0c8b454.md",
+      "status": "published",
+      "score": 64.2,
+      "briefed_at": "2026-11-07",
+      "published_at": "2026-11-06",
+      "excerpt": "METR의 심층 조사에 따르면 Anthropic 내부 지표(AECI) 기준 2025년10월~2026년10월 사이 역량 진전 속도가 약 2배로 빨라졌고, 보고서는 그 대다수를 AI의 연구 자동화 탓으로 돌립니다. 이로 인해 연구자 생산성은 수배(보고서 추정 4–9x, 내부 자가보고 ~12x)로 증가했으며, 산업 전반의 보…",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Show HN: Open-Source eInk Bike Computer",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2659,19 +2685,6 @@
       "excerpt": "2026년 4월 13일 버지니아 주지사 Abigail Spanberger가 서명한 S.B. 388은 버지니아 소비자 데이터 보호법(VCDPA)을 개정해 위치정보(geolocation) 데이터의 ‘판매’를 금지했습니다. 법은 ‘판매’를 기존 일부 주보다 좁게 규정해 ‘컨트롤러가 제3자에게 개인 데이터를 금전적 대가로 교환…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "AI is dramatically accelerating AI research",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-ai-is-dramatically-accelerating-ai-research-e0c8b454.md",
-      "status": "published",
-      "score": 64.2,
-      "briefed_at": null,
-      "published_at": "2026-11-06",
-      "excerpt": "METR의 심층 조사에 따르면 Anthropic 내부 지표(AECI) 기준 2025년10월~2026년10월 사이 역량 진전 속도가 약 2배로 빨라졌고, 보고서는 그 대다수를 AI의 연구 자동화 탓으로 돌립니다. 이로 인해 연구자 생산성은 수배(보고서 추정 4–9x, 내부 자가보고 ~12x)로 증가했으며, 산업 전반의 보…",
-      "featured": false,
-      "new": true
     },
     {
       "title": "VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO",
@@ -3610,6 +3623,19 @@
       "new": false
     },
     {
+      "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-a-jev-that-can-ask-opus-for-help-gives-opus-accuracy-at-4x-lower-cost-60724c83.md",
+      "status": "published",
+      "score": 61.8,
+      "briefed_at": "2026-11-07",
+      "published_at": "2026-11-06",
+      "excerpt": "Hightouch 실험에서 **경량 결정 모델 Jev를 1차 판정기로 쓰고 불확실 사례만 고성능 모델(Opus)으로 넘기는 하이브리드가 Opus 단독과 유사한 정확도(예: 99.0% 근접)를 유지하면서 비용을 >4배 낮췄다. Jev의 신뢰도 보정 우위가 핵심 기전이다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "OpenAI just open-sourced Codex Security",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3621,19 +3647,6 @@
       "excerpt": "OpenAI가 공개한 @openai/codex-security는 코드베이스의 취약점을 찾아 검증하고 수정하는 데 쓰이는 CLI와 TypeScript SDK입니다. 레포지토리 스캔, 변경사항 검토, 발견사항의 시간 추적 기능을 제공하며 CI 파이프라인에서 보안 검사를 실행할 수 있도록 설계되어 있어 개발 흐름에 직접 통합…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-a-jev-that-can-ask-opus-for-help-gives-opus-accuracy-at-4x-lower-cost-60724c83.md",
-      "status": "published",
-      "score": 61.8,
-      "briefed_at": null,
-      "published_at": "2026-11-06",
-      "excerpt": "Hightouch 실험에서 **경량 결정 모델 Jev를 1차 판정기로 쓰고 불확실 사례만 고성능 모델(Opus)으로 넘기는 하이브리드가 Opus 단독과 유사한 정확도(예: 99.0% 근접)를 유지하면서 비용을 >4배 낮췄다. Jev의 신뢰도 보정 우위가 핵심 기전이다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "GPT-5.6, Grok 4.5, Claude, and Muse Spark build the same 4 apps",
@@ -4026,6 +4039,19 @@
       "new": false
     },
     {
+      "title": "What I run on my $10 USD OpenStick homelab",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-what-i-run-on-my-10-usd-openstick-homelab-afa17e14.md",
+      "status": "published",
+      "score": 61.0,
+      "briefed_at": null,
+      "published_at": "2026-11-07",
+      "excerpt": "작성자는 배송 포함 10달러짜리 OpenStick(512MB RAM, 4 A53 코어, 4GB eMMC)에서 Debian·Podman 기반으로 AdGuard, Zeroclaw, Cloudflare Tunnel, Beszel, Fusion RSS 등 여러 경량 서비스를 운용하며 각 서비스의 메모리 사용량(예: Zerocl…",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Go 1.27",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -4191,6 +4217,19 @@
       "briefed_at": "2026-10-13",
       "published_at": "2026-10-12",
       "excerpt": "Agent37은 AI 에이전트를 위한 '저비용 샌드박스'를 표방하며 호스트당 평균 비용을 업계의 10% 이하로 낮췄다고 소개한다. 창업자 비슈누는 고객당 평균 지출을 월 $0.37로 제시하고, 무료 플랜의 인프라 비용은 사용자당 월 $0.05~$0.10 수준이라고 밝힌다. 초기에는 OpenClaw 래퍼로 시작했으나 다양…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-anthropic-ipo-buyers-see-valuation-as-low-as-1-1t-0a5391d7.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-07",
+      "published_at": "2026-11-06",
+      "excerpt": "Bloomberg 헤드라인에 따르면 Anthropic IPO 매수측이 회사 가치를 1.1조 달러까지 낮게 보는 것으로 전해졌으며, 해당 보도는 Hacker News에서 활발히 논의(포인트 221·댓글 474)되고 있다. 피드 기준으로는 기사 본문은 제공되지 않았다.",
       "featured": false,
       "new": false
     },
@@ -7016,15 +7055,28 @@
       "new": false
     },
     {
-      "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+      "title": "The end of Microsoft Research's AI Frontiers group",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-anthropic-ipo-buyers-see-valuation-as-low-as-1-1t-0a5391d7.md",
+      "href": "./services/hacker-news/2026-11-the-end-of-microsoft-research-s-ai-frontiers-group-8017ce29.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-06",
-      "excerpt": "Bloomberg 헤드라인에 따르면 Anthropic IPO 매수측이 회사 가치를 1.1조 달러까지 낮게 보는 것으로 전해졌으며, 해당 보도는 Hacker News에서 활발히 논의(포인트 221·댓글 474)되고 있다. 피드 기준으로는 기사 본문은 제공되지 않았다.",
+      "published_at": "2026-11-07",
+      "excerpt": "Microsoft Research 내 AI Frontiers(AIF, 약 50명)가 MAI와의 재편 과정에서 해체되었다고 AIF 창립 리더가 밝혔다. 글은 MAI의 '확장(스케일) 우선' 철학과 연구 중심 접근의 불일치, 모노레포·기술 성과, 인턴십 중단 등을 근거로 퇴사 이유와 실무 영향을 설명한다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-apple-s-grey-list-words-and-phrases-your-iphone-won-t-help-you-spell-840f5363.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-11-07",
+      "excerpt": "독립 연구자 데릭 카프먼이 iOS 운영체제 내에 하드코딩된 **10만개 이상 분량의 '그레이리스트'**를 찾아내 스와이프·예측완성에서 약물, 성적 표현과 일부 정치적 문구(예: \"Trayvon Martin\", \"Kashmir dispute\") 등이 자동완성되지 않는다고 보고했다. 애플은 부적절한 제안을 피하도록 설계했다…",
       "featured": false,
       "new": true
     },
@@ -7224,6 +7276,19 @@
       "new": false
     },
     {
+      "title": "Firecracker VM Escape: PwnEscape Part 2",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-firecracker-vm-escape-pwnescape-part-2-19e5a3d3.md",
+      "status": "published",
+      "score": 58.0,
+      "briefed_at": "2026-11-07",
+      "published_at": "2026-11-06",
+      "excerpt": "게스트가 호스트 메모리 접근을 이용해 Firecracker의 vCPU에 저장된 pt_regs를 찾아 수정하고, KVM_RUN 복귀 시 Firecracker의 write(2, \"N8V23M2\\n\", 8)를 호출하도록 조작해 호스트에서 루트 권한으로 코드 실행(CVE-2026-99999)을 달성했습니다. 실험은 Firecr…",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "How the words we teach English language learners changed",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -7235,19 +7300,6 @@
       "excerpt": "1953년의 General Service List(GSL, 약 2,284개 단어)와 2023년의 New General Service List(NGSL, 2,809개)를 비교하면, 핵심 어휘의 구성 자체가 70년 사이에 크게 바뀌었다. 약 1,153개 단어가 추가되고 628개가 빠지며(1,656개는 유지), 텔레그래프가…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Firecracker VM Escape: PwnEscape Part 2",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-firecracker-vm-escape-pwnescape-part-2-19e5a3d3.md",
-      "status": "published",
-      "score": 58.0,
-      "briefed_at": null,
-      "published_at": "2026-11-06",
-      "excerpt": "게스트가 호스트 메모리 접근을 이용해 Firecracker의 vCPU에 저장된 pt_regs를 찾아 수정하고, KVM_RUN 복귀 시 Firecracker의 write(2, \"N8V23M2\\n\", 8)를 호출하도록 조작해 호스트에서 루트 권한으로 코드 실행(CVE-2026-99999)을 달성했습니다. 실험은 Firecr…",
-      "featured": false,
-      "new": true
     },
     {
       "title": "The death of web development education",
@@ -8108,6 +8160,19 @@
       "new": false
     },
     {
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-measuring-how-ai-agents-handle-everyday-wet-lab-science-5f721228.md",
+      "status": "published",
+      "score": 47.0,
+      "briefed_at": "2026-11-07",
+      "published_at": "2026-11-06",
+      "excerpt": "피드 기준으로는 OpenAI가 **BioBasicsBench**라는 100개 과제 벤치마크를 공개했다. 이 벤치마크는 AI 에이전트의 원시 실험 데이터 해석 능력과 일상적인 wet‑lab 작업 처리 역량을 측정하는 목적이라고 전해진다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Legora is building the agentic operating system for legal work",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -8262,19 +8327,6 @@
       "excerpt": "Git 2.55는 대형 저장소 관리와 메타데이터 유지비용을 줄이기 위한 실용적 개선에 초점을 맞췄다. 가장 큰 변화 가운데 하나는 증분 멀티팩 인덱스(incremental MIDX)를 직접 쓰도록 git repack을 확장한 것으로, --write-midx=incremental 모드에서 기본적으로는 기존 레이어를 건드리…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Measuring how AI agents handle everyday wet-lab science",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-measuring-how-ai-agents-handle-everyday-wet-lab-science-5f721228.md",
-      "status": "published",
-      "score": 47.0,
-      "briefed_at": null,
-      "published_at": "2026-11-06",
-      "excerpt": "피드 기준으로는 OpenAI가 **BioBasicsBench**라는 100개 과제 벤치마크를 공개했다. 이 벤치마크는 AI 에이전트의 원시 실험 데이터 해석 능력과 일상적인 wet‑lab 작업 처리 역량을 측정하는 목적이라고 전해진다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "'Crush this lady': how eBay harassment campaign led to $56M payout",
@@ -9265,6 +9317,19 @@
       "new": false
     },
     {
+      "title": "Beyond code generation: A developer’s guide to agentic engineering",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-beyond-code-generation-a-developer-s-guide-to-agentic-engineering-92b8001e.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": "2026-11-07",
+      "published_at": "2026-11-06",
+      "excerpt": "GitHub은 Copilot을 중심으로 계획(Plan)·구현(Build)·검증(Verify)·관찰(Observe)을 잇는 'agentic engineering' 워크플로를 제시하며, **1주간 12억+ 커밋(전년 대비 400% 증가)**과 PR 검토 지연(441% 증가)을 근거로 세션 지속성, 클라우드 실행, 자동 코드…",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Inside GitHub’s new Git storage architecture",
       "service_key": "github-blog",
       "service_name": "GitHub Blog",
@@ -9796,19 +9861,6 @@
       "excerpt": "피드 기준으로는 Preply가 OpenAI를 활용해 AI가 생성한 수업 요약을 도입했다고 합니다. 이 기능은 개인화된 피드백과 언어 학습 연습 문제를 함께 제공하는 것으로 요약되어 있습니다. 제공된 정보만 보면 인간 튜터와 AI를 결합해 학습 경험을 개인화하려는 사례로 보입니다. 다만 통합 방식과 기술적 세부사항은 피드…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Beyond code generation: A developer’s guide to agentic engineering",
-      "service_key": "github-blog",
-      "service_name": "GitHub Blog",
-      "href": "./services/github-blog/2026-11-beyond-code-generation-a-developer-s-guide-to-agentic-engineering-92b8001e.md",
-      "status": "published",
-      "score": 42.0,
-      "briefed_at": null,
-      "published_at": "2026-11-06",
-      "excerpt": "GitHub은 Copilot을 중심으로 계획(Plan)·구현(Build)·검증(Verify)·관찰(Observe)을 잇는 'agentic engineering' 워크플로를 제시하며, **1주간 12억+ 커밋(전년 대비 400% 증가)**과 PR 검토 지연(441% 증가)을 근거로 세션 지속성, 클라우드 실행, 자동 코드…",
-      "featured": false,
-      "new": true
     },
     {
       "title": "We're sharing our framework for building safer and more helpful AI for health.",
@@ -10496,6 +10548,19 @@
       "briefed_at": "2026-06-13",
       "published_at": "2026-06-13",
       "excerpt": "피드 기준으로는 Anthropic이 Claude Fable 5와 Claude Mythos 5를 발표했습니다. Claude Fable 5는 ‘Mythos‑class’ 모델로 일반 사용에 맞게 안전하게 설계되었다고 요약되어 있습니다. 제공된 정보만 보면 출시 사실과 안전성 강조가 핵심입니다. 기술적 세부사항이나 배포 방식…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-partnering-with-hacktron-to-find-vulnerabilities-in-openai-s-systems-a0a44ed0.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": "2026-11-07",
+      "published_at": "2026-11-06",
+      "excerpt": "피드 기준으로는 OpenAI가 Hacktron과 협력해 시스템 취약점 발굴, 서드파티 연동 테스트, 최첨단 AI를 활용한 방어 강화 계획을 2026-11-06에 발표했다고 나옵니다.",
       "featured": false,
       "new": false
     },
@@ -11278,19 +11343,6 @@
       "excerpt": "피드 기준으로는 GitHub가 대규모 비밀 스캐닝의 오탐을 줄이기 위해 검증 단계에 컨텍스트 인식 LLM 추론을 도입했다고 보고했습니다. 이 변화는 경보의 잡음을 줄여 신뢰성과 실행 가능성을 높이는 것을 목표로 합니다. 제공된 정보만 보면 구체적 구현·평가 수치 등 상세는 없으므로, 실무 적용이나 기술적 검토는 원문 확…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-partnering-with-hacktron-to-find-vulnerabilities-in-openai-s-systems-a0a44ed0.md",
-      "status": "published",
-      "score": 39.0,
-      "briefed_at": null,
-      "published_at": "2026-11-06",
-      "excerpt": "피드 기준으로는 OpenAI가 Hacktron과 협력해 시스템 취약점 발굴, 서드파티 연동 테스트, 최첨단 AI를 활용한 방어 강화 계획을 2026-11-06에 발표했다고 나옵니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Introducing the Grid Protectors Program",
@@ -12437,6 +12489,19 @@
       "new": false
     },
     {
+      "title": "Australian universities are creating AI-native graduates",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-australian-universities-are-creating-ai-native-graduates-616c6817.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": "2026-11-07",
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 호주 대학들이 ChatGPT 접근을 확대하고 교육·학습에 AI를 통합해 학생들을 AI 기반 노동시장에 대비시키고 있다고 전합니다(출처: OpenAI 블로그, 2026-11-05).",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Setting a new standard for responsible AI infrastructure",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -13319,19 +13384,6 @@
       "excerpt": "피드 기준으로는 GitHub가 CC0-1.0 라이선스 아래 새로운 저장소 수준(repository-level) 데이터셋을 공개했습니다. 데이터셋은 README, 이슈, 풀 리퀘스트 등 개발자 생성 멀티링구얼 콘텐츠를 발견하도록 설계되었다고 나옵니다. 제공된 정보만 보면 이 데이터셋은 멀티언어 AI를 연구·개발하는 연구자…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Australian universities are creating AI-native graduates",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-australian-universities-are-creating-ai-native-graduates-616c6817.md",
-      "status": "published",
-      "score": 36.0,
-      "briefed_at": null,
-      "published_at": "2026-11-05",
-      "excerpt": "피드 기준으로는 호주 대학들이 ChatGPT 접근을 확대하고 교육·학습에 AI를 통합해 학생들을 AI 기반 노동시장에 대비시키고 있다고 전합니다(출처: OpenAI 블로그, 2026-11-05).",
-      "featured": false,
-      "new": true
     },
     {
       "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
@@ -14465,6 +14517,19 @@
       "new": false
     },
     {
+      "title": "Introducing Images 2.6",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-introducing-images-2-6-295354ff.md",
+      "status": "published",
+      "score": 32.0,
+      "briefed_at": "2026-11-07",
+      "published_at": "2026-11-04",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-04에 Images 2.6을 발표했다. 빠른 이미지 생성, GIF 제작, 정밀 편집, ChatGPT·Codex·API용 신규 제어를 포함한다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -14606,19 +14671,6 @@
       "excerpt": "Google 블로그에 올라온 ‘DiffusionGemma’ 소식은 피드 기준으로 텍스트 생성 속도를 4배 빠르게 개선했다고 요약합니다. 게시자와 저자로는 Brendan O'Donoghue와 Sebastian Flennerhag가 표기되어 있습니다. 제공된 정보만 보면 이 발표는 개발자 도구 관점에서 성능 향상에 초점을…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Introducing Images 2.6",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-introducing-images-2-6-295354ff.md",
-      "status": "published",
-      "score": 32.0,
-      "briefed_at": null,
-      "published_at": "2026-11-04",
-      "excerpt": "피드 기준으로는 OpenAI가 2026-11-04에 Images 2.6을 발표했다. 빠른 이미지 생성, GIF 제작, 정밀 편집, ChatGPT·Codex·API용 신규 제어를 포함한다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
@@ -15479,6 +15531,19 @@
       "new": false
     },
     {
+      "title": "Flipsnack grows product signups with conversion optimization",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-flipsnack-grows-product-signups-with-conversion-optimization-2d1d3261.md",
+      "status": "published",
+      "score": 30.0,
+      "briefed_at": null,
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 OpenAI 블로그 사례에서 Flipsnack이 ChatGPT Ads 캠페인을 '제품 체험 유도'에 집중해 회원 가입을 늘리고 가입당 비용을 낮췄다고 보고했습니다(2026-11-05).",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -15921,6 +15986,19 @@
       "new": false
     },
     {
+      "title": "Franklin Templeton uses OpenAI to support investment research",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-franklin-templeton-uses-openai-to-support-investment-research-a8e215d1.md",
+      "status": "published",
+      "score": 28.0,
+      "briefed_at": null,
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 Franklin Templeton이 OpenAI를 도입해 주식 리서치부터 AI 워크플로를 개발해 포트폴리오 매니저의 리서치 비교와 투자 위험 검토를 지원한다고 나왔다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "How Localiza reorganized work around generative AI",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -15984,6 +16062,19 @@
       "excerpt": "이번 글은 GitHub 초보자를 위한 Q&amp;A 형식의 안내 글입니다. 제공된 요약에 따르면 자주 묻는 GitHub 관련 질문들에 대한 답을 모아둔 게시물입니다. 피드 기준으로는 저자 Natalie Guevara가 작성했으며 'Developer skills'와 'GitHub for beginners' 태그가 붙어 있…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "A thousand fewer paths to root",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-a-thousand-fewer-paths-to-root-fbaa86a8.md",
+      "status": "published",
+      "score": 27.0,
+      "briefed_at": null,
+      "published_at": "2026-11-04",
+      "excerpt": "피드 기준으로는 OpenAI가 자동화 파이프라인을 통해 Linux 커널의 로컬 권한 상승 취약점 948건을 찾아 검증하고 패치를 생성했다고 밝혔다. 발표일은 2026-11-04입니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
@@ -16088,6 +16179,19 @@
       "excerpt": "피드 기준으로는 Anthropic이 AI가 사이버공격의 성격과 수법을 어떻게 바꾸는지 1년치의 AI 지원 위협을 망라한 새 보고서를 냈다는 내용입니다. 보고서는 보안 커뮤니티에서 쓰이는 기법과 프레임워크의 적용성을 점검하려는 목적을 가진 것으로 보입니다. 제공된 정보만 보면 보고서의 구체적 결과나 권고사항은 공개되지 않…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Scaling Git at OpenAI",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-scaling-git-at-openai-277870ff.md",
+      "status": "published",
+      "score": 25.0,
+      "briefed_at": null,
+      "published_at": "2026-11-02",
+      "excerpt": "피드 기준으로는 OpenAI가 Git 호환 백엔드 'Pando'를 개발해 Codex가 가능하게 한 규모의 개발을 지원하도록 설계했다고 소개했습니다. 메타데이터만으로는 기술적 세부사항과 성능 지표는 확인되지 않습니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "How Fanatics and OpenAI streamline the fan experience",
