@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-11-09T01:24:28.890575+00:00",
+  "generated_for": "2026-11-09",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "c28c665b3da8c4f3cfa5afa9400715bf9c06ceb6",
+  "github_run_id": "42545093031",
+  "decision_count": 5,
+  "decision_counts": {
+    "published": 5
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:3edd9018e9e656df",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "normalized_url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
+      "article_doc_path": "docs/services/hacker-news/2026-11-nvidia-ceo-jensen-huang-s-letter-to-staff-about-affair-3edd9018.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "기업 경영",
+      "importance_level": "중간",
+      "confidence_score": 0.85,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 Axios가 2026-11-08에 ‘Nvidia CEO Jensen Huang의 직원 대상 불륜 관련 편지’ 보도를 올렸고, 해당 기사와 관련해 Hacker News에서 활발한 논의(포인트 326, 댓글 322)가 이뤄지고 있습니다. 기술업계 리더의 개인 문제라는 점에서 업계 관심도가 높아 보이며, 메타데이터만으로 기사화 가능한 사실 관계가 충분합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "candidate_id: hacker-news:3edd9018e9e656df",
+        "source_url: https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
+        "published_at: 2026-11-08T22:20:09+00:00",
+        "collected_at: 2026-11-09T01:22:24.132617+00:00",
+        "feed_summary: Article URL and Hacker News discussion links",
+        "metadata.hn_points: 326",
+        "metadata.hn_comments: 322",
+        "metadata.hn_comments_url: https://news.ycombinator.com/item?id=50418016"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:e68539633591cd5b",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+      "normalized_url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "article_doc_path": "docs/services/hacker-news/2026-11-nvidia-board-of-directors-is-investigating-jensen-huang-e6853963.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "기업 거버넌스·보안",
+      "importance_level": "높음",
+      "confidence_score": 0.94,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "공식 보도자료 성격의 이사회 성명이며, CEO가 외국 정보활동의 표적이었다는 보도에 대해 **이사회가 독립 조사**를 착수했다고 명확히 밝힌 점이 기술·안보·투자자 관점에서 보도 가치를 가진다고 판단했습니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001"
+      ],
+      "candidate_score": 63.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:7cbb1e8e79a45712",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
+      "normalized_url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+      "article_doc_path": "docs/services/hacker-news/2026-11-outlook-com-is-quietly-rejecting-email-from-domains-without-dmarc-7cbb1e8e.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "이메일 인증/DMARC",
+      "importance_level": "높음",
+      "confidence_score": 0.85,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "MailRoute 블로그 근거로 Outlook.com(Hotmail/Live/MSN)이 2026-11-05부터 DMARC 레코드가 없는 도메인의 일부 메일을 거부하기 시작한 사실과 즉시 적용 가능한 단일 TXT 레코드 해결책(v=DMARC1; p=none)을 구체적으로 제시하고 있어 기술 독자에게 즉시 유용한 실무 정보를 제공함.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:fe5fdb83e1ea95f1",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "normalized_url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "article_doc_path": "docs/services/hacker-news/2026-11-goldman-sachs-is-pulling-claude-code-from-its-bankers-and-traders-fe5fdb83.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "금융·AI 정책",
+      "importance_level": "High",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "근거 문서가 Goldman Sachs의 내부 지침 변경(10월)과 4월 홍콩 제한, 개발자 수치(약 12,000명), Anthropic과의 협력·IPO 인수인 역할(S-1 10월26일) 등 구체적 사실을 제공해 금융권의 AI 도구 접근 통제 변화와 실무적 파장을 명확히 보여준다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "openai-blog:4094d4340f9e66f9",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "title": "Qodo builds context into AI code review with Codex",
+      "normalized_url": "https://openai.com/index/qodo-codex-plugin",
+      "article_doc_path": "docs/services/openai-blog/2026-11-qodo-builds-context-into-ai-code-review-with-codex-4094d434.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Startup",
+      "importance_level": "Medium",
+      "confidence_score": 0.65,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "피드 메타데이터에 따르면 Qodo가 Codex와 연동해 회사 지식과 코딩 규칙을 코드 리뷰에 반영한다고 명시되어 있어 개발자 대상 짧은 제품 통지형 브리핑으로 게시 가치가 있습니다. 핵심 변화(사내 지식·규칙 통합, PR 전 P0 이슈 탐지)가 명확해 간결한 보도가 가능합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "candidate_id: openai-blog:4094d4340f9e66f9",
+        "source_url: https://openai.com/index/qodo-codex-plugin",
+        "feed_summary: Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
+        "published_at: 2026-11-02T00:00:00+00:00"
+      ],
+      "candidate_score": 23.0,
+      "error_message": null
+    }
+  ]
+}
