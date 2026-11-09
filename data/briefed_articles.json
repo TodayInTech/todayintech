@@ -12980,6 +12980,56 @@
       "status": "published",
       "briefed_at": "2026-11-08T01:03:33.939735Z",
       "candidate_score": 25.0
+    },
+    "3edd9018e9e656df005412e059e4b6fdeabee1ee42b2b83151f903c47fd68b26": {
+      "normalized_url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
+      "title_fingerprint": "nvidia ceo jensen huang s letter to staff about affair",
+      "service_key": "hacker-news",
+      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "article_doc_path": "docs/services/hacker-news/2026-11-nvidia-ceo-jensen-huang-s-letter-to-staff-about-affair-3edd9018.md",
+      "status": "published",
+      "briefed_at": "2026-11-09T01:24:28.269562Z",
+      "candidate_score": 65.0
+    },
+    "e68539633591cd5be6cb5f6dd6ae9f490223dbe1b2be9b757b06d9e408c002e8": {
+      "normalized_url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "title_fingerprint": "nvidia board of directors is investigating jensen huang",
+      "service_key": "hacker-news",
+      "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+      "article_doc_path": "docs/services/hacker-news/2026-11-nvidia-board-of-directors-is-investigating-jensen-huang-e6853963.md",
+      "status": "published",
+      "briefed_at": "2026-11-09T01:24:28.269596Z",
+      "candidate_score": 63.0
+    },
+    "7cbb1e8e79a45712035a2c9524c1c0e42f5904a763eadf0f404e4a97a65bbe92": {
+      "normalized_url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+      "title_fingerprint": "outlook com is quietly rejecting email from domains without dmarc",
+      "service_key": "hacker-news",
+      "title": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
+      "article_doc_path": "docs/services/hacker-news/2026-11-outlook-com-is-quietly-rejecting-email-from-domains-without-dmarc-7cbb1e8e.md",
+      "status": "published",
+      "briefed_at": "2026-11-09T01:24:28.269605Z",
+      "candidate_score": 60.0
+    },
+    "fe5fdb83e1ea95f1b42419b0848c6704005c1a0d97bf5b622b17271058205ad1": {
+      "normalized_url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "title_fingerprint": "goldman sachs is pulling claude code from its bankers and traders",
+      "service_key": "hacker-news",
+      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "article_doc_path": "docs/services/hacker-news/2026-11-goldman-sachs-is-pulling-claude-code-from-its-bankers-and-traders-fe5fdb83.md",
+      "status": "published",
+      "briefed_at": "2026-11-09T01:24:28.269613Z",
+      "candidate_score": 60.0
+    },
+    "4094d4340f9e66f9e2fcbdf55d52c8459c6b02d6daa5c6c2ae592ebcd92aa22f": {
+      "normalized_url": "https://openai.com/index/qodo-codex-plugin",
+      "title_fingerprint": "qodo builds context into ai code review with codex",
+      "service_key": "openai-blog",
+      "title": "Qodo builds context into AI code review with Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-11-qodo-builds-context-into-ai-code-review-with-codex-4094d434.md",
+      "status": "published",
+      "briefed_at": "2026-11-09T01:24:28.269619Z",
+      "candidate_score": 23.0
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-08",
+  "generated_for": "2026-11-09",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -919,6 +919,19 @@
       "new": false
     },
     {
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-claude-code-s-don-t-ask-again-exposes-passwords-in-1-122-public-github-f-10bdc730.md",
+      "status": "published",
+      "score": 66.6,
+      "briefed_at": "2026-11-08",
+      "published_at": "2026-11-07",
+      "excerpt": "피드 기준으로는 Claude Code의 'Don't Ask Again' 기능이 1,122개의 공개 GitHub 파일에서 비밀번호를 노출했다고 보도되었으며, 해당 게시물은 Hacker News에서 높은 관심(146포인트, 댓글 104개)을 받았습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Linode Security Incident",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -930,19 +943,6 @@
       "excerpt": "Linode 상태 페이지는 2026-10-30 21:18 UTC 공지에서 Akamai가 원격 코드 실행 취약점 **CVE-2026-98432**를 인지했으며 Linode가 현재 조사 및 완화 작업을 진행 중이라고 밝혔다. 영향이 의심되면 지원 티켓 제출을 권장한다.",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-claude-code-s-don-t-ask-again-exposes-passwords-in-1-122-public-github-f-10bdc730.md",
-      "status": "published",
-      "score": 66.6,
-      "briefed_at": null,
-      "published_at": "2026-11-07",
-      "excerpt": "피드 기준으로는 Claude Code의 'Don't Ask Again' 기능이 1,122개의 공개 GitHub 파일에서 비밀번호를 노출했다고 보도되었으며, 해당 게시물은 Hacker News에서 높은 관심(146포인트, 댓글 104개)을 받았습니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Type Server Protocol",
@@ -2544,6 +2544,19 @@
       "new": false
     },
     {
+      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-nvidia-ceo-jensen-huang-s-letter-to-staff-about-affair-3edd9018.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": null,
+      "published_at": "2026-11-08",
+      "excerpt": "피드 기준으로 Axios는 2026-11-08에 ‘Nvidia CEO Jensen Huang이 직원에게 보낸 불륜 관련 편지’ 보도를 냈고, 해당 기사에 대해 Hacker News에서 활발히 논의되어 포인트 326·댓글 322가 기록되었습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3233,6 +3246,19 @@
       "new": false
     },
     {
+      "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-nvidia-board-of-directors-is-investigating-jensen-huang-e6853963.md",
+      "status": "published",
+      "score": 63.0,
+      "briefed_at": null,
+      "published_at": "2026-11-08",
+      "excerpt": "NVIDIA 이사회는 창업자 겸 CEO 젠슨 황이 외국 정보활동의 표적이었다는 보도와 관련해 **독립 조사**를 시작한다고 발표했다. 이사회는 국가·경제 안보를 최우선으로 하며 황의 협조와 경영진에 대한 신뢰를 표명했다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "NetBSD 11.0",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3753,6 +3779,19 @@
       "new": false
     },
     {
+      "title": "What I run on my $10 USD OpenStick homelab",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-what-i-run-on-my-10-usd-openstick-homelab-afa17e14.md",
+      "status": "published",
+      "score": 61.0,
+      "briefed_at": "2026-11-08",
+      "published_at": "2026-11-07",
+      "excerpt": "작성자는 배송 포함 10달러짜리 OpenStick(512MB RAM, 4 A53 코어, 4GB eMMC)에서 Debian·Podman 기반으로 AdGuard, Zeroclaw, Cloudflare Tunnel, Beszel, Fusion RSS 등 여러 경량 서비스를 운용하며 각 서비스의 메모리 사용량(예: Zerocl…",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "HackerTube: YouTube built from videos recommended by HN",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -4039,19 +4078,6 @@
       "new": false
     },
     {
-      "title": "What I run on my $10 USD OpenStick homelab",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-what-i-run-on-my-10-usd-openstick-homelab-afa17e14.md",
-      "status": "published",
-      "score": 61.0,
-      "briefed_at": null,
-      "published_at": "2026-11-07",
-      "excerpt": "작성자는 배송 포함 10달러짜리 OpenStick(512MB RAM, 4 A53 코어, 4GB eMMC)에서 Debian·Podman 기반으로 AdGuard, Zeroclaw, Cloudflare Tunnel, Beszel, Fusion RSS 등 여러 경량 서비스를 운용하며 각 서비스의 메모리 사용량(예: Zerocl…",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Go 1.27",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -4217,6 +4243,32 @@
       "briefed_at": "2026-10-13",
       "published_at": "2026-10-12",
       "excerpt": "Agent37은 AI 에이전트를 위한 '저비용 샌드박스'를 표방하며 호스트당 평균 비용을 업계의 10% 이하로 낮췄다고 소개한다. 창업자 비슈누는 고객당 평균 지출을 월 $0.37로 제시하고, 무료 플랜의 인프라 비용은 사용자당 월 $0.05~$0.10 수준이라고 밝힌다. 초기에는 OpenClaw 래퍼로 시작했으나 다양…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-apple-s-grey-list-words-and-phrases-your-iphone-won-t-help-you-spell-840f5363.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-08",
+      "published_at": "2026-11-07",
+      "excerpt": "독립 연구자 데릭 카프먼이 iOS 운영체제 내에 하드코딩된 **10만개 이상 분량의 '그레이리스트'**를 찾아내 스와이프·예측완성에서 약물, 성적 표현과 일부 정치적 문구(예: \"Trayvon Martin\", \"Kashmir dispute\") 등이 자동완성되지 않는다고 보고했다. 애플은 부적절한 제안을 피하도록 설계했다…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "The end of Microsoft Research's AI Frontiers group",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-the-end-of-microsoft-research-s-ai-frontiers-group-8017ce29.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-08",
+      "published_at": "2026-11-07",
+      "excerpt": "Microsoft Research 내 AI Frontiers(AIF, 약 50명)가 MAI와의 재편 과정에서 해체되었다고 AIF 창립 리더가 밝혔다. 글은 MAI의 '확장(스케일) 우선' 철학과 연구 중심 접근의 불일치, 모노레포·기술 성과, 인턴십 중단 등을 근거로 퇴사 이유와 실무 영향을 설명한다.",
       "featured": false,
       "new": false
     },
@@ -7055,28 +7107,28 @@
       "new": false
     },
     {
-      "title": "The end of Microsoft Research's AI Frontiers group",
+      "title": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-the-end-of-microsoft-research-s-ai-frontiers-group-8017ce29.md",
+      "href": "./services/hacker-news/2026-11-outlook-com-is-quietly-rejecting-email-from-domains-without-dmarc-7cbb1e8e.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-07",
-      "excerpt": "Microsoft Research 내 AI Frontiers(AIF, 약 50명)가 MAI와의 재편 과정에서 해체되었다고 AIF 창립 리더가 밝혔다. 글은 MAI의 '확장(스케일) 우선' 철학과 연구 중심 접근의 불일치, 모노레포·기술 성과, 인턴십 중단 등을 근거로 퇴사 이유와 실무 영향을 설명한다.",
+      "published_at": "2026-11-08",
+      "excerpt": "MailRoute는 2026-11-05부터 Outlook.com 계열이 DMARC 레코드가 없는 도메인의 일부 메일을 묵인 없이 거부하기 시작했다고 보고한다. 해결책은 DNS에 _dmarc TXT 레코드(v=DMARC1; p=none)를 추가하는 것뿐이다.",
       "featured": false,
       "new": true
     },
     {
-      "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-apple-s-grey-list-words-and-phrases-your-iphone-won-t-help-you-spell-840f5363.md",
+      "href": "./services/hacker-news/2026-11-goldman-sachs-is-pulling-claude-code-from-its-bankers-and-traders-fe5fdb83.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-07",
-      "excerpt": "독립 연구자 데릭 카프먼이 iOS 운영체제 내에 하드코딩된 **10만개 이상 분량의 '그레이리스트'**를 찾아내 스와이프·예측완성에서 약물, 성적 표현과 일부 정치적 문구(예: \"Trayvon Martin\", \"Kashmir dispute\") 등이 자동완성되지 않는다고 보고했다. 애플은 부적절한 제안을 피하도록 설계했다…",
+      "published_at": "2026-11-08",
+      "excerpt": "Goldman Sachs는 10월 내부 지침으로 Anthropic의 Claude Code와 Microsoft의 GitHub 기반 코딩 에이전트를 엔지니어 그룹으로만 제한했다. 홍콩에서의 4월 제한과 달리 이번 조치는 '직무(역할) 기반' 접근 통제로, 트레이더·뱅커의 에이전트 사용을 차단한다.",
       "featured": false,
       "new": true
     },
@@ -14764,6 +14816,19 @@
       "new": false
     },
     {
+      "title": "Flipsnack grows product signups with conversion optimization",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-flipsnack-grows-product-signups-with-conversion-optimization-2d1d3261.md",
+      "status": "published",
+      "score": 30.0,
+      "briefed_at": "2026-11-08",
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 OpenAI 블로그 사례에서 Flipsnack이 ChatGPT Ads 캠페인을 '제품 체험 유도'에 집중해 회원 가입을 늘리고 가입당 비용을 낮췄다고 보고했습니다(2026-11-05).",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "AI for Science expands to foundations and institutions",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -15531,19 +15596,6 @@
       "new": false
     },
     {
-      "title": "Flipsnack grows product signups with conversion optimization",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-flipsnack-grows-product-signups-with-conversion-optimization-2d1d3261.md",
-      "status": "published",
-      "score": 30.0,
-      "briefed_at": null,
-      "published_at": "2026-11-05",
-      "excerpt": "피드 기준으로는 OpenAI 블로그 사례에서 Flipsnack이 ChatGPT Ads 캠페인을 '제품 체험 유도'에 집중해 회원 가입을 늘리고 가입당 비용을 낮췄다고 보고했습니다(2026-11-05).",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -15791,6 +15843,19 @@
       "new": false
     },
     {
+      "title": "Franklin Templeton uses OpenAI to support investment research",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-franklin-templeton-uses-openai-to-support-investment-research-a8e215d1.md",
+      "status": "published",
+      "score": 28.0,
+      "briefed_at": "2026-11-08",
+      "published_at": "2026-11-05",
+      "excerpt": "피드 기준으로는 Franklin Templeton이 OpenAI를 도입해 주식 리서치부터 AI 워크플로를 개발해 포트폴리오 매니저의 리서치 비교와 투자 위험 검토를 지원한다고 나왔다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Responsible Scaling Policy Version 3.0",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -15986,17 +16051,17 @@
       "new": false
     },
     {
-      "title": "Franklin Templeton uses OpenAI to support investment research",
+      "title": "A thousand fewer paths to root",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-franklin-templeton-uses-openai-to-support-investment-research-a8e215d1.md",
+      "href": "./services/openai-blog/2026-11-a-thousand-fewer-paths-to-root-fbaa86a8.md",
       "status": "published",
-      "score": 28.0,
-      "briefed_at": null,
-      "published_at": "2026-11-05",
-      "excerpt": "피드 기준으로는 Franklin Templeton이 OpenAI를 도입해 주식 리서치부터 AI 워크플로를 개발해 포트폴리오 매니저의 리서치 비교와 투자 위험 검토를 지원한다고 나왔다.",
+      "score": 27.0,
+      "briefed_at": "2026-11-08",
+      "published_at": "2026-11-04",
+      "excerpt": "피드 기준으로는 OpenAI가 자동화 파이프라인을 통해 Linux 커널의 로컬 권한 상승 취약점 948건을 찾아 검증하고 패치를 생성했다고 밝혔다. 발표일은 2026-11-04입니다.",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "How Localiza reorganized work around generative AI",
@@ -16064,19 +16129,6 @@
       "new": false
     },
     {
-      "title": "A thousand fewer paths to root",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-a-thousand-fewer-paths-to-root-fbaa86a8.md",
-      "status": "published",
-      "score": 27.0,
-      "briefed_at": null,
-      "published_at": "2026-11-04",
-      "excerpt": "피드 기준으로는 OpenAI가 자동화 파이프라인을 통해 Linux 커널의 로컬 권한 상승 취약점 948건을 찾아 검증하고 패치를 생성했다고 밝혔다. 발표일은 2026-11-04입니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -16112,6 +16164,19 @@
       "briefed_at": "2026-06-14",
       "published_at": "2026-06-05",
       "excerpt": "제공된 정보만 보면 이 게시물은 Gemma 4의 Quantization-Aware Training(QAT) 모델을 소개합니다. 구글은 모바일과 랩탑에서 실행 효율을 높이기 위한 모델 압축 최적화를 강조하는 것으로 보입니다. 피드 기준으로는 개발자 도구 관점에서의 적용 가능성을 제시하는 글입니다. 자세한 기술적 내용이나…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Scaling Git at OpenAI",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-scaling-git-at-openai-277870ff.md",
+      "status": "published",
+      "score": 25.0,
+      "briefed_at": "2026-11-08",
+      "published_at": "2026-11-02",
+      "excerpt": "피드 기준으로는 OpenAI가 Git 호환 백엔드 'Pando'를 개발해 Codex가 가능하게 한 규모의 개발을 지원하도록 설계했다고 소개했습니다. 메타데이터만으로는 기술적 세부사항과 성능 지표는 확인되지 않습니다.",
       "featured": false,
       "new": false
     },
@@ -16179,19 +16244,6 @@
       "excerpt": "피드 기준으로는 Anthropic이 AI가 사이버공격의 성격과 수법을 어떻게 바꾸는지 1년치의 AI 지원 위협을 망라한 새 보고서를 냈다는 내용입니다. 보고서는 보안 커뮤니티에서 쓰이는 기법과 프레임워크의 적용성을 점검하려는 목적을 가진 것으로 보입니다. 제공된 정보만 보면 보고서의 구체적 결과나 권고사항은 공개되지 않…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Scaling Git at OpenAI",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-scaling-git-at-openai-277870ff.md",
-      "status": "published",
-      "score": 25.0,
-      "briefed_at": null,
-      "published_at": "2026-11-02",
-      "excerpt": "피드 기준으로는 OpenAI가 Git 호환 백엔드 'Pando'를 개발해 Codex가 가능하게 한 규모의 개발을 지원하도록 설계했다고 소개했습니다. 메타데이터만으로는 기술적 세부사항과 성능 지표는 확인되지 않습니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "How Fanatics and OpenAI streamline the fan experience",
@@ -16296,6 +16348,19 @@
       "excerpt": "피드 기준으로는 OpenAI 크리에이티브 팀이 Codex를 내부 협업 파트너로 삼아 맞춤형 창작 도구를 개발하고, 문맥을 인식하는 AI를 통해 아이디어 발굴과 프로토타이핑 속도를 높였다는 내용이다. 제공된 요약은 Codex가 팀 워크플로우에 통합되어 반복적인 시제품 제작과 아이디어 스케치 단계에서 시간을 단축하는 목적로…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Qodo builds context into AI code review with Codex",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-qodo-builds-context-into-ai-code-review-with-codex-4094d434.md",
+      "status": "published",
+      "score": 23.0,
+      "briefed_at": null,
+      "published_at": "2026-11-02",
+      "excerpt": "피드 기준으로는 Qodo가 회사 지식과 코딩 규칙을 OpenAI의 Codex에 통합해 PR 생성 전에 레포 전반에서 P0(심각) 이슈를 찾아내도록 돕는다고 합니다(2026-11-02, OpenAI 블로그 메타데이터).",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Introducing Intelligence Age",
