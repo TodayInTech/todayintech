@@ -480,8 +480,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-05T03:15:41.727641Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-14T03:57:28.116270Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -636,8 +636,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-05T03:15:41.727641Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-14T03:57:28.116270Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1065,8 +1065,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-05T03:15:41.727641Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-14T03:57:28.116270Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1119,8 +1119,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-05T03:15:41.727641Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-14T03:57:28.116270Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1171,8 +1171,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-06T01:50:36.267088Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-14T03:57:28.116270Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -3079,6 +3079,273 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-10T01:22:28.661665Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy": {
+    "candidate": {
+      "candidate_id": "hacker-news:a8ac24a5fed69e71",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+        "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+        "published_at": "2026-11-09T16:00:45Z",
+        "collected_at": "2026-11-10T03:57:23.262157Z",
+        "summary": "<p>Article URL: <a href=\"https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy\">https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50427362\">https://news.ycombinator.com/item?id=50427362</a></p>\n<p>Points: 486</p>\n<p># Comments: 267</p>",
+        "authors": [
+          "ocd"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 20,
+          "hn_points": 486,
+          "hn_comments": 267,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50427362"
+        }
+      },
+      "normalized_url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "url_hash": "a8ac24a5fed69e7112677854a708e4e870ed2857956710e28a2b427feb009dec",
+      "title_fingerprint": "payments canada announces launch of canada s real time rail rtr payment system",
+      "feed_summary": "<p>Article URL: <a href=\"https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy\">https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50427362\">https://news.ycombinator.com/item?id=50427362</a></p>\n<p>Points: 486</p>\n<p># Comments: 267</p>",
+      "suggested_doc_key": "2026-11-payments-canada-announces-launch-of-canada-s-real-time-rail-rtr-payment-a8ac24a5",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-payments-canada-announces-launch-of-canada-s-real-time-rail-rtr-payment-a8ac24a5.md",
+      "candidate_score": 65.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "Hacker News 점수 486점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 267개를 토론 신호로 반영했습니다.",
+        "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-11T03:57:28.114296Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/control-room": {
+    "candidate": {
+      "candidate_id": "openai-blog:952d2516af2e9054",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+        "url": "https://openai.com/index/control-room",
+        "published_at": "2026-11-09T13:00:00Z",
+        "collected_at": "2026-11-10T03:57:24.423936Z",
+        "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+        "authors": [],
+        "tags": [
+          "Safety"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/index/control-room",
+      "url_hash": "952d2516af2e905436adea3bc1ec3df5f6a7559eef98c6b3c275da646bdd61ac",
+      "title_fingerprint": "control room a central system to track and stop model workloads across our research infrastructure",
+      "feed_summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "suggested_doc_key": "2026-11-control-room-a-central-system-to-track-and-stop-model-workloads-across-o-952d2516",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-control-room-a-central-system-to-track-and-stop-model-workloads-across-o-952d2516.md",
+      "candidate_score": 53.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 3,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 3개를 감지해 가산했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-11T03:57:28.114296Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/coderabbit-codex-daybreak": {
+    "candidate": {
+      "candidate_id": "openai-blog:02e9abf47eaf3fa0",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "CodeRabbit scales agentic software development and ships 20x more",
+        "url": "https://openai.com/index/coderabbit-codex-daybreak",
+        "published_at": "2026-11-09T08:00:00Z",
+        "collected_at": "2026-11-10T03:57:24.423936Z",
+        "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+        "authors": [],
+        "tags": [
+          "Startup"
+        ],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/index/coderabbit-codex-daybreak",
+      "url_hash": "02e9abf47eaf3fa01f98fe0d8703230a8e6faa4dd4f2fb401bd0d8381c4ff554",
+      "title_fingerprint": "coderabbit scales agentic software development and ships 20x more",
+      "feed_summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+      "suggested_doc_key": "2026-11-coderabbit-scales-agentic-software-development-and-ships-20x-more-02e9abf4",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-coderabbit-scales-agentic-software-development-and-ships-20x-more-02e9abf4.md",
+      "candidate_score": 47.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-11T03:57:28.114296Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/kuken": {
+    "candidate": {
+      "candidate_id": "openai-blog:2e34e84f0999c607",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Kuken Industries searches 70 years of drawings in minutes",
+        "url": "https://openai.com/index/kuken",
+        "published_at": "2026-11-09T08:00:00Z",
+        "collected_at": "2026-11-10T03:57:24.423936Z",
+        "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 4
+        }
+      },
+      "normalized_url": "https://openai.com/index/kuken",
+      "url_hash": "2e34e84f0999c607fcd026638ba274edf1639ff07c6ab06d851f57d1a6442eba",
+      "title_fingerprint": "kuken industries searches 70 years of drawings in minutes",
+      "feed_summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+      "suggested_doc_key": "2026-11-kuken-industries-searches-70-years-of-drawings-in-minutes-2e34e84f",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-kuken-industries-searches-70-years-of-drawings-in-minutes-2e34e84f.md",
+      "candidate_score": 41.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-11T03:57:28.114296Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/chatgpt-enterprise-aws-marketplace": {
+    "candidate": {
+      "candidate_id": "openai-blog:caa9073cefb43725",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "ChatGPT Enterprise now available in AWS Marketplace",
+        "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+        "published_at": "2026-11-09T19:00:00Z",
+        "collected_at": "2026-11-10T03:57:24.423936Z",
+        "summary": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
+        "authors": [],
+        "tags": [
+          "Product"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "url_hash": "caa9073cefb43725f1a58e80c726b61b1142cf3c90f98b3ffe382a94354b7081",
+      "title_fingerprint": "chatgpt enterprise now available in aws marketplace",
+      "feed_summary": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
+      "suggested_doc_key": "2026-11-chatgpt-enterprise-now-available-in-aws-marketplace-caa9073c",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-chatgpt-enterprise-now-available-in-aws-marketplace-caa9073c.md",
+      "candidate_score": 39.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-11T03:57:28.114296Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
