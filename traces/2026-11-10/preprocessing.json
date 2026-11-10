@@ -1,0 +1,303 @@
+{
+  "generated_at": "2026-11-10T03:57:16.002734+00:00",
+  "generated_for": "2026-11-10",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "72dbd9e9d616ab2f8a176503d246de8861787084",
+  "github_run_id": "42752566435",
+  "service_count": 5,
+  "duration_ms": 14,
+  "raw_count": 120,
+  "candidate_count": 15,
+  "excluded_count": 105,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 27,
+      "excluded_count": 93,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 93
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 27,
+      "output_count": 27,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 27,
+      "output_count": 25,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 25,
+      "output_count": 15,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:f116c1896a2161e2",
+          "title": "Developers can now build with Google Maps Platform in AI Studio.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-google-maps-platform-ai-studio",
+          "url_hash": "f116c1896a2161e2c2d90b6660bb5d35e16e4de410fc391f8ab6a236a02f1b4d",
+          "suggested_doc_key": "2026-11-developers-can-now-build-with-google-maps-platform-in-ai-studio-f116c189",
+          "suggested_article_path": "docs/services/google-blog/2026-11-developers-can-now-build-with-google-maps-platform-in-ai-studio-f116c189.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:fbdf36c6d0b0b031",
+          "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+          "normalized_url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+          "url_hash": "fbdf36c6d0b0b031c7bc7614ffde87312900439bb99e93d85ef2dfed43491371",
+          "suggested_doc_key": "2026-11-claude-fable-5-2-scores-65-on-artificial-analysis-highest-so-far-fbdf36c6",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-claude-fable-5-2-scores-65-on-artificial-analysis-highest-so-far-fbdf36c6.md",
+          "candidate_score": 68.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 305점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 228개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:35a155e412ad027f",
+          "title": "Fable 5.2 one-shotted my nephew's dream game",
+          "normalized_url": "https://notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game",
+          "url_hash": "35a155e412ad027fe39d53887b3343cb0df674a0dc790a9c43f6209b37087f2d",
+          "suggested_doc_key": "2026-11-fable-5-2-one-shotted-my-nephew-s-dream-game-35a155e4",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-fable-5-2-one-shotted-my-nephew-s-dream-game-35a155e4.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 237점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 159개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:86708699833d3a97",
+          "title": "Muse Ember: Our smallest, most efficient model",
+          "normalized_url": "https://research.meta.ai/blog/muse-ember",
+          "url_hash": "86708699833d3a97966600b802e469ca582767ce90cf5e85b1122261eddb89ec",
+          "suggested_doc_key": "2026-11-muse-ember-our-smallest-most-efficient-model-86708699",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-muse-ember-our-smallest-most-efficient-model-86708699.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 263점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 110개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a8ac24a5fed69e71",
+          "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+          "normalized_url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+          "url_hash": "a8ac24a5fed69e7112677854a708e4e870ed2857956710e28a2b427feb009dec",
+          "suggested_doc_key": "2026-11-payments-canada-announces-launch-of-canada-s-real-time-rail-rtr-payment-a8ac24a5",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-payments-canada-announces-launch-of-canada-s-real-time-rail-rtr-payment-a8ac24a5.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 486점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 267개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a7b39cb0698327aa",
+          "title": "TPU 8tx and TPU 8i Max",
+          "normalized_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx",
+          "url_hash": "a7b39cb0698327aa7f2535085e5ff22ca7e636782abfa74072f3b8860eed86c0",
+          "suggested_doc_key": "2026-11-tpu-8tx-and-tpu-8i-max-a7b39cb0",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-tpu-8tx-and-tpu-8i-max-a7b39cb0.md",
+          "candidate_score": 62.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 226점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 67개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 4,
+      "excluded_count": 46,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:952d2516af2e9054",
+          "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+          "normalized_url": "https://openai.com/index/control-room",
+          "url_hash": "952d2516af2e905436adea3bc1ec3df5f6a7559eef98c6b3c275da646bdd61ac",
+          "suggested_doc_key": "2026-11-control-room-a-central-system-to-track-and-stop-model-workloads-across-o-952d2516",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-control-room-a-central-system-to-track-and-stop-model-workloads-across-o-952d2516.md",
+          "candidate_score": 53.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:02e9abf47eaf3fa0",
+          "title": "CodeRabbit scales agentic software development and ships 20x more",
+          "normalized_url": "https://openai.com/index/coderabbit-codex-daybreak",
+          "url_hash": "02e9abf47eaf3fa01f98fe0d8703230a8e6faa4dd4f2fb401bd0d8381c4ff554",
+          "suggested_doc_key": "2026-11-coderabbit-scales-agentic-software-development-and-ships-20x-more-02e9abf4",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-coderabbit-scales-agentic-software-development-and-ships-20x-more-02e9abf4.md",
+          "candidate_score": 47.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:2e34e84f0999c607",
+          "title": "Kuken Industries searches 70 years of drawings in minutes",
+          "normalized_url": "https://openai.com/index/kuken",
+          "url_hash": "2e34e84f0999c607fcd026638ba274edf1639ff07c6ab06d851f57d1a6442eba",
+          "suggested_doc_key": "2026-11-kuken-industries-searches-70-years-of-drawings-in-minutes-2e34e84f",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-kuken-industries-searches-70-years-of-drawings-in-minutes-2e34e84f.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:caa9073cefb43725",
+          "title": "ChatGPT Enterprise now available in AWS Marketplace",
+          "normalized_url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+          "url_hash": "caa9073cefb43725f1a58e80c726b61b1142cf3c90f98b3ffe382a94354b7081",
+          "suggested_doc_key": "2026-11-chatgpt-enterprise-now-available-in-aws-marketplace-caa9073c",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-chatgpt-enterprise-now-available-in-aws-marketplace-caa9073c.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 44,
+        "low_quality": 2
+      }
+    }
+  ]
+}
