@@ -13120,6 +13120,146 @@
       "status": "published",
       "briefed_at": "2026-11-10T04:01:27.404856Z",
       "candidate_score": 39.0
+    },
+    "84757a8b6e04ab0dc5be5bc177eccc4e40619603a4e69d52c77bd55e8acbeef7": {
+      "normalized_url": "https://www.anthropic.com/news/roadshow-launch",
+      "title_fingerprint": "anthropic launches roadshow for proposed initial public offering",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic launches roadshow for proposed initial public offering",
+      "article_doc_path": "docs/services/anthropic-blog/2026-11-anthropic-launches-roadshow-for-proposed-initial-public-offering-84757a8b.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843610Z",
+      "candidate_score": 35.0
+    },
+    "f0fc30384fec2ecc4dbc08cdb28c5f85dcbd9adf3f6f59481087bf298c4f645a": {
+      "normalized_url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7",
+      "title_fingerprint": "git security vulnerabilities announced",
+      "service_key": "github-blog",
+      "title": "Git security vulnerabilities announced",
+      "article_doc_path": "docs/services/github-blog/2026-11-git-security-vulnerabilities-announced-f0fc3038.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843647Z",
+      "candidate_score": 42.0
+    },
+    "28c6d3cdb92b83f182ea7f4efd866a4109ea24f115245ccfc3c9e632b3810277": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers",
+      "title_fingerprint": "gemini 4 carbon is now available for developers",
+      "service_key": "google-blog",
+      "title": "Gemini 4 Carbon is now available for developers.",
+      "article_doc_path": "docs/services/google-blog/2026-11-gemini-4-carbon-is-now-available-for-developers-28c6d3cd.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843657Z",
+      "candidate_score": 50.0
+    },
+    "c979be8e72cc92b8a0fbd6a0e885370f88efbc63bec0740a46271d303ac6a351": {
+      "normalized_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare",
+      "title_fingerprint": "google cloud launches gemini for healthcare",
+      "service_key": "google-blog",
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "article_doc_path": "docs/services/google-blog/2026-11-google-cloud-launches-gemini-for-healthcare-c979be8e.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843664Z",
+      "candidate_score": 42.0
+    },
+    "e192e4f92a704298f96f725cc3ae96c30d788d917e1f7b38ef8d7e63567c6b73": {
+      "normalized_url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration",
+      "title_fingerprint": "we re bringing adobe s creative and productivity tools closer to your everyday google apps",
+      "service_key": "google-blog",
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "article_doc_path": "docs/services/google-blog/2026-11-we-re-bringing-adobe-s-creative-and-productivity-tools-closer-to-your-ev-e192e4f9.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843670Z",
+      "candidate_score": 38.0
+    },
+    "fafff4292c09fd9370c59269226818b22b187de9757f1096f65549cc01bfa598": {
+      "normalized_url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices",
+      "title_fingerprint": "gemini intelligence new features on more devices",
+      "service_key": "google-blog",
+      "title": "Gemini Intelligence: New features, on more devices",
+      "article_doc_path": "docs/services/google-blog/2026-11-gemini-intelligence-new-features-on-more-devices-fafff429.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843676Z",
+      "candidate_score": 36.0
+    },
+    "a4978faa7e166cdb12b818c5397aad221fe34e5d74e2dc0c479fe886ef474c07": {
+      "normalized_url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "title_fingerprint": "show hn get your coding agent off 2019 javascript onto modern web primitives",
+      "service_key": "hacker-news",
+      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "article_doc_path": "docs/services/hacker-news/2026-11-show-hn-get-your-coding-agent-off-2019-javascript-onto-modern-web-primit-a4978faa.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843682Z",
+      "candidate_score": 75.0
+    },
+    "2b1a51c62db6caf6b7980237937255c7fdd673a7ce146660ea91c5356da2a01a": {
+      "normalized_url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+      "title_fingerprint": "after 7 months glasswing overwelms maintainers with underwhelming findings",
+      "service_key": "hacker-news",
+      "title": "After 7 months, Glasswing overwelms maintainers with underwhelming findings",
+      "article_doc_path": "docs/services/hacker-news/2026-11-after-7-months-glasswing-overwelms-maintainers-with-underwhelming-findin-2b1a51c6.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843687Z",
+      "candidate_score": 67.0
+    },
+    "1adbe03aa2d304c1b580a8b9972561552a31c52f23754b71a69d70b54f955653": {
+      "normalized_url": "https://www.blender.org/download/releases/5-3",
+      "title_fingerprint": "blender 5 3 released with gaussian splat support",
+      "service_key": "hacker-news",
+      "title": "Blender 5.3 released with Gaussian Splat support",
+      "article_doc_path": "docs/services/hacker-news/2026-11-blender-5-3-released-with-gaussian-splat-support-1adbe03a.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843693Z",
+      "candidate_score": 63.0
+    },
+    "0e94bc1826c48b1261b2cf218df563acf1f1a106e3abccc16ef714c8c91002b7": {
+      "normalized_url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america",
+      "title_fingerprint": "scion is back and is going to sell a kei truck in america",
+      "service_key": "hacker-news",
+      "title": "Scion is back and is going to sell a kei truck in America",
+      "article_doc_path": "docs/services/hacker-news/2026-11-scion-is-back-and-is-going-to-sell-a-kei-truck-in-america-0e94bc18.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843699Z",
+      "candidate_score": 62.0
+    },
+    "65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2": {
+      "normalized_url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "title_fingerprint": "gilbert tobin rethinks the business of law with ai",
+      "service_key": "openai-blog",
+      "title": "Gilbert + Tobin rethinks the business of law with AI",
+      "article_doc_path": "docs/services/openai-blog/2026-11-gilbert-tobin-rethinks-the-business-of-law-with-ai-65b96c23.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843705Z",
+      "candidate_score": 39.0
+    },
+    "991ad48e8559b2fefa9ff7bc2bbc96fe5e673f91d6bb1c78428d1dddc9dc303e": {
+      "normalized_url": "https://openai.com/index/introducing-businesses-chatgpt",
+      "title_fingerprint": "introducing businesses in chatgpt",
+      "service_key": "openai-blog",
+      "title": "Introducing Businesses in ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-11-introducing-businesses-in-chatgpt-991ad48e.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843710Z",
+      "candidate_score": 37.0
+    },
+    "69d4d9d74efa01629a6c751d8fa58a99d17f0aecb815f679bbfeeb3edf259e44": {
+      "normalized_url": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "title_fingerprint": "closing the ai guidance gap in education",
+      "service_key": "openai-blog",
+      "title": "Closing the AI guidance gap in education",
+      "article_doc_path": "docs/services/openai-blog/2026-11-closing-the-ai-guidance-gap-in-education-69d4d9d7.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843716Z",
+      "candidate_score": 36.0
+    },
+    "f3fc54cd1d78c100d666a9c2ab2fb50b602d94d149788dbd0586059b0a0e8b98": {
+      "normalized_url": "https://openai.com/index/ai-effect-on-freelance-work",
+      "title_fingerprint": "work at the frontier ai s effect on freelance work",
+      "service_key": "openai-blog",
+      "title": "Work at the Frontier: AI’s effect on freelance work",
+      "article_doc_path": "docs/services/openai-blog/2026-11-work-at-the-frontier-ai-s-effect-on-freelance-work-f3fc54cd.md",
+      "status": "published",
+      "briefed_at": "2026-11-11T01:45:51.843727Z",
+      "candidate_score": 35.0
     }
   }
 }

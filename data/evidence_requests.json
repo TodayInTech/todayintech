@@ -1223,8 +1223,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-06T01:50:36.267088Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-15T01:41:18.565744Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1276,8 +1276,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-06T01:50:36.267088Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-15T01:41:18.565744Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1326,8 +1326,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-06T01:50:36.267088Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-15T01:41:18.565744Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1378,8 +1378,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-06T01:50:36.267088Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-15T01:41:18.565744Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1908,13 +1908,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-06T01:57:45.506098Z",
-    "last_failure": "title_mismatch",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-13T01:41:18.565744Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-11T01:41:18.565744Z",
+    "extraction_method": "precision",
+    "token_count": 1421
   },
   "https://openai.com/index/daybreak-red-aws-govcloud": {
     "candidate": {
@@ -3346,6 +3346,212 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-11T03:57:28.114296Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/gilbert-tobin-sam-nickless": {
+    "candidate": {
+      "candidate_id": "openai-blog:65b96c238445cded",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Gilbert + Tobin rethinks the business of law with AI",
+        "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+        "published_at": "2026-11-12T00:00:00Z",
+        "collected_at": "2026-11-11T01:41:13.510904Z",
+        "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "url_hash": "65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2",
+      "title_fingerprint": "gilbert tobin rethinks the business of law with ai",
+      "feed_summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+      "suggested_doc_key": "2026-11-gilbert-tobin-rethinks-the-business-of-law-with-ai-65b96c23",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-gilbert-tobin-rethinks-the-business-of-law-with-ai-65b96c23.md",
+      "candidate_score": 39.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-12T01:41:18.564315Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/introducing-businesses-chatgpt": {
+    "candidate": {
+      "candidate_id": "openai-blog:991ad48e8559b2fe",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Introducing Businesses in ChatGPT",
+        "url": "https://openai.com/index/introducing-businesses-chatgpt",
+        "published_at": "2026-11-10T10:00:00Z",
+        "collected_at": "2026-11-11T01:41:13.510904Z",
+        "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
+        "authors": [],
+        "tags": [
+          "Product"
+        ],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/index/introducing-businesses-chatgpt",
+      "url_hash": "991ad48e8559b2fefa9ff7bc2bbc96fe5e673f91d6bb1c78428d1dddc9dc303e",
+      "title_fingerprint": "introducing businesses in chatgpt",
+      "feed_summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
+      "suggested_doc_key": "2026-11-introducing-businesses-in-chatgpt-991ad48e",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-introducing-businesses-in-chatgpt-991ad48e.md",
+      "candidate_score": 37.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-12T01:41:18.564315Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/closing-ai-guidance-gap-education": {
+    "candidate": {
+      "candidate_id": "openai-blog:69d4d9d74efa0162",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Closing the AI guidance gap in education",
+        "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+        "published_at": "2026-11-10T09:00:00Z",
+        "collected_at": "2026-11-11T01:41:13.510904Z",
+        "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
+        "authors": [],
+        "tags": [
+          "Company"
+        ],
+        "metadata": {
+          "rss_rank": 4
+        }
+      },
+      "normalized_url": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "url_hash": "69d4d9d74efa01629a6c751d8fa58a99d17f0aecb815f679bbfeeb3edf259e44",
+      "title_fingerprint": "closing the ai guidance gap in education",
+      "feed_summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
+      "suggested_doc_key": "2026-11-closing-the-ai-guidance-gap-in-education-69d4d9d7",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-closing-the-ai-guidance-gap-in-education-69d4d9d7.md",
+      "candidate_score": 36.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-12T01:41:18.564315Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/ai-effect-on-freelance-work": {
+    "candidate": {
+      "candidate_id": "openai-blog:f3fc54cd1d78c100",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Work at the Frontier: AI’s effect on freelance work",
+        "url": "https://openai.com/index/ai-effect-on-freelance-work",
+        "published_at": "2026-11-10T07:00:00Z",
+        "collected_at": "2026-11-11T01:41:13.510904Z",
+        "summary": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
+        "authors": [],
+        "tags": [
+          "Company"
+        ],
+        "metadata": {
+          "rss_rank": 5
+        }
+      },
+      "normalized_url": "https://openai.com/index/ai-effect-on-freelance-work",
+      "url_hash": "f3fc54cd1d78c100d666a9c2ab2fb50b602d94d149788dbd0586059b0a0e8b98",
+      "title_fingerprint": "work at the frontier ai s effect on freelance work",
+      "feed_summary": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
+      "suggested_doc_key": "2026-11-work-at-the-frontier-ai-s-effect-on-freelance-work-f3fc54cd",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-work-at-the-frontier-ai-s-effect-on-freelance-work-f3fc54cd.md",
+      "candidate_score": 35.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 5.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-12T01:41:18.564315Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,

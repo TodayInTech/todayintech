@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-10",
+  "generated_for": "2026-11-11",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -72,6 +72,19 @@
       "excerpt": "OpenKnowledge는 로컬 퍼스트 WYSIWYG 마크다운 편집기이자 LLM 위키를 표방하는 오픈소스 도구로, macOS 데스크톱 앱과 웹 UI/CLI(리눅스·윈도우·인텔 맥 지원)로 제공된다. Claude, Codex, Cursor 등 에이전트와의 직접 통합을 통해 에이전트가 내장 브라우저에서 편집기를 열어 사이드…",
       "featured": true,
       "new": false
+    },
+    {
+      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-show-hn-get-your-coding-agent-off-2019-javascript-onto-modern-web-primit-a4978faa.md",
+      "status": "published",
+      "score": 75.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "Google Chrome·Edge·Firefox·MDN이 공동 관리하는 Modern Web Guidance가 npx 기반 로컬 CLI로 공개됐다. 200여 개 가이드를 에이전트 문맥에 삽입해 로컬 검색·retrieve로 현대 웹 API 사용을 유도하며, 자동화 평가에서 여러 에이전트의 성공률을 크게 높였습니다.",
+      "featured": true,
+      "new": true
     },
     {
       "title": "OpenAI and Hugging Face address security incident during model evaluation",
@@ -265,7 +278,7 @@
       "briefed_at": "2026-10-22",
       "published_at": "2026-10-21",
       "excerpt": "PHP 개발팀이 PHP 8.2.35를 긴급 배포했다. 이번 릴리스는 인증 없이 원격에서 코드 실행이 가능한 두 건의 치명적 취약점(CVE-2026-109618, CVE-2026-109619)을 수정하며, 모든 PHP 8.2 사용자는 즉시 업데이트하라는 권고를 받고 있다. 배포 쪽에서는 소스 다운로드와 Windows용 소…",
-      "featured": true,
+      "featured": false,
       "new": false
     },
     {
@@ -490,6 +503,19 @@
       "new": false
     },
     {
+      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-claude-fable-5-2-scores-65-on-artificial-analysis-highest-so-far-fbdf36c6.md",
+      "status": "published",
+      "score": 68.0,
+      "briefed_at": "2026-11-10",
+      "published_at": "2026-11-09",
+      "excerpt": "Anthropic이 2026-11-09 공개한 Claude Fable 5.2는 Artificial Analysis 지능 지수에서 **65점**을 기록해 동급 평균(중간값 40)을 크게 상회하지만, **$8/1M 입력·$40/1M 출력**, 작업당 평균 46.4분 소요, 평가 중 275M 출력토큰 생성 등으로 비용과 지연…",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "MS Paint Remote Code Execution Vulnerability",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -631,19 +657,6 @@
       "excerpt": "저비용 오픈웨이트 모델인 GLM 5.2를 소규모 영국 회사의 분기별 부가가치세(VAT) 신고에 적용한 벤치마크는 실무적 의미가 큰 결과를 보여준다. 벤치마크 대상은 Vineyard Finance의 2026년 1분기 장부(59건)이며, 모델은 GCP 인스턴스에서 사전 인증된 CLI 도구를 통해 회계 소프트웨어에 거래를 입…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-claude-fable-5-2-scores-65-on-artificial-analysis-highest-so-far-fbdf36c6.md",
-      "status": "published",
-      "score": 68.0,
-      "briefed_at": null,
-      "published_at": "2026-11-09",
-      "excerpt": "Anthropic이 2026-11-09 공개한 Claude Fable 5.2는 Artificial Analysis 지능 지수에서 **65점**을 기록해 동급 평균(중간값 40)을 크게 상회하지만, **$8/1M 입력·$40/1M 출력**, 작업당 평균 46.4분 소요, 평가 중 275M 출력토큰 생성 등으로 비용과 지연…",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Show HN: Gemini 4 Argon plays StarCraft",
@@ -906,6 +919,19 @@
       "new": false
     },
     {
+      "title": "After 7 months, Glasswing overwelms maintainers with underwhelming findings",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-after-7-months-glasswing-overwelms-maintainers-with-underwhelming-findin-2b1a51c6.md",
+      "status": "published",
+      "score": 67.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "VulnCheck 집계에 따르면 Anthropic의 Project Glasswing은 7개월 동안 **442 CVE**와 **37,966건의 발견**을 기록했으나 공개된 것은 **7,349건(19.4%)**, 수정 보고는 **217건**에 불과해 발견·수정 간 격차가 크고, OSS 스캐너 도입으로 검증 부담이 유지관리자…",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "The classifiers Anthropic puts in front of Fable are too zealous",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -993,6 +1019,19 @@
       "briefed_at": "2026-08-03",
       "published_at": "2026-08-03",
       "excerpt": "대형 언어모델(LLM)이 누구나 ‘어느 정도의’ 작업을 수행하게 만들어 일반화를 촉진하지만, 그로 인해 프롬프팅에 기술이 필요 없다고 오해하기 쉽다는 점을 문제 삼습니다. 글은 테렌스 타오가 ChatGPT와 나눈 수학적 대화를 사례로 들어, 단순히 모델에 질문을 던지는 것만으로는 동일한 성과를 얻을 수 없음을 보입니다.…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Fable 5.2 one-shotted my nephew's dream game",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-fable-5-2-one-shotted-my-nephew-s-dream-game-35a155e4.md",
+      "status": "published",
+      "score": 66.0,
+      "briefed_at": "2026-11-10",
+      "published_at": "2026-11-09",
+      "excerpt": "작성자는 Claude Fable 5.2에 단일 프롬프트와 보조 도구(Images 2.5, ElevenLabs)를 결합해 조카의 손그림을 바탕으로 **12레벨, 18캐릭터, 4인용 횡스크롤 게임을 한 번에 생성**했고, 자동 플레이봇으로 전체 스테이지를 점검했다고 보고했습니다.",
       "featured": false,
       "new": false
     },
@@ -1231,19 +1270,6 @@
       "new": false
     },
     {
-      "title": "Fable 5.2 one-shotted my nephew's dream game",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-fable-5-2-one-shotted-my-nephew-s-dream-game-35a155e4.md",
-      "status": "published",
-      "score": 66.0,
-      "briefed_at": null,
-      "published_at": "2026-11-09",
-      "excerpt": "작성자는 Claude Fable 5.2에 단일 프롬프트와 보조 도구(Images 2.5, ElevenLabs)를 결합해 조카의 손그림을 바탕으로 **12레벨, 18캐릭터, 4인용 횡스크롤 게임을 한 번에 생성**했고, 자동 플레이봇으로 전체 스테이지를 점검했다고 보고했습니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Tencent Releases and Open-Sources Tencent Hy4 Preview",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -1318,6 +1344,32 @@
       "briefed_at": "2026-06-29",
       "published_at": "2026-06-29",
       "excerpt": "인터넷이 강력한 소통 도구임에도 불구하고 그 기반 인프라가 사용자 데이터 수집과 주의력 착취로 활용돼 왔다는 문제의식에서 출발한다는 점을 Human-Centered Computing Foundation(HCCF)이 제기한다. HCCF는 웹을 위한 대안적 아키텍처를 만들겠다는 비전을 제시하며, 인간 중심적 기술 원칙을 전…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-payments-canada-announces-launch-of-canada-s-real-time-rail-rtr-payment-a8ac24a5.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-10",
+      "published_at": "2026-11-09",
+      "excerpt": "Payments Canada가 2026-11-09 발표에서 'Canada's Real-Time Rail (RTR)'의 공식 출범을 알리며 국가 결제 인프라에 24/7 실시간 결제를 도입한다고 밝혔다. Hacker News에서는 486포인트·267댓글로 큰 관심을 모았다(피드 기준).",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Muse Ember: Our smallest, most efficient model",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-muse-ember-our-smallest-most-efficient-model-86708699.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-10",
+      "published_at": "2026-11-09",
+      "excerpt": "Meta가 에이전트와 반복적 코딩 작업에 최적화된 소형 모델 **Muse Ember(muse-ember-1.0)**을 공개했습니다. 1M 토큰 컨텍스트·512K 출력, 입력 $0.10/M·출력 $0.50/M 등 가격과 내부 벤치마크(예: AutomationBench-AA 37.8, Agents' Last Exam 61.…",
       "featured": false,
       "new": false
     },
@@ -2583,32 +2635,6 @@
       "new": false
     },
     {
-      "title": "Muse Ember: Our smallest, most efficient model",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-muse-ember-our-smallest-most-efficient-model-86708699.md",
-      "status": "published",
-      "score": 65.0,
-      "briefed_at": null,
-      "published_at": "2026-11-09",
-      "excerpt": "Meta가 에이전트와 반복적 코딩 작업에 최적화된 소형 모델 **Muse Ember(muse-ember-1.0)**을 공개했습니다. 1M 토큰 컨텍스트·512K 출력, 입력 $0.10/M·출력 $0.50/M 등 가격과 내부 벤치마크(예: AutomationBench-AA 37.8, Agents' Last Exam 61.…",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-payments-canada-announces-launch-of-canada-s-real-time-rail-rtr-payment-a8ac24a5.md",
-      "status": "published",
-      "score": 65.0,
-      "briefed_at": null,
-      "published_at": "2026-11-09",
-      "excerpt": "Payments Canada가 2026-11-09 발표에서 'Canada's Real-Time Rail (RTR)'의 공식 출범을 알리며 국가 결제 인프라에 24/7 실시간 결제를 도입한다고 밝혔다. Hacker News에서는 486포인트·267댓글로 큰 관심을 모았다(피드 기준).",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3311,6 +3337,19 @@
       "new": false
     },
     {
+      "title": "Blender 5.3 released with Gaussian Splat support",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-blender-5-3-released-with-gaussian-splat-support-1adbe03a.md",
+      "status": "published",
+      "score": 63.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "Blender 5.3이 공개됐다. Cycles 뷰포트에 NVIDIA DLSS 디노이즈가 추가되고(드라이버 620 이상 필요), 프로젝트 단위 설정·합성기 효과 스택·Video Sequencer의 리플 편집·Blade 2.0 등 작업 흐름 개선이 핵심이다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "NetBSD 11.0",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3660,6 +3699,19 @@
       "excerpt": "제목이 제시하는 내용만 보면 Moebius는 파라미터 수가 약 0.2B인 이미지 인페인팅 모델이 10B급 모델과 유사한 성능을 보인다고 주장하는 프로젝트입니다. 피드 기준으로는 원문 링크와 Hacker News에서의 반응(포인트 201, 댓글 60)만 제공되어 프로젝트의 구체적인 기법(예: 아키텍처, 지식 증류, 학습…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Scion is back and is going to sell a kei truck in America",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-scion-is-back-and-is-going-to-sell-a-kei-truck-in-america-0e94bc18.md",
+      "status": "published",
+      "score": 62.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "Toyota가 'Scion by Toyota'를 부활시켜 첫 양산 모델로 일본식 kei 트럭 **KEI-01**을 발표했다. KEI-01은 660cc·CVT 기반의 저속차량으로, 미국에서는 **2027년 말 플릿 중심의 저속·소규모 파일럿**으로 판매된다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
@@ -7783,6 +7835,19 @@
       "new": false
     },
     {
+      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-control-room-a-central-system-to-track-and-stop-model-workloads-across-o-952d2516.md",
+      "status": "published",
+      "score": 53.0,
+      "briefed_at": "2026-11-10",
+      "published_at": "2026-11-09",
+      "excerpt": "OpenAI가 2026-11-09 공개한 'Control Room'은 연구 인프라 전반의 모델 워크로드를 추적하고 안전·보안 우려 시 이를 신속히 중단할 수 있는 중앙 시스템이라고 피드 메타데이터가 설명합니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -7794,19 +7859,6 @@
       "excerpt": "피드 기준으로는 OpenAI가 2026-11-05에 **GPT‑6 Cyber**를 공개했다. 이 모델은 악용 가능한 취약점 탐지와 수정 개발을 목표로 하며, '허가된 범위 내' 작동하도록 훈련됐다고 요약된다.",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-control-room-a-central-system-to-track-and-stop-model-workloads-across-o-952d2516.md",
-      "status": "published",
-      "score": 53.0,
-      "briefed_at": null,
-      "published_at": "2026-11-09",
-      "excerpt": "OpenAI가 2026-11-09 공개한 'Control Room'은 연구 인프라 전반의 모델 워크로드를 추적하고 안전·보안 우려 시 이를 신속히 중단할 수 있는 중앙 시스템이라고 피드 메타데이터가 설명합니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Nobody pays for FOSS, we can force them to",
@@ -8043,6 +8095,19 @@
       "new": false
     },
     {
+      "title": "Gemini 4 Carbon is now available for developers.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-gemini-4-carbon-is-now-available-for-developers-28c6d3cd.md",
+      "status": "published",
+      "score": 50.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "Google이 최신 대형언어모델 **Gemini 4 Carbon**을 개발자용으로 공개했다. 모델은 사이버보안과 장기 과제 해결 능력을 강조하며, 유료 API(Google AI Studio·Android Studio)와 Google AI Ultra 구독 대상 플랫폼(Google Antigravity)에서 접근할 수 있다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Show HN: StartupWiki – A Free Alternative to Crunchbase",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -8277,6 +8342,19 @@
       "new": false
     },
     {
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-coderabbit-scales-agentic-software-development-and-ships-20x-more-02e9abf4.md",
+      "status": "published",
+      "score": 47.0,
+      "briefed_at": "2026-11-10",
+      "published_at": "2026-11-09",
+      "excerpt": "피드 기준으로는 OpenAI 블로그가 CodeRabbit이 OpenAI 모델과 Codex를 활용해 AI 생성 코드의 거버넌스를 갖추고 같은 엔지니어 팀으로 **20배** 더 많은 소프트웨어를 배포했다고 전합니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Measuring how AI agents handle everyday wet-lab science",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -8444,19 +8522,6 @@
       "excerpt": "Git 2.55는 대형 저장소 관리와 메타데이터 유지비용을 줄이기 위한 실용적 개선에 초점을 맞췄다. 가장 큰 변화 가운데 하나는 증분 멀티팩 인덱스(incremental MIDX)를 직접 쓰도록 git repack을 확장한 것으로, --write-midx=incremental 모드에서 기본적으로는 기존 레이어를 건드리…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "CodeRabbit scales agentic software development and ships 20x more",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-coderabbit-scales-agentic-software-development-and-ships-20x-more-02e9abf4.md",
-      "status": "published",
-      "score": 47.0,
-      "briefed_at": null,
-      "published_at": "2026-11-09",
-      "excerpt": "피드 기준으로는 OpenAI 블로그가 CodeRabbit이 OpenAI 모델과 Codex를 활용해 AI 생성 코드의 거버넌스를 갖추고 같은 엔지니어 팀으로 **20배** 더 많은 소프트웨어를 배포했다고 전합니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "'Crush this lady': how eBay harassment campaign led to $56M payout",
@@ -9993,6 +10058,58 @@
       "new": false
     },
     {
+      "title": "Git security vulnerabilities announced",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-git-security-vulnerabilities-announced-f0fc3038.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "Git은 재귀적 클론 중 임의 코드 실행, 경로 횡단, 스택·힙 손상, 바이너리 패치 처리 문제 등 6건의 보안 취약점을 수정한 **Git 2.56.1**(및 여러 백포트)을 발표했으며, GitHub 서비스와 엔터프라이즈 제품도 패치가 배포되었습니다. 즉시 업데이트가 권고됩니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-google-cloud-launches-gemini-for-healthcare-c979be8e.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "Google Cloud는 임상·운영·행정 시스템의 단편화를 통합하고 다단계 워크플로를 실행하도록 설계된 **Gemini for healthcare**를 발표했다. 프리뷰는 HCA Healthcare, Highmark Health, Northwell Health와 함께 제공된다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Kuken Industries searches 70 years of drawings in minutes",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-kuken-industries-searches-70-years-of-drawings-in-minutes-2e34e84f.md",
+      "status": "published",
+      "score": 41.0,
+      "briefed_at": "2026-11-10",
+      "published_at": "2026-11-09",
+      "excerpt": "피드 기준으로 Kuken Industries는 OpenAI API로 70년치 냉각탑 도면을 검색해, 수리용 도면 검색 시간을 '거의 1시간'에서 **4.5분**으로 단축했다고 밝혔습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Developers can now build with Google Maps Platform in AI Studio.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-developers-can-now-build-with-google-maps-platform-in-ai-studio-f116c189.md",
+      "status": "published",
+      "score": 41.0,
+      "briefed_at": "2026-11-10",
+      "published_at": "2026-11-09",
+      "excerpt": "Google Maps Platform을 **AI Studio 내에서 직접 사용**할 수 있게 되어 워크스페이스를 벗나갈 필요 없이 지도 기능을 연결하고 미리보기를 확인할 수 있다. 시작 시 **신용카드 불필요**, 기존 GCP 프로젝트 자동 연결, 키의 안전한 연결과 즉시 미리보기 로드가 지원된다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "We're sharing our framework for building safer and more helpful AI for health.",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -10370,32 +10487,6 @@
       "new": false
     },
     {
-      "title": "Developers can now build with Google Maps Platform in AI Studio.",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-developers-can-now-build-with-google-maps-platform-in-ai-studio-f116c189.md",
-      "status": "published",
-      "score": 41.0,
-      "briefed_at": null,
-      "published_at": "2026-11-09",
-      "excerpt": "Google Maps Platform을 **AI Studio 내에서 직접 사용**할 수 있게 되어 워크스페이스를 벗나갈 필요 없이 지도 기능을 연결하고 미리보기를 확인할 수 있다. 시작 시 **신용카드 불필요**, 기존 GCP 프로젝트 자동 연결, 키의 안전한 연결과 즉시 미리보기 로드가 지원된다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Kuken Industries searches 70 years of drawings in minutes",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-kuken-industries-searches-70-years-of-drawings-in-minutes-2e34e84f.md",
-      "status": "published",
-      "score": 41.0,
-      "briefed_at": null,
-      "published_at": "2026-11-09",
-      "excerpt": "피드 기준으로 Kuken Industries는 OpenAI API로 70년치 냉각탑 도면을 검색해, 수리용 도면 검색 시간을 '거의 1시간'에서 **4.5분**으로 단축했다고 밝혔습니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "LifeVal",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -10704,6 +10795,19 @@
       "briefed_at": "2026-06-13",
       "published_at": "2026-06-13",
       "excerpt": "피드 기준으로는 Anthropic이 Claude Fable 5와 Claude Mythos 5를 발표했습니다. Claude Fable 5는 ‘Mythos‑class’ 모델로 일반 사용에 맞게 안전하게 설계되었다고 요약되어 있습니다. 제공된 정보만 보면 출시 사실과 안전성 강조가 핵심입니다. 기술적 세부사항이나 배포 방식…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "ChatGPT Enterprise now available in AWS Marketplace",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-chatgpt-enterprise-now-available-in-aws-marketplace-caa9073c.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": "2026-11-10",
+      "published_at": "2026-11-09",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-09에 ChatGPT Enterprise를 AWS Marketplace에서 제공한다고 밝혔다. 조직은 기존 AWS 구매·청구 관계를 통해 조달을 단순화할 수 있다.",
       "featured": false,
       "new": false
     },
@@ -11501,15 +11605,15 @@
       "new": false
     },
     {
-      "title": "ChatGPT Enterprise now available in AWS Marketplace",
+      "title": "Gilbert + Tobin rethinks the business of law with AI",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-chatgpt-enterprise-now-available-in-aws-marketplace-caa9073c.md",
+      "href": "./services/openai-blog/2026-11-gilbert-tobin-rethinks-the-business-of-law-with-ai-65b96c23.md",
       "status": "published",
       "score": 39.0,
       "briefed_at": null,
-      "published_at": "2026-11-09",
-      "excerpt": "피드 기준으로는 OpenAI가 2026-11-09에 ChatGPT Enterprise를 AWS Marketplace에서 제공한다고 밝혔다. 조직은 기존 AWS 구매·청구 관계를 통해 조달을 단순화할 수 있다.",
+      "published_at": "2026-11-12",
+      "excerpt": "OpenAI 블로그에 실린 대담 기사로, Gilbert + Tobin의 파트너 겸 CEO인 Sam Nickless와의 대화를 통해 'AI로 법률 비즈니스를 재고한다'는 주제를 다룹니다(피드 기준).",
       "featured": false,
       "new": true
     },
@@ -11902,6 +12006,19 @@
       "excerpt": "피드 기준으로는 OpenAI가 Ona를 인수할 계획이라고 발표했습니다. 인수 목적은 Codex를 보강해 보안되고 지속적인 클라우드 환경을 제공하는 것으로 보입니다. 제공된 정보만 보면 이 변화는 장기 실행형 AI 에이전트를 기업 워크플로에 통합하는 것을 목표로 합니다. 구체적인 조건이나 일정은 피드에 포함되어 있지 않습…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-we-re-bringing-adobe-s-creative-and-productivity-tools-closer-to-your-ev-e192e4f9.md",
+      "status": "published",
+      "score": 38.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "Google은 Adobe와 파트너십을 확장해 Drive·Gmail에서 Acrobat ‘Edit with’ 진입 경로를 제공하고, Adobe 도구를 Gemini·검색 AI 모드와 연동하며 DeepMind와 포토샵용 실시간 이미지 편집 모델을 탐색한다고 발표했다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Merge builds product and business tools with OpenAI technology",
@@ -12656,6 +12773,19 @@
       "excerpt": "제공된 메타데이터에 따르면 GitHub는 Copilot CLI의 위임(delegation) 결정을 더 선택적으로 만들기 위한 개선을 발표했습니다. 피드 기준으로는 오케스트레이션 향상, 핸드오프 감소, 더 빠른 진행을 목표로 했고 새 설정(토글)은 추가하지 않았다고 요약됩니다. 해당 내용은 GitHub Copilot 사용…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Introducing Businesses in ChatGPT",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-introducing-businesses-in-chatgpt-991ad48e.md",
+      "status": "published",
+      "score": 37.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "피드 기준으로는 OpenAI가 ChatGPT에 'Businesses in ChatGPT' 기능을 도입해 사업자 정보 관리, 노출 분석, 관심 → 행동 전환 도구를 제공한다고 안내했습니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Australian universities are creating AI-native graduates",
@@ -13555,6 +13685,32 @@
       "new": false
     },
     {
+      "title": "Gemini Intelligence: New features, on more devices",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-gemini-intelligence-new-features-on-more-devices-fafff429.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "Google은 Gemini Intelligence 1의 적용 기기와 기능을 확대했다. motorola signature 27(11월19일 美 예약판매)과 Pixel 10 계열에 Rambler 4·Create My Widget·Device Assistance 등이 제공되고, 작업 자동화는 영국·인도·일본으로 확대된다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Closing the AI guidance gap in education",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-closing-the-ai-guidance-gap-in-education-69d4d9d7.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-10 발행 블로그 'Closing the AI guidance gap in education'에서 ThinkYoung의 새 연구와 OpenAI의 EMEA 교육 파트너십 사례를 바탕으로 교사 지원, AI 문해력, 학습자의 자율 학습 지원과 관련한 교훈을 제시한다고 요약됩니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -14281,6 +14437,32 @@
       "excerpt": "제공된 정보만 보면, GitHub는 2026년 5월에 서비스 성능 저하를 초래한 9건의 사고를 겪었다고 보고했습니다. 이 내용은 GitHub Blog의 ‘GitHub availability report: May 2026’ 게시물에 올라왔습니다. 피드 기준으로는 사고별 세부 타임라인이나 근본 원인, 대응 조치 등은 포함되…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Anthropic launches roadshow for proposed initial public offering",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-anthropic-launches-roadshow-for-proposed-initial-public-offering-84757a8b.md",
+      "status": "published",
+      "score": 35.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "Anthropic이 Class A 보통주 상장을 위한 IPO 로드쇼를 시작했다. 공모는 총 **825,000,000주**(회사 801,351,354주·기존주주 23,648,646주)로, 1주당 **$70.00~$78.00**의 희망 공모가 범위를 제시했으며 나스닥 심볼 'ANT'로 상장 신청 중이다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Work at the Frontier: AI’s effect on freelance work",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-work-at-the-frontier-ai-s-effect-on-freelance-work-f3fc54cd.md",
+      "status": "published",
+      "score": 35.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "피드 기준으로는 OpenAI와 Upwork의 새 연구(2026-11-10)가 프리랜스 수요 변화, AI 관련 기술 조합의 증가, 그리고 AI 프로젝트의 예산·투입시간 확대를 보고했다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
