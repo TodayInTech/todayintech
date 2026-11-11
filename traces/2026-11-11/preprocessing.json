@@ -1,0 +1,403 @@
+{
+  "generated_at": "2026-11-11T01:40:50.222244+00:00",
+  "generated_for": "2026-11-11",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "fd86655bc93704ddf39f35e3ab2a3d27389004ca",
+  "github_run_id": "42940498884",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 22,
+  "excluded_count": 98,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 34,
+      "excluded_count": 86,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 86
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 34,
+      "output_count": 34,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 34,
+      "output_count": 32,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 32,
+      "output_count": 22,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:84757a8b6e04ab0d",
+          "title": "Anthropic launches roadshow for proposed initial public offering",
+          "normalized_url": "https://www.anthropic.com/news/roadshow-launch",
+          "url_hash": "84757a8b6e04ab0dc5be5bc177eccc4e40619603a4e69d52c77bd55e8acbeef7",
+          "suggested_doc_key": "2026-11-anthropic-launches-roadshow-for-proposed-initial-public-offering-84757a8b",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-anthropic-launches-roadshow-for-proposed-initial-public-offering-84757a8b.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:f0fc30384fec2ecc",
+          "title": "Git security vulnerabilities announced",
+          "normalized_url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7",
+          "url_hash": "f0fc30384fec2ecc4dbc08cdb28c5f85dcbd9adf3f6f59481087bf298c4f645a",
+          "suggested_doc_key": "2026-11-git-security-vulnerabilities-announced-f0fc3038",
+          "suggested_article_path": "docs/services/github-blog/2026-11-git-security-vulnerabilities-announced-f0fc3038.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 5,
+      "excluded_count": 15,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:28c6d3cdb92b83f1",
+          "title": "Gemini 4 Carbon is now available for developers.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers",
+          "url_hash": "28c6d3cdb92b83f182ea7f4efd866a4109ea24f115245ccfc3c9e632b3810277",
+          "suggested_doc_key": "2026-11-gemini-4-carbon-is-now-available-for-developers-28c6d3cd",
+          "suggested_article_path": "docs/services/google-blog/2026-11-gemini-4-carbon-is-now-available-for-developers-28c6d3cd.md",
+          "candidate_score": 50.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:c979be8e72cc92b8",
+          "title": "Google Cloud launches Gemini for healthcare.",
+          "normalized_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare",
+          "url_hash": "c979be8e72cc92b8a0fbd6a0e885370f88efbc63bec0740a46271d303ac6a351",
+          "suggested_doc_key": "2026-11-google-cloud-launches-gemini-for-healthcare-c979be8e",
+          "suggested_article_path": "docs/services/google-blog/2026-11-google-cloud-launches-gemini-for-healthcare-c979be8e.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:e192e4f92a704298",
+          "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+          "normalized_url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration",
+          "url_hash": "e192e4f92a704298f96f725cc3ae96c30d788d917e1f7b38ef8d7e63567c6b73",
+          "suggested_doc_key": "2026-11-we-re-bringing-adobe-s-creative-and-productivity-tools-closer-to-your-ev-e192e4f9",
+          "suggested_article_path": "docs/services/google-blog/2026-11-we-re-bringing-adobe-s-creative-and-productivity-tools-closer-to-your-ev-e192e4f9.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:fafff4292c09fd93",
+          "title": "Gemini Intelligence: New features, on more devices",
+          "normalized_url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices",
+          "url_hash": "fafff4292c09fd9370c59269226818b22b187de9757f1096f65549cc01bfa598",
+          "suggested_doc_key": "2026-11-gemini-intelligence-new-features-on-more-devices-fafff429",
+          "suggested_article_path": "docs/services/google-blog/2026-11-gemini-intelligence-new-features-on-more-devices-fafff429.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:1dd4b13848afc9e4",
+          "title": "Introducing 3 new domains: .eat, .fly, and .here",
+          "normalized_url": "https://blog.google/products-and-platforms/products/registry/new-google-domains-eat-fly-here",
+          "url_hash": "1dd4b13848afc9e4f34567c7d1494581bbcb130b1a8c2114168d34833c2a4acc",
+          "suggested_doc_key": "2026-11-introducing-3-new-domains-eat-fly-and-here-1dd4b138",
+          "suggested_article_path": "docs/services/google-blog/2026-11-introducing-3-new-domains-eat-fly-and-here-1dd4b138.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 15
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:a4978faa7e166cdb",
+          "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+          "normalized_url": "https://github.com/GoogleChrome/modern-web-guidance",
+          "url_hash": "a4978faa7e166cdb12b818c5397aad221fe34e5d74e2dc0c479fe886ef474c07",
+          "suggested_doc_key": "2026-11-show-hn-get-your-coding-agent-off-2019-javascript-onto-modern-web-primit-a4978faa",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-show-hn-get-your-coding-agent-off-2019-javascript-onto-modern-web-primit-a4978faa.md",
+          "candidate_score": 75.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "Hacker News 점수 259점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 75개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:2b1a51c62db6caf6",
+          "title": "After 7 months, Glasswing overwelms maintainers with underwhelming findings",
+          "normalized_url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+          "url_hash": "2b1a51c62db6caf6b7980237937255c7fdd673a7ce146660ea91c5356da2a01a",
+          "suggested_doc_key": "2026-11-after-7-months-glasswing-overwelms-maintainers-with-underwhelming-findin-2b1a51c6",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-after-7-months-glasswing-overwelms-maintainers-with-underwhelming-findin-2b1a51c6.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 203점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 82개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:1adbe03aa2d304c1",
+          "title": "Blender 5.3 released with Gaussian Splat support",
+          "normalized_url": "https://www.blender.org/download/releases/5-3",
+          "url_hash": "1adbe03aa2d304c1b580a8b9972561552a31c52f23754b71a69d70b54f955653",
+          "suggested_doc_key": "2026-11-blender-5-3-released-with-gaussian-splat-support-1adbe03a",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-blender-5-3-released-with-gaussian-splat-support-1adbe03a.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 432점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 65개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0e94bc1826c48b12",
+          "title": "Scion is back and is going to sell a kei truck in America",
+          "normalized_url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america",
+          "url_hash": "0e94bc1826c48b1261b2cf218df563acf1f1a106e3abccc16ef714c8c91002b7",
+          "suggested_doc_key": "2026-11-scion-is-back-and-is-going-to-sell-a-kei-truck-in-america-0e94bc18",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-scion-is-back-and-is-going-to-sell-a-kei-truck-in-america-0e94bc18.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 322점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 239개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:96e2dd8c2efc74b8",
+          "title": "Starlink Mini 2",
+          "normalized_url": "https://starlink.com/mini-2",
+          "url_hash": "96e2dd8c2efc74b81343b9181be0c9a57cec6e258018939de2232c83b76f435f",
+          "suggested_doc_key": "2026-11-starlink-mini-2-96e2dd8c",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-starlink-mini-2-96e2dd8c.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 229점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 240개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:65b96c238445cded",
+          "title": "Gilbert + Tobin rethinks the business of law with AI",
+          "normalized_url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+          "url_hash": "65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2",
+          "suggested_doc_key": "2026-11-gilbert-tobin-rethinks-the-business-of-law-with-ai-65b96c23",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-gilbert-tobin-rethinks-the-business-of-law-with-ai-65b96c23.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:991ad48e8559b2fe",
+          "title": "Introducing Businesses in ChatGPT",
+          "normalized_url": "https://openai.com/index/introducing-businesses-chatgpt",
+          "url_hash": "991ad48e8559b2fefa9ff7bc2bbc96fe5e673f91d6bb1c78428d1dddc9dc303e",
+          "suggested_doc_key": "2026-11-introducing-businesses-in-chatgpt-991ad48e",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-introducing-businesses-in-chatgpt-991ad48e.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:69d4d9d74efa0162",
+          "title": "Closing the AI guidance gap in education",
+          "normalized_url": "https://openai.com/index/closing-ai-guidance-gap-education",
+          "url_hash": "69d4d9d74efa01629a6c751d8fa58a99d17f0aecb815f679bbfeeb3edf259e44",
+          "suggested_doc_key": "2026-11-closing-the-ai-guidance-gap-in-education-69d4d9d7",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-closing-the-ai-guidance-gap-in-education-69d4d9d7.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:f3fc54cd1d78c100",
+          "title": "Work at the Frontier: AI’s effect on freelance work",
+          "normalized_url": "https://openai.com/index/ai-effect-on-freelance-work",
+          "url_hash": "f3fc54cd1d78c100d666a9c2ab2fb50b602d94d149788dbd0586059b0a0e8b98",
+          "suggested_doc_key": "2026-11-work-at-the-frontier-ai-s-effect-on-freelance-work-f3fc54cd",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-work-at-the-frontier-ai-s-effect-on-freelance-work-f3fc54cd.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:0f0020abcf733229",
+          "title": "Helping caregivers use AI in everyday life",
+          "normalized_url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+          "url_hash": "0f0020abcf733229d29f4d40e095eae692bb4a4c21852ac4cbeb6daf98f1617e",
+          "suggested_doc_key": "2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 43,
+        "low_quality": 2
+      }
+    }
+  ]
+}
