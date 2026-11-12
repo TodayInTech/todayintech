@@ -1962,8 +1962,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-06T01:57:45.506098Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-14T02:40:41.844241Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2014,8 +2014,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-06T01:57:45.506098Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-14T02:40:41.844241Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2066,8 +2066,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-06T01:57:45.506098Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-14T02:40:41.844241Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2119,8 +2119,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-06T01:57:45.506098Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-14T02:40:41.844241Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2177,8 +2177,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-07T01:59:04.986905Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-14T02:40:41.844241Z",
     "last_failure": "thin_content",
     "recovered_at": null,
     "extraction_method": null,
@@ -3552,6 +3552,384 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-12T01:41:18.564315Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://github.com/FrigadeHQ/yogurt": {
+    "candidate": {
+      "candidate_id": "hacker-news:e40297c9b5a8aa90",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+        "url": "https://github.com/FrigadeHQ/yogurt",
+        "published_at": "2026-11-11T15:33:06Z",
+        "collected_at": "2026-11-12T02:40:36.734170Z",
+        "summary": "<p>Hey HN, I’m Eric and I want to share an OSS project that I’ve been building in my free time. Yogurt is a free, MIT licensed desktop app that uses on-device AI models to transcribe, summarize, and chat with your meetings.<p>Here's a quick demo video: <a href=\"https://www.youtube.com/watch?v=BFfbXAwRq98\" rel=\"nofollow\">https://www.youtube.com/watch?v=BFfbXAwRq98</a><p>Similar to Granola, Yogurt runs in the background and does not join your calls. But unlike Granola, Yogurt is open-source, free to use, and private. Your meeting transcripts, call recordings, and summaries never leave your computer.<p>As small OSS models have gotten faster and more powerful, Yogurt seemed like a pretty obvious win for privacy and cost conscious folks. You do not need a frontier model to summarize meeting notes or answer questions about them. And if you want to make your notes available to a frontier model, you can just share it with Anthropic, OpenAI, etc. directly via Yogurt’s local MCP server. There’s no need to use a paid cloud service as a middleman.<p>I tried some of the most popular OSS note taking tools, and most were missing features like calendar integration, MCP server, etc. or required you to connect or create an account. And more than that, they didn’t feel polished enough for it to be something I actually wanted to use daily, and so I built Yogurt to scratch that itch. I spent a lot of time fine-tuning every UI interaction/animation and optimizing the model calls to get the most out of your hardware + make it snappy.<p>To support Windows/Mac/Linux, I decided to go with Electron. I use whisper.cpp for transcription and Apple’s on-device SpeechAnalyzer if your system supports it. For call summaries and questions, I use a local open weight LLM that automatically gets downloaded and set up based on what your hardware can handle without your cooling fans firing off like crazy (this part uses llama.cpp).<p>I’ve spent a lot of time working on details like echo detection/reduction, global/folder/local level search respectively, and auto-end recordings. Hope this is useful for any of you who have held out on using AI note tools for privacy or cost reasons, or for folks using cloud tools who want to switch to something free and open source that still feels great to use.<p>Would love to hear what you think about the onboarding and note taking experience :)</p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50454625\">https://news.ycombinator.com/item?id=50454625</a></p>\n<p>Points: 176</p>\n<p># Comments: 80</p>",
+        "authors": [
+          "brownrout"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 17,
+          "hn_points": 176,
+          "hn_comments": 80,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50454625"
+        }
+      },
+      "normalized_url": "https://github.com/FrigadeHQ/yogurt",
+      "url_hash": "e40297c9b5a8aa9019bb2c0af4d139202655e3d67fd7e9252fdd403af59b2217",
+      "title_fingerprint": "show hn yogurt free private open source alternative to granola",
+      "feed_summary": "<p>Hey HN, I’m Eric and I want to share an OSS project that I’ve been building in my free time. Yogurt is a free, MIT licensed desktop app that uses on-device AI models to transcribe, summarize, and chat with your meetings.<p>Here's a quick demo video: <a href=\"https://www.youtube.com/watch?v=BFfbXAwRq98\" rel=\"nofollow\">https://www.youtube.com/watch?v=BFfbXAwRq98</a><p>Similar to Granola, Yogurt runs in the background and does not join your calls. But unlike Granola, Yogurt is open-source, free to use, and private. Your meeting transcripts, call recordings, and summaries never leave your computer.<p>As small OSS models have gotten faster and more powerful, Yogurt seemed like a pretty obvious win for privacy and cost conscious folks. You do not need a frontier model to summarize meeting notes or answer questions about them. And if you want to make your notes available to a frontier model, you can just share it with Anthropic, OpenAI, etc. directly via Yogurt’s local MCP server. There’s no need to use a paid cloud service as a middleman.<p>I tried some of the most popular OSS note taking tools, and most were missing features like calendar integration, MCP server, etc. or required you to connect or create an account. And more than that, they didn’t feel polished enough for it to be something I actually wanted to use daily, and so I built Yogurt to scratch that itch. I spent a lot of time fine-tuning every UI interaction/animation and optimizing the model calls to get the most out of your hardware + make it snappy.<p>To support Windows/Mac/Linux, I decided to go with Electron. I use whisper.cpp for transcription and Apple’s on-device SpeechAnalyzer if your system supports it. For call summaries and questions, I use a local open weight LLM that automatically gets downloaded and set up based on what your hardware can handle without your cooling fans firing off like crazy (this part uses llama.cpp).<p>I’ve spent a lot of time working on details like echo detection/reduction, global/folder/local level search respectively, and auto-end recordings. Hope this is useful for any of you who have held out on using AI note tools for privacy or cost reasons, or for folks using cloud tools who want to switch to something free and open source that still feels great to use.<p>Would love to hear what you think about the onboarding and note taking experience :)</p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50454625\">https://news.ycombinator.com/item?id=50454625</a></p>\n<p>Points: 176</p>\n<p># Comments: 80</p>",
+      "suggested_doc_key": "2026-11-show-hn-yogurt-free-private-open-source-alternative-to-granola-e40297c9",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-show-hn-yogurt-free-private-open-source-alternative-to-granola-e40297c9.md",
+      "candidate_score": 67.6,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": 17.6,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "Hacker News 점수 176점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 80개를 토론 신호로 반영했습니다.",
+        "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
+    "last_failure": "thin_content",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad": {
+    "candidate": {
+      "candidate_id": "hacker-news:c4aa53a5506ac6f4",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Nvidia is preparing to oust Jensen Huang",
+        "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+        "published_at": "2026-11-11T22:31:06Z",
+        "collected_at": "2026-11-12T02:40:36.734170Z",
+        "summary": "<p>Article URL: <a href=\"https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad\">https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50459703\">https://news.ycombinator.com/item?id=50459703</a></p>\n<p>Points: 564</p>\n<p># Comments: 808</p>",
+        "authors": [
+          "jbredeche"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 3,
+          "hn_points": 564,
+          "hn_comments": 808,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50459703"
+        }
+      },
+      "normalized_url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+      "url_hash": "c4aa53a5506ac6f458731f06993763aee2ed2c002a5df5e4cb45d0fd4dffacb5",
+      "title_fingerprint": "nvidia is preparing to oust jensen huang",
+      "feed_summary": "<p>Article URL: <a href=\"https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad\">https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50459703\">https://news.ycombinator.com/item?id=50459703</a></p>\n<p>Points: 564</p>\n<p># Comments: 808</p>",
+      "suggested_doc_key": "2026-11-nvidia-is-preparing-to-oust-jensen-huang-c4aa53a5",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-nvidia-is-preparing-to-oust-jensen-huang-c4aa53a5.md",
+      "candidate_score": 67.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 564점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 808개를 토론 신호로 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html": {
+    "candidate": {
+      "candidate_id": "hacker-news:0de9825e0c756423",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Jensen Huang said to have had relationship with executive who reports to him",
+        "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+        "published_at": "2026-11-11T22:03:58Z",
+        "collected_at": "2026-11-12T02:40:36.734170Z",
+        "summary": "<p>Article URL: <a href=\"https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html\">https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50459321\">https://news.ycombinator.com/item?id=50459321</a></p>\n<p>Points: 243</p>\n<p># Comments: 245</p>",
+        "authors": [
+          "louiereederson"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 5,
+          "hn_points": 243,
+          "hn_comments": 245,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50459321"
+        }
+      },
+      "normalized_url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+      "url_hash": "0de9825e0c756423f2aa36b44c55dc05c2d4c9b4d78af88f1455b31dbf974df6",
+      "title_fingerprint": "jensen huang said to have had relationship with executive who reports to him",
+      "feed_summary": "<p>Article URL: <a href=\"https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html\">https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50459321\">https://news.ycombinator.com/item?id=50459321</a></p>\n<p>Points: 243</p>\n<p># Comments: 245</p>",
+      "suggested_doc_key": "2026-11-jensen-huang-said-to-have-had-relationship-with-executive-who-reports-to-0de9825e",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-jensen-huang-said-to-have-had-relationship-with-executive-who-reports-to-0de9825e.md",
+      "candidate_score": 65.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 5.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 243점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 245개를 토론 신호로 반영했습니다.",
+        "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/singapore-airlines-travel-work": {
+    "candidate": {
+      "candidate_id": "openai-blog:9092d5eb66f29547",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+        "url": "https://openai.com/index/singapore-airlines-travel-work",
+        "published_at": "2026-11-10T08:00:00Z",
+        "collected_at": "2026-11-12T02:40:37.719798Z",
+        "summary": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 7
+        }
+      },
+      "normalized_url": "https://openai.com/index/singapore-airlines-travel-work",
+      "url_hash": "9092d5eb66f29547408d30e047abeac0f87e4c54c42653bfc957c7ad549984e3",
+      "title_fingerprint": "singapore airlines elevates travel work with openai technology",
+      "feed_summary": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
+      "suggested_doc_key": "2026-11-singapore-airlines-elevates-travel-work-with-openai-technology-9092d5eb",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-singapore-airlines-elevates-travel-work-with-openai-technology-9092d5eb.md",
+      "candidate_score": 42.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 3.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/cogent-security": {
+    "candidate": {
+      "candidate_id": "openai-blog:37e4452e64c861cf",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Cogent and OpenAI build cyber defense factories for enterprises",
+        "url": "https://openai.com/index/cogent-security",
+        "published_at": "2026-11-10T00:00:00Z",
+        "collected_at": "2026-11-12T02:40:37.719798Z",
+        "summary": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
+        "authors": [],
+        "tags": [
+          "Startup"
+        ],
+        "metadata": {
+          "rss_rank": 9
+        }
+      },
+      "normalized_url": "https://openai.com/index/cogent-security",
+      "url_hash": "37e4452e64c861cffe83ba46c2eaac34a7fe63e9ccc79076dee9b50af52cb47b",
+      "title_fingerprint": "cogent and openai build cyber defense factories for enterprises",
+      "feed_summary": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
+      "suggested_doc_key": "2026-11-cogent-and-openai-build-cyber-defense-factories-for-enterprises-37e4452e",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-cogent-and-openai-build-cyber-defense-factories-for-enterprises-37e4452e.md",
+      "candidate_score": 39.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 2,
+        "freshness_score": 18.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 1.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/chatgpt-plus-for-veterans": {
+    "candidate": {
+      "candidate_id": "openai-blog:ac94b61a25ade5ed",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "ChatGPT Plus for veterans and servicemembers",
+        "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+        "published_at": "2026-11-11T08:00:00Z",
+        "collected_at": "2026-11-12T02:40:37.719798Z",
+        "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
+        "authors": [],
+        "tags": [
+          "Company"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/index/chatgpt-plus-for-veterans",
+      "url_hash": "ac94b61a25ade5edbf713f0897cc9ad6ba8f24621b9aed0d512136947920d1f0",
+      "title_fingerprint": "chatgpt plus for veterans and servicemembers",
+      "feed_summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
+      "suggested_doc_key": "2026-11-chatgpt-plus-for-veterans-and-servicemembers-ac94b61a",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-chatgpt-plus-for-veterans-and-servicemembers-ac94b61a.md",
+      "candidate_score": 38.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/jiostar-vijay-seshadri": {
+    "candidate": {
+      "candidate_id": "openai-blog:55ff14dc4213127d",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+        "url": "https://openai.com/index/jiostar-vijay-seshadri",
+        "published_at": "2026-11-11T00:00:00Z",
+        "collected_at": "2026-11-12T02:40:37.719798Z",
+        "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/index/jiostar-vijay-seshadri",
+      "url_hash": "55ff14dc4213127df72a8039620109cd467ed21c91f1958dfd8ce815a783074c",
+      "title_fingerprint": "jiostar s chief architect on ai discovery at 500m user scale",
+      "feed_summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+      "suggested_doc_key": "2026-11-jiostar-s-chief-architect-on-ai-discovery-at-500m-user-scale-55ff14dc",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-jiostar-s-chief-architect-on-ai-discovery-at-500m-user-scale-55ff14dc.md",
+      "candidate_score": 36.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,

@@ -13260,6 +13260,126 @@
       "status": "published",
       "briefed_at": "2026-11-11T01:45:51.843727Z",
       "candidate_score": 35.0
+    },
+    "3b68526628cdc83a5fc6dd29fdc2dd7d6d1d659f7a338f107acfad618d7c7efc": {
+      "normalized_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cybersecurity-2027",
+      "title_fingerprint": "google cloud leaders share what to expect in cybersecurity for 2027",
+      "service_key": "google-blog",
+      "title": "Google Cloud leaders share what to expect in cybersecurity for 2027.",
+      "article_doc_path": "docs/services/google-blog/2026-11-google-cloud-leaders-share-what-to-expect-in-cybersecurity-for-2027-3b685266.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.621971Z",
+      "candidate_score": 45.0
+    },
+    "3d65ccc2f5cdce6978b37fa7c64320f9c0126555eece5a35f17a2f7ec9258a94": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop",
+      "title_fingerprint": "try tabletop customizable collaborative spaces for groups to plan play and do more together",
+      "service_key": "google-blog",
+      "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+      "article_doc_path": "docs/services/google-blog/2026-11-try-tabletop-customizable-collaborative-spaces-for-groups-to-plan-play-a-3d65ccc2.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.622015Z",
+      "candidate_score": 39.0
+    },
+    "e09fad6dcc25f1ba697cd45e185fe8f5ec3b5d7d479a5ffc72c9feac3611ce3e": {
+      "normalized_url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu",
+      "title_fingerprint": "experience the art and legacy of dr esther mahlangu",
+      "service_key": "google-blog",
+      "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+      "article_doc_path": "docs/services/google-blog/2026-11-experience-the-art-and-legacy-of-dr-esther-mahlangu-e09fad6d.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.622027Z",
+      "candidate_score": 33.0
+    },
+    "1dd4b13848afc9e4f34567c7d1494581bbcb130b1a8c2114168d34833c2a4acc": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/registry/new-google-domains-eat-fly-here",
+      "title_fingerprint": "introducing 3 new domains eat fly and here",
+      "service_key": "google-blog",
+      "title": "Introducing 3 new domains: .eat, .fly, and .here",
+      "article_doc_path": "docs/services/google-blog/2026-11-introducing-3-new-domains-eat-fly-and-here-1dd4b138.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.622035Z",
+      "candidate_score": 29.0
+    },
+    "1df6a00742e99b5a005c0a78a421a5b6942e095ec0450cf2125be3f75497863a": {
+      "normalized_url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights",
+      "title_fingerprint": "united airlines bans ai agents from booking flights on behalf of travelers",
+      "service_key": "hacker-news",
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "article_doc_path": "docs/services/hacker-news/2026-11-united-airlines-bans-ai-agents-from-booking-flights-on-behalf-of-travele-1df6a007.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.622044Z",
+      "candidate_score": 69.0
+    },
+    "e40297c9b5a8aa9019bb2c0af4d139202655e3d67fd7e9252fdd403af59b2217": {
+      "normalized_url": "https://github.com/FrigadeHQ/yogurt",
+      "title_fingerprint": "show hn yogurt free private open source alternative to granola",
+      "service_key": "hacker-news",
+      "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+      "article_doc_path": "docs/services/hacker-news/2026-11-show-hn-yogurt-free-private-open-source-alternative-to-granola-e40297c9.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.622051Z",
+      "candidate_score": 67.6
+    },
+    "c4aa53a5506ac6f458731f06993763aee2ed2c002a5df5e4cb45d0fd4dffacb5": {
+      "normalized_url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+      "title_fingerprint": "nvidia is preparing to oust jensen huang",
+      "service_key": "hacker-news",
+      "title": "Nvidia is preparing to oust Jensen Huang",
+      "article_doc_path": "docs/services/hacker-news/2026-11-nvidia-is-preparing-to-oust-jensen-huang-c4aa53a5.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.622059Z",
+      "candidate_score": 67.0
+    },
+    "0de9825e0c756423f2aa36b44c55dc05c2d4c9b4d78af88f1455b31dbf974df6": {
+      "normalized_url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+      "title_fingerprint": "jensen huang said to have had relationship with executive who reports to him",
+      "service_key": "hacker-news",
+      "title": "Jensen Huang said to have had relationship with executive who reports to him",
+      "article_doc_path": "docs/services/hacker-news/2026-11-jensen-huang-said-to-have-had-relationship-with-executive-who-reports-to-0de9825e.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.622067Z",
+      "candidate_score": 65.0
+    },
+    "9092d5eb66f29547408d30e047abeac0f87e4c54c42653bfc957c7ad549984e3": {
+      "normalized_url": "https://openai.com/index/singapore-airlines-travel-work",
+      "title_fingerprint": "singapore airlines elevates travel work with openai technology",
+      "service_key": "openai-blog",
+      "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+      "article_doc_path": "docs/services/openai-blog/2026-11-singapore-airlines-elevates-travel-work-with-openai-technology-9092d5eb.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.622075Z",
+      "candidate_score": 42.0
+    },
+    "37e4452e64c861cffe83ba46c2eaac34a7fe63e9ccc79076dee9b50af52cb47b": {
+      "normalized_url": "https://openai.com/index/cogent-security",
+      "title_fingerprint": "cogent and openai build cyber defense factories for enterprises",
+      "service_key": "openai-blog",
+      "title": "Cogent and OpenAI build cyber defense factories for enterprises",
+      "article_doc_path": "docs/services/openai-blog/2026-11-cogent-and-openai-build-cyber-defense-factories-for-enterprises-37e4452e.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.622082Z",
+      "candidate_score": 39.0
+    },
+    "ac94b61a25ade5edbf713f0897cc9ad6ba8f24621b9aed0d512136947920d1f0": {
+      "normalized_url": "https://openai.com/index/chatgpt-plus-for-veterans",
+      "title_fingerprint": "chatgpt plus for veterans and servicemembers",
+      "service_key": "openai-blog",
+      "title": "ChatGPT Plus for veterans and servicemembers",
+      "article_doc_path": "docs/services/openai-blog/2026-11-chatgpt-plus-for-veterans-and-servicemembers-ac94b61a.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.622091Z",
+      "candidate_score": 38.0
+    },
+    "55ff14dc4213127df72a8039620109cd467ed21c91f1958dfd8ce815a783074c": {
+      "normalized_url": "https://openai.com/index/jiostar-vijay-seshadri",
+      "title_fingerprint": "jiostar s chief architect on ai discovery at 500m user scale",
+      "service_key": "openai-blog",
+      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+      "article_doc_path": "docs/services/openai-blog/2026-11-jiostar-s-chief-architect-on-ai-discovery-at-500m-user-scale-55ff14dc.md",
+      "status": "published",
+      "briefed_at": "2026-11-12T02:44:35.622099Z",
+      "candidate_score": 36.0
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-11",
+  "generated_for": "2026-11-12",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -18,6 +18,19 @@
       "briefed_at": "2026-07-23",
       "published_at": "2026-07-23",
       "excerpt": "Echo는 단일 모델을 모든 작업에 고정으로 쓰지 않고, 오픈 가중치 모델 풀에서 요청별로 어떤 모델을 참여시킬지와 얼마만큼의 계산을 할당할지를 결정해 출력들을 조합하는 실험적 시스템이다. 작성자는 GLM-5.2, Kimi K2.7 등 여러 모델을 동일한 평가에 돌려 '어떤 문제에 어떤 모델이 유용한지 미리 알고 적절히…",
+      "featured": true,
+      "new": false
+    },
+    {
+      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-show-hn-get-your-coding-agent-off-2019-javascript-onto-modern-web-primit-a4978faa.md",
+      "status": "published",
+      "score": 75.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-10",
+      "excerpt": "Google Chrome·Edge·Firefox·MDN이 공동 관리하는 Modern Web Guidance가 npx 기반 로컬 CLI로 공개됐다. 200여 개 가이드를 에이전트 문맥에 삽입해 로컬 검색·retrieve로 현대 웹 API 사용을 유도하며, 자동화 평가에서 여러 에이전트의 성공률을 크게 높였습니다.",
       "featured": true,
       "new": false
     },
@@ -72,19 +85,6 @@
       "excerpt": "OpenKnowledge는 로컬 퍼스트 WYSIWYG 마크다운 편집기이자 LLM 위키를 표방하는 오픈소스 도구로, macOS 데스크톱 앱과 웹 UI/CLI(리눅스·윈도우·인텔 맥 지원)로 제공된다. Claude, Codex, Cursor 등 에이전트와의 직접 통합을 통해 에이전트가 내장 브라우저에서 편집기를 열어 사이드…",
       "featured": true,
       "new": false
-    },
-    {
-      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-show-hn-get-your-coding-agent-off-2019-javascript-onto-modern-web-primit-a4978faa.md",
-      "status": "published",
-      "score": 75.0,
-      "briefed_at": null,
-      "published_at": "2026-11-10",
-      "excerpt": "Google Chrome·Edge·Firefox·MDN이 공동 관리하는 Modern Web Guidance가 npx 기반 로컬 CLI로 공개됐다. 200여 개 가이드를 에이전트 문맥에 삽입해 로컬 검색·retrieve로 현대 웹 API 사용을 유도하며, 자동화 평가에서 여러 에이전트의 성공률을 크게 높였습니다.",
-      "featured": true,
-      "new": true
     },
     {
       "title": "OpenAI and Hugging Face address security incident during model evaluation",
@@ -477,6 +477,19 @@
       "new": false
     },
     {
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-united-airlines-bans-ai-agents-from-booking-flights-on-behalf-of-travele-1df6a007.md",
+      "status": "published",
+      "score": 69.0,
+      "briefed_at": null,
+      "published_at": "2026-11-11",
+      "excerpt": "United Airlines는 개인 AI 에이전트의 고객 계정·결제 정보 접근과 연방법 위반 가능성을 이유로 AI 에이전트에 의한 항공권 예약·체크인을 금지한다고 밝혔다. 항공권 탐색은 여전히 Kayak·Hopper·Google Flights 등으로 가능하다고 회사 측과 분석가가 전했다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -711,6 +724,19 @@
       "new": false
     },
     {
+      "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-show-hn-yogurt-free-private-open-source-alternative-to-granola-e40297c9.md",
+      "status": "published",
+      "score": 67.6,
+      "briefed_at": null,
+      "published_at": "2026-11-11",
+      "excerpt": "Yogurt는 MIT 라이선스의 무료 데스크톱 앱으로, whisper.cpp·llama.cpp 등 온디바이스 OSS 모델을 이용해 회의 녹취·요약·질의응답을 제공하며, 데이터가 컴퓨터를 떠나지 않는 로컬 우선 설계를 표방합니다. HN에서 176점·80댓글의 관심을 받았습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "What I Self-Host",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -733,6 +759,19 @@
       "briefed_at": "2026-07-27",
       "published_at": "2026-07-27",
       "excerpt": "다리오 아모데이(Anthropic CEO)는 오픈 웨이트 모델을 금지하자는 주장과 Anthropic이 이를 추진한다는 비판을 명확히 부정하면서, 오픈 웨이트 자체가 위험하지 않다면 공공재로서 가치가 있다고 밝혔다. 그의 주된 우려는 두 가지다. 첫째는 권위주의 국가가 미국보다 강력한 AI 모델을 비밀리에 개발해 군사적…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "After 7 months, Glasswing overwelms maintainers with underwhelming findings",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-after-7-months-glasswing-overwelms-maintainers-with-underwhelming-findin-2b1a51c6.md",
+      "status": "published",
+      "score": 67.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-10",
+      "excerpt": "VulnCheck 집계에 따르면 Anthropic의 Project Glasswing은 7개월 동안 **442 CVE**와 **37,966건의 발견**을 기록했으나 공개된 것은 **7,349건(19.4%)**, 수정 보고는 **217건**에 불과해 발견·수정 간 격차가 크고, OSS 스캐너 도입으로 검증 부담이 유지관리자…",
       "featured": false,
       "new": false
     },
@@ -919,15 +958,15 @@
       "new": false
     },
     {
-      "title": "After 7 months, Glasswing overwelms maintainers with underwhelming findings",
+      "title": "Nvidia is preparing to oust Jensen Huang",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-after-7-months-glasswing-overwelms-maintainers-with-underwhelming-findin-2b1a51c6.md",
+      "href": "./services/hacker-news/2026-11-nvidia-is-preparing-to-oust-jensen-huang-c4aa53a5.md",
       "status": "published",
       "score": 67.0,
       "briefed_at": null,
-      "published_at": "2026-11-10",
-      "excerpt": "VulnCheck 집계에 따르면 Anthropic의 Project Glasswing은 7개월 동안 **442 CVE**와 **37,966건의 발견**을 기록했으나 공개된 것은 **7,349건(19.4%)**, 수정 보고는 **217건**에 불과해 발견·수정 간 격차가 크고, OSS 스캐너 도입으로 검증 부담이 유지관리자…",
+      "published_at": "2026-11-11",
+      "excerpt": "피드 기준으로는 WSJ가 'Nvidia is preparing to oust Jensen Huang' 기사를 게시(2026-11-11)했고 Hacker News에서 564점·808댓글의 큰 반향을 일으켰다. 구체 내용 확인은 원문 필요.",
       "featured": false,
       "new": true
     },
@@ -2635,6 +2674,19 @@
       "new": false
     },
     {
+      "title": "Jensen Huang said to have had relationship with executive who reports to him",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-jensen-huang-said-to-have-had-relationship-with-executive-who-reports-to-0de9825e.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": null,
+      "published_at": "2026-11-11",
+      "excerpt": "피드 기준으로는 뉴욕타임스가 젠슨 황 엔비디아 CEO가 그에게 보고하는 임원과 관계를 맺었다고 보도했다고 표기돼 있다. 해당 기사(2026-11-11)는 Hacker News에서 **포인트 243·댓글 245**로 주목받고 있다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3155,6 +3207,19 @@
       "new": false
     },
     {
+      "title": "Blender 5.3 released with Gaussian Splat support",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-blender-5-3-released-with-gaussian-splat-support-1adbe03a.md",
+      "status": "published",
+      "score": 63.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-10",
+      "excerpt": "Blender 5.3이 공개됐다. Cycles 뷰포트에 NVIDIA DLSS 디노이즈가 추가되고(드라이버 620 이상 필요), 프로젝트 단위 설정·합성기 효과 스택·Video Sequencer의 리플 편집·Blade 2.0 등 작업 흐름 개선이 핵심이다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3337,19 +3402,6 @@
       "new": false
     },
     {
-      "title": "Blender 5.3 released with Gaussian Splat support",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-blender-5-3-released-with-gaussian-splat-support-1adbe03a.md",
-      "status": "published",
-      "score": 63.0,
-      "briefed_at": null,
-      "published_at": "2026-11-10",
-      "excerpt": "Blender 5.3이 공개됐다. Cycles 뷰포트에 NVIDIA DLSS 디노이즈가 추가되고(드라이버 620 이상 필요), 프로젝트 단위 설정·합성기 효과 스택·Video Sequencer의 리플 편집·Blade 2.0 등 작업 흐름 개선이 핵심이다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "NetBSD 11.0",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3463,6 +3515,19 @@
       "briefed_at": "2026-07-21",
       "published_at": "2026-07-21",
       "excerpt": "유럽사법재판소(CJEU)는 2026년 7월 판결에서 VPN을 ‘합법적인 기술적 도구’로 명시하며, VPN 제공업체에 대한 저작권 침해 책임을 부인하는 새로운 기준을 제시했다. 이 사건은 안네 프랑크 원고 초고의 온라인 공개를 둘러싼 분쟁에서 비롯됐다. 원고 측은 벨기에에서 호스팅된 학술판 사이트가 네덜란드 IP를 차단하…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Scion is back and is going to sell a kei truck in America",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-scion-is-back-and-is-going-to-sell-a-kei-truck-in-america-0e94bc18.md",
+      "status": "published",
+      "score": 62.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-10",
+      "excerpt": "Toyota가 'Scion by Toyota'를 부활시켜 첫 양산 모델로 일본식 kei 트럭 **KEI-01**을 발표했다. KEI-01은 660cc·CVT 기반의 저속차량으로, 미국에서는 **2027년 말 플릿 중심의 저속·소규모 파일럿**으로 판매된다.",
       "featured": false,
       "new": false
     },
@@ -3699,19 +3764,6 @@
       "excerpt": "제목이 제시하는 내용만 보면 Moebius는 파라미터 수가 약 0.2B인 이미지 인페인팅 모델이 10B급 모델과 유사한 성능을 보인다고 주장하는 프로젝트입니다. 피드 기준으로는 원문 링크와 Hacker News에서의 반응(포인트 201, 댓글 60)만 제공되어 프로젝트의 구체적인 기법(예: 아키텍처, 지식 증류, 학습…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Scion is back and is going to sell a kei truck in America",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-scion-is-back-and-is-going-to-sell-a-kei-truck-in-america-0e94bc18.md",
-      "status": "published",
-      "score": 62.0,
-      "briefed_at": null,
-      "published_at": "2026-11-10",
-      "excerpt": "Toyota가 'Scion by Toyota'를 부활시켜 첫 양산 모델로 일본식 kei 트럭 **KEI-01**을 발표했다. KEI-01은 660cc·CVT 기반의 저속차량으로, 미국에서는 **2027년 말 플릿 중심의 저속·소규모 파일럿**으로 판매된다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
@@ -8069,6 +8121,19 @@
       "new": false
     },
     {
+      "title": "Gemini 4 Carbon is now available for developers.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-gemini-4-carbon-is-now-available-for-developers-28c6d3cd.md",
+      "status": "published",
+      "score": 50.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-10",
+      "excerpt": "Google이 최신 대형언어모델 **Gemini 4 Carbon**을 개발자용으로 공개했다. 모델은 사이버보안과 장기 과제 해결 능력을 강조하며, 유료 API(Google AI Studio·Android Studio)와 Google AI Ultra 구독 대상 플랫폼(Google Antigravity)에서 접근할 수 있다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Introducing the Agents API",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -8093,19 +8158,6 @@
       "excerpt": "Google은 음악 생성 모델 Lyria 3.5를 Google Flow Music에 도입하면서 멜로디, 가사, 보컬, 창작 통제력 측면에서 눈에 띄는 개선을 발표했다. 새 모델은 더 자연스럽고 복합적인 멜로디 구조를 생성하도록 설계되어 음의 흐름과 음악적 완성도가 올라가고, 프롬프트에 대한 준수와 구조적 이해도를 개선해…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Gemini 4 Carbon is now available for developers.",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-gemini-4-carbon-is-now-available-for-developers-28c6d3cd.md",
-      "status": "published",
-      "score": 50.0,
-      "briefed_at": null,
-      "published_at": "2026-11-10",
-      "excerpt": "Google이 최신 대형언어모델 **Gemini 4 Carbon**을 개발자용으로 공개했다. 모델은 사이버보안과 장기 과제 해결 능력을 강조하며, 유료 API(Google AI Studio·Android Studio)와 Google AI Ultra 구독 대상 플랫폼(Google Antigravity)에서 접근할 수 있다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Show HN: StartupWiki – A Free Alternative to Crunchbase",
@@ -8836,6 +8888,19 @@
       "new": false
     },
     {
+      "title": "Google Cloud leaders share what to expect in cybersecurity for 2027.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-google-cloud-leaders-share-what-to-expect-in-cybersecurity-for-2027-3b685266.md",
+      "status": "published",
+      "score": 45.0,
+      "briefed_at": null,
+      "published_at": "2026-11-11",
+      "excerpt": "Google Cloud·Mandiant의 Security 2027 분석은 자율 에이전트 시대를 전제로 **의사결정 무결성(100% 설명 가능)** 확보, AI를 무비판 신뢰하지 않는 **\"Beyond Zero\"**, 내부 문맥을 연계해 위험을 기계 속도로 차단하는 **멀티모델 앙상블**을 2027 핵심 우선순위로 제시했…",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "An updated Model Spec for more capable and beneficial AI",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -9512,6 +9577,32 @@
       "new": false
     },
     {
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-google-cloud-launches-gemini-for-healthcare-c979be8e.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-10",
+      "excerpt": "Google Cloud는 임상·운영·행정 시스템의 단편화를 통합하고 다단계 워크플로를 실행하도록 설계된 **Gemini for healthcare**를 발표했다. 프리뷰는 HCA Healthcare, Highmark Health, Northwell Health와 함께 제공된다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Git security vulnerabilities announced",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-git-security-vulnerabilities-announced-f0fc3038.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-10",
+      "excerpt": "Git은 재귀적 클론 중 임의 코드 실행, 경로 횡단, 스택·힙 손상, 바이너리 패치 처리 문제 등 6건의 보안 취약점을 수정한 **Git 2.56.1**(및 여러 백포트)을 발표했으며, GitHub 서비스와 엔터프라이즈 제품도 패치가 배포되었습니다. 즉시 업데이트가 권고됩니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Beyond code generation: A developer’s guide to agentic engineering",
       "service_key": "github-blog",
       "service_name": "GitHub Blog",
@@ -10058,28 +10149,15 @@
       "new": false
     },
     {
-      "title": "Git security vulnerabilities announced",
-      "service_key": "github-blog",
-      "service_name": "GitHub Blog",
-      "href": "./services/github-blog/2026-11-git-security-vulnerabilities-announced-f0fc3038.md",
+      "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-singapore-airlines-elevates-travel-work-with-openai-technology-9092d5eb.md",
       "status": "published",
       "score": 42.0,
       "briefed_at": null,
       "published_at": "2026-11-10",
-      "excerpt": "Git은 재귀적 클론 중 임의 코드 실행, 경로 횡단, 스택·힙 손상, 바이너리 패치 처리 문제 등 6건의 보안 취약점을 수정한 **Git 2.56.1**(및 여러 백포트)을 발표했으며, GitHub 서비스와 엔터프라이즈 제품도 패치가 배포되었습니다. 즉시 업데이트가 권고됩니다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Google Cloud launches Gemini for healthcare.",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-google-cloud-launches-gemini-for-healthcare-c979be8e.md",
-      "status": "published",
-      "score": 42.0,
-      "briefed_at": null,
-      "published_at": "2026-11-10",
-      "excerpt": "Google Cloud는 임상·운영·행정 시스템의 단편화를 통합하고 다단계 워크플로를 실행하도록 설계된 **Gemini for healthcare**를 발표했다. 프리뷰는 HCA Healthcare, Highmark Health, Northwell Health와 함께 제공된다.",
+      "excerpt": "제공된 정보만 보면 싱가포르항공이 OpenAI 모델과 API를 도입해 고객지원·여행 탐색·직원 생산성을 개선했으며, Kris 챗봇의 고객만족도(CSAT)가 2배로 올랐다고 OpenAI 블로그가 2026-11-10에 보도했습니다.",
       "featured": false,
       "new": true
     },
@@ -10795,6 +10873,19 @@
       "briefed_at": "2026-06-13",
       "published_at": "2026-06-13",
       "excerpt": "피드 기준으로는 Anthropic이 Claude Fable 5와 Claude Mythos 5를 발표했습니다. Claude Fable 5는 ‘Mythos‑class’ 모델로 일반 사용에 맞게 안전하게 설계되었다고 요약되어 있습니다. 제공된 정보만 보면 출시 사실과 안전성 강조가 핵심입니다. 기술적 세부사항이나 배포 방식…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Gilbert + Tobin rethinks the business of law with AI",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-gilbert-tobin-rethinks-the-business-of-law-with-ai-65b96c23.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-12",
+      "excerpt": "OpenAI 블로그에 실린 대담 기사로, Gilbert + Tobin의 파트너 겸 CEO인 Sam Nickless와의 대화를 통해 'AI로 법률 비즈니스를 재고한다'는 주제를 다룹니다(피드 기준).",
       "featured": false,
       "new": false
     },
@@ -11605,17 +11696,43 @@
       "new": false
     },
     {
-      "title": "Gilbert + Tobin rethinks the business of law with AI",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-gilbert-tobin-rethinks-the-business-of-law-with-ai-65b96c23.md",
+      "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-try-tabletop-customizable-collaborative-spaces-for-groups-to-plan-play-a-3d65ccc2.md",
       "status": "published",
       "score": 39.0,
       "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "OpenAI 블로그에 실린 대담 기사로, Gilbert + Tobin의 파트너 겸 CEO인 Sam Nickless와의 대화를 통해 'AI로 법률 비즈니스를 재고한다'는 주제를 다룹니다(피드 기준).",
+      "published_at": "2026-11-11",
+      "excerpt": "Google은 그룹 협업용 실험 서비스 'Tabletop'을 공개했다. @tabletop 프롬프트와 템플릿으로 일정·투표·비용분담·토너먼트 등을 실시간 공동편집할 수 있으며 미국(18+)에서 대기자 명단 방식으로 제공된다.",
       "featured": false,
       "new": true
+    },
+    {
+      "title": "Cogent and OpenAI build cyber defense factories for enterprises",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-cogent-and-openai-build-cyber-defense-factories-for-enterprises-37e4452e.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "피드 기준으로는 Cogent가 OpenAI 모델과 엔터프라이즈 컨텍스트를 결합해 에이전트로 취약점을 자동 복구(remediate)하는 '사이버 방어 팩토리'를 구축했다고 전합니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-we-re-bringing-adobe-s-creative-and-productivity-tools-closer-to-your-ev-e192e4f9.md",
+      "status": "published",
+      "score": 38.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-10",
+      "excerpt": "Google은 Adobe와 파트너십을 확장해 Drive·Gmail에서 Acrobat ‘Edit with’ 진입 경로를 제공하고, Adobe 도구를 Gemini·검색 AI 모드와 연동하며 DeepMind와 포토샵용 실시간 이미지 편집 모델을 탐색한다고 발표했다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "Introducing the Grid Protectors Program",
@@ -12008,17 +12125,30 @@
       "new": false
     },
     {
-      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-we-re-bringing-adobe-s-creative-and-productivity-tools-closer-to-your-ev-e192e4f9.md",
+      "title": "ChatGPT Plus for veterans and servicemembers",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-chatgpt-plus-for-veterans-and-servicemembers-ac94b61a.md",
       "status": "published",
       "score": 38.0,
       "briefed_at": null,
-      "published_at": "2026-11-10",
-      "excerpt": "Google은 Adobe와 파트너십을 확장해 Drive·Gmail에서 Acrobat ‘Edit with’ 진입 경로를 제공하고, Adobe 도구를 Gemini·검색 AI 모드와 연동하며 DeepMind와 포토샵용 실시간 이미지 편집 모델을 탐색한다고 발표했다.",
+      "published_at": "2026-11-11",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-11 블로그에서 재향군인·전역 예정자에게 ChatGPT Plus 1년 무료 이용권을 제공했으며, 2만 명 이상이 청구했다고 밝혔다.",
       "featured": false,
       "new": true
+    },
+    {
+      "title": "Introducing Businesses in ChatGPT",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-introducing-businesses-in-chatgpt-991ad48e.md",
+      "status": "published",
+      "score": 37.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-10",
+      "excerpt": "피드 기준으로는 OpenAI가 ChatGPT에 'Businesses in ChatGPT' 기능을 도입해 사업자 정보 관리, 노출 분석, 관심 → 행동 전환 도구를 제공한다고 안내했습니다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "Merge builds product and business tools with OpenAI technology",
@@ -12775,17 +12905,30 @@
       "new": false
     },
     {
-      "title": "Introducing Businesses in ChatGPT",
+      "title": "Closing the AI guidance gap in education",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-introducing-businesses-in-chatgpt-991ad48e.md",
+      "href": "./services/openai-blog/2026-11-closing-the-ai-guidance-gap-in-education-69d4d9d7.md",
       "status": "published",
-      "score": 37.0,
-      "briefed_at": null,
+      "score": 36.0,
+      "briefed_at": "2026-11-11",
       "published_at": "2026-11-10",
-      "excerpt": "피드 기준으로는 OpenAI가 ChatGPT에 'Businesses in ChatGPT' 기능을 도입해 사업자 정보 관리, 노출 분석, 관심 → 행동 전환 도구를 제공한다고 안내했습니다.",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-10 발행 블로그 'Closing the AI guidance gap in education'에서 ThinkYoung의 새 연구와 OpenAI의 EMEA 교육 파트너십 사례를 바탕으로 교사 지원, AI 문해력, 학습자의 자율 학습 지원과 관련한 교훈을 제시한다고 요약됩니다.",
       "featured": false,
-      "new": true
+      "new": false
+    },
+    {
+      "title": "Gemini Intelligence: New features, on more devices",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-gemini-intelligence-new-features-on-more-devices-fafff429.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-10",
+      "excerpt": "Google은 Gemini Intelligence 1의 적용 기기와 기능을 확대했다. motorola signature 27(11월19일 美 예약판매)과 Pixel 10 계열에 Rambler 4·Create My Widget·Device Assistance 등이 제공되고, 작업 자동화는 영국·인도·일본으로 확대된다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "Australian universities are creating AI-native graduates",
@@ -13685,30 +13828,43 @@
       "new": false
     },
     {
-      "title": "Gemini Intelligence: New features, on more devices",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-gemini-intelligence-new-features-on-more-devices-fafff429.md",
+      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-jiostar-s-chief-architect-on-ai-discovery-at-500m-user-scale-55ff14dc.md",
       "status": "published",
       "score": 36.0,
       "briefed_at": null,
-      "published_at": "2026-11-10",
-      "excerpt": "Google은 Gemini Intelligence 1의 적용 기기와 기능을 확대했다. motorola signature 27(11월19일 美 예약판매)과 Pixel 10 계열에 Rambler 4·Create My Widget·Device Assistance 등이 제공되고, 작업 자동화는 영국·인도·일본으로 확대된다.",
+      "published_at": "2026-11-11",
+      "excerpt": "피드 기준으로는 OpenAI 블로그 게시물에서 JioStar 수석 아키텍트 Vijay Seshadri가 **5억 사용자 규모에서의 AI 발견**을 주제로, 평가(evals), 가드레일(guardrails), 생산 적용에 관한 교훈을 설명한다고 전합니다.",
       "featured": false,
       "new": true
     },
     {
-      "title": "Closing the AI guidance gap in education",
+      "title": "Work at the Frontier: AI’s effect on freelance work",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-closing-the-ai-guidance-gap-in-education-69d4d9d7.md",
+      "href": "./services/openai-blog/2026-11-work-at-the-frontier-ai-s-effect-on-freelance-work-f3fc54cd.md",
       "status": "published",
-      "score": 36.0,
-      "briefed_at": null,
+      "score": 35.0,
+      "briefed_at": "2026-11-11",
       "published_at": "2026-11-10",
-      "excerpt": "피드 기준으로는 OpenAI가 2026-11-10 발행 블로그 'Closing the AI guidance gap in education'에서 ThinkYoung의 새 연구와 OpenAI의 EMEA 교육 파트너십 사례를 바탕으로 교사 지원, AI 문해력, 학습자의 자율 학습 지원과 관련한 교훈을 제시한다고 요약됩니다.",
+      "excerpt": "피드 기준으로는 OpenAI와 Upwork의 새 연구(2026-11-10)가 프리랜스 수요 변화, AI 관련 기술 조합의 증가, 그리고 AI 프로젝트의 예산·투입시간 확대를 보고했다.",
       "featured": false,
-      "new": true
+      "new": false
+    },
+    {
+      "title": "Anthropic launches roadshow for proposed initial public offering",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-anthropic-launches-roadshow-for-proposed-initial-public-offering-84757a8b.md",
+      "status": "published",
+      "score": 35.0,
+      "briefed_at": "2026-11-11",
+      "published_at": "2026-11-10",
+      "excerpt": "Anthropic이 Class A 보통주 상장을 위한 IPO 로드쇼를 시작했다. 공모는 총 **825,000,000주**(회사 801,351,354주·기존주주 23,648,646주)로, 1주당 **$70.00~$78.00**의 희망 공모가 범위를 제시했으며 나스닥 심볼 'ANT'로 상장 신청 중이다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
@@ -14439,32 +14595,6 @@
       "new": false
     },
     {
-      "title": "Anthropic launches roadshow for proposed initial public offering",
-      "service_key": "anthropic-blog",
-      "service_name": "Anthropic Blog",
-      "href": "./services/anthropic-blog/2026-11-anthropic-launches-roadshow-for-proposed-initial-public-offering-84757a8b.md",
-      "status": "published",
-      "score": 35.0,
-      "briefed_at": null,
-      "published_at": "2026-11-10",
-      "excerpt": "Anthropic이 Class A 보통주 상장을 위한 IPO 로드쇼를 시작했다. 공모는 총 **825,000,000주**(회사 801,351,354주·기존주주 23,648,646주)로, 1주당 **$70.00~$78.00**의 희망 공모가 범위를 제시했으며 나스닥 심볼 'ANT'로 상장 신청 중이다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Work at the Frontier: AI’s effect on freelance work",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-work-at-the-frontier-ai-s-effect-on-freelance-work-f3fc54cd.md",
-      "status": "published",
-      "score": 35.0,
-      "briefed_at": null,
-      "published_at": "2026-11-10",
-      "excerpt": "피드 기준으로는 OpenAI와 Upwork의 새 연구(2026-11-10)가 프리랜스 수요 변화, AI 관련 기술 조합의 증가, 그리고 AI 프로젝트의 예산·투입시간 확대를 보고했다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -14866,6 +14996,19 @@
       "excerpt": "피드 기준으로는 BBVA가 OpenAI와 협력해 ChatGPT Enterprise를 은행 핵심에 도입했고, 이를 100,000명 규모로 확장했다는 내용입니다. 제공된 정보만 보면 이 파트너십은 전 세계적으로 AI 기반 은행 혁신을 가속하는 목적을 강조합니다. 원문에서 구체적 도입 방식이나 운영·보안 세부사항은 확인이 필…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-experience-the-art-and-legacy-of-dr-esther-mahlangu-e09fad6d.md",
+      "status": "published",
+      "score": 33.0,
+      "briefed_at": null,
+      "published_at": "2026-11-11",
+      "excerpt": "Google Arts & Culture가 드. 에스더 말랑구의 91세 생일에 맞춰 첫 온라인 회고전 ‘Then I Knew I Was Good at Painting’을 공개했다. Google DeepMind·Arts & Culture Lab·Domestic Data Streamers와 협력해 AI로 10세 시절 등 미기…",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Introducing Images 2.6",
@@ -16140,6 +16283,19 @@
       "excerpt": "제공된 정보만 보면 이 구글 블로그 글은 연구자들이 'Co-Scientist'와 협력해 큰 문제를 해결하는 네 가지 방식을 소개합니다. 저자는 Joel Meares이며 게시일은 2026-06-09입니다. 피드 요약에는 컬러풀하고 스타일화된 스파이크형 분자 구조 이미지가 포함되어 있습니다. 이미지가 시사하는 바는 있으나…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Introducing 3 new domains: .eat, .fly, and .here",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-introducing-3-new-domains-eat-fly-and-here-1dd4b138.md",
+      "status": "published",
+      "score": 29.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "Google Registry가 **.eat**, **.fly**, **.here** 세 신규 최상위도메인을 발표했다. 11월 10일부터 조기등록으로 사용 가능하며 **2026-11-17 16:00 UTC**에 일반 등록이 기본 연간가로 전환됩니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Franklin Templeton uses OpenAI to support investment research",
