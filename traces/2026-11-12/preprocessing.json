@@ -1,0 +1,378 @@
+{
+  "generated_at": "2026-11-12T02:40:30.384065+00:00",
+  "generated_for": "2026-11-12",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "fca0b7cbb04aa5c53bb651d3c5ed57fddff4ba92",
+  "github_run_id": "43142851792",
+  "service_count": 5,
+  "duration_ms": 14,
+  "raw_count": 120,
+  "candidate_count": 20,
+  "excluded_count": 100,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 31,
+      "excluded_count": 88,
+      "duration_ms": 6,
+      "reason_counts": {
+        "already_briefed": 88
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 31,
+      "output_count": 31,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 31,
+      "output_count": 29,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 29,
+      "output_count": 20,
+      "excluded_count": 9,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 9
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 5,
+      "excluded_count": 15,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:02bfed5e7aa817ea",
+          "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
+          "url_hash": "02bfed5e7aa817ea9dcb99d63f8534e8e78ab10e8ae50e00c6e9b6a68bd6b403",
+          "suggested_doc_key": "2026-11-gemini-decisions-api-fast-calibrated-multimodal-decisions-02bfed5e",
+          "suggested_article_path": "docs/services/google-blog/2026-11-gemini-decisions-api-fast-calibrated-multimodal-decisions-02bfed5e.md",
+          "candidate_score": 46.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:3b68526628cdc83a",
+          "title": "Google Cloud leaders share what to expect in cybersecurity for 2027.",
+          "normalized_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cybersecurity-2027",
+          "url_hash": "3b68526628cdc83a5fc6dd29fdc2dd7d6d1d659f7a338f107acfad618d7c7efc",
+          "suggested_doc_key": "2026-11-google-cloud-leaders-share-what-to-expect-in-cybersecurity-for-2027-3b685266",
+          "suggested_article_path": "docs/services/google-blog/2026-11-google-cloud-leaders-share-what-to-expect-in-cybersecurity-for-2027-3b685266.md",
+          "candidate_score": 45.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:3d65ccc2f5cdce69",
+          "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop",
+          "url_hash": "3d65ccc2f5cdce6978b37fa7c64320f9c0126555eece5a35f17a2f7ec9258a94",
+          "suggested_doc_key": "2026-11-try-tabletop-customizable-collaborative-spaces-for-groups-to-plan-play-a-3d65ccc2",
+          "suggested_article_path": "docs/services/google-blog/2026-11-try-tabletop-customizable-collaborative-spaces-for-groups-to-plan-play-a-3d65ccc2.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:e09fad6dcc25f1ba",
+          "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+          "normalized_url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu",
+          "url_hash": "e09fad6dcc25f1ba697cd45e185fe8f5ec3b5d7d479a5ffc72c9feac3611ce3e",
+          "suggested_doc_key": "2026-11-experience-the-art-and-legacy-of-dr-esther-mahlangu-e09fad6d",
+          "suggested_article_path": "docs/services/google-blog/2026-11-experience-the-art-and-legacy-of-dr-esther-mahlangu-e09fad6d.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:1dd4b13848afc9e4",
+          "title": "Introducing 3 new domains: .eat, .fly, and .here",
+          "normalized_url": "https://blog.google/products-and-platforms/products/registry/new-google-domains-eat-fly-here",
+          "url_hash": "1dd4b13848afc9e4f34567c7d1494581bbcb130b1a8c2114168d34833c2a4acc",
+          "suggested_doc_key": "2026-11-introducing-3-new-domains-eat-fly-and-here-1dd4b138",
+          "suggested_article_path": "docs/services/google-blog/2026-11-introducing-3-new-domains-eat-fly-and-here-1dd4b138.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 15
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:1df6a00742e99b5a",
+          "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+          "normalized_url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights",
+          "url_hash": "1df6a00742e99b5a005c0a78a421a5b6942e095ec0450cf2125be3f75497863a",
+          "suggested_doc_key": "2026-11-united-airlines-bans-ai-agents-from-booking-flights-on-behalf-of-travele-1df6a007",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-united-airlines-bans-ai-agents-from-booking-flights-on-behalf-of-travele-1df6a007.md",
+          "candidate_score": 69.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 409점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 391개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e40297c9b5a8aa90",
+          "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+          "normalized_url": "https://github.com/FrigadeHQ/yogurt",
+          "url_hash": "e40297c9b5a8aa9019bb2c0af4d139202655e3d67fd7e9252fdd403af59b2217",
+          "suggested_doc_key": "2026-11-show-hn-yogurt-free-private-open-source-alternative-to-granola-e40297c9",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-show-hn-yogurt-free-private-open-source-alternative-to-granola-e40297c9.md",
+          "candidate_score": 67.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "Hacker News 점수 176점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 80개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c4aa53a5506ac6f4",
+          "title": "Nvidia is preparing to oust Jensen Huang",
+          "normalized_url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+          "url_hash": "c4aa53a5506ac6f458731f06993763aee2ed2c002a5df5e4cb45d0fd4dffacb5",
+          "suggested_doc_key": "2026-11-nvidia-is-preparing-to-oust-jensen-huang-c4aa53a5",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-nvidia-is-preparing-to-oust-jensen-huang-c4aa53a5.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 564점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 808개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0de9825e0c756423",
+          "title": "Jensen Huang said to have had relationship with executive who reports to him",
+          "normalized_url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+          "url_hash": "0de9825e0c756423f2aa36b44c55dc05c2d4c9b4d78af88f1455b31dbf974df6",
+          "suggested_doc_key": "2026-11-jensen-huang-said-to-have-had-relationship-with-executive-who-reports-to-0de9825e",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-jensen-huang-said-to-have-had-relationship-with-executive-who-reports-to-0de9825e.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 243점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 245개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:78b8986836f7bb24",
+          "title": "AWS emulator",
+          "normalized_url": "https://github.com/aws/aws-emulator",
+          "url_hash": "78b8986836f7bb24ddaa17fd143a0358f1821b41500b58ce0ae1f9aab05130b2",
+          "suggested_doc_key": "2026-11-aws-emulator-78b89868",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-aws-emulator-78b89868.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 692점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 219개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:9092d5eb66f29547",
+          "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+          "normalized_url": "https://openai.com/index/singapore-airlines-travel-work",
+          "url_hash": "9092d5eb66f29547408d30e047abeac0f87e4c54c42653bfc957c7ad549984e3",
+          "suggested_doc_key": "2026-11-singapore-airlines-elevates-travel-work-with-openai-technology-9092d5eb",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-singapore-airlines-elevates-travel-work-with-openai-technology-9092d5eb.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:37e4452e64c861cf",
+          "title": "Cogent and OpenAI build cyber defense factories for enterprises",
+          "normalized_url": "https://openai.com/index/cogent-security",
+          "url_hash": "37e4452e64c861cffe83ba46c2eaac34a7fe63e9ccc79076dee9b50af52cb47b",
+          "suggested_doc_key": "2026-11-cogent-and-openai-build-cyber-defense-factories-for-enterprises-37e4452e",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-cogent-and-openai-build-cyber-defense-factories-for-enterprises-37e4452e.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:ac94b61a25ade5ed",
+          "title": "ChatGPT Plus for veterans and servicemembers",
+          "normalized_url": "https://openai.com/index/chatgpt-plus-for-veterans",
+          "url_hash": "ac94b61a25ade5edbf713f0897cc9ad6ba8f24621b9aed0d512136947920d1f0",
+          "suggested_doc_key": "2026-11-chatgpt-plus-for-veterans-and-servicemembers-ac94b61a",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-chatgpt-plus-for-veterans-and-servicemembers-ac94b61a.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:55ff14dc4213127d",
+          "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+          "normalized_url": "https://openai.com/index/jiostar-vijay-seshadri",
+          "url_hash": "55ff14dc4213127df72a8039620109cd467ed21c91f1958dfd8ce815a783074c",
+          "suggested_doc_key": "2026-11-jiostar-s-chief-architect-on-ai-discovery-at-500m-user-scale-55ff14dc",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-jiostar-s-chief-architect-on-ai-discovery-at-500m-user-scale-55ff14dc.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:0f0020abcf733229",
+          "title": "Helping caregivers use AI in everyday life",
+          "normalized_url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+          "url_hash": "0f0020abcf733229d29f4d40e095eae692bb4a4c21852ac4cbeb6daf98f1617e",
+          "suggested_doc_key": "2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 43,
+        "low_quality": 2
+      }
+    }
+  ]
+}
