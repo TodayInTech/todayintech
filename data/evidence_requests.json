@@ -2234,8 +2234,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-07T01:59:04.986905Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-15T02:20:45.198097Z",
     "last_failure": "title_mismatch",
     "recovered_at": null,
     "extraction_method": null,
@@ -2287,8 +2287,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-07T01:59:04.986905Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-15T02:20:45.198097Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2337,8 +2337,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-07T01:59:04.986905Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-15T02:20:45.198097Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2387,8 +2387,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-07T01:59:04.986905Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-15T02:20:45.198097Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2439,8 +2439,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-07T01:59:04.986905Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-15T02:20:45.198097Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -3930,6 +3930,211 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-13T02:40:41.841934Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/business/customer-stories/amplitude": {
+    "candidate": {
+      "candidate_id": "openai-blog:67672a694e389b29",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+        "url": "https://openai.com/business/customer-stories/amplitude",
+        "published_at": "2026-11-12T20:00:00Z",
+        "collected_at": "2026-11-13T02:20:41.836647Z",
+        "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/business/customer-stories/amplitude",
+      "url_hash": "67672a694e389b29af5588bf1be29a978063408e3c6a0262fcadf6da500500d7",
+      "title_fingerprint": "how amplitude ships product improvements in 1 2 days with openai",
+      "feed_summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+      "suggested_doc_key": "2026-11-how-amplitude-ships-product-improvements-in-1-2-days-with-openai-67672a69",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-how-amplitude-ships-product-improvements-in-1-2-days-with-openai-67672a69.md",
+      "candidate_score": 49.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-14T02:20:45.196691Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/business/customer-stories/gondola": {
+    "candidate": {
+      "candidate_id": "openai-blog:b9840fd67063a36a",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Gondola doubles revenue as its team builds more with Codex",
+        "url": "https://openai.com/business/customer-stories/gondola",
+        "published_at": "2026-11-12T12:00:00Z",
+        "collected_at": "2026-11-13T02:20:41.836647Z",
+        "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+        "authors": [],
+        "tags": [
+          "Startup"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/business/customer-stories/gondola",
+      "url_hash": "b9840fd67063a36a400d5e1d91fe182c1b415df6997c889b681a58ba22957843",
+      "title_fingerprint": "gondola doubles revenue as its team builds more with codex",
+      "feed_summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+      "suggested_doc_key": "2026-11-gondola-doubles-revenue-as-its-team-builds-more-with-codex-b9840fd6",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-gondola-doubles-revenue-as-its-team-builds-more-with-codex-b9840fd6.md",
+      "candidate_score": 38.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-14T02:20:45.196691Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/business/customer-stories/holidays-extras-codex": {
+    "candidate": {
+      "candidate_id": "openai-blog:4922ca6fb0dd9299",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Holiday Extras is rethinking what it can build with Codex",
+        "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+        "published_at": "2026-11-12T09:30:00Z",
+        "collected_at": "2026-11-13T02:20:41.836647Z",
+        "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+      "url_hash": "4922ca6fb0dd92994c349853518621d0422aac137e6c9a194fc01e08fc5408aa",
+      "title_fingerprint": "holiday extras is rethinking what it can build with codex",
+      "feed_summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+      "suggested_doc_key": "2026-11-holiday-extras-is-rethinking-what-it-can-build-with-codex-4922ca6f",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-holiday-extras-is-rethinking-what-it-can-build-with-codex-4922ca6f.md",
+      "candidate_score": 37.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-14T02:20:45.196691Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/children-first-declaration": {
+    "candidate": {
+      "candidate_id": "openai-blog:d7c1da8cb7dc41da",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Supporting research on AI and children’s safety",
+        "url": "https://openai.com/index/children-first-declaration",
+        "published_at": "2026-11-12T00:00:00Z",
+        "collected_at": "2026-11-13T02:20:41.836647Z",
+        "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+        "authors": [],
+        "tags": [
+          "Global Affairs"
+        ],
+        "metadata": {
+          "rss_rank": 4
+        }
+      },
+      "normalized_url": "https://openai.com/index/children-first-declaration",
+      "url_hash": "d7c1da8cb7dc41da688b7a9908111a63cf9fb297a134e952ad2db42224ad8dc2",
+      "title_fingerprint": "supporting research on ai and children s safety",
+      "feed_summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+      "suggested_doc_key": "2026-11-supporting-research-on-ai-and-children-s-safety-d7c1da8c",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-supporting-research-on-ai-and-children-s-safety-d7c1da8c.md",
+      "candidate_score": 35.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-14T02:20:45.196691Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,

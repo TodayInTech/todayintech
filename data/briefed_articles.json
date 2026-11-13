@@ -13380,6 +13380,146 @@
       "status": "published",
       "briefed_at": "2026-11-12T02:44:35.622099Z",
       "candidate_score": 36.0
+    },
+    "4ec03078d3169fe59abbc675ae91477a9e5ab856bc5e3f7811c4062f2b772937": {
+      "normalized_url": "https://www.anthropic.com/news/claude-4",
+      "title_fingerprint": "introducing claude 4",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Claude 4",
+      "article_doc_path": "docs/services/anthropic-blog/2026-11-introducing-claude-4-4ec03078.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234271Z",
+      "candidate_score": 30.0
+    },
+    "d121304c3de64e9ed00c84f1cdeeb2e33c08e49aeaf086709f8f6a82b67bcb78": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills",
+      "title_fingerprint": "build once run on any agent a practical guide to agent skills",
+      "service_key": "github-blog",
+      "title": "Build once, run on any agent: A practical guide to agent skills",
+      "article_doc_path": "docs/services/github-blog/2026-11-build-once-run-on-any-agent-a-practical-guide-to-agent-skills-d121304c.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234306Z",
+      "candidate_score": 41.0
+    },
+    "eaf76493fdb0b4bfceb5ae2d4d1e2761a821fb43fa76dc4ee41e19aa7cfcf14d": {
+      "normalized_url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026",
+      "title_fingerprint": "github availability report october 2026",
+      "service_key": "github-blog",
+      "title": "GitHub availability report: October 2026",
+      "article_doc_path": "docs/services/github-blog/2026-11-github-availability-report-october-2026-eaf76493.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234315Z",
+      "candidate_score": 37.0
+    },
+    "7ed04b33e97e89aa07c00a3135fb8ab08249d46df66f26670168bafad28d340e": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen",
+      "title_fingerprint": "gemini 4 hydrogen everyday coding and agentic workflows for developers",
+      "service_key": "google-blog",
+      "title": "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers",
+      "article_doc_path": "docs/services/google-blog/2026-11-gemini-4-hydrogen-everyday-coding-and-agentic-workflows-for-developers-7ed04b33.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234322Z",
+      "candidate_score": 49.0
+    },
+    "de0b78c54f8e7111e7364ed5819020f4b1450158bb8a187ed7f35346227a4417": {
+      "normalized_url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/saving-giant-kelp-australia",
+      "title_fingerprint": "scientists are using google ai to help restore giant kelp forests",
+      "service_key": "google-blog",
+      "title": "Scientists are using Google AI to help restore giant kelp forests.",
+      "article_doc_path": "docs/services/google-blog/2026-11-scientists-are-using-google-ai-to-help-restore-giant-kelp-forests-de0b78c5.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234328Z",
+      "candidate_score": 38.0
+    },
+    "02bfed5e7aa817ea9dcb99d63f8534e8e78ab10e8ae50e00c6e9b6a68bd6b403": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
+      "title_fingerprint": "gemini decisions api fast calibrated multimodal decisions",
+      "service_key": "google-blog",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "article_doc_path": "docs/services/google-blog/2026-11-gemini-decisions-api-fast-calibrated-multimodal-decisions-02bfed5e.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234334Z",
+      "candidate_score": 38.0
+    },
+    "f79c2c87924aeba19dcd415e3bc50ed46877f9a070c9f77bc22d444445f4bf5d": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools",
+      "title_fingerprint": "5 new google flow tools designed by visual artists",
+      "service_key": "google-blog",
+      "title": "5 new Google Flow Tools designed by visual artists",
+      "article_doc_path": "docs/services/google-blog/2026-11-5-new-google-flow-tools-designed-by-visual-artists-f79c2c87.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234339Z",
+      "candidate_score": 36.0
+    },
+    "d7c21c501eb23f12ba47c2340d026d981857380497913d0eb9b51d95ebac21c6": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
+      "title_fingerprint": "gemini 4 hydrogen",
+      "service_key": "hacker-news",
+      "title": "Gemini 4 Hydrogen",
+      "article_doc_path": "docs/services/hacker-news/2026-11-gemini-4-hydrogen-d7c21c50.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234345Z",
+      "candidate_score": 65.0
+    },
+    "076934ef461be2b954dba572893fb5f40ae22001098ff8f6135cabaaf477c54b": {
+      "normalized_url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "title_fingerprint": "chinese frontier ai models carry the fingerprint of export controlled gpus",
+      "service_key": "hacker-news",
+      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "article_doc_path": "docs/services/hacker-news/2026-11-chinese-frontier-ai-models-carry-the-fingerprint-of-export-controlled-gp-076934ef.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234351Z",
+      "candidate_score": 64.0
+    },
+    "f77a88a82d1ae36f531a0ce657ce1040617eeff404c9d5b4d7e96b7ee38e6057": {
+      "normalized_url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857",
+      "title_fingerprint": "dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
+      "service_key": "hacker-news",
+      "title": "Dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
+      "article_doc_path": "docs/services/hacker-news/2026-11-dwarf-planet-candidate-appears-which-takes-roughly-280-years-to-orbit-ou-f77a88a8.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234357Z",
+      "candidate_score": 62.0
+    },
+    "d7e80ea809e6c296043d70c8e5328258502daecd250c0256dd5ebd2be347971f": {
+      "normalized_url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity",
+      "title_fingerprint": "gemini 4 hydrogen and orchestrator",
+      "service_key": "hacker-news",
+      "title": "Gemini 4 Hydrogen and Orchestrator",
+      "article_doc_path": "docs/services/hacker-news/2026-11-gemini-4-hydrogen-and-orchestrator-d7e80ea8.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234362Z",
+      "candidate_score": 60.6
+    },
+    "67672a694e389b29af5588bf1be29a978063408e3c6a0262fcadf6da500500d7": {
+      "normalized_url": "https://openai.com/business/customer-stories/amplitude",
+      "title_fingerprint": "how amplitude ships product improvements in 1 2 days with openai",
+      "service_key": "openai-blog",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-11-how-amplitude-ships-product-improvements-in-1-2-days-with-openai-67672a69.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234369Z",
+      "candidate_score": 49.0
+    },
+    "b9840fd67063a36a400d5e1d91fe182c1b415df6997c889b681a58ba22957843": {
+      "normalized_url": "https://openai.com/business/customer-stories/gondola",
+      "title_fingerprint": "gondola doubles revenue as its team builds more with codex",
+      "service_key": "openai-blog",
+      "title": "Gondola doubles revenue as its team builds more with Codex",
+      "article_doc_path": "docs/services/openai-blog/2026-11-gondola-doubles-revenue-as-its-team-builds-more-with-codex-b9840fd6.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234374Z",
+      "candidate_score": 38.0
+    },
+    "d7c1da8cb7dc41da688b7a9908111a63cf9fb297a134e952ad2db42224ad8dc2": {
+      "normalized_url": "https://openai.com/index/children-first-declaration",
+      "title_fingerprint": "supporting research on ai and children s safety",
+      "service_key": "openai-blog",
+      "title": "Supporting research on AI and children’s safety",
+      "article_doc_path": "docs/services/openai-blog/2026-11-supporting-research-on-ai-and-children-s-safety-d7c1da8c.md",
+      "status": "published",
+      "briefed_at": "2026-11-13T02:28:44.234378Z",
+      "candidate_score": 35.0
     }
   }
 }
