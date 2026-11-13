@@ -1,0 +1,417 @@
+{
+  "generated_at": "2026-11-13T02:20:28.239389+00:00",
+  "generated_for": "2026-11-13",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "620dd77e2e686fde38fa4939015d508e0bb52391",
+  "github_run_id": "43351286571",
+  "service_count": 5,
+  "duration_ms": 11,
+  "raw_count": 120,
+  "candidate_count": 26,
+  "excluded_count": 94,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 37,
+      "excluded_count": 83,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 83
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 37,
+      "output_count": 37,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 37,
+      "output_count": 36,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 36,
+      "output_count": 26,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:4ec03078d3169fe5",
+          "title": "Introducing Claude 4",
+          "normalized_url": "https://www.anthropic.com/news/claude-4",
+          "url_hash": "4ec03078d3169fe59abbc675ae91477a9e5ab856bc5e3f7811c4062f2b772937",
+          "suggested_doc_key": "2026-11-introducing-claude-4-4ec03078",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-introducing-claude-4-4ec03078.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 2,
+      "excluded_count": 8,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:d121304c3de64e9e",
+          "title": "Build once, run on any agent: A practical guide to agent skills",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills",
+          "url_hash": "d121304c3de64e9ed00c84f1cdeeb2e33c08e49aeaf086709f8f6a82b67bcb78",
+          "suggested_doc_key": "2026-11-build-once-run-on-any-agent-a-practical-guide-to-agent-skills-d121304c",
+          "suggested_article_path": "docs/services/github-blog/2026-11-build-once-run-on-any-agent-a-practical-guide-to-agent-skills-d121304c.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:eaf76493fdb0b4bf",
+          "title": "GitHub availability report: October 2026",
+          "normalized_url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026",
+          "url_hash": "eaf76493fdb0b4bfceb5ae2d4d1e2761a821fb43fa76dc4ee41e19aa7cfcf14d",
+          "suggested_doc_key": "2026-11-github-availability-report-october-2026-eaf76493",
+          "suggested_article_path": "docs/services/github-blog/2026-11-github-availability-report-october-2026-eaf76493.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 8
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 8,
+      "excluded_count": 12,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:7ed04b33e97e89aa",
+          "title": "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen",
+          "url_hash": "7ed04b33e97e89aa07c00a3135fb8ab08249d46df66f26670168bafad28d340e",
+          "suggested_doc_key": "2026-11-gemini-4-hydrogen-everyday-coding-and-agentic-workflows-for-developers-7ed04b33",
+          "suggested_article_path": "docs/services/google-blog/2026-11-gemini-4-hydrogen-everyday-coding-and-agentic-workflows-for-developers-7ed04b33.md",
+          "candidate_score": 49.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:de0b78c54f8e7111",
+          "title": "Scientists are using Google AI to help restore giant kelp forests.",
+          "normalized_url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/saving-giant-kelp-australia",
+          "url_hash": "de0b78c54f8e7111e7364ed5819020f4b1450158bb8a187ed7f35346227a4417",
+          "suggested_doc_key": "2026-11-scientists-are-using-google-ai-to-help-restore-giant-kelp-forests-de0b78c5",
+          "suggested_article_path": "docs/services/google-blog/2026-11-scientists-are-using-google-ai-to-help-restore-giant-kelp-forests-de0b78c5.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:02bfed5e7aa817ea",
+          "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
+          "url_hash": "02bfed5e7aa817ea9dcb99d63f8534e8e78ab10e8ae50e00c6e9b6a68bd6b403",
+          "suggested_doc_key": "2026-11-gemini-decisions-api-fast-calibrated-multimodal-decisions-02bfed5e",
+          "suggested_article_path": "docs/services/google-blog/2026-11-gemini-decisions-api-fast-calibrated-multimodal-decisions-02bfed5e.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:f79c2c87924aeba1",
+          "title": "5 new Google Flow Tools designed by visual artists",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools",
+          "url_hash": "f79c2c87924aeba19dcd415e3bc50ed46877f9a070c9f77bc22d444445f4bf5d",
+          "suggested_doc_key": "2026-11-5-new-google-flow-tools-designed-by-visual-artists-f79c2c87",
+          "suggested_article_path": "docs/services/google-blog/2026-11-5-new-google-flow-tools-designed-by-visual-artists-f79c2c87.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:d6d23163b98ddfa1",
+          "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+          "normalized_url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade",
+          "url_hash": "d6d23163b98ddfa1ea7abe70bc203135c9b8d10c4c268a6dbaa304f2c460d6b1",
+          "suggested_doc_key": "2026-11-google-search-gets-a-major-upgrade-with-gemini-4-hydrogen-d6d23163",
+          "suggested_article_path": "docs/services/google-blog/2026-11-google-search-gets-a-major-upgrade-with-gemini-4-hydrogen-d6d23163.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 12
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:d7c21c501eb23f12",
+          "title": "Gemini 4 Hydrogen",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
+          "url_hash": "d7c21c501eb23f12ba47c2340d026d981857380497913d0eb9b51d95ebac21c6",
+          "suggested_doc_key": "2026-11-gemini-4-hydrogen-d7c21c50",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-gemini-4-hydrogen-d7c21c50.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 469점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 299개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:076934ef461be2b9",
+          "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+          "normalized_url": "https://unemploymentlabs.com/checkpoint-forensics",
+          "url_hash": "076934ef461be2b954dba572893fb5f40ae22001098ff8f6135cabaaf477c54b",
+          "suggested_doc_key": "2026-11-chinese-frontier-ai-models-carry-the-fingerprint-of-export-controlled-gp-076934ef",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-chinese-frontier-ai-models-carry-the-fingerprint-of-export-controlled-gp-076934ef.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 174점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 48개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f77a88a82d1ae36f",
+          "title": "Dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
+          "normalized_url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857",
+          "url_hash": "f77a88a82d1ae36f531a0ce657ce1040617eeff404c9d5b4d7e96b7ee38e6057",
+          "suggested_doc_key": "2026-11-dwarf-planet-candidate-appears-which-takes-roughly-280-years-to-orbit-ou-f77a88a8",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-dwarf-planet-candidate-appears-which-takes-roughly-280-years-to-orbit-ou-f77a88a8.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 204점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 94개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d7e80ea809e6c296",
+          "title": "Gemini 4 Hydrogen and Orchestrator",
+          "normalized_url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity",
+          "url_hash": "d7e80ea809e6c296043d70c8e5328258502daecd250c0256dd5ebd2be347971f",
+          "suggested_doc_key": "2026-11-gemini-4-hydrogen-and-orchestrator-d7e80ea8",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-gemini-4-hydrogen-and-orchestrator-d7e80ea8.md",
+          "candidate_score": 60.6,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 310점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 73개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6cf2b03e22289d12",
+          "title": "Rust 1.100",
+          "normalized_url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0",
+          "url_hash": "6cf2b03e22289d1263fc8bc1235a6dd574f0479cb1d77c935895e842ec1155cd",
+          "suggested_doc_key": "2026-11-rust-1-100-6cf2b03e",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-rust-1-100-6cf2b03e.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 440점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 178개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 5,
+      "excluded_count": 45,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:67672a694e389b29",
+          "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+          "normalized_url": "https://openai.com/business/customer-stories/amplitude",
+          "url_hash": "67672a694e389b29af5588bf1be29a978063408e3c6a0262fcadf6da500500d7",
+          "suggested_doc_key": "2026-11-how-amplitude-ships-product-improvements-in-1-2-days-with-openai-67672a69",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-how-amplitude-ships-product-improvements-in-1-2-days-with-openai-67672a69.md",
+          "candidate_score": 49.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:b9840fd67063a36a",
+          "title": "Gondola doubles revenue as its team builds more with Codex",
+          "normalized_url": "https://openai.com/business/customer-stories/gondola",
+          "url_hash": "b9840fd67063a36a400d5e1d91fe182c1b415df6997c889b681a58ba22957843",
+          "suggested_doc_key": "2026-11-gondola-doubles-revenue-as-its-team-builds-more-with-codex-b9840fd6",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-gondola-doubles-revenue-as-its-team-builds-more-with-codex-b9840fd6.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:4922ca6fb0dd9299",
+          "title": "Holiday Extras is rethinking what it can build with Codex",
+          "normalized_url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+          "url_hash": "4922ca6fb0dd92994c349853518621d0422aac137e6c9a194fc01e08fc5408aa",
+          "suggested_doc_key": "2026-11-holiday-extras-is-rethinking-what-it-can-build-with-codex-4922ca6f",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-holiday-extras-is-rethinking-what-it-can-build-with-codex-4922ca6f.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:d7c1da8cb7dc41da",
+          "title": "Supporting research on AI and children’s safety",
+          "normalized_url": "https://openai.com/index/children-first-declaration",
+          "url_hash": "d7c1da8cb7dc41da688b7a9908111a63cf9fb297a134e952ad2db42224ad8dc2",
+          "suggested_doc_key": "2026-11-supporting-research-on-ai-and-children-s-safety-d7c1da8c",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-supporting-research-on-ai-and-children-s-safety-d7c1da8c.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:0f0020abcf733229",
+          "title": "Helping caregivers use AI in everyday life",
+          "normalized_url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+          "url_hash": "0f0020abcf733229d29f4d40e095eae692bb4a4c21852ac4cbeb6daf98f1617e",
+          "suggested_doc_key": "2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab.md",
+          "candidate_score": 26.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 44,
+        "low_quality": 1
+      }
+    }
+  ]
+}
