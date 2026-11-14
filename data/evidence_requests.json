@@ -2496,9 +2496,9 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-08T01:31:34.297862Z",
-    "last_failure": "access_denied",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-16T01:57:34.010808Z",
+    "last_failure": "thin_content",
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0
@@ -2549,8 +2549,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-08T01:31:34.297862Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-16T01:57:34.010808Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2601,8 +2601,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-08T01:31:34.297862Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-16T01:57:34.010808Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2653,8 +2653,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-08T01:31:34.297862Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-16T01:57:34.010808Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2706,8 +2706,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-08T01:31:34.297862Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-16T01:57:34.010808Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -4135,6 +4135,277 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-14T02:20:45.196691Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://open.m-vave.com/fm1-workbench": {
+    "candidate": {
+      "candidate_id": "hacker-news:9ea4feda6422eb82",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "FM-1 Workbench",
+        "url": "https://open.m-vave.com/fm1-workbench",
+        "published_at": "2026-11-13T19:14:02Z",
+        "collected_at": "2026-11-14T01:57:23.981663Z",
+        "summary": "<p>Article URL: <a href=\"https://open.m-vave.com/fm1-workbench\">https://open.m-vave.com/fm1-workbench</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50488325\">https://news.ycombinator.com/item?id=50488325</a></p>\n<p>Points: 181</p>\n<p># Comments: 108</p>",
+        "authors": [
+          "simonebrunozzi"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 18,
+          "hn_points": 181,
+          "hn_comments": 108,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50488325"
+        }
+      },
+      "normalized_url": "https://open.m-vave.com/fm1-workbench",
+      "url_hash": "9ea4feda6422eb82c2186da11c677963c8969a0d5ec06cabb337f022cde1f9c2",
+      "title_fingerprint": "fm 1 workbench",
+      "feed_summary": "<p>Article URL: <a href=\"https://open.m-vave.com/fm1-workbench\">https://open.m-vave.com/fm1-workbench</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50488325\">https://news.ycombinator.com/item?id=50488325</a></p>\n<p>Points: 181</p>\n<p># Comments: 108</p>",
+      "suggested_doc_key": "2026-11-fm-1-workbench-9ea4feda",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-fm-1-workbench-9ea4feda.md",
+      "candidate_score": 58.1,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 18.1,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 181점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 108개를 토론 신호로 반영했습니다.",
+        "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-15T01:57:34.008911Z",
+    "last_failure": "title_mismatch",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://orcasairband.com/": {
+    "candidate": {
+      "candidate_id": "hacker-news:282df205597a8a73",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+        "url": "https://orcasairband.com/",
+        "published_at": "2026-11-13T22:04:24Z",
+        "collected_at": "2026-11-14T01:57:23.981663Z",
+        "summary": "<p>Article URL: <a href=\"https://orcasairband.com/\">https://orcasairband.com/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50490593\">https://news.ycombinator.com/item?id=50490593</a></p>\n<p>Points: 200</p>\n<p># Comments: 45</p>",
+        "authors": [
+          "mmaunder"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 11,
+          "hn_points": 200,
+          "hn_comments": 45,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50490593"
+        }
+      },
+      "normalized_url": "https://orcasairband.com/",
+      "url_hash": "282df205597a8a736fd0747016d47bdb637c885cfca072ab63a5b7caab6cbccc",
+      "title_fingerprint": "live airband on all frequencies from kors victoria ca also ground stopped",
+      "feed_summary": "<p>Article URL: <a href=\"https://orcasairband.com/\">https://orcasairband.com/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50490593\">https://news.ycombinator.com/item?id=50490593</a></p>\n<p>Points: 200</p>\n<p># Comments: 45</p>",
+      "suggested_doc_key": "2026-11-live-airband-on-all-frequencies-from-kors-victoria-ca-also-ground-stoppe-282df205",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-live-airband-on-all-frequencies-from-kors-victoria-ca-also-ground-stoppe-282df205.md",
+      "candidate_score": 54.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 9.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 200점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 45개를 토론 신호로 반영했습니다.",
+        "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-15T01:57:34.008911Z",
+    "last_failure": "thin_content",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/introducing-chatgpt-wallet": {
+    "candidate": {
+      "candidate_id": "openai-blog:7d4d71d056da0286",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Introducing ChatGPT Wallet",
+        "url": "https://openai.com/index/introducing-chatgpt-wallet",
+        "published_at": "2026-11-13T15:00:00Z",
+        "collected_at": "2026-11-14T01:57:25.038367Z",
+        "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+        "authors": [],
+        "tags": [
+          "Product"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "url_hash": "7d4d71d056da02862d0b2ec1b87dadd7019731481c576401840bf8ff718ee663",
+      "title_fingerprint": "introducing chatgpt wallet",
+      "feed_summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+      "suggested_doc_key": "2026-11-introducing-chatgpt-wallet-7d4d71d0",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-introducing-chatgpt-wallet-7d4d71d0.md",
+      "candidate_score": 44.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-15T01:57:34.008911Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/business/customer-stories/shield": {
+    "candidate": {
+      "candidate_id": "openai-blog:a99dfdd20d85acbb",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+        "url": "https://openai.com/business/customer-stories/shield",
+        "published_at": "2026-11-13T08:00:00Z",
+        "collected_at": "2026-11-14T01:57:25.038367Z",
+        "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/business/customer-stories/shield",
+      "url_hash": "a99dfdd20d85acbbb850aa77912a8df97b492b8fb6a1e7bebe1dab199cebab4f",
+      "title_fingerprint": "shield helps technicians hand off legacy portal work with openai",
+      "feed_summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
+      "suggested_doc_key": "2026-11-shield-helps-technicians-hand-off-legacy-portal-work-with-openai-a99dfdd2",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-shield-helps-technicians-hand-off-legacy-portal-work-with-openai-a99dfdd2.md",
+      "candidate_score": 43.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-15T01:57:34.008911Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life": {
+    "candidate": {
+      "candidate_id": "openai-blog:0f0020abcf733229",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Helping caregivers use AI in everyday life",
+        "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+        "published_at": "2026-11-10T12:00:00Z",
+        "collected_at": "2026-11-14T01:57:25.038367Z",
+        "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
+        "authors": [],
+        "tags": [
+          "Company"
+        ],
+        "metadata": {
+          "rss_rank": 10
+        }
+      },
+      "normalized_url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+      "url_hash": "0f0020abcf733229d29f4d40e095eae692bb4a4c21852ac4cbeb6daf98f1617e",
+      "title_fingerprint": "helping caregivers use ai in everyday life",
+      "feed_summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
+      "suggested_doc_key": "2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab.md",
+      "candidate_score": 23.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 3,
+        "freshness_score": 17.0,
+        "high_signal_count": 0,
+        "low_signal_count": 1,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+        "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+        "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-15T01:57:34.008911Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,

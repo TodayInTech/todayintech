@@ -13520,6 +13520,156 @@
       "status": "published",
       "briefed_at": "2026-11-13T02:28:44.234378Z",
       "candidate_score": 35.0
+    },
+    "234faaf001c260cca27728a0ebe91614e253968d44a96064e8b45eefd6b76178": {
+      "normalized_url": "https://www.anthropic.com/news/deprecation-commitments",
+      "title_fingerprint": "commitments on model deprecation and preservation",
+      "service_key": "anthropic-blog",
+      "title": "Commitments on model deprecation and preservation",
+      "article_doc_path": "docs/services/anthropic-blog/2026-11-commitments-on-model-deprecation-and-preservation-234faaf0.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058367Z",
+      "candidate_score": 40.0
+    },
+    "b452070c7a90e2aa1ea2dc004a9ad93ede388eaa97d86db9e3d78d922658863f": {
+      "normalized_url": "https://www.anthropic.com/news/a-new-initiative-for-developing-third-party-model-evaluations",
+      "title_fingerprint": "funding third party model evaluations",
+      "service_key": "anthropic-blog",
+      "title": "Funding third-party model evaluations",
+      "article_doc_path": "docs/services/anthropic-blog/2026-11-funding-third-party-model-evaluations-b452070c.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058428Z",
+      "candidate_score": 35.0
+    },
+    "2dc4c52f48c69c82b11a1d23adcfa57d0f89cc430e8ba3739dbfc83c7de25214": {
+      "normalized_url": "https://www.anthropic.com/news/protecting-well-being-of-users",
+      "title_fingerprint": "protecting the wellbeing of our users",
+      "service_key": "anthropic-blog",
+      "title": "Protecting the wellbeing of our users",
+      "article_doc_path": "docs/services/anthropic-blog/2026-11-protecting-the-wellbeing-of-our-users-2dc4c52f.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058446Z",
+      "candidate_score": 35.0
+    },
+    "e91e6f80eaaceb584f2332495ca16ab2902c8d464dba8ec097851744dfe1e764": {
+      "normalized_url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "title_fingerprint": "introducing claude 3 5 sonnet",
+      "service_key": "anthropic-blog",
+      "title": "Introducing Claude 3.5 Sonnet",
+      "article_doc_path": "docs/services/anthropic-blog/2026-11-introducing-claude-3-5-sonnet-e91e6f80.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058453Z",
+      "candidate_score": 35.0
+    },
+    "bbe3a29059d49789b8f96cc0724f896a366bd3911a560e6eafd37020453f2da6": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-cloud-credits-gdp-ai-studio",
+      "title_fingerprint": "claim your google cloud credits in google ai studio",
+      "service_key": "google-blog",
+      "title": "Claim your Google Cloud Credits in Google AI Studio",
+      "article_doc_path": "docs/services/google-blog/2026-11-claim-your-google-cloud-credits-in-google-ai-studio-bbe3a290.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058459Z",
+      "candidate_score": 36.0
+    },
+    "d6d23163b98ddfa1ea7abe70bc203135c9b8d10c4c268a6dbaa304f2c460d6b1": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade",
+      "title_fingerprint": "google search gets a major upgrade with gemini 4 hydrogen",
+      "service_key": "google-blog",
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "article_doc_path": "docs/services/google-blog/2026-11-google-search-gets-a-major-upgrade-with-gemini-4-hydrogen-d6d23163.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058465Z",
+      "candidate_score": 33.0
+    },
+    "13933182bec036a30aa4ec7eca74bf19f0e5be57c401fc5da521d8dd321caf6a": {
+      "normalized_url": "https://blog.google/company-news/outreach-and-initiatives/google-org/phd-fellows-2026",
+      "title_fingerprint": "meet the 2026 google phd fellows",
+      "service_key": "google-blog",
+      "title": "Meet the 2026 Google PhD Fellows",
+      "article_doc_path": "docs/services/google-blog/2026-11-meet-the-2026-google-phd-fellows-13933182.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058470Z",
+      "candidate_score": 31.0
+    },
+    "5ed48d94baf2eb29cec8ebae45d4312f667fac77962ef4810b28339685afa580": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/intelligent-eyewear-privacy-protections",
+      "title_fingerprint": "designing for privacy on intelligent eyewear",
+      "service_key": "google-blog",
+      "title": "Designing for privacy on intelligent eyewear",
+      "article_doc_path": "docs/services/google-blog/2026-11-designing-for-privacy-on-intelligent-eyewear-5ed48d94.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058475Z",
+      "candidate_score": 29.0
+    },
+    "13ce7dccaab394f058d010788bb3631162e30a63b7c6e9732411ca1f15f42c9f": {
+      "normalized_url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+      "title_fingerprint": "faa issues national ground stop",
+      "service_key": "hacker-news",
+      "title": "FAA issues national ground stop",
+      "article_doc_path": "docs/services/hacker-news/2026-11-faa-issues-national-ground-stop-13ce7dcc.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058481Z",
+      "candidate_score": 60.0
+    },
+    "f0b640ae51573bd157abcf395f92783e13df6ef66e887daae1695b10c3e2f2e9": {
+      "normalized_url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+      "title_fingerprint": "11 4m in nvidia hardware vanishes during shipment from ca to tx",
+      "service_key": "hacker-news",
+      "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+      "article_doc_path": "docs/services/hacker-news/2026-11-11-4m-in-nvidia-hardware-vanishes-during-shipment-from-ca-to-tx-f0b640ae.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058486Z",
+      "candidate_score": 60.0
+    },
+    "9ea4feda6422eb82c2186da11c677963c8969a0d5ec06cabb337f022cde1f9c2": {
+      "normalized_url": "https://open.m-vave.com/fm1-workbench",
+      "title_fingerprint": "fm 1 workbench",
+      "service_key": "hacker-news",
+      "title": "FM-1 Workbench",
+      "article_doc_path": "docs/services/hacker-news/2026-11-fm-1-workbench-9ea4feda.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058491Z",
+      "candidate_score": 58.1
+    },
+    "282df205597a8a736fd0747016d47bdb637c885cfca072ab63a5b7caab6cbccc": {
+      "normalized_url": "https://orcasairband.com/",
+      "title_fingerprint": "live airband on all frequencies from kors victoria ca also ground stopped",
+      "service_key": "hacker-news",
+      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+      "article_doc_path": "docs/services/hacker-news/2026-11-live-airband-on-all-frequencies-from-kors-victoria-ca-also-ground-stoppe-282df205.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058497Z",
+      "candidate_score": 54.0
+    },
+    "7d4d71d056da02862d0b2ec1b87dadd7019731481c576401840bf8ff718ee663": {
+      "normalized_url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "title_fingerprint": "introducing chatgpt wallet",
+      "service_key": "openai-blog",
+      "title": "Introducing ChatGPT Wallet",
+      "article_doc_path": "docs/services/openai-blog/2026-11-introducing-chatgpt-wallet-7d4d71d0.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058503Z",
+      "candidate_score": 44.0
+    },
+    "a99dfdd20d85acbbb850aa77912a8df97b492b8fb6a1e7bebe1dab199cebab4f": {
+      "normalized_url": "https://openai.com/business/customer-stories/shield",
+      "title_fingerprint": "shield helps technicians hand off legacy portal work with openai",
+      "service_key": "openai-blog",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-11-shield-helps-technicians-hand-off-legacy-portal-work-with-openai-a99dfdd2.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058508Z",
+      "candidate_score": 43.0
+    },
+    "0f0020abcf733229d29f4d40e095eae692bb4a4c21852ac4cbeb6daf98f1617e": {
+      "normalized_url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+      "title_fingerprint": "helping caregivers use ai in everyday life",
+      "service_key": "openai-blog",
+      "title": "Helping caregivers use AI in everyday life",
+      "article_doc_path": "docs/services/openai-blog/2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab.md",
+      "status": "published",
+      "briefed_at": "2026-11-14T02:04:40.058550Z",
+      "candidate_score": 23.0
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-13",
+  "generated_for": "2026-11-14",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -1387,6 +1387,19 @@
       "new": false
     },
     {
+      "title": "Gemini 4 Hydrogen",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-gemini-4-hydrogen-d7c21c50.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "Google이 빠른 실행과 100만 토큰 컨텍스트에 최적화된 Gemini 4 Hydrogen을 발표했다. Orchestrator로 Carbon/Argon과 다중모델 협업을 자동화하고, 토큰당 요금($1.50 입력·$7.50 출력)과 다양한 성능·안전 지표를 공개하며 전면 배포를 시작했다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Jensen Huang said to have had relationship with executive who reports to him",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2687,19 +2700,6 @@
       "new": false
     },
     {
-      "title": "Gemini 4 Hydrogen",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-gemini-4-hydrogen-d7c21c50.md",
-      "status": "published",
-      "score": 65.0,
-      "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "Google이 빠른 실행과 100만 토큰 컨텍스트에 최적화된 Gemini 4 Hydrogen을 발표했다. Orchestrator로 Carbon/Argon과 다중모델 협업을 자동화하고, 토큰당 요금($1.50 입력·$7.50 출력)과 다양한 성능·안전 지표를 공개하며 전면 배포를 시작했다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2852,6 +2852,19 @@
       "briefed_at": "2026-06-23",
       "published_at": "2026-06-23",
       "excerpt": "VibeThinker-3B는 3억이 아닌 30억(3B) 파라미터 규모의 조밀한(sparse가 아닌 dense) 소형 언어모델로, ‘검증 가능한 추론(verifiable reasoning)’을 소형 모델 계열에서 어디까지 끌어올릴 수 있는지를 실험적으로 탐구한 기술 보고서의 중심 주제입니다. 저자들은 Spectrum-to…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-chinese-frontier-ai-models-carry-the-fingerprint-of-export-controlled-gp-076934ef.md",
+      "status": "published",
+      "score": 64.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "Unemployment Labs의 포렌식 분석은 DeepSeek, Moonshot AI, MiniMax, Ant Group의 최근 모델 여섯 개에서 NVIDIA Blackwell(B200/B300, GB200/GB300)과 일치하는 초기화 지문을 발견했다. 이 증거는 Blackwell급 GPU에 대한 접근을 시사하지만,…",
       "featured": false,
       "new": false
     },
@@ -3036,19 +3049,6 @@
       "excerpt": "Anthropic 연구진은 대형 언어모델 Claude 내부에서 사람의 ‘의식적 접근’ 개념과 유사한 작동을 하는 작은 신경 패턴 집합을 발견했다고 보고한다. 이른바 J-space는 각 패턴이 특정 단어와 연결되지만, 해당 패턴이 활성화된다고 해서 모델이 그 단어를 출력하는 것은 아니다. 대신 J-space는 모델이 말로…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-chinese-frontier-ai-models-carry-the-fingerprint-of-export-controlled-gp-076934ef.md",
-      "status": "published",
-      "score": 64.0,
-      "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "Unemployment Labs의 포렌식 분석은 DeepSeek, Moonshot AI, MiniMax, Ant Group의 최근 모델 여섯 개에서 NVIDIA Blackwell(B200/B300, GB200/GB300)과 일치하는 초기화 지문을 발견했다. 이 증거는 Blackwell급 GPU에 대한 접근을 시사하지만,…",
-      "featured": false,
-      "new": true
     },
     {
       "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
@@ -3545,6 +3545,19 @@
       "new": false
     },
     {
+      "title": "Dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-dwarf-planet-candidate-appears-which-takes-roughly-280-years-to-orbit-ou-f77a88a8.md",
+      "status": "published",
+      "score": 62.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "루빈 관측 데이터에서 새 천체 **2026 ED138**이 확인됐다. 태양에서 지구 거리의 약 **46배**, 공전주기 **281.1년**이며 반지름 추정치로 **370~930마일** 범위가 보고돼 왜소행성 후보로 분류될 가능성이 있다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Scion is back and is going to sell a kei truck in America",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3790,19 +3803,6 @@
       "excerpt": "제목이 제시하는 내용만 보면 Moebius는 파라미터 수가 약 0.2B인 이미지 인페인팅 모델이 10B급 모델과 유사한 성능을 보인다고 주장하는 프로젝트입니다. 피드 기준으로는 원문 링크와 Hacker News에서의 반응(포인트 201, 댓글 60)만 제공되어 프로젝트의 구체적인 기법(예: 아키텍처, 지식 증류, 학습…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-dwarf-planet-candidate-appears-which-takes-roughly-280-years-to-orbit-ou-f77a88a8.md",
-      "status": "published",
-      "score": 62.0,
-      "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "루빈 관측 데이터에서 새 천체 **2026 ED138**이 확인됐다. 태양에서 지구 거리의 약 **46배**, 공전주기 **281.1년**이며 반지름 추정치로 **370~930마일** 범위가 보고돼 왜소행성 후보로 분류될 가능성이 있다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
@@ -4312,6 +4312,19 @@
       "new": false
     },
     {
+      "title": "Gemini 4 Hydrogen and Orchestrator",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-gemini-4-hydrogen-and-orchestrator-d7e80ea8.md",
+      "status": "published",
+      "score": 60.6,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "Google은 Antigravity에 **Gemini 4 Hydrogen**을 도입하고, Hydrogen과 강력 모델(예: Gemini 4 Carbon)을 동적으로 결합하는 새 옵션 **Orchestrator**를 공개했다. Orchestrator는 Terminal‑Bench 4.1에서 **평균 쿼터 24% 절감, 수행…",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Gold is now the top U.S. export",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -4323,19 +4336,6 @@
       "excerpt": "최근 미국의 비금전적(非貨幣) 금 수출이 가치 기준으로 전통적 수출품목(석유, 의약품, 항공기 등)을 제치고 2025년 10월 이후 거의 매달 최고치를 기록하고 있다는 관찰로 시작한다. 단순히 금 시세 상승만이 원인은 아니며, 2026년 2월에는 수출 톤수가 사상 최대에 이를 가능성까지 제기된다. 수출 목적지는 주로 스…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Gemini 4 Hydrogen and Orchestrator",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-gemini-4-hydrogen-and-orchestrator-d7e80ea8.md",
-      "status": "published",
-      "score": 60.6,
-      "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "Google은 Antigravity에 **Gemini 4 Hydrogen**을 도입하고, Hydrogen과 강력 모델(예: Gemini 4 Carbon)을 동적으로 결합하는 새 옵션 **Orchestrator**를 공개했다. Orchestrator는 Terminal‑Bench 4.1에서 **평균 쿼터 24% 절감, 수행…",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Serbia's Vucic concedes election defeat in historic win for student movement",
@@ -7341,6 +7341,32 @@
       "new": false
     },
     {
+      "title": "FAA issues national ground stop",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-faa-issues-national-ground-stop-13ce7dcc.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-11-13",
+      "excerpt": "FAA는 11월13일 오후 3시54분(ET) 전미 출발 항공편에 대한 **전면 지상정지**를 발령했고, Flightradar24에는 당시 **4,042편**이 미국행 비행 중이었다. 국토안보장관은 원인으로 현재 '통신장애'를 지목했으며 수십만 승객이 발이 묶였습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-11-4m-in-nvidia-hardware-vanishes-during-shipment-from-ca-to-tx-f0b640ae.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-11-13",
+      "excerpt": "보도에 따르면 2026년 8월 29일 오클랜드에서 출발한 트럭으로 운송되던 **약 $11.4 million** 상당의 NVIDIA 하드웨어 6개 팔레트가 텍사스 도착 전 남부 캘리포니아에서 행방불명되었고, 오클랜드 경찰은 9월 13일 접수된 강도(Grand theft) 사건으로 수사 중입니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Linux 7.1",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -7534,6 +7560,19 @@
       "excerpt": "피드 메타데이터에 따르면 SpaceX 도메인에 게시된 'Starbase, LA' 페이지가 Hacker News에서 활발하게 논의되고 있습니다. 후보 기록에는 작성자 'bilsbie'와 게시·수집 시각이 포함되어 있고, Hacker News 상에서 포인트 181·댓글 295를 기록하며 상당한 관심을 받고 있음을 보여줍니다…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "FM-1 Workbench",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-fm-1-workbench-9ea4feda.md",
+      "status": "published",
+      "score": 58.1,
+      "briefed_at": null,
+      "published_at": "2026-11-13",
+      "excerpt": "피드 기준으로는 'FM-1 Workbench' 게시물이 2026-11-13 공개되었고 원문은 open.m-vave.com이며 Hacker News에서 **181점·108댓글**로 관심을 모았습니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Firecracker VM Escape: PwnEscape Part 2",
@@ -7885,6 +7924,19 @@
       "excerpt": "OpenAI가 공개한 'The builder’s guide to GPT‑5.6'은 스타트업들이 GPT‑5.6을 활용해 더 빠르고 비용 효율적인 AI 에이전트를 만드는 방법을 안내한다는 점이 피드 요약으로 확인된다. 요약에 따르면 핵심은 더 스마트한 모델 선택 전략과 새로워진 Responses API 기능으로, 이를 통해…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-live-airband-on-all-frequencies-from-kors-victoria-ca-also-ground-stoppe-282df205.md",
+      "status": "published",
+      "score": 54.0,
+      "briefed_at": null,
+      "published_at": "2026-11-13",
+      "excerpt": "피드 기준으로는 KORS(항공국 코드) 모든 주파수에서 실시간 항공 교신 스트림이 송출 중이며, 빅토리아(Victoria, CA)에 그라운드 스톱이 발생했다는 제목의 글이 Hacker News에서 관심(200점·45댓글)을 받았습니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Design is compromise",
@@ -8251,6 +8303,32 @@
       "new": false
     },
     {
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-how-amplitude-ships-product-improvements-in-1-2-days-with-openai-67672a69.md",
+      "status": "published",
+      "score": 49.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "피드 기준으로는 Amplitude가 OpenAI 모델을 기반으로 한 ‘Wave’ 에이전트를 도입해 무엇을 개발할지 파악하고 코딩 에이전트로 변경을 배포하며 영향까지 측정한다고 보고했습니다. OpenAI 블로그에 2026-11-12 공개된 고객 사례입니다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-gemini-4-hydrogen-everyday-coding-and-agentic-workflows-for-developers-7ed04b33.md",
+      "status": "published",
+      "score": 49.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "Google은 개발자용 신형 모델 **Gemini 4 Hydrogen**을 공개했다. 리포지토리 코딩·디버깅, 웹 개발, 멀티모달 에이전트 워크플로를 지원하며 네 가지 설정 가능한 사고 수준 또는 Gemini 4 Carbon/Argon과 결합해 사용할 수 있다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -8366,32 +8444,6 @@
       "excerpt": "OpenAI가 'Deployment Simulation'이라는 접근법을 소개했습니다. 피드 기준으로는 실제 대화 데이터를 이용해 배포 전에 모델의 행동을 예측해 안전성과 평가 정확도를 높이려는 목적이라고 합니다. 제공된 정보만 보면 구체적인 구현 방식이나 실험 결과는 요약에 포함되어 있지 않습니다. 관심있는 독자는 원문…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-gemini-4-hydrogen-everyday-coding-and-agentic-workflows-for-developers-7ed04b33.md",
-      "status": "published",
-      "score": 49.0,
-      "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "Google은 개발자용 신형 모델 **Gemini 4 Hydrogen**을 공개했다. 리포지토리 코딩·디버깅, 웹 개발, 멀티모달 에이전트 워크플로를 지원하며 네 가지 설정 가능한 사고 수준 또는 Gemini 4 Carbon/Argon과 결합해 사용할 수 있다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-how-amplitude-ships-product-improvements-in-1-2-days-with-openai-67672a69.md",
-      "status": "published",
-      "score": 49.0,
-      "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "피드 기준으로는 Amplitude가 OpenAI 모델을 기반으로 한 ‘Wave’ 에이전트를 도입해 무엇을 개발할지 파악하고 코딩 에이전트로 변경을 배포하며 영향까지 측정한다고 보고했습니다. OpenAI 블로그에 2026-11-12 공개된 고객 사례입니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "How Cisco defends at machine speed with OpenAI",
@@ -9395,6 +9447,19 @@
       "new": false
     },
     {
+      "title": "Introducing ChatGPT Wallet",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-introducing-chatgpt-wallet-7d4d71d0.md",
+      "status": "published",
+      "score": 44.0,
+      "briefed_at": null,
+      "published_at": "2026-11-13",
+      "excerpt": "피드 기준으로는 OpenAI가 ChatGPT Wallet을 발표했다. ChatGPT Work·Codex·dots 에이전트가 사용자 승인과 기존 카드 보호를 통해 결제를 완료할 수 있도록 설계되었다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -9653,6 +9718,19 @@
       "excerpt": "피드 기준으로는 OpenAI가 2026-06-14자 공지로 ‘OpenAI Partner Network’를 출범하고 1억5천만 달러를 투자한다고 전합니다. 이 네트워크는 전 세계 파트너들이 기업용 AI의 채택, 배포, 전환을 가속화하도록 지원하기 위한 목적이라고 요약됩니다. 제공된 정보만 보면 대규모 자금 투입을 통한 파…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-shield-helps-technicians-hand-off-legacy-portal-work-with-openai-a99dfdd2.md",
+      "status": "published",
+      "score": 43.0,
+      "briefed_at": null,
+      "published_at": "2026-11-13",
+      "excerpt": "피드 기준으로는 Shield가 OpenAI의 Forge 에이전트를 도입해 IT 기술자들이 레거시 포털 작업을 인계하도록 돕고, 에이전트가 시스템 탐색을 맡아 기술자는 판단이 필요한 문제에 집중하도록 지원합니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Singapore Airlines elevates travel & work with OpenAI technology",
@@ -10240,6 +10318,19 @@
       "new": false
     },
     {
+      "title": "Build once, run on any agent: A practical guide to agent skills",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-build-once-run-on-any-agent-a-practical-guide-to-agent-skills-d121304c.md",
+      "status": "published",
+      "score": 41.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "GitHub은 에이전트 업무를 재사용 가능한 'agent skill'로 구조화하는 실무 가이드를 공개했다. SKILL.md 중심의 버전 디렉터리, 프로젝트 매니페스트 분리, 독립 검증자(Proof Agent)와 CI 연동, 클라이언트별 패키징(node scripts/package.mjs 등)을 통한 이식성 확보가 핵심이…",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Kuken Industries searches 70 years of drawings in minutes",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -10643,19 +10734,6 @@
       "new": false
     },
     {
-      "title": "Build once, run on any agent: A practical guide to agent skills",
-      "service_key": "github-blog",
-      "service_name": "GitHub Blog",
-      "href": "./services/github-blog/2026-11-build-once-run-on-any-agent-a-practical-guide-to-agent-skills-d121304c.md",
-      "status": "published",
-      "score": 41.0,
-      "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "GitHub은 에이전트 업무를 재사용 가능한 'agent skill'로 구조화하는 실무 가이드를 공개했다. SKILL.md 중심의 버전 디렉터리, 프로젝트 매니페스트 분리, 독립 검증자(Proof Agent)와 CI 연동, 클라이언트별 패키징(node scripts/package.mjs 등)을 통한 이식성 확보가 핵심이…",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "LifeVal",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -10966,6 +11044,19 @@
       "excerpt": "피드 기준으로는 Anthropic이 Claude Fable 5와 Claude Mythos 5를 발표했습니다. Claude Fable 5는 ‘Mythos‑class’ 모델로 일반 사용에 맞게 안전하게 설계되었다고 요약되어 있습니다. 제공된 정보만 보면 출시 사실과 안전성 강조가 핵심입니다. 기술적 세부사항이나 배포 방식…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Commitments on model deprecation and preservation",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-commitments-on-model-deprecation-and-preservation-234faaf0.md",
+      "status": "published",
+      "score": 40.0,
+      "briefed_at": null,
+      "published_at": "2026-11-13",
+      "excerpt": "Anthropic은 공개 출시된 모든 Claude 모델과 내부에서 중요한 용도로 배포된 모델의 가중치를 최소한 회사 존속 기간까지 보존하고, 퇴역 모델에 대한 인터뷰와 사후배포 보고서를 기록·보존하겠다고 약속했다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Cogent and OpenAI build cyber defense factories for enterprises",
@@ -11813,6 +11904,45 @@
       "new": false
     },
     {
+      "title": "Gondola doubles revenue as its team builds more with Codex",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-gondola-doubles-revenue-as-its-team-builds-more-with-codex-b9840fd6.md",
+      "status": "published",
+      "score": 38.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "피드 기준으로는 OpenAI 블로그의 고객 사례에서 Gondola가 Codex 활용으로 리드 엔지니어 생산성이 **50%** 올라가고, 팀의 활동으로 **수익이 두 배**로 증가했으며 ChatGPT가 일상 업무를 단순화했다고 보고했습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-gemini-decisions-api-fast-calibrated-multimodal-decisions-02bfed5e.md",
+      "status": "published",
+      "score": 38.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-11",
+      "excerpt": "Google은 Gemini Decision 1을 지원하는 Gemini Decisions API를 발표했다. 단일 포워드로 멀티모달 입력(최대 256K 토큰)을 평가하고 150–250ms의 엔드투엔드 지연과 $0.10/1M 입력 토큰 요금, 출력 토큰 무과금 구조를 제시한다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Scientists are using Google AI to help restore giant kelp forests.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-scientists-are-using-google-ai-to-help-restore-giant-kelp-forests-de0b78c5.md",
+      "status": "published",
+      "score": 38.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "Google과 CSIRO가 대형 다시마 복원을 위해 **두 고품질 레퍼런스 게놈을 공개**하고, Google의 오픈소스 AI 도구 **DeepVariant의 한 버전**을 학습해 **태즈매니아 해안 40개 지점에서 수집한 600개체의 유전체**를 분석해 열내성 개체를 선별·재식재를 준비하고 있습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "ChatGPT Plus for veterans and servicemembers",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -12229,43 +12359,17 @@
       "new": false
     },
     {
-      "title": "Scientists are using Google AI to help restore giant kelp forests.",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-scientists-are-using-google-ai-to-help-restore-giant-kelp-forests-de0b78c5.md",
+      "title": "GitHub availability report: October 2026",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-github-availability-report-october-2026-eaf76493.md",
       "status": "published",
-      "score": 38.0,
-      "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "Google과 CSIRO가 대형 다시마 복원을 위해 **두 고품질 레퍼런스 게놈을 공개**하고, Google의 오픈소스 AI 도구 **DeepVariant의 한 버전**을 학습해 **태즈매니아 해안 40개 지점에서 수집한 600개체의 유전체**를 분석해 열내성 개체를 선별·재식재를 준비하고 있습니다.",
+      "score": 37.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-13",
+      "excerpt": "GitHub는 10월에 Azure Central US로 대규모 용량 이전과 클러스터 확장(중앙미주 K8s 용량 2배+)을 진행했으나 쓰기 장애(10월7일), 지역 네트워크 장애(10월29일) 등 8건의 인시던트가 발생해 운영 안전성·격리·복구 검증 필요성을 강조했습니다.",
       "featured": false,
-      "new": true
-    },
-    {
-      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-gemini-decisions-api-fast-calibrated-multimodal-decisions-02bfed5e.md",
-      "status": "published",
-      "score": 38.0,
-      "briefed_at": null,
-      "published_at": "2026-11-11",
-      "excerpt": "Google은 Gemini Decision 1을 지원하는 Gemini Decisions API를 발표했다. 단일 포워드로 멀티모달 입력(최대 256K 토큰)을 평가하고 150–250ms의 엔드투엔드 지연과 $0.10/1M 입력 토큰 요금, 출력 토큰 무과금 구조를 제시한다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Gondola doubles revenue as its team builds more with Codex",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-gondola-doubles-revenue-as-its-team-builds-more-with-codex-b9840fd6.md",
-      "status": "published",
-      "score": 38.0,
-      "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "피드 기준으로는 OpenAI 블로그의 고객 사례에서 Gondola가 Codex 활용으로 리드 엔지니어 생산성이 **50%** 올라가고, 팀의 활동으로 **수익이 두 배**로 증가했으며 ChatGPT가 일상 업무를 단순화했다고 보고했습니다.",
-      "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "Introducing Businesses in ChatGPT",
@@ -13035,17 +13139,17 @@
       "new": false
     },
     {
-      "title": "GitHub availability report: October 2026",
-      "service_key": "github-blog",
-      "service_name": "GitHub Blog",
-      "href": "./services/github-blog/2026-11-github-availability-report-october-2026-eaf76493.md",
+      "title": "5 new Google Flow Tools designed by visual artists",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-5-new-google-flow-tools-designed-by-visual-artists-f79c2c87.md",
       "status": "published",
-      "score": 37.0,
-      "briefed_at": null,
-      "published_at": "2026-11-13",
-      "excerpt": "GitHub는 10월에 Azure Central US로 대규모 용량 이전과 클러스터 확장(중앙미주 K8s 용량 2배+)을 진행했으나 쓰기 장애(10월7일), 지역 네트워크 장애(10월29일) 등 8건의 인시던트가 발생해 운영 안전성·격리·복구 검증 필요성을 강조했습니다.",
+      "score": 36.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "Google은 AI 크리에이티브 스튜디오 Google Flow용으로 James Gerde, Anurag Tiwari 등 시각 예술가들이 설계한 5개 도구를 공개했다. Pocket Studio는 단일 테이크에서 다중 앵글과 화질 향상을 생성하고, Character Arc·Character Poster 등은 캐릭터 개발과…",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
@@ -13984,17 +14088,30 @@
       "new": false
     },
     {
-      "title": "5 new Google Flow Tools designed by visual artists",
+      "title": "Claim your Google Cloud Credits in Google AI Studio",
       "service_key": "google-blog",
       "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-5-new-google-flow-tools-designed-by-visual-artists-f79c2c87.md",
+      "href": "./services/google-blog/2026-11-claim-your-google-cloud-credits-in-google-ai-studio-bbe3a290.md",
       "status": "published",
       "score": 36.0,
       "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "Google은 AI 크리에이티브 스튜디오 Google Flow용으로 James Gerde, Anurag Tiwari 등 시각 예술가들이 설계한 5개 도구를 공개했다. Pocket Studio는 단일 테이크에서 다중 앵글과 화질 향상을 생성하고, Character Arc·Character Poster 등은 캐릭터 개발과…",
+      "published_at": "2026-11-13",
+      "excerpt": "Google AI Studio에서 워크스페이스 안에서 바로 Google Cloud 무료 API 크레딧을 신청·연동하고 결제 계정까지 설정할 수 있다. Pro/Ultra 가입자는 월별 크레딧(12개월 유효·자동 이월)을 Gemini API 등 유료 모델에 적용할 수 있으며 Gemini API는 $5 선결제가 필요하다.",
       "featured": false,
       "new": true
+    },
+    {
+      "title": "Supporting research on AI and children’s safety",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-supporting-research-on-ai-and-children-s-safety-d7c1da8c.md",
+      "status": "published",
+      "score": 35.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "피드 기준으로는 OpenAI가 **$2 million**을 AI와 어린이 안전 연구에 지원하기로 약속했으며, 자금은 청소년 관련 위험·기회를 측정하는 공유 도구 개발을 지원하는 데 쓰인다고 기재되어 있습니다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "Work at the Frontier: AI’s effect on freelance work",
@@ -14751,15 +14868,41 @@
       "new": false
     },
     {
-      "title": "Supporting research on AI and children’s safety",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-supporting-research-on-ai-and-children-s-safety-d7c1da8c.md",
+      "title": "Funding third-party model evaluations",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-funding-third-party-model-evaluations-b452070c.md",
       "status": "published",
       "score": 35.0,
       "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "피드 기준으로는 OpenAI가 **$2 million**을 AI와 어린이 안전 연구에 지원하기로 약속했으며, 자금은 청소년 관련 위험·기회를 측정하는 공유 도구 개발을 지원하는 데 쓰인다고 기재되어 있습니다.",
+      "published_at": "2026-11-13",
+      "excerpt": "Anthropic이 서드파티 평가 개발에 자금 지원하는 이니셔티브를 발표했다. 우선순위는 ASL 평가, 고급 역량·안전 지표, 평가 인프라로서 사이버·CBRN·모델 자율성 등 구체적 영역을 제시했다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Protecting the wellbeing of our users",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-protecting-the-wellbeing-of-our-users-2dc4c52f.md",
+      "status": "published",
+      "score": 35.0,
+      "briefed_at": null,
+      "published_at": "2026-11-13",
+      "excerpt": "Anthropic은 자살·자해 탐지용 분류기와 170여개국 헬프라인 연동을 도입하고, Claude Opus/Sonnet/Haiku 4.5 모델군이 단일·다중턴·프리필 평가에서 이전 세대 대비 개선된 수치를 보였으며, 시콥팩시 완화를 위한 평가 도구 Petri를 공개했습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Introducing Claude 3.5 Sonnet",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-introducing-claude-3-5-sonnet-e91e6f80.md",
+      "status": "published",
+      "score": 35.0,
+      "briefed_at": null,
+      "published_at": "2026-11-13",
+      "excerpt": "Anthropic은 **Claude 3.5 Sonnet**을 공개했다. Claude 3 Opus 대비 2배 속도, 200K 토큰 컨텍스트, 입력 $3/백만·출력 $15/백만 토큰 가격으로 Claude.ai·iOS·API·Bedrock·Vertex AI에서 이용 가능하다.",
       "featured": false,
       "new": true
     },
@@ -15180,6 +15323,19 @@
       "new": false
     },
     {
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-google-search-gets-a-major-upgrade-with-gemini-4-hydrogen-d6d23163.md",
+      "status": "published",
+      "score": 33.0,
+      "briefed_at": null,
+      "published_at": "2026-11-12",
+      "excerpt": "Google이 Gemini 4 Hydrogen을 전 세계 Google Search에 적용했다. 더 정교한 의도 이해, 확장된 쿼리 팬아웃, 시각적·구조화 응답, 다국어 이해 개선이 핵심 변화입니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Introducing Images 2.6",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -15423,6 +15579,32 @@
       "briefed_at": "2026-06-14",
       "published_at": "2026-06-10",
       "excerpt": "피드 기준으로는 이 글은 GitHub Copilot CLI에 언어 서버 프로토콜(LSP) 서버를 설치·구성해 기존의 무차별 grep/디컴파일 방식 대신 실제 코드 인텔리전스를 제공하는 방법을 설명한다고 합니다. 개발자가 CLI 환경에서 더 정확한 코드 탐색과 추천을 받을 수 있도록 설정하는 내용을 다룹니다. 제공된 정보…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Meet the 2026 Google PhD Fellows",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-meet-the-2026-google-phd-fellows-13933182.md",
+      "status": "published",
+      "score": 31.0,
+      "briefed_at": null,
+      "published_at": "2026-11-12",
+      "excerpt": "Google.org는 2026년 Google PhD Fellowship으로 **148명의 신임 펠로우(38개국)**에게 **1,300만 달러**를 지원하며, 보건·언어·하드웨어·양자 등 AI 관련 기초·응용 연구를 장려하고 연구자 네트워크·컴퓨트 접근을 제공한다고 발표했습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Introducing Claude 4",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-introducing-claude-4-4ec03078.md",
+      "status": "published",
+      "score": 30.0,
+      "briefed_at": "2026-11-13",
+      "published_at": "2026-11-12",
+      "excerpt": "Anthropic이 Claude Opus 4와 Claude Sonnet 4를 발표했다. 두 모델은 '확장적 사고(extended thinking)'와 병렬 도구 사용, 로컬 파일 기반 메모리 기능을 지원하며 Claude Code의 IDE 통합과 API용 코드 실행 도구·Files API 등 새로운 개발자 기능을 함께 공…",
       "featured": false,
       "new": false
     },
@@ -16207,19 +16389,6 @@
       "new": false
     },
     {
-      "title": "Introducing Claude 4",
-      "service_key": "anthropic-blog",
-      "service_name": "Anthropic Blog",
-      "href": "./services/anthropic-blog/2026-11-introducing-claude-4-4ec03078.md",
-      "status": "published",
-      "score": 30.0,
-      "briefed_at": null,
-      "published_at": "2026-11-12",
-      "excerpt": "Anthropic이 Claude Opus 4와 Claude Sonnet 4를 발표했다. 두 모델은 '확장적 사고(extended thinking)'와 병렬 도구 사용, 로컬 파일 기반 메모리 기능을 지원하며 Claude Code의 IDE 통합과 API용 코드 실행 도구·Files API 등 새로운 개발자 기능을 함께 공…",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Introducing 3 new domains: .eat, .fly, and .here",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -16478,6 +16647,19 @@
       "excerpt": "제공된 정보만 보면 이 구글 블로그 글은 연구자들이 'Co-Scientist'와 협력해 큰 문제를 해결하는 네 가지 방식을 소개합니다. 저자는 Joel Meares이며 게시일은 2026-06-09입니다. 피드 요약에는 컬러풀하고 스타일화된 스파이크형 분자 구조 이미지가 포함되어 있습니다. 이미지가 시사하는 바는 있으나…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Designing for privacy on intelligent eyewear",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-designing-for-privacy-on-intelligent-eyewear-5ed48d94.md",
+      "status": "published",
+      "score": 29.0,
+      "briefed_at": null,
+      "published_at": "2026-11-12",
+      "excerpt": "Google은 2026-11-12 블로그에서 Gemini 탑재 지능형 안경의 프라이버시 설계(카메라 영상 비저장·AI훈련 미사용, 행인 얼굴 자동 가림, 외부 LED 표시·변조 감지, 암호화, 앱·계정·플레이·광고·유튜브 정책 적용)를 공개했다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Franklin Templeton uses OpenAI to support investment research",
@@ -16998,6 +17180,19 @@
       "excerpt": "피드 기준으로는 OpenAI 크리에이티브 팀이 Codex를 내부 협업 파트너로 삼아 맞춤형 창작 도구를 개발하고, 문맥을 인식하는 AI를 통해 아이디어 발굴과 프로토타이핑 속도를 높였다는 내용이다. 제공된 요약은 Codex가 팀 워크플로우에 통합되어 반복적인 시제품 제작과 아이디어 스케치 단계에서 시간을 단축하는 목적로…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Helping caregivers use AI in everyday life",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab.md",
+      "status": "published",
+      "score": 23.0,
+      "briefed_at": null,
+      "published_at": "2026-11-10",
+      "excerpt": "OpenAI Academy가 미국 5개 도시의 돌봄 제공자(케어기버)를 대상으로 무료 실습형 ChatGPT 워크숍을 연다고 밝혔다(2026-11-10). 피드 기준으로는 실무적 AI 활용 능력 배양이 목표다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Introducing Intelligence Age",
