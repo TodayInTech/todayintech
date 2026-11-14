@@ -1,0 +1,422 @@
+{
+  "generated_at": "2026-11-14T01:57:13.064034+00:00",
+  "generated_for": "2026-11-14",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "5d9c65832dade69ca956d47d1aad23b959455e63",
+  "github_run_id": "43543429932",
+  "service_count": 5,
+  "duration_ms": 14,
+  "raw_count": 120,
+  "candidate_count": 29,
+  "excluded_count": 91,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 39,
+      "excluded_count": 81,
+      "duration_ms": 6,
+      "reason_counts": {
+        "already_briefed": 81
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 39,
+      "output_count": 39,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 39,
+      "output_count": 39,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 39,
+      "output_count": 29,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:234faaf001c260cc",
+          "title": "Commitments on model deprecation and preservation",
+          "normalized_url": "https://www.anthropic.com/news/deprecation-commitments",
+          "url_hash": "234faaf001c260cca27728a0ebe91614e253968d44a96064e8b45eefd6b76178",
+          "suggested_doc_key": "2026-11-commitments-on-model-deprecation-and-preservation-234faaf0",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-commitments-on-model-deprecation-and-preservation-234faaf0.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:b452070c7a90e2aa",
+          "title": "Funding third-party model evaluations",
+          "normalized_url": "https://www.anthropic.com/news/a-new-initiative-for-developing-third-party-model-evaluations",
+          "url_hash": "b452070c7a90e2aa1ea2dc004a9ad93ede388eaa97d86db9e3d78d922658863f",
+          "suggested_doc_key": "2026-11-funding-third-party-model-evaluations-b452070c",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-funding-third-party-model-evaluations-b452070c.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:2dc4c52f48c69c82",
+          "title": "Protecting the wellbeing of our users",
+          "normalized_url": "https://www.anthropic.com/news/protecting-well-being-of-users",
+          "url_hash": "2dc4c52f48c69c82b11a1d23adcfa57d0f89cc430e8ba3739dbfc83c7de25214",
+          "suggested_doc_key": "2026-11-protecting-the-wellbeing-of-our-users-2dc4c52f",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-protecting-the-wellbeing-of-our-users-2dc4c52f.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:e91e6f80eaaceb58",
+          "title": "Introducing Claude 3.5 Sonnet",
+          "normalized_url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+          "url_hash": "e91e6f80eaaceb584f2332495ca16ab2902c8d464dba8ec097851744dfe1e764",
+          "suggested_doc_key": "2026-11-introducing-claude-3-5-sonnet-e91e6f80",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-introducing-claude-3-5-sonnet-e91e6f80.md",
+          "candidate_score": 35.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:523ff672174f35cf",
+          "title": "Anthropic is endorsing SB 53",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
+          "url_hash": "523ff672174f35cfd0464b6a9a778e2ea91a0fc08bb6155fd49a538014f539e8",
+          "suggested_doc_key": "2026-11-anthropic-is-endorsing-sb-53-523ff672",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-anthropic-is-endorsing-sb-53-523ff672.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 5,
+      "excluded_count": 15,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:bbe3a29059d49789",
+          "title": "Claim your Google Cloud Credits in Google AI Studio",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-cloud-credits-gdp-ai-studio",
+          "url_hash": "bbe3a29059d49789b8f96cc0724f896a366bd3911a560e6eafd37020453f2da6",
+          "suggested_doc_key": "2026-11-claim-your-google-cloud-credits-in-google-ai-studio-bbe3a290",
+          "suggested_article_path": "docs/services/google-blog/2026-11-claim-your-google-cloud-credits-in-google-ai-studio-bbe3a290.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:d6d23163b98ddfa1",
+          "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+          "normalized_url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade",
+          "url_hash": "d6d23163b98ddfa1ea7abe70bc203135c9b8d10c4c268a6dbaa304f2c460d6b1",
+          "suggested_doc_key": "2026-11-google-search-gets-a-major-upgrade-with-gemini-4-hydrogen-d6d23163",
+          "suggested_article_path": "docs/services/google-blog/2026-11-google-search-gets-a-major-upgrade-with-gemini-4-hydrogen-d6d23163.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:13933182bec036a3",
+          "title": "Meet the 2026 Google PhD Fellows",
+          "normalized_url": "https://blog.google/company-news/outreach-and-initiatives/google-org/phd-fellows-2026",
+          "url_hash": "13933182bec036a30aa4ec7eca74bf19f0e5be57c401fc5da521d8dd321caf6a",
+          "suggested_doc_key": "2026-11-meet-the-2026-google-phd-fellows-13933182",
+          "suggested_article_path": "docs/services/google-blog/2026-11-meet-the-2026-google-phd-fellows-13933182.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:5ed48d94baf2eb29",
+          "title": "Designing for privacy on intelligent eyewear",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/intelligent-eyewear-privacy-protections",
+          "url_hash": "5ed48d94baf2eb29cec8ebae45d4312f667fac77962ef4810b28339685afa580",
+          "suggested_doc_key": "2026-11-designing-for-privacy-on-intelligent-eyewear-5ed48d94",
+          "suggested_article_path": "docs/services/google-blog/2026-11-designing-for-privacy-on-intelligent-eyewear-5ed48d94.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:0f04357d1e0890d1",
+          "title": "See our intelligent eyewear lineup and pre-order your pair",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/xr-ar/google-intelligent-eyewear-collections-pre-order",
+          "url_hash": "0f04357d1e0890d108fa17e5f905e335e66dbb2822dd2ea200dcce468e1a05a7",
+          "suggested_doc_key": "2026-11-see-our-intelligent-eyewear-lineup-and-pre-order-your-pair-0f04357d",
+          "suggested_article_path": "docs/services/google-blog/2026-11-see-our-intelligent-eyewear-lineup-and-pre-order-your-pair-0f04357d.md",
+          "candidate_score": 28.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 15
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:13ce7dccaab394f0",
+          "title": "FAA issues national ground stop",
+          "normalized_url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+          "url_hash": "13ce7dccaab394f058d010788bb3631162e30a63b7c6e9732411ca1f15f42c9f",
+          "suggested_doc_key": "2026-11-faa-issues-national-ground-stop-13ce7dcc",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-faa-issues-national-ground-stop-13ce7dcc.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 1326점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 811개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f0b640ae51573bd1",
+          "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+          "normalized_url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+          "url_hash": "f0b640ae51573bd157abcf395f92783e13df6ef66e887daae1695b10c3e2f2e9",
+          "suggested_doc_key": "2026-11-11-4m-in-nvidia-hardware-vanishes-during-shipment-from-ca-to-tx-f0b640ae",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-11-4m-in-nvidia-hardware-vanishes-during-shipment-from-ca-to-tx-f0b640ae.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 292점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 162개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9ea4feda6422eb82",
+          "title": "FM-1 Workbench",
+          "normalized_url": "https://open.m-vave.com/fm1-workbench",
+          "url_hash": "9ea4feda6422eb82c2186da11c677963c8969a0d5ec06cabb337f022cde1f9c2",
+          "suggested_doc_key": "2026-11-fm-1-workbench-9ea4feda",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-fm-1-workbench-9ea4feda.md",
+          "candidate_score": 58.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 181점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 108개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:282df205597a8a73",
+          "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+          "normalized_url": "https://orcasairband.com/",
+          "url_hash": "282df205597a8a736fd0747016d47bdb637c885cfca072ab63a5b7caab6cbccc",
+          "suggested_doc_key": "2026-11-live-airband-on-all-frequencies-from-kors-victoria-ca-also-ground-stoppe-282df205",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-live-airband-on-all-frequencies-from-kors-victoria-ca-also-ground-stoppe-282df205.md",
+          "candidate_score": 54.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 200점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 45개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:cdfd26896257823e",
+          "title": "All US airports are currently ground stopped",
+          "normalized_url": "https://twitter.com/flightradar24/status/2121347654714077605",
+          "url_hash": "cdfd26896257823e516e31a31ded355e64b3ee9baf2a51d7ca408f25f935b929",
+          "suggested_doc_key": "2026-11-all-us-airports-are-currently-ground-stopped-cdfd2689",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-all-us-airports-are-currently-ground-stopped-cdfd2689.md",
+          "candidate_score": 48.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 169점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 32개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 4,
+      "excluded_count": 46,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:7d4d71d056da0286",
+          "title": "Introducing ChatGPT Wallet",
+          "normalized_url": "https://openai.com/index/introducing-chatgpt-wallet",
+          "url_hash": "7d4d71d056da02862d0b2ec1b87dadd7019731481c576401840bf8ff718ee663",
+          "suggested_doc_key": "2026-11-introducing-chatgpt-wallet-7d4d71d0",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-introducing-chatgpt-wallet-7d4d71d0.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:a99dfdd20d85acbb",
+          "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+          "normalized_url": "https://openai.com/business/customer-stories/shield",
+          "url_hash": "a99dfdd20d85acbbb850aa77912a8df97b492b8fb6a1e7bebe1dab199cebab4f",
+          "suggested_doc_key": "2026-11-shield-helps-technicians-hand-off-legacy-portal-work-with-openai-a99dfdd2",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-shield-helps-technicians-hand-off-legacy-portal-work-with-openai-a99dfdd2.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:4922ca6fb0dd9299",
+          "title": "Holiday Extras is rethinking what it can build with Codex",
+          "normalized_url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+          "url_hash": "4922ca6fb0dd92994c349853518621d0422aac137e6c9a194fc01e08fc5408aa",
+          "suggested_doc_key": "2026-11-holiday-extras-is-rethinking-what-it-can-build-with-codex-4922ca6f",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-holiday-extras-is-rethinking-what-it-can-build-with-codex-4922ca6f.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:0f0020abcf733229",
+          "title": "Helping caregivers use AI in everyday life",
+          "normalized_url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+          "url_hash": "0f0020abcf733229d29f4d40e095eae692bb4a4c21852ac4cbeb6daf98f1617e",
+          "suggested_doc_key": "2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-helping-caregivers-use-ai-in-everyday-life-0f0020ab.md",
+          "candidate_score": 23.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 46
+      }
+    }
+  ]
+}
