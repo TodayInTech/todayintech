@@ -1,0 +1,318 @@
+{
+  "generated_at": "2026-11-15T01:29:52.359218+00:00",
+  "generated_for": "2026-11-15",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "487fb2250da4c3e4e9bdada14ea9f78f6b92022f",
+  "github_run_id": "43663244860",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 18,
+  "excluded_count": 102,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 28,
+      "excluded_count": 92,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 92
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 28,
+      "output_count": 28,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 28,
+      "output_count": 28,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 28,
+      "output_count": 18,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 6,
+      "excluded_count": 14,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:523ff672174f35cf",
+          "title": "Anthropic is endorsing SB 53",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
+          "url_hash": "523ff672174f35cfd0464b6a9a778e2ea91a0fc08bb6155fd49a538014f539e8",
+          "suggested_doc_key": "2026-11-anthropic-is-endorsing-sb-53-523ff672",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-anthropic-is-endorsing-sb-53-523ff672.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:76bd0a5c7994a326",
+          "title": "Understanding and addressing AI harms",
+          "normalized_url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
+          "url_hash": "76bd0a5c7994a326bd5a439181de567f99b45aa37133f9f6bab05c559d0786dc",
+          "suggested_doc_key": "2026-11-understanding-and-addressing-ai-harms-76bd0a5c",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-understanding-and-addressing-ai-harms-76bd0a5c.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:ed500889a8ff2381",
+          "title": "Challenges in red teaming AI systems",
+          "normalized_url": "https://www.anthropic.com/news/challenges-in-red-teaming-ai-systems",
+          "url_hash": "ed500889a8ff2381f73bcac7cac605bfe94bb48ea78ed437634860b7f578ceab",
+          "suggested_doc_key": "2026-11-challenges-in-red-teaming-ai-systems-ed500889",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-challenges-in-red-teaming-ai-systems-ed500889.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:9f010bf1251ad8c0",
+          "title": "A framework for AI development transparency",
+          "normalized_url": "https://www.anthropic.com/news/the-need-for-transparency-in-frontier-ai",
+          "url_hash": "9f010bf1251ad8c00f3af9a628e2e14d50a2747471be5ee42b0fd9a4d1709fbb",
+          "suggested_doc_key": "2026-11-a-framework-for-ai-development-transparency-9f010bf1",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-a-framework-for-ai-development-transparency-9f010bf1.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:39f4bfd16f2b3901",
+          "title": "Thoughts on America’s AI Action Plan",
+          "normalized_url": "https://www.anthropic.com/news/thoughts-on-america-s-ai-action-plan",
+          "url_hash": "39f4bfd16f2b39010cd544d98a6781939be881d7c3279604f1d70edf8756dd25",
+          "suggested_doc_key": "2026-11-thoughts-on-america-s-ai-action-plan-39f4bfd1",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-thoughts-on-america-s-ai-action-plan-39f4bfd1.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 14
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:0f04357d1e0890d1",
+          "title": "See our intelligent eyewear lineup and pre-order your pair",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/xr-ar/google-intelligent-eyewear-collections-pre-order",
+          "url_hash": "0f04357d1e0890d108fa17e5f905e335e66dbb2822dd2ea200dcce468e1a05a7",
+          "suggested_doc_key": "2026-11-see-our-intelligent-eyewear-lineup-and-pre-order-your-pair-0f04357d",
+          "suggested_article_path": "docs/services/google-blog/2026-11-see-our-intelligent-eyewear-lineup-and-pre-order-your-pair-0f04357d.md",
+          "candidate_score": 27.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:79b046481bd48da6",
+          "title": "SpaceX catches the Starship to end Flight 15",
+          "normalized_url": "https://www.spacex.com/launches/starship-flight-15",
+          "url_hash": "79b046481bd48da63ddc54a93cb1e3b81f86263f7145535537e7bf599149c5d6",
+          "suggested_doc_key": "2026-11-spacex-catches-the-starship-to-end-flight-15-79b04648",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-spacex-catches-the-starship-to-end-flight-15-79b04648.md",
+          "candidate_score": 66.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 657점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 451개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c19a1c4d437c2fe3",
+          "title": "PyPI's redesigned project pages with clearer security signals are now live",
+          "normalized_url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete",
+          "url_hash": "c19a1c4d437c2fe341e726d2cd3c2a2148ba5c1f1b2eed6d55a9a90227cac09f",
+          "suggested_doc_key": "2026-11-pypi-s-redesigned-project-pages-with-clearer-security-signals-are-now-li-c19a1c4d",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-pypi-s-redesigned-project-pages-with-clearer-security-signals-are-now-li-c19a1c4d.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 201점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 91개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d5d8547e961af0e1",
+          "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
+          "normalized_url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
+          "url_hash": "d5d8547e961af0e1fab17e8555318aea8eac984e68115a24bc37fa22ba099818",
+          "suggested_doc_key": "2026-11-nvidia-deliberately-kept-gpu-prices-high-through-circular-financing-deal-d5d8547e",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-nvidia-deliberately-kept-gpu-prices-high-through-circular-financing-deal-d5d8547e.md",
+          "candidate_score": 63.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 152점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 82개를 토론 신호로 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:1de9e89923c3293b",
+          "title": "A family tree of software job titles",
+          "normalized_url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles",
+          "url_hash": "1de9e89923c3293b6bda60f5ce8eef174c7a4434313f7ff0a2a305601d259e1b",
+          "suggested_doc_key": "2026-11-a-family-tree-of-software-job-titles-1de9e899",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-a-family-tree-of-software-job-titles-1de9e899.md",
+          "candidate_score": 62.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 199점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 99개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:3cd2b0c41bcab09e",
+          "title": "LinkedIn, Monster take down over 1000 fake job postings after CBC investigation",
+          "normalized_url": "https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379",
+          "url_hash": "3cd2b0c41bcab09e067fa863fe197a4328e52cfe4508d57dc81fdce8455cb439",
+          "suggested_doc_key": "2026-11-linkedin-monster-take-down-over-1000-fake-job-postings-after-cbc-investi-3cd2b0c4",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-linkedin-monster-take-down-over-1000-fake-job-postings-after-cbc-investi-3cd2b0c4.md",
+          "candidate_score": 62.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 183점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 101개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 1,
+      "excluded_count": 49,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:4922ca6fb0dd9299",
+          "title": "Holiday Extras is rethinking what it can build with Codex",
+          "normalized_url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+          "url_hash": "4922ca6fb0dd92994c349853518621d0422aac137e6c9a194fc01e08fc5408aa",
+          "suggested_doc_key": "2026-11-holiday-extras-is-rethinking-what-it-can-build-with-codex-4922ca6f",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-holiday-extras-is-rethinking-what-it-can-build-with-codex-4922ca6f.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 49
+      }
+    }
+  ]
+}
