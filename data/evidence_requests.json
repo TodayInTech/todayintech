@@ -2764,9 +2764,9 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-09T01:01:06.135344Z",
-    "last_failure": "access_denied",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-17T01:31:54.188627Z",
+    "last_failure": "thin_content",
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0
@@ -2814,8 +2814,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-09T01:01:06.135344Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-17T01:31:54.188627Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2864,8 +2864,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-09T01:01:06.135344Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-17T01:31:54.188627Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2916,8 +2916,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-09T01:01:06.135344Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-17T01:31:54.188627Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -2968,8 +2968,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-09T01:01:06.135344Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-17T01:31:54.188627Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -4407,6 +4407,63 @@
     "attempts": 0,
     "next_attempt_at": "2026-11-15T01:57:34.008911Z",
     "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://www.spacex.com/launches/starship-flight-15": {
+    "candidate": {
+      "candidate_id": "hacker-news:79b046481bd48da6",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "SpaceX catches the Starship to end Flight 15",
+        "url": "https://www.spacex.com/launches/starship-flight-15",
+        "published_at": "2026-11-14T21:22:24Z",
+        "collected_at": "2026-11-15T01:31:50.592553Z",
+        "summary": "<p><a href=\"https://x.com/SpaceX/status/2121316300702056595\" rel=\"nofollow\">https://x.com/SpaceX/status/2121316300702056595</a><p><a href=\"https://youtu.be/jHlpfNSpBmw?t=3233\" rel=\"nofollow\">https://youtu.be/jHlpfNSpBmw?t=3233</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50500963\">https://news.ycombinator.com/item?id=50500963</a></p>\n<p>Points: 657</p>\n<p># Comments: 451</p>",
+        "authors": [
+          "ls612"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 4,
+          "hn_points": 657,
+          "hn_comments": 451,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50500963"
+        }
+      },
+      "normalized_url": "https://www.spacex.com/launches/starship-flight-15",
+      "url_hash": "79b046481bd48da63ddc54a93cb1e3b81f86263f7145535537e7bf599149c5d6",
+      "title_fingerprint": "spacex catches the starship to end flight 15",
+      "feed_summary": "<p><a href=\"https://x.com/SpaceX/status/2121316300702056595\" rel=\"nofollow\">https://x.com/SpaceX/status/2121316300702056595</a><p><a href=\"https://youtu.be/jHlpfNSpBmw?t=3233\" rel=\"nofollow\">https://youtu.be/jHlpfNSpBmw?t=3233</a></p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50500963\">https://news.ycombinator.com/item?id=50500963</a></p>\n<p>Points: 657</p>\n<p># Comments: 451</p>",
+      "suggested_doc_key": "2026-11-spacex-catches-the-starship-to-end-flight-15-79b04648",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-spacex-catches-the-starship-to-end-flight-15-79b04648.md",
+      "candidate_score": 66.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 657점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 451개를 토론 신호로 반영했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-16T01:31:54.187359Z",
+    "last_failure": "extraction_failed",
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0
