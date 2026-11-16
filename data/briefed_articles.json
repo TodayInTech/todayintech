@@ -13770,6 +13770,86 @@
       "status": "published",
       "briefed_at": "2026-11-15T01:35:53.920700Z",
       "candidate_score": 33.0
+    },
+    "39f4bfd16f2b39010cd544d98a6781939be881d7c3279604f1d70edf8756dd25": {
+      "normalized_url": "https://www.anthropic.com/news/thoughts-on-america-s-ai-action-plan",
+      "title_fingerprint": "thoughts on america s ai action plan",
+      "service_key": "anthropic-blog",
+      "title": "Thoughts on America’s AI Action Plan",
+      "article_doc_path": "docs/services/anthropic-blog/2026-11-thoughts-on-america-s-ai-action-plan-39f4bfd1.md",
+      "status": "published",
+      "briefed_at": "2026-11-16T01:34:52.259244Z",
+      "candidate_score": 28.0
+    },
+    "b6ae768c43e42f99f53a70695e4b28444541d624b829ac9e686ad328e92fda3d": {
+      "normalized_url": "https://www.anthropic.com/news/us-elections-readiness",
+      "title_fingerprint": "u s elections readiness",
+      "service_key": "anthropic-blog",
+      "title": "U.S. elections readiness",
+      "article_doc_path": "docs/services/anthropic-blog/2026-11-u-s-elections-readiness-b6ae768c.md",
+      "status": "published",
+      "briefed_at": "2026-11-16T01:34:52.259282Z",
+      "candidate_score": 28.0
+    },
+    "91935a49528247b549bb751d00c3727481a827debfa9c0e0e5147b34296a92c4": {
+      "normalized_url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
+      "title_fingerprint": "all ai generated code should be open source",
+      "service_key": "hacker-news",
+      "title": "All AI-generated code should be Open Source",
+      "article_doc_path": "docs/services/hacker-news/2026-11-all-ai-generated-code-should-be-open-source-91935a49.md",
+      "status": "published",
+      "briefed_at": "2026-11-16T01:34:52.259292Z",
+      "candidate_score": 65.0
+    },
+    "88fe434bf7982b6e2b2ccd5907f51bb158091ce40a97f53d4390b5118b0ee116": {
+      "normalized_url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+      "title_fingerprint": "microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+      "service_key": "hacker-news",
+      "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+      "article_doc_path": "docs/services/hacker-news/2026-11-microsoft-365-outage-leads-to-chlorine-gas-poisoning-of-15-hotel-guests-88fe434b.md",
+      "status": "published",
+      "briefed_at": "2026-11-16T01:34:52.259299Z",
+      "candidate_score": 60.0
+    },
+    "d27638383af294362cd649ddb088c833e2034947c7336a9cbb05d960407212eb": {
+      "normalized_url": "https://prog21.dadgum.com/116.html",
+      "title_fingerprint": "things that turbo pascal is smaller than 2011",
+      "service_key": "hacker-news",
+      "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+      "article_doc_path": "docs/services/hacker-news/2026-11-things-that-turbo-pascal-is-smaller-than-2011-d2763838.md",
+      "status": "published",
+      "briefed_at": "2026-11-16T01:34:52.259306Z",
+      "candidate_score": 60.0
+    },
+    "6ba114c21fbdab667de3e547b6e19cb60418bb49dce9859da7bf2613e3803ece": {
+      "normalized_url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15",
+      "title_fingerprint": "jensen huang might return to nvidia as ceo",
+      "service_key": "hacker-news",
+      "title": "Jensen Huang might return to Nvidia as CEO",
+      "article_doc_path": "docs/services/hacker-news/2026-11-jensen-huang-might-return-to-nvidia-as-ceo-6ba114c2.md",
+      "status": "published",
+      "briefed_at": "2026-11-16T01:34:52.259312Z",
+      "candidate_score": 58.4
+    },
+    "2e8f421d2ee2a3dfd36bfcc5be1c93ba1a42b98e60398a99d5e21362ce523fd9": {
+      "normalized_url": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "title_fingerprint": "a step toward defining the standard model on a lattice",
+      "service_key": "openai-blog",
+      "title": "A step toward defining the Standard Model on a lattice",
+      "article_doc_path": "docs/services/openai-blog/2026-11-a-step-toward-defining-the-standard-model-on-a-lattice-2e8f421d.md",
+      "status": "published",
+      "briefed_at": "2026-11-16T01:34:52.259318Z",
+      "candidate_score": 44.0
+    },
+    "33b95c2112c46efd095543028e60f6116680e85e464182b74c65e43667746d78": {
+      "normalized_url": "https://openai.com/index/our-new-blog-for-science",
+      "title_fingerprint": "our new blog for science",
+      "service_key": "openai-blog",
+      "title": "Our new blog for science",
+      "article_doc_path": "docs/services/openai-blog/2026-11-our-new-blog-for-science-33b95c21.md",
+      "status": "published",
+      "briefed_at": "2026-11-16T01:34:52.259324Z",
+      "candidate_score": 38.0
     }
   }
 }

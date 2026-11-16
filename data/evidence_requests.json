@@ -50,8 +50,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-09T01:57:45.507210Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-23T01:32:31.983491Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -164,8 +164,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-09T01:57:45.507210Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-23T01:32:31.983491Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -217,8 +217,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-09T01:57:45.507210Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-23T01:32:31.983491Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -270,8 +270,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-09T01:57:45.507210Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-23T01:32:31.983491Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1434,13 +1434,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-09T01:31:34.299134Z",
-    "last_failure": "thin_content",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-20T01:32:31.983491Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-16T01:32:31.983491Z",
+    "extraction_method": "precision",
+    "token_count": 183
   },
   "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties": {
     "candidate": {
@@ -4464,6 +4464,168 @@
     "attempts": 0,
     "next_attempt_at": "2026-11-16T01:31:54.187359Z",
     "last_failure": "extraction_failed",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15": {
+    "candidate": {
+      "candidate_id": "hacker-news:6ba114c21fbdab66",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Jensen Huang might return to Nvidia as CEO",
+        "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
+        "published_at": "2026-11-15T23:24:53Z",
+        "collected_at": "2026-11-16T01:32:27.928014Z",
+        "summary": "<p>Article URL: <a href=\"https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/\">https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50511982\">https://news.ycombinator.com/item?id=50511982</a></p>\n<p>Points: 124</p>\n<p># Comments: 105</p>",
+        "authors": [
+          "YakubYilmaz"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 4,
+          "hn_points": 124,
+          "hn_comments": 105,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50511982"
+        }
+      },
+      "normalized_url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15",
+      "url_hash": "6ba114c21fbdab667de3e547b6e19cb60418bb49dce9859da7bf2613e3803ece",
+      "title_fingerprint": "jensen huang might return to nvidia as ceo",
+      "feed_summary": "<p>Article URL: <a href=\"https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/\">https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50511982\">https://news.ycombinator.com/item?id=50511982</a></p>\n<p>Points: 124</p>\n<p># Comments: 105</p>",
+      "suggested_doc_key": "2026-11-jensen-huang-might-return-to-nvidia-as-ceo-6ba114c2",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-jensen-huang-might-return-to-nvidia-as-ceo-6ba114c2.md",
+      "candidate_score": 58.4,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 12.4,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 124점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 105개를 토론 신호로 반영했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-17T01:32:31.982081Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/step-toward-defining-the-standard-model": {
+    "candidate": {
+      "candidate_id": "openai-blog:2e8f421d2ee2a3df",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "A step toward defining the Standard Model on a lattice",
+        "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+        "published_at": "2026-11-15T22:00:01Z",
+        "collected_at": "2026-11-16T01:32:28.804266Z",
+        "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+        "authors": [],
+        "tags": [
+          "Science"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "url_hash": "2e8f421d2ee2a3dfd36bfcc5be1c93ba1a42b98e60398a99d5e21362ce523fd9",
+      "title_fingerprint": "a step toward defining the standard model on a lattice",
+      "feed_summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+      "suggested_doc_key": "2026-11-a-step-toward-defining-the-standard-model-on-a-lattice-2e8f421d",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-a-step-toward-defining-the-standard-model-on-a-lattice-2e8f421d.md",
+      "candidate_score": 44.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-17T01:32:31.982081Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/our-new-blog-for-science": {
+    "candidate": {
+      "candidate_id": "openai-blog:33b95c2112c46efd",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Our new blog for science",
+        "url": "https://openai.com/index/our-new-blog-for-science",
+        "published_at": "2026-11-15T22:00:00Z",
+        "collected_at": "2026-11-16T01:32:28.804266Z",
+        "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+        "authors": [],
+        "tags": [
+          "Science"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/index/our-new-blog-for-science",
+      "url_hash": "33b95c2112c46efd095543028e60f6116680e85e464182b74c65e43667746d78",
+      "title_fingerprint": "our new blog for science",
+      "feed_summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+      "suggested_doc_key": "2026-11-our-new-blog-for-science-33b95c21",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-our-new-blog-for-science-33b95c21.md",
+      "candidate_score": 38.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-17T01:32:31.982081Z",
+    "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0
