@@ -1,0 +1,312 @@
+{
+  "generated_at": "2026-11-17T04:17:57.541498+00:00",
+  "generated_for": "2026-11-17",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "3acf18de3f607c8f58070333d39220d672c0b810",
+  "github_run_id": "44016052992",
+  "service_count": 5,
+  "duration_ms": 8,
+  "raw_count": 120,
+  "candidate_count": 20,
+  "excluded_count": 100,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 30,
+      "excluded_count": 90,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 90
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 30,
+      "output_count": 30,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 30,
+      "output_count": 30,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 30,
+      "output_count": 20,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:11608d311d004779",
+          "title": "New Ask Maps features to help with holiday travel and prep",
+          "normalized_url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026",
+          "url_hash": "11608d311d0047796796c8a9dbfb8536ab8ca24d06e0399d24ff383d018c7550",
+          "suggested_doc_key": "2026-11-new-ask-maps-features-to-help-with-holiday-travel-and-prep-11608d31",
+          "suggested_article_path": "docs/services/google-blog/2026-11-new-ask-maps-features-to-help-with-holiday-travel-and-prep-11608d31.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:d586dccccf61f041",
+          "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+          "normalized_url": "https://xusheng.dev/posts/windows-coding-agent-telemetry",
+          "url_hash": "d586dccccf61f0412017c4f74a54d8687b67c037cc7a2ae00dffc718d2fa0866",
+          "suggested_doc_key": "2026-11-windows-11-is-collecting-data-on-which-coding-agents-and-developer-tools-d586dccc",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-windows-11-is-collecting-data-on-which-coding-agents-and-developer-tools-d586dccc.md",
+          "candidate_score": 67.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 333점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 205개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4353c1c4ce1b00e7",
+          "title": "United Airlines experiencing a widespread system outage, airline says",
+          "normalized_url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
+          "url_hash": "4353c1c4ce1b00e72f42acec9652a41b76210bbdce3c2fe750a8b2b63d0b5370",
+          "suggested_doc_key": "2026-11-united-airlines-experiencing-a-widespread-system-outage-airline-says-4353c1c4",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-united-airlines-experiencing-a-widespread-system-outage-airline-says-4353c1c4.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 204점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 106개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:be34d4a6cb91c077",
+          "title": "BugMeNot has closed",
+          "normalized_url": "https://www.bugmenot.com/",
+          "url_hash": "be34d4a6cb91c0775f2e9b4d333e80fdb3f69bbe9aef1aa7434934bb84abe2d1",
+          "suggested_doc_key": "2026-11-bugmenot-has-closed-be34d4a6",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-bugmenot-has-closed-be34d4a6.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 385점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 193개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:fbde503c013c7a7e",
+          "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+          "normalized_url": "https://www.cs.cmu.edu/learn",
+          "url_hash": "fbde503c013c7a7e575101239a4d2c4d4084170ff8bb5c5be71742a290353851",
+          "suggested_doc_key": "2026-11-carnegie-mellon-is-putting-computer-science-courses-on-youtube-for-free-fbde503c",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-carnegie-mellon-is-putting-computer-science-courses-on-youtube-for-free-fbde503c.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 917점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 145개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5a247eaacfa6070a",
+          "title": "Rust changed me as a developer",
+          "normalized_url": "https://blog.startifact.com/posts/how-rust-changed-me",
+          "url_hash": "5a247eaacfa6070a87278da043bf5ee6a10cb889bcd842b2abc1a2a02bd1213a",
+          "suggested_doc_key": "2026-11-rust-changed-me-as-a-developer-5a247eaa",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-rust-changed-me-as-a-developer-5a247eaa.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 210점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 134개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 9,
+      "excluded_count": 41,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:2d7a5d6b20fff3cd",
+          "title": "Broadening access to AI for scientists",
+          "normalized_url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+          "url_hash": "2d7a5d6b20fff3cd431e56c6c45800450e6e12e3351b563ba22db14d6cc86266",
+          "suggested_doc_key": "2026-11-broadening-access-to-ai-for-scientists-2d7a5d6b",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-broadening-access-to-ai-for-scientists-2d7a5d6b.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:9fe6d2ae73e55f52",
+          "title": "Our first phase of embedded assessments",
+          "normalized_url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+          "url_hash": "9fe6d2ae73e55f52b8078f1806f466588569fb6faa3605540c1891f86e100648",
+          "suggested_doc_key": "2026-11-our-first-phase-of-embedded-assessments-9fe6d2ae",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-our-first-phase-of-embedded-assessments-9fe6d2ae.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:21b4758ab52123ac",
+          "title": "Advancing computer-use agents for healthcare teams",
+          "normalized_url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+          "url_hash": "21b4758ab52123ac78ffa3dbca8705003ed9e3a44cc34d1840f5a51cf6e091d0",
+          "suggested_doc_key": "2026-11-advancing-computer-use-agents-for-healthcare-teams-21b4758a",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-advancing-computer-use-agents-for-healthcare-teams-21b4758a.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:21e886491b30cfff",
+          "title": "More ways to move care forward with ChatGPT for Healthcare",
+          "normalized_url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+          "url_hash": "21e886491b30cfff0403f0b9b226dc169269e7194d3a973fb9f92f6fcc6f75b9",
+          "suggested_doc_key": "2026-11-more-ways-to-move-care-forward-with-chatgpt-for-healthcare-21e88649",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-more-ways-to-move-care-forward-with-chatgpt-for-healthcare-21e88649.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:d91fd06de7b8771e",
+          "title": "Science at the Frontier: How scientists use ChatGPT",
+          "normalized_url": "https://openai.com/index/science-at-the-frontier",
+          "url_hash": "d91fd06de7b8771ee8ad78bbe6c6a0f8795962915436321f9652c6b42b553b9c",
+          "suggested_doc_key": "2026-11-science-at-the-frontier-how-scientists-use-chatgpt-d91fd06d",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-science-at-the-frontier-how-scientists-use-chatgpt-d91fd06d.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 41
+      }
+    }
+  ]
+}
