@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-16",
+  "generated_for": "2026-11-17",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -971,6 +971,19 @@
       "new": false
     },
     {
+      "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-windows-11-is-collecting-data-on-which-coding-agents-and-developer-tools-d586dccc.md",
+      "status": "published",
+      "score": 67.0,
+      "briefed_at": null,
+      "published_at": "2026-11-16",
+      "excerpt": "작성자의 역공학·실행 테스트에서 Windows 11의 MissionControlAggregator.dll이 codex.exe·copilot.exe 등 코딩 에이전트와 python·gcc 같은 개발 도구 사용을 감지해 비트맵 형태로 로컬에 저장하고, **선택적 진단 데이터(AllowTelemetry=3)**가 허용된 경우…",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "The classifiers Anthropic puts in front of Fable are too zealous",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -1396,6 +1409,19 @@
       "briefed_at": "2026-06-29",
       "published_at": "2026-06-29",
       "excerpt": "인터넷이 강력한 소통 도구임에도 불구하고 그 기반 인프라가 사용자 데이터 수집과 주의력 착취로 활용돼 왔다는 문제의식에서 출발한다는 점을 Human-Centered Computing Foundation(HCCF)이 제기한다. HCCF는 웹을 위한 대안적 아키텍처를 만들겠다는 비전을 제시하며, 인간 중심적 기술 원칙을 전…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "All AI-generated code should be Open Source",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-all-ai-generated-code-should-be-open-source-91935a49.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-16",
+      "published_at": "2026-11-15",
+      "excerpt": "작성자는 AI가 생성한 모든 코드는 오픈소스여야 한다고 주장한다. 근거로는 AI가 GNU 프로젝트 이후 공개된 오픈소스 코드와 Stack Overflow 등 CC 라이선스 자료로 학습되었고, 비인간 저작물에 대한 저작권 불인정 판례를 들어 CC0 또는 명시적 오픈소스 공개를 권고한다.",
       "featured": false,
       "new": false
     },
@@ -2724,19 +2750,6 @@
       "excerpt": "피드 기준으로는 원문 전문이 제공되지 않습니다. 제목 'There is a shadow hanging over this Fable thing'은 Fable 관련 사안에 문제 제기나 우려가 있다는 인상을 줍니다. 이 글은 Hacker News에서 높은 관심을 받았습니다(포인트 216, 댓글 190). 자세한 주장과 근거는…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "All AI-generated code should be Open Source",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-all-ai-generated-code-should-be-open-source-91935a49.md",
-      "status": "published",
-      "score": 65.0,
-      "briefed_at": null,
-      "published_at": "2026-11-15",
-      "excerpt": "작성자는 AI가 생성한 모든 코드는 오픈소스여야 한다고 주장한다. 근거로는 AI가 GNU 프로젝트 이후 공개된 오픈소스 코드와 Stack Overflow 등 CC 라이선스 자료로 학습되었고, 비인간 저작물에 대한 저작권 불인정 판례를 들어 CC0 또는 명시적 오픈소스 공개를 권고한다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
@@ -4516,6 +4529,32 @@
       "briefed_at": "2026-10-13",
       "published_at": "2026-10-12",
       "excerpt": "Agent37은 AI 에이전트를 위한 '저비용 샌드박스'를 표방하며 호스트당 평균 비용을 업계의 10% 이하로 낮췄다고 소개한다. 창업자 비슈누는 고객당 평균 지출을 월 $0.37로 제시하고, 무료 플랜의 인프라 비용은 사용자당 월 $0.05~$0.10 수준이라고 밝힌다. 초기에는 OpenClaw 래퍼로 시작했으나 다양…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-things-that-turbo-pascal-is-smaller-than-2011-d2763838.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-16",
+      "published_at": "2026-11-15",
+      "excerpt": "Turbo Pascal 3.02의 전체 실행 파일 크기는 **39,731바이트**로, 2011년 10월 30일 기준으로 minified jQuery(90,518바이트), apple iPhone 4S 이미지(190,157바이트) 등 당시 여러 웹·바이너리 자원보다 작았습니다. 이 글은 1986년 출시된 통합 컴파일러·ID…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-microsoft-365-outage-leads-to-chlorine-gas-poisoning-of-15-hotel-guests-88fe434b.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-16",
+      "published_at": "2026-11-15",
+      "excerpt": "Microsoft 이메일 장애로 호텔의 자동 안전경보 메일이 도달하지 않아 자동 염소투약장치의 과다주입 경보가 미처 전달되지 않았고, 이로 인해 15명이 호흡기 자극 등 피해를 입었다.",
       "featured": false,
       "new": false
     },
@@ -7432,28 +7471,41 @@
       "new": false
     },
     {
-      "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+      "title": "United Airlines experiencing a widespread system outage, airline says",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-microsoft-365-outage-leads-to-chlorine-gas-poisoning-of-15-hotel-guests-88fe434b.md",
+      "href": "./services/hacker-news/2026-11-united-airlines-experiencing-a-widespread-system-outage-airline-says-4353c1c4.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-15",
-      "excerpt": "Microsoft 이메일 장애로 호텔의 자동 안전경보 메일이 도달하지 않아 자동 염소투약장치의 과다주입 경보가 미처 전달되지 않았고, 이로 인해 15명이 호흡기 자극 등 피해를 입었다.",
+      "published_at": "2026-11-16",
+      "excerpt": "United Airlines가 11월 16일 약 30분간 내부 기술 장애로 출발편 일부가 지연됐다. 150편 미만 영향으로 항공기 운항 중단은 없었고, 항공사는 사이버 공격 정황은 없다고 밝혔다.",
       "featured": false,
       "new": true
     },
     {
-      "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+      "title": "BugMeNot has closed",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-things-that-turbo-pascal-is-smaller-than-2011-d2763838.md",
+      "href": "./services/hacker-news/2026-11-bugmenot-has-closed-be34d4a6.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-15",
-      "excerpt": "Turbo Pascal 3.02의 전체 실행 파일 크기는 **39,731바이트**로, 2011년 10월 30일 기준으로 minified jQuery(90,518바이트), apple iPhone 4S 이미지(190,157바이트) 등 당시 여러 웹·바이너리 자원보다 작았습니다. 이 글은 1986년 출시된 통합 컴파일러·ID…",
+      "published_at": "2026-11-16",
+      "excerpt": "공개 페이지에 'BugMeNot has closed.' 문구와 감사 메시지가 게시되어 BugMeNot 서비스가 종료되었음이 확인된다(게시일: 2026-11-16T21:32:17+00:00). 페이지에는 의미 불명의 대문자 블록도 포함되어 있다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-carnegie-mellon-is-putting-computer-science-courses-on-youtube-for-free-fbde503c.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-11-16",
+      "excerpt": "피드 기준으로는 Carnegie Mellon이 컴퓨터 과학 강의를 유튜브에 무료 공개한다고 표기돼 있다. 원문은 cs.cmu.edu의 'Learn' 페이지이며 Hacker News에서 917점·댓글 145개로 높은 관심을 받았다.",
       "featured": false,
       "new": true
     },
@@ -7646,11 +7698,11 @@
       "href": "./services/hacker-news/2026-11-jensen-huang-might-return-to-nvidia-as-ceo-6ba114c2.md",
       "status": "published",
       "score": 58.4,
-      "briefed_at": null,
+      "briefed_at": "2026-11-16",
       "published_at": "2026-11-15",
       "excerpt": "피드 기준으로는 로이터가 FT 보도를 인용해 젠슨 황이 엔비디아 CEO 복귀를 논의했다는 기사를 전했습니다(2026-11-15). 해커뉴스에서 해당 기사에 124포인트, 댓글 105개가 기록되어 관심이 높았습니다.",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "FM-1 Workbench",
@@ -9135,6 +9187,19 @@
       "new": false
     },
     {
+      "title": "A step toward defining the Standard Model on a lattice",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-a-step-toward-defining-the-standard-model-on-a-lattice-2e8f421d.md",
+      "status": "published",
+      "score": 44.0,
+      "briefed_at": "2026-11-16",
+      "published_at": "2026-11-15",
+      "excerpt": "피드 기준으로는 OpenAI 블로그(2026-11-15)가 표준 모형에 대한 후보 비섭동 격자 정의와 이를 상세 증명으로 다듬는 데 **GPT-6 Astra**가 도움을 줬다고 알렸습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Introducing ChatGPT Wallet",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -9564,15 +9629,15 @@
       "new": false
     },
     {
-      "title": "A step toward defining the Standard Model on a lattice",
+      "title": "Broadening access to AI for scientists",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-a-step-toward-defining-the-standard-model-on-a-lattice-2e8f421d.md",
+      "href": "./services/openai-blog/2026-11-broadening-access-to-ai-for-scientists-2d7a5d6b.md",
       "status": "published",
       "score": 44.0,
       "briefed_at": null,
-      "published_at": "2026-11-15",
-      "excerpt": "피드 기준으로는 OpenAI 블로그(2026-11-15)가 표준 모형에 대한 후보 비섭동 격자 정의와 이를 상세 증명으로 다듬는 데 **GPT-6 Astra**가 도움을 줬다고 알렸습니다.",
+      "published_at": "2026-11-16",
+      "excerpt": "OpenAI는 2026-11-16 블로그 발표에서 ChatGPT for Academic Researchers 프로그램을 확대해 전 세계 20만명 연구자에게 프런티어 모델 무료 접근을 제공한다고 밝혔다. 제공된 메타데이터만으로는 조건·신청방법 등 상세 내용은 확인되지 않는다.",
       "featured": false,
       "new": true
     },
@@ -11176,6 +11241,19 @@
       "new": false
     },
     {
+      "title": "Our first phase of embedded assessments",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-our-first-phase-of-embedded-assessments-9fe6d2ae.md",
+      "status": "published",
+      "score": 40.0,
+      "briefed_at": null,
+      "published_at": "2026-11-16",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-16자 블로그에서 Apollo Research, METR, Transluce, Goodfire와 함께 **임베디드 평가(embedded assessments)**를 시작해 모델 정렬, 안전장치, 모니터링 시스템을 독립적으로 평가한다고 밝혔습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Cogent and OpenAI build cyber defense factories for enterprises",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -12021,6 +12099,19 @@
       "new": false
     },
     {
+      "title": "Our new blog for science",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-our-new-blog-for-science-33b95c21.md",
+      "status": "published",
+      "score": 38.0,
+      "briefed_at": "2026-11-16",
+      "published_at": "2026-11-15",
+      "excerpt": "OpenAI가 2026-11-15에 과학 전용 블로그 'Our new blog for science'를 개설했다는 메타데이터가 확인됐다. 블로그는 연구자들의 경험과 실무 방법, 새 발견을 AI 관점에서 공유한다고 소개한다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Gondola doubles revenue as its team builds more with Codex",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -12476,15 +12567,15 @@
       "new": false
     },
     {
-      "title": "Our new blog for science",
+      "title": "More ways to move care forward with ChatGPT for Healthcare",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-our-new-blog-for-science-33b95c21.md",
+      "href": "./services/openai-blog/2026-11-more-ways-to-move-care-forward-with-chatgpt-for-healthcare-21e88649.md",
       "status": "published",
       "score": 38.0,
       "briefed_at": null,
-      "published_at": "2026-11-15",
-      "excerpt": "OpenAI가 2026-11-15에 과학 전용 블로그 'Our new blog for science'를 개설했다는 메타데이터가 확인됐다. 블로그는 연구자들의 경험과 실무 방법, 새 발견을 AI 관점에서 공유한다고 소개한다.",
+      "published_at": "2026-11-16",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-16자 블로그에서 ChatGPT for Healthcare에 컴퓨터 사용 에이전트, 임상 답변 개선, 그리고 헬스케어 소프트웨어 전반에서 실제 작업을 수행하는 새 플러그인을 도입했다고 밝힌 것으로 요약됩니다.",
       "featured": false,
       "new": true
     },
@@ -14229,6 +14320,19 @@
       "excerpt": "피드 기준으로는 GitHub가 CC0-1.0 라이선스 아래 새로운 저장소 수준(repository-level) 데이터셋을 공개했습니다. 데이터셋은 README, 이슈, 풀 리퀘스트 등 개발자 생성 멀티링구얼 콘텐츠를 발견하도록 설계되었다고 나옵니다. 제공된 정보만 보면 이 데이터셋은 멀티언어 AI를 연구·개발하는 연구자…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "New Ask Maps features to help with holiday travel and prep",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-new-ask-maps-features-to-help-with-holiday-travel-and-prep-11608d31.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": null,
+      "published_at": "2026-11-16",
+      "excerpt": "Google은 Ask Maps에 **여행 일정 자동 생성·실시간 경로 정보·예약 탐색 및 통화(에이전트형)**, 저장 리스트의 실시간 가용성 검색 기능을 추가했다. 기능은 오늘부터 Android·iOS에 배포되며 Ask Maps는 **유럽 30개국 확대, 200개 이상 국가·지역**으로 제공됩니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Introducing Claude 3.5 Sonnet",
@@ -16857,6 +16961,32 @@
       "new": false
     },
     {
+      "title": "U.S. elections readiness",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-u-s-elections-readiness-b6ae768c.md",
+      "status": "published",
+      "score": 28.0,
+      "briefed_at": "2026-11-16",
+      "published_at": "2026-11-13",
+      "excerpt": "Anthropic은 2024년 미(美) 선거에 맞춰 5월 사용정책을 개정해 캠페인·오해 유발을 금지하고 이미지·오디오·비디오 생성을 차단했으며, TurboVote 리디렉션·정책 취약성 테스트·자동평가·AWS·GCP 연계 모니터링 등 기술적·조직적 대응을 도입했다고 밝혔다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Thoughts on America’s AI Action Plan",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-thoughts-on-america-s-ai-action-plan-39f4bfd1.md",
+      "status": "published",
+      "score": 28.0,
+      "briefed_at": "2026-11-16",
+      "published_at": "2026-11-13",
+      "excerpt": "Anthropic은 백악관의 AI Action Plan의 인프라·연방 도입 권고를 환영하면서도 엔비디아 H20 칩의 중국 수출 통제 유지와 모델 개발 투명성 기준 도입을 강하게 요구했다. 또한 NAIRR·CAISI와 안전 연구 투자 확대를 지지했다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Franklin Templeton uses OpenAI to support investment research",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -17063,32 +17193,6 @@
       "excerpt": "Anthropic가 DXC Technology와 다년(글로벌) 얼라이언스를 발표했습니다. 피드 기준으로는 DXC가 은행·항공사 등 규제를 받는 산업에서 쓰이는 시스템에 Claude를 통합한다고만 나옵니다. 제공된 정보만 보면 통합 방식이나 일정, 보안·규제 대응 세부 내용은 언급되어 있지 않습니다. 자세한 기술적·계약적…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Thoughts on America’s AI Action Plan",
-      "service_key": "anthropic-blog",
-      "service_name": "Anthropic Blog",
-      "href": "./services/anthropic-blog/2026-11-thoughts-on-america-s-ai-action-plan-39f4bfd1.md",
-      "status": "published",
-      "score": 28.0,
-      "briefed_at": null,
-      "published_at": "2026-11-13",
-      "excerpt": "Anthropic은 백악관의 AI Action Plan의 인프라·연방 도입 권고를 환영하면서도 엔비디아 H20 칩의 중국 수출 통제 유지와 모델 개발 투명성 기준 도입을 강하게 요구했다. 또한 NAIRR·CAISI와 안전 연구 투자 확대를 지지했다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "U.S. elections readiness",
-      "service_key": "anthropic-blog",
-      "service_name": "Anthropic Blog",
-      "href": "./services/anthropic-blog/2026-11-u-s-elections-readiness-b6ae768c.md",
-      "status": "published",
-      "score": 28.0,
-      "briefed_at": null,
-      "published_at": "2026-11-13",
-      "excerpt": "Anthropic은 2024년 미(美) 선거에 맞춰 5월 사용정책을 개정해 캠페인·오해 유발을 금지하고 이미지·오디오·비디오 생성을 차단했으며, TurboVote 리디렉션·정책 취약성 테스트·자동평가·AWS·GCP 연계 모니터링 등 기술적·조직적 대응을 도입했다고 밝혔다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "See our intelligent eyewear lineup and pre-order your pair",

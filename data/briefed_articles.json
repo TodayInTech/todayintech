@@ -13850,6 +13850,86 @@
       "status": "published",
       "briefed_at": "2026-11-16T01:34:52.259324Z",
       "candidate_score": 38.0
+    },
+    "11608d311d0047796796c8a9dbfb8536ab8ca24d06e0399d24ff383d018c7550": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026",
+      "title_fingerprint": "new ask maps features to help with holiday travel and prep",
+      "service_key": "google-blog",
+      "title": "New Ask Maps features to help with holiday travel and prep",
+      "article_doc_path": "docs/services/google-blog/2026-11-new-ask-maps-features-to-help-with-holiday-travel-and-prep-11608d31.md",
+      "status": "published",
+      "briefed_at": "2026-11-17T04:21:29.076436Z",
+      "candidate_score": 36.0
+    },
+    "d586dccccf61f0412017c4f74a54d8687b67c037cc7a2ae00dffc718d2fa0866": {
+      "normalized_url": "https://xusheng.dev/posts/windows-coding-agent-telemetry",
+      "title_fingerprint": "windows 11 is collecting data on which coding agents and developer tools you use",
+      "service_key": "hacker-news",
+      "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+      "article_doc_path": "docs/services/hacker-news/2026-11-windows-11-is-collecting-data-on-which-coding-agents-and-developer-tools-d586dccc.md",
+      "status": "published",
+      "briefed_at": "2026-11-17T04:21:29.076476Z",
+      "candidate_score": 67.0
+    },
+    "4353c1c4ce1b00e72f42acec9652a41b76210bbdce3c2fe750a8b2b63d0b5370": {
+      "normalized_url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
+      "title_fingerprint": "united airlines experiencing a widespread system outage airline says",
+      "service_key": "hacker-news",
+      "title": "United Airlines experiencing a widespread system outage, airline says",
+      "article_doc_path": "docs/services/hacker-news/2026-11-united-airlines-experiencing-a-widespread-system-outage-airline-says-4353c1c4.md",
+      "status": "published",
+      "briefed_at": "2026-11-17T04:21:29.076485Z",
+      "candidate_score": 60.0
+    },
+    "be34d4a6cb91c0775f2e9b4d333e80fdb3f69bbe9aef1aa7434934bb84abe2d1": {
+      "normalized_url": "https://www.bugmenot.com/",
+      "title_fingerprint": "bugmenot has closed",
+      "service_key": "hacker-news",
+      "title": "BugMeNot has closed",
+      "article_doc_path": "docs/services/hacker-news/2026-11-bugmenot-has-closed-be34d4a6.md",
+      "status": "published",
+      "briefed_at": "2026-11-17T04:21:29.076491Z",
+      "candidate_score": 60.0
+    },
+    "fbde503c013c7a7e575101239a4d2c4d4084170ff8bb5c5be71742a290353851": {
+      "normalized_url": "https://www.cs.cmu.edu/learn",
+      "title_fingerprint": "carnegie mellon is putting computer science courses on youtube for free",
+      "service_key": "hacker-news",
+      "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+      "article_doc_path": "docs/services/hacker-news/2026-11-carnegie-mellon-is-putting-computer-science-courses-on-youtube-for-free-fbde503c.md",
+      "status": "published",
+      "briefed_at": "2026-11-17T04:21:29.076495Z",
+      "candidate_score": 60.0
+    },
+    "2d7a5d6b20fff3cd431e56c6c45800450e6e12e3351b563ba22db14d6cc86266": {
+      "normalized_url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+      "title_fingerprint": "broadening access to ai for scientists",
+      "service_key": "openai-blog",
+      "title": "Broadening access to AI for scientists",
+      "article_doc_path": "docs/services/openai-blog/2026-11-broadening-access-to-ai-for-scientists-2d7a5d6b.md",
+      "status": "published",
+      "briefed_at": "2026-11-17T04:21:29.076500Z",
+      "candidate_score": 44.0
+    },
+    "9fe6d2ae73e55f52b8078f1806f466588569fb6faa3605540c1891f86e100648": {
+      "normalized_url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+      "title_fingerprint": "our first phase of embedded assessments",
+      "service_key": "openai-blog",
+      "title": "Our first phase of embedded assessments",
+      "article_doc_path": "docs/services/openai-blog/2026-11-our-first-phase-of-embedded-assessments-9fe6d2ae.md",
+      "status": "published",
+      "briefed_at": "2026-11-17T04:21:29.076504Z",
+      "candidate_score": 40.0
+    },
+    "21e886491b30cfff0403f0b9b226dc169269e7194d3a973fb9f92f6fcc6f75b9": {
+      "normalized_url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+      "title_fingerprint": "more ways to move care forward with chatgpt for healthcare",
+      "service_key": "openai-blog",
+      "title": "More ways to move care forward with ChatGPT for Healthcare",
+      "article_doc_path": "docs/services/openai-blog/2026-11-more-ways-to-move-care-forward-with-chatgpt-for-healthcare-21e88649.md",
+      "status": "published",
+      "briefed_at": "2026-11-17T04:21:29.076508Z",
+      "candidate_score": 38.0
     }
   }
 }

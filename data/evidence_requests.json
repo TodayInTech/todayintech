@@ -323,8 +323,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-09T01:57:45.507210Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-24T04:18:11.826716Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1488,8 +1488,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-10T01:01:06.136505Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-21T04:18:11.826716Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1541,8 +1541,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-10T01:01:06.136505Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-21T04:18:11.826716Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1594,8 +1594,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-10T01:01:06.136505Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-21T04:18:11.826716Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1646,8 +1646,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-10T01:01:06.136505Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-21T04:18:11.826716Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -4625,6 +4625,275 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-17T01:32:31.982081Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://www.cs.cmu.edu/learn": {
+    "candidate": {
+      "candidate_id": "hacker-news:fbde503c013c7a7e",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+        "url": "https://www.cs.cmu.edu/learn/",
+        "published_at": "2026-11-16T20:43:36Z",
+        "collected_at": "2026-11-17T04:18:07.057869Z",
+        "summary": "<p>Article URL: <a href=\"https://www.cs.cmu.edu/learn/\">https://www.cs.cmu.edu/learn/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50522980\">https://news.ycombinator.com/item?id=50522980</a></p>\n<p>Points: 917</p>\n<p># Comments: 145</p>",
+        "authors": [
+          "pcompeau"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 14,
+          "hn_points": 917,
+          "hn_comments": 145,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50522980"
+        }
+      },
+      "normalized_url": "https://www.cs.cmu.edu/learn",
+      "url_hash": "fbde503c013c7a7e575101239a4d2c4d4084170ff8bb5c5be71742a290353851",
+      "title_fingerprint": "carnegie mellon is putting computer science courses on youtube for free",
+      "feed_summary": "<p>Article URL: <a href=\"https://www.cs.cmu.edu/learn/\">https://www.cs.cmu.edu/learn/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50522980\">https://news.ycombinator.com/item?id=50522980</a></p>\n<p>Points: 917</p>\n<p># Comments: 145</p>",
+      "suggested_doc_key": "2026-11-carnegie-mellon-is-putting-computer-science-courses-on-youtube-for-free-fbde503c",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-carnegie-mellon-is-putting-computer-science-courses-on-youtube-for-free-fbde503c.md",
+      "candidate_score": 60.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 917점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 145개를 토론 신호로 반영했습니다.",
+        "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-18T04:18:11.825479Z",
+    "last_failure": "title_mismatch",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/expanding-chatgpt-for-academic-researchers": {
+    "candidate": {
+      "candidate_id": "openai-blog:2d7a5d6b20fff3cd",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Broadening access to AI for scientists",
+        "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+        "published_at": "2026-11-16T17:00:00Z",
+        "collected_at": "2026-11-17T04:18:08.001093Z",
+        "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+        "authors": [],
+        "tags": [
+          "Research"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+      "url_hash": "2d7a5d6b20fff3cd431e56c6c45800450e6e12e3351b563ba22db14d6cc86266",
+      "title_fingerprint": "broadening access to ai for scientists",
+      "feed_summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+      "suggested_doc_key": "2026-11-broadening-access-to-ai-for-scientists-2d7a5d6b",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-broadening-access-to-ai-for-scientists-2d7a5d6b.md",
+      "candidate_score": 44.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-18T04:18:11.825479Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/our-first-phase-of-embedded-assessments": {
+    "candidate": {
+      "candidate_id": "openai-blog:9fe6d2ae73e55f52",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Our first phase of embedded assessments",
+        "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+        "published_at": "2026-11-16T08:00:00Z",
+        "collected_at": "2026-11-17T04:18:08.001093Z",
+        "summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
+        "authors": [],
+        "tags": [
+          "Safety"
+        ],
+        "metadata": {
+          "rss_rank": 5
+        }
+      },
+      "normalized_url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+      "url_hash": "9fe6d2ae73e55f52b8078f1806f466588569fb6faa3605540c1891f86e100648",
+      "title_fingerprint": "our first phase of embedded assessments",
+      "feed_summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
+      "suggested_doc_key": "2026-11-our-first-phase-of-embedded-assessments-9fe6d2ae",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-our-first-phase-of-embedded-assessments-9fe6d2ae.md",
+      "candidate_score": 40.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 5.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-18T04:18:11.825479Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/advancing-computer-use-for-healthcare-teams": {
+    "candidate": {
+      "candidate_id": "openai-blog:21b4758ab52123ac",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Advancing computer-use agents for healthcare teams",
+        "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+        "published_at": "2026-11-16T06:00:00Z",
+        "collected_at": "2026-11-17T04:18:08.001093Z",
+        "summary": null,
+        "authors": [],
+        "tags": [
+          "Product"
+        ],
+        "metadata": {
+          "rss_rank": 6
+        }
+      },
+      "normalized_url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "url_hash": "21b4758ab52123ac78ffa3dbca8705003ed9e3a44cc34d1840f5a51cf6e091d0",
+      "title_fingerprint": "advancing computer use agents for healthcare teams",
+      "feed_summary": "",
+      "suggested_doc_key": "2026-11-advancing-computer-use-agents-for-healthcare-teams-21b4758a",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-advancing-computer-use-agents-for-healthcare-teams-21b4758a.md",
+      "candidate_score": 39.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 4.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-18T04:18:11.825479Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare": {
+    "candidate": {
+      "candidate_id": "openai-blog:21e886491b30cfff",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "More ways to move care forward with ChatGPT for Healthcare",
+        "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+        "published_at": "2026-11-16T06:00:00Z",
+        "collected_at": "2026-11-17T04:18:08.001093Z",
+        "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
+        "authors": [],
+        "tags": [
+          "Product"
+        ],
+        "metadata": {
+          "rss_rank": 7
+        }
+      },
+      "normalized_url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+      "url_hash": "21e886491b30cfff0403f0b9b226dc169269e7194d3a973fb9f92f6fcc6f75b9",
+      "title_fingerprint": "more ways to move care forward with chatgpt for healthcare",
+      "feed_summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
+      "suggested_doc_key": "2026-11-more-ways-to-move-care-forward-with-chatgpt-for-healthcare-21e88649",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-more-ways-to-move-care-forward-with-chatgpt-for-healthcare-21e88649.md",
+      "candidate_score": 38.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 3.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-18T04:18:11.825479Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
