@@ -375,8 +375,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-10T01:59:04.988662Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-25T03:16:58.694969Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -533,8 +533,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-10T01:59:04.988662Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-25T03:16:58.694969Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -584,8 +584,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-10T01:59:04.988662Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-25T03:16:58.694969Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -3025,8 +3025,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-10T01:22:28.661665Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-20T03:16:58.694969Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -3077,8 +3077,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-10T01:22:28.661665Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-20T03:16:58.694969Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -4894,6 +4894,215 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-18T04:18:11.825479Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/introducing-gpt-6-2-astra-sol": {
+    "candidate": {
+      "candidate_id": "openai-blog:8f6af8c44a4a1bfb",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Introducing GPT-6.2 Astra and Sol",
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+        "published_at": "2026-11-17T17:45:00Z",
+        "collected_at": "2026-11-18T03:16:54.775455Z",
+        "summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+        "authors": [],
+        "tags": [
+          "Product"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "url_hash": "8f6af8c44a4a1bfb5de31585ff7d049da9f0b0c7303ae5eb79fd652e216c50e9",
+      "title_fingerprint": "introducing gpt 6 2 astra and sol",
+      "feed_summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "suggested_doc_key": "2026-11-introducing-gpt-6-2-astra-and-sol-8f6af8c4",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-introducing-gpt-6-2-astra-and-sol-8f6af8c4.md",
+      "candidate_score": 44.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-19T03:16:58.693795Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/astra-law-6-2": {
+    "candidate": {
+      "candidate_id": "openai-blog:b43ef08ac3ed4f7a",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Astra for Law leads in legal intelligence",
+        "url": "https://openai.com/index/astra-law-6-2",
+        "published_at": "2026-11-17T00:00:00Z",
+        "collected_at": "2026-11-18T03:16:54.775455Z",
+        "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+        "authors": [],
+        "tags": [
+          "Company"
+        ],
+        "metadata": {
+          "rss_rank": 4
+        }
+      },
+      "normalized_url": "https://openai.com/index/astra-law-6-2",
+      "url_hash": "b43ef08ac3ed4f7af6f4fa4f8f60d0d2c49772fc6e540a21a0c9e441265578ef",
+      "title_fingerprint": "astra for law leads in legal intelligence",
+      "feed_summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+      "suggested_doc_key": "2026-11-astra-for-law-leads-in-legal-intelligence-b43ef08a",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-astra-for-law-leads-in-legal-intelligence-b43ef08a.md",
+      "candidate_score": 40.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-19T03:16:58.693795Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/business/customer-stories/revolut": {
+    "candidate": {
+      "candidate_id": "openai-blog:b82b64ef90f76e66",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "How Revolut raises ambition without lowering the bar",
+        "url": "https://openai.com/business/customer-stories/revolut",
+        "published_at": "2026-11-16T09:30:00Z",
+        "collected_at": "2026-11-18T03:16:54.775455Z",
+        "summary": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 9
+        }
+      },
+      "normalized_url": "https://openai.com/business/customer-stories/revolut",
+      "url_hash": "b82b64ef90f76e66fb0003e74649f67052cf66f11ce4f6f63d50fd3308925680",
+      "title_fingerprint": "how revolut raises ambition without lowering the bar",
+      "feed_summary": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
+      "suggested_doc_key": "2026-11-how-revolut-raises-ambition-without-lowering-the-bar-b82b64ef",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-how-revolut-raises-ambition-without-lowering-the-bar-b82b64ef.md",
+      "candidate_score": 40.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 1.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-19T03:16:58.693795Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/introducing-chatgpt-for-sales": {
+    "candidate": {
+      "candidate_id": "openai-blog:3047d7657748ea76",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Introducing ChatGPT for Sales",
+        "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+        "published_at": "2026-11-17T08:00:00Z",
+        "collected_at": "2026-11-18T03:16:54.775455Z",
+        "summary": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
+        "authors": [],
+        "tags": [
+          "Product"
+        ],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/index/introducing-chatgpt-for-sales",
+      "url_hash": "3047d7657748ea760feb4367a861eff886526fc9a8d7d29ee939532b2c42b6aa",
+      "title_fingerprint": "introducing chatgpt for sales",
+      "feed_summary": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
+      "suggested_doc_key": "2026-11-introducing-chatgpt-for-sales-3047d765",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-introducing-chatgpt-for-sales-3047d765.md",
+      "candidate_score": 37.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-19T03:16:58.693795Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,

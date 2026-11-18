@@ -13930,6 +13930,136 @@
       "status": "published",
       "briefed_at": "2026-11-17T04:21:29.076508Z",
       "candidate_score": 38.0
+    },
+    "c68cb5d11f8dc6196bba3d17b1a4107ee85170a7e80f5b0851d445299976f6cd": {
+      "normalized_url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes",
+      "title_fingerprint": "maintainers don t need more ai bug reports they need fixes",
+      "service_key": "github-blog",
+      "title": "Maintainers don’t need more AI bug reports. They need fixes.",
+      "article_doc_path": "docs/services/github-blog/2026-11-maintainers-don-t-need-more-ai-bug-reports-they-need-fixes-c68cb5d1.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176192Z",
+      "candidate_score": 42.0
+    },
+    "57b03ec42d31d8f48698335236ce045d151df2bc581234c7869dddf5d41480cf": {
+      "normalized_url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices",
+      "title_fingerprint": "building the agent host protocol for sessions that continue across devices",
+      "service_key": "github-blog",
+      "title": "Building the Agent Host Protocol for sessions that continue across devices",
+      "article_doc_path": "docs/services/github-blog/2026-11-building-the-agent-host-protocol-for-sessions-that-continue-across-devic-57b03ec4.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176223Z",
+      "candidate_score": 41.0
+    },
+    "ac3cfd0cc9d0d9918b01f27100e141cb3c9ca72dbf5e9d8b0fafcfef894114dd": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2-technical-report",
+      "title_fingerprint": "read the embeddinggemma 2 technical report",
+      "service_key": "google-blog",
+      "title": "Read the EmbeddingGemma 2 technical report.",
+      "article_doc_path": "docs/services/google-blog/2026-11-read-the-embeddinggemma-2-technical-report-ac3cfd0c.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176231Z",
+      "candidate_score": 45.0
+    },
+    "fc8988f3e7d340bc0f409dc14ce8a37ffc551cd87667ff9813c5ad5616c3544f": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-disease-research",
+      "title_fingerprint": "how genome mapping can help researchers better understand disease",
+      "service_key": "google-blog",
+      "title": "How genome mapping can help researchers better understand disease",
+      "article_doc_path": "docs/services/google-blog/2026-11-how-genome-mapping-can-help-researchers-better-understand-disease-fc8988f3.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176236Z",
+      "candidate_score": 36.0
+    },
+    "830da74434e8505c737e91eb0dcd32bca128e663d8b67dd821f376fcc24bd3aa": {
+      "normalized_url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features",
+      "title_fingerprint": "put gemini to work for you",
+      "service_key": "google-blog",
+      "title": "Put Gemini to work for you",
+      "article_doc_path": "docs/services/google-blog/2026-11-put-gemini-to-work-for-you-830da744.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176239Z",
+      "candidate_score": 34.0
+    },
+    "3a4d3301c790ce8ec05c7649a187927a9a71a0f57d5a2961dd425736edb8bed6": {
+      "normalized_url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+      "title_fingerprint": "jquery 4 1 0",
+      "service_key": "hacker-news",
+      "title": "jQuery 4.1.0",
+      "article_doc_path": "docs/services/hacker-news/2026-11-jquery-4-1-0-3a4d3301.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176244Z",
+      "candidate_score": 65.0
+    },
+    "23f542bdd380a7cbd0a381e95496022e7182c102d4ff0b47428a47a22410103e": {
+      "normalized_url": "https://blog.cloudflare.com/quad9-withdrawal-from-france",
+      "title_fingerprint": "quad9 s withdrawal from france a canary in the coal mine",
+      "service_key": "hacker-news",
+      "title": "Quad9's withdrawal from France: A canary in the coal mine",
+      "article_doc_path": "docs/services/hacker-news/2026-11-quad9-s-withdrawal-from-france-a-canary-in-the-coal-mine-23f542bd.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176248Z",
+      "candidate_score": 63.0
+    },
+    "35ca44d444f163d1774f03920964cb4866be6696ba51842ced7657c998fa7ea1": {
+      "normalized_url": "https://starsling.dev/",
+      "title_fingerprint": "launch hn starsling yc p25 self improving ci for agent volume repos",
+      "service_key": "hacker-news",
+      "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+      "article_doc_path": "docs/services/hacker-news/2026-11-launch-hn-starsling-yc-p25-self-improving-ci-for-agent-volume-repos-35ca44d4.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176252Z",
+      "candidate_score": 62.4
+    },
+    "6ece0df5b64b652ffded3f4f1e1410911dd95439167fba19a1e614e1bd561762": {
+      "normalized_url": "https://calif.io/java4shell",
+      "title_fingerprint": "java4shell rce in openjdk when processing base64",
+      "service_key": "hacker-news",
+      "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+      "article_doc_path": "docs/services/hacker-news/2026-11-java4shell-rce-in-openjdk-when-processing-base64-6ece0df5.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176256Z",
+      "candidate_score": 61.0
+    },
+    "8f6af8c44a4a1bfb5de31585ff7d049da9f0b0c7303ae5eb79fd652e216c50e9": {
+      "normalized_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "title_fingerprint": "introducing gpt 6 2 astra and sol",
+      "service_key": "openai-blog",
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "article_doc_path": "docs/services/openai-blog/2026-11-introducing-gpt-6-2-astra-and-sol-8f6af8c4.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176260Z",
+      "candidate_score": 44.0
+    },
+    "b43ef08ac3ed4f7af6f4fa4f8f60d0d2c49772fc6e540a21a0c9e441265578ef": {
+      "normalized_url": "https://openai.com/index/astra-law-6-2",
+      "title_fingerprint": "astra for law leads in legal intelligence",
+      "service_key": "openai-blog",
+      "title": "Astra for Law leads in legal intelligence",
+      "article_doc_path": "docs/services/openai-blog/2026-11-astra-for-law-leads-in-legal-intelligence-b43ef08a.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176264Z",
+      "candidate_score": 40.0
+    },
+    "b82b64ef90f76e66fb0003e74649f67052cf66f11ce4f6f63d50fd3308925680": {
+      "normalized_url": "https://openai.com/business/customer-stories/revolut",
+      "title_fingerprint": "how revolut raises ambition without lowering the bar",
+      "service_key": "openai-blog",
+      "title": "How Revolut raises ambition without lowering the bar",
+      "article_doc_path": "docs/services/openai-blog/2026-11-how-revolut-raises-ambition-without-lowering-the-bar-b82b64ef.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176268Z",
+      "candidate_score": 40.0
+    },
+    "3047d7657748ea760feb4367a861eff886526fc9a8d7d29ee939532b2c42b6aa": {
+      "normalized_url": "https://openai.com/index/introducing-chatgpt-for-sales",
+      "title_fingerprint": "introducing chatgpt for sales",
+      "service_key": "openai-blog",
+      "title": "Introducing ChatGPT for Sales",
+      "article_doc_path": "docs/services/openai-blog/2026-11-introducing-chatgpt-for-sales-3047d765.md",
+      "status": "published",
+      "briefed_at": "2026-11-18T03:24:30.176272Z",
+      "candidate_score": 37.0
     }
   }
 }
