@@ -1,0 +1,389 @@
+{
+  "generated_at": "2026-11-19T02:55:28.205165+00:00",
+  "generated_for": "2026-11-19",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "04f1cd00bab8b30ef0891cfc976f41457d1f14d6",
+  "github_run_id": "44447613891",
+  "service_count": 5,
+  "duration_ms": 12,
+  "raw_count": 120,
+  "candidate_count": 26,
+  "excluded_count": 94,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 117,
+      "excluded_count": 3,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 3
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 117,
+      "output_count": 40,
+      "excluded_count": 77,
+      "duration_ms": 6,
+      "reason_counts": {
+        "already_briefed": 77
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 40,
+      "output_count": 40,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 40,
+      "output_count": 40,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 40,
+      "output_count": 26,
+      "excluded_count": 14,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 14
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:e308a84a77ae00d8",
+          "title": "Anthropic prices initial public offering",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+          "url_hash": "e308a84a77ae00d83193b9513b7cd6ebd3e543714c502c5364a85b3cd224a8c8",
+          "suggested_doc_key": "2026-11-anthropic-prices-initial-public-offering-e308a84a",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-anthropic-prices-initial-public-offering-e308a84a.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "anthropic-blog:0c06755b2d219b8e",
+          "title": "Focus areas for The Anthropic Institute",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-institute-agenda",
+          "url_hash": "0c06755b2d219b8edff48a19108c6bebc0a77d7eb535eb54947382813263b3fb",
+          "suggested_doc_key": "2026-11-focus-areas-for-the-anthropic-institute-0c06755b",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-focus-areas-for-the-anthropic-institute-0c06755b.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 4,
+      "excluded_count": 16,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:2d2cd508468985b3",
+          "title": "Cybersecurity tips and tools to keep you safe online",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/cybersecurity-tips",
+          "url_hash": "2d2cd508468985b323a3e964527164e59e935e553e278a2e3557875671de2f85",
+          "suggested_doc_key": "2026-11-cybersecurity-tips-and-tools-to-keep-you-safe-online-2d2cd508",
+          "suggested_article_path": "docs/services/google-blog/2026-11-cybersecurity-tips-and-tools-to-keep-you-safe-online-2d2cd508.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:93cf5219423968c0",
+          "title": "Introducing Stitch Loop: A new way to build and evolve products",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop",
+          "url_hash": "93cf5219423968c027a943c534927541765ccfa8d1945f4d9a0735cde6279d8c",
+          "suggested_doc_key": "2026-11-introducing-stitch-loop-a-new-way-to-build-and-evolve-products-93cf5219",
+          "suggested_article_path": "docs/services/google-blog/2026-11-introducing-stitch-loop-a-new-way-to-build-and-evolve-products-93cf5219.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:0191a8cf5007a7e3",
+          "title": "The Gemini app is now available on lower-memory Android devices.",
+          "normalized_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices",
+          "url_hash": "0191a8cf5007a7e305ee6ecc84767aeda711b30a6ec196d8a24db74bf6e9ec9a",
+          "suggested_doc_key": "2026-11-the-gemini-app-is-now-available-on-lower-memory-android-devices-0191a8cf",
+          "suggested_article_path": "docs/services/google-blog/2026-11-the-gemini-app-is-now-available-on-lower-memory-android-devices-0191a8cf.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:a261d2eee241a886",
+          "title": "Genie 4 is now available",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie",
+          "url_hash": "a261d2eee241a886eda0f4dfc3126b623eda54fe9df5ccfbdf5530ae964b6d38",
+          "suggested_doc_key": "2026-11-genie-4-is-now-available-a261d2ee",
+          "suggested_article_path": "docs/services/google-blog/2026-11-genie-4-is-now-available-a261d2ee.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 16
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:be0aed2f51056a6d",
+          "title": "Gemini 4 Neon",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
+          "url_hash": "be0aed2f51056a6d6c6f6be3844c842fd10cee1a25a0713c0c8c904167c3b26d",
+          "suggested_doc_key": "2026-11-gemini-4-neon-be0aed2f",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-gemini-4-neon-be0aed2f.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 497점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 461개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f5b869b89561f8d7",
+          "title": "Seven new models at scalable price-performance",
+          "normalized_url": "https://microsoft.ai/news/microsoft-ignite-2026",
+          "url_hash": "f5b869b89561f8d7235c5bb6cb0735f7ca4bf0161441a799a8066c849b41c390",
+          "suggested_doc_key": "2026-11-seven-new-models-at-scalable-price-performance-f5b869b8",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-seven-new-models-at-scalable-price-performance-f5b869b8.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 458점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 322개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a4c35d98fa9774d1",
+          "title": "We need smart people who give a shit",
+          "normalized_url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit",
+          "url_hash": "a4c35d98fa9774d1fd7840ec7239c6ad0dbf4173b4cd32c1ac8570e2310cd9bc",
+          "suggested_doc_key": "2026-11-we-need-smart-people-who-give-a-shit-a4c35d98",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-we-need-smart-people-who-give-a-shit-a4c35d98.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 252점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 134개를 토론 신호로 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:68ddb817fe4001c0",
+          "title": "Advancing chip design with OpenAI models",
+          "normalized_url": "https://openai.com/index/advancing-chip-design-with-our-models",
+          "url_hash": "68ddb817fe4001c0fc7b71404e8ed33269a5f57651ec2110d7ae5f13ebb157e7",
+          "suggested_doc_key": "2026-11-advancing-chip-design-with-openai-models-68ddb817",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-advancing-chip-design-with-openai-models-68ddb817.md",
+          "candidate_score": 61.7,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 167점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 106개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0322032653579595",
+          "title": "Software companies are trying to kill home computing?",
+          "normalized_url": "https://lateblt.livejournal.com/526188.html",
+          "url_hash": "0322032653579595213c331695c5823ee57472fbf11aa51f48ef945077d5beb9",
+          "suggested_doc_key": "2026-11-software-companies-are-trying-to-kill-home-computing-03220326",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-software-companies-are-trying-to-kill-home-computing-03220326.md",
+          "candidate_score": 53.8,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 128점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 81개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 2,
+        "service_candidate_limit": 8
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:58da586369f33999",
+          "title": "Research acceleration: The jagged frontier",
+          "normalized_url": "https://openai.com/index/research-acceleration-jagged-frontier",
+          "url_hash": "58da586369f33999eb920dc2411502d48d9dc9ca37a4ab1a788d83ffd176938a",
+          "suggested_doc_key": "2026-11-research-acceleration-the-jagged-frontier-58da5863",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-research-acceleration-the-jagged-frontier-58da5863.md",
+          "candidate_score": 43.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:99be0c0a7e074380",
+          "title": "Managing frontier AI risk: From training to deployment",
+          "normalized_url": "https://openai.com/index/managing-frontier-ai-risk",
+          "url_hash": "99be0c0a7e074380d1a5d6cdb0953a68d68217eb3d8f50443a74e9d288a8cea0",
+          "suggested_doc_key": "2026-11-managing-frontier-ai-risk-from-training-to-deployment-99be0c0a",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-managing-frontier-ai-risk-from-training-to-deployment-99be0c0a.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:184d931227f2504d",
+          "title": "The Silent Consensus",
+          "normalized_url": "https://openai.com/index/the-silent-consensus",
+          "url_hash": "184d931227f2504de1a33bebb5615518a5072d45e1bfb93a37850e8332740e3a",
+          "suggested_doc_key": "2026-11-the-silent-consensus-184d9312",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-the-silent-consensus-184d9312.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:53d809d7420a3923",
+          "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+          "normalized_url": "https://openai.com/business/customer-stories/sumitomo-life",
+          "url_hash": "53d809d7420a3923e8bad7c3bd224d7d2c9da9cb37fe0d761411713f6da0b90e",
+          "suggested_doc_key": "2026-11-how-sumitomo-life-s-leaders-helped-teams-adopt-chatgpt-enterprise-53d809d7",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-how-sumitomo-life-s-leaders-helped-teams-adopt-chatgpt-enterprise-53d809d7.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:67952d9a918d2536",
+          "title": "Inside the Codex sandbox",
+          "normalized_url": "https://openai.com/index/inside-the-codex-sandbox",
+          "url_hash": "67952d9a918d2536a7bf3b37b6c05ec5dc7c7c22fdf68db178458bb74b4d4f2d",
+          "suggested_doc_key": "2026-11-inside-the-codex-sandbox-67952d9a",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-inside-the-codex-sandbox-67952d9a.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 33,
+        "service_candidate_limit": 6
+      }
+    }
+  ]
+}
