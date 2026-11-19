@@ -693,8 +693,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-10T01:59:04.988662Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-26T02:55:42.408895Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -744,8 +744,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-10T01:59:04.988662Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-26T02:55:42.408895Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1697,8 +1697,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-11T01:22:28.662894Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-23T02:55:42.408895Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1749,8 +1749,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-11T01:22:28.662894Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-23T02:55:42.408895Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1799,8 +1799,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-11T01:22:28.662894Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-23T02:55:42.408895Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -5103,6 +5103,267 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-19T03:16:58.693795Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://blog.google/innovation-and-ai/technology/safety-security/cybersecurity-tips": {
+    "candidate": {
+      "candidate_id": "google-blog:2d2cd508468985b3",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "article": {
+        "source": "Google Blog",
+        "title": "Cybersecurity tips and tools to keep you safe online",
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/cybersecurity-tips/",
+        "published_at": "2026-11-18T14:00:00Z",
+        "collected_at": "2026-11-19T02:55:38.484214Z",
+        "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/cybersecurity_collection.max-600x600.format-webp.webp\" />Explore this collection to see how Google’s cybersecurity tips and tools can keep your accounts and information safe.",
+        "authors": [],
+        "tags": [
+          "Safety & Security"
+        ],
+        "metadata": {
+          "rss_rank": 4
+        }
+      },
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/cybersecurity-tips",
+      "url_hash": "2d2cd508468985b323a3e964527164e59e935e553e278a2e3557875671de2f85",
+      "title_fingerprint": "cybersecurity tips and tools to keep you safe online",
+      "feed_summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/cybersecurity_collection.max-600x600.format-webp.webp\" />Explore this collection to see how Google’s cybersecurity tips and tools can keep your accounts and information safe.",
+      "suggested_doc_key": "2026-11-cybersecurity-tips-and-tools-to-keep-you-safe-online-2d2cd508",
+      "suggested_article_path": "docs/services/google-blog/2026-11-cybersecurity-tips-and-tools-to-keep-you-safe-online-2d2cd508.md",
+      "candidate_score": 43.0,
+      "ranking_signals": {
+        "source_priority": 7,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 2,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 7점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 2개를 감지해 가산했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-20T02:55:42.407162Z",
+    "last_failure": "thin_content",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/research-acceleration-jagged-frontier": {
+    "candidate": {
+      "candidate_id": "openai-blog:58da586369f33999",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Research acceleration: The jagged frontier",
+        "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+        "published_at": "2026-11-18T08:00:00Z",
+        "collected_at": "2026-11-19T02:55:39.006625Z",
+        "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+        "authors": [],
+        "tags": [
+          "Research"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/index/research-acceleration-jagged-frontier",
+      "url_hash": "58da586369f33999eb920dc2411502d48d9dc9ca37a4ab1a788d83ffd176938a",
+      "title_fingerprint": "research acceleration the jagged frontier",
+      "feed_summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+      "suggested_doc_key": "2026-11-research-acceleration-the-jagged-frontier-58da5863",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-research-acceleration-the-jagged-frontier-58da5863.md",
+      "candidate_score": 43.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-20T02:55:42.407162Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/managing-frontier-ai-risk": {
+    "candidate": {
+      "candidate_id": "openai-blog:99be0c0a7e074380",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Managing frontier AI risk: From training to deployment",
+        "url": "https://openai.com/index/managing-frontier-ai-risk",
+        "published_at": "2026-11-18T06:00:00Z",
+        "collected_at": "2026-11-19T02:55:39.006625Z",
+        "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
+        "authors": [],
+        "tags": [
+          "Safety"
+        ],
+        "metadata": {
+          "rss_rank": 5
+        }
+      },
+      "normalized_url": "https://openai.com/index/managing-frontier-ai-risk",
+      "url_hash": "99be0c0a7e074380d1a5d6cdb0953a68d68217eb3d8f50443a74e9d288a8cea0",
+      "title_fingerprint": "managing frontier ai risk from training to deployment",
+      "feed_summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
+      "suggested_doc_key": "2026-11-managing-frontier-ai-risk-from-training-to-deployment-99be0c0a",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-managing-frontier-ai-risk-from-training-to-deployment-99be0c0a.md",
+      "candidate_score": 40.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 5.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-20T02:55:42.407162Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/the-silent-consensus": {
+    "candidate": {
+      "candidate_id": "openai-blog:184d931227f2504d",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "The Silent Consensus",
+        "url": "https://openai.com/index/the-silent-consensus",
+        "published_at": "2026-11-18T10:00:00Z",
+        "collected_at": "2026-11-19T02:55:39.006625Z",
+        "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
+        "authors": [],
+        "tags": [
+          "Intelligence Age"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/the-silent-consensus",
+      "url_hash": "184d931227f2504de1a33bebb5615518a5072d45e1bfb93a37850e8332740e3a",
+      "title_fingerprint": "the silent consensus",
+      "feed_summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
+      "suggested_doc_key": "2026-11-the-silent-consensus-184d9312",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-the-silent-consensus-184d9312.md",
+      "candidate_score": 39.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-20T02:55:42.407162Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/business/customer-stories/sumitomo-life": {
+    "candidate": {
+      "candidate_id": "openai-blog:53d809d7420a3923",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+        "url": "https://openai.com/business/customer-stories/sumitomo-life",
+        "published_at": "2026-11-18T08:00:00Z",
+        "collected_at": "2026-11-19T02:55:39.006625Z",
+        "summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
+        "authors": [],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/business/customer-stories/sumitomo-life",
+      "url_hash": "53d809d7420a3923e8bad7c3bd224d7d2c9da9cb37fe0d761411713f6da0b90e",
+      "title_fingerprint": "how sumitomo life s leaders helped teams adopt chatgpt enterprise",
+      "feed_summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
+      "suggested_doc_key": "2026-11-how-sumitomo-life-s-leaders-helped-teams-adopt-chatgpt-enterprise-53d809d7",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-how-sumitomo-life-s-leaders-helped-teams-adopt-chatgpt-enterprise-53d809d7.md",
+      "candidate_score": 37.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-20T02:55:42.407162Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,

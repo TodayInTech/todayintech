@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-18",
+  "generated_for": "2026-11-19",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -1413,6 +1413,19 @@
       "new": false
     },
     {
+      "title": "jQuery 4.1.0",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-jquery-4-1-0-3a4d3301.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-18",
+      "published_at": "2026-11-17",
+      "excerpt": "jQuery 4.1.0이 공개되어 jqXHR에 responseURL 필드가 추가되고 선택자 식별자 매칭의 ReDoS 취약점이 수정되는 등 AJAX·선택자·코어·문서 관련 여러 개선과 테스트 보강이 포함됐다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "All AI-generated code should be Open Source",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2752,15 +2765,28 @@
       "new": false
     },
     {
-      "title": "jQuery 4.1.0",
+      "title": "Gemini 4 Neon",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-jquery-4-1-0-3a4d3301.md",
+      "href": "./services/hacker-news/2026-11-gemini-4-neon-be0aed2f.md",
       "status": "published",
       "score": 65.0,
       "briefed_at": null,
-      "published_at": "2026-11-17",
-      "excerpt": "jQuery 4.1.0이 공개되어 jqXHR에 responseURL 필드가 추가되고 선택자 식별자 매칭의 ReDoS 취약점이 수정되는 등 AJAX·선택자·코어·문서 관련 여러 개선과 테스트 보강이 포함됐다.",
+      "published_at": "2026-11-18",
+      "excerpt": "Google은 Gemini 4 Neon을 공개했다. Neon은 1백만 토큰 컨텍스트, 입력·출력 토큰 가격, 다수 벤치마크 상위권 성적 및 강화된 안전·사이버 방어 성능을 특징으로 한다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Seven new models at scalable price-performance",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-seven-new-models-at-scalable-price-performance-f5b869b8.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": null,
+      "published_at": "2026-11-18",
+      "excerpt": "Microsoft는 Ignite 2026에서 일곱 모델로 구성된 MAI 제품군과 **MAI Licensed Weights**를 공개했다. MAI Code 2는 GPT-6.1 Sol 대비 98% 성능을 40% 비용으로 제공하며, MAI Cyber 2 Flash는 출력 토큰 비용이 MAI Cyber 1.1 Flash보다 *…",
       "featured": false,
       "new": true
     },
@@ -2828,6 +2854,19 @@
       "excerpt": "작성자는 13년째 NameCheap 고객으로, 자신 명의(이름·주소·전화)로 등록해 관리하던 동아리 .com 도메인에서 발생한 계정 탈취 사례를 설명한다. 리더 교체 과정에서 새 리더가 도메인의 호스팅사가 NameCheap임을 확인하고 비밀번호 초기화를 시도했고, 작성자는 비밀번호 재설정 이메일을 받고 즉시 “내가 요청…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Genie 4 is now available",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-genie-4-is-now-available-a261d2ee.md",
+      "status": "published",
+      "score": 64.8,
+      "briefed_at": null,
+      "published_at": "2026-11-18",
+      "excerpt": "Google은 Project Genie에 'Genie 4'를 도입해 세션 중 실시간으로 장면을 변경·편집하고 네이티브 오디오를 제공한다고 밝혔다. Genie 3 업그레이드(세션 연장·360도 파노라마 기반 등), 대화형 Project Genie 에이전트와 커뮤니티 갤러리도 함께 공개되며 Google AI Ultra 구독…",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Apple Watch Series 12",
@@ -3311,6 +3350,19 @@
       "new": false
     },
     {
+      "title": "Quad9's withdrawal from France: A canary in the coal mine",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-quad9-s-withdrawal-from-france-a-canary-in-the-coal-mine-23f542bd.md",
+      "status": "published",
+      "score": 63.0,
+      "briefed_at": "2026-11-18",
+      "published_at": "2026-11-17",
+      "excerpt": "Quad9이 프랑스에서 공개 DNS 리졸버 서비스를 철수하기로 했다. 프랑스 법원이 도메인 차단 불이행에 대해 일일 벌금을 부과한 것이 원인이며, 공개 리졸버 차단 강제화의 기술적·실무적 위험을 드러낸 사건이다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Blender 5.3 released with Gaussian Splat support",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3506,15 +3558,15 @@
       "new": false
     },
     {
-      "title": "Quad9's withdrawal from France: A canary in the coal mine",
+      "title": "We need smart people who give a shit",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-quad9-s-withdrawal-from-france-a-canary-in-the-coal-mine-23f542bd.md",
+      "href": "./services/hacker-news/2026-11-we-need-smart-people-who-give-a-shit-a4c35d98.md",
       "status": "published",
       "score": 63.0,
       "briefed_at": null,
-      "published_at": "2026-11-17",
-      "excerpt": "Quad9이 프랑스에서 공개 DNS 리졸버 서비스를 철수하기로 했다. 프랑스 법원이 도메인 차단 불이행에 대해 일일 벌금을 부과한 것이 원인이며, 공개 리졸버 차단 강제화의 기술적·실무적 위험을 드러낸 사건이다.",
+      "published_at": "2026-11-18",
+      "excerpt": "저자는 복잡한 인프라가 '관심을 갖는 숙련자'에 의해 유지되어 왔는데, 생성형 AI 도입과 해고로 이들이 줄어들며 시스템 장애 위험이 커진다고 경고한다.",
       "featured": false,
       "new": true
     },
@@ -3623,6 +3675,19 @@
       "new": false
     },
     {
+      "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-launch-hn-starsling-yc-p25-self-improving-ci-for-agent-volume-repos-35ca44d4.md",
+      "status": "published",
+      "score": 62.4,
+      "briefed_at": "2026-11-18",
+      "published_at": "2026-11-17",
+      "excerpt": "StarSling은 Zen5 기반 빠른 GitHub Actions 러너에 CI 최적화 AI 에이전트를 붙인 'AI-네이티브 CI'를 발표했다. 설치는 runs-on 레이블 교체 한 줄로 가능하고, 사례에서 최대 **6×**(29m56s→5m06s) 속도 개선과 **Disks 4.5×** 의존성 준비 속도 향상을 제시한다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3634,19 +3699,6 @@
       "excerpt": "Claude Opus 5.5(Adaptive Reasoning, Max Effort, Default Fallback)는 Anthropic이 발표한 추론형 멀티모달 모델로, 텍스트·이미지 입력을 받아 텍스트 출력을 생성하고 최대 100만 토큰(약 1500 A4 페이지)에 달하는 대규모 컨텍스트 창을 지원한다. 인공분석(A…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-launch-hn-starsling-yc-p25-self-improving-ci-for-agent-volume-repos-35ca44d4.md",
-      "status": "published",
-      "score": 62.4,
-      "briefed_at": null,
-      "published_at": "2026-11-17",
-      "excerpt": "StarSling은 Zen5 기반 빠른 GitHub Actions 러너에 CI 최적화 AI 에이전트를 붙인 'AI-네이티브 CI'를 발표했다. 설치는 runs-on 레이블 교체 한 줄로 가능하고, 사례에서 최대 **6×**(29m56s→5m06s) 속도 개선과 **Disks 4.5×** 의존성 준비 속도 향상을 제시한다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "'VPNs are lawful technical tools,' says EU Court in landmark copyright ruling",
@@ -4091,6 +4143,19 @@
       "new": false
     },
     {
+      "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-java4shell-rce-in-openjdk-when-processing-base64-6ece0df5.md",
+      "status": "published",
+      "score": 61.0,
+      "briefed_at": "2026-11-18",
+      "published_at": "2026-11-17",
+      "excerpt": "OpenJDK의 Base64 디코더에서 메모리 손상으로 인한 원격 코드 실행 취약점 **CVE-2026-114938**이 공개됐다. CVSS 9.2, OpenJDK 17.0.6 이상 및 AVX‑512 VBMI를 지원하는 x86-64 CPU에서 영향이 확인됐다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "What I run on my $10 USD OpenStick homelab",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -4388,19 +4453,6 @@
       "excerpt": "피드 기준으로는 Sky News가 더비셔 경찰관이 여러 사건에서 증거를 ‘생성’하기 위해 AI를 사용한 혐의로 조사를 받고 있다고 보도했습니다. 제공된 정보만 보면 해당 사안은 다수 사건에 관련된 조사이며 구체적 내용은 원문 확인이 필요합니다. 해커뉴스에서 반향이 큰 기사로 보입니다(포인트 258, 댓글 122). 법집…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Java4Shell: RCE in OpenJDK when processing Base64",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-java4shell-rce-in-openjdk-when-processing-base64-6ece0df5.md",
-      "status": "published",
-      "score": 61.0,
-      "briefed_at": null,
-      "published_at": "2026-11-17",
-      "excerpt": "OpenJDK의 Base64 디코더에서 메모리 손상으로 인한 원격 코드 실행 취약점 **CVE-2026-114938**이 공개됐다. CVSS 9.2, OpenJDK 17.0.6 이상 및 AVX‑512 VBMI를 지원하는 x86-64 CPU에서 영향이 확인됐다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Go 1.27",
@@ -9148,6 +9200,19 @@
       "new": false
     },
     {
+      "title": "Read the EmbeddingGemma 2 technical report.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-read-the-embeddinggemma-2-technical-report-ac3cfd0c.md",
+      "status": "published",
+      "score": 45.0,
+      "briefed_at": "2026-11-18",
+      "published_at": "2026-11-17",
+      "excerpt": "Google이 EmbeddingGemma 2 기술 보고서를 공개했습니다. 이 모델은 텍스트·이미지·오디오·비디오를 하나의 벡터 공간으로 통합하고, Gemma 4·Gemini Embedding 2 기반의 레시피로 백본을 더 컴팩트하게 설계했다고 밝혔습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Google Cloud leaders share what to expect in cybersecurity for 2027.",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -9239,17 +9304,17 @@
       "new": false
     },
     {
-      "title": "Read the EmbeddingGemma 2 technical report.",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-read-the-embeddinggemma-2-technical-report-ac3cfd0c.md",
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-introducing-gpt-6-2-astra-and-sol-8f6af8c4.md",
       "status": "published",
-      "score": 45.0,
-      "briefed_at": null,
+      "score": 44.0,
+      "briefed_at": "2026-11-18",
       "published_at": "2026-11-17",
-      "excerpt": "Google이 EmbeddingGemma 2 기술 보고서를 공개했습니다. 이 모델은 텍스트·이미지·오디오·비디오를 하나의 벡터 공간으로 통합하고, Gemma 4·Gemini Embedding 2 기반의 레시피로 백본을 더 컴팩트하게 설계했다고 밝혔습니다.",
+      "excerpt": "OpenAI가 2026-11-17에 **GPT-6.2 ‘Astra’와 ‘Sol’**을 발표했다고 메타데이터가 전합니다. 피드에 따르면 전문 출력, 코딩·컴퓨터 사용, 비용 대비 효율성이 개선되어 ChatGPT Work·Codex·API 전반에 적용된다고 기재되어 있습니다.",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "Broadening access to AI for scientists",
@@ -9707,19 +9772,6 @@
       "new": false
     },
     {
-      "title": "Introducing GPT-6.2 Astra and Sol",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-introducing-gpt-6-2-astra-and-sol-8f6af8c4.md",
-      "status": "published",
-      "score": 44.0,
-      "briefed_at": null,
-      "published_at": "2026-11-17",
-      "excerpt": "OpenAI가 2026-11-17에 **GPT-6.2 ‘Astra’와 ‘Sol’**을 발표했다고 메타데이터가 전합니다. 피드에 따르면 전문 출력, 코딩·컴퓨터 사용, 비용 대비 효율성이 개선되어 ChatGPT Work·Codex·API 전반에 적용된다고 기재되어 있습니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Shield helps technicians hand off legacy portal work with OpenAI",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -9989,6 +10041,45 @@
       "briefed_at": "2026-06-15",
       "published_at": "2026-06-14",
       "excerpt": "피드 기준으로는 OpenAI가 2026-06-14자 공지로 ‘OpenAI Partner Network’를 출범하고 1억5천만 달러를 투자한다고 전합니다. 이 네트워크는 전 세계 파트너들이 기업용 AI의 채택, 배포, 전환을 가속화하도록 지원하기 위한 목적이라고 요약됩니다. 제공된 정보만 보면 대규모 자금 투입을 통한 파…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Cybersecurity tips and tools to keep you safe online",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-cybersecurity-tips-and-tools-to-keep-you-safe-online-2d2cd508.md",
+      "status": "published",
+      "score": 43.0,
+      "briefed_at": null,
+      "published_at": "2026-11-18",
+      "excerpt": "피드 기준으로는 2026-11-18 Google 블로그에 ‘Cybersecurity tips and tools to keep you safe online’ 게시물이 올라와 계정·정보 보호를 위한 팁과 도구 모음을 소개한다고 요약됩니다. 상세 내용은 본문 확인이 필요합니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Research acceleration: The jagged frontier",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-research-acceleration-the-jagged-frontier-58da5863.md",
+      "status": "published",
+      "score": 43.0,
+      "briefed_at": null,
+      "published_at": "2026-11-18",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-18자 블로그에서 **코딩 에이전트가 AI 연구를 가속화**하지만 성능은 고르지 않아 재귀적 자기개선에 대한 신호를 남긴다고 보고했다고 전합니다. 원문 본문 내용과 수치는 피드 메타데이터만으로는 확인되지 않습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Maintainers don’t need more AI bug reports. They need fixes.",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-maintainers-don-t-need-more-ai-bug-reports-they-need-fixes-c68cb5d1.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": "2026-11-18",
+      "published_at": "2026-11-17",
+      "excerpt": "GitHub·Microsoft의 Codename MDASH 파일럿은 MAI Cyber 모델로 6개 오픈소스 프로젝트를 스캔해 연구자 검토 후 **99건의 사적 보고서**를 전달했고, **11월15일 기준 55건이 수정**되었으며 14건은 릴리스에 포함되었습니다.",
       "featured": false,
       "new": false
     },
@@ -10578,17 +10669,17 @@
       "new": false
     },
     {
-      "title": "Maintainers don’t need more AI bug reports. They need fixes.",
+      "title": "Building the Agent Host Protocol for sessions that continue across devices",
       "service_key": "github-blog",
       "service_name": "GitHub Blog",
-      "href": "./services/github-blog/2026-11-maintainers-don-t-need-more-ai-bug-reports-they-need-fixes-c68cb5d1.md",
+      "href": "./services/github-blog/2026-11-building-the-agent-host-protocol-for-sessions-that-continue-across-devic-57b03ec4.md",
       "status": "published",
-      "score": 42.0,
-      "briefed_at": null,
+      "score": 41.0,
+      "briefed_at": "2026-11-18",
       "published_at": "2026-11-17",
-      "excerpt": "GitHub·Microsoft의 Codename MDASH 파일럿은 MAI Cyber 모델로 6개 오픈소스 프로젝트를 스캔해 연구자 검토 후 **99건의 사적 보고서**를 전달했고, **11월15일 기준 55건이 수정**되었으며 14건은 릴리스에 포함되었습니다.",
+      "excerpt": "GitHub은 에이전트 세션을 에디터·앱·폰·클라우드에서 이어 쓰게 하는 오픈 표준 **Agent Host Protocol(AHP)**을 발표했다. AHP는 URI 기반 채널과 리듀서 상태로 재접속·재생을 지원하며 VS Code(TypeScript)와 GitHub(Rust) 두 구현으로 상호운용성이 검증됐다.",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "Build once, run on any agent: A practical guide to agent skills",
@@ -11007,17 +11098,30 @@
       "new": false
     },
     {
-      "title": "Building the Agent Host Protocol for sessions that continue across devices",
-      "service_key": "github-blog",
-      "service_name": "GitHub Blog",
-      "href": "./services/github-blog/2026-11-building-the-agent-host-protocol-for-sessions-that-continue-across-devic-57b03ec4.md",
+      "title": "How Revolut raises ambition without lowering the bar",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-how-revolut-raises-ambition-without-lowering-the-bar-b82b64ef.md",
       "status": "published",
-      "score": 41.0,
-      "briefed_at": null,
-      "published_at": "2026-11-17",
-      "excerpt": "GitHub은 에이전트 세션을 에디터·앱·폰·클라우드에서 이어 쓰게 하는 오픈 표준 **Agent Host Protocol(AHP)**을 발표했다. AHP는 URI 기반 채널과 리듀서 상태로 재접속·재생을 지원하며 VS Code(TypeScript)와 GitHub(Rust) 두 구현으로 상호운용성이 검증됐다.",
+      "score": 40.0,
+      "briefed_at": "2026-11-18",
+      "published_at": "2026-11-16",
+      "excerpt": "피드 기준으로는 Revolut가 OpenAI 모델과 Codex를 도입해 **코드 작성 시간을 30–60% 단축**하고 금융범죄 조사 역량을 확장하면서 보안을 유지했다고 소개했다(게시일: 2026-11-16).",
       "featured": false,
-      "new": true
+      "new": false
+    },
+    {
+      "title": "Astra for Law leads in legal intelligence",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-astra-for-law-leads-in-legal-intelligence-b43ef08a.md",
+      "status": "published",
+      "score": 40.0,
+      "briefed_at": "2026-11-18",
+      "published_at": "2026-11-17",
+      "excerpt": "피드 기준으로는 OpenAI가 발표한 Astra for Law가 24개 법률 영역을 대상으로 한 런치 평가에서 1위를 차지했으며, 모든 ChatGPT Enterprise 고객이 액세스를 요청할 수 있게 됐다고 전해졌다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "Our first phase of embedded assessments",
@@ -11358,28 +11462,28 @@
       "new": false
     },
     {
-      "title": "Astra for Law leads in legal intelligence",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-astra-for-law-leads-in-legal-intelligence-b43ef08a.md",
+      "title": "Introducing Stitch Loop: A new way to build and evolve products",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-introducing-stitch-loop-a-new-way-to-build-and-evolve-products-93cf5219.md",
       "status": "published",
       "score": 40.0,
       "briefed_at": null,
-      "published_at": "2026-11-17",
-      "excerpt": "피드 기준으로는 OpenAI가 발표한 Astra for Law가 24개 법률 영역을 대상으로 한 런치 평가에서 1위를 차지했으며, 모든 ChatGPT Enterprise 고객이 액세스를 요청할 수 있게 됐다고 전해졌다.",
+      "published_at": "2026-11-18",
+      "excerpt": "Google Labs는 코드·실시간 지표와 연동해 목표 달성까지 24/7로 작업하는 장기 실행 제품 에이전트 'Stitch Loop'를 공개했다. 보안·지연·접근성 루프와 Gemini 4 Carbon·CodeMender 통합을 제공하며 대기자 명단을 열었다.",
       "featured": false,
       "new": true
     },
     {
-      "title": "How Revolut raises ambition without lowering the bar",
+      "title": "Managing frontier AI risk: From training to deployment",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-how-revolut-raises-ambition-without-lowering-the-bar-b82b64ef.md",
+      "href": "./services/openai-blog/2026-11-managing-frontier-ai-risk-from-training-to-deployment-99be0c0a.md",
       "status": "published",
       "score": 40.0,
       "briefed_at": null,
-      "published_at": "2026-11-16",
-      "excerpt": "피드 기준으로는 Revolut가 OpenAI 모델과 Codex를 도입해 **코드 작성 시간을 30–60% 단축**하고 금융범죄 조사 역량을 확장하면서 보안을 유지했다고 소개했다(게시일: 2026-11-16).",
+      "published_at": "2026-11-18",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-18에 'frontier AI' 위험 관리를 훈련부터 배포까지 다루는 블로그 게시물을 공개했다. 모델 정렬, 샌드박싱, 차단(블로킹) 보호 장치, 모니터링을 포함한 접근을 설명한다고 요약된다.",
       "featured": false,
       "new": true
     },
@@ -12229,6 +12333,32 @@
       "new": false
     },
     {
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-the-gemini-app-is-now-available-on-lower-memory-android-devices-0191a8cf.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": null,
+      "published_at": "2026-11-18",
+      "excerpt": "Google이 Gemini 앱을 메모리 제약이 있는 Android(Go edition) 기기에서 실행되도록 재설계해 **수억 명** 규모 사용자가 Gemini Live, 카메라 기반 번역·학습, Nano Banana 이미지 생성 등 기능을 쓸 수 있게 되었다고 발표했다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "The Silent Consensus",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-the-silent-consensus-184d9312.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": null,
+      "published_at": "2026-11-18",
+      "excerpt": "피드 기준으로는 OpenAI 전략미래 책임자 Dean Ball이 2026-11-18자 블로그 'The Silent Consensus'에서 더 능력 있는 AI가 사회를 재편할 가능성과 제도적 통제 유지 방안을 논의한다고 요약됩니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "More ways to move care forward with ChatGPT for Healthcare",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -12706,6 +12836,19 @@
       "briefed_at": "2026-06-13",
       "published_at": "2026-06-11",
       "excerpt": "피드 기준으로는 OpenAI가 Ona를 인수할 계획이라고 발표했습니다. 인수 목적은 Codex를 보강해 보안되고 지속적인 클라우드 환경을 제공하는 것으로 보입니다. 제공된 정보만 보면 이 변화는 장기 실행형 AI 에이전트를 기업 워크플로에 통합하는 것을 목표로 합니다. 구체적인 조건이나 일정은 피드에 포함되어 있지 않습…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Introducing ChatGPT for Sales",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-introducing-chatgpt-for-sales-3047d765.md",
+      "status": "published",
+      "score": 37.0,
+      "briefed_at": "2026-11-18",
+      "published_at": "2026-11-17",
+      "excerpt": "OpenAI는 2026-11-17에 ChatGPT용 영업 기능을 발표했습니다. **Sales 플러그인**과 **30+ 파트너 플러그인**을 통해 잠재고객 조사, 제안서 준비, CRM 업데이트 등 영업 활동을 지원한다고 피드가 전합니다.",
       "featured": false,
       "new": false
     },
@@ -13490,17 +13633,30 @@
       "new": false
     },
     {
-      "title": "Introducing ChatGPT for Sales",
+      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-introducing-chatgpt-for-sales-3047d765.md",
+      "href": "./services/openai-blog/2026-11-how-sumitomo-life-s-leaders-helped-teams-adopt-chatgpt-enterprise-53d809d7.md",
       "status": "published",
       "score": 37.0,
       "briefed_at": null,
-      "published_at": "2026-11-17",
-      "excerpt": "OpenAI는 2026-11-17에 ChatGPT용 영업 기능을 발표했습니다. **Sales 플러그인**과 **30+ 파트너 플러그인**을 통해 잠재고객 조사, 제안서 준비, CRM 업데이트 등 영업 활동을 지원한다고 피드가 전합니다.",
+      "published_at": "2026-11-18",
+      "excerpt": "피드 기준으로는 Sumitomo Life가 ChatGPT Enterprise를 보험사 조사·제안서 작성·투자 분석용 코드 초안 작성에 활용하고 있으며, 경영진의 초기 도입이 조직 내 확산을 촉진했다고 보고되었습니다(2026-11-18 공개).",
       "featured": false,
       "new": true
+    },
+    {
+      "title": "How genome mapping can help researchers better understand disease",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-how-genome-mapping-can-help-researchers-better-understand-disease-fc8988f3.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": "2026-11-18",
+      "published_at": "2026-11-17",
+      "excerpt": "Google DeepMind의 AlphaGenome은 부분 서열(100만 염기)로 수천 예측을 생성하고 모든 단일 염기 변이 90억 건의 영향을 예측해 AVI 점수로 우선순위를 제공한다. AlphaGenome 2는 세포 유형 특이성 문제를 해결하려는 모델입니다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "New Ask Maps features to help with holiday travel and prep",
@@ -14478,19 +14634,6 @@
       "new": false
     },
     {
-      "title": "How genome mapping can help researchers better understand disease",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-how-genome-mapping-can-help-researchers-better-understand-disease-fc8988f3.md",
-      "status": "published",
-      "score": 36.0,
-      "briefed_at": null,
-      "published_at": "2026-11-17",
-      "excerpt": "Google DeepMind의 AlphaGenome은 부분 서열(100만 염기)로 수천 예측을 생성하고 모든 단일 염기 변이 90억 건의 영향을 예측해 AVI 점수로 우선순위를 제공한다. AlphaGenome 2는 세포 유형 특이성 문제를 해결하려는 모델입니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Introducing Claude 3.5 Sonnet",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -15297,6 +15440,19 @@
       "new": false
     },
     {
+      "title": "Put Gemini to work for you",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-put-gemini-to-work-for-you-830da744.md",
+      "status": "published",
+      "score": 34.0,
+      "briefed_at": "2026-11-18",
+      "published_at": "2026-11-17",
+      "excerpt": "Google은 Gemini 4 Hydrogen 기반 'Tasks'를 미국·일본·한국 등에서 수백만 사용자에게 무료로 배포하고, 결제용 Agent Payments Protocol(AP2), Google Wallet의 iOS 확장, 계정 전용 하드웨어 격리 실행환경 등 결제·연동·보안 통합을 발표했습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -15568,19 +15724,6 @@
       "excerpt": "앤트로픽이 'Claude Corps'라는 전국 펠로우십 프로그램을 발표했습니다. 피드 기준으로는 초기 경력자들을 대상으로 AI 혜택을 미국 전역의 커뮤니티로 확장하는 데 관심 있는 사람들을 지원하는 프로그램이라고 소개합니다. 세부 사항(선발 인원, 지원 자격, 기간, 자금 지원 등)은 피드 기준으로는 제공되지 않았습니다…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Put Gemini to work for you",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-put-gemini-to-work-for-you-830da744.md",
-      "status": "published",
-      "score": 34.0,
-      "briefed_at": null,
-      "published_at": "2026-11-17",
-      "excerpt": "Google은 Gemini 4 Hydrogen 기반 'Tasks'를 미국·일본·한국 등에서 수백만 사용자에게 무료로 배포하고, 결제용 Agent Payments Protocol(AP2), Google Wallet의 iOS 확장, 계정 전용 하드웨어 격리 실행환경 등 결제·연동·보안 통합을 발표했습니다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Holiday Extras is rethinking what it can build with Codex",
@@ -16803,6 +16946,19 @@
       "excerpt": "피드 기준으로는 Anthropic이 타타 컨설턴시 서비스(TCS)와 파트너십을 발표했습니다. TCS는 전 세계 56개국의 약 50,000명 직원에게 Claude를 제공한다고 전해집니다. 제공된 정보만 보면 TCS는 금융, 의료, 공공 부문 등 규제가 많은 산업을 대상으로 Claude 기반 제품을 개발하고 Claude 파…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Focus areas for The Anthropic Institute",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-focus-areas-for-the-anthropic-institute-0c06755b.md",
+      "status": "published",
+      "score": 30.0,
+      "briefed_at": null,
+      "published_at": "2026-11-18",
+      "excerpt": "Anthropic은 내부 프론티어 연구실 기반의 The Anthropic Institute(TAI) 연구 의제를 공개했다. **경제 확산, 위협·복원력, AI 실사용, AI 주도 R&D** 네 축을 내세우며 Anthropic Economic Index의 고빈도 공개, 보안 위험 관측 강화, AI 자가개선(재귀적 개선)…",
+      "featured": false,
+      "new": true
     },
     {
       "title": "A framework for AI development transparency",

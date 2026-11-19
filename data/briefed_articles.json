@@ -14060,6 +14060,126 @@
       "status": "published",
       "briefed_at": "2026-11-18T03:24:30.176272Z",
       "candidate_score": 37.0
+    },
+    "0c06755b2d219b8edff48a19108c6bebc0a77d7eb535eb54947382813263b3fb": {
+      "normalized_url": "https://www.anthropic.com/news/anthropic-institute-agenda",
+      "title_fingerprint": "focus areas for the anthropic institute",
+      "service_key": "anthropic-blog",
+      "title": "Focus areas for The Anthropic Institute",
+      "article_doc_path": "docs/services/anthropic-blog/2026-11-focus-areas-for-the-anthropic-institute-0c06755b.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115652Z",
+      "candidate_score": 30.0
+    },
+    "2d2cd508468985b323a3e964527164e59e935e553e278a2e3557875671de2f85": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/safety-security/cybersecurity-tips",
+      "title_fingerprint": "cybersecurity tips and tools to keep you safe online",
+      "service_key": "google-blog",
+      "title": "Cybersecurity tips and tools to keep you safe online",
+      "article_doc_path": "docs/services/google-blog/2026-11-cybersecurity-tips-and-tools-to-keep-you-safe-online-2d2cd508.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115701Z",
+      "candidate_score": 43.0
+    },
+    "93cf5219423968c027a943c534927541765ccfa8d1945f4d9a0735cde6279d8c": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop",
+      "title_fingerprint": "introducing stitch loop a new way to build and evolve products",
+      "service_key": "google-blog",
+      "title": "Introducing Stitch Loop: A new way to build and evolve products",
+      "article_doc_path": "docs/services/google-blog/2026-11-introducing-stitch-loop-a-new-way-to-build-and-evolve-products-93cf5219.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115713Z",
+      "candidate_score": 40.0
+    },
+    "0191a8cf5007a7e305ee6ecc84767aeda711b30a6ec196d8a24db74bf6e9ec9a": {
+      "normalized_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices",
+      "title_fingerprint": "the gemini app is now available on lower memory android devices",
+      "service_key": "google-blog",
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "article_doc_path": "docs/services/google-blog/2026-11-the-gemini-app-is-now-available-on-lower-memory-android-devices-0191a8cf.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115722Z",
+      "candidate_score": 39.0
+    },
+    "be0aed2f51056a6d6c6f6be3844c842fd10cee1a25a0713c0c8c904167c3b26d": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
+      "title_fingerprint": "gemini 4 neon",
+      "service_key": "hacker-news",
+      "title": "Gemini 4 Neon",
+      "article_doc_path": "docs/services/hacker-news/2026-11-gemini-4-neon-be0aed2f.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115729Z",
+      "candidate_score": 65.0
+    },
+    "f5b869b89561f8d7235c5bb6cb0735f7ca4bf0161441a799a8066c849b41c390": {
+      "normalized_url": "https://microsoft.ai/news/microsoft-ignite-2026",
+      "title_fingerprint": "seven new models at scalable price performance",
+      "service_key": "hacker-news",
+      "title": "Seven new models at scalable price-performance",
+      "article_doc_path": "docs/services/hacker-news/2026-11-seven-new-models-at-scalable-price-performance-f5b869b8.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115736Z",
+      "candidate_score": 65.0
+    },
+    "a261d2eee241a886eda0f4dfc3126b623eda54fe9df5ccfbdf5530ae964b6d38": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie",
+      "title_fingerprint": "genie 4 is now available",
+      "service_key": "hacker-news",
+      "title": "Genie 4 is now available",
+      "article_doc_path": "docs/services/hacker-news/2026-11-genie-4-is-now-available-a261d2ee.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115743Z",
+      "candidate_score": 64.8
+    },
+    "a4c35d98fa9774d1fd7840ec7239c6ad0dbf4173b4cd32c1ac8570e2310cd9bc": {
+      "normalized_url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit",
+      "title_fingerprint": "we need smart people who give a shit",
+      "service_key": "hacker-news",
+      "title": "We need smart people who give a shit",
+      "article_doc_path": "docs/services/hacker-news/2026-11-we-need-smart-people-who-give-a-shit-a4c35d98.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115750Z",
+      "candidate_score": 63.0
+    },
+    "58da586369f33999eb920dc2411502d48d9dc9ca37a4ab1a788d83ffd176938a": {
+      "normalized_url": "https://openai.com/index/research-acceleration-jagged-frontier",
+      "title_fingerprint": "research acceleration the jagged frontier",
+      "service_key": "openai-blog",
+      "title": "Research acceleration: The jagged frontier",
+      "article_doc_path": "docs/services/openai-blog/2026-11-research-acceleration-the-jagged-frontier-58da5863.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115756Z",
+      "candidate_score": 43.0
+    },
+    "99be0c0a7e074380d1a5d6cdb0953a68d68217eb3d8f50443a74e9d288a8cea0": {
+      "normalized_url": "https://openai.com/index/managing-frontier-ai-risk",
+      "title_fingerprint": "managing frontier ai risk from training to deployment",
+      "service_key": "openai-blog",
+      "title": "Managing frontier AI risk: From training to deployment",
+      "article_doc_path": "docs/services/openai-blog/2026-11-managing-frontier-ai-risk-from-training-to-deployment-99be0c0a.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115776Z",
+      "candidate_score": 40.0
+    },
+    "184d931227f2504de1a33bebb5615518a5072d45e1bfb93a37850e8332740e3a": {
+      "normalized_url": "https://openai.com/index/the-silent-consensus",
+      "title_fingerprint": "the silent consensus",
+      "service_key": "openai-blog",
+      "title": "The Silent Consensus",
+      "article_doc_path": "docs/services/openai-blog/2026-11-the-silent-consensus-184d9312.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115784Z",
+      "candidate_score": 39.0
+    },
+    "53d809d7420a3923e8bad7c3bd224d7d2c9da9cb37fe0d761411713f6da0b90e": {
+      "normalized_url": "https://openai.com/business/customer-stories/sumitomo-life",
+      "title_fingerprint": "how sumitomo life s leaders helped teams adopt chatgpt enterprise",
+      "service_key": "openai-blog",
+      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+      "article_doc_path": "docs/services/openai-blog/2026-11-how-sumitomo-life-s-leaders-helped-teams-adopt-chatgpt-enterprise-53d809d7.md",
+      "status": "published",
+      "briefed_at": "2026-11-19T03:00:06.115791Z",
+      "candidate_score": 37.0
     }
   }
 }
