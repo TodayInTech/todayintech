@@ -795,8 +795,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-11T01:31:34.299134Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-27T02:48:50.081252Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -852,8 +852,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-11T01:31:34.299134Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-27T02:48:50.081252Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -909,8 +909,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-11T01:31:34.299134Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-27T02:48:50.081252Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -962,8 +962,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-11T01:31:34.299134Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-27T02:48:50.081252Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1851,8 +1851,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-11T01:22:28.662894Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-24T02:48:50.081252Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -5364,6 +5364,273 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-20T02:55:42.407162Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine": {
+    "candidate": {
+      "candidate_id": "hacker-news:c50a064b65c55ff5",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+        "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+        "published_at": "2026-11-19T18:35:17Z",
+        "collected_at": "2026-11-20T02:48:45.921150Z",
+        "summary": "<p>Article URL: <a href=\"https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine\">https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50564159\">https://news.ycombinator.com/item?id=50564159</a></p>\n<p>Points: 211</p>\n<p># Comments: 112</p>",
+        "authors": [
+          "dev1one1"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 10,
+          "hn_points": 211,
+          "hn_comments": 112,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50564159"
+        }
+      },
+      "normalized_url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+      "url_hash": "c50a064b65c55ff5ed6ecfc0d7a212185011c0797d4a95574fbd5b0aab76d5e1",
+      "title_fingerprint": "the 98 slot machine how paid advertising became an extraction tax",
+      "feed_summary": "<p>Article URL: <a href=\"https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine\">https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50564159\">https://news.ycombinator.com/item?id=50564159</a></p>\n<p>Points: 211</p>\n<p># Comments: 112</p>",
+      "suggested_doc_key": "2026-11-the-98-slot-machine-how-paid-advertising-became-an-extraction-tax-c50a064b",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-the-98-slot-machine-how-paid-advertising-became-an-extraction-tax-c50a064b.md",
+      "candidate_score": 60.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 211점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 112개를 토론 신호로 반영했습니다.",
+        "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-21T02:48:50.079813Z",
+    "last_failure": "extraction_failed",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/business/learn/deploying-daybreak-red": {
+    "candidate": {
+      "candidate_id": "openai-blog:a890a236270cc5e3",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Deploying Daybreak Red",
+        "url": "https://openai.com/business/learn/deploying-daybreak-red",
+        "published_at": "2026-11-19T00:00:00Z",
+        "collected_at": "2026-11-20T02:48:46.617582Z",
+        "summary": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
+        "authors": [],
+        "tags": [
+          "Guides"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/business/learn/deploying-daybreak-red",
+      "url_hash": "a890a236270cc5e31862345b7933987a42b139de2dead494b477fbf1189784a9",
+      "title_fingerprint": "deploying daybreak red",
+      "feed_summary": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
+      "suggested_doc_key": "2026-11-deploying-daybreak-red-a890a236",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-deploying-daybreak-red-a890a236.md",
+      "candidate_score": 42.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-21T02:48:50.079813Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/business/learn/codex-security-plugin-demo": {
+    "candidate": {
+      "candidate_id": "openai-blog:82fe289fe466dcc1",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Explore the Codex Security Plugin",
+        "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+        "published_at": "2026-11-19T00:00:00Z",
+        "collected_at": "2026-11-20T02:48:46.617582Z",
+        "summary": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+        "authors": [],
+        "tags": [
+          "Demos"
+        ],
+        "metadata": {
+          "rss_rank": 4
+        }
+      },
+      "normalized_url": "https://openai.com/business/learn/codex-security-plugin-demo",
+      "url_hash": "82fe289fe466dcc1d4f71a60b5a7fb88a90a6df5cf719a456eac5a721e5f3552",
+      "title_fingerprint": "explore the codex security plugin",
+      "feed_summary": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+      "suggested_doc_key": "2026-11-explore-the-codex-security-plugin-82fe289f",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-explore-the-codex-security-plugin-82fe289f.md",
+      "candidate_score": 40.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 6.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-21T02:48:50.079813Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast": {
+    "candidate": {
+      "candidate_id": "openai-blog:9342dbf934e428aa",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+        "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+        "published_at": "2026-11-19T08:00:00Z",
+        "collected_at": "2026-11-20T02:48:46.617582Z",
+        "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
+        "authors": [],
+        "tags": [
+          "Engineering"
+        ],
+        "metadata": {
+          "rss_rank": 1
+        }
+      },
+      "normalized_url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "url_hash": "9342dbf934e428aa00c16520441f258a949ccd62bcb28471deb475c04ce3c227",
+      "title_fingerprint": "how openai s performance factory keeps chatgpt fast",
+      "feed_summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
+      "suggested_doc_key": "2026-11-how-openai-s-performance-factory-keeps-chatgpt-fast-9342dbf9",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-how-openai-s-performance-factory-keeps-chatgpt-fast-9342dbf9.md",
+      "candidate_score": 39.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 9.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-21T02:48:50.079813Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/business/learn/pr-scans-demo": {
+    "candidate": {
+      "candidate_id": "openai-blog:17b7a2b39f098895",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "See PR scans in action",
+        "url": "https://openai.com/business/learn/pr-scans-demo",
+        "published_at": "2026-11-19T00:00:00Z",
+        "collected_at": "2026-11-20T02:48:46.617582Z",
+        "summary": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
+        "authors": [],
+        "tags": [
+          "Demos"
+        ],
+        "metadata": {
+          "rss_rank": 3
+        }
+      },
+      "normalized_url": "https://openai.com/business/learn/pr-scans-demo",
+      "url_hash": "17b7a2b39f098895a2208f48f1507c3092e017b4481f6732b70b65df4c04b2b0",
+      "title_fingerprint": "see pr scans in action",
+      "feed_summary": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
+      "suggested_doc_key": "2026-11-see-pr-scans-in-action-17b7a2b3",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-see-pr-scans-in-action-17b7a2b3.md",
+      "candidate_score": 36.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 1,
+        "freshness_score": 19.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-21T02:48:50.079813Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
