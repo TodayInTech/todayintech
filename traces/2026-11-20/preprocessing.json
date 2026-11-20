@@ -1,0 +1,402 @@
+{
+  "generated_at": "2026-11-20T02:48:35.358961+00:00",
+  "generated_for": "2026-11-20",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "113fbf788863f137ca2fc473c0ffa2c27376c952",
+  "github_run_id": "44663243616",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 27,
+  "excluded_count": 93,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 45,
+      "excluded_count": 75,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 75
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 45,
+      "output_count": 45,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 45,
+      "output_count": 45,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 45,
+      "output_count": 27,
+      "excluded_count": 18,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 18
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:e308a84a77ae00d8",
+          "title": "Anthropic prices initial public offering",
+          "normalized_url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+          "url_hash": "e308a84a77ae00d83193b9513b7cd6ebd3e543714c502c5364a85b3cd224a8c8",
+          "suggested_doc_key": "2026-11-anthropic-prices-initial-public-offering-e308a84a",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-anthropic-prices-initial-public-offering-e308a84a.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:4e521c21205fa9b1",
+          "title": "The best things in open source are built together",
+          "normalized_url": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together",
+          "url_hash": "4e521c21205fa9b10785488817e6db8270fadeda9a339e63b57928a226869f07",
+          "suggested_doc_key": "2026-11-the-best-things-in-open-source-are-built-together-4e521c21",
+          "suggested_article_path": "docs/services/github-blog/2026-11-the-best-things-in-open-source-are-built-together-4e521c21.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 5,
+      "excluded_count": 15,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:056cf0b58a3dbace",
+          "title": "Introducing Tool Retrieval in the Gemini API",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval",
+          "url_hash": "056cf0b58a3dbace68332c5ef6b35e38e3aab513ff13bc25aa1cb803bce8b627",
+          "suggested_doc_key": "2026-11-introducing-tool-retrieval-in-the-gemini-api-056cf0b5",
+          "suggested_article_path": "docs/services/google-blog/2026-11-introducing-tool-retrieval-in-the-gemini-api-056cf0b5.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:63610b904de29506",
+          "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson",
+          "url_hash": "63610b904de29506452ac1fba7c8cb0b4b76c98f0fb6fd62dc6626d364874233",
+          "suggested_doc_key": "2026-11-walter-isaacson-on-curiosity-and-creativity-in-the-ai-age-63610b90",
+          "suggested_article_path": "docs/services/google-blog/2026-11-walter-isaacson-on-curiosity-and-creativity-in-the-ai-age-63610b90.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:dc88cc571d8c7771",
+          "title": "Genie 4 is now available on the Gemini API.",
+          "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api",
+          "url_hash": "dc88cc571d8c777142e5aa86e0ae34e390a81ac19da7f57fb65715e5867cb004",
+          "suggested_doc_key": "2026-11-genie-4-is-now-available-on-the-gemini-api-dc88cc57",
+          "suggested_article_path": "docs/services/google-blog/2026-11-genie-4-is-now-available-on-the-gemini-api-dc88cc57.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:e5ce7f7c8c7deb12",
+          "title": "We’re partnering with Blue Origin on our first heavy-lift Project Suncatcher launch.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership",
+          "url_hash": "e5ce7f7c8c7deb12d1d5b9695afe284562deebc6cbdaf4c95e4864955bc1777b",
+          "suggested_doc_key": "2026-11-we-re-partnering-with-blue-origin-on-our-first-heavy-lift-project-suncat-e5ce7f7c",
+          "suggested_article_path": "docs/services/google-blog/2026-11-we-re-partnering-with-blue-origin-on-our-first-heavy-lift-project-suncat-e5ce7f7c.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:5021ba6085ca6193",
+          "title": "See some of the work from Google Flow and Flow Music Sessions artists",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-and-flow-music-session-artists",
+          "url_hash": "5021ba6085ca6193f0562310b69374311968b7648acd56723f7d56749a263a19",
+          "suggested_doc_key": "2026-11-see-some-of-the-work-from-google-flow-and-flow-music-sessions-artists-5021ba60",
+          "suggested_article_path": "docs/services/google-blog/2026-11-see-some-of-the-work-from-google-flow-and-flow-music-sessions-artists-5021ba60.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 15
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:bda522de56a34a98",
+          "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+          "normalized_url": "https://git-aarvin.github.io/mei",
+          "url_hash": "bda522de56a34a98c046b215a28ad7a4a106a47dcf1815a0d3177c17810fe9c4",
+          "suggested_doc_key": "2026-11-gemini-4-neon-is-the-new-1-on-the-models-engineering-index-bda522de",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-gemini-4-neon-is-the-new-1-on-the-models-engineering-index-bda522de.md",
+          "candidate_score": 65.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 144점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 86개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:e39600edda0e5acc",
+          "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
+          "normalized_url": "https://thedataexchange.media/pete-warden-moonshine",
+          "url_hash": "e39600edda0e5accc0d59352a6d46bf86b1de745583abb6b1cea48ac3ffaa788",
+          "suggested_doc_key": "2026-11-pete-warden-on-local-ai-open-models-voice-interfaces-the-future-of-hardw-e39600ed",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-pete-warden-on-local-ai-open-models-voice-interfaces-the-future-of-hardw-e39600ed.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 216점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 195개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c50a064b65c55ff5",
+          "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+          "normalized_url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+          "url_hash": "c50a064b65c55ff5ed6ecfc0d7a212185011c0797d4a95574fbd5b0aab76d5e1",
+          "suggested_doc_key": "2026-11-the-98-slot-machine-how-paid-advertising-became-an-extraction-tax-c50a064b",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-the-98-slot-machine-how-paid-advertising-became-an-extraction-tax-c50a064b.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 211점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 112개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5fe21d2b4ecab0b0",
+          "title": "Claude solves two open problems in the physics of black holes",
+          "normalized_url": "https://www.anthropic.com/research/claude-black-hole-physics",
+          "url_hash": "5fe21d2b4ecab0b0d155093a6e6ab840418403ca7f39e16ef22c0a3ac253e717",
+          "suggested_doc_key": "2026-11-claude-solves-two-open-problems-in-the-physics-of-black-holes-5fe21d2b",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-claude-solves-two-open-problems-in-the-physics-of-black-holes-5fe21d2b.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 401점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 184개를 토론 신호로 반영했습니다.",
+            "RSS 순위 11위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:56f1988d31978165",
+          "title": "Pancreatic cancer halted by virus injection in three patients",
+          "normalized_url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients",
+          "url_hash": "56f1988d3197816586ced15bd632c6cfd9bf6af2312b9862d3441a61dc7584c6",
+          "suggested_doc_key": "2026-11-pancreatic-cancer-halted-by-virus-injection-in-three-patients-56f1988d",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-pancreatic-cancer-halted-by-virus-injection-in-three-patients-56f1988d.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 610점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 93개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:a890a236270cc5e3",
+          "title": "Deploying Daybreak Red",
+          "normalized_url": "https://openai.com/business/learn/deploying-daybreak-red",
+          "url_hash": "a890a236270cc5e31862345b7933987a42b139de2dead494b477fbf1189784a9",
+          "suggested_doc_key": "2026-11-deploying-daybreak-red-a890a236",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-deploying-daybreak-red-a890a236.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:82fe289fe466dcc1",
+          "title": "Explore the Codex Security Plugin",
+          "normalized_url": "https://openai.com/business/learn/codex-security-plugin-demo",
+          "url_hash": "82fe289fe466dcc1d4f71a60b5a7fb88a90a6df5cf719a456eac5a721e5f3552",
+          "suggested_doc_key": "2026-11-explore-the-codex-security-plugin-82fe289f",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-explore-the-codex-security-plugin-82fe289f.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:9342dbf934e428aa",
+          "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+          "normalized_url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+          "url_hash": "9342dbf934e428aa00c16520441f258a949ccd62bcb28471deb475c04ce3c227",
+          "suggested_doc_key": "2026-11-how-openai-s-performance-factory-keeps-chatgpt-fast-9342dbf9",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-how-openai-s-performance-factory-keeps-chatgpt-fast-9342dbf9.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:17b7a2b39f098895",
+          "title": "See PR scans in action",
+          "normalized_url": "https://openai.com/business/learn/pr-scans-demo",
+          "url_hash": "17b7a2b39f098895a2208f48f1507c3092e017b4481f6732b70b65df4c04b2b0",
+          "suggested_doc_key": "2026-11-see-pr-scans-in-action-17b7a2b3",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-see-pr-scans-in-action-17b7a2b3.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:da30645137037f00",
+          "title": "Get started with Daybreak Blue",
+          "normalized_url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+          "url_hash": "da30645137037f0052cd70ab3b09df0b31abc0303db9422eaa375a651d60b969",
+          "suggested_doc_key": "2026-11-get-started-with-daybreak-blue-da306451",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-get-started-with-daybreak-blue-da306451.md",
+          "candidate_score": 34.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 32,
+        "service_candidate_limit": 8
+      }
+    }
+  ]
+}
