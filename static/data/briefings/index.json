@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-20",
+  "generated_for": "2026-11-21",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -1387,6 +1387,19 @@
       "new": false
     },
     {
+      "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-gemini-4-neon-is-the-new-1-on-the-models-engineering-index-bda522de.md",
+      "status": "published",
+      "score": 65.4,
+      "briefed_at": "2026-11-20",
+      "published_at": "2026-11-19",
+      "excerpt": "제공된 순위표에 따르면 Google의 'Neon'이 점수 **68.0**으로 Models Engineering Index에서 1위를 차지했다. Anthropic의 Fable(65.3)과 OpenAI의 Astra(61.5) 등이 뒤를 이었다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Models Are Getting Dumber on Purpose",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -1400,19 +1413,6 @@
       "new": false
     },
     {
-      "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-gemini-4-neon-is-the-new-1-on-the-models-engineering-index-bda522de.md",
-      "status": "published",
-      "score": 65.4,
-      "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "제공된 순위표에 따르면 Google의 'Neon'이 점수 **68.0**으로 Models Engineering Index에서 1위를 차지했다. Anthropic의 Fable(65.3)과 OpenAI의 Astra(61.5) 등이 뒤를 이었다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": ".self: A new top-level domain designed to support self-hosting",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -1422,6 +1422,19 @@
       "briefed_at": "2026-06-29",
       "published_at": "2026-06-29",
       "excerpt": "인터넷이 강력한 소통 도구임에도 불구하고 그 기반 인프라가 사용자 데이터 수집과 주의력 착취로 활용돼 왔다는 문제의식에서 출발한다는 점을 Human-Centered Computing Foundation(HCCF)이 제기한다. HCCF는 웹을 위한 대안적 아키텍처를 만들겠다는 비전을 제시하며, 인간 중심적 기술 원칙을 전…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-pete-warden-on-local-ai-open-models-voice-interfaces-the-future-of-hardw-e39600ed.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-20",
+      "published_at": "2026-11-19",
+      "excerpt": "Pete Warden은 로컬 모델이 기능적으로 상용 클라우드 모델과 근접해 있고, 양자화·중간급 GPU로도 9B급 모델을 실시간에 가깝게 구동할 수 있으며, 저지연 음성 처리와 온디바이스 실행이 현실적 대안이라고 평가했다.",
       "featured": false,
       "new": false
     },
@@ -2804,15 +2817,15 @@
       "new": false
     },
     {
-      "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
+      "title": "Language Models Can Rewrite Their Own Weights",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-pete-warden-on-local-ai-open-models-voice-interfaces-the-future-of-hardw-e39600ed.md",
+      "href": "./services/hacker-news/2026-11-language-models-can-rewrite-their-own-weights-03b17994.md",
       "status": "published",
       "score": 65.0,
       "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "Pete Warden은 로컬 모델이 기능적으로 상용 클라우드 모델과 근접해 있고, 양자화·중간급 GPU로도 9B급 모델을 실시간에 가깝게 구동할 수 있으며, 저지연 음성 처리와 온디바이스 실행이 현실적 대안이라고 평가했다.",
+      "published_at": "2026-11-20",
+      "excerpt": "arXiv 초록에 따르면 **27B 언어모델이 그래디언트·재학습 없이 자기 가중치를 수정해** 성능을 최대 **6.6점** 향상시키고 손상된 복사본을 **80% 이상** 복구하는 'self‑rewriting' 능력을 보였다.",
       "featured": false,
       "new": true
     },
@@ -3727,6 +3740,19 @@
       "new": false
     },
     {
+      "title": "Re: Riemann",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-re-riemann-75849af9.md",
+      "status": "published",
+      "score": 62.4,
+      "briefed_at": null,
+      "published_at": "2026-11-20",
+      "excerpt": "한 수학자가 'Claude와 함께 리만 가설의 증명을 발견했다(믿는다)'고 발표했고, 글쓴이는 이를 인간의 성취를 AI가 대체하는 사건으로 읽으며 배신감과 존재론적 문제를 제기했다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "'VPNs are lawful technical tools,' says EU Court in landmark copyright ruling",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3998,6 +4024,19 @@
       "excerpt": "제목이 제시하는 내용만 보면 Moebius는 파라미터 수가 약 0.2B인 이미지 인페인팅 모델이 10B급 모델과 유사한 성능을 보인다고 주장하는 프로젝트입니다. 피드 기준으로는 원문 링크와 Hacker News에서의 반응(포인트 201, 댓글 60)만 제공되어 프로젝트의 구체적인 기법(예: 아키텍처, 지식 증류, 학습…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-81134a9d.md",
+      "status": "published",
+      "score": 62.0,
+      "briefed_at": null,
+      "published_at": "2026-11-20",
+      "excerpt": "피드 기준으로는 MarketScreener가 2026-11-20자 기사에서 미국 SEC가 엔비디아에 대해 잠재적 회계 문제를 조사하고 있다고 보도했다고 전해진다. Hacker News에서 반응이 컸다(포인트 238, 댓글 127).",
+      "featured": false,
+      "new": true
     },
     {
       "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
@@ -4659,6 +4698,32 @@
       "briefed_at": "2026-10-13",
       "published_at": "2026-10-12",
       "excerpt": "Agent37은 AI 에이전트를 위한 '저비용 샌드박스'를 표방하며 호스트당 평균 비용을 업계의 10% 이하로 낮췄다고 소개한다. 창업자 비슈누는 고객당 평균 지출을 월 $0.37로 제시하고, 무료 플랜의 인프라 비용은 사용자당 월 $0.05~$0.10 수준이라고 밝힌다. 초기에는 OpenClaw 래퍼로 시작했으나 다양…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Claude solves two open problems in the physics of black holes",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-claude-solves-two-open-problems-in-the-physics-of-black-holes-5fe21d2b.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-20",
+      "published_at": "2026-11-19",
+      "excerpt": "Anthropic의 Claude가 블랙홀 이론물리의 두 미해결 문제를 해결했다. 하나는 20년간 미완의 Hawking–Page 계산을 완결해 블랙홀 형성의 급격한 전이가 시공간의 정의가 사라지는 영역에서도 지속됨을 보였고, 다른 하나는 3차원 모듈러 부트스트랩에서 **M₁ ≤ c/Λ**의 정확한 상한을 증명해 **Λ≈9…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-the-98-slot-machine-how-paid-advertising-became-an-extraction-tax-c50a064b.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-20",
+      "published_at": "2026-11-19",
+      "excerpt": "피드 기준으로는 'The 98% Slot Machine: How Paid Advertising Became an Extraction Tax'(2026-11-19, 작성자 dev1one1)이 Hacker News에서 211점·112댓글로 주목받았습니다. 제목은 유료 광고를 '추출세'로 규정하는 관점을 드러냅니다.",
       "featured": false,
       "new": false
     },
@@ -7640,28 +7705,15 @@
       "new": false
     },
     {
-      "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+      "title": "Inkling 2 Mini",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-the-98-slot-machine-how-paid-advertising-became-an-extraction-tax-c50a064b.md",
+      "href": "./services/hacker-news/2026-11-inkling-2-mini-bd3614c3.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "피드 기준으로는 'The 98% Slot Machine: How Paid Advertising Became an Extraction Tax'(2026-11-19, 작성자 dev1one1)이 Hacker News에서 211점·112댓글로 주목받았습니다. 제목은 유료 광고를 '추출세'로 규정하는 관점을 드러냅니다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Claude solves two open problems in the physics of black holes",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-claude-solves-two-open-problems-in-the-physics-of-black-holes-5fe21d2b.md",
-      "status": "published",
-      "score": 60.0,
-      "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "Anthropic의 Claude가 블랙홀 이론물리의 두 미해결 문제를 해결했다. 하나는 20년간 미완의 Hawking–Page 계산을 완결해 블랙홀 형성의 급격한 전이가 시공간의 정의가 사라지는 영역에서도 지속됨을 보였고, 다른 하나는 3차원 모듈러 부트스트랩에서 **M₁ ≤ c/Λ**의 정확한 상한을 증명해 **Λ≈9…",
+      "published_at": "2026-11-20",
+      "excerpt": "ThinkingMachines는 루프드(transformer looping) 구조의 경량 모델 **Inkling 2 Mini**(총 26.4B, 약 20GB 메모리)를 공개했다. 중간 레이어를 3회 반복해 추론 효율과 장기 추론 성능을 높였고, NVFP4/MXFP8 양자화로 로컬 노트북 등에서 실행 가능하도록 배포했다.",
       "featured": false,
       "new": true
     },
@@ -9824,6 +9876,19 @@
       "new": false
     },
     {
+      "title": "Combatting adversarial distillation",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-combatting-adversarial-distillation-7ad44f99.md",
+      "status": "published",
+      "score": 44.0,
+      "briefed_at": null,
+      "published_at": "2026-11-20",
+      "excerpt": "OpenAI는 GPT‑6.2 Astra·Sol에서 보호 추론(chain-of-thought) 노출 방어를 강화해 내부 적응 평가에서 공격 성공률을 **54.0%→0.2%**로 낮췄다. 분류기·대입학습·API 경계·캠페인 조사·공유를 병행한다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Research acceleration: The jagged frontier",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -10119,6 +10184,32 @@
       "briefed_at": "2026-06-15",
       "published_at": "2026-06-14",
       "excerpt": "피드 기준으로는 OpenAI가 2026-06-14자 공지로 ‘OpenAI Partner Network’를 출범하고 1억5천만 달러를 투자한다고 전합니다. 이 네트워크는 전 세계 파트너들이 기업용 AI의 채택, 배포, 전환을 가속화하도록 지원하기 위한 목적이라고 요약됩니다. 제공된 정보만 보면 대규모 자금 투입을 통한 파…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Deploying Daybreak Red",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-deploying-daybreak-red-a890a236.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": "2026-11-20",
+      "published_at": "2026-11-19",
+      "excerpt": "OpenAI는 2026-11-19에 'Deploying Daybreak Red' 가이드를 공개했다. 피드 기준으로는 Daybreak Red를 이용한 감독형 보안 조사 레퍼런스 아키텍처와 **안전 제어·설정·모니터링** 방안을 제시한다고 설명한다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "The best things in open source are built together",
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "href": "./services/github-blog/2026-11-the-best-things-in-open-source-are-built-together-4e521c21.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": "2026-11-20",
+      "published_at": "2026-11-19",
+      "excerpt": "GitHub이 디자인 하니스 'Replica'와 접근성 책임 모델인 'Open Source Accessibility Framework'를 오픈소스로 공개했다. Replica는 강화학습 중심 프로토타이핑 도구이며, ACCESSIBILITY.md 파일이 리포지토리 개요에 노출되어 접근성 목표와 보고 절차를 공개·추적할 수…",
       "featured": false,
       "new": false
     },
@@ -10721,30 +10812,30 @@
       "new": false
     },
     {
-      "title": "The best things in open source are built together",
-      "service_key": "github-blog",
-      "service_name": "GitHub Blog",
-      "href": "./services/github-blog/2026-11-the-best-things-in-open-source-are-built-together-4e521c21.md",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-hebbia-sees-improvements-in-financial-research-with-gpt-6-astra-8145fefb.md",
       "status": "published",
       "score": 42.0,
       "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "GitHub이 디자인 하니스 'Replica'와 접근성 책임 모델인 'Open Source Accessibility Framework'를 오픈소스로 공개했다. Replica는 강화학습 중심 프로토타이핑 도구이며, ACCESSIBILITY.md 파일이 리포지토리 개요에 노출되어 접근성 목표와 보고 절차를 공개·추적할 수…",
+      "published_at": "2026-11-20",
+      "excerpt": "Hebbia가 GPT‑6 Astra(프리릴리스)를 금융 리서치에 적용한 내부 테스트에서 **인용 관련성 99.5%**, **발표요건 충족 97.9%** 등 높은 성과를 보고했다. 모델은 출처 범위와 프레젠테이션 준수에서 경쟁 모델 대비 유의미한 우위를 보였다.",
       "featured": false,
       "new": true
     },
     {
-      "title": "Deploying Daybreak Red",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-deploying-daybreak-red-a890a236.md",
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-introducing-tool-retrieval-in-the-gemini-api-056cf0b5.md",
       "status": "published",
-      "score": 42.0,
-      "briefed_at": null,
+      "score": 41.0,
+      "briefed_at": "2026-11-20",
       "published_at": "2026-11-19",
-      "excerpt": "OpenAI는 2026-11-19에 'Deploying Daybreak Red' 가이드를 공개했다. 피드 기준으로는 Daybreak Red를 이용한 감독형 보안 조사 레퍼런스 아키텍처와 **안전 제어·설정·모니터링** 방안을 제시한다고 설명한다.",
+      "excerpt": "Google은 2026-11-19 발표로 Gemini API Interactions에 'Tool Retrieval' 프리뷰를 도입했습니다. 도구의 파라미터 스키마를 필요 시에만 불러와 토큰 사용량·지연·도구 선택 정확도를 개선하도록 설계되었습니다.",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "Building the Agent Host Protocol for sessions that continue across devices",
@@ -11176,17 +11267,30 @@
       "new": false
     },
     {
-      "title": "Introducing Tool Retrieval in the Gemini API",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-introducing-tool-retrieval-in-the-gemini-api-056cf0b5.md",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-can-ai-help-scientists-identify-promising-drug-candidates-c1a2af93.md",
       "status": "published",
       "score": 41.0,
       "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "Google은 2026-11-19 발표로 Gemini API Interactions에 'Tool Retrieval' 프리뷰를 도입했습니다. 도구의 파라미터 스키마를 필요 시에만 불러와 토큰 사용량·지연·도구 선택 정확도를 개선하도록 설계되었습니다.",
+      "published_at": "2026-11-20",
+      "excerpt": "OpenAI는 분자 구조 해독·실험 근거 해석·후속 화합물 선택 능력을 평가하는 MedChemBench를 공개했다. xhigh에서 GPT‑6.2 Astra는 84.5%를 기록했지만 화합물 선택과 수치적 성질 예측에서는 여전히 절반가량의 점수만 얻었다.",
       "featured": false,
       "new": true
+    },
+    {
+      "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-walter-isaacson-on-curiosity-and-creativity-in-the-ai-age-63610b90.md",
+      "status": "published",
+      "score": 40.0,
+      "briefed_at": "2026-11-20",
+      "published_at": "2026-11-19",
+      "excerpt": "Walter Isaacson이 Google의 Kent Walker와의 대담에서 레오나르도 다빈치 등 역사적 인물들을 예로 들며 AI 시대에 **호기심과 인간 판단**의 중요성을 강조하는 최신 에피소드가 공개됐다. 핵심 주제는 발명이 '팀 스포츠'였다는 관점과 정보 접근성이 커진 상황에서의 인간 역할이다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "Managing frontier AI risk: From training to deployment",
@@ -11579,17 +11683,30 @@
       "new": false
     },
     {
-      "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-how-openai-s-performance-factory-keeps-chatgpt-fast-9342dbf9.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": "2026-11-20",
+      "published_at": "2026-11-19",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-19자 블로그에서 'Performance Factory'라는 Codex 기반 워크플로 시스템으로 ChatGPT의 성능 문제를 찾아 고쳐 응답 속도를 유지한다고 밝혔다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Genie 4 is now available on the Gemini API.",
       "service_key": "google-blog",
       "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-walter-isaacson-on-curiosity-and-creativity-in-the-ai-age-63610b90.md",
+      "href": "./services/google-blog/2026-11-genie-4-is-now-available-on-the-gemini-api-dc88cc57.md",
       "status": "published",
-      "score": 40.0,
-      "briefed_at": null,
+      "score": 39.0,
+      "briefed_at": "2026-11-20",
       "published_at": "2026-11-19",
-      "excerpt": "Walter Isaacson이 Google의 Kent Walker와의 대담에서 레오나르도 다빈치 등 역사적 인물들을 예로 들며 AI 시대에 **호기심과 인간 판단**의 중요성을 강조하는 최신 에피소드가 공개됐다. 핵심 주제는 발명이 '팀 스포츠'였다는 관점과 정보 접근성이 커진 상황에서의 인간 역할이다.",
+      "excerpt": "Genie 4가 Gemini API(Interactions API)와 Google AI Studio에 공개되어 텍스트·참조 이미지로 연속 720p(24fps) 월드를 네이티브 오디오와 함께 생성하고 실시간 키보드·텍스트 제어로 환경을 조작할 수 있게 되었습니다. 모든 출력에는 imperceptible SynthID 워터…",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "The Silent Consensus",
@@ -12463,32 +12580,6 @@
       "new": false
     },
     {
-      "title": "Genie 4 is now available on the Gemini API.",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-genie-4-is-now-available-on-the-gemini-api-dc88cc57.md",
-      "status": "published",
-      "score": 39.0,
-      "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "Genie 4가 Gemini API(Interactions API)와 Google AI Studio에 공개되어 텍스트·참조 이미지로 연속 720p(24fps) 월드를 네이티브 오디오와 함께 생성하고 실시간 키보드·텍스트 제어로 환경을 조작할 수 있게 되었습니다. 모든 출력에는 imperceptible SynthID 워터…",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-how-openai-s-performance-factory-keeps-chatgpt-fast-9342dbf9.md",
-      "status": "published",
-      "score": 39.0,
-      "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "피드 기준으로는 OpenAI가 2026-11-19자 블로그에서 'Performance Factory'라는 Codex 기반 워크플로 시스템으로 ChatGPT의 성능 문제를 찾아 고쳐 응답 속도를 유지한다고 밝혔다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "More ways to move care forward with ChatGPT for Healthcare",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -12966,6 +13057,32 @@
       "briefed_at": "2026-06-13",
       "published_at": "2026-06-11",
       "excerpt": "피드 기준으로는 OpenAI가 Ona를 인수할 계획이라고 발표했습니다. 인수 목적은 Codex를 보강해 보안되고 지속적인 클라우드 환경을 제공하는 것으로 보입니다. 제공된 정보만 보면 이 변화는 장기 실행형 AI 에이전트를 기업 워크플로에 통합하는 것을 목표로 합니다. 구체적인 조건이나 일정은 피드에 포함되어 있지 않습…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Explore the Codex Security Plugin",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-explore-the-codex-security-plugin-82fe289f.md",
+      "status": "published",
+      "score": 38.0,
+      "briefed_at": null,
+      "published_at": "2026-11-19",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-19에 Codex Security Plugin의 데모 영상을 공개했으며, 설치·시작부터 녹화에 표시된 결과 검토까지 워크플로우를 시연한다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "We’re partnering with Blue Origin on our first heavy-lift Project Suncatcher launch.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-we-re-partnering-with-blue-origin-on-our-first-heavy-lift-project-suncat-e5ce7f7c.md",
+      "status": "published",
+      "score": 37.0,
+      "briefed_at": "2026-11-20",
+      "published_at": "2026-11-19",
+      "excerpt": "Google은 Project Suncatcher의 첫 중량 발사를 위해 Blue Origin과 협력하며, New Glenn으로 2029년 1분기에 데이터센터 랙 규모 위성들을 태양동기궤도에 투입할 예정이라고 밝혔다.",
       "featured": false,
       "new": false
     },
@@ -13776,17 +13893,17 @@
       "new": false
     },
     {
-      "title": "We’re partnering with Blue Origin on our first heavy-lift Project Suncatcher launch.",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-we-re-partnering-with-blue-origin-on-our-first-heavy-lift-project-suncat-e5ce7f7c.md",
+      "title": "See PR scans in action",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-see-pr-scans-in-action-17b7a2b3.md",
       "status": "published",
-      "score": 37.0,
-      "briefed_at": null,
+      "score": 36.0,
+      "briefed_at": "2026-11-20",
       "published_at": "2026-11-19",
-      "excerpt": "Google은 Project Suncatcher의 첫 중량 발사를 위해 Blue Origin과 협력하며, New Glenn으로 2029년 1분기에 데이터센터 랙 규모 위성들을 태양동기궤도에 투입할 예정이라고 밝혔다.",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-19 공개한 'See PR scans in action' 데모에서 풀 리퀘스트 워크플로 내 PR 스캔 결과 검토 과정을 시연하는 워크스루를 제공한다고 안내합니다.",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "How genome mapping can help researchers better understand disease",
@@ -14777,15 +14894,15 @@
       "new": false
     },
     {
-      "title": "See PR scans in action",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-see-pr-scans-in-action-17b7a2b3.md",
+      "title": "How Watch Duty is using Gemini to get wildfire alerts out faster",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-how-watch-duty-is-using-gemini-to-get-wildfire-alerts-out-faster-20a6c91a.md",
       "status": "published",
       "score": 36.0,
       "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "피드 기준으로는 OpenAI가 2026-11-19 공개한 'See PR scans in action' 데모에서 풀 리퀘스트 워크플로 내 PR 스캔 결과 검토 과정을 시연하는 워크스루를 제공한다고 안내합니다.",
+      "published_at": "2026-11-20",
+      "excerpt": "Google 엔지니어들이 Gemini 기반 도구로 잡음 많은 VHF 무전음을 정리해 단어 오류율을 **38%→22.34%**로 낮추고, 30초 이내에 화재 신호를 포착해 Watch Duty의 야간 Critical Alert 발송을 가능하게 했다.",
       "featured": false,
       "new": true
     },
@@ -16311,6 +16428,19 @@
       "new": false
     },
     {
+      "title": "See some of the work from Google Flow and Flow Music Sessions artists",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-see-some-of-the-work-from-google-flow-and-flow-music-sessions-artists-5021ba60.md",
+      "status": "published",
+      "score": 31.0,
+      "briefed_at": null,
+      "published_at": "2026-11-19",
+      "excerpt": "Google은 6주간의 Flow Sessions에서 아티스트들이 Google Flow로 만든 시각 프로젝트와 Flow Music Sessions 참가자들이 Flow Music의 'Spaces'로 제작한 오디오 도구·플러그인 결과물을 공개하고, 해당 Spaces를 확인해 리믹스해볼 수 있다고 전했다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Focus areas for The Anthropic Institute",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -17117,6 +17247,32 @@
       "new": false
     },
     {
+      "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-anthropic-announces-closing-of-initial-public-offering-including-full-ex-fd109fdc.md",
+      "status": "published",
+      "score": 30.0,
+      "briefed_at": null,
+      "published_at": "2026-11-20",
+      "excerpt": "Anthropic가 Class A 1,127,000,000주를 주당 $83에 공모해 총 약 $93.5B(회사 수령 약 $91.6B)를 확보했고, 동시 사모로 Class N 313,253,007주를 AMD·Google·Microsoft·NVIDIA 등 주요 기술기업에 매각했습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Anthropic prices initial public offering",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-anthropic-prices-initial-public-offering-e308a84a.md",
+      "status": "published",
+      "score": 29.0,
+      "briefed_at": "2026-11-20",
+      "published_at": "2026-11-18",
+      "excerpt": "Anthropic이 Class A 주식을 주당 **$83**로 공모가를 확정하고 총 **980,000,000주**(회사 매도 956,351,354주)를 내놓았다. 주식은 2026-11-19 나스닥 'ANT'로 거래 시작 예정.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "A framework for AI development transparency",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -17440,19 +17596,6 @@
       "excerpt": "제공된 정보만 보면 이 구글 블로그 글은 연구자들이 'Co-Scientist'와 협력해 큰 문제를 해결하는 네 가지 방식을 소개합니다. 저자는 Joel Meares이며 게시일은 2026-06-09입니다. 피드 요약에는 컬러풀하고 스타일화된 스파이크형 분자 구조 이미지가 포함되어 있습니다. 이미지가 시사하는 바는 있으나…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Anthropic prices initial public offering",
-      "service_key": "anthropic-blog",
-      "service_name": "Anthropic Blog",
-      "href": "./services/anthropic-blog/2026-11-anthropic-prices-initial-public-offering-e308a84a.md",
-      "status": "published",
-      "score": 29.0,
-      "briefed_at": null,
-      "published_at": "2026-11-18",
-      "excerpt": "Anthropic이 Class A 주식을 주당 **$83**로 공모가를 확정하고 총 **980,000,000주**(회사 매도 956,351,354주)를 내놓았다. 주식은 2026-11-19 나스닥 'ANT'로 거래 시작 예정.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "U.S. elections readiness",

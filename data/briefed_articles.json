@@ -14310,6 +14310,116 @@
       "status": "published",
       "briefed_at": "2026-11-20T02:53:20.773444Z",
       "candidate_score": 36.0
+    },
+    "fd109fdc361c3cd3d5827b792d4795d479fc5c70f204c1bf9bad683fe9efc289": {
+      "normalized_url": "https://www.anthropic.com/news/ipo-close",
+      "title_fingerprint": "anthropic announces closing of initial public offering including full exercise of underwriters option to purchase additional shares and closing of concurrent private placement",
+      "service_key": "anthropic-blog",
+      "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
+      "article_doc_path": "docs/services/anthropic-blog/2026-11-anthropic-announces-closing-of-initial-public-offering-including-full-ex-fd109fdc.md",
+      "status": "published",
+      "briefed_at": "2026-11-21T03:02:14.008292Z",
+      "candidate_score": 30.0
+    },
+    "20a6c91a795bac88eb084e3fe788d72d88c0311a2b7e4c7394d158428457ea07": {
+      "normalized_url": "https://blog.google/company-news/outreach-and-initiatives/google-org/watch-duty-gemini-tool",
+      "title_fingerprint": "how watch duty is using gemini to get wildfire alerts out faster",
+      "service_key": "google-blog",
+      "title": "How Watch Duty is using Gemini to get wildfire alerts out faster",
+      "article_doc_path": "docs/services/google-blog/2026-11-how-watch-duty-is-using-gemini-to-get-wildfire-alerts-out-faster-20a6c91a.md",
+      "status": "published",
+      "briefed_at": "2026-11-21T03:02:14.008331Z",
+      "candidate_score": 36.0
+    },
+    "5021ba6085ca6193f0562310b69374311968b7648acd56723f7d56749a263a19": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-and-flow-music-session-artists",
+      "title_fingerprint": "see some of the work from google flow and flow music sessions artists",
+      "service_key": "google-blog",
+      "title": "See some of the work from Google Flow and Flow Music Sessions artists",
+      "article_doc_path": "docs/services/google-blog/2026-11-see-some-of-the-work-from-google-flow-and-flow-music-sessions-artists-5021ba60.md",
+      "status": "published",
+      "briefed_at": "2026-11-21T03:02:14.008338Z",
+      "candidate_score": 31.0
+    },
+    "03b179946dd0e551984b025c5c0109181a33c8ab2521005dd6c1243f1fb2bdf6": {
+      "normalized_url": "https://arxiv.org/abs/2611.21885",
+      "title_fingerprint": "language models can rewrite their own weights",
+      "service_key": "hacker-news",
+      "title": "Language Models Can Rewrite Their Own Weights",
+      "article_doc_path": "docs/services/hacker-news/2026-11-language-models-can-rewrite-their-own-weights-03b17994.md",
+      "status": "published",
+      "briefed_at": "2026-11-21T03:02:14.008342Z",
+      "candidate_score": 65.0
+    },
+    "75849af9873330dd2c1fc3cdad3a35a16bbccfc31efe224bba210828f5054c1c": {
+      "normalized_url": "https://borretti.me/article/re-riemann",
+      "title_fingerprint": "re riemann",
+      "service_key": "hacker-news",
+      "title": "Re: Riemann",
+      "article_doc_path": "docs/services/hacker-news/2026-11-re-riemann-75849af9.md",
+      "status": "published",
+      "briefed_at": "2026-11-21T03:02:14.008346Z",
+      "candidate_score": 62.4
+    },
+    "81134a9df014d23caea532445a9759501f800dfa58233a04c172d3df48402274": {
+      "normalized_url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
+      "title_fingerprint": "us sec s nvidia probe is examining potential accounting issues sources",
+      "service_key": "hacker-news",
+      "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
+      "article_doc_path": "docs/services/hacker-news/2026-11-us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-81134a9d.md",
+      "status": "published",
+      "briefed_at": "2026-11-21T03:02:14.008349Z",
+      "candidate_score": 62.0
+    },
+    "bd3614c30b5d6b837c23fd079674b78298aa688a9dd2bb0c86ebfb91b9b4018b": {
+      "normalized_url": "https://thinkingmachines.ai/news/inkling-2-mini",
+      "title_fingerprint": "inkling 2 mini",
+      "service_key": "hacker-news",
+      "title": "Inkling 2 Mini",
+      "article_doc_path": "docs/services/hacker-news/2026-11-inkling-2-mini-bd3614c3.md",
+      "status": "published",
+      "briefed_at": "2026-11-21T03:02:14.008353Z",
+      "candidate_score": 60.0
+    },
+    "7ad44f990f0c53ef2e2a537716dcd0f4d19ea5c4fbcd3c1cf3877b1b8eae8965": {
+      "normalized_url": "https://openai.com/index/combatting-adversarial-distillation",
+      "title_fingerprint": "combatting adversarial distillation",
+      "service_key": "openai-blog",
+      "title": "Combatting adversarial distillation",
+      "article_doc_path": "docs/services/openai-blog/2026-11-combatting-adversarial-distillation-7ad44f99.md",
+      "status": "published",
+      "briefed_at": "2026-11-21T03:02:14.008357Z",
+      "candidate_score": 44.0
+    },
+    "8145fefb47ff1ca9fa5560e62b69bf54a222274ffe6f44de71f6b3dfaaa8f955": {
+      "normalized_url": "https://openai.com/business/customer-stories/hebbia",
+      "title_fingerprint": "hebbia sees improvements in financial research with gpt 6 astra",
+      "service_key": "openai-blog",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "article_doc_path": "docs/services/openai-blog/2026-11-hebbia-sees-improvements-in-financial-research-with-gpt-6-astra-8145fefb.md",
+      "status": "published",
+      "briefed_at": "2026-11-21T03:02:14.008360Z",
+      "candidate_score": 42.0
+    },
+    "c1a2af93db54bfcf7c217cb74db83cfc0f90565b5c1b91d5871ab9ee0c953910": {
+      "normalized_url": "https://openai.com/index/introducing-medchembench",
+      "title_fingerprint": "can ai help scientists identify promising drug candidates",
+      "service_key": "openai-blog",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "article_doc_path": "docs/services/openai-blog/2026-11-can-ai-help-scientists-identify-promising-drug-candidates-c1a2af93.md",
+      "status": "published",
+      "briefed_at": "2026-11-21T03:02:14.008363Z",
+      "candidate_score": 41.0
+    },
+    "82fe289fe466dcc1d4f71a60b5a7fb88a90a6df5cf719a456eac5a721e5f3552": {
+      "normalized_url": "https://openai.com/business/learn/codex-security-plugin-demo",
+      "title_fingerprint": "explore the codex security plugin",
+      "service_key": "openai-blog",
+      "title": "Explore the Codex Security Plugin",
+      "article_doc_path": "docs/services/openai-blog/2026-11-explore-the-codex-security-plugin-82fe289f.md",
+      "status": "published",
+      "briefed_at": "2026-11-21T03:02:14.008366Z",
+      "candidate_score": 38.0
     }
   }
 }

@@ -3134,13 +3134,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-11T03:57:28.114296Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-23T02:58:08.231031Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-21T02:58:08.231031Z",
+    "extraction_method": "precision",
+    "token_count": 3594
   },
   "https://openai.com/index/control-room": {
     "candidate": {
@@ -3187,13 +3187,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-11T03:57:28.114296Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-23T02:58:08.231031Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-21T02:58:08.231031Z",
+    "extraction_method": "precision",
+    "token_count": 1461
   },
   "https://openai.com/index/coderabbit-codex-daybreak": {
     "candidate": {
@@ -3240,13 +3240,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-11T03:57:28.114296Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-23T02:58:08.231031Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-21T02:58:08.231031Z",
+    "extraction_method": "precision",
+    "token_count": 1217
   },
   "https://openai.com/index/kuken": {
     "candidate": {
@@ -3291,13 +3291,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-11T03:57:28.114296Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-23T02:58:08.231031Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-21T02:58:08.231031Z",
+    "extraction_method": "precision",
+    "token_count": 941
   },
   "https://openai.com/index/chatgpt-enterprise-aws-marketplace": {
     "candidate": {
@@ -3343,13 +3343,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-11T03:57:28.114296Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-23T02:58:08.231031Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-21T02:58:08.231031Z",
+    "extraction_method": "precision",
+    "token_count": 196
   },
   "https://openai.com/index/gilbert-tobin-sam-nickless": {
     "candidate": {
@@ -5631,6 +5631,63 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-21T02:48:50.079813Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627": {
+    "candidate": {
+      "candidate_id": "hacker-news:81134a9df014d23c",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
+        "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
+        "published_at": "2026-11-20T20:22:41Z",
+        "collected_at": "2026-11-21T02:58:04.125800Z",
+        "summary": "<p>Article URL: <a href=\"https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627\">https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50581438\">https://news.ycombinator.com/item?id=50581438</a></p>\n<p>Points: 238</p>\n<p># Comments: 127</p>",
+        "authors": [
+          "ftchd"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 8,
+          "hn_points": 238,
+          "hn_comments": 127,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50581438"
+        }
+      },
+      "normalized_url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
+      "url_hash": "81134a9df014d23caea532445a9759501f800dfa58233a04c172d3df48402274",
+      "title_fingerprint": "us sec s nvidia probe is examining potential accounting issues sources",
+      "feed_summary": "<p>Article URL: <a href=\"https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627\">https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50581438\">https://news.ycombinator.com/item?id=50581438</a></p>\n<p>Points: 238</p>\n<p># Comments: 127</p>",
+      "suggested_doc_key": "2026-11-us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-81134a9d",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-81134a9d.md",
+      "candidate_score": 62.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 2.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 238점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 127개를 토론 신호로 반영했습니다.",
+        "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-22T02:58:08.229810Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
