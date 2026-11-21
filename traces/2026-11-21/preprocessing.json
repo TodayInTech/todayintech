@@ -1,0 +1,342 @@
+{
+  "generated_at": "2026-11-21T02:57:55.279182+00:00",
+  "generated_for": "2026-11-21",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "108ba20beeb2751493eec58aa9cca887cf948e10",
+  "github_run_id": "44858553180",
+  "service_count": 5,
+  "duration_ms": 9,
+  "raw_count": 120,
+  "candidate_count": 23,
+  "excluded_count": 97,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 40,
+      "excluded_count": 80,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 80
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 40,
+      "output_count": 40,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 40,
+      "output_count": 40,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 40,
+      "output_count": 23,
+      "excluded_count": 17,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 17
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 1,
+      "excluded_count": 19,
+      "top_candidates": [
+        {
+          "candidate_id": "anthropic-blog:fd109fdc361c3cd3",
+          "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
+          "normalized_url": "https://www.anthropic.com/news/ipo-close",
+          "url_hash": "fd109fdc361c3cd3d5827b792d4795d479fc5c70f204c1bf9bad683fe9efc289",
+          "suggested_doc_key": "2026-11-anthropic-announces-closing-of-initial-public-offering-including-full-ex-fd109fdc",
+          "suggested_article_path": "docs/services/anthropic-blog/2026-11-anthropic-announces-closing-of-initial-public-offering-including-full-ex-fd109fdc.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 19
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 2,
+      "excluded_count": 18,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:20a6c91a795bac88",
+          "title": "How Watch Duty is using Gemini to get wildfire alerts out faster",
+          "normalized_url": "https://blog.google/company-news/outreach-and-initiatives/google-org/watch-duty-gemini-tool",
+          "url_hash": "20a6c91a795bac88eb084e3fe788d72d88c0311a2b7e4c7394d158428457ea07",
+          "suggested_doc_key": "2026-11-how-watch-duty-is-using-gemini-to-get-wildfire-alerts-out-faster-20a6c91a",
+          "suggested_article_path": "docs/services/google-blog/2026-11-how-watch-duty-is-using-gemini-to-get-wildfire-alerts-out-faster-20a6c91a.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:5021ba6085ca6193",
+          "title": "See some of the work from Google Flow and Flow Music Sessions artists",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-and-flow-music-session-artists",
+          "url_hash": "5021ba6085ca6193f0562310b69374311968b7648acd56723f7d56749a263a19",
+          "suggested_doc_key": "2026-11-see-some-of-the-work-from-google-flow-and-flow-music-sessions-artists-5021ba60",
+          "suggested_article_path": "docs/services/google-blog/2026-11-see-some-of-the-work-from-google-flow-and-flow-music-sessions-artists-5021ba60.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 18
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:03b179946dd0e551",
+          "title": "Language Models Can Rewrite Their Own Weights",
+          "normalized_url": "https://arxiv.org/abs/2611.21885",
+          "url_hash": "03b179946dd0e551984b025c5c0109181a33c8ab2521005dd6c1243f1fb2bdf6",
+          "suggested_doc_key": "2026-11-language-models-can-rewrite-their-own-weights-03b17994",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-language-models-can-rewrite-their-own-weights-03b17994.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 347점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 112개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:75849af9873330dd",
+          "title": "Re: Riemann",
+          "normalized_url": "https://borretti.me/article/re-riemann",
+          "url_hash": "75849af9873330dd2c1fc3cdad3a35a16bbccfc31efe224bba210828f5054c1c",
+          "suggested_doc_key": "2026-11-re-riemann-75849af9",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-re-riemann-75849af9.md",
+          "candidate_score": 62.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 144점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 129개를 토론 신호로 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:81134a9df014d23c",
+          "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
+          "normalized_url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
+          "url_hash": "81134a9df014d23caea532445a9759501f800dfa58233a04c172d3df48402274",
+          "suggested_doc_key": "2026-11-us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-81134a9d",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-81134a9d.md",
+          "candidate_score": 62.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 238점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 127개를 토론 신호로 반영했습니다.",
+            "RSS 순위 8위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:bd3614c30b5d6b83",
+          "title": "Inkling 2 Mini",
+          "normalized_url": "https://thinkingmachines.ai/news/inkling-2-mini",
+          "url_hash": "bd3614c30b5d6b837c23fd079674b78298aa688a9dd2bb0c86ebfb91b9b4018b",
+          "suggested_doc_key": "2026-11-inkling-2-mini-bd3614c3",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-inkling-2-mini-bd3614c3.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 727점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 124개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:0df7b71bba4fa10b",
+          "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+          "normalized_url": "https://scottaaronson.blog/?p=10344",
+          "url_hash": "0df7b71bba4fa10b4b298a4cba9bde5b00c3933a06d268f85860a9a4726b7c7c",
+          "suggested_doc_key": "2026-11-the-stochastic-parrots-have-apparently-proved-the-riemann-hypothesis-0df7b71b",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-the-stochastic-parrots-have-apparently-proved-the-riemann-hypothesis-0df7b71b.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 223점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 199개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:7ad44f990f0c53ef",
+          "title": "Combatting adversarial distillation",
+          "normalized_url": "https://openai.com/index/combatting-adversarial-distillation",
+          "url_hash": "7ad44f990f0c53ef2e2a537716dcd0f4d19ea5c4fbcd3c1cf3877b1b8eae8965",
+          "suggested_doc_key": "2026-11-combatting-adversarial-distillation-7ad44f99",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-combatting-adversarial-distillation-7ad44f99.md",
+          "candidate_score": 44.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:8145fefb47ff1ca9",
+          "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+          "normalized_url": "https://openai.com/business/customer-stories/hebbia",
+          "url_hash": "8145fefb47ff1ca9fa5560e62b69bf54a222274ffe6f44de71f6b3dfaaa8f955",
+          "suggested_doc_key": "2026-11-hebbia-sees-improvements-in-financial-research-with-gpt-6-astra-8145fefb",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-hebbia-sees-improvements-in-financial-research-with-gpt-6-astra-8145fefb.md",
+          "candidate_score": 42.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:c1a2af93db54bfcf",
+          "title": "Can AI help scientists identify promising drug candidates?",
+          "normalized_url": "https://openai.com/index/introducing-medchembench",
+          "url_hash": "c1a2af93db54bfcf7c217cb74db83cfc0f90565b5c1b91d5871ab9ee0c953910",
+          "suggested_doc_key": "2026-11-can-ai-help-scientists-identify-promising-drug-candidates-c1a2af93",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-can-ai-help-scientists-identify-promising-drug-candidates-c1a2af93.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:82fe289fe466dcc1",
+          "title": "Explore the Codex Security Plugin",
+          "normalized_url": "https://openai.com/business/learn/codex-security-plugin-demo",
+          "url_hash": "82fe289fe466dcc1d4f71a60b5a7fb88a90a6df5cf719a456eac5a721e5f3552",
+          "suggested_doc_key": "2026-11-explore-the-codex-security-plugin-82fe289f",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-explore-the-codex-security-plugin-82fe289f.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:68ddb817fe4001c0",
+          "title": "Advancing chip design with OpenAI models",
+          "normalized_url": "https://openai.com/index/advancing-chip-design-with-our-models",
+          "url_hash": "68ddb817fe4001c0fc7b71404e8ed33269a5f57651ec2110d7ae5f13ebb157e7",
+          "suggested_doc_key": "2026-11-advancing-chip-design-with-openai-models-68ddb817",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-advancing-chip-design-with-openai-models-68ddb817.md",
+          "candidate_score": 32.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 33,
+        "service_candidate_limit": 7
+      }
+    }
+  ]
+}
