@@ -1,0 +1,298 @@
+{
+  "generated_at": "2026-11-22T01:52:45.246063+00:00",
+  "generated_for": "2026-11-22",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "491dff496450c3a6ce25c687da310535f32563ad",
+  "github_run_id": "44973377828",
+  "service_count": 5,
+  "duration_ms": 14,
+  "raw_count": 120,
+  "candidate_count": 20,
+  "excluded_count": 100,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 32,
+      "excluded_count": 88,
+      "duration_ms": 7,
+      "reason_counts": {
+        "already_briefed": 88
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 32,
+      "output_count": 32,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 32,
+      "output_count": 20,
+      "excluded_count": 12,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 12
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:6c69e97c5257c80c",
+          "title": "Inkling-2-Mini in 5.4 GB Memory",
+          "normalized_url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+          "url_hash": "6c69e97c5257c80c3d037c34e7f68f6fc5182d973007d8bd9aa9de69cfacb73e",
+          "suggested_doc_key": "2026-11-inkling-2-mini-in-5-4-gb-memory-6c69e97c",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-inkling-2-mini-in-5-4-gb-memory-6c69e97c.md",
+          "candidate_score": 61.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 357점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 91개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:5c6d12478082daa5",
+          "title": "Lean verification of the Riemann Hypothesis",
+          "normalized_url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis",
+          "url_hash": "5c6d12478082daa57f8cbf648030a820e3b1b62eff99b071bff4905e497d27de",
+          "suggested_doc_key": "2026-11-lean-verification-of-the-riemann-hypothesis-5c6d1247",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-lean-verification-of-the-riemann-hypothesis-5c6d1247.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 832점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 681개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:cf85127411206c4e",
+          "title": "Detonating a pile of lead azide",
+          "normalized_url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+          "url_hash": "cf85127411206c4ec73b9cf55633912f6f5e5f443081b0328af4196dea684ff6",
+          "suggested_doc_key": "2026-11-detonating-a-pile-of-lead-azide-cf851274",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-detonating-a-pile-of-lead-azide-cf851274.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 523점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 346개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7edcf5e729c20239",
+          "title": "My monitor was cutting my download speed by 75%",
+          "normalized_url": "https://blog.tymscar.com/posts/studiodisplayethernet",
+          "url_hash": "7edcf5e729c2023916c404a63aa73bd58038441c16aadd7ba29ce1e9987966d7",
+          "suggested_doc_key": "2026-11-my-monitor-was-cutting-my-download-speed-by-75-7edcf5e7",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-my-monitor-was-cutting-my-download-speed-by-75-7edcf5e7.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 487점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 232개를 토론 신호로 반영했습니다.",
+            "RSS 순위 15위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:b8606c68272e2ff2",
+          "title": "RCE in Gnupg",
+          "normalized_url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+          "url_hash": "b8606c68272e2ff2bb29ab501378e45d484ee9ce06b036c655e94dcf66aa3e1e",
+          "suggested_doc_key": "2026-11-rce-in-gnupg-b8606c68",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-rce-in-gnupg-b8606c68.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 233점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 93개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 1,
+        "service_candidate_limit": 9
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 10,
+      "excluded_count": 40,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:68ddb817fe4001c0",
+          "title": "Advancing chip design with OpenAI models",
+          "normalized_url": "https://openai.com/index/advancing-chip-design-with-our-models",
+          "url_hash": "68ddb817fe4001c0fc7b71404e8ed33269a5f57651ec2110d7ae5f13ebb157e7",
+          "suggested_doc_key": "2026-11-advancing-chip-design-with-openai-models-68ddb817",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-advancing-chip-design-with-openai-models-68ddb817.md",
+          "candidate_score": 31.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 4일이 지난 글로 최신성 16점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:da30645137037f00",
+          "title": "Get started with Daybreak Blue",
+          "normalized_url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+          "url_hash": "da30645137037f0052cd70ab3b09df0b31abc0303db9422eaa375a651d60b969",
+          "suggested_doc_key": "2026-11-get-started-with-daybreak-blue-da306451",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-get-started-with-daybreak-blue-da306451.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+            "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:21b4758ab52123ac",
+          "title": "Advancing computer-use agents for healthcare teams",
+          "normalized_url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+          "url_hash": "21b4758ab52123ac78ffa3dbca8705003ed9e3a44cc34d1840f5a51cf6e091d0",
+          "suggested_doc_key": "2026-11-advancing-computer-use-agents-for-healthcare-teams-21b4758a",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-advancing-computer-use-agents-for-healthcare-teams-21b4758a.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 5일이 지난 글로 최신성 15점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 28위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:60f3c7381bc61eae",
+          "title": "The King’s Trust and OpenAI launch £1m partnership",
+          "normalized_url": "https://openai.com/index/the-kings-trust-and-openai",
+          "url_hash": "60f3c7381bc61eae5e3d002a0ecfce30c3913c926a7778f89e799b4b1d0cc1eb",
+          "suggested_doc_key": "2026-11-the-king-s-trust-and-openai-launch-1m-partnership-60f3c738",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-the-king-s-trust-and-openai-launch-1m-partnership-60f3c738.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 29위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3d4aeac88b69acfa",
+          "title": "At Holiday Extras, dots get to work before anyone asks",
+          "normalized_url": "https://openai.com/business/customer-stories/holiday-extras-dots",
+          "url_hash": "3d4aeac88b69acfaa9cd944cf75b07a9d89f3c8d684549bae7f0b762916da940",
+          "suggested_doc_key": "2026-11-at-holiday-extras-dots-get-to-work-before-anyone-asks-3d4aeac8",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-at-holiday-extras-dots-get-to-work-before-anyone-asks-3d4aeac8.md",
+          "candidate_score": 29.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 30위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 37,
+        "service_candidate_limit": 3
+      }
+    }
+  ]
+}
