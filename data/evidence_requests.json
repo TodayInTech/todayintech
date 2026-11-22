@@ -1014,13 +1014,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-12T01:01:06.136505Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-29T01:53:01.410635Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-22T01:53:01.410635Z",
+    "extraction_method": "precision",
+    "token_count": 1473
   },
   "https://openai.com/index/ropes-gray-ai-diligence": {
     "candidate": {
@@ -3393,13 +3393,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-12T01:41:18.564315Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-24T01:53:01.410635Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-22T01:53:01.410635Z",
+    "extraction_method": "precision",
+    "token_count": 950
   },
   "https://openai.com/index/introducing-businesses-chatgpt": {
     "candidate": {
@@ -3445,13 +3445,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-12T01:41:18.564315Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-24T01:53:01.410635Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-22T01:53:01.410635Z",
+    "extraction_method": "precision",
+    "token_count": 803
   },
   "https://openai.com/index/closing-ai-guidance-gap-education": {
     "candidate": {
@@ -3497,13 +3497,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-12T01:41:18.564315Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-24T01:53:01.410635Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-22T01:53:01.410635Z",
+    "extraction_method": "precision",
+    "token_count": 1015
   },
   "https://openai.com/index/ai-effect-on-freelance-work": {
     "candidate": {
@@ -3549,13 +3549,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-12T01:41:18.564315Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-24T01:53:01.410635Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-22T01:53:01.410635Z",
+    "extraction_method": "precision",
+    "token_count": 946
   },
   "https://github.com/FrigadeHQ/yogurt": {
     "candidate": {
@@ -4838,13 +4838,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
+    "status": "reviewed",
     "attempts": 0,
-    "next_attempt_at": "2026-11-18T04:18:11.825479Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "next_attempt_at": "2026-11-22T01:53:01.408722Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-22T01:53:01.408722Z",
+    "extraction_method": "precision",
+    "token_count": 1676
   },
   "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare": {
     "candidate": {
@@ -5689,6 +5689,115 @@
     "attempts": 0,
     "next_attempt_at": "2026-11-22T02:58:08.229810Z",
     "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really": {
+    "candidate": {
+      "candidate_id": "hacker-news:cf85127411206c4e",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Detonating a pile of lead azide",
+        "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+        "published_at": "2026-11-21T13:23:14Z",
+        "collected_at": "2026-11-22T01:52:56.003621Z",
+        "summary": "<p>Article URL: <a href=\"https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really\">https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50588982\">https://news.ycombinator.com/item?id=50588982</a></p>\n<p>Points: 523</p>\n<p># Comments: 346</p>",
+        "authors": [
+          "beginning_end"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 14,
+          "hn_points": 523,
+          "hn_comments": 346,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50588982"
+        }
+      },
+      "normalized_url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+      "url_hash": "cf85127411206c4ec73b9cf55633912f6f5e5f443081b0328af4196dea684ff6",
+      "title_fingerprint": "detonating a pile of lead azide",
+      "feed_summary": "<p>Article URL: <a href=\"https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really\">https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50588982\">https://news.ycombinator.com/item?id=50588982</a></p>\n<p>Points: 523</p>\n<p># Comments: 346</p>",
+      "suggested_doc_key": "2026-11-detonating-a-pile-of-lead-azide-cf851274",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-detonating-a-pile-of-lead-azide-cf851274.md",
+      "candidate_score": 60.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 523점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 346개를 토론 신호로 반영했습니다.",
+        "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-23T01:53:01.408722Z",
+    "last_failure": "access_denied",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/business/learn/daybreak-blue-onboarding-demo": {
+    "candidate": {
+      "candidate_id": "openai-blog:da30645137037f00",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Get started with Daybreak Blue",
+        "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+        "published_at": "2026-11-19T00:00:00Z",
+        "collected_at": "2026-11-22T01:52:57.287772Z",
+        "summary": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
+        "authors": [],
+        "tags": [
+          "Demos"
+        ],
+        "metadata": {
+          "rss_rank": 7
+        }
+      },
+      "normalized_url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+      "url_hash": "da30645137037f0052cd70ab3b09df0b31abc0303db9422eaa375a651d60b969",
+      "title_fingerprint": "get started with daybreak blue",
+      "feed_summary": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
+      "suggested_doc_key": "2026-11-get-started-with-daybreak-blue-da306451",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-get-started-with-daybreak-blue-da306451.md",
+      "candidate_score": 30.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 3,
+        "freshness_score": 17.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 3.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 3일이 지난 글로 최신성 17점을 반영했습니다.",
+        "RSS 순위 7위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-23T01:53:01.408722Z",
+    "last_failure": "thin_content",
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0

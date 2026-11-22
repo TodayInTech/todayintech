@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-21",
+  "generated_for": "2026-11-22",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -1426,6 +1426,19 @@
       "new": false
     },
     {
+      "title": "Language Models Can Rewrite Their Own Weights",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-language-models-can-rewrite-their-own-weights-03b17994.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-21",
+      "published_at": "2026-11-20",
+      "excerpt": "arXiv 초록에 따르면 **27B 언어모델이 그래디언트·재학습 없이 자기 가중치를 수정해** 성능을 최대 **6.6점** 향상시키고 손상된 복사본을 **80% 이상** 복구하는 'self‑rewriting' 능력을 보였다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2817,19 +2830,6 @@
       "new": false
     },
     {
-      "title": "Language Models Can Rewrite Their Own Weights",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-language-models-can-rewrite-their-own-weights-03b17994.md",
-      "status": "published",
-      "score": 65.0,
-      "briefed_at": null,
-      "published_at": "2026-11-20",
-      "excerpt": "arXiv 초록에 따르면 **27B 언어모델이 그래디언트·재학습 없이 자기 가중치를 수정해** 성능을 최대 **6.6점** 향상시키고 손상된 복사본을 **80% 이상** 복구하는 'self‑rewriting' 능력을 보였다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Genie 4 is now available",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3714,6 +3714,19 @@
       "new": false
     },
     {
+      "title": "Re: Riemann",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-re-riemann-75849af9.md",
+      "status": "published",
+      "score": 62.4,
+      "briefed_at": "2026-11-21",
+      "published_at": "2026-11-20",
+      "excerpt": "한 수학자가 'Claude와 함께 리만 가설의 증명을 발견했다(믿는다)'고 발표했고, 글쓴이는 이를 인간의 성취를 AI가 대체하는 사건으로 읽으며 배신감과 존재론적 문제를 제기했다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3740,19 +3753,6 @@
       "new": false
     },
     {
-      "title": "Re: Riemann",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-re-riemann-75849af9.md",
-      "status": "published",
-      "score": 62.4,
-      "briefed_at": null,
-      "published_at": "2026-11-20",
-      "excerpt": "한 수학자가 'Claude와 함께 리만 가설의 증명을 발견했다(믿는다)'고 발표했고, 글쓴이는 이를 인간의 성취를 AI가 대체하는 사건으로 읽으며 배신감과 존재론적 문제를 제기했다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "'VPNs are lawful technical tools,' says EU Court in landmark copyright ruling",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3762,6 +3762,19 @@
       "briefed_at": "2026-07-21",
       "published_at": "2026-07-21",
       "excerpt": "유럽사법재판소(CJEU)는 2026년 7월 판결에서 VPN을 ‘합법적인 기술적 도구’로 명시하며, VPN 제공업체에 대한 저작권 침해 책임을 부인하는 새로운 기준을 제시했다. 이 사건은 안네 프랑크 원고 초고의 온라인 공개를 둘러싼 분쟁에서 비롯됐다. 원고 측은 벨기에에서 호스팅된 학술판 사이트가 네덜란드 IP를 차단하…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-81134a9d.md",
+      "status": "published",
+      "score": 62.0,
+      "briefed_at": "2026-11-21",
+      "published_at": "2026-11-20",
+      "excerpt": "피드 기준으로는 MarketScreener가 2026-11-20자 기사에서 미국 SEC가 엔비디아에 대해 잠재적 회계 문제를 조사하고 있다고 보도했다고 전해진다. Hacker News에서 반응이 컸다(포인트 238, 댓글 127).",
       "featured": false,
       "new": false
     },
@@ -4024,19 +4037,6 @@
       "excerpt": "제목이 제시하는 내용만 보면 Moebius는 파라미터 수가 약 0.2B인 이미지 인페인팅 모델이 10B급 모델과 유사한 성능을 보인다고 주장하는 프로젝트입니다. 피드 기준으로는 원문 링크와 Hacker News에서의 반응(포인트 201, 댓글 60)만 제공되어 프로젝트의 구체적인 기법(예: 아키텍처, 지식 증류, 학습…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-81134a9d.md",
-      "status": "published",
-      "score": 62.0,
-      "briefed_at": null,
-      "published_at": "2026-11-20",
-      "excerpt": "피드 기준으로는 MarketScreener가 2026-11-20자 기사에서 미국 SEC가 엔비디아에 대해 잠재적 회계 문제를 조사하고 있다고 보도했다고 전해진다. Hacker News에서 반응이 컸다(포인트 238, 댓글 127).",
-      "featured": false,
-      "new": true
     },
     {
       "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
@@ -4520,6 +4520,19 @@
       "new": false
     },
     {
+      "title": "Inkling-2-Mini in 5.4 GB Memory",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-inkling-2-mini-in-5-4-gb-memory-6c69e97c.md",
+      "status": "published",
+      "score": 61.0,
+      "briefed_at": null,
+      "published_at": "2026-11-21",
+      "excerpt": "LookAtMyQuant 컴파일러가 Inkling-2-Mini를 5.38GB(1.65 bpp)까지 압축해 Apple 실리콘용 여러 빌드를 공개했다. 12.76GB 빌드는 원본 BF16 교사와 동일한 벤치마크 점수를 유지하며, 5.38GB 빌드는 성능 저하가 확인됩니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Go 1.27",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -4698,6 +4711,19 @@
       "briefed_at": "2026-10-13",
       "published_at": "2026-10-12",
       "excerpt": "Agent37은 AI 에이전트를 위한 '저비용 샌드박스'를 표방하며 호스트당 평균 비용을 업계의 10% 이하로 낮췄다고 소개한다. 창업자 비슈누는 고객당 평균 지출을 월 $0.37로 제시하고, 무료 플랜의 인프라 비용은 사용자당 월 $0.05~$0.10 수준이라고 밝힌다. 초기에는 OpenClaw 래퍼로 시작했으나 다양…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Inkling 2 Mini",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-inkling-2-mini-bd3614c3.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-21",
+      "published_at": "2026-11-20",
+      "excerpt": "ThinkingMachines는 루프드(transformer looping) 구조의 경량 모델 **Inkling 2 Mini**(총 26.4B, 약 20GB 메모리)를 공개했다. 중간 레이어를 3회 반복해 추론 효율과 장기 추론 성능을 높였고, NVFP4/MXFP8 양자화로 로컬 노트북 등에서 실행 가능하도록 배포했다.",
       "featured": false,
       "new": false
     },
@@ -7705,15 +7731,41 @@
       "new": false
     },
     {
-      "title": "Inkling 2 Mini",
+      "title": "Lean verification of the Riemann Hypothesis",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-inkling-2-mini-bd3614c3.md",
+      "href": "./services/hacker-news/2026-11-lean-verification-of-the-riemann-hypothesis-5c6d1247.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-20",
-      "excerpt": "ThinkingMachines는 루프드(transformer looping) 구조의 경량 모델 **Inkling 2 Mini**(총 26.4B, 약 20GB 메모리)를 공개했다. 중간 레이어를 3회 반복해 추론 효율과 장기 추론 성능을 높였고, NVFP4/MXFP8 양자화로 로컬 노트북 등에서 실행 가능하도록 배포했다.",
+      "published_at": "2026-11-21",
+      "excerpt": "Levent Alpöge가 2026-11-20에 제출한 리만 가설 증명이 **Lean 라이브러리(17,000,000행)** 형태로 공개되어 Lean·Mathlib 커뮤니티와 연합체들이 컴파일·명제 비교·여러 독립 체커로 검증해 정확성을 공식 인증했습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Detonating a pile of lead azide",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-detonating-a-pile-of-lead-azide-cf851274.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-11-21",
+      "excerpt": "피드 기준으로는 Science.org에 실린 'Detonating a pile of lead azide'(저자 beginning_end)가 2026-11-21 게시되었고 Hacker News에서 **523점·346댓글**로 큰 관심을 끌었습니다. 제공된 메타데이터만으로는 본문 내용·세부 근거는 확인되지 않습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "My monitor was cutting my download speed by 75%",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-my-monitor-was-cutting-my-download-speed-by-75-7edcf5e7.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-11-21",
+      "excerpt": "작성자는 Studio Display XDR의 USB 허브를 거친 2.5G USB-C 이더넷 어댑터가 **프레임 처리 병목(약 168,000fps)** 때문에 다운로드 속도를 2.5G → 약 600Mbps로 떨어뜨린 것을 발견했다. 플로우 컨트롤 활성화로 약 2Gbps 회복되며, RTL8157 기반 5G 어댑터(버스트 길…",
       "featured": false,
       "new": true
     },
@@ -9408,6 +9460,19 @@
       "new": false
     },
     {
+      "title": "Combatting adversarial distillation",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-combatting-adversarial-distillation-7ad44f99.md",
+      "status": "published",
+      "score": 44.0,
+      "briefed_at": "2026-11-21",
+      "published_at": "2026-11-20",
+      "excerpt": "OpenAI는 GPT‑6.2 Astra·Sol에서 보호 추론(chain-of-thought) 노출 방어를 강화해 내부 적응 평가에서 공격 성공률을 **54.0%→0.2%**로 낮췄다. 분류기·대입학습·API 경계·캠페인 조사·공유를 병행한다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Introducing GPT-6.2 Astra and Sol",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -9876,19 +9941,6 @@
       "new": false
     },
     {
-      "title": "Combatting adversarial distillation",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-combatting-adversarial-distillation-7ad44f99.md",
-      "status": "published",
-      "score": 44.0,
-      "briefed_at": null,
-      "published_at": "2026-11-20",
-      "excerpt": "OpenAI는 GPT‑6.2 Astra·Sol에서 보호 추론(chain-of-thought) 노출 방어를 강화해 내부 적응 평가에서 공격 성공률을 **54.0%→0.2%**로 낮췄다. 분류기·대입학습·API 경계·캠페인 조사·공유를 병행한다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Research acceleration: The jagged frontier",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -10184,6 +10236,19 @@
       "briefed_at": "2026-06-15",
       "published_at": "2026-06-14",
       "excerpt": "피드 기준으로는 OpenAI가 2026-06-14자 공지로 ‘OpenAI Partner Network’를 출범하고 1억5천만 달러를 투자한다고 전합니다. 이 네트워크는 전 세계 파트너들이 기업용 AI의 채택, 배포, 전환을 가속화하도록 지원하기 위한 목적이라고 요약됩니다. 제공된 정보만 보면 대규모 자금 투입을 통한 파…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-hebbia-sees-improvements-in-financial-research-with-gpt-6-astra-8145fefb.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": "2026-11-21",
+      "published_at": "2026-11-20",
+      "excerpt": "Hebbia가 GPT‑6 Astra(프리릴리스)를 금융 리서치에 적용한 내부 테스트에서 **인용 관련성 99.5%**, **발표요건 충족 97.9%** 등 높은 성과를 보고했다. 모델은 출처 범위와 프레젠테이션 준수에서 경쟁 모델 대비 유의미한 우위를 보였다.",
       "featured": false,
       "new": false
     },
@@ -10812,17 +10877,17 @@
       "new": false
     },
     {
-      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "title": "Can AI help scientists identify promising drug candidates?",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-hebbia-sees-improvements-in-financial-research-with-gpt-6-astra-8145fefb.md",
+      "href": "./services/openai-blog/2026-11-can-ai-help-scientists-identify-promising-drug-candidates-c1a2af93.md",
       "status": "published",
-      "score": 42.0,
-      "briefed_at": null,
+      "score": 41.0,
+      "briefed_at": "2026-11-21",
       "published_at": "2026-11-20",
-      "excerpt": "Hebbia가 GPT‑6 Astra(프리릴리스)를 금융 리서치에 적용한 내부 테스트에서 **인용 관련성 99.5%**, **발표요건 충족 97.9%** 등 높은 성과를 보고했다. 모델은 출처 범위와 프레젠테이션 준수에서 경쟁 모델 대비 유의미한 우위를 보였다.",
+      "excerpt": "OpenAI는 분자 구조 해독·실험 근거 해석·후속 화합물 선택 능력을 평가하는 MedChemBench를 공개했다. xhigh에서 GPT‑6.2 Astra는 84.5%를 기록했지만 화합물 선택과 수치적 성질 예측에서는 여전히 절반가량의 점수만 얻었다.",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "Introducing Tool Retrieval in the Gemini API",
@@ -11265,19 +11330,6 @@
       "excerpt": "피드 기준으로는 OpenAI가 Oracle Cloud 상에서 자사 모델과 Codex에 접근할 수 있도록 기존 Oracle 클라우드 커밋먼트를 활용하는 방안을 발표한 것으로 보입니다. 제공된 정보만 보면 기업 고객이 Oracle과의 기존 계약을 통해 OpenAI 모델을 구축·배포하고 엔터프라이즈 보안·거버넌스와 연동할 수…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Can AI help scientists identify promising drug candidates?",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-can-ai-help-scientists-identify-promising-drug-candidates-c1a2af93.md",
-      "status": "published",
-      "score": 41.0,
-      "briefed_at": null,
-      "published_at": "2026-11-20",
-      "excerpt": "OpenAI는 분자 구조 해독·실험 근거 해석·후속 화합물 선택 능력을 평가하는 MedChemBench를 공개했다. xhigh에서 GPT‑6.2 Astra는 84.5%를 기록했지만 화합물 선택과 수치적 성질 예측에서는 여전히 절반가량의 점수만 얻었다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Walter Isaacson on curiosity and creativity in the AI age.",
@@ -12580,6 +12632,19 @@
       "new": false
     },
     {
+      "title": "Explore the Codex Security Plugin",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-explore-the-codex-security-plugin-82fe289f.md",
+      "status": "published",
+      "score": 38.0,
+      "briefed_at": "2026-11-21",
+      "published_at": "2026-11-19",
+      "excerpt": "피드 기준으로는 OpenAI가 2026-11-19에 Codex Security Plugin의 데모 영상을 공개했으며, 설치·시작부터 녹화에 표시된 결과 검토까지 워크플로우를 시연한다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "More ways to move care forward with ChatGPT for Healthcare",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -13059,19 +13124,6 @@
       "excerpt": "피드 기준으로는 OpenAI가 Ona를 인수할 계획이라고 발표했습니다. 인수 목적은 Codex를 보강해 보안되고 지속적인 클라우드 환경을 제공하는 것으로 보입니다. 제공된 정보만 보면 이 변화는 장기 실행형 AI 에이전트를 기업 워크플로에 통합하는 것을 목표로 합니다. 구체적인 조건이나 일정은 피드에 포함되어 있지 않습…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Explore the Codex Security Plugin",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-explore-the-codex-security-plugin-82fe289f.md",
-      "status": "published",
-      "score": 38.0,
-      "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "피드 기준으로는 OpenAI가 2026-11-19에 Codex Security Plugin의 데모 영상을 공개했으며, 설치·시작부터 녹화에 표시된 결과 검토까지 워크플로우를 시연한다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "We’re partnering with Blue Origin on our first heavy-lift Project Suncatcher launch.",
@@ -13889,6 +13941,19 @@
       "briefed_at": "2026-06-13",
       "published_at": "2026-06-12",
       "excerpt": "제공된 메타데이터에 따르면 GitHub는 Copilot CLI의 위임(delegation) 결정을 더 선택적으로 만들기 위한 개선을 발표했습니다. 피드 기준으로는 오케스트레이션 향상, 핸드오프 감소, 더 빠른 진행을 목표로 했고 새 설정(토글)은 추가하지 않았다고 요약됩니다. 해당 내용은 GitHub Copilot 사용…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "How Watch Duty is using Gemini to get wildfire alerts out faster",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-how-watch-duty-is-using-gemini-to-get-wildfire-alerts-out-faster-20a6c91a.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": "2026-11-21",
+      "published_at": "2026-11-20",
+      "excerpt": "Google 엔지니어들이 Gemini 기반 도구로 잡음 많은 VHF 무전음을 정리해 단어 오류율을 **38%→22.34%**로 낮추고, 30초 이내에 화재 신호를 포착해 Watch Duty의 야간 Critical Alert 발송을 가능하게 했다.",
       "featured": false,
       "new": false
     },
@@ -14892,19 +14957,6 @@
       "excerpt": "피드 기준으로는 GitHub가 CC0-1.0 라이선스 아래 새로운 저장소 수준(repository-level) 데이터셋을 공개했습니다. 데이터셋은 README, 이슈, 풀 리퀘스트 등 개발자 생성 멀티링구얼 콘텐츠를 발견하도록 설계되었다고 나옵니다. 제공된 정보만 보면 이 데이터셋은 멀티언어 AI를 연구·개발하는 연구자…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "How Watch Duty is using Gemini to get wildfire alerts out faster",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-how-watch-duty-is-using-gemini-to-get-wildfire-alerts-out-faster-20a6c91a.md",
-      "status": "published",
-      "score": 36.0,
-      "briefed_at": null,
-      "published_at": "2026-11-20",
-      "excerpt": "Google 엔지니어들이 Gemini 기반 도구로 잡음 많은 VHF 무전음을 정리해 단어 오류율을 **38%→22.34%**로 낮추고, 30초 이내에 화재 신호를 포착해 Watch Duty의 야간 Critical Alert 발송을 가능하게 했다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Introducing Claude 3.5 Sonnet",
@@ -16324,6 +16376,19 @@
       "new": false
     },
     {
+      "title": "See some of the work from Google Flow and Flow Music Sessions artists",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-see-some-of-the-work-from-google-flow-and-flow-music-sessions-artists-5021ba60.md",
+      "status": "published",
+      "score": 31.0,
+      "briefed_at": "2026-11-21",
+      "published_at": "2026-11-19",
+      "excerpt": "Google은 6주간의 Flow Sessions에서 아티스트들이 Google Flow로 만든 시각 프로젝트와 Flow Music Sessions 참가자들이 Flow Music의 'Spaces'로 제작한 오디오 도구·플러그인 결과물을 공개하고, 해당 Spaces를 확인해 리믹스해볼 수 있다고 전했다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Meet the 2026 Google PhD Fellows",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -16428,17 +16493,30 @@
       "new": false
     },
     {
-      "title": "See some of the work from Google Flow and Flow Music Sessions artists",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-see-some-of-the-work-from-google-flow-and-flow-music-sessions-artists-5021ba60.md",
+      "title": "Advancing chip design with OpenAI models",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-advancing-chip-design-with-openai-models-68ddb817.md",
       "status": "published",
       "score": 31.0,
       "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "Google은 6주간의 Flow Sessions에서 아티스트들이 Google Flow로 만든 시각 프로젝트와 Flow Music Sessions 참가자들이 Flow Music의 'Spaces'로 제작한 오디오 도구·플러그인 결과물을 공개하고, 해당 Spaces를 확인해 리믹스해볼 수 있다고 전했다.",
+      "published_at": "2026-11-18",
+      "excerpt": "OpenAI 모델이 Jalapeño 실리콘에서 벡터·매트릭스 블록 표준셀 면적을 각각 약 13%·10% 줄였고, AMD 플래그십 GPU에서 최대 14% PPA 개선을 확인했다. GPT‑6.2 Astra는 RISC‑V 평가에서 최고 점수를 기록했으며 Synopsys와 함께 EDA 통합 모델(GPT‑Synopsys)을 개발…",
       "featured": false,
       "new": true
+    },
+    {
+      "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "href": "./services/anthropic-blog/2026-11-anthropic-announces-closing-of-initial-public-offering-including-full-ex-fd109fdc.md",
+      "status": "published",
+      "score": 30.0,
+      "briefed_at": "2026-11-21",
+      "published_at": "2026-11-20",
+      "excerpt": "Anthropic가 Class A 1,127,000,000주를 주당 $83에 공모해 총 약 $93.5B(회사 수령 약 $91.6B)를 확보했고, 동시 사모로 Class N 313,253,007주를 AMD·Google·Microsoft·NVIDIA 등 주요 기술기업에 매각했습니다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "Focus areas for The Anthropic Institute",
@@ -17247,15 +17325,28 @@
       "new": false
     },
     {
-      "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
-      "service_key": "anthropic-blog",
-      "service_name": "Anthropic Blog",
-      "href": "./services/anthropic-blog/2026-11-anthropic-announces-closing-of-initial-public-offering-including-full-ex-fd109fdc.md",
+      "title": "Get started with Daybreak Blue",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-get-started-with-daybreak-blue-da306451.md",
       "status": "published",
       "score": 30.0,
       "briefed_at": null,
-      "published_at": "2026-11-20",
-      "excerpt": "Anthropic가 Class A 1,127,000,000주를 주당 $83에 공모해 총 약 $93.5B(회사 수령 약 $91.6B)를 확보했고, 동시 사모로 Class N 313,253,007주를 AMD·Google·Microsoft·NVIDIA 등 주요 기술기업에 매각했습니다.",
+      "published_at": "2026-11-19",
+      "excerpt": "OpenAI는 2026-11-19에 Daybreak Blue 온보딩 워크스루(데모)를 공개했다. 피드 메타데이터에 따르면 영상은 설정 경험과 시작 방법을 중점적으로 보여준다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Advancing computer-use agents for healthcare teams",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-advancing-computer-use-agents-for-healthcare-teams-21b4758a.md",
+      "status": "published",
+      "score": 30.0,
+      "briefed_at": null,
+      "published_at": "2026-11-16",
+      "excerpt": "OpenAI는 의료용 '컴퓨터-사용 에이전트' 성능·안전성·비용 결과를 공개했다. GPT‑6 Astra는 임상 작업에서 안전성 99%(325건 중), 유용성 평가에서 93%(646건 중) 비율을 기록했고, 행정 벤치마크에서는 Astra 94.3%·Luna 91.8%를 기록했으며 Luna는 작업당 8.5센트로 비용이 98…",
       "featured": false,
       "new": true
     },
@@ -17596,6 +17687,19 @@
       "excerpt": "제공된 정보만 보면 이 구글 블로그 글은 연구자들이 'Co-Scientist'와 협력해 큰 문제를 해결하는 네 가지 방식을 소개합니다. 저자는 Joel Meares이며 게시일은 2026-06-09입니다. 피드 요약에는 컬러풀하고 스타일화된 스파이크형 분자 구조 이미지가 포함되어 있습니다. 이미지가 시사하는 바는 있으나…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "The King’s Trust and OpenAI launch £1m partnership",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-the-king-s-trust-and-openai-launch-1m-partnership-60f3c738.md",
+      "status": "published",
+      "score": 29.0,
+      "briefed_at": null,
+      "published_at": "2026-11-16",
+      "excerpt": "OpenAI가 The King’s Trust에 £1m를 기부해 향후 18개월 동안 NEET 우선으로 최대 25,000명의 청년에게 실무형 AI 교육과 국가공인 자격을 지원한다는 내용입니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "U.S. elections readiness",

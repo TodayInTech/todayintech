@@ -14420,6 +14420,86 @@
       "status": "published",
       "briefed_at": "2026-11-21T03:02:14.008366Z",
       "candidate_score": 38.0
+    },
+    "6c69e97c5257c80c3d037c34e7f68f6fc5182d973007d8bd9aa9de69cfacb73e": {
+      "normalized_url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+      "title_fingerprint": "inkling 2 mini in 5 4 gb memory",
+      "service_key": "hacker-news",
+      "title": "Inkling-2-Mini in 5.4 GB Memory",
+      "article_doc_path": "docs/services/hacker-news/2026-11-inkling-2-mini-in-5-4-gb-memory-6c69e97c.md",
+      "status": "published",
+      "briefed_at": "2026-11-22T01:55:34.564960Z",
+      "candidate_score": 61.0
+    },
+    "5c6d12478082daa57f8cbf648030a820e3b1b62eff99b071bff4905e497d27de": {
+      "normalized_url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis",
+      "title_fingerprint": "lean verification of the riemann hypothesis",
+      "service_key": "hacker-news",
+      "title": "Lean verification of the Riemann Hypothesis",
+      "article_doc_path": "docs/services/hacker-news/2026-11-lean-verification-of-the-riemann-hypothesis-5c6d1247.md",
+      "status": "published",
+      "briefed_at": "2026-11-22T01:55:34.564999Z",
+      "candidate_score": 60.0
+    },
+    "cf85127411206c4ec73b9cf55633912f6f5e5f443081b0328af4196dea684ff6": {
+      "normalized_url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+      "title_fingerprint": "detonating a pile of lead azide",
+      "service_key": "hacker-news",
+      "title": "Detonating a pile of lead azide",
+      "article_doc_path": "docs/services/hacker-news/2026-11-detonating-a-pile-of-lead-azide-cf851274.md",
+      "status": "published",
+      "briefed_at": "2026-11-22T01:55:34.565014Z",
+      "candidate_score": 60.0
+    },
+    "7edcf5e729c2023916c404a63aa73bd58038441c16aadd7ba29ce1e9987966d7": {
+      "normalized_url": "https://blog.tymscar.com/posts/studiodisplayethernet",
+      "title_fingerprint": "my monitor was cutting my download speed by 75",
+      "service_key": "hacker-news",
+      "title": "My monitor was cutting my download speed by 75%",
+      "article_doc_path": "docs/services/hacker-news/2026-11-my-monitor-was-cutting-my-download-speed-by-75-7edcf5e7.md",
+      "status": "published",
+      "briefed_at": "2026-11-22T01:55:34.565024Z",
+      "candidate_score": 60.0
+    },
+    "68ddb817fe4001c0fc7b71404e8ed33269a5f57651ec2110d7ae5f13ebb157e7": {
+      "normalized_url": "https://openai.com/index/advancing-chip-design-with-our-models",
+      "title_fingerprint": "advancing chip design with openai models",
+      "service_key": "openai-blog",
+      "title": "Advancing chip design with OpenAI models",
+      "article_doc_path": "docs/services/openai-blog/2026-11-advancing-chip-design-with-openai-models-68ddb817.md",
+      "status": "published",
+      "briefed_at": "2026-11-22T01:55:34.565034Z",
+      "candidate_score": 31.0
+    },
+    "da30645137037f0052cd70ab3b09df0b31abc0303db9422eaa375a651d60b969": {
+      "normalized_url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+      "title_fingerprint": "get started with daybreak blue",
+      "service_key": "openai-blog",
+      "title": "Get started with Daybreak Blue",
+      "article_doc_path": "docs/services/openai-blog/2026-11-get-started-with-daybreak-blue-da306451.md",
+      "status": "published",
+      "briefed_at": "2026-11-22T01:55:34.565042Z",
+      "candidate_score": 30.0
+    },
+    "21b4758ab52123ac78ffa3dbca8705003ed9e3a44cc34d1840f5a51cf6e091d0": {
+      "normalized_url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "title_fingerprint": "advancing computer use agents for healthcare teams",
+      "service_key": "openai-blog",
+      "title": "Advancing computer-use agents for healthcare teams",
+      "article_doc_path": "docs/services/openai-blog/2026-11-advancing-computer-use-agents-for-healthcare-teams-21b4758a.md",
+      "status": "published",
+      "briefed_at": "2026-11-22T01:55:34.565050Z",
+      "candidate_score": 30.0
+    },
+    "60f3c7381bc61eae5e3d002a0ecfce30c3913c926a7778f89e799b4b1d0cc1eb": {
+      "normalized_url": "https://openai.com/index/the-kings-trust-and-openai",
+      "title_fingerprint": "the king s trust and openai launch 1m partnership",
+      "service_key": "openai-blog",
+      "title": "The King’s Trust and OpenAI launch £1m partnership",
+      "article_doc_path": "docs/services/openai-blog/2026-11-the-king-s-trust-and-openai-launch-1m-partnership-60f3c738.md",
+      "status": "published",
+      "briefed_at": "2026-11-22T01:55:34.565056Z",
+      "candidate_score": 29.0
     }
   }
 }
