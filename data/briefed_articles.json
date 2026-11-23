@@ -14500,6 +14500,96 @@
       "status": "published",
       "briefed_at": "2026-11-22T01:55:34.565056Z",
       "candidate_score": 29.0
+    },
+    "61d8127e693f0b0f3ba7ef2dc32bc9bfe97d415c3f165973c0ab2ef8ad20a2b9": {
+      "normalized_url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
+      "title_fingerprint": "progress map for the lean formalization of alessandro masullo s manuscript",
+      "service_key": "hacker-news",
+      "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+      "article_doc_path": "docs/services/hacker-news/2026-11-progress-map-for-the-lean-formalization-of-alessandro-masullo-s-manuscri-61d8127e.md",
+      "status": "published",
+      "briefed_at": "2026-11-23T02:12:20.417359Z",
+      "candidate_score": 60.0
+    },
+    "a9f7ae49b5fbd4f4edc31b0b0e42abd66e29e9dd398ea5acfa2e3ac3b0681ef3": {
+      "normalized_url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "title_fingerprint": "a beginner s guide to local ai with inkling qwen and unsloth",
+      "service_key": "hacker-news",
+      "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+      "article_doc_path": "docs/services/hacker-news/2026-11-a-beginner-s-guide-to-local-ai-with-inkling-qwen-and-unsloth-a9f7ae49.md",
+      "status": "published",
+      "briefed_at": "2026-11-23T02:12:20.417404Z",
+      "candidate_score": 60.0
+    },
+    "24e87f23050f082bec1531f7f0b05ab601102518f38772c27dc392544e8c73a9": {
+      "normalized_url": "https://www.oreilly.com/radar/what-happened-to-silicon-valley",
+      "title_fingerprint": "what happened to silicon valley",
+      "service_key": "hacker-news",
+      "title": "What Happened to Silicon Valley?",
+      "article_doc_path": "docs/services/hacker-news/2026-11-what-happened-to-silicon-valley-24e87f23.md",
+      "status": "published",
+      "briefed_at": "2026-11-23T02:12:20.417418Z",
+      "candidate_score": 60.0
+    },
+    "7279785142919f7cb1decc305c5ae841a42f4f82ed2e6614a1bf6c84b7fd8f18": {
+      "normalized_url": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
+      "title_fingerprint": "the birds of gta 6 a field guide to vice city and leonida s wildlife",
+      "service_key": "hacker-news",
+      "title": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
+      "article_doc_path": "docs/services/hacker-news/2026-11-the-birds-of-gta-6-a-field-guide-to-vice-city-and-leonida-s-wildlife-72797851.md",
+      "status": "published",
+      "briefed_at": "2026-11-23T02:12:20.417427Z",
+      "candidate_score": 60.0
+    },
+    "3d4aeac88b69acfaa9cd944cf75b07a9d89f3c8d684549bae7f0b762916da940": {
+      "normalized_url": "https://openai.com/business/customer-stories/holiday-extras-dots",
+      "title_fingerprint": "at holiday extras dots get to work before anyone asks",
+      "service_key": "openai-blog",
+      "title": "At Holiday Extras, dots get to work before anyone asks",
+      "article_doc_path": "docs/services/openai-blog/2026-11-at-holiday-extras-dots-get-to-work-before-anyone-asks-3d4aeac8.md",
+      "status": "published",
+      "briefed_at": "2026-11-23T02:12:20.417436Z",
+      "candidate_score": 28.0
+    },
+    "67952d9a918d2536a7bf3b37b6c05ec5dc7c7c22fdf68db178458bb74b4d4f2d": {
+      "normalized_url": "https://openai.com/index/inside-the-codex-sandbox",
+      "title_fingerprint": "inside the codex sandbox",
+      "service_key": "openai-blog",
+      "title": "Inside the Codex sandbox",
+      "article_doc_path": "docs/services/openai-blog/2026-11-inside-the-codex-sandbox-67952d9a.md",
+      "status": "published",
+      "briefed_at": "2026-11-23T02:12:20.417444Z",
+      "candidate_score": 26.0
+    },
+    "a1de396d3910fa2e0f79d5fc1596f0a162b45e4ee5be0f06557fa126a8cc5915": {
+      "normalized_url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+      "title_fingerprint": "le groupe figaro and openai partner to bring le figaro journalism to chatgpt",
+      "service_key": "openai-blog",
+      "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-11-le-groupe-figaro-and-openai-partner-to-bring-le-figaro-journalism-to-cha-a1de396d.md",
+      "status": "published",
+      "briefed_at": "2026-11-23T02:12:20.417451Z",
+      "candidate_score": 25.0
+    },
+    "0e7f690aa4ff229bd2e8f2756081d691fec5b134a3dc763b1e89b65c9c3becc6": {
+      "normalized_url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "title_fingerprint": "strengthening nato and allied cyber defenses with ai",
+      "service_key": "openai-blog",
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "article_doc_path": "docs/services/openai-blog/2026-11-strengthening-nato-and-allied-cyber-defenses-with-ai-0e7f690a.md",
+      "status": "published",
+      "briefed_at": "2026-11-23T02:12:20.417459Z",
+      "candidate_score": 24.0
+    },
+    "891b7e0bbf66f86d27b770f3dc53e0fbecfc246eeadf29503262f6d9c70adad7": {
+      "normalized_url": "https://openai.com/index/decisions-api",
+      "title_fingerprint": "build more responsive apps with the decisions api",
+      "service_key": "openai-blog",
+      "title": "Build more responsive apps with the Decisions API",
+      "article_doc_path": "docs/services/openai-blog/2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b.md",
+      "status": "published",
+      "briefed_at": "2026-11-23T02:12:20.417467Z",
+      "candidate_score": 31.0
     }
   }
 }

@@ -427,13 +427,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-13T01:22:28.662894Z",
-    "last_failure": "access_denied",
-    "recovered_at": "2026-10-29T06:45:49.989656Z",
-    "extraction_method": "balanced_retry",
-    "token_count": 1116
+    "status": "reviewed",
+    "attempts": 3,
+    "next_attempt_at": "2026-11-30T02:08:49.590679Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-23T02:08:49.590679Z",
+    "extraction_method": "precision",
+    "token_count": 1096
   },
   "https://openai.com/index/forward-deployed-engineering-means": {
     "candidate": {
@@ -3607,13 +3607,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
-    "last_failure": "thin_content",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-25T02:08:49.590679Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-23T02:08:49.590679Z",
+    "extraction_method": "precision",
+    "token_count": 2974
   },
   "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad": {
     "candidate": {
@@ -3665,8 +3665,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-25T02:08:49.590679Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -3722,8 +3722,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-25T02:08:49.590679Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -3772,13 +3772,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-25T02:08:49.590679Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-23T02:08:49.590679Z",
+    "extraction_method": "precision",
+    "token_count": 1438
   },
   "https://openai.com/index/cogent-security": {
     "candidate": {
@@ -5797,6 +5797,63 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-23T01:53:01.408722Z",
+    "last_failure": "thin_content",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3": {
+    "candidate": {
+      "candidate_id": "hacker-news:61d8127e693f0b0f",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+        "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
+        "published_at": "2026-11-22T23:12:10Z",
+        "collected_at": "2026-11-23T02:08:45.099949Z",
+        "summary": "<p>Article URL: <a href=\"https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3\">https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50605045\">https://news.ycombinator.com/item?id=50605045</a></p>\n<p>Points: 150</p>\n<p># Comments: 120</p>",
+        "authors": [
+          "Qision"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 5,
+          "hn_points": 150,
+          "hn_comments": 120,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50605045"
+        }
+      },
+      "normalized_url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
+      "url_hash": "61d8127e693f0b0f3ba7ef2dc32bc9bfe97d415c3f165973c0ab2ef8ad20a2b9",
+      "title_fingerprint": "progress map for the lean formalization of alessandro masullo s manuscript",
+      "feed_summary": "<p>Article URL: <a href=\"https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3\">https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50605045\">https://news.ycombinator.com/item?id=50605045</a></p>\n<p>Points: 150</p>\n<p># Comments: 120</p>",
+      "suggested_doc_key": "2026-11-progress-map-for-the-lean-formalization-of-alessandro-masullo-s-manuscri-61d8127e",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-progress-map-for-the-lean-formalization-of-alessandro-masullo-s-manuscri-61d8127e.md",
+      "candidate_score": 60.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 15.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 5.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 150점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 120개를 토론 신호로 반영했습니다.",
+        "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-24T02:08:49.589175Z",
     "last_failure": "thin_content",
     "recovered_at": null,
     "extraction_method": null,

@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-22",
+  "generated_for": "2026-11-23",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -4208,6 +4208,19 @@
       "new": false
     },
     {
+      "title": "Inkling-2-Mini in 5.4 GB Memory",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-inkling-2-mini-in-5-4-gb-memory-6c69e97c.md",
+      "status": "published",
+      "score": 61.0,
+      "briefed_at": "2026-11-22",
+      "published_at": "2026-11-21",
+      "excerpt": "LookAtMyQuant 컴파일러가 Inkling-2-Mini를 5.38GB(1.65 bpp)까지 압축해 Apple 실리콘용 여러 빌드를 공개했다. 12.76GB 빌드는 원본 BF16 교사와 동일한 벤치마크 점수를 유지하며, 5.38GB 빌드는 성능 저하가 확인됩니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Java4Shell: RCE in OpenJDK when processing Base64",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -4520,19 +4533,6 @@
       "new": false
     },
     {
-      "title": "Inkling-2-Mini in 5.4 GB Memory",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-inkling-2-mini-in-5-4-gb-memory-6c69e97c.md",
-      "status": "published",
-      "score": 61.0,
-      "briefed_at": null,
-      "published_at": "2026-11-21",
-      "excerpt": "LookAtMyQuant 컴파일러가 Inkling-2-Mini를 5.38GB(1.65 bpp)까지 압축해 Apple 실리콘용 여러 빌드를 공개했다. 12.76GB 빌드는 원본 BF16 교사와 동일한 벤치마크 점수를 유지하며, 5.38GB 빌드는 성능 저하가 확인됩니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Go 1.27",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -4711,6 +4711,45 @@
       "briefed_at": "2026-10-13",
       "published_at": "2026-10-12",
       "excerpt": "Agent37은 AI 에이전트를 위한 '저비용 샌드박스'를 표방하며 호스트당 평균 비용을 업계의 10% 이하로 낮췄다고 소개한다. 창업자 비슈누는 고객당 평균 지출을 월 $0.37로 제시하고, 무료 플랜의 인프라 비용은 사용자당 월 $0.05~$0.10 수준이라고 밝힌다. 초기에는 OpenClaw 래퍼로 시작했으나 다양…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "My monitor was cutting my download speed by 75%",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-my-monitor-was-cutting-my-download-speed-by-75-7edcf5e7.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-22",
+      "published_at": "2026-11-21",
+      "excerpt": "작성자는 Studio Display XDR의 USB 허브를 거친 2.5G USB-C 이더넷 어댑터가 **프레임 처리 병목(약 168,000fps)** 때문에 다운로드 속도를 2.5G → 약 600Mbps로 떨어뜨린 것을 발견했다. 플로우 컨트롤 활성화로 약 2Gbps 회복되며, RTL8157 기반 5G 어댑터(버스트 길…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Detonating a pile of lead azide",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-detonating-a-pile-of-lead-azide-cf851274.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-22",
+      "published_at": "2026-11-21",
+      "excerpt": "피드 기준으로는 Science.org에 실린 'Detonating a pile of lead azide'(저자 beginning_end)가 2026-11-21 게시되었고 Hacker News에서 **523점·346댓글**로 큰 관심을 끌었습니다. 제공된 메타데이터만으로는 본문 내용·세부 근거는 확인되지 않습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Lean verification of the Riemann Hypothesis",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-lean-verification-of-the-riemann-hypothesis-5c6d1247.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-22",
+      "published_at": "2026-11-21",
+      "excerpt": "Levent Alpöge가 2026-11-20에 제출한 리만 가설 증명이 **Lean 라이브러리(17,000,000행)** 형태로 공개되어 Lean·Mathlib 커뮤니티와 연합체들이 컴파일·명제 비교·여러 독립 체커로 검증해 정확성을 공식 인증했습니다.",
       "featured": false,
       "new": false
     },
@@ -7731,41 +7770,54 @@
       "new": false
     },
     {
-      "title": "Lean verification of the Riemann Hypothesis",
+      "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-lean-verification-of-the-riemann-hypothesis-5c6d1247.md",
+      "href": "./services/hacker-news/2026-11-progress-map-for-the-lean-formalization-of-alessandro-masullo-s-manuscri-61d8127e.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-21",
-      "excerpt": "Levent Alpöge가 2026-11-20에 제출한 리만 가설 증명이 **Lean 라이브러리(17,000,000행)** 형태로 공개되어 Lean·Mathlib 커뮤니티와 연합체들이 컴파일·명제 비교·여러 독립 체커로 검증해 정확성을 공식 인증했습니다.",
+      "published_at": "2026-11-22",
+      "excerpt": "피드 기준으로는 Alessandro Masullo의 원고를 Lean으로 형식화하는 진행 지도가 claude.ai에 게시되었고, Hacker News에서 150점·댓글 120개로 활발한 반응을 얻었습니다. 원문 본문은 피드에 포함되어 있지 않습니다.",
       "featured": false,
       "new": true
     },
     {
-      "title": "Detonating a pile of lead azide",
+      "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-detonating-a-pile-of-lead-azide-cf851274.md",
+      "href": "./services/hacker-news/2026-11-a-beginner-s-guide-to-local-ai-with-inkling-qwen-and-unsloth-a9f7ae49.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-21",
-      "excerpt": "피드 기준으로는 Science.org에 실린 'Detonating a pile of lead azide'(저자 beginning_end)가 2026-11-21 게시되었고 Hacker News에서 **523점·346댓글**로 큰 관심을 끌었습니다. 제공된 메타데이터만으로는 본문 내용·세부 근거는 확인되지 않습니다.",
+      "published_at": "2026-11-22",
+      "excerpt": "Unsloth Desktop과 양자화된 Qwen·Inkling 모델을 이용하면 **RTX 5090(32GB)** 같은 소비자 GPU에서 개인 로컬 AI를 설치해 LAN으로 공유할 수 있다. 문서는 VRAM별 모델·양자화 추천, 컨텍스트 설정(예: 128K)과 LAN 접근 설정 절차를 상세히 제시한다.",
       "featured": false,
       "new": true
     },
     {
-      "title": "My monitor was cutting my download speed by 75%",
+      "title": "What Happened to Silicon Valley?",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-my-monitor-was-cutting-my-download-speed-by-75-7edcf5e7.md",
+      "href": "./services/hacker-news/2026-11-what-happened-to-silicon-valley-24e87f23.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-21",
-      "excerpt": "작성자는 Studio Display XDR의 USB 허브를 거친 2.5G USB-C 이더넷 어댑터가 **프레임 처리 병목(약 168,000fps)** 때문에 다운로드 속도를 2.5G → 약 600Mbps로 떨어뜨린 것을 발견했다. 플로우 컨트롤 활성화로 약 2Gbps 회복되며, RTL8157 기반 5G 어댑터(버스트 길…",
+      "published_at": "2026-11-22",
+      "excerpt": "greenyouse는 2026년 10월 16일 강연에서 1993년 GNN으로 시작한 집단지성 기반 웹이 광고·알고리즘·주주자본주의 인센티브 변화로 변질되었다고 진단하고, 이를 ‘rising tide rents’와 ‘robber baron rents’로 구분해 설명했다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-the-birds-of-gta-6-a-field-guide-to-vice-city-and-leonida-s-wildlife-72797851.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-11-22",
+      "excerpt": "GTA 6은 작업 메뉴에 **60종의 새**를 기록하는 관찰 시스템을 갖추고 있으며, 남부 연안·습지·북부 숲 등 남플로리다 생태구조를 충실히 재현한다. 관찰은 쌍안경 'study'로 등록되며 모든 종은 초반부터 등장하지만 몇몇 종 분포·이름 표기에는 현실과 다른 점이 있습니다.",
       "featured": false,
       "new": true
     },
@@ -16376,6 +16428,19 @@
       "new": false
     },
     {
+      "title": "Advancing chip design with OpenAI models",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-advancing-chip-design-with-openai-models-68ddb817.md",
+      "status": "published",
+      "score": 31.0,
+      "briefed_at": "2026-11-22",
+      "published_at": "2026-11-18",
+      "excerpt": "OpenAI 모델이 Jalapeño 실리콘에서 벡터·매트릭스 블록 표준셀 면적을 각각 약 13%·10% 줄였고, AMD 플래그십 GPU에서 최대 14% PPA 개선을 확인했다. GPT‑6.2 Astra는 RISC‑V 평가에서 최고 점수를 기록했으며 Synopsys와 함께 EDA 통합 모델(GPT‑Synopsys)을 개발…",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "See some of the work from Google Flow and Flow Music Sessions artists",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -16493,17 +16558,43 @@
       "new": false
     },
     {
-      "title": "Advancing chip design with OpenAI models",
+      "title": "Build more responsive apps with the Decisions API",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-advancing-chip-design-with-openai-models-68ddb817.md",
+      "href": "./services/openai-blog/2026-10-build-more-responsive-apps-with-the-decisions-api-891b7e0b.md",
       "status": "published",
       "score": 31.0,
       "briefed_at": null,
-      "published_at": "2026-11-18",
-      "excerpt": "OpenAI 모델이 Jalapeño 실리콘에서 벡터·매트릭스 블록 표준셀 면적을 각각 약 13%·10% 줄였고, AMD 플래그십 GPU에서 최대 14% PPA 개선을 확인했다. GPT‑6.2 Astra는 RISC‑V 평가에서 최고 점수를 기록했으며 Synopsys와 함께 EDA 통합 모델(GPT‑Synopsys)을 개발…",
+      "published_at": "2026-10-22",
+      "excerpt": "OpenAI가 GPT‑6 Luna 기반 Decisions API를 정식 출시했다. 응답 API 대비 **최대 10배 빠른 의사결정**, GPT‑Live 통합·프롬프트 캐싱·이미지·네이티브 JSON 입력과 요청당 **최대 400개 질문** 등을 지원한다.",
       "featured": false,
       "new": true
+    },
+    {
+      "title": "Advancing computer-use agents for healthcare teams",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-advancing-computer-use-agents-for-healthcare-teams-21b4758a.md",
+      "status": "published",
+      "score": 30.0,
+      "briefed_at": "2026-11-22",
+      "published_at": "2026-11-16",
+      "excerpt": "OpenAI는 의료용 '컴퓨터-사용 에이전트' 성능·안전성·비용 결과를 공개했다. GPT‑6 Astra는 임상 작업에서 안전성 99%(325건 중), 유용성 평가에서 93%(646건 중) 비율을 기록했고, 행정 벤치마크에서는 Astra 94.3%·Luna 91.8%를 기록했으며 Luna는 작업당 8.5센트로 비용이 98…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Get started with Daybreak Blue",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-get-started-with-daybreak-blue-da306451.md",
+      "status": "published",
+      "score": 30.0,
+      "briefed_at": "2026-11-22",
+      "published_at": "2026-11-19",
+      "excerpt": "OpenAI는 2026-11-19에 Daybreak Blue 온보딩 워크스루(데모)를 공개했다. 피드 메타데이터에 따르면 영상은 설정 경험과 시작 방법을 중점적으로 보여준다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
@@ -17325,30 +17416,17 @@
       "new": false
     },
     {
-      "title": "Get started with Daybreak Blue",
+      "title": "The King’s Trust and OpenAI launch £1m partnership",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-get-started-with-daybreak-blue-da306451.md",
+      "href": "./services/openai-blog/2026-11-the-king-s-trust-and-openai-launch-1m-partnership-60f3c738.md",
       "status": "published",
-      "score": 30.0,
-      "briefed_at": null,
-      "published_at": "2026-11-19",
-      "excerpt": "OpenAI는 2026-11-19에 Daybreak Blue 온보딩 워크스루(데모)를 공개했다. 피드 메타데이터에 따르면 영상은 설정 경험과 시작 방법을 중점적으로 보여준다.",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Advancing computer-use agents for healthcare teams",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-advancing-computer-use-agents-for-healthcare-teams-21b4758a.md",
-      "status": "published",
-      "score": 30.0,
-      "briefed_at": null,
+      "score": 29.0,
+      "briefed_at": "2026-11-22",
       "published_at": "2026-11-16",
-      "excerpt": "OpenAI는 의료용 '컴퓨터-사용 에이전트' 성능·안전성·비용 결과를 공개했다. GPT‑6 Astra는 임상 작업에서 안전성 99%(325건 중), 유용성 평가에서 93%(646건 중) 비율을 기록했고, 행정 벤치마크에서는 Astra 94.3%·Luna 91.8%를 기록했으며 Luna는 작업당 8.5센트로 비용이 98…",
+      "excerpt": "OpenAI가 The King’s Trust에 £1m를 기부해 향후 18개월 동안 NEET 우선으로 최대 25,000명의 청년에게 실무형 AI 교육과 국가공인 자격을 지원한다는 내용입니다.",
       "featured": false,
-      "new": true
+      "new": false
     },
     {
       "title": "Anthropic prices initial public offering",
@@ -17689,19 +17767,6 @@
       "new": false
     },
     {
-      "title": "The King’s Trust and OpenAI launch £1m partnership",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-the-king-s-trust-and-openai-launch-1m-partnership-60f3c738.md",
-      "status": "published",
-      "score": 29.0,
-      "briefed_at": null,
-      "published_at": "2026-11-16",
-      "excerpt": "OpenAI가 The King’s Trust에 £1m를 기부해 향후 18개월 동안 NEET 우선으로 최대 25,000명의 청년에게 실무형 AI 교육과 국가공인 자격을 지원한다는 내용입니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "U.S. elections readiness",
       "service_key": "anthropic-blog",
       "service_name": "Anthropic Blog",
@@ -17936,6 +18001,19 @@
       "new": false
     },
     {
+      "title": "At Holiday Extras, dots get to work before anyone asks",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-at-holiday-extras-dots-get-to-work-before-anyone-asks-3d4aeac8.md",
+      "status": "published",
+      "score": 28.0,
+      "briefed_at": null,
+      "published_at": "2026-11-16",
+      "excerpt": "Holiday Extras는 직원별 ‘dot’(예: Beast, Brian)을 도입해 ChatGPT 플러그인으로 Google BigQuery 데이터를 조회해 자동 보고서를 제공하고, API 키 퇴출 같은 문제를 식별·연결하며, 음성 인터랙션과 파일 접근을 통해 디자인·업무 자동화를 수행하고 있습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "See our intelligent eyewear lineup and pre-order your pair",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -18066,6 +18144,19 @@
       "new": false
     },
     {
+      "title": "Inside the Codex sandbox",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-inside-the-codex-sandbox-67952d9a.md",
+      "status": "published",
+      "score": 26.0,
+      "briefed_at": null,
+      "published_at": "2026-11-18",
+      "excerpt": "OpenAI는 Codex가 사용자 호스트에서 명령을 실행할 때 파일시스템과 네트워크 접근을 OS별 샌드박스로 제한하는 Codex sandbox 설계(권한 프로파일, 네트워크 프록시, macOS/Linux/Windows 구현 및 Windows의 MXC 전환)를 공개했다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "Scaling Git at OpenAI",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -18142,6 +18233,19 @@
       "excerpt": "피드 기준으로는 Anthropic이 AI가 사이버공격의 성격과 수법을 어떻게 바꾸는지 1년치의 AI 지원 위협을 망라한 새 보고서를 냈다는 내용입니다. 보고서는 보안 커뮤니티에서 쓰이는 기법과 프레임워크의 적용성을 점검하려는 목적을 가진 것으로 보입니다. 제공된 정보만 보면 보고서의 구체적 결과나 권고사항은 공개되지 않…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-le-groupe-figaro-and-openai-partner-to-bring-le-figaro-journalism-to-cha-a1de396d.md",
+      "status": "published",
+      "score": 25.0,
+      "briefed_at": null,
+      "published_at": "2026-11-18",
+      "excerpt": "Le Groupe Figaro가 OpenAI와 제휴해 Le Figaro의 현재 보도·아카이브(뉴스·비즈니스·문화·라이프스타일)를 ChatGPT에서 요약·발췌와 원문 링크로 제공하며, 내부적으로 ChatGPT Enterprise 도입을 계획한다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "How Fanatics and OpenAI streamline the fan experience",
@@ -18233,6 +18337,19 @@
       "excerpt": "피드 기준으로는 GitHub가 Microsoft Build 2026에서 'GitHub Copilot app'을 'agent-native' 데스크톱 경험으로 소개했습니다. 제공된 정보만 보면 이 발표는 Copilot을 데스크톱 중심으로 확장해 개발자 환경 내 에이전트 통합을 강화하려는 시도로 보입니다. 태그에는 Copil…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-strengthening-nato-and-allied-cyber-defenses-with-ai-0e7f690a.md",
+      "status": "published",
+      "score": 24.0,
+      "briefed_at": null,
+      "published_at": "2026-11-17",
+      "excerpt": "OpenAI는 Daybreak를 NATO(NCIA), ENISA, CERT-폴ska, 우크라이나 등 신뢰할 수 있는 방어자들에게 제공해 취약점 탐지·검증·수정에 적용했고, NATO는 월 최대 **3000억 토큰**을 사용했습니다. ENISA·CERT 검증 결과와 실제 패치 배포 실적이 공개되었습니다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "Helping caregivers use AI in everyday life",
