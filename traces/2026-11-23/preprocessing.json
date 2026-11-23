@@ -1,0 +1,299 @@
+{
+  "generated_at": "2026-11-23T02:08:37.464090+00:00",
+  "generated_for": "2026-11-23",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "07e354e62fde88d73ccc2a19ba7960aba8b68086",
+  "github_run_id": "45098343268",
+  "service_count": 5,
+  "duration_ms": 14,
+  "raw_count": 120,
+  "candidate_count": 18,
+  "excluded_count": 102,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 29,
+      "excluded_count": 90,
+      "duration_ms": 6,
+      "reason_counts": {
+        "already_briefed": 90
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 29,
+      "output_count": 29,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 29,
+      "output_count": 28,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 1
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 28,
+      "output_count": 18,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:61d8127e693f0b0f",
+          "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+          "normalized_url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
+          "url_hash": "61d8127e693f0b0f3ba7ef2dc32bc9bfe97d415c3f165973c0ab2ef8ad20a2b9",
+          "suggested_doc_key": "2026-11-progress-map-for-the-lean-formalization-of-alessandro-masullo-s-manuscri-61d8127e",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-progress-map-for-the-lean-formalization-of-alessandro-masullo-s-manuscri-61d8127e.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 150점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 120개를 토론 신호로 반영했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a9f7ae49b5fbd4f4",
+          "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+          "normalized_url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+          "url_hash": "a9f7ae49b5fbd4f4edc31b0b0e42abd66e29e9dd398ea5acfa2e3ac3b0681ef3",
+          "suggested_doc_key": "2026-11-a-beginner-s-guide-to-local-ai-with-inkling-qwen-and-unsloth-a9f7ae49",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-a-beginner-s-guide-to-local-ai-with-inkling-qwen-and-unsloth-a9f7ae49.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 226점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 84개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:24e87f23050f082b",
+          "title": "What Happened to Silicon Valley?",
+          "normalized_url": "https://www.oreilly.com/radar/what-happened-to-silicon-valley",
+          "url_hash": "24e87f23050f082bec1531f7f0b05ab601102518f38772c27dc392544e8c73a9",
+          "suggested_doc_key": "2026-11-what-happened-to-silicon-valley-24e87f23",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-what-happened-to-silicon-valley-24e87f23.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 429점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 245개를 토론 신호로 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:7279785142919f7c",
+          "title": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
+          "normalized_url": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
+          "url_hash": "7279785142919f7cb1decc305c5ae841a42f4f82ed2e6614a1bf6c84b7fd8f18",
+          "suggested_doc_key": "2026-11-the-birds-of-gta-6-a-field-guide-to-vice-city-and-leonida-s-wildlife-72797851",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-the-birds-of-gta-6-a-field-guide-to-vice-city-and-leonida-s-wildlife-72797851.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 356점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 160개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:1a10f1676d46fc01",
+          "title": "Perplexity and Intelligence",
+          "normalized_url": "https://openai.com/index/perplexity-and-intelligence",
+          "url_hash": "1a10f1676d46fc01a909d8eab6d17033b89331ee5fd1f1e04952fc2f6f54665c",
+          "suggested_doc_key": "2026-11-perplexity-and-intelligence-1a10f167",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-perplexity-and-intelligence-1a10f167.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 482점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 334개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 8,
+      "excluded_count": 42,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:3d4aeac88b69acfa",
+          "title": "At Holiday Extras, dots get to work before anyone asks",
+          "normalized_url": "https://openai.com/business/customer-stories/holiday-extras-dots",
+          "url_hash": "3d4aeac88b69acfaa9cd944cf75b07a9d89f3c8d684549bae7f0b762916da940",
+          "suggested_doc_key": "2026-11-at-holiday-extras-dots-get-to-work-before-anyone-asks-3d4aeac8",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-at-holiday-extras-dots-get-to-work-before-anyone-asks-3d4aeac8.md",
+          "candidate_score": 28.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 7일이 지난 글로 최신성 13점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 31위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:67952d9a918d2536",
+          "title": "Inside the Codex sandbox",
+          "normalized_url": "https://openai.com/index/inside-the-codex-sandbox",
+          "url_hash": "67952d9a918d2536a7bf3b37b6c05ec5dc7c7c22fdf68db178458bb74b4d4f2d",
+          "suggested_doc_key": "2026-11-inside-the-codex-sandbox-67952d9a",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-inside-the-codex-sandbox-67952d9a.md",
+          "candidate_score": 26.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 4일이 지난 글로 최신성 16점을 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:a1de396d3910fa2e",
+          "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+          "normalized_url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+          "url_hash": "a1de396d3910fa2e0f79d5fc1596f0a162b45e4ee5be0f06557fa126a8cc5915",
+          "suggested_doc_key": "2026-11-le-groupe-figaro-and-openai-partner-to-bring-le-figaro-journalism-to-cha-a1de396d",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-le-groupe-figaro-and-openai-partner-to-bring-le-figaro-journalism-to-cha-a1de396d.md",
+          "candidate_score": 25.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 5일이 지난 글로 최신성 15점을 반영했습니다.",
+            "RSS 순위 16위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:0e7f690aa4ff229b",
+          "title": "Strengthening NATO and allied cyber defenses with AI",
+          "normalized_url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+          "url_hash": "0e7f690aa4ff229bd2e8f2756081d691fec5b134a3dc763b1e89b65c9c3becc6",
+          "suggested_doc_key": "2026-11-strengthening-nato-and-allied-cyber-defenses-with-ai-0e7f690a",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-strengthening-nato-and-allied-cyber-defenses-with-ai-0e7f690a.md",
+          "candidate_score": 24.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:3b3be741a87f5e21",
+          "title": "Introducing OpenAI for Chile",
+          "normalized_url": "https://openai.com/index/introducing-openai-for-chile",
+          "url_hash": "3b3be741a87f5e2153e626602817efd9dcc9c3fb90f3d3d29d39838acce03d65",
+          "suggested_doc_key": "2026-11-introducing-openai-for-chile-3b3be741",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-introducing-openai-for-chile-3b3be741.md",
+          "candidate_score": 24.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 6일이 지난 글로 최신성 14점을 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 40,
+        "low_quality": 1
+      }
+    }
+  ]
+}
