@@ -3825,13 +3825,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-26T05:43:49.651573Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-24T05:43:49.651573Z",
+    "extraction_method": "precision",
+    "token_count": 1200
   },
   "https://openai.com/index/chatgpt-plus-for-veterans": {
     "candidate": {
@@ -3877,13 +3877,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-26T05:43:49.651573Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-24T05:43:49.651573Z",
+    "extraction_method": "precision",
+    "token_count": 1104
   },
   "https://openai.com/index/jiostar-vijay-seshadri": {
     "candidate": {
@@ -3927,13 +3927,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-13T02:40:41.841934Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-26T05:43:49.651573Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-24T05:43:49.651573Z",
+    "extraction_method": "precision",
+    "token_count": 1046
   },
   "https://openai.com/business/customer-stories/amplitude": {
     "candidate": {
@@ -3978,13 +3978,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-14T02:20:45.196691Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-26T05:43:49.651573Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-24T05:43:49.651573Z",
+    "extraction_method": "precision",
+    "token_count": 1333
   },
   "https://openai.com/business/customer-stories/gondola": {
     "candidate": {
@@ -4030,13 +4030,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-14T02:20:45.196691Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-26T05:43:49.651573Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-24T05:43:49.651573Z",
+    "extraction_method": "precision",
+    "token_count": 1227
   },
   "https://openai.com/business/customer-stories/holidays-extras-codex": {
     "candidate": {
@@ -5854,6 +5854,116 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-24T02:08:49.589175Z",
+    "last_failure": "thin_content",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://twitter.com/ylecun/status/2124550037912920090": {
+    "candidate": {
+      "candidate_id": "hacker-news:53510b5370cd8096",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+        "url": "https://twitter.com/ylecun/status/2124550037912920090",
+        "published_at": "2026-11-23T17:07:26Z",
+        "collected_at": "2026-11-24T05:43:44.902776Z",
+        "summary": "<p>Article URL: <a href=\"https://twitter.com/ylecun/status/2124550037912920090\">https://twitter.com/ylecun/status/2124550037912920090</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50615308\">https://news.ycombinator.com/item?id=50615308</a></p>\n<p>Points: 1428</p>\n<p># Comments: 801</p>",
+        "authors": [
+          "MrBuddyCasino"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 19,
+          "hn_points": 1428,
+          "hn_comments": 801,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50615308"
+        }
+      },
+      "normalized_url": "https://twitter.com/ylecun/status/2124550037912920090",
+      "url_hash": "53510b5370cd80960ab8250e123b312345841468a3b22814514e01aea5809d70",
+      "title_fingerprint": "dario is hyping the dangers so oss models are illegal and he stays in control",
+      "feed_summary": "<p>Article URL: <a href=\"https://twitter.com/ylecun/status/2124550037912920090\">https://twitter.com/ylecun/status/2124550037912920090</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50615308\">https://news.ycombinator.com/item?id=50615308</a></p>\n<p>Points: 1428</p>\n<p># Comments: 801</p>",
+      "suggested_doc_key": "2026-11-dario-is-hyping-the-dangers-so-oss-models-are-illegal-and-he-stays-in-co-53510b53",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-dario-is-hyping-the-dangers-so-oss-models-are-illegal-and-he-stays-in-co-53510b53.md",
+      "candidate_score": 65.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "Hacker News 점수 1428점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 801개를 토론 신호로 반영했습니다.",
+        "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-25T05:43:49.650371Z",
+    "last_failure": "thin_content",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://openai.com/business/learn/connected-intelligence-for-in-house-legal": {
+    "candidate": {
+      "candidate_id": "openai-blog:10878202550bbbf9",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "article": {
+        "source": "OpenAI Blog",
+        "title": "Connected intelligence for in-house legal",
+        "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+        "published_at": "2026-11-23T08:00:00Z",
+        "collected_at": "2026-11-24T05:43:45.697761Z",
+        "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
+        "authors": [],
+        "tags": [
+          "Webinars"
+        ],
+        "metadata": {
+          "rss_rank": 2
+        }
+      },
+      "normalized_url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+      "url_hash": "10878202550bbbf922d1872ab8ac87272ec1fb51ba1f61195752ed3c5f3ba59c",
+      "title_fingerprint": "connected intelligence for in house legal",
+      "feed_summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
+      "suggested_doc_key": "2026-11-connected-intelligence-for-in-house-legal-10878202",
+      "suggested_article_path": "docs/services/openai-blog/2026-11-connected-intelligence-for-in-house-legal-10878202.md",
+      "candidate_score": 38.0,
+      "ranking_signals": {
+        "source_priority": 10,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": null,
+        "hn_comments_score": null,
+        "rss_rank_score": 8.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 10점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-25T05:43:49.650371Z",
     "last_failure": "thin_content",
     "recovered_at": null,
     "extraction_method": null,

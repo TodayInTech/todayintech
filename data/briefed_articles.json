@@ -14590,6 +14590,106 @@
       "status": "published",
       "briefed_at": "2026-11-23T02:12:20.417467Z",
       "candidate_score": 31.0
+    },
+    "04ec58c5601563db1c2040dc9dba1006daf39c883ab96135149ca39b838de541": {
+      "normalized_url": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls",
+      "title_fingerprint": "introducing file slicing controls in the gemini api",
+      "service_key": "google-blog",
+      "title": "Introducing file slicing controls in the Gemini API",
+      "article_doc_path": "docs/services/google-blog/2026-11-introducing-file-slicing-controls-in-the-gemini-api-04ec58c5.md",
+      "status": "published",
+      "briefed_at": "2026-11-24T05:48:34.522488Z",
+      "candidate_score": 40.0
+    },
+    "4f5fe20de68e9dfdec37bc312e73f8b092a226bb2cfacfa2a0e45f240086046a": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps",
+      "title_fingerprint": "a more tailored google search that s uniquely yours",
+      "service_key": "google-blog",
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "article_doc_path": "docs/services/google-blog/2026-11-a-more-tailored-google-search-that-s-uniquely-yours-4f5fe20d.md",
+      "status": "published",
+      "briefed_at": "2026-11-24T05:48:34.522541Z",
+      "candidate_score": 36.0
+    },
+    "53510b5370cd80960ab8250e123b312345841468a3b22814514e01aea5809d70": {
+      "normalized_url": "https://twitter.com/ylecun/status/2124550037912920090",
+      "title_fingerprint": "dario is hyping the dangers so oss models are illegal and he stays in control",
+      "service_key": "hacker-news",
+      "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+      "article_doc_path": "docs/services/hacker-news/2026-11-dario-is-hyping-the-dangers-so-oss-models-are-illegal-and-he-stays-in-co-53510b53.md",
+      "status": "published",
+      "briefed_at": "2026-11-24T05:48:34.522553Z",
+      "candidate_score": 65.0
+    },
+    "c25ffb76decee548f8bcaa8c4235c3dc294a9e3ff727e3a8153fdc93a0f5af53": {
+      "normalized_url": "https://stalw.art/blog/microsoft-exchange-replacement",
+      "title_fingerprint": "stalwart is now a drop in replacement for microsoft exchange",
+      "service_key": "hacker-news",
+      "title": "Stalwart is now a drop-in replacement for Microsoft Exchange",
+      "article_doc_path": "docs/services/hacker-news/2026-11-stalwart-is-now-a-drop-in-replacement-for-microsoft-exchange-c25ffb76.md",
+      "status": "published",
+      "briefed_at": "2026-11-24T05:48:34.522561Z",
+      "candidate_score": 60.0
+    },
+    "e68c6b8d3ebd450015cc8fe76acdec0389349d1c19e10ee5faadad5103052d77": {
+      "normalized_url": "https://github.com/anthropics/formal-math/tree/main/vp-vnp",
+      "title_fingerprint": "vp vnp over every field",
+      "service_key": "hacker-news",
+      "title": "VP ≠ VNP over Every Field",
+      "article_doc_path": "docs/services/hacker-news/2026-11-vp-vnp-over-every-field-e68c6b8d.md",
+      "status": "published",
+      "briefed_at": "2026-11-24T05:48:34.522569Z",
+      "candidate_score": 60.0
+    },
+    "d059f193e627ed60e8ce8c5301dba7633ad73f08e92067762f5d2a9dea0881d2": {
+      "normalized_url": "https://arm.jonpalmisc.com/",
+      "title_fingerprint": "per arm s request this site will be discontinued on 4 december 2026",
+      "service_key": "hacker-news",
+      "title": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
+      "article_doc_path": "docs/services/hacker-news/2026-11-per-arm-s-request-this-site-will-be-discontinued-on-4-december-2026-d059f193.md",
+      "status": "published",
+      "briefed_at": "2026-11-24T05:48:34.522576Z",
+      "candidate_score": 60.0
+    },
+    "1259b534687dd8b3171199ff6c1e4d274ef5d072ac6513620703d8171072ee72": {
+      "normalized_url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "title_fingerprint": "richpanel helps companies automate 50 of support in 30 days",
+      "service_key": "openai-blog",
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "article_doc_path": "docs/services/openai-blog/2026-11-richpanel-helps-companies-automate-50-of-support-in-30-days-1259b534.md",
+      "status": "published",
+      "briefed_at": "2026-11-24T05:48:34.522583Z",
+      "candidate_score": 42.0
+    },
+    "1a10f1676d46fc01a909d8eab6d17033b89331ee5fd1f1e04952fc2f6f54665c": {
+      "normalized_url": "https://openai.com/index/perplexity-and-intelligence",
+      "title_fingerprint": "perplexity and intelligence",
+      "service_key": "openai-blog",
+      "title": "Perplexity and Intelligence",
+      "article_doc_path": "docs/services/openai-blog/2026-11-perplexity-and-intelligence-1a10f167.md",
+      "status": "published",
+      "briefed_at": "2026-11-24T05:48:34.522591Z",
+      "candidate_score": 39.0
+    },
+    "10878202550bbbf922d1872ab8ac87272ec1fb51ba1f61195752ed3c5f3ba59c": {
+      "normalized_url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+      "title_fingerprint": "connected intelligence for in house legal",
+      "service_key": "openai-blog",
+      "title": "Connected intelligence for in-house legal",
+      "article_doc_path": "docs/services/openai-blog/2026-11-connected-intelligence-for-in-house-legal-10878202.md",
+      "status": "published",
+      "briefed_at": "2026-11-24T05:48:34.522597Z",
+      "candidate_score": 38.0
+    },
+    "3b3be741a87f5e2153e626602817efd9dcc9c3fb90f3d3d29d39838acce03d65": {
+      "normalized_url": "https://openai.com/index/introducing-openai-for-chile",
+      "title_fingerprint": "introducing openai for chile",
+      "service_key": "openai-blog",
+      "title": "Introducing OpenAI for Chile",
+      "article_doc_path": "docs/services/openai-blog/2026-11-introducing-openai-for-chile-3b3be741.md",
+      "status": "published",
+      "briefed_at": "2026-11-24T05:48:34.522603Z",
+      "candidate_score": 23.0
     }
   }
 }
