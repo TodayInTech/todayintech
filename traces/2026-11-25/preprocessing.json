@@ -1,0 +1,364 @@
+{
+  "generated_at": "2026-11-25T04:45:28.743866+00:00",
+  "generated_for": "2026-11-25",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "f06980dd63665643dd36fc9a85d960dd8e7eb041",
+  "github_run_id": "45548758315",
+  "service_count": 5,
+  "duration_ms": 15,
+  "raw_count": 120,
+  "candidate_count": 21,
+  "excluded_count": 99,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 3,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 119,
+      "excluded_count": 1,
+      "duration_ms": 0,
+      "reason_counts": {
+        "duplicate_in_run": 1
+      }
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 119,
+      "output_count": 33,
+      "excluded_count": 86,
+      "duration_ms": 7,
+      "reason_counts": {
+        "already_briefed": 86
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 33,
+      "output_count": 33,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 33,
+      "output_count": 31,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 31,
+      "output_count": 21,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 1,
+      "excluded_count": 9,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:927e02a5f82d0df2",
+          "title": "These are the gifts developers will actually want",
+          "normalized_url": "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want",
+          "url_hash": "927e02a5f82d0df221873fd7ab93f01b4265f5eefd97ba4f06b0261a7d6f5fa6",
+          "suggested_doc_key": "2026-11-these-are-the-gifts-developers-will-actually-want-927e02a5",
+          "suggested_article_path": "docs/services/github-blog/2026-11-these-are-the-gifts-developers-will-actually-want-927e02a5.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 9
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 3,
+      "excluded_count": 17,
+      "top_candidates": [
+        {
+          "candidate_id": "google-blog:adfa512c9bee7d82",
+          "title": "We’re launching Humanity’s First Exam and a Kaggle hackathon to test LLM reliability.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam",
+          "url_hash": "adfa512c9bee7d822d71e243fa3867353d2aa7f06626eb1fb28f4e27cf1cad30",
+          "suggested_doc_key": "2026-11-we-re-launching-humanity-s-first-exam-and-a-kaggle-hackathon-to-test-llm-adfa512c",
+          "suggested_article_path": "docs/services/google-blog/2026-11-we-re-launching-humanity-s-first-exam-and-a-kaggle-hackathon-to-test-llm-adfa512c.md",
+          "candidate_score": 46.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 2개를 감지해 가산했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:a7a0adf7d6c734e3",
+          "title": "How Gemini is changing the game for Golden State's organization and fans.",
+          "normalized_url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state",
+          "url_hash": "a7a0adf7d6c734e350c9ea11283c0fe8c513cc2bb1d3bcd56555bd53c3f8d9a6",
+          "suggested_doc_key": "2026-11-how-gemini-is-changing-the-game-for-golden-state-s-organization-and-fans-a7a0adf7",
+          "suggested_article_path": "docs/services/google-blog/2026-11-how-gemini-is-changing-the-game-for-golden-state-s-organization-and-fans-a7a0adf7.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "google-blog:3cf0a5f34d4c9c13",
+          "title": "Independent filmmakers in India bring big-screen stories to life with Google Flow.",
+          "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/women-in-film-india-google-flow",
+          "url_hash": "3cf0a5f34d4c9c13da8472fa109cfc70baf947ac0977bce273a32d6d9a4f8740",
+          "suggested_doc_key": "2026-11-independent-filmmakers-in-india-bring-big-screen-stories-to-life-with-go-3cf0a5f3",
+          "suggested_article_path": "docs/services/google-blog/2026-11-independent-filmmakers-in-india-bring-big-screen-stories-to-life-with-go-3cf0a5f3.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 7점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 17
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:ac2f786b30f6d457",
+          "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+          "normalized_url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+          "url_hash": "ac2f786b30f6d45772c42167559dc1dfd027b2c713b30efaaeedeee5585de3fa",
+          "suggested_doc_key": "2026-11-gpt-6-models-demonstrate-intrinsic-protein-design-capabilities-ac2f786b",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-gpt-6-models-demonstrate-intrinsic-protein-design-capabilities-ac2f786b.md",
+          "candidate_score": 63.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 213점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 65개를 토론 신호로 반영했습니다.",
+            "RSS 순위 18위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:f13f50765ddb35d9",
+          "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
+          "normalized_url": "https://news.ycombinator.com/item?id=50634426",
+          "url_hash": "f13f50765ddb35d9b0c1471c768ecd1182a5f803913ddb76a94da9d6219fe3db",
+          "suggested_doc_key": "2026-11-launch-hn-versine-yc-f26-mcp-to-send-and-receive-money-f13f5076",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-launch-hn-versine-yc-f26-mcp-to-send-and-receive-money-f13f5076.md",
+          "candidate_score": 60.1,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 3개를 감지해 가산했습니다.",
+            "Hacker News 점수 77점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 62개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:22f7a46f7fe9f580",
+          "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
+          "normalized_url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+          "url_hash": "22f7a46f7fe9f580e61c872694695dfde86848600c48b6b8afcd04d7f1fa9e1e",
+          "suggested_doc_key": "2026-11-matrix-multiplication-is-n-2-25-pdf-22f7a46f",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-matrix-multiplication-is-n-2-25-pdf-22f7a46f.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 296점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 133개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:57993858eb1cb093",
+          "title": "Ternary Bonsai 2.5 27B",
+          "normalized_url": "https://prismml.com/news/bonsai-2-5-27b",
+          "url_hash": "57993858eb1cb09379994a038222a5c2075f2f1272fc40a98a948ab9542c6590",
+          "suggested_doc_key": "2026-11-ternary-bonsai-2-5-27b-57993858",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-ternary-bonsai-2-5-27b-57993858.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 378점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 128개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:9ee11b87ddc3e78f",
+          "title": "Heart attack and stroke risk detectable decades in advance",
+          "normalized_url": "https://www.ed.ac.uk/news/heart-attack-and-stroke-risk-detectable-decades-in-advance",
+          "url_hash": "9ee11b87ddc3e78fd77d749ca1cf416c72ce8971ae949eae12366bb435547e9c",
+          "suggested_doc_key": "2026-11-heart-attack-and-stroke-risk-detectable-decades-in-advance-9ee11b87",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-heart-attack-and-stroke-risk-detectable-decades-in-advance-9ee11b87.md",
+          "candidate_score": 59.9,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 199점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 96개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 7,
+      "excluded_count": 43,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:89a905d5eae9fa3e",
+          "title": "How iFood scales coding agents across 15,000 repositories",
+          "normalized_url": "https://openai.com/business/customer-stories/ifood",
+          "url_hash": "89a905d5eae9fa3ef5a8af6c1b3d6471a3626169568a0058a355675d3a41557f",
+          "suggested_doc_key": "2026-11-how-ifood-scales-coding-agents-across-15-000-repositories-89a905d5",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-how-ifood-scales-coding-agents-across-15-000-repositories-89a905d5.md",
+          "candidate_score": 40.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:a3c9028eefd69cfd",
+          "title": "Clay helps sales teams win with Codex and ChatGPT",
+          "normalized_url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+          "url_hash": "a3c9028eefd69cfd15ff27f48e02556532b9ed7a8c483b2a5ba430ca611a8783",
+          "suggested_doc_key": "2026-11-clay-helps-sales-teams-win-with-codex-and-chatgpt-a3c9028e",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-clay-helps-sales-teams-win-with-codex-and-chatgpt-a3c9028e.md",
+          "candidate_score": 39.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 5위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:7758c04a629331bf",
+          "title": "Searching for distant planets with Astra",
+          "normalized_url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+          "url_hash": "7758c04a629331bf96383fb7f46e256dce8c50dc19007956b18ca6b429d0aeb8",
+          "suggested_doc_key": "2026-11-searching-for-distant-planets-with-astra-7758c04a",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-searching-for-distant-planets-with-astra-7758c04a.md",
+          "candidate_score": 38.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:7e14b56be6744308",
+          "title": "How Intentful uses dots to make more time for growth",
+          "normalized_url": "https://openai.com/business/customer-stories/intentful-dots",
+          "url_hash": "7e14b56be674430859075a7f0bce62ec43b4bbfbd056d91f846c666ac01fbfaf",
+          "suggested_doc_key": "2026-11-how-intentful-uses-dots-to-make-more-time-for-growth-7e14b56b",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-how-intentful-uses-dots-to-make-more-time-for-growth-7e14b56b.md",
+          "candidate_score": 36.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:b0689cf87ab570a4",
+          "title": "OpenAI and Cisco introduce Shirudo",
+          "normalized_url": "https://openai.com/index/introducing-shirudo",
+          "url_hash": "b0689cf87ab570a441c88635b910134907af4a34b0ffafe4d1af03d0273e75fa",
+          "suggested_doc_key": "2026-11-openai-and-cisco-introduce-shirudo-b0689cf8",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-openai-and-cisco-introduce-shirudo-b0689cf8.md",
+          "candidate_score": 33.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "duplicate_in_run": 1,
+        "already_briefed": 40,
+        "low_quality": 2
+      }
+    }
+  ]
+}
