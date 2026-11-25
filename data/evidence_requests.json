@@ -1961,13 +1961,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-14T02:40:41.844241Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-29T04:45:47.170198Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-25T04:45:47.170198Z",
+    "extraction_method": "precision",
+    "token_count": 343
   },
   "https://openai.com/index/openai-to-acquire-pierre": {
     "candidate": {
@@ -2013,13 +2013,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-14T02:40:41.844241Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-29T04:45:47.170198Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-25T04:45:47.170198Z",
+    "extraction_method": "precision",
+    "token_count": 518
   },
   "https://openai.com/index/devrev-enterprise-self-service": {
     "candidate": {
@@ -2065,13 +2065,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-14T02:40:41.844241Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-29T04:45:47.170198Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-25T04:45:47.170198Z",
+    "extraction_method": "precision",
+    "token_count": 754
   },
   "https://openai.com/index/dan-driscoll-joins-openai": {
     "candidate": {
@@ -4080,13 +4080,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-14T02:20:45.196691Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-27T04:45:47.170198Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-25T04:45:47.170198Z",
+    "extraction_method": "precision",
+    "token_count": 1063
   },
   "https://openai.com/index/children-first-declaration": {
     "candidate": {
@@ -4132,13 +4132,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-14T02:20:45.196691Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-27T04:45:47.170198Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-25T04:45:47.170198Z",
+    "extraction_method": "precision",
+    "token_count": 278
   },
   "https://open.m-vave.com/fm1-workbench": {
     "candidate": {
@@ -5965,6 +5965,63 @@
     "attempts": 0,
     "next_attempt_at": "2026-11-25T05:43:49.650371Z",
     "last_failure": "thin_content",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf": {
+    "candidate": {
+      "candidate_id": "hacker-news:22f7a46f7fe9f580",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
+        "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+        "published_at": "2026-11-25T01:19:26Z",
+        "collected_at": "2026-11-25T04:45:42.639274Z",
+        "summary": "<p>Article URL: <a href=\"https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf\">https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50637220\">https://news.ycombinator.com/item?id=50637220</a></p>\n<p>Points: 296</p>\n<p># Comments: 133</p>",
+        "authors": [
+          "E-Reverance"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 14,
+          "hn_points": 296,
+          "hn_comments": 133,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50637220"
+        }
+      },
+      "normalized_url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "url_hash": "22f7a46f7fe9f580e61c872694695dfde86848600c48b6b8afcd04d7f1fa9e1e",
+      "title_fingerprint": "matrix multiplication is n 2 25 pdf",
+      "feed_summary": "<p>Article URL: <a href=\"https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf\">https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50637220\">https://news.ycombinator.com/item?id=50637220</a></p>\n<p>Points: 296</p>\n<p># Comments: 133</p>",
+      "suggested_doc_key": "2026-11-matrix-multiplication-is-n-2-25-pdf-22f7a46f",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-matrix-multiplication-is-n-2-25-pdf-22f7a46f.md",
+      "candidate_score": 60.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 296점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 133개를 토론 신호로 반영했습니다.",
+        "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-26T04:45:47.168898Z",
+    "last_failure": "policy_rejected",
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0

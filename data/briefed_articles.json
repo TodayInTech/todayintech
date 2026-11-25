@@ -14690,6 +14690,116 @@
       "status": "published",
       "briefed_at": "2026-11-24T05:48:34.522603Z",
       "candidate_score": 23.0
+    },
+    "adfa512c9bee7d822d71e243fa3867353d2aa7f06626eb1fb28f4e27cf1cad30": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam",
+      "title_fingerprint": "we re launching humanity s first exam and a kaggle hackathon to test llm reliability",
+      "service_key": "google-blog",
+      "title": "We’re launching Humanity’s First Exam and a Kaggle hackathon to test LLM reliability.",
+      "article_doc_path": "docs/services/google-blog/2026-11-we-re-launching-humanity-s-first-exam-and-a-kaggle-hackathon-to-test-llm-adfa512c.md",
+      "status": "published",
+      "briefed_at": "2026-11-25T04:51:21.370301Z",
+      "candidate_score": 46.0
+    },
+    "a7a0adf7d6c734e350c9ea11283c0fe8c513cc2bb1d3bcd56555bd53c3f8d9a6": {
+      "normalized_url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state",
+      "title_fingerprint": "how gemini is changing the game for golden state s organization and fans",
+      "service_key": "google-blog",
+      "title": "How Gemini is changing the game for Golden State's organization and fans.",
+      "article_doc_path": "docs/services/google-blog/2026-11-how-gemini-is-changing-the-game-for-golden-state-s-organization-and-fans-a7a0adf7.md",
+      "status": "published",
+      "briefed_at": "2026-11-25T04:51:21.370345Z",
+      "candidate_score": 40.0
+    },
+    "3cf0a5f34d4c9c13da8472fa109cfc70baf947ac0977bce273a32d6d9a4f8740": {
+      "normalized_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/women-in-film-india-google-flow",
+      "title_fingerprint": "independent filmmakers in india bring big screen stories to life with google flow",
+      "service_key": "google-blog",
+      "title": "Independent filmmakers in India bring big-screen stories to life with Google Flow.",
+      "article_doc_path": "docs/services/google-blog/2026-11-independent-filmmakers-in-india-bring-big-screen-stories-to-life-with-go-3cf0a5f3.md",
+      "status": "published",
+      "briefed_at": "2026-11-25T04:51:21.370359Z",
+      "candidate_score": 39.0
+    },
+    "ac2f786b30f6d45772c42167559dc1dfd027b2c713b30efaaeedeee5585de3fa": {
+      "normalized_url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "title_fingerprint": "gpt 6 models demonstrate intrinsic protein design capabilities",
+      "service_key": "hacker-news",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "article_doc_path": "docs/services/hacker-news/2026-11-gpt-6-models-demonstrate-intrinsic-protein-design-capabilities-ac2f786b.md",
+      "status": "published",
+      "briefed_at": "2026-11-25T04:51:21.370368Z",
+      "candidate_score": 63.0
+    },
+    "f13f50765ddb35d9b0c1471c768ecd1182a5f803913ddb76a94da9d6219fe3db": {
+      "normalized_url": "https://news.ycombinator.com/item?id=50634426",
+      "title_fingerprint": "launch hn versine yc f26 mcp to send and receive money",
+      "service_key": "hacker-news",
+      "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
+      "article_doc_path": "docs/services/hacker-news/2026-11-launch-hn-versine-yc-f26-mcp-to-send-and-receive-money-f13f5076.md",
+      "status": "published",
+      "briefed_at": "2026-11-25T04:51:21.370377Z",
+      "candidate_score": 60.1
+    },
+    "22f7a46f7fe9f580e61c872694695dfde86848600c48b6b8afcd04d7f1fa9e1e": {
+      "normalized_url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "title_fingerprint": "matrix multiplication is n 2 25 pdf",
+      "service_key": "hacker-news",
+      "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
+      "article_doc_path": "docs/services/hacker-news/2026-11-matrix-multiplication-is-n-2-25-pdf-22f7a46f.md",
+      "status": "published",
+      "briefed_at": "2026-11-25T04:51:21.370385Z",
+      "candidate_score": 60.0
+    },
+    "57993858eb1cb09379994a038222a5c2075f2f1272fc40a98a948ab9542c6590": {
+      "normalized_url": "https://prismml.com/news/bonsai-2-5-27b",
+      "title_fingerprint": "ternary bonsai 2 5 27b",
+      "service_key": "hacker-news",
+      "title": "Ternary Bonsai 2.5 27B",
+      "article_doc_path": "docs/services/hacker-news/2026-11-ternary-bonsai-2-5-27b-57993858.md",
+      "status": "published",
+      "briefed_at": "2026-11-25T04:51:21.370392Z",
+      "candidate_score": 60.0
+    },
+    "89a905d5eae9fa3ef5a8af6c1b3d6471a3626169568a0058a355675d3a41557f": {
+      "normalized_url": "https://openai.com/business/customer-stories/ifood",
+      "title_fingerprint": "how ifood scales coding agents across 15 000 repositories",
+      "service_key": "openai-blog",
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "article_doc_path": "docs/services/openai-blog/2026-11-how-ifood-scales-coding-agents-across-15-000-repositories-89a905d5.md",
+      "status": "published",
+      "briefed_at": "2026-11-25T04:51:21.370400Z",
+      "candidate_score": 40.0
+    },
+    "a3c9028eefd69cfd15ff27f48e02556532b9ed7a8c483b2a5ba430ca611a8783": {
+      "normalized_url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "title_fingerprint": "clay helps sales teams win with codex and chatgpt",
+      "service_key": "openai-blog",
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-11-clay-helps-sales-teams-win-with-codex-and-chatgpt-a3c9028e.md",
+      "status": "published",
+      "briefed_at": "2026-11-25T04:51:21.370407Z",
+      "candidate_score": 39.0
+    },
+    "7758c04a629331bf96383fb7f46e256dce8c50dc19007956b18ca6b429d0aeb8": {
+      "normalized_url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+      "title_fingerprint": "searching for distant planets with astra",
+      "service_key": "openai-blog",
+      "title": "Searching for distant planets with Astra",
+      "article_doc_path": "docs/services/openai-blog/2026-11-searching-for-distant-planets-with-astra-7758c04a.md",
+      "status": "published",
+      "briefed_at": "2026-11-25T04:51:21.370415Z",
+      "candidate_score": 38.0
+    },
+    "7e14b56be674430859075a7f0bce62ec43b4bbfbd056d91f846c666ac01fbfaf": {
+      "normalized_url": "https://openai.com/business/customer-stories/intentful-dots",
+      "title_fingerprint": "how intentful uses dots to make more time for growth",
+      "service_key": "openai-blog",
+      "title": "How Intentful uses dots to make more time for growth",
+      "article_doc_path": "docs/services/openai-blog/2026-11-how-intentful-uses-dots-to-make-more-time-for-growth-7e14b56b.md",
+      "status": "published",
+      "briefed_at": "2026-11-25T04:51:21.370422Z",
+      "candidate_score": 36.0
     }
   }
 }

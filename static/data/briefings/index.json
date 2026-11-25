@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-24",
+  "generated_for": "2026-11-25",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -1426,6 +1426,19 @@
       "new": false
     },
     {
+      "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-dario-is-hyping-the-dangers-so-oss-models-are-illegal-and-he-stays-in-co-53510b53.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-24",
+      "published_at": "2026-11-23",
+      "excerpt": "피드 기준으로는 Hacker News에 \"Dario is hyping the dangers so OSS models are illegal and he stays in control\"라는 제목의 토론이 올라와 트윗(ylecun) 링크와 함께 높은 참여(점수 1428, 댓글 801)를 기록했습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Language Models Can Rewrite Their Own Weights",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -2830,19 +2843,6 @@
       "new": false
     },
     {
-      "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-dario-is-hyping-the-dangers-so-oss-models-are-illegal-and-he-stays-in-co-53510b53.md",
-      "status": "published",
-      "score": 65.0,
-      "briefed_at": null,
-      "published_at": "2026-11-23",
-      "excerpt": "피드 기준으로는 Hacker News에 \"Dario is hyping the dangers so OSS models are illegal and he stays in control\"라는 제목의 토론이 올라와 트윗(ylecun) 링크와 함께 높은 참여(점수 1428, 댓글 801)를 기록했습니다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Genie 4 is now available",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3621,6 +3621,19 @@
       "excerpt": "피드 기준으로는 SXX가 'Apple is about to make Hide My Email useless'라는 글을 올렸습니다. 제목은 애플이 Hide My Email 기능을 사실상 무력화할 변화가 임박했다고 주장합니다. Hacker News에서 높은 관심을 받았고 포인트 330, 댓글 194를 기록했습니다. 제공된…",
       "featured": false,
       "new": false
+    },
+    {
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-gpt-6-models-demonstrate-intrinsic-protein-design-capabilities-ac2f786b.md",
+      "status": "published",
+      "score": 63.0,
+      "briefed_at": null,
+      "published_at": "2026-11-24",
+      "excerpt": "OpenAI는 GPT‑6 계열이 코드와 추론만으로 단백질 구조와 서열을 설계할 수 있는 내재적 능력을 보였다고 발표했다. 실험에서 GPT‑6.2 기반 설계로 5개 표적에 대해 결합 증거를 얻었고, 재설계 실험에서도 유의미한 히트율을 보고했다.",
+      "featured": false,
+      "new": true
     },
     {
       "title": "A family tree of software job titles",
@@ -4724,6 +4737,58 @@
       "briefed_at": "2026-10-13",
       "published_at": "2026-10-12",
       "excerpt": "Agent37은 AI 에이전트를 위한 '저비용 샌드박스'를 표방하며 호스트당 평균 비용을 업계의 10% 이하로 낮췄다고 소개한다. 창업자 비슈누는 고객당 평균 지출을 월 $0.37로 제시하고, 무료 플랜의 인프라 비용은 사용자당 월 $0.05~$0.10 수준이라고 밝힌다. 초기에는 OpenClaw 래퍼로 시작했으나 다양…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-launch-hn-versine-yc-f26-mcp-to-send-and-receive-money-f13f5076.md",
+      "status": "published",
+      "score": 60.1,
+      "briefed_at": null,
+      "published_at": "2026-11-24",
+      "excerpt": "YC F26 스타트업 Versine이 대화형 MCP를 공개했다. 사용자 소유의 셀프커스터디 USDC(베이스) 지갑을 앞단에 두고, 패스키 승인·신뢰 연락처·클레임 포워딩으로 AI 에이전트가 송금·요청을 수행한다(비계정 수취자 은행 출금 2분 지원).",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-per-arm-s-request-this-site-will-be-discontinued-on-4-december-2026-d059f193.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-24",
+      "published_at": "2026-11-23",
+      "excerpt": "AArch64 명세·시스템 레지스터 레퍼런스 사이트 운영자가 Arm의 요청으로 사이트 종료를 공지했으며, 종료 날짜는 4 December 2026입니다. 운영자는 북마크·링크 유지 방안을 검토하겠다고 밝혔습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "VP ≠ VNP over Every Field",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-vp-vnp-over-every-field-e68c6b8d.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-24",
+      "published_at": "2026-11-23",
+      "excerpt": "Anthropic 내부 연구 Claude 모델이 발견했다고 밝힌 증명은 **'VP ≠ VNP over every field'**을 주장하며 해밀토니안 순회 다항식과 영이 아닌 특징에서의 퍼머넌트에 대해 **m^(c (log m)^(1/3))** 보다 큰 게이트 하한을 제시한다. 논문과 Lean 4 형식화가 공개됐으나 인…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "Stalwart is now a drop-in replacement for Microsoft Exchange",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-stalwart-is-now-a-drop-in-replacement-for-microsoft-exchange-c25ffb76.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-24",
+      "published_at": "2026-11-23",
+      "excerpt": "Stalwart 1.2.0이 MAPI over HTTP, EWS, Exchange ActiveSync, Autodiscover를 구현해 **Microsoft Exchange의 드롭인 교체**가 가능해졌다. 새 Outlook(클라우드 전용)은 지원하지 않아 마이그레이션 시 주의가 필요하다.",
       "featured": false,
       "new": false
     },
@@ -7835,41 +7900,28 @@
       "new": false
     },
     {
-      "title": "Stalwart is now a drop-in replacement for Microsoft Exchange",
+      "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-stalwart-is-now-a-drop-in-replacement-for-microsoft-exchange-c25ffb76.md",
+      "href": "./services/hacker-news/2026-11-matrix-multiplication-is-n-2-25-pdf-22f7a46f.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-23",
-      "excerpt": "Stalwart 1.2.0이 MAPI over HTTP, EWS, Exchange ActiveSync, Autodiscover를 구현해 **Microsoft Exchange의 드롭인 교체**가 가능해졌다. 새 Outlook(클라우드 전용)은 지원하지 않아 마이그레이션 시 주의가 필요하다.",
+      "published_at": "2026-11-25",
+      "excerpt": "피드 기준으로는 OpenAI/math GitHub에 'Matrix Multiplication is Θ(n^2.25)'라는 PDF(2026-11-24)가 올라왔고, Hacker News에서 296점·133댓글로 큰 주목을 받고 있다. 본문 내용과 정확성은 메타데이터만으로는 확인되지 않는다.",
       "featured": false,
       "new": true
     },
     {
-      "title": "VP ≠ VNP over Every Field",
+      "title": "Ternary Bonsai 2.5 27B",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-vp-vnp-over-every-field-e68c6b8d.md",
+      "href": "./services/hacker-news/2026-11-ternary-bonsai-2-5-27b-57993858.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-23",
-      "excerpt": "Anthropic 내부 연구 Claude 모델이 발견했다고 밝힌 증명은 **'VP ≠ VNP over every field'**을 주장하며 해밀토니안 순회 다항식과 영이 아닌 특징에서의 퍼머넌트에 대해 **m^(c (log m)^(1/3))** 보다 큰 게이트 하한을 제시한다. 논문과 Lean 4 형식화가 공개됐으나 인…",
-      "featured": false,
-      "new": true
-    },
-    {
-      "title": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-per-arm-s-request-this-site-will-be-discontinued-on-4-december-2026-d059f193.md",
-      "status": "published",
-      "score": 60.0,
-      "briefed_at": null,
-      "published_at": "2026-11-23",
-      "excerpt": "AArch64 명세·시스템 레지스터 레퍼런스 사이트 운영자가 Arm의 요청으로 사이트 종료를 공지했으며, 종료 날짜는 4 December 2026입니다. 운영자는 북마크·링크 유지 방안을 검토하겠다고 밝혔습니다.",
+      "published_at": "2026-11-24",
+      "excerpt": "PrismML이 Qwen 3.8 27B 기반의 Ternary Bonsai 2.5 27B를 발표했다. 5.9GB 소형 모델에서 에이전트형 코딩·다단계 도구 사용 능력이 개선되었고, H100·RTX4090 성능 수치와 플랫폼·아파치2.0 배포가 공개되었다.",
       "featured": false,
       "new": true
     },
@@ -9434,6 +9486,19 @@
       "new": false
     },
     {
+      "title": "We’re launching Humanity’s First Exam and a Kaggle hackathon to test LLM reliability.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-we-re-launching-humanity-s-first-exam-and-a-kaggle-hackathon-to-test-llm-adfa512c.md",
+      "status": "published",
+      "score": 46.0,
+      "briefed_at": null,
+      "published_at": "2026-11-24",
+      "excerpt": "Google은 LLM의 일관된 답변 능력을 평가하는 벤치마크 'Humanity’s First Exam(HFE)'을 카글에 공개했다. 데이터셋은 **544개** 텍스트·이미지 프롬프트(20개 역량)로 구성되며, 커뮤니티용 3주 카글 대회는 **12월 15일**까지 열린다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -10344,6 +10409,19 @@
       "new": false
     },
     {
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-richpanel-helps-companies-automate-50-of-support-in-30-days-1259b534.md",
+      "status": "published",
+      "score": 42.0,
+      "briefed_at": "2026-11-24",
+      "published_at": "2026-11-23",
+      "excerpt": "Richpanel은 OpenAI의 GPT‑6 계열 모델을 역할별로 배치해 도구·절차 설정과 대화 처리를 분리함으로써 '30일 내 50% 고객지원 자동화'를 보장한다고 밝혔고, 지난 6개월간 약 300건 배포에서 이 약속을 충족했다고 전했다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -10981,19 +11059,6 @@
       "new": false
     },
     {
-      "title": "Richpanel helps companies automate 50% of support in 30 days",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-richpanel-helps-companies-automate-50-of-support-in-30-days-1259b534.md",
-      "status": "published",
-      "score": 42.0,
-      "briefed_at": null,
-      "published_at": "2026-11-23",
-      "excerpt": "Richpanel은 OpenAI의 GPT‑6 계열 모델을 역할별로 배치해 도구·절차 설정과 대화 처리를 분리함으로써 '30일 내 50% 고객지원 자동화'를 보장한다고 밝혔고, 지난 6개월간 약 300건 배포에서 이 약속을 충족했다고 전했다.",
-      "featured": false,
-      "new": true
-    },
-    {
       "title": "Can AI help scientists identify promising drug candidates?",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -11449,6 +11514,19 @@
       "new": false
     },
     {
+      "title": "Introducing file slicing controls in the Gemini API",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-introducing-file-slicing-controls-in-the-gemini-api-04ec58c5.md",
+      "status": "published",
+      "score": 40.0,
+      "briefed_at": "2026-11-24",
+      "published_at": "2026-11-23",
+      "excerpt": "Google은 Gemini API에 서버사이드 파일 슬라이싱과 Microsoft Office·OpenDocument 네이티브 업로드를 추가해 파일 전체를 전부 전처리하지 않고도 페이지·셀·미디어 구간·레이어 단위로 모델에 전달해 토큰 청구를 줄일 수 있게 했습니다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Walter Isaacson on curiosity and creativity in the AI age.",
       "service_key": "google-blog",
       "service_name": "Google Blog",
@@ -11852,17 +11930,43 @@
       "new": false
     },
     {
-      "title": "Introducing file slicing controls in the Gemini API",
+      "title": "How Gemini is changing the game for Golden State's organization and fans.",
       "service_key": "google-blog",
       "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-introducing-file-slicing-controls-in-the-gemini-api-04ec58c5.md",
+      "href": "./services/google-blog/2026-11-how-gemini-is-changing-the-game-for-golden-state-s-organization-and-fans-a7a0adf7.md",
       "status": "published",
       "score": 40.0,
       "briefed_at": null,
-      "published_at": "2026-11-23",
-      "excerpt": "Google은 Gemini API에 서버사이드 파일 슬라이싱과 Microsoft Office·OpenDocument 네이티브 업로드를 추가해 파일 전체를 전부 전처리하지 않고도 페이지·셀·미디어 구간·레이어 단위로 모델에 전달해 토큰 청구를 줄일 수 있게 했습니다.",
+      "published_at": "2026-11-24",
+      "excerpt": "Google은 Gemini를 Golden State의 공식 AI 어시스턴트 및 공식 생성 AI·엔터프라이즈 LLM 파트너로 지정해, 체이스 센터 내부 영상보드와 디지털 채널을 통한 경기일 팬 경험을 강화하고, 비즈니스·농구 운영을 위한 맞춤형 AI 에이전트 도입을 확대한다.",
       "featured": false,
       "new": true
+    },
+    {
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-how-ifood-scales-coding-agents-across-15-000-repositories-89a905d5.md",
+      "status": "published",
+      "score": 40.0,
+      "briefed_at": null,
+      "published_at": "2026-11-24",
+      "excerpt": "iFood는 내부 'Remote Agents Platform'으로 **15,000개** 저장소를 REST API로 에이전트 실행해 **25,000+** 작업(총 270억 토큰), 평균 US$0.04/실행으로 GPT‑5.6 Luna를 사용해 보안 패치의 정확도와 해결 건수를 두 배 이상 늘렸다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Perplexity and Intelligence",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-perplexity-and-intelligence-1a10f167.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": "2026-11-24",
+      "published_at": "2026-11-22",
+      "excerpt": "OpenAI는 내부 로그-퍼플렉시티(교차엔트로피 손실) 수치를 공개하고 이를 업계 공통 지표로 삼아 투명성·안전 한계를 정하자고 제안했다. 글은 퍼플렉시티 임계치와 능력 출현(예: GPT‑3.5 0.99, GPT‑4 0.91, 현재 ~0.76)을 연결하고 AI가 연구 가속을 일으킬 수 있음을 경고한다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
@@ -12762,17 +12866,43 @@
       "new": false
     },
     {
-      "title": "Perplexity and Intelligence",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-perplexity-and-intelligence-1a10f167.md",
+      "title": "Independent filmmakers in India bring big-screen stories to life with Google Flow.",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-independent-filmmakers-in-india-bring-big-screen-stories-to-life-with-go-3cf0a5f3.md",
       "status": "published",
       "score": 39.0,
       "briefed_at": null,
-      "published_at": "2026-11-22",
-      "excerpt": "OpenAI는 내부 로그-퍼플렉시티(교차엔트로피 손실) 수치를 공개하고 이를 업계 공통 지표로 삼아 투명성·안전 한계를 정하자고 제안했다. 글은 퍼플렉시티 임계치와 능력 출현(예: GPT‑3.5 0.99, GPT‑4 0.91, 현재 ~0.76)을 연결하고 AI가 연구 가속을 일으킬 수 있음을 경고한다.",
+      "published_at": "2026-11-24",
+      "excerpt": "Google과 Women in Film India가 공동 개최한 'WIF India × Google Flow Filmathon'에서 참가자들이 Google Flow로 직접 창작한 단편 5편이 고아 국제영화제에서 상영되었고 수상자들이 고아 주수상의 시상으로 공개 인정받았습니다.",
       "featured": false,
       "new": true
+    },
+    {
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-clay-helps-sales-teams-win-with-codex-and-chatgpt-a3c9028e.md",
+      "status": "published",
+      "score": 39.0,
+      "briefed_at": null,
+      "published_at": "2026-11-24",
+      "excerpt": "OpenAI는 Clay가 Codex·ChatGPT 플러그인과 GPT‑6 계열(GPT‑6 Sol/Astra/Luna), Responses API를 활용해 영업 데이터 조사·엔리치먼트·워크플로 자동화를 확장했다고 밝혔다. GPT‑6 Astra는 코드 작성·테스트·PR까지 자동화하는 데 사용된다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Connected intelligence for in-house legal",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-connected-intelligence-for-in-house-legal-10878202.md",
+      "status": "published",
+      "score": 38.0,
+      "briefed_at": "2026-11-24",
+      "published_at": "2026-11-23",
+      "excerpt": "OpenAI 블로그(2026-11-23)는 'Connected intelligence for in-house legal' 웨비나를 소개했다. OpenAI와 법무업계 패널이 인하우스 법무팀의 비즈니스 맥락 연결, 재사용 가능한 워크플로우 구축, 외부 자문 활용 방안을 논의한다.",
+      "featured": false,
+      "new": false
     },
     {
       "title": "Explore the Codex Security Plugin",
@@ -13269,15 +13399,15 @@
       "new": false
     },
     {
-      "title": "Connected intelligence for in-house legal",
+      "title": "Searching for distant planets with Astra",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-connected-intelligence-for-in-house-legal-10878202.md",
+      "href": "./services/openai-blog/2026-11-searching-for-distant-planets-with-astra-7758c04a.md",
       "status": "published",
       "score": 38.0,
       "briefed_at": null,
-      "published_at": "2026-11-23",
-      "excerpt": "OpenAI 블로그(2026-11-23)는 'Connected intelligence for in-house legal' 웨비나를 소개했다. OpenAI와 법무업계 패널이 인하우스 법무팀의 비즈니스 맥락 연결, 재사용 가능한 워크플로우 구축, 외부 자문 활용 방안을 논의한다.",
+      "published_at": "2026-11-24",
+      "excerpt": "아마추어 천문학자들이 Codex와 Astra로 케플러·TESS 공개 데이터를 검색해 잠재 외계행성 후보를 발견했고, SETI의 독립 검토에서 일부 신호가 재발견되거나 TESS팀으로 후보가 제출되어 추가 분석 대기 중입니다.",
       "featured": false,
       "new": true
     },
@@ -14097,6 +14227,19 @@
       "briefed_at": "2026-06-13",
       "published_at": "2026-06-12",
       "excerpt": "제공된 메타데이터에 따르면 GitHub는 Copilot CLI의 위임(delegation) 결정을 더 선택적으로 만들기 위한 개선을 발표했습니다. 피드 기준으로는 오케스트레이션 향상, 핸드오프 감소, 더 빠른 진행을 목표로 했고 새 설정(토글)은 추가하지 않았다고 요약됩니다. 해당 내용은 GitHub Copilot 사용…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "href": "./services/google-blog/2026-11-a-more-tailored-google-search-that-s-uniquely-yours-4f5fe20d.md",
+      "status": "published",
+      "score": 36.0,
+      "briefed_at": "2026-11-24",
+      "published_at": "2026-11-23",
+      "excerpt": "Google은 Search의 Personal Intelligence가 Google Wallet(오늘부터 순차 롤아웃)과 곧 Drive·Gemini 앱을 연결해 지출·문서·대화 컨텍스트를 검색 응답에 통합한다고 밝혔다. 사용자가 옵트인해 연결/해제할 수 있으며 AI Mode는 계정 정보만 읽고 자금 이동은 불가하다고 명시…",
       "featured": false,
       "new": false
     },
@@ -15115,15 +15258,15 @@
       "new": false
     },
     {
-      "title": "A more tailored Google Search that’s uniquely yours",
-      "service_key": "google-blog",
-      "service_name": "Google Blog",
-      "href": "./services/google-blog/2026-11-a-more-tailored-google-search-that-s-uniquely-yours-4f5fe20d.md",
+      "title": "How Intentful uses dots to make more time for growth",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-how-intentful-uses-dots-to-make-more-time-for-growth-7e14b56b.md",
       "status": "published",
       "score": 36.0,
       "briefed_at": null,
-      "published_at": "2026-11-23",
-      "excerpt": "Google은 Search의 Personal Intelligence가 Google Wallet(오늘부터 순차 롤아웃)과 곧 Drive·Gemini 앱을 연결해 지출·문서·대화 컨텍스트를 검색 응답에 통합한다고 밝혔다. 사용자가 옵트인해 연결/해제할 수 있으며 AI Mode는 계정 정보만 읽고 자금 이동은 불가하다고 명시…",
+      "published_at": "2026-11-24",
+      "excerpt": "Intentful 창업자 Marina Petrova는 ChatGPT 플러그인으로 연결된 개인 'dot' Aria를 활용해 약 300개 사이트맵을 검토하고(사이트맵당 최대 3,000페이지 기준), 과거 계약에서 가격을 추출해 페이지 수 기반 가격 모델과 1페이지 제안서를 몇 시간 만에 완성했습니다. Aria는 Google…",
       "featured": false,
       "new": true
     },
@@ -18469,6 +18612,19 @@
       "new": false
     },
     {
+      "title": "Introducing OpenAI for Chile",
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "href": "./services/openai-blog/2026-11-introducing-openai-for-chile-3b3be741.md",
+      "status": "published",
+      "score": 23.0,
+      "briefed_at": "2026-11-24",
+      "published_at": "2026-11-17",
+      "excerpt": "OpenAI와 칠레 과학기술혁신부가 'OpenAI for Chile' 협력을 시작하고 MOU를 체결했다. 공공 행정의 책임 있는 AI 도입, 공무원 교육·업스킬링, 현지 스타트업 지원을 주요 내용으로 한다.",
+      "featured": false,
+      "new": false
+    },
+    {
       "title": "Helping caregivers use AI in everyday life",
       "service_key": "openai-blog",
       "service_name": "OpenAI Blog",
@@ -18506,19 +18662,6 @@
       "excerpt": "피드 기준으로는 OpenAI 크리에이티브 팀이 Codex를 내부 협업 파트너로 삼아 맞춤형 창작 도구를 개발하고, 문맥을 인식하는 AI를 통해 아이디어 발굴과 프로토타이핑 속도를 높였다는 내용이다. 제공된 요약은 Codex가 팀 워크플로우에 통합되어 반복적인 시제품 제작과 아이디어 스케치 단계에서 시간을 단축하는 목적로…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "Introducing OpenAI for Chile",
-      "service_key": "openai-blog",
-      "service_name": "OpenAI Blog",
-      "href": "./services/openai-blog/2026-11-introducing-openai-for-chile-3b3be741.md",
-      "status": "published",
-      "score": 23.0,
-      "briefed_at": null,
-      "published_at": "2026-11-17",
-      "excerpt": "OpenAI와 칠레 과학기술혁신부가 'OpenAI for Chile' 협력을 시작하고 MOU를 체결했다. 공공 행정의 책임 있는 AI 도입, 공무원 교육·업스킬링, 현지 스타트업 지원을 주요 내용으로 한다.",
-      "featured": false,
-      "new": true
     },
     {
       "title": "Introducing Intelligence Age",
