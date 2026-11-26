@@ -479,13 +479,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-14T03:57:28.116270Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "reviewed",
+    "attempts": 3,
+    "next_attempt_at": "2026-12-03T03:54:38.495454Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-26T03:54:38.495454Z",
+    "extraction_method": "precision",
+    "token_count": 2512
   },
   "https://openai.com/index/openai-servicenow-partnership-expansion": {
     "candidate": {
@@ -635,13 +635,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-14T03:57:28.116270Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "reviewed",
+    "attempts": 3,
+    "next_attempt_at": "2026-12-03T03:54:38.495454Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-26T03:54:38.495454Z",
+    "extraction_method": "precision",
+    "token_count": 5947
   },
   "https://data.stackexchange.com/stackoverflow/query/1926661": {
     "candidate": {
@@ -1064,13 +1064,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-14T03:57:28.116270Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 3,
+    "next_attempt_at": "2026-12-03T03:54:38.495454Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-26T03:54:38.495454Z",
+    "extraction_method": "precision",
+    "token_count": 1180
   },
   "https://blog.google/innovation-and-ai/technology/safety-security/google-security-checkup": {
     "candidate": {
@@ -2118,13 +2118,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-14T02:40:41.844241Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-30T03:54:38.495454Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-26T03:54:38.495454Z",
+    "extraction_method": "precision",
+    "token_count": 354
   },
   "https://www.cve.org/CVERecord?id=CVE-2026-83844": {
     "candidate": {
@@ -2177,8 +2177,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 1,
-    "next_attempt_at": "2026-11-14T02:40:41.844241Z",
+    "attempts": 2,
+    "next_attempt_at": "2026-11-30T03:54:38.495454Z",
     "last_failure": "thin_content",
     "recovered_at": null,
     "extraction_method": null,
@@ -6022,6 +6022,121 @@
     "attempts": 0,
     "next_attempt_at": "2026-11-26T04:45:47.168898Z",
     "last_failure": "policy_rejected",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://modaic.dev/blog/latency-doesnt-lie": {
+    "candidate": {
+      "candidate_id": "hacker-news:1de64629ab8b75e5",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Jev is probably Qwen3.5-35B-A3B",
+        "url": "https://modaic.dev/blog/latency-doesnt-lie",
+        "published_at": "2026-11-25T22:57:04Z",
+        "collected_at": "2026-11-26T03:54:33.531079Z",
+        "summary": "<p>Article URL: <a href=\"https://modaic.dev/blog/latency-doesnt-lie\">https://modaic.dev/blog/latency-doesnt-lie</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50648823\">https://news.ycombinator.com/item?id=50648823</a></p>\n<p>Points: 255</p>\n<p># Comments: 72</p>",
+        "authors": [
+          "csoham"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 3,
+          "hn_points": 255,
+          "hn_comments": 72,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50648823"
+        }
+      },
+      "normalized_url": "https://modaic.dev/blog/latency-doesnt-lie",
+      "url_hash": "1de64629ab8b75e56cd0c497eff9e6b7fae9fd8f923a41578a66e616518bbfd9",
+      "title_fingerprint": "jev is probably qwen3 5 35b a3b",
+      "feed_summary": "<p>Article URL: <a href=\"https://modaic.dev/blog/latency-doesnt-lie\">https://modaic.dev/blog/latency-doesnt-lie</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50648823\">https://news.ycombinator.com/item?id=50648823</a></p>\n<p>Points: 255</p>\n<p># Comments: 72</p>",
+      "suggested_doc_key": "2026-11-jev-is-probably-qwen3-5-35b-a3b-1de64629",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-jev-is-probably-qwen3-5-35b-a3b-1de64629.md",
+      "candidate_score": 66.4,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 14.4,
+        "rss_rank_score": 7.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 255점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 72개를 토론 신호로 반영했습니다.",
+        "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-27T03:54:38.494257Z",
+    "last_failure": "empty_content",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://github.com/google-research/google-research/tree/master/cogentic_research_papers": {
+    "candidate": {
+      "candidate_id": "hacker-news:dc9f384d01243eb3",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+        "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+        "published_at": "2026-11-25T13:33:07Z",
+        "collected_at": "2026-11-26T03:54:33.531079Z",
+        "summary": "<p>Article URL: <a href=\"https://github.com/google-research/google-research/tree/master/cogentic_research_papers\">https://github.com/google-research/google-research/tree/master/cogentic_research_papers</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50642086\">https://news.ycombinator.com/item?id=50642086</a></p>\n<p>Points: 460</p>\n<p># Comments: 341</p>",
+        "authors": [
+          "rgwohlbold"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 17,
+          "hn_points": 460,
+          "hn_comments": 341,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50642086"
+        }
+      },
+      "normalized_url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+      "url_hash": "dc9f384d01243eb3cbe3199e883b573939f91e893e557ae2736a6549ab64db91",
+      "title_fingerprint": "google releases cogentic papers on integer factorization discrete logs and more",
+      "feed_summary": "<p>Article URL: <a href=\"https://github.com/google-research/google-research/tree/master/cogentic_research_papers\">https://github.com/google-research/google-research/tree/master/cogentic_research_papers</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50642086\">https://news.ycombinator.com/item?id=50642086</a></p>\n<p>Points: 460</p>\n<p># Comments: 341</p>",
+      "suggested_doc_key": "2026-11-google-releases-cogentic-papers-on-integer-factorization-discrete-logs-a-dc9f384d",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-google-releases-cogentic-papers-on-integer-factorization-discrete-logs-a-dc9f384d.md",
+      "candidate_score": 65.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 1,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "중요 키워드 1개를 감지해 가산했습니다.",
+        "Hacker News 점수 460점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 341개를 토론 신호로 반영했습니다.",
+        "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-27T03:54:38.494257Z",
+    "last_failure": "thin_content",
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0

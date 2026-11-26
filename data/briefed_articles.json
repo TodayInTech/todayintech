@@ -14800,6 +14800,126 @@
       "status": "published",
       "briefed_at": "2026-11-25T04:51:21.370422Z",
       "candidate_score": 36.0
+    },
+    "bbd93c6708a5734971e359892450fe964b08ef20fe159c02226f43b020d6a626": {
+      "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization",
+      "title_fingerprint": "how to choose the next safe step in application modernization",
+      "service_key": "github-blog",
+      "title": "How to choose the next safe step in application modernization",
+      "article_doc_path": "docs/services/github-blog/2026-11-how-to-choose-the-next-safe-step-in-application-modernization-bbd93c67.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.350986Z",
+      "candidate_score": 41.0
+    },
+    "4d22e35f54c91e8c449230235d02f08f0fba0f0c09dbf167d9fddb2732f7e285": {
+      "normalized_url": "https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai",
+      "title_fingerprint": "art of play in the age of ai",
+      "service_key": "github-blog",
+      "title": "Art of play in the age of AI",
+      "article_doc_path": "docs/services/github-blog/2026-11-art-of-play-in-the-age-of-ai-4d22e35f.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.351022Z",
+      "candidate_score": 37.0
+    },
+    "927e02a5f82d0df221873fd7ab93f01b4265f5eefd97ba4f06b0261a7d6f5fa6": {
+      "normalized_url": "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want",
+      "title_fingerprint": "these are the gifts developers will actually want",
+      "service_key": "github-blog",
+      "title": "These are the gifts developers will actually want",
+      "article_doc_path": "docs/services/github-blog/2026-11-these-are-the-gifts-developers-will-actually-want-927e02a5.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.351030Z",
+      "candidate_score": 30.0
+    },
+    "1de64629ab8b75e56cd0c497eff9e6b7fae9fd8f923a41578a66e616518bbfd9": {
+      "normalized_url": "https://modaic.dev/blog/latency-doesnt-lie",
+      "title_fingerprint": "jev is probably qwen3 5 35b a3b",
+      "service_key": "hacker-news",
+      "title": "Jev is probably Qwen3.5-35B-A3B",
+      "article_doc_path": "docs/services/hacker-news/2026-11-jev-is-probably-qwen3-5-35b-a3b-1de64629.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.351035Z",
+      "candidate_score": 66.4
+    },
+    "6b84cd9a834e497f3bebb6559cefe79c54d7a937aadfa00df1fd9f357a394918": {
+      "normalized_url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "title_fingerprint": "1password security incident",
+      "service_key": "hacker-news",
+      "title": "1Password Security Incident",
+      "article_doc_path": "docs/services/hacker-news/2026-11-1password-security-incident-6b84cd9a.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.351039Z",
+      "candidate_score": 65.0
+    },
+    "dc9f384d01243eb3cbe3199e883b573939f91e893e557ae2736a6549ab64db91": {
+      "normalized_url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+      "title_fingerprint": "google releases cogentic papers on integer factorization discrete logs and more",
+      "service_key": "hacker-news",
+      "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+      "article_doc_path": "docs/services/hacker-news/2026-11-google-releases-cogentic-papers-on-integer-factorization-discrete-logs-a-dc9f384d.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.351044Z",
+      "candidate_score": 65.0
+    },
+    "d0f42301425834014aa9bd7d6aa49fe102bc795a087c488b2455cf08d99a303e": {
+      "normalized_url": "https://github.com/lsernau/grh-lean",
+      "title_fingerprint": "much shorter version of grh lean verification from anthropic",
+      "service_key": "hacker-news",
+      "title": "Much shorter version of GRH Lean verification from Anthropic",
+      "article_doc_path": "docs/services/hacker-news/2026-11-much-shorter-version-of-grh-lean-verification-from-anthropic-d0f42301.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.351047Z",
+      "candidate_score": 64.0
+    },
+    "b0689cf87ab570a441c88635b910134907af4a34b0ffafe4d1af03d0273e75fa": {
+      "normalized_url": "https://openai.com/index/introducing-shirudo",
+      "title_fingerprint": "openai and cisco introduce shirudo",
+      "service_key": "openai-blog",
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "article_doc_path": "docs/services/openai-blog/2026-11-openai-and-cisco-introduce-shirudo-b0689cf8.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.351051Z",
+      "candidate_score": 32.0
+    },
+    "d91fd06de7b8771ee8ad78bbe6c6a0f8795962915436321f9652c6b42b553b9c": {
+      "normalized_url": "https://openai.com/index/science-at-the-frontier",
+      "title_fingerprint": "science at the frontier how scientists use chatgpt",
+      "service_key": "openai-blog",
+      "title": "Science at the Frontier: How scientists use ChatGPT",
+      "article_doc_path": "docs/services/openai-blog/2026-11-science-at-the-frontier-how-scientists-use-chatgpt-d91fd06d.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.351056Z",
+      "candidate_score": 21.0
+    },
+    "ff7833693fa2a06713dc923ab6354b82d0a99faf362cef1531beb712e1bb1855": {
+      "normalized_url": "https://openai.com/index/lvmh-media-division-partnership",
+      "title_fingerprint": "lvmh s media division announces strategic partnership with openai",
+      "service_key": "openai-blog",
+      "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-11-lvmh-s-media-division-announces-strategic-partnership-with-openai-ff783369.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.351060Z",
+      "candidate_score": 21.0
+    },
+    "6400feb681472530a689e8c59132cfe6d13f5863532ecd60e409a4825c59746b": {
+      "normalized_url": "https://openai.com/index/forward-deployed-engineering-means",
+      "title_fingerprint": "what fde means at openai",
+      "service_key": "openai-blog",
+      "title": "What FDE means at OpenAI",
+      "article_doc_path": "docs/services/openai-blog/2026-10-what-fde-means-at-openai-6400feb6.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.351080Z",
+      "candidate_score": 26.0
+    },
+    "e2ed7680c50ae3f074e04f962f033e8bab070f352fa8087e45258e537064a005": {
+      "normalized_url": "https://openai.com/index/the-future-of-the-firm",
+      "title_fingerprint": "the future of the firm",
+      "service_key": "openai-blog",
+      "title": "The future of the firm",
+      "article_doc_path": "docs/services/openai-blog/2026-10-the-future-of-the-firm-e2ed7680.md",
+      "status": "published",
+      "briefed_at": "2026-11-26T03:58:54.351084Z",
+      "candidate_score": 38.0
     }
   }
 }
