@@ -1,0 +1,315 @@
+{
+  "generated_at": "2026-11-26T03:54:26.388104+00:00",
+  "generated_for": "2026-11-26",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "5e378aa0708dc35e5010ad8c71a916158c9fdca5",
+  "github_run_id": "45751714287",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 16,
+  "excluded_count": 104,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 28,
+      "excluded_count": 92,
+      "duration_ms": 5,
+      "reason_counts": {
+        "already_briefed": 92
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 28,
+      "output_count": 28,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 28,
+      "output_count": 26,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 26,
+      "output_count": 16,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 3,
+      "excluded_count": 7,
+      "top_candidates": [
+        {
+          "candidate_id": "github-blog:bbd93c6708a57349",
+          "title": "How to choose the next safe step in application modernization",
+          "normalized_url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization",
+          "url_hash": "bbd93c6708a5734971e359892450fe964b08ef20fe159c02226f43b020d6a626",
+          "suggested_doc_key": "2026-11-how-to-choose-the-next-safe-step-in-application-modernization-bbd93c67",
+          "suggested_article_path": "docs/services/github-blog/2026-11-how-to-choose-the-next-safe-step-in-application-modernization-bbd93c67.md",
+          "candidate_score": 41.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "RSS 순위 2위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:4d22e35f54c91e8c",
+          "title": "Art of play in the age of AI",
+          "normalized_url": "https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai",
+          "url_hash": "4d22e35f54c91e8c449230235d02f08f0fba0f0c09dbf167d9fddb2732f7e285",
+          "suggested_doc_key": "2026-11-art-of-play-in-the-age-of-ai-4d22e35f",
+          "suggested_article_path": "docs/services/github-blog/2026-11-art-of-play-in-the-age-of-ai-4d22e35f.md",
+          "candidate_score": 37.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "RSS 순위 1위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "github-blog:927e02a5f82d0df2",
+          "title": "These are the gifts developers will actually want",
+          "normalized_url": "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want",
+          "url_hash": "927e02a5f82d0df221873fd7ab93f01b4265f5eefd97ba4f06b0261a7d6f5fa6",
+          "suggested_doc_key": "2026-11-these-are-the-gifts-developers-will-actually-want-927e02a5",
+          "suggested_article_path": "docs/services/github-blog/2026-11-these-are-the-gifts-developers-will-actually-want-927e02a5.md",
+          "candidate_score": 30.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 8점을 적용했습니다.",
+            "발행 후 1일이 지난 글로 최신성 19점을 반영했습니다.",
+            "낮은 신호 키워드 1개를 감지해 감점했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 7
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:1de64629ab8b75e5",
+          "title": "Jev is probably Qwen3.5-35B-A3B",
+          "normalized_url": "https://modaic.dev/blog/latency-doesnt-lie",
+          "url_hash": "1de64629ab8b75e56cd0c497eff9e6b7fae9fd8f923a41578a66e616518bbfd9",
+          "suggested_doc_key": "2026-11-jev-is-probably-qwen3-5-35b-a3b-1de64629",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-jev-is-probably-qwen3-5-35b-a3b-1de64629.md",
+          "candidate_score": 66.4,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 255점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 72개를 토론 신호로 반영했습니다.",
+            "RSS 순위 3위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:6b84cd9a834e497f",
+          "title": "1Password Security Incident",
+          "normalized_url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+          "url_hash": "6b84cd9a834e497f3bebb6559cefe79c54d7a937aadfa00df1fd9f357a394918",
+          "suggested_doc_key": "2026-11-1password-security-incident-6b84cd9a",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-1password-security-incident-6b84cd9a.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 1244점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 524개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:dc9f384d01243eb3",
+          "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+          "normalized_url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+          "url_hash": "dc9f384d01243eb3cbe3199e883b573939f91e893e557ae2736a6549ab64db91",
+          "suggested_doc_key": "2026-11-google-releases-cogentic-papers-on-integer-factorization-discrete-logs-a-dc9f384d",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-google-releases-cogentic-papers-on-integer-factorization-discrete-logs-a-dc9f384d.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 460점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 341개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:d0f4230142583401",
+          "title": "Much shorter version of GRH Lean verification from Anthropic",
+          "normalized_url": "https://github.com/lsernau/grh-lean",
+          "url_hash": "d0f42301425834014aa9bd7d6aa49fe102bc795a087c488b2455cf08d99a303e",
+          "suggested_doc_key": "2026-11-much-shorter-version-of-grh-lean-verification-from-anthropic-d0f42301",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-much-shorter-version-of-grh-lean-verification-from-anthropic-d0f42301.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 326점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 160개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:4e29e58aa45e3ab5",
+          "title": "Slow Ubuntu security response times",
+          "normalized_url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+          "url_hash": "4e29e58aa45e3ab5a76b28fa12df1806390ed1d5daf828edc197863a165527dd",
+          "suggested_doc_key": "2026-11-slow-ubuntu-security-response-times-4e29e58a",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-slow-ubuntu-security-response-times-4e29e58a.md",
+          "candidate_score": 63.5,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 175점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 86개를 토론 신호로 반영했습니다.",
+            "RSS 순위 9위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 3,
+      "excluded_count": 47,
+      "top_candidates": [
+        {
+          "candidate_id": "openai-blog:b0689cf87ab570a4",
+          "title": "OpenAI and Cisco introduce Shirudo",
+          "normalized_url": "https://openai.com/index/introducing-shirudo",
+          "url_hash": "b0689cf87ab570a441c88635b910134907af4a34b0ffafe4d1af03d0273e75fa",
+          "suggested_doc_key": "2026-11-openai-and-cisco-introduce-shirudo-b0689cf8",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-openai-and-cisco-introduce-shirudo-b0689cf8.md",
+          "candidate_score": 32.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 2일이 지난 글로 최신성 18점을 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:d91fd06de7b8771e",
+          "title": "Science at the Frontier: How scientists use ChatGPT",
+          "normalized_url": "https://openai.com/index/science-at-the-frontier",
+          "url_hash": "d91fd06de7b8771ee8ad78bbe6c6a0f8795962915436321f9652c6b42b553b9c",
+          "suggested_doc_key": "2026-11-science-at-the-frontier-how-scientists-use-chatgpt-d91fd06d",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-science-at-the-frontier-how-scientists-use-chatgpt-d91fd06d.md",
+          "candidate_score": 21.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 9일이 지난 글로 최신성 11점을 반영했습니다.",
+            "RSS 순위 32위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "openai-blog:ff7833693fa2a067",
+          "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+          "normalized_url": "https://openai.com/index/lvmh-media-division-partnership",
+          "url_hash": "ff7833693fa2a06713dc923ab6354b82d0a99faf362cef1531beb712e1bb1855",
+          "suggested_doc_key": "2026-11-lvmh-s-media-division-announces-strategic-partnership-with-openai-ff783369",
+          "suggested_article_path": "docs/services/openai-blog/2026-11-lvmh-s-media-division-announces-strategic-partnership-with-openai-ff783369.md",
+          "candidate_score": 21.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 10점을 적용했습니다.",
+            "발행 후 9일이 지난 글로 최신성 11점을 반영했습니다.",
+            "RSS 순위 34위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "already_briefed": 45,
+        "low_quality": 2
+      }
+    }
+  ]
+}
