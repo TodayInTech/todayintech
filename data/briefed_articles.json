@@ -14920,6 +14920,36 @@
       "status": "published",
       "briefed_at": "2026-11-26T03:58:54.351084Z",
       "candidate_score": 38.0
+    },
+    "10886014bf917685fd4d06a0fe63d5f553cae9521c95c46d26a49e5214d0f5f2": {
+      "normalized_url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud",
+      "title_fingerprint": "cto of ransomwarehelp indicted for wire fraud",
+      "service_key": "hacker-news",
+      "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+      "article_doc_path": "docs/services/hacker-news/2026-11-cto-of-ransomwarehelp-indicted-for-wire-fraud-10886014.md",
+      "status": "published",
+      "briefed_at": "2026-11-27T03:57:16.356770Z",
+      "candidate_score": 65.0
+    },
+    "aebfbe56731bd98a52c5ac3451e735c2673dc7f68b56294a13dd3318c1042dc1": {
+      "normalized_url": "https://janlukas.blog/posts/ai-self-hosting",
+      "title_fingerprint": "ai made self hosting fun again",
+      "service_key": "hacker-news",
+      "title": "AI made self-hosting fun again",
+      "article_doc_path": "docs/services/hacker-news/2026-11-ai-made-self-hosting-fun-again-aebfbe56.md",
+      "status": "published",
+      "briefed_at": "2026-11-27T03:57:16.356809Z",
+      "candidate_score": 64.0
+    },
+    "a0439c16159af772d6b3f2ab49e1648ee0828a1e5ddac3c2b474712adc36d0d0": {
+      "normalized_url": "https://github.com/antonpictures/youtube-punisher",
+      "title_fingerprint": "youtube ad punisher auto reloads youtube pages when an ad plays",
+      "service_key": "hacker-news",
+      "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+      "article_doc_path": "docs/services/hacker-news/2026-11-youtube-ad-punisher-auto-reloads-youtube-pages-when-an-ad-plays-a0439c16.md",
+      "status": "published",
+      "briefed_at": "2026-11-27T03:57:16.356818Z",
+      "candidate_score": 60.0
     }
   }
 }

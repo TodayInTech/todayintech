@@ -1119,8 +1119,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-14T03:57:28.116270Z",
+    "attempts": 3,
+    "next_attempt_at": "2026-12-04T03:55:43.520130Z",
     "last_failure": "access_denied",
     "recovered_at": null,
     "extraction_method": null,
@@ -1170,13 +1170,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-14T03:57:28.116270Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 3,
+    "next_attempt_at": "2026-12-04T03:55:43.520130Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-27T03:55:43.520130Z",
+    "extraction_method": "precision",
+    "token_count": 305
   },
   "https://openai.com/index/fair-use-benefits-everyone": {
     "candidate": {
@@ -1222,13 +1222,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-15T01:41:18.565744Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 3,
+    "next_attempt_at": "2026-12-04T03:55:43.520130Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-27T03:55:43.520130Z",
+    "extraction_method": "precision",
+    "token_count": 3090
   },
   "https://openai.com/index/community-safety-report-and-new-protections-for-teens": {
     "candidate": {
@@ -1275,13 +1275,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-15T01:41:18.565744Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 3,
+    "next_attempt_at": "2026-12-04T03:55:43.520130Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-27T03:55:43.520130Z",
+    "extraction_method": "precision",
+    "token_count": 1299
   },
   "https://openai.com/index/credit-saison": {
     "candidate": {
@@ -1325,13 +1325,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-15T01:41:18.565744Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 3,
+    "next_attempt_at": "2026-12-04T03:55:43.520130Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-27T03:55:43.520130Z",
+    "extraction_method": "precision",
+    "token_count": 1882
   },
   "https://openai.com/index/chatgpt-ads-expands-26-new-countries": {
     "candidate": {
@@ -6136,6 +6136,63 @@
     "status": "pending",
     "attempts": 0,
     "next_attempt_at": "2026-11-27T03:54:38.494257Z",
+    "last_failure": "thin_content",
+    "recovered_at": null,
+    "extraction_method": null,
+    "token_count": 0
+  },
+  "https://news.ycombinator.com/item?id=50655664": {
+    "candidate": {
+      "candidate_id": "hacker-news:84a8485377b7e2c9",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "article": {
+        "source": "Hacker News",
+        "title": "Tell HN: Happy Thanksgiving",
+        "url": "https://news.ycombinator.com/item?id=50655664",
+        "published_at": "2026-11-26T14:26:54Z",
+        "collected_at": "2026-11-27T03:55:39.428250Z",
+        "summary": "<p>Hopefully it’s a great day spent with your friends and family. And if it’s not, make it a great day anyway!</p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50655664\">https://news.ycombinator.com/item?id=50655664</a></p>\n<p>Points: 640</p>\n<p># Comments: 138</p>",
+        "authors": [
+          "ericmay"
+        ],
+        "tags": [],
+        "metadata": {
+          "rss_rank": 19,
+          "hn_points": 640,
+          "hn_comments": 138,
+          "hn_comments_url": "https://news.ycombinator.com/item?id=50655664"
+        }
+      },
+      "normalized_url": "https://news.ycombinator.com/item?id=50655664",
+      "url_hash": "84a8485377b7e2c912f7c96f7822e97183203b0ed2eb0b308c410a5ef4af1c03",
+      "title_fingerprint": "tell hn happy thanksgiving",
+      "feed_summary": "<p>Hopefully it’s a great day spent with your friends and family. And if it’s not, make it a great day anyway!</p>\n<hr />\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50655664\">https://news.ycombinator.com/item?id=50655664</a></p>\n<p>Points: 640</p>\n<p># Comments: 138</p>",
+      "suggested_doc_key": "2026-11-tell-hn-happy-thanksgiving-84a84853",
+      "suggested_article_path": "docs/services/hacker-news/2026-11-tell-hn-happy-thanksgiving-84a84853.md",
+      "candidate_score": 60.0,
+      "ranking_signals": {
+        "source_priority": 5,
+        "age_days": 0,
+        "freshness_score": 20.0,
+        "high_signal_count": 0,
+        "low_signal_count": 0,
+        "hn_points_score": 20.0,
+        "hn_comments_score": 15.0,
+        "rss_rank_score": 0.0
+      },
+      "ranking_reasons_ko": [
+        "서비스 기본 가중치 5점을 적용했습니다.",
+        "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+        "Hacker News 점수 640점을 반응 신호로 반영했습니다.",
+        "Hacker News 댓글 138개를 토론 신호로 반영했습니다.",
+        "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+      ],
+      "excluded_reason": null
+    },
+    "status": "pending",
+    "attempts": 0,
+    "next_attempt_at": "2026-11-28T03:55:43.519391Z",
     "last_failure": "thin_content",
     "recovered_at": null,
     "extraction_method": null,
