@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-11-27T03:57:16.572988+00:00",
+  "generated_for": "2026-11-27",
+  "stage": "writer",
+  "status": "success",
+  "agent": "openai",
+  "git_sha": "0dd3483fa70a4912af99ff088f50398e7b904735",
+  "github_run_id": "45936812533",
+  "decision_count": 4,
+  "decision_counts": {
+    "published": 3,
+    "skipped": 1
+  },
+  "decisions": [
+    {
+      "candidate_id": "hacker-news:10886014bf917685",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+      "normalized_url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud",
+      "article_doc_path": "docs/services/hacker-news/2026-11-cto-of-ransomwarehelp-indicted-for-wire-fraud-10886014.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "보안/사이버범죄",
+      "importance_level": "높음",
+      "confidence_score": 0.9,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "FBI 스팅으로 드러난 보안업체 CTO의 기소는 피해자 보호와 산업 신뢰에 직결되는 사안이며, 구체적 거래 내역과 DoJ의 유사 사건 맥락이 모두 근거로 제공되어 보도 가치가 높다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 65.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:aebfbe56731bd98a",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "AI made self-hosting fun again",
+      "normalized_url": "https://janlukas.blog/posts/ai-self-hosting",
+      "article_doc_path": "docs/services/hacker-news/2026-11-ai-made-self-hosting-fun-again-aebfbe56.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "Self-hosting · AI 도구",
+      "importance_level": "Medium",
+      "confidence_score": 0.82,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "원문은 AI 기반 에이전트와 기존 자동화 도구(예: Renovate, GitHub/Forgejo Actions)를 조합해 개인용 셀프호스팅 실무를 실질적으로 단순화한 경험을 구체적 사례와 함께 제시합니다. 하드웨어·OS 구성(NixOS, Debian 부팅 이미지)·개발 언어(Go) 등 실무적 단서가 있어 기술 독자에게 유용한 변화 설명을 제공합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 64.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:a0439c16159af772",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+      "normalized_url": "https://github.com/antonpictures/youtube-punisher",
+      "article_doc_path": "docs/services/hacker-news/2026-11-youtube-ad-punisher-auto-reloads-youtube-pages-when-an-ad-plays-a0439c16.md",
+      "status": "published",
+      "generation_method": "llm",
+      "category": "브라우저 확장/유튜브 광고 우회",
+      "importance_level": "Medium",
+      "confidence_score": 0.8,
+      "summary_scope": "full_content",
+      "publish_reason_ko": "기술적으로 단순하지만 실무·사회적 파장이 있는 브라우저 확장이며 설치 방법·동작 원리·제약이 명확히 문서화되어 있어 기술 독자에게 유용한 정보이므로 게재 가치가 있다고 판단합니다.",
+      "reject_reason_ko": "",
+      "evidence_basis_ko": [
+        "chunk-0001",
+        "chunk-0002"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    },
+    {
+      "candidate_id": "hacker-news:84a8485377b7e2c9",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "title": "Tell HN: Happy Thanksgiving",
+      "normalized_url": "https://news.ycombinator.com/item?id=50655664",
+      "article_doc_path": "docs/services/hacker-news/2026-11-tell-hn-happy-thanksgiving-84a84853.md",
+      "status": "skipped",
+      "generation_method": "llm",
+      "category": "커뮤니티 인사",
+      "importance_level": "낮음",
+      "confidence_score": 0.88,
+      "summary_scope": "feed_metadata_only",
+      "publish_reason_ko": "",
+      "reject_reason_ko": "피드 메타데이터에 따르면 게시물은 기술적 변화나 실행 가능한 공지가 아닌 단순한 추수감사절 인사에 가까워 Today in Tech의 기술 뉴스 기준에서 기사화 가치가 낮습니다. 추가 분석이나 기술적 근거가 제공되지 않았습니다.",
+      "evidence_basis_ko": [
+        "candidate_id: hacker-news:84a8485377b7e2c9",
+        "title: Tell HN: Happy Thanksgiving",
+        "source_url: https://news.ycombinator.com/item?id=50655664",
+        "published_at: 2026-11-26T14:26:54+00:00",
+        "feed_summary: Hopefully it’s a great day spent with your friends and family. And if it’s not, make it a great day anyway!",
+        "hn_points: 640",
+        "hn_comments: 138",
+        "authors: ericmay"
+      ],
+      "candidate_score": 60.0,
+      "error_message": null
+    }
+  ]
+}

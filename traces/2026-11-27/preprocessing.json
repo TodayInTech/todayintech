@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-11-27T03:55:31.980066+00:00",
+  "generated_for": "2026-11-27",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "0dd3483fa70a4912af99ff088f50398e7b904735",
+  "github_run_id": "45936812533",
+  "service_count": 5,
+  "duration_ms": 8,
+  "raw_count": 120,
+  "candidate_count": 10,
+  "excluded_count": 110,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 3,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 20,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 20,
+      "output_count": 10,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:10886014bf917685",
+          "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+          "normalized_url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud",
+          "url_hash": "10886014bf917685fd4d06a0fe63d5f553cae9521c95c46d26a49e5214d0f5f2",
+          "suggested_doc_key": "2026-11-cto-of-ransomwarehelp-indicted-for-wire-fraud-10886014",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-cto-of-ransomwarehelp-indicted-for-wire-fraud-10886014.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 233점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 100개를 토론 신호로 반영했습니다.",
+            "RSS 순위 13위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:aebfbe56731bd98a",
+          "title": "AI made self-hosting fun again",
+          "normalized_url": "https://janlukas.blog/posts/ai-self-hosting",
+          "url_hash": "aebfbe56731bd98a52c5ac3451e735c2673dc7f68b56294a13dd3318c1042dc1",
+          "suggested_doc_key": "2026-11-ai-made-self-hosting-fun-again-aebfbe56",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-ai-made-self-hosting-fun-again-aebfbe56.md",
+          "candidate_score": 64.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 404점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 222개를 토론 신호로 반영했습니다.",
+            "RSS 순위 6위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:a0439c16159af772",
+          "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+          "normalized_url": "https://github.com/antonpictures/youtube-punisher",
+          "url_hash": "a0439c16159af772d6b3f2ab49e1648ee0828a1e5ddac3c2b474712adc36d0d0",
+          "suggested_doc_key": "2026-11-youtube-ad-punisher-auto-reloads-youtube-pages-when-an-ad-plays-a0439c16",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-youtube-ad-punisher-auto-reloads-youtube-pages-when-an-ad-plays-a0439c16.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 300점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 379개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:84a8485377b7e2c9",
+          "title": "Tell HN: Happy Thanksgiving",
+          "normalized_url": "https://news.ycombinator.com/item?id=50655664",
+          "url_hash": "84a8485377b7e2c912f7c96f7822e97183203b0ed2eb0b308c410a5ef4af1c03",
+          "suggested_doc_key": "2026-11-tell-hn-happy-thanksgiving-84a84853",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-tell-hn-happy-thanksgiving-84a84853.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 640점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 138개를 토론 신호로 반영했습니다.",
+            "RSS 순위 19위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:854fa53846585613",
+          "title": "Nextcloud Office Desktop app",
+          "normalized_url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app",
+          "url_hash": "854fa538465856138a7f2bc5d219213481a450d428a19370474861fae33b1778",
+          "suggested_doc_key": "2026-11-nextcloud-office-desktop-app-854fa538",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-nextcloud-office-desktop-app-854fa538.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 408점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 206개를 토론 신호로 반영했습니다.",
+            "RSS 순위 20위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 48,
+        "low_quality": 2
+      }
+    }
+  ]
+}
