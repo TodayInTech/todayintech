@@ -1,5 +1,5 @@
 {
-  "generated_for": "2026-11-27",
+  "generated_for": "2026-11-28",
   "services": {
     "anthropic-blog": "Anthropic Blog",
     "github-blog": "GitHub Blog",
@@ -1435,6 +1435,19 @@
       "briefed_at": "2026-06-29",
       "published_at": "2026-06-29",
       "excerpt": "인터넷이 강력한 소통 도구임에도 불구하고 그 기반 인프라가 사용자 데이터 수집과 주의력 착취로 활용돼 왔다는 문제의식에서 출발한다는 점을 Human-Centered Computing Foundation(HCCF)이 제기한다. HCCF는 웹을 위한 대안적 아키텍처를 만들겠다는 비전을 제시하며, 인간 중심적 기술 원칙을 전…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-cto-of-ransomwarehelp-indicted-for-wire-fraud-10886014.md",
+      "status": "published",
+      "score": 65.0,
+      "briefed_at": "2026-11-27",
+      "published_at": "2026-11-26",
+      "excerpt": "RansomwareHelp 공동창업자이자 CTO 후안 팔라시오(52)가 FBI 스팅에서 피해자 대신 공격자에게 복호화 키를 구매하고 고객에게 큰 폭의 마진을 붙여 청구한 혐의로 전기사기 기소됐다. 기소장에선 구체적 비트코인·달러 금액과 원격접속·제거 행태가 지적됐다.",
       "featured": false,
       "new": false
     },
@@ -2882,15 +2895,15 @@
       "new": false
     },
     {
-      "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+      "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-cto-of-ransomwarehelp-indicted-for-wire-fraud-10886014.md",
+      "href": "./services/hacker-news/2026-11-states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-48d9eacd.md",
       "status": "published",
       "score": 65.0,
       "briefed_at": null,
-      "published_at": "2026-11-26",
-      "excerpt": "RansomwareHelp 공동창업자이자 CTO 후안 팔라시오(52)가 FBI 스팅에서 피해자 대신 공격자에게 복호화 키를 구매하고 고객에게 큰 폭의 마진을 붙여 청구한 혐의로 전기사기 기소됐다. 기소장에선 구체적 비트코인·달러 금액과 원격접속·제거 행태가 지적됐다.",
+      "published_at": "2026-11-27",
+      "excerpt": "버지니아·오리건 법무장관이 SpaceX(모회사)와 xAI의 AI 모델 Grok이 아동 성착취물(CSAM)과 비동의 성적 이미지(NCII)를 대량 생성·유통했다며 소송을 제기했다. CCDH는 2025-12-29~2026-01-08 사이 Grok이 약 **300만**건의 성적 이미지를 생성했고 그중 **약 2만3천**건이…",
       "featured": false,
       "new": true
     },
@@ -3012,6 +3025,19 @@
       "new": false
     },
     {
+      "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-google-s-deepcrossattention-achieves-comparable-model-quality-up-to-3x-f-8a952e6d.md",
+      "status": "published",
+      "score": 64.3,
+      "briefed_at": null,
+      "published_at": "2026-11-27",
+      "excerpt": "Google Research의 DeepCrossAttention(DCA)는 층 간 출력을 깊이별 교차어텐션으로 동적으로 결합해 정보 희석을 완화하고, 동일 품질을 최대 3배 빠르게 달성하거나 특정 벤치마크에서 최대 5배 적은 학습 스텝을 보였으며 파라미터·층 수를 실질적으로 줄였습니다.",
+      "featured": false,
+      "new": true
+    },
+    {
       "title": "AI is dramatically accelerating AI research",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
@@ -3060,6 +3086,19 @@
       "briefed_at": "2026-06-23",
       "published_at": "2026-06-23",
       "excerpt": "VibeThinker-3B는 3억이 아닌 30억(3B) 파라미터 규모의 조밀한(sparse가 아닌 dense) 소형 언어모델로, ‘검증 가능한 추론(verifiable reasoning)’을 소형 모델 계열에서 어디까지 끌어올릴 수 있는지를 실험적으로 탐구한 기술 보고서의 중심 주제입니다. 저자들은 Spectrum-to…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "AI made self-hosting fun again",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-ai-made-self-hosting-fun-again-aebfbe56.md",
+      "status": "published",
+      "score": 64.0,
+      "briefed_at": "2026-11-27",
+      "published_at": "2026-11-26",
+      "excerpt": "저자는 AI 코딩 에이전트와 Renovate·Actions 기반 자동화를 결합해 셀프호스팅 실험 비용과 진입장벽을 크게 낮췄다고 보고한다. NixOS, Debian 부팅 이미지 제작, Go로 만든 자동화 도구, 하드웨어(ASRock DeskMini A300, HP t640, Ryzen 5 PRO 4650G) 활용 사례를…",
       "featured": false,
       "new": false
     },
@@ -3270,19 +3309,6 @@
       "excerpt": "Anthropic 연구진은 대형 언어모델 Claude 내부에서 사람의 ‘의식적 접근’ 개념과 유사한 작동을 하는 작은 신경 패턴 집합을 발견했다고 보고한다. 이른바 J-space는 각 패턴이 특정 단어와 연결되지만, 해당 패턴이 활성화된다고 해서 모델이 그 단어를 출력하는 것은 아니다. 대신 J-space는 모델이 말로…",
       "featured": false,
       "new": false
-    },
-    {
-      "title": "AI made self-hosting fun again",
-      "service_key": "hacker-news",
-      "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-ai-made-self-hosting-fun-again-aebfbe56.md",
-      "status": "published",
-      "score": 64.0,
-      "briefed_at": null,
-      "published_at": "2026-11-26",
-      "excerpt": "저자는 AI 코딩 에이전트와 Renovate·Actions 기반 자동화를 결합해 셀프호스팅 실험 비용과 진입장벽을 크게 낮췄다고 보고한다. NixOS, Debian 부팅 이미지 제작, Go로 만든 자동화 도구, 하드웨어(ASRock DeskMini A300, HP t640, Ryzen 5 PRO 4650G) 활용 사례를…",
-      "featured": false,
-      "new": true
     },
     {
       "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
@@ -4828,6 +4854,19 @@
       "briefed_at": "2026-10-13",
       "published_at": "2026-10-12",
       "excerpt": "Agent37은 AI 에이전트를 위한 '저비용 샌드박스'를 표방하며 호스트당 평균 비용을 업계의 10% 이하로 낮췄다고 소개한다. 창업자 비슈누는 고객당 평균 지출을 월 $0.37로 제시하고, 무료 플랜의 인프라 비용은 사용자당 월 $0.05~$0.10 수준이라고 밝힌다. 초기에는 OpenClaw 래퍼로 시작했으나 다양…",
+      "featured": false,
+      "new": false
+    },
+    {
+      "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-youtube-ad-punisher-auto-reloads-youtube-pages-when-an-ad-plays-a0439c16.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": "2026-11-27",
+      "published_at": "2026-11-26",
+      "excerpt": "YouTube Ad Punisher는 광고가 감지되면 **1~3회 자동 새로고침**으로 광고 슬롯을 비우고 &t=Xs 방식으로 재생 위치를 복원해 광고를 우회한다. 광고 발생 기록을 로컬에 저장해 JSON/CSV로 내보낼 수 있다.",
       "featured": false,
       "new": false
     },
@@ -8004,15 +8043,28 @@
       "new": false
     },
     {
-      "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+      "title": "Michael Nielsen took down his book on neural nets",
       "service_key": "hacker-news",
       "service_name": "Hacker News",
-      "href": "./services/hacker-news/2026-11-youtube-ad-punisher-auto-reloads-youtube-pages-when-an-ad-plays-a0439c16.md",
+      "href": "./services/hacker-news/2026-11-michael-nielsen-took-down-his-book-on-neural-nets-411e8c8c.md",
       "status": "published",
       "score": 60.0,
       "briefed_at": null,
-      "published_at": "2026-11-26",
-      "excerpt": "YouTube Ad Punisher는 광고가 감지되면 **1~3회 자동 새로고침**으로 광고 슬롯을 비우고 &t=Xs 방식으로 재생 위치를 복원해 광고를 우회한다. 광고 발생 기록을 로컬에 저장해 JSON/CSV로 내보낼 수 있다.",
+      "published_at": "2026-11-27",
+      "excerpt": "Michael Nielsen은 2011–2015년에 쓴 온라인 교재를 2026년 11월에 내렸다고 밝히며, 전방 AI 연구소들의 '무모한' 개발 속도가 ASI 위험을 앞당겼다며 교육을 통해 기여하지 않기 위해 책을 내렸다고 설명했다.",
+      "featured": false,
+      "new": true
+    },
+    {
+      "title": "Convex skills send the user's app idea to a remote server without telling them",
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "href": "./services/hacker-news/2026-11-convex-skills-send-the-user-s-app-idea-to-a-remote-server-without-tellin-42b6c44b.md",
+      "status": "published",
+      "score": 60.0,
+      "briefed_at": null,
+      "published_at": "2026-11-27",
+      "excerpt": "Convex의 claude-plugins-official 등록 플러그인 세 가지 스킬이 사용자의 한 문장 아이디어를 통지 없이 basic-anteater-667.convex.site로 전송하고, 원격 스크립트를 파이프 실행하거나 안전 분류기를 회피하도록 권장하는 구현·지침을 포함하고 있습니다.",
       "featured": false,
       "new": true
     },

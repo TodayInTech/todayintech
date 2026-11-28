@@ -1377,13 +1377,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 2,
-    "next_attempt_at": "2026-11-15T01:41:18.565744Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 3,
+    "next_attempt_at": "2026-12-05T03:42:06.538408Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-28T03:42:06.538408Z",
+    "extraction_method": "precision",
+    "token_count": 624
   },
   "https://hackerbooks.org/": {
     "candidate": {
@@ -4190,8 +4190,8 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-15T01:57:34.008911Z",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-30T03:42:06.538408Z",
     "last_failure": "title_mismatch",
     "recovered_at": null,
     "extraction_method": null,
@@ -4247,9 +4247,9 @@
       "excluded_reason": null
     },
     "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-15T01:57:34.008911Z",
-    "last_failure": "thin_content",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-30T03:42:06.538408Z",
+    "last_failure": "fetch_failed",
     "recovered_at": null,
     "extraction_method": null,
     "token_count": 0
@@ -4299,13 +4299,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-15T01:57:34.008911Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-30T03:42:06.538408Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-28T03:42:06.538408Z",
+    "extraction_method": "precision",
+    "token_count": 1158
   },
   "https://openai.com/business/customer-stories/shield": {
     "candidate": {
@@ -4350,13 +4350,13 @@
       ],
       "excluded_reason": null
     },
-    "status": "pending",
-    "attempts": 0,
-    "next_attempt_at": "2026-11-15T01:57:34.008911Z",
-    "last_failure": "access_denied",
-    "recovered_at": null,
-    "extraction_method": null,
-    "token_count": 0
+    "status": "ready",
+    "attempts": 1,
+    "next_attempt_at": "2026-11-30T03:42:06.538408Z",
+    "last_failure": null,
+    "recovered_at": "2026-11-28T03:42:06.538408Z",
+    "extraction_method": "precision",
+    "token_count": 705
   },
   "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life": {
     "candidate": {

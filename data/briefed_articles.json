@@ -14950,6 +14950,46 @@
       "status": "published",
       "briefed_at": "2026-11-27T03:57:16.356818Z",
       "candidate_score": 60.0
+    },
+    "48d9eacdef372ad0b6aee6cdc631eceea6b4a5515852c8f8dab09283de904605": {
+      "normalized_url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+      "title_fingerprint": "states sue spacex to stop grok from generating child sex images revenge porn",
+      "service_key": "hacker-news",
+      "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+      "article_doc_path": "docs/services/hacker-news/2026-11-states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-48d9eacd.md",
+      "status": "published",
+      "briefed_at": "2026-11-28T03:43:34.858812Z",
+      "candidate_score": 65.0
+    },
+    "8a952e6dea4cd37582529417e11e3c93c99807900dc4dc83974d2a98d63722e8": {
+      "normalized_url": "https://research.google/blog/supercharging-transformer-residual-connections",
+      "title_fingerprint": "google s deepcrossattention achieves comparable model quality up to 3x faster",
+      "service_key": "hacker-news",
+      "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+      "article_doc_path": "docs/services/hacker-news/2026-11-google-s-deepcrossattention-achieves-comparable-model-quality-up-to-3x-f-8a952e6d.md",
+      "status": "published",
+      "briefed_at": "2026-11-28T03:43:34.858861Z",
+      "candidate_score": 64.3
+    },
+    "411e8c8ccbe332eda0f9d2c7c4c978b16f779d9c988eb8856f02b321983a2f32": {
+      "normalized_url": "https://neuralnetworksanddeeplearning.com/",
+      "title_fingerprint": "michael nielsen took down his book on neural nets",
+      "service_key": "hacker-news",
+      "title": "Michael Nielsen took down his book on neural nets",
+      "article_doc_path": "docs/services/hacker-news/2026-11-michael-nielsen-took-down-his-book-on-neural-nets-411e8c8c.md",
+      "status": "published",
+      "briefed_at": "2026-11-28T03:43:34.858872Z",
+      "candidate_score": 60.0
+    },
+    "42b6c44ba3384d39e7e58d31cb3140a7901dfb0360ea40079e497ddd3a15d4de": {
+      "normalized_url": "https://github.com/convex/convex-backend-skill/issues/64",
+      "title_fingerprint": "convex skills send the user s app idea to a remote server without telling them",
+      "service_key": "hacker-news",
+      "title": "Convex skills send the user's app idea to a remote server without telling them",
+      "article_doc_path": "docs/services/hacker-news/2026-11-convex-skills-send-the-user-s-app-idea-to-a-remote-server-without-tellin-42b6c44b.md",
+      "status": "published",
+      "briefed_at": "2026-11-28T03:43:34.858880Z",
+      "candidate_score": 60.0
     }
   }
 }
