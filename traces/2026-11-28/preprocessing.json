@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-11-28T03:41:57.016974+00:00",
+  "generated_for": "2026-11-28",
+  "stage": "preprocessing",
+  "status": "success",
+  "git_sha": "8bdd0bdb3211a0c1f3270f1ab78008f56411a903",
+  "github_run_id": "46103976326",
+  "service_count": 5,
+  "duration_ms": 10,
+  "raw_count": 120,
+  "candidate_count": 10,
+  "excluded_count": 110,
+  "step_metrics": [
+    {
+      "step_name": "validation",
+      "input_count": 0,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "url_normalization",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_identity",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 2,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "run_deduplication",
+      "input_count": 120,
+      "output_count": 120,
+      "excluded_count": 0,
+      "duration_ms": 0,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "briefed_article_filter",
+      "input_count": 120,
+      "output_count": 22,
+      "excluded_count": 98,
+      "duration_ms": 4,
+      "reason_counts": {
+        "already_briefed": 98
+      }
+    },
+    {
+      "step_name": "candidate_scoring",
+      "input_count": 22,
+      "output_count": 22,
+      "excluded_count": 0,
+      "duration_ms": 1,
+      "reason_counts": {}
+    },
+    {
+      "step_name": "candidate_quality_gate",
+      "input_count": 22,
+      "output_count": 20,
+      "excluded_count": 2,
+      "duration_ms": 0,
+      "reason_counts": {
+        "low_quality": 2
+      }
+    },
+    {
+      "step_name": "candidate_limiting",
+      "input_count": 20,
+      "output_count": 10,
+      "excluded_count": 10,
+      "duration_ms": 0,
+      "reason_counts": {
+        "service_candidate_limit": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "service_key": "anthropic-blog",
+      "service_name": "Anthropic Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "github-blog",
+      "service_name": "GitHub Blog",
+      "raw_count": 10,
+      "candidate_count": 0,
+      "excluded_count": 10,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 10
+      }
+    },
+    {
+      "service_key": "google-blog",
+      "service_name": "Google Blog",
+      "raw_count": 20,
+      "candidate_count": 0,
+      "excluded_count": 20,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 20
+      }
+    },
+    {
+      "service_key": "hacker-news",
+      "service_name": "Hacker News",
+      "raw_count": 20,
+      "candidate_count": 10,
+      "excluded_count": 10,
+      "top_candidates": [
+        {
+          "candidate_id": "hacker-news:48d9eacdef372ad0",
+          "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+          "normalized_url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+          "url_hash": "48d9eacdef372ad0b6aee6cdc631eceea6b4a5515852c8f8dab09283de904605",
+          "suggested_doc_key": "2026-11-states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-48d9eacd",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-48d9eacd.md",
+          "candidate_score": 65.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 294점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 158개를 토론 신호로 반영했습니다.",
+            "RSS 순위 10위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:8a952e6dea4cd375",
+          "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+          "normalized_url": "https://research.google/blog/supercharging-transformer-residual-connections",
+          "url_hash": "8a952e6dea4cd37582529417e11e3c93c99807900dc4dc83974d2a98d63722e8",
+          "suggested_doc_key": "2026-11-google-s-deepcrossattention-achieves-comparable-model-quality-up-to-3x-f-8a952e6d",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-google-s-deepcrossattention-achieves-comparable-model-quality-up-to-3x-f-8a952e6d.md",
+          "candidate_score": 64.3,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "중요 키워드 1개를 감지해 가산했습니다.",
+            "Hacker News 점수 169점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 57개를 토론 신호로 반영했습니다.",
+            "RSS 순위 4위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:411e8c8ccbe332ed",
+          "title": "Michael Nielsen took down his book on neural nets",
+          "normalized_url": "https://neuralnetworksanddeeplearning.com/",
+          "url_hash": "411e8c8ccbe332eda0f9d2c7c4c978b16f779d9c988eb8856f02b321983a2f32",
+          "suggested_doc_key": "2026-11-michael-nielsen-took-down-his-book-on-neural-nets-411e8c8c",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-michael-nielsen-took-down-his-book-on-neural-nets-411e8c8c.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 419점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 268개를 토론 신호로 반영했습니다.",
+            "RSS 순위 12위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:42b6c44ba3384d39",
+          "title": "Convex skills send the user's app idea to a remote server without telling them",
+          "normalized_url": "https://github.com/convex/convex-backend-skill/issues/64",
+          "url_hash": "42b6c44ba3384d39e7e58d31cb3140a7901dfb0360ea40079e497ddd3a15d4de",
+          "suggested_doc_key": "2026-11-convex-skills-send-the-user-s-app-idea-to-a-remote-server-without-tellin-42b6c44b",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-convex-skills-send-the-user-s-app-idea-to-a-remote-server-without-tellin-42b6c44b.md",
+          "candidate_score": 60.0,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 247점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 77개를 토론 신호로 반영했습니다.",
+            "RSS 순위 14위를 우선순위 신호로 반영했습니다."
+          ]
+        },
+        {
+          "candidate_id": "hacker-news:c7a84157260f30ed",
+          "title": "False computer-checked proofs",
+          "normalized_url": "https://cr.yp.to/proofs/falseccp.html",
+          "url_hash": "c7a84157260f30edbcae3eba33c70b5fcdecd7a6f2da45090a94fc39615cc8c3",
+          "suggested_doc_key": "2026-11-false-computer-checked-proofs-c7a84157",
+          "suggested_article_path": "docs/services/hacker-news/2026-11-false-computer-checked-proofs-c7a84157.md",
+          "candidate_score": 59.2,
+          "ranking_reasons_ko": [
+            "서비스 기본 가중치 5점을 적용했습니다.",
+            "발행 후 0일이 지난 글로 최신성 20점을 반영했습니다.",
+            "Hacker News 점수 192점을 반응 신호로 반영했습니다.",
+            "Hacker News 댓글 76개를 토론 신호로 반영했습니다.",
+            "RSS 순위 17위를 우선순위 신호로 반영했습니다."
+          ]
+        }
+      ],
+      "excluded_reasons": {
+        "service_candidate_limit": 10
+      }
+    },
+    {
+      "service_key": "openai-blog",
+      "service_name": "OpenAI Blog",
+      "raw_count": 50,
+      "candidate_count": 0,
+      "excluded_count": 50,
+      "top_candidates": [],
+      "excluded_reasons": {
+        "already_briefed": 48,
+        "low_quality": 2
+      }
+    }
+  ]
+}
